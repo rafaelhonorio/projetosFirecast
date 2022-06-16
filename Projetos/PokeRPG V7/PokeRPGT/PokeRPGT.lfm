@@ -1,0 +1,23 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmPokeRPGT" formType="sheetTemplate" dataType="br.com.rrpg.PokeRPGT_SDK3" title="PokeRPG - Ficha Geral" align="client" theme="light">
+    <tabControl align="client">
+        <tab title="Atributos">
+            <import file="1.lfm"/>
+        </tab>
+        <tab title="Mochila">
+            <import file="2.lfm"/>
+        </tab>
+        <tab title="Insígnias">
+            <import file="3.lfm"/>
+        </tab>
+		<tab title="Trainer ID">
+            <import file="4.lfm"/>
+        </tab>
+		<tab title="Pokemons">
+            <import file="5.lfm"/>
+        </tab>		
+		<tab title="Anotações">
+            <import file="6.lfm"/>
+        </tab>			
+    </tabControl>
+</form>

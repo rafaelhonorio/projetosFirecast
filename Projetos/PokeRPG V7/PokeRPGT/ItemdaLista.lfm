@@ -1,0 +1,2208 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmItemDaLista" height="30" theme="dark"> 
+
+        <layout align="client" margins="{bottom=2}">
+                <!-- Botão para apagar o item da lista -->
+                <button align="left" width="32" text="X" onClick="NDB.deleteNode(sheet);"/>               
+
+                <!-- O título do item que aparece na lista -->
+                <edit fontSize="18" height="30" horzTextAlign="center" fontStyle="bold" left="40" width="200" text="Pokemon" field="Espécie" margins="{left=4}"/>
+        </layout>
+			
+	<!--Calculo F1 VIDA-->		
+	<dataLink fields="{'VidaF1', 'VidaBonus', 'VidaNivel', 'VidaB1', 'VidaV'}">
+		<event name="onChange">
+		
+               sheet.VidaF1 = math.floor(tonumber((sheet.VidaBonus) or 0) +
+                              (tonumber(sheet.VidaNivel) or 0) +
+                              (tonumber(sheet.VidaB1) or 0) +
+							  (tonumber(sheet.VidaV or 0)));                  
+
+               if sheet.VidaF1 ~= 0 then
+                       sheet.VidaF1 = sheet.VidaF1
+					   else
+					   sheet.VidaF1 = 0;
+               end;
+			   
+        </event>
+	</dataLink>
+	<!--Calculo F2 VIDA-->		
+	<dataLink fields="{'VidaF2', 'VidaBonus', 'VidaNivel', 'VidaB2', 'VidaV'}">
+		<event name="onChange">
+               sheet.VidaF2 = math.floor((tonumber(sheet.VidaBonus) or 0) +
+                              (tonumber(sheet.VidaNivel) or 0) +
+                              (tonumber(sheet.VidaB2) or 0) +
+							  (tonumber(sheet.VidaV) or 0));                  
+
+               if sheet.VidaF2 ~= 0 then
+                       sheet.VidaF2 = sheet.VidaF2
+					   else
+					   sheet.VidaF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 ATAQUE-->
+	<dataLink fields="{'ATQF1', 'ATQBonus', 'ATQNivel', 'ATQB1', 'ATQV'}">
+		<event name="onChange">
+               sheet.ATQF1 = math.floor((tonumber(sheet.ATQBonus) or 0) +
+                              (tonumber(sheet.ATQNivel) or 0) +
+                              (tonumber(sheet.ATQB1) or 0) +
+							  (tonumber(sheet.ATQV) or 0));                  
+
+               if sheet.ATQF1 ~= 0 then
+                       sheet.ATQF1 = sheet.ATQF1
+					   else
+					   sheet.ATQF1 = 0;
+               end;
+        </event>		
+	</dataLink>	
+	<!--Calculo F2 ATAQUE-->
+	<dataLink fields="{'ATQF2', 'ATQBonus', 'ATQNivel', 'ATQB2', 'ATQV'}">
+		<event name="onChange">
+               sheet.ATQF2 = math.floor((tonumber(sheet.ATQBonus) or 0) +
+                              (tonumber(sheet.ATQNivel) or 0) +
+                              (tonumber(sheet.ATQB2) or 0) +
+							  (tonumber(sheet.ATQV) or 0));                  
+
+               if sheet.ATQF2 ~= 0 then
+                       sheet.ATQF2 = sheet.ATQF2
+					   else
+					   sheet.ATQF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 DEFESA-->		
+	<dataLink fields="{'DEFF1', 'DEFBonus', 'DEFNivel', 'DefB1', 'DEFV'}">
+		<event name="onChange">
+               sheet.DEFF1 = math.floor((tonumber(sheet.DEFBonus) or 0) +
+                              (tonumber(sheet.DEFNivel) or 0) +
+                              (tonumber(sheet.DefB1) or 0) +
+							  (tonumber(sheet.DEFV) or 0));                  
+
+               if sheet.DEF1 ~= 0 then
+                       sheet.DEF1 = sheet.DEF1
+					   else
+					   sheet.DEF1 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F2 DEFESA-->		
+	<dataLink fields="{'DEFF2', 'DEFBonus', 'DEFNivel', 'DefB2', 'DEFV'}">
+	<event name="onChange">
+               sheet.DEFF2 = math.floor((tonumber(sheet.DEFBonus) or 0) +
+                              (tonumber(sheet.DEFNivel) or 0) +
+                              (tonumber(sheet.DefB2) or 0) +
+							  (tonumber(sheet.DEFV) or 0));                  
+
+               if sheet.DEF2 ~= 0 then
+                       sheet.DEF2 = sheet.DEF2
+					   else
+					   sheet.DEF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 ATAQUE ESPECIAL-->	
+	<dataLink fields="{'ATEF1', 'ATEBonus', 'ATENivel', 'ATEB1', 'ATEV'}">
+		<event name="onChange">
+               sheet.ATEF1 = math.floor((tonumber(sheet.ATEBonus) or 0) +
+                              (tonumber(sheet.ATENivel) or 0) +
+                              (tonumber(sheet.ATEB1) or 0) +
+							  (tonumber(sheet.ATEV) or 0));                  
+
+               if sheet.ATEF1 ~= 0 then
+                       sheet.ATEF1 = sheet.ATEF1
+					   else
+					   sheet.ATEF1 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F2 ATAQUE ESPECIAL-->		
+	<dataLink fields="{'ATEF2', 'ATEBonus', 'ATENivel', 'ATEB2', 'ATEV'}">
+		<event name="onChange">
+               sheet.ATEF2 = math.floor((tonumber(sheet.ATEBonus) or 0) +
+                              (tonumber(sheet.ATENivel) or 0) +
+                              (tonumber(sheet.ATEB2) or 0) +
+							  (tonumber(sheet.ATEV) or 0));                  
+
+               if sheet.ATEF2 ~= 0 then
+                       sheet.ATEF2 = sheet.ATEF2
+					   else
+					   sheet.ATEF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 DEFESA ESPECIAL-->
+	<dataLink fields="{'DFESF1', 'DFESBonus', 'DFESNIVEL', 'DFESB1', 'DFESV'}">
+		<event name="onChange">
+               sheet.DFESF1 = math.floor((tonumber(sheet.DFESBonus) or 0) +
+                              (tonumber(sheet.DFESNIVEL) or 0) +
+                              (tonumber(sheet.DFESB1) or 0) +
+							  (tonumber(sheet.DFESV) or 0));                  
+
+               if sheet.DFESF1 ~= 0 then
+                       sheet.DFESF1 = sheet.DFESF1
+					   else
+					   sheet.DFESF1 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F2 DEFESA ESPECIAL-->		
+	<dataLink fields="{'DFESF2', 'DFESBonus', 'DFESNIVEL', 'DFESB2', 'DFESV'}">
+		<event name="onChange">
+               sheet.DFESF2 = math.floor((tonumber(sheet.DFESBonus) or 0) +
+                              (tonumber(sheet.DFESNIVEL) or 0) +
+                              (tonumber(sheet.DFESB2) or 0) +
+							  (tonumber(sheet.DFESV) or 0));                  
+
+               if sheet.DFESF2 ~= 0 then
+                       sheet.DFESF2 = sheet.DFESF2
+					   else
+					   sheet.DFESF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 VELOCIDADE-->		
+	<dataLink fields="{'VELF1', 'VELBonus', 'VELNivel', 'VELB1', 'VELV'}">
+	<event name="onChange">
+               sheet.VELF1 = math.floor((tonumber(sheet.VELBonus) or 0) +
+                              (tonumber(sheet.VELNivel) or 0) +
+                              (tonumber(sheet.VELB1) or 0) +
+							  (tonumber(sheet.VELV) or 0));                  
+
+               if sheet.VELF1 ~= 0 then
+                       sheet.VELF1 = sheet.VELF1
+					   else
+					   sheet.VELF1 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 VELOCIDADE-->		
+	<dataLink fields="{'VELF2', 'VELBonus', 'VELNivel', 'VELB2', 'VELV'}">
+		<event name="onChange">
+               sheet.VELF2 = math.floor((tonumber(sheet.VELBonus) or 0) +
+                              (tonumber(sheet.VELNivel) or 0) +
+                              (tonumber(sheet.VELB2) or 0) +
+							  (tonumber(sheet.VELV) or 0));                  
+
+               if sheet.VELF2 ~= 0 then
+                       sheet.VELF2 = sheet.VELF2
+					   else
+					   sheet.VELF2 = 0;
+               end;
+        </event>
+	</dataLink>
+	
+<dataLink fields="{'Natureza', 'natP', 'natN'}">
+	<event name="onChange">
+		if sheet == nil then return end;	
+		if sheet.Natureza == "Ousado" then
+			sheet.natP = "Ataque";
+			sheet.natN = "Ataque";
+		elseif sheet.Natureza == "Solitário" then
+			sheet.natP = "Ataque";
+			sheet.natN = "Defesa";
+		elseif sheet.Natureza == "Duro" then
+			sheet.natP = "Ataque";
+			sheet.natN = "Atq. Esp.";
+		elseif sheet.Natureza == "Desobediente" then
+			sheet.natP = "Ataque";
+			sheet.natN = "Def. Esp.";
+		elseif sheet.Natureza == "Valente" then
+			sheet.natP = "Ataque";
+			sheet.natN = "Velocidade";
+		elseif sheet.Natureza == "Atrevido" then
+			sheet.natP = "Defesa";
+			sheet.natN = "Ataque";
+		elseif sheet.Natureza == "Dócil" then
+			sheet.natP = "Defesa";
+			sheet.natN = "Defesa";
+		elseif sheet.Natureza == "Diabólico" then
+			sheet.natP = "Defesa";
+			sheet.natN = "Atq. Esp.";
+		elseif sheet.Natureza == "Medroso" then
+			sheet.natP = "Defesa";
+			sheet.natN = "Def. Esp.";
+		elseif sheet.Natureza == "Relaxado" then
+			sheet.natP = "Defesa";
+			sheet.natN = "Velocidade";
+		elseif sheet.Natureza == "Modesto" then
+			sheet.natP = "Atq. Esp.";
+			sheet.natN = "Ataque";
+		elseif sheet.Natureza == "Meigo" then
+			sheet.natP = "Atq. Esp.";
+			sheet.natN = "Defesa";
+		elseif sheet.Natureza == "Tímido" then
+			sheet.natP = "Atq. Esp.";
+			sheet.natN = "Atq. Esp.";
+		elseif sheet.Natureza == "Precipitado" then
+			sheet.natP = "Atq. Esp.";
+			sheet.natN = "Def. Esp.";
+		elseif sheet.Natureza == "Tranquilo" then
+			sheet.natP = "Atq. Esp.";
+			sheet.natN = "Velocidade";
+		elseif sheet.Natureza == "Calmo" then
+			sheet.natP = "Def. Esp.";
+			sheet.natN = "Ataque";
+		elseif sheet.Natureza == "Amável" then
+			sheet.natP = "Def. Esp.";
+			sheet.natN = "Defesa";
+		elseif sheet.Natureza == "Cuidadoso" then
+			sheet.natP = "Def. Esp.";
+			sheet.natN = "Atq. Esp.";
+		elseif sheet.Natureza == "Peculiar" then
+			sheet.natP = "Def. Esp.";
+			sheet.natN = "Def. Esp.";
+		elseif sheet.Natureza == "Petulante" then
+			sheet.natP = "Def. Esp.";
+			sheet.natN = "Velocidade";
+		elseif sheet.Natureza == "Receoso" then
+			sheet.natP = "Velocidade";
+			sheet.natN = "Ataque";
+		elseif sheet.Natureza == "Imprudente" then
+			sheet.natP = "Velocidade";
+			sheet.natN = "Defesa";
+		elseif sheet.Natureza == "Divertido" then
+			sheet.natP = "Velocidade";
+			sheet.natN = "Atq. Esp.";
+		elseif sheet.Natureza == "Ingênuo" then
+			sheet.natP = "Velocidade";
+			sheet.natN = "Def. Esp.";
+		elseif sheet.Natureza == "Sério" then
+			sheet.natP = "Velocidade";
+			sheet.natN = "Velocidade";
+		end;
+	</event>
+</dataLink>
+
+	<!--Calculo F1 GOLPE 1-->	
+	<dataLink fields="{'TOTALF1G1', 'BONF1G1', 'PODERF1G1', 'STABF1G1', 'ATRF1G1'}">
+		<event name="onChange">
+               sheet.TOTALF1G1 = math.floor(((tonumber(sheet.PODERF1G1) or 0) *
+                              (tonumber(sheet.STABF1G1) or 1) +
+                              (tonumber(sheet.ATRF1G1) or 0) +
+							  (tonumber(sheet.BONF1G1) or 0)) / 2);                  
+
+               if sheet.TOTALF1G1 ~= 0 then
+                       sheet.TOTALF1G1 = sheet.TOTALF1G1
+					   else
+					   sheet.TOTALF1G1 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo PODER/2 GOLPE 1-->	
+	<dataLink fields="{'PODERF1G1D2', 'PODERF1G1'}">
+		<event name="onChange">
+               sheet.PODERF1G1D2 = math.floor((tonumber(sheet.PODERF1G1) or 0) / 2);                  
+
+               if sheet.PODERF1G1D2 ~= 0 then
+                       sheet.PODERF1G1D2 = sheet.PODERF1G1D2
+					   else
+					   sheet.PODERF1G1D2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo PODER*2 GOLPE 1-->		
+	<dataLink fields="{'PODERF1G1X2', 'PODERF1G1'}">
+		<event name="onChange">
+               sheet.PODERF1G1X2 = math.floor((tonumber(sheet.PODERF1G1) or 0) * 2);                  
+
+               if sheet.PODERF1G1X2 ~= 0 then
+                       sheet.PODERF1G1X2 = sheet.PODERF1G1X2
+					   else
+					   sheet.PODERF1G1X2 = 0;
+               end;
+        </event>
+	</dataLink>		
+	<!--Calculo F1 PODER/2 GOLPE 1-->	
+	<dataLink fields="{'TOTALF1G1D2', 'BONF1G1', 'PODERF1G1D2', 'STABF1G1', 'ATRF1G1'}">
+		<event name="onChange">
+               sheet.TOTALF1G1D2 = math.floor(((tonumber(sheet.PODERF1G1D2) or 0) *
+                              (tonumber(sheet.STABF1G1) or 1) +
+                              (tonumber(sheet.ATRF1G1) or 0) +
+							  (tonumber(sheet.BONF1G1) or 0)) / 2);                  
+
+               if sheet.TOTALF1G1D2 ~= 0 then
+                       sheet.TOTALF1G1D2 = sheet.TOTALF1G1D2
+					   else
+					   sheet.TOTALF1G1D2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 PODER*2 GOLPE 1-->	
+	<dataLink fields="{'TOTALF1G1X2', 'BONF1G1', 'PODERF1G1X2', 'STABF1G1', 'ATRF1G1'}">
+		<event name="onChange">
+               sheet.TOTALF1G1X2 = math.floor(((tonumber(sheet.PODERF1G1X2) or 0) *
+                              (tonumber(sheet.STABF1G1) or 1) +
+                              (tonumber(sheet.ATRF1G1) or 0) +
+							  (tonumber(sheet.BONF1G1) or 0)) / 2);                  
+
+               if sheet.TOTALF1G1X2 ~= 0 then
+                       sheet.TOTALF1G1X2 = sheet.TOTALF1G1X2
+					   else
+					   sheet.TOTALF1G1X2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo F2 GOLPE 1-->	
+	<dataLink fields="{'TOTALF2G1', 'BONF2G1', 'PODERF2G1', 'STABF2G1', 'ATRF2G1'}">
+		<event name="onChange">
+               sheet.TOTALF2G1 = math.floor(((tonumber(sheet.PODERF2G1) or 0) *
+                              (tonumber(sheet.STABF2G1) or 1) +
+                              (tonumber(sheet.ATRF2G1) or 0) +
+							  (tonumber(sheet.BONF2G1) or 0)) / 2);                  
+
+               if sheet.TOTALF2G1 ~= 0 then
+                       sheet.TOTALF2G1 = sheet.TOTALF2G1
+					   else
+					   sheet.TOTALF2G1 = 0;
+               end;
+        </event>
+	</dataLink>
+	
+	<!--Calculo F1 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G2', 'BONF1G2', 'PODERF1G2', 'STABF1G2', 'ATRF1G2'}">
+		<event name="onChange">
+               sheet.TOTALF1G2 = math.floor(((tonumber(sheet.PODERF1G2) or 0) *
+                              (tonumber(sheet.STABF1G2) or 1) +
+                              (tonumber(sheet.ATRF1G2) or 0) +
+							  (tonumber(sheet.BONF1G2) or 0)) / 2);                  
+
+               if sheet.TOTALF1G2 ~= 0 then
+                       sheet.TOTALF1G2 = sheet.TOTALF1G2
+					   else
+					   sheet.TOTALF1G2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo PODER/2 GOLPE 2-->
+	<dataLink fields="{'PODERF1G2D2', 'PODERF1G2'}">
+		<event name="onChange">
+               sheet.PODERF1G2D2 = math.floor((tonumber(sheet.PODERF1G2) or 0) / 2);                  
+
+               if sheet.PODERF1G2D2 ~= 0 then
+                       sheet.PODERF1G2D2 = sheet.PODERF1G2D2
+					   else
+					   sheet.PODERF1G2D2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo PODER*2 GOLPE 2-->	
+	<dataLink fields="{'PODERF1G2X2', 'PODERF1G2'}">
+		<event name="onChange">
+               sheet.PODERF1G2X2 = math.floor((tonumber(sheet.PODERF1G2) or 0) * 2);                  
+
+               if sheet.PODERF1G2X2 ~= 0 then
+                       sheet.PODERF1G2X2 = sheet.PODERF1G2X2
+					   else
+					   sheet.PODERF1G2X2 = 0;
+               end;
+        </event>
+	</dataLink>		
+	<!--Calculo F1 PODER/2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G2D2', 'BONF1G2', 'PODERF1G2D2', 'STABF1G2', 'ATRF1G2'}">
+		<event name="onChange">
+               sheet.TOTALF1G2D2 = math.floor(((tonumber(sheet.PODERF1G2D2) or 0) *
+                              (tonumber(sheet.STABF1G2) or 1) +
+                              (tonumber(sheet.ATRF1G2) or 0) +
+							  (tonumber(sheet.BONF1G2) or 0)) / 2);                  
+
+               if sheet.TOTALF1G2D2 ~= 0 then
+                       sheet.TOTALF1G2D2 = sheet.TOTALF1G2D2
+					   else
+					   sheet.TOTALF1G2D2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 PODER*2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G2X2', 'BONF1G2', 'PODERF1G2X2', 'STABF1G2', 'ATRF1G2'}">
+		<event name="onChange">
+               sheet.TOTALF1G2X2 = math.floor(((tonumber(sheet.PODERF1G2X2) or 0) *
+                              (tonumber(sheet.STABF1G2) or 1) +
+                              (tonumber(sheet.ATRF1G2) or 0) +
+							  (tonumber(sheet.BONF1G2) or 0)) / 2);                  
+
+               if sheet.TOTALF1G2X2 ~= 0 then
+                       sheet.TOTALF1G2X2 = sheet.TOTALF1G2X2
+					   else
+					   sheet.TOTALF1G2X2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F2 GOLPE 2-->		
+	<dataLink fields="{'TOTALF2G2', 'BONF2G2', 'PODERF2G2', 'STABF2G2', 'ATRF2G2'}">
+		<event name="onChange">
+               sheet.TOTALF2G2 = math.floor(((tonumber(sheet.PODERF2G2) or 0) *
+                              (tonumber(sheet.STABF2G2) or 1) +
+                              (tonumber(sheet.ATRF2G2) or 0) +
+							  (tonumber(sheet.BONF2G2) or 0)) / 2);                  
+
+               if sheet.TOTALF2G2 ~= 0 then
+                       sheet.TOTALF2G2 = sheet.TOTALF2G2
+					   else
+					   sheet.TOTALF2G2 = 0;
+               end;
+        </event>
+	</dataLink>	
+
+	<!--Calculo F1 GOLPE 3-->		
+	<dataLink fields="{'TOTALF1G3', 'BONF1G3', 'PODERF1G3', 'STABF1G3', 'ATRF1G3'}">
+		<event name="onChange">
+               sheet.TOTALF1G3 = math.floor(((tonumber(sheet.PODERF1G3) or 0) *
+                              (tonumber(sheet.STABF1G3) or 1) +
+                              (tonumber(sheet.ATRF1G3) or 0) +
+							  (tonumber(sheet.BONF1G3) or 0)) / 2);                  
+
+               if sheet.TOTALF1G3 ~= 0 then
+                       sheet.TOTALF1G3 = sheet.TOTALF1G3
+					   else
+					   sheet.TOTALF1G3 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo PODER/2 GOLPE 3-->
+	<dataLink fields="{'PODERF1G3D2', 'PODERF1G3'}">
+		<event name="onChange">
+               sheet.PODERF1G3D2 = math.floor((tonumber(sheet.PODERF1G3) or 0) / 2);                  
+
+               if sheet.PODERF1G3D2 ~= 0 then
+                       sheet.PODERF1G3D2 = sheet.PODERF1G3D2
+					   else
+					   sheet.PODERF1G3D2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo PODER*2 GOLPE 2-->	
+	<dataLink fields="{'PODERF1G3X2', 'PODERF1G3'}">
+		<event name="onChange">
+               sheet.PODERF1G3X2 = math.floor((tonumber(sheet.PODERF1G3) or 0) * 2);                  
+
+               if sheet.PODERF1G3X2 ~= 0 then
+                       sheet.PODERF1G3X2 = sheet.PODERF1G3X2
+					   else
+					   sheet.PODERF1G3X2 = 0;
+               end;
+        </event>
+	</dataLink>		
+	<!--Calculo F1 PODER/2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G3D2', 'BONF1G3', 'PODERF1G3D2', 'STABF1G3', 'ATRF1G3'}">
+		<event name="onChange">
+               sheet.TOTALF1G3D2 = math.floor(((tonumber(sheet.PODERF1G3D2) or 0) *
+                              (tonumber(sheet.STABF1G3) or 1) +
+                              (tonumber(sheet.ATRF1G3) or 0) +
+							  (tonumber(sheet.BONF1G3) or 0)) / 2);                  
+
+               if sheet.TOTALF1G3D2 ~= 0 then
+                       sheet.TOTALF1G3D2 = sheet.TOTALF1G3D2
+					   else
+					   sheet.TOTALF1G3D2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 PODER*2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G3X2', 'BONF1G3', 'PODERF1G3X2', 'STABF1G3', 'ATRF1G3'}">
+		<event name="onChange">
+               sheet.TOTALF1G3X2 = math.floor(((tonumber(sheet.PODERF1G3X2) or 0) *
+                              (tonumber(sheet.STABF1G3) or 1) +
+                              (tonumber(sheet.ATRF1G3) or 0) +
+							  (tonumber(sheet.BONF1G3) or 0)) / 2);                  
+
+               if sheet.TOTALF1G3X2 ~= 0 then
+                       sheet.TOTALF1G3X2 = sheet.TOTALF1G3X2
+					   else
+					   sheet.TOTALF1G3X2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo F2 GOLPE 3-->		
+	<dataLink fields="{'TOTALF2G3', 'BONF2G3', 'PODERF2G3', 'STABF2G3', 'ATRF2G3'}">
+		<event name="onChange">
+               sheet.TOTALF2G3 = math.floor(((tonumber(sheet.PODERF2G3) or 0) *
+                              (tonumber(sheet.STABF2G3) or 1) +
+                              (tonumber(sheet.ATRF2G3) or 0) +
+							  (tonumber(sheet.BONF2G3) or 0)) / 2);                  
+
+               if sheet.TOTALF2G3 ~= 0 then
+                       sheet.TOTALF2G3 = sheet.TOTALF2G3
+					   else
+					   sheet.TOTALF2G3 = 0;
+               end;
+        </event>
+	</dataLink>	
+
+	<!--Calculo F1 GOLPE 4-->
+	<dataLink fields="{'TOTALF1G4', 'BONF1G4', 'PODERF1G4', 'STABF1G4', 'ATRF1G4'}">
+		<event name="onChange">
+               sheet.TOTALF1G4 = math.floor(((tonumber(sheet.PODERF1G4) or 0) *
+                              (tonumber(sheet.STABF1G4) or 1) +
+                              (tonumber(sheet.ATRF1G4) or 0) +
+							  (tonumber(sheet.BONF1G4) or 0)) / 2);                  
+
+               if sheet.TOTALF1G4 ~= 0 then
+                       sheet.TOTALF1G4 = sheet.TOTALF1G4
+					   else
+					   sheet.TOTALF1G4 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo PODER/2 GOLPE 2-->
+	<dataLink fields="{'PODERF1G4D2', 'PODERF1G4'}">
+		<event name="onChange">
+               sheet.PODERF1G4D2 = math.floor((tonumber(sheet.PODERF1G4) or 0) / 2);                  
+
+               if sheet.PODERF1G4D2 ~= 0 then
+                       sheet.PODERF1G4D2 = sheet.PODERF1G4D2
+					   else
+					   sheet.PODERF1G4D2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo PODER*2 GOLPE 2-->	
+	<dataLink fields="{'PODERF1G4X2', 'PODERF1G4'}">
+		<event name="onChange">
+               sheet.PODERF1G4X2 = math.floor((tonumber(sheet.PODERF1G4) or 0) * 2);                  
+
+               if sheet.PODERF1G4X2 ~= 0 then
+                       sheet.PODERF1G4X2 = sheet.PODERF1G4X2
+					   else
+					   sheet.PODERF1G4X2 = 0;
+               end;
+        </event>
+	</dataLink>		
+	<!--Calculo F1 PODER/2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G4D2', 'BONF1G4', 'PODERF1G4D2', 'STABF1G4', 'ATRF1G4'}">
+		<event name="onChange">
+               sheet.TOTALF1G4D2 = math.floor(((tonumber(sheet.PODERF1G4D2) or 0) *
+                              (tonumber(sheet.STABF1G4) or 1) +
+                              (tonumber(sheet.ATRF1G4) or 0) +
+							  (tonumber(sheet.BONF1G4) or 0)) / 2);                  
+
+               if sheet.TOTALF1G4D2 ~= 0 then
+                       sheet.TOTALF1G4D2 = sheet.TOTALF1G4D2
+					   else
+					   sheet.TOTALF1G4D2 = 0;
+               end;
+        </event>
+	</dataLink>
+	<!--Calculo F1 PODER*2 GOLPE 2-->
+	<dataLink fields="{'TOTALF1G4X2', 'BONF1G4', 'PODERF1G4X2', 'STABF1G4', 'ATRF1G4'}">
+		<event name="onChange">
+               sheet.TOTALF1G4X2 = math.floor(((tonumber(sheet.PODERF1G4X2) or 0) *
+                              (tonumber(sheet.STABF1G4) or 1) +
+                              (tonumber(sheet.ATRF1G4) or 0) +
+							  (tonumber(sheet.BONF1G4) or 0)) / 2);                  
+
+               if sheet.TOTALF1G4X2 ~= 0 then
+                       sheet.TOTALF1G4X2 = sheet.TOTALF1G4X2
+					   else
+					   sheet.TOTALF1G4X2 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Calculo F2 GOLPE 4-->		
+	<dataLink fields="{'TOTALF2G4', 'BONF2G4', 'PODERF2G4', 'STABF2G4', 'ATRF2G4'}">
+		<event name="onChange">
+               sheet.TOTALF2G4 = math.floor(((tonumber(sheet.PODERF2G4) or 0) *
+                              (tonumber(sheet.STABF2G4) or 1) +
+                              (tonumber(sheet.ATRF2G4) or 0) +
+							  (tonumber(sheet.BONF2G4) or 0)) / 2);                  
+
+               if sheet.TOTALF2G4 ~= 0 then
+                       sheet.TOTALF2G4 = sheet.TOTALF2G4
+					   else
+					   sheet.TOTALF2G4 = 0;
+               end;
+        </event>
+	</dataLink>	
+	<!--Botão Ataque Especial F1 GOLPE 1-->		
+	<dataLink field="ESPG1">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef1 = (tonumber(sheet.ATEF1) or 0);
+			if sheet.ESPG1 then
+				sheet.ATRF1G1 = atef1;
+				sheet.FISG1 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Especial F2 GOLPE 1-->		
+	<dataLink field="ESPG1">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef2 = (tonumber(sheet.ATEF2) or 0);
+			if sheet.ESPG1 then
+				sheet.ATRF2G1 = atef2;
+				sheet.FISG1 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F1 GOLPE 1-->		
+	<dataLink field="FISG1">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf1 = (tonumber(sheet.ATQF1) or 0);
+			if sheet.FISG1 then
+				sheet.ATRF1G1 = atqf1;
+				sheet.ESPG1 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F2 GOLPE 1-->		
+	<dataLink field="FISG1">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf2 = (tonumber(sheet.ATQF2) or 0);
+			if sheet.FISG1 then
+				sheet.ATRF2G1 = atqf2;
+				sheet.ESPG1 = false;
+			end;
+		</event>
+	</dataLink>
+
+	<!--Botão Ataque Especial F1 GOLPE 2-->		
+	<dataLink field="ESPG2">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef1 = (tonumber(sheet.ATEF1) or 0);
+			if sheet.ESPG2 then
+				sheet.ATRF1G2 = atef1;
+				sheet.FISG2 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Especial F2 GOLPE 2-->		
+	<dataLink field="ESPG2">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef2 = (tonumber(sheet.ATEF2) or 0);
+			if sheet.ESPG2 then
+				sheet.ATRF2G2 = atef2;
+				sheet.FISG2 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F1 GOLPE 2-->		
+	<dataLink field="FISG2">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf1 = (tonumber(sheet.ATQF1) or 0);
+			if sheet.FISG2 then
+				sheet.ATRF1G2 = atqf1;
+				sheet.ESPG2 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F2 GOLPE 2-->		
+	<dataLink field="FISG2">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf2 = (tonumber(sheet.ATQF2) or 0);
+			if sheet.FISG2 then
+				sheet.ATRF2G2 = atqf2;
+				sheet.ESPG2 = false;
+			end;
+		</event>
+	</dataLink>
+	
+	<!--Botão Ataque Especial F1 GOLPE 3-->		
+	<dataLink field="ESPG3">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef1 = (tonumber(sheet.ATEF1) or 0);
+			if sheet.ESPG3 then
+				sheet.ATRF1G3 = atef1;
+				sheet.FISG3 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Especial F2 GOLPE 3-->		
+	<dataLink field="ESPG3">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef2 = (tonumber(sheet.ATEF2) or 0);
+			if sheet.ESPG3 then
+				sheet.ATRF2G3 = atef2;
+				sheet.FISG3 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F1 GOLPE 3-->			
+	<dataLink field="FISG3">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf1 = (tonumber(sheet.ATQF1) or 0);
+			if sheet.FISG3 then
+				sheet.ATRF1G3 = atqf1;
+				sheet.ESPG3 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F2 GOLPE 3-->		
+	<dataLink field="FISG3">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf2 = (tonumber(sheet.ATQF2) or 0);
+			if sheet.FISG3 then
+				sheet.ATRF2G3 = atqf2;
+				sheet.ESPG3 = false;
+			end;
+		</event>
+	</dataLink>
+
+	<!--Botão Ataque Especial F1 GOLPE 4-->		
+	<dataLink field="ESPG4">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef1 = (tonumber(sheet.ATEF1) or 0);
+			if sheet.ESPG4 then
+				sheet.ATRF1G4 = atef1;
+				sheet.FISG4 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Especial F2 GOLPE 4-->	
+	<dataLink field="ESPG4">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atef2 = (tonumber(sheet.ATEF2) or 0);
+			if sheet.ESPG4 then
+				sheet.ATRF2G4 = atef2;
+				sheet.FISG4 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F1 GOLPE 4-->	
+	<dataLink field="FISG4">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf1 = (tonumber(sheet.ATQF1) or 0);
+			if sheet.FISG4 then
+				sheet.ATRF1G4 = atqf1;
+				sheet.ESPG4 = false;
+			end;
+		</event>
+	</dataLink>
+	<!--Botão Ataque Fisico F2 GOLPE 4-->	
+	<dataLink field="FISG4">
+		<event name="onChange">
+			if sheet == nil then return end;
+			local atqf2 = (tonumber(sheet.ATQF2) or 0);
+			if sheet.FISG4 then
+				sheet.ATRF2G4 = atqf2;
+				sheet.ESPG4 = false;
+			end;
+		</event>
+	</dataLink>
+
+	<!-- LEALDADE -->
+<dataLink fields="{'L10', 'L9', 'L8', 'L7', 'L6', 'L5', 'L4', 'L3', 'L2', 'L1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.L10 == true then
+		sheet.L9 = true;
+		sheet.L8 = true;
+		sheet.L7 = true;
+		sheet.L6 = true;
+		sheet.L5 = true;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L9 == true then
+		sheet.L10 = false;
+		sheet.L8 = true;
+		sheet.L7 = true;
+		sheet.L6 = true;
+		sheet.L5 = true;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L8 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L7 = true;
+		sheet.L6 = true;
+		sheet.L5 = true;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L7 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L6 = true;
+		sheet.L5 = true;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L6 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L5 = true;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L5 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L4 = true;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L4 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L5 = false;
+		sheet.L3 = true;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L3 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L5 = false;
+		sheet.L4 = false;
+		sheet.L2 = true;
+		sheet.L1 = true;
+	elseif sheet.L2 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L5 = false;
+		sheet.L4 = false;
+		sheet.L3 = false;
+		sheet.L1 = true;	
+	elseif sheet.L1 == true then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L5 = false;
+		sheet.L4 = false;
+		sheet.L3 = false;
+		sheet.L2 = false;
+	elseif sheet.L1 == false then
+		sheet.L10 = false;
+		sheet.L9 = false;
+		sheet.L8 = false;
+		sheet.L7 = false;
+		sheet.L6 = false;
+		sheet.L5 = false;
+		sheet.L4 = false;
+		sheet.L3 = false;
+		sheet.L2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- AFEIÇÃO -->
+<dataLink fields="{'AFE5', 'AFE4', 'AFE3', 'AFE2', 'AFE1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.AFE5 == true then
+		sheet.AFE4 = true;
+		sheet.AFE3 = true;
+		sheet.AFE2 = true;
+		sheet.AFE1 = true;
+	elseif sheet.AFE4 == true then
+		sheet.AFE5 = false;
+		sheet.AFE3 = true;
+		sheet.AFE2 = true;
+		sheet.AFE1 = true;
+	elseif sheet.AFE3 == true then
+		sheet.AFE5 = false;
+		sheet.AFE4 = false;
+		sheet.AFE2 = true;
+		sheet.AFE1 = true;
+	elseif sheet.AFE2 == true then
+		sheet.AFE5 = false;
+		sheet.AFE4 = false;
+		sheet.AFE3 = false;
+		sheet.AFE1 = true;	
+	elseif sheet.AFE1 == true then
+		sheet.AFE5 = false;
+		sheet.AFE4 = false;
+		sheet.AFE3 = false;
+		sheet.AFE2 = false;
+	elseif sheet.AFE1 == false then
+		sheet.AFE5 = false;
+		sheet.AFE4 = false;
+		sheet.AFE3 = false;
+		sheet.AFE2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- TREINAMENTO -->
+<dataLink fields="{'T10', 'T9', 'T8', 'T7', 'T6', 'T5', 'T4', 'T3', 'T2', 'T1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.T10 == true then
+		sheet.T9 = true;
+		sheet.T8 = true;
+		sheet.T7 = true;
+		sheet.T6 = true;
+		sheet.T5 = true;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T9 == true then
+		sheet.T10 = false;
+		sheet.T8 = true;
+		sheet.T7 = true;
+		sheet.T6 = true;
+		sheet.T5 = true;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T8 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T7 = true;
+		sheet.T6 = true;
+		sheet.T5 = true;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T7 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T6 = true;
+		sheet.T5 = true;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T6 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T5 = true;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T5 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T4 = true;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T4 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T5 = false;
+		sheet.T3 = true;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T3 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T5 = false;
+		sheet.T4 = false;
+		sheet.T2 = true;
+		sheet.T1 = true;
+	elseif sheet.T2 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T5 = false;
+		sheet.T4 = false;
+		sheet.T3 = false;
+		sheet.T1 = true;	
+	elseif sheet.T1 == true then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T5 = false;
+		sheet.T4 = false;
+		sheet.T3 = false;
+		sheet.T2 = false;
+	elseif sheet.T1 == false then
+		sheet.T10 = false;
+		sheet.T9 = false;
+		sheet.T8 = false;
+		sheet.T7 = false;
+		sheet.T6 = false;
+		sheet.T5 = false;
+		sheet.T4 = false;
+		sheet.T3 = false;
+		sheet.T2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- Ataque Negativo -->
+<dataLink fields="{'ATQN5', 'ATQN4', 'ATQN3', 'ATQN2', 'ATQN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.ATQN5 == true then
+		sheet.ATQN4 = true;
+		sheet.ATQN3 = true;
+		sheet.ATQN2 = true;
+		sheet.ATQN1 = true;
+	elseif sheet.ATQN4 == true then
+		sheet.ATQN5 = false;
+		sheet.ATQN3 = true;
+		sheet.ATQN2 = true;
+		sheet.ATQN1 = true;
+	elseif sheet.ATQN3 == true then
+		sheet.ATQN5 = false;
+		sheet.ATQN4 = false;
+		sheet.ATQN2 = true;
+		sheet.ATQN1 = true;
+	elseif sheet.ATQN2 == true then
+		sheet.ATQN5 = false;
+		sheet.ATQN4 = false;
+		sheet.ATQN3 = false;
+		sheet.ATQN1 = true;	
+	elseif sheet.ATQN1 == true then
+		sheet.ATQN5 = false;
+		sheet.ATQN4 = false;
+		sheet.ATQN3 = false;
+		sheet.ATQN2 = false;
+	elseif sheet.ATQN1 == false then
+		sheet.ATQN5 = false;
+		sheet.ATQN4 = false;
+		sheet.ATQN3 = false;
+		sheet.ATQN2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- Ataque Positivo -->
+<dataLink fields="{'ATQP5', 'ATQP4', 'ATQP3', 'ATQP2', 'ATQP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.ATQP5 == true then
+		sheet.ATQP4 = true;
+		sheet.ATQP3 = true;
+		sheet.ATQP2 = true;
+		sheet.ATQP1 = true;
+	elseif sheet.ATQP4 == true then
+		sheet.ATQP5 = false;
+		sheet.ATQP3 = true;
+		sheet.ATQP2 = true;
+		sheet.ATQP1 = true;
+	elseif sheet.ATQP3 == true then
+		sheet.ATQP5 = false;
+		sheet.ATQP4 = false;
+		sheet.ATQP2 = true;
+		sheet.ATQP1 = true;
+	elseif sheet.ATQP2 == true then
+		sheet.ATQP5 = false;
+		sheet.ATQP4 = false;
+		sheet.ATQP3 = false;
+		sheet.ATQP1 = true;	
+	elseif sheet.ATQP1 == true then
+		sheet.ATQP5 = false;
+		sheet.ATQP4 = false;
+		sheet.ATQP3 = false;
+		sheet.ATQP2 = false;
+	elseif sheet.ATQP1 == false then
+		sheet.ATQP5 = false;
+		sheet.ATQP4 = false;
+		sheet.ATQP3 = false;
+		sheet.ATQP2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- Precisão Negativa -->
+<dataLink fields="{'PREN5', 'PREN4', 'PREN3', 'PREN2', 'PREN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.PREN5 == true then
+		sheet.PREN4 = true;
+		sheet.PREN3 = true;
+		sheet.PREN2 = true;
+		sheet.PREN1 = true;
+	elseif sheet.PREN4 == true then
+		sheet.PREN5 = false;
+		sheet.PREN3 = true;
+		sheet.PREN2 = true;
+		sheet.PREN1 = true;
+	elseif sheet.PREN3 == true then
+		sheet.PREN5 = false;
+		sheet.PREN4 = false;
+		sheet.PREN2 = true;
+		sheet.PREN1 = true;
+	elseif sheet.PREN2 == true then
+		sheet.PREN5 = false;
+		sheet.PREN4 = false;
+		sheet.PREN3 = false;
+		sheet.PREN1 = true;	
+	elseif sheet.PREN1 == true then
+		sheet.PREN5 = false;
+		sheet.PREN4 = false;
+		sheet.PREN3 = false;
+		sheet.PREN2 = false;
+	elseif sheet.PREN1 == false then
+		sheet.PREN5 = false;
+		sheet.PREN4 = false;
+		sheet.PREN3 = false;
+		sheet.PREN2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Precisão Positiva -->
+<dataLink fields="{'PREP5', 'PREP4', 'PREP3', 'PREP2', 'PREP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.PREP5 == true then
+		sheet.PREP4 = true;
+		sheet.PREP3 = true;
+		sheet.PREP2 = true;
+		sheet.PREP1 = true;
+	elseif sheet.PREP4 == true then
+		sheet.PREP5 = false;
+		sheet.PREP3 = true;
+		sheet.PREP2 = true;
+		sheet.PREP1 = true;
+	elseif sheet.PREP3 == true then
+		sheet.PREP5 = false;
+		sheet.PREP4 = false;
+		sheet.PREP2 = true;
+		sheet.PREP1 = true;
+	elseif sheet.PREP2 == true then
+		sheet.PREP5 = false;
+		sheet.PREP4 = false;
+		sheet.PREP3 = false;
+		sheet.PREP1 = true;	
+	elseif sheet.PREP1 == true then
+		sheet.PREP5 = false;
+		sheet.PREP4 = false;
+		sheet.PREP3 = false;
+		sheet.PREP2 = false;
+	elseif sheet.PREP1 == false then
+		sheet.PREP5 = false;
+		sheet.PREP4 = false;
+		sheet.PREP3 = false;
+		sheet.PREP2 = false;
+	end;
+	</event>
+</dataLink>		
+	<!-- Critico Positivo -->
+<dataLink fields="{'CRIT5', 'CRIT4', 'CRIT3', 'CRIT2', 'CRIT1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.CRIT5 == true then
+		sheet.CRIT4 = true;
+		sheet.CRIT3 = true;
+		sheet.CRIT2 = true;
+		sheet.CRIT1 = true;
+	elseif sheet.CRIT4 == true then
+		sheet.CRIT5 = false;
+		sheet.CRIT3 = true;
+		sheet.CRIT2 = true;
+		sheet.CRIT1 = true;
+	elseif sheet.CRIT3 == true then
+		sheet.CRIT5 = false;
+		sheet.CRIT4 = false;
+		sheet.CRIT2 = true;
+		sheet.CRIT1 = true;
+	elseif sheet.CRIT2 == true then
+		sheet.CRIT5 = false;
+		sheet.CRIT4 = false;
+		sheet.CRIT3 = false;
+		sheet.CRIT1 = true;	
+	elseif sheet.CRIT1 == true then
+		sheet.CRIT5 = false;
+		sheet.CRIT4 = false;
+		sheet.CRIT3 = false;
+		sheet.CRIT2 = false;
+	elseif sheet.CRIT1 == false then
+		sheet.CRIT5 = false;
+		sheet.CRIT4 = false;
+		sheet.CRIT3 = false;
+		sheet.CRIT2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- Defesa Negativa -->
+<dataLink fields="{'DEFN5', 'DEFN4', 'DEFN3', 'DEFN2', 'DEFN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.DEFN5 == true then
+		sheet.DEFN4 = true;
+		sheet.DEFN3 = true;
+		sheet.DEFN2 = true;
+		sheet.DEFN1 = true;
+	elseif sheet.DEFN4 == true then
+		sheet.DEFN5 = false;
+		sheet.DEFN3 = true;
+		sheet.DEFN2 = true;
+		sheet.DEFN1 = true;
+	elseif sheet.DEFN3 == true then
+		sheet.DEFN5 = false;
+		sheet.DEFN4 = false;
+		sheet.DEFN2 = true;
+		sheet.DEFN1 = true;
+	elseif sheet.DEFN2 == true then
+		sheet.DEFN5 = false;
+		sheet.DEFN4 = false;
+		sheet.DEFN3 = false;
+		sheet.DEFN1 = true;	
+	elseif sheet.DEFN1 == true then
+		sheet.DEFN5 = false;
+		sheet.DEFN4 = false;
+		sheet.DEFN3 = false;
+		sheet.DEFN2 = false;
+	elseif sheet.DEFN1 == false then
+		sheet.DEFN5 = false;
+		sheet.DEFN4 = false;
+		sheet.DEFN3 = false;
+		sheet.DEFN2 = false;
+	end;
+	</event>
+</dataLink>		
+	<!-- Defesa Positiva -->
+<dataLink fields="{'DEFP5', 'DEFP4', 'DEFP3', 'DEFP2', 'DEFP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.DEFP5 == true then
+		sheet.DEFP4 = true;
+		sheet.DEFP3 = true;
+		sheet.DEFP2 = true;
+		sheet.DEFP1 = true;
+	elseif sheet.DEFP4 == true then
+		sheet.DEFP5 = false;
+		sheet.DEFP3 = true;
+		sheet.DEFP2 = true;
+		sheet.DEFP1 = true;
+	elseif sheet.DEFP3 == true then
+		sheet.DEFP5 = false;
+		sheet.DEFP4 = false;
+		sheet.DEFP2 = true;
+		sheet.DEFP1 = true;
+	elseif sheet.DEFP2 == true then
+		sheet.DEFP5 = false;
+		sheet.DEFP4 = false;
+		sheet.DEFP3 = false;
+		sheet.DEFP1 = true;	
+	elseif sheet.DEFP1 == true then
+		sheet.DEFP5 = false;
+		sheet.DEFP4 = false;
+		sheet.DEFP3 = false;
+		sheet.DEFP2 = false;
+	elseif sheet.DEFP1 == false then
+		sheet.DEFP5 = false;
+		sheet.DEFP4 = false;
+		sheet.DEFP3 = false;
+		sheet.DEFP2 = false;
+	end;
+	</event>
+</dataLink>		
+	<!-- Evasão Negativa -->
+<dataLink fields="{'EVAN5', 'EVAN4', 'EVAN3', 'EVAN2', 'EVAN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.EVAN5 == true then
+		sheet.EVAN4 = true;
+		sheet.EVAN3 = true;
+		sheet.EVAN2 = true;
+		sheet.EVAN1 = true;
+	elseif sheet.EVAN4 == true then
+		sheet.EVAN5 = false;
+		sheet.EVAN3 = true;
+		sheet.EVAN2 = true;
+		sheet.EVAN1 = true;
+	elseif sheet.EVAN3 == true then
+		sheet.EVAN5 = false;
+		sheet.EVAN4 = false;
+		sheet.EVAN2 = true;
+		sheet.EVAN1 = true;
+	elseif sheet.EVAN2 == true then
+		sheet.EVAN5 = false;
+		sheet.EVAN4 = false;
+		sheet.EVAN3 = false;
+		sheet.EVAN1 = true;	
+	elseif sheet.EVAN1 == true then
+		sheet.EVAN5 = false;
+		sheet.EVAN4 = false;
+		sheet.EVAN3 = false;
+		sheet.EVAN2 = false;
+	elseif sheet.EVAN1 == false then
+		sheet.EVAN5 = false;
+		sheet.EVAN4 = false;
+		sheet.EVAN3 = false;
+		sheet.EVAN2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Evasão Positiva -->
+<dataLink fields="{'EVAP5', 'EVAP4', 'EVAP3', 'EVAP2', 'EVAP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.EVAP5 == true then
+		sheet.EVAP4 = true;
+		sheet.EVAP3 = true;
+		sheet.EVAP2 = true;
+		sheet.EVAP1 = true;
+	elseif sheet.EVAP4 == true then
+		sheet.EVAP5 = false;
+		sheet.EVAP3 = true;
+		sheet.EVAP2 = true;
+		sheet.EVAP1 = true;
+	elseif sheet.EVAP3 == true then
+		sheet.EVAP5 = false;
+		sheet.EVAP4 = false;
+		sheet.EVAP2 = true;
+		sheet.EVAP1 = true;
+	elseif sheet.EVAP2 == true then
+		sheet.EVAP5 = false;
+		sheet.EVAP4 = false;
+		sheet.EVAP3 = false;
+		sheet.EVAP1 = true;	
+	elseif sheet.EVAP1 == true then
+		sheet.EVAP5 = false;
+		sheet.EVAP4 = false;
+		sheet.EVAP3 = false;
+		sheet.EVAP2 = false;
+	elseif sheet.EVAP1 == false then
+		sheet.EVAP5 = false;
+		sheet.EVAP4 = false;
+		sheet.EVAP3 = false;
+		sheet.EVAP2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Ataque Especial Negativo -->
+<dataLink fields="{'ATEN5', 'ATEN4', 'ATEN3', 'ATEN2', 'ATEN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.ATEN5 == true then
+		sheet.ATEN4 = true;
+		sheet.ATEN3 = true;
+		sheet.ATEN2 = true;
+		sheet.ATEN1 = true;
+	elseif sheet.ATEN4 == true then
+		sheet.ATEN5 = false;
+		sheet.ATEN3 = true;
+		sheet.ATEN2 = true;
+		sheet.ATEN1 = true;
+	elseif sheet.ATEN3 == true then
+		sheet.ATEN5 = false;
+		sheet.ATEN4 = false;
+		sheet.ATEN2 = true;
+		sheet.ATEN1 = true;
+	elseif sheet.ATEN2 == true then
+		sheet.ATEN5 = false;
+		sheet.ATEN4 = false;
+		sheet.ATEN3 = false;
+		sheet.ATEN1 = true;	
+	elseif sheet.ATEN1 == true then
+		sheet.ATEN5 = false;
+		sheet.ATEN4 = false;
+		sheet.ATEN3 = false;
+		sheet.ATEN2 = false;
+	elseif sheet.ATEN1 == false then
+		sheet.ATEN5 = false;
+		sheet.ATEN4 = false;
+		sheet.ATEN3 = false;
+		sheet.ATEN2 = false;
+	end;
+	</event>
+</dataLink>		
+	<!-- Ataque Especial Positivo -->
+<dataLink fields="{'ATEP5', 'ATEP4', 'ATEP3', 'ATEP2', 'ATEP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.ATEP5 == true then
+		sheet.ATEP4 = true;
+		sheet.ATEP3 = true;
+		sheet.ATEP2 = true;
+		sheet.ATEP1 = true;
+	elseif sheet.ATEP4 == true then
+		sheet.ATEP5 = false;
+		sheet.ATEP3 = true;
+		sheet.ATEP2 = true;
+		sheet.ATEP1 = true;
+	elseif sheet.ATEP3 == true then
+		sheet.ATEP5 = false;
+		sheet.ATEP4 = false;
+		sheet.ATEP2 = true;
+		sheet.ATEP1 = true;
+	elseif sheet.ATEP2 == true then
+		sheet.ATEP5 = false;
+		sheet.ATEP4 = false;
+		sheet.ATEP3 = false;
+		sheet.ATEP1 = true;	
+	elseif sheet.ATEP1 == true then
+		sheet.ATEP5 = false;
+		sheet.ATEP4 = false;
+		sheet.ATEP3 = false;
+		sheet.ATEP2 = false;
+	elseif sheet.ATEP1 == false then
+		sheet.ATEP5 = false;
+		sheet.ATEP4 = false;
+		sheet.ATEP3 = false;
+		sheet.ATEP2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Defesa Especial Negativa -->
+<dataLink fields="{'DFESN5', 'DFESN4', 'DFESN3', 'DFESN2', 'DFESN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.DFESN5 == true then
+		sheet.DFESN4 = true;
+		sheet.DFESN3 = true;
+		sheet.DFESN2 = true;
+		sheet.DFESN1 = true;
+	elseif sheet.DFESN4 == true then
+		sheet.DFESN5 = false;
+		sheet.DFESN3 = true;
+		sheet.DFESN2 = true;
+		sheet.DFESN1 = true;
+	elseif sheet.DFESN3 == true then
+		sheet.DFESN5 = false;
+		sheet.DFESN4 = false;
+		sheet.DFESN2 = true;
+		sheet.DFESN1 = true;
+	elseif sheet.DFESN2 == true then
+		sheet.DFESN5 = false;
+		sheet.DFESN4 = false;
+		sheet.DFESN3 = false;
+		sheet.DFESN1 = true;	
+	elseif sheet.DFESN1 == true then
+		sheet.DFESN5 = false;
+		sheet.DFESN4 = false;
+		sheet.DFESN3 = false;
+		sheet.DFESN2 = false;
+	elseif sheet.DFESN1 == false then
+		sheet.DFESN5 = false;
+		sheet.DFESN4 = false;
+		sheet.DFESN3 = false;
+		sheet.DFESN2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Defesa Especial Positiva -->
+<dataLink fields="{'DFESP5', 'DFESP4', 'DFESP3', 'DFESP2', 'DFESP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.DFESP5 == true then
+		sheet.DFESP4 = true;
+		sheet.DFESP3 = true;
+		sheet.DFESP2 = true;
+		sheet.DFESP1 = true;
+	elseif sheet.DFESP4 == true then
+		sheet.DFESP5 = false;
+		sheet.DFESP3 = true;
+		sheet.DFESP2 = true;
+		sheet.DFESP1 = true;
+	elseif sheet.DFESP3 == true then
+		sheet.DFESP5 = false;
+		sheet.DFESP4 = false;
+		sheet.DFESP2 = true;
+		sheet.DFESP1 = true;
+	elseif sheet.DFESP2 == true then
+		sheet.DFESP5 = false;
+		sheet.DFESP4 = false;
+		sheet.DFESP3 = false;
+		sheet.DFESP1 = true;	
+	elseif sheet.DFESP1 == true then
+		sheet.DFESP5 = false;
+		sheet.DFESP4 = false;
+		sheet.DFESP3 = false;
+		sheet.DFESP2 = false;
+	elseif sheet.DFESP1 == false then
+		sheet.DFESP5 = false;
+		sheet.DFESP4 = false;
+		sheet.DFESP3 = false;
+		sheet.DFESP2 = false;
+	end;
+	</event>
+</dataLink>	
+	<!-- Velocidade Negativo -->
+<dataLink fields="{'VELN5', 'VELN4', 'VELN3', 'VELN2', 'VELN1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.VELN5 == true then
+		sheet.VELN4 = true;
+		sheet.VELN3 = true;
+		sheet.VELN2 = true;
+		sheet.VELN1 = true;
+	elseif sheet.VELN4 == true then
+		sheet.VELN5 = false;
+		sheet.VELN3 = true;
+		sheet.VELN2 = true;
+		sheet.VELN1 = true;
+	elseif sheet.VELN3 == true then
+		sheet.VELN5 = false;
+		sheet.VELN4 = false;
+		sheet.VELN2 = true;
+		sheet.VELN1 = true;
+	elseif sheet.VELN2 == true then
+		sheet.VELN5 = false;
+		sheet.VELN4 = false;
+		sheet.VELN3 = false;
+		sheet.VELN1 = true;	
+	elseif sheet.VELN1 == true then
+		sheet.VELN5 = false;
+		sheet.VELN4 = false;
+		sheet.VELN3 = false;
+		sheet.VELN2 = false;
+	elseif sheet.VELN1 == false then
+		sheet.VELN5 = false;
+		sheet.VELN4 = false;
+		sheet.VELN3 = false;
+		sheet.VELN2 = false;
+	end;
+	</event>
+</dataLink>		
+	<!-- Velocidade Positivo -->
+<dataLink fields="{'VELP5', 'VELP4', 'VELP3', 'VELP2', 'VELP1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.VELP5 == true then
+		sheet.VELP4 = true;
+		sheet.VELP3 = true;
+		sheet.VELP2 = true;
+		sheet.VELP1 = true;
+	elseif sheet.VELP4 == true then
+		sheet.VELP5 = false;
+		sheet.VELP3 = true;
+		sheet.VELP2 = true;
+		sheet.VELP1 = true;
+	elseif sheet.VELP3 == true then
+		sheet.VELP5 = false;
+		sheet.VELP4 = false;
+		sheet.VELP2 = true;
+		sheet.VELP1 = true;
+	elseif sheet.VELP2 == true then
+		sheet.VELP5 = false;
+		sheet.VELP4 = false;
+		sheet.VELP3 = false;
+		sheet.VELP1 = true;	
+	elseif sheet.VELP1 == true then
+		sheet.VELP5 = false;
+		sheet.VELP4 = false;
+		sheet.VELP3 = false;
+		sheet.VELP2 = false;
+	elseif sheet.VELP1 == false then
+		sheet.VELP5 = false;
+		sheet.VELP4 = false;
+		sheet.VELP3 = false;
+		sheet.VELP2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- CARISMA -->
+<dataLink fields="{'CAR10', 'CAR9', 'CAR8', 'CAR7', 'CAR6', 'CAR5', 'CAR4', 'CAR3', 'CAR2', 'CAR1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.CAR10 == true then
+		sheet.CAR9 = true;
+		sheet.CAR8 = true;
+		sheet.CAR7 = true;
+		sheet.CAR6 = true;
+		sheet.CAR5 = true;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR9 == true then
+		sheet.CAR10 = false;
+		sheet.CAR8 = true;
+		sheet.CAR7 = true;
+		sheet.CAR6 = true;
+		sheet.CAR5 = true;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR8 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR7 = true;
+		sheet.CAR6 = true;
+		sheet.CAR5 = true;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR7 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR6 = true;
+		sheet.CAR5 = true;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR6 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR5 = true;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR5 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR4 = true;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR4 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR5 = false;
+		sheet.CAR3 = true;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR3 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR5 = false;
+		sheet.CAR4 = false;
+		sheet.CAR2 = true;
+		sheet.CAR1 = true;
+	elseif sheet.CAR2 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR5 = false;
+		sheet.CAR4 = false;
+		sheet.CAR3 = false;
+		sheet.CAR1 = true;	
+	elseif sheet.CAR1 == true then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR5 = false;
+		sheet.CAR4 = false;
+		sheet.CAR3 = false;
+		sheet.CAR2 = false;
+	elseif sheet.CAR1 == false then
+		sheet.CAR10 = false;
+		sheet.CAR9 = false;
+		sheet.CAR8 = false;
+		sheet.CAR7 = false;
+		sheet.CAR6 = false;
+		sheet.CAR5 = false;
+		sheet.CAR4 = false;
+		sheet.CAR3 = false;
+		sheet.CAR2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- BELEZA -->
+<dataLink fields="{'BEL10', 'BEL9', 'BEL8', 'BEL7', 'BEL6', 'BEL5', 'BEL4', 'BEL3', 'BEL2', 'BEL1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.BEL10 == true then
+		sheet.BEL9 = true;
+		sheet.BEL8 = true;
+		sheet.BEL7 = true;
+		sheet.BEL6 = true;
+		sheet.BEL5 = true;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL9 == true then
+		sheet.BEL10 = false;
+		sheet.BEL8 = true;
+		sheet.BEL7 = true;
+		sheet.BEL6 = true;
+		sheet.BEL5 = true;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL8 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL7 = true;
+		sheet.BEL6 = true;
+		sheet.BEL5 = true;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL7 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL6 = true;
+		sheet.BEL5 = true;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL6 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL5 = true;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL5 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL4 = true;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL4 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL5 = false;
+		sheet.BEL3 = true;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL3 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL5 = false;
+		sheet.BEL4 = false;
+		sheet.BEL2 = true;
+		sheet.BEL1 = true;
+	elseif sheet.BEL2 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL5 = false;
+		sheet.BEL4 = false;
+		sheet.BEL3 = false;
+		sheet.BEL1 = true;	
+	elseif sheet.BEL1 == true then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL5 = false;
+		sheet.BEL4 = false;
+		sheet.BEL3 = false;
+		sheet.BEL2 = false;
+	elseif sheet.BEL1 == false then
+		sheet.BEL10 = false;
+		sheet.BEL9 = false;
+		sheet.BEL8 = false;
+		sheet.BEL7 = false;
+		sheet.BEL6 = false;
+		sheet.BEL5 = false;
+		sheet.BEL4 = false;
+		sheet.BEL3 = false;
+		sheet.BEL2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- FOFURA -->
+<dataLink fields="{'FOF10', 'FOF9', 'FOF8', 'FOF7', 'FOF6', 'FOF5', 'FOF4', 'FOF3', 'FOF2', 'FOF1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.FOF10 == true then
+		sheet.FOF9 = true;
+		sheet.FOF8 = true;
+		sheet.FOF7 = true;
+		sheet.FOF6 = true;
+		sheet.FOF5 = true;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF9 == true then
+		sheet.FOF10 = false;
+		sheet.FOF8 = true;
+		sheet.FOF7 = true;
+		sheet.FOF6 = true;
+		sheet.FOF5 = true;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF8 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF7 = true;
+		sheet.FOF6 = true;
+		sheet.FOF5 = true;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF7 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF6 = true;
+		sheet.FOF5 = true;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF6 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF5 = true;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF5 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF4 = true;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF4 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF5 = false;
+		sheet.FOF3 = true;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF3 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF5 = false;
+		sheet.FOF4 = false;
+		sheet.FOF2 = true;
+		sheet.FOF1 = true;
+	elseif sheet.FOF2 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF5 = false;
+		sheet.FOF4 = false;
+		sheet.FOF3 = false;
+		sheet.FOF1 = true;	
+	elseif sheet.FOF1 == true then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF5 = false;
+		sheet.FOF4 = false;
+		sheet.FOF3 = false;
+		sheet.FOF2 = false;
+	elseif sheet.FOF1 == false then
+		sheet.FOF10 = false;
+		sheet.FOF9 = false;
+		sheet.FOF8 = false;
+		sheet.FOF7 = false;
+		sheet.FOF6 = false;
+		sheet.FOF5 = false;
+		sheet.FOF4 = false;
+		sheet.FOF3 = false;
+		sheet.FOF2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- INTELIGÊNCIA -->
+<dataLink fields="{'INT10', 'INT9', 'INT8', 'INT7', 'INT6', 'INT5', 'INT4', 'INT3', 'INT2', 'INT1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.INT10 == true then
+		sheet.INT9 = true;
+		sheet.INT8 = true;
+		sheet.INT7 = true;
+		sheet.INT6 = true;
+		sheet.INT5 = true;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT9 == true then
+		sheet.INT10 = false;
+		sheet.INT8 = true;
+		sheet.INT7 = true;
+		sheet.INT6 = true;
+		sheet.INT5 = true;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT8 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT7 = true;
+		sheet.INT6 = true;
+		sheet.INT5 = true;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT7 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT6 = true;
+		sheet.INT5 = true;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT6 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT5 = true;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT5 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT4 = true;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT4 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT5 = false;
+		sheet.INT3 = true;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT3 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT5 = false;
+		sheet.INT4 = false;
+		sheet.INT2 = true;
+		sheet.INT1 = true;
+	elseif sheet.INT2 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT5 = false;
+		sheet.INT4 = false;
+		sheet.INT3 = false;
+		sheet.INT1 = true;	
+	elseif sheet.INT1 == true then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT5 = false;
+		sheet.INT4 = false;
+		sheet.INT3 = false;
+		sheet.INT2 = false;
+	elseif sheet.INT1 == false then
+		sheet.INT10 = false;
+		sheet.INT9 = false;
+		sheet.INT8 = false;
+		sheet.INT7 = false;
+		sheet.INT6 = false;
+		sheet.INT5 = false;
+		sheet.INT4 = false;
+		sheet.INT3 = false;
+		sheet.INT2 = false;
+	end;
+	</event>
+</dataLink>
+	<!-- RESISTÊNCIA -->
+<dataLink fields="{'RES10', 'RES9', 'RES8', 'RES7', 'RES6', 'RES5', 'RES4', 'RES3', 'RES2', 'RES1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.RES10 == true then
+		sheet.RES9 = true;
+		sheet.RES8 = true;
+		sheet.RES7 = true;
+		sheet.RES6 = true;
+		sheet.RES5 = true;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES9 == true then
+		sheet.RES10 = false;
+		sheet.RES8 = true;
+		sheet.RES7 = true;
+		sheet.RES6 = true;
+		sheet.RES5 = true;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES8 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES7 = true;
+		sheet.RES6 = true;
+		sheet.RES5 = true;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES7 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES6 = true;
+		sheet.RES5 = true;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES6 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES5 = true;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES5 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES4 = true;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES4 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES5 = false;
+		sheet.RES3 = true;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES3 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES5 = false;
+		sheet.RES4 = false;
+		sheet.RES2 = true;
+		sheet.RES1 = true;
+	elseif sheet.RES2 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES5 = false;
+		sheet.RES4 = false;
+		sheet.RES3 = false;
+		sheet.RES1 = true;	
+	elseif sheet.RES1 == true then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES5 = false;
+		sheet.RES4 = false;
+		sheet.RES3 = false;
+		sheet.RES2 = false;
+	elseif sheet.RES1 == false then
+		sheet.RES10 = false;
+		sheet.RES9 = false;
+		sheet.RES8 = false;
+		sheet.RES7 = false;
+		sheet.RES6 = false;
+		sheet.RES5 = false;
+		sheet.RES4 = false;
+		sheet.RES3 = false;
+		sheet.RES2 = false;
+	end;
+	</event>
+</dataLink>
+
+</form>

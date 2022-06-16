@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmChangelingMorganna4_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmChangelingMorganna4_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmChangelingMorganna4_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/4.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+<!-- Prelúdio --> 			
+			<layout left="73" top="167" width="750" height="510" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="750" height="510" field="Preludio" compilerOrder="646"/>
+			</layout>&#xD;
+<!-- Mien Mortal --> 			
+			<layout left="73" top="735" width="375" height="463" compilerOrder="645">
+				<image field="ImagemMortal" editable="true" style="autoFit" width="375" height="463" />
+			</layout>&#xD;
+<!-- Fen Mien --> 			
+			<layout left="450" top="735" width="375" height="463" compilerOrder="645">
+				<image field="ImagemFada" editable="true" style="autoFit" width="375" height="463" />
+			</layout>&#xD;
+        </rectangle>
+    </scrollBox>
+</form>

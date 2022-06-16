@@ -1,0 +1,1925 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmPokeRPGT1_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmPokeRPGT1_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmPokeRPGT1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+
+    <scrollBox align="client">
+        <rectangle width="952" height="1347" color="white">&#xD;
+            <image left="0" top="0" width="952" height="1347" src="images/1.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+<!-- _______________________________________________________________________________Área do Treinador_______________________________________________________________________________ -->
+					<!--Vitalidade-->
+            <layout left="630" top="273" width="20" height="20" compilerOrder="1">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit1" compilerOrder="2"/>
+            </layout>&#xD;
+            <layout left="650" top="273" width="20" height="20" compilerOrder="3">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit2" compilerOrder="4"/>
+            </layout>&#xD;
+            <layout left="670" top="273" width="20" height="20" compilerOrder="5">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit3" compilerOrder="6"/>
+            </layout>&#xD;
+            <layout left="690" top="273" width="20" height="20" compilerOrder="7">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit4" compilerOrder="8"/>
+            </layout>&#xD;
+			<layout left="710" top="273" width="20" height="20" compilerOrder="9">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit5" compilerOrder="10"/>
+            </layout>&#xD;
+            <layout left="730" top="273" width="20" height="20" compilerOrder="11">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit6" compilerOrder="12"/>
+            </layout>&#xD;
+            <layout left="750" top="273" width="20" height="20" compilerOrder="13">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit7" compilerOrder="14"/>
+            </layout>&#xD;
+            <layout left="770" top="273" width="20" height="20" compilerOrder="15">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit8" compilerOrder="16"/>
+            </layout>&#xD;
+            <layout left="790" top="273" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit9" compilerOrder="18"/>
+            </layout>&#xD;
+            <layout left="810" top="273" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit10" compilerOrder="20"/>
+            </layout>&#xD;
+            <layout left="830" top="273" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit11" compilerOrder="22"/>
+            </layout>&#xD;
+            <layout left="850" top="273" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="vit12" compilerOrder="24"/>
+            </layout>&#xD;
+						<!--Personagem-->
+            <layout left="90" top="268" width="210" height="30" compilerOrder="25">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="pj" compilerOrder="26"/>
+            </layout>&#xD;
+						<!--Classe Básica-->
+            <layout left="368" top="268" width="210" height="30" compilerOrder="27">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="cb" compilerOrder="28"/>
+            </layout>&#xD;
+						<!--Ações Diárias-->
+            <layout left="630" top="316" width="20" height="20" compilerOrder="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd1" compilerOrder="30"/>
+            </layout>&#xD;
+            <layout left="650" top="316" width="20" height="20" compilerOrder="31">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd2" compilerOrder="32"/>
+            </layout>&#xD;
+            <layout left="670" top="316" width="20" height="20" compilerOrder="33">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd3" compilerOrder="34"/>
+            </layout>&#xD;
+            <layout left="690" top="316" width="20" height="20" compilerOrder="35">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd4" compilerOrder="36"/>
+            </layout>&#xD;
+            <layout left="710" top="316" width="20" height="20" compilerOrder="37">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd5" compilerOrder="38"/>
+            </layout>&#xD;
+            <layout left="730" top="316" width="20" height="20" compilerOrder="39">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd6" compilerOrder="40"/>
+            </layout>&#xD;
+            <layout left="750" top="316" width="20" height="20" compilerOrder="41">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd7" compilerOrder="42"/>
+            </layout>&#xD;
+            <layout left="770" top="316" width="20" height="20" compilerOrder="43">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd8" compilerOrder="44"/>
+            </layout>&#xD;
+            <layout left="790" top="316" width="20" height="20" compilerOrder="45">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd9" compilerOrder="46"/>
+            </layout>&#xD;
+            <layout left="810" top="316" width="20" height="20" compilerOrder="47">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd10" compilerOrder="48"/>
+            </layout>&#xD;
+            <layout left="830" top="316" width="20" height="20" compilerOrder="49">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd11" compilerOrder="50"/>
+            </layout>&#xD;
+            <layout left="850" top="316" width="20" height="20" compilerOrder="51">
+                <imageCheckBox checkedImage="PokeRPGT/images/premierball_on.png" uncheckedImage="PokeRPGT/images/premierball_off.png" width="20" height="20" field="acd12" compilerOrder="52"/>
+            </layout>&#xD;
+						<!--Cidade/Região-->
+            <layout left="90" top="320" width="210" height="30" compilerOrder="53">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="Cidade" compilerOrder="54"/>
+            </layout>&#xD;
+						<!--Classe Avançada-->
+            <layout left="368" top="320" width="210" height="30" compilerOrder="55">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="ca" compilerOrder="56"/>
+            </layout>&#xD;
+						<!--Professor-->
+            <layout left="90" top="375" width="210" height="30" compilerOrder="57">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="prof" compilerOrder="58"/>
+            </layout>&#xD;
+						<!--Tendência-->
+            <layout left="368" top="375" width="210" height="30" compilerOrder="59">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="210" height="31" field="tend" compilerOrder="60"/>
+            </layout>&#xD;
+						<!--EXP-->
+            <layout left="630" top="383" width="85" height="30" compilerOrder="61">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="85" height="30" field="xp" compilerOrder="62"/>
+            </layout>&#xD;
+						<!--P$-->
+            <layout left="768" top="383" width="85" height="30" compilerOrder="63">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="85" height="30" field="dinheiro" compilerOrder="64"/>
+            </layout>&#xD;
+			
+<!-- _______________________________________________________________________________ ATRIBUTOS _______________________________________________________________________________ -->
+		
+			<!--Força-->
+            <layout left="140" top="523" width="19" height="19" compilerOrder="65">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for1" compilerOrder="66"/>
+            </layout>&#xD;
+            <layout left="159" top="523" width="19" height="19" compilerOrder="67">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for2" compilerOrder="68"/>
+            </layout>&#xD;
+            <layout left="178" top="523" width="19" height="19" compilerOrder="69">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for3" compilerOrder="70"/>
+            </layout>&#xD;
+            <layout left="197"  top="523" width="19" height="19" compilerOrder="71">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for4" compilerOrder="72"/>
+            </layout>&#xD;
+            <layout left="216" top="523" width="19" height="19" compilerOrder="73">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for5" compilerOrder="74"/>
+            </layout>&#xD;
+			<layout left="235" top="523" width="19" height="19" compilerOrder="75">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for6" compilerOrder="76"/>
+            </layout>&#xD;
+            <layout left="254" top="523" width="19" height="19" compilerOrder="77">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for7" compilerOrder="78"/>
+            </layout>&#xD;
+            <layout left="273" top="523" width="19" height="19" compilerOrder="79">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for8" compilerOrder="80"/>
+            </layout>&#xD;
+            <layout left="292" top="523" width="19" height="19" compilerOrder="81">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="for9" compilerOrder="82"/>
+            </layout>&#xD;
+						<!--Percepção-->
+            <layout left="747" top="523" width="19" height="19" compilerOrder="83">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per1" compilerOrder="84"/>
+            </layout>&#xD;
+            <layout left="766" top="523" width="19" height="19" compilerOrder="85">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per2" compilerOrder="86"/>
+            </layout>&#xD;
+            <layout left="785" top="523" width="19" height="19" compilerOrder="87">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per3" compilerOrder="88"/>
+            </layout>&#xD;
+            <layout left="804" top="523" width="19" height="19" compilerOrder="89">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per4" compilerOrder="90"/>
+            </layout>&#xD;
+            <layout left="823" top="523" width="19" height="19" compilerOrder="91">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per5" compilerOrder="92"/>
+            </layout>&#xD;
+            <layout left="842" top="523" width="19" height="19" compilerOrder="93">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per6" compilerOrder="94"/>
+            </layout>&#xD;
+            <layout left="861" top="523" width="19" height="19" compilerOrder="95">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per7" compilerOrder="96"/>
+            </layout>&#xD;
+            <layout left="880" top="523" width="19" height="19" compilerOrder="97">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per8" compilerOrder="98"/>
+            </layout>&#xD;
+            <layout left="899" top="523" width="19" height="19" compilerOrder="99">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="per9" compilerOrder="100"/>
+            </layout>&#xD;
+						<!--Carisma-->
+            <layout left="447" top="523" width="19" height="19" compilerOrder="101">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car1" compilerOrder="102"/>
+            </layout>&#xD;
+            <layout left="466" top="523" width="19" height="19" compilerOrder="103">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car2" compilerOrder="104"/>
+            </layout>&#xD;
+            <layout left="485" top="523" width="19" height="19" compilerOrder="105">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car3" compilerOrder="106"/>
+            </layout>&#xD;
+            <layout left="504" top="523" width="19" height="19" compilerOrder="107">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car4" compilerOrder="108"/>
+            </layout>&#xD;
+            <layout left="523" top="523" width="19" height="19" compilerOrder="109">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car5" compilerOrder="110"/>	
+            </layout>&#xD;
+			<layout left="542" top="523" width="19" height="19" compilerOrder="111">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car6" compilerOrder="112"/>
+            </layout>&#xD;
+            <layout left="561" top="523" width="19" height="19" compilerOrder="113">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car7" compilerOrder="114"/>
+            </layout>&#xD;
+            <layout left="580" top="523" width="19" height="19" compilerOrder="115">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car8" compilerOrder="116"/>
+            </layout>&#xD;
+            <layout left="599" top="523" width="19" height="19" compilerOrder="117">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="car9" compilerOrder="118"/>	
+            </layout>&#xD;
+						<!--Destreza-->
+            <layout left="140" top="550" width="19" height="19" compilerOrder="119">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des1" compilerOrder="120"/>
+            </layout>&#xD;
+            <layout left="159" top="550" width="19" height="19" compilerOrder="121">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des2" compilerOrder="122"/>
+            </layout>&#xD;
+            <layout left="178" top="550" width="19" height="19" compilerOrder="123">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des3" compilerOrder="124"/>
+            </layout>&#xD;
+            <layout left="197"  top="550" width="19" height="19" compilerOrder="125">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des4" compilerOrder="126"/>
+            </layout>&#xD;
+            <layout left="216" top="550" width="19" height="19" compilerOrder="127">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des5" compilerOrder="128"/>
+            </layout>&#xD;
+			<layout left="235" top="550" width="19" height="19" compilerOrder="129">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des6" compilerOrder="130"/>
+            </layout>&#xD;
+            <layout left="254" top="550" width="19" height="19" compilerOrder="131">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des7" compilerOrder="132"/>
+            </layout>&#xD;
+            <layout left="273" top="550" width="19" height="19" compilerOrder="133">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des8" compilerOrder="134"/>
+            </layout>&#xD;
+            <layout left="292" top="550" width="19" height="19" compilerOrder="135">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="des9" compilerOrder="136"/>
+            </layout>&#xD;
+						<!--Inteligência-->
+            <layout left="747" top="550" width="19" height="19" compilerOrder="137">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int1" compilerOrder="138"/>
+            </layout>&#xD;
+            <layout left="766" top="550" width="19" height="19" compilerOrder="139">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int2" compilerOrder="140"/>
+            </layout>&#xD;
+            <layout left="785" top="550" width="19" height="19" compilerOrder="141">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int3" compilerOrder="142"/>
+            </layout>&#xD;
+            <layout left="804" top="550" width="19" height="19" compilerOrder="143">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int4" compilerOrder="144"/>
+            </layout>&#xD;
+            <layout left="823" top="550" width="19" height="19" compilerOrder="145">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int5" compilerOrder="146"/>
+            </layout>&#xD;
+			<layout left="842" top="550" width="19" height="19" compilerOrder="147">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int6" compilerOrder="148"/>
+            </layout>&#xD;
+            <layout left="861" top="550" width="19" height="19" compilerOrder="149">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int7" compilerOrder="150"/>
+            </layout>&#xD;
+            <layout left="880" top="550" width="19" height="19" compilerOrder="151">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int8" compilerOrder="152"/>
+            </layout>&#xD;
+            <layout left="899" top="550" width="19" height="19" compilerOrder="153">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="int9" compilerOrder="154"/>
+            </layout>&#xD;
+						<!--Manipulação-->
+            <layout left="447" top="550" width="19" height="19" compilerOrder="155">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man1" compilerOrder="156"/>
+            </layout>&#xD;
+            <layout left="466" top="550" width="19" height="19" compilerOrder="157">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man2" compilerOrder="158"/>
+            </layout>&#xD;
+            <layout left="485" top="550" width="19" height="19" compilerOrder="159">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man3" compilerOrder="160"/>
+            </layout>&#xD;
+            <layout left="504" top="550" width="19" height="19" compilerOrder="161">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man4" compilerOrder="162"/>
+            </layout>&#xD;
+            <layout left="523" top="550" width="19" height="19" compilerOrder="163">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man5" compilerOrder="164"/>
+            </layout>&#xD;
+            <layout left="542" top="550" width="19" height="19" compilerOrder="165">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man6" compilerOrder="166"/>
+            </layout>&#xD;
+            <layout left="561" top="550" width="19" height="19" compilerOrder="167">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man7" compilerOrder="168"/>
+            </layout>&#xD;
+            <layout left="580" top="550" width="19" height="19" compilerOrder="169">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man8" compilerOrder="170"/>
+            </layout>&#xD;
+            <layout left="599" top="550" width="19" height="19" compilerOrder="171">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="man9" compilerOrder="172"/>
+            </layout>&#xD;
+						<!--Vigor-->
+            <layout left="140" top="575" width="19" height="19" compilerOrder="173">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig1" compilerOrder="174"/>
+            </layout>&#xD;
+            <layout left="159" top="575" width="19" height="19" compilerOrder="175">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig2" compilerOrder="176"/>
+            </layout>&#xD;
+            <layout left="178" top="575" width="19" height="19" compilerOrder="177">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig3" compilerOrder="178"/>
+            </layout>&#xD;
+            <layout left="197"  top="575" width="19" height="19" compilerOrder="179">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig4" compilerOrder="180"/>
+            </layout>&#xD;
+            <layout left="216" top="575" width="19" height="19" compilerOrder="181">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig5" compilerOrder="182"/>
+            </layout>&#xD;
+            <layout left="235" top="575" width="19" height="19" compilerOrder="183">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig6" compilerOrder="184"/>
+            </layout>&#xD;
+            <layout left="254" top="575" width="19" height="19" compilerOrder="185">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig7" compilerOrder="186"/>
+            </layout>&#xD;
+            <layout left="273" top="575" width="19" height="19" compilerOrder="187">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig8" compilerOrder="188"/>
+            </layout>&#xD;
+            <layout left="292" top="575" width="19" height="19" compilerOrder="189">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="vig9" compilerOrder="190"/>
+            </layout>&#xD;
+						<!--Racioncínio-->
+            <layout left="747" top="575" width="19" height="19" compilerOrder="191">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac1" compilerOrder="192"/>
+            </layout>&#xD;
+            <layout left="766" top="575" width="19" height="19" compilerOrder="193">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac2" compilerOrder="194"/>
+            </layout>&#xD;
+            <layout left="785" top="575" width="19" height="19" compilerOrder="195">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac3" compilerOrder="196"/>
+            </layout>&#xD;
+            <layout left="804" top="575" width="19" height="19" compilerOrder="197">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac4" compilerOrder="198"/>
+            </layout>&#xD;
+            <layout left="823" top="575" width="19" height="19" compilerOrder="199">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac5" compilerOrder="200"/>
+            </layout>&#xD;
+            <layout left="842" top="575" width="19" height="19" compilerOrder="201">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac6" compilerOrder="202"/>
+            </layout>&#xD;
+            <layout left="861" top="575" width="19" height="19" compilerOrder="203">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac7" compilerOrder="204"/>
+            </layout>&#xD;
+            <layout left="880" top="575" width="19" height="19" compilerOrder="205">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac8" compilerOrder="206"/>
+            </layout>&#xD;
+            <layout left="899" top="575" width="19" height="19" compilerOrder="207">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="rac9" compilerOrder="208"/>
+            </layout>&#xD;
+					<!--Aparência-->
+            <layout left="447" top="575" width="19" height="19" compilerOrder="209">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap1" compilerOrder="210"/>
+            </layout>&#xD;
+            <layout left="466" top="575" width="19" height="19" compilerOrder="211">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap2" compilerOrder="212"/>
+            </layout>&#xD;
+			<layout left="485" top="575" width="19" height="19" compilerOrder="213">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap3" compilerOrder="214"/>
+            </layout>&#xD;
+            <layout left="504" top="575" width="19" height="19" compilerOrder="215">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap4" compilerOrder="216"/>
+            </layout>&#xD;
+            <layout left="523" top="575" width="19" height="19" compilerOrder="217">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap5" compilerOrder="218"/>
+            </layout>&#xD;
+            <layout left="542" top="575" width="19" height="19" compilerOrder="219">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap6" compilerOrder="220"/>
+            </layout>&#xD;
+			<layout left="561" top="575" width="19" height="19" compilerOrder="221">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap7" compilerOrder="222"/>
+            </layout>&#xD;
+            <layout left="580" top="575" width="19" height="19" compilerOrder="223">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap8" compilerOrder="224"/>
+            </layout>&#xD;
+            <layout left="599" top="575" width="19" height="19" compilerOrder="225">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ap9" compilerOrder="226"/>
+            </layout>&#xD;
+			
+<!-- _______________________________________________________________________________ HABILIDADES _______________________________________________________________________________ -->
+						<!--Prontidão-->
+            <layout left="140" top="695" width="19" height="19" compilerOrder="227">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront1" compilerOrder="228"/>
+            </layout>&#xD;
+            <layout left="159" top="695" width="19" height="19" compilerOrder="229">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront2" compilerOrder="230"/>
+            </layout>&#xD;
+            <layout left="178" top="695" width="19" height="19" compilerOrder="231">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront3" compilerOrder="232"/>
+            </layout>&#xD;
+            <layout left="197" top="695" width="19" height="19" compilerOrder="233">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront4" compilerOrder="234"/>
+            </layout>&#xD;
+            <layout left="216" top="695" width="19" height="19" compilerOrder="235">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront5" compilerOrder="236"/>
+            </layout>&#xD;
+            <layout left="235" top="695" width="19" height="19" compilerOrder="237">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront6" compilerOrder="238"/>
+            </layout>&#xD;
+            <layout left="254" top="695" width="19" height="19" compilerOrder="239">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront7" compilerOrder="240"/>
+            </layout>&#xD;
+            <layout left="273" top="695" width="19" height="19" compilerOrder="241">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront8" compilerOrder="242"/>
+            </layout>&#xD;
+            <layout left="292" top="695" width="19" height="19" compilerOrder="243">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="pront9" compilerOrder="244"/>
+            </layout>&#xD;
+						<!--Acadêmico-->
+            <layout left="747" top="695" width="19" height="19" compilerOrder="245">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad1" compilerOrder="246"/>
+            </layout>&#xD;
+            <layout left="766" top="695" width="19" height="19" compilerOrder="247">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad2" compilerOrder="248"/>
+            </layout>&#xD;
+            <layout left="785" top="695" width="19" height="19" compilerOrder="249">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad3" compilerOrder="250"/>
+            </layout>&#xD;
+            <layout left="804" top="695" width="19" height="19" compilerOrder="251">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad4" compilerOrder="252"/>
+            </layout>&#xD;
+            <layout left="823" top="695" width="19" height="19" compilerOrder="253">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad5" compilerOrder="254"/>
+            </layout>&#xD;
+            <layout left="842" top="695" width="19" height="19" compilerOrder="255">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad6" compilerOrder="256"/>
+            </layout>&#xD;
+            <layout left="861" top="695" width="19" height="19" compilerOrder="257">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad7" compilerOrder="258"/>
+            </layout>&#xD;
+            <layout left="880" top="695" width="19" height="19" compilerOrder="259">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad8" compilerOrder="260"/>
+            </layout>&#xD;
+            <layout left="899" top="695" width="19" height="19" compilerOrder="261">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="acad9" compilerOrder="262"/>
+            </layout>&#xD;			
+						<!--Empatia Pokemon-->			
+            <layout left="447" top="695" width="19" height="19" compilerOrder="263">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke1" compilerOrder="264"/>
+            </layout>&#xD;
+            <layout left="466" top="695" width="19" height="19" compilerOrder="265">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke2" compilerOrder="266"/>
+            </layout>&#xD;
+            <layout left="485" top="695" width="19" height="19" compilerOrder="267">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke3" compilerOrder="268"/>
+            </layout>&#xD;
+            <layout left="504" top="695" width="19" height="19" compilerOrder="269">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke4" compilerOrder="270"/>
+            </layout>&#xD;
+            <layout left="523" top="695" width="19" height="19" compilerOrder="271">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke5" compilerOrder="272"/>
+            </layout>&#xD;
+            <layout left="542" top="695" width="19" height="19" compilerOrder="273">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke6" compilerOrder="274"/>
+            </layout>&#xD;
+            <layout left="561" top="695" width="19" height="19" compilerOrder="275">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke7" compilerOrder="276"/>
+            </layout>&#xD;
+            <layout left="580" top="695" width="19" height="19" compilerOrder="277">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke8" compilerOrder="278"/>
+            </layout>&#xD;
+            <layout left="599" top="695" width="19" height="19" compilerOrder="279">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="poke9" compilerOrder="280"/>
+            </layout>&#xD;			
+						<!--Esportes-->			
+            <layout left="140"  top="721" width="19" height="19" compilerOrder="281">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp1" compilerOrder="282"/>
+            </layout>&#xD;
+            <layout left="159"  top="721" width="19" height="19" compilerOrder="283">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp2" compilerOrder="284"/>
+            </layout>&#xD;
+            <layout left="178"  top="721" width="19" height="19" compilerOrder="285">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp3" compilerOrder="286"/>
+            </layout>&#xD;
+            <layout left="197"  top="721" width="19" height="19" compilerOrder="287">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp4" compilerOrder="288"/>
+            </layout>&#xD;
+            <layout left="216"  top="721" width="19" height="19" compilerOrder="289">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp5" compilerOrder="290"/>
+            </layout>&#xD;
+            <layout left="235"  top="721" width="19" height="19" compilerOrder="291">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp6" compilerOrder="292"/>
+            </layout>&#xD;
+            <layout left="254"  top="721" width="19" height="19" compilerOrder="293">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp7" compilerOrder="294"/>
+            </layout>&#xD;
+            <layout left="273"  top="721" width="19" height="19" compilerOrder="295">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp8" compilerOrder="296"/>
+            </layout>&#xD;
+            <layout left="292"  top="721" width="19" height="19" compilerOrder="297">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esp9" compilerOrder="298"/>
+            </layout>&#xD;			
+						<!--Computação-->						
+            <layout left="747" top="721" width="19" height="19" compilerOrder="299">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp1" compilerOrder="300"/>
+            </layout>&#xD;
+            <layout left="766" top="721" width="19" height="19" compilerOrder="301">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp2" compilerOrder="302"/>
+            </layout>&#xD;
+            <layout left="785" top="721" width="19" height="19" compilerOrder="303">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp3" compilerOrder="304"/>
+            </layout>&#xD;
+            <layout left="804" top="721" width="19" height="19" compilerOrder="305">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp4" compilerOrder="306"/>
+            </layout>&#xD;
+            <layout left="823" top="721" width="19" height="19" compilerOrder="307">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp5" compilerOrder="308"/>
+            </layout>&#xD;
+            <layout left="842" top="721" width="19" height="19" compilerOrder="309">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp6" compilerOrder="310"/>
+            </layout>&#xD;
+            <layout left="861" top="721" width="19" height="19" compilerOrder="311">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp7" compilerOrder="312"/>
+            </layout>&#xD;
+            <layout left="880" top="721" width="19" height="19" compilerOrder="313">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp8" compilerOrder="314"/>
+            </layout>&#xD;
+            <layout left="899" top="721" width="19" height="19" compilerOrder="315">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="comp9" compilerOrder="316"/>
+            </layout>&#xD;			
+						<!--Oficios-->						
+            <layout left="447" top="721" width="19" height="19" compilerOrder="317">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc1" compilerOrder="318"/>
+            </layout>&#xD;
+            <layout left="466" top="721" width="19" height="19" compilerOrder="319">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc2" compilerOrder="320"/>
+            </layout>&#xD;
+            <layout left="485" top="721" width="19" height="19" compilerOrder="321">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc3" compilerOrder="322"/>
+            </layout>&#xD;
+            <layout left="504" top="721" width="19" height="19" compilerOrder="323">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc4" compilerOrder="324"/>
+            </layout>&#xD;
+            <layout left="523" top="721" width="19" height="19" compilerOrder="325">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc5" compilerOrder="326"/>
+            </layout>&#xD;
+            <layout left="542" top="721" width="19" height="19" compilerOrder="327">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc6" compilerOrder="328"/>
+            </layout>&#xD;
+            <layout left="561" top="721" width="19" height="19" compilerOrder="329">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc7" compilerOrder="330"/>
+            </layout>&#xD;
+            <layout left="580" top="721" width="19" height="19" compilerOrder="331">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc8" compilerOrder="332"/>
+            </layout>&#xD;
+            <layout left="599" top="721" width="19" height="19" compilerOrder="333">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ofc9" compilerOrder="334"/>
+            </layout>&#xD;			
+						<!--Briga-->			
+            <layout left="140"  top="747" width="19" height="19" compilerOrder="335">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri1" compilerOrder="336"/>
+            </layout>&#xD;
+            <layout left="159"  top="747" width="19" height="19" compilerOrder="337">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri2" compilerOrder="338"/>
+            </layout>&#xD;
+            <layout left="178" top="747" width="19" height="19" compilerOrder="339">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri3" compilerOrder="340"/>
+            </layout>&#xD;
+            <layout left="197" top="747" width="19" height="19" compilerOrder="341">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri4" compilerOrder="342"/>
+            </layout>&#xD;
+            <layout left="216"  top="747" width="19" height="19" compilerOrder="343">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri5" compilerOrder="344"/>
+            </layout>&#xD;
+            <layout left="235" top="747" width="19" height="19" compilerOrder="345">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri6" compilerOrder="346"/>
+            </layout>&#xD;
+            <layout left="254" top="747" width="19" height="19" compilerOrder="347">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri7" compilerOrder="348"/>
+            </layout>&#xD;
+            <layout left="273" top="747" width="19" height="19" compilerOrder="349">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri8" compilerOrder="350"/>
+            </layout>&#xD;
+            <layout left="292" top="747" width="19" height="19" compilerOrder="351">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="bri9" compilerOrder="352"/>
+            </layout>&#xD;			
+						<!--Habitat-->			
+            <layout left="747" top="747" width="19" height="19" compilerOrder="353">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit1" compilerOrder="354"/>
+            </layout>&#xD;
+            <layout left="766" top="747" width="19" height="19" compilerOrder="355">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit2" compilerOrder="356"/>
+            </layout>&#xD;
+            <layout left="785" top="747" width="19" height="19" compilerOrder="357">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit3" compilerOrder="358"/>
+            </layout>&#xD;
+            <layout left="804" top="747" width="19" height="19" compilerOrder="359">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit4" compilerOrder="360"/>
+            </layout>&#xD;
+            <layout left="823" top="747" width="19" height="19" compilerOrder="361">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit5" compilerOrder="362"/>
+            </layout>&#xD;
+            <layout left="842" top="747" width="19" height="19" compilerOrder="363">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit6" compilerOrder="364"/>
+            </layout>&#xD;
+            <layout left="861" top="747" width="19" height="19" compilerOrder="365">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit7" compilerOrder="366"/>
+            </layout>&#xD;
+            <layout left="880" top="747" width="19" height="19" compilerOrder="367">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit8" compilerOrder="368"/>
+            </layout>&#xD;
+            <layout left="899" top="747" width="19" height="19" compilerOrder="369">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="habit9" compilerOrder="370"/>
+            </layout>&#xD;			
+						<!--Etiqueta-->			
+            <layout left="447" top="747" width="19" height="19" compilerOrder="371">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond1" compilerOrder="372"/>
+            </layout>&#xD;
+            <layout left="466" top="747" width="19" height="19" compilerOrder="373">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond2" compilerOrder="374"/>
+            </layout>&#xD;
+            <layout left="485" top="747" width="19" height="19" compilerOrder="375">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond3" compilerOrder="376"/>
+            </layout>&#xD;
+            <layout left="504" top="747" width="19" height="19" compilerOrder="377">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond4" compilerOrder="378"/>
+            </layout>&#xD;
+            <layout left="523" top="747" width="19" height="19" compilerOrder="379">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond5" compilerOrder="380"/>
+            </layout>&#xD;
+            <layout left="542" top="747" width="19" height="19" compilerOrder="381">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond6" compilerOrder="382"/>
+            </layout>&#xD;
+            <layout left="561" top="747" width="19" height="19" compilerOrder="383">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond7" compilerOrder="384"/>
+            </layout>&#xD;
+            <layout left="580" top="747" width="19" height="19" compilerOrder="385">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond8" compilerOrder="386"/>
+            </layout>&#xD;
+            <layout left="599" top="747" width="19" height="19" compilerOrder="387">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cond9" compilerOrder="388"/>
+            </layout>&#xD;			
+						<!--Esquiva-->			
+            <layout left="140"  top="774" width="19" height="19" compilerOrder="389">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq1" compilerOrder="390"/>
+            </layout>&#xD;
+            <layout left="159"  top="774" width="19" height="19" compilerOrder="391">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq2" compilerOrder="392"/>
+            </layout>&#xD;
+            <layout left="178"  top="774" width="19" height="19" compilerOrder="393">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq3" compilerOrder="394"/>
+            </layout>&#xD;
+            <layout left="197"  top="774" width="19" height="19" compilerOrder="395">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq4" compilerOrder="396"/>
+            </layout>&#xD;
+            <layout left="216"  top="774" width="19" height="19" compilerOrder="397">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq5" compilerOrder="398"/>
+            </layout>&#xD;
+            <layout left="235"  top="774" width="19" height="19" compilerOrder="399">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq6" compilerOrder="400"/>
+            </layout>&#xD;
+            <layout left="254"  top="774" width="19" height="19" compilerOrder="401">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq7" compilerOrder="402"/>
+            </layout>&#xD;
+            <layout left="273"  top="774" width="19" height="19" compilerOrder="403">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq8" compilerOrder="404"/>
+            </layout>&#xD;
+            <layout left="292"  top="774" width="19" height="19" compilerOrder="405">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="esq9" compilerOrder="406"/>
+            </layout>&#xD;			
+						<!--Investigação-->			
+            <layout left="747" top="774" width="19" height="19" compilerOrder="407">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves1" compilerOrder="408"/>
+            </layout>&#xD;
+            <layout left="766" top="774" width="19" height="19" compilerOrder="409">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves2" compilerOrder="410"/>
+            </layout>&#xD;
+            <layout left="785" top="774" width="19" height="19" compilerOrder="411">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves3" compilerOrder="412"/>
+            </layout>&#xD;
+            <layout left="804" top="774" width="19" height="19" compilerOrder="413">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves4" compilerOrder="414"/>
+            </layout>&#xD;
+            <layout left="823" top="774" width="19" height="19" compilerOrder="415">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves5" compilerOrder="416"/>
+            </layout>&#xD;
+            <layout left="842" top="774" width="19" height="19" compilerOrder="417">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves6" compilerOrder="418"/>
+            </layout>&#xD;
+            <layout left="861" top="774" width="19" height="19" compilerOrder="419">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves7" compilerOrder="420"/>
+            </layout>&#xD;
+            <layout left="880" top="774" width="19" height="19" compilerOrder="421">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves8" compilerOrder="422"/>
+            </layout>&#xD;
+            <layout left="899" top="774" width="19" height="19" compilerOrder="423">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="inves9" compilerOrder="424"/>
+            </layout>&#xD;			
+						<!--Atuação-->			
+            <layout left="447" top="774" width="19" height="19" compilerOrder="425">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et1" compilerOrder="426"/>
+            </layout>&#xD;
+            <layout left="466" top="774" width="19" height="19" compilerOrder="427">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et2" compilerOrder="428"/>
+            </layout>&#xD;
+            <layout left="485" top="774" width="19" height="19" compilerOrder="429">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et3" compilerOrder="430"/>
+            </layout>&#xD;
+            <layout left="504" top="774" width="19" height="19" compilerOrder="431">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et4" compilerOrder="432"/>
+            </layout>&#xD;
+            <layout left="523" top="774" width="19" height="19" compilerOrder="433">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et5" compilerOrder="434"/>
+            </layout>&#xD;
+            <layout left="542" top="774" width="19" height="19" compilerOrder="435">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et6" compilerOrder="436"/>
+            </layout>&#xD;
+            <layout left="561" top="774" width="19" height="19" compilerOrder="437">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et7" compilerOrder="438"/>
+            </layout>&#xD;
+            <layout left="580" top="774" width="19" height="19" compilerOrder="439">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et8" compilerOrder="440"/>
+            </layout>&#xD;
+            <layout left="599" top="774" width="19" height="19" compilerOrder="441">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="et9" compilerOrder="442"/>
+            </layout>&#xD;			
+						<!--Empatia-->			
+            <layout left="140"  top="799" width="19" height="19" compilerOrder="443">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp1" compilerOrder="444"/>
+            </layout>&#xD;
+            <layout left="159"  top="799" width="19" height="19" compilerOrder="445">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp2" compilerOrder="446"/>
+            </layout>&#xD;
+            <layout left="178" top="799" width="19" height="19" compilerOrder="447">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp3" compilerOrder="448"/>
+            </layout>&#xD;
+            <layout left="197"  top="799" width="19" height="19" compilerOrder="449">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp4" compilerOrder="450"/>
+            </layout>&#xD;
+            <layout left="216"  top="799" width="19" height="19" compilerOrder="451">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp5" compilerOrder="452"/>
+            </layout>&#xD;
+            <layout left="235"  top="799" width="19" height="19" compilerOrder="453">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp6" compilerOrder="454"/>
+            </layout>&#xD;
+            <layout left="254" top="799" width="19" height="19" compilerOrder="455">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp7" compilerOrder="456"/>
+            </layout>&#xD;
+            <layout left="273"  top="799" width="19" height="19" compilerOrder="457">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp8" compilerOrder="458"/>
+            </layout>&#xD;
+            <layout left="292"  top="799" width="19" height="19" compilerOrder="459">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="emp9" compilerOrder="460"/>
+            </layout>&#xD;			
+						<!--Segurança-->			
+            <layout left="447" top="799" width="19" height="19" compilerOrder="461">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act1" compilerOrder="462"/>
+            </layout>&#xD;
+            <layout left="466" top="799" width="19" height="19" compilerOrder="463">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act2" compilerOrder="464"/>
+            </layout>&#xD;
+            <layout left="485" top="799" width="19" height="19" compilerOrder="465">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act3" compilerOrder="466"/>
+            </layout>&#xD;
+            <layout left="504" top="799" width="19" height="19" compilerOrder="467">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act4" compilerOrder="468"/>
+            </layout>&#xD;
+            <layout left="523" top="799" width="19" height="19" compilerOrder="469">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act5" compilerOrder="470"/>
+            </layout>&#xD;
+            <layout left="542" top="799" width="19" height="19" compilerOrder="471">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act6" compilerOrder="472"/>
+            </layout>&#xD;
+            <layout left="561" top="799" width="19" height="19" compilerOrder="473">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act7" compilerOrder="474"/>
+            </layout>&#xD;
+            <layout left="580" top="799" width="19" height="19" compilerOrder="475">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act8" compilerOrder="476"/>
+            </layout>&#xD;
+            <layout left="599" top="799" width="19" height="19" compilerOrder="477">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="act9" compilerOrder="478"/>
+            </layout>&#xD;			
+						<!--Direito-->			
+            <layout left="747" top="799" width="19" height="19" compilerOrder="479">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir1" compilerOrder="480"/>
+            </layout>&#xD;
+            <layout left="766" top="799" width="19" height="19" compilerOrder="481">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir2" compilerOrder="482"/>
+            </layout>&#xD;
+            <layout left="785" top="799" width="19" height="19" compilerOrder="483">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir3" compilerOrder="484"/>
+            </layout>&#xD;
+            <layout left="804" top="799" width="19" height="19" compilerOrder="485">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir4" compilerOrder="486"/>
+            </layout>&#xD;
+            <layout left="823" top="799" width="19" height="19" compilerOrder="487">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir5" compilerOrder="488"/>
+            </layout>&#xD;
+            <layout left="842" top="799" width="19" height="19" compilerOrder="489">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir6" compilerOrder="490"/>
+            </layout>&#xD;
+            <layout left="861" top="799" width="19" height="19" compilerOrder="491">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir7" compilerOrder="492"/>
+            </layout>&#xD;
+            <layout left="880" top="799" width="19" height="19" compilerOrder="493">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir8" compilerOrder="494"/>
+            </layout>&#xD;
+            <layout left="899" top="799" width="19" height="19" compilerOrder="495">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="dir9" compilerOrder="496"/>
+            </layout>&#xD;			
+						<!--Expressão-->			
+            <layout left="140"  top="824" width="19" height="19" compilerOrder="497">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre1" compilerOrder="498"/>
+            </layout>&#xD;
+            <layout left="159"  top="824" width="19" height="19" compilerOrder="499">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre2" compilerOrder="500"/>
+            </layout>&#xD;
+            <layout left="178" top="824" width="19" height="19" compilerOrder="501">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre3" compilerOrder="502"/>
+            </layout>&#xD;
+            <layout left="197" top="824" width="19" height="19" compilerOrder="503">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre4" compilerOrder="504"/>
+            </layout>&#xD;
+            <layout left="216"  top="824" width="19" height="19" compilerOrder="505">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre5" compilerOrder="506"/>
+            </layout>&#xD;
+            <layout left="235"  top="824" width="19" height="19" compilerOrder="507">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre6" compilerOrder="508"/>
+            </layout>&#xD;
+            <layout left="254" top="824" width="19" height="19" compilerOrder="509">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre7" compilerOrder="510"/>
+            </layout>&#xD;
+            <layout left="273" top="824" width="19" height="19" compilerOrder="511">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre8" compilerOrder="512"/>
+            </layout>&#xD;
+            <layout left="292"  top="824" width="19" height="19" compilerOrder="513">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="expre9" compilerOrder="514"/>
+            </layout>&#xD;			
+						<!--Medicina-->			
+            <layout left="747" top="824" width="19" height="19" compilerOrder="515">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling1" compilerOrder="516"/>
+            </layout>&#xD;
+            <layout left="766" top="824" width="19" height="19" compilerOrder="517">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling2" compilerOrder="518"/>
+            </layout>&#xD;
+            <layout left="785" top="824" width="19" height="19" compilerOrder="519">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling3" compilerOrder="520"/>
+            </layout>&#xD;
+            <layout left="804" top="824" width="19" height="19" compilerOrder="521">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling4" compilerOrder="522"/>
+            </layout>&#xD;
+            <layout left="823" top="824" width="19" height="19" compilerOrder="523">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling5" compilerOrder="524"/>
+            </layout>&#xD;
+            <layout left="842" top="824" width="19" height="19" compilerOrder="525">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling6" compilerOrder="526"/>
+            </layout>&#xD;
+            <layout left="861" top="824" width="19" height="19" compilerOrder="527">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling7" compilerOrder="528"/>
+            </layout>&#xD;
+            <layout left="880" top="824" width="19" height="19" compilerOrder="529">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling8" compilerOrder="530"/>
+            </layout>&#xD;
+            <layout left="899" top="824" width="19" height="19" compilerOrder="531">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="ling9" compilerOrder="532"/>
+            </layout>&#xD;			
+						<!--Segurança-->			
+            <layout left="447" top="824" width="19" height="19" compilerOrder="533">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg1" compilerOrder="534"/>
+            </layout>&#xD;
+            <layout left="466" top="824" width="19" height="19" compilerOrder="535">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg2" compilerOrder="536"/>
+            </layout>&#xD;
+            <layout left="485" top="824" width="19" height="19" compilerOrder="537">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg3" compilerOrder="538"/>
+            </layout>&#xD;
+            <layout left="504" top="824" width="19" height="19" compilerOrder="539">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg4" compilerOrder="540"/>
+            </layout>&#xD;
+            <layout left="523" top="824" width="19" height="19" compilerOrder="541">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg5" compilerOrder="542"/>
+            </layout>&#xD;
+            <layout left="542" top="824" width="19" height="19" compilerOrder="543">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg6" compilerOrder="544"/>
+            </layout>&#xD;
+            <layout left="561" top="824" width="19" height="19" compilerOrder="545">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg7" compilerOrder="546"/>
+            </layout>&#xD;
+            <layout left="580" top="824" width="19" height="19" compilerOrder="547">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg8" compilerOrder="548"/>
+            </layout>&#xD;
+            <layout left="599" top="824" width="19" height="19" compilerOrder="549">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="seg9" compilerOrder="550"/>
+            </layout>&#xD;			
+						<!--Intimidação-->			
+            <layout left="140" top="851" width="19" height="19" compilerOrder="551">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim1" compilerOrder="552"/>
+            </layout>&#xD;
+            <layout left="159" top="851" width="19" height="19" compilerOrder="553">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim2" compilerOrder="554"/>
+            </layout>&#xD;
+            <layout left="178"  top="851" width="19" height="19" compilerOrder="555">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim3" compilerOrder="556"/>
+            </layout>&#xD;
+            <layout left="197"  top="851" width="19" height="19" compilerOrder="557">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim4" compilerOrder="558"/>
+            </layout>&#xD;
+            <layout left="216" top="851" width="19" height="19" compilerOrder="559">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim5" compilerOrder="560"/>
+            </layout>&#xD;
+            <layout left="235" top="851" width="19" height="19" compilerOrder="561">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim6" compilerOrder="562"/>
+            </layout>&#xD;
+            <layout left="254"  top="851" width="19" height="19" compilerOrder="563">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim7" compilerOrder="564"/>
+            </layout>&#xD;
+            <layout left="273"  top="851" width="19" height="19" compilerOrder="565">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim8" compilerOrder="566"/>
+            </layout>&#xD;
+            <layout left="292" top="851" width="19" height="19" compilerOrder="567">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="intim9" compilerOrder="568"/>
+            </layout>&#xD;			
+						<!--Ciência-->			
+            <layout left="747" top="851" width="19" height="19" compilerOrder="569">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med1" compilerOrder="570"/>
+            </layout>&#xD;
+            <layout left="766" top="851" width="19" height="19" compilerOrder="571">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med2" compilerOrder="572"/>
+            </layout>&#xD;
+            <layout left="785" top="851" width="19" height="19" compilerOrder="573">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med3" compilerOrder="574"/>
+            </layout>&#xD;
+            <layout left="804" top="851" width="19" height="19" compilerOrder="575">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med4" compilerOrder="576"/>
+            </layout>&#xD;
+            <layout left="823" top="851" width="19" height="19" compilerOrder="577">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med5" compilerOrder="578"/>
+            </layout>&#xD;
+            <layout left="842" top="851" width="19" height="19" compilerOrder="579">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med6" compilerOrder="580"/>
+            </layout>&#xD;
+            <layout left="861" top="851" width="19" height="19" compilerOrder="581">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med7" compilerOrder="582"/>
+            </layout>&#xD;
+            <layout left="880" top="851" width="19" height="19" compilerOrder="583">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med8" compilerOrder="584"/>
+            </layout>&#xD;
+            <layout left="899" top="851" width="19" height="19" compilerOrder="585">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="med9" compilerOrder="586"/>
+            </layout>&#xD;			
+						<!--Sobrevivência-->
+            <layout left="447" top="851" width="19" height="19" compilerOrder="587">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt1" compilerOrder="588"/>
+            </layout>&#xD;
+            <layout left="466" top="851" width="19" height="19" compilerOrder="589">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt2" compilerOrder="590"/>
+            </layout>&#xD;
+            <layout left="485" top="851" width="19" height="19" compilerOrder="591">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt3" compilerOrder="592"/>
+            </layout>&#xD;
+            <layout left="504" top="851" width="19" height="19" compilerOrder="593">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt4" compilerOrder="594"/>
+            </layout>&#xD;
+            <layout left="523" top="851" width="19" height="19" compilerOrder="595">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt5" compilerOrder="596"/>
+            </layout>&#xD;
+            <layout left="542" top="851" width="19" height="19" compilerOrder="597">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt6" compilerOrder="598"/>
+            </layout>&#xD;
+            <layout left="561" top="851" width="19" height="19" compilerOrder="599">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt7" compilerOrder="600"/>
+            </layout>&#xD;
+            <layout left="580" top="851" width="19" height="19" compilerOrder="601">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt8" compilerOrder="602"/>
+            </layout>&#xD;
+            <layout left="599" top="851" width="19" height="19" compilerOrder="603">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="furt9" compilerOrder="604"/>
+            </layout>&#xD;			
+						<!--Liderança-->			
+            <layout left="140"  top="879" width="19" height="19" compilerOrder="605">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid1" compilerOrder="606"/>
+            </layout>&#xD;
+            <layout left="159"  top="879" width="19" height="19" compilerOrder="607">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid2" compilerOrder="608"/>
+            </layout>&#xD;
+            <layout left="178"  top="879" width="19" height="19" compilerOrder="609">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid3" compilerOrder="610"/>
+            </layout>&#xD;
+            <layout left="197"  top="879" width="19" height="19" compilerOrder="611">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid4" compilerOrder="612"/>
+            </layout>&#xD;
+            <layout left="216"  top="879" width="19" height="19" compilerOrder="613">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid5" compilerOrder="614"/>
+            </layout>&#xD;
+            <layout left="235"  top="879" width="19" height="19" compilerOrder="615">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid6" compilerOrder="616"/>
+            </layout>&#xD;
+            <layout left="254"  top="879" width="19" height="19" compilerOrder="617">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid7" compilerOrder="618"/>
+            </layout>&#xD;
+            <layout left="273"  top="879" width="19" height="19" compilerOrder="619">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid8" compilerOrder="620"/>
+            </layout>&#xD;
+            <layout left="292"  top="879" width="19" height="19" compilerOrder="621">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="lid9" compilerOrder="622"/>
+            </layout>&#xD;			
+						<!--Culinária-->			
+            <layout left="747" top="879" width="19" height="19" compilerOrder="623">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie1" compilerOrder="624"/>
+            </layout>&#xD;
+            <layout left="766" top="879" width="19" height="19" compilerOrder="625">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie2" compilerOrder="626"/>
+            </layout>&#xD;
+            <layout left="785" top="879" width="19" height="19" compilerOrder="627">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie3" compilerOrder="628"/>
+            </layout>&#xD;
+            <layout left="804" top="879" width="19" height="19" compilerOrder="629">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie4" compilerOrder="630"/>
+            </layout>&#xD;
+            <layout left="823" top="879" width="19" height="19" compilerOrder="631">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie5" compilerOrder="632"/>
+            </layout>&#xD;
+            <layout left="842" top="879" width="19" height="19" compilerOrder="633">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie6" compilerOrder="634"/>
+            </layout>&#xD;
+            <layout left="861" top="879" width="19" height="19" compilerOrder="635">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie7" compilerOrder="636"/>
+            </layout>&#xD;
+            <layout left="880" top="879" width="19" height="19" compilerOrder="637">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie8" compilerOrder="638"/>
+            </layout>&#xD;
+            <layout left="899" top="879" width="19" height="19" compilerOrder="639">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="cie9" compilerOrder="640"/>
+            </layout>&#xD;			
+						<!--Caça-->			
+            <layout left="447" top="879" width="19" height="19" compilerOrder="641">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob1" compilerOrder="642"/>
+            </layout>&#xD;
+            <layout left="466" top="879" width="19" height="19" compilerOrder="643">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob2" compilerOrder="644"/>
+            </layout>&#xD;
+            <layout left="485" top="879" width="19" height="19" compilerOrder="645">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob3" compilerOrder="646"/>
+            </layout>&#xD;
+            <layout left="504" top="879" width="19" height="19" compilerOrder="647">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob4" compilerOrder="648"/>
+            </layout>&#xD;
+            <layout left="523" top="879" width="19" height="19" compilerOrder="649">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob5" compilerOrder="650"/>
+            </layout>&#xD;
+            <layout left="542" top="879" width="19" height="19" compilerOrder="651">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob6" compilerOrder="652"/>
+            </layout>&#xD;
+            <layout left="561" top="879" width="19" height="19" compilerOrder="653">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob7" compilerOrder="654"/>
+            </layout>&#xD;
+            <layout left="580" top="879" width="19" height="19" compilerOrder="655">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob8" compilerOrder="656"/>
+            </layout>&#xD;
+            <layout left="599" top="879" width="19" height="19" compilerOrder="657">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="19" height="19" field="sob9" compilerOrder="658"/>
+            </layout>&#xD;					
+<!-- ________________________________________________________________________________ ANOTAÇÕES E VIRTUDES ________________________________________________________________________________ -->
+			<!-- Anotações -->
+			<layout left="37" top="999" width="285" height="272" compilerOrder="713">
+                <textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="285" height="272" field="ant1" compilerOrder="714"/>
+            </layout>&#xD;
+			<!--VIRTUDES-->
+			<!--Coragem-->
+			<layout left="345" top="1070" width="21" height="21" compilerOrder="717">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor1" compilerOrder="718"/>
+            </layout>&#xD;
+            <layout left="367" top="1070" width="21" height="21" compilerOrder="719">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor2" compilerOrder="720"/>
+            </layout>&#xD;
+            <layout left="389" top="1070" width="21" height="21" compilerOrder="721">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor3" compilerOrder="722"/>
+            </layout>&#xD;
+            <layout left="411" top="1070" width="21" height="21" compilerOrder="723">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor4" compilerOrder="724"/>
+            </layout>&#xD;
+			<layout left="433" top="1070" width="21" height="21" compilerOrder="725">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor5" compilerOrder="726"/>
+            </layout>&#xD;
+            <layout left="455" top="1070" width="21" height="21" compilerOrder="727">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor6" compilerOrder="728"/>
+            </layout>&#xD;
+            <layout left="477" top="1070" width="21" height="21" compilerOrder="729">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor7" compilerOrder="730"/>
+            </layout>&#xD;
+            <layout left="499" top="1070" width="21" height="21" compilerOrder="731">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor8" compilerOrder="732"/>
+            </layout>&#xD;
+            <layout left="521" top="1070" width="21" height="21" compilerOrder="733">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor9" compilerOrder="734"/>
+            </layout>&#xD;
+            <layout left="543" top="1070" width="21" height="21" compilerOrder="735">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor10" compilerOrder="736"/>
+            </layout>&#xD;
+            <layout left="565" top="1070" width="21" height="21" compilerOrder="737">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor11" compilerOrder="738"/>
+            </layout>&#xD;
+            <layout left="587" top="1070" width="21" height="21" compilerOrder="739">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="cor12" compilerOrder="740"/>
+            </layout>&#xD;
+			<!--Instinto-->
+			<layout left="345" top="1148" width="21" height="21" compilerOrder="741">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins1" compilerOrder="742"/>
+            </layout>&#xD;
+            <layout left="367" top="1148" width="21" height="21" compilerOrder="743">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins2" compilerOrder="744"/>
+            </layout>&#xD;
+            <layout left="389" top="1148" width="21" height="21" compilerOrder="745">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins3" compilerOrder="746"/>
+            </layout>&#xD;
+            <layout left="411" top="1148" width="21" height="21" compilerOrder="747">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins4" compilerOrder="748"/>
+            </layout>&#xD;
+			<layout left="433" top="1148" width="21" height="21" compilerOrder="749">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins5" compilerOrder="750"/>
+            </layout>&#xD;
+            <layout left="455" top="1148" width="21" height="21" compilerOrder="751">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins6" compilerOrder="752"/>
+            </layout>&#xD;
+            <layout left="477" top="1148" width="21" height="21" compilerOrder="753">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins7" compilerOrder="754"/>
+            </layout>&#xD;
+            <layout left="499" top="1148" width="21" height="21" compilerOrder="755">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins8" compilerOrder="756"/>
+            </layout>&#xD;
+            <layout left="521" top="1148" width="21" height="21" compilerOrder="757">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins9" compilerOrder="758"/>
+            </layout>&#xD;
+            <layout left="543" top="1148" width="21" height="21" compilerOrder="759">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins10" compilerOrder="760"/>
+            </layout>&#xD;
+            <layout left="565" top="1148" width="21" height="21" compilerOrder="761">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins11" compilerOrder="762"/>
+            </layout>&#xD;
+            <layout left="587" top="1148" width="21" height="21" compilerOrder="763">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="ins12" compilerOrder="764"/>
+            </layout>&#xD;
+			<!--Força de Vontade-->
+			<layout left="345" top="1226" width="21" height="21" compilerOrder="765">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv1" compilerOrder="766"/>
+            </layout>&#xD;
+            <layout left="367" top="1226" width="21" height="21" compilerOrder="767">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv2" compilerOrder="768"/>
+            </layout>&#xD;
+            <layout left="389" top="1226" width="21" height="21" compilerOrder="769">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv3" compilerOrder="770"/>
+            </layout>&#xD;
+            <layout left="411" top="1226" width="21" height="21" compilerOrder="771">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv4" compilerOrder="772"/>
+            </layout>&#xD;
+			<layout left="433" top="1226" width="21" height="21" compilerOrder="773">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv5" compilerOrder="774"/>
+            </layout>&#xD;
+            <layout left="455" top="1226" width="21" height="21" compilerOrder="775">
+                <imageCheckBox checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv6" compilerOrder="776"/>
+            </layout>&#xD;
+            <layout left="477" top="1226" width="21" height="21" compilerOrder="777">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv7" compilerOrder="778"/>
+            </layout>&#xD;
+            <layout left="499" top="1226" width="21" height="21" compilerOrder="779">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv8" compilerOrder="780"/>
+            </layout>&#xD;
+            <layout left="521" top="1226" width="21" height="21" compilerOrder="781">
+                <imageCheckBox checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv9" compilerOrder="782"/>
+            </layout>&#xD;
+            <layout left="543" top="1226" width="21" height="21" compilerOrder="783">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv10" compilerOrder="784"/>
+            </layout>&#xD;
+            <layout left="565" top="1226" width="21" height="21" compilerOrder="785">
+                <imageCheckBox checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv11" compilerOrder="786"/>
+            </layout>&#xD;
+            <layout left="587" top="1226" width="21" height="21" compilerOrder="787">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png" width="21" height="21" field="fdv12" compilerOrder="788"/>
+            </layout>&#xD;
+			
+			<!--VIRTUDES2-->
+			<!--Reconhecimento-->
+			<button left="670" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon1" defaultValue="PokeRPGT/images/pokeball1_off.png"/>
+				<image align="client" field="recon1"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR1 == nil then
+						sheet.imageCounterR1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR1 = (sheet.imageCounterR1 + 1) % #picsR1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon1 = picsR1[sheet.imageCounterR1 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="692" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon2"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR2 == nil then
+						sheet.imageCounterR2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR2 = (sheet.imageCounterR2 + 1) % #picsR2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon2 = picsR2[sheet.imageCounterR2 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="714" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon3"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR3 == nil then
+						sheet.imageCounterR3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR3 = (sheet.imageCounterR3 + 1) % #picsR3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon3 = picsR3[sheet.imageCounterR3 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="736" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon4"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR4 == nil then
+						sheet.imageCounterR4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR4 = (sheet.imageCounterR4 + 1) % #picsR4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon4 = picsR4[sheet.imageCounterR4 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="758" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon5"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR5 == nil then
+						sheet.imageCounterR5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR5 = (sheet.imageCounterR5 + 1) % #picsR5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon5 = picsR5[sheet.imageCounterR5 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="780" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon6"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR6 == nil then
+						sheet.imageCounterR6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR6 = (sheet.imageCounterR6 + 1) % #picsR6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon6 = picsR6[sheet.imageCounterR6 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="802" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon7"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR7 == nil then
+						sheet.imageCounterR7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR7 = (sheet.imageCounterR7 + 1) % #picsR7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon7 = picsR7[sheet.imageCounterR7 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="824" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon8" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon8"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR8 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR8 == nil then
+						sheet.imageCounterR8 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR8 = (sheet.imageCounterR8 + 1) % #picsR8;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon8 = picsR8[sheet.imageCounterR8 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="846" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon9" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon9"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR9 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR9 == nil then
+						sheet.imageCounterR9 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR9 = (sheet.imageCounterR9 + 1) % #picsR9;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon9 = picsR9[sheet.imageCounterR9 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="868" top="1070" width="21" height="21" compilerOrder="717">
+                <dataLink field="recon10" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="recon10"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsR10 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/masterball1_on.png", 
+									"PokeRPGT/images/rocketmaster_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterR10 == nil then
+						sheet.imageCounterR10 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterR10 = (sheet.imageCounterR10 + 1) % #picsR10;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.recon10 = picsR10[sheet.imageCounterR10 +1];
+				]]>
+				</event>
+            </button>
+
+			<!--Fama-->
+
+            <button left="670" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama1"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF1 == nil then
+						sheet.imageCounterF1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF1 = (sheet.imageCounterF1 + 1) % #picsF1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama1 = picsF1[sheet.imageCounterF1 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="692" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama2"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF2 == nil then
+						sheet.imageCounterF2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF2 = (sheet.imageCounterF2 + 1) % #picsF2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama2 = picsF2[sheet.imageCounterF2 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="714" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama3"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF3 == nil then
+						sheet.imageCounterF3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF3 = (sheet.imageCounterF3 + 1) % #picsF3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama3 = picsF3[sheet.imageCounterF3 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="736" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama4"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF4 == nil then
+						sheet.imageCounterF4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF4 = (sheet.imageCounterF4 + 1) % #picsF4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama4 = picsF4[sheet.imageCounterF4 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="758" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama5"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF5 == nil then
+						sheet.imageCounterF5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF5 = (sheet.imageCounterF5 + 1) % #picsF5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama5 = picsF5[sheet.imageCounterF5 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="780" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama6"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF6 == nil then
+						sheet.imageCounterF6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF6 = (sheet.imageCounterF6 + 1) % #picsF6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama6 = picsF6[sheet.imageCounterF6 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="802" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama7"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF7 == nil then
+						sheet.imageCounterF7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF7 = (sheet.imageCounterF7 + 1) % #picsF7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama7 = picsF7[sheet.imageCounterF7 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="824" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama8" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama8"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF8 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF8 == nil then
+						sheet.imageCounterF8 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF8 = (sheet.imageCounterF8 + 1) % #picsF8;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama8 = picsF8[sheet.imageCounterF8 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="846" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama9" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama9"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF9 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF9 == nil then
+						sheet.imageCounterF9 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF9 = (sheet.imageCounterF9 + 1) % #picsF9;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama9 = picsF9[sheet.imageCounterF9 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="868" top="1148" width="21" height="21" compilerOrder="717">
+                <dataLink field="fama10" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="fama10"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsF10 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/masterball1_on.png", 
+									"PokeRPGT/images/rocketmaster_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterF10 == nil then
+						sheet.imageCounterF10 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterF10 = (sheet.imageCounterF10 + 1) % #picsF10;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.fama10 = picsF10[sheet.imageCounterF10 +1];
+				]]>
+				</event>
+            </button>
+
+			<!--Influência-->
+
+            <button left="670" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ1"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI1 == nil then
+						sheet.imageCounterI1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI1 = (sheet.imageCounterI1 + 1) % #picsI1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ1 = picsI1[sheet.imageCounterI1 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="692" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ2"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI2 == nil then
+						sheet.imageCounterI2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI2 = (sheet.imageCounterI2 + 1) % #picsI2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ2 = picsI2[sheet.imageCounterI2 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="714" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ3"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI3 == nil then
+						sheet.imageCounterI3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI3 = (sheet.imageCounterI3 + 1) % #picsI3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ3 = picsI3[sheet.imageCounterI3 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="736" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ4"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/rocketball_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI4 == nil then
+						sheet.imageCounterI4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI4 = (sheet.imageCounterI4 + 1) % #picsI4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ4 = picsI4[sheet.imageCounterI4 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="758" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ5"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI5 == nil then
+						sheet.imageCounterI5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI5 = (sheet.imageCounterI5 + 1) % #picsI5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ5 = picsI5[sheet.imageCounterI5 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="780" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ6"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI6 == nil then
+						sheet.imageCounterI6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI6 = (sheet.imageCounterI6 + 1) % #picsI6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ6 = picsI6[sheet.imageCounterI6 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="802" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ7"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/greatball1_on.png", 
+									"PokeRPGT/images/rocketgreat_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI7 == nil then
+						sheet.imageCounterI7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI7 = (sheet.imageCounterI7 + 1) % #picsI7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ7 = picsI7[sheet.imageCounterI7 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="824" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ8" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ8"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI8 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI8 == nil then
+						sheet.imageCounterI8 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI8 = (sheet.imageCounterI8 + 1) % #picsI8;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ8 = picsI8[sheet.imageCounterI8 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="846" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ9" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ9"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI9 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/ultraball1_on.png", 
+									"PokeRPGT/images/rocketultra_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI9 == nil then
+						sheet.imageCounterI9 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI9 = (sheet.imageCounterI9 + 1) % #picsI9;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ9 = picsI9[sheet.imageCounterI9 +1];
+				]]>
+				</event>
+            </button>
+
+            <button left="868" top="1226" width="21" height="21" compilerOrder="717">
+                <dataLink field="influ10" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="influ10"/>
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsI10 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/masterball1_on.png", 
+									"PokeRPGT/images/rocketmaster_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterI10 == nil then
+						sheet.imageCounterI10 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterI10 = (sheet.imageCounterI10 + 1) % #picsI10;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.influ10 = picsI10[sheet.imageCounterI10 +1];
+				]]>
+				</event>
+            </button>         
+
+
+        </rectangle>
+    </scrollBox>
+	
+	<import file="Teste.lfm"/>
+	
+</form>

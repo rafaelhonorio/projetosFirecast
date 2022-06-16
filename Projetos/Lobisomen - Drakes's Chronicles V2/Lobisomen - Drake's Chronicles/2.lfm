@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen2_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmLobisomen2_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmLobisomen2_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/2.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- Glabro -->
+		<!-- Força -->
+			<layout left="298" top="193" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ForçaG" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Vigor -->
+			<layout left="298" top="214" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="VigorG" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Aparência -->
+			<layout left="326" top="235" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="AparênciaG" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Manipulação -->
+			<layout left="345" top="256" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ManipulaçãoG" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Crinos -->
+		<!-- Força -->
+			<layout left="448" top="193" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ForçaC" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Destreza -->
+			<layout left="468" top="214" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="VigorC" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Vigor -->
+			<layout left="450" top="235" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="AparênciaC" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Manipulação -->
+			<layout left="497" top="256" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ManipulaçãoC" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Hispo -->
+		<!-- Força -->
+			<layout left="598" top="193" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ForçaH" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Destreza -->
+			<layout left="623" top="214" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="VigorH" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Vigor -->
+			<layout left="601" top="235" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="AparênciaH" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Manipulação -->
+			<layout left="652" top="256" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ManipulaçãoH" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Lupino -->
+		<!-- Força -->
+			<layout left="750" top="193" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ForçaL" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Destreza -->
+			<layout left="776" top="214" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="VigorL" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Vigor -->
+			<layout left="758" top="235" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="AparênciaL" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Manipulação -->
+			<layout left="805" top="256" width="25" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="25" height="30" field="ManipulaçãoL" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Outras Carcaterísticas -->
+		<!-- Caracteristica 1 -->
+			<layout left="70" top="467" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract1" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 1 -->
+			<layout left="234" top="474" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C1" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 1 -->
+			<layout left="248" top="474" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C1" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 1 -->
+			<layout left="263" top="474" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C1" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 1 -->
+			<layout left="277" top="474" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C1" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 1 -->
+			<layout left="291" top="474" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C1" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Caracteristica 2 -->
+			<layout left="70" top="489" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract2" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 2 -->
+			<layout left="234" top="496" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C2" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 2 -->
+			<layout left="248" top="496" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C2" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 2 -->
+			<layout left="263" top="496" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C2" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 2 -->
+			<layout left="277" top="496" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C2" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 2 -->
+			<layout left="291" top="496" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C2" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 3 -->
+			<layout left="70" top="509" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract3" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 3 -->
+			<layout left="234" top="517" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C3" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 3 -->
+			<layout left="248" top="517" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C3" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 3 -->
+			<layout left="263" top="517" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C3" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 3 -->
+			<layout left="277" top="517" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C3" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 3 -->
+			<layout left="291" top="517" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C3" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 4 -->
+			<layout left="70" top="530" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract4" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 4 -->
+			<layout left="234" top="538" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C4" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 4 -->
+			<layout left="248" top="538" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C4" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 4 -->
+			<layout left="263" top="538" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C4" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 4 -->
+			<layout left="277" top="538" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C4" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 4 -->
+			<layout left="291" top="538" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C4" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 5 -->
+			<layout left="70" top="551" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract5" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 5 -->
+			<layout left="234" top="559" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C5" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 5 -->
+			<layout left="248" top="559" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C5" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 5 -->
+			<layout left="263" top="559" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C5" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 5 -->
+			<layout left="277" top="559" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C5" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 5 -->
+			<layout left="291" top="559" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C5" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 6 -->
+			<layout left="70" top="573" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract6" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 6 -->
+			<layout left="234" top="580" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C6" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 6 -->
+			<layout left="248" top="580" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C6" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 6 -->
+			<layout left="263" top="580" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C6" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 6 -->
+			<layout left="277" top="580" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C6" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 6 -->
+			<layout left="291" top="580" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C6" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 7 -->
+			<layout left="70" top="594" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract7" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 7 -->
+			<layout left="234" top="601" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C7" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 7 -->
+			<layout left="248" top="601" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C7" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 7 -->
+			<layout left="263" top="601" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C7" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 7 -->
+			<layout left="277" top="601" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C7" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 7 -->
+			<layout left="291" top="601" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C7" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 8 -->
+			<layout left="70" top="616" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract8" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 8 -->
+			<layout left="234" top="623" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C8" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 8 -->
+			<layout left="248" top="623" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C8" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 8 -->
+			<layout left="263" top="623" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C8" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 8 -->
+			<layout left="277" top="623" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C8" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 8 -->
+			<layout left="291" top="623" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C8" compilerOrder="26"/>
+            </layout>&#xD;			
+			
+		<!-- Caracteristica 9 -->
+			<layout left="70" top="636" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract9" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Pata 1 Caracteristica 9 -->
+			<layout left="234" top="643" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C9" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 9 -->
+			<layout left="248" top="643" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C9" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 9 -->
+			<layout left="263" top="643" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C9" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 9 -->
+			<layout left="277" top="643" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C9" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 9 -->
+			<layout left="291" top="643" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C9" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Caracteristica 10 -->
+			<layout left="70" top="658" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract10" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 10 -->
+			<layout left="234" top="665" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C10" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 10 -->
+			<layout left="248" top="665" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C10" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 10 -->
+			<layout left="263" top="665" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C10" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 10 -->
+			<layout left="277" top="665" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C10" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 10 -->
+			<layout left="291" top="665" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C10" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Caracteristica 11 -->
+			<layout left="70" top="679" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract11" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 11 -->
+			<layout left="234" top="686" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C11" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 11 -->
+			<layout left="248" top="686" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C11" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 11 -->
+			<layout left="263" top="686" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C11" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 11 -->
+			<layout left="277" top="686" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C11" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 11 -->
+			<layout left="291" top="686" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C11" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 12 -->
+			<layout left="70" top="701" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract12" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 12 -->
+			<layout left="234" top="708" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C12" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 12 -->
+			<layout left="248" top="708" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C12" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 12 -->
+			<layout left="263" top="708" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C12" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 12 -->
+			<layout left="277" top="708" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C12" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 12 -->
+			<layout left="291" top="708" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C12" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 13 -->
+			<layout left="70" top="724" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract13" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 13 -->
+			<layout left="234" top="731" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C13" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 13 -->
+			<layout left="248" top="731" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C13" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 13 -->
+			<layout left="263" top="731" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C13" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 13 -->
+			<layout left="277" top="731" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C13" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 13 -->
+			<layout left="291" top="731" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C13" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 14 -->
+			<layout left="70" top="746" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract14" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 14 -->
+			<layout left="234" top="753" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C14" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 14 -->
+			<layout left="248" top="753" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C14" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 14 -->
+			<layout left="263" top="753" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C14" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 14 -->
+			<layout left="277" top="753" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C14" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 14 -->
+			<layout left="291" top="753" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C14" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 15 -->
+			<layout left="70" top="765" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract15" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 15 -->
+			<layout left="234" top="773" width="18" height="18" compilerOrder="15">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C15" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 15 -->
+			<layout left="248" top="773" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C15" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 15 -->
+			<layout left="263" top="773" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C15" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 15 -->
+			<layout left="277" top="773" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C15" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 15 -->
+			<layout left="291" top="773" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C15" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 16 -->
+			<layout left="70" top="786" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract16" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 16 -->
+			<layout left="234" top="793" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C16" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 16 -->
+			<layout left="248" top="793" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C16" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 16 -->
+			<layout left="263" top="793" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C16" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 16 -->
+			<layout left="277" top="793" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C16" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 16 -->
+			<layout left="291" top="793" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C16" compilerOrder="26"/>
+            </layout>&#xD;			
+		<!-- Caracteristica 17 -->
+			<layout left="70" top="805" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract17" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 17 -->
+			<layout left="234" top="813" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C17" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 17 -->
+			<layout left="248" top="813" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C17" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 17 -->
+			<layout left="263" top="813" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C17" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 17 -->
+			<layout left="277" top="813" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C17" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 17 -->
+			<layout left="291" top="813" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C17" compilerOrder="26"/>
+            </layout>&#xD;					
+		<!-- Caracteristica 18 -->
+			<layout left="70" top="828" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract18" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 18 -->
+			<layout left="234" top="835" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C18" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 18 -->
+			<layout left="248" top="835" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C18" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 18 -->
+			<layout left="263" top="835" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C18" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 18 -->
+			<layout left="277" top="835" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C18" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 18 -->
+			<layout left="291" top="835" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C18" compilerOrder="26"/>
+            </layout>&#xD;			
+			
+		<!-- Caracteristica 19 -->
+			<layout left="70" top="850" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract19" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Pata 1 Caracteristica 19 -->
+			<layout left="234" top="857" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C19" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 19 -->
+			<layout left="248" top="857" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C19" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 19 -->
+			<layout left="263" top="857" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C19" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 19 -->
+			<layout left="277" top="857" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C19" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 19 -->
+			<layout left="291" top="857" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C19" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Caracteristica 20 -->
+			<layout left="70" top="871" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract20" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 20 -->
+			<layout left="234" top="878" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C20" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 20 -->
+			<layout left="248" top="878" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C20" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 20 -->
+			<layout left="263" top="878" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C20" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 20 -->
+			<layout left="277" top="878" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C20" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 20 -->
+			<layout left="291" top="878" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C20" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Caracteristica 21 -->
+			<layout left="70" top="893" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract21" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 21 -->
+			<layout left="234" top="900" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C21" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 21 -->
+			<layout left="248" top="900" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C21" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 21 -->
+			<layout left="263" top="900" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C21" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 21 -->
+			<layout left="277" top="900" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C21" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 22 -->
+			<layout left="291" top="900" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C21" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Caracteristica 22 -->
+			<layout left="70" top="915" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Caract22" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Pata 1 Caracteristica 22 -->
+			<layout left="234" top="921" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata1C22" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pata 2 Caracteristica 22 -->
+			<layout left="248" top="921" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata2C22" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pata 3 Caracteristica 22 -->
+			<layout left="263" top="921" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata3C22" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pata 4 Caracteristica 22 -->
+			<layout left="277" top="921" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata4C22" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pata 5 Caracteristica 22 -->
+			<layout left="291" top="921" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/pata_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/pata_off.png" width="18" height="18" field="Pata5C22" compilerOrder="26"/>
+            </layout>&#xD;
+		
+	<!-- Fetiches -->
+		<!-- Item 1 -->
+			<layout left="370" top="467" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item1" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 1 -->
+			<layout left="693" top="467" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel1" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 1 -->
+			<layout left="785" top="467" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose1" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 1 -->
+			<layout left="380" top="487" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder1" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Dedicado 1 -->
+			<layout left="728" top="496" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square1Ded" compilerOrder="18"/>
+            </layout>&#xD;			
+		<!-- Item 2 -->
+			<layout left="370" top="510" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item2" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 2 -->
+			<layout left="693" top="510" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel2" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 2 -->
+			<layout left="785" top="510" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose2" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 2 -->
+			<layout left="380" top="531" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder2" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 2 -->
+			<layout left="728" top="538" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square2Ded" compilerOrder="18"/>
+            </layout>&#xD;		
+		<!-- Item 3 -->
+			<layout left="370" top="552" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item3" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 3 -->
+			<layout left="693" top="552" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel3" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 3 -->
+			<layout left="785" top="552" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose3" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 3 -->
+			<layout left="380" top="574" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder3" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 3 -->
+			<layout left="728" top="581" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square3Ded" compilerOrder="18"/>
+            </layout>&#xD;				
+		<!-- Item 4 -->
+			<layout left="370" top="595" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item4" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 4 -->
+			<layout left="693" top="595" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel4" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 4 -->
+			<layout left="785" top="595" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose4" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 4 -->
+			<layout left="380" top="616" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder4" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 4 -->
+			<layout left="728" top="623" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square4Ded" compilerOrder="18"/>
+            </layout>&#xD;			
+		<!-- Item 5 -->
+			<layout left="370" top="638" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item5" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 5 -->
+			<layout left="693" top="638" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel5" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 5 -->
+			<layout left="785" top="638" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose5" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 5 -->
+			<layout left="380" top="659" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder5" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Dedicado 5 -->
+			<layout left="728" top="667" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square5Ded" compilerOrder="18"/>
+            </layout>&#xD;				
+		<!-- Item 6 -->
+			<layout left="370" top="680" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item6" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 6 -->
+			<layout left="693" top="680" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel6" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 6 -->
+			<layout left="785" top="680" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose6" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 6 -->
+			<layout left="380" top="702" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder6" compilerOrder="4"/>
+			</layout>&#xD;		
+		<!-- Dedicado 6 -->
+			<layout left="728" top="710" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square6Ded" compilerOrder="18"/>
+            </layout>&#xD;	
+		<!-- Item 7 -->
+			<layout left="370" top="723" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item7" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 7 -->
+			<layout left="693" top="723" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel7" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 7 -->
+			<layout left="785" top="723" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose7" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 7 -->
+			<layout left="380" top="742" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder7" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Dedicado 7 -->
+			<layout left="728" top="752" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square7Ded" compilerOrder="18"/>
+            </layout>&#xD;			
+		<!-- Item 8 -->
+			<layout left="370" top="766" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item8" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 8 -->
+			<layout left="693" top="766" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel8" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 8 -->
+			<layout left="785" top="766" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose8" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 8 -->
+			<layout left="380" top="784" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder8" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 8 -->
+			<layout left="728" top="794" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square8Ded" compilerOrder="18"/>
+            </layout>&#xD;		
+		<!-- Item 9 -->
+			<layout left="370" top="809" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item9" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 9 -->
+			<layout left="693" top="809" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel9" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 9 -->
+			<layout left="785" top="809" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose9" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 9 -->
+			<layout left="380" top="830" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder9" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 9 -->
+			<layout left="728" top="836" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square9Ded" compilerOrder="18"/>
+            </layout>&#xD;	
+		<!-- Item 10 -->
+			<layout left="370" top="852" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item10" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 10 -->
+			<layout left="693" top="852" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel10" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 10 -->
+			<layout left="785" top="852" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose10" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 10 -->
+			<layout left="380" top="870" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder10" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Dedicado 10 -->
+			<layout left="728" top="878" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square10Ded" compilerOrder="18"/>
+            </layout>&#xD;	
+		<!-- Item 11 -->
+			<layout left="370" top="895" width="270" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="Item11" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Nivel 11 -->
+			<layout left="693" top="895" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Nivel11" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Gnose 11 -->
+			<layout left="785" top="895" width="35" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="35" height="30" field="Gnose11" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Poder 11 -->
+			<layout left="380" top="912" width="350" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="350" height="30" field="Poder11" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Dedicado 11 -->
+			<layout left="728" top="920" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="Lobisomen - Drake's Chronicles/images/square_on.png" uncheckedImage="Lobisomen - Drake's Chronicles/images/square_off.png" width="18" height="18" field="square11Ded" compilerOrder="18"/>
+            </layout>&#xD;							
+			
+<!-- Combate -->
+	<!-- Combate 1 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1006" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma1" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1006" width="130" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif1" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1006" width="65" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano1" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1006" width="55" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc1" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1006" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad1" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1006" width="50" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente1" compilerOrder="552"/>
+			</layout>&#xD;	
+	<!-- Combate 2 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1030" width="180" height="30" compilerOrder="555">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma2" compilerOrder="556"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1030" width="130" height="30" compilerOrder="557">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif2" compilerOrder="558"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1030" width="65" height="30" compilerOrder="559">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano2" compilerOrder="560"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1030" width="55" height="30" compilerOrder="561">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc2" compilerOrder="562"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1030" width="60" height="30" compilerOrder="563">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad2" compilerOrder="564"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1030" width="50" height="30" compilerOrder="565">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente2" compilerOrder="566"/>
+			</layout>&#xD;
+
+	<!-- Combate 3 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1055" width="180" height="30" compilerOrder="569">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma3" compilerOrder="570"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1055" width="130" height="30" compilerOrder="571">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif3" compilerOrder="572"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1055" width="65" height="30" compilerOrder="573">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano3" compilerOrder="574"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1055" width="50" height="30" compilerOrder="575">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Alc3" compilerOrder="576"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1055" width="60" height="30" compilerOrder="577">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad3" compilerOrder="578"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1055" width="50" height="30" compilerOrder="579">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente3" compilerOrder="580"/>
+			</layout>&#xD;
+	<!-- Combate 4 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1080" width="180" height="30" compilerOrder="583">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma4" compilerOrder="584"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1080" width="130" height="30" compilerOrder="585">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif4" compilerOrder="586"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1080" width="65" height="30" compilerOrder="587">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano4" compilerOrder="588"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1080" width="55" height="30" compilerOrder="589">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc4" compilerOrder="590"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1080" width="60" height="30" compilerOrder="591">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad4" compilerOrder="592"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1080" width="50" height="30" compilerOrder="593">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente4" compilerOrder="594"/>
+			</layout>&#xD;
+	<!-- Combate 5 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1105" width="180" height="30" compilerOrder="597">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma5" compilerOrder="598"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1105" width="130" height="30" compilerOrder="599">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif5" compilerOrder="600"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1105" width="65" height="30" compilerOrder="601">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano5" compilerOrder="602"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1105" width="55" height="30" compilerOrder="603">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc5" compilerOrder="604"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1105" width="60" height="30" compilerOrder="605">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad5" compilerOrder="606"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1105" width="50" height="30" compilerOrder="607">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente5" compilerOrder="608"/>
+			</layout>&#xD;
+	<!-- Combate 6 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1129" width="180" height="30" compilerOrder="611">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma6" compilerOrder="612"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1129" width="130" height="30" compilerOrder="613">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif6" compilerOrder="614"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1129" width="65" height="30" compilerOrder="615">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano6" compilerOrder="616"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1129" width="55" height="30" compilerOrder="617">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc6" compilerOrder="618"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1129" width="60" height="30" compilerOrder="619">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad6" compilerOrder="620"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1129" width="50" height="30" compilerOrder="621">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente6" compilerOrder="622"/>
+			</layout>&#xD;
+	<!-- Combate 7 -->
+		<!-- Arma/Manobra -->
+			<layout left="70" top="1154" width="180" height="30" compilerOrder="625">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma7" compilerOrder="626"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="255" top="1154" width="130" height="30" compilerOrder="627">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="Dif7" compilerOrder="628"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="390" top="1154" width="65" height="30" compilerOrder="629">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dano7" compilerOrder="630"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="455" top="1154" width="55" height="30" compilerOrder="631">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="Alc7" compilerOrder="632"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="510" top="1154" width="60" height="30" compilerOrder="633">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad7" compilerOrder="634"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="570" top="1154" width="50" height="30" compilerOrder="635">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Pente7" compilerOrder="636"/>
+			</layout>&#xD;
+
+
+			
+<!-- Armadura -->	
+		<!-- Nivel -->
+			<layout left="690" top="1005" width="125" height="30" compilerOrder="639">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="125" height="30" field="NivelArm" compilerOrder="640"/>
+			</layout>&#xD;
+		<!-- Penalidade em Percepção -->
+			<layout left="730" top="1033" width="85" height="30" compilerOrder="641">
+				<edit transparent="true" fontSize="14" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="85" height="30" field="PenArm" compilerOrder="642"/>
+			</layout>&#xD;			
+		<!-- Descrição -->
+			<layout left="647" top="1093" width="170" height="84" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="170" height="84" field="DesArm" compilerOrder="646"/>
+			</layout>&#xD;
+		</rectangle>
+    </scrollBox>
+	
+	<import file="Codigo2.lfm"/>
+	
+</form>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen3_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmLobisomen3_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmLobisomen3_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/3.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- Titulo -->	
+		<!-- Natureza -->
+			<layout left="150" top="167" width="300" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="300" height="30" field="Natureza" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Comportamento -->
+			<layout left="585" top="167" width="230" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="230" height="30" field="Comportamento" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Qualidades e Defeitos -->
+		<!-- Qualidades -->
+			<layout left="70" top="263" width="185" height="118" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="185" height="118" field="Qualidades" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Tipo -->
+			<layout left="275" top="263" width="97" height="118" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="97" height="118" field="TipoQ" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Custo -->
+			<layout left="389" top="263" width="50" height="118" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="50" height="118" field="Custo" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Defeitos -->
+			<layout left="457" top="264" width="185" height="117" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="185" height="117" field="Defeitos" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Tipo -->
+			<layout left="663" top="264" width="98" height="117" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="98" height="117" field="TipoD" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Bônus -->
+			<layout left="775" top="264" width="58" height="117" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="58" height="117" field="Bonus" compilerOrder="42"/>
+			</layout>&#xD;	
+	<!-- Antecedentes Detalhados -->
+		<!-- Aliados -->
+			<layout left="70" top="440" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Aliados" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Mentor -->
+			<layout left="457" top="440" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Mentor" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Ancestrais -->
+			<layout left="70" top="561" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Ancestrais" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Raça Pura -->
+			<layout left="457" top="561" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="RaçaPura" compilerOrder="42"/>
+			</layout>&#xD;
+		<!-- Contatos -->
+			<layout left="70" top="680" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Contatos" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Recursos -->
+			<layout left="457" top="680" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Recursos" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Parentes -->
+			<layout left="70" top="801" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Parentes" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Nome Outros -->
+			<layout left="585" top="769" width="165" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="NomeOutros" compilerOrder="4"/>
+			</layout>&#xD;			
+		<!-- Outros -->
+			<layout left="457" top="801" width="361" height="98" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="361" height="98" field="Outros" compilerOrder="42"/>
+			</layout>&#xD;
+	<!-- Posses -->
+		<!-- Equipamento -->
+			<layout left="70" top="947" width="370" height="43" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="370" height="43" field="Equipamento" compilerOrder="42"/>
+			</layout>&#xD;
+		<!-- Bens -->
+			<layout left="70" top="1009" width="370" height="43" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="370" height="43" field="Bens" compilerOrder="42"/>
+			</layout>&#xD;
+	<!-- Seita -->
+		<!-- Nome -->
+			<layout left="117" top="1081" width="320" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="320" height="30" field="NomeS" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Localização do Caern -->
+			<layout left="225" top="1104" width="215" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="215" height="30" field="LocalizacaoS" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Nivel -->
+			<layout left="111" top="1127" width="40" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="40" height="30" field="NivelS" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Tipo -->
+			<layout left="190" top="1127" width="250" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="250" height="30" field="TipoS" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Totem -->
+			<layout left="119" top="1147" width="320" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="320" height="30" field="TotemS" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Líder -->
+			<layout left="111" top="1168" width="330" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="330" height="30" field="LiderS" compilerOrder="4"/>
+			</layout>&#xD;
+			
+	<!-- Experiência -->
+		<!-- Total Experiência -->
+			<layout left="520" top="920" width="60" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="TotalE" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Adquirido em -->
+			<layout left="460" top="970" width="365" height="88" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="365" height="88" field="Adquirido" compilerOrder="42"/>
+			</layout>&#xD;		
+		<!-- Total Gasto Experiência -->
+			<layout left="586" top="1063" width="60" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="TotalGE" compilerOrder="4"/>
+			</layout>&#xD;	
+		<!-- Gasto em -->
+			<layout left="460" top="1109" width="365" height="88" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="365" height="88" field="Gasto" compilerOrder="42"/>
+			</layout>&#xD;				
+        </rectangle>
+    </scrollBox>
+</form>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen6_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmLobisomen6_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmLobisomen6_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/6.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+			
+			<!-- Matilha -->			
+		    <layout left="70" top="180" width="750" height="1010" compilerOrder="1">
+                <richEdit width="750" height="1010" backgroundColor="Transparent" field="txt4" compilerOrder="2"/>
+            </layout>&#xD;	
+			
+        </rectangle>
+    </scrollBox>
+</form>

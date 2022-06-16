@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCodigo3" height="0" theme="light">
+
+<dataLink fields="{'bola1forcaQ', 'bola1destrezaQ', 'bola1vigorQ', 'bola1carismaQ', 'bola1manipuQ', 'bola1apareQ', 'bola1percepQ', 'bola1intelQ', 'bola1racioQ'}"
+ defaultValues="{'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true'}">
+</dataLink>
+
+<dataLink fields="{'bola5forcaQ', 'bola4forcaQ', 'bola3forcaQ', 'bola2forcaQ', 'bola1forcaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5forcaQ == true then
+		sheet.bola4forcaQ = true;
+		sheet.bola3forcaQ = true;
+		sheet.bola2forcaQ = true;
+		sheet.bola1forcaQ = true;
+	elseif sheet.bola4forcaQ == true then
+		sheet.bola5forcaQ = false;
+		sheet.bola3forcaQ = true;
+		sheet.bola2forcaQ = true;
+		sheet.bola1forcaQ = true;
+	elseif sheet.bola3forcaQ == true then
+		sheet.bola5forcaQ = false;
+		sheet.bola4forcaQ = false;
+		sheet.bola2forcaQ = true;
+		sheet.bola1forcaQ = true;
+	elseif sheet.bola2forcaQ == true then
+		sheet.bola5forcaQ = false;
+		sheet.bola4forcaQ = false;
+		sheet.bola3forcaQ = false;
+		sheet.bola1forcaQ = true;	
+	elseif sheet.bola1forcaQ == true then
+		sheet.bola5forcaQ = false;
+		sheet.bola4forcaQ = false;
+		sheet.bola3forcaQ = false;
+		sheet.bola2forcaQ = false;
+	elseif sheet.bola1forcaQ == false then
+		sheet.bola5forcaQ = false;
+		sheet.bola4forcaQ = false;
+		sheet.bola3forcaQ = false;
+		sheet.bola2forcaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5destrezaQ', 'bola4destrezaQ', 'bola3destrezaQ', 'bola2destrezaQ', 'bola1destrezaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5destrezaQ == true then
+		sheet.bola4destrezaQ = true;
+		sheet.bola3destrezaQ = true;
+		sheet.bola2destrezaQ = true;
+		sheet.bola1destrezaQ = true;
+	elseif sheet.bola4destrezaQ == true then
+		sheet.bola5destrezaQ = false;
+		sheet.bola3destrezaQ = true;
+		sheet.bola2destrezaQ = true;
+		sheet.bola1destrezaQ = true;
+	elseif sheet.bola3destrezaQ == true then
+		sheet.bola5destrezaQ = false;
+		sheet.bola4destrezaQ = false;
+		sheet.bola2destrezaQ = true;
+		sheet.bola1destrezaQ = true;
+	elseif sheet.bola2destrezaQ == true then
+		sheet.bola5destrezaQ = false;
+		sheet.bola4destrezaQ = false;
+		sheet.bola3destrezaQ = false;
+		sheet.bola1destrezaQ = true;	
+	elseif sheet.bola1destrezaQ == true then
+		sheet.bola5destrezaQ = false;
+		sheet.bola4destrezaQ = false;
+		sheet.bola3destrezaQ = false;
+		sheet.bola2destrezaQ = false;
+	elseif sheet.bola1destrezaQ == false then
+		sheet.bola5destrezaQ = false;
+		sheet.bola4destrezaQ = false;
+		sheet.bola3destrezaQ = false;
+		sheet.bola2destrezaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5vigorQ', 'bola4vigorQ', 'bola3vigorQ', 'bola2vigorQ', 'bola1vigorQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5vigorQ == true then
+		sheet.bola4vigorQ = true;
+		sheet.bola3vigorQ = true;
+		sheet.bola2vigorQ = true;
+		sheet.bola1vigorQ = true;
+	elseif sheet.bola4vigorQ == true then
+		sheet.bola5vigorQ = false;
+		sheet.bola3vigorQ = true;
+		sheet.bola2vigorQ = true;
+		sheet.bola1vigorQ = true;
+	elseif sheet.bola3vigorQ == true then
+		sheet.bola5vigorQ = false;
+		sheet.bola4vigorQ = false;
+		sheet.bola2vigorQ = true;
+		sheet.bola1vigorQ = true;
+	elseif sheet.bola2vigorQ == true then
+		sheet.bola5vigorQ = false;
+		sheet.bola4vigorQ = false;
+		sheet.bola3vigorQ = false;
+		sheet.bola1vigorQ = true;	
+	elseif sheet.bola1vigorQ == true then
+		sheet.bola5vigorQ = false;
+		sheet.bola4vigorQ = false;
+		sheet.bola3vigorQ = false;
+		sheet.bola2vigorQ = false;
+	elseif sheet.bola1vigorQ == false then
+		sheet.bola5vigorQ = false;
+		sheet.bola4vigorQ = false;
+		sheet.bola3vigorQ = false;
+		sheet.bola2vigorQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5carismaQ', 'bola4carismaQ', 'bola3carismaQ', 'bola2carismaQ', 'bola1carismaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5carismaQ == true then
+		sheet.bola4carismaQ = true;
+		sheet.bola3carismaQ = true;
+		sheet.bola2carismaQ = true;
+		sheet.bola1carismaQ = true;
+	elseif sheet.bola4carismaQ == true then
+		sheet.bola5carismaQ = false;
+		sheet.bola3carismaQ = true;
+		sheet.bola2carismaQ = true;
+		sheet.bola1carismaQ = true;
+	elseif sheet.bola3carismaQ == true then
+		sheet.bola5carismaQ = false;
+		sheet.bola4carismaQ = false;
+		sheet.bola2carismaQ = true;
+		sheet.bola1carismaQ = true;
+	elseif sheet.bola2carismaQ == true then
+		sheet.bola5carismaQ = false;
+		sheet.bola4carismaQ = false;
+		sheet.bola3carismaQ = false;
+		sheet.bola1carismaQ = true;	
+	elseif sheet.bola1carismaQ == true then
+		sheet.bola5carismaQ = false;
+		sheet.bola4carismaQ = false;
+		sheet.bola3carismaQ = false;
+		sheet.bola2carismaQ = false;
+	elseif sheet.bola1carismaQ == false then
+		sheet.bola5carismaQ = false;
+		sheet.bola4carismaQ = false;
+		sheet.bola3carismaQ = false;
+		sheet.bola2carismaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5manipuQ', 'bola4manipuQ', 'bola3manipuQ', 'bola2manipuQ', 'bola1manipuQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5manipuQ == true then
+		sheet.bola4manipuQ = true;
+		sheet.bola3manipuQ = true;
+		sheet.bola2manipuQ = true;
+		sheet.bola1manipuQ = true;
+	elseif sheet.bola4manipuQ == true then
+		sheet.bola5manipuQ = false;
+		sheet.bola3manipuQ = true;
+		sheet.bola2manipuQ = true;
+		sheet.bola1manipuQ = true;
+	elseif sheet.bola3manipuQ == true then
+		sheet.bola5manipuQ = false;
+		sheet.bola4manipuQ = false;
+		sheet.bola2manipuQ = true;
+		sheet.bola1manipuQ = true;
+	elseif sheet.bola2manipuQ == true then
+		sheet.bola5manipuQ = false;
+		sheet.bola4manipuQ = false;
+		sheet.bola3manipuQ = false;
+		sheet.bola1manipuQ = true;	
+	elseif sheet.bola1manipuQ == true then
+		sheet.bola5manipuQ = false;
+		sheet.bola4manipuQ = false;
+		sheet.bola3manipuQ = false;
+		sheet.bola2manipuQ = false;
+	elseif sheet.bola1manipuQ == false then
+		sheet.bola5manipuQ = false;
+		sheet.bola4manipuQ = false;
+		sheet.bola3manipuQ = false;
+		sheet.bola2manipuQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5apareQ', 'bola4apareQ', 'bola3apareQ', 'bola2apareQ', 'bola1apareQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5apareQ == true then
+		sheet.bola4apareQ = true;
+		sheet.bola3apareQ = true;
+		sheet.bola2apareQ = true;
+		sheet.bola1apareQ = true;
+	elseif sheet.bola4apareQ == true then
+		sheet.bola5apareQ = false;
+		sheet.bola3apareQ = true;
+		sheet.bola2apareQ = true;
+		sheet.bola1apareQ = true;
+	elseif sheet.bola3apareQ == true then
+		sheet.bola5apareQ = false;
+		sheet.bola4apareQ = false;
+		sheet.bola2apareQ = true;
+		sheet.bola1apareQ = true;
+	elseif sheet.bola2apareQ == true then
+		sheet.bola5apareQ = false;
+		sheet.bola4apareQ = false;
+		sheet.bola3apareQ = false;
+		sheet.bola1apareQ = true;	
+	elseif sheet.bola1apareQ == true then
+		sheet.bola5apareQ = false;
+		sheet.bola4apareQ = false;
+		sheet.bola3apareQ = false;
+		sheet.bola2apareQ = false;
+	elseif sheet.bola1apareQ == false then
+		sheet.bola5apareQ = false;
+		sheet.bola4apareQ = false;
+		sheet.bola3apareQ = false;
+		sheet.bola2apareQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5percepQ', 'bola4percepQ', 'bola3percepQ', 'bola2percepQ', 'bola1percepQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5percepQ == true then
+		sheet.bola4percepQ = true;
+		sheet.bola3percepQ = true;
+		sheet.bola2percepQ = true;
+		sheet.bola1percepQ = true;
+	elseif sheet.bola4percepQ == true then
+		sheet.bola5percepQ = false;
+		sheet.bola3percepQ = true;
+		sheet.bola2percepQ = true;
+		sheet.bola1percepQ = true;
+	elseif sheet.bola3percepQ == true then
+		sheet.bola5percepQ = false;
+		sheet.bola4percepQ = false;
+		sheet.bola2percepQ = true;
+		sheet.bola1percepQ = true;
+	elseif sheet.bola2percepQ == true then
+		sheet.bola5percepQ = false;
+		sheet.bola4percepQ = false;
+		sheet.bola3percepQ = false;
+		sheet.bola1percepQ = true;	
+	elseif sheet.bola1percepQ == true then
+		sheet.bola5percepQ = false;
+		sheet.bola4percepQ = false;
+		sheet.bola3percepQ = false;
+		sheet.bola2percepQ = false;
+	elseif sheet.bola1percepQ == false then
+		sheet.bola5percepQ = false;
+		sheet.bola4percepQ = false;
+		sheet.bola3percepQ = false;
+		sheet.bola2percepQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5intelQ', 'bola4intelQ', 'bola3intelQ', 'bola2intelQ', 'bola1intelQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5intelQ == true then
+		sheet.bola4intelQ = true;
+		sheet.bola3intelQ = true;
+		sheet.bola2intelQ = true;
+		sheet.bola1intelQ = true;
+	elseif sheet.bola4intelQ == true then
+		sheet.bola5intelQ = false;
+		sheet.bola3intelQ = true;
+		sheet.bola2intelQ = true;
+		sheet.bola1intelQ = true;
+	elseif sheet.bola3intelQ == true then
+		sheet.bola5intelQ = false;
+		sheet.bola4intelQ = false;
+		sheet.bola2intelQ = true;
+		sheet.bola1intelQ = true;
+	elseif sheet.bola2intelQ == true then
+		sheet.bola5intelQ = false;
+		sheet.bola4intelQ = false;
+		sheet.bola3intelQ = false;
+		sheet.bola1intelQ = true;	
+	elseif sheet.bola1intelQ == true then
+		sheet.bola5intelQ = false;
+		sheet.bola4intelQ = false;
+		sheet.bola3intelQ = false;
+		sheet.bola2intelQ = false;
+	elseif sheet.bola1intelQ == false then
+		sheet.bola5intelQ = false;
+		sheet.bola4intelQ = false;
+		sheet.bola3intelQ = false;
+		sheet.bola2intelQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5racioQ', 'bola4racioQ', 'bola3racioQ', 'bola2racioQ', 'bola1racioQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5racioQ == true then
+		sheet.bola4racioQ = true;
+		sheet.bola3racioQ = true;
+		sheet.bola2racioQ = true;
+		sheet.bola1racioQ = true;
+	elseif sheet.bola4racioQ == true then
+		sheet.bola5racioQ = false;
+		sheet.bola3racioQ = true;
+		sheet.bola2racioQ = true;
+		sheet.bola1racioQ = true;
+	elseif sheet.bola3racioQ == true then
+		sheet.bola5racioQ = false;
+		sheet.bola4racioQ = false;
+		sheet.bola2racioQ = true;
+		sheet.bola1racioQ = true;
+	elseif sheet.bola2racioQ == true then
+		sheet.bola5racioQ = false;
+		sheet.bola4racioQ = false;
+		sheet.bola3racioQ = false;
+		sheet.bola1racioQ = true;	
+	elseif sheet.bola1racioQ == true then
+		sheet.bola5racioQ = false;
+		sheet.bola4racioQ = false;
+		sheet.bola3racioQ = false;
+		sheet.bola2racioQ = false;
+	elseif sheet.bola1racioQ == false then
+		sheet.bola5racioQ = false;
+		sheet.bola4racioQ = false;
+		sheet.bola3racioQ = false;
+		sheet.bola2racioQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5prontQ', 'bola4prontQ', 'bola3prontQ', 'bola2prontQ', 'bola1prontQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5prontQ == true then
+		sheet.bola4prontQ = true;
+		sheet.bola3prontQ = true;
+		sheet.bola2prontQ = true;
+		sheet.bola1prontQ = true;
+	elseif sheet.bola4prontQ == true then
+		sheet.bola5prontQ = false;
+		sheet.bola3prontQ = true;
+		sheet.bola2prontQ = true;
+		sheet.bola1prontQ = true;
+	elseif sheet.bola3prontQ == true then
+		sheet.bola5prontQ = false;
+		sheet.bola4prontQ = false;
+		sheet.bola2prontQ = true;
+		sheet.bola1prontQ = true;
+	elseif sheet.bola2prontQ == true then
+		sheet.bola5prontQ = false;
+		sheet.bola4prontQ = false;
+		sheet.bola3prontQ = false;
+		sheet.bola1prontQ = true;	
+	elseif sheet.bola1prontQ == true then
+		sheet.bola5prontQ = false;
+		sheet.bola4prontQ = false;
+		sheet.bola3prontQ = false;
+		sheet.bola2prontQ = false;
+	elseif sheet.bola1prontQ == false then
+		sheet.bola5prontQ = false;
+		sheet.bola4prontQ = false;
+		sheet.bola3prontQ = false;
+		sheet.bola2prontQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5esporQ', 'bola4esporQ', 'bola3esporQ', 'bola2esporQ', 'bola1esporQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5esporQ == true then
+		sheet.bola4esporQ = true;
+		sheet.bola3esporQ = true;
+		sheet.bola2esporQ = true;
+		sheet.bola1esporQ = true;
+	elseif sheet.bola4esporQ == true then
+		sheet.bola5esporQ = false;
+		sheet.bola3esporQ = true;
+		sheet.bola2esporQ = true;
+		sheet.bola1esporQ = true;
+	elseif sheet.bola3esporQ == true then
+		sheet.bola5esporQ = false;
+		sheet.bola4esporQ = false;
+		sheet.bola2esporQ = true;
+		sheet.bola1esporQ = true;
+	elseif sheet.bola2esporQ == true then
+		sheet.bola5esporQ = false;
+		sheet.bola4esporQ = false;
+		sheet.bola3esporQ = false;
+		sheet.bola1esporQ = true;	
+	elseif sheet.bola1esporQ == true then
+		sheet.bola5esporQ = false;
+		sheet.bola4esporQ = false;
+		sheet.bola3esporQ = false;
+		sheet.bola2esporQ = false;
+	elseif sheet.bola1esporQ == false then
+		sheet.bola5esporQ = false;
+		sheet.bola4esporQ = false;
+		sheet.bola3esporQ = false;
+		sheet.bola2esporQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5brigaQ', 'bola4brigaQ', 'bola3brigaQ', 'bola2brigaQ', 'bola1brigaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5brigaQ == true then
+		sheet.bola4brigaQ = true;
+		sheet.bola3brigaQ = true;
+		sheet.bola2brigaQ = true;
+		sheet.bola1brigaQ = true;
+	elseif sheet.bola4brigaQ == true then
+		sheet.bola5brigaQ = false;
+		sheet.bola3brigaQ = true;
+		sheet.bola2brigaQ = true;
+		sheet.bola1brigaQ = true;
+	elseif sheet.bola3brigaQ == true then
+		sheet.bola5brigaQ = false;
+		sheet.bola4brigaQ = false;
+		sheet.bola2brigaQ = true;
+		sheet.bola1brigaQ = true;
+	elseif sheet.bola2brigaQ == true then
+		sheet.bola5brigaQ = false;
+		sheet.bola4brigaQ = false;
+		sheet.bola3brigaQ = false;
+		sheet.bola1brigaQ = true;	
+	elseif sheet.bola1brigaQ == true then
+		sheet.bola5brigaQ = false;
+		sheet.bola4brigaQ = false;
+		sheet.bola3brigaQ = false;
+		sheet.bola2brigaQ = false;
+	elseif sheet.bola1brigaQ == false then
+		sheet.bola5brigaQ = false;
+		sheet.bola4brigaQ = false;
+		sheet.bola3brigaQ = false;
+		sheet.bola2brigaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5empatQ', 'bola4empatQ', 'bola3empatQ', 'bola2empatQ', 'bola1empatQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5empatQ == true then
+		sheet.bola4empatQ = true;
+		sheet.bola3empatQ = true;
+		sheet.bola2empatQ = true;
+		sheet.bola1empatQ = true;
+	elseif sheet.bola4empatQ == true then
+		sheet.bola5empatQ = false;
+		sheet.bola3empatQ = true;
+		sheet.bola2empatQ = true;
+		sheet.bola1empatQ = true;
+	elseif sheet.bola3empatQ == true then
+		sheet.bola5empatQ = false;
+		sheet.bola4empatQ = false;
+		sheet.bola2empatQ = true;
+		sheet.bola1empatQ = true;
+	elseif sheet.bola2empatQ == true then
+		sheet.bola5empatQ = false;
+		sheet.bola4empatQ = false;
+		sheet.bola3empatQ = false;
+		sheet.bola1empatQ = true;	
+	elseif sheet.bola1empatQ == true then
+		sheet.bola5empatQ = false;
+		sheet.bola4empatQ = false;
+		sheet.bola3empatQ = false;
+		sheet.bola2empatQ = false;
+	elseif sheet.bola1empatQ == false then
+		sheet.bola5empatQ = false;
+		sheet.bola4empatQ = false;
+		sheet.bola3empatQ = false;
+		sheet.bola2empatQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5expreQ', 'bola4expreQ', 'bola3expreQ', 'bola2expreQ', 'bola1expreQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5expreQ == true then
+		sheet.bola4expreQ = true;
+		sheet.bola3expreQ = true;
+		sheet.bola2expreQ = true;
+		sheet.bola1expreQ = true;
+	elseif sheet.bola4expreQ == true then
+		sheet.bola5expreQ = false;
+		sheet.bola3expreQ = true;
+		sheet.bola2expreQ = true;
+		sheet.bola1expreQ = true;
+	elseif sheet.bola3expreQ == true then
+		sheet.bola5expreQ = false;
+		sheet.bola4expreQ = false;
+		sheet.bola2expreQ = true;
+		sheet.bola1expreQ = true;
+	elseif sheet.bola2expreQ == true then
+		sheet.bola5expreQ = false;
+		sheet.bola4expreQ = false;
+		sheet.bola3expreQ = false;
+		sheet.bola1expreQ = true;	
+	elseif sheet.bola1expreQ == true then
+		sheet.bola5expreQ = false;
+		sheet.bola4expreQ = false;
+		sheet.bola3expreQ = false;
+		sheet.bola2expreQ = false;
+	elseif sheet.bola1expreQ == false then
+		sheet.bola5expreQ = false;
+		sheet.bola4expreQ = false;
+		sheet.bola3expreQ = false;
+		sheet.bola2expreQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5intimQ', 'bola4intimQ', 'bola3intimQ', 'bola2intimQ', 'bola1intimQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5intimQ == true then
+		sheet.bola4intimQ = true;
+		sheet.bola3intimQ = true;
+		sheet.bola2intimQ = true;
+		sheet.bola1intimQ = true;
+	elseif sheet.bola4intimQ == true then
+		sheet.bola5intimQ = false;
+		sheet.bola3intimQ = true;
+		sheet.bola2intimQ = true;
+		sheet.bola1intimQ = true;
+	elseif sheet.bola3intimQ == true then
+		sheet.bola5intimQ = false;
+		sheet.bola4intimQ = false;
+		sheet.bola2intimQ = true;
+		sheet.bola1intimQ = true;
+	elseif sheet.bola2intimQ == true then
+		sheet.bola5intimQ = false;
+		sheet.bola4intimQ = false;
+		sheet.bola3intimQ = false;
+		sheet.bola1intimQ = true;	
+	elseif sheet.bola1intimQ == true then
+		sheet.bola5intimQ = false;
+		sheet.bola4intimQ = false;
+		sheet.bola3intimQ = false;
+		sheet.bola2intimQ = false;
+	elseif sheet.bola1intimQ == false then
+		sheet.bola5intimQ = false;
+		sheet.bola4intimQ = false;
+		sheet.bola3intimQ = false;
+		sheet.bola2intimQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5tinoQ', 'bola4tinoQ', 'bola3tinoQ', 'bola2tinoQ', 'bola1tinoQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5tinoQ == true then
+		sheet.bola4tinoQ = true;
+		sheet.bola3tinoQ = true;
+		sheet.bola2tinoQ = true;
+		sheet.bola1tinoQ = true;
+	elseif sheet.bola4tinoQ == true then
+		sheet.bola5tinoQ = false;
+		sheet.bola3tinoQ = true;
+		sheet.bola2tinoQ = true;
+		sheet.bola1tinoQ = true;
+	elseif sheet.bola3tinoQ == true then
+		sheet.bola5tinoQ = false;
+		sheet.bola4tinoQ = false;
+		sheet.bola2tinoQ = true;
+		sheet.bola1tinoQ = true;
+	elseif sheet.bola2tinoQ == true then
+		sheet.bola5tinoQ = false;
+		sheet.bola4tinoQ = false;
+		sheet.bola3tinoQ = false;
+		sheet.bola1tinoQ = true;	
+	elseif sheet.bola1tinoQ == true then
+		sheet.bola5tinoQ = false;
+		sheet.bola4tinoQ = false;
+		sheet.bola3tinoQ = false;
+		sheet.bola2tinoQ = false;
+	elseif sheet.bola1tinoQ == false then
+		sheet.bola5tinoQ = false;
+		sheet.bola4tinoQ = false;
+		sheet.bola3tinoQ = false;
+		sheet.bola2tinoQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5liderQ', 'bola4liderQ', 'bola3liderQ', 'bola2liderQ', 'bola1liderQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5liderQ == true then
+		sheet.bola4liderQ = true;
+		sheet.bola3liderQ = true;
+		sheet.bola2liderQ = true;
+		sheet.bola1liderQ = true;
+	elseif sheet.bola4liderQ == true then
+		sheet.bola5liderQ = false;
+		sheet.bola3liderQ = true;
+		sheet.bola2liderQ = true;
+		sheet.bola1liderQ = true;
+	elseif sheet.bola3liderQ == true then
+		sheet.bola5liderQ = false;
+		sheet.bola4liderQ = false;
+		sheet.bola2liderQ = true;
+		sheet.bola1liderQ = true;
+	elseif sheet.bola2liderQ == true then
+		sheet.bola5liderQ = false;
+		sheet.bola4liderQ = false;
+		sheet.bola3liderQ = false;
+		sheet.bola1liderQ = true;	
+	elseif sheet.bola1liderQ == true then
+		sheet.bola5liderQ = false;
+		sheet.bola4liderQ = false;
+		sheet.bola3liderQ = false;
+		sheet.bola2liderQ = false;
+	elseif sheet.bola1liderQ == false then
+		sheet.bola5liderQ = false;
+		sheet.bola4liderQ = false;
+		sheet.bola3liderQ = false;
+		sheet.bola2liderQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5manhaQ', 'bola4manhaQ', 'bola3manhaQ', 'bola2manhaQ', 'bola1manhaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5manhaQ == true then
+		sheet.bola4manhaQ = true;
+		sheet.bola3manhaQ = true;
+		sheet.bola2manhaQ = true;
+		sheet.bola1manhaQ = true;
+	elseif sheet.bola4manhaQ == true then
+		sheet.bola5manhaQ = false;
+		sheet.bola3manhaQ = true;
+		sheet.bola2manhaQ = true;
+		sheet.bola1manhaQ = true;
+	elseif sheet.bola3manhaQ == true then
+		sheet.bola5manhaQ = false;
+		sheet.bola4manhaQ = false;
+		sheet.bola2manhaQ = true;
+		sheet.bola1manhaQ = true;
+	elseif sheet.bola2manhaQ == true then
+		sheet.bola5manhaQ = false;
+		sheet.bola4manhaQ = false;
+		sheet.bola3manhaQ = false;
+		sheet.bola1manhaQ = true;	
+	elseif sheet.bola1manhaQ == true then
+		sheet.bola5manhaQ = false;
+		sheet.bola4manhaQ = false;
+		sheet.bola3manhaQ = false;
+		sheet.bola2manhaQ = false;
+	elseif sheet.bola1manhaQ == false then
+		sheet.bola5manhaQ = false;
+		sheet.bola4manhaQ = false;
+		sheet.bola3manhaQ = false;
+		sheet.bola2manhaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5labiaQ', 'bola4labiaQ', 'bola3labiaQ', 'bola2labiaQ', 'bola1labiaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5labiaQ == true then
+		sheet.bola4labiaQ = true;
+		sheet.bola3labiaQ = true;
+		sheet.bola2labiaQ = true;
+		sheet.bola1labiaQ = true;
+	elseif sheet.bola4labiaQ == true then
+		sheet.bola5labiaQ = false;
+		sheet.bola3labiaQ = true;
+		sheet.bola2labiaQ = true;
+		sheet.bola1labiaQ = true;
+	elseif sheet.bola3labiaQ == true then
+		sheet.bola5labiaQ = false;
+		sheet.bola4labiaQ = false;
+		sheet.bola2labiaQ = true;
+		sheet.bola1labiaQ = true;
+	elseif sheet.bola2labiaQ == true then
+		sheet.bola5labiaQ = false;
+		sheet.bola4labiaQ = false;
+		sheet.bola3labiaQ = false;
+		sheet.bola1labiaQ = true;	
+	elseif sheet.bola1labiaQ == true then
+		sheet.bola5labiaQ = false;
+		sheet.bola4labiaQ = false;
+		sheet.bola3labiaQ = false;
+		sheet.bola2labiaQ = false;
+	elseif sheet.bola1labiaQ == false then
+		sheet.bola5labiaQ = false;
+		sheet.bola4labiaQ = false;
+		sheet.bola3labiaQ = false;
+		sheet.bola2labiaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5esquiQ', 'bola4esquiQ', 'bola3esquiQ', 'bola2esquiQ', 'bola1esquiQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5esquiQ == true then
+		sheet.bola4esquiQ = true;
+		sheet.bola3esquiQ = true;
+		sheet.bola2esquiQ = true;
+		sheet.bola1esquiQ = true;
+	elseif sheet.bola4esquiQ == true then
+		sheet.bola5esquiQ = false;
+		sheet.bola3esquiQ = true;
+		sheet.bola2esquiQ = true;
+		sheet.bola1esquiQ = true;
+	elseif sheet.bola3esquiQ == true then
+		sheet.bola5esquiQ = false;
+		sheet.bola4esquiQ = false;
+		sheet.bola2esquiQ = true;
+		sheet.bola1esquiQ = true;
+	elseif sheet.bola2esquiQ == true then
+		sheet.bola5esquiQ = false;
+		sheet.bola4esquiQ = false;
+		sheet.bola3esquiQ = false;
+		sheet.bola1esquiQ = true;	
+	elseif sheet.bola1esquiQ == true then
+		sheet.bola5esquiQ = false;
+		sheet.bola4esquiQ = false;
+		sheet.bola3esquiQ = false;
+		sheet.bola2esquiQ = false;
+	elseif sheet.bola1esquiQ == false then
+		sheet.bola5esquiQ = false;
+		sheet.bola4esquiQ = false;
+		sheet.bola3esquiQ = false;
+		sheet.bola2esquiQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5empcaQ', 'bola4empcaQ', 'bola3empcaQ', 'bola2empcaQ', 'bola1empcaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5empcaQ == true then
+		sheet.bola4empcaQ = true;
+		sheet.bola3empcaQ = true;
+		sheet.bola2empcaQ = true;
+		sheet.bola1empcaQ = true;
+	elseif sheet.bola4empcaQ == true then
+		sheet.bola5empcaQ = false;
+		sheet.bola3empcaQ = true;
+		sheet.bola2empcaQ = true;
+		sheet.bola1empcaQ = true;
+	elseif sheet.bola3empcaQ == true then
+		sheet.bola5empcaQ = false;
+		sheet.bola4empcaQ = false;
+		sheet.bola2empcaQ = true;
+		sheet.bola1empcaQ = true;
+	elseif sheet.bola2empcaQ == true then
+		sheet.bola5empcaQ = false;
+		sheet.bola4empcaQ = false;
+		sheet.bola3empcaQ = false;
+		sheet.bola1empcaQ = true;	
+	elseif sheet.bola1empcaQ == true then
+		sheet.bola5empcaQ = false;
+		sheet.bola4empcaQ = false;
+		sheet.bola3empcaQ = false;
+		sheet.bola2empcaQ = false;
+	elseif sheet.bola1empcaQ == false then
+		sheet.bola5empcaQ = false;
+		sheet.bola4empcaQ = false;
+		sheet.bola3empcaQ = false;
+		sheet.bola2empcaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5ofiQ', 'bola4ofiQ', 'bola3ofiQ', 'bola2ofiQ', 'bola1ofiQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5ofiQ == true then
+		sheet.bola4ofiQ = true;
+		sheet.bola3ofiQ = true;
+		sheet.bola2ofiQ = true;
+		sheet.bola1ofiQ = true;
+	elseif sheet.bola4ofiQ == true then
+		sheet.bola5ofiQ = false;
+		sheet.bola3ofiQ = true;
+		sheet.bola2ofiQ = true;
+		sheet.bola1ofiQ = true;
+	elseif sheet.bola3ofiQ == true then
+		sheet.bola5ofiQ = false;
+		sheet.bola4ofiQ = false;
+		sheet.bola2ofiQ = true;
+		sheet.bola1ofiQ = true;
+	elseif sheet.bola2ofiQ == true then
+		sheet.bola5ofiQ = false;
+		sheet.bola4ofiQ = false;
+		sheet.bola3ofiQ = false;
+		sheet.bola1ofiQ = true;	
+	elseif sheet.bola1ofiQ == true then
+		sheet.bola5ofiQ = false;
+		sheet.bola4ofiQ = false;
+		sheet.bola3ofiQ = false;
+		sheet.bola2ofiQ = false;
+	elseif sheet.bola1ofiQ == false then
+		sheet.bola5ofiQ = false;
+		sheet.bola4ofiQ = false;
+		sheet.bola3ofiQ = false;
+		sheet.bola2ofiQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5conduQ', 'bola4conduQ', 'bola3conduQ', 'bola2conduQ', 'bola1conduQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5conduQ == true then
+		sheet.bola4conduQ = true;
+		sheet.bola3conduQ = true;
+		sheet.bola2conduQ = true;
+		sheet.bola1conduQ = true;
+	elseif sheet.bola4conduQ == true then
+		sheet.bola5conduQ = false;
+		sheet.bola3conduQ = true;
+		sheet.bola2conduQ = true;
+		sheet.bola1conduQ = true;
+	elseif sheet.bola3conduQ == true then
+		sheet.bola5conduQ = false;
+		sheet.bola4conduQ = false;
+		sheet.bola2conduQ = true;
+		sheet.bola1conduQ = true;
+	elseif sheet.bola2conduQ == true then
+		sheet.bola5conduQ = false;
+		sheet.bola4conduQ = false;
+		sheet.bola3conduQ = false;
+		sheet.bola1conduQ = true;	
+	elseif sheet.bola1conduQ == true then
+		sheet.bola5conduQ = false;
+		sheet.bola4conduQ = false;
+		sheet.bola3conduQ = false;
+		sheet.bola2conduQ = false;
+	elseif sheet.bola1conduQ == false then
+		sheet.bola5conduQ = false;
+		sheet.bola4conduQ = false;
+		sheet.bola3conduQ = false;
+		sheet.bola2conduQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5etiqueQ', 'bola4etiqueQ', 'bola3etiqueQ', 'bola2etiqueQ', 'bola1etiqueQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5etiqueQ == true then
+		sheet.bola4etiqueQ = true;
+		sheet.bola3etiqueQ = true;
+		sheet.bola2etiqueQ = true;
+		sheet.bola1etiqueQ = true;
+	elseif sheet.bola4etiqueQ == true then
+		sheet.bola5etiqueQ = false;
+		sheet.bola3etiqueQ = true;
+		sheet.bola2etiqueQ = true;
+		sheet.bola1etiqueQ = true;
+	elseif sheet.bola3etiqueQ == true then
+		sheet.bola5etiqueQ = false;
+		sheet.bola4etiqueQ = false;
+		sheet.bola2etiqueQ = true;
+		sheet.bola1etiqueQ = true;
+	elseif sheet.bola2etiqueQ == true then
+		sheet.bola5etiqueQ = false;
+		sheet.bola4etiqueQ = false;
+		sheet.bola3etiqueQ = false;
+		sheet.bola1etiqueQ = true;	
+	elseif sheet.bola1etiqueQ == true then
+		sheet.bola5etiqueQ = false;
+		sheet.bola4etiqueQ = false;
+		sheet.bola3etiqueQ = false;
+		sheet.bola2etiqueQ = false;
+	elseif sheet.bola1etiqueQ == false then
+		sheet.bola5etiqueQ = false;
+		sheet.bola4etiqueQ = false;
+		sheet.bola3etiqueQ = false;
+		sheet.bola2etiqueQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5armprQ', 'bola4armprQ', 'bola3armprQ', 'bola2armprQ', 'bola1armprQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5armprQ == true then
+		sheet.bola4armprQ = true;
+		sheet.bola3armprQ = true;
+		sheet.bola2armprQ = true;
+		sheet.bola1armprQ = true;
+	elseif sheet.bola4armprQ == true then
+		sheet.bola5armprQ = false;
+		sheet.bola3armprQ = true;
+		sheet.bola2armprQ = true;
+		sheet.bola1armprQ = true;
+	elseif sheet.bola3armprQ == true then
+		sheet.bola5armprQ = false;
+		sheet.bola4armprQ = false;
+		sheet.bola2armprQ = true;
+		sheet.bola1armprQ = true;
+	elseif sheet.bola2armprQ == true then
+		sheet.bola5armprQ = false;
+		sheet.bola4armprQ = false;
+		sheet.bola3armprQ = false;
+		sheet.bola1armprQ = true;	
+	elseif sheet.bola1armprQ == true then
+		sheet.bola5armprQ = false;
+		sheet.bola4armprQ = false;
+		sheet.bola3armprQ = false;
+		sheet.bola2armprQ = false;
+	elseif sheet.bola1armprQ == false then
+		sheet.bola5armprQ = false;
+		sheet.bola4armprQ = false;
+		sheet.bola3armprQ = false;
+		sheet.bola2armprQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5segurQ', 'bola4segurQ', 'bola3segurQ', 'bola2segurQ', 'bola1segurQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5segurQ == true then
+		sheet.bola4segurQ = true;
+		sheet.bola3segurQ = true;
+		sheet.bola2segurQ = true;
+		sheet.bola1segurQ = true;
+	elseif sheet.bola4segurQ == true then
+		sheet.bola5segurQ = false;
+		sheet.bola3segurQ = true;
+		sheet.bola2segurQ = true;
+		sheet.bola1segurQ = true;
+	elseif sheet.bola3segurQ == true then
+		sheet.bola5segurQ = false;
+		sheet.bola4segurQ = false;
+		sheet.bola2segurQ = true;
+		sheet.bola1segurQ = true;
+	elseif sheet.bola2segurQ == true then
+		sheet.bola5segurQ = false;
+		sheet.bola4segurQ = false;
+		sheet.bola3segurQ = false;
+		sheet.bola1segurQ = true;	
+	elseif sheet.bola1segurQ == true then
+		sheet.bola5segurQ = false;
+		sheet.bola4segurQ = false;
+		sheet.bola3segurQ = false;
+		sheet.bola2segurQ = false;
+	elseif sheet.bola1segurQ == false then
+		sheet.bola5segurQ = false;
+		sheet.bola4segurQ = false;
+		sheet.bola3segurQ = false;
+		sheet.bola2segurQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5armbrQ', 'bola4armbrQ', 'bola3armbrQ', 'bola2armbrQ', 'bola1armbrQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5armbrQ == true then
+		sheet.bola4armbrQ = true;
+		sheet.bola3armbrQ = true;
+		sheet.bola2armbrQ = true;
+		sheet.bola1armbrQ = true;
+	elseif sheet.bola4armbrQ == true then
+		sheet.bola5armbrQ = false;
+		sheet.bola3armbrQ = true;
+		sheet.bola2armbrQ = true;
+		sheet.bola1armbrQ = true;
+	elseif sheet.bola3armbrQ == true then
+		sheet.bola5armbrQ = false;
+		sheet.bola4armbrQ = false;
+		sheet.bola2armbrQ = true;
+		sheet.bola1armbrQ = true;
+	elseif sheet.bola2armbrQ == true then
+		sheet.bola5armbrQ = false;
+		sheet.bola4armbrQ = false;
+		sheet.bola3armbrQ = false;
+		sheet.bola1armbrQ = true;	
+	elseif sheet.bola1armbrQ == true then
+		sheet.bola5armbrQ = false;
+		sheet.bola4armbrQ = false;
+		sheet.bola3armbrQ = false;
+		sheet.bola2armbrQ = false;
+	elseif sheet.bola1armbrQ == false then
+		sheet.bola5armbrQ = false;
+		sheet.bola4armbrQ = false;
+		sheet.bola3armbrQ = false;
+		sheet.bola2armbrQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5perfoQ', 'bola4perfoQ', 'bola3perfoQ', 'bola2perfoQ', 'bola1perfoQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5perfoQ == true then
+		sheet.bola4perfoQ = true;
+		sheet.bola3perfoQ = true;
+		sheet.bola2perfoQ = true;
+		sheet.bola1perfoQ = true;
+	elseif sheet.bola4perfoQ == true then
+		sheet.bola5perfoQ = false;
+		sheet.bola3perfoQ = true;
+		sheet.bola2perfoQ = true;
+		sheet.bola1perfoQ = true;
+	elseif sheet.bola3perfoQ == true then
+		sheet.bola5perfoQ = false;
+		sheet.bola4perfoQ = false;
+		sheet.bola2perfoQ = true;
+		sheet.bola1perfoQ = true;
+	elseif sheet.bola2perfoQ == true then
+		sheet.bola5perfoQ = false;
+		sheet.bola4perfoQ = false;
+		sheet.bola3perfoQ = false;
+		sheet.bola1perfoQ = true;	
+	elseif sheet.bola1perfoQ == true then
+		sheet.bola5perfoQ = false;
+		sheet.bola4perfoQ = false;
+		sheet.bola3perfoQ = false;
+		sheet.bola2perfoQ = false;
+	elseif sheet.bola1perfoQ == false then
+		sheet.bola5perfoQ = false;
+		sheet.bola4perfoQ = false;
+		sheet.bola3perfoQ = false;
+		sheet.bola2perfoQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5furtiQ', 'bola4furtiQ', 'bola3furtiQ', 'bola2furtiQ', 'bola1furtiQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5furtiQ == true then
+		sheet.bola4furtiQ = true;
+		sheet.bola3furtiQ = true;
+		sheet.bola2furtiQ = true;
+		sheet.bola1furtiQ = true;
+	elseif sheet.bola4furtiQ == true then
+		sheet.bola5furtiQ = false;
+		sheet.bola3furtiQ = true;
+		sheet.bola2furtiQ = true;
+		sheet.bola1furtiQ = true;
+	elseif sheet.bola3furtiQ == true then
+		sheet.bola5furtiQ = false;
+		sheet.bola4furtiQ = false;
+		sheet.bola2furtiQ = true;
+		sheet.bola1furtiQ = true;
+	elseif sheet.bola2furtiQ == true then
+		sheet.bola5furtiQ = false;
+		sheet.bola4furtiQ = false;
+		sheet.bola3furtiQ = false;
+		sheet.bola1furtiQ = true;	
+	elseif sheet.bola1furtiQ == true then
+		sheet.bola5furtiQ = false;
+		sheet.bola4furtiQ = false;
+		sheet.bola3furtiQ = false;
+		sheet.bola2furtiQ = false;
+	elseif sheet.bola1furtiQ == false then
+		sheet.bola5furtiQ = false;
+		sheet.bola4furtiQ = false;
+		sheet.bola3furtiQ = false;
+		sheet.bola2furtiQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5sobreQ', 'bola4sobreQ', 'bola3sobreQ', 'bola2sobreQ', 'bola1sobreQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5sobreQ == true then
+		sheet.bola4sobreQ = true;
+		sheet.bola3sobreQ = true;
+		sheet.bola2sobreQ = true;
+		sheet.bola1sobreQ = true;
+	elseif sheet.bola4sobreQ == true then
+		sheet.bola5sobreQ = false;
+		sheet.bola3sobreQ = true;
+		sheet.bola2sobreQ = true;
+		sheet.bola1sobreQ = true;
+	elseif sheet.bola3sobreQ == true then
+		sheet.bola5sobreQ = false;
+		sheet.bola4sobreQ = false;
+		sheet.bola2sobreQ = true;
+		sheet.bola1sobreQ = true;
+	elseif sheet.bola2sobreQ == true then
+		sheet.bola5sobreQ = false;
+		sheet.bola4sobreQ = false;
+		sheet.bola3sobreQ = false;
+		sheet.bola1sobreQ = true;	
+	elseif sheet.bola1sobreQ == true then
+		sheet.bola5sobreQ = false;
+		sheet.bola4sobreQ = false;
+		sheet.bola3sobreQ = false;
+		sheet.bola2sobreQ = false;
+	elseif sheet.bola1sobreQ == false then
+		sheet.bola5sobreQ = false;
+		sheet.bola4sobreQ = false;
+		sheet.bola3sobreQ = false;
+		sheet.bola2sobreQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5montaQ', 'bola4montaQ', 'bola3montaQ', 'bola2montaQ', 'bola1montaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5montaQ == true then
+		sheet.bola4montaQ = true;
+		sheet.bola3montaQ = true;
+		sheet.bola2montaQ = true;
+		sheet.bola1montaQ = true;
+	elseif sheet.bola4montaQ == true then
+		sheet.bola5montaQ = false;
+		sheet.bola3montaQ = true;
+		sheet.bola2montaQ = true;
+		sheet.bola1montaQ = true;
+	elseif sheet.bola3montaQ == true then
+		sheet.bola5montaQ = false;
+		sheet.bola4montaQ = false;
+		sheet.bola2montaQ = true;
+		sheet.bola1montaQ = true;
+	elseif sheet.bola2montaQ == true then
+		sheet.bola5montaQ = false;
+		sheet.bola4montaQ = false;
+		sheet.bola3montaQ = false;
+		sheet.bola1montaQ = true;	
+	elseif sheet.bola1montaQ == true then
+		sheet.bola5montaQ = false;
+		sheet.bola4montaQ = false;
+		sheet.bola3montaQ = false;
+		sheet.bola2montaQ = false;
+	elseif sheet.bola1montaQ == false then
+		sheet.bola5montaQ = false;
+		sheet.bola4montaQ = false;
+		sheet.bola3montaQ = false;
+		sheet.bola2montaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5instruQ', 'bola4instruQ', 'bola3instruQ', 'bola2instruQ', 'bola1instruQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5instruQ == true then
+		sheet.bola4instruQ = true;
+		sheet.bola3instruQ = true;
+		sheet.bola2instruQ = true;
+		sheet.bola1instruQ = true;
+	elseif sheet.bola4instruQ == true then
+		sheet.bola5instruQ = false;
+		sheet.bola3instruQ = true;
+		sheet.bola2instruQ = true;
+		sheet.bola1instruQ = true;
+	elseif sheet.bola3instruQ == true then
+		sheet.bola5instruQ = false;
+		sheet.bola4instruQ = false;
+		sheet.bola2instruQ = true;
+		sheet.bola1instruQ = true;
+	elseif sheet.bola2instruQ == true then
+		sheet.bola5instruQ = false;
+		sheet.bola4instruQ = false;
+		sheet.bola3instruQ = false;
+		sheet.bola1instruQ = true;	
+	elseif sheet.bola1instruQ == true then
+		sheet.bola5instruQ = false;
+		sheet.bola4instruQ = false;
+		sheet.bola3instruQ = false;
+		sheet.bola2instruQ = false;
+	elseif sheet.bola1instruQ == false then
+		sheet.bola5instruQ = false;
+		sheet.bola4instruQ = false;
+		sheet.bola3instruQ = false;
+		sheet.bola2instruQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5compuQ', 'bola4compuQ', 'bola3compuQ', 'bola2compuQ', 'bola1compuQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5compuQ == true then
+		sheet.bola4compuQ = true;
+		sheet.bola3compuQ = true;
+		sheet.bola2compuQ = true;
+		sheet.bola1compuQ = true;
+	elseif sheet.bola4compuQ == true then
+		sheet.bola5compuQ = false;
+		sheet.bola3compuQ = true;
+		sheet.bola2compuQ = true;
+		sheet.bola1compuQ = true;
+	elseif sheet.bola3compuQ == true then
+		sheet.bola5compuQ = false;
+		sheet.bola4compuQ = false;
+		sheet.bola2compuQ = true;
+		sheet.bola1compuQ = true;
+	elseif sheet.bola2compuQ == true then
+		sheet.bola5compuQ = false;
+		sheet.bola4compuQ = false;
+		sheet.bola3compuQ = false;
+		sheet.bola1compuQ = true;	
+	elseif sheet.bola1compuQ == true then
+		sheet.bola5compuQ = false;
+		sheet.bola4compuQ = false;
+		sheet.bola3compuQ = false;
+		sheet.bola2compuQ = false;
+	elseif sheet.bola1compuQ == false then
+		sheet.bola5compuQ = false;
+		sheet.bola4compuQ = false;
+		sheet.bola3compuQ = false;
+		sheet.bola2compuQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5enigQ', 'bola4enigQ', 'bola3enigQ', 'bola2enigQ', 'bola1enigQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5enigQ == true then
+		sheet.bola4enigQ = true;
+		sheet.bola3enigQ = true;
+		sheet.bola2enigQ = true;
+		sheet.bola1enigQ = true;
+	elseif sheet.bola4enigQ == true then
+		sheet.bola5enigQ = false;
+		sheet.bola3enigQ = true;
+		sheet.bola2enigQ = true;
+		sheet.bola1enigQ = true;
+	elseif sheet.bola3enigQ == true then
+		sheet.bola5enigQ = false;
+		sheet.bola4enigQ = false;
+		sheet.bola2enigQ = true;
+		sheet.bola1enigQ = true;
+	elseif sheet.bola2enigQ == true then
+		sheet.bola5enigQ = false;
+		sheet.bola4enigQ = false;
+		sheet.bola3enigQ = false;
+		sheet.bola1enigQ = true;	
+	elseif sheet.bola1enigQ == true then
+		sheet.bola5enigQ = false;
+		sheet.bola4enigQ = false;
+		sheet.bola3enigQ = false;
+		sheet.bola2enigQ = false;
+	elseif sheet.bola1enigQ == false then
+		sheet.bola5enigQ = false;
+		sheet.bola4enigQ = false;
+		sheet.bola3enigQ = false;
+		sheet.bola2enigQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5gramaQ', 'bola4gramaQ', 'bola3gramaQ', 'bola2gramaQ', 'bola1gramaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5gramaQ == true then
+		sheet.bola4gramaQ = true;
+		sheet.bola3gramaQ = true;
+		sheet.bola2gramaQ = true;
+		sheet.bola1gramaQ = true;
+	elseif sheet.bola4gramaQ == true then
+		sheet.bola5gramaQ = false;
+		sheet.bola3gramaQ = true;
+		sheet.bola2gramaQ = true;
+		sheet.bola1gramaQ = true;
+	elseif sheet.bola3gramaQ == true then
+		sheet.bola5gramaQ = false;
+		sheet.bola4gramaQ = false;
+		sheet.bola2gramaQ = true;
+		sheet.bola1gramaQ = true;
+	elseif sheet.bola2gramaQ == true then
+		sheet.bola5gramaQ = false;
+		sheet.bola4gramaQ = false;
+		sheet.bola3gramaQ = false;
+		sheet.bola1gramaQ = true;	
+	elseif sheet.bola1gramaQ == true then
+		sheet.bola5gramaQ = false;
+		sheet.bola4gramaQ = false;
+		sheet.bola3gramaQ = false;
+		sheet.bola2gramaQ = false;
+	elseif sheet.bola1gramaQ == false then
+		sheet.bola5gramaQ = false;
+		sheet.bola4gramaQ = false;
+		sheet.bola3gramaQ = false;
+		sheet.bola2gramaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5invesQ', 'bola4invesQ', 'bola3invesQ', 'bola2invesQ', 'bola1invesQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5invesQ == true then
+		sheet.bola4invesQ = true;
+		sheet.bola3invesQ = true;
+		sheet.bola2invesQ = true;
+		sheet.bola1invesQ = true;
+	elseif sheet.bola4invesQ == true then
+		sheet.bola5invesQ = false;
+		sheet.bola3invesQ = true;
+		sheet.bola2invesQ = true;
+		sheet.bola1invesQ = true;
+	elseif sheet.bola3invesQ == true then
+		sheet.bola5invesQ = false;
+		sheet.bola4invesQ = false;
+		sheet.bola2invesQ = true;
+		sheet.bola1invesQ = true;
+	elseif sheet.bola2invesQ == true then
+		sheet.bola5invesQ = false;
+		sheet.bola4invesQ = false;
+		sheet.bola3invesQ = false;
+		sheet.bola1invesQ = true;	
+	elseif sheet.bola1invesQ == true then
+		sheet.bola5invesQ = false;
+		sheet.bola4invesQ = false;
+		sheet.bola3invesQ = false;
+		sheet.bola2invesQ = false;
+	elseif sheet.bola1invesQ == false then
+		sheet.bola5invesQ = false;
+		sheet.bola4invesQ = false;
+		sheet.bola3invesQ = false;
+		sheet.bola2invesQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5direiQ', 'bola4direiQ', 'bola3direiQ', 'bola2direiQ', 'bola1direiQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5direiQ == true then
+		sheet.bola4direiQ = true;
+		sheet.bola3direiQ = true;
+		sheet.bola2direiQ = true;
+		sheet.bola1direiQ = true;
+	elseif sheet.bola4direiQ == true then
+		sheet.bola5direiQ = false;
+		sheet.bola3direiQ = true;
+		sheet.bola2direiQ = true;
+		sheet.bola1direiQ = true;
+	elseif sheet.bola3direiQ == true then
+		sheet.bola5direiQ = false;
+		sheet.bola4direiQ = false;
+		sheet.bola2direiQ = true;
+		sheet.bola1direiQ = true;
+	elseif sheet.bola2direiQ == true then
+		sheet.bola5direiQ = false;
+		sheet.bola4direiQ = false;
+		sheet.bola3direiQ = false;
+		sheet.bola1direiQ = true;	
+	elseif sheet.bola1direiQ == true then
+		sheet.bola5direiQ = false;
+		sheet.bola4direiQ = false;
+		sheet.bola3direiQ = false;
+		sheet.bola2direiQ = false;
+	elseif sheet.bola1direiQ == false then
+		sheet.bola5direiQ = false;
+		sheet.bola4direiQ = false;
+		sheet.bola3direiQ = false;
+		sheet.bola2direiQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5medicQ', 'bola4medicQ', 'bola3medicQ', 'bola2medicQ', 'bola1medicQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5medicQ == true then
+		sheet.bola4medicQ = true;
+		sheet.bola3medicQ = true;
+		sheet.bola2medicQ = true;
+		sheet.bola1medicQ = true;
+	elseif sheet.bola4medicQ == true then
+		sheet.bola5medicQ = false;
+		sheet.bola3medicQ = true;
+		sheet.bola2medicQ = true;
+		sheet.bola1medicQ = true;
+	elseif sheet.bola3medicQ == true then
+		sheet.bola5medicQ = false;
+		sheet.bola4medicQ = false;
+		sheet.bola2medicQ = true;
+		sheet.bola1medicQ = true;
+	elseif sheet.bola2medicQ == true then
+		sheet.bola5medicQ = false;
+		sheet.bola4medicQ = false;
+		sheet.bola3medicQ = false;
+		sheet.bola1medicQ = true;	
+	elseif sheet.bola1medicQ == true then
+		sheet.bola5medicQ = false;
+		sheet.bola4medicQ = false;
+		sheet.bola3medicQ = false;
+		sheet.bola2medicQ = false;
+	elseif sheet.bola1medicQ == false then
+		sheet.bola5medicQ = false;
+		sheet.bola4medicQ = false;
+		sheet.bola3medicQ = false;
+		sheet.bola2medicQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5politQ', 'bola4politQ', 'bola3politQ', 'bola2politQ', 'bola1politQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5politQ == true then
+		sheet.bola4politQ = true;
+		sheet.bola3politQ = true;
+		sheet.bola2politQ = true;
+		sheet.bola1politQ = true;
+	elseif sheet.bola4politQ == true then
+		sheet.bola5politQ = false;
+		sheet.bola3politQ = true;
+		sheet.bola2politQ = true;
+		sheet.bola1politQ = true;
+	elseif sheet.bola3politQ == true then
+		sheet.bola5politQ = false;
+		sheet.bola4politQ = false;
+		sheet.bola2politQ = true;
+		sheet.bola1politQ = true;
+	elseif sheet.bola2politQ == true then
+		sheet.bola5politQ = false;
+		sheet.bola4politQ = false;
+		sheet.bola3politQ = false;
+		sheet.bola1politQ = true;	
+	elseif sheet.bola1politQ == true then
+		sheet.bola5politQ = false;
+		sheet.bola4politQ = false;
+		sheet.bola3politQ = false;
+		sheet.bola2politQ = false;
+	elseif sheet.bola1politQ == false then
+		sheet.bola5politQ = false;
+		sheet.bola4politQ = false;
+		sheet.bola3politQ = false;
+		sheet.bola2politQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5cienciaQ', 'bola4cienciaQ', 'bola3cienciaQ', 'bola2cienciaQ', 'bola1cienciaQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5cienciaQ == true then
+		sheet.bola4cienciaQ = true;
+		sheet.bola3cienciaQ = true;
+		sheet.bola2cienciaQ = true;
+		sheet.bola1cienciaQ = true;
+	elseif sheet.bola4cienciaQ == true then
+		sheet.bola5cienciaQ = false;
+		sheet.bola3cienciaQ = true;
+		sheet.bola2cienciaQ = true;
+		sheet.bola1cienciaQ = true;
+	elseif sheet.bola3cienciaQ == true then
+		sheet.bola5cienciaQ = false;
+		sheet.bola4cienciaQ = false;
+		sheet.bola2cienciaQ = true;
+		sheet.bola1cienciaQ = true;
+	elseif sheet.bola2cienciaQ == true then
+		sheet.bola5cienciaQ = false;
+		sheet.bola4cienciaQ = false;
+		sheet.bola3cienciaQ = false;
+		sheet.bola1cienciaQ = true;	
+	elseif sheet.bola1cienciaQ == true then
+		sheet.bola5cienciaQ = false;
+		sheet.bola4cienciaQ = false;
+		sheet.bola3cienciaQ = false;
+		sheet.bola2cienciaQ = false;
+	elseif sheet.bola1cienciaQ == false then
+		sheet.bola5cienciaQ = false;
+		sheet.bola4cienciaQ = false;
+		sheet.bola3cienciaQ = false;
+		sheet.bola2cienciaQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5tecnoQ', 'bola4tecnoQ', 'bola3tecnoQ', 'bola2tecnoQ', 'bola1tecnoQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5tecnoQ == true then
+		sheet.bola4tecnoQ = true;
+		sheet.bola3tecnoQ = true;
+		sheet.bola2tecnoQ = true;
+		sheet.bola1tecnoQ = true;
+	elseif sheet.bola4tecnoQ == true then
+		sheet.bola5tecnoQ = false;
+		sheet.bola3tecnoQ = true;
+		sheet.bola2tecnoQ = true;
+		sheet.bola1tecnoQ = true;
+	elseif sheet.bola3tecnoQ == true then
+		sheet.bola5tecnoQ = false;
+		sheet.bola4tecnoQ = false;
+		sheet.bola2tecnoQ = true;
+		sheet.bola1tecnoQ = true;
+	elseif sheet.bola2tecnoQ == true then
+		sheet.bola5tecnoQ = false;
+		sheet.bola4tecnoQ = false;
+		sheet.bola3tecnoQ = false;
+		sheet.bola1tecnoQ = true;	
+	elseif sheet.bola1tecnoQ == true then
+		sheet.bola5tecnoQ = false;
+		sheet.bola4tecnoQ = false;
+		sheet.bola3tecnoQ = false;
+		sheet.bola2tecnoQ = false;
+	elseif sheet.bola1tecnoQ == false then
+		sheet.bola5tecnoQ = false;
+		sheet.bola4tecnoQ = false;
+		sheet.bola3tecnoQ = false;
+		sheet.bola2tecnoQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola5linguiQ', 'bola4linguiQ', 'bola3linguiQ', 'bola2linguiQ', 'bola1linguiQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola5linguiQ == true then
+		sheet.bola4linguiQ = true;
+		sheet.bola3linguiQ = true;
+		sheet.bola2linguiQ = true;
+		sheet.bola1linguiQ = true;
+	elseif sheet.bola4linguiQ == true then
+		sheet.bola5linguiQ = false;
+		sheet.bola3linguiQ = true;
+		sheet.bola2linguiQ = true;
+		sheet.bola1linguiQ = true;
+	elseif sheet.bola3linguiQ == true then
+		sheet.bola5linguiQ = false;
+		sheet.bola4linguiQ = false;
+		sheet.bola2linguiQ = true;
+		sheet.bola1linguiQ = true;
+	elseif sheet.bola2linguiQ == true then
+		sheet.bola5linguiQ = false;
+		sheet.bola4linguiQ = false;
+		sheet.bola3linguiQ = false;
+		sheet.bola1linguiQ = true;	
+	elseif sheet.bola1linguiQ == true then
+		sheet.bola5linguiQ = false;
+		sheet.bola4linguiQ = false;
+		sheet.bola3linguiQ = false;
+		sheet.bola2linguiQ = false;
+	elseif sheet.bola1linguiQ == false then
+		sheet.bola5linguiQ = false;
+		sheet.bola4linguiQ = false;
+		sheet.bola3linguiQ = false;
+		sheet.bola2linguiQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola10GlQ', 'bola9GlQ', 'bola8GlQ', 'bola7GlQ', 'bola6GlQ', 'bola5GlQ', 'bola4GlQ', 'bola3GlQ', 'bola2GlQ', 'bola1GlQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola10GlQ == true then
+		sheet.bola9GlQ = true;
+		sheet.bola8GlQ = true;
+		sheet.bola7GlQ = true;
+		sheet.bola6GlQ = true;
+		sheet.bola5GlQ = true;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola9GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola8GlQ = true;
+		sheet.bola7GlQ = true;
+		sheet.bola6GlQ = true;
+		sheet.bola5GlQ = true;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola8GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola7GlQ = true;
+		sheet.bola6GlQ = true;
+		sheet.bola5GlQ = true;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola7GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola6GlQ = true;
+		sheet.bola5GlQ = true;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola6GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola5GlQ = true;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola5GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola4GlQ = true;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola4GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola5GlQ = false;
+		sheet.bola3GlQ = true;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola3GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola5GlQ = false;
+		sheet.bola4GlQ = false;
+		sheet.bola2GlQ = true;
+		sheet.bola1GlQ = true;
+	elseif sheet.bola2GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola5GlQ = false;
+		sheet.bola4GlQ = false;
+		sheet.bola3GlQ = false;
+		sheet.bola1GlQ = true;	
+	elseif sheet.bola1GlQ == true then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola5GlQ = false;
+		sheet.bola4GlQ = false;
+		sheet.bola3GlQ = false;
+		sheet.bola2GlQ = false;
+	elseif sheet.bola1GlQ == false then
+		sheet.bola10GlQ = false;
+		sheet.bola9GlQ = false;
+		sheet.bola8GlQ = false;
+		sheet.bola7GlQ = false;
+		sheet.bola6GlQ = false;
+		sheet.bola5GlQ = false;
+		sheet.bola4GlQ = false;
+		sheet.bola3GlQ = false;
+		sheet.bola2GlQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'square10GlQ', 'square9GlQ', 'square8GlQ', 'square7GlQ', 'square6GlQ', 'square5GlQ', 'square4GlQ', 'square3GlQ', 'square2GlQ', 'square1GlQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.square10GlQ == true then
+		sheet.square9GlQ = true;
+		sheet.square8GlQ = true;
+		sheet.square7GlQ = true;
+		sheet.square6GlQ = true;
+		sheet.square5GlQ = true;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square9GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square8GlQ = true;
+		sheet.square7GlQ = true;
+		sheet.square6GlQ = true;
+		sheet.square5GlQ = true;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square8GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square7GlQ = true;
+		sheet.square6GlQ = true;
+		sheet.square5GlQ = true;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square7GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square6GlQ = true;
+		sheet.square5GlQ = true;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square6GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square5GlQ = true;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square5GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square4GlQ = true;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square4GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square5GlQ = false;
+		sheet.square3GlQ = true;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square3GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square5GlQ = false;
+		sheet.square4GlQ = false;
+		sheet.square2GlQ = true;
+		sheet.square1GlQ = true;
+	elseif sheet.square2GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square5GlQ = false;
+		sheet.square4GlQ = false;
+		sheet.square3GlQ = false;
+		sheet.square1GlQ = true;	
+	elseif sheet.square1GlQ == true then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square5GlQ = false;
+		sheet.square4GlQ = false;
+		sheet.square3GlQ = false;
+		sheet.square2GlQ = false;
+	elseif sheet.square1GlQ == false then
+		sheet.square10GlQ = false;
+		sheet.square9GlQ = false;
+		sheet.square8GlQ = false;
+		sheet.square7GlQ = false;
+		sheet.square6GlQ = false;
+		sheet.square5GlQ = false;
+		sheet.square4GlQ = false;
+		sheet.square3GlQ = false;
+		sheet.square2GlQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mirror10BanQ', 'mirror9BanQ', 'mirror8BanQ', 'mirror7BanQ', 'mirror6BanQ', 'mirror5BanQ', 'mirror4BanQ', 'mirror3BanQ', 'mirror2BanQ', 'mirror1BanQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mirror10BanQ == true then
+		sheet.mirror9BanQ = true;
+		sheet.mirror8BanQ = true;
+		sheet.mirror7BanQ = true;
+		sheet.mirror6BanQ = true;
+		sheet.mirror5BanQ = true;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror9BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror8BanQ = true;
+		sheet.mirror7BanQ = true;
+		sheet.mirror6BanQ = true;
+		sheet.mirror5BanQ = true;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror8BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror7BanQ = true;
+		sheet.mirror6BanQ = true;
+		sheet.mirror5BanQ = true;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror7BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror6BanQ = true;
+		sheet.mirror5BanQ = true;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror6BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror5BanQ = true;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror5BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror4BanQ = true;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror4BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror5BanQ = false;
+		sheet.mirror3BanQ = true;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror3BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror5BanQ = false;
+		sheet.mirror4BanQ = false;
+		sheet.mirror2BanQ = true;
+		sheet.mirror1BanQ = true;
+	elseif sheet.mirror2BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror5BanQ = false;
+		sheet.mirror4BanQ = false;
+		sheet.mirror3BanQ = false;
+		sheet.mirror1BanQ = true;	
+	elseif sheet.mirror1BanQ == true then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror5BanQ = false;
+		sheet.mirror4BanQ = false;
+		sheet.mirror3BanQ = false;
+		sheet.mirror2BanQ = false;
+	elseif sheet.mirror1BanQ == false then
+		sheet.mirror10BanQ = false;
+		sheet.mirror9BanQ = false;
+		sheet.mirror8BanQ = false;
+		sheet.mirror7BanQ = false;
+		sheet.mirror6BanQ = false;
+		sheet.mirror5BanQ = false;
+		sheet.mirror4BanQ = false;
+		sheet.mirror3BanQ = false;
+		sheet.mirror2BanQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'square10BanQ', 'square9BanQ', 'square8BanQ', 'square7BanQ', 'square6BanQ', 'square5BanQ', 'square4BanQ', 'square3BanQ', 'square2BanQ', 'square1BanQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.square10BanQ == true then
+		sheet.square9BanQ = true;
+		sheet.square8BanQ = true;
+		sheet.square7BanQ = true;
+		sheet.square6BanQ = true;
+		sheet.square5BanQ = true;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square9BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square8BanQ = true;
+		sheet.square7BanQ = true;
+		sheet.square6BanQ = true;
+		sheet.square5BanQ = true;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square8BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square7BanQ = true;
+		sheet.square6BanQ = true;
+		sheet.square5BanQ = true;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square7BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square6BanQ = true;
+		sheet.square5BanQ = true;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square6BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square5BanQ = true;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square5BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square4BanQ = true;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square4BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square5BanQ = false;
+		sheet.square3BanQ = true;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square3BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square5BanQ = false;
+		sheet.square4BanQ = false;
+		sheet.square2BanQ = true;
+		sheet.square1BanQ = true;
+	elseif sheet.square2BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square5BanQ = false;
+		sheet.square4BanQ = false;
+		sheet.square3BanQ = false;
+		sheet.square1BanQ = true;	
+	elseif sheet.square1BanQ == true then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square5BanQ = false;
+		sheet.square4BanQ = false;
+		sheet.square3BanQ = false;
+		sheet.square2BanQ = false;
+	elseif sheet.square1BanQ == false then
+		sheet.square10BanQ = false;
+		sheet.square9BanQ = false;
+		sheet.square8BanQ = false;
+		sheet.square7BanQ = false;
+		sheet.square6BanQ = false;
+		sheet.square5BanQ = false;
+		sheet.square4BanQ = false;
+		sheet.square3BanQ = false;
+		sheet.square2BanQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola10FDVQ', 'bola9FDVQ', 'bola8FDVQ', 'bola7FDVQ', 'bola6FDVQ', 'bola5FDVQ', 'bola4FDVQ', 'bola3FDVQ', 'bola2FDVQ', 'bola1FDVQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola10FDVQ == true then
+		sheet.bola9FDVQ = true;
+		sheet.bola8FDVQ = true;
+		sheet.bola7FDVQ = true;
+		sheet.bola6FDVQ = true;
+		sheet.bola5FDVQ = true;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola9FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola8FDVQ = true;
+		sheet.bola7FDVQ = true;
+		sheet.bola6FDVQ = true;
+		sheet.bola5FDVQ = true;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola8FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola7FDVQ = true;
+		sheet.bola6FDVQ = true;
+		sheet.bola5FDVQ = true;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola7FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola6FDVQ = true;
+		sheet.bola5FDVQ = true;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola6FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola5FDVQ = true;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola5FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola4FDVQ = true;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola4FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola5FDVQ = false;
+		sheet.bola3FDVQ = true;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola3FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola5FDVQ = false;
+		sheet.bola4FDVQ = false;
+		sheet.bola2FDVQ = true;
+		sheet.bola1FDVQ = true;
+	elseif sheet.bola2FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola5FDVQ = false;
+		sheet.bola4FDVQ = false;
+		sheet.bola3FDVQ = false;
+		sheet.bola1FDVQ = true;	
+	elseif sheet.bola1FDVQ == true then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola5FDVQ = false;
+		sheet.bola4FDVQ = false;
+		sheet.bola3FDVQ = false;
+		sheet.bola2FDVQ = false;
+	elseif sheet.bola1FDVQ == false then
+		sheet.bola10FDVQ = false;
+		sheet.bola9FDVQ = false;
+		sheet.bola8FDVQ = false;
+		sheet.bola7FDVQ = false;
+		sheet.bola6FDVQ = false;
+		sheet.bola5FDVQ = false;
+		sheet.bola4FDVQ = false;
+		sheet.bola3FDVQ = false;
+		sheet.bola2FDVQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'square10FDVQ', 'square9FDVQ', 'square8FDVQ', 'square7FDVQ', 'square6FDVQ', 'square5FDVQ', 'square4FDVQ', 'square3FDVQ', 'square2FDVQ', 'square1FDVQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.square10FDVQ == true then
+		sheet.square9FDVQ = true;
+		sheet.square8FDVQ = true;
+		sheet.square7FDVQ = true;
+		sheet.square6FDVQ = true;
+		sheet.square5FDVQ = true;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square9FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square8FDVQ = true;
+		sheet.square7FDVQ = true;
+		sheet.square6FDVQ = true;
+		sheet.square5FDVQ = true;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square8FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square7FDVQ = true;
+		sheet.square6FDVQ = true;
+		sheet.square5FDVQ = true;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square7FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square6FDVQ = true;
+		sheet.square5FDVQ = true;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square6FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square5FDVQ = true;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square5FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square4FDVQ = true;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square4FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square5FDVQ = false;
+		sheet.square3FDVQ = true;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square3FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square5FDVQ = false;
+		sheet.square4FDVQ = false;
+		sheet.square2FDVQ = true;
+		sheet.square1FDVQ = true;
+	elseif sheet.square2FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square5FDVQ = false;
+		sheet.square4FDVQ = false;
+		sheet.square3FDVQ = false;
+		sheet.square1FDVQ = true;	
+	elseif sheet.square1FDVQ == true then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square5FDVQ = false;
+		sheet.square4FDVQ = false;
+		sheet.square3FDVQ = false;
+		sheet.square2FDVQ = false;
+	elseif sheet.square1FDVQ == false then
+		sheet.square10FDVQ = false;
+		sheet.square9FDVQ = false;
+		sheet.square8FDVQ = false;
+		sheet.square7FDVQ = false;
+		sheet.square6FDVQ = false;
+		sheet.square5FDVQ = false;
+		sheet.square4FDVQ = false;
+		sheet.square3FDVQ = false;
+		sheet.square2FDVQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola7LetalQ', 'bola6LetalQ', 'bola5LetalQ', 'bola4LetalQ', 'bola3LetalQ', 'bola2LetalQ', 'bola1LetalQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola7LetalQ == true then
+		sheet.bola6LetalQ = true;
+		sheet.bola5LetalQ = true;
+		sheet.bola4LetalQ = true;
+		sheet.bola3LetalQ = true;
+		sheet.bola2LetalQ = true;
+		sheet.bola1LetalQ = true;
+	elseif sheet.bola6LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola5LetalQ = true;
+		sheet.bola4LetalQ = true;
+		sheet.bola3LetalQ = true;
+		sheet.bola2LetalQ = true;
+		sheet.bola1LetalQ = true;
+	elseif sheet.bola5LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola4LetalQ = true;
+		sheet.bola3LetalQ = true;
+		sheet.bola2LetalQ = true;
+		sheet.bola1LetalQ = true;
+	elseif sheet.bola4LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola5LetalQ = false;
+		sheet.bola3LetalQ = true;
+		sheet.bola2LetalQ = true;
+		sheet.bola1LetalQ = true;
+	elseif sheet.bola3LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola5LetalQ = false;
+		sheet.bola4LetalQ = false;
+		sheet.bola2LetalQ = true;
+		sheet.bola1LetalQ = true;
+	elseif sheet.bola2LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola5LetalQ = false;
+		sheet.bola4LetalQ = false;
+		sheet.bola3LetalQ = false;
+		sheet.bola1LetalQ = true;	
+	elseif sheet.bola1LetalQ == true then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola5LetalQ = false;
+		sheet.bola4LetalQ = false;
+		sheet.bola3LetalQ = false;
+		sheet.bola2LetalQ = false;
+	elseif sheet.bola1LetalQ == false then
+		sheet.bola7LetalQ = false;
+		sheet.bola6LetalQ = false;
+		sheet.bola5LetalQ = false;
+		sheet.bola4LetalQ = false;
+		sheet.bola3LetalQ = false;
+		sheet.bola2LetalQ = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'bola7AgravadoQ', 'bola6AgravadoQ', 'bola5AgravadoQ', 'bola4AgravadoQ', 'bola3AgravadoQ', 'bola2AgravadoQ', 'bola1AgravadoQ'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.bola7AgravadoQ == true then
+		sheet.bola6AgravadoQ = true;
+		sheet.bola5AgravadoQ = true;
+		sheet.bola4AgravadoQ = true;
+		sheet.bola3AgravadoQ = true;
+		sheet.bola2AgravadoQ = true;
+		sheet.bola1AgravadoQ = true;
+	elseif sheet.bola6AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola5AgravadoQ = true;
+		sheet.bola4AgravadoQ = true;
+		sheet.bola3AgravadoQ = true;
+		sheet.bola2AgravadoQ = true;
+		sheet.bola1AgravadoQ = true;
+	elseif sheet.bola5AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola4AgravadoQ = true;
+		sheet.bola3AgravadoQ = true;
+		sheet.bola2AgravadoQ = true;
+		sheet.bola1AgravadoQ = true;
+	elseif sheet.bola4AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola5AgravadoQ = false;
+		sheet.bola3AgravadoQ = true;
+		sheet.bola2AgravadoQ = true;
+		sheet.bola1AgravadoQ = true;
+	elseif sheet.bola3AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola5AgravadoQ = false;
+		sheet.bola4AgravadoQ = false;
+		sheet.bola2AgravadoQ = true;
+		sheet.bola1AgravadoQ = true;
+	elseif sheet.bola2AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola5AgravadoQ = false;
+		sheet.bola4AgravadoQ = false;
+		sheet.bola3AgravadoQ = false;
+		sheet.bola1AgravadoQ = true;	
+	elseif sheet.bola1AgravadoQ == true then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola5AgravadoQ = false;
+		sheet.bola4AgravadoQ = false;
+		sheet.bola3AgravadoQ = false;
+		sheet.bola2AgravadoQ = false;
+	elseif sheet.bola1AgravadoQ == false then
+		sheet.bola7AgravadoQ = false;
+		sheet.bola6AgravadoQ = false;
+		sheet.bola5AgravadoQ = false;
+		sheet.bola4AgravadoQ = false;
+		sheet.bola3AgravadoQ = false;
+		sheet.bola2AgravadoQ = false;
+	end;
+	</event>
+</dataLink>
+
+</form>

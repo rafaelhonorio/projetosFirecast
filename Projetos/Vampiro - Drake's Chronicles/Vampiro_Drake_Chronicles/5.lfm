@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles5_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles5_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles5_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/5.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- Fontes de Poder: Aliados-->
+			<layout left="77" top="233" width="228" height="116" compilerOrder="1">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="FonteAliados" compilerOrder="2"/>
+			</layout>&#xD;
+			<layout left="326" top="233" width="228" height="116" compilerOrder="3">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="ÁreaAliados" compilerOrder="4"/>
+			</layout>&#xD;
+			<layout left="573" top="233" width="228" height="116" compilerOrder="5">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="DadosAliados" compilerOrder="6"/>
+			</layout>&#xD;
+	<!-- Fontes de Poder: Contatos-->
+			<layout left="77" top="394" width="228" height="116" compilerOrder="7">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="FonteContatos" compilerOrder="8"/>
+			</layout>&#xD;
+			<layout left="326" top="394" width="228" height="116" compilerOrder="9">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="ÁreaContatos" compilerOrder="10"/>
+			</layout>&#xD;
+			<layout left="573" top="394" width="228" height="116" compilerOrder="11">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="DadosContatos" compilerOrder="12"/>
+			</layout>&#xD;
+	<!-- Fontes de Poder: Influência-->
+			<layout left="77" top="555" width="228" height="116" compilerOrder="13">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="FonteInfluência" compilerOrder="14"/>
+			</layout>&#xD;
+			<layout left="326" top="555" width="228" height="116" compilerOrder="15">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="ÁreaInfluência" compilerOrder="16"/>
+			</layout>&#xD;
+			<layout left="573" top="555" width="228" height="116" compilerOrder="17">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="DadosInfluência" compilerOrder="18"/>
+			</layout>&#xD;
+	<!-- Fontes de Poder: Força Militar-->
+			<layout left="77" top="717" width="228" height="116" compilerOrder="19">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="FonteFMilitar" compilerOrder="20"/>
+			</layout>&#xD;
+			<layout left="326" top="717" width="228" height="116" compilerOrder="21">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="ÁreaFMilitar" compilerOrder="22"/>
+			</layout>&#xD;
+			<layout left="573" top="717" width="228" height="116" compilerOrder="23">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="DadosFMilitar" compilerOrder="24"/>
+			</layout>&#xD;
+	<!-- Alianças Sobrenaturais-->
+			<layout left="77" top="884" width="228" height="116" compilerOrder="25">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="NomeAS" compilerOrder="26"/>
+			</layout>&#xD;
+			<layout left="326" top="884" width="228" height="116" compilerOrder="27">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="NatAS" compilerOrder="28"/>
+			</layout>&#xD;
+			<layout left="573" top="884" width="228" height="116" compilerOrder="29">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="228" height="116" field="AcordosAS" compilerOrder="30"/>
+			</layout>&#xD;
+		<!-- Outras Fontes -->
+			<layout left="77" top="1030" width="725" height="163" compilerOrder="31">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="725" height="163" field="OutrasFontes" compilerOrder="32"/>
+			</layout>&#xD;
+        </rectangle>
+    </scrollBox>
+</form>

@@ -1,0 +1,13 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<module sdkVersion="3.5" compilationDate="27122020192047" sdkApiVersion="34" originalPluginFileName="PokeRPG.rpk">
+	<!--The "id" identifies your plugin globally. Must be unique, must contain only alphanumeric characters, underlines and dots and must contain at least 5 characters and a maximum of 40. Once set the ID, you should not change it;)-->
+	<id>br.com.rrpg.PPOKERPG_SDK3</id>
+	<!--"version" is the version of your plugin. When you release a new version of your module, change here =)-->
+	<version>1.7</version>
+	<name>PokeRPG</name>
+	<description>Ficha de Pokémon RPG</description>
+	<author>Tricket</author>
+	<site>https://github.com/rafaelhonorio</site>
+	<contact>rafaek1551@gmail.com</contact>
+	
+</module>

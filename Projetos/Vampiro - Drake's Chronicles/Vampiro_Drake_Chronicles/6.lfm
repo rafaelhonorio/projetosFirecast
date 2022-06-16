@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles6_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles6_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles6_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/6.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- Disciplina Avançada 1 -->
+			<layout left="319" top="185" width="400" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="400" height="30" field="NomeDisciplina1" compilerOrder="2"/>
+			</layout>&#xD;
+			<layout left="772" top="185" width="37" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="37" height="30" field="NivelDisciplina1" compilerOrder="4"/>
+			</layout>&#xD;
+			<layout left="177" top="213" width="628" height="75" compilerOrder="5">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="628" height="75" field="SistemaDisciplina1" compilerOrder="6"/>
+			</layout>&#xD;
+	<!-- Disciplina Avançada 2 -->
+			<layout left="319" top="280" width="400" height="30" compilerOrder="7">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="400" height="30" field="NomeDisciplina2" compilerOrder="8"/>
+			</layout>&#xD;
+			<layout left="772" top="280" width="37" height="30" compilerOrder="9">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="37" height="30" field="NivelDisciplina2" compilerOrder="10"/>
+			</layout>&#xD;
+			<layout left="177" top="308" width="628" height="75" compilerOrder="11">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="628" height="75" field="SistemaDisciplina2" compilerOrder="12"/>
+			</layout>&#xD;
+	<!-- Disciplina Avançada 3 -->
+			<layout left="319" top="372" width="400" height="30" compilerOrder="13">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="400" height="30" field="NomeDisciplina3" compilerOrder="14"/>
+			</layout>&#xD;
+			<layout left="772" top="372" width="37" height="30" compilerOrder="15">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="37" height="30" field="NivelDisciplina3" compilerOrder="16"/>
+			</layout>&#xD;
+			<layout left="177" top="403" width="628" height="75" compilerOrder="17">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="628" height="75" field="SistemaDisciplina3" compilerOrder="18"/>
+			</layout>&#xD;
+	<!-- Disciplina Avançada 4 -->
+			<layout left="319" top="468" width="400" height="30" compilerOrder="19">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="400" height="30" field="NomeDisciplina4" compilerOrder="20"/>
+			</layout>&#xD;
+			<layout left="772" top="468" width="37" height="30" compilerOrder="21">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="37" height="30" field="NivelDisciplina4" compilerOrder="22"/>
+			</layout>&#xD;
+			<layout left="177" top="497" width="628" height="75" compilerOrder="23">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="628" height="75" field="SistemaDisciplina4" compilerOrder="24"/>
+			</layout>&#xD;
+	<!-- Disciplina Avançada 5 -->
+			<layout left="319" top="562" width="400" height="30" compilerOrder="25">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="400" height="30" field="NomeDisciplina5" compilerOrder="26"/>
+			</layout>&#xD;
+			<layout left="772" top="562" width="37" height="30" compilerOrder="27">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="37" height="30" field="NivelDisciplina5" compilerOrder="28"/>
+			</layout>&#xD;
+			<layout left="177" top="591" width="628" height="75" compilerOrder="29">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="628" height="75" field="SistemaDisciplina5" compilerOrder="30"/>
+			</layout>&#xD;
+			
+				<!-- Combinações de Disciplina 1 -->
+			<layout left="140" top="685" width="180" height="30" compilerOrder="31">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Poder1" compilerOrder="32"/>
+			</layout>&#xD;
+			<layout left="537" top="685" width="270" height="30" compilerOrder="33">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="DisciplinasEnvolvidas1" compilerOrder="34"/>
+			</layout>&#xD;
+			<layout left="165" top="714" width="642" height="75" compilerOrder="35">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="642" height="75" field="SistemaCombinação1" compilerOrder="36"/>
+			</layout>&#xD;
+				<!-- Combinações de Disciplina 2 -->
+			<layout left="140" top="782" width="180" height="30" compilerOrder="37">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Poder2" compilerOrder="38"/>
+			</layout>&#xD;
+			<layout left="537" top="782" width="270" height="30" compilerOrder="39">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="DisciplinasEnvolvidas2" compilerOrder="40"/>
+			</layout>&#xD;
+			<layout left="165" top="810" width="642" height="75" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="642" height="75" field="SistemaCombinação2" compilerOrder="42"/>
+			</layout>&#xD;
+				<!-- Combinações de Disciplina 3 -->
+			<layout left="140" top="877" width="180" height="30" compilerOrder="43">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Poder3" compilerOrder="44"/>
+			</layout>&#xD;
+			<layout left="537" top="877" width="270" height="30" compilerOrder="45">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="DisciplinasEnvolvidas3" compilerOrder="46"/>
+			</layout>&#xD;
+			<layout left="165" top="907" width="642" height="75" compilerOrder="47">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="642" height="75" field="SistemaCombinação3" compilerOrder="48"/>
+			</layout>&#xD;
+				<!-- Combinações de Disciplina 4 -->
+			<layout left="140" top="972" width="180" height="30" compilerOrder="49">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Poder4" compilerOrder="50"/>
+			</layout>&#xD;
+			<layout left="537" top="972" width="270" height="30" compilerOrder="51">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="DisciplinasEnvolvidas4" compilerOrder="52"/>
+			</layout>&#xD;
+			<layout left="165" top="1003" width="642" height="75" compilerOrder="53">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="642" height="75" field="SistemaCombinação4" compilerOrder="54"/>
+			</layout>&#xD;
+				<!-- Combinações de Disciplina 5 -->
+			<layout left="140" top="1067" width="180" height="30" compilerOrder="55">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Poder5" compilerOrder="56"/>
+			</layout>&#xD;
+			<layout left="537" top="1067" width="270" height="30" compilerOrder="57">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="DisciplinasEnvolvidas5" compilerOrder="58"/>
+			</layout>&#xD;
+			<layout left="165" top="1097" width="642" height="75" compilerOrder="59">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="642" height="75" field="SistemaCombinação5" compilerOrder="60"/>
+			</layout>&#xD;
+        </rectangle>
+		
+    </scrollBox>
+</form>

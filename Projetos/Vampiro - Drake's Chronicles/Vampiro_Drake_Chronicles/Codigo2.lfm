@@ -1,0 +1,1899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCodigo2" height="0" theme="light">
+
+	<dataLink fields="{'Gota8C1L1', 'Gota7C1L1', 'Gota6C1L1', 'Gota5C1L1', 'Gota4C1L1', 'Gota3C1L1', 'Gota2C1L1', 'Gota1C1L1'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L1 == true then
+			sheet.Gota7C1L1 = true;
+			sheet.Gota6C1L1 = true;
+			sheet.Gota5C1L1 = true;
+			sheet.Gota4C1L1 = true;
+			sheet.Gota3C1L1 = true;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota7C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota6C1L1 = true;
+			sheet.Gota5C1L1 = true;
+			sheet.Gota4C1L1 = true;
+			sheet.Gota3C1L1 = true;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota6C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota5C1L1 = true;
+			sheet.Gota4C1L1 = true;
+			sheet.Gota3C1L1 = true;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota5C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota4C1L1 = true;
+			sheet.Gota3C1L1 = true;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota4C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota5C1L1 = false;
+			sheet.Gota3C1L1 = true;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota3C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota5C1L1 = false;
+			sheet.Gota4C1L1 = false;
+			sheet.Gota2C1L1 = true;
+			sheet.Gota1C1L1 = true;
+		elseif sheet.Gota2C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota5C1L1 = false;
+			sheet.Gota4C1L1 = false;
+			sheet.Gota3C1L1 = false;
+			sheet.Gota1C1L1 = true;	
+		elseif sheet.Gota1C1L1 == true then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota5C1L1 = false;
+			sheet.Gota4C1L1 = false;
+			sheet.Gota3C1L1 = false;
+			sheet.Gota2C1L1 = false;
+		elseif sheet.Gota1C1L1 == false then
+			sheet.Gota8C1L1 = false;
+			sheet.Gota7C1L1 = false;
+			sheet.Gota6C1L1 = false;
+			sheet.Gota5C1L1 = false;
+			sheet.Gota4C1L1 = false;
+			sheet.Gota3C1L1 = false;
+			sheet.Gota2C1L1 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C1L2', 'Gota7C1L2', 'Gota6C1L2', 'Gota5C1L2', 'Gota4C1L2', 'Gota3C1L2', 'Gota2C1L2', 'Gota1C1L2'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L2 == true then
+			sheet.Gota7C1L2 = true;
+			sheet.Gota6C1L2 = true;
+			sheet.Gota5C1L2 = true;
+			sheet.Gota4C1L2 = true;
+			sheet.Gota3C1L2 = true;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota7C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota6C1L2 = true;
+			sheet.Gota5C1L2 = true;
+			sheet.Gota4C1L2 = true;
+			sheet.Gota3C1L2 = true;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota6C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota5C1L2 = true;
+			sheet.Gota4C1L2 = true;
+			sheet.Gota3C1L2 = true;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota5C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota4C1L2 = true;
+			sheet.Gota3C1L2 = true;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota4C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota5C1L2 = false;
+			sheet.Gota3C1L2 = true;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota3C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota5C1L2 = false;
+			sheet.Gota4C1L2 = false;
+			sheet.Gota2C1L2 = true;
+			sheet.Gota1C1L2 = true;
+		elseif sheet.Gota2C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota5C1L2 = false;
+			sheet.Gota4C1L2 = false;
+			sheet.Gota3C1L2 = false;
+			sheet.Gota1C1L2 = true;	
+		elseif sheet.Gota1C1L2 == true then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota5C1L2 = false;
+			sheet.Gota4C1L2 = false;
+			sheet.Gota3C1L2 = false;
+			sheet.Gota2C1L2 = false;
+		elseif sheet.Gota1C1L2 == false then
+			sheet.Gota8C1L2 = false;
+			sheet.Gota7C1L2 = false;
+			sheet.Gota6C1L2 = false;
+			sheet.Gota5C1L2 = false;
+			sheet.Gota4C1L2 = false;
+			sheet.Gota3C1L2 = false;
+			sheet.Gota2C1L2 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C1L3', 'Gota7C1L3', 'Gota6C1L3', 'Gota5C1L3', 'Gota4C1L3', 'Gota3C1L3', 'Gota2C1L3', 'Gota1C1L3'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L3 == true then
+			sheet.Gota7C1L3 = true;
+			sheet.Gota6C1L3 = true;
+			sheet.Gota5C1L3 = true;
+			sheet.Gota4C1L3 = true;
+			sheet.Gota3C1L3 = true;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota7C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota6C1L3 = true;
+			sheet.Gota5C1L3 = true;
+			sheet.Gota4C1L3 = true;
+			sheet.Gota3C1L3 = true;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota6C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota5C1L3 = true;
+			sheet.Gota4C1L3 = true;
+			sheet.Gota3C1L3 = true;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota5C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota4C1L3 = true;
+			sheet.Gota3C1L3 = true;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota4C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota5C1L3 = false;
+			sheet.Gota3C1L3 = true;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota3C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota5C1L3 = false;
+			sheet.Gota4C1L3 = false;
+			sheet.Gota2C1L3 = true;
+			sheet.Gota1C1L3 = true;
+		elseif sheet.Gota2C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota5C1L3 = false;
+			sheet.Gota4C1L3 = false;
+			sheet.Gota3C1L3 = false;
+			sheet.Gota1C1L3 = true;	
+		elseif sheet.Gota1C1L3 == true then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota5C1L3 = false;
+			sheet.Gota4C1L3 = false;
+			sheet.Gota3C1L3 = false;
+			sheet.Gota2C1L3 = false;
+		elseif sheet.Gota1C1L3 == false then
+			sheet.Gota8C1L3 = false;
+			sheet.Gota7C1L3 = false;
+			sheet.Gota6C1L3 = false;
+			sheet.Gota5C1L3 = false;
+			sheet.Gota4C1L3 = false;
+			sheet.Gota3C1L3 = false;
+			sheet.Gota2C1L3 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C1L4', 'Gota7C1L4', 'Gota6C1L4', 'Gota5C1L4', 'Gota4C1L4', 'Gota3C1L4', 'Gota2C1L4', 'Gota1C1L4'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L4 == true then
+			sheet.Gota7C1L4 = true;
+			sheet.Gota6C1L4 = true;
+			sheet.Gota5C1L4 = true;
+			sheet.Gota4C1L4 = true;
+			sheet.Gota3C1L4 = true;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota7C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota6C1L4 = true;
+			sheet.Gota5C1L4 = true;
+			sheet.Gota4C1L4 = true;
+			sheet.Gota3C1L4 = true;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota6C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota5C1L4 = true;
+			sheet.Gota4C1L4 = true;
+			sheet.Gota3C1L4 = true;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota5C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota4C1L4 = true;
+			sheet.Gota3C1L4 = true;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota4C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota5C1L4 = false;
+			sheet.Gota3C1L4 = true;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota3C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota5C1L4 = false;
+			sheet.Gota4C1L4 = false;
+			sheet.Gota2C1L4 = true;
+			sheet.Gota1C1L4 = true;
+		elseif sheet.Gota2C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota5C1L4 = false;
+			sheet.Gota4C1L4 = false;
+			sheet.Gota3C1L4 = false;
+			sheet.Gota1C1L4 = true;	
+		elseif sheet.Gota1C1L4 == true then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota5C1L4 = false;
+			sheet.Gota4C1L4 = false;
+			sheet.Gota3C1L4 = false;
+			sheet.Gota2C1L4 = false;
+		elseif sheet.Gota1C1L4 == false then
+			sheet.Gota8C1L4 = false;
+			sheet.Gota7C1L4 = false;
+			sheet.Gota6C1L4 = false;
+			sheet.Gota5C1L4 = false;
+			sheet.Gota4C1L4 = false;
+			sheet.Gota3C1L4 = false;
+			sheet.Gota2C1L4 = false;
+		end;
+		</event>
+	</dataLink>	
+	
+	<dataLink fields="{'Gota8C1L5', 'Gota7C1L5', 'Gota6C1L5', 'Gota5C1L5', 'Gota4C1L5', 'Gota3C1L5', 'Gota2C1L5', 'Gota1C1L5'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L5 == true then
+			sheet.Gota7C1L5 = true;
+			sheet.Gota6C1L5 = true;
+			sheet.Gota5C1L5 = true;
+			sheet.Gota4C1L5 = true;
+			sheet.Gota3C1L5 = true;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota7C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota6C1L5 = true;
+			sheet.Gota5C1L5 = true;
+			sheet.Gota4C1L5 = true;
+			sheet.Gota3C1L5 = true;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota6C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota5C1L5 = true;
+			sheet.Gota4C1L5 = true;
+			sheet.Gota3C1L5 = true;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota5C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota4C1L5 = true;
+			sheet.Gota3C1L5 = true;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota4C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota5C1L5 = false;
+			sheet.Gota3C1L5 = true;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota3C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota5C1L5 = false;
+			sheet.Gota4C1L5 = false;
+			sheet.Gota2C1L5 = true;
+			sheet.Gota1C1L5 = true;
+		elseif sheet.Gota2C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota5C1L5 = false;
+			sheet.Gota4C1L5 = false;
+			sheet.Gota3C1L5 = false;
+			sheet.Gota1C1L5 = true;	
+		elseif sheet.Gota1C1L5 == true then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota5C1L5 = false;
+			sheet.Gota4C1L5 = false;
+			sheet.Gota3C1L5 = false;
+			sheet.Gota2C1L5 = false;
+		elseif sheet.Gota1C1L5 == false then
+			sheet.Gota8C1L5 = false;
+			sheet.Gota7C1L5 = false;
+			sheet.Gota6C1L5 = false;
+			sheet.Gota5C1L5 = false;
+			sheet.Gota4C1L5 = false;
+			sheet.Gota3C1L5 = false;
+			sheet.Gota2C1L5 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C1L6', 'Gota7C1L6', 'Gota6C1L6', 'Gota5C1L6', 'Gota4C1L6', 'Gota3C1L6', 'Gota2C1L6', 'Gota1C1L6'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L6 == true then
+			sheet.Gota7C1L6 = true;
+			sheet.Gota6C1L6 = true;
+			sheet.Gota5C1L6 = true;
+			sheet.Gota4C1L6 = true;
+			sheet.Gota3C1L6 = true;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota7C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota6C1L6 = true;
+			sheet.Gota5C1L6 = true;
+			sheet.Gota4C1L6 = true;
+			sheet.Gota3C1L6 = true;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota6C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota5C1L6 = true;
+			sheet.Gota4C1L6 = true;
+			sheet.Gota3C1L6 = true;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota5C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota4C1L6 = true;
+			sheet.Gota3C1L6 = true;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota4C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota5C1L6 = false;
+			sheet.Gota3C1L6 = true;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota3C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota5C1L6 = false;
+			sheet.Gota4C1L6 = false;
+			sheet.Gota2C1L6 = true;
+			sheet.Gota1C1L6 = true;
+		elseif sheet.Gota2C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota5C1L6 = false;
+			sheet.Gota4C1L6 = false;
+			sheet.Gota3C1L6 = false;
+			sheet.Gota1C1L6 = true;	
+		elseif sheet.Gota1C1L6 == true then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota5C1L6 = false;
+			sheet.Gota4C1L6 = false;
+			sheet.Gota3C1L6 = false;
+			sheet.Gota2C1L6 = false;
+		elseif sheet.Gota1C1L6 == false then
+			sheet.Gota8C1L6 = false;
+			sheet.Gota7C1L6 = false;
+			sheet.Gota6C1L6 = false;
+			sheet.Gota5C1L6 = false;
+			sheet.Gota4C1L6 = false;
+			sheet.Gota3C1L6 = false;
+			sheet.Gota2C1L6 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C1L7', 'Gota7C1L7', 'Gota6C1L7', 'Gota5C1L7', 'Gota4C1L7', 'Gota3C1L7', 'Gota2C1L7', 'Gota1C1L7'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L7 == true then
+			sheet.Gota7C1L7 = true;
+			sheet.Gota6C1L7 = true;
+			sheet.Gota5C1L7 = true;
+			sheet.Gota4C1L7 = true;
+			sheet.Gota3C1L7 = true;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota7C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota6C1L7 = true;
+			sheet.Gota5C1L7 = true;
+			sheet.Gota4C1L7 = true;
+			sheet.Gota3C1L7 = true;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota6C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota5C1L7 = true;
+			sheet.Gota4C1L7 = true;
+			sheet.Gota3C1L7 = true;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota5C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota4C1L7 = true;
+			sheet.Gota3C1L7 = true;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota4C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota5C1L7 = false;
+			sheet.Gota3C1L7 = true;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota3C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota5C1L7 = false;
+			sheet.Gota4C1L7 = false;
+			sheet.Gota2C1L7 = true;
+			sheet.Gota1C1L7 = true;
+		elseif sheet.Gota2C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota5C1L7 = false;
+			sheet.Gota4C1L7 = false;
+			sheet.Gota3C1L7 = false;
+			sheet.Gota1C1L7 = true;	
+		elseif sheet.Gota1C1L7 == true then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota5C1L7 = false;
+			sheet.Gota4C1L7 = false;
+			sheet.Gota3C1L7 = false;
+			sheet.Gota2C1L7 = false;
+		elseif sheet.Gota1C1L7 == false then
+			sheet.Gota8C1L7 = false;
+			sheet.Gota7C1L7 = false;
+			sheet.Gota6C1L7 = false;
+			sheet.Gota5C1L7 = false;
+			sheet.Gota4C1L7 = false;
+			sheet.Gota3C1L7 = false;
+			sheet.Gota2C1L7 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C1L8', 'Gota7C1L8', 'Gota6C1L8', 'Gota5C1L8', 'Gota4C1L8', 'Gota3C1L8', 'Gota2C1L8', 'Gota1C1L8'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C1L8 == true then
+			sheet.Gota7C1L8 = true;
+			sheet.Gota6C1L8 = true;
+			sheet.Gota5C1L8 = true;
+			sheet.Gota4C1L8 = true;
+			sheet.Gota3C1L8 = true;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota7C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota6C1L8 = true;
+			sheet.Gota5C1L8 = true;
+			sheet.Gota4C1L8 = true;
+			sheet.Gota3C1L8 = true;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota6C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota5C1L8 = true;
+			sheet.Gota4C1L8 = true;
+			sheet.Gota3C1L8 = true;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota5C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota4C1L8 = true;
+			sheet.Gota3C1L8 = true;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota4C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota5C1L8 = false;
+			sheet.Gota3C1L8 = true;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota3C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota5C1L8 = false;
+			sheet.Gota4C1L8 = false;
+			sheet.Gota2C1L8 = true;
+			sheet.Gota1C1L8 = true;
+		elseif sheet.Gota2C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota5C1L8 = false;
+			sheet.Gota4C1L8 = false;
+			sheet.Gota3C1L8 = false;
+			sheet.Gota1C1L8 = true;	
+		elseif sheet.Gota1C1L8 == true then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota5C1L8 = false;
+			sheet.Gota4C1L8 = false;
+			sheet.Gota3C1L8 = false;
+			sheet.Gota2C1L8 = false;
+		elseif sheet.Gota1C1L8 == false then
+			sheet.Gota8C1L8 = false;
+			sheet.Gota7C1L8 = false;
+			sheet.Gota6C1L8 = false;
+			sheet.Gota5C1L8 = false;
+			sheet.Gota4C1L8 = false;
+			sheet.Gota3C1L8 = false;
+			sheet.Gota2C1L8 = false;
+		end;
+		</event>
+	</dataLink>	
+
+	<dataLink fields="{'Gota8C2L1', 'Gota7C2L1', 'Gota6C2L1', 'Gota5C2L1', 'Gota4C2L1', 'Gota3C2L1', 'Gota2C2L1', 'Gota1C2L1'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L1 == true then
+			sheet.Gota7C2L1 = true;
+			sheet.Gota6C2L1 = true;
+			sheet.Gota5C2L1 = true;
+			sheet.Gota4C2L1 = true;
+			sheet.Gota3C2L1 = true;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota7C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota6C2L1 = true;
+			sheet.Gota5C2L1 = true;
+			sheet.Gota4C2L1 = true;
+			sheet.Gota3C2L1 = true;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota6C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota5C2L1 = true;
+			sheet.Gota4C2L1 = true;
+			sheet.Gota3C2L1 = true;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota5C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota4C2L1 = true;
+			sheet.Gota3C2L1 = true;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota4C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota5C2L1 = false;
+			sheet.Gota3C2L1 = true;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota3C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota5C2L1 = false;
+			sheet.Gota4C2L1 = false;
+			sheet.Gota2C2L1 = true;
+			sheet.Gota1C2L1 = true;
+		elseif sheet.Gota2C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota5C2L1 = false;
+			sheet.Gota4C2L1 = false;
+			sheet.Gota3C2L1 = false;
+			sheet.Gota1C2L1 = true;	
+		elseif sheet.Gota1C2L1 == true then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota5C2L1 = false;
+			sheet.Gota4C2L1 = false;
+			sheet.Gota3C2L1 = false;
+			sheet.Gota2C2L1 = false;
+		elseif sheet.Gota1C2L1 == false then
+			sheet.Gota8C2L1 = false;
+			sheet.Gota7C2L1 = false;
+			sheet.Gota6C2L1 = false;
+			sheet.Gota5C2L1 = false;
+			sheet.Gota4C2L1 = false;
+			sheet.Gota3C2L1 = false;
+			sheet.Gota2C2L1 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C2L2', 'Gota7C2L2', 'Gota6C2L2', 'Gota5C2L2', 'Gota4C2L2', 'Gota3C2L2', 'Gota2C2L2', 'Gota1C2L2'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L2 == true then
+			sheet.Gota7C2L2 = true;
+			sheet.Gota6C2L2 = true;
+			sheet.Gota5C2L2 = true;
+			sheet.Gota4C2L2 = true;
+			sheet.Gota3C2L2 = true;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota7C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota6C2L2 = true;
+			sheet.Gota5C2L2 = true;
+			sheet.Gota4C2L2 = true;
+			sheet.Gota3C2L2 = true;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota6C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota5C2L2 = true;
+			sheet.Gota4C2L2 = true;
+			sheet.Gota3C2L2 = true;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota5C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota4C2L2 = true;
+			sheet.Gota3C2L2 = true;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota4C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota5C2L2 = false;
+			sheet.Gota3C2L2 = true;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota3C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota5C2L2 = false;
+			sheet.Gota4C2L2 = false;
+			sheet.Gota2C2L2 = true;
+			sheet.Gota1C2L2 = true;
+		elseif sheet.Gota2C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota5C2L2 = false;
+			sheet.Gota4C2L2 = false;
+			sheet.Gota3C2L2 = false;
+			sheet.Gota1C2L2 = true;	
+		elseif sheet.Gota1C2L2 == true then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota5C2L2 = false;
+			sheet.Gota4C2L2 = false;
+			sheet.Gota3C2L2 = false;
+			sheet.Gota2C2L2 = false;
+		elseif sheet.Gota1C2L2 == false then
+			sheet.Gota8C2L2 = false;
+			sheet.Gota7C2L2 = false;
+			sheet.Gota6C2L2 = false;
+			sheet.Gota5C2L2 = false;
+			sheet.Gota4C2L2 = false;
+			sheet.Gota3C2L2 = false;
+			sheet.Gota2C2L2 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C2L3', 'Gota7C2L3', 'Gota6C2L3', 'Gota5C2L3', 'Gota4C2L3', 'Gota3C2L3', 'Gota2C2L3', 'Gota1C2L3'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L3 == true then
+			sheet.Gota7C2L3 = true;
+			sheet.Gota6C2L3 = true;
+			sheet.Gota5C2L3 = true;
+			sheet.Gota4C2L3 = true;
+			sheet.Gota3C2L3 = true;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota7C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota6C2L3 = true;
+			sheet.Gota5C2L3 = true;
+			sheet.Gota4C2L3 = true;
+			sheet.Gota3C2L3 = true;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota6C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota5C2L3 = true;
+			sheet.Gota4C2L3 = true;
+			sheet.Gota3C2L3 = true;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota5C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota4C2L3 = true;
+			sheet.Gota3C2L3 = true;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota4C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota5C2L3 = false;
+			sheet.Gota3C2L3 = true;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota3C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota5C2L3 = false;
+			sheet.Gota4C2L3 = false;
+			sheet.Gota2C2L3 = true;
+			sheet.Gota1C2L3 = true;
+		elseif sheet.Gota2C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota5C2L3 = false;
+			sheet.Gota4C2L3 = false;
+			sheet.Gota3C2L3 = false;
+			sheet.Gota1C2L3 = true;	
+		elseif sheet.Gota1C2L3 == true then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota5C2L3 = false;
+			sheet.Gota4C2L3 = false;
+			sheet.Gota3C2L3 = false;
+			sheet.Gota2C2L3 = false;
+		elseif sheet.Gota1C2L3 == false then
+			sheet.Gota8C2L3 = false;
+			sheet.Gota7C2L3 = false;
+			sheet.Gota6C2L3 = false;
+			sheet.Gota5C2L3 = false;
+			sheet.Gota4C2L3 = false;
+			sheet.Gota3C2L3 = false;
+			sheet.Gota2C2L3 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C2L4', 'Gota7C2L4', 'Gota6C2L4', 'Gota5C2L4', 'Gota4C2L4', 'Gota3C2L4', 'Gota2C2L4', 'Gota1C2L4'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L4 == true then
+			sheet.Gota7C2L4 = true;
+			sheet.Gota6C2L4 = true;
+			sheet.Gota5C2L4 = true;
+			sheet.Gota4C2L4 = true;
+			sheet.Gota3C2L4 = true;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota7C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota6C2L4 = true;
+			sheet.Gota5C2L4 = true;
+			sheet.Gota4C2L4 = true;
+			sheet.Gota3C2L4 = true;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota6C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota5C2L4 = true;
+			sheet.Gota4C2L4 = true;
+			sheet.Gota3C2L4 = true;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota5C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota4C2L4 = true;
+			sheet.Gota3C2L4 = true;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota4C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota5C2L4 = false;
+			sheet.Gota3C2L4 = true;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota3C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota5C2L4 = false;
+			sheet.Gota4C2L4 = false;
+			sheet.Gota2C2L4 = true;
+			sheet.Gota1C2L4 = true;
+		elseif sheet.Gota2C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota5C2L4 = false;
+			sheet.Gota4C2L4 = false;
+			sheet.Gota3C2L4 = false;
+			sheet.Gota1C2L4 = true;	
+		elseif sheet.Gota1C2L4 == true then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota5C2L4 = false;
+			sheet.Gota4C2L4 = false;
+			sheet.Gota3C2L4 = false;
+			sheet.Gota2C2L4 = false;
+		elseif sheet.Gota1C2L4 == false then
+			sheet.Gota8C2L4 = false;
+			sheet.Gota7C2L4 = false;
+			sheet.Gota6C2L4 = false;
+			sheet.Gota5C2L4 = false;
+			sheet.Gota4C2L4 = false;
+			sheet.Gota3C2L4 = false;
+			sheet.Gota2C2L4 = false;
+		end;
+		</event>
+	</dataLink>	
+	
+	<dataLink fields="{'Gota8C2L5', 'Gota7C2L5', 'Gota6C2L5', 'Gota5C2L5', 'Gota4C2L5', 'Gota3C2L5', 'Gota2C2L5', 'Gota1C2L5'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L5 == true then
+			sheet.Gota7C2L5 = true;
+			sheet.Gota6C2L5 = true;
+			sheet.Gota5C2L5 = true;
+			sheet.Gota4C2L5 = true;
+			sheet.Gota3C2L5 = true;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota7C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota6C2L5 = true;
+			sheet.Gota5C2L5 = true;
+			sheet.Gota4C2L5 = true;
+			sheet.Gota3C2L5 = true;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota6C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota5C2L5 = true;
+			sheet.Gota4C2L5 = true;
+			sheet.Gota3C2L5 = true;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota5C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota4C2L5 = true;
+			sheet.Gota3C2L5 = true;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota4C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota5C2L5 = false;
+			sheet.Gota3C2L5 = true;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota3C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota5C2L5 = false;
+			sheet.Gota4C2L5 = false;
+			sheet.Gota2C2L5 = true;
+			sheet.Gota1C2L5 = true;
+		elseif sheet.Gota2C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota5C2L5 = false;
+			sheet.Gota4C2L5 = false;
+			sheet.Gota3C2L5 = false;
+			sheet.Gota1C2L5 = true;	
+		elseif sheet.Gota1C2L5 == true then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota5C2L5 = false;
+			sheet.Gota4C2L5 = false;
+			sheet.Gota3C2L5 = false;
+			sheet.Gota2C2L5 = false;
+		elseif sheet.Gota1C2L5 == false then
+			sheet.Gota8C2L5 = false;
+			sheet.Gota7C2L5 = false;
+			sheet.Gota6C2L5 = false;
+			sheet.Gota5C2L5 = false;
+			sheet.Gota4C2L5 = false;
+			sheet.Gota3C2L5 = false;
+			sheet.Gota2C2L5 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C2L6', 'Gota7C2L6', 'Gota6C2L6', 'Gota5C2L6', 'Gota4C2L6', 'Gota3C2L6', 'Gota2C2L6', 'Gota1C2L6'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L6 == true then
+			sheet.Gota7C2L6 = true;
+			sheet.Gota6C2L6 = true;
+			sheet.Gota5C2L6 = true;
+			sheet.Gota4C2L6 = true;
+			sheet.Gota3C2L6 = true;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota7C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota6C2L6 = true;
+			sheet.Gota5C2L6 = true;
+			sheet.Gota4C2L6 = true;
+			sheet.Gota3C2L6 = true;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota6C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota5C2L6 = true;
+			sheet.Gota4C2L6 = true;
+			sheet.Gota3C2L6 = true;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota5C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota4C2L6 = true;
+			sheet.Gota3C2L6 = true;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota4C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota5C2L6 = false;
+			sheet.Gota3C2L6 = true;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota3C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota5C2L6 = false;
+			sheet.Gota4C2L6 = false;
+			sheet.Gota2C2L6 = true;
+			sheet.Gota1C2L6 = true;
+		elseif sheet.Gota2C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota5C2L6 = false;
+			sheet.Gota4C2L6 = false;
+			sheet.Gota3C2L6 = false;
+			sheet.Gota1C2L6 = true;	
+		elseif sheet.Gota1C2L6 == true then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota5C2L6 = false;
+			sheet.Gota4C2L6 = false;
+			sheet.Gota3C2L6 = false;
+			sheet.Gota2C2L6 = false;
+		elseif sheet.Gota1C2L6 == false then
+			sheet.Gota8C2L6 = false;
+			sheet.Gota7C2L6 = false;
+			sheet.Gota6C2L6 = false;
+			sheet.Gota5C2L6 = false;
+			sheet.Gota4C2L6 = false;
+			sheet.Gota3C2L6 = false;
+			sheet.Gota2C2L6 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C2L7', 'Gota7C2L7', 'Gota6C2L7', 'Gota5C2L7', 'Gota4C2L7', 'Gota3C2L7', 'Gota2C2L7', 'Gota1C2L7'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L7 == true then
+			sheet.Gota7C2L7 = true;
+			sheet.Gota6C2L7 = true;
+			sheet.Gota5C2L7 = true;
+			sheet.Gota4C2L7 = true;
+			sheet.Gota3C2L7 = true;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota7C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota6C2L7 = true;
+			sheet.Gota5C2L7 = true;
+			sheet.Gota4C2L7 = true;
+			sheet.Gota3C2L7 = true;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota6C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota5C2L7 = true;
+			sheet.Gota4C2L7 = true;
+			sheet.Gota3C2L7 = true;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota5C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota4C2L7 = true;
+			sheet.Gota3C2L7 = true;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota4C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota5C2L7 = false;
+			sheet.Gota3C2L7 = true;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota3C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota5C2L7 = false;
+			sheet.Gota4C2L7 = false;
+			sheet.Gota2C2L7 = true;
+			sheet.Gota1C2L7 = true;
+		elseif sheet.Gota2C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota5C2L7 = false;
+			sheet.Gota4C2L7 = false;
+			sheet.Gota3C2L7 = false;
+			sheet.Gota1C2L7 = true;	
+		elseif sheet.Gota1C2L7 == true then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota5C2L7 = false;
+			sheet.Gota4C2L7 = false;
+			sheet.Gota3C2L7 = false;
+			sheet.Gota2C2L7 = false;
+		elseif sheet.Gota1C2L7 == false then
+			sheet.Gota8C2L7 = false;
+			sheet.Gota7C2L7 = false;
+			sheet.Gota6C2L7 = false;
+			sheet.Gota5C2L7 = false;
+			sheet.Gota4C2L7 = false;
+			sheet.Gota3C2L7 = false;
+			sheet.Gota2C2L7 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C2L8', 'Gota7C2L8', 'Gota6C2L8', 'Gota5C2L8', 'Gota4C2L8', 'Gota3C2L8', 'Gota2C2L8', 'Gota1C2L8'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C2L8 == true then
+			sheet.Gota7C2L8 = true;
+			sheet.Gota6C2L8 = true;
+			sheet.Gota5C2L8 = true;
+			sheet.Gota4C2L8 = true;
+			sheet.Gota3C2L8 = true;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota7C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota6C2L8 = true;
+			sheet.Gota5C2L8 = true;
+			sheet.Gota4C2L8 = true;
+			sheet.Gota3C2L8 = true;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota6C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota5C2L8 = true;
+			sheet.Gota4C2L8 = true;
+			sheet.Gota3C2L8 = true;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota5C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota4C2L8 = true;
+			sheet.Gota3C2L8 = true;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota4C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota5C2L8 = false;
+			sheet.Gota3C2L8 = true;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota3C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota5C2L8 = false;
+			sheet.Gota4C2L8 = false;
+			sheet.Gota2C2L8 = true;
+			sheet.Gota1C2L8 = true;
+		elseif sheet.Gota2C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota5C2L8 = false;
+			sheet.Gota4C2L8 = false;
+			sheet.Gota3C2L8 = false;
+			sheet.Gota1C2L8 = true;	
+		elseif sheet.Gota1C2L8 == true then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota5C2L8 = false;
+			sheet.Gota4C2L8 = false;
+			sheet.Gota3C2L8 = false;
+			sheet.Gota2C2L8 = false;
+		elseif sheet.Gota1C2L8 == false then
+			sheet.Gota8C2L8 = false;
+			sheet.Gota7C2L8 = false;
+			sheet.Gota6C2L8 = false;
+			sheet.Gota5C2L8 = false;
+			sheet.Gota4C2L8 = false;
+			sheet.Gota3C2L8 = false;
+			sheet.Gota2C2L8 = false;
+		end;
+		</event>
+	</dataLink>	
+	
+	<dataLink fields="{'Gota8C3L1', 'Gota7C3L1', 'Gota6C3L1', 'Gota5C3L1', 'Gota4C3L1', 'Gota3C3L1', 'Gota2C3L1', 'Gota1C3L1'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L1 == true then
+			sheet.Gota7C3L1 = true;
+			sheet.Gota6C3L1 = true;
+			sheet.Gota5C3L1 = true;
+			sheet.Gota4C3L1 = true;
+			sheet.Gota3C3L1 = true;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota7C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota6C3L1 = true;
+			sheet.Gota5C3L1 = true;
+			sheet.Gota4C3L1 = true;
+			sheet.Gota3C3L1 = true;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota6C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota5C3L1 = true;
+			sheet.Gota4C3L1 = true;
+			sheet.Gota3C3L1 = true;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota5C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota4C3L1 = true;
+			sheet.Gota3C3L1 = true;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota4C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota5C3L1 = false;
+			sheet.Gota3C3L1 = true;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota3C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota5C3L1 = false;
+			sheet.Gota4C3L1 = false;
+			sheet.Gota2C3L1 = true;
+			sheet.Gota1C3L1 = true;
+		elseif sheet.Gota2C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota5C3L1 = false;
+			sheet.Gota4C3L1 = false;
+			sheet.Gota3C3L1 = false;
+			sheet.Gota1C3L1 = true;	
+		elseif sheet.Gota1C3L1 == true then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota5C3L1 = false;
+			sheet.Gota4C3L1 = false;
+			sheet.Gota3C3L1 = false;
+			sheet.Gota2C3L1 = false;
+		elseif sheet.Gota1C3L1 == false then
+			sheet.Gota8C3L1 = false;
+			sheet.Gota7C3L1 = false;
+			sheet.Gota6C3L1 = false;
+			sheet.Gota5C3L1 = false;
+			sheet.Gota4C3L1 = false;
+			sheet.Gota3C3L1 = false;
+			sheet.Gota2C3L1 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C3L2', 'Gota7C3L2', 'Gota6C3L2', 'Gota5C3L2', 'Gota4C3L2', 'Gota3C3L2', 'Gota2C3L2', 'Gota1C3L2'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L2 == true then
+			sheet.Gota7C3L2 = true;
+			sheet.Gota6C3L2 = true;
+			sheet.Gota5C3L2 = true;
+			sheet.Gota4C3L2 = true;
+			sheet.Gota3C3L2 = true;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota7C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota6C3L2 = true;
+			sheet.Gota5C3L2 = true;
+			sheet.Gota4C3L2 = true;
+			sheet.Gota3C3L2 = true;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota6C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota5C3L2 = true;
+			sheet.Gota4C3L2 = true;
+			sheet.Gota3C3L2 = true;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota5C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota4C3L2 = true;
+			sheet.Gota3C3L2 = true;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota4C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota5C3L2 = false;
+			sheet.Gota3C3L2 = true;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota3C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota5C3L2 = false;
+			sheet.Gota4C3L2 = false;
+			sheet.Gota2C3L2 = true;
+			sheet.Gota1C3L2 = true;
+		elseif sheet.Gota2C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota5C3L2 = false;
+			sheet.Gota4C3L2 = false;
+			sheet.Gota3C3L2 = false;
+			sheet.Gota1C3L2 = true;	
+		elseif sheet.Gota1C3L2 == true then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota5C3L2 = false;
+			sheet.Gota4C3L2 = false;
+			sheet.Gota3C3L2 = false;
+			sheet.Gota2C3L2 = false;
+		elseif sheet.Gota1C3L2 == false then
+			sheet.Gota8C3L2 = false;
+			sheet.Gota7C3L2 = false;
+			sheet.Gota6C3L2 = false;
+			sheet.Gota5C3L2 = false;
+			sheet.Gota4C3L2 = false;
+			sheet.Gota3C3L2 = false;
+			sheet.Gota2C3L2 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C3L3', 'Gota7C3L3', 'Gota6C3L3', 'Gota5C3L3', 'Gota4C3L3', 'Gota3C3L3', 'Gota2C3L3', 'Gota1C3L3'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L3 == true then
+			sheet.Gota7C3L3 = true;
+			sheet.Gota6C3L3 = true;
+			sheet.Gota5C3L3 = true;
+			sheet.Gota4C3L3 = true;
+			sheet.Gota3C3L3 = true;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota7C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota6C3L3 = true;
+			sheet.Gota5C3L3 = true;
+			sheet.Gota4C3L3 = true;
+			sheet.Gota3C3L3 = true;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota6C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota5C3L3 = true;
+			sheet.Gota4C3L3 = true;
+			sheet.Gota3C3L3 = true;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota5C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota4C3L3 = true;
+			sheet.Gota3C3L3 = true;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota4C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota5C3L3 = false;
+			sheet.Gota3C3L3 = true;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota3C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota5C3L3 = false;
+			sheet.Gota4C3L3 = false;
+			sheet.Gota2C3L3 = true;
+			sheet.Gota1C3L3 = true;
+		elseif sheet.Gota2C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota5C3L3 = false;
+			sheet.Gota4C3L3 = false;
+			sheet.Gota3C3L3 = false;
+			sheet.Gota1C3L3 = true;	
+		elseif sheet.Gota1C3L3 == true then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota5C3L3 = false;
+			sheet.Gota4C3L3 = false;
+			sheet.Gota3C3L3 = false;
+			sheet.Gota2C3L3 = false;
+		elseif sheet.Gota1C3L3 == false then
+			sheet.Gota8C3L3 = false;
+			sheet.Gota7C3L3 = false;
+			sheet.Gota6C3L3 = false;
+			sheet.Gota5C3L3 = false;
+			sheet.Gota4C3L3 = false;
+			sheet.Gota3C3L3 = false;
+			sheet.Gota2C3L3 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C3L4', 'Gota7C3L4', 'Gota6C3L4', 'Gota5C3L4', 'Gota4C3L4', 'Gota3C3L4', 'Gota2C3L4', 'Gota1C3L4'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L4 == true then
+			sheet.Gota7C3L4 = true;
+			sheet.Gota6C3L4 = true;
+			sheet.Gota5C3L4 = true;
+			sheet.Gota4C3L4 = true;
+			sheet.Gota3C3L4 = true;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota7C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota6C3L4 = true;
+			sheet.Gota5C3L4 = true;
+			sheet.Gota4C3L4 = true;
+			sheet.Gota3C3L4 = true;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota6C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota5C3L4 = true;
+			sheet.Gota4C3L4 = true;
+			sheet.Gota3C3L4 = true;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota5C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota4C3L4 = true;
+			sheet.Gota3C3L4 = true;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota4C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota5C3L4 = false;
+			sheet.Gota3C3L4 = true;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota3C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota5C3L4 = false;
+			sheet.Gota4C3L4 = false;
+			sheet.Gota2C3L4 = true;
+			sheet.Gota1C3L4 = true;
+		elseif sheet.Gota2C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota5C3L4 = false;
+			sheet.Gota4C3L4 = false;
+			sheet.Gota3C3L4 = false;
+			sheet.Gota1C3L4 = true;	
+		elseif sheet.Gota1C3L4 == true then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota5C3L4 = false;
+			sheet.Gota4C3L4 = false;
+			sheet.Gota3C3L4 = false;
+			sheet.Gota2C3L4 = false;
+		elseif sheet.Gota1C3L4 == false then
+			sheet.Gota8C3L4 = false;
+			sheet.Gota7C3L4 = false;
+			sheet.Gota6C3L4 = false;
+			sheet.Gota5C3L4 = false;
+			sheet.Gota4C3L4 = false;
+			sheet.Gota3C3L4 = false;
+			sheet.Gota2C3L4 = false;
+		end;
+		</event>
+	</dataLink>	
+	
+	<dataLink fields="{'Gota8C3L5', 'Gota7C3L5', 'Gota6C3L5', 'Gota5C3L5', 'Gota4C3L5', 'Gota3C3L5', 'Gota2C3L5', 'Gota1C3L5'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L5 == true then
+			sheet.Gota7C3L5 = true;
+			sheet.Gota6C3L5 = true;
+			sheet.Gota5C3L5 = true;
+			sheet.Gota4C3L5 = true;
+			sheet.Gota3C3L5 = true;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota7C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota6C3L5 = true;
+			sheet.Gota5C3L5 = true;
+			sheet.Gota4C3L5 = true;
+			sheet.Gota3C3L5 = true;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota6C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota5C3L5 = true;
+			sheet.Gota4C3L5 = true;
+			sheet.Gota3C3L5 = true;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota5C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota4C3L5 = true;
+			sheet.Gota3C3L5 = true;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota4C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota5C3L5 = false;
+			sheet.Gota3C3L5 = true;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota3C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota5C3L5 = false;
+			sheet.Gota4C3L5 = false;
+			sheet.Gota2C3L5 = true;
+			sheet.Gota1C3L5 = true;
+		elseif sheet.Gota2C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota5C3L5 = false;
+			sheet.Gota4C3L5 = false;
+			sheet.Gota3C3L5 = false;
+			sheet.Gota1C3L5 = true;	
+		elseif sheet.Gota1C3L5 == true then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota5C3L5 = false;
+			sheet.Gota4C3L5 = false;
+			sheet.Gota3C3L5 = false;
+			sheet.Gota2C3L5 = false;
+		elseif sheet.Gota1C3L5 == false then
+			sheet.Gota8C3L5 = false;
+			sheet.Gota7C3L5 = false;
+			sheet.Gota6C3L5 = false;
+			sheet.Gota5C3L5 = false;
+			sheet.Gota4C3L5 = false;
+			sheet.Gota3C3L5 = false;
+			sheet.Gota2C3L5 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C3L6', 'Gota7C3L6', 'Gota6C3L6', 'Gota5C3L6', 'Gota4C3L6', 'Gota3C3L6', 'Gota2C3L6', 'Gota1C3L6'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L6 == true then
+			sheet.Gota7C3L6 = true;
+			sheet.Gota6C3L6 = true;
+			sheet.Gota5C3L6 = true;
+			sheet.Gota4C3L6 = true;
+			sheet.Gota3C3L6 = true;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota7C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota6C3L6 = true;
+			sheet.Gota5C3L6 = true;
+			sheet.Gota4C3L6 = true;
+			sheet.Gota3C3L6 = true;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota6C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota5C3L6 = true;
+			sheet.Gota4C3L6 = true;
+			sheet.Gota3C3L6 = true;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota5C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota4C3L6 = true;
+			sheet.Gota3C3L6 = true;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota4C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota5C3L6 = false;
+			sheet.Gota3C3L6 = true;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota3C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota5C3L6 = false;
+			sheet.Gota4C3L6 = false;
+			sheet.Gota2C3L6 = true;
+			sheet.Gota1C3L6 = true;
+		elseif sheet.Gota2C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota5C3L6 = false;
+			sheet.Gota4C3L6 = false;
+			sheet.Gota3C3L6 = false;
+			sheet.Gota1C3L6 = true;	
+		elseif sheet.Gota1C3L6 == true then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota5C3L6 = false;
+			sheet.Gota4C3L6 = false;
+			sheet.Gota3C3L6 = false;
+			sheet.Gota2C3L6 = false;
+		elseif sheet.Gota1C3L6 == false then
+			sheet.Gota8C3L6 = false;
+			sheet.Gota7C3L6 = false;
+			sheet.Gota6C3L6 = false;
+			sheet.Gota5C3L6 = false;
+			sheet.Gota4C3L6 = false;
+			sheet.Gota3C3L6 = false;
+			sheet.Gota2C3L6 = false;
+		end;
+		</event>
+	</dataLink>
+	
+	<dataLink fields="{'Gota8C3L7', 'Gota7C3L7', 'Gota6C3L7', 'Gota5C3L7', 'Gota4C3L7', 'Gota3C3L7', 'Gota2C3L7', 'Gota1C3L7'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L7 == true then
+			sheet.Gota7C3L7 = true;
+			sheet.Gota6C3L7 = true;
+			sheet.Gota5C3L7 = true;
+			sheet.Gota4C3L7 = true;
+			sheet.Gota3C3L7 = true;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota7C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota6C3L7 = true;
+			sheet.Gota5C3L7 = true;
+			sheet.Gota4C3L7 = true;
+			sheet.Gota3C3L7 = true;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota6C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota5C3L7 = true;
+			sheet.Gota4C3L7 = true;
+			sheet.Gota3C3L7 = true;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota5C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota4C3L7 = true;
+			sheet.Gota3C3L7 = true;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota4C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota5C3L7 = false;
+			sheet.Gota3C3L7 = true;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota3C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota5C3L7 = false;
+			sheet.Gota4C3L7 = false;
+			sheet.Gota2C3L7 = true;
+			sheet.Gota1C3L7 = true;
+		elseif sheet.Gota2C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota5C3L7 = false;
+			sheet.Gota4C3L7 = false;
+			sheet.Gota3C3L7 = false;
+			sheet.Gota1C3L7 = true;	
+		elseif sheet.Gota1C3L7 == true then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota5C3L7 = false;
+			sheet.Gota4C3L7 = false;
+			sheet.Gota3C3L7 = false;
+			sheet.Gota2C3L7 = false;
+		elseif sheet.Gota1C3L7 == false then
+			sheet.Gota8C3L7 = false;
+			sheet.Gota7C3L7 = false;
+			sheet.Gota6C3L7 = false;
+			sheet.Gota5C3L7 = false;
+			sheet.Gota4C3L7 = false;
+			sheet.Gota3C3L7 = false;
+			sheet.Gota2C3L7 = false;
+		end;
+		</event>
+	</dataLink>
+
+	<dataLink fields="{'Gota8C3L8', 'Gota7C3L8', 'Gota6C3L8', 'Gota5C3L8', 'Gota4C3L8', 'Gota3C3L8', 'Gota2C3L8', 'Gota1C3L8'}">
+		<event name="onChange">
+		if sheet == nil then return end;
+		if sheet.Gota8C3L8 == true then
+			sheet.Gota7C3L8 = true;
+			sheet.Gota6C3L8 = true;
+			sheet.Gota5C3L8 = true;
+			sheet.Gota4C3L8 = true;
+			sheet.Gota3C3L8 = true;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota7C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota6C3L8 = true;
+			sheet.Gota5C3L8 = true;
+			sheet.Gota4C3L8 = true;
+			sheet.Gota3C3L8 = true;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota6C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota5C3L8 = true;
+			sheet.Gota4C3L8 = true;
+			sheet.Gota3C3L8 = true;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota5C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota4C3L8 = true;
+			sheet.Gota3C3L8 = true;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota4C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota5C3L8 = false;
+			sheet.Gota3C3L8 = true;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota3C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota5C3L8 = false;
+			sheet.Gota4C3L8 = false;
+			sheet.Gota2C3L8 = true;
+			sheet.Gota1C3L8 = true;
+		elseif sheet.Gota2C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota5C3L8 = false;
+			sheet.Gota4C3L8 = false;
+			sheet.Gota3C3L8 = false;
+			sheet.Gota1C3L8 = true;	
+		elseif sheet.Gota1C3L8 == true then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota5C3L8 = false;
+			sheet.Gota4C3L8 = false;
+			sheet.Gota3C3L8 = false;
+			sheet.Gota2C3L8 = false;
+		elseif sheet.Gota1C3L8 == false then
+			sheet.Gota8C3L8 = false;
+			sheet.Gota7C3L8 = false;
+			sheet.Gota6C3L8 = false;
+			sheet.Gota5C3L8 = false;
+			sheet.Gota4C3L8 = false;
+			sheet.Gota3C3L8 = false;
+			sheet.Gota2C3L8 = false;
+		end;
+		</event>
+	</dataLink>		
+</form>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen8_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmLobisomen8_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmLobisomen8_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/8.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+			
+			<!-- Rituais -->			
+		    <layout left="70" top="180" width="750" height="1010" compilerOrder="1">
+                <richEdit width="750" height="1010" backgroundColor="Transparent" field="txt3" compilerOrder="2"/>
+            </layout>&#xD;	
+			
+        </rectangle>
+    </scrollBox>
+</form>

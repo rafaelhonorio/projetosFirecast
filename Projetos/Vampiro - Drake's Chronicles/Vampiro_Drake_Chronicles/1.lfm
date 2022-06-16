@@ -1,0 +1,2328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles1_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles1_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/1.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+		
+		<!-- Nome -->
+			<layout left="130" top="150" width="170" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="Nome" compilerOrder="2"/>
+			</layout>&#xD;
+		<!-- Jogador -->
+			<layout left="155" top="174" width="145" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="30" field="Jogador" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Crônica -->
+			<layout left="155" top="196" width="145" height="30" compilerOrder="5">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="30" field="Crônica" compilerOrder="6"/>
+			</layout>&#xD;
+			
+		<!-- Natureza -->
+			<layout left="405" top="150" width="145" height="30" compilerOrder="7">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="30" field="Natureza" compilerOrder="8"/>
+			</layout>&#xD;
+		<!-- Comportamento -->
+			<layout left="465" top="174" width="85" height="30" compilerOrder="9">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="85" height="30" field="Comportamento" compilerOrder="10"/>
+			</layout>&#xD;
+		<!-- Clã -->
+			<layout left="355" top="196" width="195" height="30" compilerOrder="11">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="195" height="30" field="Clã" compilerOrder="12"/>
+			</layout>&#xD;
+			
+		<!-- Geração -->
+			<layout left="645" top="150" width="150" height="30" compilerOrder="13">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="150" height="30" field="Geração" compilerOrder="14"/>
+			</layout>&#xD;		
+		<!-- Senhor -->
+			<layout left="635" top="174" width="163" height="30" compilerOrder="15">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="163" height="30" field="Senhor" compilerOrder="16"/>
+			</layout>&#xD;
+		<!-- Conceito -->
+			<layout left="647" top="196" width="150" height="30" compilerOrder="17">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="150" height="30" field="Conceito" compilerOrder="18"/>
+			</layout>&#xD;
+			
+<!-- Gotas de Sangue -->
+	<!-- Atributos -->
+	<!-- Físicos -->
+		<!-- Força -->
+	<!-- Gotas de Sangue-->
+		<!-- Gota 1 -->
+			<layout left="191" top="282" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1for" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="282" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2for" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="282" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3for" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="282" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4for" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="282" width="18" height="18" compilerOrder="27">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5for" compilerOrder="28"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="282" width="18" height="18" compilerOrder="29">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6for" compilerOrder="30"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="282" width="18" height="18" compilerOrder="31">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7for" compilerOrder="32"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="282" width="18" height="18" compilerOrder="33">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8for" compilerOrder="34"/>
+            </layout>&#xD;
+			
+		<!-- Destreza -->
+		<!-- Gota 1 -->
+			<layout left="191" top="302" width="18" height="18" compilerOrder="35">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1des" compilerOrder="36"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="302" width="18" height="18" compilerOrder="37">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2des" compilerOrder="38"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="302" width="18" height="18" compilerOrder="39">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3des" compilerOrder="40"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="302" width="18" height="18" compilerOrder="41">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4des" compilerOrder="42"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="302" width="18" height="18" compilerOrder="43">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5des" compilerOrder="44"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="302" width="18" height="18" compilerOrder="45">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6des" compilerOrder="46"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="302" width="18" height="18" compilerOrder="47">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7des" compilerOrder="48"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="302" width="18" height="18" compilerOrder="49">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8des" compilerOrder="50"/>
+            </layout>&#xD;
+			
+		<!-- Vigor -->
+		<!-- Gota 1 -->
+			<layout left="191" top="324" width="18" height="18" compilerOrder="51">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1vig" compilerOrder="52"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="324" width="18" height="18" compilerOrder="53">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2vig" compilerOrder="54"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="324" width="18" height="18" compilerOrder="55">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3vig" compilerOrder="56"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="324" width="18" height="18" compilerOrder="57">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4vig" compilerOrder="58"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="324" width="18" height="18" compilerOrder="59">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5vig" compilerOrder="60"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="324" width="18" height="18" compilerOrder="61">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6vig" compilerOrder="62"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="324" width="18" height="18" compilerOrder="63">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7vig" compilerOrder="64"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="324" width="18" height="18" compilerOrder="65">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8vig" compilerOrder="66"/>
+            </layout>&#xD;
+
+	<!-- Sociais -->
+	<!-- Carisma -->
+		<!-- Gota 1 -->
+			<layout left="439" top="282" width="18" height="18" compilerOrder="67">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1cari" compilerOrder="68"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="282" width="18" height="18" compilerOrder="69">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2cari" compilerOrder="70"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="282" width="18" height="18" compilerOrder="71">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3cari" compilerOrder="72"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="282" width="18" height="18" compilerOrder="73">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4cari" compilerOrder="74"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="282" width="18" height="18" compilerOrder="75">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5cari" compilerOrder="76"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="282" width="18" height="18" compilerOrder="77">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6cari" compilerOrder="78"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="282" width="18" height="18" compilerOrder="79">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7cari" compilerOrder="80"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="282" width="18" height="18" compilerOrder="81">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8cari" compilerOrder="82"/>
+            </layout>&#xD;
+		<!-- Manipulação -->
+		<!-- Gota 1 -->
+			<layout left="439" top="302" width="18" height="18" compilerOrder="83">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1mani" compilerOrder="84"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="302" width="18" height="18" compilerOrder="85">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2mani" compilerOrder="86"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="302" width="18" height="18" compilerOrder="87">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3mani" compilerOrder="88"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="302" width="18" height="18" compilerOrder="89">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4mani" compilerOrder="90"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="302" width="18" height="18" compilerOrder="91">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5mani" compilerOrder="92"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="302" width="18" height="18" compilerOrder="93">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6mani" compilerOrder="94"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="302" width="18" height="18" compilerOrder="95">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7mani" compilerOrder="96"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="302" width="18" height="18" compilerOrder="97">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8mani" compilerOrder="98"/>
+            </layout>&#xD;
+			
+		<!-- Aparência -->
+		<!-- Gota 1 -->
+			<layout left="439" top="324" width="18" height="18" compilerOrder="99">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1apa" compilerOrder="100"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="324" width="18" height="18" compilerOrder="101">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2apa" compilerOrder="102"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="324" width="18" height="18" compilerOrder="103">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3apa" compilerOrder="104"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="324" width="18" height="18" compilerOrder="105">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4apa" compilerOrder="106"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="324" width="18" height="18" compilerOrder="107">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5apa" compilerOrder="108"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="324" width="18" height="18" compilerOrder="109">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6apa" compilerOrder="110"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="324" width="18" height="18" compilerOrder="111">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7apa" compilerOrder="112"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="324" width="18" height="18" compilerOrder="113">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8apa" compilerOrder="114"/>
+            </layout>&#xD;
+			
+	<!-- Mentais -->
+	<!-- Percepção -->
+		<!-- Gota 1 -->
+			<layout left="686" top="282" width="18" height="18" compilerOrder="115">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1perc" compilerOrder="116"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="282" width="18" height="18" compilerOrder="117">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2perc" compilerOrder="118"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="282" width="18" height="18" compilerOrder="119">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3perc" compilerOrder="120"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="282" width="18" height="18" compilerOrder="121">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4perc" compilerOrder="122"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="282" width="18" height="18" compilerOrder="123">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5perc" compilerOrder="124"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="282" width="18" height="18" compilerOrder="125">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6perc" compilerOrder="126"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="282" width="18" height="18" compilerOrder="127">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7perc" compilerOrder="128"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="282" width="18" height="18" compilerOrder="129">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8perc" compilerOrder="130"/>
+            </layout>&#xD;
+			
+		<!-- Inteligência -->
+		<!-- Gota 1 -->
+			<layout left="686" top="302" width="18" height="18" compilerOrder="131">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1int" compilerOrder="132"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="302" width="18" height="18" compilerOrder="133">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2int" compilerOrder="134"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="302" width="18" height="18" compilerOrder="135">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3int" compilerOrder="136"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="302" width="18" height="18" compilerOrder="137">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4int" compilerOrder="138"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="302" width="18" height="18" compilerOrder="139">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5int" compilerOrder="140"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="302" width="18" height="18" compilerOrder="141">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6int" compilerOrder="142"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="302" width="18" height="18" compilerOrder="143">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7int" compilerOrder="144"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="302" width="18" height="18" compilerOrder="145">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8int" compilerOrder="146"/>
+            </layout>&#xD;
+			
+		<!-- Raciocínio -->
+		<!-- Gota 1 -->
+			<layout left="686" top="324" width="18" height="18" compilerOrder="147">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1rac" compilerOrder="148"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="324" width="18" height="18" compilerOrder="149">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2rac" compilerOrder="150"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="324" width="18" height="18" compilerOrder="151">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3rac" compilerOrder="152"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="324" width="18" height="18" compilerOrder="153">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4rac" compilerOrder="154"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="324" width="18" height="18" compilerOrder="155">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5rac" compilerOrder="156"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="324" width="18" height="18" compilerOrder="157">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6rac" compilerOrder="158"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="324" width="18" height="18" compilerOrder="159">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7rac" compilerOrder="160"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="324" width="18" height="18" compilerOrder="161">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8rac" compilerOrder="162"/>
+            </layout>&#xD;
+			
+	<!-- Habilidades -->
+	<!-- Talentos -->
+		<!-- pront -->
+		<!-- Gota 1 -->
+			<layout left="191" top="400" width="18" height="18" compilerOrder="163">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1pront" compilerOrder="164"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="400" width="18" height="18" compilerOrder="165">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2pront" compilerOrder="166"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="400" width="18" height="18" compilerOrder="167">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3pront" compilerOrder="168"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="400" width="18" height="18" compilerOrder="169">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4pront" compilerOrder="170"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="400" width="18" height="18" compilerOrder="171">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5pront" compilerOrder="172"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="400" width="18" height="18" compilerOrder="173">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6pront" compilerOrder="174"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="400" width="18" height="18" compilerOrder="175">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7pront" compilerOrder="176"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="400" width="18" height="18" compilerOrder="177">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8pront" compilerOrder="178"/>
+            </layout>&#xD;
+		<!-- espo -->
+		<!-- Gota 1 -->
+			<layout left="191" top="422" width="18" height="18" compilerOrder="179">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1espo" compilerOrder="180"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="422" width="18" height="18" compilerOrder="181">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2espo" compilerOrder="182"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="422" width="18" height="18" compilerOrder="183">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3espo" compilerOrder="184"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="422" width="18" height="18" compilerOrder="185">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4espo" compilerOrder="186"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="422" width="18" height="18" compilerOrder="187">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5espo" compilerOrder="188"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="422" width="18" height="18" compilerOrder="189">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6espo" compilerOrder="190"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="422" width="18" height="18" compilerOrder="191">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7espo" compilerOrder="192"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="422" width="18" height="18" compilerOrder="193">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8espo" compilerOrder="194"/>
+            </layout>&#xD;
+		<!-- bri -->
+		<!-- Gota 1 -->
+			<layout left="191" top="443" width="18" height="18" compilerOrder="195">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1bri" compilerOrder="196"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="443" width="18" height="18" compilerOrder="197">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2bri" compilerOrder="198"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="443" width="18" height="18" compilerOrder="199">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3bri" compilerOrder="200"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="443" width="18" height="18" compilerOrder="201">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4bri" compilerOrder="202"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="443" width="18" height="18" compilerOrder="203">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5bri" compilerOrder="204"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="443" width="18" height="18" compilerOrder="205">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6bri" compilerOrder="206"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="443" width="18" height="18" compilerOrder="207">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7bri" compilerOrder="208"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="443" width="18" height="18" compilerOrder="209">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8bri" compilerOrder="210"/>
+            </layout>&#xD;
+		<!-- esq -->
+		<!-- Gota 1 -->
+			<layout left="191" top="464" width="18" height="18" compilerOrder="211">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1esq" compilerOrder="212"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="464" width="18" height="18" compilerOrder="213">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2esq" compilerOrder="214"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="464" width="18" height="18" compilerOrder="215">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3esq" compilerOrder="216"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="464" width="18" height="18" compilerOrder="217">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4esq" compilerOrder="218"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="464" width="18" height="18" compilerOrder="219">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5esq" compilerOrder="220"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="464" width="18" height="18" compilerOrder="221">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6esq" compilerOrder="222"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="464" width="18" height="18" compilerOrder="223">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7esq" compilerOrder="224"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="464" width="18" height="18" compilerOrder="225">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8esq" compilerOrder="226"/>
+            </layout>&#xD;
+		<!-- emp -->
+		<!-- Gota 1 -->
+			<layout left="191" top="485" width="18" height="18" compilerOrder="227">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1emp" compilerOrder="228"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="485" width="18" height="18" compilerOrder="229">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2emp" compilerOrder="230"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="485" width="18" height="18" compilerOrder="231">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3emp" compilerOrder="232"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="485" width="18" height="18" compilerOrder="233">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4emp" compilerOrder="234"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="485" width="18" height="18" compilerOrder="235">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5emp" compilerOrder="236"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="485" width="18" height="18" compilerOrder="237">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6emp" compilerOrder="238"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="485" width="18" height="18" compilerOrder="239">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7emp" compilerOrder="240"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="485" width="18" height="18" compilerOrder="241">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8emp" compilerOrder="242"/>
+            </layout>&#xD;
+		<!-- exp -->
+		<!-- Gota 1 -->
+			<layout left="191" top="506" width="18" height="18" compilerOrder="243">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1exp" compilerOrder="244"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="506" width="18" height="18" compilerOrder="245">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2exp" compilerOrder="246"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="506" width="18" height="18" compilerOrder="247">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3exp" compilerOrder="248"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="506" width="18" height="18" compilerOrder="249">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4exp" compilerOrder="250"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="506" width="18" height="18" compilerOrder="251">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5exp" compilerOrder="252"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="506" width="18" height="18" compilerOrder="253">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6exp" compilerOrder="254"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="506" width="18" height="18" compilerOrder="255">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7exp" compilerOrder="256"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="506" width="18" height="18" compilerOrder="257">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8exp" compilerOrder="258"/>
+            </layout>&#xD;
+		<!-- intim -->
+		<!-- Gota 1 -->
+			<layout left="191" top="529" width="18" height="18" compilerOrder="259">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1intim" compilerOrder="260"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="529" width="18" height="18" compilerOrder="261">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2intim" compilerOrder="262"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="529" width="18" height="18" compilerOrder="263">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3intim" compilerOrder="264"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="529" width="18" height="18" compilerOrder="265">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4intim" compilerOrder="266"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="529" width="18" height="18" compilerOrder="267">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5intim" compilerOrder="268"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="529" width="18" height="18" compilerOrder="269">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6intim" compilerOrder="270"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="529" width="18" height="18" compilerOrder="271">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7intim" compilerOrder="272"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="529" width="18" height="18" compilerOrder="273">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8intim" compilerOrder="274"/>
+            </layout>&#xD;
+		<!-- lider -->
+		<!-- Gota 1 -->
+			<layout left="191" top="550" width="18" height="18" compilerOrder="275">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1lider" compilerOrder="276"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="550" width="18" height="18" compilerOrder="277">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2lider" compilerOrder="278"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="550" width="18" height="18" compilerOrder="279">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3lider" compilerOrder="280"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="550" width="18" height="18" compilerOrder="281">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4lider" compilerOrder="282"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="550" width="18" height="18" compilerOrder="283">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5lider" compilerOrder="284"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="550" width="18" height="18" compilerOrder="285">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6lider" compilerOrder="286"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="550" width="18" height="18" compilerOrder="287">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7lider" compilerOrder="288"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="550" width="18" height="18" compilerOrder="289">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8lider" compilerOrder="290"/>
+            </layout>&#xD;
+		<!-- man -->
+		<!-- Gota 1 -->
+			<layout left="191" top="572" width="18" height="18" compilerOrder="291">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1man" compilerOrder="292"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="572" width="18" height="18" compilerOrder="293">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2man" compilerOrder="294"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="572" width="18" height="18" compilerOrder="295">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3man" compilerOrder="296"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="572" width="18" height="18" compilerOrder="297">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4man" compilerOrder="298"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="572" width="18" height="18" compilerOrder="299">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5man" compilerOrder="300"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="572" width="18" height="18" compilerOrder="301">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6man" compilerOrder="302"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="572" width="18" height="18" compilerOrder="303">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7man" compilerOrder="304"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="572" width="18" height="18" compilerOrder="305">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8man" compilerOrder="306"/>
+            </layout>&#xD;
+		<!-- lab -->
+		<!-- Gota 1 -->
+			<layout left="191" top="594" width="18" height="18" compilerOrder="307">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1lab" compilerOrder="308"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="205" top="594" width="18" height="18" compilerOrder="309">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2lab" compilerOrder="310"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="219" top="594" width="18" height="18" compilerOrder="311">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3lab" compilerOrder="312"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="233" top="594" width="18" height="18" compilerOrder="313">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4lab" compilerOrder="314"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="247" top="594" width="18" height="18" compilerOrder="315">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5lab" compilerOrder="316"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="261" top="594" width="18" height="18" compilerOrder="317">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6lab" compilerOrder="318"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="275" top="594" width="18" height="18" compilerOrder="319">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7lab" compilerOrder="320"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="289" top="594" width="18" height="18" compilerOrder="321">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8lab" compilerOrder="322"/>
+            </layout>&#xD;
+			
+			
+	<!-- Perícias -->
+		<!-- empani -->
+		<!-- Gota 1 -->
+			<layout left="439" top="400" width="18" height="18" compilerOrder="323">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1empani" compilerOrder="324"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="400" width="18" height="18" compilerOrder="325">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2empani" compilerOrder="326"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="400" width="18" height="18" compilerOrder="327">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3empani" compilerOrder="328"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="400" width="18" height="18" compilerOrder="329">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4empani" compilerOrder="330"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="400" width="18" height="18" compilerOrder="331">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5empani" compilerOrder="332"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="400" width="18" height="18" compilerOrder="333">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6empani" compilerOrder="334"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="400" width="18" height="18" compilerOrder="335">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7empani" compilerOrder="336"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="400" width="18" height="18" compilerOrder="337">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8empani" compilerOrder="338"/>
+            </layout>&#xD;
+		<!-- ofi -->
+		<!-- Gota 1 -->
+			<layout left="439" top="422" width="18" height="18" compilerOrder="339">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1ofi" compilerOrder="340"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="422" width="18" height="18" compilerOrder="341">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2ofi" compilerOrder="342"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="422" width="18" height="18" compilerOrder="343">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3ofi" compilerOrder="344"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="422" width="18" height="18" compilerOrder="345">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4ofi" compilerOrder="346"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="422" width="18" height="18" compilerOrder="347">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5ofi" compilerOrder="348"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="422" width="18" height="18" compilerOrder="349">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6ofi" compilerOrder="350"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="422" width="18" height="18" compilerOrder="351">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7ofi" compilerOrder="352"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="422" width="18" height="18" compilerOrder="353">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8ofi" compilerOrder="354"/>
+            </layout>&#xD;
+		<!-- cond -->
+		<!-- Gota 1 -->
+			<layout left="439" top="443" width="18" height="18" compilerOrder="355">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1cond" compilerOrder="356"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="443" width="18" height="18" compilerOrder="357">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2cond" compilerOrder="358"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="443" width="18" height="18" compilerOrder="359">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3cond" compilerOrder="360"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="443" width="18" height="18" compilerOrder="361">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4cond" compilerOrder="362"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="443" width="18" height="18" compilerOrder="363">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5cond" compilerOrder="364"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="443" width="18" height="18" compilerOrder="365">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6cond" compilerOrder="366"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="443" width="18" height="18" compilerOrder="367">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7cond" compilerOrder="368"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="443" width="18" height="18" compilerOrder="369">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8cond" compilerOrder="370"/>
+            </layout>&#xD;
+		<!-- etiq -->
+		<!-- Gota 1 -->
+			<layout left="439" top="464" width="18" height="18" compilerOrder="371">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1etiq" compilerOrder="372"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="464" width="18" height="18" compilerOrder="373">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2etiq" compilerOrder="374"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="464" width="18" height="18" compilerOrder="375">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3etiq" compilerOrder="376"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="464" width="18" height="18" compilerOrder="377">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4etiq" compilerOrder="378"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="464" width="18" height="18" compilerOrder="379">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5etiq" compilerOrder="380"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="464" width="18" height="18" compilerOrder="381">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6etiq" compilerOrder="382"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="464" width="18" height="18" compilerOrder="383">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7etiq" compilerOrder="384"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="464" width="18" height="18" compilerOrder="385">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8etiq" compilerOrder="386"/>
+            </layout>&#xD;
+		<!-- adf -->
+		<!-- Gota 1 -->
+			<layout left="439" top="485" width="18" height="18" compilerOrder="387">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1adf" compilerOrder="388"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="485" width="18" height="18" compilerOrder="389">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2adf" compilerOrder="390"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="485" width="18" height="18" compilerOrder="391">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3adf" compilerOrder="392"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="485" width="18" height="18" compilerOrder="393">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4adf" compilerOrder="394"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="485" width="18" height="18" compilerOrder="395">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5adf" compilerOrder="396"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="485" width="18" height="18" compilerOrder="397">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6adf" compilerOrder="398"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="485" width="18" height="18" compilerOrder="399">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7adf" compilerOrder="400"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="485" width="18" height="18" compilerOrder="401">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8adf" compilerOrder="402"/>
+            </layout>&#xD;
+		<!-- ab -->
+		<!-- Gota 1 -->
+			<layout left="439" top="506" width="18" height="18" compilerOrder="403">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1ab" compilerOrder="404"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="506" width="18" height="18" compilerOrder="405">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2ab" compilerOrder="406"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="506" width="18" height="18" compilerOrder="407">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3ab" compilerOrder="408"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="506" width="18" height="18" compilerOrder="409">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4ab" compilerOrder="410"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="506" width="18" height="18" compilerOrder="411">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5ab" compilerOrder="412"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="506" width="18" height="18" compilerOrder="413">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6ab" compilerOrder="414"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="506" width="18" height="18" compilerOrder="415">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7ab" compilerOrder="416"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="506" width="18" height="18" compilerOrder="417">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8ab" compilerOrder="418"/>
+            </layout>&#xD;
+		<!-- perf -->
+		<!-- Gota 1 -->
+			<layout left="439" top="529" width="18" height="18" compilerOrder="419">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1perf" compilerOrder="420"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="529" width="18" height="18" compilerOrder="421">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2perf" compilerOrder="422"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="529" width="18" height="18" compilerOrder="423">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3perf" compilerOrder="424"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="529" width="18" height="18" compilerOrder="425">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4perf" compilerOrder="426"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="529" width="18" height="18" compilerOrder="427">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5perf" compilerOrder="428"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="529" width="18" height="18" compilerOrder="429">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6perf" compilerOrder="430"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="529" width="18" height="18" compilerOrder="431">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7perf" compilerOrder="432"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="529" width="18" height="18" compilerOrder="433">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8perf" compilerOrder="434"/>
+            </layout>&#xD;
+		<!-- seg -->
+		<!-- Gota 1 -->
+			<layout left="439" top="550" width="18" height="18" compilerOrder="435">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1seg" compilerOrder="436"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="550" width="18" height="18" compilerOrder="437">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2seg" compilerOrder="438"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="550" width="18" height="18" compilerOrder="439">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3seg" compilerOrder="440"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="550" width="18" height="18" compilerOrder="441">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4seg" compilerOrder="442"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="550" width="18" height="18" compilerOrder="443">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5seg" compilerOrder="444"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="550" width="18" height="18" compilerOrder="445">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6seg" compilerOrder="446"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="550" width="18" height="18" compilerOrder="447">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7seg" compilerOrder="448"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="550" width="18" height="18" compilerOrder="449">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8seg" compilerOrder="450"/>
+            </layout>&#xD;
+		<!-- furti -->
+		<!-- Gota 1 -->
+			<layout left="439" top="572" width="18" height="18" compilerOrder="451">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1furti" compilerOrder="452"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="572" width="18" height="18" compilerOrder="453">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2furti" compilerOrder="454"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="572" width="18" height="18" compilerOrder="455">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3furti" compilerOrder="456"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="572" width="18" height="18" compilerOrder="457">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4furti" compilerOrder="458"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="572" width="18" height="18" compilerOrder="459">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5furti" compilerOrder="460"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="572" width="18" height="18" compilerOrder="461">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6furti" compilerOrder="462"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="572" width="18" height="18" compilerOrder="463">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7furti" compilerOrder="464"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="572" width="18" height="18" compilerOrder="465">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8furti" compilerOrder="466"/>
+            </layout>&#xD;
+		<!-- sobre -->
+		<!-- Gota 1 -->
+			<layout left="439" top="594" width="18" height="18" compilerOrder="467">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1sobre" compilerOrder="468"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="453" top="594" width="18" height="18" compilerOrder="469">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2sobre" compilerOrder="470"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="467" top="594" width="18" height="18" compilerOrder="471">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3sobre" compilerOrder="472"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="481" top="594" width="18" height="18" compilerOrder="473">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4sobre" compilerOrder="474"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="495" top="594" width="18" height="18" compilerOrder="475">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5sobre" compilerOrder="476"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="509" top="594" width="18" height="18" compilerOrder="477">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6sobre" compilerOrder="478"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="523" top="594" width="18" height="18" compilerOrder="479">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7sobre" compilerOrder="480"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="537" top="594" width="18" height="18" compilerOrder="481">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8sobre" compilerOrder="482"/>
+            </layout>&#xD;
+			
+			
+	<!-- Conhecimentos -->	
+			<!-- acad -->
+		<!-- Gota 1 -->
+			<layout left="686" top="400" width="18" height="18" compilerOrder="483">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1acad" compilerOrder="484"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="400" width="18" height="18" compilerOrder="485">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2acad" compilerOrder="486"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="400" width="18" height="18" compilerOrder="487">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3acad" compilerOrder="488"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="400" width="18" height="18" compilerOrder="489">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4acad" compilerOrder="490"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="400" width="18" height="18" compilerOrder="491">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5acad" compilerOrder="492"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="400" width="18" height="18" compilerOrder="493">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6acad" compilerOrder="494"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="400" width="18" height="18" compilerOrder="495">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7acad" compilerOrder="496"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="400" width="18" height="18" compilerOrder="497">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8acad" compilerOrder="498"/>
+            </layout>&#xD;
+		<!-- comp -->
+		<!-- Gota 1 -->
+			<layout left="686" top="422" width="18" height="18" compilerOrder="499">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1comp" compilerOrder="500"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="422" width="18" height="18" compilerOrder="501">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2comp" compilerOrder="502"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="422" width="18" height="18" compilerOrder="503">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3comp" compilerOrder="504"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="422" width="18" height="18" compilerOrder="505">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4comp" compilerOrder="506"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="422" width="18" height="18" compilerOrder="507">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5comp" compilerOrder="508"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="422" width="18" height="18" compilerOrder="509">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6comp" compilerOrder="510"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="422" width="18" height="18" compilerOrder="511">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7comp" compilerOrder="512"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="422" width="18" height="18" compilerOrder="513">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8comp" compilerOrder="514"/>
+            </layout>&#xD;
+		<!-- fina -->
+		<!-- Gota 1 -->
+			<layout left="686" top="443" width="18" height="18" compilerOrder="515">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1fina" compilerOrder="516"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="443" width="18" height="18" compilerOrder="517">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2fina" compilerOrder="518"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="443" width="18" height="18" compilerOrder="519">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3fina" compilerOrder="520"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="443" width="18" height="18" compilerOrder="521">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4fina" compilerOrder="522"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="443" width="18" height="18" compilerOrder="523">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5fina" compilerOrder="524"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="443" width="18" height="18" compilerOrder="525">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6fina" compilerOrder="526"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="443" width="18" height="18" compilerOrder="527">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7fina" compilerOrder="528"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="443" width="18" height="18" compilerOrder="529">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8fina" compilerOrder="530"/>
+            </layout>&#xD;
+		<!-- inves -->
+		<!-- Gota 1 -->
+			<layout left="686" top="464" width="18" height="18" compilerOrder="531">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1inves" compilerOrder="532"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="464" width="18" height="18" compilerOrder="533">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2inves" compilerOrder="534"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="464" width="18" height="18" compilerOrder="535">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3inves" compilerOrder="536"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="464" width="18" height="18" compilerOrder="537">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4inves" compilerOrder="538"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="464" width="18" height="18" compilerOrder="539">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5inves" compilerOrder="540"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="464" width="18" height="18" compilerOrder="541">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6inves" compilerOrder="542"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="464" width="18" height="18" compilerOrder="543">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7inves" compilerOrder="544"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="464" width="18" height="18" compilerOrder="545">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8inves" compilerOrder="546"/>
+            </layout>&#xD;
+		<!-- dir -->
+		<!-- Gota 1 -->
+			<layout left="686" top="485" width="18" height="18" compilerOrder="547">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1dir" compilerOrder="548"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="485" width="18" height="18" compilerOrder="549">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2dir" compilerOrder="550"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="485" width="18" height="18" compilerOrder="551">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3dir" compilerOrder="552"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="485" width="18" height="18" compilerOrder="553">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4dir" compilerOrder="554"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="485" width="18" height="18" compilerOrder="555">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5dir" compilerOrder="556"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="485" width="18" height="18" compilerOrder="557">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6dir" compilerOrder="558"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="485" width="18" height="18" compilerOrder="559">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7dir" compilerOrder="560"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="485" width="18" height="18" compilerOrder="561">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8dir" compilerOrder="562"/>
+            </layout>&#xD;
+		<!-- ling -->
+		<!-- Gota 1 -->
+			<layout left="686" top="506" width="18" height="18" compilerOrder="563">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1ling" compilerOrder="564"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="506" width="18" height="18" compilerOrder="565">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2ling" compilerOrder="566"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="506" width="18" height="18" compilerOrder="567">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3ling" compilerOrder="568"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="506" width="18" height="18" compilerOrder="569">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4ling" compilerOrder="570"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="506" width="18" height="18" compilerOrder="571">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5ling" compilerOrder="572"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="506" width="18" height="18" compilerOrder="573">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6ling" compilerOrder="574"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="506" width="18" height="18" compilerOrder="575">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7ling" compilerOrder="576"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="506" width="18" height="18" compilerOrder="577">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8ling" compilerOrder="578"/>
+            </layout>&#xD;
+		<!-- med -->
+		<!-- Gota 1 -->
+			<layout left="686" top="529" width="18" height="18" compilerOrder="579">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1med" compilerOrder="580"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="529" width="18" height="18" compilerOrder="581">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2med" compilerOrder="582"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="529" width="18" height="18" compilerOrder="583">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3med" compilerOrder="584"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="529" width="18" height="18" compilerOrder="585">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4med" compilerOrder="586"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="529" width="18" height="18" compilerOrder="587">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5med" compilerOrder="588"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="529" width="18" height="18" compilerOrder="589">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6med" compilerOrder="590"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="529" width="18" height="18" compilerOrder="591">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7med" compilerOrder="592"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="529" width="18" height="18" compilerOrder="593">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8med" compilerOrder="594"/>
+            </layout>&#xD;
+		<!-- ocult -->
+		<!-- Gota 1 -->
+			<layout left="686" top="550" width="18" height="18" compilerOrder="595">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1ocult" compilerOrder="596"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="550" width="18" height="18" compilerOrder="597">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2ocult" compilerOrder="598"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="550" width="18" height="18" compilerOrder="599">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3ocult" compilerOrder="600"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="550" width="18" height="18" compilerOrder="601">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4ocult" compilerOrder="602"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="550" width="18" height="18" compilerOrder="603">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5ocult" compilerOrder="604"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="550" width="18" height="18" compilerOrder="605">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6ocult" compilerOrder="606"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="550" width="18" height="18" compilerOrder="607">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7ocult" compilerOrder="608"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="550" width="18" height="18" compilerOrder="609">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8ocult" compilerOrder="610"/>
+            </layout>&#xD;
+		<!-- pol -->
+		<!-- Gota 1 -->
+			<layout left="686" top="572" width="18" height="18" compilerOrder="611">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1pol" compilerOrder="612"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="572" width="18" height="18" compilerOrder="613">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2pol" compilerOrder="614"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="572" width="18" height="18" compilerOrder="615">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3pol" compilerOrder="616"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="572" width="18" height="18" compilerOrder="617">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4pol" compilerOrder="618"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="572" width="18" height="18" compilerOrder="619">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5pol" compilerOrder="620"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="572" width="18" height="18" compilerOrder="621">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6pol" compilerOrder="622"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="572" width="18" height="18" compilerOrder="623">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7pol" compilerOrder="624"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="572" width="18" height="18" compilerOrder="625">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8pol" compilerOrder="626"/>
+            </layout>&#xD;
+		<!-- cie -->
+		<!-- Gota 1 -->
+			<layout left="686" top="594" width="18" height="18" compilerOrder="627">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1cie" compilerOrder="628"/>
+            </layout>&#xD;
+		<!-- Gota 2 -->
+			<layout left="700" top="594" width="18" height="18" compilerOrder="629">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2cie" compilerOrder="630"/>
+            </layout>&#xD;
+		<!-- Gota 3 -->
+			<layout left="714" top="594" width="18" height="18" compilerOrder="631">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3cie" compilerOrder="632"/>
+            </layout>&#xD;
+		<!-- Gota 4 -->
+			<layout left="728" top="594" width="18" height="18" compilerOrder="633">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4cie" compilerOrder="634"/>
+            </layout>&#xD;
+		<!-- Gota 5 -->
+			<layout left="742" top="594" width="18" height="18" compilerOrder="635">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5cie" compilerOrder="636"/>
+            </layout>&#xD;
+		<!-- Gota 6 -->
+			<layout left="756" top="594" width="18" height="18" compilerOrder="637">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6cie" compilerOrder="638"/>
+            </layout>&#xD;
+		<!-- Gota 7 -->
+			<layout left="770" top="594" width="18" height="18" compilerOrder="639">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7cie" compilerOrder="640"/>
+            </layout>&#xD;
+		<!-- Gota 8 -->
+			<layout left="784" top="594" width="18" height="18" compilerOrder="641">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8cie" compilerOrder="642"/>
+            </layout>&#xD;
+	
+	
+	
+<!-- Vantagens -->
+	<!-- Antecedentes -->
+	<!-- Antecedentes Linha 1 -->
+			<layout left="75" top="657" width="130" height="30" compilerOrder="643">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL1" compilerOrder="644"/>
+			</layout>&#xD;
+	<!-- Antecedentes Linha 2 -->
+			<layout left="75" top="678" width="130" height="30" compilerOrder="645">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL2" compilerOrder="646"/>
+			</layout>&#xD;
+	<!-- Antecedentes Linha 3 -->
+			<layout left="75" top="701" width="130" height="30" compilerOrder="647">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL3" compilerOrder="648"/>
+			</layout>&#xD;
+	<!-- Antecedentes Linha 4 -->
+			<layout left="75" top="723" width="130" height="30" compilerOrder="649">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL4" compilerOrder="650"/>
+			</layout>&#xD;	
+	<!-- Antecedentes Linha 5 -->
+			<layout left="75" top="745" width="130" height="30" compilerOrder="651">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL5" compilerOrder="652"/>
+			</layout>&#xD;
+	<!-- Antecedentes Linha 6 -->
+			<layout left="75" top="767" width="130" height="30" compilerOrder="653">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL6" compilerOrder="654"/>
+			</layout>&#xD;
+	<!-- Antecedentes Linha 7 -->
+			<layout left="75" top="789" width="130" height="30" compilerOrder="655">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="AntL7" compilerOrder="656"/>
+			</layout>&#xD;
+
+	<!-- Gotas de Sangue-->
+		<!-- Gota 1 Antecedente 1 -->
+			<layout left="205" top="666" width="18" height="18" compilerOrder="657">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant1" compilerOrder="658"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 1 -->
+			<layout left="219" top="666" width="18" height="18" compilerOrder="659">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant1" compilerOrder="660"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 1 -->
+			<layout left="233" top="666" width="18" height="18" compilerOrder="661">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant1" compilerOrder="662"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 1 -->
+			<layout left="247" top="666" width="18" height="18" compilerOrder="663">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant1" compilerOrder="664"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 1 -->
+			<layout left="261" top="666" width="18" height="18" compilerOrder="665">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant1" compilerOrder="666"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 1 -->
+			<layout left="275" top="666" width="18" height="18" compilerOrder="667">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant1" compilerOrder="668"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 1 -->
+			<layout left="289" top="666" width="18" height="18" compilerOrder="669">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant1" compilerOrder="670"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 1 -->
+			<layout left="303" top="666" width="18" height="18" compilerOrder="671">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant1" compilerOrder="672"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 2 -->
+			<layout left="205" top="688" width="18" height="18" compilerOrder="673">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant2" compilerOrder="674"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 2 -->
+			<layout left="219" top="688" width="18" height="18" compilerOrder="675">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant2" compilerOrder="676"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 2 -->
+			<layout left="233" top="688" width="18" height="18" compilerOrder="677">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant2" compilerOrder="678"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 2 -->
+			<layout left="247" top="688" width="18" height="18" compilerOrder="679">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant2" compilerOrder="680"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 2 -->
+			<layout left="261" top="688" width="18" height="18" compilerOrder="681">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant2" compilerOrder="682"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 2 -->
+			<layout left="275" top="688" width="18" height="18" compilerOrder="683">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant2" compilerOrder="684"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 2 -->
+			<layout left="289" top="688" width="18" height="18" compilerOrder="685">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant2" compilerOrder="686"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 2 -->
+			<layout left="303" top="688" width="18" height="18" compilerOrder="687">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant2" compilerOrder="688"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 3 -->
+			<layout left="205" top="710" width="18" height="18" compilerOrder="689">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant3" compilerOrder="690"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 3 -->
+			<layout left="219" top="710" width="18" height="18" compilerOrder="691">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant3" compilerOrder="692"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 3 -->
+			<layout left="233" top="710" width="18" height="18" compilerOrder="693">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant3" compilerOrder="694"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 3 -->
+			<layout left="247" top="710" width="18" height="18" compilerOrder="695">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant3" compilerOrder="696"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 3 -->
+			<layout left="261" top="710" width="18" height="18" compilerOrder="697">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant3" compilerOrder="698"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 3 -->
+			<layout left="275" top="710" width="18" height="18" compilerOrder="699">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant3" compilerOrder="700"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 3 -->
+			<layout left="289" top="710" width="18" height="18" compilerOrder="701">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant3" compilerOrder="702"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 3 -->
+			<layout left="303" top="710" width="18" height="18" compilerOrder="703">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant3" compilerOrder="704"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 4 -->
+			<layout left="205" top="732" width="18" height="18" compilerOrder="705">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant4" compilerOrder="706"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 4 -->
+			<layout left="219" top="732" width="18" height="18" compilerOrder="707">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant4" compilerOrder="708"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 4 -->
+			<layout left="233" top="732" width="18" height="18" compilerOrder="709">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant4" compilerOrder="710"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 4 -->
+			<layout left="247" top="732" width="18" height="18" compilerOrder="711">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant4" compilerOrder="712"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 4 -->
+			<layout left="261" top="732" width="18" height="18" compilerOrder="713">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant4" compilerOrder="714"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 4 -->
+			<layout left="275" top="732" width="18" height="18" compilerOrder="715">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant4" compilerOrder="716"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 4 -->
+			<layout left="289" top="732" width="18" height="18" compilerOrder="717">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant4" compilerOrder="718"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 4 -->
+			<layout left="303" top="732" width="18" height="18" compilerOrder="719">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant4" compilerOrder="720"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 5 -->
+			<layout left="205" top="754" width="18" height="18" compilerOrder="721">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant5" compilerOrder="722"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 5 -->
+			<layout left="219" top="754" width="18" height="18" compilerOrder="723">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant5" compilerOrder="724"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 5 -->
+			<layout left="233" top="754" width="18" height="18" compilerOrder="725">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant5" compilerOrder="726"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 5 -->
+			<layout left="247" top="754" width="18" height="18" compilerOrder="727">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant5" compilerOrder="728"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 5 -->
+			<layout left="261" top="754" width="18" height="18" compilerOrder="729">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant5" compilerOrder="730"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 5 -->
+			<layout left="275" top="754" width="18" height="18" compilerOrder="731">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant5" compilerOrder="732"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 5 -->
+			<layout left="289" top="754" width="18" height="18" compilerOrder="733">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant5" compilerOrder="734"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 5 -->
+			<layout left="303" top="754" width="18" height="18" compilerOrder="735">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant5" compilerOrder="736"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 6 -->
+			<layout left="205" top="776" width="18" height="18" compilerOrder="737">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant6" compilerOrder="738"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 6 -->
+			<layout left="219" top="776" width="18" height="18" compilerOrder="739">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant6" compilerOrder="740"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 6 -->
+			<layout left="233" top="776" width="18" height="18" compilerOrder="741">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant6" compilerOrder="742"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 6 -->
+			<layout left="247" top="776" width="18" height="18" compilerOrder="743">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant6" compilerOrder="744"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 6 -->
+			<layout left="261" top="776" width="18" height="18" compilerOrder="745">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant6" compilerOrder="746"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 6 -->
+			<layout left="275" top="776" width="18" height="18" compilerOrder="747">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant6" compilerOrder="748"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 6 -->
+			<layout left="289" top="776" width="18" height="18" compilerOrder="749">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant6" compilerOrder="750"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 6 -->
+			<layout left="303" top="776" width="18" height="18" compilerOrder="751">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant6" compilerOrder="752"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Antecedente 7 -->
+			<layout left="205" top="798" width="18" height="18" compilerOrder="753">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Ant7" compilerOrder="754"/>
+            </layout>&#xD;
+		<!-- Gota 2 Antecedente 7 -->
+			<layout left="219" top="798" width="18" height="18" compilerOrder="755">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Ant7" compilerOrder="756"/>
+            </layout>&#xD;
+		<!-- Gota 3 Antecedente 7 -->
+			<layout left="233" top="798" width="18" height="18" compilerOrder="757">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Ant7" compilerOrder="758"/>
+            </layout>&#xD;
+		<!-- Gota 4 Antecedente 7 -->
+			<layout left="247" top="798" width="18" height="18" compilerOrder="759">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Ant7" compilerOrder="760"/>
+            </layout>&#xD;
+		<!-- Gota 5 Antecedente 7 -->
+			<layout left="261" top="798" width="18" height="18" compilerOrder="761">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Ant7" compilerOrder="762"/>
+            </layout>&#xD;
+		<!-- Gota 6 Antecedente 7 -->
+			<layout left="275" top="798" width="18" height="18" compilerOrder="763">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Ant7" compilerOrder="764"/>
+            </layout>&#xD;
+		<!-- Gota 7 Antecedente 7 -->
+			<layout left="289" top="798" width="18" height="18" compilerOrder="765">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Ant7" compilerOrder="766"/>
+            </layout>&#xD;
+		<!-- Gota 8 Antecedente 7 -->
+			<layout left="303" top="798" width="18" height="18" compilerOrder="767">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Ant7" compilerOrder="768"/>
+            </layout>&#xD;
+
+	<!-- Disciplinas -->
+	<!-- Disciplinas Linha 1 -->
+			<layout left="325" top="657" width="130" height="30" compilerOrder="769">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL1" compilerOrder="770"/>
+			</layout>&#xD;
+	<!-- Disciplinas Linha 2 -->
+			<layout left="325" top="678" width="130" height="30" compilerOrder="771">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL2" compilerOrder="772"/>
+			</layout>&#xD;
+	<!-- Disciplinas Linha 3 -->
+			<layout left="325" top="701" width="130" height="30" compilerOrder="773">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL3" compilerOrder="774"/>
+			</layout>&#xD;
+	<!-- Disciplinas Linha 4 -->
+			<layout left="325" top="723" width="130" height="30" compilerOrder="775">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL4" compilerOrder="776"/>
+			</layout>&#xD;	
+	<!-- Disciplinas Linha 5 -->
+			<layout left="325" top="745" width="130" height="30" compilerOrder="777">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL5" compilerOrder="778"/>
+			</layout>&#xD;
+	<!-- Disciplinas Linha 6 -->
+			<layout left="325" top="767" width="130" height="30" compilerOrder="779">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL6" compilerOrder="780"/>
+			</layout>&#xD;
+	<!-- Disciplinas Linha 7 -->
+			<layout left="325" top="789" width="130" height="30" compilerOrder="781">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="30" field="DisL7" compilerOrder="782"/>
+			</layout>&#xD;
+			
+		<!-- Gota 1 Disciplina 1 -->
+			<layout left="453" top="666" width="18" height="18" compilerOrder="783">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis1" compilerOrder="784"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 1 -->
+			<layout left="467" top="666" width="18" height="18" compilerOrder="785">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis1" compilerOrder="786"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 1 -->
+			<layout left="481" top="666" width="18" height="18" compilerOrder="787">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis1" compilerOrder="788"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 1 -->
+			<layout left="495" top="666" width="18" height="18" compilerOrder="789">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis1" compilerOrder="790"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 1 -->
+			<layout left="509" top="666" width="18" height="18" compilerOrder="791">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis1" compilerOrder="792"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 1 -->
+			<layout left="523" top="666" width="18" height="18" compilerOrder="793">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis1" compilerOrder="794"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 1 -->
+			<layout left="537" top="666" width="18" height="18" compilerOrder="795">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis1" compilerOrder="796"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 1 -->
+			<layout left="551" top="666" width="18" height="18" compilerOrder="797">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis1" compilerOrder="798"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 2 -->
+			<layout left="453" top="688" width="18" height="18" compilerOrder="799">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis2" compilerOrder="800"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 2 -->
+			<layout left="467" top="688" width="18" height="18" compilerOrder="801">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis2" compilerOrder="802"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 2 -->
+			<layout left="481" top="688" width="18" height="18" compilerOrder="803">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis2" compilerOrder="804"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 2 -->
+			<layout left="495" top="688" width="18" height="18" compilerOrder="805">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis2" compilerOrder="806"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 2 -->
+			<layout left="509" top="688" width="18" height="18" compilerOrder="807">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis2" compilerOrder="808"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 2 -->
+			<layout left="523" top="688" width="18" height="18" compilerOrder="809">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis2" compilerOrder="810"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 2 -->
+			<layout left="537" top="688" width="18" height="18" compilerOrder="811">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis2" compilerOrder="812"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 2 -->
+			<layout left="551" top="688" width="18" height="18" compilerOrder="813">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis2" compilerOrder="814"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 3 -->
+			<layout left="453" top="710" width="18" height="18" compilerOrder="815">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis3" compilerOrder="816"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 3 -->
+			<layout left="467" top="710" width="18" height="18" compilerOrder="817">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis3" compilerOrder="818"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 3 -->
+			<layout left="481" top="710" width="18" height="18" compilerOrder="819">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis3" compilerOrder="820"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 3 -->
+			<layout left="495" top="710" width="18" height="18" compilerOrder="821">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis3" compilerOrder="822"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 3 -->
+			<layout left="509" top="710" width="18" height="18" compilerOrder="823">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis3" compilerOrder="824"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 3 -->
+			<layout left="523" top="710" width="18" height="18" compilerOrder="825">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis3" compilerOrder="826"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 3 -->
+			<layout left="537" top="710" width="18" height="18" compilerOrder="827">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis3" compilerOrder="828"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 3 -->
+			<layout left="551" top="710" width="18" height="18" compilerOrder="829">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis3" compilerOrder="830"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 4 -->
+			<layout left="453" top="732" width="18" height="18" compilerOrder="831">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis4" compilerOrder="832"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 4 -->
+			<layout left="467" top="732" width="18" height="18" compilerOrder="833">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis4" compilerOrder="834"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 4 -->
+			<layout left="481" top="732" width="18" height="18" compilerOrder="835">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis4" compilerOrder="836"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 4 -->
+			<layout left="495" top="732" width="18" height="18" compilerOrder="837">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis4" compilerOrder="838"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 4 -->
+			<layout left="509" top="732" width="18" height="18" compilerOrder="839">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis4" compilerOrder="840"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 4 -->
+			<layout left="523" top="732" width="18" height="18" compilerOrder="841">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis4" compilerOrder="842"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 4 -->
+			<layout left="537" top="732" width="18" height="18" compilerOrder="843">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis4" compilerOrder="844"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 4 -->
+			<layout left="551" top="732" width="18" height="18" compilerOrder="845">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis4" compilerOrder="846"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 5 -->
+			<layout left="453" top="754" width="18" height="18" compilerOrder="847">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis5" compilerOrder="848"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 5 -->
+			<layout left="467" top="754" width="18" height="18" compilerOrder="849">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis5" compilerOrder="850"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 5 -->
+			<layout left="481" top="754" width="18" height="18" compilerOrder="851">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis5" compilerOrder="852"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 5 -->
+			<layout left="495" top="754" width="18" height="18" compilerOrder="853">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis5" compilerOrder="854"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 5 -->
+			<layout left="509" top="754" width="18" height="18" compilerOrder="855">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis5" compilerOrder="856"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 5 -->
+			<layout left="523" top="754" width="18" height="18" compilerOrder="857">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis5" compilerOrder="858"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 5 -->
+			<layout left="537" top="754" width="18" height="18" compilerOrder="859">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis5" compilerOrder="860"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 5 -->
+			<layout left="551" top="754" width="18" height="18" compilerOrder="861">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis5" compilerOrder="862"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 6 -->
+			<layout left="453" top="776" width="18" height="18" compilerOrder="863">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis6" compilerOrder="864"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 6 -->
+			<layout left="467" top="776" width="18" height="18" compilerOrder="865">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis6" compilerOrder="866"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 6 -->
+			<layout left="481" top="776" width="18" height="18" compilerOrder="867">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis6" compilerOrder="868"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 6 -->
+			<layout left="495" top="776" width="18" height="18" compilerOrder="869">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis6" compilerOrder="870"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 6 -->
+			<layout left="509" top="776" width="18" height="18" compilerOrder="871">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis6" compilerOrder="872"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 6 -->
+			<layout left="523" top="776" width="18" height="18" compilerOrder="873">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis6" compilerOrder="874"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 6 -->
+			<layout left="537" top="776" width="18" height="18" compilerOrder="875">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis6" compilerOrder="876"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 6 -->
+			<layout left="551" top="776" width="18" height="18" compilerOrder="877">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis6" compilerOrder="878"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Disciplina 7 -->
+			<layout left="453" top="798" width="18" height="18" compilerOrder="879">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Dis7" compilerOrder="880"/>
+            </layout>&#xD;
+		<!-- Gota 2 Disciplina 7 -->
+			<layout left="467" top="798" width="18" height="18" compilerOrder="881">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Dis7" compilerOrder="882"/>
+            </layout>&#xD;
+		<!-- Gota 3 Disciplina 7 -->
+			<layout left="481" top="798" width="18" height="18" compilerOrder="883">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Dis7" compilerOrder="884"/>
+            </layout>&#xD;
+		<!-- Gota 4 Disciplina 7 -->
+			<layout left="495" top="798" width="18" height="18" compilerOrder="885">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Dis7" compilerOrder="886"/>
+            </layout>&#xD;
+		<!-- Gota 5 Disciplina 7 -->
+			<layout left="509" top="798" width="18" height="18" compilerOrder="887">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Dis7" compilerOrder="888"/>
+            </layout>&#xD;
+		<!-- Gota 6 Disciplina 7 -->
+			<layout left="523" top="798" width="18" height="18" compilerOrder="889">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Dis7" compilerOrder="890"/>
+            </layout>&#xD;
+		<!-- Gota 7 Disciplina 7 -->
+			<layout left="537" top="798" width="18" height="18" compilerOrder="891">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Dis7" compilerOrder="892"/>
+            </layout>&#xD;
+		<!-- Gota 8 Disciplina 7 -->
+			<layout left="551" top="798" width="18" height="18" compilerOrder="893">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8Dis7" compilerOrder="894"/>
+            </layout>&#xD;
+
+	<!-- Virtudes -->
+	
+	<!--Escolha Consciência ou Convicção-->
+			<comboBox left="583" top="662" width="130" fontSize="16" fontColor="#ffffff" items="{'Consciência', 'Convicção'}" transparent="true" field="ConCon"/>
+	
+	<!-- Gotas de Sangue-->
+		<!-- Gota 1 Consciência/Convicção -->
+			<layout left="728" top="666" width="18" height="18" compilerOrder="895">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1CC" compilerOrder="896"/>
+            </layout>&#xD;
+		<!-- Gota 2 Consciência/Convicção -->
+			<layout left="742" top="666" width="18" height="18" compilerOrder="897">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2CC" compilerOrder="898"/>
+            </layout>&#xD;
+		<!-- Gota 3 Consciência/Convicção -->
+			<layout left="756" top="666" width="18" height="18" compilerOrder="899">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3CC" compilerOrder="900"/>
+            </layout>&#xD;
+		<!-- Gota 4 Consciência/Convicção -->
+			<layout left="770" top="666" width="18" height="18" compilerOrder="901">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4CC" compilerOrder="902"/>
+            </layout>&#xD;
+		<!-- Gota 5 Consciência/Convicção -->
+			<layout left="784" top="666" width="18" height="18" compilerOrder="903">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5CC" compilerOrder="904"/>
+            </layout>&#xD;
+
+	<!--Escolha Auto-Controle ou Instinto-->
+			<comboBox left="583" top="727" width="130" fontSize="16" fontColor="#ffffff" items="{'Auto-Controle', 'Instinto'}" transparent="true" field="ACIns"/>
+
+		<!-- Gota 1 Auto-Controle/Instinto -->
+			<layout left="728" top="729" width="18" height="18" compilerOrder="905">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1AI" compilerOrder="906"/>
+            </layout>&#xD;
+		<!-- Gota 2 Auto-Controle/Instinto -->
+			<layout left="742" top="729" width="18" height="18" compilerOrder="907">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2AI" compilerOrder="908"/>
+            </layout>&#xD;
+		<!-- Gota 3 Auto-Controle/Instinto -->
+			<layout left="756" top="729" width="18" height="18" compilerOrder="909">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3AI" compilerOrder="910"/>
+            </layout>&#xD;
+		<!-- Gota 4 Auto-Controle/Instinto -->
+			<layout left="770" top="729" width="18" height="18" compilerOrder="911">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4AI" compilerOrder="912"/>
+            </layout>&#xD;
+		<!-- Gota 5 Auto-Controle/Instinto -->
+			<layout left="784" top="729" width="18" height="18" compilerOrder="913">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5AI" compilerOrder="914"/>
+            </layout>&#xD;
+
+		<!-- Gota 1 Coragem -->
+			<layout left="728" top="794" width="18" height="18" compilerOrder="915">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Cor" compilerOrder="916"/>
+            </layout>&#xD;
+		<!-- Gota 2 Coragem -->
+			<layout left="742" top="794" width="18" height="18" compilerOrder="917">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Cor" compilerOrder="918"/>
+            </layout>&#xD;
+		<!-- Gota 3 Coragem -->
+			<layout left="756" top="794" width="18" height="18" compilerOrder="919">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Cor" compilerOrder="920"/>
+            </layout>&#xD;
+		<!-- Gota 4 Coragem -->
+			<layout left="770" top="794" width="18" height="18" compilerOrder="921">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Cor" compilerOrder="922"/>
+            </layout>&#xD;
+		<!-- Gota 5 Coragem -->
+			<layout left="784" top="794" width="18" height="18" compilerOrder="923">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Cor" compilerOrder="924"/>
+            </layout>&#xD;
+			
+
+		<!-- Qualidades/Defeitos -->
+			<layout left="82" top="866" width="225" height="260" compilerOrder="925">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="225" height="260" field="QD" compilerOrder="926"/>
+			</layout>&#xD;
+	
+		<!-- Humanidade -->
+	<!-- Humanidade/Trilha Linha 1 -->
+			<layout left="323" top="861" width="225" height="30" compilerOrder="947">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="225" height="30" field="HTL1" compilerOrder="948"/>
+			</layout>&#xD;
+		<!-- Gota 1 Humanidade/Trilha -->
+			<layout left="321" top="894" width="18" height="18" compilerOrder="949">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1HT" compilerOrder="950"/>
+            </layout>&#xD;
+		<!-- Gota 2 Humanidade/Trilha -->
+			<layout left="344" top="894" width="18" height="18" compilerOrder="951">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2HT" compilerOrder="952"/>
+            </layout>&#xD;
+		<!-- Gota 3 Humanidade/Trilha -->
+			<layout left="368" top="894" width="18" height="18" compilerOrder="953">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3HT" compilerOrder="954"/>
+            </layout>&#xD;
+		<!-- Gota 4 Humanidade/Trilha -->
+			<layout left="392" top="894" width="18" height="18" compilerOrder="955">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4HT" compilerOrder="956"/>
+            </layout>&#xD;
+		<!-- Gota 5 Humanidade/Trilha -->
+			<layout left="415" top="894" width="18" height="18" compilerOrder="957">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5HT" compilerOrder="958"/>
+            </layout>&#xD;
+		<!-- Gota 6 Humanidade/Trilha -->
+			<layout left="438" top="894" width="18" height="18" compilerOrder="959">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6HT" compilerOrder="960"/>
+            </layout>&#xD;
+		<!-- Gota 7 Humanidade/Trilha -->
+			<layout left="463" top="894" width="18" height="18" compilerOrder="961">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7HT" compilerOrder="962"/>
+            </layout>&#xD;
+		<!-- Gota 8 Humanidade/Trilha -->
+			<layout left="486" top="894" width="18" height="18" compilerOrder="963">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8HT" compilerOrder="964"/>
+            </layout>&#xD;
+		<!-- Gota 9 Humanidade/Trilha -->
+			<layout left="511" top="894" width="18" height="18" compilerOrder="965">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota9HT" compilerOrder="966"/>
+            </layout>&#xD;
+		<!-- Gota 10 Humanidade/Trilha -->
+			<layout left="535" top="894" width="18" height="18" compilerOrder="967">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota10HT" compilerOrder="968"/>
+            </layout>&#xD;
+		<!-- for de Vontade -->
+		<!-- Gota 1 for de Vontade -->
+			<layout left="321" top="954" width="18" height="18" compilerOrder="969">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1FDV" compilerOrder="970"/>
+            </layout>&#xD;
+		<!-- Gota 2 for de Vontade -->
+			<layout left="344" top="954" width="18" height="18" compilerOrder="971">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2FDV" compilerOrder="972"/>
+            </layout>&#xD;
+		<!-- Gota 3 for de Vontade -->
+			<layout left="368" top="954" width="18" height="18" compilerOrder="973">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3FDV" compilerOrder="974"/>
+            </layout>&#xD;
+		<!-- Gota 4 for de Vontade -->
+			<layout left="392" top="954" width="18" height="18" compilerOrder="975">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4FDV" compilerOrder="976"/>
+            </layout>&#xD;
+		<!-- Gota 5 for de Vontade -->
+			<layout left="416" top="954" width="18" height="18" compilerOrder="977">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5FDV" compilerOrder="978"/>
+            </layout>&#xD;
+		<!-- Gota 6 for de Vontade -->
+			<layout left="438" top="954" width="18" height="18" compilerOrder="979">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6FDV" compilerOrder="980"/>
+            </layout>&#xD;
+		<!-- Gota 7 for de Vontade -->
+			<layout left="463" top="954" width="18" height="18" compilerOrder="981">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7FDV" compilerOrder="982"/>
+            </layout>&#xD;
+		<!-- Gota 8 for de Vontade -->
+			<layout left="486" top="954" width="18" height="18" compilerOrder="983">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8FDV" compilerOrder="984"/>
+            </layout>&#xD;
+		<!-- Gota 9 for de Vontade -->
+			<layout left="511" top="954" width="18" height="18" compilerOrder="985">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota9FDV" compilerOrder="986"/>
+            </layout>&#xD;
+		<!-- Gota 10 for de Vontade -->
+			<layout left="535" top="954" width="18" height="18" compilerOrder="987">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota10FDV" compilerOrder="988"/>
+            </layout>&#xD;
+			
+<!-- Quadrados for de Vontade -->
+		<!-- Quadrado 1 for de Vontade -->
+			<layout left="319" top="974" width="18" height="18" compilerOrder="989">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ1FDV" compilerOrder="990"/>
+            </layout>&#xD;
+		<!-- Quadrado 2 for de Vontade -->
+			<layout left="344" top="974" width="18" height="18" compilerOrder="991">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ2FDV" compilerOrder="992"/>
+            </layout>&#xD;
+		<!-- Quadrado 3 for de Vontade -->
+			<layout left="368" top="974" width="18" height="18" compilerOrder="993">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ3FDV" compilerOrder="994"/>
+            </layout>&#xD;
+		<!-- Quadrado 4 for de Vontade -->
+			<layout left="393" top="974" width="18" height="18" compilerOrder="995">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ4FDV" compilerOrder="996"/>
+            </layout>&#xD;
+		<!-- Quadrado 5 for de Vontade -->
+			<layout left="417" top="974" width="18" height="18" compilerOrder="997">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ5FDV" compilerOrder="998"/>
+            </layout>&#xD;
+		<!-- Quadrado 6 for de Vontade -->
+			<layout left="440" top="974" width="18" height="18" compilerOrder="999">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ6FDV" compilerOrder="1000"/>
+            </layout>&#xD;
+		<!-- Quadrado 7 for de Vontade -->
+			<layout left="465" top="974" width="18" height="18" compilerOrder="1001">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ7FDV" compilerOrder="1002"/>
+            </layout>&#xD;
+		<!-- Quadrado 8 for de Vontade -->
+			<layout left="490" top="974" width="18" height="18" compilerOrder="1003">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ8FDV" compilerOrder="1004"/>
+            </layout>&#xD;
+		<!-- Quadrado 9 for de Vontade -->
+			<layout left="513" top="974" width="18" height="18" compilerOrder="1005">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ9FDV" compilerOrder="1006"/>
+            </layout>&#xD;
+		<!-- Quadrado 10 for de Vontade -->
+			<layout left="537" top="974" width="18" height="18" compilerOrder="1007">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/square_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/square_off.png" width="18" height="18" field="SQ10FDV" compilerOrder="1008"/>
+            </layout>&#xD;
+
+
+		<!-- Pontos de Sangue -->
+		<!-- Gota 1 Pontos de Sangue -->
+			<layout left="321" top="1037" width="18" height="18" compilerOrder="1009">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1PS" compilerOrder="1010"/>
+            </layout>&#xD;
+		<!-- Gota 2 Pontos de Sangue -->
+			<layout left="344" top="1037" width="18" height="18" compilerOrder="1011">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2PS" compilerOrder="1012"/>
+            </layout>&#xD;
+		<!-- Gota 3 Pontos de Sangue -->
+			<layout left="368" top="1037" width="18" height="18" compilerOrder="1013">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3PS" compilerOrder="1014"/>
+            </layout>&#xD;
+		<!-- Gota 4 Pontos de Sangue -->
+			<layout left="392" top="1037" width="18" height="18" compilerOrder="1015">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4PS" compilerOrder="1016"/>
+            </layout>&#xD;
+		<!-- Gota 5 Pontos de Sangue -->
+			<layout left="416" top="1037" width="18" height="18" compilerOrder="1017">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5PS" compilerOrder="1018"/>
+            </layout>&#xD;
+		<!-- Gota 6 Pontos de Sangue -->
+			<layout left="438" top="1037" width="18" height="18" compilerOrder="1019">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6PS" compilerOrder="1020"/>
+            </layout>&#xD;
+		<!-- Gota 7 Pontos de Sangue -->
+			<layout left="463" top="1037" width="18" height="18" compilerOrder="1021">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7PS" compilerOrder="1022"/>
+            </layout>&#xD;
+		<!-- Gota 8 Pontos de Sangue -->
+			<layout left="486" top="1037" width="18" height="18" compilerOrder="1023">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota8PS" compilerOrder="1024"/>
+            </layout>&#xD;
+		<!-- Gota 9 Pontos de Sangue -->
+			<layout left="511" top="1037" width="18" height="18" compilerOrder="1025">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota9PS" compilerOrder="1026"/>
+            </layout>&#xD;
+		<!-- Gota 10 Pontos de Sangue -->
+			<layout left="535" top="1037" width="18" height="18" compilerOrder="1027">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota10PS" compilerOrder="1028"/>
+            </layout>&#xD;
+		<!-- Gota 11 Pontos de Sangue -->
+			<layout left="321" top="1057" width="18" height="18" compilerOrder="1029">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota11PS" compilerOrder="1030"/>
+            </layout>&#xD;
+		<!-- Gota 12 Pontos de Sangue -->
+			<layout left="344" top="1057" width="18" height="18" compilerOrder="1031">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota12PS" compilerOrder="1032"/>
+            </layout>&#xD;
+		<!-- Gota 13 Pontos de Sangue -->
+			<layout left="368" top="1057" width="18" height="18" compilerOrder="1033">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota13PS" compilerOrder="1034"/>
+            </layout>&#xD;
+		<!-- Gota 14 Pontos de Sangue -->
+			<layout left="392" top="1057" width="18" height="18" compilerOrder="1035">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota14PS" compilerOrder="1036"/>
+            </layout>&#xD;
+		<!-- Gota 15 Pontos de Sangue -->
+			<layout left="416" top="1057" width="18" height="18" compilerOrder="1037">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota15PS" compilerOrder="1038"/>
+            </layout>&#xD;
+		<!-- Gota 16 Pontos de Sangue -->
+			<layout left="438" top="1057" width="18" height="18" compilerOrder="1039">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota16PS" compilerOrder="1040"/>
+            </layout>&#xD;
+		<!-- Gota 17 Pontos de Sangue -->
+			<layout left="463" top="1057" width="18" height="18" compilerOrder="1041">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota17PS" compilerOrder="1042"/>
+            </layout>&#xD;
+		<!-- Gota 18 Pontos de Sangue -->
+			<layout left="486" top="1057" width="18" height="18" compilerOrder="1043">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota18PS" compilerOrder="1044"/>
+            </layout>&#xD;
+		<!-- Gota 19 Pontos de Sangue -->
+			<layout left="511" top="1057" width="18" height="18" compilerOrder="1045">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota19PS" compilerOrder="1046"/>
+            </layout>&#xD;
+		<!-- Gota 20 Pontos de Sangue -->
+			<layout left="535" top="1057" width="18" height="18" compilerOrder="1047">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota20PS" compilerOrder="1048"/>
+            </layout>&#xD;
+		<!-- Gota 21 Pontos de Sangue -->
+			<layout left="321" top="1078" width="18" height="18" compilerOrder="1049">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota21PS" compilerOrder="1050"/>
+            </layout>&#xD;
+		<!-- Gota 22 Pontos de Sangue -->
+			<layout left="344" top="1078" width="18" height="18" compilerOrder="1051">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota22PS" compilerOrder="1052"/>
+            </layout>&#xD;
+		<!-- Gota 23 Pontos de Sangue -->
+			<layout left="368" top="1078" width="18" height="18" compilerOrder="1053">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota23PS" compilerOrder="1054"/>
+            </layout>&#xD;
+		<!-- Gota 24 Pontos de Sangue -->
+			<layout left="392" top="1078" width="18" height="18" compilerOrder="1055">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota24PS" compilerOrder="1056"/>
+            </layout>&#xD;
+		<!-- Gota 25 Pontos de Sangue -->
+			<layout left="416" top="1078" width="18" height="18" compilerOrder="1057">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota25PS" compilerOrder="1058"/>
+            </layout>&#xD;
+		<!-- Gota 26 Pontos de Sangue -->
+			<layout left="438" top="1078" width="18" height="18" compilerOrder="1059">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota26PS" compilerOrder="1060"/>
+            </layout>&#xD;
+		<!-- Gota 27 Pontos de Sangue -->
+			<layout left="463" top="1078" width="18" height="18" compilerOrder="1061">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota27PS" compilerOrder="1062"/>
+            </layout>&#xD;
+		<!-- Gota 28 Pontos de Sangue -->
+			<layout left="486" top="1078" width="18" height="18" compilerOrder="1063">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota28PS" compilerOrder="1064"/>
+            </layout>&#xD;
+		<!-- Gota 29 Pontos de Sangue -->
+			<layout left="511" top="1078" width="18" height="18" compilerOrder="1065">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota29PS" compilerOrder="1066"/>
+            </layout>&#xD;
+		<!-- Gota 30 Pontos de Sangue -->
+			<layout left="535" top="1078" width="18" height="18" compilerOrder="1067">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota30PS" compilerOrder="1068"/>
+            </layout>&#xD;
+		<!-- Gota 31 Pontos de Sangue -->
+			<layout left="321" top="1099" width="18" height="18" compilerOrder="1069">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota31PS" compilerOrder="1070"/>
+            </layout>&#xD;
+		<!-- Gota 32 Pontos de Sangue -->
+			<layout left="344" top="1099" width="18" height="18" compilerOrder="1071">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota32PS" compilerOrder="1072"/>
+            </layout>&#xD;
+		<!-- Gota 33 Pontos de Sangue -->
+			<layout left="368" top="1099" width="18" height="18" compilerOrder="1073">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota33PS" compilerOrder="1074"/>
+            </layout>&#xD;
+		<!-- Gota 34 Pontos de Sangue -->
+			<layout left="392" top="1099" width="18" height="18" compilerOrder="1075">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota34PS" compilerOrder="1076"/>
+            </layout>&#xD;
+		<!-- Gota 35 Pontos de Sangue -->
+			<layout left="416" top="1099" width="18" height="18" compilerOrder="1077">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota35PS" compilerOrder="1078"/>
+            </layout>&#xD;
+		<!-- Gota 36 Pontos de Sangue -->
+			<layout left="438" top="1099" width="18" height="18" compilerOrder="1079">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota36PS" compilerOrder="1080"/>
+            </layout>&#xD;
+		<!-- Gota 37 Pontos de Sangue -->
+			<layout left="463" top="1099" width="18" height="18" compilerOrder="1081">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota37PS" compilerOrder="1082"/>
+            </layout>&#xD;
+		<!-- Gota 38 Pontos de Sangue -->
+			<layout left="486" top="1099" width="18" height="18" compilerOrder="1083">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota38PS" compilerOrder="1084"/>
+            </layout>&#xD;
+		<!-- Gota 39 Pontos de Sangue -->
+			<layout left="511" top="1099" width="18" height="18" compilerOrder="1085">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota39PS" compilerOrder="1086"/>
+            </layout>&#xD;
+		<!-- Gota 40 Pontos de Sangue -->
+			<layout left="535" top="1099" width="18" height="18" compilerOrder="1087">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota40PS" compilerOrder="1088"/>
+            </layout>&#xD;
+		<!-- Pontos por Turno -->
+			<layout left="490" top="1115" width="60" height="30" compilerOrder="1089">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="90" height="30" field="PTL1" compilerOrder="1090"/>
+			</layout>&#xD;		
+		<!-- Vitalidade -->
+		<!-- Letal -->
+		<!-- Gota 1 Letal -->
+			<layout left="753" top="878" width="18" height="18" compilerOrder="1091">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Letal" compilerOrder="1092"/>
+            </layout>&#xD;
+		<!-- Gota 2 Letal -->
+			<layout left="753" top="899" width="18" height="18" compilerOrder="1093">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Letal" compilerOrder="1094"/>
+            </layout>&#xD;
+		<!-- Gota 3 Letal -->
+			<layout left="753" top="920" width="18" height="18" compilerOrder="1095">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Letal" compilerOrder="1096"/>
+            </layout>&#xD;
+		<!-- Gota 4 Letal -->
+			<layout left="753" top="941" width="18" height="18" compilerOrder="1097">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Letal" compilerOrder="1098"/>
+            </layout>&#xD;
+		<!-- Gota 5 Letal -->
+			<layout left="753" top="961" width="18" height="18" compilerOrder="1099">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Letal" compilerOrder="1100"/>
+            </layout>&#xD;
+		<!-- Gota 6 Letal -->
+			<layout left="753" top="983" width="18" height="18" compilerOrder="1101">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Letal" compilerOrder="1102"/>
+            </layout>&#xD;
+		<!-- Gota 7 Letal -->
+			<layout left="753" top="1005" width="18" height="18" compilerOrder="1103">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Letal" compilerOrder="1104"/>
+            </layout>&#xD;
+
+		<!-- Agravado -->
+		<!-- Gota 1 Agravado -->
+			<layout left="774" top="878" width="18" height="18" compilerOrder="1105">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota1Agravado" compilerOrder="1106"/>
+            </layout>&#xD;
+		<!-- Gota 2 Agravado -->
+			<layout left="774" top="899" width="18" height="18" compilerOrder="1107">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota2Agravado" compilerOrder="1108"/>
+            </layout>&#xD;
+		<!-- Gota 3 Agravado -->
+			<layout left="774" top="920" width="18" height="18" compilerOrder="1109">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota3Agravado" compilerOrder="1110"/>
+            </layout>&#xD;
+		<!-- Gota 4 Agravado -->
+			<layout left="774" top="941" width="18" height="18" compilerOrder="1111">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota4Agravado" compilerOrder="1112"/>
+            </layout>&#xD;
+		<!-- Gota 5 Agravado -->
+			<layout left="774" top="961" width="18" height="18" compilerOrder="1113">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota5Agravado" compilerOrder="1114"/>
+            </layout>&#xD;
+		<!-- Gota 6 Agravado -->
+			<layout left="774" top="983" width="18" height="18" compilerOrder="1115">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota6Agravado" compilerOrder="1116"/>
+            </layout>&#xD;
+		<!-- Gota 7 Agravado -->
+			<layout left="774" top="1005" width="18" height="18" compilerOrder="1117">
+                <imageCheckBox checkedImage="Vampiro_Drake_Chronicles/images/blood_on.png" uncheckedImage="Vampiro_Drake_Chronicles/images/blood_off.png" width="18" height="18" field="Gota7Agravado" compilerOrder="1118"/>
+            </layout>&#xD;
+			
+		<!-- Fraqueza -->
+			<layout left="573" top="1065" width="232" height="75" compilerOrder="1119">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="232" height="75" field="Fraqueza" compilerOrder="1120"/>
+			</layout>&#xD;
+		
+        </rectangle>
+    </scrollBox>
+	
+ <import file="Codigo1.lfm"/>
+	
+</form>

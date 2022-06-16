@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmChangelingMorganna5_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmChangelingMorganna5_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmChangelingMorganna5_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/5.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+		<!-- Anotações -->			
+            <layout left="71" top="167" width="750" height="1035" compilerOrder="1">
+                <richEdit width="750" height="1035" backgroundColor="Transparent" field="txt" compilerOrder="2"/>
+            </layout>&#xD;			
+        </rectangle>
+    </scrollBox>
+</form>

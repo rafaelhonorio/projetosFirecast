@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen_Drake_Chronicles" formType="sheetTemplate" dataType="br.com.rrpg.Lobisomem_DC_SDK3" title="Lobisomen: Drake Chronicles" align="client" theme="light">
+    <tabControl align="client">
+        <tab title="Ficha">
+            <import file="1.lfm"/>
+        </tab>
+        <tab title="Pertences">
+            <import file="2.lfm"/>
+        </tab>
+        <tab title="Antecedentes">
+            <import file="3.lfm"/>
+        </tab>
+        <tab title="Informações">
+            <import file="4.lfm"/>
+        </tab>
+        <tab title="Dons">
+            <import file="5.lfm"/>
+        </tab>
+        <tab title="Matilha">
+            <import file="6.lfm"/>
+        </tab>
+        <tab title="Totem">
+            <import file="7.lfm"/>
+        </tab>
+		<tab title="Rituais">
+            <import file="8.lfm"/>
+        </tab>
+		<tab title="Anotações">
+            <import file="9.lfm"/>
+        </tab>
+    </tabControl>
+</form>

@@ -1,0 +1,17 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmPokeRPGT6_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmPokeRPGT6_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmPokeRPGT6_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="952" height="1347" color="white">&#xD;
+	
+            <image left="0" top="0" width="952" height="1347" src="images/6.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+			
+			<layout left="43" top="227" width="873" height="1050" compilerOrder="1">
+                <richEdit width="873" height="1050" backgroundColor="transparent" field="txt" compilerOrder="2"/>
+            </layout>&#xD;	
+								
+        </rectangle>
+    </scrollBox>
+		
+</form>

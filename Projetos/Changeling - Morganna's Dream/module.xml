@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.5" compilationDate="07102021214655" sdkApiVersion="86" originalPluginFileName="Changeling - Morganna&apos;s Dream.rpk" compilationDigest="48586ee787ad00f3eb635bdf343115c5b6311789">
+    <!--The "id" identifies your plugin globally. Must be unique, must contain only alphanumeric characters, underlines and dots and must contain at least 5 characters and a maximum of 40. Once set the ID, you should not change it;)-->
+    <id>br.com.rrpg.Changeling_Morgs_SDK3</id>
+    <!--"version" is the version of your plugin. When you release a new version of your module, change here =)-->
+    <version>1.0</version>
+    <name>Changeling: Morganna's Dream</name>
+    <description>RPK para a ficha de Changeling O Sonho utilizando como base a ficha de Changeling20 e Changeling C3 para criar uma ficha especifica para a mesa da Morganna.</description>
+    <author>Tricket</author>
+    <site>http://www.yourwebsite.com</site>
+    <contact>rafaek1551@gmail.com</contact>
+    <dataTypes>
+        <dataType title="Changeling: Morganna&apos;s Dream" name="frmChangelingMorganna" lfmFile="ChangelingMorganna/ChangelingMorganna.lfm">br.com.rrpg.Changeling_Morgs_SDK3</dataType>
+    </dataTypes>
+</module>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles3_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles3_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles3_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/3.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- Antecedentes: Fama -->
+			<layout left="74" top="208" width="355" height="117" compilerOrder="1">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Fama" compilerOrder="2"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Recursos -->
+			<layout left="445" top="208" width="355" height="117" compilerOrder="3">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Recursos" compilerOrder="4"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Rebanho -->
+			<layout left="74" top="345" width="355" height="117" compilerOrder="5">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Rebanho" compilerOrder="6"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Lacaios -->
+			<layout left="445" top="345" width="355" height="117" compilerOrder="7">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Lacaios" compilerOrder="8"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Mentor -->
+			<layout left="74" top="484" width="355" height="117" compilerOrder="9">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Mentor" compilerOrder="10"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Status -->
+			<layout left="445" top="484" width="355" height="117" compilerOrder="11">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="117" field="Status" compilerOrder="12"/>
+			</layout>&#xD;
+			
+	<!-- Titulo: Outros 1 -->
+			<layout left="197" top="598" width="168" height="30" compilerOrder="13">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="168" height="30" field="TOutros1" compilerOrder="14"/>
+			</layout>&#xD;
+	<!-- Titulo: Outros 2 -->
+			<layout left="569" top="598" width="168" height="30" compilerOrder="15">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="168" height="30" field="TOutros2" compilerOrder="16"/>
+			</layout>&#xD;
+			
+	<!-- Antecedentes: Outros 1 -->
+			<layout left="74" top="629" width="355" height="117" compilerOrder="17">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Outros1" compilerOrder="18"/>
+			</layout>&#xD;
+	<!-- Antecedentes: Outros 2 -->
+			<layout left="445" top="629" width="355" height="117" compilerOrder="19">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Outros2" compilerOrder="20"/>
+			</layout>&#xD;
+			
+	<!-- Posses: Itens -->
+			<layout left="74" top="793" width="355" height="117" compilerOrder="21">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Itens" compilerOrder="22"/>
+			</layout>&#xD;
+	<!-- Posses: Equipamentoo -->
+			<layout left="445" top="793" width="355" height="117" compilerOrder="23">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Equipamentos" compilerOrder="24"/>
+			</layout>&#xD;
+	<!-- Posses: Territórios -->
+			<layout left="74" top="928" width="355" height="117" compilerOrder="25">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Territórios" compilerOrder="26"/>
+			</layout>&#xD;
+	<!-- Posses: Veículos -->
+			<layout left="445" top="928" width="355" height="117" compilerOrder="27">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="355" height="115" field="Veículos" compilerOrder="28"/>
+			</layout>&#xD;	
+
+	<!-- Refúgios: Localização -->
+			<layout left="74" top="1099" width="180" height="93" compilerOrder="29">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="180" height="93" field="Localização" compilerOrder="30"/>
+			</layout>&#xD;
+	<!-- Refúgios: Descrição -->
+			<layout left="275" top="1099" width="530" height="93" compilerOrder="31">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="530" height="93" field="Descrição" compilerOrder="32"/>
+			</layout>&#xD;				
+        </rectangle>
+    </scrollBox>
+</form>

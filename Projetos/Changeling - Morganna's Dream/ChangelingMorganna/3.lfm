@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmChangelingMorganna3_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmChangelingMorganna3_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmChangelingMorganna3_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/3.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+<!-- Qualidades e Defeitos -->
+	<!-- Qualidades -->
+		<!-- Qualidade 1 -->			
+			<layout left="65" top="180" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade1" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 1 -->			
+			<layout left="260" top="180" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ1" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 1 -->
+			<layout left="385" top="180" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo1" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 2 -->			
+			<layout left="65" top="200" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade2" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 2 -->			
+			<layout left="260" top="200" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ2" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 2 -->
+			<layout left="385" top="200" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo2" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Qualidade 3 -->			
+			<layout left="65" top="218" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade3" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 3 -->			
+			<layout left="260" top="218" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ3" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 3 -->
+			<layout left="385" top="218" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo3" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 4 -->			
+			<layout left="65" top="238" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade4" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 4 -->			
+			<layout left="260" top="238" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ4" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 4 -->
+			<layout left="385" top="238" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo4" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Qualidade 5 -->			
+			<layout left="65" top="258" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade5" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 5 -->			
+			<layout left="260" top="258" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ5" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 5 -->
+			<layout left="385" top="258" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo5" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 6 -->			
+			<layout left="65" top="277" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade6" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 6 -->			
+			<layout left="260" top="277" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ6" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 6 -->
+			<layout left="385" top="277" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo6" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Qualidade 7 -->			
+			<layout left="65" top="296" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade7" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 7 -->			
+			<layout left="260" top="296" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ7" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 7 -->
+			<layout left="385" top="296" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo7" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 8 -->			
+			<layout left="65" top="315" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade8" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 8 -->			
+			<layout left="260" top="315" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ8" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 8 -->
+			<layout left="385" top="315" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo8" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 9 -->			
+			<layout left="65" top="335" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade9" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 9 -->			
+			<layout left="260" top="335" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ9" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 9 -->
+			<layout left="385" top="335" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo9" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 10 -->			
+			<layout left="65" top="354" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade10" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 10 -->			
+			<layout left="260" top="354" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ10" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 10 -->
+			<layout left="385" top="354" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo10" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Qualidade 11 -->			
+			<layout left="65" top="374" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade11" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 11 -->			
+			<layout left="260" top="374" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ11" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 11 -->
+			<layout left="385" top="374" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo11" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 12 -->			
+			<layout left="65" top="394" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade12" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 12 -->			
+			<layout left="260" top="394" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ12" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 12 -->
+			<layout left="385" top="394" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo12" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Qualidade 13 -->			
+			<layout left="65" top="412" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade13" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 13 -->			
+			<layout left="260" top="412" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ13" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 13 -->
+			<layout left="385" top="412" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo13" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Qualidade 14 -->			
+			<layout left="65" top="432" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Qualidade14" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 14 -->			
+			<layout left="260" top="432" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoQ14" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Custo 14 -->
+			<layout left="385" top="432" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Custo14" compilerOrder="4"/>
+			</layout>&#xD;
+
+	<!-- Defeitos -->
+		<!-- Defeito 1 -->			
+			<layout left="462" top="180" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito1" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 1 -->			
+			<layout left="657" top="180" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD1" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 1 -->
+			<layout left="781" top="180" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus1" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 2 -->			
+			<layout left="462" top="200" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito2" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 2 -->			
+			<layout left="657" top="200" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD2" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 2 -->
+			<layout left="781" top="200" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus2" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Defeito 3 -->			
+			<layout left="462" top="217" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito3" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 3 -->			
+			<layout left="657" top="217" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD3" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 3 -->
+			<layout left="781" top="217" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus3" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 4 -->			
+			<layout left="462" top="238" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito4" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 4 -->			
+			<layout left="657" top="238" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD4" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 4 -->
+			<layout left="781" top="238" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus4" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Defeito 5 -->			
+			<layout left="462" top="258" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito5" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 5 -->			
+			<layout left="657" top="258" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD5" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 5 -->
+			<layout left="781" top="258" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus5" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 6 -->			
+			<layout left="462" top="276" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito6" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 6 -->			
+			<layout left="657" top="276" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD6" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 6 -->
+			<layout left="781" top="276" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus6" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Defeito 7 -->			
+			<layout left="462" top="296" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito7" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 7 -->			
+			<layout left="657" top="296" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD7" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 7 -->
+			<layout left="781" top="296" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus7" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 8 -->			
+			<layout left="462" top="315" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito8" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 8 -->			
+			<layout left="657" top="315" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD8" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 8 -->
+			<layout left="781" top="315" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus8" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 9 -->			
+			<layout left="462" top="335" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito9" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 9 -->			
+			<layout left="657" top="335" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD9" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 9 -->
+			<layout left="781" top="335" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus9" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 10 -->			
+			<layout left="462" top="354" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito10" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 10 -->			
+			<layout left="657" top="354" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD10" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 10 -->
+			<layout left="781" top="354" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus10" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Defeito 11 -->			
+			<layout left="462" top="374" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito11" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 11 -->			
+			<layout left="657" top="374" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD11" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 11 -->
+			<layout left="781" top="374" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus11" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 12 -->			
+			<layout left="462" top="395" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito12" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 12 -->			
+			<layout left="657" top="395" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD12" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 12 -->
+			<layout left="781" top="395" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus12" compilerOrder="4"/>
+			</layout>&#xD;	
+
+		<!-- Defeito 13 -->			
+			<layout left="462" top="412" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito13" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 13 -->			
+			<layout left="657" top="412" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD13" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 13 -->
+			<layout left="781" top="412" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus13" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- Defeito 14 -->			
+			<layout left="462" top="432" width="188" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="188" height="30" field="Defeito14" compilerOrder="2"/>
+			</layout>&#xD;			
+		<!-- Tipo 14 -->			
+			<layout left="657" top="432" width="115" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="TipoD14" compilerOrder="4"/>
+			</layout>&#xD;				
+		<!-- Bonus 14 -->
+			<layout left="781" top="432" width="50" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="50" height="30" field="Bonus14" compilerOrder="4"/>
+			</layout>&#xD;	
+
+<!-- Descrição -->
+	<!-- Nome Verdadeiro -->			
+			<layout left="195" top="508" width="240" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="240" height="30" field="NomeVerdadeiro" compilerOrder="2"/>
+			</layout>&#xD;		
+	<!-- Idade Cronológica -->			
+			<layout left="198" top="528" width="235" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="235" height="30" field="IdadeCronologica" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Idade Aparente -->			
+			<layout left="180" top="547" width="255" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="255" height="30" field="IdadeAparente" compilerOrder="2"/>
+			</layout>&#xD;
+	<!-- Data de Nascimento -->			
+			<layout left="215" top="566" width="215" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="215" height="30" field="DatadeNascimento" compilerOrder="2"/>
+			</layout>&#xD;		
+	<!-- Cabelos -->			
+			<layout left="125" top="587" width="305" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="305" height="30" field="Cabelos" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Olhos -->			
+			<layout left="113" top="606" width="315" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="315" height="30" field="Olhos" compilerOrder="2"/>
+			</layout>&#xD;
+	<!-- Raça -->			
+			<layout left="103" top="625" width="335" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="335" height="30" field="Raça" compilerOrder="2"/>
+			</layout>&#xD;		
+	<!-- Nacionalidade -->			
+			<layout left="168" top="647" width="260" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="260" height="30" field="Nacionalidade" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Altura -->			
+			<layout left="117" top="665" width="315" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="315" height="30" field="Altura" compilerOrder="2"/>
+			</layout>&#xD;
+	<!-- Peso -->			
+			<layout left="100" top="684" width="335" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="335" height="30" field="Peso" compilerOrder="2"/>
+			</layout>&#xD;		
+	<!-- Gênero -->			
+			<layout left="123" top="702" width="305" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="305" height="30" field="Gênero" compilerOrder="2"/>
+			</layout>&#xD;
+			
+<!-- Outras Anotações -->
+			<layout left="80" top="766" width="350" height="85" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="350" height="85" field="OutrasAnotações" compilerOrder="646"/>
+			</layout>&#xD;				
+
+<!-- Experiência --> 
+	<!-- Ganho de -->
+			<layout left="540" top="535" width="290" height="65" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="290" height="65" field="Ganhode" compilerOrder="646"/>
+			</layout>&#xD;	
+	<!-- Tolta Gasto -->			
+			<layout left="560" top="591" width="270" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="270" height="30" field="TotalGasto" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Gasto em -->
+			<layout left="468" top="638" width="360" height="214" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="360" height="214" field="Gastoem" compilerOrder="646"/>
+			</layout>&#xD;		
+
+<!-- Combate -->
+	<!-- Combate 1 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="920" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma1" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="920" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif1" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="920" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano1" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="920" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc1" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="920" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad1" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="920" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente1" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="920" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult1" compilerOrder="554"/>
+			</layout>&#xD;		
+	<!-- Combate 2 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="946" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma2" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="946" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif2" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="946" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano2" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="946" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc2" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="946" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad2" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="946" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente2" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="946" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult2" compilerOrder="554"/>
+			</layout>&#xD;	
+	<!-- Combate 3 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="970" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma3" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="970" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif3" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="970" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano3" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="970" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc3" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="970" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad3" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="970" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente3" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="970" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult3" compilerOrder="554"/>
+			</layout>&#xD;	
+	<!-- Combate 4 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="996" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma4" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="996" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif4" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="996" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano4" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="996" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc4" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="996" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad4" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="996" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente4" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="996" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult4" compilerOrder="554"/>
+			</layout>&#xD;	
+	<!-- Combate 5 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="1021" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma5" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="1021" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif5" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="1021" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano5" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="1021" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc5" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="1021" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad5" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="1021" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente5" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="1021" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult5" compilerOrder="554"/>
+			</layout>&#xD;				
+	<!-- Combate 1 -->
+		<!-- Arma/Manobra -->
+			<layout left="72" top="1042" width="180" height="30" compilerOrder="541">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="Arma6" compilerOrder="542"/>
+			</layout>&#xD;
+		<!-- Dificuldade -->
+			<layout left="247" top="1042" width="65" height="30" compilerOrder="543">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="65" height="30" field="Dif6" compilerOrder="544"/>
+			</layout>&#xD;
+		<!-- Dano/Tipo -->
+			<layout left="310" top="1042" width="60" height="30" compilerOrder="545">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Dano6" compilerOrder="546"/>
+			</layout>&#xD;
+		<!-- Alcance -->
+			<layout left="365" top="1042" width="60" height="30" compilerOrder="547">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Alc6" compilerOrder="548"/>
+			</layout>&#xD;
+		<!-- Cadência -->
+			<layout left="420" top="1042" width="60" height="30" compilerOrder="549">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="Cad6" compilerOrder="550"/>
+			</layout>&#xD;
+		<!-- Pente -->
+			<layout left="480" top="1042" width="45" height="30" compilerOrder="551">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="45" height="30" field="Pente6" compilerOrder="552"/>
+			</layout>&#xD;
+		<!-- Ocultabilidade -->
+			<layout left="520" top="1042" width="75" height="30" compilerOrder="553">
+				<edit transparent="true" fontSize="14" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="75" height="30" field="Ocult6" compilerOrder="554"/>
+			</layout>&#xD;	
+<!-- Armadura -->
+	<!-- Classe -->			
+			<layout left="653" top="923" width="175" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="175" height="30" field="ClasseArmadura" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Proteção -->			
+			<layout left="672" top="943" width="155" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="155" height="30" field="ProtecaArmadura" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Penalidade -->			
+			<layout left="682" top="963" width="145" height="30" compilerOrder="1">
+				<edit transparent="true" fontSize="16" fontColor="#000000" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="30" field="PenalidadeArmadura" compilerOrder="2"/>
+			</layout>&#xD;	
+	<!-- Descrição -->
+			<layout left="607" top="1007" width="220" height="65" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="220" height="65" field="DescricaoArmadura" compilerOrder="646"/>
+			</layout>&#xD;	
+<!-- Propriedades Livres -->		
+	<!-- Localização -->
+			<layout left="70" top="1138" width="210" height="65" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="210" height="65" field="Localização" compilerOrder="646"/>
+			</layout>&#xD;	
+	<!-- Propriedades Livres -->
+			<layout left="300" top="1138" width="526" height="65" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#000000" width="526" height="65" field="PropriedadesLivres" compilerOrder="646"/>
+			</layout>&#xD;			
+        </rectangle>
+    </scrollBox>
+</form>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles4_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles4_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles4_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/4.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+			<!-- História: Prelúdio -->
+			<layout left="75" top="212" width="723" height="302" compilerOrder="1">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="723" height="302" field="HisPre" compilerOrder="2"/>
+			</layout>&#xD;
+				<!-- História: Abraço -->
+			<layout left="75" top="538" width="723" height="160" compilerOrder="3">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="723" height="160" field="HisAbr" compilerOrder="4"/>
+			</layout>&#xD;
+				<!-- História: Objetivos -->
+			<layout left="75" top="721" width="723" height="160" compilerOrder="5">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="723" height="160" field="HisObj" compilerOrder="6"/>
+			</layout>&#xD;
+			
+				<!-- Aparência: Idade -->
+			<layout left="117" top="903" width="183" height="30" compilerOrder="7">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="183" height="30" field="AIdade" compilerOrder="8"/>
+			</layout>&#xD;
+				<!-- Aparência: Aparente -->
+			<layout left="195" top="927" width="105" height="30" compilerOrder="9">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="105" height="30" field="AIdadeAp" compilerOrder="10"/>
+			</layout>&#xD;
+				<!-- Aparência: Nascimento -->
+			<layout left="161" top="950" width="140" height="30" compilerOrder="11">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="140" height="30" field="ANascimento" compilerOrder="12"/>
+			</layout>&#xD;
+				<!-- Aparência: Abraço -->
+			<layout left="135" top="971" width="165" height="30" compilerOrder="13">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="A_Abraço" compilerOrder="14"/>
+			</layout>&#xD;
+				<!-- Aparência: Cabelos -->
+			<layout left="140" top="995" width="160" height="30" compilerOrder="15">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="160" height="30" field="ACabelos" compilerOrder="16"/>
+			</layout>&#xD;
+				<!-- Aparência: Raça -->
+			<layout left="120" top="1018" width="180" height="30" compilerOrder="17">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="ARaça" compilerOrder="18"/>
+			</layout>&#xD;
+				<!-- Aparência: Olhos -->
+			<layout left="125" top="1040" width="175" height="30" compilerOrder="19">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="175" height="30" field="AOlhos" compilerOrder="20"/>
+			</layout>&#xD;
+				<!-- Aparência: Sexo -->
+			<layout left="120" top="1065" width="180" height="30" compilerOrder="21">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="ASexo" compilerOrder="22"/>
+			</layout>&#xD;
+				<!-- Aparência: Nacionalidade -->
+			<layout left="185" top="1088" width="115" height="30" compilerOrder="23">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="115" height="30" field="ANacionalidade" compilerOrder="24"/>
+			</layout>&#xD;
+				<!-- Aparência: Altura -->
+			<layout left="135" top="1110" width="165" height="30" compilerOrder="25">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="A_Altura" compilerOrder="26"/>
+			</layout>&#xD;
+				<!-- Aparência: Peso -->
+			<layout left="115" top="1133" width="180" height="30" compilerOrder="27">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="APeso" compilerOrder="28"/>
+			</layout>&#xD;
+				<!-- Descrição: Aparência -->
+			<layout left="328" top="913" width="470" height="256" compilerOrder="29">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="470" height="256" field="DescriçãoAparência" compilerOrder="30"/>
+			</layout>&#xD;
+        </rectangle>
+    </scrollBox>
+</form>

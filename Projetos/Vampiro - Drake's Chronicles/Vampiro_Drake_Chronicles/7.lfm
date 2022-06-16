@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmVampiro_Drake_Chronicles7_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmVampiro_Drake_Chronicles7_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmVampiro_Drake_Chronicles7_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="873" height="1216" color="white">&#xD;
+            <image left="0" top="0" width="873" height="1216" src="images/7.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+		<!-- Anotações -->			
+            <layout left="75" top="198" width="725" height="1000" compilerOrder="1">
+                <richEdit width="725" height="1000" backgroundColor="Transparent" field="txt" compilerOrder="2"/>
+            </layout>&#xD;	
+        </rectangle>
+		
+    </scrollBox>
+</form>

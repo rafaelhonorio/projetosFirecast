@@ -1,0 +1,445 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmPokeRPGT2_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmPokeRPGT2_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmPokeRPGT2_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="952" height="1347" color="white">&#xD;
+            <image left="0" top="0" width="952" height="1347" src="images/2.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+			
+		<!-- Technical Machine's - TM's -->
+		
+			<layout left="33" top="283" width="145" height="31" compilerOrder="1">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__1" compilerOrder="2"/>
+            </layout>&#xD;
+            <layout left="185" top="283" width="145" height="31" compilerOrder="3">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__2" compilerOrder="4"/>
+            </layout>&#xD;	
+            <layout left="33" top="318" width="145" height="31" compilerOrder="5">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__3" compilerOrder="6"/>
+            </layout>&#xD;				
+            <layout left="185" top="318" width="145" height="31" compilerOrder="7">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__4" compilerOrder="8"/>
+            </layout>&#xD;	
+            <layout left="33" top="353" width="145" height="31" compilerOrder="9">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__5" compilerOrder="10"/>
+            </layout>&#xD;
+            <layout left="185" top="353" width="145" height="31" compilerOrder="11">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__6" compilerOrder="12"/>
+            </layout>&#xD;
+            <layout left="33" top="386" width="145" height="31" compilerOrder="13">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__7" compilerOrder="14"/>
+            </layout>&#xD;
+            <layout left="185" top="386" width="145" height="31" compilerOrder="15">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__8" compilerOrder="16"/>
+            </layout>&#xD;			
+            <layout left="33" top="421" width="145" height="31" compilerOrder="17">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__9" compilerOrder="18"/>
+            </layout>&#xD;
+            <layout left="185" top="421" width="145" height="31" compilerOrder="19">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__10" compilerOrder="20"/>
+            </layout>&#xD;			
+            <layout left="33" top="455" width="145" height="31" compilerOrder="21">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__11" compilerOrder="22"/>
+            </layout>&#xD;
+            <layout left="185" top="455" width="145" height="31" compilerOrder="23">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__12" compilerOrder="24"/>
+            </layout>&#xD;
+            <layout left="33" top="490" width="145" height="31" compilerOrder="25">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__13" compilerOrder="26"/>
+            </layout>&#xD;			
+            <layout left="185" top="490" width="145" height="31" compilerOrder="27">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__14" compilerOrder="28"/>
+            </layout>&#xD;			
+			<layout left="33" top="523" width="145" height="31" compilerOrder="29">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__15" compilerOrder="30"/>
+            </layout>&#xD;
+            <layout left="185" top="523" width="145" height="31" compilerOrder="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__16" compilerOrder="32"/>
+            </layout>&#xD;
+            <layout left="33" top="559" width="145" height="31" compilerOrder="33">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__17" compilerOrder="34"/>
+            </layout>&#xD;
+            <layout left="185" top="559" width="145" height="31" compilerOrder="35">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__18" compilerOrder="36"/>
+            </layout>&#xD;
+            <layout left="33" top="594" width="145" height="31" compilerOrder="37">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__19" compilerOrder="38"/>
+            </layout>&#xD;
+            <layout left="185" top="594" width="145" height="31" compilerOrder="39">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__20" compilerOrder="40"/>
+            </layout>&#xD;
+            <layout left="33" top="628" width="145" height="31" compilerOrder="41">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__21" compilerOrder="42"/>
+            </layout>&#xD;
+            <layout left="185" top="628" width="145" height="31" compilerOrder="43">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__22" compilerOrder="44"/>
+            </layout>&#xD;
+            <layout left="33" top="663" width="145" height="31" compilerOrder="45">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__23" compilerOrder="46"/>
+            </layout>&#xD;
+            <layout left="185" top="663" width="145" height="31" compilerOrder="47">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__24" compilerOrder="48"/>
+            </layout>&#xD;
+            <layout left="33" top="697" width="145" height="31" compilerOrder="49">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__25" compilerOrder="50"/>
+            </layout>&#xD;
+            <layout left="185" top="697" width="145" height="31" compilerOrder="51">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__26" compilerOrder="52"/>
+            </layout>&#xD;
+            <layout left="33" top="731" width="145" height="31" compilerOrder="53">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__27" compilerOrder="54"/>
+            </layout>&#xD;	
+            <layout left="185" top="731" width="145" height="31" compilerOrder="55">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__28" compilerOrder="56"/>
+            </layout>&#xD;	
+			<!--Tutor Move-->
+            <layout left="33" top="800" width="145" height="31" compilerOrder="57">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__29" compilerOrder="58"/>
+            </layout>&#xD;			
+            <layout left="185" top="800" width="145" height="31" compilerOrder="59">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__30" compilerOrder="60"/>
+            </layout>&#xD;
+            <layout left="33" top="834" width="145" height="31" compilerOrder="61">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__31" compilerOrder="62"/>
+            </layout>&#xD;
+            <layout left="185" top="834" width="145" height="31" compilerOrder="63">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__32" compilerOrder="64"/>
+            </layout>&#xD;
+            <layout left="33" top="868" width="145" height="31" compilerOrder="65">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__33" compilerOrder="66"/>
+            </layout>&#xD;
+            <layout left="185" top="868" width="145" height="31" compilerOrder="67">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__34" compilerOrder="68"/>
+            </layout>&#xD;
+            <layout left="33" top="903" width="145" height="31" compilerOrder="69">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__35" compilerOrder="70"/>
+            </layout>&#xD;
+            <layout left="185" top="903" width="145" height="31" compilerOrder="71">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__36" compilerOrder="72"/>
+            </layout>&#xD;			
+            <layout left="33" top="938" width="145" height="31" compilerOrder="73">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__37" compilerOrder="74"/>
+            </layout>&#xD;
+            <layout left="185" top="938" width="145" height="31" compilerOrder="75">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__38" compilerOrder="76"/>
+            </layout>&#xD;	
+            <layout left="33" top="972" width="145" height="31" compilerOrder="77">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__39" compilerOrder="78"/>
+            </layout>&#xD;				
+            <layout left="185" top="972" width="145" height="31" compilerOrder="79">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__40" compilerOrder="80"/>
+            </layout>&#xD;
+            <layout left="33" top="1007" width="145" height="31" compilerOrder="81">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__41" compilerOrder="82"/>
+            </layout>&#xD;
+            <layout left="185" top="1007" width="145" height="31" compilerOrder="83">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__42" compilerOrder="84"/>
+            </layout>&#xD;
+            <layout left="33" top="1039" width="145" height="31" compilerOrder="85">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__43" compilerOrder="86"/>
+            </layout>&#xD;			
+            <layout left="185" top="1039" width="145" height="31" compilerOrder="87">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__44" compilerOrder="88"/>
+            </layout>&#xD;
+            <layout left="33" top="1076" width="145" height="31" compilerOrder="89">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__45" compilerOrder="90"/>
+            </layout>&#xD;
+            <layout left="185" top="1076" width="145" height="31" compilerOrder="91">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__46" compilerOrder="92"/>
+            </layout>&#xD;		
+            <layout left="33" top="1110" width="145" height="31" compilerOrder="93">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__47" compilerOrder="94"/>
+            </layout>&#xD;				
+			<layout left="185" top="1110" width="145" height="31" compilerOrder="95">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__48" compilerOrder="96"/>
+            </layout>&#xD;
+            <layout left="33" top="1144" width="145" height="31" compilerOrder="97">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__49" compilerOrder="98"/>
+            </layout>&#xD;
+            <layout left="185" top="1144" width="145" height="31" compilerOrder="99">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__50" compilerOrder="100"/>
+            </layout>&#xD;			
+            <layout left="33" top="1178" width="145" height="31" compilerOrder="101">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__51" compilerOrder="102"/>
+            </layout>&#xD;
+            <layout left="185" top="1178" width="145" height="31" compilerOrder="103">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__52" compilerOrder="104"/>
+            </layout>&#xD;
+            <layout left="33" top="1212" width="145" height="31" compilerOrder="105">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__53" compilerOrder="106"/>
+            </layout>&#xD;
+            <layout left="185" top="1212" width="145" height="31" compilerOrder="107">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__54" compilerOrder="108"/>
+            </layout>&#xD;			
+            <layout left="33" top="1247" width="145" height="31" compilerOrder="109">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__55" compilerOrder="110"/>
+            </layout>&#xD;
+            <layout left="185" top="1247" width="145" height="31" compilerOrder="111">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__56" compilerOrder="112"/>
+            </layout>&#xD;
+			
+		<!-- Pokebolas -->
+		    <layout left="344" top="283" width="265" height="31" compilerOrder="113">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__1" compilerOrder="114"/>
+            </layout>&#xD;
+            <layout left="344" top="317" width="265" height="31" compilerOrder="115">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__2" compilerOrder="116"/>
+            </layout>&#xD;	
+			<layout left="344" top="352" width="265" height="31" compilerOrder="117">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__3" compilerOrder="118"/>
+            </layout>&#xD;	
+            <layout left="344" top="386" width="265" height="31" compilerOrder="119">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__4" compilerOrder="120"/>
+            </layout>&#xD;
+            <layout left="344" top="420" width="265" height="31" compilerOrder="121">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__5" compilerOrder="122"/>
+            </layout>&#xD;				
+            <layout left="344" top="454" width="265" height="31" compilerOrder="123">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__6" compilerOrder="124"/>
+            </layout>&#xD;
+            <layout left="344" top="490" width="265" height="31" compilerOrder="125">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__7" compilerOrder="126"/>
+            </layout>&#xD;	
+            <layout left="344" top="524" width="265" height="31" compilerOrder="127">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__8" compilerOrder="128"/>
+            </layout>&#xD;	
+            <layout left="344" top="558" width="265" height="31" compilerOrder="129">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__9" compilerOrder="130"/>
+            </layout>&#xD;	
+            <layout left="344" top="593" width="265" height="31" compilerOrder="131">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__10" compilerOrder="132"/>
+            </layout>&#xD;	
+            <layout left="344" top="628" width="265" height="31" compilerOrder="133">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__11" compilerOrder="134"/>
+            </layout>&#xD;			
+            <layout left="344" top="662" width="265" height="31" compilerOrder="135">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__12" compilerOrder="136"/>
+            </layout>&#xD;
+            <layout left="344" top="696" width="265" height="31" compilerOrder="137">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__13" compilerOrder="138"/>
+            </layout>&#xD;
+            <layout left="344" top="730" width="265" height="31" compilerOrder="139">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__14" compilerOrder="140"/>
+            </layout>&#xD;
+			
+		<!-- Chaves -->
+		
+            <layout left="623" top="283" width="296" height="31" compilerOrder="141">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__0" compilerOrder="142"/>
+            </layout>&#xD;
+            <layout left="623" top="317" width="296" height="31" compilerOrder="143">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__1" compilerOrder="144"/>
+            </layout>&#xD;
+            <layout left="623" top="351" width="296" height="31" compilerOrder="145">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__2" compilerOrder="146"/>
+            </layout>&#xD;
+            <layout left="623" top="386" width="296" height="31" compilerOrder="147">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__3" compilerOrder="148"/>
+            </layout>&#xD;
+            <layout left="623" top="420" width="296" height="31" compilerOrder="149">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__4" compilerOrder="150"/>
+            </layout>&#xD;
+            <layout left="623" top="454" width="296" height="31" compilerOrder="151">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__5" compilerOrder="152"/>
+            </layout>&#xD;
+            <layout left="623" top="490" width="296" height="31" compilerOrder="153">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__6" compilerOrder="154"/>
+            </layout>&#xD;			
+            <layout left="623" top="524" width="296" height="31" compilerOrder="155">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__7" compilerOrder="156"/>
+            </layout>&#xD;			
+            <layout left="623" top="559" width="296" height="31" compilerOrder="157">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__8" compilerOrder="158"/>
+            </layout>&#xD;			
+            <layout left="623" top="592" width="296" height="31" compilerOrder="159">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__9" compilerOrder="160"/>
+            </layout>&#xD;	
+            <layout left="623" top="628" width="296" height="31" compilerOrder="161">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__10" compilerOrder="162"/>
+            </layout>&#xD;
+            <layout left="623" top="662" width="296" height="31" compilerOrder="163">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__11" compilerOrder="164"/>
+            </layout>&#xD;	
+            <layout left="623" top="696" width="296" height="31" compilerOrder="165">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__12" compilerOrder="166"/>
+            </layout>&#xD;	
+            <layout left="623" top="730" width="296" height="31" compilerOrder="167">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__13" compilerOrder="168"/>
+            </layout>&#xD;	
+			
+		<!-- Itens -->
+		
+            <layout left="344" top="800" width="130" height="31" compilerOrder="169">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__1" compilerOrder="170"/>
+            </layout>&#xD;	
+			<layout left="478" top="800" width="130" height="31" compilerOrder="171">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__2" compilerOrder="172"/>
+            </layout>&#xD;
+			<layout left="344" top="836" width="130" height="31" compilerOrder="173">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__3" compilerOrder="174"/>
+            </layout>&#xD;	
+            <layout left="478" top="836" width="130" height="31" compilerOrder="175">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__4" compilerOrder="176"/>
+            </layout>&#xD;					
+            <layout left="344" top="870" width="130" height="31" compilerOrder="177">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__5" compilerOrder="178"/>
+            </layout>&#xD;
+            <layout left="478" top="870" width="130" height="31" compilerOrder="179">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__6" compilerOrder="180"/>
+            </layout>&#xD;				
+            <layout left="344" top="904" width="130" height="31" compilerOrder="181">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__7" compilerOrder="182"/>
+            </layout>&#xD;
+            <layout left="478" top="904" width="130" height="31" compilerOrder="183">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__8" compilerOrder="184"/>
+            </layout>&#xD;			
+            <layout left="344" top="938" width="130" height="31" compilerOrder="185">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__9" compilerOrder="186"/>
+            </layout>&#xD;		
+            <layout left="478" top="938" width="130" height="31" compilerOrder="187">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__10" compilerOrder="188"/>
+            </layout>&#xD;
+            <layout left="344" top="971" width="130" height="31" compilerOrder="189">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__11" compilerOrder="190"/>
+            </layout>&#xD;	
+            <layout left="478" top="971" width="130" height="31" compilerOrder="191">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__12" compilerOrder="192"/>
+            </layout>&#xD;							
+            <layout left="344" top="1006" width="130" height="31" compilerOrder="193">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__13" compilerOrder="194"/>
+            </layout>&#xD;	
+            <layout left="478" top="1006" width="130" height="31" compilerOrder="195">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__14" compilerOrder="196"/>
+            </layout>&#xD;	
+            <layout left="344" top="1040" width="130" height="31" compilerOrder="197">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__15" compilerOrder="198"/>
+            </layout>&#xD;			
+            <layout left="478" top="1040" width="130" height="31" compilerOrder="199">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__16" compilerOrder="200"/>
+            </layout>&#xD;
+            <layout left="344" top="1074" width="130" height="31" compilerOrder="201">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__17" compilerOrder="202"/>
+            </layout>&#xD;	
+            <layout left="478" top="1074" width="130" height="31" compilerOrder="203">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__18" compilerOrder="204"/>
+            </layout>&#xD;			
+            <layout left="344" top="1108" width="130" height="31" compilerOrder="205">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__19" compilerOrder="206"/>
+            </layout>&#xD;			
+            <layout left="478" top="1108" width="130" height="31" compilerOrder="207">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__20" compilerOrder="208"/>
+            </layout>&#xD;			
+            <layout left="344" top="1142" width="130" height="31" compilerOrder="209">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__21" compilerOrder="210"/>
+            </layout>&#xD;
+            <layout left="478" top="1142" width="130" height="31" compilerOrder="211">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__22" compilerOrder="212"/>
+            </layout>&#xD;						
+            <layout left="344" top="1176" width="130" height="31" compilerOrder="213">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__23" compilerOrder="214"/>
+            </layout>&#xD;	
+            <layout left="478" top="1176" width="130" height="31" compilerOrder="215">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__24" compilerOrder="216"/>
+            </layout>&#xD;				
+            <layout left="344" top="1210" width="130" height="31" compilerOrder="217">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__25" compilerOrder="218"/>
+            </layout>&#xD;			
+            <layout left="478" top="1210" width="130" height="31" compilerOrder="219">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__26" compilerOrder="220"/>
+            </layout>&#xD;
+            <layout left="344" top="1245" width="130" height="31" compilerOrder="217">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__27" compilerOrder="218"/>
+            </layout>&#xD;			
+            <layout left="478" top="1245" width="130" height="31" compilerOrder="219">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__28" compilerOrder="220"/>
+            </layout>&#xD;
+			
+		<!-- Berrys/Frutas -->
+          
+            <layout left="623" top="800" width="146" height="31" compilerOrder="221">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__1" compilerOrder="222"/>
+            </layout>&#xD;			
+            <layout left="623" top="835" width="146" height="31" compilerOrder="223">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__2" compilerOrder="224"/>
+            </layout>&#xD;	
+            <layout left="623" top="870" width="146" height="31" compilerOrder="225">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__3" compilerOrder="226"/>
+            </layout>&#xD;			
+            <layout left="623" top="904" width="146" height="31" compilerOrder="227">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__4" compilerOrder="228"/>
+            </layout>&#xD;
+            <layout left="623" top="938" width="146" height="31" compilerOrder="229">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__5" compilerOrder="230"/>
+            </layout>&#xD;
+            <layout left="623" top="972" width="146" height="31" compilerOrder="231">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__6" compilerOrder="232"/>
+            </layout>&#xD;
+            <layout left="623" top="1006" width="146" height="31" compilerOrder="233">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__7" compilerOrder="234"/>
+            </layout>&#xD;
+            <layout left="623" top="1040" width="146" height="31" compilerOrder="235">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__8" compilerOrder="236"/>
+            </layout>&#xD;
+            <layout left="623" top="1074" width="146" height="31" compilerOrder="237">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__9" compilerOrder="238"/>
+            </layout>&#xD;	
+            <layout left="623" top="1108" width="146" height="31" compilerOrder="239">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__10" compilerOrder="240"/>
+            </layout>&#xD;			
+            <layout left="623" top="1144" width="146" height="31" compilerOrder="241">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__11" compilerOrder="242"/>
+            </layout>&#xD;	
+            <layout left="623" top="1178" width="146" height="31" compilerOrder="243">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__12" compilerOrder="244"/>
+            </layout>&#xD;				
+            <layout left="623" top="1210" width="146" height="31" compilerOrder="245">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__13" compilerOrder="246"/>
+            </layout>&#xD;
+            <layout left="623" top="1245" width="146" height="31" compilerOrder="245">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__14" compilerOrder="246"/>
+            </layout>&#xD;
+            <layout left="773" top="800" width="146" height="31" compilerOrder="221">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__15" compilerOrder="222"/>
+            </layout>&#xD;			
+            <layout left="773" top="835" width="146" height="31" compilerOrder="223">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__16" compilerOrder="224"/>
+            </layout>&#xD;	
+            <layout left="773" top="870" width="146" height="31" compilerOrder="225">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__17" compilerOrder="226"/>
+            </layout>&#xD;			
+            <layout left="773" top="904" width="146" height="31" compilerOrder="227">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__18" compilerOrder="228"/>
+            </layout>&#xD;
+            <layout left="773" top="938" width="146" height="31" compilerOrder="229">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__19" compilerOrder="230"/>
+            </layout>&#xD;
+            <layout left="773" top="972" width="146" height="31" compilerOrder="231">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__20" compilerOrder="232"/>
+            </layout>&#xD;
+            <layout left="773" top="1006" width="146" height="31" compilerOrder="233">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__21" compilerOrder="234"/>
+            </layout>&#xD;
+            <layout left="773" top="1040" width="146" height="31" compilerOrder="235">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__22" compilerOrder="236"/>
+            </layout>&#xD;
+            <layout left="773" top="1074" width="146" height="31" compilerOrder="237">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__23" compilerOrder="238"/>
+            </layout>&#xD;	
+            <layout left="773" top="1108" width="146" height="31" compilerOrder="239">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__24" compilerOrder="240"/>
+            </layout>&#xD;			
+            <layout left="773" top="1144" width="146" height="31" compilerOrder="241">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__25" compilerOrder="242"/>
+            </layout>&#xD;	
+            <layout left="773" top="1178" width="146" height="31" compilerOrder="243">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__26" compilerOrder="244"/>
+            </layout>&#xD;				
+            <layout left="773" top="1210" width="146" height="31" compilerOrder="245">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__27" compilerOrder="246"/>
+            </layout>&#xD;
+            <layout left="773" top="1245" width="146" height="31" compilerOrder="245">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__28" compilerOrder="246"/>
+            </layout>&#xD;
+        </rectangle>
+    </scrollBox>
+</form>

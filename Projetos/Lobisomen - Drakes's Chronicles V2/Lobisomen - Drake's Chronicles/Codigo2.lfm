@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCodigo2" height="0" theme="light">
+
+<dataLink fields="{'Pata5C1', 'Pata4C1', 'Pata3C1', 'Pata2C1', 'Pata1C1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C1 == true then
+		sheet.Pata4C1 = true;
+		sheet.Pata3C1 = true;
+		sheet.Pata2C1 = true;
+		sheet.Pata1C1 = true;
+	elseif sheet.Pata4C1 == true then
+		sheet.Pata5C1 = false;
+		sheet.Pata3C1 = true;
+		sheet.Pata2C1 = true;
+		sheet.Pata1C1 = true;
+	elseif sheet.Pata3C1 == true then
+		sheet.Pata5C1 = false;
+		sheet.Pata4C1 = false;
+		sheet.Pata2C1 = true;
+		sheet.Pata1C1 = true;
+	elseif sheet.Pata2C1 == true then
+		sheet.Pata5C1 = false;
+		sheet.Pata4C1 = false;
+		sheet.Pata3C1 = false;
+		sheet.Pata1C1 = true;	
+	elseif sheet.Pata1C1 == true then
+		sheet.Pata5C1 = false;
+		sheet.Pata4C1 = false;
+		sheet.Pata3C1 = false;
+		sheet.Pata2C1 = false;
+	elseif sheet.Pata1C1 == false then
+		sheet.Pata5C1 = false;
+		sheet.Pata4C1 = false;
+		sheet.Pata3C1 = false;
+		sheet.Pata2C1 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C2', 'Pata4C2', 'Pata3C2', 'Pata2C2', 'Pata1C2'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C2 == true then
+		sheet.Pata4C2 = true;
+		sheet.Pata3C2 = true;
+		sheet.Pata2C2 = true;
+		sheet.Pata1C2 = true;
+	elseif sheet.Pata4C2 == true then
+		sheet.Pata5C2 = false;
+		sheet.Pata3C2 = true;
+		sheet.Pata2C2 = true;
+		sheet.Pata1C2 = true;
+	elseif sheet.Pata3C2 == true then
+		sheet.Pata5C2 = false;
+		sheet.Pata4C2 = false;
+		sheet.Pata2C2 = true;
+		sheet.Pata1C2 = true;
+	elseif sheet.Pata2C2 == true then
+		sheet.Pata5C2 = false;
+		sheet.Pata4C2 = false;
+		sheet.Pata3C2 = false;
+		sheet.Pata1C2 = true;	
+	elseif sheet.Pata1C2 == true then
+		sheet.Pata5C2 = false;
+		sheet.Pata4C2 = false;
+		sheet.Pata3C2 = false;
+		sheet.Pata2C2 = false;
+	elseif sheet.Pata1C2 == false then
+		sheet.Pata5C2 = false;
+		sheet.Pata4C2 = false;
+		sheet.Pata3C2 = false;
+		sheet.Pata2C2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C3', 'Pata4C3', 'Pata3C3', 'Pata2C3', 'Pata1C3'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C3 == true then
+		sheet.Pata4C3 = true;
+		sheet.Pata3C3 = true;
+		sheet.Pata2C3 = true;
+		sheet.Pata1C3 = true;
+	elseif sheet.Pata4C3 == true then
+		sheet.Pata5C3 = false;
+		sheet.Pata3C3 = true;
+		sheet.Pata2C3 = true;
+		sheet.Pata1C3 = true;
+	elseif sheet.Pata3C3 == true then
+		sheet.Pata5C3 = false;
+		sheet.Pata4C3 = false;
+		sheet.Pata2C3 = true;
+		sheet.Pata1C3 = true;
+	elseif sheet.Pata2C3 == true then
+		sheet.Pata5C3 = false;
+		sheet.Pata4C3 = false;
+		sheet.Pata3C3 = false;
+		sheet.Pata1C3 = true;	
+	elseif sheet.Pata1C3 == true then
+		sheet.Pata5C3 = false;
+		sheet.Pata4C3 = false;
+		sheet.Pata3C3 = false;
+		sheet.Pata2C3 = false;
+	elseif sheet.Pata1C3 == false then
+		sheet.Pata5C3 = false;
+		sheet.Pata4C3 = false;
+		sheet.Pata3C3 = false;
+		sheet.Pata2C3 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C4', 'Pata4C4', 'Pata3C4', 'Pata2C4', 'Pata1C4'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C4 == true then
+		sheet.Pata4C4 = true;
+		sheet.Pata3C4 = true;
+		sheet.Pata2C4 = true;
+		sheet.Pata1C4 = true;
+	elseif sheet.Pata4C4 == true then
+		sheet.Pata5C4 = false;
+		sheet.Pata3C4 = true;
+		sheet.Pata2C4 = true;
+		sheet.Pata1C4 = true;
+	elseif sheet.Pata3C4 == true then
+		sheet.Pata5C4 = false;
+		sheet.Pata4C4 = false;
+		sheet.Pata2C4 = true;
+		sheet.Pata1C4 = true;
+	elseif sheet.Pata2C4 == true then
+		sheet.Pata5C4 = false;
+		sheet.Pata4C4 = false;
+		sheet.Pata3C4 = false;
+		sheet.Pata1C4 = true;	
+	elseif sheet.Pata1C4 == true then
+		sheet.Pata5C4 = false;
+		sheet.Pata4C4 = false;
+		sheet.Pata3C4 = false;
+		sheet.Pata2C4 = false;
+	elseif sheet.Pata1C4 == false then
+		sheet.Pata5C4 = false;
+		sheet.Pata4C4 = false;
+		sheet.Pata3C4 = false;
+		sheet.Pata2C4 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C5', 'Pata4C5', 'Pata3C5', 'Pata2C5', 'Pata1C5'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C5 == true then
+		sheet.Pata4C5 = true;
+		sheet.Pata3C5 = true;
+		sheet.Pata2C5 = true;
+		sheet.Pata1C5 = true;
+	elseif sheet.Pata4C5 == true then
+		sheet.Pata5C5 = false;
+		sheet.Pata3C5 = true;
+		sheet.Pata2C5 = true;
+		sheet.Pata1C5 = true;
+	elseif sheet.Pata3C5 == true then
+		sheet.Pata5C5 = false;
+		sheet.Pata4C5 = false;
+		sheet.Pata2C5 = true;
+		sheet.Pata1C5 = true;
+	elseif sheet.Pata2C5 == true then
+		sheet.Pata5C5 = false;
+		sheet.Pata4C5 = false;
+		sheet.Pata3C5 = false;
+		sheet.Pata1C5 = true;	
+	elseif sheet.Pata1C5 == true then
+		sheet.Pata5C5 = false;
+		sheet.Pata4C5 = false;
+		sheet.Pata3C5 = false;
+		sheet.Pata2C5 = false;
+	elseif sheet.Pata1C5 == false then
+		sheet.Pata5C5 = false;
+		sheet.Pata4C5 = false;
+		sheet.Pata3C5 = false;
+		sheet.Pata2C5 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C6', 'Pata4C6', 'Pata3C6', 'Pata2C6', 'Pata1C6'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C6 == true then
+		sheet.Pata4C6 = true;
+		sheet.Pata3C6 = true;
+		sheet.Pata2C6 = true;
+		sheet.Pata1C6 = true;
+	elseif sheet.Pata4C6 == true then
+		sheet.Pata5C6 = false;
+		sheet.Pata3C6 = true;
+		sheet.Pata2C6 = true;
+		sheet.Pata1C6 = true;
+	elseif sheet.Pata3C6 == true then
+		sheet.Pata5C6 = false;
+		sheet.Pata4C6 = false;
+		sheet.Pata2C6 = true;
+		sheet.Pata1C6 = true;
+	elseif sheet.Pata2C6 == true then
+		sheet.Pata5C6 = false;
+		sheet.Pata4C6 = false;
+		sheet.Pata3C6 = false;
+		sheet.Pata1C6 = true;	
+	elseif sheet.Pata1C6 == true then
+		sheet.Pata5C6 = false;
+		sheet.Pata4C6 = false;
+		sheet.Pata3C6 = false;
+		sheet.Pata2C6 = false;
+	elseif sheet.Pata1C6 == false then
+		sheet.Pata5C6 = false;
+		sheet.Pata4C6 = false;
+		sheet.Pata3C6 = false;
+		sheet.Pata2C6 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C7', 'Pata4C7', 'Pata3C7', 'Pata2C7', 'Pata1C7'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C7 == true then
+		sheet.Pata4C7 = true;
+		sheet.Pata3C7 = true;
+		sheet.Pata2C7 = true;
+		sheet.Pata1C7 = true;
+	elseif sheet.Pata4C7 == true then
+		sheet.Pata5C7 = false;
+		sheet.Pata3C7 = true;
+		sheet.Pata2C7 = true;
+		sheet.Pata1C7 = true;
+	elseif sheet.Pata3C7 == true then
+		sheet.Pata5C7 = false;
+		sheet.Pata4C7 = false;
+		sheet.Pata2C7 = true;
+		sheet.Pata1C7 = true;
+	elseif sheet.Pata2C7 == true then
+		sheet.Pata5C7 = false;
+		sheet.Pata4C7 = false;
+		sheet.Pata3C7 = false;
+		sheet.Pata1C7 = true;	
+	elseif sheet.Pata1C7 == true then
+		sheet.Pata5C7 = false;
+		sheet.Pata4C7 = false;
+		sheet.Pata3C7 = false;
+		sheet.Pata2C7 = false;
+	elseif sheet.Pata1C7 == false then
+		sheet.Pata5C7 = false;
+		sheet.Pata4C7 = false;
+		sheet.Pata3C7 = false;
+		sheet.Pata2C7 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C8', 'Pata4C8', 'Pata3C8', 'Pata2C8', 'Pata1C8'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C8 == true then
+		sheet.Pata4C8 = true;
+		sheet.Pata3C8 = true;
+		sheet.Pata2C8 = true;
+		sheet.Pata1C8 = true;
+	elseif sheet.Pata4C8 == true then
+		sheet.Pata5C8 = false;
+		sheet.Pata3C8 = true;
+		sheet.Pata2C8 = true;
+		sheet.Pata1C8 = true;
+	elseif sheet.Pata3C8 == true then
+		sheet.Pata5C8 = false;
+		sheet.Pata4C8 = false;
+		sheet.Pata2C8 = true;
+		sheet.Pata1C8 = true;
+	elseif sheet.Pata2C8 == true then
+		sheet.Pata5C8 = false;
+		sheet.Pata4C8 = false;
+		sheet.Pata3C8 = false;
+		sheet.Pata1C8 = true;	
+	elseif sheet.Pata1C8 == true then
+		sheet.Pata5C8 = false;
+		sheet.Pata4C8 = false;
+		sheet.Pata3C8 = false;
+		sheet.Pata2C8 = false;
+	elseif sheet.Pata1C8 == false then
+		sheet.Pata5C8 = false;
+		sheet.Pata4C8 = false;
+		sheet.Pata3C8 = false;
+		sheet.Pata2C8 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C9', 'Pata4C9', 'Pata3C9', 'Pata2C9', 'Pata1C9'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C9 == true then
+		sheet.Pata4C9 = true;
+		sheet.Pata3C9 = true;
+		sheet.Pata2C9 = true;
+		sheet.Pata1C9 = true;
+	elseif sheet.Pata4C9 == true then
+		sheet.Pata5C9 = false;
+		sheet.Pata3C9 = true;
+		sheet.Pata2C9 = true;
+		sheet.Pata1C9 = true;
+	elseif sheet.Pata3C9 == true then
+		sheet.Pata5C9 = false;
+		sheet.Pata4C9 = false;
+		sheet.Pata2C9 = true;
+		sheet.Pata1C9 = true;
+	elseif sheet.Pata2C9 == true then
+		sheet.Pata5C9 = false;
+		sheet.Pata4C9 = false;
+		sheet.Pata3C9 = false;
+		sheet.Pata1C9 = true;	
+	elseif sheet.Pata1C9 == true then
+		sheet.Pata5C9 = false;
+		sheet.Pata4C9 = false;
+		sheet.Pata3C9 = false;
+		sheet.Pata2C9 = false;
+	elseif sheet.Pata1C9 == false then
+		sheet.Pata5C9 = false;
+		sheet.Pata4C9 = false;
+		sheet.Pata3C9 = false;
+		sheet.Pata2C9 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C10', 'Pata4C10', 'Pata3C10', 'Pata2C10', 'Pata1C10'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C10 == true then
+		sheet.Pata4C10 = true;
+		sheet.Pata3C10 = true;
+		sheet.Pata2C10 = true;
+		sheet.Pata1C10 = true;
+	elseif sheet.Pata4C10 == true then
+		sheet.Pata5C10 = false;
+		sheet.Pata3C10 = true;
+		sheet.Pata2C10 = true;
+		sheet.Pata1C10 = true;
+	elseif sheet.Pata3C10 == true then
+		sheet.Pata5C10 = false;
+		sheet.Pata4C10 = false;
+		sheet.Pata2C10 = true;
+		sheet.Pata1C10 = true;
+	elseif sheet.Pata2C10 == true then
+		sheet.Pata5C10 = false;
+		sheet.Pata4C10 = false;
+		sheet.Pata3C10 = false;
+		sheet.Pata1C10 = true;	
+	elseif sheet.Pata1C10 == true then
+		sheet.Pata5C10 = false;
+		sheet.Pata4C10 = false;
+		sheet.Pata3C10 = false;
+		sheet.Pata2C10 = false;
+	elseif sheet.Pata1C10 == false then
+		sheet.Pata5C10 = false;
+		sheet.Pata4C10 = false;
+		sheet.Pata3C10 = false;
+		sheet.Pata2C10 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C11', 'Pata4C11', 'Pata3C11', 'Pata2C11', 'Pata1C11'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C11 == true then
+		sheet.Pata4C11 = true;
+		sheet.Pata3C11 = true;
+		sheet.Pata2C11 = true;
+		sheet.Pata1C11 = true;
+	elseif sheet.Pata4C11 == true then
+		sheet.Pata5C11 = false;
+		sheet.Pata3C11 = true;
+		sheet.Pata2C11 = true;
+		sheet.Pata1C11 = true;
+	elseif sheet.Pata3C11 == true then
+		sheet.Pata5C11 = false;
+		sheet.Pata4C11 = false;
+		sheet.Pata2C11 = true;
+		sheet.Pata1C11 = true;
+	elseif sheet.Pata2C11 == true then
+		sheet.Pata5C11 = false;
+		sheet.Pata4C11 = false;
+		sheet.Pata3C11 = false;
+		sheet.Pata1C11 = true;	
+	elseif sheet.Pata1C11 == true then
+		sheet.Pata5C11 = false;
+		sheet.Pata4C11 = false;
+		sheet.Pata3C11 = false;
+		sheet.Pata2C11 = false;
+	elseif sheet.Pata1C11 == false then
+		sheet.Pata5C11 = false;
+		sheet.Pata4C11 = false;
+		sheet.Pata3C11 = false;
+		sheet.Pata2C11 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C12', 'Pata4C12', 'Pata3C12', 'Pata2C12', 'Pata1C12'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C12 == true then
+		sheet.Pata4C12 = true;
+		sheet.Pata3C12 = true;
+		sheet.Pata2C12 = true;
+		sheet.Pata1C12 = true;
+	elseif sheet.Pata4C12 == true then
+		sheet.Pata5C12 = false;
+		sheet.Pata3C12 = true;
+		sheet.Pata2C12 = true;
+		sheet.Pata1C12 = true;
+	elseif sheet.Pata3C12 == true then
+		sheet.Pata5C12 = false;
+		sheet.Pata4C12 = false;
+		sheet.Pata2C12 = true;
+		sheet.Pata1C12 = true;
+	elseif sheet.Pata2C12 == true then
+		sheet.Pata5C12 = false;
+		sheet.Pata4C12 = false;
+		sheet.Pata3C12 = false;
+		sheet.Pata1C12 = true;	
+	elseif sheet.Pata1C12 == true then
+		sheet.Pata5C12 = false;
+		sheet.Pata4C12 = false;
+		sheet.Pata3C12 = false;
+		sheet.Pata2C12 = false;
+	elseif sheet.Pata1C12 == false then
+		sheet.Pata5C12 = false;
+		sheet.Pata4C12 = false;
+		sheet.Pata3C12 = false;
+		sheet.Pata2C12 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C13', 'Pata4C13', 'Pata3C13', 'Pata2C13', 'Pata1C13'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C13 == true then
+		sheet.Pata4C13 = true;
+		sheet.Pata3C13 = true;
+		sheet.Pata2C13 = true;
+		sheet.Pata1C13 = true;
+	elseif sheet.Pata4C13 == true then
+		sheet.Pata5C13 = false;
+		sheet.Pata3C13 = true;
+		sheet.Pata2C13 = true;
+		sheet.Pata1C13 = true;
+	elseif sheet.Pata3C13 == true then
+		sheet.Pata5C13 = false;
+		sheet.Pata4C13 = false;
+		sheet.Pata2C13 = true;
+		sheet.Pata1C13 = true;
+	elseif sheet.Pata2C13 == true then
+		sheet.Pata5C13 = false;
+		sheet.Pata4C13 = false;
+		sheet.Pata3C13 = false;
+		sheet.Pata1C13 = true;	
+	elseif sheet.Pata1C13 == true then
+		sheet.Pata5C13 = false;
+		sheet.Pata4C13 = false;
+		sheet.Pata3C13 = false;
+		sheet.Pata2C13 = false;
+	elseif sheet.Pata1C13 == false then
+		sheet.Pata5C13 = false;
+		sheet.Pata4C13 = false;
+		sheet.Pata3C13 = false;
+		sheet.Pata2C13 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C14', 'Pata4C14', 'Pata3C14', 'Pata2C14', 'Pata1C14'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C14 == true then
+		sheet.Pata4C14 = true;
+		sheet.Pata3C14 = true;
+		sheet.Pata2C14 = true;
+		sheet.Pata1C14 = true;
+	elseif sheet.Pata4C14 == true then
+		sheet.Pata5C14 = false;
+		sheet.Pata3C14 = true;
+		sheet.Pata2C14 = true;
+		sheet.Pata1C14 = true;
+	elseif sheet.Pata3C14 == true then
+		sheet.Pata5C14 = false;
+		sheet.Pata4C14 = false;
+		sheet.Pata2C14 = true;
+		sheet.Pata1C14 = true;
+	elseif sheet.Pata2C14 == true then
+		sheet.Pata5C14 = false;
+		sheet.Pata4C14 = false;
+		sheet.Pata3C14 = false;
+		sheet.Pata1C14 = true;	
+	elseif sheet.Pata1C14 == true then
+		sheet.Pata5C14 = false;
+		sheet.Pata4C14 = false;
+		sheet.Pata3C14 = false;
+		sheet.Pata2C14 = false;
+	elseif sheet.Pata1C14 == false then
+		sheet.Pata5C14 = false;
+		sheet.Pata4C14 = false;
+		sheet.Pata3C14 = false;
+		sheet.Pata2C14 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C15', 'Pata4C15', 'Pata3C15', 'Pata2C15', 'Pata1C15'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C15 == true then
+		sheet.Pata4C15 = true;
+		sheet.Pata3C15 = true;
+		sheet.Pata2C15 = true;
+		sheet.Pata1C15 = true;
+	elseif sheet.Pata4C15 == true then
+		sheet.Pata5C15 = false;
+		sheet.Pata3C15 = true;
+		sheet.Pata2C15 = true;
+		sheet.Pata1C15 = true;
+	elseif sheet.Pata3C15 == true then
+		sheet.Pata5C15 = false;
+		sheet.Pata4C15 = false;
+		sheet.Pata2C15 = true;
+		sheet.Pata1C15 = true;
+	elseif sheet.Pata2C15 == true then
+		sheet.Pata5C15 = false;
+		sheet.Pata4C15 = false;
+		sheet.Pata3C15 = false;
+		sheet.Pata1C15 = true;	
+	elseif sheet.Pata1C15 == true then
+		sheet.Pata5C15 = false;
+		sheet.Pata4C15 = false;
+		sheet.Pata3C15 = false;
+		sheet.Pata2C15 = false;
+	elseif sheet.Pata1C15 == false then
+		sheet.Pata5C15 = false;
+		sheet.Pata4C15 = false;
+		sheet.Pata3C15 = false;
+		sheet.Pata2C15 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C16', 'Pata4C16', 'Pata3C16', 'Pata2C16', 'Pata1C16'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C16 == true then
+		sheet.Pata4C16 = true;
+		sheet.Pata3C16 = true;
+		sheet.Pata2C16 = true;
+		sheet.Pata1C16 = true;
+	elseif sheet.Pata4C16 == true then
+		sheet.Pata5C16 = false;
+		sheet.Pata3C16 = true;
+		sheet.Pata2C16 = true;
+		sheet.Pata1C16 = true;
+	elseif sheet.Pata3C16 == true then
+		sheet.Pata5C16 = false;
+		sheet.Pata4C16 = false;
+		sheet.Pata2C16 = true;
+		sheet.Pata1C16 = true;
+	elseif sheet.Pata2C16 == true then
+		sheet.Pata5C16 = false;
+		sheet.Pata4C16 = false;
+		sheet.Pata3C16 = false;
+		sheet.Pata1C16 = true;	
+	elseif sheet.Pata1C16 == true then
+		sheet.Pata5C16 = false;
+		sheet.Pata4C16 = false;
+		sheet.Pata3C16 = false;
+		sheet.Pata2C16 = false;
+	elseif sheet.Pata1C16 == false then
+		sheet.Pata5C16 = false;
+		sheet.Pata4C16 = false;
+		sheet.Pata3C16 = false;
+		sheet.Pata2C16 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C17', 'Pata4C17', 'Pata3C17', 'Pata2C17', 'Pata1C17'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C17 == true then
+		sheet.Pata4C17 = true;
+		sheet.Pata3C17 = true;
+		sheet.Pata2C17 = true;
+		sheet.Pata1C17 = true;
+	elseif sheet.Pata4C17 == true then
+		sheet.Pata5C17 = false;
+		sheet.Pata3C17 = true;
+		sheet.Pata2C17 = true;
+		sheet.Pata1C17 = true;
+	elseif sheet.Pata3C17 == true then
+		sheet.Pata5C17 = false;
+		sheet.Pata4C17 = false;
+		sheet.Pata2C17 = true;
+		sheet.Pata1C17 = true;
+	elseif sheet.Pata2C17 == true then
+		sheet.Pata5C17 = false;
+		sheet.Pata4C17 = false;
+		sheet.Pata3C17 = false;
+		sheet.Pata1C17 = true;	
+	elseif sheet.Pata1C17 == true then
+		sheet.Pata5C17 = false;
+		sheet.Pata4C17 = false;
+		sheet.Pata3C17 = false;
+		sheet.Pata2C17 = false;
+	elseif sheet.Pata1C17 == false then
+		sheet.Pata5C17 = false;
+		sheet.Pata4C17 = false;
+		sheet.Pata3C17 = false;
+		sheet.Pata2C17 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C18', 'Pata4C18', 'Pata3C18', 'Pata2C18', 'Pata1C18'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C18 == true then
+		sheet.Pata4C18 = true;
+		sheet.Pata3C18 = true;
+		sheet.Pata2C18 = true;
+		sheet.Pata1C18 = true;
+	elseif sheet.Pata4C18 == true then
+		sheet.Pata5C18 = false;
+		sheet.Pata3C18 = true;
+		sheet.Pata2C18 = true;
+		sheet.Pata1C18 = true;
+	elseif sheet.Pata3C18 == true then
+		sheet.Pata5C18 = false;
+		sheet.Pata4C18 = false;
+		sheet.Pata2C18 = true;
+		sheet.Pata1C18 = true;
+	elseif sheet.Pata2C18 == true then
+		sheet.Pata5C18 = false;
+		sheet.Pata4C18 = false;
+		sheet.Pata3C18 = false;
+		sheet.Pata1C18 = true;	
+	elseif sheet.Pata1C18 == true then
+		sheet.Pata5C18 = false;
+		sheet.Pata4C18 = false;
+		sheet.Pata3C18 = false;
+		sheet.Pata2C18 = false;
+	elseif sheet.Pata1C18 == false then
+		sheet.Pata5C18 = false;
+		sheet.Pata4C18 = false;
+		sheet.Pata3C18 = false;
+		sheet.Pata2C18 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C19', 'Pata4C19', 'Pata3C19', 'Pata2C19', 'Pata1C19'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C19 == true then
+		sheet.Pata4C19 = true;
+		sheet.Pata3C19 = true;
+		sheet.Pata2C19 = true;
+		sheet.Pata1C19 = true;
+	elseif sheet.Pata4C19 == true then
+		sheet.Pata5C19 = false;
+		sheet.Pata3C19 = true;
+		sheet.Pata2C19 = true;
+		sheet.Pata1C19 = true;
+	elseif sheet.Pata3C19 == true then
+		sheet.Pata5C19 = false;
+		sheet.Pata4C19 = false;
+		sheet.Pata2C19 = true;
+		sheet.Pata1C19 = true;
+	elseif sheet.Pata2C19 == true then
+		sheet.Pata5C19 = false;
+		sheet.Pata4C19 = false;
+		sheet.Pata3C19 = false;
+		sheet.Pata1C19 = true;	
+	elseif sheet.Pata1C19 == true then
+		sheet.Pata5C19 = false;
+		sheet.Pata4C19 = false;
+		sheet.Pata3C19 = false;
+		sheet.Pata2C19 = false;
+	elseif sheet.Pata1C19 == false then
+		sheet.Pata5C19 = false;
+		sheet.Pata4C19 = false;
+		sheet.Pata3C19 = false;
+		sheet.Pata2C19 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C20', 'Pata4C20', 'Pata3C20', 'Pata2C20', 'Pata1C20'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C20 == true then
+		sheet.Pata4C20 = true;
+		sheet.Pata3C20 = true;
+		sheet.Pata2C20 = true;
+		sheet.Pata1C20 = true;
+	elseif sheet.Pata4C20 == true then
+		sheet.Pata5C20 = false;
+		sheet.Pata3C20 = true;
+		sheet.Pata2C20 = true;
+		sheet.Pata1C20 = true;
+	elseif sheet.Pata3C20 == true then
+		sheet.Pata5C20 = false;
+		sheet.Pata4C20 = false;
+		sheet.Pata2C20 = true;
+		sheet.Pata1C20 = true;
+	elseif sheet.Pata2C20 == true then
+		sheet.Pata5C20 = false;
+		sheet.Pata4C20 = false;
+		sheet.Pata3C20 = false;
+		sheet.Pata1C20 = true;	
+	elseif sheet.Pata1C20 == true then
+		sheet.Pata5C20 = false;
+		sheet.Pata4C20 = false;
+		sheet.Pata3C20 = false;
+		sheet.Pata2C20 = false;
+	elseif sheet.Pata1C20 == false then
+		sheet.Pata5C20 = false;
+		sheet.Pata4C20 = false;
+		sheet.Pata3C20 = false;
+		sheet.Pata2C20 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C21', 'Pata4C21', 'Pata3C21', 'Pata2C21', 'Pata1C21'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C21 == true then
+		sheet.Pata4C21 = true;
+		sheet.Pata3C21 = true;
+		sheet.Pata2C21 = true;
+		sheet.Pata1C21 = true;
+	elseif sheet.Pata4C21 == true then
+		sheet.Pata5C21 = false;
+		sheet.Pata3C21 = true;
+		sheet.Pata2C21 = true;
+		sheet.Pata1C21 = true;
+	elseif sheet.Pata3C21 == true then
+		sheet.Pata5C21 = false;
+		sheet.Pata4C21 = false;
+		sheet.Pata2C21 = true;
+		sheet.Pata1C21 = true;
+	elseif sheet.Pata2C21 == true then
+		sheet.Pata5C21 = false;
+		sheet.Pata4C21 = false;
+		sheet.Pata3C21 = false;
+		sheet.Pata1C21 = true;	
+	elseif sheet.Pata1C21 == true then
+		sheet.Pata5C21 = false;
+		sheet.Pata4C21 = false;
+		sheet.Pata3C21 = false;
+		sheet.Pata2C21 = false;
+	elseif sheet.Pata1C21 == false then
+		sheet.Pata5C21 = false;
+		sheet.Pata4C21 = false;
+		sheet.Pata3C21 = false;
+		sheet.Pata2C21 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'Pata5C22', 'Pata4C22', 'Pata3C22', 'Pata2C22', 'Pata1C22'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Pata5C22 == true then
+		sheet.Pata4C22 = true;
+		sheet.Pata3C22 = true;
+		sheet.Pata2C22 = true;
+		sheet.Pata1C22 = true;
+	elseif sheet.Pata4C22 == true then
+		sheet.Pata5C22 = false;
+		sheet.Pata3C22 = true;
+		sheet.Pata2C22 = true;
+		sheet.Pata1C22 = true;
+	elseif sheet.Pata3C22 == true then
+		sheet.Pata5C22 = false;
+		sheet.Pata4C22 = false;
+		sheet.Pata2C22 = true;
+		sheet.Pata1C22 = true;
+	elseif sheet.Pata2C22 == true then
+		sheet.Pata5C22 = false;
+		sheet.Pata4C22 = false;
+		sheet.Pata3C22 = false;
+		sheet.Pata1C22 = true;	
+	elseif sheet.Pata1C22 == true then
+		sheet.Pata5C22 = false;
+		sheet.Pata4C22 = false;
+		sheet.Pata3C22 = false;
+		sheet.Pata2C22 = false;
+	elseif sheet.Pata1C22 == false then
+		sheet.Pata5C22 = false;
+		sheet.Pata4C22 = false;
+		sheet.Pata3C22 = false;
+		sheet.Pata2C22 = false;
+	end;
+	</event>
+</dataLink>
+</form>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLobisomen4_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmLobisomen4_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmLobisomen4_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/4.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+	<!-- História -->
+		<!-- Prelúdio -->
+			<layout left="71" top="237" width="753" height="322" compilerOrder="1">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="753" height="322" field="Preludio" compilerOrder="2"/>
+			</layout>&#xD;			
+	<!-- Descrição -->	
+		<!-- Idade -->
+			<layout left="110" top="594" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="Idade" compilerOrder="4"/>
+			</layout>&#xD;
+		<!-- Cabelos -->
+			<layout left="127" top="615" width="150" height="30" compilerOrder="5">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="150" height="30" field="Cabelos" compilerOrder="6"/>
+			</layout>&#xD;
+		<!-- Olhos -->
+			<layout left="117" top="636" width="165" height="30" compilerOrder="7">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="165" height="30" field="Olhos" compilerOrder="8"/>
+			</layout>&#xD;
+		<!-- Raça -->
+			<layout left="110" top="657" width="172" height="30" compilerOrder="9">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="172" height="30" field="Raça" compilerOrder="10"/>
+			</layout>&#xD;
+		<!-- Nacionalidade -->
+			<layout left="175" top="678" width="105" height="30" compilerOrder="11">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="105" height="30" field="Nacionalidade" compilerOrder="12"/>
+			</layout>&#xD;
+		<!-- Sexo -->
+			<layout left="107" top="699" width="170" height="30" compilerOrder="13">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="Sexo" compilerOrder="14"/>
+			</layout>&#xD;	
+		<!-- Descrição -->
+			<layout left="294" top="593" width="530" height="153" compilerOrder="15">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="530" height="153" field="Descrição" compilerOrder="16"/>
+			</layout>&#xD;			
+		<!-- Cicatrizes de Batalha -->
+			<layout left="380" top="753" width="445" height="58" compilerOrder="17">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="445" height="58" field="Cicatrizes" compilerOrder="18"/>
+			</layout>&#xD;	
+		<!-- Deformidades de Impuro -->
+			<layout left="400" top="814" width="425" height="44" compilerOrder="19">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="425" height="44" field="Deformidades" compilerOrder="20"/>
+			</layout>&#xD;	
+		<!-- Hominideo Altura-->
+			<layout left="155" top="741" width="60" height="30" compilerOrder="21">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="60" height="30" field="HoAltura" compilerOrder="22"/>
+			</layout>&#xD;
+		<!-- Hominideo Peso -->
+			<layout left="218" top="741" width="55" height="30" compilerOrder="23">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="HoPeso" compilerOrder="24"/>
+			</layout>&#xD;	
+		<!-- Glabro Altura-->
+			<layout left="123" top="763" width="90" height="30" compilerOrder="25">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="90" height="30" field="GlaAltura" compilerOrder="26"/>
+			</layout>&#xD;
+		<!-- Glabro Peso -->
+			<layout left="218" top="763" width="55" height="30" compilerOrder="27">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="GlaPeso" compilerOrder="28"/>
+			</layout>&#xD;			
+		<!-- Crinos Altura-->
+			<layout left="120" top="785" width="95" height="30" compilerOrder="29">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="95" height="30" field="CriAltura" compilerOrder="30"/>
+			</layout>&#xD;
+		<!-- Crinos Peso -->
+			<layout left="218" top="785" width="55" height="30" compilerOrder="31">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="CriPeso" compilerOrder="32"/>
+			</layout>&#xD;	
+		<!-- Hispo Altura-->
+			<layout left="118" top="805" width="98" height="30" compilerOrder="33">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="98" height="30" field="HiAltura" compilerOrder="34"/>
+			</layout>&#xD;
+		<!-- Hispo Peso -->
+			<layout left="218" top="805" width="55" height="30" compilerOrder="35">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="HiPeso" compilerOrder="36"/>
+			</layout>&#xD;	
+		<!-- Lupino Altura-->
+			<layout left="125" top="825" width="90" height="30" compilerOrder="37">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="90" height="30" field="LuAltura" compilerOrder="38"/>
+			</layout>&#xD;
+		<!-- Lupino Peso -->
+			<layout left="218" top="825" width="55" height="30" compilerOrder="39">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="55" height="30" field="LuPeso" compilerOrder="40"/>
+			</layout>&#xD;		
+	<!-- Visual -->
+		<!-- Relações da Matilha -->
+			<layout left="75" top="920" width="360" height="268" compilerOrder="41">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="360" height="268" field="RM" compilerOrder="42"/>
+			</layout>&#xD;	
+		<!-- Imagem Jogador -->
+			<layout left="464" top="920" width="360" height="268" compilerOrder="43">			
+			        <image field="imagemDoPersonagem" editable="true" style="autoFit" width="360" height="268" />
+			</layout>&#xD;			
+		</rectangle>
+    </scrollBox>
+</form>

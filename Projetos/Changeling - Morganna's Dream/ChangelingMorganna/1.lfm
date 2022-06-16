@@ -1,0 +1,1752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmChangelingMorganna1_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmChangelingMorganna1_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmChangelingMorganna1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="892" height="1263" color="white">&#xD;
+            <image left="0" top="0" width="892" height="1263" src="images/1.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;			
+<!-- Nome Changeling -->			
+			<layout left="120" top="118" width="190" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="190" height="30" field="NomeChagenling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Nome Jogador -->			
+			<layout left="130" top="147" width="180" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="180" height="30" field="NomeJogador" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Nome Crônica -->			
+			<layout left="135" top="175" width="175" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="175" height="30" field="NomeCrônica" compilerOrder="4"/>
+			</layout>&#xD;
+			
+<!-- Corte Changeling -->			
+			<layout left="380" top="118" width="190" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="190" height="30" field="CorteChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Legados Changeling -->			
+			<layout left="395" top="148" width="175" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="175" height="30" field="LegadosChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Casa -->			
+			<layout left="375" top="175" width="190" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="190" height="30" field="CasaChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+			
+<!-- Aspceto Changeling -->			
+			<layout left="660" top="118" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="AspectoChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Kith Changeling  -->			
+			<layout left="633" top="148" width="200" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="200" height="30" field="KithChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Mixórdia Changeling-->			
+			<layout left="675" top="175" width="160" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="160" height="30" field="MixordiaChangeling" compilerOrder="4"/>
+			</layout>&#xD;
+<!-- Atributos -->
+	<!-- Fisicos -->
+		<!--Força -->
+		<!-- bola 1 Força -->
+			<layout left="234" top="281" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1forca" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Força -->
+			<layout left="248" top="281" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2forca" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Força -->
+			<layout left="263" top="281" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3forca" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Força -->
+			<layout left="277" top="281" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4forca" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Força -->
+			<layout left="291" top="281" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5forca" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Destreza -->
+		<!-- bola 1 Destreza -->
+			<layout left="234" top="304" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1destreza" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Destreza -->
+			<layout left="248" top="304" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2destreza" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Destreza -->
+			<layout left="263" top="304" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3destreza" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Destreza -->
+			<layout left="277" top="304" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4destreza" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Destreza -->
+			<layout left="291" top="304" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5destreza" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Vigor -->
+		<!-- bola 1 Vigor -->
+			<layout left="234" top="324" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1vigor" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Vigor -->
+			<layout left="248" top="324" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2vigor" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Vigor -->
+			<layout left="263" top="324" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3vigor" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Vigor -->
+			<layout left="277" top="324" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4vigor" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Vigor -->
+			<layout left="291" top="324" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5vigor" compilerOrder="26"/>
+            </layout>&#xD;					
+	<!-- Sociais -->
+		<!-- Carisma -->
+		<!-- bola 1 Carisma -->
+			<layout left="495" top="281" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1carisma" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Carisma -->
+			<layout left="509" top="281" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2carisma" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Carisma -->
+			<layout left="524" top="281" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3carisma" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Carisma -->
+			<layout left="538" top="281" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4carisma" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Carisma -->
+			<layout left="552" top="281" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5carisma" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Manipulação -->
+		<!-- bola 1 Manipulação -->
+			<layout left="495" top="304" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1manipu" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Manipulação -->
+			<layout left="509" top="304" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2manipu" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Manipulação -->
+			<layout left="524" top="304" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3manipu" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Manipulação -->
+			<layout left="538" top="304" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4manipu" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Manipulação -->
+			<layout left="552" top="304" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5manipu" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Aparência -->
+		<!-- bola 1 Aparência -->
+			<layout left="495" top="324" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1apare" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Aparência -->
+			<layout left="509" top="324" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2apare" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Aparência -->
+			<layout left="524" top="324" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3apare" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Aparência -->
+			<layout left="538" top="324" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4apare" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Aparência -->
+			<layout left="552" top="324" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5apare" compilerOrder="26"/>
+            </layout>&#xD;
+	<!-- Mentais -->
+		<!-- Percepção -->
+		<!-- bola 1 Percepção -->
+			<layout left="751" top="281" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1percep" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Percepção -->
+			<layout left="765" top="281" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2percep" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Percepção -->
+			<layout left="780" top="281" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3percep" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Percepção -->
+			<layout left="794" top="281" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4percep" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Percepção -->
+			<layout left="808" top="281" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5percep" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Inteligência -->
+		<!-- bola 1 Inteligência -->
+			<layout left="751" top="304" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1intel" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Inteligência -->
+			<layout left="765" top="304" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2intel" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Inteligência -->
+			<layout left="780" top="304" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3intel" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Inteligência -->
+			<layout left="795" top="304" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4intel" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Inteligência -->
+			<layout left="808" top="304" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5intel" compilerOrder="26"/>
+            </layout>&#xD;
+		<!-- Raciocinio -->
+		<!-- bola 1 Raciocinio -->
+			<layout left="751" top="324" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1racio" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Raciocinio -->
+			<layout left="765" top="324" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2racio" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Raciocinio -->
+			<layout left="780" top="324" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3racio" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Raciocinio -->
+			<layout left="794" top="324" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4racio" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Raciocinio -->
+			<layout left="808" top="324" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5racio" compilerOrder="26"/>
+            </layout>&#xD;	
+			
+<!-- Habilidades -->	
+	<!-- Talentos -->
+		<!-- bola 1 Prontidão -->
+			<layout left="234" top="417" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1pront" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Prontidão -->
+			<layout left="248" top="417" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2pront" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Prontidão -->
+			<layout left="263" top="417" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3pront" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Prontidão -->
+			<layout left="277" top="417" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4pront" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Prontidão -->
+			<layout left="291" top="417" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5pront" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Esportes -->
+			<layout left="234" top="439" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1espor" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Esportes -->
+			<layout left="248" top="439" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2espor" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Esportes -->
+			<layout left="263" top="439" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3espor" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Esportes -->
+			<layout left="277" top="439" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4espor" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Esportes -->
+			<layout left="291" top="439" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5espor" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- bola 1 Briga -->
+			<layout left="234" top="461" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1briga" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Briga -->
+			<layout left="248" top="461" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2briga" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Briga -->
+			<layout left="263" top="461" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3briga" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Briga -->
+			<layout left="277" top="461" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4briga" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Briga -->
+			<layout left="291" top="461" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5briga" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Empatia -->
+			<layout left="234" top="482" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1empat" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Empatia -->
+			<layout left="248" top="482" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2empat" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Empatia -->
+			<layout left="263" top="482" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3empat" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Empatia -->
+			<layout left="277" top="482" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4empat" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Empatia -->
+			<layout left="291" top="482" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5empat" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Expressão -->
+			<layout left="234" top="504" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1expre" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Expressão -->
+			<layout left="248" top="504" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2expre" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Expressão -->
+			<layout left="263" top="504" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3expre" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Expressão -->
+			<layout left="277" top="504" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4expre" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Expressão -->
+			<layout left="291" top="504" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5expre" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- bola 1 Intimidação -->
+			<layout left="234" top="525" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1intim" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Intimidação -->
+			<layout left="248" top="525" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2intim" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Intimidação -->
+			<layout left="263" top="525" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3intim" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Intimidação -->
+			<layout left="277" top="525" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4intim" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Intimidação -->
+			<layout left="291" top="525" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5intim" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Tino -->
+			<layout left="234" top="545" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1tino" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Tino -->
+			<layout left="248" top="545" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2tino" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Tino -->
+			<layout left="263" top="545" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3tino" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Tino -->
+			<layout left="277" top="545" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4tino" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Tino -->
+			<layout left="291" top="545" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5tino" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Liderança -->
+			<layout left="234" top="566" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1lider" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Liderança -->
+			<layout left="248" top="566" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2lider" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Liderança -->
+			<layout left="263" top="566" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3lider" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Liderança -->
+			<layout left="277" top="566" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4lider" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Liderança -->
+			<layout left="291" top="566" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5lider" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Manha -->
+			<layout left="234" top="587" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1manha" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Manha -->
+			<layout left="248" top="587" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2manha" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Manha -->
+			<layout left="263" top="587" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3manha" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Manha -->
+			<layout left="277" top="587" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4manha" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Manha -->
+			<layout left="291" top="587" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5manha" compilerOrder="26"/>
+            </layout>&#xD;
+		
+		<!-- bola 1 Lábia -->
+			<layout left="234" top="608" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1labia" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Lábia -->
+			<layout left="248" top="608" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2labia" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Lábia -->
+			<layout left="263" top="608" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3labia" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Lábia -->
+			<layout left="277" top="608" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4labia" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Lábia -->
+			<layout left="291" top="608" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5labia" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Esquiva -->
+			<layout left="234" top="628" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1esqui" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Esquiva -->
+			<layout left="248" top="628" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2esqui" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Esquiva -->
+			<layout left="263" top="628" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3esqui" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Esquiva -->
+			<layout left="277" top="628" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4esqui" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Esquiva -->
+			<layout left="291" top="628" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5esqui" compilerOrder="26"/>
+            </layout>&#xD;
+					
+	<!-- Pericias -->
+		<!-- bola 1 Empatia com Animais -->
+			<layout left="495" top="417" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1empca" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Empatia com Animais -->
+			<layout left="509" top="417" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2empca" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Empatia com Animais -->
+			<layout left="524" top="417" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3empca" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Empatia com Animais -->
+			<layout left="538" top="417" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4empca" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Empatia com Animais -->
+			<layout left="552" top="417" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5empca" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Oficios -->
+			<layout left="495" top="439" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1ofi" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Oficios -->
+			<layout left="509" top="439" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2ofi" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Oficios -->
+			<layout left="524" top="439" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3ofi" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Oficios -->
+			<layout left="538" top="439" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4ofi" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Oficios -->
+			<layout left="552" top="439" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5ofi" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- bola 1 Condução -->
+			<layout left="495" top="461" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1condu" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Condução -->
+			<layout left="509" top="461" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2condu" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Condução -->
+			<layout left="524" top="461" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3condu" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Condução -->
+			<layout left="538" top="461" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4condu" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Condução -->
+			<layout left="552" top="461" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5condu" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Etiqueta -->
+			<layout left="495" top="482" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1etique" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Etiqueta -->
+			<layout left="509" top="482" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2etique" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Etiqueta -->
+			<layout left="524" top="482" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3etique" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Etiqueta -->
+			<layout left="538" top="482" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4etique" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Etiqueta -->
+			<layout left="552" top="482" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5etique" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Armas de Projeteis -->
+			<layout left="495" top="504" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1armpr" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Armas de Projeteis -->
+			<layout left="509" top="504" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2armpr" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Armas de Projeteis -->
+			<layout left="524" top="504" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3armpr" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Armas de Projeteis -->
+			<layout left="538" top="504" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4armpr" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Armas de Projeteis -->
+			<layout left="552" top="504" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5armpr" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- bola 1 Segurança -->
+			<layout left="495" top="525" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1segur" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Segurança -->
+			<layout left="509" top="525" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2segur" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Segurança -->
+			<layout left="524" top="525" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3segur" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Segurança -->
+			<layout left="538" top="525" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4segur" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Segurança -->
+			<layout left="552" top="525" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5segur" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Armas Brancas -->
+			<layout left="495" top="545" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1armbr" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Armas Brancas -->
+			<layout left="509" top="545" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2armbr" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Armas Brancas -->
+			<layout left="524" top="545" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3armbr" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Armas Brancas -->
+			<layout left="538" top="545" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4armbr" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Armas Brancas -->
+			<layout left="552" top="545" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5armbr" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Performance -->
+			<layout left="495" top="566" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1perfo" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Performance -->
+			<layout left="509" top="566" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2perfo" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Performance -->
+			<layout left="524" top="566" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3perfo" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Performance -->
+			<layout left="538" top="566" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4perfo" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Performance -->
+			<layout left="552" top="566" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5perfo" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Furtividade -->
+			<layout left="495" top="587" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1furti" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Furtividade -->
+			<layout left="509" top="587" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2furti" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Furtividade -->
+			<layout left="524" top="587" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3furti" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Furtividade -->
+			<layout left="538" top="587" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4furti" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Furtividade -->
+			<layout left="552" top="587" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5furti" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Sobrevivência -->
+			<layout left="495" top="608" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1sobre" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Sobrevivência -->
+			<layout left="509" top="608" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2sobre" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Sobrevivência -->
+			<layout left="524" top="608" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3sobre" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Sobrevivência -->
+			<layout left="538" top="608" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4sobre" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Sobrevivência -->
+			<layout left="552" top="608" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5sobre" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- bola 1 Montaria -->
+			<layout left="495" top="628" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1monta" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Montaria -->
+			<layout left="509" top="628" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2monta" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Montaria -->
+			<layout left="524" top="628" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3monta" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Montaria -->
+			<layout left="538" top="628" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4monta" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Montaria -->
+			<layout left="552" top="628" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5monta" compilerOrder="26"/>
+            </layout>&#xD;
+			
+	<!-- Conhecimentos -->
+		<!-- bola 1 Instrução -->
+			<layout left="751" top="417" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1instru" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Instrução -->
+			<layout left="765" top="417" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2instru" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Instrução -->
+			<layout left="780" top="417" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3instru" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Instrução -->
+			<layout left="794" top="417" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4instru" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Instrução -->
+			<layout left="808" top="417" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5instru" compilerOrder="26"/>
+            </layout>&#xD;	
+	
+		<!-- bola 1 Computador -->
+			<layout left="751" top="439" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1compu" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Computador -->
+			<layout left="765" top="439" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2compu" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Computador -->
+			<layout left="780" top="439" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3compu" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Computador -->
+			<layout left="794" top="439" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4compu" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Computador -->
+			<layout left="808" top="439" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5compu" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Enigmas -->
+			<layout left="751" top="461" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1enig" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Enigmas -->
+			<layout left="765" top="461" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2enig" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Enigmas -->
+			<layout left="780" top="461" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3enig" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Enigmas -->
+			<layout left="794" top="461" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4enig" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Enigmas -->
+			<layout left="808" top="461" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5enig" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Gramática Mágica -->
+			<layout left="751" top="482" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1grama" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Gramática Mágica -->
+			<layout left="765" top="482" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2grama" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Gramática Mágica -->
+			<layout left="780" top="482" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3grama" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Gramática Mágica -->
+			<layout left="794" top="482" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4grama" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Gramática Mágica -->
+			<layout left="808" top="482" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5grama" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Investigação -->
+			<layout left="751" top="504" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1inves" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Investigação -->
+			<layout left="765" top="504" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2inves" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Investigação -->
+			<layout left="780" top="504" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3inves" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Investigação -->
+			<layout left="794" top="504" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4inves" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Investigação -->
+			<layout left="808" top="504" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5inves" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Direito -->
+			<layout left="751" top="525" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1direi" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Direito -->
+			<layout left="765" top="525" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2direi" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Direito -->
+			<layout left="780" top="525" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3direi" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Direito -->
+			<layout left="794" top="525" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4direi" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Direito -->
+			<layout left="808" top="525" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5direi" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Medicina -->
+			<layout left="751" top="545" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1medic" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Medicina -->
+			<layout left="765" top="545" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2medic" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Medicina -->
+			<layout left="780" top="545" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3medic" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Medicina -->
+			<layout left="794" top="545" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4medic" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Medicina -->
+			<layout left="808" top="545" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5medic" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Politica -->
+			<layout left="751" top="566" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1polit" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Politica -->
+			<layout left="765" top="566" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2polit" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Politica -->
+			<layout left="780" top="566" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3polit" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Politica -->
+			<layout left="794" top="566" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4polit" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Politica -->
+			<layout left="808" top="566" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5polit" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Ciências -->
+			<layout left="751" top="587" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1ciencia" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Ciências -->
+			<layout left="765" top="587" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2ciencia" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Ciências -->
+			<layout left="780" top="587" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3ciencia" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Ciências -->
+			<layout left="794" top="587" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4ciencia" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Ciências -->
+			<layout left="808" top="587" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5ciencia" compilerOrder="26"/>
+            </layout>&#xD;	
+
+		<!-- bola 1 Tecnologia -->
+			<layout left="751" top="608" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1tecno" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Tecnologia -->
+			<layout left="765" top="608" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2tecno" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Tecnologia -->
+			<layout left="780" top="608" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3tecno" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Tecnologia -->
+			<layout left="794" top="608" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4tecno" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Tecnologia -->
+			<layout left="808" top="608" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5tecno" compilerOrder="26"/>
+            </layout>&#xD;			
+			
+		<!-- bola 1 Linguistica -->
+			<layout left="751" top="628" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1lingui" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Linguistica -->
+			<layout left="765" top="628" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2lingui" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Linguistica -->
+			<layout left="780" top="628" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3lingui" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Linguistica -->
+			<layout left="794" top="628" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4lingui" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Linguistica -->
+			<layout left="808" top="628" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5lingui" compilerOrder="26"/>
+            </layout>&#xD;			
+
+<!-- Vantagens -->			
+	<!-- Antecedentes -->
+		<!-- Texto Antecedente 1 -->			
+			<layout left="65" top="714" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente1" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Antecedentes 1 -->
+			<layout left="234" top="725" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes1" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 1 -->
+			<layout left="248" top="725" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes1" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 1 -->
+			<layout left="263" top="725" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes1" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 1 -->
+			<layout left="277" top="725" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes1" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 1 -->
+			<layout left="291" top="725" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes1" compilerOrder="26"/>
+            </layout>&#xD;
+	
+		<!-- Texto Antecedente 2 -->			
+			<layout left="65" top="735" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente2" compilerOrder="4"/>
+			</layout>&#xD;
+	
+		<!-- bola 1 Antecedentes 2 -->
+			<layout left="234" top="745" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes2" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 2 -->
+			<layout left="248" top="745" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes2" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 2 -->
+			<layout left="263" top="745" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes2" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 2 -->
+			<layout left="277" top="745" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes2" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 2 -->
+			<layout left="291" top="745" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes2" compilerOrder="26"/>
+            </layout>&#xD;	
+
+		<!-- Texto Antecedente 3 -->			
+			<layout left="65" top="756" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente3" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- bola 1 Antecedentes 3 -->
+			<layout left="234" top="766" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes3" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 3 -->
+			<layout left="248" top="766" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes3" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 3 -->
+			<layout left="263" top="766" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes3" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 3 -->
+			<layout left="277" top="766" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes3" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 3 -->
+			<layout left="291" top="766" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes3" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- Texto Antecedente 4 -->			
+			<layout left="65" top="777" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente4" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Antecedentes 4 -->
+			<layout left="234" top="787" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes4" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 4 -->
+			<layout left="248" top="787" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes4" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 4 -->
+			<layout left="263" top="787" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes4" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 4 -->
+			<layout left="277" top="787" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes4" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 4 -->
+			<layout left="291" top="787" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes4" compilerOrder="26"/>
+            </layout>&#xD;				
+	
+		<!-- Texto Antecedente 5 -->			
+			<layout left="65" top="798" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente5" compilerOrder="4"/>
+			</layout>&#xD;
+	
+		<!-- bola 1 Antecedentes 5 -->
+			<layout left="234" top="808" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes5" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 5 -->
+			<layout left="248" top="808" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes5" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 5 -->
+			<layout left="263" top="808" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes5" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 5 -->
+			<layout left="277" top="808" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes5" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 5 -->
+			<layout left="291" top="808" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes5" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- Texto Antecedente 6 -->			
+			<layout left="65" top="819" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoAntecedente6" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Antecedentes 6 -->
+			<layout left="234" top="828" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Antecedentes6" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Antecedentes 6 -->
+			<layout left="248" top="828" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Antecedentes6" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Antecedentes 6 -->
+			<layout left="263" top="828" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Antecedentes6" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Antecedentes 6 -->
+			<layout left="277" top="828" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Antecedentes6" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Antecedentes 6 -->
+			<layout left="291" top="828" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Antecedentes6" compilerOrder="26"/>
+            </layout>&#xD;	
+			
+<!-- Artes -->
+		<!-- Texto Arte 1 -->			
+			<layout left="325" top="714" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte1" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Artes 1 -->
+			<layout left="495" top="725" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes1" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 1 -->
+			<layout left="509" top="725" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes1" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 1 -->
+			<layout left="524" top="725" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes1" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 1 -->
+			<layout left="538" top="725" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes1" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 1 -->
+			<layout left="552" top="725" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes1" compilerOrder="26"/>
+            </layout>&#xD;
+	
+		<!-- Texto Arte 2 -->			
+			<layout left="325" top="735" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte2" compilerOrder="4"/>
+			</layout>&#xD;
+	
+		<!-- bola 1 Artes 2 -->
+			<layout left="495" top="745" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes2" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 2 -->
+			<layout left="509" top="745" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes2" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 2 -->
+			<layout left="524" top="745" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes2" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 2 -->
+			<layout left="538" top="745" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes2" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 2 -->
+			<layout left="552" top="745" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes2" compilerOrder="26"/>
+            </layout>&#xD;	
+
+		<!-- Texto Arte 3 -->			
+			<layout left="325" top="756" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte3" compilerOrder="4"/>
+			</layout>&#xD;
+
+		<!-- bola 1 Artes 3 -->
+			<layout left="495" top="766" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes3" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 3 -->
+			<layout left="509" top="766" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes3" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 3 -->
+			<layout left="524" top="766" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes3" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 3 -->
+			<layout left="538" top="766" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes3" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 3 -->
+			<layout left="552" top="766" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes3" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- Texto Arte 4 -->			
+			<layout left="325" top="777" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte4" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Artes 4 -->
+			<layout left="495" top="787" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes4" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 4 -->
+			<layout left="509" top="787" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes4" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 4 -->
+			<layout left="524" top="787" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes4" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 4 -->
+			<layout left="538" top="787" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes4" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 4 -->
+			<layout left="552" top="787" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes4" compilerOrder="26"/>
+            </layout>&#xD;				
+	
+		<!-- Texto Arte 5 -->			
+			<layout left="325" top="798" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte5" compilerOrder="4"/>
+			</layout>&#xD;
+	
+		<!-- bola 1 Artes 5 -->
+			<layout left="495" top="808" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes5" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 5 -->
+			<layout left="509" top="808" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes5" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 5 -->
+			<layout left="524" top="808" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes5" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 5 -->
+			<layout left="538" top="808" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes5" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 5 -->
+			<layout left="552" top="808" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes5" compilerOrder="26"/>
+            </layout>&#xD;
+
+		<!-- Texto Arte 6 -->			
+			<layout left="325" top="819" width="170" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="170" height="30" field="TextoArte6" compilerOrder="4"/>
+			</layout>&#xD;
+			
+		<!-- bola 1 Artes 6 -->
+			<layout left="495" top="828" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Artes6" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Artes 6 -->
+			<layout left="509" top="828" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Artes6" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Artes 6 -->
+			<layout left="524" top="828" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Artes6" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Artes 6 -->
+			<layout left="538" top="828" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Artes6" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Artes 6 -->
+			<layout left="552" top="828" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Artes6" compilerOrder="26"/>
+            </layout>&#xD;	
+			
+<!-- Alçadas -->		
+		<!-- bola 1 Ator -->
+			<layout left="751" top="725" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Ator" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Ator -->
+			<layout left="765" top="725" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Ator" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Ator -->
+			<layout left="780" top="725" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Ator" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Ator -->
+			<layout left="794" top="725" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Ator" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Ator -->
+			<layout left="808" top="725" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Ator" compilerOrder="26"/>
+            </layout>&#xD;
+	
+		<!-- bola 1 Fada -->
+			<layout left="751" top="745" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Fada" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Fada -->
+			<layout left="765" top="745" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Fada" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Fada -->
+			<layout left="780" top="745" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Fada" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Fada -->
+			<layout left="794" top="745" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Fada" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Fada -->
+			<layout left="808" top="745" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Fada" compilerOrder="26"/>
+            </layout>&#xD;	
+
+		<!-- bola 1 Natureza -->
+			<layout left="751" top="766" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Natureza" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Natureza  -->
+			<layout left="765" top="766" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Natureza" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Natureza  -->
+			<layout left="780" top="766" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Natureza" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Natureza  -->
+			<layout left="794" top="766" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Natureza" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Natureza  -->
+			<layout left="808" top="766" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Natureza" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Acessório -->
+			<layout left="751" top="787" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Acessorio" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Acessório -->
+			<layout left="765" top="787" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Acessorio" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Acessório -->
+			<layout left="780" top="787" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Acessorio" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Acessório -->
+			<layout left="794" top="787" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Acessorio" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Acessório -->
+			<layout left="808" top="787" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Acessorio" compilerOrder="26"/>
+            </layout>&#xD;				
+	
+		<!-- bola 1 Cena -->
+			<layout left="751" top="808" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Cena" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Cena -->
+			<layout left="765" top="808" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Cena" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Cena -->
+			<layout left="780" top="808" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Cena" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Cena -->
+			<layout left="794" top="808" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Cena" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Cena -->
+			<layout left="808" top="808" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Cena" compilerOrder="26"/>
+            </layout>&#xD;
+			
+		<!-- bola 1 Tempo -->
+			<layout left="751" top="828" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Tempo" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Tempo -->
+			<layout left="765" top="828" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Tempo" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Tempo -->
+			<layout left="780" top="828" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Tempo" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Tempo -->
+			<layout left="794" top="828" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Tempo" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Tempo -->
+			<layout left="808" top="828" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Tempo" compilerOrder="26"/>
+            </layout>&#xD;	
+
+	<!-- Direitos Inatos/Fraquezas -->
+			<layout left="69" top="883" width="238" height="250" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="238" height="250" field="DireitoInFra" compilerOrder="646"/>
+			</layout>&#xD;	
+			
+		<!-- Antitese -->			
+			<layout left="65" top="1165" width="240" height="30" compilerOrder="3">
+				<edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="240" height="30" field="Antitese" compilerOrder="4"/>
+			</layout>&#xD;			
+	
+		<!-- Glamour -->	
+		<!-- bola 1 Glamour -->
+			<layout left="337" top="890" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Gl" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Glamour -->
+			<layout left="361" top="890" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Gl" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Glamour -->
+			<layout left="382" top="890" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Gl" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Glamour -->
+			<layout left="403" top="890" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Gl" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Glamour -->
+			<layout left="427" top="890" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Gl" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- bola 6 Glamour -->
+			<layout left="448" top="890" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola6Gl" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 7 Glamour -->
+			<layout left="470" top="890" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola7Gl" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 8 Glamour -->
+			<layout left="492" top="890" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola8Gl" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 9 Glamour -->
+			<layout left="514" top="890" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola9Gl" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 10 Glamour -->
+			<layout left="537" top="890" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola10Gl" compilerOrder="26"/>
+            </layout>&#xD;		
+	<!-- Quadrado -->
+		<!-- Quadrado 1 Glamour -->
+			<layout left="338" top="915" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square1Gl" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 2 Glamour -->
+			<layout left="362" top="915" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square2Gl" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 3 Glamour -->
+			<layout left="383" top="915" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square3Gl" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 4 Glamour -->
+			<layout left="407" top="915" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square4Gl" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 5 Glamour -->
+			<layout left="428" top="915" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square5Gl" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Quadrado 6 Glamour -->
+			<layout left="451" top="915" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square6Gl" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 7 Glamour -->
+			<layout left="474" top="915" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square7Gl" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 8 Glamour -->
+			<layout left="495" top="915" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square8Gl" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 9 Glamour -->
+			<layout left="517" top="915" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square9Gl" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 10 Glamour -->
+			<layout left="539" top="915" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square10Gl" compilerOrder="26"/>
+            </layout>&#xD;	
+
+<!-- Força de Vontade -->	
+	<!-- bola -->
+		<!-- bola 1 Força de Vontade -->
+			<layout left="337" top="990" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1FDV" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Força de Vontade -->
+			<layout left="361" top="990" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2FDV" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Força de Vontade -->
+			<layout left="382" top="990" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3FDV" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Força de Vontade -->
+			<layout left="403" top="990" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4FDV" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Força de Vontade -->
+			<layout left="427" top="990" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5FDV" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- bola 6 Força de Vontade -->
+			<layout left="448" top="990" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola6FDV" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 7 Força de Vontade -->
+			<layout left="470" top="990" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola7FDV" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 8 Força de Vontade -->
+			<layout left="492" top="990" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola8FDV" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 9 Força de Vontade -->
+			<layout left="514" top="990" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola9FDV" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 10 Força de Vontade -->
+			<layout left="537" top="990" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola10FDV" compilerOrder="26"/>
+            </layout>&#xD;		
+	<!-- Quadrado -->
+		<!-- Quadrado 1 Força de Vontade -->
+			<layout left="338" top="1010" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square1FDV" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 2 Força de Vontade -->
+			<layout left="362" top="1010" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square2FDV" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 3 Força de Vontade -->
+			<layout left="383" top="1010" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square3FDV" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 4 Força de Vontade -->
+			<layout left="407" top="1010" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square4FDV" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 5 Força de Vontade -->
+			<layout left="428" top="1010" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square5FDV" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Quadrado 6 Força de Vontade -->
+			<layout left="451" top="1010" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square6FDV" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 7 Força de Vontade -->
+			<layout left="474" top="1010" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square7FDV" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 8 Força de Vontade -->
+			<layout left="495" top="1010" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square8FDV" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 9 Força de Vontade -->
+			<layout left="517" top="1010" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square9FDV" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 10 Força de Vontade -->
+			<layout left="539" top="1010" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square10FDV" compilerOrder="26"/>
+            </layout>&#xD;	
+			
+	<!-- Pesadelo -->
+		<!-- Pesadelo 1  -->
+			<layout left="337" top="1085" width="22" height="22" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost1Pes" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pesadelo 2 -->
+			<layout left="361" top="1085" width="22" height="22" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost2Pes" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pesadelo 3 -->
+			<layout left="382" top="1085" width="22" height="22" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost3Pes" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pesadelo 4 -->
+			<layout left="403" top="1085" width="22" height="22" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost4Pes" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pesadelo 5 -->
+			<layout left="427" top="1085" width="22" height="22" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost5Pes" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Pesadelo 6 -->
+			<layout left="448" top="1085" width="22" height="22" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost6Pes" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Pesadelo 7 -->
+			<layout left="470" top="1085" width="22" height="22" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost7Pes" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Pesadelo 8 -->
+			<layout left="492" top="1085" width="22" height="22" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost8Pes" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Pesadelo 9 -->
+			<layout left="514" top="1085" width="22" height="22" compilerOrder="2r3">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost9Pes" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Pesadelo 10 -->
+			<layout left="537" top="1085" width="22" height="22" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/ghost_on.png" uncheckedImage="ChangelingMorganna/images/ghost_off.png" width="22" height="22" field="ghost10Pes" compilerOrder="26"/>
+            </layout>&#xD;	
+			
+	<!-- Banalidade -->
+		<!-- Banalidade 1  --> 
+			<layout left="337" top="1150" width="22" height="22" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror1" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Banalidade 2 -->
+			<layout left="361" top="1150" width="22" height="22" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror2" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Banalidade 3 -->
+			<layout left="382" top="1150" width="22" height="22" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror3" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Banalidade 4 -->
+			<layout left="403" top="1150" width="22" height="22" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror4" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Banalidade 5 -->
+			<layout left="427" top="1150" width="22" height="22" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror5" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Banalidade 6 -->
+			<layout left="448" top="1150" width="22" height="22" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror6" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Banalidade 7 -->
+			<layout left="470" top="1150" width="22" height="22" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror7" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Banalidade 8 -->
+			<layout left="492" top="1150" width="22" height="22" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror8" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Banalidade 9 -->
+			<layout left="514" top="1150" width="22" height="22" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror9" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Banalidade 10 -->
+			<layout left="537" top="1150" width="22" height="22" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/mirror_on.png" uncheckedImage="ChangelingMorganna/images/mirror_off.png" width="22" height="22" field="mirror10" compilerOrder="26"/>
+            </layout>&#xD;	
+
+	<!-- Quadrado -->
+		<!-- Quadrado 1 Banalidade -->
+			<layout left="338" top="1175" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square1Ban" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 2 Banalidade -->
+			<layout left="362" top="1175" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square2Ban" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 3 Banalidade -->
+			<layout left="383" top="1175" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square3Ban" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 4 Banalidade -->
+			<layout left="407" top="1175" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square4Ban" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 5 Banalidade -->
+			<layout left="428" top="1175" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square5Ban" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- Quadrado 6 Banalidade -->
+			<layout left="451" top="1175" width="18" height="18" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square6Ban" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- Quadrado 7 Banalidade -->
+			<layout left="474" top="1175" width="18" height="18" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square7Ban" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- Quadrado 8 Banalidade -->
+			<layout left="495" top="1175" width="18" height="18" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square8Ban" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- Quadrado 9 Banalidade -->
+			<layout left="517" top="1175" width="18" height="18" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square9Ban" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- Quadrado 10 Banalidade -->
+			<layout left="539" top="1175" width="18" height="18" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/square_on.png" uncheckedImage="ChangelingMorganna/images/square_off.png" width="18" height="18" field="square10Ban" compilerOrder="26"/>
+            </layout>&#xD;	
+
+	<!-- Letal e Agravado -->
+		<!-- bola 1 Letal -->
+			<layout left="748" top="895" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Letal" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Letal -->
+			<layout left="748" top="920" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Letal" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Letal -->
+			<layout left="748" top="940" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Letal" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Letal -->
+			<layout left="748" top="963" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Letal" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Letal -->
+			<layout left="748" top="985" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Letal" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- bola 6 Letal -->
+			<layout left="748" top="1008" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola6Letal" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 7 Letal -->
+			<layout left="748" top="1030" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola7Letal" compilerOrder="20"/>
+            </layout>&#xD;	
+			
+			
+		<!-- bola 1 Agravado -->
+			<layout left="795" top="895" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola1Agravado" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 2 Agravado -->
+			<layout left="795" top="920" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola2Agravado" compilerOrder="20"/>
+            </layout>&#xD;
+		<!-- bola 3 Agravado -->
+			<layout left="795" top="940" width="20" height="20" compilerOrder="21">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola3Agravado" compilerOrder="22"/>
+            </layout>&#xD;
+		<!-- bola 4 Agravado -->
+			<layout left="795" top="963" width="20" height="20" compilerOrder="23">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola4Agravado" compilerOrder="24"/>
+            </layout>&#xD;
+		<!-- bola 5 Agravado -->
+			<layout left="795" top="985" width="20" height="20" compilerOrder="25">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola5Agravado" compilerOrder="26"/>
+            </layout>&#xD;	
+		<!-- bola 6 Agravado -->
+			<layout left="795" top="1008" width="20" height="20" compilerOrder="17">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola6Agravado" compilerOrder="18"/>
+            </layout>&#xD;
+		<!-- bola 7 Agravado -->
+			<layout left="795" top="1030" width="20" height="20" compilerOrder="19">
+                <imageCheckBox checkedImage="ChangelingMorganna/images/bola_on.png" uncheckedImage="ChangelingMorganna/images/bola_off.png" width="20" height="20" field="bola7Agravado" compilerOrder="20"/>
+            </layout>&#xD;	
+	
+	<!-- Limiar de Exterminio/Inspiração -->
+			<layout left="603" top="1085" width="220" height="108" compilerOrder="645">
+				<textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="220" height="108" field="LimiarExtInsp" compilerOrder="646"/>
+			</layout>&#xD;		
+	
+        </rectangle>
+    </scrollBox>
+	
+	<import file="Codigo1.lfm"/>	
+	
+</form>

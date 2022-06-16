@@ -1,0 +1,1614 @@
+<?xml version="1.7" encoding="UTF-8"?>
+<form name="frmPokeRPGT3_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmPokeRPGT3_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmPokeRPGT3_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+    <scrollBox align="client">
+        <rectangle width="952" height="1347" color="white">&#xD;
+	
+            <image left="0" top="0" width="952" height="1347" src="images/3.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+		<!-- KANTO -->
+			<button left="85" top="290" width="29" height="29" compilerOrder="1">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK0 == nil then
+						sheet.imageCounterK0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK0 = (sheet.imageCounterK0 + 1) % #picsK0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_0 = picsK0[sheet.imageCounterK0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="290" width="29" height="29" compilerOrder="2">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK1 == nil then
+						sheet.imageCounterK1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK1 = (sheet.imageCounterK1 + 1) % #picsK1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_1 = picsK1[sheet.imageCounterK1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="290" width="29" height="29" compilerOrder="3">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK2 == nil then
+						sheet.imageCounterK2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK2 = (sheet.imageCounterK2 + 1) % #picsK2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_2 = picsK2[sheet.imageCounterK2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="290" width="29" height="29" compilerOrder="4">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK3 == nil then
+						sheet.imageCounterK3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK3 = (sheet.imageCounterK3 + 1) % #picsK3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_3 = picsK3[sheet.imageCounterK3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="290" width="29" height="29" compilerOrder="5">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK4 == nil then
+						sheet.imageCounterK4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK4 = (sheet.imageCounterK4 + 1) % #picsK4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_4 = picsK4[sheet.imageCounterK4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="290" width="29" height="29" compilerOrder="6">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK5 == nil then
+						sheet.imageCounterK5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK5 = (sheet.imageCounterK5 + 1) % #picsK5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_5 = picsK5[sheet.imageCounterK5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="290" width="29" height="29" compilerOrder="7">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK6 == nil then
+						sheet.imageCounterK6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK6 = (sheet.imageCounterK6 + 1) % #picsK6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_6 = picsK6[sheet.imageCounterK6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="290" width="29" height="29" compilerOrder="8">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxK_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxK_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsK7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterK7 == nil then
+						sheet.imageCounterK7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterK7 = (sheet.imageCounterK7 + 1) % #picsK7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxK_7 = picsK7[sheet.imageCounterK7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="290" width="29" height="29" compilerOrder="9">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxK_8" compilerOrder="10"/>
+            </layout>&#xD;		
+
+		<!-- JOHTO -->
+			<button left="85" top="384" width="29" height="29" compilerOrder="11">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ0 == nil then
+						sheet.imageCounterJ0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ0 = (sheet.imageCounterJ0 + 1) % #picsJ0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_0 = picsJ0[sheet.imageCounterJ0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="384" width="29" height="29" compilerOrder="12">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ1 == nil then
+						sheet.imageCounterJ1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ1 = (sheet.imageCounterJ1 + 1) % #picsJ1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_1 = picsJ1[sheet.imageCounterJ1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="384" width="29" height="29" compilerOrder="13">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ2 == nil then
+						sheet.imageCounterJ2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ2 = (sheet.imageCounterJ2 + 1) % #picsJ2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_2 = picsJ2[sheet.imageCounterJ2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="384" width="29" height="29" compilerOrder="14">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ3 == nil then
+						sheet.imageCounterJ3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ3 = (sheet.imageCounterJ3 + 1) % #picsJ3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_3 = picsJ3[sheet.imageCounterJ3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="384" width="29" height="29" compilerOrder="15">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ4 == nil then
+						sheet.imageCounterJ4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ4 = (sheet.imageCounterJ4 + 1) % #picsJ4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_4 = picsJ4[sheet.imageCounterJ4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="384" width="29" height="29" compilerOrder="16">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ5 == nil then
+						sheet.imageCounterJ5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ5 = (sheet.imageCounterJ5 + 1) % #picsJ5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_5 = picsJ5[sheet.imageCounterJ5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="384" width="29" height="29" compilerOrder="17">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ6 == nil then
+						sheet.imageCounterJ6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ6 = (sheet.imageCounterJ6 + 1) % #picsJ6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_6 = picsJ6[sheet.imageCounterJ6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="384" width="29" height="29" compilerOrder="18">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxJ_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxJ_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsJ7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterJ7 == nil then
+						sheet.imageCounterJ7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterJ7 = (sheet.imageCounterJ7 + 1) % #picsJ7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxJ_7 = picsJ7[sheet.imageCounterJ7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="384" width="29" height="29" compilerOrder="19">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxJ_8" compilerOrder="20"/>
+            </layout>&#xD;				
+			
+		<!-- HOENN -->
+			<button left="85" top="474" width="29" height="29" compilerOrder="21">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH0 == nil then
+						sheet.imageCounterH0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH0 = (sheet.imageCounterH0 + 1) % #picsH0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_0 = picsH0[sheet.imageCounterH0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="474" width="29" height="29" compilerOrder="22">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH1 == nil then
+						sheet.imageCounterH1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH1 = (sheet.imageCounterH1 + 1) % #picsH1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_1 = picsH1[sheet.imageCounterH1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="474" width="29" height="29" compilerOrder="23">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH2 == nil then
+						sheet.imageCounterH2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH2 = (sheet.imageCounterH2 + 1) % #picsH2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_2 = picsH2[sheet.imageCounterH2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="474" width="29" height="29" compilerOrder="24">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH3 == nil then
+						sheet.imageCounterH3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH3 = (sheet.imageCounterH3 + 1) % #picsH3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_3 = picsH3[sheet.imageCounterH3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="474" width="29" height="29" compilerOrder="25">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH4 == nil then
+						sheet.imageCounterH4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH4 = (sheet.imageCounterH4 + 1) % #picsH4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_4 = picsH4[sheet.imageCounterH4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="474" width="29" height="29" compilerOrder="26">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH5 == nil then
+						sheet.imageCounterH5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH5 = (sheet.imageCounterH5 + 1) % #picsH5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_5 = picsH5[sheet.imageCounterH5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="474" width="29" height="29" compilerOrder="27">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH6 == nil then
+						sheet.imageCounterH6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH6 = (sheet.imageCounterH6 + 1) % #picsH6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_6 = picsH6[sheet.imageCounterH6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="474" width="29" height="29" compilerOrder="28">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxH_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxH_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsH7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterH7 == nil then
+						sheet.imageCounterH7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterH7 = (sheet.imageCounterH7 + 1) % #picsH7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxH_7 = picsH7[sheet.imageCounterH7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="474" width="29" height="29" compilerOrder="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxH_8" compilerOrder="30"/>
+            </layout>&#xD;				
+			
+		<!-- SINNOH -->
+			<button left="85" top="565" width="29" height="29" compilerOrder="31">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS0 == nil then
+						sheet.imageCounterS0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS0 = (sheet.imageCounterS0 + 1) % #picsS0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_0 = picsS0[sheet.imageCounterS0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="565" width="29" height="29" compilerOrder="32">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS1 == nil then
+						sheet.imageCounterS1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS1 = (sheet.imageCounterS1 + 1) % #picsS1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_1 = picsS1[sheet.imageCounterS1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="565" width="29" height="29" compilerOrder="33">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS2 == nil then
+						sheet.imageCounterS2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS2 = (sheet.imageCounterS2 + 1) % #picsS2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_2 = picsS2[sheet.imageCounterS2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="565" width="29" height="29" compilerOrder="34">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS3 == nil then
+						sheet.imageCounterS3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS3 = (sheet.imageCounterS3 + 1) % #picsS3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_3 = picsS3[sheet.imageCounterS3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="565" width="29" height="29" compilerOrder="35">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS4 == nil then
+						sheet.imageCounterS4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS4 = (sheet.imageCounterS4 + 1) % #picsS4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_4 = picsS4[sheet.imageCounterS4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="565" width="29" height="29" compilerOrder="36">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS5 == nil then
+						sheet.imageCounterS5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS5 = (sheet.imageCounterS5 + 1) % #picsS5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_5 = picsS5[sheet.imageCounterS5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="565" width="29" height="29" compilerOrder="37">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS6 == nil then
+						sheet.imageCounterS6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS6 = (sheet.imageCounterS6 + 1) % #picsS6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_6 = picsS6[sheet.imageCounterS6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="565" width="29" height="29" compilerOrder="38">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxS_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxS_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsS7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterS7 == nil then
+						sheet.imageCounterS7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterS7 = (sheet.imageCounterS7 + 1) % #picsS7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxS_7 = picsS7[sheet.imageCounterS7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="565" width="29" height="29" compilerOrder="39">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxS_8" compilerOrder="40"/>
+            </layout>&#xD;				
+			
+		<!-- UNOVA -->
+			<button left="85" top="661" width="29" height="29" compilerOrder="41">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU0 == nil then
+						sheet.imageCounterU0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU0 = (sheet.imageCounterU0 + 1) % #picsU0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_0 = picsU0[sheet.imageCounterU0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="661" width="29" height="29" compilerOrder="42">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU1 == nil then
+						sheet.imageCounterU1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU1 = (sheet.imageCounterU1 + 1) % #picsU1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_1 = picsU1[sheet.imageCounterU1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="661" width="29" height="29" compilerOrder="43">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU2 == nil then
+						sheet.imageCounterU2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU2 = (sheet.imageCounterU2 + 1) % #picsU2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_2 = picsU2[sheet.imageCounterU2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="661" width="29" height="29" compilerOrder="44">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU3 == nil then
+						sheet.imageCounterU3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU3 = (sheet.imageCounterU3 + 1) % #picsU3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_3 = picsU3[sheet.imageCounterU3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="661" width="29" height="29" compilerOrder="45">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU4 == nil then
+						sheet.imageCounterU4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU4 = (sheet.imageCounterU4 + 1) % #picsU4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_4 = picsU4[sheet.imageCounterU4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="661" width="29" height="29" compilerOrder="46">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU5 == nil then
+						sheet.imageCounterU5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU5 = (sheet.imageCounterU5 + 1) % #picsU5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_5 = picsU5[sheet.imageCounterU5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="661" width="29" height="29" compilerOrder="47">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU6 == nil then
+						sheet.imageCounterU6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU6 = (sheet.imageCounterU6 + 1) % #picsU6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_6 = picsU6[sheet.imageCounterU6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="661" width="29" height="29" compilerOrder="48">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxU_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxU_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsU7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterU7 == nil then
+						sheet.imageCounterU7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterU7 = (sheet.imageCounterU7 + 1) % #picsU7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxU_7 = picsU7[sheet.imageCounterU7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="661" width="29" height="29" compilerOrder="49">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxU_8" compilerOrder="50"/>
+            </layout>&#xD;				
+			
+		<!-- KALOS -->
+			<button left="85" top="755" width="29" height="29" compilerOrder="51">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL0 == nil then
+						sheet.imageCounterKL0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL0 = (sheet.imageCounterKL0 + 1) % #picsKL0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_0 = picsKL0[sheet.imageCounterKL0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="755" width="29" height="29" compilerOrder="52">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL1 == nil then
+						sheet.imageCounterKL1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL1 = (sheet.imageCounterKL1 + 1) % #picsKL1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_1 = picsKL1[sheet.imageCounterKL1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="755" width="29" height="29" compilerOrder="53">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL2 == nil then
+						sheet.imageCounterKL2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL2 = (sheet.imageCounterKL2 + 1) % #picsKL2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_2 = picsKL2[sheet.imageCounterKL2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="755" width="29" height="29" compilerOrder="54">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL3 == nil then
+						sheet.imageCounterKL3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL3 = (sheet.imageCounterKL3 + 1) % #picsKL3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_3 = picsKL3[sheet.imageCounterKL3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="755" width="29" height="29" compilerOrder="55">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL4 == nil then
+						sheet.imageCounterKL4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL4 = (sheet.imageCounterKL4 + 1) % #picsKL4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_4 = picsKL4[sheet.imageCounterKL4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="755" width="29" height="29" compilerOrder="56">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL5 == nil then
+						sheet.imageCounterKL5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL5 = (sheet.imageCounterKL5 + 1) % #picsKL5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_5 = picsKL5[sheet.imageCounterKL5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="755" width="29" height="29" compilerOrder="57">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL6 == nil then
+						sheet.imageCounterKL6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL6 = (sheet.imageCounterKL6 + 1) % #picsKL6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_6 = picsKL6[sheet.imageCounterKL6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="755" width="29" height="29" compilerOrder="58">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxKL_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxKL_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsKL7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterKL7 == nil then
+						sheet.imageCounterKL7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterKL7 = (sheet.imageCounterKL7 + 1) % #picsKL7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxKL_7 = picsKL7[sheet.imageCounterKL7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="755" width="29" height="29" compilerOrder="59">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxKL_8" compilerOrder="60"/>
+            </layout>&#xD;
+			
+		<!-- ALOLA -->
+			<button left="85" top="842" width="29" height="29" compilerOrder="61">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA0 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA0 == nil then
+						sheet.imageCounterA0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA0 = (sheet.imageCounterA0 + 1) % #picsA0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_0 = picsA0[sheet.imageCounterA0 +1];
+				]]>
+				</event>
+			</button>	
+			
+			<button left="185" top="842" width="29" height="29" compilerOrder="62">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA1 == nil then
+						sheet.imageCounterA1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA1 = (sheet.imageCounterA1 + 1) % #picsA1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_1 = picsA1[sheet.imageCounterA1 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="290" top="842" width="29" height="29" compilerOrder="63">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA2 == nil then
+						sheet.imageCounterA2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA2 = (sheet.imageCounterA2 + 1) % #picsA2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_2 = picsA2[sheet.imageCounterA2 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="402" top="842" width="29" height="29" compilerOrder="64">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA3 == nil then
+						sheet.imageCounterA3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA3 = (sheet.imageCounterA3 + 1) % #picsA3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_3 = picsA3[sheet.imageCounterA3 +1];
+				]]>
+				</event>
+			</button>		
+
+			<button left="505" top="842" width="29" height="29" compilerOrder="65">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_4" />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA4 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA4 == nil then
+						sheet.imageCounterA4 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA4 = (sheet.imageCounterA4 + 1) % #picsA4;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_4 = picsA4[sheet.imageCounterA4 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="615" top="842" width="29" height="29" compilerOrder="66">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_5"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA5 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA5 == nil then
+						sheet.imageCounterA5 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA5 = (sheet.imageCounterA5 + 1) % #picsA5;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_5 = picsA5[sheet.imageCounterA5 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="715" top="842" width="29" height="29" compilerOrder="67">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_6"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA6 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA6 == nil then
+						sheet.imageCounterA6 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA6 = (sheet.imageCounterA6 + 1) % #picsA6;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_6 = picsA6[sheet.imageCounterA6 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="807" top="842" width="29" height="29" compilerOrder="68">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxA_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxA_7"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsA7 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterA7 == nil then
+						sheet.imageCounterA7 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterA7 = (sheet.imageCounterA7 + 1) % #picsA7;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxA_7 = picsA7[sheet.imageCounterA7 +1];
+				]]>
+				</event>
+			</button>		
+
+            <layout left="898" top="842" width="29" height="29" compilerOrder="69">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxA_8" compilerOrder="70"/>
+            </layout>&#xD;						
+			
+		<!-- ORANGE ISLAND -->
+			<button left="330" top="930" width="29" height="29" compilerOrder="71">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxOL_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxOL_0"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsOL0 = {	"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterOL0 == nil then
+						sheet.imageCounterOL0 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterOL0 = (sheet.imageCounterOL0 + 1) % #picsOL0;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxOL_0 = picsOL0[sheet.imageCounterOL0 +1];
+				]]>
+				</event>
+			</button>
+			
+			<button left="442" top="930" width="29" height="29" compilerOrder="72">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxOL_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxOL_1"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsOL1 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterOL1 == nil then
+						sheet.imageCounterOL1 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterOL1 = (sheet.imageCounterOL1 + 1) % #picsOL1;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxOL_1 = picsOL1[sheet.imageCounterOL1 +1];
+				]]>
+				</event>
+			</button>
+
+			<button left="555" top="930" width="29" height="29" compilerOrder="73">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxOL_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxOL_2"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsOL2 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterOL2 == nil then
+						sheet.imageCounterOL2 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterOL2 = (sheet.imageCounterOL2 + 1) % #picsOL2;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxOL_2 = picsOL2[sheet.imageCounterOL2 +1];
+				]]>
+				</event>
+			</button>			
+
+			<button left="667" top="930" width="29" height="29" compilerOrder="74">
+				<!-- Coloca imagem padrão -->
+				<dataLink field="Check_BoxOL_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
+				<image align="client" field="Check_BoxOL_3"  />
+				<script>
+					<![CDATA[
+					-- criando array das imagens que vão ser utilizadas. 
+					-- melhor usar imagens hospedadas no firedrive nesse caso
+					local picsOL3 = {"PokeRPGT/images/pokeball1_off.png",
+									"PokeRPGT/images/pokeball1_on.png", 
+									"PokeRPGT/images/ultraball1_on.png"};
+					]]>
+				</script>
+
+				<event name="onClick"><![CDATA[
+					if sheet.imageCounterOL3 == nil then
+						sheet.imageCounterOL3 = 0;
+					end;
+					-- Contador que vai de 0 a 2 e reseta ao passar de 2
+					sheet.imageCounterOL3 = (sheet.imageCounterOL3 + 1) % #picsOL3;
+					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
+					sheet.Check_BoxOL_3 = picsOL3[sheet.imageCounterOL3 +1];
+				]]>
+				</event>
+			</button>				
+			
+		<!-- GASTO DE XP -->
+			
+            <layout left="35" top="1014" width="885" height="265" compilerOrder="61">
+                <textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="885" height="265"  field="ant3" compilerOrder="75"/>
+            </layout>&#xD;							
+
+        </rectangle>
+    </scrollBox>
+		
+</form>
