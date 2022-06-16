@@ -2010,7 +2010,877 @@ local function constructNew_OsMundosDosMortos3()
     lfm_setPropAsString(obj.textEditor2, "fontStyle",  "bold");
     obj.textEditor2:setName("textEditor2");
 
+    obj.frmCodigo2 = GUI.fromHandle(_obj_newObject("form"));
+    obj.frmCodigo2:setParent(obj);
+    obj.frmCodigo2:setName("frmCodigo2");
+    obj.frmCodigo2:setHeight(0);
+    obj.frmCodigo2:setTheme("light");
+
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.frmCodigo2);
+    obj.dataLink1:setFields({'shabilidades1_6', 'shabilidades1_5', 'shabilidades1_4', 'shabilidades1_3', 'shabilidades1_2', 'shabilidades1_1'});
+    obj.dataLink1:setName("dataLink1");
+
+    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink2:setParent(obj.frmCodigo2);
+    obj.dataLink2:setFields({'shabilidades2_6', 'shabilidades2_5', 'shabilidades2_4', 'shabilidades2_3', 'shabilidades2_2', 'shabilidades2_1'});
+    obj.dataLink2:setName("dataLink2");
+
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.frmCodigo2);
+    obj.dataLink3:setFields({'shabilidades3_6', 'shabilidades3_5', 'shabilidades3_4', 'shabilidades3_3', 'shabilidades3_2', 'shabilidades3_1'});
+    obj.dataLink3:setName("dataLink3");
+
+    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink4:setParent(obj.frmCodigo2);
+    obj.dataLink4:setFields({'shabilidades4_6', 'shabilidades4_5', 'shabilidades4_4', 'shabilidades4_3', 'shabilidades4_2', 'shabilidades4_1'});
+    obj.dataLink4:setName("dataLink4");
+
+    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink5:setParent(obj.frmCodigo2);
+    obj.dataLink5:setFields({'shabilidades5_6', 'shabilidades5_5', 'shabilidades5_4', 'shabilidades5_3', 'shabilidades5_2', 'shabilidades5_1'});
+    obj.dataLink5:setName("dataLink5");
+
+    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink6:setParent(obj.frmCodigo2);
+    obj.dataLink6:setFields({'shabilidades6_6', 'shabilidades6_5', 'shabilidades6_4', 'shabilidades6_3', 'shabilidades6_2', 'shabilidades6_1'});
+    obj.dataLink6:setName("dataLink6");
+
+    obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink7:setParent(obj.frmCodigo2);
+    obj.dataLink7:setFields({'shabilidades7_6', 'shabilidades7_5', 'shabilidades7_4', 'shabilidades7_3', 'shabilidades7_2', 'shabilidades7_1'});
+    obj.dataLink7:setName("dataLink7");
+
+    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink8:setParent(obj.frmCodigo2);
+    obj.dataLink8:setFields({'shabilidades8_6', 'shabilidades8_5', 'shabilidades8_4', 'shabilidades8_3', 'shabilidades8_2', 'shabilidades8_1'});
+    obj.dataLink8:setName("dataLink8");
+
+    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink9:setParent(obj.frmCodigo2);
+    obj.dataLink9:setFields({'shabilidades1_h6', 'shabilidades1_h5', 'shabilidades1_h4', 'shabilidades1_h3', 'shabilidades1_h2', 'shabilidades1_h1'});
+    obj.dataLink9:setName("dataLink9");
+
+    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink10:setParent(obj.frmCodigo2);
+    obj.dataLink10:setFields({'shabilidades2_h6', 'shabilidades2_h5', 'shabilidades2_h4', 'shabilidades2_h3', 'shabilidades2_h2', 'shabilidades2_h1'});
+    obj.dataLink10:setName("dataLink10");
+
+    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink11:setParent(obj.frmCodigo2);
+    obj.dataLink11:setFields({'shabilidades3_h6', 'shabilidades3_h5', 'shabilidades3_h4', 'shabilidades3_h3', 'shabilidades3_h2', 'shabilidades3_h1'});
+    obj.dataLink11:setName("dataLink11");
+
+    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink12:setParent(obj.frmCodigo2);
+    obj.dataLink12:setFields({'shabilidades4_h6', 'shabilidades4_h5', 'shabilidades4_h4', 'shabilidades4_h3', 'shabilidades4_h2', 'shabilidades4_h1'});
+    obj.dataLink12:setName("dataLink12");
+
+    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink13:setParent(obj.frmCodigo2);
+    obj.dataLink13:setFields({'shabilidades5_h6', 'shabilidades5_h5', 'shabilidades5_h4', 'shabilidades5_h3', 'shabilidades5_h2', 'shabilidades5_h1'});
+    obj.dataLink13:setName("dataLink13");
+
+    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink14:setParent(obj.frmCodigo2);
+    obj.dataLink14:setFields({'shabilidades6_h6', 'shabilidades6_h5', 'shabilidades6_h4', 'shabilidades6_h3', 'shabilidades6_h2', 'shabilidades6_h1'});
+    obj.dataLink14:setName("dataLink14");
+
+    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink15:setParent(obj.frmCodigo2);
+    obj.dataLink15:setFields({'shabilidades7_h6', 'shabilidades7_h5', 'shabilidades7_h4', 'shabilidades7_h3', 'shabilidades7_h2', 'shabilidades7_h1'});
+    obj.dataLink15:setName("dataLink15");
+
+    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink16:setParent(obj.frmCodigo2);
+    obj.dataLink16:setFields({'shabilidades8_h6', 'shabilidades8_h5', 'shabilidades8_h4', 'shabilidades8_h3', 'shabilidades8_h2', 'shabilidades8_h1'});
+    obj.dataLink16:setName("dataLink16");
+
+    obj._e_event0 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades1_6 == true then
+            		sheet.shabilidades1_5 = true;
+            		sheet.shabilidades1_4 = true;
+            		sheet.shabilidades1_3 = true;
+            		sheet.shabilidades1_2 = true;
+            		sheet.shabilidades1_1 = true;
+            	elseif sheet.shabilidades1_5 == true then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_4 = true;
+            		sheet.shabilidades1_3 = true;
+            		sheet.shabilidades1_2 = true;
+            		sheet.shabilidades1_1 = true;
+            	elseif sheet.shabilidades1_4 == true then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_5 = false;
+            		sheet.shabilidades1_3 = true;
+            		sheet.shabilidades1_2 = true;
+            		sheet.shabilidades1_1 = true;
+            	elseif sheet.shabilidades1_3 == true then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_5 = false;
+            		sheet.shabilidades1_4 = false;
+            		sheet.shabilidades1_2 = true;
+            		sheet.shabilidades1_1 = true;
+            	elseif sheet.shabilidades1_2 == true then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_5 = false;
+            		sheet.shabilidades1_4 = false;
+            		sheet.shabilidades1_3 = false;
+            		sheet.shabilidades1_1 = true;	
+            	elseif sheet.shabilidades1_1 == true then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_5 = false;
+            		sheet.shabilidades1_4 = false;
+            		sheet.shabilidades1_3 = false;
+            		sheet.shabilidades1_2 = false;
+            	elseif sheet.shabilidades1_1 == false then
+            		sheet.shabilidades1_6 = false;
+            		sheet.shabilidades1_5 = false;
+            		sheet.shabilidades1_4 = false;
+            		sheet.shabilidades1_3 = false;
+            		sheet.shabilidades1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event1 = obj.dataLink2:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades2_6 == true then
+            		sheet.shabilidades2_5 = true;
+            		sheet.shabilidades2_4 = true;
+            		sheet.shabilidades2_3 = true;
+            		sheet.shabilidades2_2 = true;
+            		sheet.shabilidades2_1 = true;
+            	elseif sheet.shabilidades2_5 == true then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_4 = true;
+            		sheet.shabilidades2_3 = true;
+            		sheet.shabilidades2_2 = true;
+            		sheet.shabilidades2_1 = true;
+            	elseif sheet.shabilidades2_4 == true then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_5 = false;
+            		sheet.shabilidades2_3 = true;
+            		sheet.shabilidades2_2 = true;
+            		sheet.shabilidades2_1 = true;
+            	elseif sheet.shabilidades2_3 == true then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_5 = false;
+            		sheet.shabilidades2_4 = false;
+            		sheet.shabilidades2_2 = true;
+            		sheet.shabilidades2_1 = true;
+            	elseif sheet.shabilidades2_2 == true then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_5 = false;
+            		sheet.shabilidades2_4 = false;
+            		sheet.shabilidades2_3 = false;
+            		sheet.shabilidades2_1 = true;	
+            	elseif sheet.shabilidades2_1 == true then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_5 = false;
+            		sheet.shabilidades2_4 = false;
+            		sheet.shabilidades2_3 = false;
+            		sheet.shabilidades2_2 = false;
+            	elseif sheet.shabilidades2_1 == false then
+            		sheet.shabilidades2_6 = false;
+            		sheet.shabilidades2_5 = false;
+            		sheet.shabilidades2_4 = false;
+            		sheet.shabilidades2_3 = false;
+            		sheet.shabilidades2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades3_6 == true then
+            		sheet.shabilidades3_5 = true;
+            		sheet.shabilidades3_4 = true;
+            		sheet.shabilidades3_3 = true;
+            		sheet.shabilidades3_2 = true;
+            		sheet.shabilidades3_1 = true;
+            	elseif sheet.shabilidades3_5 == true then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_4 = true;
+            		sheet.shabilidades3_3 = true;
+            		sheet.shabilidades3_2 = true;
+            		sheet.shabilidades3_1 = true;
+            	elseif sheet.shabilidades3_4 == true then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_5 = false;
+            		sheet.shabilidades3_3 = true;
+            		sheet.shabilidades3_2 = true;
+            		sheet.shabilidades3_1 = true;
+            	elseif sheet.shabilidades3_3 == true then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_5 = false;
+            		sheet.shabilidades3_4 = false;
+            		sheet.shabilidades3_2 = true;
+            		sheet.shabilidades3_1 = true;
+            	elseif sheet.shabilidades3_2 == true then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_5 = false;
+            		sheet.shabilidades3_4 = false;
+            		sheet.shabilidades3_3 = false;
+            		sheet.shabilidades3_1 = true;	
+            	elseif sheet.shabilidades3_1 == true then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_5 = false;
+            		sheet.shabilidades3_4 = false;
+            		sheet.shabilidades3_3 = false;
+            		sheet.shabilidades3_2 = false;
+            	elseif sheet.shabilidades3_1 == false then
+            		sheet.shabilidades3_6 = false;
+            		sheet.shabilidades3_5 = false;
+            		sheet.shabilidades3_4 = false;
+            		sheet.shabilidades3_3 = false;
+            		sheet.shabilidades3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades4_6 == true then
+            		sheet.shabilidades4_5 = true;
+            		sheet.shabilidades4_4 = true;
+            		sheet.shabilidades4_3 = true;
+            		sheet.shabilidades4_2 = true;
+            		sheet.shabilidades4_1 = true;
+            	elseif sheet.shabilidades4_5 == true then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_4 = true;
+            		sheet.shabilidades4_3 = true;
+            		sheet.shabilidades4_2 = true;
+            		sheet.shabilidades4_1 = true;
+            	elseif sheet.shabilidades4_4 == true then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_5 = false;
+            		sheet.shabilidades4_3 = true;
+            		sheet.shabilidades4_2 = true;
+            		sheet.shabilidades4_1 = true;
+            	elseif sheet.shabilidades4_3 == true then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_5 = false;
+            		sheet.shabilidades4_4 = false;
+            		sheet.shabilidades4_2 = true;
+            		sheet.shabilidades4_1 = true;
+            	elseif sheet.shabilidades4_2 == true then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_5 = false;
+            		sheet.shabilidades4_4 = false;
+            		sheet.shabilidades4_3 = false;
+            		sheet.shabilidades4_1 = true;	
+            	elseif sheet.shabilidades4_1 == true then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_5 = false;
+            		sheet.shabilidades4_4 = false;
+            		sheet.shabilidades4_3 = false;
+            		sheet.shabilidades4_2 = false;
+            	elseif sheet.shabilidades4_1 == false then
+            		sheet.shabilidades4_6 = false;
+            		sheet.shabilidades4_5 = false;
+            		sheet.shabilidades4_4 = false;
+            		sheet.shabilidades4_3 = false;
+            		sheet.shabilidades4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades5_6 == true then
+            		sheet.shabilidades5_5 = true;
+            		sheet.shabilidades5_4 = true;
+            		sheet.shabilidades5_3 = true;
+            		sheet.shabilidades5_2 = true;
+            		sheet.shabilidades5_1 = true;
+            	elseif sheet.shabilidades5_5 == true then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_4 = true;
+            		sheet.shabilidades5_3 = true;
+            		sheet.shabilidades5_2 = true;
+            		sheet.shabilidades5_1 = true;
+            	elseif sheet.shabilidades5_4 == true then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_5 = false;
+            		sheet.shabilidades5_3 = true;
+            		sheet.shabilidades5_2 = true;
+            		sheet.shabilidades5_1 = true;
+            	elseif sheet.shabilidades5_3 == true then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_5 = false;
+            		sheet.shabilidades5_4 = false;
+            		sheet.shabilidades5_2 = true;
+            		sheet.shabilidades5_1 = true;
+            	elseif sheet.shabilidades5_2 == true then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_5 = false;
+            		sheet.shabilidades5_4 = false;
+            		sheet.shabilidades5_3 = false;
+            		sheet.shabilidades5_1 = true;	
+            	elseif sheet.shabilidades5_1 == true then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_5 = false;
+            		sheet.shabilidades5_4 = false;
+            		sheet.shabilidades5_3 = false;
+            		sheet.shabilidades5_2 = false;
+            	elseif sheet.shabilidades5_1 == false then
+            		sheet.shabilidades5_6 = false;
+            		sheet.shabilidades5_5 = false;
+            		sheet.shabilidades5_4 = false;
+            		sheet.shabilidades5_3 = false;
+            		sheet.shabilidades5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades6_6 == true then
+            		sheet.shabilidades6_5 = true;
+            		sheet.shabilidades6_4 = true;
+            		sheet.shabilidades6_3 = true;
+            		sheet.shabilidades6_2 = true;
+            		sheet.shabilidades6_1 = true;
+            	elseif sheet.shabilidades6_5 == true then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_4 = true;
+            		sheet.shabilidades6_3 = true;
+            		sheet.shabilidades6_2 = true;
+            		sheet.shabilidades6_1 = true;
+            	elseif sheet.shabilidades6_4 == true then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_5 = false;
+            		sheet.shabilidades6_3 = true;
+            		sheet.shabilidades6_2 = true;
+            		sheet.shabilidades6_1 = true;
+            	elseif sheet.shabilidades6_3 == true then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_5 = false;
+            		sheet.shabilidades6_4 = false;
+            		sheet.shabilidades6_2 = true;
+            		sheet.shabilidades6_1 = true;
+            	elseif sheet.shabilidades6_2 == true then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_5 = false;
+            		sheet.shabilidades6_4 = false;
+            		sheet.shabilidades6_3 = false;
+            		sheet.shabilidades6_1 = true;	
+            	elseif sheet.shabilidades6_1 == true then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_5 = false;
+            		sheet.shabilidades6_4 = false;
+            		sheet.shabilidades6_3 = false;
+            		sheet.shabilidades6_2 = false;
+            	elseif sheet.shabilidades6_1 == false then
+            		sheet.shabilidades6_6 = false;
+            		sheet.shabilidades6_5 = false;
+            		sheet.shabilidades6_4 = false;
+            		sheet.shabilidades6_3 = false;
+            		sheet.shabilidades6_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades7_6 == true then
+            		sheet.shabilidades7_5 = true;
+            		sheet.shabilidades7_4 = true;
+            		sheet.shabilidades7_3 = true;
+            		sheet.shabilidades7_2 = true;
+            		sheet.shabilidades7_1 = true;
+            	elseif sheet.shabilidades7_5 == true then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_4 = true;
+            		sheet.shabilidades7_3 = true;
+            		sheet.shabilidades7_2 = true;
+            		sheet.shabilidades7_1 = true;
+            	elseif sheet.shabilidades7_4 == true then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_5 = false;
+            		sheet.shabilidades7_3 = true;
+            		sheet.shabilidades7_2 = true;
+            		sheet.shabilidades7_1 = true;
+            	elseif sheet.shabilidades7_3 == true then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_5 = false;
+            		sheet.shabilidades7_4 = false;
+            		sheet.shabilidades7_2 = true;
+            		sheet.shabilidades7_1 = true;
+            	elseif sheet.shabilidades7_2 == true then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_5 = false;
+            		sheet.shabilidades7_4 = false;
+            		sheet.shabilidades7_3 = false;
+            		sheet.shabilidades7_1 = true;	
+            	elseif sheet.shabilidades7_1 == true then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_5 = false;
+            		sheet.shabilidades7_4 = false;
+            		sheet.shabilidades7_3 = false;
+            		sheet.shabilidades7_2 = false;
+            	elseif sheet.shabilidades7_1 == false then
+            		sheet.shabilidades7_6 = false;
+            		sheet.shabilidades7_5 = false;
+            		sheet.shabilidades7_4 = false;
+            		sheet.shabilidades7_3 = false;
+            		sheet.shabilidades7_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades8_6 == true then
+            		sheet.shabilidades8_5 = true;
+            		sheet.shabilidades8_4 = true;
+            		sheet.shabilidades8_3 = true;
+            		sheet.shabilidades8_2 = true;
+            		sheet.shabilidades8_1 = true;
+            	elseif sheet.shabilidades8_5 == true then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_4 = true;
+            		sheet.shabilidades8_3 = true;
+            		sheet.shabilidades8_2 = true;
+            		sheet.shabilidades8_1 = true;
+            	elseif sheet.shabilidades8_4 == true then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_5 = false;
+            		sheet.shabilidades8_3 = true;
+            		sheet.shabilidades8_2 = true;
+            		sheet.shabilidades8_1 = true;
+            	elseif sheet.shabilidades8_3 == true then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_5 = false;
+            		sheet.shabilidades8_4 = false;
+            		sheet.shabilidades8_2 = true;
+            		sheet.shabilidades8_1 = true;
+            	elseif sheet.shabilidades8_2 == true then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_5 = false;
+            		sheet.shabilidades8_4 = false;
+            		sheet.shabilidades8_3 = false;
+            		sheet.shabilidades8_1 = true;	
+            	elseif sheet.shabilidades8_1 == true then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_5 = false;
+            		sheet.shabilidades8_4 = false;
+            		sheet.shabilidades8_3 = false;
+            		sheet.shabilidades8_2 = false;
+            	elseif sheet.shabilidades8_1 == false then
+            		sheet.shabilidades8_6 = false;
+            		sheet.shabilidades8_5 = false;
+            		sheet.shabilidades8_4 = false;
+            		sheet.shabilidades8_3 = false;
+            		sheet.shabilidades8_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades1_h6 == true then
+            		sheet.shabilidades1_h5 = true;
+            		sheet.shabilidades1_h4 = true;
+            		sheet.shabilidades1_h3 = true;
+            		sheet.shabilidades1_h2 = true;
+            		sheet.shabilidades1_h1 = true;
+            	elseif sheet.shabilidades1_h5 == true then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h4 = true;
+            		sheet.shabilidades1_h3 = true;
+            		sheet.shabilidades1_h2 = true;
+            		sheet.shabilidades1_h1 = true;
+            	elseif sheet.shabilidades1_h4 == true then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h5 = false;
+            		sheet.shabilidades1_h3 = true;
+            		sheet.shabilidades1_h2 = true;
+            		sheet.shabilidades1_h1 = true;
+            	elseif sheet.shabilidades1_h3 == true then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h5 = false;
+            		sheet.shabilidades1_h4 = false;
+            		sheet.shabilidades1_h2 = true;
+            		sheet.shabilidades1_h1 = true;
+            	elseif sheet.shabilidades1_h2 == true then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h5 = false;
+            		sheet.shabilidades1_h4 = false;
+            		sheet.shabilidades1_h3 = false;
+            		sheet.shabilidades1_h1 = true;	
+            	elseif sheet.shabilidades1_h1 == true then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h5 = false;
+            		sheet.shabilidades1_h4 = false;
+            		sheet.shabilidades1_h3 = false;
+            		sheet.shabilidades1_h2 = false;
+            	elseif sheet.shabilidades1_h1 == false then
+            		sheet.shabilidades1_h6 = false;
+            		sheet.shabilidades1_h5 = false;
+            		sheet.shabilidades1_h4 = false;
+            		sheet.shabilidades1_h3 = false;
+            		sheet.shabilidades1_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades2_h6 == true then
+            		sheet.shabilidades2_h5 = true;
+            		sheet.shabilidades2_h4 = true;
+            		sheet.shabilidades2_h3 = true;
+            		sheet.shabilidades2_h2 = true;
+            		sheet.shabilidades2_h1 = true;
+            	elseif sheet.shabilidades2_h5 == true then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h4 = true;
+            		sheet.shabilidades2_h3 = true;
+            		sheet.shabilidades2_h2 = true;
+            		sheet.shabilidades2_h1 = true;
+            	elseif sheet.shabilidades2_h4 == true then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h5 = false;
+            		sheet.shabilidades2_h3 = true;
+            		sheet.shabilidades2_h2 = true;
+            		sheet.shabilidades2_h1 = true;
+            	elseif sheet.shabilidades2_h3 == true then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h5 = false;
+            		sheet.shabilidades2_h4 = false;
+            		sheet.shabilidades2_h2 = true;
+            		sheet.shabilidades2_h1 = true;
+            	elseif sheet.shabilidades2_h2 == true then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h5 = false;
+            		sheet.shabilidades2_h4 = false;
+            		sheet.shabilidades2_h3 = false;
+            		sheet.shabilidades2_h1 = true;	
+            	elseif sheet.shabilidades2_h1 == true then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h5 = false;
+            		sheet.shabilidades2_h4 = false;
+            		sheet.shabilidades2_h3 = false;
+            		sheet.shabilidades2_h2 = false;
+            	elseif sheet.shabilidades2_h1 == false then
+            		sheet.shabilidades2_h6 = false;
+            		sheet.shabilidades2_h5 = false;
+            		sheet.shabilidades2_h4 = false;
+            		sheet.shabilidades2_h3 = false;
+            		sheet.shabilidades2_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades3_h6 == true then
+            		sheet.shabilidades3_h5 = true;
+            		sheet.shabilidades3_h4 = true;
+            		sheet.shabilidades3_h3 = true;
+            		sheet.shabilidades3_h2 = true;
+            		sheet.shabilidades3_h1 = true;
+            	elseif sheet.shabilidades3_h5 == true then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h4 = true;
+            		sheet.shabilidades3_h3 = true;
+            		sheet.shabilidades3_h2 = true;
+            		sheet.shabilidades3_h1 = true;
+            	elseif sheet.shabilidades3_h4 == true then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h5 = false;
+            		sheet.shabilidades3_h3 = true;
+            		sheet.shabilidades3_h2 = true;
+            		sheet.shabilidades3_h1 = true;
+            	elseif sheet.shabilidades3_h3 == true then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h5 = false;
+            		sheet.shabilidades3_h4 = false;
+            		sheet.shabilidades3_h2 = true;
+            		sheet.shabilidades3_h1 = true;
+            	elseif sheet.shabilidades3_h2 == true then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h5 = false;
+            		sheet.shabilidades3_h4 = false;
+            		sheet.shabilidades3_h3 = false;
+            		sheet.shabilidades3_h1 = true;	
+            	elseif sheet.shabilidades3_h1 == true then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h5 = false;
+            		sheet.shabilidades3_h4 = false;
+            		sheet.shabilidades3_h3 = false;
+            		sheet.shabilidades3_h2 = false;
+            	elseif sheet.shabilidades3_h1 == false then
+            		sheet.shabilidades3_h6 = false;
+            		sheet.shabilidades3_h5 = false;
+            		sheet.shabilidades3_h4 = false;
+            		sheet.shabilidades3_h3 = false;
+            		sheet.shabilidades3_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades4_h6 == true then
+            		sheet.shabilidades4_h5 = true;
+            		sheet.shabilidades4_h4 = true;
+            		sheet.shabilidades4_h3 = true;
+            		sheet.shabilidades4_h2 = true;
+            		sheet.shabilidades4_h1 = true;
+            	elseif sheet.shabilidades4_h5 == true then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h4 = true;
+            		sheet.shabilidades4_h3 = true;
+            		sheet.shabilidades4_h2 = true;
+            		sheet.shabilidades4_h1 = true;
+            	elseif sheet.shabilidades4_h4 == true then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h5 = false;
+            		sheet.shabilidades4_h3 = true;
+            		sheet.shabilidades4_h2 = true;
+            		sheet.shabilidades4_h1 = true;
+            	elseif sheet.shabilidades4_h3 == true then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h5 = false;
+            		sheet.shabilidades4_h4 = false;
+            		sheet.shabilidades4_h2 = true;
+            		sheet.shabilidades4_h1 = true;
+            	elseif sheet.shabilidades4_h2 == true then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h5 = false;
+            		sheet.shabilidades4_h4 = false;
+            		sheet.shabilidades4_h3 = false;
+            		sheet.shabilidades4_h1 = true;	
+            	elseif sheet.shabilidades4_h1 == true then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h5 = false;
+            		sheet.shabilidades4_h4 = false;
+            		sheet.shabilidades4_h3 = false;
+            		sheet.shabilidades4_h2 = false;
+            	elseif sheet.shabilidades4_h1 == false then
+            		sheet.shabilidades4_h6 = false;
+            		sheet.shabilidades4_h5 = false;
+            		sheet.shabilidades4_h4 = false;
+            		sheet.shabilidades4_h3 = false;
+            		sheet.shabilidades4_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades5_h6 == true then
+            		sheet.shabilidades5_h5 = true;
+            		sheet.shabilidades5_h4 = true;
+            		sheet.shabilidades5_h3 = true;
+            		sheet.shabilidades5_h2 = true;
+            		sheet.shabilidades5_h1 = true;
+            	elseif sheet.shabilidades5_h5 == true then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h4 = true;
+            		sheet.shabilidades5_h3 = true;
+            		sheet.shabilidades5_h2 = true;
+            		sheet.shabilidades5_h1 = true;
+            	elseif sheet.shabilidades5_h4 == true then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h5 = false;
+            		sheet.shabilidades5_h3 = true;
+            		sheet.shabilidades5_h2 = true;
+            		sheet.shabilidades5_h1 = true;
+            	elseif sheet.shabilidades5_h3 == true then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h5 = false;
+            		sheet.shabilidades5_h4 = false;
+            		sheet.shabilidades5_h2 = true;
+            		sheet.shabilidades5_h1 = true;
+            	elseif sheet.shabilidades5_h2 == true then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h5 = false;
+            		sheet.shabilidades5_h4 = false;
+            		sheet.shabilidades5_h3 = false;
+            		sheet.shabilidades5_h1 = true;	
+            	elseif sheet.shabilidades5_h1 == true then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h5 = false;
+            		sheet.shabilidades5_h4 = false;
+            		sheet.shabilidades5_h3 = false;
+            		sheet.shabilidades5_h2 = false;
+            	elseif sheet.shabilidades5_h1 == false then
+            		sheet.shabilidades5_h6 = false;
+            		sheet.shabilidades5_h5 = false;
+            		sheet.shabilidades5_h4 = false;
+            		sheet.shabilidades5_h3 = false;
+            		sheet.shabilidades5_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades6_h6 == true then
+            		sheet.shabilidades6_h5 = true;
+            		sheet.shabilidades6_h4 = true;
+            		sheet.shabilidades6_h3 = true;
+            		sheet.shabilidades6_h2 = true;
+            		sheet.shabilidades6_h1 = true;
+            	elseif sheet.shabilidades6_h5 == true then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h4 = true;
+            		sheet.shabilidades6_h3 = true;
+            		sheet.shabilidades6_h2 = true;
+            		sheet.shabilidades6_h1 = true;
+            	elseif sheet.shabilidades6_h4 == true then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h5 = false;
+            		sheet.shabilidades6_h3 = true;
+            		sheet.shabilidades6_h2 = true;
+            		sheet.shabilidades6_h1 = true;
+            	elseif sheet.shabilidades6_h3 == true then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h5 = false;
+            		sheet.shabilidades6_h4 = false;
+            		sheet.shabilidades6_h2 = true;
+            		sheet.shabilidades6_h1 = true;
+            	elseif sheet.shabilidades6_h2 == true then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h5 = false;
+            		sheet.shabilidades6_h4 = false;
+            		sheet.shabilidades6_h3 = false;
+            		sheet.shabilidades6_h1 = true;	
+            	elseif sheet.shabilidades6_h1 == true then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h5 = false;
+            		sheet.shabilidades6_h4 = false;
+            		sheet.shabilidades6_h3 = false;
+            		sheet.shabilidades6_h2 = false;
+            	elseif sheet.shabilidades6_h1 == false then
+            		sheet.shabilidades6_h6 = false;
+            		sheet.shabilidades6_h5 = false;
+            		sheet.shabilidades6_h4 = false;
+            		sheet.shabilidades6_h3 = false;
+            		sheet.shabilidades6_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades7_h6 == true then
+            		sheet.shabilidades7_h5 = true;
+            		sheet.shabilidades7_h4 = true;
+            		sheet.shabilidades7_h3 = true;
+            		sheet.shabilidades7_h2 = true;
+            		sheet.shabilidades7_h1 = true;
+            	elseif sheet.shabilidades7_h5 == true then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h4 = true;
+            		sheet.shabilidades7_h3 = true;
+            		sheet.shabilidades7_h2 = true;
+            		sheet.shabilidades7_h1 = true;
+            	elseif sheet.shabilidades7_h4 == true then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h5 = false;
+            		sheet.shabilidades7_h3 = true;
+            		sheet.shabilidades7_h2 = true;
+            		sheet.shabilidades7_h1 = true;
+            	elseif sheet.shabilidades7_h3 == true then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h5 = false;
+            		sheet.shabilidades7_h4 = false;
+            		sheet.shabilidades7_h2 = true;
+            		sheet.shabilidades7_h1 = true;
+            	elseif sheet.shabilidades7_h2 == true then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h5 = false;
+            		sheet.shabilidades7_h4 = false;
+            		sheet.shabilidades7_h3 = false;
+            		sheet.shabilidades7_h1 = true;	
+            	elseif sheet.shabilidades7_h1 == true then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h5 = false;
+            		sheet.shabilidades7_h4 = false;
+            		sheet.shabilidades7_h3 = false;
+            		sheet.shabilidades7_h2 = false;
+            	elseif sheet.shabilidades7_h1 == false then
+            		sheet.shabilidades7_h6 = false;
+            		sheet.shabilidades7_h5 = false;
+            		sheet.shabilidades7_h4 = false;
+            		sheet.shabilidades7_h3 = false;
+            		sheet.shabilidades7_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.shabilidades8_h6 == true then
+            		sheet.shabilidades8_h5 = true;
+            		sheet.shabilidades8_h4 = true;
+            		sheet.shabilidades8_h3 = true;
+            		sheet.shabilidades8_h2 = true;
+            		sheet.shabilidades8_h1 = true;
+            	elseif sheet.shabilidades8_h5 == true then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h4 = true;
+            		sheet.shabilidades8_h3 = true;
+            		sheet.shabilidades8_h2 = true;
+            		sheet.shabilidades8_h1 = true;
+            	elseif sheet.shabilidades8_h4 == true then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h5 = false;
+            		sheet.shabilidades8_h3 = true;
+            		sheet.shabilidades8_h2 = true;
+            		sheet.shabilidades8_h1 = true;
+            	elseif sheet.shabilidades8_h3 == true then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h5 = false;
+            		sheet.shabilidades8_h4 = false;
+            		sheet.shabilidades8_h2 = true;
+            		sheet.shabilidades8_h1 = true;
+            	elseif sheet.shabilidades8_h2 == true then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h5 = false;
+            		sheet.shabilidades8_h4 = false;
+            		sheet.shabilidades8_h3 = false;
+            		sheet.shabilidades8_h1 = true;	
+            	elseif sheet.shabilidades8_h1 == true then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h5 = false;
+            		sheet.shabilidades8_h4 = false;
+            		sheet.shabilidades8_h3 = false;
+            		sheet.shabilidades8_h2 = false;
+            	elseif sheet.shabilidades8_h1 == false then
+            		sheet.shabilidades8_h6 = false;
+            		sheet.shabilidades8_h5 = false;
+            		sheet.shabilidades8_h4 = false;
+            		sheet.shabilidades8_h3 = false;
+            		sheet.shabilidades8_h2 = false;
+            	end;
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event15);
+        __o_rrpgObjs.removeEventListenerById(self._e_event14);
+        __o_rrpgObjs.removeEventListenerById(self._e_event13);
+        __o_rrpgObjs.removeEventListenerById(self._e_event12);
+        __o_rrpgObjs.removeEventListenerById(self._e_event11);
+        __o_rrpgObjs.removeEventListenerById(self._e_event10);
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
+        __o_rrpgObjs.removeEventListenerById(self._e_event7);
+        __o_rrpgObjs.removeEventListenerById(self._e_event6);
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
+        __o_rrpgObjs.removeEventListenerById(self._e_event4);
+        __o_rrpgObjs.removeEventListenerById(self._e_event3);
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
+        __o_rrpgObjs.removeEventListenerById(self._e_event1);
+        __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
     obj._oldLFMDestroy = obj.destroy;
@@ -2022,109 +2892,46 @@ local function constructNew_OsMundosDosMortos3()
           self:setNodeDatabase(nil);
         end;
 
+        if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
         if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
-        if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
         if self.imageCheckBox65 ~= nil then self.imageCheckBox65:destroy(); self.imageCheckBox65 = nil; end;
         if self.imageCheckBox73 ~= nil then self.imageCheckBox73:destroy(); self.imageCheckBox73 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
-        if self.imageCheckBox88 ~= nil then self.imageCheckBox88:destroy(); self.imageCheckBox88 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.horzLine7 ~= nil then self.horzLine7:destroy(); self.horzLine7 = nil; end;
-        if self.imageCheckBox59 ~= nil then self.imageCheckBox59:destroy(); self.imageCheckBox59 = nil; end;
         if self.imageCheckBox96 ~= nil then self.imageCheckBox96:destroy(); self.imageCheckBox96 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
-        if self.imageCheckBox90 ~= nil then self.imageCheckBox90:destroy(); self.imageCheckBox90 = nil; end;
-        if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
-        if self.imageCheckBox43 ~= nil then self.imageCheckBox43:destroy(); self.imageCheckBox43 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
-        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.imageCheckBox76 ~= nil then self.imageCheckBox76:destroy(); self.imageCheckBox76 = nil; end;
-        if self.imageCheckBox93 ~= nil then self.imageCheckBox93:destroy(); self.imageCheckBox93 = nil; end;
-        if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
-        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
-        if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.imageCheckBox58 ~= nil then self.imageCheckBox58:destroy(); self.imageCheckBox58 = nil; end;
-        if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
-        if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
         if self.imageCheckBox50 ~= nil then self.imageCheckBox50:destroy(); self.imageCheckBox50 = nil; end;
         if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
-        if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
-        if self.imageCheckBox61 ~= nil then self.imageCheckBox61:destroy(); self.imageCheckBox61 = nil; end;
-        if self.imageCheckBox75 ~= nil then self.imageCheckBox75:destroy(); self.imageCheckBox75 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
-        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
-        if self.horzLine2 ~= nil then self.horzLine2:destroy(); self.horzLine2 = nil; end;
+        if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
-        if self.imageCheckBox44 ~= nil then self.imageCheckBox44:destroy(); self.imageCheckBox44 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
-        if self.imageCheckBox51 ~= nil then self.imageCheckBox51:destroy(); self.imageCheckBox51 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.imageCheckBox38 ~= nil then self.imageCheckBox38:destroy(); self.imageCheckBox38 = nil; end;
-        if self.horzLine17 ~= nil then self.horzLine17:destroy(); self.horzLine17 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
-        if self.imageCheckBox55 ~= nil then self.imageCheckBox55:destroy(); self.imageCheckBox55 = nil; end;
-        if self.imageCheckBox64 ~= nil then self.imageCheckBox64:destroy(); self.imageCheckBox64 = nil; end;
         if self.imageCheckBox67 ~= nil then self.imageCheckBox67:destroy(); self.imageCheckBox67 = nil; end;
-        if self.horzLine21 ~= nil then self.horzLine21:destroy(); self.horzLine21 = nil; end;
-        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
-        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
-        if self.imageCheckBox36 ~= nil then self.imageCheckBox36:destroy(); self.imageCheckBox36 = nil; end;
-        if self.horzLine22 ~= nil then self.horzLine22:destroy(); self.horzLine22 = nil; end;
-        if self.imageCheckBox32 ~= nil then self.imageCheckBox32:destroy(); self.imageCheckBox32 = nil; end;
-        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
-        if self.imageCheckBox83 ~= nil then self.imageCheckBox83:destroy(); self.imageCheckBox83 = nil; end;
-        if self.horzLine8 ~= nil then self.horzLine8:destroy(); self.horzLine8 = nil; end;
         if self.horzLine19 ~= nil then self.horzLine19:destroy(); self.horzLine19 = nil; end;
-        if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
-        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
-        if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
-        if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
-        if self.imageCheckBox60 ~= nil then self.imageCheckBox60:destroy(); self.imageCheckBox60 = nil; end;
-        if self.imageCheckBox52 ~= nil then self.imageCheckBox52:destroy(); self.imageCheckBox52 = nil; end;
-        if self.imageCheckBox77 ~= nil then self.imageCheckBox77:destroy(); self.imageCheckBox77 = nil; end;
-        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
-        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
-        if self.imageCheckBox41 ~= nil then self.imageCheckBox41:destroy(); self.imageCheckBox41 = nil; end;
-        if self.imageCheckBox62 ~= nil then self.imageCheckBox62:destroy(); self.imageCheckBox62 = nil; end;
-        if self.horzLine5 ~= nil then self.horzLine5:destroy(); self.horzLine5 = nil; end;
-        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
-        if self.imageCheckBox89 ~= nil then self.imageCheckBox89:destroy(); self.imageCheckBox89 = nil; end;
-        if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
+        if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
-        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
-        if self.imageCheckBox69 ~= nil then self.imageCheckBox69:destroy(); self.imageCheckBox69 = nil; end;
-        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
         if self.imageCheckBox13 ~= nil then self.imageCheckBox13:destroy(); self.imageCheckBox13 = nil; end;
         if self.imageCheckBox63 ~= nil then self.imageCheckBox63:destroy(); self.imageCheckBox63 = nil; end;
         if self.imageCheckBox34 ~= nil then self.imageCheckBox34:destroy(); self.imageCheckBox34 = nil; end;
-        if self.imageCheckBox94 ~= nil then self.imageCheckBox94:destroy(); self.imageCheckBox94 = nil; end;
-        if self.imageCheckBox10 ~= nil then self.imageCheckBox10:destroy(); self.imageCheckBox10 = nil; end;
-        if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
-        if self.imageCheckBox22 ~= nil then self.imageCheckBox22:destroy(); self.imageCheckBox22 = nil; end;
-        if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
-        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
-        if self.imageCheckBox19 ~= nil then self.imageCheckBox19:destroy(); self.imageCheckBox19 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
         if self.imageCheckBox79 ~= nil then self.imageCheckBox79:destroy(); self.imageCheckBox79 = nil; end;
-        if self.imageCheckBox71 ~= nil then self.imageCheckBox71:destroy(); self.imageCheckBox71 = nil; end;
-        if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
-        if self.imageCheckBox25 ~= nil then self.imageCheckBox25:destroy(); self.imageCheckBox25 = nil; end;
-        if self.imageCheckBox14 ~= nil then self.imageCheckBox14:destroy(); self.imageCheckBox14 = nil; end;
-        if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
-        if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
+        if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.imageCheckBox78 ~= nil then self.imageCheckBox78:destroy(); self.imageCheckBox78 = nil; end;
@@ -2132,86 +2939,166 @@ local function constructNew_OsMundosDosMortos3()
         if self.imageCheckBox54 ~= nil then self.imageCheckBox54:destroy(); self.imageCheckBox54 = nil; end;
         if self.imageCheckBox81 ~= nil then self.imageCheckBox81:destroy(); self.imageCheckBox81 = nil; end;
         if self.imageCheckBox37 ~= nil then self.imageCheckBox37:destroy(); self.imageCheckBox37 = nil; end;
-        if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
-        if self.horzLine18 ~= nil then self.horzLine18:destroy(); self.horzLine18 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
-        if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
         if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
-        if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.imageCheckBox31 ~= nil then self.imageCheckBox31:destroy(); self.imageCheckBox31 = nil; end;
         if self.imageCheckBox92 ~= nil then self.imageCheckBox92:destroy(); self.imageCheckBox92 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
-        if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
-        if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
-        if self.imageCheckBox49 ~= nil then self.imageCheckBox49:destroy(); self.imageCheckBox49 = nil; end;
-        if self.horzLine20 ~= nil then self.horzLine20:destroy(); self.horzLine20 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.imageCheckBox9 ~= nil then self.imageCheckBox9:destroy(); self.imageCheckBox9 = nil; end;
+        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.imageCheckBox87 ~= nil then self.imageCheckBox87:destroy(); self.imageCheckBox87 = nil; end;
         if self.imageCheckBox68 ~= nil then self.imageCheckBox68:destroy(); self.imageCheckBox68 = nil; end;
-        if self.horzLine15 ~= nil then self.horzLine15:destroy(); self.horzLine15 = nil; end;
         if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
         if self.imageCheckBox17 ~= nil then self.imageCheckBox17:destroy(); self.imageCheckBox17 = nil; end;
-        if self.imageCheckBox27 ~= nil then self.imageCheckBox27:destroy(); self.imageCheckBox27 = nil; end;
         if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
-        if self.imageCheckBox70 ~= nil then self.imageCheckBox70:destroy(); self.imageCheckBox70 = nil; end;
-        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
         if self.imageCheckBox26 ~= nil then self.imageCheckBox26:destroy(); self.imageCheckBox26 = nil; end;
         if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
         if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
-        if self.imageCheckBox53 ~= nil then self.imageCheckBox53:destroy(); self.imageCheckBox53 = nil; end;
-        if self.imageCheckBox56 ~= nil then self.imageCheckBox56:destroy(); self.imageCheckBox56 = nil; end;
         if self.imageCheckBox66 ~= nil then self.imageCheckBox66:destroy(); self.imageCheckBox66 = nil; end;
-        if self.imageCheckBox57 ~= nil then self.imageCheckBox57:destroy(); self.imageCheckBox57 = nil; end;
-        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
-        if self.imageCheckBox74 ~= nil then self.imageCheckBox74:destroy(); self.imageCheckBox74 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.imageCheckBox82 ~= nil then self.imageCheckBox82:destroy(); self.imageCheckBox82 = nil; end;
-        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
-        if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
-        if self.imageCheckBox84 ~= nil then self.imageCheckBox84:destroy(); self.imageCheckBox84 = nil; end;
-        if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
-        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
+        if self.imageCheckBox74 ~= nil then self.imageCheckBox74:destroy(); self.imageCheckBox74 = nil; end;
+        if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
-        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
-        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.horzLine16 ~= nil then self.horzLine16:destroy(); self.horzLine16 = nil; end;
         if self.imageCheckBox95 ~= nil then self.imageCheckBox95:destroy(); self.imageCheckBox95 = nil; end;
-        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
-        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
+        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
         if self.imageCheckBox28 ~= nil then self.imageCheckBox28:destroy(); self.imageCheckBox28 = nil; end;
-        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
-        if self.imageCheckBox85 ~= nil then self.imageCheckBox85:destroy(); self.imageCheckBox85 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
-        if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
         if self.imageCheckBox48 ~= nil then self.imageCheckBox48:destroy(); self.imageCheckBox48 = nil; end;
         if self.imageCheckBox33 ~= nil then self.imageCheckBox33:destroy(); self.imageCheckBox33 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
-        if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
-        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
         if self.imageCheckBox15 ~= nil then self.imageCheckBox15:destroy(); self.imageCheckBox15 = nil; end;
-        if self.horzLine13 ~= nil then self.horzLine13:destroy(); self.horzLine13 = nil; end;
-        if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
-        if self.imageCheckBox47 ~= nil then self.imageCheckBox47:destroy(); self.imageCheckBox47 = nil; end;
-        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
         if self.imageCheckBox91 ~= nil then self.imageCheckBox91:destroy(); self.imageCheckBox91 = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
-        if self.imageCheckBox72 ~= nil then self.imageCheckBox72:destroy(); self.imageCheckBox72 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
-        if self.imageCheckBox86 ~= nil then self.imageCheckBox86:destroy(); self.imageCheckBox86 = nil; end;
         if self.layout21 ~= nil then self.layout21:destroy(); self.layout21 = nil; end;
-        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
-        if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
-        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
-        if self.imageCheckBox40 ~= nil then self.imageCheckBox40:destroy(); self.imageCheckBox40 = nil; end;
         if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
         if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.imageCheckBox35 ~= nil then self.imageCheckBox35:destroy(); self.imageCheckBox35 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
+        if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
+        if self.imageCheckBox88 ~= nil then self.imageCheckBox88:destroy(); self.imageCheckBox88 = nil; end;
+        if self.imageCheckBox59 ~= nil then self.imageCheckBox59:destroy(); self.imageCheckBox59 = nil; end;
+        if self.frmCodigo2 ~= nil then self.frmCodigo2:destroy(); self.frmCodigo2 = nil; end;
+        if self.imageCheckBox90 ~= nil then self.imageCheckBox90:destroy(); self.imageCheckBox90 = nil; end;
+        if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
+        if self.imageCheckBox43 ~= nil then self.imageCheckBox43:destroy(); self.imageCheckBox43 = nil; end;
+        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
+        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.imageCheckBox93 ~= nil then self.imageCheckBox93:destroy(); self.imageCheckBox93 = nil; end;
+        if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
+        if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
+        if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
+        if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
+        if self.dataLink13 ~= nil then self.dataLink13:destroy(); self.dataLink13 = nil; end;
+        if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
+        if self.imageCheckBox61 ~= nil then self.imageCheckBox61:destroy(); self.imageCheckBox61 = nil; end;
+        if self.imageCheckBox75 ~= nil then self.imageCheckBox75:destroy(); self.imageCheckBox75 = nil; end;
+        if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.horzLine2 ~= nil then self.horzLine2:destroy(); self.horzLine2 = nil; end;
+        if self.imageCheckBox44 ~= nil then self.imageCheckBox44:destroy(); self.imageCheckBox44 = nil; end;
+        if self.imageCheckBox51 ~= nil then self.imageCheckBox51:destroy(); self.imageCheckBox51 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.horzLine21 ~= nil then self.horzLine21:destroy(); self.horzLine21 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.imageCheckBox38 ~= nil then self.imageCheckBox38:destroy(); self.imageCheckBox38 = nil; end;
+        if self.horzLine17 ~= nil then self.horzLine17:destroy(); self.horzLine17 = nil; end;
+        if self.imageCheckBox55 ~= nil then self.imageCheckBox55:destroy(); self.imageCheckBox55 = nil; end;
+        if self.imageCheckBox64 ~= nil then self.imageCheckBox64:destroy(); self.imageCheckBox64 = nil; end;
+        if self.horzLine22 ~= nil then self.horzLine22:destroy(); self.horzLine22 = nil; end;
+        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
+        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
+        if self.imageCheckBox36 ~= nil then self.imageCheckBox36:destroy(); self.imageCheckBox36 = nil; end;
+        if self.imageCheckBox32 ~= nil then self.imageCheckBox32:destroy(); self.imageCheckBox32 = nil; end;
+        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.imageCheckBox83 ~= nil then self.imageCheckBox83:destroy(); self.imageCheckBox83 = nil; end;
+        if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.horzLine8 ~= nil then self.horzLine8:destroy(); self.horzLine8 = nil; end;
+        if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
+        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
+        if self.imageCheckBox60 ~= nil then self.imageCheckBox60:destroy(); self.imageCheckBox60 = nil; end;
+        if self.imageCheckBox52 ~= nil then self.imageCheckBox52:destroy(); self.imageCheckBox52 = nil; end;
+        if self.imageCheckBox77 ~= nil then self.imageCheckBox77:destroy(); self.imageCheckBox77 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.imageCheckBox41 ~= nil then self.imageCheckBox41:destroy(); self.imageCheckBox41 = nil; end;
+        if self.imageCheckBox62 ~= nil then self.imageCheckBox62:destroy(); self.imageCheckBox62 = nil; end;
+        if self.horzLine5 ~= nil then self.horzLine5:destroy(); self.horzLine5 = nil; end;
+        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
+        if self.imageCheckBox89 ~= nil then self.imageCheckBox89:destroy(); self.imageCheckBox89 = nil; end;
+        if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
+        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
+        if self.imageCheckBox69 ~= nil then self.imageCheckBox69:destroy(); self.imageCheckBox69 = nil; end;
+        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
+        if self.imageCheckBox94 ~= nil then self.imageCheckBox94:destroy(); self.imageCheckBox94 = nil; end;
+        if self.imageCheckBox10 ~= nil then self.imageCheckBox10:destroy(); self.imageCheckBox10 = nil; end;
+        if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
+        if self.imageCheckBox22 ~= nil then self.imageCheckBox22:destroy(); self.imageCheckBox22 = nil; end;
+        if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
+        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
+        if self.imageCheckBox19 ~= nil then self.imageCheckBox19:destroy(); self.imageCheckBox19 = nil; end;
+        if self.imageCheckBox71 ~= nil then self.imageCheckBox71:destroy(); self.imageCheckBox71 = nil; end;
+        if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
+        if self.imageCheckBox25 ~= nil then self.imageCheckBox25:destroy(); self.imageCheckBox25 = nil; end;
+        if self.imageCheckBox14 ~= nil then self.imageCheckBox14:destroy(); self.imageCheckBox14 = nil; end;
+        if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
+        if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
+        if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
+        if self.horzLine18 ~= nil then self.horzLine18:destroy(); self.horzLine18 = nil; end;
+        if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
+        if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
+        if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
+        if self.imageCheckBox49 ~= nil then self.imageCheckBox49:destroy(); self.imageCheckBox49 = nil; end;
+        if self.horzLine20 ~= nil then self.horzLine20:destroy(); self.horzLine20 = nil; end;
+        if self.imageCheckBox87 ~= nil then self.imageCheckBox87:destroy(); self.imageCheckBox87 = nil; end;
+        if self.horzLine15 ~= nil then self.horzLine15:destroy(); self.horzLine15 = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.imageCheckBox27 ~= nil then self.imageCheckBox27:destroy(); self.imageCheckBox27 = nil; end;
+        if self.imageCheckBox70 ~= nil then self.imageCheckBox70:destroy(); self.imageCheckBox70 = nil; end;
+        if self.imageCheckBox56 ~= nil then self.imageCheckBox56:destroy(); self.imageCheckBox56 = nil; end;
+        if self.imageCheckBox53 ~= nil then self.imageCheckBox53:destroy(); self.imageCheckBox53 = nil; end;
+        if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
+        if self.imageCheckBox57 ~= nil then self.imageCheckBox57:destroy(); self.imageCheckBox57 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.imageCheckBox84 ~= nil then self.imageCheckBox84:destroy(); self.imageCheckBox84 = nil; end;
+        if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
+        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
+        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
+        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
+        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
+        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
+        if self.imageCheckBox85 ~= nil then self.imageCheckBox85:destroy(); self.imageCheckBox85 = nil; end;
+        if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
+        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.horzLine13 ~= nil then self.horzLine13:destroy(); self.horzLine13 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
+        if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
+        if self.imageCheckBox47 ~= nil then self.imageCheckBox47:destroy(); self.imageCheckBox47 = nil; end;
+        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
+        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
+        if self.imageCheckBox72 ~= nil then self.imageCheckBox72:destroy(); self.imageCheckBox72 = nil; end;
+        if self.imageCheckBox86 ~= nil then self.imageCheckBox86:destroy(); self.imageCheckBox86 = nil; end;
+        if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
+        if self.imageCheckBox40 ~= nil then self.imageCheckBox40:destroy(); self.imageCheckBox40 = nil; end;
         if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
         self:_oldLFMDestroy();
     end;

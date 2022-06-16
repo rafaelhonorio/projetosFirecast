@@ -34,7 +34,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.image1 = GUI.fromHandle(_obj_newObject("image"));
     obj.image1:setParent(obj);
     obj.image1:setAlign("client");
-    obj.image1:setField("backgroundimg");
+    obj.image1:setField("backgrounding");
     obj.image1:setStyle("stretch");
     obj.image1:setName("image1");
 
@@ -3174,6 +3174,107 @@ local function constructNew_OsMundosDosMortos1()
     obj.dataLink1:setFields({'musc_1', 'musc_2', 'musc_3', 'musc_4', 'musc_5', 'musc_6', 'musc_7', 'musc_8', 'musc_9', 'musc_10', 'cereb_1', 'cereb_2', 'cereb_3', 'cereb_4', 'cereb_5', 'cereb_6', 'cereb_7', 'cereb_8', 'cereb_9', 'cereb_10', 'corac_1', 'corac_2', 'corac_3', 'corac_4', 'corac_5', 'corac_6', 'corac_7', 'corac_8', 'corac_9', 'corac_10'});
     obj.dataLink1:setName("dataLink1");
 
+    obj.frmCodigo1 = GUI.fromHandle(_obj_newObject("form"));
+    obj.frmCodigo1:setParent(obj);
+    obj.frmCodigo1:setName("frmCodigo1");
+    obj.frmCodigo1:setHeight(0);
+    obj.frmCodigo1:setTheme("light");
+
+    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink2:setParent(obj.frmCodigo1);
+    obj.dataLink2:setFields({'musc_10', 'musc_9', 'musc_8', 'musc_7','musc_6', 'musc_5', 'musc_4', 'musc_3', 'musc_2', 'musc_1'});
+    obj.dataLink2:setName("dataLink2");
+
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.frmCodigo1);
+    obj.dataLink3:setFields({'cereb_10', 'cereb_9', 'cereb_8', 'cereb_7','cereb_6', 'cereb_5', 'cereb_4', 'cereb_3', 'cereb_2', 'cereb_1'});
+    obj.dataLink3:setName("dataLink3");
+
+    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink4:setParent(obj.frmCodigo1);
+    obj.dataLink4:setFields({'corac_10', 'corac_9', 'corac_8', 'corac_7','corac_6', 'corac_5', 'corac_4', 'corac_3', 'corac_2', 'corac_1'});
+    obj.dataLink4:setName("dataLink4");
+
+    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink5:setParent(obj.frmCodigo1);
+    obj.dataLink5:setFields({'mhabilidades1_6', 'mhabilidades1_5', 'mhabilidades1_4', 'mhabilidades1_3', 'mhabilidades1_2', 'mhabilidades1_1'});
+    obj.dataLink5:setName("dataLink5");
+
+    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink6:setParent(obj.frmCodigo1);
+    obj.dataLink6:setFields({'mhabilidades2_6', 'mhabilidades2_5', 'mhabilidades2_4', 'mhabilidades2_3', 'mhabilidades2_2', 'mhabilidades2_1'});
+    obj.dataLink6:setName("dataLink6");
+
+    obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink7:setParent(obj.frmCodigo1);
+    obj.dataLink7:setFields({'mhabilidades3_6', 'mhabilidades3_5', 'mhabilidades3_4', 'mhabilidades3_3', 'mhabilidades3_2', 'mhabilidades3_1'});
+    obj.dataLink7:setName("dataLink7");
+
+    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink8:setParent(obj.frmCodigo1);
+    obj.dataLink8:setFields({'mhabilidades4_6', 'mhabilidades4_5', 'mhabilidades4_4', 'mhabilidades4_3', 'mhabilidades4_2', 'mhabilidades4_1'});
+    obj.dataLink8:setName("dataLink8");
+
+    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink9:setParent(obj.frmCodigo1);
+    obj.dataLink9:setFields({'mhabilidades5_6', 'mhabilidades5_5', 'mhabilidades5_4', 'mhabilidades5_3', 'mhabilidades5_2', 'mhabilidades5_1'});
+    obj.dataLink9:setName("dataLink9");
+
+    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink10:setParent(obj.frmCodigo1);
+    obj.dataLink10:setFields({'mhabilidades6_6', 'mhabilidades6_5', 'mhabilidades6_4', 'mhabilidades6_3', 'mhabilidades6_2', 'mhabilidades6_1'});
+    obj.dataLink10:setName("dataLink10");
+
+    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink11:setParent(obj.frmCodigo1);
+    obj.dataLink11:setFields({'mhabilidades7_6', 'mhabilidades7_5', 'mhabilidades7_4', 'mhabilidades7_3', 'mhabilidades7_2', 'mhabilidades7_1'});
+    obj.dataLink11:setName("dataLink11");
+
+    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink12:setParent(obj.frmCodigo1);
+    obj.dataLink12:setFields({'mhabilidades8_6', 'mhabilidades8_5', 'mhabilidades8_4', 'mhabilidades8_3', 'mhabilidades8_2', 'mhabilidades8_1'});
+    obj.dataLink12:setName("dataLink12");
+
+    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink13:setParent(obj.frmCodigo1);
+    obj.dataLink13:setFields({'mhabilidades1_h6', 'mhabilidades1_h5', 'mhabilidades1_h4', 'mhabilidades1_h3', 'mhabilidades1_h2', 'mhabilidades1_h1'});
+    obj.dataLink13:setName("dataLink13");
+
+    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink14:setParent(obj.frmCodigo1);
+    obj.dataLink14:setFields({'mhabilidades2_h6', 'mhabilidades2_h5', 'mhabilidades2_h4', 'mhabilidades2_h3', 'mhabilidades2_h2', 'mhabilidades2_h1'});
+    obj.dataLink14:setName("dataLink14");
+
+    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink15:setParent(obj.frmCodigo1);
+    obj.dataLink15:setFields({'mhabilidades3_h6', 'mhabilidades3_h5', 'mhabilidades3_h4', 'mhabilidades3_h3', 'mhabilidades3_h2', 'mhabilidades3_h1'});
+    obj.dataLink15:setName("dataLink15");
+
+    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink16:setParent(obj.frmCodigo1);
+    obj.dataLink16:setFields({'mhabilidades4_h6', 'mhabilidades4_h5', 'mhabilidades4_h4', 'mhabilidades4_h3', 'mhabilidades4_h2', 'mhabilidades4_h1'});
+    obj.dataLink16:setName("dataLink16");
+
+    obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink17:setParent(obj.frmCodigo1);
+    obj.dataLink17:setFields({'mhabilidades5_h6', 'mhabilidades5_h5', 'mhabilidades5_h4', 'mhabilidades5_h3', 'mhabilidades5_h2', 'mhabilidades5_h1'});
+    obj.dataLink17:setName("dataLink17");
+
+    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink18:setParent(obj.frmCodigo1);
+    obj.dataLink18:setFields({'mhabilidades6_h6', 'mhabilidades6_h5', 'mhabilidades6_h4', 'mhabilidades6_h3', 'mhabilidades6_h2', 'mhabilidades6_h1'});
+    obj.dataLink18:setName("dataLink18");
+
+    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink19:setParent(obj.frmCodigo1);
+    obj.dataLink19:setFields({'mhabilidades7_h6', 'mhabilidades7_h5', 'mhabilidades7_h4', 'mhabilidades7_h3', 'mhabilidades7_h2', 'mhabilidades7_h1'});
+    obj.dataLink19:setName("dataLink19");
+
+    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink20:setParent(obj.frmCodigo1);
+    obj.dataLink20:setFields({'mhabilidades8_h6', 'mhabilidades8_h5', 'mhabilidades8_h4', 'mhabilidades8_h3', 'mhabilidades8_h2', 'mhabilidades8_h1'});
+    obj.dataLink20:setName("dataLink20");
+
     obj._e_event0 = obj.backgroundimg:addEventListener("onClick",
         function (_)
             Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
@@ -3189,7 +3290,1112 @@ local function constructNew_OsMundosDosMortos1()
             			sheet.vcoracao = math.floor(booton(self.corac_n1.checked) or 0)+math.floor(booton(self.corac_n2.checked) or 0)+math.floor(booton(self.corac_n3.checked) or 0)+math.floor(booton(self.corac_n4.checked) or 0)+math.floor(booton(self.corac_n5.checked) or 0)+math.floor(booton(self.corac_n6.checked) or 0)+math.floor(booton(self.corac_n7.checked) or 0)+math.floor(booton(self.corac_n8.checked) or 0)+math.floor(booton(self.corac_n9.checked) or 0)+math.floor(booton(self.corac_n10.checked) or 0)
         end, obj);
 
+    obj._e_event2 = obj.dataLink2:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.musc_10 == true then
+            		sheet.musc_9 = true;
+            		sheet.musc_8 = true;
+            		sheet.musc_7 = true;
+            		sheet.musc_6 = true;        
+            		sheet.musc_5 = true;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_9 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_8 = true;
+            		sheet.musc_7 = true;
+            		sheet.musc_6 = true;        
+            		sheet.musc_5 = true;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_8 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_7 = true;
+            		sheet.musc_6 = true;        
+            		sheet.musc_5 = true;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_7 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_6 = true;        
+            		sheet.musc_5 = true;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_6 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_5 = true;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_5 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_6 = false;
+            		sheet.musc_4 = true;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_4 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_6 = false;
+            		sheet.musc_5 = false;
+            		sheet.musc_3 = true;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_3 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_6 = false;
+            		sheet.musc_5 = false;
+            		sheet.musc_4 = false;
+            		sheet.musc_2 = true;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_2 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_6 = false;
+            		sheet.musc_5 = false;
+            		sheet.musc_4 = false;
+            		sheet.musc_3 = false;
+            		sheet.musc_1 = true;
+            	elseif sheet.musc_1 == true then
+            		sheet.musc_10 = false;
+            		sheet.musc_9 = false;
+            		sheet.musc_8 = false;
+            		sheet.musc_7 = false;        
+            		sheet.musc_6 = false;
+            		sheet.musc_5 = false;
+            		sheet.musc_4 = false;
+            		sheet.musc_3 = false;
+            		sheet.musc_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event3 = obj.dataLink3:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.cereb_10 == true then
+            		sheet.cereb_9 = true;
+            		sheet.cereb_8 = true;
+            		sheet.cereb_7 = true;
+            		sheet.cereb_6 = true;        
+            		sheet.cereb_5 = true;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_9 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_8 = true;
+            		sheet.cereb_7 = true;
+            		sheet.cereb_6 = true;        
+            		sheet.cereb_5 = true;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_8 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_7 = true;
+            		sheet.cereb_6 = true;        
+            		sheet.cereb_5 = true;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_7 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_6 = true;        
+            		sheet.cereb_5 = true;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_6 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_5 = true;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_5 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_6 = false;
+            		sheet.cereb_4 = true;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_4 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_6 = false;
+            		sheet.cereb_5 = false;
+            		sheet.cereb_3 = true;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_3 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_6 = false;
+            		sheet.cereb_5 = false;
+            		sheet.cereb_4 = false;
+            		sheet.cereb_2 = true;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_2 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_6 = false;
+            		sheet.cereb_5 = false;
+            		sheet.cereb_4 = false;
+            		sheet.cereb_3 = false;
+            		sheet.cereb_1 = true;
+            	elseif sheet.cereb_1 == true then
+            		sheet.cereb_10 = false;
+            		sheet.cereb_9 = false;
+            		sheet.cereb_8 = false;
+            		sheet.cereb_7 = false;        
+            		sheet.cereb_6 = false;
+            		sheet.cereb_5 = false;
+            		sheet.cereb_4 = false;
+            		sheet.cereb_3 = false;
+            		sheet.cereb_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event4 = obj.dataLink4:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.corac_10 == true then
+            		sheet.corac_9 = true;
+            		sheet.corac_8 = true;
+            		sheet.corac_7 = true;
+            		sheet.corac_6 = true;        
+            		sheet.corac_5 = true;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_9 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_8 = true;
+            		sheet.corac_7 = true;
+            		sheet.corac_6 = true;        
+            		sheet.corac_5 = true;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_8 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_7 = true;
+            		sheet.corac_6 = true;        
+            		sheet.corac_5 = true;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_7 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_6 = true;        
+            		sheet.corac_5 = true;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_6 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_5 = true;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_5 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_6 = false;
+            		sheet.corac_4 = true;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_4 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_6 = false;
+            		sheet.corac_5 = false;
+            		sheet.corac_3 = true;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_3 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_6 = false;
+            		sheet.corac_5 = false;
+            		sheet.corac_4 = false;
+            		sheet.corac_2 = true;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_2 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_6 = false;
+            		sheet.corac_5 = false;
+            		sheet.corac_4 = false;
+            		sheet.corac_3 = false;
+            		sheet.corac_1 = true;
+            	elseif sheet.corac_1 == true then
+            		sheet.corac_10 = false;
+            		sheet.corac_9 = false;
+            		sheet.corac_8 = false;
+            		sheet.corac_7 = false;        
+            		sheet.corac_6 = false;
+            		sheet.corac_5 = false;
+            		sheet.corac_4 = false;
+            		sheet.corac_3 = false;
+            		sheet.corac_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event5 = obj.dataLink5:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades1_6 == true then
+            		sheet.mhabilidades1_5 = true;
+            		sheet.mhabilidades1_4 = true;
+            		sheet.mhabilidades1_3 = true;
+            		sheet.mhabilidades1_2 = true;
+            		sheet.mhabilidades1_1 = true;
+            	elseif sheet.mhabilidades1_5 == true then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_4 = true;
+            		sheet.mhabilidades1_3 = true;
+            		sheet.mhabilidades1_2 = true;
+            		sheet.mhabilidades1_1 = true;
+            	elseif sheet.mhabilidades1_4 == true then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_5 = false;
+            		sheet.mhabilidades1_3 = true;
+            		sheet.mhabilidades1_2 = true;
+            		sheet.mhabilidades1_1 = true;
+            	elseif sheet.mhabilidades1_3 == true then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_5 = false;
+            		sheet.mhabilidades1_4 = false;
+            		sheet.mhabilidades1_2 = true;
+            		sheet.mhabilidades1_1 = true;
+            	elseif sheet.mhabilidades1_2 == true then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_5 = false;
+            		sheet.mhabilidades1_4 = false;
+            		sheet.mhabilidades1_3 = false;
+            		sheet.mhabilidades1_1 = true;	
+            	elseif sheet.mhabilidades1_1 == true then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_5 = false;
+            		sheet.mhabilidades1_4 = false;
+            		sheet.mhabilidades1_3 = false;
+            		sheet.mhabilidades1_2 = false;
+            	elseif sheet.mhabilidades1_1 == false then
+            		sheet.mhabilidades1_6 = false;
+            		sheet.mhabilidades1_5 = false;
+            		sheet.mhabilidades1_4 = false;
+            		sheet.mhabilidades1_3 = false;
+            		sheet.mhabilidades1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event6 = obj.dataLink6:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades2_6 == true then
+            		sheet.mhabilidades2_5 = true;
+            		sheet.mhabilidades2_4 = true;
+            		sheet.mhabilidades2_3 = true;
+            		sheet.mhabilidades2_2 = true;
+            		sheet.mhabilidades2_1 = true;
+            	elseif sheet.mhabilidades2_5 == true then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_4 = true;
+            		sheet.mhabilidades2_3 = true;
+            		sheet.mhabilidades2_2 = true;
+            		sheet.mhabilidades2_1 = true;
+            	elseif sheet.mhabilidades2_4 == true then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_5 = false;
+            		sheet.mhabilidades2_3 = true;
+            		sheet.mhabilidades2_2 = true;
+            		sheet.mhabilidades2_1 = true;
+            	elseif sheet.mhabilidades2_3 == true then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_5 = false;
+            		sheet.mhabilidades2_4 = false;
+            		sheet.mhabilidades2_2 = true;
+            		sheet.mhabilidades2_1 = true;
+            	elseif sheet.mhabilidades2_2 == true then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_5 = false;
+            		sheet.mhabilidades2_4 = false;
+            		sheet.mhabilidades2_3 = false;
+            		sheet.mhabilidades2_1 = true;	
+            	elseif sheet.mhabilidades2_1 == true then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_5 = false;
+            		sheet.mhabilidades2_4 = false;
+            		sheet.mhabilidades2_3 = false;
+            		sheet.mhabilidades2_2 = false;
+            	elseif sheet.mhabilidades2_1 == false then
+            		sheet.mhabilidades2_6 = false;
+            		sheet.mhabilidades2_5 = false;
+            		sheet.mhabilidades2_4 = false;
+            		sheet.mhabilidades2_3 = false;
+            		sheet.mhabilidades2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event7 = obj.dataLink7:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades3_6 == true then
+            		sheet.mhabilidades3_5 = true;
+            		sheet.mhabilidades3_4 = true;
+            		sheet.mhabilidades3_3 = true;
+            		sheet.mhabilidades3_2 = true;
+            		sheet.mhabilidades3_1 = true;
+            	elseif sheet.mhabilidades3_5 == true then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_4 = true;
+            		sheet.mhabilidades3_3 = true;
+            		sheet.mhabilidades3_2 = true;
+            		sheet.mhabilidades3_1 = true;
+            	elseif sheet.mhabilidades3_4 == true then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_5 = false;
+            		sheet.mhabilidades3_3 = true;
+            		sheet.mhabilidades3_2 = true;
+            		sheet.mhabilidades3_1 = true;
+            	elseif sheet.mhabilidades3_3 == true then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_5 = false;
+            		sheet.mhabilidades3_4 = false;
+            		sheet.mhabilidades3_2 = true;
+            		sheet.mhabilidades3_1 = true;
+            	elseif sheet.mhabilidades3_2 == true then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_5 = false;
+            		sheet.mhabilidades3_4 = false;
+            		sheet.mhabilidades3_3 = false;
+            		sheet.mhabilidades3_1 = true;	
+            	elseif sheet.mhabilidades3_1 == true then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_5 = false;
+            		sheet.mhabilidades3_4 = false;
+            		sheet.mhabilidades3_3 = false;
+            		sheet.mhabilidades3_2 = false;
+            	elseif sheet.mhabilidades3_1 == false then
+            		sheet.mhabilidades3_6 = false;
+            		sheet.mhabilidades3_5 = false;
+            		sheet.mhabilidades3_4 = false;
+            		sheet.mhabilidades3_3 = false;
+            		sheet.mhabilidades3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event8 = obj.dataLink8:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades4_6 == true then
+            		sheet.mhabilidades4_5 = true;
+            		sheet.mhabilidades4_4 = true;
+            		sheet.mhabilidades4_3 = true;
+            		sheet.mhabilidades4_2 = true;
+            		sheet.mhabilidades4_1 = true;
+            	elseif sheet.mhabilidades4_5 == true then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_4 = true;
+            		sheet.mhabilidades4_3 = true;
+            		sheet.mhabilidades4_2 = true;
+            		sheet.mhabilidades4_1 = true;
+            	elseif sheet.mhabilidades4_4 == true then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_5 = false;
+            		sheet.mhabilidades4_3 = true;
+            		sheet.mhabilidades4_2 = true;
+            		sheet.mhabilidades4_1 = true;
+            	elseif sheet.mhabilidades4_3 == true then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_5 = false;
+            		sheet.mhabilidades4_4 = false;
+            		sheet.mhabilidades4_2 = true;
+            		sheet.mhabilidades4_1 = true;
+            	elseif sheet.mhabilidades4_2 == true then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_5 = false;
+            		sheet.mhabilidades4_4 = false;
+            		sheet.mhabilidades4_3 = false;
+            		sheet.mhabilidades4_1 = true;	
+            	elseif sheet.mhabilidades4_1 == true then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_5 = false;
+            		sheet.mhabilidades4_4 = false;
+            		sheet.mhabilidades4_3 = false;
+            		sheet.mhabilidades4_2 = false;
+            	elseif sheet.mhabilidades4_1 == false then
+            		sheet.mhabilidades4_6 = false;
+            		sheet.mhabilidades4_5 = false;
+            		sheet.mhabilidades4_4 = false;
+            		sheet.mhabilidades4_3 = false;
+            		sheet.mhabilidades4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event9 = obj.dataLink9:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades5_6 == true then
+            		sheet.mhabilidades5_5 = true;
+            		sheet.mhabilidades5_4 = true;
+            		sheet.mhabilidades5_3 = true;
+            		sheet.mhabilidades5_2 = true;
+            		sheet.mhabilidades5_1 = true;
+            	elseif sheet.mhabilidades5_5 == true then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_4 = true;
+            		sheet.mhabilidades5_3 = true;
+            		sheet.mhabilidades5_2 = true;
+            		sheet.mhabilidades5_1 = true;
+            	elseif sheet.mhabilidades5_4 == true then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_5 = false;
+            		sheet.mhabilidades5_3 = true;
+            		sheet.mhabilidades5_2 = true;
+            		sheet.mhabilidades5_1 = true;
+            	elseif sheet.mhabilidades5_3 == true then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_5 = false;
+            		sheet.mhabilidades5_4 = false;
+            		sheet.mhabilidades5_2 = true;
+            		sheet.mhabilidades5_1 = true;
+            	elseif sheet.mhabilidades5_2 == true then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_5 = false;
+            		sheet.mhabilidades5_4 = false;
+            		sheet.mhabilidades5_3 = false;
+            		sheet.mhabilidades5_1 = true;	
+            	elseif sheet.mhabilidades5_1 == true then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_5 = false;
+            		sheet.mhabilidades5_4 = false;
+            		sheet.mhabilidades5_3 = false;
+            		sheet.mhabilidades5_2 = false;
+            	elseif sheet.mhabilidades5_1 == false then
+            		sheet.mhabilidades5_6 = false;
+            		sheet.mhabilidades5_5 = false;
+            		sheet.mhabilidades5_4 = false;
+            		sheet.mhabilidades5_3 = false;
+            		sheet.mhabilidades5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event10 = obj.dataLink10:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades6_6 == true then
+            		sheet.mhabilidades6_5 = true;
+            		sheet.mhabilidades6_4 = true;
+            		sheet.mhabilidades6_3 = true;
+            		sheet.mhabilidades6_2 = true;
+            		sheet.mhabilidades6_1 = true;
+            	elseif sheet.mhabilidades6_5 == true then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_4 = true;
+            		sheet.mhabilidades6_3 = true;
+            		sheet.mhabilidades6_2 = true;
+            		sheet.mhabilidades6_1 = true;
+            	elseif sheet.mhabilidades6_4 == true then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_5 = false;
+            		sheet.mhabilidades6_3 = true;
+            		sheet.mhabilidades6_2 = true;
+            		sheet.mhabilidades6_1 = true;
+            	elseif sheet.mhabilidades6_3 == true then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_5 = false;
+            		sheet.mhabilidades6_4 = false;
+            		sheet.mhabilidades6_2 = true;
+            		sheet.mhabilidades6_1 = true;
+            	elseif sheet.mhabilidades6_2 == true then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_5 = false;
+            		sheet.mhabilidades6_4 = false;
+            		sheet.mhabilidades6_3 = false;
+            		sheet.mhabilidades6_1 = true;	
+            	elseif sheet.mhabilidades6_1 == true then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_5 = false;
+            		sheet.mhabilidades6_4 = false;
+            		sheet.mhabilidades6_3 = false;
+            		sheet.mhabilidades6_2 = false;
+            	elseif sheet.mhabilidades6_1 == false then
+            		sheet.mhabilidades6_6 = false;
+            		sheet.mhabilidades6_5 = false;
+            		sheet.mhabilidades6_4 = false;
+            		sheet.mhabilidades6_3 = false;
+            		sheet.mhabilidades6_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event11 = obj.dataLink11:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades7_6 == true then
+            		sheet.mhabilidades7_5 = true;
+            		sheet.mhabilidades7_4 = true;
+            		sheet.mhabilidades7_3 = true;
+            		sheet.mhabilidades7_2 = true;
+            		sheet.mhabilidades7_1 = true;
+            	elseif sheet.mhabilidades7_5 == true then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_4 = true;
+            		sheet.mhabilidades7_3 = true;
+            		sheet.mhabilidades7_2 = true;
+            		sheet.mhabilidades7_1 = true;
+            	elseif sheet.mhabilidades7_4 == true then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_5 = false;
+            		sheet.mhabilidades7_3 = true;
+            		sheet.mhabilidades7_2 = true;
+            		sheet.mhabilidades7_1 = true;
+            	elseif sheet.mhabilidades7_3 == true then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_5 = false;
+            		sheet.mhabilidades7_4 = false;
+            		sheet.mhabilidades7_2 = true;
+            		sheet.mhabilidades7_1 = true;
+            	elseif sheet.mhabilidades7_2 == true then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_5 = false;
+            		sheet.mhabilidades7_4 = false;
+            		sheet.mhabilidades7_3 = false;
+            		sheet.mhabilidades7_1 = true;	
+            	elseif sheet.mhabilidades7_1 == true then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_5 = false;
+            		sheet.mhabilidades7_4 = false;
+            		sheet.mhabilidades7_3 = false;
+            		sheet.mhabilidades7_2 = false;
+            	elseif sheet.mhabilidades7_1 == false then
+            		sheet.mhabilidades7_6 = false;
+            		sheet.mhabilidades7_5 = false;
+            		sheet.mhabilidades7_4 = false;
+            		sheet.mhabilidades7_3 = false;
+            		sheet.mhabilidades7_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event12 = obj.dataLink12:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades8_6 == true then
+            		sheet.mhabilidades8_5 = true;
+            		sheet.mhabilidades8_4 = true;
+            		sheet.mhabilidades8_3 = true;
+            		sheet.mhabilidades8_2 = true;
+            		sheet.mhabilidades8_1 = true;
+            	elseif sheet.mhabilidades8_5 == true then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_4 = true;
+            		sheet.mhabilidades8_3 = true;
+            		sheet.mhabilidades8_2 = true;
+            		sheet.mhabilidades8_1 = true;
+            	elseif sheet.mhabilidades8_4 == true then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_5 = false;
+            		sheet.mhabilidades8_3 = true;
+            		sheet.mhabilidades8_2 = true;
+            		sheet.mhabilidades8_1 = true;
+            	elseif sheet.mhabilidades8_3 == true then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_5 = false;
+            		sheet.mhabilidades8_4 = false;
+            		sheet.mhabilidades8_2 = true;
+            		sheet.mhabilidades8_1 = true;
+            	elseif sheet.mhabilidades8_2 == true then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_5 = false;
+            		sheet.mhabilidades8_4 = false;
+            		sheet.mhabilidades8_3 = false;
+            		sheet.mhabilidades8_1 = true;	
+            	elseif sheet.mhabilidades8_1 == true then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_5 = false;
+            		sheet.mhabilidades8_4 = false;
+            		sheet.mhabilidades8_3 = false;
+            		sheet.mhabilidades8_2 = false;
+            	elseif sheet.mhabilidades8_1 == false then
+            		sheet.mhabilidades8_6 = false;
+            		sheet.mhabilidades8_5 = false;
+            		sheet.mhabilidades8_4 = false;
+            		sheet.mhabilidades8_3 = false;
+            		sheet.mhabilidades8_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event13 = obj.dataLink13:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades1_h6 == true then
+            		sheet.mhabilidades1_h5 = true;
+            		sheet.mhabilidades1_h4 = true;
+            		sheet.mhabilidades1_h3 = true;
+            		sheet.mhabilidades1_h2 = true;
+            		sheet.mhabilidades1_h1 = true;
+            	elseif sheet.mhabilidades1_h5 == true then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h4 = true;
+            		sheet.mhabilidades1_h3 = true;
+            		sheet.mhabilidades1_h2 = true;
+            		sheet.mhabilidades1_h1 = true;
+            	elseif sheet.mhabilidades1_h4 == true then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h5 = false;
+            		sheet.mhabilidades1_h3 = true;
+            		sheet.mhabilidades1_h2 = true;
+            		sheet.mhabilidades1_h1 = true;
+            	elseif sheet.mhabilidades1_h3 == true then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h5 = false;
+            		sheet.mhabilidades1_h4 = false;
+            		sheet.mhabilidades1_h2 = true;
+            		sheet.mhabilidades1_h1 = true;
+            	elseif sheet.mhabilidades1_h2 == true then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h5 = false;
+            		sheet.mhabilidades1_h4 = false;
+            		sheet.mhabilidades1_h3 = false;
+            		sheet.mhabilidades1_h1 = true;	
+            	elseif sheet.mhabilidades1_h1 == true then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h5 = false;
+            		sheet.mhabilidades1_h4 = false;
+            		sheet.mhabilidades1_h3 = false;
+            		sheet.mhabilidades1_h2 = false;
+            	elseif sheet.mhabilidades1_h1 == false then
+            		sheet.mhabilidades1_h6 = false;
+            		sheet.mhabilidades1_h5 = false;
+            		sheet.mhabilidades1_h4 = false;
+            		sheet.mhabilidades1_h3 = false;
+            		sheet.mhabilidades1_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event14 = obj.dataLink14:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades2_h6 == true then
+            		sheet.mhabilidades2_h5 = true;
+            		sheet.mhabilidades2_h4 = true;
+            		sheet.mhabilidades2_h3 = true;
+            		sheet.mhabilidades2_h2 = true;
+            		sheet.mhabilidades2_h1 = true;
+            	elseif sheet.mhabilidades2_h5 == true then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h4 = true;
+            		sheet.mhabilidades2_h3 = true;
+            		sheet.mhabilidades2_h2 = true;
+            		sheet.mhabilidades2_h1 = true;
+            	elseif sheet.mhabilidades2_h4 == true then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h5 = false;
+            		sheet.mhabilidades2_h3 = true;
+            		sheet.mhabilidades2_h2 = true;
+            		sheet.mhabilidades2_h1 = true;
+            	elseif sheet.mhabilidades2_h3 == true then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h5 = false;
+            		sheet.mhabilidades2_h4 = false;
+            		sheet.mhabilidades2_h2 = true;
+            		sheet.mhabilidades2_h1 = true;
+            	elseif sheet.mhabilidades2_h2 == true then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h5 = false;
+            		sheet.mhabilidades2_h4 = false;
+            		sheet.mhabilidades2_h3 = false;
+            		sheet.mhabilidades2_h1 = true;	
+            	elseif sheet.mhabilidades2_h1 == true then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h5 = false;
+            		sheet.mhabilidades2_h4 = false;
+            		sheet.mhabilidades2_h3 = false;
+            		sheet.mhabilidades2_h2 = false;
+            	elseif sheet.mhabilidades2_h1 == false then
+            		sheet.mhabilidades2_h6 = false;
+            		sheet.mhabilidades2_h5 = false;
+            		sheet.mhabilidades2_h4 = false;
+            		sheet.mhabilidades2_h3 = false;
+            		sheet.mhabilidades2_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event15 = obj.dataLink15:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades3_h6 == true then
+            		sheet.mhabilidades3_h5 = true;
+            		sheet.mhabilidades3_h4 = true;
+            		sheet.mhabilidades3_h3 = true;
+            		sheet.mhabilidades3_h2 = true;
+            		sheet.mhabilidades3_h1 = true;
+            	elseif sheet.mhabilidades3_h5 == true then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h4 = true;
+            		sheet.mhabilidades3_h3 = true;
+            		sheet.mhabilidades3_h2 = true;
+            		sheet.mhabilidades3_h1 = true;
+            	elseif sheet.mhabilidades3_h4 == true then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h5 = false;
+            		sheet.mhabilidades3_h3 = true;
+            		sheet.mhabilidades3_h2 = true;
+            		sheet.mhabilidades3_h1 = true;
+            	elseif sheet.mhabilidades3_h3 == true then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h5 = false;
+            		sheet.mhabilidades3_h4 = false;
+            		sheet.mhabilidades3_h2 = true;
+            		sheet.mhabilidades3_h1 = true;
+            	elseif sheet.mhabilidades3_h2 == true then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h5 = false;
+            		sheet.mhabilidades3_h4 = false;
+            		sheet.mhabilidades3_h3 = false;
+            		sheet.mhabilidades3_h1 = true;	
+            	elseif sheet.mhabilidades3_h1 == true then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h5 = false;
+            		sheet.mhabilidades3_h4 = false;
+            		sheet.mhabilidades3_h3 = false;
+            		sheet.mhabilidades3_h2 = false;
+            	elseif sheet.mhabilidades3_h1 == false then
+            		sheet.mhabilidades3_h6 = false;
+            		sheet.mhabilidades3_h5 = false;
+            		sheet.mhabilidades3_h4 = false;
+            		sheet.mhabilidades3_h3 = false;
+            		sheet.mhabilidades3_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event16 = obj.dataLink16:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades4_h6 == true then
+            		sheet.mhabilidades4_h5 = true;
+            		sheet.mhabilidades4_h4 = true;
+            		sheet.mhabilidades4_h3 = true;
+            		sheet.mhabilidades4_h2 = true;
+            		sheet.mhabilidades4_h1 = true;
+            	elseif sheet.mhabilidades4_h5 == true then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h4 = true;
+            		sheet.mhabilidades4_h3 = true;
+            		sheet.mhabilidades4_h2 = true;
+            		sheet.mhabilidades4_h1 = true;
+            	elseif sheet.mhabilidades4_h4 == true then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h5 = false;
+            		sheet.mhabilidades4_h3 = true;
+            		sheet.mhabilidades4_h2 = true;
+            		sheet.mhabilidades4_h1 = true;
+            	elseif sheet.mhabilidades4_h3 == true then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h5 = false;
+            		sheet.mhabilidades4_h4 = false;
+            		sheet.mhabilidades4_h2 = true;
+            		sheet.mhabilidades4_h1 = true;
+            	elseif sheet.mhabilidades4_h2 == true then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h5 = false;
+            		sheet.mhabilidades4_h4 = false;
+            		sheet.mhabilidades4_h3 = false;
+            		sheet.mhabilidades4_h1 = true;	
+            	elseif sheet.mhabilidades4_h1 == true then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h5 = false;
+            		sheet.mhabilidades4_h4 = false;
+            		sheet.mhabilidades4_h3 = false;
+            		sheet.mhabilidades4_h2 = false;
+            	elseif sheet.mhabilidades4_h1 == false then
+            		sheet.mhabilidades4_h6 = false;
+            		sheet.mhabilidades4_h5 = false;
+            		sheet.mhabilidades4_h4 = false;
+            		sheet.mhabilidades4_h3 = false;
+            		sheet.mhabilidades4_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event17 = obj.dataLink17:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades5_h6 == true then
+            		sheet.mhabilidades5_h5 = true;
+            		sheet.mhabilidades5_h4 = true;
+            		sheet.mhabilidades5_h3 = true;
+            		sheet.mhabilidades5_h2 = true;
+            		sheet.mhabilidades5_h1 = true;
+            	elseif sheet.mhabilidades5_h5 == true then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h4 = true;
+            		sheet.mhabilidades5_h3 = true;
+            		sheet.mhabilidades5_h2 = true;
+            		sheet.mhabilidades5_h1 = true;
+            	elseif sheet.mhabilidades5_h4 == true then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h5 = false;
+            		sheet.mhabilidades5_h3 = true;
+            		sheet.mhabilidades5_h2 = true;
+            		sheet.mhabilidades5_h1 = true;
+            	elseif sheet.mhabilidades5_h3 == true then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h5 = false;
+            		sheet.mhabilidades5_h4 = false;
+            		sheet.mhabilidades5_h2 = true;
+            		sheet.mhabilidades5_h1 = true;
+            	elseif sheet.mhabilidades5_h2 == true then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h5 = false;
+            		sheet.mhabilidades5_h4 = false;
+            		sheet.mhabilidades5_h3 = false;
+            		sheet.mhabilidades5_h1 = true;	
+            	elseif sheet.mhabilidades5_h1 == true then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h5 = false;
+            		sheet.mhabilidades5_h4 = false;
+            		sheet.mhabilidades5_h3 = false;
+            		sheet.mhabilidades5_h2 = false;
+            	elseif sheet.mhabilidades5_h1 == false then
+            		sheet.mhabilidades5_h6 = false;
+            		sheet.mhabilidades5_h5 = false;
+            		sheet.mhabilidades5_h4 = false;
+            		sheet.mhabilidades5_h3 = false;
+            		sheet.mhabilidades5_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event18 = obj.dataLink18:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades6_h6 == true then
+            		sheet.mhabilidades6_h5 = true;
+            		sheet.mhabilidades6_h4 = true;
+            		sheet.mhabilidades6_h3 = true;
+            		sheet.mhabilidades6_h2 = true;
+            		sheet.mhabilidades6_h1 = true;
+            	elseif sheet.mhabilidades6_h5 == true then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h4 = true;
+            		sheet.mhabilidades6_h3 = true;
+            		sheet.mhabilidades6_h2 = true;
+            		sheet.mhabilidades6_h1 = true;
+            	elseif sheet.mhabilidades6_h4 == true then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h5 = false;
+            		sheet.mhabilidades6_h3 = true;
+            		sheet.mhabilidades6_h2 = true;
+            		sheet.mhabilidades6_h1 = true;
+            	elseif sheet.mhabilidades6_h3 == true then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h5 = false;
+            		sheet.mhabilidades6_h4 = false;
+            		sheet.mhabilidades6_h2 = true;
+            		sheet.mhabilidades6_h1 = true;
+            	elseif sheet.mhabilidades6_h2 == true then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h5 = false;
+            		sheet.mhabilidades6_h4 = false;
+            		sheet.mhabilidades6_h3 = false;
+            		sheet.mhabilidades6_h1 = true;	
+            	elseif sheet.mhabilidades6_h1 == true then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h5 = false;
+            		sheet.mhabilidades6_h4 = false;
+            		sheet.mhabilidades6_h3 = false;
+            		sheet.mhabilidades6_h2 = false;
+            	elseif sheet.mhabilidades6_h1 == false then
+            		sheet.mhabilidades6_h6 = false;
+            		sheet.mhabilidades6_h5 = false;
+            		sheet.mhabilidades6_h4 = false;
+            		sheet.mhabilidades6_h3 = false;
+            		sheet.mhabilidades6_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event19 = obj.dataLink19:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades7_h6 == true then
+            		sheet.mhabilidades7_h5 = true;
+            		sheet.mhabilidades7_h4 = true;
+            		sheet.mhabilidades7_h3 = true;
+            		sheet.mhabilidades7_h2 = true;
+            		sheet.mhabilidades7_h1 = true;
+            	elseif sheet.mhabilidades7_h5 == true then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h4 = true;
+            		sheet.mhabilidades7_h3 = true;
+            		sheet.mhabilidades7_h2 = true;
+            		sheet.mhabilidades7_h1 = true;
+            	elseif sheet.mhabilidades7_h4 == true then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h5 = false;
+            		sheet.mhabilidades7_h3 = true;
+            		sheet.mhabilidades7_h2 = true;
+            		sheet.mhabilidades7_h1 = true;
+            	elseif sheet.mhabilidades7_h3 == true then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h5 = false;
+            		sheet.mhabilidades7_h4 = false;
+            		sheet.mhabilidades7_h2 = true;
+            		sheet.mhabilidades7_h1 = true;
+            	elseif sheet.mhabilidades7_h2 == true then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h5 = false;
+            		sheet.mhabilidades7_h4 = false;
+            		sheet.mhabilidades7_h3 = false;
+            		sheet.mhabilidades7_h1 = true;	
+            	elseif sheet.mhabilidades7_h1 == true then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h5 = false;
+            		sheet.mhabilidades7_h4 = false;
+            		sheet.mhabilidades7_h3 = false;
+            		sheet.mhabilidades7_h2 = false;
+            	elseif sheet.mhabilidades7_h1 == false then
+            		sheet.mhabilidades7_h6 = false;
+            		sheet.mhabilidades7_h5 = false;
+            		sheet.mhabilidades7_h4 = false;
+            		sheet.mhabilidades7_h3 = false;
+            		sheet.mhabilidades7_h2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event20 = obj.dataLink20:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.mhabilidades8_h6 == true then
+            		sheet.mhabilidades8_h5 = true;
+            		sheet.mhabilidades8_h4 = true;
+            		sheet.mhabilidades8_h3 = true;
+            		sheet.mhabilidades8_h2 = true;
+            		sheet.mhabilidades8_h1 = true;
+            	elseif sheet.mhabilidades8_h5 == true then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h4 = true;
+            		sheet.mhabilidades8_h3 = true;
+            		sheet.mhabilidades8_h2 = true;
+            		sheet.mhabilidades8_h1 = true;
+            	elseif sheet.mhabilidades8_h4 == true then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h5 = false;
+            		sheet.mhabilidades8_h3 = true;
+            		sheet.mhabilidades8_h2 = true;
+            		sheet.mhabilidades8_h1 = true;
+            	elseif sheet.mhabilidades8_h3 == true then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h5 = false;
+            		sheet.mhabilidades8_h4 = false;
+            		sheet.mhabilidades8_h2 = true;
+            		sheet.mhabilidades8_h1 = true;
+            	elseif sheet.mhabilidades8_h2 == true then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h5 = false;
+            		sheet.mhabilidades8_h4 = false;
+            		sheet.mhabilidades8_h3 = false;
+            		sheet.mhabilidades8_h1 = true;	
+            	elseif sheet.mhabilidades8_h1 == true then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h5 = false;
+            		sheet.mhabilidades8_h4 = false;
+            		sheet.mhabilidades8_h3 = false;
+            		sheet.mhabilidades8_h2 = false;
+            	elseif sheet.mhabilidades8_h1 == false then
+            		sheet.mhabilidades8_h6 = false;
+            		sheet.mhabilidades8_h5 = false;
+            		sheet.mhabilidades8_h4 = false;
+            		sheet.mhabilidades8_h3 = false;
+            		sheet.mhabilidades8_h2 = false;
+            	end;
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event20);
+        __o_rrpgObjs.removeEventListenerById(self._e_event19);
+        __o_rrpgObjs.removeEventListenerById(self._e_event18);
+        __o_rrpgObjs.removeEventListenerById(self._e_event17);
+        __o_rrpgObjs.removeEventListenerById(self._e_event16);
+        __o_rrpgObjs.removeEventListenerById(self._e_event15);
+        __o_rrpgObjs.removeEventListenerById(self._e_event14);
+        __o_rrpgObjs.removeEventListenerById(self._e_event13);
+        __o_rrpgObjs.removeEventListenerById(self._e_event12);
+        __o_rrpgObjs.removeEventListenerById(self._e_event11);
+        __o_rrpgObjs.removeEventListenerById(self._e_event10);
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
+        __o_rrpgObjs.removeEventListenerById(self._e_event7);
+        __o_rrpgObjs.removeEventListenerById(self._e_event6);
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
+        __o_rrpgObjs.removeEventListenerById(self._e_event4);
+        __o_rrpgObjs.removeEventListenerById(self._e_event3);
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
@@ -3203,6 +4409,7 @@ local function constructNew_OsMundosDosMortos1()
           self:setNodeDatabase(nil);
         end;
 
+        if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
         if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
         if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
         if self.imageCheckBox65 ~= nil then self.imageCheckBox65:destroy(); self.imageCheckBox65 = nil; end;
@@ -3214,6 +4421,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.edit36 ~= nil then self.edit36:destroy(); self.edit36 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.edit33 ~= nil then self.edit33:destroy(); self.edit33 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.backgroundimg ~= nil then self.backgroundimg:destroy(); self.backgroundimg = nil; end;
@@ -3232,6 +4440,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
+        if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
@@ -3255,7 +4464,9 @@ local function constructNew_OsMundosDosMortos1()
         if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
+        if self.frmCodigo1 ~= nil then self.frmCodigo1:destroy(); self.frmCodigo1 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
+        if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.cereb_n9 ~= nil then self.cereb_n9:destroy(); self.cereb_n9 = nil; end;
         if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
         if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
@@ -3274,6 +4485,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.cereb_n1 ~= nil then self.cereb_n1:destroy(); self.cereb_n1 = nil; end;
         if self.corac_n9 ~= nil then self.corac_n9:destroy(); self.corac_n9 = nil; end;
         if self.imageCheckBox79 ~= nil then self.imageCheckBox79:destroy(); self.imageCheckBox79 = nil; end;
+        if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
@@ -3288,6 +4500,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.image8 ~= nil then self.image8:destroy(); self.image8 = nil; end;
         if self.cereb_n4 ~= nil then self.cereb_n4:destroy(); self.cereb_n4 = nil; end;
         if self.imageCheckBox37 ~= nil then self.imageCheckBox37:destroy(); self.imageCheckBox37 = nil; end;
+        if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
@@ -3296,8 +4509,10 @@ local function constructNew_OsMundosDosMortos1()
         if self.imageCheckBox31 ~= nil then self.imageCheckBox31:destroy(); self.imageCheckBox31 = nil; end;
         if self.imageCheckBox92 ~= nil then self.imageCheckBox92:destroy(); self.imageCheckBox92 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.imageCheckBox9 ~= nil then self.imageCheckBox9:destroy(); self.imageCheckBox9 = nil; end;
+        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.imageCheckBox68 ~= nil then self.imageCheckBox68:destroy(); self.imageCheckBox68 = nil; end;
@@ -3306,6 +4521,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.imageCheckBox17 ~= nil then self.imageCheckBox17:destroy(); self.imageCheckBox17 = nil; end;
         if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
         if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
+        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
         if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
         if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
         if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
@@ -3316,7 +4532,9 @@ local function constructNew_OsMundosDosMortos1()
         if self.imageCheckBox74 ~= nil then self.imageCheckBox74:destroy(); self.imageCheckBox74 = nil; end;
         if self.imageCheckBox82 ~= nil then self.imageCheckBox82:destroy(); self.imageCheckBox82 = nil; end;
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
+        if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
         if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.horzLine16 ~= nil then self.horzLine16:destroy(); self.horzLine16 = nil; end;
@@ -3372,6 +4590,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
         if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
+        if self.dataLink13 ~= nil then self.dataLink13:destroy(); self.dataLink13 = nil; end;
         if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
         if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
         if self.imageCheckBox61 ~= nil then self.imageCheckBox61:destroy(); self.imageCheckBox61 = nil; end;
@@ -3408,13 +4627,18 @@ local function constructNew_OsMundosDosMortos1()
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
         if self.horzLine22 ~= nil then self.horzLine22:destroy(); self.horzLine22 = nil; end;
+        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
+        if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
         if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
         if self.cereb_n5 ~= nil then self.cereb_n5:destroy(); self.cereb_n5 = nil; end;
         if self.imageCheckBox60 ~= nil then self.imageCheckBox60:destroy(); self.imageCheckBox60 = nil; end;
         if self.imageCheckBox52 ~= nil then self.imageCheckBox52:destroy(); self.imageCheckBox52 = nil; end;
         if self.imageCheckBox77 ~= nil then self.imageCheckBox77:destroy(); self.imageCheckBox77 = nil; end;
+        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
         if self.musc_n10 ~= nil then self.musc_n10:destroy(); self.musc_n10 = nil; end;
         if self.imageCheckBox41 ~= nil then self.imageCheckBox41:destroy(); self.imageCheckBox41 = nil; end;
+        if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
         if self.musc_n2 ~= nil then self.musc_n2:destroy(); self.musc_n2 = nil; end;
         if self.imageCheckBox62 ~= nil then self.imageCheckBox62:destroy(); self.imageCheckBox62 = nil; end;
         if self.horzLine5 ~= nil then self.horzLine5:destroy(); self.horzLine5 = nil; end;
@@ -3438,6 +4662,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
         if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
         if self.layout44 ~= nil then self.layout44:destroy(); self.layout44 = nil; end;
+        if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
         if self.imageCheckBox71 ~= nil then self.imageCheckBox71:destroy(); self.imageCheckBox71 = nil; end;
         if self.corac_n10 ~= nil then self.corac_n10:destroy(); self.corac_n10 = nil; end;
         if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
@@ -3499,6 +4724,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
         if self.imageCheckBox72 ~= nil then self.imageCheckBox72:destroy(); self.imageCheckBox72 = nil; end;
         if self.imageCheckBox86 ~= nil then self.imageCheckBox86:destroy(); self.imageCheckBox86 = nil; end;
+        if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
         if self.edit32 ~= nil then self.edit32:destroy(); self.edit32 = nil; end;
         if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
         if self.corac_n8 ~= nil then self.corac_n8:destroy(); self.corac_n8 = nil; end;

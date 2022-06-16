@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCodigo2" height="0" theme="light">
+
+<dataLink fields="{'shabilidades1_6', 'shabilidades1_5', 'shabilidades1_4', 'shabilidades1_3', 'shabilidades1_2', 'shabilidades1_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades1_6 == true then
+		sheet.shabilidades1_5 = true;
+		sheet.shabilidades1_4 = true;
+		sheet.shabilidades1_3 = true;
+		sheet.shabilidades1_2 = true;
+		sheet.shabilidades1_1 = true;
+	elseif sheet.shabilidades1_5 == true then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_4 = true;
+		sheet.shabilidades1_3 = true;
+		sheet.shabilidades1_2 = true;
+		sheet.shabilidades1_1 = true;
+	elseif sheet.shabilidades1_4 == true then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_5 = false;
+		sheet.shabilidades1_3 = true;
+		sheet.shabilidades1_2 = true;
+		sheet.shabilidades1_1 = true;
+	elseif sheet.shabilidades1_3 == true then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_5 = false;
+		sheet.shabilidades1_4 = false;
+		sheet.shabilidades1_2 = true;
+		sheet.shabilidades1_1 = true;
+	elseif sheet.shabilidades1_2 == true then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_5 = false;
+		sheet.shabilidades1_4 = false;
+		sheet.shabilidades1_3 = false;
+		sheet.shabilidades1_1 = true;	
+	elseif sheet.shabilidades1_1 == true then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_5 = false;
+		sheet.shabilidades1_4 = false;
+		sheet.shabilidades1_3 = false;
+		sheet.shabilidades1_2 = false;
+	elseif sheet.shabilidades1_1 == false then
+		sheet.shabilidades1_6 = false;
+		sheet.shabilidades1_5 = false;
+		sheet.shabilidades1_4 = false;
+		sheet.shabilidades1_3 = false;
+		sheet.shabilidades1_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades2_6', 'shabilidades2_5', 'shabilidades2_4', 'shabilidades2_3', 'shabilidades2_2', 'shabilidades2_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades2_6 == true then
+		sheet.shabilidades2_5 = true;
+		sheet.shabilidades2_4 = true;
+		sheet.shabilidades2_3 = true;
+		sheet.shabilidades2_2 = true;
+		sheet.shabilidades2_1 = true;
+	elseif sheet.shabilidades2_5 == true then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_4 = true;
+		sheet.shabilidades2_3 = true;
+		sheet.shabilidades2_2 = true;
+		sheet.shabilidades2_1 = true;
+	elseif sheet.shabilidades2_4 == true then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_5 = false;
+		sheet.shabilidades2_3 = true;
+		sheet.shabilidades2_2 = true;
+		sheet.shabilidades2_1 = true;
+	elseif sheet.shabilidades2_3 == true then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_5 = false;
+		sheet.shabilidades2_4 = false;
+		sheet.shabilidades2_2 = true;
+		sheet.shabilidades2_1 = true;
+	elseif sheet.shabilidades2_2 == true then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_5 = false;
+		sheet.shabilidades2_4 = false;
+		sheet.shabilidades2_3 = false;
+		sheet.shabilidades2_1 = true;	
+	elseif sheet.shabilidades2_1 == true then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_5 = false;
+		sheet.shabilidades2_4 = false;
+		sheet.shabilidades2_3 = false;
+		sheet.shabilidades2_2 = false;
+	elseif sheet.shabilidades2_1 == false then
+		sheet.shabilidades2_6 = false;
+		sheet.shabilidades2_5 = false;
+		sheet.shabilidades2_4 = false;
+		sheet.shabilidades2_3 = false;
+		sheet.shabilidades2_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades3_6', 'shabilidades3_5', 'shabilidades3_4', 'shabilidades3_3', 'shabilidades3_2', 'shabilidades3_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades3_6 == true then
+		sheet.shabilidades3_5 = true;
+		sheet.shabilidades3_4 = true;
+		sheet.shabilidades3_3 = true;
+		sheet.shabilidades3_2 = true;
+		sheet.shabilidades3_1 = true;
+	elseif sheet.shabilidades3_5 == true then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_4 = true;
+		sheet.shabilidades3_3 = true;
+		sheet.shabilidades3_2 = true;
+		sheet.shabilidades3_1 = true;
+	elseif sheet.shabilidades3_4 == true then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_5 = false;
+		sheet.shabilidades3_3 = true;
+		sheet.shabilidades3_2 = true;
+		sheet.shabilidades3_1 = true;
+	elseif sheet.shabilidades3_3 == true then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_5 = false;
+		sheet.shabilidades3_4 = false;
+		sheet.shabilidades3_2 = true;
+		sheet.shabilidades3_1 = true;
+	elseif sheet.shabilidades3_2 == true then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_5 = false;
+		sheet.shabilidades3_4 = false;
+		sheet.shabilidades3_3 = false;
+		sheet.shabilidades3_1 = true;	
+	elseif sheet.shabilidades3_1 == true then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_5 = false;
+		sheet.shabilidades3_4 = false;
+		sheet.shabilidades3_3 = false;
+		sheet.shabilidades3_2 = false;
+	elseif sheet.shabilidades3_1 == false then
+		sheet.shabilidades3_6 = false;
+		sheet.shabilidades3_5 = false;
+		sheet.shabilidades3_4 = false;
+		sheet.shabilidades3_3 = false;
+		sheet.shabilidades3_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades4_6', 'shabilidades4_5', 'shabilidades4_4', 'shabilidades4_3', 'shabilidades4_2', 'shabilidades4_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades4_6 == true then
+		sheet.shabilidades4_5 = true;
+		sheet.shabilidades4_4 = true;
+		sheet.shabilidades4_3 = true;
+		sheet.shabilidades4_2 = true;
+		sheet.shabilidades4_1 = true;
+	elseif sheet.shabilidades4_5 == true then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_4 = true;
+		sheet.shabilidades4_3 = true;
+		sheet.shabilidades4_2 = true;
+		sheet.shabilidades4_1 = true;
+	elseif sheet.shabilidades4_4 == true then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_5 = false;
+		sheet.shabilidades4_3 = true;
+		sheet.shabilidades4_2 = true;
+		sheet.shabilidades4_1 = true;
+	elseif sheet.shabilidades4_3 == true then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_5 = false;
+		sheet.shabilidades4_4 = false;
+		sheet.shabilidades4_2 = true;
+		sheet.shabilidades4_1 = true;
+	elseif sheet.shabilidades4_2 == true then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_5 = false;
+		sheet.shabilidades4_4 = false;
+		sheet.shabilidades4_3 = false;
+		sheet.shabilidades4_1 = true;	
+	elseif sheet.shabilidades4_1 == true then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_5 = false;
+		sheet.shabilidades4_4 = false;
+		sheet.shabilidades4_3 = false;
+		sheet.shabilidades4_2 = false;
+	elseif sheet.shabilidades4_1 == false then
+		sheet.shabilidades4_6 = false;
+		sheet.shabilidades4_5 = false;
+		sheet.shabilidades4_4 = false;
+		sheet.shabilidades4_3 = false;
+		sheet.shabilidades4_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades5_6', 'shabilidades5_5', 'shabilidades5_4', 'shabilidades5_3', 'shabilidades5_2', 'shabilidades5_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades5_6 == true then
+		sheet.shabilidades5_5 = true;
+		sheet.shabilidades5_4 = true;
+		sheet.shabilidades5_3 = true;
+		sheet.shabilidades5_2 = true;
+		sheet.shabilidades5_1 = true;
+	elseif sheet.shabilidades5_5 == true then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_4 = true;
+		sheet.shabilidades5_3 = true;
+		sheet.shabilidades5_2 = true;
+		sheet.shabilidades5_1 = true;
+	elseif sheet.shabilidades5_4 == true then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_5 = false;
+		sheet.shabilidades5_3 = true;
+		sheet.shabilidades5_2 = true;
+		sheet.shabilidades5_1 = true;
+	elseif sheet.shabilidades5_3 == true then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_5 = false;
+		sheet.shabilidades5_4 = false;
+		sheet.shabilidades5_2 = true;
+		sheet.shabilidades5_1 = true;
+	elseif sheet.shabilidades5_2 == true then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_5 = false;
+		sheet.shabilidades5_4 = false;
+		sheet.shabilidades5_3 = false;
+		sheet.shabilidades5_1 = true;	
+	elseif sheet.shabilidades5_1 == true then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_5 = false;
+		sheet.shabilidades5_4 = false;
+		sheet.shabilidades5_3 = false;
+		sheet.shabilidades5_2 = false;
+	elseif sheet.shabilidades5_1 == false then
+		sheet.shabilidades5_6 = false;
+		sheet.shabilidades5_5 = false;
+		sheet.shabilidades5_4 = false;
+		sheet.shabilidades5_3 = false;
+		sheet.shabilidades5_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades6_6', 'shabilidades6_5', 'shabilidades6_4', 'shabilidades6_3', 'shabilidades6_2', 'shabilidades6_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades6_6 == true then
+		sheet.shabilidades6_5 = true;
+		sheet.shabilidades6_4 = true;
+		sheet.shabilidades6_3 = true;
+		sheet.shabilidades6_2 = true;
+		sheet.shabilidades6_1 = true;
+	elseif sheet.shabilidades6_5 == true then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_4 = true;
+		sheet.shabilidades6_3 = true;
+		sheet.shabilidades6_2 = true;
+		sheet.shabilidades6_1 = true;
+	elseif sheet.shabilidades6_4 == true then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_5 = false;
+		sheet.shabilidades6_3 = true;
+		sheet.shabilidades6_2 = true;
+		sheet.shabilidades6_1 = true;
+	elseif sheet.shabilidades6_3 == true then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_5 = false;
+		sheet.shabilidades6_4 = false;
+		sheet.shabilidades6_2 = true;
+		sheet.shabilidades6_1 = true;
+	elseif sheet.shabilidades6_2 == true then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_5 = false;
+		sheet.shabilidades6_4 = false;
+		sheet.shabilidades6_3 = false;
+		sheet.shabilidades6_1 = true;	
+	elseif sheet.shabilidades6_1 == true then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_5 = false;
+		sheet.shabilidades6_4 = false;
+		sheet.shabilidades6_3 = false;
+		sheet.shabilidades6_2 = false;
+	elseif sheet.shabilidades6_1 == false then
+		sheet.shabilidades6_6 = false;
+		sheet.shabilidades6_5 = false;
+		sheet.shabilidades6_4 = false;
+		sheet.shabilidades6_3 = false;
+		sheet.shabilidades6_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades7_6', 'shabilidades7_5', 'shabilidades7_4', 'shabilidades7_3', 'shabilidades7_2', 'shabilidades7_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades7_6 == true then
+		sheet.shabilidades7_5 = true;
+		sheet.shabilidades7_4 = true;
+		sheet.shabilidades7_3 = true;
+		sheet.shabilidades7_2 = true;
+		sheet.shabilidades7_1 = true;
+	elseif sheet.shabilidades7_5 == true then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_4 = true;
+		sheet.shabilidades7_3 = true;
+		sheet.shabilidades7_2 = true;
+		sheet.shabilidades7_1 = true;
+	elseif sheet.shabilidades7_4 == true then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_5 = false;
+		sheet.shabilidades7_3 = true;
+		sheet.shabilidades7_2 = true;
+		sheet.shabilidades7_1 = true;
+	elseif sheet.shabilidades7_3 == true then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_5 = false;
+		sheet.shabilidades7_4 = false;
+		sheet.shabilidades7_2 = true;
+		sheet.shabilidades7_1 = true;
+	elseif sheet.shabilidades7_2 == true then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_5 = false;
+		sheet.shabilidades7_4 = false;
+		sheet.shabilidades7_3 = false;
+		sheet.shabilidades7_1 = true;	
+	elseif sheet.shabilidades7_1 == true then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_5 = false;
+		sheet.shabilidades7_4 = false;
+		sheet.shabilidades7_3 = false;
+		sheet.shabilidades7_2 = false;
+	elseif sheet.shabilidades7_1 == false then
+		sheet.shabilidades7_6 = false;
+		sheet.shabilidades7_5 = false;
+		sheet.shabilidades7_4 = false;
+		sheet.shabilidades7_3 = false;
+		sheet.shabilidades7_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades8_6', 'shabilidades8_5', 'shabilidades8_4', 'shabilidades8_3', 'shabilidades8_2', 'shabilidades8_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades8_6 == true then
+		sheet.shabilidades8_5 = true;
+		sheet.shabilidades8_4 = true;
+		sheet.shabilidades8_3 = true;
+		sheet.shabilidades8_2 = true;
+		sheet.shabilidades8_1 = true;
+	elseif sheet.shabilidades8_5 == true then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_4 = true;
+		sheet.shabilidades8_3 = true;
+		sheet.shabilidades8_2 = true;
+		sheet.shabilidades8_1 = true;
+	elseif sheet.shabilidades8_4 == true then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_5 = false;
+		sheet.shabilidades8_3 = true;
+		sheet.shabilidades8_2 = true;
+		sheet.shabilidades8_1 = true;
+	elseif sheet.shabilidades8_3 == true then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_5 = false;
+		sheet.shabilidades8_4 = false;
+		sheet.shabilidades8_2 = true;
+		sheet.shabilidades8_1 = true;
+	elseif sheet.shabilidades8_2 == true then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_5 = false;
+		sheet.shabilidades8_4 = false;
+		sheet.shabilidades8_3 = false;
+		sheet.shabilidades8_1 = true;	
+	elseif sheet.shabilidades8_1 == true then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_5 = false;
+		sheet.shabilidades8_4 = false;
+		sheet.shabilidades8_3 = false;
+		sheet.shabilidades8_2 = false;
+	elseif sheet.shabilidades8_1 == false then
+		sheet.shabilidades8_6 = false;
+		sheet.shabilidades8_5 = false;
+		sheet.shabilidades8_4 = false;
+		sheet.shabilidades8_3 = false;
+		sheet.shabilidades8_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades1_h6', 'shabilidades1_h5', 'shabilidades1_h4', 'shabilidades1_h3', 'shabilidades1_h2', 'shabilidades1_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades1_h6 == true then
+		sheet.shabilidades1_h5 = true;
+		sheet.shabilidades1_h4 = true;
+		sheet.shabilidades1_h3 = true;
+		sheet.shabilidades1_h2 = true;
+		sheet.shabilidades1_h1 = true;
+	elseif sheet.shabilidades1_h5 == true then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h4 = true;
+		sheet.shabilidades1_h3 = true;
+		sheet.shabilidades1_h2 = true;
+		sheet.shabilidades1_h1 = true;
+	elseif sheet.shabilidades1_h4 == true then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h5 = false;
+		sheet.shabilidades1_h3 = true;
+		sheet.shabilidades1_h2 = true;
+		sheet.shabilidades1_h1 = true;
+	elseif sheet.shabilidades1_h3 == true then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h5 = false;
+		sheet.shabilidades1_h4 = false;
+		sheet.shabilidades1_h2 = true;
+		sheet.shabilidades1_h1 = true;
+	elseif sheet.shabilidades1_h2 == true then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h5 = false;
+		sheet.shabilidades1_h4 = false;
+		sheet.shabilidades1_h3 = false;
+		sheet.shabilidades1_h1 = true;	
+	elseif sheet.shabilidades1_h1 == true then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h5 = false;
+		sheet.shabilidades1_h4 = false;
+		sheet.shabilidades1_h3 = false;
+		sheet.shabilidades1_h2 = false;
+	elseif sheet.shabilidades1_h1 == false then
+		sheet.shabilidades1_h6 = false;
+		sheet.shabilidades1_h5 = false;
+		sheet.shabilidades1_h4 = false;
+		sheet.shabilidades1_h3 = false;
+		sheet.shabilidades1_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades2_h6', 'shabilidades2_h5', 'shabilidades2_h4', 'shabilidades2_h3', 'shabilidades2_h2', 'shabilidades2_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades2_h6 == true then
+		sheet.shabilidades2_h5 = true;
+		sheet.shabilidades2_h4 = true;
+		sheet.shabilidades2_h3 = true;
+		sheet.shabilidades2_h2 = true;
+		sheet.shabilidades2_h1 = true;
+	elseif sheet.shabilidades2_h5 == true then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h4 = true;
+		sheet.shabilidades2_h3 = true;
+		sheet.shabilidades2_h2 = true;
+		sheet.shabilidades2_h1 = true;
+	elseif sheet.shabilidades2_h4 == true then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h5 = false;
+		sheet.shabilidades2_h3 = true;
+		sheet.shabilidades2_h2 = true;
+		sheet.shabilidades2_h1 = true;
+	elseif sheet.shabilidades2_h3 == true then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h5 = false;
+		sheet.shabilidades2_h4 = false;
+		sheet.shabilidades2_h2 = true;
+		sheet.shabilidades2_h1 = true;
+	elseif sheet.shabilidades2_h2 == true then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h5 = false;
+		sheet.shabilidades2_h4 = false;
+		sheet.shabilidades2_h3 = false;
+		sheet.shabilidades2_h1 = true;	
+	elseif sheet.shabilidades2_h1 == true then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h5 = false;
+		sheet.shabilidades2_h4 = false;
+		sheet.shabilidades2_h3 = false;
+		sheet.shabilidades2_h2 = false;
+	elseif sheet.shabilidades2_h1 == false then
+		sheet.shabilidades2_h6 = false;
+		sheet.shabilidades2_h5 = false;
+		sheet.shabilidades2_h4 = false;
+		sheet.shabilidades2_h3 = false;
+		sheet.shabilidades2_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades3_h6', 'shabilidades3_h5', 'shabilidades3_h4', 'shabilidades3_h3', 'shabilidades3_h2', 'shabilidades3_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades3_h6 == true then
+		sheet.shabilidades3_h5 = true;
+		sheet.shabilidades3_h4 = true;
+		sheet.shabilidades3_h3 = true;
+		sheet.shabilidades3_h2 = true;
+		sheet.shabilidades3_h1 = true;
+	elseif sheet.shabilidades3_h5 == true then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h4 = true;
+		sheet.shabilidades3_h3 = true;
+		sheet.shabilidades3_h2 = true;
+		sheet.shabilidades3_h1 = true;
+	elseif sheet.shabilidades3_h4 == true then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h5 = false;
+		sheet.shabilidades3_h3 = true;
+		sheet.shabilidades3_h2 = true;
+		sheet.shabilidades3_h1 = true;
+	elseif sheet.shabilidades3_h3 == true then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h5 = false;
+		sheet.shabilidades3_h4 = false;
+		sheet.shabilidades3_h2 = true;
+		sheet.shabilidades3_h1 = true;
+	elseif sheet.shabilidades3_h2 == true then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h5 = false;
+		sheet.shabilidades3_h4 = false;
+		sheet.shabilidades3_h3 = false;
+		sheet.shabilidades3_h1 = true;	
+	elseif sheet.shabilidades3_h1 == true then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h5 = false;
+		sheet.shabilidades3_h4 = false;
+		sheet.shabilidades3_h3 = false;
+		sheet.shabilidades3_h2 = false;
+	elseif sheet.shabilidades3_h1 == false then
+		sheet.shabilidades3_h6 = false;
+		sheet.shabilidades3_h5 = false;
+		sheet.shabilidades3_h4 = false;
+		sheet.shabilidades3_h3 = false;
+		sheet.shabilidades3_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades4_h6', 'shabilidades4_h5', 'shabilidades4_h4', 'shabilidades4_h3', 'shabilidades4_h2', 'shabilidades4_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades4_h6 == true then
+		sheet.shabilidades4_h5 = true;
+		sheet.shabilidades4_h4 = true;
+		sheet.shabilidades4_h3 = true;
+		sheet.shabilidades4_h2 = true;
+		sheet.shabilidades4_h1 = true;
+	elseif sheet.shabilidades4_h5 == true then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h4 = true;
+		sheet.shabilidades4_h3 = true;
+		sheet.shabilidades4_h2 = true;
+		sheet.shabilidades4_h1 = true;
+	elseif sheet.shabilidades4_h4 == true then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h5 = false;
+		sheet.shabilidades4_h3 = true;
+		sheet.shabilidades4_h2 = true;
+		sheet.shabilidades4_h1 = true;
+	elseif sheet.shabilidades4_h3 == true then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h5 = false;
+		sheet.shabilidades4_h4 = false;
+		sheet.shabilidades4_h2 = true;
+		sheet.shabilidades4_h1 = true;
+	elseif sheet.shabilidades4_h2 == true then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h5 = false;
+		sheet.shabilidades4_h4 = false;
+		sheet.shabilidades4_h3 = false;
+		sheet.shabilidades4_h1 = true;	
+	elseif sheet.shabilidades4_h1 == true then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h5 = false;
+		sheet.shabilidades4_h4 = false;
+		sheet.shabilidades4_h3 = false;
+		sheet.shabilidades4_h2 = false;
+	elseif sheet.shabilidades4_h1 == false then
+		sheet.shabilidades4_h6 = false;
+		sheet.shabilidades4_h5 = false;
+		sheet.shabilidades4_h4 = false;
+		sheet.shabilidades4_h3 = false;
+		sheet.shabilidades4_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades5_h6', 'shabilidades5_h5', 'shabilidades5_h4', 'shabilidades5_h3', 'shabilidades5_h2', 'shabilidades5_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades5_h6 == true then
+		sheet.shabilidades5_h5 = true;
+		sheet.shabilidades5_h4 = true;
+		sheet.shabilidades5_h3 = true;
+		sheet.shabilidades5_h2 = true;
+		sheet.shabilidades5_h1 = true;
+	elseif sheet.shabilidades5_h5 == true then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h4 = true;
+		sheet.shabilidades5_h3 = true;
+		sheet.shabilidades5_h2 = true;
+		sheet.shabilidades5_h1 = true;
+	elseif sheet.shabilidades5_h4 == true then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h5 = false;
+		sheet.shabilidades5_h3 = true;
+		sheet.shabilidades5_h2 = true;
+		sheet.shabilidades5_h1 = true;
+	elseif sheet.shabilidades5_h3 == true then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h5 = false;
+		sheet.shabilidades5_h4 = false;
+		sheet.shabilidades5_h2 = true;
+		sheet.shabilidades5_h1 = true;
+	elseif sheet.shabilidades5_h2 == true then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h5 = false;
+		sheet.shabilidades5_h4 = false;
+		sheet.shabilidades5_h3 = false;
+		sheet.shabilidades5_h1 = true;	
+	elseif sheet.shabilidades5_h1 == true then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h5 = false;
+		sheet.shabilidades5_h4 = false;
+		sheet.shabilidades5_h3 = false;
+		sheet.shabilidades5_h2 = false;
+	elseif sheet.shabilidades5_h1 == false then
+		sheet.shabilidades5_h6 = false;
+		sheet.shabilidades5_h5 = false;
+		sheet.shabilidades5_h4 = false;
+		sheet.shabilidades5_h3 = false;
+		sheet.shabilidades5_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades6_h6', 'shabilidades6_h5', 'shabilidades6_h4', 'shabilidades6_h3', 'shabilidades6_h2', 'shabilidades6_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades6_h6 == true then
+		sheet.shabilidades6_h5 = true;
+		sheet.shabilidades6_h4 = true;
+		sheet.shabilidades6_h3 = true;
+		sheet.shabilidades6_h2 = true;
+		sheet.shabilidades6_h1 = true;
+	elseif sheet.shabilidades6_h5 == true then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h4 = true;
+		sheet.shabilidades6_h3 = true;
+		sheet.shabilidades6_h2 = true;
+		sheet.shabilidades6_h1 = true;
+	elseif sheet.shabilidades6_h4 == true then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h5 = false;
+		sheet.shabilidades6_h3 = true;
+		sheet.shabilidades6_h2 = true;
+		sheet.shabilidades6_h1 = true;
+	elseif sheet.shabilidades6_h3 == true then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h5 = false;
+		sheet.shabilidades6_h4 = false;
+		sheet.shabilidades6_h2 = true;
+		sheet.shabilidades6_h1 = true;
+	elseif sheet.shabilidades6_h2 == true then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h5 = false;
+		sheet.shabilidades6_h4 = false;
+		sheet.shabilidades6_h3 = false;
+		sheet.shabilidades6_h1 = true;	
+	elseif sheet.shabilidades6_h1 == true then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h5 = false;
+		sheet.shabilidades6_h4 = false;
+		sheet.shabilidades6_h3 = false;
+		sheet.shabilidades6_h2 = false;
+	elseif sheet.shabilidades6_h1 == false then
+		sheet.shabilidades6_h6 = false;
+		sheet.shabilidades6_h5 = false;
+		sheet.shabilidades6_h4 = false;
+		sheet.shabilidades6_h3 = false;
+		sheet.shabilidades6_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades7_h6', 'shabilidades7_h5', 'shabilidades7_h4', 'shabilidades7_h3', 'shabilidades7_h2', 'shabilidades7_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades7_h6 == true then
+		sheet.shabilidades7_h5 = true;
+		sheet.shabilidades7_h4 = true;
+		sheet.shabilidades7_h3 = true;
+		sheet.shabilidades7_h2 = true;
+		sheet.shabilidades7_h1 = true;
+	elseif sheet.shabilidades7_h5 == true then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h4 = true;
+		sheet.shabilidades7_h3 = true;
+		sheet.shabilidades7_h2 = true;
+		sheet.shabilidades7_h1 = true;
+	elseif sheet.shabilidades7_h4 == true then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h5 = false;
+		sheet.shabilidades7_h3 = true;
+		sheet.shabilidades7_h2 = true;
+		sheet.shabilidades7_h1 = true;
+	elseif sheet.shabilidades7_h3 == true then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h5 = false;
+		sheet.shabilidades7_h4 = false;
+		sheet.shabilidades7_h2 = true;
+		sheet.shabilidades7_h1 = true;
+	elseif sheet.shabilidades7_h2 == true then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h5 = false;
+		sheet.shabilidades7_h4 = false;
+		sheet.shabilidades7_h3 = false;
+		sheet.shabilidades7_h1 = true;	
+	elseif sheet.shabilidades7_h1 == true then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h5 = false;
+		sheet.shabilidades7_h4 = false;
+		sheet.shabilidades7_h3 = false;
+		sheet.shabilidades7_h2 = false;
+	elseif sheet.shabilidades7_h1 == false then
+		sheet.shabilidades7_h6 = false;
+		sheet.shabilidades7_h5 = false;
+		sheet.shabilidades7_h4 = false;
+		sheet.shabilidades7_h3 = false;
+		sheet.shabilidades7_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'shabilidades8_h6', 'shabilidades8_h5', 'shabilidades8_h4', 'shabilidades8_h3', 'shabilidades8_h2', 'shabilidades8_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.shabilidades8_h6 == true then
+		sheet.shabilidades8_h5 = true;
+		sheet.shabilidades8_h4 = true;
+		sheet.shabilidades8_h3 = true;
+		sheet.shabilidades8_h2 = true;
+		sheet.shabilidades8_h1 = true;
+	elseif sheet.shabilidades8_h5 == true then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h4 = true;
+		sheet.shabilidades8_h3 = true;
+		sheet.shabilidades8_h2 = true;
+		sheet.shabilidades8_h1 = true;
+	elseif sheet.shabilidades8_h4 == true then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h5 = false;
+		sheet.shabilidades8_h3 = true;
+		sheet.shabilidades8_h2 = true;
+		sheet.shabilidades8_h1 = true;
+	elseif sheet.shabilidades8_h3 == true then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h5 = false;
+		sheet.shabilidades8_h4 = false;
+		sheet.shabilidades8_h2 = true;
+		sheet.shabilidades8_h1 = true;
+	elseif sheet.shabilidades8_h2 == true then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h5 = false;
+		sheet.shabilidades8_h4 = false;
+		sheet.shabilidades8_h3 = false;
+		sheet.shabilidades8_h1 = true;	
+	elseif sheet.shabilidades8_h1 == true then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h5 = false;
+		sheet.shabilidades8_h4 = false;
+		sheet.shabilidades8_h3 = false;
+		sheet.shabilidades8_h2 = false;
+	elseif sheet.shabilidades8_h1 == false then
+		sheet.shabilidades8_h6 = false;
+		sheet.shabilidades8_h5 = false;
+		sheet.shabilidades8_h4 = false;
+		sheet.shabilidades8_h3 = false;
+		sheet.shabilidades8_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+</form>

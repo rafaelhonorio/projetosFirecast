@@ -7,7 +7,7 @@ require("ndb.lua");
 require("locale.lua");
 local __o_Utils = require("utils.lua");
 
-local function constructNew_OsMundosDosMortosC()
+local function constructNew_TormentaC()
     local obj = GUI.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
@@ -26,7 +26,7 @@ local function constructNew_OsMundosDosMortosC()
 
     _gui_assignInitialParentForForm(obj.handle);
     obj:beginUpdate();
-    obj:setName("OsMundosDosMortosC");
+    obj:setName("TormentaC");
     obj:setAlign("client");
     obj:setTheme("dark");
 
@@ -186,13 +186,13 @@ local function constructNew_OsMundosDosMortosC()
     return obj;
 end;
 
-function newOsMundosDosMortosC()
+function newTormentaC()
     local retObj = nil;
     __o_rrpgObjs.beginObjectsLoading();
 
     __o_Utils.tryFinally(
       function()
-        retObj = constructNew_OsMundosDosMortosC();
+        retObj = constructNew_TormentaC();
       end,
       function()
         __o_rrpgObjs.endObjectsLoading();
@@ -202,17 +202,17 @@ function newOsMundosDosMortosC()
     return retObj;
 end;
 
-local _OsMundosDosMortosC = {
-    newEditor = newOsMundosDosMortosC, 
-    new = newOsMundosDosMortosC, 
-    name = "OsMundosDosMortosC", 
+local _TormentaC = {
+    newEditor = newTormentaC, 
+    new = newTormentaC, 
+    name = "TormentaC", 
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
     title = "", 
     description=""};
 
-OsMundosDosMortosC = _OsMundosDosMortosC;
-Firecast.registrarForm(_OsMundosDosMortosC);
+TormentaC = _TormentaC;
+Firecast.registrarForm(_TormentaC);
 
-return _OsMundosDosMortosC;
+return _TormentaC;

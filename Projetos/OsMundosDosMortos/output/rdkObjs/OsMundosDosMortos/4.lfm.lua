@@ -63,7 +63,7 @@ local function constructNew_OsMundosDosMortos4()
     obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.boxDetalhesDoItem);
     obj.rectangle1:setAlign("top");
-    obj.rectangle1:setColor("white");
+    obj.rectangle1:setColor("black");
     obj.rectangle1:setXradius(10);
     obj.rectangle1:setYradius(10);
     obj.rectangle1:setHeight(180);

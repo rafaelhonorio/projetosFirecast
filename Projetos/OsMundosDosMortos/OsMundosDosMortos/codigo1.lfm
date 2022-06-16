@@ -1,88 +1,1109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="frmCodigo1" height="0" theme="light">
 
-<dataLink fields="{'Gota1for', 'Gota1des', 'Gota1vig', 'Gota1cari', 'Gota1mani', 'Gota1apa', 'Gota1perc', 'Gota1int', 'Gota1rac', 'Gota1CC', 'Gota1AI', 'Gota1Cor'}"
- defaultValues="{'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true'}">
-</dataLink>
-
-<dataLink fields="{'Gota8des', 'Gota7des', 'Gota6des', 'Gota5des', 'Gota4des', 'Gota3des', 'Gota2des', 'Gota1des'}">
+<dataLink fields="{'musc_10', 'musc_9', 'musc_8', 'musc_7','musc_6', 'musc_5', 'musc_4', 'musc_3', 'musc_2', 'musc_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
-	if sheet.Gota8des == true then
-		sheet.Gota7des = true;
-		sheet.Gota6des = true;
-		sheet.Gota5des = true;
-		sheet.Gota4des = true;
-		sheet.Gota3des = true;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota7des == true then
-		sheet.Gota8des = false;
-		sheet.Gota6des = true;
-		sheet.Gota5des = true;
-		sheet.Gota4des = true;
-		sheet.Gota3des = true;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota6des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota5des = true;
-		sheet.Gota4des = true;
-		sheet.Gota3des = true;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota5des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota4des = true;
-		sheet.Gota3des = true;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota4des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota5des = false;
-		sheet.Gota3des = true;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota3des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota5des = false;
-		sheet.Gota4des = false;
-		sheet.Gota2des = true;
-		sheet.Gota1des = true;
-	elseif sheet.Gota2des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota5des = false;
-		sheet.Gota4des = false;
-		sheet.Gota3des = false;
-		sheet.Gota1des = true;	
-	elseif sheet.Gota1des == true then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota5des = false;
-		sheet.Gota4des = false;
-		sheet.Gota3des = false;
-		sheet.Gota2des = false;
-	elseif sheet.Gota1des == false then
-		sheet.Gota8des = false;
-		sheet.Gota7des = false;
-		sheet.Gota6des = false;
-		sheet.Gota5des = false;
-		sheet.Gota4des = false;
-		sheet.Gota3des = false;
-		sheet.Gota2des = false;
+	if sheet.musc_10 == true then
+		sheet.musc_9 = true;
+		sheet.musc_8 = true;
+		sheet.musc_7 = true;
+		sheet.musc_6 = true;        
+		sheet.musc_5 = true;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_9 == true then
+		sheet.musc_10 = false;
+		sheet.musc_8 = true;
+		sheet.musc_7 = true;
+		sheet.musc_6 = true;        
+		sheet.musc_5 = true;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_8 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_7 = true;
+		sheet.musc_6 = true;        
+		sheet.musc_5 = true;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_7 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_6 = true;        
+		sheet.musc_5 = true;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_6 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_5 = true;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_5 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_6 = false;
+		sheet.musc_4 = true;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_4 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_6 = false;
+		sheet.musc_5 = false;
+		sheet.musc_3 = true;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_3 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_6 = false;
+		sheet.musc_5 = false;
+		sheet.musc_4 = false;
+		sheet.musc_2 = true;
+		sheet.musc_1 = true;
+	elseif sheet.musc_2 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_6 = false;
+		sheet.musc_5 = false;
+		sheet.musc_4 = false;
+		sheet.musc_3 = false;
+		sheet.musc_1 = true;
+	elseif sheet.musc_1 == true then
+		sheet.musc_10 = false;
+		sheet.musc_9 = false;
+		sheet.musc_8 = false;
+		sheet.musc_7 = false;        
+		sheet.musc_6 = false;
+		sheet.musc_5 = false;
+		sheet.musc_4 = false;
+		sheet.musc_3 = false;
+		sheet.musc_2 = false;
 	end;
 	</event>
 </dataLink>
 
+<dataLink fields="{'cereb_10', 'cereb_9', 'cereb_8', 'cereb_7','cereb_6', 'cereb_5', 'cereb_4', 'cereb_3', 'cereb_2', 'cereb_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.cereb_10 == true then
+		sheet.cereb_9 = true;
+		sheet.cereb_8 = true;
+		sheet.cereb_7 = true;
+		sheet.cereb_6 = true;        
+		sheet.cereb_5 = true;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_9 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_8 = true;
+		sheet.cereb_7 = true;
+		sheet.cereb_6 = true;        
+		sheet.cereb_5 = true;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_8 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_7 = true;
+		sheet.cereb_6 = true;        
+		sheet.cereb_5 = true;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_7 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_6 = true;        
+		sheet.cereb_5 = true;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_6 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_5 = true;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_5 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_6 = false;
+		sheet.cereb_4 = true;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_4 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_6 = false;
+		sheet.cereb_5 = false;
+		sheet.cereb_3 = true;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_3 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_6 = false;
+		sheet.cereb_5 = false;
+		sheet.cereb_4 = false;
+		sheet.cereb_2 = true;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_2 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_6 = false;
+		sheet.cereb_5 = false;
+		sheet.cereb_4 = false;
+		sheet.cereb_3 = false;
+		sheet.cereb_1 = true;
+	elseif sheet.cereb_1 == true then
+		sheet.cereb_10 = false;
+		sheet.cereb_9 = false;
+		sheet.cereb_8 = false;
+		sheet.cereb_7 = false;        
+		sheet.cereb_6 = false;
+		sheet.cereb_5 = false;
+		sheet.cereb_4 = false;
+		sheet.cereb_3 = false;
+		sheet.cereb_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'corac_10', 'corac_9', 'corac_8', 'corac_7','corac_6', 'corac_5', 'corac_4', 'corac_3', 'corac_2', 'corac_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.corac_10 == true then
+		sheet.corac_9 = true;
+		sheet.corac_8 = true;
+		sheet.corac_7 = true;
+		sheet.corac_6 = true;        
+		sheet.corac_5 = true;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_9 == true then
+		sheet.corac_10 = false;
+		sheet.corac_8 = true;
+		sheet.corac_7 = true;
+		sheet.corac_6 = true;        
+		sheet.corac_5 = true;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_8 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_7 = true;
+		sheet.corac_6 = true;        
+		sheet.corac_5 = true;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_7 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_6 = true;        
+		sheet.corac_5 = true;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_6 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_5 = true;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_5 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_6 = false;
+		sheet.corac_4 = true;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_4 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_6 = false;
+		sheet.corac_5 = false;
+		sheet.corac_3 = true;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_3 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_6 = false;
+		sheet.corac_5 = false;
+		sheet.corac_4 = false;
+		sheet.corac_2 = true;
+		sheet.corac_1 = true;
+	elseif sheet.corac_2 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_6 = false;
+		sheet.corac_5 = false;
+		sheet.corac_4 = false;
+		sheet.corac_3 = false;
+		sheet.corac_1 = true;
+	elseif sheet.corac_1 == true then
+		sheet.corac_10 = false;
+		sheet.corac_9 = false;
+		sheet.corac_8 = false;
+		sheet.corac_7 = false;        
+		sheet.corac_6 = false;
+		sheet.corac_5 = false;
+		sheet.corac_4 = false;
+		sheet.corac_3 = false;
+		sheet.corac_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades1_6', 'mhabilidades1_5', 'mhabilidades1_4', 'mhabilidades1_3', 'mhabilidades1_2', 'mhabilidades1_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades1_6 == true then
+		sheet.mhabilidades1_5 = true;
+		sheet.mhabilidades1_4 = true;
+		sheet.mhabilidades1_3 = true;
+		sheet.mhabilidades1_2 = true;
+		sheet.mhabilidades1_1 = true;
+	elseif sheet.mhabilidades1_5 == true then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_4 = true;
+		sheet.mhabilidades1_3 = true;
+		sheet.mhabilidades1_2 = true;
+		sheet.mhabilidades1_1 = true;
+	elseif sheet.mhabilidades1_4 == true then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_5 = false;
+		sheet.mhabilidades1_3 = true;
+		sheet.mhabilidades1_2 = true;
+		sheet.mhabilidades1_1 = true;
+	elseif sheet.mhabilidades1_3 == true then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_5 = false;
+		sheet.mhabilidades1_4 = false;
+		sheet.mhabilidades1_2 = true;
+		sheet.mhabilidades1_1 = true;
+	elseif sheet.mhabilidades1_2 == true then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_5 = false;
+		sheet.mhabilidades1_4 = false;
+		sheet.mhabilidades1_3 = false;
+		sheet.mhabilidades1_1 = true;	
+	elseif sheet.mhabilidades1_1 == true then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_5 = false;
+		sheet.mhabilidades1_4 = false;
+		sheet.mhabilidades1_3 = false;
+		sheet.mhabilidades1_2 = false;
+	elseif sheet.mhabilidades1_1 == false then
+		sheet.mhabilidades1_6 = false;
+		sheet.mhabilidades1_5 = false;
+		sheet.mhabilidades1_4 = false;
+		sheet.mhabilidades1_3 = false;
+		sheet.mhabilidades1_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades2_6', 'mhabilidades2_5', 'mhabilidades2_4', 'mhabilidades2_3', 'mhabilidades2_2', 'mhabilidades2_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades2_6 == true then
+		sheet.mhabilidades2_5 = true;
+		sheet.mhabilidades2_4 = true;
+		sheet.mhabilidades2_3 = true;
+		sheet.mhabilidades2_2 = true;
+		sheet.mhabilidades2_1 = true;
+	elseif sheet.mhabilidades2_5 == true then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_4 = true;
+		sheet.mhabilidades2_3 = true;
+		sheet.mhabilidades2_2 = true;
+		sheet.mhabilidades2_1 = true;
+	elseif sheet.mhabilidades2_4 == true then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_5 = false;
+		sheet.mhabilidades2_3 = true;
+		sheet.mhabilidades2_2 = true;
+		sheet.mhabilidades2_1 = true;
+	elseif sheet.mhabilidades2_3 == true then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_5 = false;
+		sheet.mhabilidades2_4 = false;
+		sheet.mhabilidades2_2 = true;
+		sheet.mhabilidades2_1 = true;
+	elseif sheet.mhabilidades2_2 == true then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_5 = false;
+		sheet.mhabilidades2_4 = false;
+		sheet.mhabilidades2_3 = false;
+		sheet.mhabilidades2_1 = true;	
+	elseif sheet.mhabilidades2_1 == true then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_5 = false;
+		sheet.mhabilidades2_4 = false;
+		sheet.mhabilidades2_3 = false;
+		sheet.mhabilidades2_2 = false;
+	elseif sheet.mhabilidades2_1 == false then
+		sheet.mhabilidades2_6 = false;
+		sheet.mhabilidades2_5 = false;
+		sheet.mhabilidades2_4 = false;
+		sheet.mhabilidades2_3 = false;
+		sheet.mhabilidades2_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades3_6', 'mhabilidades3_5', 'mhabilidades3_4', 'mhabilidades3_3', 'mhabilidades3_2', 'mhabilidades3_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades3_6 == true then
+		sheet.mhabilidades3_5 = true;
+		sheet.mhabilidades3_4 = true;
+		sheet.mhabilidades3_3 = true;
+		sheet.mhabilidades3_2 = true;
+		sheet.mhabilidades3_1 = true;
+	elseif sheet.mhabilidades3_5 == true then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_4 = true;
+		sheet.mhabilidades3_3 = true;
+		sheet.mhabilidades3_2 = true;
+		sheet.mhabilidades3_1 = true;
+	elseif sheet.mhabilidades3_4 == true then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_5 = false;
+		sheet.mhabilidades3_3 = true;
+		sheet.mhabilidades3_2 = true;
+		sheet.mhabilidades3_1 = true;
+	elseif sheet.mhabilidades3_3 == true then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_5 = false;
+		sheet.mhabilidades3_4 = false;
+		sheet.mhabilidades3_2 = true;
+		sheet.mhabilidades3_1 = true;
+	elseif sheet.mhabilidades3_2 == true then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_5 = false;
+		sheet.mhabilidades3_4 = false;
+		sheet.mhabilidades3_3 = false;
+		sheet.mhabilidades3_1 = true;	
+	elseif sheet.mhabilidades3_1 == true then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_5 = false;
+		sheet.mhabilidades3_4 = false;
+		sheet.mhabilidades3_3 = false;
+		sheet.mhabilidades3_2 = false;
+	elseif sheet.mhabilidades3_1 == false then
+		sheet.mhabilidades3_6 = false;
+		sheet.mhabilidades3_5 = false;
+		sheet.mhabilidades3_4 = false;
+		sheet.mhabilidades3_3 = false;
+		sheet.mhabilidades3_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades4_6', 'mhabilidades4_5', 'mhabilidades4_4', 'mhabilidades4_3', 'mhabilidades4_2', 'mhabilidades4_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades4_6 == true then
+		sheet.mhabilidades4_5 = true;
+		sheet.mhabilidades4_4 = true;
+		sheet.mhabilidades4_3 = true;
+		sheet.mhabilidades4_2 = true;
+		sheet.mhabilidades4_1 = true;
+	elseif sheet.mhabilidades4_5 == true then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_4 = true;
+		sheet.mhabilidades4_3 = true;
+		sheet.mhabilidades4_2 = true;
+		sheet.mhabilidades4_1 = true;
+	elseif sheet.mhabilidades4_4 == true then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_5 = false;
+		sheet.mhabilidades4_3 = true;
+		sheet.mhabilidades4_2 = true;
+		sheet.mhabilidades4_1 = true;
+	elseif sheet.mhabilidades4_3 == true then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_5 = false;
+		sheet.mhabilidades4_4 = false;
+		sheet.mhabilidades4_2 = true;
+		sheet.mhabilidades4_1 = true;
+	elseif sheet.mhabilidades4_2 == true then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_5 = false;
+		sheet.mhabilidades4_4 = false;
+		sheet.mhabilidades4_3 = false;
+		sheet.mhabilidades4_1 = true;	
+	elseif sheet.mhabilidades4_1 == true then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_5 = false;
+		sheet.mhabilidades4_4 = false;
+		sheet.mhabilidades4_3 = false;
+		sheet.mhabilidades4_2 = false;
+	elseif sheet.mhabilidades4_1 == false then
+		sheet.mhabilidades4_6 = false;
+		sheet.mhabilidades4_5 = false;
+		sheet.mhabilidades4_4 = false;
+		sheet.mhabilidades4_3 = false;
+		sheet.mhabilidades4_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades5_6', 'mhabilidades5_5', 'mhabilidades5_4', 'mhabilidades5_3', 'mhabilidades5_2', 'mhabilidades5_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades5_6 == true then
+		sheet.mhabilidades5_5 = true;
+		sheet.mhabilidades5_4 = true;
+		sheet.mhabilidades5_3 = true;
+		sheet.mhabilidades5_2 = true;
+		sheet.mhabilidades5_1 = true;
+	elseif sheet.mhabilidades5_5 == true then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_4 = true;
+		sheet.mhabilidades5_3 = true;
+		sheet.mhabilidades5_2 = true;
+		sheet.mhabilidades5_1 = true;
+	elseif sheet.mhabilidades5_4 == true then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_5 = false;
+		sheet.mhabilidades5_3 = true;
+		sheet.mhabilidades5_2 = true;
+		sheet.mhabilidades5_1 = true;
+	elseif sheet.mhabilidades5_3 == true then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_5 = false;
+		sheet.mhabilidades5_4 = false;
+		sheet.mhabilidades5_2 = true;
+		sheet.mhabilidades5_1 = true;
+	elseif sheet.mhabilidades5_2 == true then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_5 = false;
+		sheet.mhabilidades5_4 = false;
+		sheet.mhabilidades5_3 = false;
+		sheet.mhabilidades5_1 = true;	
+	elseif sheet.mhabilidades5_1 == true then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_5 = false;
+		sheet.mhabilidades5_4 = false;
+		sheet.mhabilidades5_3 = false;
+		sheet.mhabilidades5_2 = false;
+	elseif sheet.mhabilidades5_1 == false then
+		sheet.mhabilidades5_6 = false;
+		sheet.mhabilidades5_5 = false;
+		sheet.mhabilidades5_4 = false;
+		sheet.mhabilidades5_3 = false;
+		sheet.mhabilidades5_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades6_6', 'mhabilidades6_5', 'mhabilidades6_4', 'mhabilidades6_3', 'mhabilidades6_2', 'mhabilidades6_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades6_6 == true then
+		sheet.mhabilidades6_5 = true;
+		sheet.mhabilidades6_4 = true;
+		sheet.mhabilidades6_3 = true;
+		sheet.mhabilidades6_2 = true;
+		sheet.mhabilidades6_1 = true;
+	elseif sheet.mhabilidades6_5 == true then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_4 = true;
+		sheet.mhabilidades6_3 = true;
+		sheet.mhabilidades6_2 = true;
+		sheet.mhabilidades6_1 = true;
+	elseif sheet.mhabilidades6_4 == true then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_5 = false;
+		sheet.mhabilidades6_3 = true;
+		sheet.mhabilidades6_2 = true;
+		sheet.mhabilidades6_1 = true;
+	elseif sheet.mhabilidades6_3 == true then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_5 = false;
+		sheet.mhabilidades6_4 = false;
+		sheet.mhabilidades6_2 = true;
+		sheet.mhabilidades6_1 = true;
+	elseif sheet.mhabilidades6_2 == true then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_5 = false;
+		sheet.mhabilidades6_4 = false;
+		sheet.mhabilidades6_3 = false;
+		sheet.mhabilidades6_1 = true;	
+	elseif sheet.mhabilidades6_1 == true then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_5 = false;
+		sheet.mhabilidades6_4 = false;
+		sheet.mhabilidades6_3 = false;
+		sheet.mhabilidades6_2 = false;
+	elseif sheet.mhabilidades6_1 == false then
+		sheet.mhabilidades6_6 = false;
+		sheet.mhabilidades6_5 = false;
+		sheet.mhabilidades6_4 = false;
+		sheet.mhabilidades6_3 = false;
+		sheet.mhabilidades6_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades7_6', 'mhabilidades7_5', 'mhabilidades7_4', 'mhabilidades7_3', 'mhabilidades7_2', 'mhabilidades7_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades7_6 == true then
+		sheet.mhabilidades7_5 = true;
+		sheet.mhabilidades7_4 = true;
+		sheet.mhabilidades7_3 = true;
+		sheet.mhabilidades7_2 = true;
+		sheet.mhabilidades7_1 = true;
+	elseif sheet.mhabilidades7_5 == true then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_4 = true;
+		sheet.mhabilidades7_3 = true;
+		sheet.mhabilidades7_2 = true;
+		sheet.mhabilidades7_1 = true;
+	elseif sheet.mhabilidades7_4 == true then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_5 = false;
+		sheet.mhabilidades7_3 = true;
+		sheet.mhabilidades7_2 = true;
+		sheet.mhabilidades7_1 = true;
+	elseif sheet.mhabilidades7_3 == true then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_5 = false;
+		sheet.mhabilidades7_4 = false;
+		sheet.mhabilidades7_2 = true;
+		sheet.mhabilidades7_1 = true;
+	elseif sheet.mhabilidades7_2 == true then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_5 = false;
+		sheet.mhabilidades7_4 = false;
+		sheet.mhabilidades7_3 = false;
+		sheet.mhabilidades7_1 = true;	
+	elseif sheet.mhabilidades7_1 == true then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_5 = false;
+		sheet.mhabilidades7_4 = false;
+		sheet.mhabilidades7_3 = false;
+		sheet.mhabilidades7_2 = false;
+	elseif sheet.mhabilidades7_1 == false then
+		sheet.mhabilidades7_6 = false;
+		sheet.mhabilidades7_5 = false;
+		sheet.mhabilidades7_4 = false;
+		sheet.mhabilidades7_3 = false;
+		sheet.mhabilidades7_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades8_6', 'mhabilidades8_5', 'mhabilidades8_4', 'mhabilidades8_3', 'mhabilidades8_2', 'mhabilidades8_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades8_6 == true then
+		sheet.mhabilidades8_5 = true;
+		sheet.mhabilidades8_4 = true;
+		sheet.mhabilidades8_3 = true;
+		sheet.mhabilidades8_2 = true;
+		sheet.mhabilidades8_1 = true;
+	elseif sheet.mhabilidades8_5 == true then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_4 = true;
+		sheet.mhabilidades8_3 = true;
+		sheet.mhabilidades8_2 = true;
+		sheet.mhabilidades8_1 = true;
+	elseif sheet.mhabilidades8_4 == true then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_5 = false;
+		sheet.mhabilidades8_3 = true;
+		sheet.mhabilidades8_2 = true;
+		sheet.mhabilidades8_1 = true;
+	elseif sheet.mhabilidades8_3 == true then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_5 = false;
+		sheet.mhabilidades8_4 = false;
+		sheet.mhabilidades8_2 = true;
+		sheet.mhabilidades8_1 = true;
+	elseif sheet.mhabilidades8_2 == true then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_5 = false;
+		sheet.mhabilidades8_4 = false;
+		sheet.mhabilidades8_3 = false;
+		sheet.mhabilidades8_1 = true;	
+	elseif sheet.mhabilidades8_1 == true then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_5 = false;
+		sheet.mhabilidades8_4 = false;
+		sheet.mhabilidades8_3 = false;
+		sheet.mhabilidades8_2 = false;
+	elseif sheet.mhabilidades8_1 == false then
+		sheet.mhabilidades8_6 = false;
+		sheet.mhabilidades8_5 = false;
+		sheet.mhabilidades8_4 = false;
+		sheet.mhabilidades8_3 = false;
+		sheet.mhabilidades8_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades1_h6', 'mhabilidades1_h5', 'mhabilidades1_h4', 'mhabilidades1_h3', 'mhabilidades1_h2', 'mhabilidades1_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades1_h6 == true then
+		sheet.mhabilidades1_h5 = true;
+		sheet.mhabilidades1_h4 = true;
+		sheet.mhabilidades1_h3 = true;
+		sheet.mhabilidades1_h2 = true;
+		sheet.mhabilidades1_h1 = true;
+	elseif sheet.mhabilidades1_h5 == true then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h4 = true;
+		sheet.mhabilidades1_h3 = true;
+		sheet.mhabilidades1_h2 = true;
+		sheet.mhabilidades1_h1 = true;
+	elseif sheet.mhabilidades1_h4 == true then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h5 = false;
+		sheet.mhabilidades1_h3 = true;
+		sheet.mhabilidades1_h2 = true;
+		sheet.mhabilidades1_h1 = true;
+	elseif sheet.mhabilidades1_h3 == true then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h5 = false;
+		sheet.mhabilidades1_h4 = false;
+		sheet.mhabilidades1_h2 = true;
+		sheet.mhabilidades1_h1 = true;
+	elseif sheet.mhabilidades1_h2 == true then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h5 = false;
+		sheet.mhabilidades1_h4 = false;
+		sheet.mhabilidades1_h3 = false;
+		sheet.mhabilidades1_h1 = true;	
+	elseif sheet.mhabilidades1_h1 == true then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h5 = false;
+		sheet.mhabilidades1_h4 = false;
+		sheet.mhabilidades1_h3 = false;
+		sheet.mhabilidades1_h2 = false;
+	elseif sheet.mhabilidades1_h1 == false then
+		sheet.mhabilidades1_h6 = false;
+		sheet.mhabilidades1_h5 = false;
+		sheet.mhabilidades1_h4 = false;
+		sheet.mhabilidades1_h3 = false;
+		sheet.mhabilidades1_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades2_h6', 'mhabilidades2_h5', 'mhabilidades2_h4', 'mhabilidades2_h3', 'mhabilidades2_h2', 'mhabilidades2_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades2_h6 == true then
+		sheet.mhabilidades2_h5 = true;
+		sheet.mhabilidades2_h4 = true;
+		sheet.mhabilidades2_h3 = true;
+		sheet.mhabilidades2_h2 = true;
+		sheet.mhabilidades2_h1 = true;
+	elseif sheet.mhabilidades2_h5 == true then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h4 = true;
+		sheet.mhabilidades2_h3 = true;
+		sheet.mhabilidades2_h2 = true;
+		sheet.mhabilidades2_h1 = true;
+	elseif sheet.mhabilidades2_h4 == true then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h5 = false;
+		sheet.mhabilidades2_h3 = true;
+		sheet.mhabilidades2_h2 = true;
+		sheet.mhabilidades2_h1 = true;
+	elseif sheet.mhabilidades2_h3 == true then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h5 = false;
+		sheet.mhabilidades2_h4 = false;
+		sheet.mhabilidades2_h2 = true;
+		sheet.mhabilidades2_h1 = true;
+	elseif sheet.mhabilidades2_h2 == true then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h5 = false;
+		sheet.mhabilidades2_h4 = false;
+		sheet.mhabilidades2_h3 = false;
+		sheet.mhabilidades2_h1 = true;	
+	elseif sheet.mhabilidades2_h1 == true then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h5 = false;
+		sheet.mhabilidades2_h4 = false;
+		sheet.mhabilidades2_h3 = false;
+		sheet.mhabilidades2_h2 = false;
+	elseif sheet.mhabilidades2_h1 == false then
+		sheet.mhabilidades2_h6 = false;
+		sheet.mhabilidades2_h5 = false;
+		sheet.mhabilidades2_h4 = false;
+		sheet.mhabilidades2_h3 = false;
+		sheet.mhabilidades2_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades3_h6', 'mhabilidades3_h5', 'mhabilidades3_h4', 'mhabilidades3_h3', 'mhabilidades3_h2', 'mhabilidades3_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades3_h6 == true then
+		sheet.mhabilidades3_h5 = true;
+		sheet.mhabilidades3_h4 = true;
+		sheet.mhabilidades3_h3 = true;
+		sheet.mhabilidades3_h2 = true;
+		sheet.mhabilidades3_h1 = true;
+	elseif sheet.mhabilidades3_h5 == true then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h4 = true;
+		sheet.mhabilidades3_h3 = true;
+		sheet.mhabilidades3_h2 = true;
+		sheet.mhabilidades3_h1 = true;
+	elseif sheet.mhabilidades3_h4 == true then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h5 = false;
+		sheet.mhabilidades3_h3 = true;
+		sheet.mhabilidades3_h2 = true;
+		sheet.mhabilidades3_h1 = true;
+	elseif sheet.mhabilidades3_h3 == true then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h5 = false;
+		sheet.mhabilidades3_h4 = false;
+		sheet.mhabilidades3_h2 = true;
+		sheet.mhabilidades3_h1 = true;
+	elseif sheet.mhabilidades3_h2 == true then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h5 = false;
+		sheet.mhabilidades3_h4 = false;
+		sheet.mhabilidades3_h3 = false;
+		sheet.mhabilidades3_h1 = true;	
+	elseif sheet.mhabilidades3_h1 == true then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h5 = false;
+		sheet.mhabilidades3_h4 = false;
+		sheet.mhabilidades3_h3 = false;
+		sheet.mhabilidades3_h2 = false;
+	elseif sheet.mhabilidades3_h1 == false then
+		sheet.mhabilidades3_h6 = false;
+		sheet.mhabilidades3_h5 = false;
+		sheet.mhabilidades3_h4 = false;
+		sheet.mhabilidades3_h3 = false;
+		sheet.mhabilidades3_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades4_h6', 'mhabilidades4_h5', 'mhabilidades4_h4', 'mhabilidades4_h3', 'mhabilidades4_h2', 'mhabilidades4_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades4_h6 == true then
+		sheet.mhabilidades4_h5 = true;
+		sheet.mhabilidades4_h4 = true;
+		sheet.mhabilidades4_h3 = true;
+		sheet.mhabilidades4_h2 = true;
+		sheet.mhabilidades4_h1 = true;
+	elseif sheet.mhabilidades4_h5 == true then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h4 = true;
+		sheet.mhabilidades4_h3 = true;
+		sheet.mhabilidades4_h2 = true;
+		sheet.mhabilidades4_h1 = true;
+	elseif sheet.mhabilidades4_h4 == true then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h5 = false;
+		sheet.mhabilidades4_h3 = true;
+		sheet.mhabilidades4_h2 = true;
+		sheet.mhabilidades4_h1 = true;
+	elseif sheet.mhabilidades4_h3 == true then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h5 = false;
+		sheet.mhabilidades4_h4 = false;
+		sheet.mhabilidades4_h2 = true;
+		sheet.mhabilidades4_h1 = true;
+	elseif sheet.mhabilidades4_h2 == true then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h5 = false;
+		sheet.mhabilidades4_h4 = false;
+		sheet.mhabilidades4_h3 = false;
+		sheet.mhabilidades4_h1 = true;	
+	elseif sheet.mhabilidades4_h1 == true then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h5 = false;
+		sheet.mhabilidades4_h4 = false;
+		sheet.mhabilidades4_h3 = false;
+		sheet.mhabilidades4_h2 = false;
+	elseif sheet.mhabilidades4_h1 == false then
+		sheet.mhabilidades4_h6 = false;
+		sheet.mhabilidades4_h5 = false;
+		sheet.mhabilidades4_h4 = false;
+		sheet.mhabilidades4_h3 = false;
+		sheet.mhabilidades4_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades5_h6', 'mhabilidades5_h5', 'mhabilidades5_h4', 'mhabilidades5_h3', 'mhabilidades5_h2', 'mhabilidades5_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades5_h6 == true then
+		sheet.mhabilidades5_h5 = true;
+		sheet.mhabilidades5_h4 = true;
+		sheet.mhabilidades5_h3 = true;
+		sheet.mhabilidades5_h2 = true;
+		sheet.mhabilidades5_h1 = true;
+	elseif sheet.mhabilidades5_h5 == true then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h4 = true;
+		sheet.mhabilidades5_h3 = true;
+		sheet.mhabilidades5_h2 = true;
+		sheet.mhabilidades5_h1 = true;
+	elseif sheet.mhabilidades5_h4 == true then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h5 = false;
+		sheet.mhabilidades5_h3 = true;
+		sheet.mhabilidades5_h2 = true;
+		sheet.mhabilidades5_h1 = true;
+	elseif sheet.mhabilidades5_h3 == true then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h5 = false;
+		sheet.mhabilidades5_h4 = false;
+		sheet.mhabilidades5_h2 = true;
+		sheet.mhabilidades5_h1 = true;
+	elseif sheet.mhabilidades5_h2 == true then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h5 = false;
+		sheet.mhabilidades5_h4 = false;
+		sheet.mhabilidades5_h3 = false;
+		sheet.mhabilidades5_h1 = true;	
+	elseif sheet.mhabilidades5_h1 == true then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h5 = false;
+		sheet.mhabilidades5_h4 = false;
+		sheet.mhabilidades5_h3 = false;
+		sheet.mhabilidades5_h2 = false;
+	elseif sheet.mhabilidades5_h1 == false then
+		sheet.mhabilidades5_h6 = false;
+		sheet.mhabilidades5_h5 = false;
+		sheet.mhabilidades5_h4 = false;
+		sheet.mhabilidades5_h3 = false;
+		sheet.mhabilidades5_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades6_h6', 'mhabilidades6_h5', 'mhabilidades6_h4', 'mhabilidades6_h3', 'mhabilidades6_h2', 'mhabilidades6_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades6_h6 == true then
+		sheet.mhabilidades6_h5 = true;
+		sheet.mhabilidades6_h4 = true;
+		sheet.mhabilidades6_h3 = true;
+		sheet.mhabilidades6_h2 = true;
+		sheet.mhabilidades6_h1 = true;
+	elseif sheet.mhabilidades6_h5 == true then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h4 = true;
+		sheet.mhabilidades6_h3 = true;
+		sheet.mhabilidades6_h2 = true;
+		sheet.mhabilidades6_h1 = true;
+	elseif sheet.mhabilidades6_h4 == true then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h5 = false;
+		sheet.mhabilidades6_h3 = true;
+		sheet.mhabilidades6_h2 = true;
+		sheet.mhabilidades6_h1 = true;
+	elseif sheet.mhabilidades6_h3 == true then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h5 = false;
+		sheet.mhabilidades6_h4 = false;
+		sheet.mhabilidades6_h2 = true;
+		sheet.mhabilidades6_h1 = true;
+	elseif sheet.mhabilidades6_h2 == true then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h5 = false;
+		sheet.mhabilidades6_h4 = false;
+		sheet.mhabilidades6_h3 = false;
+		sheet.mhabilidades6_h1 = true;	
+	elseif sheet.mhabilidades6_h1 == true then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h5 = false;
+		sheet.mhabilidades6_h4 = false;
+		sheet.mhabilidades6_h3 = false;
+		sheet.mhabilidades6_h2 = false;
+	elseif sheet.mhabilidades6_h1 == false then
+		sheet.mhabilidades6_h6 = false;
+		sheet.mhabilidades6_h5 = false;
+		sheet.mhabilidades6_h4 = false;
+		sheet.mhabilidades6_h3 = false;
+		sheet.mhabilidades6_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades7_h6', 'mhabilidades7_h5', 'mhabilidades7_h4', 'mhabilidades7_h3', 'mhabilidades7_h2', 'mhabilidades7_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades7_h6 == true then
+		sheet.mhabilidades7_h5 = true;
+		sheet.mhabilidades7_h4 = true;
+		sheet.mhabilidades7_h3 = true;
+		sheet.mhabilidades7_h2 = true;
+		sheet.mhabilidades7_h1 = true;
+	elseif sheet.mhabilidades7_h5 == true then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h4 = true;
+		sheet.mhabilidades7_h3 = true;
+		sheet.mhabilidades7_h2 = true;
+		sheet.mhabilidades7_h1 = true;
+	elseif sheet.mhabilidades7_h4 == true then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h5 = false;
+		sheet.mhabilidades7_h3 = true;
+		sheet.mhabilidades7_h2 = true;
+		sheet.mhabilidades7_h1 = true;
+	elseif sheet.mhabilidades7_h3 == true then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h5 = false;
+		sheet.mhabilidades7_h4 = false;
+		sheet.mhabilidades7_h2 = true;
+		sheet.mhabilidades7_h1 = true;
+	elseif sheet.mhabilidades7_h2 == true then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h5 = false;
+		sheet.mhabilidades7_h4 = false;
+		sheet.mhabilidades7_h3 = false;
+		sheet.mhabilidades7_h1 = true;	
+	elseif sheet.mhabilidades7_h1 == true then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h5 = false;
+		sheet.mhabilidades7_h4 = false;
+		sheet.mhabilidades7_h3 = false;
+		sheet.mhabilidades7_h2 = false;
+	elseif sheet.mhabilidades7_h1 == false then
+		sheet.mhabilidades7_h6 = false;
+		sheet.mhabilidades7_h5 = false;
+		sheet.mhabilidades7_h4 = false;
+		sheet.mhabilidades7_h3 = false;
+		sheet.mhabilidades7_h2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'mhabilidades8_h6', 'mhabilidades8_h5', 'mhabilidades8_h4', 'mhabilidades8_h3', 'mhabilidades8_h2', 'mhabilidades8_h1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.mhabilidades8_h6 == true then
+		sheet.mhabilidades8_h5 = true;
+		sheet.mhabilidades8_h4 = true;
+		sheet.mhabilidades8_h3 = true;
+		sheet.mhabilidades8_h2 = true;
+		sheet.mhabilidades8_h1 = true;
+	elseif sheet.mhabilidades8_h5 == true then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h4 = true;
+		sheet.mhabilidades8_h3 = true;
+		sheet.mhabilidades8_h2 = true;
+		sheet.mhabilidades8_h1 = true;
+	elseif sheet.mhabilidades8_h4 == true then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h5 = false;
+		sheet.mhabilidades8_h3 = true;
+		sheet.mhabilidades8_h2 = true;
+		sheet.mhabilidades8_h1 = true;
+	elseif sheet.mhabilidades8_h3 == true then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h5 = false;
+		sheet.mhabilidades8_h4 = false;
+		sheet.mhabilidades8_h2 = true;
+		sheet.mhabilidades8_h1 = true;
+	elseif sheet.mhabilidades8_h2 == true then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h5 = false;
+		sheet.mhabilidades8_h4 = false;
+		sheet.mhabilidades8_h3 = false;
+		sheet.mhabilidades8_h1 = true;	
+	elseif sheet.mhabilidades8_h1 == true then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h5 = false;
+		sheet.mhabilidades8_h4 = false;
+		sheet.mhabilidades8_h3 = false;
+		sheet.mhabilidades8_h2 = false;
+	elseif sheet.mhabilidades8_h1 == false then
+		sheet.mhabilidades8_h6 = false;
+		sheet.mhabilidades8_h5 = false;
+		sheet.mhabilidades8_h4 = false;
+		sheet.mhabilidades8_h3 = false;
+		sheet.mhabilidades8_h2 = false;
+	end;
+	</event>
+</dataLink>
 
 </form>

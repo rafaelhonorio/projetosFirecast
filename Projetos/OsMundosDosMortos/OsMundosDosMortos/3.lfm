@@ -131,4 +131,6 @@
 			<textEditor top="20" width="860" height="165" field="experiencia" fontStyle="bold"/>
 		</layout>
 	</scrollBox>
+
+	<import file="Codigo2.lfm"/>
 </form>
