@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmCodigo1" height="0" theme="light">
+
+<dataLink fields="{'Gota1for', 'Gota1des', 'Gota1vig', 'Gota1cari', 'Gota1mani', 'Gota1apa', 'Gota1perc', 'Gota1int', 'Gota1rac', 'Gota1CC', 'Gota1AI', 'Gota1Cor'}"
+ defaultValues="{'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true'}">
+</dataLink>
+
+<dataLink fields="{'Gota8des', 'Gota7des', 'Gota6des', 'Gota5des', 'Gota4des', 'Gota3des', 'Gota2des', 'Gota1des'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.Gota8des == true then
+		sheet.Gota7des = true;
+		sheet.Gota6des = true;
+		sheet.Gota5des = true;
+		sheet.Gota4des = true;
+		sheet.Gota3des = true;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota7des == true then
+		sheet.Gota8des = false;
+		sheet.Gota6des = true;
+		sheet.Gota5des = true;
+		sheet.Gota4des = true;
+		sheet.Gota3des = true;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota6des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota5des = true;
+		sheet.Gota4des = true;
+		sheet.Gota3des = true;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota5des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota4des = true;
+		sheet.Gota3des = true;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota4des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota5des = false;
+		sheet.Gota3des = true;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota3des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota5des = false;
+		sheet.Gota4des = false;
+		sheet.Gota2des = true;
+		sheet.Gota1des = true;
+	elseif sheet.Gota2des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota5des = false;
+		sheet.Gota4des = false;
+		sheet.Gota3des = false;
+		sheet.Gota1des = true;	
+	elseif sheet.Gota1des == true then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota5des = false;
+		sheet.Gota4des = false;
+		sheet.Gota3des = false;
+		sheet.Gota2des = false;
+	elseif sheet.Gota1des == false then
+		sheet.Gota8des = false;
+		sheet.Gota7des = false;
+		sheet.Gota6des = false;
+		sheet.Gota5des = false;
+		sheet.Gota4des = false;
+		sheet.Gota3des = false;
+		sheet.Gota2des = false;
+	end;
+	</event>
+</dataLink>
+
+
+</form>

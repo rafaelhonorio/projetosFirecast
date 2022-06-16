@@ -40,7 +40,7 @@
 	<template name="class">
 		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
 	</template>
-	<image align="client" field="backgroundimg" style="stretch"/>
+	<image align="client" field="backgrounding" style="stretch"/>
 	<scrollBox align="client">
 		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
 		<label left="401" top="65" width="80" height="60" text="Sem Avatar" horzTextAlign="center"/>
