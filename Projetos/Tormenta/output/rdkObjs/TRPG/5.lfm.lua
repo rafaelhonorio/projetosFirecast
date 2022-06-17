@@ -55,7 +55,7 @@ local function constructNew_Tormenta05()
 
     obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle2:setParent(obj.layout1);
-    obj.rectangle2:setLeft(448);
+    obj.rectangle2:setLeft(280);
     obj.rectangle2:setTop(3);
     obj.rectangle2:setColor("Gainsboro");
     obj.rectangle2:setWidth(77);
@@ -66,7 +66,7 @@ local function constructNew_Tormenta05()
 
     obj.label1 = GUI.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout1);
-    obj.label1:setLeft(455);
+    obj.label1:setLeft(285);
     obj.label1:setTop(6);
     obj.label1:setWidth(100);
     obj.label1:setHeight(20);
@@ -84,9 +84,63 @@ local function constructNew_Tormenta05()
     lfm_setPropAsString(obj.richEdit1, "animateImages",  "true");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
     obj.richEdit1:setField("background");
-    obj.richEdit1:setWidth(970);
+    obj.richEdit1:setWidth(712);
     obj.richEdit1:setHeight(272);
     obj.richEdit1:setName("richEdit1");
+
+    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3:setParent(obj.layout1);
+    obj.rectangle3:setLeft(795);
+    obj.rectangle3:setTop(3);
+    obj.rectangle3:setColor("Gainsboro");
+    obj.rectangle3:setWidth(115);
+    obj.rectangle3:setHeight(28);
+    obj.rectangle3:setXradius(2);
+    obj.rectangle3:setYradius(2);
+    obj.rectangle3:setName("rectangle3");
+
+    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label2:setParent(obj.layout1);
+    obj.label2:setLeft(799);
+    obj.label2:setTop(6);
+    obj.label2:setWidth(110);
+    obj.label2:setHeight(20);
+    obj.label2:setFontSize(18.0);
+    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
+    obj.label2:setFontColor("black");
+    obj.label2:setText("Informações");
+    obj.label2:setName("label2");
+
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.layout1);
+    obj.textEditor1:setLeft(723);
+    obj.textEditor1:setTop(27);
+    obj.textEditor1:setWidth(280);
+    obj.textEditor1:setHeight(202);
+    obj.textEditor1:setField("informacoes");
+    obj.textEditor1:setName("textEditor1");
+
+    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle4:setParent(obj.layout1);
+    obj.rectangle4:setLeft(723);
+    obj.rectangle4:setTop(230);
+    obj.rectangle4:setColor("#333333");
+    obj.rectangle4:setWidth(258);
+    obj.rectangle4:setHeight(70);
+    obj.rectangle4:setXradius(2);
+    obj.rectangle4:setYradius(2);
+    obj.rectangle4:setName("rectangle4");
+
+    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle5:setParent(obj.layout1);
+    obj.rectangle5:setLeft(727);
+    obj.rectangle5:setTop(235);
+    obj.rectangle5:setColor("#696969");
+    obj.rectangle5:setWidth(248);
+    obj.rectangle5:setHeight(60);
+    obj.rectangle5:setXradius(2);
+    obj.rectangle5:setYradius(2);
+    obj.rectangle5:setName("rectangle5");
 
     obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
@@ -96,101 +150,101 @@ local function constructNew_Tormenta05()
     obj.layout2:setHeight(358);
     obj.layout2:setName("layout2");
 
-    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle3:setParent(obj.layout2);
-    obj.rectangle3:setLeft(86);
-    obj.rectangle3:setTop(3);
-    obj.rectangle3:setColor("Gainsboro");
-    obj.rectangle3:setWidth(128);
-    obj.rectangle3:setHeight(28);
-    obj.rectangle3:setXradius(2);
-    obj.rectangle3:setYradius(2);
-    obj.rectangle3:setName("rectangle3");
-
-    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label2:setParent(obj.layout2);
-    obj.label2:setLeft(90);
-    obj.label2:setTop(6);
-    obj.label2:setWidth(120);
-    obj.label2:setHeight(20);
-    obj.label2:setFontSize(18.0);
-    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
-    obj.label2:setFontColor("black");
-    obj.label2:setText("Personalidade");
-    obj.label2:setName("label2");
-
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout2);
-    obj.textEditor1:setLeft(0);
-    obj.textEditor1:setTop(30);
-    obj.textEditor1:setWidth(300);
-    obj.textEditor1:setHeight(328);
-    obj.textEditor1:setField("personalidade");
-    obj.textEditor1:setName("textEditor1");
-
-    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle4:setParent(obj.layout2);
-    obj.rectangle4:setLeft(435);
-    obj.rectangle4:setTop(3);
-    obj.rectangle4:setColor("Gainsboro");
-    obj.rectangle4:setWidth(93);
-    obj.rectangle4:setHeight(28);
-    obj.rectangle4:setXradius(2);
-    obj.rectangle4:setYradius(2);
-    obj.rectangle4:setName("rectangle4");
+    obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle6:setParent(obj.layout2);
+    obj.rectangle6:setLeft(86);
+    obj.rectangle6:setTop(3);
+    obj.rectangle6:setColor("Gainsboro");
+    obj.rectangle6:setWidth(128);
+    obj.rectangle6:setHeight(28);
+    obj.rectangle6:setXradius(2);
+    obj.rectangle6:setYradius(2);
+    obj.rectangle6:setName("rectangle6");
 
     obj.label3 = GUI.fromHandle(_obj_newObject("label"));
     obj.label3:setParent(obj.layout2);
-    obj.label3:setLeft(439);
+    obj.label3:setLeft(90);
     obj.label3:setTop(6);
-    obj.label3:setWidth(100);
+    obj.label3:setWidth(120);
     obj.label3:setHeight(20);
     obj.label3:setFontSize(18.0);
     lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
     obj.label3:setFontColor("black");
-    obj.label3:setText("Aparência");
+    obj.label3:setText("Personalidade");
     obj.label3:setName("label3");
 
     obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor2:setParent(obj.layout2);
-    obj.textEditor2:setLeft(334);
+    obj.textEditor2:setLeft(0);
     obj.textEditor2:setTop(30);
     obj.textEditor2:setWidth(300);
     obj.textEditor2:setHeight(328);
-    obj.textEditor2:setField("aparencia");
+    obj.textEditor2:setField("personalidade");
     obj.textEditor2:setName("textEditor2");
 
-    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle5:setParent(obj.layout2);
-    obj.rectangle5:setLeft(770);
-    obj.rectangle5:setTop(3);
-    obj.rectangle5:setColor("Gainsboro");
-    obj.rectangle5:setWidth(97);
-    obj.rectangle5:setHeight(28);
-    obj.rectangle5:setXradius(2);
-    obj.rectangle5:setYradius(2);
-    obj.rectangle5:setName("rectangle5");
+    obj.rectangle7 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle7:setParent(obj.layout2);
+    obj.rectangle7:setLeft(435);
+    obj.rectangle7:setTop(3);
+    obj.rectangle7:setColor("Gainsboro");
+    obj.rectangle7:setWidth(93);
+    obj.rectangle7:setHeight(28);
+    obj.rectangle7:setXradius(2);
+    obj.rectangle7:setYradius(2);
+    obj.rectangle7:setName("rectangle7");
 
     obj.label4 = GUI.fromHandle(_obj_newObject("label"));
     obj.label4:setParent(obj.layout2);
-    obj.label4:setLeft(774);
+    obj.label4:setLeft(439);
     obj.label4:setTop(6);
     obj.label4:setWidth(100);
     obj.label4:setHeight(20);
     obj.label4:setFontSize(18.0);
     lfm_setPropAsString(obj.label4, "fontStyle",  "bold");
     obj.label4:setFontColor("black");
-    obj.label4:setText("Anotações");
+    obj.label4:setText("Aparência");
     obj.label4:setName("label4");
 
     obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor3:setParent(obj.layout2);
-    obj.textEditor3:setLeft(669);
+    obj.textEditor3:setLeft(334);
     obj.textEditor3:setTop(30);
     obj.textEditor3:setWidth(300);
     obj.textEditor3:setHeight(328);
-    obj.textEditor3:setField("anotacoes");
+    obj.textEditor3:setField("aparencia");
     obj.textEditor3:setName("textEditor3");
+
+    obj.rectangle8 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle8:setParent(obj.layout2);
+    obj.rectangle8:setLeft(770);
+    obj.rectangle8:setTop(3);
+    obj.rectangle8:setColor("Gainsboro");
+    obj.rectangle8:setWidth(97);
+    obj.rectangle8:setHeight(28);
+    obj.rectangle8:setXradius(2);
+    obj.rectangle8:setYradius(2);
+    obj.rectangle8:setName("rectangle8");
+
+    obj.label5 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label5:setParent(obj.layout2);
+    obj.label5:setLeft(774);
+    obj.label5:setTop(6);
+    obj.label5:setWidth(100);
+    obj.label5:setHeight(20);
+    obj.label5:setFontSize(18.0);
+    lfm_setPropAsString(obj.label5, "fontStyle",  "bold");
+    obj.label5:setFontColor("black");
+    obj.label5:setText("Anotações");
+    obj.label5:setName("label5");
+
+    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor4:setParent(obj.layout2);
+    obj.textEditor4:setLeft(669);
+    obj.textEditor4:setTop(30);
+    obj.textEditor4:setWidth(300);
+    obj.textEditor4:setHeight(328);
+    obj.textEditor4:setField("anotacoes");
+    obj.textEditor4:setName("textEditor4");
 
     function obj:_releaseEvents()
     end;
@@ -206,15 +260,20 @@ local function constructNew_Tormenta05()
 
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
+        if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.richEdit1 ~= nil then self.richEdit1:destroy(); self.richEdit1 = nil; end;
-        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;

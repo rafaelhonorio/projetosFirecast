@@ -3,9 +3,16 @@
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
 		<layout left="10" top="8" width="980" height="300">
-			<rectangle left="448" top="3" color="Gainsboro" width="77" height="28" xradius="2" yradius="2"/>
-			<label left="455" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="História"/>
-			<richEdit left="10" top="27" backgroundColor="#333333" animateImages="true" defaultFontColor="white" field="background" width="970" height="272"/>
+			<rectangle left="280" top="3" color="Gainsboro" width="77" height="28" xradius="2" yradius="2"/>
+			<label left="285" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="História"/>
+			<richEdit left="10" top="27" backgroundColor="#333333" animateImages="true" defaultFontColor="white" field="background" width="712" height="272"/>
+			<rectangle left="795" top="3" color="Gainsboro" width="115" height="28" xradius="2" yradius="2"/>
+			<label left="799" top="6" width="110" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Informações"/>
+			<textEditor left="723" top="27" width="280" height="202" field="informacoes"/>
+			<rectangle left="723" top="230" color="#333333" width="258" height="70" xradius="2" yradius="2"/>
+			<rectangle left="727" top="235" color="#696969" width="248" height="60" xradius="2" yradius="2"/>
+			<!-- Criar uma area para XP NIVEL ATUAL E XP PROXIMO NIVEL -->
+
 		</layout>
 		<layout left="21" top="316" width="969" height="358">
 			<rectangle left="86" top="3" color="Gainsboro" width="128" height="28" xradius="2" yradius="2"/>

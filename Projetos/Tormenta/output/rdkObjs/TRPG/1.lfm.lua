@@ -2140,11 +2140,11 @@ local function constructNew_Tormenta01()
 
     obj.label56 = GUI.fromHandle(_obj_newObject("label"));
     obj.label56:setParent(obj.layout23);
-    obj.label56:setLeft(9);
+    obj.label56:setLeft(23);
     obj.label56:setTop(13);
     obj.label56:setWidth(155);
     obj.label56:setHeight(20);
-    obj.label56:setText("Pontos de Mana");
+    obj.label56:setText("Usos Diários");
     obj.label56:setHorzTextAlign("leading");
     obj.label56:setFontSize(14.0);
     lfm_setPropAsString(obj.label56, "fontStyle",  "bold");
@@ -2157,7 +2157,7 @@ local function constructNew_Tormenta01()
     obj.edit27:setTop(11);
     obj.edit27:setWidth(123);
     obj.edit27:setHeight(25);
-    obj.edit27:setField("pm");
+    obj.edit27:setField("ud");
     obj.edit27:setType("number");
     obj.edit27:setHorzTextAlign("center");
     obj.edit27:setFontSize(15.0);
@@ -2177,7 +2177,7 @@ local function constructNew_Tormenta01()
 
     obj.label57 = GUI.fromHandle(_obj_newObject("label"));
     obj.label57:setParent(obj.scrollBox1);
-    obj.label57:setLeft(773);
+    obj.label57:setLeft(774);
     obj.label57:setTop(414);
     obj.label57:setWidth(150);
     obj.label57:setHeight(8);

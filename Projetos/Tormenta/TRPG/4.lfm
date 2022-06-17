@@ -2,14 +2,26 @@
 <form name="Tormenta04" align="client" theme="dark" lockWhileNodeIsLoading="true">
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
-		<rectangle left="175" top="6" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
-		<label left="183" top="7" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Conhecidas"/>
-		<layout left="10" top="32" width="490" height="656">
+			<rectangle left="373" top="10" color="#333333" width="265" height="50" xradius="2" yradius="2"/>
+			<rectangle left="378" top="15" color="#696969" width="255" height="40" xradius="2" yradius="2"/>
+			<rectangle left="397" top="28" color="Gainsboro" width="90" height="25" xradius="2" yradius="2"/>
+			<label left="429" top="22" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="PM"/>
+			<label left="404" top="33" width="90" height="25" fontSize="10" fontColor="black" text="Pontos de Magia"/>
+			<rectangle left="507" top="16" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="509" top="18" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
+			<edit left="491" top="28" width="60" height="25" name="totalPM" field="totalPM" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="564" top="16" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="568" top="18" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Atuais"/>
+			<edit left="553" top="28" width="60" height="25" name="atuaisPM" field="atuaisPM" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<rectangle left="175" top="46" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
+		<label left="183" top="47" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Conhecidas"/>
+		<layout left="10" top="72" width="490" height="615">
 			<textEditor align="client" field="mconhecidas" fontStyle="bold"/>
 		</layout>
-		<rectangle left="675" top="6" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
-		<label left="683" top="7" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Preparadas"/>
-		<layout left="510" top="32" width="490" height="656">
+		<rectangle left="675" top="46" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
+		<label left="683" top="47" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Preparadas"/>
+		<layout left="510" top="72" width="490" height="615">
 			<textEditor align="client" field="mpreparadas" fontStyle="bold"/>
 		</layout>
 	</scrollBox>

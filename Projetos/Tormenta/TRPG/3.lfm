@@ -77,9 +77,35 @@
 			<layout left="0" top="13" width="395" height="418">
 				<textEditor align="client" field="equipamentos" fontStyle="bold"/>
 			</layout>
-			<rectangle left="150" top="439" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
-			<label left="153" top="439" width="98" height="12" fontSize="10" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Anotações"/>
-			<layout left="0" top="451" width="395" height="240">
+			<rectangle left="150" top="434" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+			<label left="153" top="434" width="98" height="12" fontSize="10" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Dinheiro"/>
+			<layout left="0" top="446" width="395" height="100">
+				<rectangle left="0" top="1" color="#333333" width="395" height="90" xradius="2" yradius="2"/>
+				<rectangle left="5" top="6" color="#696969" width="385" height="80" xradius="2" yradius="2"/>
+				<!-- Tibar de Cobre -->
+				<rectangle left="15" top="20" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+				<label left="47" top="15" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="T$"/>
+				<label left="22" top="25" width="80" height="25" fontSize="10" fontColor="black" text="Tibar de Cobre"/>
+				<edit left="15" top="50" width="80" height="25" name="totalCobre" field="totalCobre" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				<!-- Tibar de Prata -->
+				<rectangle left="110" top="20" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+				<label left="142" top="15" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="TP"/>
+				<label left="119" top="25" width="80" height="25" fontSize="10" fontColor="black" text="Tibar de Prata"/>
+				<edit left="110" top="50" width="80" height="25" name="totalPrata" field="totalPrata" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				<!-- Tibar de Ouro -->
+				<rectangle left="205" top="20" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+				<label left="237" top="15" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="TO"/>
+				<label left="214" top="25" width="80" height="25" fontSize="10" fontColor="black" text="Tibar de Ouro"/>
+				<edit left="205" top="50" width="80" height="25" name="totalOuro" field="totalOuro" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				<!-- Tibar de Platina -->
+				<rectangle left="300" top="20" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+				<label left="332" top="15" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="TL"/>
+				<label left="305" top="25" width="80" height="25" fontSize="10" fontColor="black" text="Tibar de Platina"/>
+				<edit left="300" top="50" width="80" height="25" name="totalPlatina" field="totalPlatina" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			</layout>						
+			<rectangle left="150" top="539" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+			<label left="153" top="539" width="98" height="12" fontSize="10" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Anotações"/>
+			<layout left="0" top="553" width="395" height="145">
 				<textEditor align="client" field="eqanotacoes" fontStyle="bold"/>
 			</layout>
 		</layout>
