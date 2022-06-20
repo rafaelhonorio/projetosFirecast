@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta01" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
+<form name="Tormenta01" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
 	<scrollBox align="client">
-		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
 		<image left="530" top="30" width="400" height="147" src="img/LogoTormenta.png"/>
 		<template name="Principal">
-			<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
-			<label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-        	<edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="5" top="0" color="Black" width="155" height="25" xradius="2" yradius="2"/>
+			<label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+        	<edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+			<edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</template>
 		<layout left="10" top="10" width="305" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="170" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Nome do Personagem"/>
-			<edit field="nome" left="1" top="23" width="300" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="170" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Nome do Personagem"/>
+			<edit field="nome" left="1" top="23" width="300" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="10" top="67" width="155" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="46" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Raça"/>
-			<edit field="raca" left="1" top="23" width="150" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="46" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Raça"/>
+			<edit field="raca" left="1" top="23" width="150" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="10" top="124" width="105" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="51" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Idade"/>
-			<edit field="idade" left="1" top="23" width="100" height="30" fontSize="15.0" fontStyle="bold" type="number"/>
+			<rectangle left="7" top="1" color="Black" width="51" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Idade"/>
+			<edit field="idade" left="1" top="23" width="100" height="30" fontSize="15.0" fontStyle="bold" type="number" fontColor="black"/>
 		</layout>
 		<layout left="165" top="67" width="150" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="84" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Tendência"/>
-			<edit field="tendencia" left="1" top="23" width="145" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="84" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Tendência"/>
+			<edit field="tendencia" left="1" top="23" width="145" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="115" top="124" width="200" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="45" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="45" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Sexo"/>
-			<edit field="sexo" left="1" top="23" width="195" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="45" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="45" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Sexo"/>
+			<edit field="sexo" left="1" top="23" width="195" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="315" top="10" width="129" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="76" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Tamanho"/>
-			<edit field="tamanho" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="76" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Tamanho"/>
+			<edit field="tamanho" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="315" top="67" width="129" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="112" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Deslocamento"/>
-			<edit field="deslocamento" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="112" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Deslocamento"/>
+			<edit field="deslocamento" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="315" top="124" width="129" height="55">
-			<rectangle left="7" top="1" color="Gainsboro" width="84" height="23" xradius="2" yradius="2"/>
-			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Divindade"/>
-			<edit field="divindade" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="7" top="1" color="Black" width="84" height="23" xradius="2" yradius="2"/>
+			<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Divindade"/>
+			<edit field="divindade" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="1" top="220" width="290" height="200">
-			<rectangle left="57" top="3" color="Gainsboro" width="60" height="15" xradius="2" yradius="2"/>
-			<label left="59" top="5" width="65" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Habilidades"/>
-			<rectangle left="181" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="183" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Valor"/>
-			<rectangle left="216" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="219" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod"/>
-			<rectangle left="251" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="253" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Dano"/>
+			<rectangle left="57" top="3" color="Black" width="60" height="15" xradius="2" yradius="2"/>
+			<label left="59" top="5" width="65" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades"/>
+			<rectangle left="181" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="183" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Valor"/>
+			<rectangle left="216" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="219" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod"/>
+			<rectangle left="251" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="253" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Dano"/>
 			<layout left="5" top="15" width="290" height="25" >
 				<Principal field="forca" field2="modforca" field3="danoforca" texto="Força(FOR)"/>
 			</layout>
@@ -79,222 +79,221 @@
 			</layout>
 		</layout>
 		<layout left="285" top="220" width="600" height="41">
-			<rectangle left="1" top="15" color="Gainsboro" width="95" height="25" xradius="2" yradius="2"/>
-			<label left="39" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="CA"/>
-			<label left="4" top="20" width="100" height="25" fontSize="10" fontColor="black" text="Classe de Armadura"/>
-			<rectangle left="116" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="118" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
-			<edit left="100" top="15" width="60" height="25" name="totalca" field="totalca" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="163" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="166" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-			<rectangle left="190" top="3" color="Gainsboro" width="52" height="15" xradius="2" yradius="2"/>
-			<label left="190" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="1/2 Nv+10"/>
-			<edit left="186" top="15" width="60" height="25" name="ca1" field="ca1" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="249" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="252" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="278" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
-			<label left="286" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
-			<edit left="272" top="15" width="60" height="25" name="ca2" field="ca2" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="335" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="338" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="361" top="3" color="Gainsboro" width="54" height="15" xradius="2" yradius="2"/>
-			<label left="364" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Armadura"/>
-			<edit left="358" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<rectangle left="421" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="424" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="454" top="3" color="Gainsboro" width="40" height="15" xradius="2" yradius="2"/>
-			<label left="457" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Escudo"/>
-			<edit left="444" top="15" width="60" height="25" name="ca4" field="ca4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<rectangle left="507" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="510" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="540" top="3" color="Gainsboro" width="40" height="15" xradius="2" yradius="2"/>
-			<label left="543" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
-			<edit left="530" top="15" width="60" height="25" field="ca5" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="1" top="15" color="Black" width="95" height="25" xradius="2" yradius="2"/>
+			<label left="39" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="CA"/>
+			<label left="4" top="20" width="100" height="25" fontSize="10" fontColor="white" text="Classe de Armadura"/>
+			<rectangle left="116" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="118" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+			<edit left="100" top="15" width="60" height="25" name="totalca" field="totalca" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="163" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="166" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+			<rectangle left="190" top="3" color="Black" width="52" height="15" xradius="2" yradius="2"/>
+			<label left="190" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="1/2 Nv+10"/>
+			<edit left="186" top="15" width="60" height="25" name="ca1" field="ca1" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="249" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="252" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="278" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
+			<label left="286" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+			<edit left="272" top="15" width="60" height="25" name="ca2" field="ca2" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="335" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="338" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="361" top="3" color="Black" width="54" height="15" xradius="2" yradius="2"/>
+			<label left="364" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Armadura"/>
+			<edit left="358" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<rectangle left="421" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="424" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="454" top="3" color="Black" width="40" height="15" xradius="2" yradius="2"/>
+			<label left="457" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Escudo"/>
+			<edit left="444" top="15" width="60" height="25" name="ca4" field="ca4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<rectangle left="507" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="510" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="540" top="3" color="Black" width="40" height="15" xradius="2" yradius="2"/>
+			<label left="543" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+			<edit left="530" top="15" width="60" height="25" field="ca5" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="880" top="220" width="200" height="41">
-			<rectangle left="1" top="15" color="Gainsboro" width="85" height="25" xradius="2" yradius="2"/>
-			<label left="34" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="RD"/>
-			<label left="4" top="20" width="100" height="25" fontSize="10" fontColor="black" text="Redução de Dano"/>
-			<rectangle left="92" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="94" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
-			<edit left="90" top="15" width="33" height="25" name="rd" field="rd" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="1" top="15" color="Black" width="85" height="25" xradius="2" yradius="2"/>
+			<label left="34" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="RD"/>
+			<label left="4" top="20" width="100" height="25" fontSize="10" fontColor="white" text="Redução de Dano"/>
+			<rectangle left="92" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="94" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+			<edit left="90" top="15" width="33" height="25" name="rd" field="rd" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="328" top="270" width="448" height="41">
-			<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
-			<label left="8" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="FORT"/>
-			<label left="6" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Fortitude"/>
-			<rectangle left="73" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-			<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
-			<edit left="57" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-			<rectangle left="179" top="3" color="Gainsboro" width="37" height="15" xradius="2" yradius="2"/>
-			<label left="181" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="1/2 Nv"/>
-			<edit left="167" top="15" width="60" height="25" name="fort1" field="fort1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="263" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
-			<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
-			<edit left="257" top="15" width="60" height="25" name="fort2" field="fort2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<rectangle left="359" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
-			<edit left="348" top="15" width="60" height="25" field="fort3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="1" top="15" color="Black" width="50" height="25" xradius="2" yradius="2"/>
+			<label left="8" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="FORT"/>
+			<label left="6" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Fortitude"/>
+			<rectangle left="73" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+			<edit left="57" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+			<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+			<rectangle left="179" top="3" color="Black" width="37" height="15" xradius="2" yradius="2"/>
+			<label left="181" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="1/2 Nv"/>
+			<edit left="167" top="15" width="60" height="25" name="fort1" field="fort1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="263" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
+			<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+			<edit left="257" top="15" width="60" height="25" name="fort2" field="fort2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<rectangle left="359" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+			<edit left="348" top="15" width="60" height="25" field="fort3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="328" top="320" width="448" height="41">
-			<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
-			<label left="14" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="REF"/>
-			<label left="10" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Reflexo"/>
-			<edit left="57" top="15" width="60" height="25" name="totalref" field="totalref" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-			<edit left="167" top="15" width="60" height="25" name="ref1" field="ref1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<edit left="257" top="15" width="60" height="25" name="ref2" field="ref2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<edit left="348" top="15" width="60" height="25" field="ref3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="1" top="15" color="Black" width="50" height="25" xradius="2" yradius="2"/>
+			<label left="14" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="REF"/>
+			<label left="10" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Reflexo"/>
+			<edit left="57" top="15" width="60" height="25" name="totalref" field="totalref" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+			<edit left="167" top="15" width="60" height="25" name="ref1" field="ref1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<edit left="257" top="15" width="60" height="25" name="ref2" field="ref2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<edit left="348" top="15" width="60" height="25" field="ref3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="328" top="370" width="448" height="41">
-			<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
-			<label left="11" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="VON"/>
-			<label left="8" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Vontade"/>
-			<edit left="57" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-			<edit left="167" top="15" width="60" height="25" name="von1" field="von1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<edit left="257" top="15" width="60" height="25" name="von2" field="von2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-			<edit left="348" top="15" width="60" height="25" field="von3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="1" top="15" color="Black" width="50" height="25" xradius="2" yradius="2"/>
+			<label left="11" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="VON"/>
+			<label left="8" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Vontade"/>
+			<edit left="57" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+			<edit left="167" top="15" width="60" height="25" name="von1" field="von1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<edit left="257" top="15" width="60" height="25" name="von2" field="von2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+			<edit left="348" top="15" width="60" height="25" field="von3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="750" top="274" width="263" height="37">
-			<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
-			<label left="11" top="13" width="155" height="20" text="Pontos de Vida" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
-			<edit left="130" top="11" width="123" height="25" field="pv" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2"/>
+			<label left="11" top="13" width="155" height="20" text="Pontos de Vida" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white"/>
+			<edit left="130" top="11" width="123" height="25" field="pv" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="750" top="324" width="263" height="37">
-			<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
-			<label left="3" top="13" width="155" height="20" text="Pontos de Energia" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
-			<edit left="130" top="11" width="123" height="25" field="pe" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2"/>
+			<label left="3" top="13" width="155" height="20" text="Pontos de Energia" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white"/>
+			<edit left="130" top="11" width="123" height="25" field="pe" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="750" top="374" width="263" height="37">
-			<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
-			<label left="23" top="13" width="155" height="20" text="Usos Diários" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
-			<edit left="130" top="11" width="123" height="25" field="ud" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2"/>
+			<label left="23" top="13" width="155" height="20" text="Usos Diários" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white"/>
+			<edit left="130" top="11" width="123" height="25" field="ud" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 
-			<rectangle left="760" top="413" color="Gainsboro" width="150" height="15" xradius="2" yradius="2"/>
-			<label left="774" top="414" width="150" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Ilustração do Personagem"/>
+			<rectangle left="760" top="413" color="Black" width="150" height="15" xradius="2" yradius="2"/>
+			<label left="774" top="414" width="150" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Ilustração do Personagem"/>
 			<rectangle left="668" top="424" color="#333333" width="335" height="273" xradius="2" yradius="2"/>
-			<rectangle left="673" top="429" color="#696969" width="325" height="263" xradius="2" yradius="2"/>
+			<rectangle left="673" top="429" color="#999999" width="325" height="263" xradius="2" yradius="2"/>
 			<image left="673" top="429" field="imagempersona" animate="true" editable="true" style="proportional" src="" width="325" height="263"/>
 
-
 		<layout left="6" top="421" width="688" height="41">
-			<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
-			<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Corpo-a-corpo"/>
+			<rectangle left="5" top="15" color="Black" width="155" height="25" xradius="2" yradius="2"/>
+			<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="white" text="Corpo-a-corpo"/>
 			<layout left="118" top="0" width="688" height="41">
-				<rectangle left="73" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
-				<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
-				<edit left="57" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-				<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-				<rectangle left="185" top="3" color="Gainsboro" width="25" height="15" xradius="2" yradius="2"/>
-				<label left="187" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="BBA"/>
-				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-				<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<rectangle left="263" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
-				<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
-				<edit left="257" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-				<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<rectangle left="359" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
-				<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
-				<edit left="348" top="15" width="60" height="25" field="cac3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-				<rectangle left="413" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<rectangle left="450" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
-				<label left="453" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
-				<edit left="439" top="15" width="60" height="25" field="cac4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				<rectangle left="73" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+				<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+				<edit left="57" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+				<rectangle left="185" top="3" color="Black" width="25" height="15" xradius="2" yradius="2"/>
+				<label left="187" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="BBA"/>
+				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="263" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
+				<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+				<edit left="257" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="359" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+				<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+				<edit left="348" top="15" width="60" height="25" field="cac3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="413" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="450" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+				<label left="453" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+				<edit left="439" top="15" width="60" height="25" field="cac4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="6" top="461" width="688" height="41">
-			<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
-			<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="À Distância"/>
+			<rectangle left="5" top="15" color="Black" width="155" height="25" xradius="2" yradius="2"/>
+			<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="white" text="À Distância"/>
 			<layout left="118" top="0" width="688" height="41">
-				<edit left="57" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-				<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-				<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<edit left="257" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-				<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<edit left="348" top="15" width="60" height="25" field="dis3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-				<rectangle left="413" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-				<edit left="439" top="15" width="60" height="25" field="dis4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				<edit left="57" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="257" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="348" top="15" width="60" height="25" field="dis3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="413" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="439" top="15" width="60" height="25" field="dis4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="8" top="516" width="237" height="160">
-			<rectangle top="6" width="235" height="153" color="Gainsboro" xradius="2" yradius="2"/>
-			<rectangle left="60" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Classes"/>
-			<edit left="3" top="11" width="156" height="25" field="classe1" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<rectangle left="186" top="1" color="Gainsboro" width="29" height="15" xradius="2" yradius="2"/>
-			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível"/>
-			<edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="41" width="156" height="25" field="classe2" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="71" width="156" height="25" field="classe3" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="101" width="156" height="25" field="classe4" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="131" width="156" height="25" field="classe5" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle top="6" width="235" height="153" color="Black" xradius="2" yradius="2"/>
+			<rectangle left="60" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Classes"/>
+			<edit left="3" top="11" width="156" height="25" field="classe1" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+			<rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2"/>
+			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível"/>
+			<edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="41" width="156" height="25" field="classe2" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="71" width="156" height="25" field="classe3" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="101" width="156" height="25" field="classe4" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="131" width="156" height="25" field="classe5" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="255" top="516" width="237" height="160">
-			<rectangle top="6" width="235" height="153" color="Gainsboro" xradius="2" yradius="2"/>
-			<rectangle left="60" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Classes"/>
-			<edit left="3" top="11" width="156" height="25" field="classe6" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<rectangle left="186" top="1" color="Gainsboro" width="29" height="15" xradius="2" yradius="2"/>
-			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível"/>
-			<edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="41" width="156" height="25" field="classe7" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="71" width="156" height="25" field="classe8" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="101" width="156" height="25" field="classe9" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="3" top="131" width="156" height="25" field="classe10" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+			<rectangle top="6" width="235" height="153" color="Black" xradius="2" yradius="2"/>
+			<rectangle left="60" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Classes"/>
+			<edit left="3" top="11" width="156" height="25" field="classe6" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2"/>
+			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível"/>
+			<edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="41" width="156" height="25" field="classe7" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="71" width="156" height="25" field="classe8" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="101" width="156" height="25" field="classe9" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="3" top="131" width="156" height="25" field="classe10" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="502" top="516" width="140" height="159">
-			<rectangle top="6" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-			<rectangle left="35" top="1" color="Gainsboro" width="55" height="15" xradius="2" yradius="2"/>
-			<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível Total"/>
-			<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-			<rectangle top="66" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-			<rectangle left="23" top="61" color="Gainsboro" width="77" height="15" xradius="2" yradius="2"/>
-			<label left="25" top="62" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Pontos de Ação"/>
-			<edit left="3" top="71" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-			<rectangle top="126" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-			<rectangle left="41" top="121" color="Gainsboro" width="42" height="15" xradius="2" yradius="2"/>
-			<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Funções"/>
-			<rectangle left="3" top="131" color="#333333" width="119" height="25"/>
+			<rectangle top="6" color="Black" width="125" height="33" xradius="2" yradius="2"/>
+			<rectangle left="35" top="1" color="Black" width="55" height="15" xradius="2" yradius="2"/>
+			<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível Total"/>
+			<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<rectangle top="66" color="Black" width="125" height="33" xradius="2" yradius="2"/>
+			<rectangle left="23" top="61" color="Black" width="77" height="15" xradius="2" yradius="2"/>
+			<label left="25" top="62" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Pontos de Ação"/>
+			<edit left="3" top="71" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<rectangle top="126" color="Black" width="125" height="33" xradius="2" yradius="2"/>
+			<rectangle left="41" top="121" color="Black" width="42" height="15" xradius="2" yradius="2"/>
+			<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Funções"/>
+			<rectangle left="3" top="131" color="#ffffff" width="119" height="25"/>
 			<imageCheckBox name="calculos" field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
 			<imageCheckBox name="acuidade" field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
 			<imageCheckBox name="pontaria" field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
 			<image left="74" top="136" name="update" animate="true" src="img/update.gif" width="15" height="15"/>
-			<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.4" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
+			<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.5" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
 		</layout>
 	</scrollBox>
 	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">

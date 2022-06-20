@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="TormentaCastfrm" formType="sheetTemplate" dataType="Cast.Tormenta.RPGFirecast" title="Ficha Tormenta RPG" align="client" theme="dark">
+<form name="TormentaCastfrm" formType="sheetTemplate" dataType="Cast.Tormenta.RPGFirecast" title="Ficha Tormenta RPG" align="client" theme="light">
 	<tabControl align="client">
 		<tab title="Características">
 			<import file="1.lfm"/>
@@ -16,11 +16,8 @@
 		<tab title="Histórico">
 			<import file="5.lfm"/>
 		</tab>
-		<tab title="Ataques e defesas">
+		<tab title="Ataques e macros">
 			<import file="6.lfm"/>
-		</tab>
-		<tab title="Créditos">
-			<import file="creditos.lfm"/>
 		</tab>
 	</tabControl>
 </form>

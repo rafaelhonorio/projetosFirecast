@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta05" align="client" theme="dark" lockWhileNodeIsLoading="true">
+<form name="Tormenta05" align="client" theme="light" lockWhileNodeIsLoading="true">
 	<scrollBox align="client">
-		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
 		<layout left="10" top="8" width="980" height="300">
-			<rectangle left="280" top="3" color="Gainsboro" width="77" height="28" xradius="2" yradius="2"/>
-			<label left="285" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="História"/>
-			<richEdit left="10" top="27" backgroundColor="#333333" animateImages="true" defaultFontColor="white" field="background" width="712" height="272"/>
-			<rectangle left="795" top="3" color="Gainsboro" width="115" height="28" xradius="2" yradius="2"/>
-			<label left="799" top="6" width="110" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Informações"/>
-			<textEditor left="723" top="27" width="280" height="202" field="informacoes"/>
-			<rectangle left="723" top="230" color="#333333" width="258" height="70" xradius="2" yradius="2"/>
-			<rectangle left="727" top="235" color="#696969" width="248" height="60" xradius="2" yradius="2"/>
-			<!-- Criar uma area para XP NIVEL ATUAL E XP PROXIMO NIVEL -->
+			<rectangle left="1" top="230" color="#333333" width="280" height="70" xradius="2" yradius="2"/>
+			<rectangle left="5" top="235" color="#999999" width="270" height="60" xradius="2" yradius="2"/>
 
+			<rectangle left="15" top="238" color="Black" width="120" height="25" xradius="2" yradius="2"/>
+			<label left="37" top="233" width="75" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="EXP ATUAL"/>
+			<label left="36" top="243" width="120" height="25" fontSize="10" fontColor="white" text="Experiência Atual"/>
+			<edit left="146" top="238" width="120" height="25" name="XPAtual" field="XPAtual" type="number" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+
+			<rectangle left="15" top="266" color="Black" width="120" height="25" xradius="2" yradius="2"/>
+			<label left="38" top="261" width="75" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="EXP NIVEL"/>
+			<label left="18" top="271" width="120" height="25" fontSize="10" fontColor="white" text="Experiência Próximo Nível"/>
+			<edit left="146" top="266" width="120" height="25" name="XPNivel" field="XPNivel" type="number" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+
+			<rectangle left="84" top="3" color="Black" width="115" height="28" xradius="2" yradius="2"/>
+			<label left="90" top="5" width="110" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="Informações"/>
+			<textEditor left="1" top="27" width="280" height="202" fontColor="black" field="informacoes"/>
+
+			<rectangle left="600" top="3" color="Black" width="77" height="28" xradius="2" yradius="2"/>
+			<label left="605" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="História"/>
+			<richEdit left="300" top="27" backgroundColor="#ffffff" animateImages="true" defaultFontColor="black" field="background" width="712" height="272"/>
 		</layout>
 		<layout left="21" top="316" width="969" height="358">
-			<rectangle left="86" top="3" color="Gainsboro" width="128" height="28" xradius="2" yradius="2"/>
-			<label left="90" top="6" width="120" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Personalidade"/>
-			<textEditor left="0" top="30" width="300" height="328" field="personalidade"/>
-			<rectangle left="435" top="3" color="Gainsboro" width="93" height="28" xradius="2" yradius="2"/>
-			<label left="439" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Aparência"/>
-			<textEditor left="334" top="30" width="300" height="328" field="aparencia"/>
-			<rectangle left="770" top="3" color="Gainsboro" width="97" height="28" xradius="2" yradius="2"/>
-			<label left="774" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Anotações"/>
-			<textEditor left="669" top="30" width="300" height="328" field="anotacoes"/>
+			<rectangle left="86" top="3" color="Black" width="128" height="28" xradius="2" yradius="2"/>
+			<label left="90" top="6" width="120" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="Personalidade"/>
+			<textEditor left="0" top="30" width="300" height="328" fontColor="black" field="personalidade"/>
+			<rectangle left="435" top="3" color="Black" width="93" height="28" xradius="2" yradius="2"/>
+			<label left="439" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="Aparência"/>
+			<textEditor left="334" top="30" width="300" height="328" fontColor="black" field="aparencia"/>
+			<rectangle left="770" top="3" color="Black" width="97" height="28" xradius="2" yradius="2"/>
+			<label left="774" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="Anotações"/>
+			<textEditor left="669" top="30" width="300" height="328" fontColor="black" field="anotacoes"/>
 		</layout>
 	</scrollBox>
 </form>

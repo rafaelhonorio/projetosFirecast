@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmItemDaLista" height="50" theme="light"> 
+        <layout align="client" margins="{left=4, right=4, top=4, bottom=4}">
+                <button align="left" width="32" text="X" onDblClick="ndb.deleteNode(sheet);"/> 
+                <edit fontSize="18" height="30" horzTextAlign="center" fontStyle="bold" left="40" top="5" width="200" field="campoTitulo" fontColor="black" margins="{left=4}"/> 
+        </layout>
+</form>

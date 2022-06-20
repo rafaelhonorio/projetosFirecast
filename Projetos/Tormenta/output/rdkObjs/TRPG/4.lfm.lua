@@ -28,7 +28,7 @@ local function constructNew_Tormenta04()
     obj:beginUpdate();
     obj:setName("Tormenta04");
     obj:setAlign("client");
-    obj:setTheme("dark");
+    obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
 
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
@@ -40,7 +40,7 @@ local function constructNew_Tormenta04()
     obj.rectangle1:setParent(obj.scrollBox1);
     obj.rectangle1:setWidth(1010);
     obj.rectangle1:setHeight(700);
-    obj.rectangle1:setColor("DimGray");
+    obj.rectangle1:setColor("LightGray");
     obj.rectangle1:setXradius(10);
     obj.rectangle1:setYradius(10);
     obj.rectangle1:setName("rectangle1");
@@ -60,7 +60,7 @@ local function constructNew_Tormenta04()
     obj.rectangle3:setParent(obj.scrollBox1);
     obj.rectangle3:setLeft(378);
     obj.rectangle3:setTop(15);
-    obj.rectangle3:setColor("#696969");
+    obj.rectangle3:setColor("#999999");
     obj.rectangle3:setWidth(255);
     obj.rectangle3:setHeight(40);
     obj.rectangle3:setXradius(2);
@@ -71,7 +71,7 @@ local function constructNew_Tormenta04()
     obj.rectangle4:setParent(obj.scrollBox1);
     obj.rectangle4:setLeft(397);
     obj.rectangle4:setTop(28);
-    obj.rectangle4:setColor("Gainsboro");
+    obj.rectangle4:setColor("Black");
     obj.rectangle4:setWidth(90);
     obj.rectangle4:setHeight(25);
     obj.rectangle4:setXradius(2);
@@ -86,7 +86,7 @@ local function constructNew_Tormenta04()
     obj.label1:setHeight(25);
     obj.label1:setFontSize(14);
     lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
-    obj.label1:setFontColor("black");
+    obj.label1:setFontColor("white");
     obj.label1:setText("PM");
     obj.label1:setName("label1");
 
@@ -97,7 +97,7 @@ local function constructNew_Tormenta04()
     obj.label2:setWidth(90);
     obj.label2:setHeight(25);
     obj.label2:setFontSize(10);
-    obj.label2:setFontColor("black");
+    obj.label2:setFontColor("white");
     obj.label2:setText("Pontos de Magia");
     obj.label2:setName("label2");
 
@@ -105,7 +105,7 @@ local function constructNew_Tormenta04()
     obj.rectangle5:setParent(obj.scrollBox1);
     obj.rectangle5:setLeft(507);
     obj.rectangle5:setTop(16);
-    obj.rectangle5:setColor("Gainsboro");
+    obj.rectangle5:setColor("Black");
     obj.rectangle5:setWidth(28);
     obj.rectangle5:setHeight(15);
     obj.rectangle5:setXradius(2);
@@ -120,7 +120,7 @@ local function constructNew_Tormenta04()
     obj.label3:setHeight(8);
     obj.label3:setFontSize(10);
     lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
-    obj.label3:setFontColor("black");
+    obj.label3:setFontColor("white");
     obj.label3:setText("Total");
     obj.label3:setName("label3");
 
@@ -134,6 +134,7 @@ local function constructNew_Tormenta04()
     obj.totalPM:setField("totalPM");
     obj.totalPM:setType("number");
     obj.totalPM:setHorzTextAlign("center");
+    obj.totalPM:setFontColor("black");
     obj.totalPM:setFontSize(15.0);
     lfm_setPropAsString(obj.totalPM, "fontStyle",  "bold");
 
@@ -141,7 +142,7 @@ local function constructNew_Tormenta04()
     obj.rectangle6:setParent(obj.scrollBox1);
     obj.rectangle6:setLeft(564);
     obj.rectangle6:setTop(16);
-    obj.rectangle6:setColor("Gainsboro");
+    obj.rectangle6:setColor("Black");
     obj.rectangle6:setWidth(38);
     obj.rectangle6:setHeight(15);
     obj.rectangle6:setXradius(2);
@@ -156,7 +157,7 @@ local function constructNew_Tormenta04()
     obj.label4:setHeight(8);
     obj.label4:setFontSize(10);
     lfm_setPropAsString(obj.label4, "fontStyle",  "bold");
-    obj.label4:setFontColor("black");
+    obj.label4:setFontColor("white");
     obj.label4:setText("Atuais");
     obj.label4:setName("label4");
 
@@ -170,6 +171,7 @@ local function constructNew_Tormenta04()
     obj.atuaisPM:setField("atuaisPM");
     obj.atuaisPM:setType("number");
     obj.atuaisPM:setHorzTextAlign("center");
+    obj.atuaisPM:setFontColor("black");
     obj.atuaisPM:setFontSize(15.0);
     lfm_setPropAsString(obj.atuaisPM, "fontStyle",  "bold");
 
@@ -177,7 +179,7 @@ local function constructNew_Tormenta04()
     obj.rectangle7:setParent(obj.scrollBox1);
     obj.rectangle7:setLeft(175);
     obj.rectangle7:setTop(46);
-    obj.rectangle7:setColor("Gainsboro");
+    obj.rectangle7:setColor("Black");
     obj.rectangle7:setWidth(160);
     obj.rectangle7:setHeight(28);
     obj.rectangle7:setXradius(2);
@@ -192,7 +194,7 @@ local function constructNew_Tormenta04()
     obj.label5:setHeight(23);
     obj.label5:setFontSize(16.0);
     lfm_setPropAsString(obj.label5, "fontStyle",  "bold");
-    obj.label5:setFontColor("black");
+    obj.label5:setFontColor("white");
     obj.label5:setText("Magias Conhecidas");
     obj.label5:setName("label5");
 
@@ -208,6 +210,7 @@ local function constructNew_Tormenta04()
     obj.textEditor1:setParent(obj.layout1);
     obj.textEditor1:setAlign("client");
     obj.textEditor1:setField("mconhecidas");
+    obj.textEditor1:setFontColor("black");
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
     obj.textEditor1:setName("textEditor1");
 
@@ -215,7 +218,7 @@ local function constructNew_Tormenta04()
     obj.rectangle8:setParent(obj.scrollBox1);
     obj.rectangle8:setLeft(675);
     obj.rectangle8:setTop(46);
-    obj.rectangle8:setColor("Gainsboro");
+    obj.rectangle8:setColor("Black");
     obj.rectangle8:setWidth(160);
     obj.rectangle8:setHeight(28);
     obj.rectangle8:setXradius(2);
@@ -230,7 +233,7 @@ local function constructNew_Tormenta04()
     obj.label6:setHeight(23);
     obj.label6:setFontSize(16.0);
     lfm_setPropAsString(obj.label6, "fontStyle",  "bold");
-    obj.label6:setFontColor("black");
+    obj.label6:setFontColor("white");
     obj.label6:setText("Magias Preparadas");
     obj.label6:setName("label6");
 
@@ -246,6 +249,7 @@ local function constructNew_Tormenta04()
     obj.textEditor2:setParent(obj.layout2);
     obj.textEditor2:setAlign("client");
     obj.textEditor2:setField("mpreparadas");
+    obj.textEditor2:setFontColor("black");
     lfm_setPropAsString(obj.textEditor2, "fontStyle",  "bold");
     obj.textEditor2:setName("textEditor2");
 
