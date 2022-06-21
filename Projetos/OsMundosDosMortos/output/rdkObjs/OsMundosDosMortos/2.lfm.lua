@@ -33,7 +33,7 @@ local function constructNew_OsMundosDosMortos2()
     obj.image1 = GUI.fromHandle(_obj_newObject("image"));
     obj.image1:setParent(obj);
     obj.image1:setAlign("client");
-    obj.image1:setField("backgroundimg");
+    obj.image1:setField("backgroundingVerso");
     obj.image1:setStyle("stretch");
     obj.image1:setSRC("");
     obj.image1:setName("image1");
@@ -68,6 +68,17 @@ local function constructNew_OsMundosDosMortos2()
     lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontColor("black");
     obj.label1:setName("label1");
+
+    obj.backgroundingVerso = GUI.fromHandle(_obj_newObject("button"));
+    obj.backgroundingVerso:setParent(obj.layout1);
+    obj.backgroundingVerso:setName("backgroundingVerso");
+    obj.backgroundingVerso:setLeft(830);
+    obj.backgroundingVerso:setTop(2);
+    obj.backgroundingVerso:setWidth(40);
+    obj.backgroundingVerso:setHeight(25);
+    obj.backgroundingVerso:setText("BG");
+    obj.backgroundingVerso:setCanFocus(false);
+    obj.backgroundingVerso:setHint("Altera a imagem de fundo da pagina Verso.");
 
     obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
@@ -183,7 +194,13 @@ local function constructNew_OsMundosDosMortos2()
     lfm_setPropAsString(obj.textEditor3, "fontStyle",  "bold");
     obj.textEditor3:setName("textEditor3");
 
+    obj._e_event0 = obj.backgroundingVerso:addEventListener("onClick",
+        function (_)
+            Dialogs.selectImageURL('', function(url) sheet.backgroundingVerso = url end)
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
     obj._oldLFMDestroy = obj.destroy;
@@ -199,12 +216,13 @@ local function constructNew_OsMundosDosMortos2()
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.backgroundingVerso ~= nil then self.backgroundingVerso:destroy(); self.backgroundingVerso = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;

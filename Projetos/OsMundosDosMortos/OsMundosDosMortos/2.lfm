@@ -1,13 +1,14 @@
 <?xml version="1.5" encoding="UTF-8"?>
 <form name="OsMundosDosMortos2" align="client" theme="dark">
 
-	<image align="client" field="backgroundimg" style="stretch" src=""/>
+	<image align="client" field="backgroundingVerso" style="stretch" src=""/>
 
 	<scrollBox align="client">
 
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Histórico" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<button name="backgroundingVerso" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da pagina Verso." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundingVerso = url end)"/>
 		</layout>
 
 		<layout left="10" top="40" width="860" height="240">

@@ -2,7 +2,7 @@
 <form name="Tormenta02" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="desCalculos2();">
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
-		<layout left="5" top="10" width="450" height="680">
+		<layout left="5" top="10" width="450" height="700">
 			<rectangle left="213" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
 			<label left="220" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
 			<rectangle left="277" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
@@ -11,373 +11,404 @@
 			<label left="347" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
 			<rectangle left="409" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
 			<label left="412" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-			<layout left="0" top="17" width="450" height="680">
+			<layout left="0" top="17" width="450" height="700">
 				<layout left="0" top="0" width="450" height="32">
-					<rectangle left="5" top="5" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="8" width="20" height="20" name="cbxacrobacia" field="cbxacrobacia"/>
-					<label left="26" top="7" width="150" height="20" text="Acrobacia" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="5" width="40" height="25" name="totalacrobacia" field="totalacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="10" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="5" width="40" height="25" name="gradacrobacia" field="gradacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="10" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="5" width="40" height="25" name="modacrobacia" field="modacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="10" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="5" width="40" height="25" name="outrosacrobacia" field="outrosacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxacrobacia"/>
+					<label left="26" top="5" width="150" height="20" text="Acrobacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalacrobacia" field="totalacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradacrobacia" field="gradacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modacrobacia" field="modacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosacrobacia" field="outrosacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="35" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxadestrar" field="cbxadestrar"/>
-					<label left="26" top="2" width="150" height="20" text="Adestrar Animais" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totaladestrar" field="totaladestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradadestrar" field="gradadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modadestrar" field="modadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosadestrar" field="outrosadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="28" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxadestrar"/>
+					<label left="26" top="5" width="150" height="20" text="Adestrar Animais" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totaladestrar" field="totaladestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradadestrar" field="gradadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modadestrar" field="modadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosadestrar" field="outrosadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="65" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxatletismo" field="cbxatletismo"/>
-					<label left="26" top="2" width="150" height="20" text="Atletismo" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalatletismo" field="totalatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradatletismo" field="gradatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modatletismo" field="modatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosatletismo" field="outrosatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="56" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatletismo"/>
+					<label left="26" top="5" width="150" height="20" text="Atletismo" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalatletismo" field="totalatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradatletismo" field="gradatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modatletismo" field="modatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosatletismo" field="outrosatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="95" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxatuacao1" field="cbxatuacao1"/>
-					<label left="26" top="2" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white" />
-					<edit field="atuacao" left="120" top="2" width="86" height="20" fontSize="12.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
-					<edit left="212" top="0" width="40" height="25" name="totalatuacao1" field="totalatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradatuacao1" field="gradatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modatuacao1" field="modatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosatuacao1" field="outrosatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="84" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatuacao1"/>
+					<label left="26" top="5" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
+					<edit field="atuacao1" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="212" top="3" width="40" height="25" name="totalatuacao1" field="totalatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradatuacao1" field="gradatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modatuacao1" field="modatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosatuacao1" field="outrosatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="125" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxjogatina" field="cbxjogatina"/>
-					<label left="26" top="2" width="150" height="20" text="Jogatina" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totaljogatina" field="totaljogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradjogatina" field="gradjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modjogatina" field="modjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosjogatina" field="outrosjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="112" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatuacao2"/>
+					<label left="26" top="5" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
+					<edit field="atuacao2" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="212" top="3" width="40" height="25" name="totalatuacao2" field="totalatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradatuacao2" field="gradatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modatuacao2" field="modatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosatuacao2" field="outrosatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>				
+				<layout left="0" top="140" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxcavalgar"/>
+					<label left="26" top="5" width="150" height="20" text="Cavalgar" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalcavalgar" field="totalcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradcavalgar" field="gradcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modcavalgar" field="modcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outroscavalgar" field="outroscavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="155" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxcavalgar" field="cbxcavalgar"/>
-					<label left="26" top="2" width="150" height="20" text="Cavalgar" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalcavalgar" field="totalcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradcavalgar" field="gradcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modcavalgar" field="modcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outroscavalgar" field="outroscavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="168" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxconhecimento1"/>
+					<label left="26" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit field="conhecimento1" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
+					<edit left="212" top="3" width="40" height="25" name="totalconhecimento1" field="totalconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradconhecimento1" field="gradconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modconhecimento1" field="modconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosconhecimento1" field="outrosconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="185" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxconhecimento1" field="cbxconhecimento1"/>
-					<label left="26" top="2" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit field="conhecimento1" left="120" top="2" width="86" height="20" fontSize="12.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
-					<edit left="212" top="0" width="40" height="25" name="totalconhecimento1" field="totalconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradconhecimento1" field="gradconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modconhecimento1" field="modconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosconhecimento1" field="outrosconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="196" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxconhecimento2"/>
+					<label left="26" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit field="conhecimento2" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
+					<edit left="212" top="3" width="40" height="25" name="totalconhecimento2" field="totalconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradconhecimento2" field="gradconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modconhecimento2" field="modconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosconhecimento2" field="outrosconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-
-				<layout left="0" top="215" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxconhecimento2" field="cbxconhecimento2"/>
-					<label left="26" top="2" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit field="conhecimento2" left="120" top="2" width="86" height="20" fontSize="12.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
-					<edit left="212" top="0" width="40" height="25" name="totalconhecimento2" field="totalconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradconhecimento2" field="gradconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modconhecimento2" field="modconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosconhecimento2" field="outrosconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="224" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxcura"/>
+					<label left="26" top="5" width="150" height="20" text="Cura" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalcura" field="totalcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradcura" field="gradcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modcura" field="modcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outroscura" field="outroscura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="245" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxcura" field="cbxcura"/>
-					<label left="26" top="2" width="150" height="20" text="Cura" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalcura" field="totalcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradcura" field="gradcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modcura" field="modcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outroscura" field="outroscura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="252" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxdiplomacia"/>
+					<label left="26" top="5" width="150" height="20" text="Diplomacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totaldiplomacia" field="totaldiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="graddiplomacia" field="graddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="moddiplomacia" field="moddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosdiplomacia" field="outrosdiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="275" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxdiplomacia" field="cbxdiplomacia"/>
-					<label left="26" top="2" width="150" height="20" text="Diplomacia" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totaldiplomacia" field="totaldiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="graddiplomacia" field="graddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="moddiplomacia" field="moddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosdiplomacia" field="outrosdiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="280" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxenganacao"/>
+					<label left="26" top="5" width="150" height="20" text="Enganação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalenganacao" field="totalenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradenganacao" field="gradenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modenganacao" field="modenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosenganacao" field="outrosenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="305" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxenganacao" field="cbxenganacao"/>
-					<label left="26" top="2" width="150" height="20" text="Enganação" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalenganacao" field="totalenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradenganacao" field="gradenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modenganacao" field="modenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosenganacao" field="outrosenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="308" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxfurtividade"/>
+					<label left="26" top="5" width="150" height="20" text="Furtividade" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalfurtividade" field="totalfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradfurtividade" field="gradfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modfurtividade" field="modfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosfurtividade" field="outrosfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="335" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxfurtividade" field="cbxfurtividade"/>
-					<label left="26" top="2" width="150" height="20" text="Furtividade" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalfurtividade" field="totalfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradfurtividade" field="gradfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modfurtividade" field="modfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosfurtividade" field="outrosfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="336" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbximagia"/>
+					<label left="26" top="5" width="150" height="20" text="Identificar Magia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalimagia" field="totalimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradimagia" field="gradimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modimagia" field="modimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosimagia" field="outrosimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="365" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbximagia" field="cbximagia"/>
-					<label left="26" top="2" width="150" height="20" text="Identificar Magia" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalimagia" field="totalimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradimagia" field="gradimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modimagia" field="modimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosimagia" field="outrosimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="364" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxiniciativa"/>
+					<label left="26" top="5" width="150" height="20" text="Iniciativa" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totaliniciativa" field="totaliniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradiniciativa" field="gradiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modiniciativa" field="modiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosiniciativa" field="outrosiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="395" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxiniciativa" field="cbxiniciativa"/>
-					<label left="26" top="2" width="150" height="20" text="Iniciativa" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totaliniciativa" field="totaliniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradiniciativa" field="gradiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modiniciativa" field="modiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosiniciativa" field="outrosiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="392" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxintimidacao"/>
+					<label left="26" top="5" width="150" height="20" text="Intimidação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<imageCheckBox name="intimidar" field="intimidar" left="115" top="8" checkedImage="img/FOR.png" uncheckedImage="img/CAR.png" hint="Muda o modificador em Intimidação. CAR ou FOR." width="15" height="15"/>
+					<edit left="212" top="3" width="40" height="25" name="totalintimidacao" field="totalintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradintimidacao" field="gradintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modintimidacao" field="modintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosintimidacao" field="outrosintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="425" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxintimidacao" field="cbxintimidacao"/>
-					<label left="26" top="2" width="150" height="20" text="Intimidação" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<imageCheckBox name="intimidar" field="intimidar" left="105" top="5" checkedImage="img/FOR.png" uncheckedImage="img/CAR.png" hint="Muda o modificador em Intimidação. CAR ou FOR." width="15" height="15"/>
-					<edit left="212" top="0" width="40" height="25" name="totalintimidacao" field="totalintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradintimidacao" field="gradintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modintimidacao" field="modintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosintimidacao" field="outrosintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				<layout left="0" top="420" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxintuicao"/>
+					<label left="26" top="5" width="150" height="20" text="Intuição" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalintuicao" field="totalintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradintuicao" field="gradintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modintuicao" field="modintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosintuicao" field="outrosintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="455" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxintuicao" field="cbxintuicao"/>
-					<label left="26" top="2" width="150" height="20" text="Intuição" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalintuicao" field="totalintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradintuicao" field="gradintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modintuicao" field="modintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosintuicao" field="outrosintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="448" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxjogatina"/>
+					<label left="26" top="5" width="150" height="20" text="Jogatina" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totaljogatina" field="totaljogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradjogatina" field="gradjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modjogatina" field="modjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosjogatina" field="outrosjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="485" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxladinagem" field="cbxladinagem"/>
-					<label left="26" top="2" width="150" height="20" text="Ladinagem" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalladinagem" field="totalladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradladinagem" field="gradladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modladinagem" field="modladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosladinagem" field="outrosladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="476" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxladinagem"/>
+					<label left="26" top="5" width="150" height="20" text="Ladinagem" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalladinagem" field="totalladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradladinagem" field="gradladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modladinagem" field="modladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosladinagem" field="outrosladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="515" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxoinformacao" field="cbxoinformacao"/>
-					<label left="26" top="2" width="150" height="20" text="Obter Informação" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totaloinformacao" field="totaloinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradoinformacao" field="gradoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modoinformacao" field="modoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosoinformacao" field="outrosoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="504" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoinformacao"/>
+					<label left="26" top="5" width="150" height="20" text="Obter Informação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totaloinformacao" field="totaloinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradoinformacao" field="gradoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modoinformacao" field="modoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosoinformacao" field="outrosoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="545" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxoficio1" field="cbxoficio1"/>
-					<label left="26" top="2" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit field="oficio" left="120" top="2" width="86" height="20" fontSize="12.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
-					<edit left="212" top="0" width="40" height="25" name="totaloficio1" field="totaloficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradoficio1" field="gradoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modoficio1" field="modoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosoficio1" field="outrosoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+				<layout left="0" top="532" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoficio1"/>
+					<label left="26" top="5" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit field="oficio1" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="212" top="3" width="40" height="25" name="totaloficio1" field="totaloficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradoficio1" field="gradoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modoficio1" field="modoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosoficio1" field="outrosoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 				</layout>
-				<layout left="0" top="575" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxmeditacao" field="cbxmeditacao"/>
-					<label left="26" top="2" width="150" height="20" text="Meditação" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalmeditacao" field="totalmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradmeditacao" field="gradmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modmeditacao" field="modmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrosmeditacao" field="outrosmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="560" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoficio2"/>
+					<label left="26" top="5" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit field="oficio2" left="130" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="212" top="3" width="40" height="25" name="totaloficio2" field="totaloficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradoficio2" field="gradoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modoficio2" field="modoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosoficio2" field="outrosoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 				</layout>
-				<layout left="0" top="605" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxpercepcao" field="cbxpercepcao"/>
-					<label left="26" top="2" width="150" height="20" text="Percepção" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalpercepcao" field="totalpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradpercepcao" field="gradpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modpercepcao" field="modpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrospercepcao" field="outrospercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="588" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxmeditacao"/>
+					<label left="26" top="5" width="150" height="20" text="Meditação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalmeditacao" field="totalmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradmeditacao" field="gradmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modmeditacao" field="modmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrosmeditacao" field="outrosmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
-				<layout left="0" top="635" width="450" height="32">
-					<rectangle left="5" top="0" color="Black" width="204" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxsobrevivencia" field="cbxsobrevivencia"/>
-					<label left="26" top="2" width="150" height="20" text="Sobrevivência" horzTextAlign="leading" fontSize="13.0" fontStyle="bold" fontColor="white"/>
-					<edit left="212" top="0" width="40" height="25" name="totalsobrevivencia" field="totalsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="254" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="256" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-					<edit left="276" top="0" width="40" height="25" name="gradsobrevivencia" field="gradsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="319" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="322" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="342" top="0" width="40" height="25" name="modsobrevivencia" field="modsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-					<rectangle left="385" top="5" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-					<label left="388" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-					<edit left="408" top="0" width="40" height="25" name="outrossobrevivencia" field="outrossobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<layout left="0" top="616" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxpercepcao"/>
+					<label left="26" top="5" width="150" height="20" text="Percepção" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalpercepcao" field="totalpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradpercepcao" field="gradpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modpercepcao" field="modpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrospercepcao" field="outrospercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="644" width="450" height="32">
+					<rectangle left="5" top="3" color="Black" width="204" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="5" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxsobrevivencia"/>
+					<label left="26" top="5" width="150" height="20" text="Sobrevivência" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<edit left="212" top="3" width="40" height="25" name="totalsobrevivencia" field="totalsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="254" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="257" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="275" top="3" width="40" height="25" name="gradsobrevivencia" field="gradsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="319" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="322" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="342" top="3" width="40" height="25" name="modsobrevivencia" field="modsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="385" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="389" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="408" top="3" width="40" height="25" name="outrossobrevivencia" field="outrossobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				</layout>
 			</layout>
 		</layout>
-		<layout left="460" top="10" width="545" height="680">
+		<layout left="460" top="10" width="545" height="700">
 			<rectangle left="115" top="5" color="Black" width="45" height="15" xradius="2" yradius="2"/>
 			<label left="118" top="8" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Talentos"/>
 			<rectangle left="357" top="5" color="Black" width="105" height="15" xradius="2" yradius="2"/>
 			<label left="360" top="8" width="98" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Raça"/>
 			<rectangle left="357" top="338" color="Black" width="107" height="15" xradius="2" yradius="2"/>
 			<label left="360" top="341" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Classe"/>
-			<layout left="5" top="17" width="265" height="661">
+			<layout left="5" top="17" width="265" height="671">
 				<textEditor align="client" field="talentos" fontStyle="bold"/>
 			</layout>
 			<layout left="275" top="17" width="265" height="317">
 				<textEditor align="client" field="hraca" fontStyle="bold" fontColor="black"/>
 			</layout>
-			<layout left="275" top="350" width="265" height="327">
+			<layout left="275" top="350" width="265" height="339">
 				<textEditor align="client" field="hclasse" fontStyle="bold" fontColor="black"/>
 			</layout>
 		</layout>
 	</scrollBox>
-	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar'}">
+	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar'}">
 		<event name="onChange">
 			if self.calculos.checked == false then
 				sheet.modacrobacia = sheet.moddestreza or 0;
 				if sheet.cbxacrobacia then
 					sheet.gradacrobacia = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
 				else
 					sheet.gradacrobacia = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
 				end;
 			end;
 		</event>
@@ -398,10 +429,10 @@
 				sheet.modatletismo = sheet.modforca or 0;
 				if sheet.cbxatletismo then
 					sheet.gradatletismo = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
 				else
 					sheet.gradatletismo = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
 				end;
 			end;
 		</event>
@@ -414,6 +445,18 @@
 				else
 					sheet.gradatuacao1 = (math.floor((sheet.metadenivel)or 0));
 					sheet.totalatuacao1 = (math.floor((sheet.gradatuacao1)or 0)+math.floor((sheet.modatuacao1) or 0)+math.floor((sheet.outrosatuacao1)or 0));
+				end;
+			end;
+		</event>
+		<event name="onChange">
+			if self.calculos.checked == false then
+				sheet.modatuacao2 = sheet.modcarisma or 0;
+				if sheet.cbxatuacao2 then
+					sheet.gradatuacao2 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+				else
+					sheet.gradatuacao2 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
 				end;
 			end;
 		</event>
@@ -506,10 +549,10 @@
 				sheet.modfurtividade = sheet.moddestreza or 0;
 				if sheet.cbxfurtividade then
 					sheet.gradfurtividade = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
 				else
 					sheet.gradfurtividade = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
 				end;
 			end;
 		</event>
@@ -577,10 +620,10 @@
 				sheet.modladinagem = sheet.moddestreza or 0;
 				if sheet.cbxladinagem then
 					sheet.gradladinagem = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
 				else
 					sheet.gradladinagem = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)-math.floor((sheet.penescudo) or 0)-math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
 				end;
 			end;
 		</event>
@@ -605,6 +648,18 @@
 				else
 					sheet.gradoficio1 = (math.floor((sheet.metadenivel)or 0));
 					sheet.totaloficio1 = (math.floor((sheet.gradoficio1)or 0)+math.floor((sheet.modoficio1) or 0)+math.floor((sheet.outrosoficio1)or 0));
+				end;
+			end;
+		</event>
+		<event name="onChange">
+			if self.calculos.checked == false then
+				sheet.modoficio2 = sheet.modinteligencia or 0;
+				if sheet.cbxoficio2 then
+					sheet.gradoficio2 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+				else
+					sheet.gradoficio2 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
 				end;
 			end;
 		</event>
@@ -660,6 +715,9 @@
 				self.totalatuacao1.hitTest = false;
 				self.gradatuacao1.hitTest = false;
 				self.modatuacao1.hitTest = false;
+				self.totalatuacao2.hitTest = false;
+				self.gradatuacao2.hitTest = false;
+				self.modatuacao2.hitTest = false;
 				self.totaljogatina.hitTest = false;
 				self.gradjogatina.hitTest = false;
 				self.modjogatina.hitTest = false;
@@ -705,6 +763,9 @@
 				self.totaloficio1.hitTest = false;
 				self.gradoficio1.hitTest = false;
 				self.modoficio1.hitTest = false;
+				self.totaloficio2.hitTest = false;
+				self.gradoficio2.hitTest = false;
+				self.modoficio2.hitTest = false;
 				self.totalmeditacao.hitTest = false;
 				self.gradmeditacao.hitTest = false;
 				self.modmeditacao.hitTest = false;
@@ -727,6 +788,9 @@
 				self.totalatuacao1.hitTest = true;
 				self.gradatuacao1.hitTest = true;
 				self.modatuacao1.hitTest = true;
+				self.totalatuacao2.hitTest = true;
+				self.gradatuacao2.hitTest = true;
+				self.modatuacao2.hitTest = true;
 				self.totaljogatina.hitTest = true;
 				self.gradjogatina.hitTest = true;
 				self.modjogatina.hitTest = true;
@@ -772,6 +836,9 @@
 				self.totaloficio1.hitTest = true;
 				self.gradoficio1.hitTest = true;
 				self.modoficio1.hitTest = true;
+				self.totaloficio2.hitTest = true;
+				self.gradoficio2.hitTest = true;
+				self.modoficio2.hitTest = true;
 				self.totalmeditacao.hitTest = true;
 				self.gradmeditacao.hitTest = true;
 				self.modmeditacao.hitTest = true;

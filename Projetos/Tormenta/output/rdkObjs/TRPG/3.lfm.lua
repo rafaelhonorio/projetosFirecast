@@ -168,7 +168,7 @@ local function constructNew_Tormenta03()
     obj.penarmadura:setName("penarmadura");
     obj.penarmadura:setField("penarmadura");
     obj.penarmadura:setType("number");
-    obj.penarmadura:setMin(-999);
+    obj.penarmadura:setMin(0);
     obj.penarmadura:setMax(999);
     obj.penarmadura:setHorzTextAlign("center");
     obj.penarmadura:setFontColor("black");
@@ -339,7 +339,7 @@ local function constructNew_Tormenta03()
     obj.penescudo:setName("penescudo");
     obj.penescudo:setField("penescudo");
     obj.penescudo:setType("number");
-    obj.penescudo:setMin(-999);
+    obj.penescudo:setMin(0);
     obj.penescudo:setMax(999);
     obj.penescudo:setHorzTextAlign("center");
     obj.penescudo:setFontColor("black");

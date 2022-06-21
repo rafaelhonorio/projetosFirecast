@@ -48,7 +48,7 @@
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<button name="backgroundimg" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+			<button name="backgrounding" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da pagina Base." onClick="Dialogs.selectImageURL('', function(url) sheet.backgrounding = url end)"/>
 		</layout>
 		<layout left="0" top="170" width="880" height="30">
 			<rectangle align="client" color="gray"/>
@@ -84,7 +84,7 @@
 				<Cabeca field="idade" texto="Idade" size="12" nort="number"/>
 			</layout>
 			<layout left="580" top="95" width="290" height="25" >
-				<Cabeca field="grupo" texto="Grupo" size="12" nort="number"/>
+				<Cabeca field="grupo" texto="Grupo" size="12" nort="text"/>
 			</layout>
 		</layout>
 		<layout top="211" width="880" height="25">
