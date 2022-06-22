@@ -2,210 +2,77 @@
 <form name="VampiroAMascara1" align="client" theme="dark" lockWhileNodeIsLoading="true">
 	<template name="Cabeca">
 		<rectangle left="5" top="31" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
-		<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
+		<label left="5" top="3" width="100" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
         <edit left="90" top="0" width="200" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
 	</template>
-	
-	<!-- <template name="Tenbox">
-		<imageCheckBox field="$(field)_1" name="$(field)_n1" left="19" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_2" name="$(field)_n2" left="39" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_3" name="$(field)_n3" left="59" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_4" name="$(field)_n4" left="79" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_5" name="$(field)_n5" left="99" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_6" name="$(field)_n6" left="119" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_7" name="$(field)_n7" left="139" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_8" name="$(field)_n8" left="159" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_9" name="$(field)_n9" left="179" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_10" name="$(field)_n10" left="199" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+	<template name="class">
+		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
 	</template>
-	<template name="habilidades">
-		<horzLine top="18" width="130" strokeSize="2" strokeColor="black"/>
-		 <edit field="$(field)_e" left="2" top="0" width="125" height="20" fontStyle="bold" fontColor="black" fontSize="14" horzTextAlign="center" transparent="true"/>
+	<template name="atributos1">
 		<imageCheckBox field="$(field)_1" left="137" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_2" left="155" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_3" left="173" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_4" left="191" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_5" left="209" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_6" left="227" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-	</template>
-	<template name="habilidades1">
-		<horzLine top="18" width="130" strokeSize="2" strokeColor="black"/>
-		 <edit field="$(field)_f" left="2" top="0" width="125" height="20" fontStyle="bold" fontColor="black" fontSize="14" horzTextAlign="center" transparent="true"/>
-		<imageCheckBox field="$(field)_h1" left="137" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_h2" left="155" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_h3" left="173" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_h4" left="191" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_h5" left="209" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-		<imageCheckBox field="$(field)_h6" left="227" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
-	</template>	 -->
-	<template name="class">
-		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-	</template>
-	<image align="client" field="backgrounding" style="stretch"/>
+	</template>	
 	<scrollBox align="client">
 		<layout left="0" top="29" width="880" height="3">
 			<rectangle align="client" color="black"/>
 		</layout>
-		<image top="0" left="300" width="300" height="250" src="img/vampiro.png"/>
-		<layout left="0" top="29" width="880" height="3">
+		<image top="0" left="330" width="300" height="250" src="img/vampiro.png"/>
+		<layout left="0" top="200" width="880" height="3">
 			<rectangle align="client" color="black"/>
 		</layout>
-		<layout>
-		</layout>
-		<!-- <layout top="211" width="880" height="25">
-			<rectangle left="8" color="Silver" width="235"/>
-			<label left="23" top="2" width="220" height="20" text="======= Tendências =======" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<rectangle left="254" color="Silver" width="370"/>
-			<label left="267" top="2" width="355" height="20" text="================ Limites ================" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<rectangle left="635" color="Silver" width="235"/>
-			<label left="650" top="2" width="235" height="20" text="======== Valores ========" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-		</layout>
-		<layout left="8" top="245" width="235" height="160">
-			<rectangle align="client"/>
-			<label left="86" top="9" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="30" width="215" height="20">
-				<Tenbox field="musc"/>
+		<layout left="0" top="200" width="880" height="125">
+			<layout left="0" top="5" width="290" height="25" >
+				<Cabeca field="nome" texto="Nome:" size="12" nort="text"/>
 			</layout>
-			<label left="91" top="54" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="75" width="215" height="20">
-				<Tenbox field="cereb"/>
+			<layout left="0" top="35" width="290" height="25" >
+				<Cabeca field="jogador" texto="Jogador:" size="12" nort="text"/>
+			</layout>	
+			<layout left="0" top="65" width="290" height="25" >
+				<Cabeca field="cronica" texto="Crônica:" size="12" nort="text"/>
+			</layout>	
+			<layout left="300" top="5" width="290" height="25" >
+				<Cabeca field="natureza" texto="Natureza:" size="12" nort="text"/>
 			</layout>
-			<label left="91" top="99" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="120" width="215" height="20">
-				<Tenbox field="corac"/>
+			<layout left="300" top="35" width="290" height="25" >
+				<Cabeca field="comportamento" texto="Comportamento:" size="10" nort="text"/>
+			</layout>	
+			<layout left="300" top="65" width="290" height="25" >
+				<Cabeca field="cla" texto="Clã:" size="12" nort="text"/>
+			</layout>				
+			<layout left="590" top="5" width="290" height="25" >
+				<Cabeca field="geracao" texto="Geração:" size="12" nort="number"/>
+			</layout>
+			<layout left="590" top="35" width="290" height="25" >
+				<Cabeca field="refugio" texto="Refúgio:" size="12" nort="text"/>
+			</layout>
+			<layout left="590" top="65" width="290" height="25" >
+				<Cabeca field="conceito" texto="Conceito:" size="12" nort="text"/>
 			</layout>
 		</layout>
-		<layout left="254" top="245" width="370" height="160">
-			<rectangle align="client"/>
-			<label left="38" top="11" width="70" height="20" text="Sanidade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
-			<edit field="sanidade" left="50" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="47" top="31" width="45" height="45" src="img/blackhole.png"/>
-			<label left="25" top="81" width="100" height="20" text="Autocontrole" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
-			<edit field="autocontrole" left="50" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="47" top="101" width="45" height="45" src="img/blackhole.png"/>
-			<label left="125" top="46" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
-			<edit field="forcadevontade" left="165" top="67" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="162" top="66" width="45" height="45" src="img/blackhole.png"/>
-			<label left="273" top="11" width="70" height="20" text="Energia" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
-			<edit field="energia" left="280" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="277" top="31" width="45" height="45" src="img/blackhole.png"/>
-			<label left="248" top="81" width="130" height="20" text="Pontos de Vida" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
-			<edit field="pontosdevida" left="280" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="277" top="101" width="45" height="45" src="img/blackhole.png"/>
+		<layout top="300" width="880" height="25">
+			<rectangle align="client" color="black"/>
+			<label left="425" top="2" width="80" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="White"/>			
 		</layout>
-		<layout left="635" top="245" width="235" height="160">
-			<rectangle align="client"/>
-			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<edit field="vmusculos" left="104" top="33" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="102" top="31" width="30" height="30" src="img/blackhole.png"/>
-			<label left="91" top="56" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<edit field="vcerebro" left="104" top="78" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="102" top="76" width="30" height="30" src="img/blackhole.png"/>
-			<label left="91" top="101" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<edit field="vcoracao" left="104" top="123" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
-			<image left="102" top="121" width="30" height="30" src="img/blackhole.png"/>
-		</layout>
-		<layout left="10" top="457" width="860" height="320">
-			<rectangle align="client"/>
-			<label left="100" top="10" width="130" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
-			<label left="365" top="10" width="130" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
-			<label left="620" top="10" width="140" height="20" text="Habilidades de Classe" horzTextAlign="trailing" fontStyle="bold" fontSize="13" fontColor="black"/>
-			<layout left="30" top="36" width="260" height="250">
+		<layout top="300" width="880" height="200">
+			<label left="150" top="30" width="80" height="20" text="Físicos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="430" top="30" width="80" height="20" text="Sociais" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="750" top="30" width="80" height="20" text="Mentais" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<layout left="30" top="36" width="260" height="250">	
 				<layout left="10" top="11" width="245" height="20">
-					<habilidades field="mhabilidades1"/>
+					<atributos1 field="fatributos1"/>
 				</layout>
 				<layout left="10" top="41" width="245" height="20">
-					<habilidades field="mhabilidades2"/>
+					<atributos1 field="fatributos2"/>
 				</layout>
 				<layout left="10" top="71" width="245" height="20">
-					<habilidades field="mhabilidades3"/>
-				</layout>
-				<layout left="10" top="101" width="245" height="20">
-					<habilidades field="mhabilidades4"/>
-				</layout>
-				<layout left="10" top="131" width="245" height="20">
-					<habilidades field="mhabilidades5"/>
-				</layout>
-				<layout left="10" top="161" width="245" height="20">
-					<habilidades field="mhabilidades6"/>
-				</layout>
-				<layout left="10" top="191" width="245" height="20">
-					<habilidades field="mhabilidades7"/>
-				</layout>
-				<layout left="10" top="221" width="245" height="20">
-					<habilidades field="mhabilidades8"/>
-				</layout>
-			</layout>
-			<layout left="295" top="36" width="260" height="250">
-				<layout left="10" top="11" width="245" height="20">
-					<habilidades1 field="mhabilidades1"/>
-				</layout>
-				<layout left="10" top="41" width="245" height="20">
-					<habilidades1 field="mhabilidades2"/>
-				</layout>
-				<layout left="10" top="71" width="245" height="20">
-					<habilidades1 field="mhabilidades3"/>
-				</layout>
-				<layout left="10" top="101" width="245" height="20">
-					<habilidades1 field="mhabilidades4"/>
-				</layout>
-				<layout left="10" top="131" width="245" height="20">
-					<habilidades1 field="mhabilidades5"/>
-				</layout>
-				<layout left="10" top="161" width="245" height="20">
-					<habilidades1 field="mhabilidades6"/>
-				</layout>
-				<layout left="10" top="191" width="245" height="20">
-					<habilidades1 field="mhabilidades7"/>
-				</layout>
-				<layout left="10" top="221" width="245" height="20">
-					<habilidades1 field="mhabilidades8"/>
+					<atributos1 field="fatributos3"/>
 				</layout>
 			</layout>			
-			<layout left="560" top="36" width="260" height="250">
-				<layout left="10" top="11" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 1 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel1" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-				<layout left="10" top="53" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 2 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel2" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-				<layout left="10" top="95" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 3 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel3" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-				<layout left="10" top="137" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 4 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel4" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-				<layout left="10" top="179" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 5 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel5" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-				<layout left="10" top="221" width="245" height="20">
-					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
-					<label width="80" height="20" text="Nível 6 ->" fontStyle="bold" fontSize="15" fontColor="black"/>
-					<edit field="cnivel6" left="70" top="0" width="168" height="20" fontStyle="bold" fontColor="black" fontSize="15" transparent="true"/>
-				</layout>
-			</layout>
-		</layout> -->
+		</layout>
+	
 	</scrollBox>
-	<!-- <dataLink fields="{'musc_1', 'musc_2', 'musc_3', 'musc_4', 'musc_5', 'musc_6', 'musc_7', 'musc_8', 'musc_9', 'musc_10', 'cereb_1', 'cereb_2', 'cereb_3', 'cereb_4', 'cereb_5', 'cereb_6', 'cereb_7', 'cereb_8', 'cereb_9', 'cereb_10', 'corac_1', 'corac_2', 'corac_3', 'corac_4', 'corac_5', 'corac_6', 'corac_7', 'corac_8', 'corac_9', 'corac_10'}">
-		<event name="onChange">
-			function booton(value)
-  				return value and 1 or 0
-			end
-			sheet.vmusculos = math.floor(booton(self.musc_n1.checked) or 0)+math.floor(booton(self.musc_n2.checked) or 0)+math.floor(booton(self.musc_n3.checked) or 0)+math.floor(booton(self.musc_n4.checked) or 0)+math.floor(booton(self.musc_n5.checked) or 0)+math.floor(booton(self.musc_n6.checked) or 0)+math.floor(booton(self.musc_n7.checked) or 0)+math.floor(booton(self.musc_n8.checked) or 0)+math.floor(booton(self.musc_n9.checked) or 0)+math.floor(booton(self.musc_n10.checked) or 0)
-			sheet.vcerebro = math.floor(booton(self.cereb_n1.checked) or 0)+math.floor(booton(self.cereb_n2.checked) or 0)+math.floor(booton(self.cereb_n3.checked) or 0)+math.floor(booton(self.cereb_n4.checked) or 0)+math.floor(booton(self.cereb_n5.checked) or 0)+math.floor(booton(self.cereb_n6.checked) or 0)+math.floor(booton(self.cereb_n7.checked) or 0)+math.floor(booton(self.cereb_n8.checked) or 0)+math.floor(booton(self.cereb_n9.checked) or 0)+math.floor(booton(self.cereb_n10.checked) or 0)
-			sheet.vcoracao = math.floor(booton(self.corac_n1.checked) or 0)+math.floor(booton(self.corac_n2.checked) or 0)+math.floor(booton(self.corac_n3.checked) or 0)+math.floor(booton(self.corac_n4.checked) or 0)+math.floor(booton(self.corac_n5.checked) or 0)+math.floor(booton(self.corac_n6.checked) or 0)+math.floor(booton(self.corac_n7.checked) or 0)+math.floor(booton(self.corac_n8.checked) or 0)+math.floor(booton(self.corac_n9.checked) or 0)+math.floor(booton(self.corac_n10.checked) or 0)
-		</event>
-	</dataLink> -->
-
 	<import file="Codigo1.lfm"/>
 </form>
