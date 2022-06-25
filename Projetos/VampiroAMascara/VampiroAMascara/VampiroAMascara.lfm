@@ -13,11 +13,17 @@
 			<label left="448" top="5" width="138" height="20" text=" / " horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<edit name="fdvatuais" left="460" top="3" width="40" height="25" type="number" field="fdvatual" horzTextAlign="center"/>
 		</layout>	
-		<tab title="Base">	
+		<tab title="Ficha">	
 			<import file="1.lfm"/>
 		</tab>
-		<tab title="Verso">	
+		<tab title="Pertences">	
 			<import file="2.lfm"/>
+		</tab>
+		<tab title="Informações">	
+			<import file="3.lfm"/>
+		</tab>
+		<tab title="Outros">	
+			<import file="4.lfm"/>
 		</tab>
 	</tabControl>
 

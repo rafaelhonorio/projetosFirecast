@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="VampiroAMascara3" align="client" theme="dark">
+
+	<scrollBox align="client">
+		<layout left="0" top="29" width="880" height="3">
+			<rectangle align="client" color="black"/>
+		</layout>
+		<image top="0" left="285" width="300" height="250" src="img/vampiro.png"/>
+		<layout left="0" top="200" width="880" height="3">
+			<rectangle align="client" color="black"/>
+		</layout>
+	</scrollBox>
+</form>

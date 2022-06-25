@@ -1,33 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="VampiroAMascara2" align="client" theme="dark">
-
-	<image align="client" field="backgroundimg" style="stretch" src=""/>
-
+	<template name="caracteristicas">
+        <edit left="40" top="0" width="135" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+		<imageCheckBox field="$(field)_1" left="177" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
+		<imageCheckBox field="$(field)_2" left="195" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
+		<imageCheckBox field="$(field)_3" left="213" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
+		<imageCheckBox field="$(field)_4" left="231" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
+		<imageCheckBox field="$(field)_5" left="249" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
+	</template>
+    <template name="experiencia">
+		<rectangle left="5" top="31" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+		<label left="5" top="3" width="100" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
+        <edit left="100" top="0" width="250" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+	</template>
 	<scrollBox align="client">
-
-		<layout left="0" top="0" width="880" height="30">
-			<rectangle align="client" color="gray"/>
-			<label left="8" top="5" width="138" height="20" text="Histórico" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		<layout left="0" top="29" width="880" height="3">
+			<rectangle align="client" color="black"/>
 		</layout>
-
-		<layout left="10" top="40" width="860" height="240">
-			<rectangle left="5" top="0" color="Gainsboro" width="65" xradius="2" yradius="2"/>
-			<label left="7" width="80" height="20" text="Infância" fontStyle="bold" fontSize="16" fontColor="black"/>
-			<textEditor top="20" width="860" height="240" field="bginfancia" fontStyle="bold"/>
+		<image top="0" left="285" width="300" height="250" src="img/vampiro.png"/>
+		<layout left="0" top="200" width="880" height="3">
+			<rectangle align="client" color="black"/>
 		</layout>
-
-		<layout left="10" top="290" width="860" height="240">
-			<rectangle left="5" top="0" color="Gainsboro" width="103" xradius="2" yradius="2"/>
-			<label left="7" width="100" height="20" text="Adolescência" fontStyle="bold" fontSize="16" fontColor="black"/>
-			<textEditor top="20" width="860" height="240" field="bgadolescencia" fontStyle="bold"/>
+		<layout top="200" width="880" height="500">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="350" top="2" width="250" height="20" text="Outros Características" fontStyle="bold" fontColor="White"/>
+			<layout left="0" top="20" width="880" height="200">
+				<layout left="0" top="10" width="290" height="25" >
+					<caracteristicas field="1outras1" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="35" width="290" height="25" >
+					<caracteristicas field="1outras2" size="12" nort="text"/>
+				</layout>	
+				<layout left="0" top="60" width="290" height="25" >
+					<caracteristicas field="1outras3" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="85" width="290" height="25" >
+					<caracteristicas field="1outras4" size="12" nort="text"/>
+				</layout>	
+				<layout left="0" top="110" width="290" height="25" >
+					<caracteristicas field="1outras5" size="12" nort="text"/>
+				</layout>	
+			</layout>	
+			<layout left="0" top="20" width="880" height="200">
+				<layout left="300" top="10" width="290" height="25" >
+					<caracteristicas field="2outras1" size="12" nort="text"/>
+				</layout>
+				<layout left="300" top="35" width="290" height="25" >
+					<caracteristicas field="2outras2" size="12" nort="text"/>
+				</layout>	
+				<layout left="300" top="60" width="290" height="25" >
+					<caracteristicas field="2outras3" size="12" nort="text"/>
+				</layout>
+				<layout left="300" top="85" width="290" height="25" >
+					<caracteristicas field="2outras4" size="12" nort="text"/>
+				</layout>	
+				<layout left="300" top="110" width="290" height="25" >
+					<caracteristicas field="2outras5" size="12" nort="text"/>
+				</layout>	
+			</layout>
+			<layout left="0" top="20" width="880" height="200">
+				<layout left="600" top="10" width="290" height="25" >
+					<caracteristicas field="2outras1" size="12" nort="text"/>
+				</layout>
+				<layout left="600" top="35" width="290" height="25" >
+					<caracteristicas field="2outras2" size="12" nort="text"/>
+				</layout>	
+				<layout left="600" top="60" width="290" height="25" >
+					<caracteristicas field="2outras3" size="12" nort="text"/>
+				</layout>
+				<layout left="600" top="85" width="290" height="25" >
+					<caracteristicas field="2outras4" size="12" nort="text"/>
+				</layout>	
+				<layout left="600" top="110" width="290" height="25" >
+					<caracteristicas field="2outras5" size="12" nort="text"/>
+				</layout>	
+			</layout>			
 		</layout>
-
-		<layout left="10" top="540" width="860" height="240">
-			<rectangle left="5" top="0" color="Gainsboro" width="90" xradius="2" yradius="2"/>
-			<label left="7" width="90" height="20" text="Fase adulta" fontStyle="bold" fontSize="16" fontColor="black"/>
-			<textEditor top="20" width="860" height="240" field="bgadulta" fontStyle="bold"/>
+		<layout top="370" width="880" height="300">
+			<label left="235" top="10" width="95" height="20" text="Experiência" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="595" top="0" autoSize="true" height="20" text="Laços de Sangue/ Vinculi" horzTextAlign="center" fontStyle="bold" fontColor="Black"/>
+			<layout left="40" top="45" width="880" height="25" >
+				<experiencia field="total" texto="Total:" size="12" nort="text"/>
+			</layout>
+			<layout left="40" top="70" width="880" height="25" >
+				<experiencia field="totalgasto" texto="Total Gasto:" size="12" nort="text"/>
+			</layout>	
+			<layout left="45" top="95" width="400" height="400">
+				<label autoSize="true" top="65" text="Gasto em:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+				<textEditor left="95" top="0" width="250" height="150" field="gastoem" fontStyle="bold"/>		
+			</layout>	
+			<layout left="475" top="35" width="400" height="400">
+				<label autoSize="true" top="0" text="Laço com:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="425" top="55" width="400" height="400">
+				<textEditor left="45" top="0" width="350" height="80" field="laco" fontStyle="bold"/>		
+			</layout>
+			<layout left="475" top="145" width="400" height="400">
+				<label autoSize="true" top="0" text="Pertubações:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="425" top="165" width="400" height="400">
+				<textEditor left="45" top="0" width="350" height="80" field="laco" fontStyle="bold"/>		
+			</layout>
 		</layout>
-
+		<layout top="630" width="880" height="500">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="380" top="2" width="250" height="20" text="Combate" fontStyle="bold" fontColor="White"/>
+		</layout>
 	</scrollBox>
+
 
 </form>
