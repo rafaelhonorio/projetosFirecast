@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="VampiroAMascara3" align="client" theme="dark">
+<form name="VampiroAMascara3" align="client" theme="light">
 
 	<scrollBox align="client">
 		<layout left="0" top="29" width="880" height="3">
@@ -9,5 +9,102 @@
 		<layout left="0" top="200" width="880" height="3">
 			<rectangle align="client" color="black"/>
 		</layout>
+		<layout top="205" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="355" top="2" width="250" height="20" text="Descrição dos Antecedentes" fontStyle="bold" fontColor="White"/>
+		</layout>	
+		<layout top="205" width="880" height="600">
+			<layout left="20" top="35" width="400" height="400">
+				<label width="200" top="0" left="180" text="Aliados" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="aliados" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="35" width="400" height="400">
+				<label width="200" top="0" left="180" text="Mentor" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="mentor" fontStyle="bold"/>		
+			</layout>
+
+			<layout left="20" top="135" width="400" height="400">
+				<label width="200" top="0" left="175" text="Contatos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="155" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="contatos" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="135" width="400" height="400">
+				<label width="200" top="0" left="175" text="Recursos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="155" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="recursos" fontStyle="bold"/>		
+			</layout>
+
+			<layout left="20" top="235" width="400" height="400">
+				<label width="200" top="0" left="185" text="Fama" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="255" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="fama" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="235" width="400" height="400">
+				<label width="200" top="0" left="180" text="Lacaios" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="255" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="lacaios" fontStyle="bold"/>		
+			</layout>
+
+			<layout left="20" top="335" width="400" height="400">
+				<label width="200" top="0" left="175" text="Rebanho" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="355" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="rebanho" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="335" width="400" height="400">
+				<label width="200" top="0" left="185" text="Status" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="355" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="status" fontStyle="bold"/>		
+			</layout>
+
+			<layout left="20" top="435" width="400" height="400">
+				<label width="200" top="0" left="170" text="Influência" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="455" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="influencia" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="435" width="400" height="400">
+				<label width="200" top="0" left="185" text="Outros" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="455" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="outros" fontStyle="bold"/>		
+			</layout>
+		</layout>	
+		<layout top="755" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="420" top="2" width="250" height="20" text="Posses" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="755" width="880" height="200">
+			<layout left="20" top="35" width="400" height="400">
+				<label width="200" top="0" left="145" text="Campos de Caça" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="caca" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="35" width="400" height="400">
+				<label width="200" top="0" left="185" text="Veículos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="veiculos" fontStyle="bold"/>		
+			</layout>
+		</layout>
+		<layout top="905" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="400" top="2" width="250" height="20" text="Anotações" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="925" width="880" height="270">
+			<layout left="0" top="15" width="880" height="270">
+				<textEditor left="20" top="0" width="845" height="250" fontColor="black" field="anotacoes" fontStyle="bold"/>		
+			</layout>
+		</layout>			
 	</scrollBox>
 </form>

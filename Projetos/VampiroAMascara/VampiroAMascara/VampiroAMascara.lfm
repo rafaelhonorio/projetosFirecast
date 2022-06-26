@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="VampiroAMascarafrm" formType="sheetTemplate" dataType="Cast.VampiroAMascara" title="Ficha Vampiro A Mascara" align="client" theme="dark">
+<form name="VampiroAMascarafrm" formType="sheetTemplate" dataType="Cast.VampiroAMascara" title="Ficha Vampiro A Mascara" align="client" theme="light">
 	<tabControl align="client">
-		<layout left="0" top="20" width="880" height="30">
-			<rectangle align="client" color="gray"/>
+		<layout left="0" top="25" width="880" height="30">
+			<rectangle align="client" color="white"/>
 			<label left="8" top="5" width="138" height="20" text="Pontos de Vida:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit name="pvtotais" left="105" top="3" width="40" height="25" type="number" field="pvtotal" horzTextAlign="center"/>
+			<edit name="pvtotais" left="105" top="3" width="40" height="25" fontColor="Black" type="number" field="pvtotal" horzTextAlign="center"/>
 			<label left="143" top="5" width="138" height="20" text=" / " horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit name="pvatuais" left="155" top="3" width="40" height="25" type="number" field="pvatual" horzTextAlign="center"/>
+			<edit name="pvatuais" left="155" top="3" width="40" height="25" fontColor="Black" type="number" field="pvatual" horzTextAlign="center"/>
 
 			<label left="298" top="5" width="438" height="20" text="Força de Vontade:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit name="fdvtotais" left="410" top="3" width="40" height="25" type="number" field="fdvtotal" horzTextAlign="center"/>
+			<edit name="fdvtotais" left="410" top="3" width="40" height="25" fontColor="Black" type="number" field="fdvtotal" horzTextAlign="center"/>
 			<label left="448" top="5" width="138" height="20" text=" / " horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit name="fdvatuais" left="460" top="3" width="40" height="25" type="number" field="fdvatual" horzTextAlign="center"/>
+			<edit name="fdvatuais" left="460" top="3" width="40" height="25" fontColor="Black" type="number" field="fdvatual" horzTextAlign="center"/>
 		</layout>	
 		<tab title="Ficha">	
 			<import file="1.lfm"/>

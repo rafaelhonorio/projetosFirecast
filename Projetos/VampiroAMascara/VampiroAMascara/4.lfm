@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="VampiroAMascara4" align="client" theme="dark">
+<form name="VampiroAMascara4" align="client" theme="light">
+	<template name="descricao">
+		<rectangle left="5" top="31" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+		<label left="5" top="3" width="100" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
+        <edit left="100" top="0" width="150" height="25" fontColor="black" fontStyle="bold" field="$(field)" type="$(nort)"/>	
+	</template>
 	<scrollBox align="client">
 		<layout left="0" top="29" width="880" height="3">
 			<rectangle align="client" color="black"/>
@@ -8,7 +13,80 @@
 		<layout left="0" top="200" width="880" height="3">
 			<rectangle align="client" color="black"/>
 		</layout>
-		
+		<layout top="205" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="405" top="2" width="250" height="20" text="História" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="200" width="880" height="200">
+			<label left="405" top="30" width="80" height="20" text="Prelúdio" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>	
+		</layout>
+		<layout top="235" width="880" height="270">
+			<layout left="0" top="15" width="880" height="270">
+				<textEditor left="20" top="0" width="845" height="250" fontColor="black" field="preludio" fontStyle="bold"/>		
+			</layout>
+		</layout>
+		<layout top="505" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="405" top="2" width="250" height="20" text="Descrição" fontStyle="bold" fontColor="White"/>
+		</layout>	
+		<layout top="510" width="880" height="350">
+			<layout left="15" top="25" width="880" height="25" >
+				<descricao field="idade" texto="Idade: " size="12" nort="number"/>
+			</layout>
+			<layout left="15" top="55" width="880" height="25" >
+				<descricao field="idadeAparente" texto="Idade Aparente: " size="12" nort="number"/>
+			</layout>
+			<layout left="15" top="85" width="880" height="25" >
+				<descricao field="nascimento" texto="Nascimento: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="115" width="880" height="25" >
+				<descricao field="morte" texto="Morte: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="145" width="880" height="25" >
+				<descricao field="cabelos" texto="Cabelos: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="175" width="880" height="25" >
+				<descricao field="olhos" texto="Olhos: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="205" width="880" height="25" >
+				<descricao field="raca" texto="Raça: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="235" width="880" height="25" >
+				<descricao field="nacionalidade" texto="Nacionalidade: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="265" width="880" height="25" >
+				<descricao field="altura" texto="Altura: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="295" width="880" height="25" >
+				<descricao field="peso" texto="Peso: " size="12" nort="text"/>
+			</layout>
+			<layout left="15" top="325" width="880" height="25" >
+				<descricao field="sexo" texto="Sexo: " size="12" nort="text"/>
+			</layout>
+			<layout left="250" top="25" width="880" height="350">
+				<textEditor left="20" top="0" width="595" height="325" fontColor="black" field="descricao" fontStyle="bold"/> 
+			</layout>
+		</layout>
+		<layout top="865" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="405" top="2" width="250" height="20" text="Visuais" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="860" width="880" height="470">
+			<layout left="20" top="35" width="400" height="400">
+				<label width="200" top="0" left="145" text="Círculo de Relações" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="400" fontColor="black" field="circulo" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="35" width="400" height="400">
+				<label width="200" top="0" left="145" text="Esboço do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="55" width="500" height="400">
+				<rectangle left="20" top="0" color="black" width="415" height="400" xradius="2" yradius="2"/>
+				<rectangle left="25" top="5" color="white" width="405" height="390" xradius="2" yradius="2"/>				
+				<image left="25" top="5" field="personagem" animate="true" editable="true" style="proportional" src="" width="405" height="390"/>		
+			</layout>	
+		</layout>	
 	</scrollBox>
 
 

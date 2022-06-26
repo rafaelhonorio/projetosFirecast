@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="VampiroAMascara1" align="client" theme="dark" lockWhileNodeIsLoading="true">
+<form name="VampiroAMascara1" align="client" theme="light" lockWhileNodeIsLoading="true">
     <template name="Cabeca">
-		<rectangle left="5" top="31" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
+		<rectangle left="5" top="31" color="white" width="80" height="25" xradius="2" yradius="2"/>
 		<label left="5" top="3" width="100" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
-        <edit left="90" top="0" width="200" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+        <edit left="90" top="0" width="200" height="25" fontStyle="bold" fontColor="black" field="$(field)" type="$(nort)"/>
 	</template>
 	<template name="atributos">
 		<imageCheckBox field="$(field)_1" left="137" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
@@ -20,7 +20,7 @@
 		<imageCheckBox field="$(field)_5" left="209" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 	</template>	
 	<template name="vantagens">
-        <edit left="40" top="0" width="135" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+        <edit left="40" top="0" width="135" height="25" fontColor="black" fontStyle="bold" field="$(field)" type="$(nort)"/>
 		<imageCheckBox field="$(field)_1" left="177" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_2" left="195" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_3" left="213" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
@@ -99,8 +99,8 @@
 		<imageCheckBox field="$(field)_50" left="299" top="76" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>	
 	</template>
 	<template name="vida">
-		<checkBox field="$(field)_1" left="187" top="0" width="20" height="20"/>
-		<checkBox field="$(field)_2" left="205" top="0" width="20" height="20"/>
+		<imageCheckBox left="187" top="0" width="15" height="15" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="$(field)_1"/>
+		<imageCheckBox left="205" top="0" width="15" height="15" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="$(field)_2"/>
 	</template>	
 	<scrollBox align="client">
 		<layout left="0" top="29" width="880" height="3">
@@ -139,11 +139,11 @@
 				<Cabeca field="conceito" texto="Conceito:" size="12" nort="text"/>
 			</layout>
 		</layout>
-		<layout top="300" width="880" height="25">
+		<layout top="295" width="880" height="25">
 			<rectangle align="client" color="black"/>
-			<label left="425" top="2" width="80" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="White"/>			
+			<label left="435" top="2" width="80" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="White"/>			
 		</layout>
-		<layout top="300" width="880" height="200">
+		<layout top="295" width="880" height="200">
 			<label left="130" top="30" width="80" height="20" text="Físicos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="430" top="30" width="80" height="20" text="Sociais" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="715" top="30" width="80" height="20" text="Mentais" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
@@ -190,11 +190,11 @@
 				</layout>
 			</layout>	
 		</layout>
-		<layout top="420" width="880" height="25">
+		<layout top="405" width="880" height="25">
 			<rectangle align="client" color="black"/>
 			<label left="425" top="2" width="80" height="20" text="Habilidades" horzTextAlign="leading" fontStyle="bold" fontColor="White"/>			
 		</layout>
-		<layout top="420" width="880" height="400">
+		<layout top="400" width="880" height="400">
 			<label left="130" top="30" width="80" height="20" text="Talentos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="430" top="30" width="80" height="20" text="Perícias" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="695" top="30" width="100" height="20" text="Conhecimentos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
@@ -325,11 +325,11 @@
 				</layout>
 			</layout>		
 		</layout>
-		<layout top="680" width="880" height="25">
+		<layout top="650" width="880" height="25">
 			<rectangle align="client" color="black"/>
 			<label left="425" top="2" width="80" height="20" text="Vantagens" horzTextAlign="leading" fontStyle="bold" fontColor="White"/>			
 		</layout>	
-		<layout top="680" width="880" height="300">
+		<layout top="650" width="880" height="450">		
 			<label left="115" top="30" width="95" height="20" text="Antecedentes" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="425" top="30" width="80" height="20" text="Disciplinas" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="715" top="30" width="80" height="20" text="Virtudes" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>	
@@ -371,75 +371,73 @@
 				<layout left="10" top="11" width="245" height="40">
 					<label text="Consciencia/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 					<label top="13" text="Convicção" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-					<virtudes field="1"/>
+					<virtudes field="virtude1"/>
 				</layout>
 				<layout left="10" top="61" width="245" height="40">
 					<label text="Autocontrole/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 					<label top="13" text="Instinto" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-					<virtudes field="2"/>
+					<virtudes field="virtude2"/>
 				</layout>
 				<layout left="10" top="113" width="245" height="40">
 					<label autoSize="true" text="Coragem" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-					<virtudes field="3"/>
+					<virtudes field="virtude3"/>
 				</layout>
 			</layout>
-		</layout>	
-		<layout top="840" width="880" height="300">
-			<label left="115" top="30" width="95" height="20" text="Qualidades/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="125" top="45" width="95" height="20" text="Defeitos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="415" top="30" width="95" height="20" text="Humanidade/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="435" top="45" width="80" height="20" text="Trilha" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="405" top="100" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="405" top="155" width="130" height="20" text="Pontos de Sangue" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="710" top="30" width="80" height="20" text="Vitalidade" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<label left="705" top="210" width="80" height="20" text="Experiência" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-			<layout top="60" width="300" height="250">
-				<textEditor left="40" top="10" width="230" height="90" field="qualidades" fontStyle="bold"/>
-				<textEditor left="40" top="115" width="230" height="90" field="defeitos" fontStyle="bold"/>
+			<label left="115" top="190" width="95" height="20" text="Qualidades/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="125" top="205" width="95" height="20" text="Defeitos" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="415" top="190" width="95" height="20" text="Humanidade/" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="435" top="205" width="80" height="20" text="Trilha" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="405" top="260" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="405" top="315" width="130" height="20" text="Pontos de Sangue" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="710" top="190" width="80" height="20" text="Vitalidade" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<label left="705" top="370" width="80" height="20" text="Experiência" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+			<layout top="220" width="300" height="250">
+				<textEditor left="40" top="10" width="230" fontColor="black" height="90" field="qualidades" fontStyle="bold"/>
+				<textEditor left="40" top="115" width="230" fontColor="black" height="90" field="defeitos" fontStyle="bold"/>
 			</layout>
-			<layout left="200" top="40" width="880" height="300">
+			<layout left="200" top="200" width="880" height="300">
 				<layout left="27" top="30" width="330" height="25" >
-					<dezena field="humanidade1"/>
+					<dezena field="humanidade"/>
 				</layout>
 				<layout left="27" top="85" width="330" height="25" >
-					<dezena field="fdv1"/>
+					<dezena field="fdv"/>
 				</layout>
 				<layout left="27" top="135" width="330" height="260" >
-					<pds field="1"/>
+					<pds field="sangue"/>
 				</layout>
 			</layout>
-			<layout left="630" top="60" width="880" height="300">
+			<layout left="630" top="220" width="880" height="300">
 				<label autoSize="true" text="Escoriado" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="escoridado"/>
 			</layout>
-			<layout left="630" top="80" width="880" height="300">
+			<layout left="630" top="240" width="880" height="300">
 				<label autoSize="true" text="Machucado (-1)" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="machucado"/>
 			</layout>	
-			<layout left="630" top="100" width="880" height="300">
+			<layout left="630" top="260" width="880" height="300">
 				<label autoSize="true" text="Ferido (-1)" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="ferido"/>
 			</layout>
-			<layout left="630" top="120" width="880" height="300">
+			<layout left="630" top="280" width="880" height="300">
 				<label text="Ferido Gravemente (-2)" horzTextAlign="leading" width="160" fontStyle="bold" fontColor="Black"/>				
 				<vida field="feridog"/>
 			</layout>
-			<layout left="630" top="140" width="880" height="300">
+			<layout left="630" top="300" width="880" height="300">
 				<label autoSize="true" text="Espancado (-2)" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="espancado"/>
 			</layout>	
-			<layout left="630" top="160" width="880" height="300">
+			<layout left="630" top="320" width="880" height="300">
 				<label autoSize="true" text="Aleijado (-5)" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="aleijado"/>
 			</layout>
-			<layout left="630" top="180" width="880" height="300">
+			<layout left="630" top="340" width="880" height="300">
 				<label autoSize="true" text="Incapacitado" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>				
 				<vida field="incapacitado"/>
 			</layout>
-			<layout left="600" top="240" width="880" height="300">
-				<edit left="30" top="0" width="220" height="25" fontStyle="bold" field="experiencia" type="text"/>
-			</layout>		
-		</layout>
+			<layout left="600" top="400" width="880" height="300">
+				<edit left="30" top="0" width="220" fontColor="black" height="25" fontStyle="bold" field="experiencia" type="text"/>
+			</layout>
+		</layout>	
 	</scrollBox>
 	<import file="Codigo1.lfm"/>
 </form>

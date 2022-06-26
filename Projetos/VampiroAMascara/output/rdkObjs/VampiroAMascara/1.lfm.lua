@@ -28,7 +28,7 @@ local function constructNew_VampiroAMascara1()
     obj:beginUpdate();
     obj:setName("VampiroAMascara1");
     obj:setAlign("client");
-    obj:setTheme("dark");
+    obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
 
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
@@ -93,7 +93,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle3:setParent(obj.layout4);
     obj.rectangle3:setLeft(5);
     obj.rectangle3:setTop(31);
-    obj.rectangle3:setColor("Gainsboro");
+    obj.rectangle3:setColor("white");
     obj.rectangle3:setWidth(80);
     obj.rectangle3:setHeight(25);
     obj.rectangle3:setXradius(2);
@@ -120,6 +120,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit1:setWidth(200);
     obj.edit1:setHeight(25);
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
+    obj.edit1:setFontColor("black");
     obj.edit1:setField("nome");
     obj.edit1:setType("text");
     obj.edit1:setName("edit1");
@@ -136,7 +137,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle4:setParent(obj.layout5);
     obj.rectangle4:setLeft(5);
     obj.rectangle4:setTop(31);
-    obj.rectangle4:setColor("Gainsboro");
+    obj.rectangle4:setColor("white");
     obj.rectangle4:setWidth(80);
     obj.rectangle4:setHeight(25);
     obj.rectangle4:setXradius(2);
@@ -163,6 +164,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit2:setWidth(200);
     obj.edit2:setHeight(25);
     lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
+    obj.edit2:setFontColor("black");
     obj.edit2:setField("jogador");
     obj.edit2:setType("text");
     obj.edit2:setName("edit2");
@@ -179,7 +181,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle5:setParent(obj.layout6);
     obj.rectangle5:setLeft(5);
     obj.rectangle5:setTop(31);
-    obj.rectangle5:setColor("Gainsboro");
+    obj.rectangle5:setColor("white");
     obj.rectangle5:setWidth(80);
     obj.rectangle5:setHeight(25);
     obj.rectangle5:setXradius(2);
@@ -206,6 +208,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit3:setWidth(200);
     obj.edit3:setHeight(25);
     lfm_setPropAsString(obj.edit3, "fontStyle",  "bold");
+    obj.edit3:setFontColor("black");
     obj.edit3:setField("cronica");
     obj.edit3:setType("text");
     obj.edit3:setName("edit3");
@@ -222,7 +225,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle6:setParent(obj.layout7);
     obj.rectangle6:setLeft(5);
     obj.rectangle6:setTop(31);
-    obj.rectangle6:setColor("Gainsboro");
+    obj.rectangle6:setColor("white");
     obj.rectangle6:setWidth(80);
     obj.rectangle6:setHeight(25);
     obj.rectangle6:setXradius(2);
@@ -249,6 +252,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit4:setWidth(200);
     obj.edit4:setHeight(25);
     lfm_setPropAsString(obj.edit4, "fontStyle",  "bold");
+    obj.edit4:setFontColor("black");
     obj.edit4:setField("natureza");
     obj.edit4:setType("text");
     obj.edit4:setName("edit4");
@@ -265,7 +269,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle7:setParent(obj.layout8);
     obj.rectangle7:setLeft(5);
     obj.rectangle7:setTop(31);
-    obj.rectangle7:setColor("Gainsboro");
+    obj.rectangle7:setColor("white");
     obj.rectangle7:setWidth(80);
     obj.rectangle7:setHeight(25);
     obj.rectangle7:setXradius(2);
@@ -292,6 +296,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit5:setWidth(200);
     obj.edit5:setHeight(25);
     lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
+    obj.edit5:setFontColor("black");
     obj.edit5:setField("comportamento");
     obj.edit5:setType("text");
     obj.edit5:setName("edit5");
@@ -308,7 +313,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle8:setParent(obj.layout9);
     obj.rectangle8:setLeft(5);
     obj.rectangle8:setTop(31);
-    obj.rectangle8:setColor("Gainsboro");
+    obj.rectangle8:setColor("white");
     obj.rectangle8:setWidth(80);
     obj.rectangle8:setHeight(25);
     obj.rectangle8:setXradius(2);
@@ -335,6 +340,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit6:setWidth(200);
     obj.edit6:setHeight(25);
     lfm_setPropAsString(obj.edit6, "fontStyle",  "bold");
+    obj.edit6:setFontColor("black");
     obj.edit6:setField("cla");
     obj.edit6:setType("text");
     obj.edit6:setName("edit6");
@@ -351,7 +357,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle9:setParent(obj.layout10);
     obj.rectangle9:setLeft(5);
     obj.rectangle9:setTop(31);
-    obj.rectangle9:setColor("Gainsboro");
+    obj.rectangle9:setColor("white");
     obj.rectangle9:setWidth(80);
     obj.rectangle9:setHeight(25);
     obj.rectangle9:setXradius(2);
@@ -378,6 +384,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit7:setWidth(200);
     obj.edit7:setHeight(25);
     lfm_setPropAsString(obj.edit7, "fontStyle",  "bold");
+    obj.edit7:setFontColor("black");
     obj.edit7:setField("geracao");
     obj.edit7:setType("number");
     obj.edit7:setName("edit7");
@@ -394,7 +401,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle10:setParent(obj.layout11);
     obj.rectangle10:setLeft(5);
     obj.rectangle10:setTop(31);
-    obj.rectangle10:setColor("Gainsboro");
+    obj.rectangle10:setColor("white");
     obj.rectangle10:setWidth(80);
     obj.rectangle10:setHeight(25);
     obj.rectangle10:setXradius(2);
@@ -421,6 +428,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit8:setWidth(200);
     obj.edit8:setHeight(25);
     lfm_setPropAsString(obj.edit8, "fontStyle",  "bold");
+    obj.edit8:setFontColor("black");
     obj.edit8:setField("refugio");
     obj.edit8:setType("text");
     obj.edit8:setName("edit8");
@@ -437,7 +445,7 @@ local function constructNew_VampiroAMascara1()
     obj.rectangle11:setParent(obj.layout12);
     obj.rectangle11:setLeft(5);
     obj.rectangle11:setTop(31);
-    obj.rectangle11:setColor("Gainsboro");
+    obj.rectangle11:setColor("white");
     obj.rectangle11:setWidth(80);
     obj.rectangle11:setHeight(25);
     obj.rectangle11:setXradius(2);
@@ -464,13 +472,14 @@ local function constructNew_VampiroAMascara1()
     obj.edit9:setWidth(200);
     obj.edit9:setHeight(25);
     lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
+    obj.edit9:setFontColor("black");
     obj.edit9:setField("conceito");
     obj.edit9:setType("text");
     obj.edit9:setName("edit9");
 
     obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.scrollBox1);
-    obj.layout13:setTop(300);
+    obj.layout13:setTop(295);
     obj.layout13:setWidth(880);
     obj.layout13:setHeight(25);
     obj.layout13:setName("layout13");
@@ -483,7 +492,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.label10 = GUI.fromHandle(_obj_newObject("label"));
     obj.label10:setParent(obj.layout13);
-    obj.label10:setLeft(425);
+    obj.label10:setLeft(435);
     obj.label10:setTop(2);
     obj.label10:setWidth(80);
     obj.label10:setHeight(20);
@@ -495,7 +504,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.layout14 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout14:setParent(obj.scrollBox1);
-    obj.layout14:setTop(300);
+    obj.layout14:setTop(295);
     obj.layout14:setWidth(880);
     obj.layout14:setHeight(200);
     obj.layout14:setName("layout14");
@@ -1210,7 +1219,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.layout27 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.scrollBox1);
-    obj.layout27:setTop(420);
+    obj.layout27:setTop(405);
     obj.layout27:setWidth(880);
     obj.layout27:setHeight(25);
     obj.layout27:setName("layout27");
@@ -1235,7 +1244,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.layout28 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout28:setParent(obj.scrollBox1);
-    obj.layout28:setTop(420);
+    obj.layout28:setTop(400);
     obj.layout28:setWidth(880);
     obj.layout28:setHeight(400);
     obj.layout28:setName("layout28");
@@ -3462,7 +3471,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout62:setParent(obj.scrollBox1);
-    obj.layout62:setTop(680);
+    obj.layout62:setTop(650);
     obj.layout62:setWidth(880);
     obj.layout62:setHeight(25);
     obj.layout62:setName("layout62");
@@ -3487,9 +3496,9 @@ local function constructNew_VampiroAMascara1()
 
     obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout63:setParent(obj.scrollBox1);
-    obj.layout63:setTop(680);
+    obj.layout63:setTop(650);
     obj.layout63:setWidth(880);
-    obj.layout63:setHeight(300);
+    obj.layout63:setHeight(450);
     obj.layout63:setName("layout63");
 
     obj.label58 = GUI.fromHandle(_obj_newObject("label"));
@@ -3550,6 +3559,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit10:setTop(0);
     obj.edit10:setWidth(135);
     obj.edit10:setHeight(25);
+    obj.edit10:setFontColor("black");
     lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
     obj.edit10:setField("antecedentes1");
     obj.edit10:setType("text");
@@ -3624,6 +3634,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit11:setTop(0);
     obj.edit11:setWidth(135);
     obj.edit11:setHeight(25);
+    obj.edit11:setFontColor("black");
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setField("antecedentes2");
     obj.edit11:setType("text");
@@ -3698,6 +3709,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit12:setTop(0);
     obj.edit12:setWidth(135);
     obj.edit12:setHeight(25);
+    obj.edit12:setFontColor("black");
     lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setField("antecedentes3");
     obj.edit12:setType("text");
@@ -3772,6 +3784,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit13:setTop(0);
     obj.edit13:setWidth(135);
     obj.edit13:setHeight(25);
+    obj.edit13:setFontColor("black");
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setField("antecedentes4");
     obj.edit13:setType("text");
@@ -3846,6 +3859,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit14:setTop(0);
     obj.edit14:setWidth(135);
     obj.edit14:setHeight(25);
+    obj.edit14:setFontColor("black");
     lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setField("antecedentes5");
     obj.edit14:setType("text");
@@ -3928,6 +3942,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit15:setTop(0);
     obj.edit15:setWidth(135);
     obj.edit15:setHeight(25);
+    obj.edit15:setFontColor("black");
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setField("disciplinas1");
     obj.edit15:setType("text");
@@ -4002,6 +4017,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit16:setTop(0);
     obj.edit16:setWidth(135);
     obj.edit16:setHeight(25);
+    obj.edit16:setFontColor("black");
     lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
     obj.edit16:setField("disciplinas2");
     obj.edit16:setType("text");
@@ -4076,6 +4092,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit17:setTop(0);
     obj.edit17:setWidth(135);
     obj.edit17:setHeight(25);
+    obj.edit17:setFontColor("black");
     lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
     obj.edit17:setField("disciplinas3");
     obj.edit17:setType("text");
@@ -4150,6 +4167,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit18:setTop(0);
     obj.edit18:setWidth(135);
     obj.edit18:setHeight(25);
+    obj.edit18:setFontColor("black");
     lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
     obj.edit18:setField("disciplinas4");
     obj.edit18:setType("text");
@@ -4224,6 +4242,7 @@ local function constructNew_VampiroAMascara1()
     obj.edit19:setTop(0);
     obj.edit19:setWidth(135);
     obj.edit19:setHeight(25);
+    obj.edit19:setFontColor("black");
     lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
     obj.edit19:setField("disciplinas5");
     obj.edit19:setType("text");
@@ -4319,7 +4338,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox246 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox246:setParent(obj.layout77);
-    obj.imageCheckBox246:setField("1_1");
+    obj.imageCheckBox246:setField("virtude1_1");
     obj.imageCheckBox246:setLeft(137);
     obj.imageCheckBox246:setTop(4);
     obj.imageCheckBox246:setWidth(15);
@@ -4330,7 +4349,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox247 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox247:setParent(obj.layout77);
-    obj.imageCheckBox247:setField("1_2");
+    obj.imageCheckBox247:setField("virtude1_2");
     obj.imageCheckBox247:setLeft(155);
     obj.imageCheckBox247:setTop(4);
     obj.imageCheckBox247:setWidth(15);
@@ -4341,7 +4360,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox248 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox248:setParent(obj.layout77);
-    obj.imageCheckBox248:setField("1_3");
+    obj.imageCheckBox248:setField("virtude1_3");
     obj.imageCheckBox248:setLeft(173);
     obj.imageCheckBox248:setTop(4);
     obj.imageCheckBox248:setWidth(15);
@@ -4352,7 +4371,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox249 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox249:setParent(obj.layout77);
-    obj.imageCheckBox249:setField("1_4");
+    obj.imageCheckBox249:setField("virtude1_4");
     obj.imageCheckBox249:setLeft(191);
     obj.imageCheckBox249:setTop(4);
     obj.imageCheckBox249:setWidth(15);
@@ -4363,7 +4382,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox250 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox250:setParent(obj.layout77);
-    obj.imageCheckBox250:setField("1_5");
+    obj.imageCheckBox250:setField("virtude1_5");
     obj.imageCheckBox250:setLeft(209);
     obj.imageCheckBox250:setTop(4);
     obj.imageCheckBox250:setWidth(15);
@@ -4399,7 +4418,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox251 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox251:setParent(obj.layout78);
-    obj.imageCheckBox251:setField("2_1");
+    obj.imageCheckBox251:setField("virtude2_1");
     obj.imageCheckBox251:setLeft(137);
     obj.imageCheckBox251:setTop(4);
     obj.imageCheckBox251:setWidth(15);
@@ -4410,7 +4429,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox252 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox252:setParent(obj.layout78);
-    obj.imageCheckBox252:setField("2_2");
+    obj.imageCheckBox252:setField("virtude2_2");
     obj.imageCheckBox252:setLeft(155);
     obj.imageCheckBox252:setTop(4);
     obj.imageCheckBox252:setWidth(15);
@@ -4421,7 +4440,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox253 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox253:setParent(obj.layout78);
-    obj.imageCheckBox253:setField("2_3");
+    obj.imageCheckBox253:setField("virtude2_3");
     obj.imageCheckBox253:setLeft(173);
     obj.imageCheckBox253:setTop(4);
     obj.imageCheckBox253:setWidth(15);
@@ -4432,7 +4451,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox254 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox254:setParent(obj.layout78);
-    obj.imageCheckBox254:setField("2_4");
+    obj.imageCheckBox254:setField("virtude2_4");
     obj.imageCheckBox254:setLeft(191);
     obj.imageCheckBox254:setTop(4);
     obj.imageCheckBox254:setWidth(15);
@@ -4443,7 +4462,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox255 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox255:setParent(obj.layout78);
-    obj.imageCheckBox255:setField("2_5");
+    obj.imageCheckBox255:setField("virtude2_5");
     obj.imageCheckBox255:setLeft(209);
     obj.imageCheckBox255:setTop(4);
     obj.imageCheckBox255:setWidth(15);
@@ -4471,7 +4490,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox256 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox256:setParent(obj.layout79);
-    obj.imageCheckBox256:setField("3_1");
+    obj.imageCheckBox256:setField("virtude3_1");
     obj.imageCheckBox256:setLeft(137);
     obj.imageCheckBox256:setTop(4);
     obj.imageCheckBox256:setWidth(15);
@@ -4482,7 +4501,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox257 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox257:setParent(obj.layout79);
-    obj.imageCheckBox257:setField("3_2");
+    obj.imageCheckBox257:setField("virtude3_2");
     obj.imageCheckBox257:setLeft(155);
     obj.imageCheckBox257:setTop(4);
     obj.imageCheckBox257:setWidth(15);
@@ -4493,7 +4512,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox258 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox258:setParent(obj.layout79);
-    obj.imageCheckBox258:setField("3_3");
+    obj.imageCheckBox258:setField("virtude3_3");
     obj.imageCheckBox258:setLeft(173);
     obj.imageCheckBox258:setTop(4);
     obj.imageCheckBox258:setWidth(15);
@@ -4504,7 +4523,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox259 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox259:setParent(obj.layout79);
-    obj.imageCheckBox259:setField("3_4");
+    obj.imageCheckBox259:setField("virtude3_4");
     obj.imageCheckBox259:setLeft(191);
     obj.imageCheckBox259:setTop(4);
     obj.imageCheckBox259:setWidth(15);
@@ -4515,7 +4534,7 @@ local function constructNew_VampiroAMascara1()
 
     obj.imageCheckBox260 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox260:setParent(obj.layout79);
-    obj.imageCheckBox260:setField("3_5");
+    obj.imageCheckBox260:setField("virtude3_5");
     obj.imageCheckBox260:setLeft(209);
     obj.imageCheckBox260:setTop(4);
     obj.imageCheckBox260:setWidth(15);
@@ -4524,17 +4543,10 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox260:setImageUnchecked("/VampiroAMascara/img/bboll1.png");
     obj.imageCheckBox260:setName("imageCheckBox260");
 
-    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout80:setParent(obj.scrollBox1);
-    obj.layout80:setTop(840);
-    obj.layout80:setWidth(880);
-    obj.layout80:setHeight(300);
-    obj.layout80:setName("layout80");
-
     obj.label66 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label66:setParent(obj.layout80);
+    obj.label66:setParent(obj.layout63);
     obj.label66:setLeft(115);
-    obj.label66:setTop(30);
+    obj.label66:setTop(190);
     obj.label66:setWidth(95);
     obj.label66:setHeight(20);
     obj.label66:setText("Qualidades/");
@@ -4544,9 +4556,9 @@ local function constructNew_VampiroAMascara1()
     obj.label66:setName("label66");
 
     obj.label67 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label67:setParent(obj.layout80);
+    obj.label67:setParent(obj.layout63);
     obj.label67:setLeft(125);
-    obj.label67:setTop(45);
+    obj.label67:setTop(205);
     obj.label67:setWidth(95);
     obj.label67:setHeight(20);
     obj.label67:setText("Defeitos");
@@ -4556,9 +4568,9 @@ local function constructNew_VampiroAMascara1()
     obj.label67:setName("label67");
 
     obj.label68 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label68:setParent(obj.layout80);
+    obj.label68:setParent(obj.layout63);
     obj.label68:setLeft(415);
-    obj.label68:setTop(30);
+    obj.label68:setTop(190);
     obj.label68:setWidth(95);
     obj.label68:setHeight(20);
     obj.label68:setText("Humanidade/");
@@ -4568,9 +4580,9 @@ local function constructNew_VampiroAMascara1()
     obj.label68:setName("label68");
 
     obj.label69 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label69:setParent(obj.layout80);
+    obj.label69:setParent(obj.layout63);
     obj.label69:setLeft(435);
-    obj.label69:setTop(45);
+    obj.label69:setTop(205);
     obj.label69:setWidth(80);
     obj.label69:setHeight(20);
     obj.label69:setText("Trilha");
@@ -4580,9 +4592,9 @@ local function constructNew_VampiroAMascara1()
     obj.label69:setName("label69");
 
     obj.label70 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label70:setParent(obj.layout80);
+    obj.label70:setParent(obj.layout63);
     obj.label70:setLeft(405);
-    obj.label70:setTop(100);
+    obj.label70:setTop(260);
     obj.label70:setWidth(130);
     obj.label70:setHeight(20);
     obj.label70:setText("Força de Vontade");
@@ -4592,9 +4604,9 @@ local function constructNew_VampiroAMascara1()
     obj.label70:setName("label70");
 
     obj.label71 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label71:setParent(obj.layout80);
+    obj.label71:setParent(obj.layout63);
     obj.label71:setLeft(405);
-    obj.label71:setTop(155);
+    obj.label71:setTop(315);
     obj.label71:setWidth(130);
     obj.label71:setHeight(20);
     obj.label71:setText("Pontos de Sangue");
@@ -4604,9 +4616,9 @@ local function constructNew_VampiroAMascara1()
     obj.label71:setName("label71");
 
     obj.label72 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label72:setParent(obj.layout80);
+    obj.label72:setParent(obj.layout63);
     obj.label72:setLeft(710);
-    obj.label72:setTop(30);
+    obj.label72:setTop(190);
     obj.label72:setWidth(80);
     obj.label72:setHeight(20);
     obj.label72:setText("Vitalidade");
@@ -4616,9 +4628,9 @@ local function constructNew_VampiroAMascara1()
     obj.label72:setName("label72");
 
     obj.label73 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label73:setParent(obj.layout80);
+    obj.label73:setParent(obj.layout63);
     obj.label73:setLeft(705);
-    obj.label73:setTop(210);
+    obj.label73:setTop(370);
     obj.label73:setWidth(80);
     obj.label73:setHeight(20);
     obj.label73:setText("Experiência");
@@ -4627,52 +4639,54 @@ local function constructNew_VampiroAMascara1()
     obj.label73:setFontColor("Black");
     obj.label73:setName("label73");
 
-    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout81:setParent(obj.layout80);
-    obj.layout81:setTop(60);
-    obj.layout81:setWidth(300);
-    obj.layout81:setHeight(250);
-    obj.layout81:setName("layout81");
+    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout80:setParent(obj.layout63);
+    obj.layout80:setTop(220);
+    obj.layout80:setWidth(300);
+    obj.layout80:setHeight(250);
+    obj.layout80:setName("layout80");
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout81);
+    obj.textEditor1:setParent(obj.layout80);
     obj.textEditor1:setLeft(40);
     obj.textEditor1:setTop(10);
     obj.textEditor1:setWidth(230);
+    obj.textEditor1:setFontColor("black");
     obj.textEditor1:setHeight(90);
     obj.textEditor1:setField("qualidades");
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
     obj.textEditor1:setName("textEditor1");
 
     obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.layout81);
+    obj.textEditor2:setParent(obj.layout80);
     obj.textEditor2:setLeft(40);
     obj.textEditor2:setTop(115);
     obj.textEditor2:setWidth(230);
+    obj.textEditor2:setFontColor("black");
     obj.textEditor2:setHeight(90);
     obj.textEditor2:setField("defeitos");
     lfm_setPropAsString(obj.textEditor2, "fontStyle",  "bold");
     obj.textEditor2:setName("textEditor2");
 
+    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout81:setParent(obj.layout63);
+    obj.layout81:setLeft(200);
+    obj.layout81:setTop(200);
+    obj.layout81:setWidth(880);
+    obj.layout81:setHeight(300);
+    obj.layout81:setName("layout81");
+
     obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout82:setParent(obj.layout80);
-    obj.layout82:setLeft(200);
-    obj.layout82:setTop(40);
-    obj.layout82:setWidth(880);
-    obj.layout82:setHeight(300);
+    obj.layout82:setParent(obj.layout81);
+    obj.layout82:setLeft(27);
+    obj.layout82:setTop(30);
+    obj.layout82:setWidth(330);
+    obj.layout82:setHeight(25);
     obj.layout82:setName("layout82");
 
-    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout83:setParent(obj.layout82);
-    obj.layout83:setLeft(27);
-    obj.layout83:setTop(30);
-    obj.layout83:setWidth(330);
-    obj.layout83:setHeight(25);
-    obj.layout83:setName("layout83");
-
     obj.imageCheckBox261 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox261:setParent(obj.layout83);
-    obj.imageCheckBox261:setField("humanidade1_1");
+    obj.imageCheckBox261:setParent(obj.layout82);
+    obj.imageCheckBox261:setField("humanidade_1");
     obj.imageCheckBox261:setLeft(137);
     obj.imageCheckBox261:setTop(4);
     obj.imageCheckBox261:setWidth(15);
@@ -4682,8 +4696,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox261:setName("imageCheckBox261");
 
     obj.imageCheckBox262 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox262:setParent(obj.layout83);
-    obj.imageCheckBox262:setField("humanidade1_2");
+    obj.imageCheckBox262:setParent(obj.layout82);
+    obj.imageCheckBox262:setField("humanidade_2");
     obj.imageCheckBox262:setLeft(155);
     obj.imageCheckBox262:setTop(4);
     obj.imageCheckBox262:setWidth(15);
@@ -4693,8 +4707,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox262:setName("imageCheckBox262");
 
     obj.imageCheckBox263 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox263:setParent(obj.layout83);
-    obj.imageCheckBox263:setField("humanidade1_3");
+    obj.imageCheckBox263:setParent(obj.layout82);
+    obj.imageCheckBox263:setField("humanidade_3");
     obj.imageCheckBox263:setLeft(173);
     obj.imageCheckBox263:setTop(4);
     obj.imageCheckBox263:setWidth(15);
@@ -4704,8 +4718,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox263:setName("imageCheckBox263");
 
     obj.imageCheckBox264 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox264:setParent(obj.layout83);
-    obj.imageCheckBox264:setField("humanidade1_4");
+    obj.imageCheckBox264:setParent(obj.layout82);
+    obj.imageCheckBox264:setField("humanidade_4");
     obj.imageCheckBox264:setLeft(191);
     obj.imageCheckBox264:setTop(4);
     obj.imageCheckBox264:setWidth(15);
@@ -4715,8 +4729,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox264:setName("imageCheckBox264");
 
     obj.imageCheckBox265 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox265:setParent(obj.layout83);
-    obj.imageCheckBox265:setField("humanidade1_5");
+    obj.imageCheckBox265:setParent(obj.layout82);
+    obj.imageCheckBox265:setField("humanidade_5");
     obj.imageCheckBox265:setLeft(209);
     obj.imageCheckBox265:setTop(4);
     obj.imageCheckBox265:setWidth(15);
@@ -4726,8 +4740,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox265:setName("imageCheckBox265");
 
     obj.imageCheckBox266 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox266:setParent(obj.layout83);
-    obj.imageCheckBox266:setField("humanidade1_6");
+    obj.imageCheckBox266:setParent(obj.layout82);
+    obj.imageCheckBox266:setField("humanidade_6");
     obj.imageCheckBox266:setLeft(227);
     obj.imageCheckBox266:setTop(4);
     obj.imageCheckBox266:setWidth(15);
@@ -4737,8 +4751,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox266:setName("imageCheckBox266");
 
     obj.imageCheckBox267 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox267:setParent(obj.layout83);
-    obj.imageCheckBox267:setField("humanidade1_7");
+    obj.imageCheckBox267:setParent(obj.layout82);
+    obj.imageCheckBox267:setField("humanidade_7");
     obj.imageCheckBox267:setLeft(245);
     obj.imageCheckBox267:setTop(4);
     obj.imageCheckBox267:setWidth(15);
@@ -4748,8 +4762,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox267:setName("imageCheckBox267");
 
     obj.imageCheckBox268 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox268:setParent(obj.layout83);
-    obj.imageCheckBox268:setField("humanidade1_8");
+    obj.imageCheckBox268:setParent(obj.layout82);
+    obj.imageCheckBox268:setField("humanidade_8");
     obj.imageCheckBox268:setLeft(263);
     obj.imageCheckBox268:setTop(4);
     obj.imageCheckBox268:setWidth(15);
@@ -4759,8 +4773,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox268:setName("imageCheckBox268");
 
     obj.imageCheckBox269 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox269:setParent(obj.layout83);
-    obj.imageCheckBox269:setField("humanidade1_9");
+    obj.imageCheckBox269:setParent(obj.layout82);
+    obj.imageCheckBox269:setField("humanidade_9");
     obj.imageCheckBox269:setLeft(281);
     obj.imageCheckBox269:setTop(4);
     obj.imageCheckBox269:setWidth(15);
@@ -4770,8 +4784,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox269:setName("imageCheckBox269");
 
     obj.imageCheckBox270 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox270:setParent(obj.layout83);
-    obj.imageCheckBox270:setField("humanidade1_10");
+    obj.imageCheckBox270:setParent(obj.layout82);
+    obj.imageCheckBox270:setField("humanidade_10");
     obj.imageCheckBox270:setLeft(299);
     obj.imageCheckBox270:setTop(4);
     obj.imageCheckBox270:setWidth(15);
@@ -4780,17 +4794,17 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox270:setImageUnchecked("/VampiroAMascara/img/bboll1.png");
     obj.imageCheckBox270:setName("imageCheckBox270");
 
-    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout84:setParent(obj.layout82);
-    obj.layout84:setLeft(27);
-    obj.layout84:setTop(85);
-    obj.layout84:setWidth(330);
-    obj.layout84:setHeight(25);
-    obj.layout84:setName("layout84");
+    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout83:setParent(obj.layout81);
+    obj.layout83:setLeft(27);
+    obj.layout83:setTop(85);
+    obj.layout83:setWidth(330);
+    obj.layout83:setHeight(25);
+    obj.layout83:setName("layout83");
 
     obj.imageCheckBox271 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox271:setParent(obj.layout84);
-    obj.imageCheckBox271:setField("fdv1_1");
+    obj.imageCheckBox271:setParent(obj.layout83);
+    obj.imageCheckBox271:setField("fdv_1");
     obj.imageCheckBox271:setLeft(137);
     obj.imageCheckBox271:setTop(4);
     obj.imageCheckBox271:setWidth(15);
@@ -4800,8 +4814,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox271:setName("imageCheckBox271");
 
     obj.imageCheckBox272 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox272:setParent(obj.layout84);
-    obj.imageCheckBox272:setField("fdv1_2");
+    obj.imageCheckBox272:setParent(obj.layout83);
+    obj.imageCheckBox272:setField("fdv_2");
     obj.imageCheckBox272:setLeft(155);
     obj.imageCheckBox272:setTop(4);
     obj.imageCheckBox272:setWidth(15);
@@ -4811,8 +4825,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox272:setName("imageCheckBox272");
 
     obj.imageCheckBox273 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox273:setParent(obj.layout84);
-    obj.imageCheckBox273:setField("fdv1_3");
+    obj.imageCheckBox273:setParent(obj.layout83);
+    obj.imageCheckBox273:setField("fdv_3");
     obj.imageCheckBox273:setLeft(173);
     obj.imageCheckBox273:setTop(4);
     obj.imageCheckBox273:setWidth(15);
@@ -4822,8 +4836,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox273:setName("imageCheckBox273");
 
     obj.imageCheckBox274 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox274:setParent(obj.layout84);
-    obj.imageCheckBox274:setField("fdv1_4");
+    obj.imageCheckBox274:setParent(obj.layout83);
+    obj.imageCheckBox274:setField("fdv_4");
     obj.imageCheckBox274:setLeft(191);
     obj.imageCheckBox274:setTop(4);
     obj.imageCheckBox274:setWidth(15);
@@ -4833,8 +4847,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox274:setName("imageCheckBox274");
 
     obj.imageCheckBox275 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox275:setParent(obj.layout84);
-    obj.imageCheckBox275:setField("fdv1_5");
+    obj.imageCheckBox275:setParent(obj.layout83);
+    obj.imageCheckBox275:setField("fdv_5");
     obj.imageCheckBox275:setLeft(209);
     obj.imageCheckBox275:setTop(4);
     obj.imageCheckBox275:setWidth(15);
@@ -4844,8 +4858,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox275:setName("imageCheckBox275");
 
     obj.imageCheckBox276 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox276:setParent(obj.layout84);
-    obj.imageCheckBox276:setField("fdv1_6");
+    obj.imageCheckBox276:setParent(obj.layout83);
+    obj.imageCheckBox276:setField("fdv_6");
     obj.imageCheckBox276:setLeft(227);
     obj.imageCheckBox276:setTop(4);
     obj.imageCheckBox276:setWidth(15);
@@ -4855,8 +4869,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox276:setName("imageCheckBox276");
 
     obj.imageCheckBox277 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox277:setParent(obj.layout84);
-    obj.imageCheckBox277:setField("fdv1_7");
+    obj.imageCheckBox277:setParent(obj.layout83);
+    obj.imageCheckBox277:setField("fdv_7");
     obj.imageCheckBox277:setLeft(245);
     obj.imageCheckBox277:setTop(4);
     obj.imageCheckBox277:setWidth(15);
@@ -4866,8 +4880,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox277:setName("imageCheckBox277");
 
     obj.imageCheckBox278 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox278:setParent(obj.layout84);
-    obj.imageCheckBox278:setField("fdv1_8");
+    obj.imageCheckBox278:setParent(obj.layout83);
+    obj.imageCheckBox278:setField("fdv_8");
     obj.imageCheckBox278:setLeft(263);
     obj.imageCheckBox278:setTop(4);
     obj.imageCheckBox278:setWidth(15);
@@ -4877,8 +4891,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox278:setName("imageCheckBox278");
 
     obj.imageCheckBox279 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox279:setParent(obj.layout84);
-    obj.imageCheckBox279:setField("fdv1_9");
+    obj.imageCheckBox279:setParent(obj.layout83);
+    obj.imageCheckBox279:setField("fdv_9");
     obj.imageCheckBox279:setLeft(281);
     obj.imageCheckBox279:setTop(4);
     obj.imageCheckBox279:setWidth(15);
@@ -4888,8 +4902,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox279:setName("imageCheckBox279");
 
     obj.imageCheckBox280 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox280:setParent(obj.layout84);
-    obj.imageCheckBox280:setField("fdv1_10");
+    obj.imageCheckBox280:setParent(obj.layout83);
+    obj.imageCheckBox280:setField("fdv_10");
     obj.imageCheckBox280:setLeft(299);
     obj.imageCheckBox280:setTop(4);
     obj.imageCheckBox280:setWidth(15);
@@ -4898,17 +4912,17 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox280:setImageUnchecked("/VampiroAMascara/img/bboll1.png");
     obj.imageCheckBox280:setName("imageCheckBox280");
 
-    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout85:setParent(obj.layout82);
-    obj.layout85:setLeft(27);
-    obj.layout85:setTop(135);
-    obj.layout85:setWidth(330);
-    obj.layout85:setHeight(260);
-    obj.layout85:setName("layout85");
+    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout84:setParent(obj.layout81);
+    obj.layout84:setLeft(27);
+    obj.layout84:setTop(135);
+    obj.layout84:setWidth(330);
+    obj.layout84:setHeight(260);
+    obj.layout84:setName("layout84");
 
     obj.imageCheckBox281 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox281:setParent(obj.layout85);
-    obj.imageCheckBox281:setField("1_1");
+    obj.imageCheckBox281:setParent(obj.layout84);
+    obj.imageCheckBox281:setField("sangue_1");
     obj.imageCheckBox281:setLeft(137);
     obj.imageCheckBox281:setTop(4);
     obj.imageCheckBox281:setWidth(15);
@@ -4918,8 +4932,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox281:setName("imageCheckBox281");
 
     obj.imageCheckBox282 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox282:setParent(obj.layout85);
-    obj.imageCheckBox282:setField("1_2");
+    obj.imageCheckBox282:setParent(obj.layout84);
+    obj.imageCheckBox282:setField("sangue_2");
     obj.imageCheckBox282:setLeft(155);
     obj.imageCheckBox282:setTop(4);
     obj.imageCheckBox282:setWidth(15);
@@ -4929,8 +4943,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox282:setName("imageCheckBox282");
 
     obj.imageCheckBox283 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox283:setParent(obj.layout85);
-    obj.imageCheckBox283:setField("1_3");
+    obj.imageCheckBox283:setParent(obj.layout84);
+    obj.imageCheckBox283:setField("sangue_3");
     obj.imageCheckBox283:setLeft(173);
     obj.imageCheckBox283:setTop(4);
     obj.imageCheckBox283:setWidth(15);
@@ -4940,8 +4954,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox283:setName("imageCheckBox283");
 
     obj.imageCheckBox284 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox284:setParent(obj.layout85);
-    obj.imageCheckBox284:setField("1_4");
+    obj.imageCheckBox284:setParent(obj.layout84);
+    obj.imageCheckBox284:setField("sangue_4");
     obj.imageCheckBox284:setLeft(191);
     obj.imageCheckBox284:setTop(4);
     obj.imageCheckBox284:setWidth(15);
@@ -4951,8 +4965,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox284:setName("imageCheckBox284");
 
     obj.imageCheckBox285 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox285:setParent(obj.layout85);
-    obj.imageCheckBox285:setField("1_5");
+    obj.imageCheckBox285:setParent(obj.layout84);
+    obj.imageCheckBox285:setField("sangue_5");
     obj.imageCheckBox285:setLeft(209);
     obj.imageCheckBox285:setTop(4);
     obj.imageCheckBox285:setWidth(15);
@@ -4962,8 +4976,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox285:setName("imageCheckBox285");
 
     obj.imageCheckBox286 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox286:setParent(obj.layout85);
-    obj.imageCheckBox286:setField("1_6");
+    obj.imageCheckBox286:setParent(obj.layout84);
+    obj.imageCheckBox286:setField("sangue_6");
     obj.imageCheckBox286:setLeft(227);
     obj.imageCheckBox286:setTop(4);
     obj.imageCheckBox286:setWidth(15);
@@ -4973,8 +4987,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox286:setName("imageCheckBox286");
 
     obj.imageCheckBox287 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox287:setParent(obj.layout85);
-    obj.imageCheckBox287:setField("1_7");
+    obj.imageCheckBox287:setParent(obj.layout84);
+    obj.imageCheckBox287:setField("sangue_7");
     obj.imageCheckBox287:setLeft(245);
     obj.imageCheckBox287:setTop(4);
     obj.imageCheckBox287:setWidth(15);
@@ -4984,8 +4998,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox287:setName("imageCheckBox287");
 
     obj.imageCheckBox288 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox288:setParent(obj.layout85);
-    obj.imageCheckBox288:setField("1_8");
+    obj.imageCheckBox288:setParent(obj.layout84);
+    obj.imageCheckBox288:setField("sangue_8");
     obj.imageCheckBox288:setLeft(263);
     obj.imageCheckBox288:setTop(4);
     obj.imageCheckBox288:setWidth(15);
@@ -4995,8 +5009,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox288:setName("imageCheckBox288");
 
     obj.imageCheckBox289 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox289:setParent(obj.layout85);
-    obj.imageCheckBox289:setField("1_9");
+    obj.imageCheckBox289:setParent(obj.layout84);
+    obj.imageCheckBox289:setField("sangue_9");
     obj.imageCheckBox289:setLeft(281);
     obj.imageCheckBox289:setTop(4);
     obj.imageCheckBox289:setWidth(15);
@@ -5006,8 +5020,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox289:setName("imageCheckBox289");
 
     obj.imageCheckBox290 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox290:setParent(obj.layout85);
-    obj.imageCheckBox290:setField("1_10");
+    obj.imageCheckBox290:setParent(obj.layout84);
+    obj.imageCheckBox290:setField("sangue_10");
     obj.imageCheckBox290:setLeft(299);
     obj.imageCheckBox290:setTop(4);
     obj.imageCheckBox290:setWidth(15);
@@ -5017,8 +5031,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox290:setName("imageCheckBox290");
 
     obj.imageCheckBox291 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox291:setParent(obj.layout85);
-    obj.imageCheckBox291:setField("1_11");
+    obj.imageCheckBox291:setParent(obj.layout84);
+    obj.imageCheckBox291:setField("sangue_11");
     obj.imageCheckBox291:setLeft(137);
     obj.imageCheckBox291:setTop(22);
     obj.imageCheckBox291:setWidth(15);
@@ -5028,8 +5042,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox291:setName("imageCheckBox291");
 
     obj.imageCheckBox292 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox292:setParent(obj.layout85);
-    obj.imageCheckBox292:setField("1_12");
+    obj.imageCheckBox292:setParent(obj.layout84);
+    obj.imageCheckBox292:setField("sangue_12");
     obj.imageCheckBox292:setLeft(155);
     obj.imageCheckBox292:setTop(22);
     obj.imageCheckBox292:setWidth(15);
@@ -5039,8 +5053,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox292:setName("imageCheckBox292");
 
     obj.imageCheckBox293 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox293:setParent(obj.layout85);
-    obj.imageCheckBox293:setField("1_13");
+    obj.imageCheckBox293:setParent(obj.layout84);
+    obj.imageCheckBox293:setField("sangue_13");
     obj.imageCheckBox293:setLeft(173);
     obj.imageCheckBox293:setTop(22);
     obj.imageCheckBox293:setWidth(15);
@@ -5050,8 +5064,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox293:setName("imageCheckBox293");
 
     obj.imageCheckBox294 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox294:setParent(obj.layout85);
-    obj.imageCheckBox294:setField("1_14");
+    obj.imageCheckBox294:setParent(obj.layout84);
+    obj.imageCheckBox294:setField("sangue_14");
     obj.imageCheckBox294:setLeft(191);
     obj.imageCheckBox294:setTop(22);
     obj.imageCheckBox294:setWidth(15);
@@ -5061,8 +5075,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox294:setName("imageCheckBox294");
 
     obj.imageCheckBox295 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox295:setParent(obj.layout85);
-    obj.imageCheckBox295:setField("1_15");
+    obj.imageCheckBox295:setParent(obj.layout84);
+    obj.imageCheckBox295:setField("sangue_15");
     obj.imageCheckBox295:setLeft(209);
     obj.imageCheckBox295:setTop(22);
     obj.imageCheckBox295:setWidth(15);
@@ -5072,8 +5086,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox295:setName("imageCheckBox295");
 
     obj.imageCheckBox296 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox296:setParent(obj.layout85);
-    obj.imageCheckBox296:setField("1_16");
+    obj.imageCheckBox296:setParent(obj.layout84);
+    obj.imageCheckBox296:setField("sangue_16");
     obj.imageCheckBox296:setLeft(227);
     obj.imageCheckBox296:setTop(22);
     obj.imageCheckBox296:setWidth(15);
@@ -5083,8 +5097,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox296:setName("imageCheckBox296");
 
     obj.imageCheckBox297 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox297:setParent(obj.layout85);
-    obj.imageCheckBox297:setField("1_17");
+    obj.imageCheckBox297:setParent(obj.layout84);
+    obj.imageCheckBox297:setField("sangue_17");
     obj.imageCheckBox297:setLeft(245);
     obj.imageCheckBox297:setTop(22);
     obj.imageCheckBox297:setWidth(15);
@@ -5094,8 +5108,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox297:setName("imageCheckBox297");
 
     obj.imageCheckBox298 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox298:setParent(obj.layout85);
-    obj.imageCheckBox298:setField("1_18");
+    obj.imageCheckBox298:setParent(obj.layout84);
+    obj.imageCheckBox298:setField("sangue_18");
     obj.imageCheckBox298:setLeft(263);
     obj.imageCheckBox298:setTop(22);
     obj.imageCheckBox298:setWidth(15);
@@ -5105,8 +5119,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox298:setName("imageCheckBox298");
 
     obj.imageCheckBox299 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox299:setParent(obj.layout85);
-    obj.imageCheckBox299:setField("1_19");
+    obj.imageCheckBox299:setParent(obj.layout84);
+    obj.imageCheckBox299:setField("sangue_19");
     obj.imageCheckBox299:setLeft(281);
     obj.imageCheckBox299:setTop(22);
     obj.imageCheckBox299:setWidth(15);
@@ -5116,8 +5130,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox299:setName("imageCheckBox299");
 
     obj.imageCheckBox300 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox300:setParent(obj.layout85);
-    obj.imageCheckBox300:setField("1_20");
+    obj.imageCheckBox300:setParent(obj.layout84);
+    obj.imageCheckBox300:setField("sangue_20");
     obj.imageCheckBox300:setLeft(299);
     obj.imageCheckBox300:setTop(22);
     obj.imageCheckBox300:setWidth(15);
@@ -5127,8 +5141,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox300:setName("imageCheckBox300");
 
     obj.imageCheckBox301 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox301:setParent(obj.layout85);
-    obj.imageCheckBox301:setField("1_21");
+    obj.imageCheckBox301:setParent(obj.layout84);
+    obj.imageCheckBox301:setField("sangue_21");
     obj.imageCheckBox301:setLeft(137);
     obj.imageCheckBox301:setTop(40);
     obj.imageCheckBox301:setWidth(15);
@@ -5138,8 +5152,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox301:setName("imageCheckBox301");
 
     obj.imageCheckBox302 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox302:setParent(obj.layout85);
-    obj.imageCheckBox302:setField("1_22");
+    obj.imageCheckBox302:setParent(obj.layout84);
+    obj.imageCheckBox302:setField("sangue_22");
     obj.imageCheckBox302:setLeft(155);
     obj.imageCheckBox302:setTop(40);
     obj.imageCheckBox302:setWidth(15);
@@ -5149,8 +5163,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox302:setName("imageCheckBox302");
 
     obj.imageCheckBox303 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox303:setParent(obj.layout85);
-    obj.imageCheckBox303:setField("1_23");
+    obj.imageCheckBox303:setParent(obj.layout84);
+    obj.imageCheckBox303:setField("sangue_23");
     obj.imageCheckBox303:setLeft(173);
     obj.imageCheckBox303:setTop(40);
     obj.imageCheckBox303:setWidth(15);
@@ -5160,8 +5174,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox303:setName("imageCheckBox303");
 
     obj.imageCheckBox304 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox304:setParent(obj.layout85);
-    obj.imageCheckBox304:setField("1_24");
+    obj.imageCheckBox304:setParent(obj.layout84);
+    obj.imageCheckBox304:setField("sangue_24");
     obj.imageCheckBox304:setLeft(191);
     obj.imageCheckBox304:setTop(40);
     obj.imageCheckBox304:setWidth(15);
@@ -5171,8 +5185,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox304:setName("imageCheckBox304");
 
     obj.imageCheckBox305 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox305:setParent(obj.layout85);
-    obj.imageCheckBox305:setField("1_25");
+    obj.imageCheckBox305:setParent(obj.layout84);
+    obj.imageCheckBox305:setField("sangue_25");
     obj.imageCheckBox305:setLeft(209);
     obj.imageCheckBox305:setTop(40);
     obj.imageCheckBox305:setWidth(15);
@@ -5182,8 +5196,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox305:setName("imageCheckBox305");
 
     obj.imageCheckBox306 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox306:setParent(obj.layout85);
-    obj.imageCheckBox306:setField("1_26");
+    obj.imageCheckBox306:setParent(obj.layout84);
+    obj.imageCheckBox306:setField("sangue_26");
     obj.imageCheckBox306:setLeft(227);
     obj.imageCheckBox306:setTop(40);
     obj.imageCheckBox306:setWidth(15);
@@ -5193,8 +5207,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox306:setName("imageCheckBox306");
 
     obj.imageCheckBox307 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox307:setParent(obj.layout85);
-    obj.imageCheckBox307:setField("1_27");
+    obj.imageCheckBox307:setParent(obj.layout84);
+    obj.imageCheckBox307:setField("sangue_27");
     obj.imageCheckBox307:setLeft(245);
     obj.imageCheckBox307:setTop(40);
     obj.imageCheckBox307:setWidth(15);
@@ -5204,8 +5218,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox307:setName("imageCheckBox307");
 
     obj.imageCheckBox308 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox308:setParent(obj.layout85);
-    obj.imageCheckBox308:setField("1_28");
+    obj.imageCheckBox308:setParent(obj.layout84);
+    obj.imageCheckBox308:setField("sangue_28");
     obj.imageCheckBox308:setLeft(263);
     obj.imageCheckBox308:setTop(40);
     obj.imageCheckBox308:setWidth(15);
@@ -5215,8 +5229,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox308:setName("imageCheckBox308");
 
     obj.imageCheckBox309 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox309:setParent(obj.layout85);
-    obj.imageCheckBox309:setField("1_29");
+    obj.imageCheckBox309:setParent(obj.layout84);
+    obj.imageCheckBox309:setField("sangue_29");
     obj.imageCheckBox309:setLeft(281);
     obj.imageCheckBox309:setTop(40);
     obj.imageCheckBox309:setWidth(15);
@@ -5226,8 +5240,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox309:setName("imageCheckBox309");
 
     obj.imageCheckBox310 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox310:setParent(obj.layout85);
-    obj.imageCheckBox310:setField("1_30");
+    obj.imageCheckBox310:setParent(obj.layout84);
+    obj.imageCheckBox310:setField("sangue_30");
     obj.imageCheckBox310:setLeft(299);
     obj.imageCheckBox310:setTop(40);
     obj.imageCheckBox310:setWidth(15);
@@ -5237,8 +5251,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox310:setName("imageCheckBox310");
 
     obj.imageCheckBox311 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox311:setParent(obj.layout85);
-    obj.imageCheckBox311:setField("1_31");
+    obj.imageCheckBox311:setParent(obj.layout84);
+    obj.imageCheckBox311:setField("sangue_31");
     obj.imageCheckBox311:setLeft(137);
     obj.imageCheckBox311:setTop(58);
     obj.imageCheckBox311:setWidth(15);
@@ -5248,8 +5262,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox311:setName("imageCheckBox311");
 
     obj.imageCheckBox312 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox312:setParent(obj.layout85);
-    obj.imageCheckBox312:setField("1_32");
+    obj.imageCheckBox312:setParent(obj.layout84);
+    obj.imageCheckBox312:setField("sangue_32");
     obj.imageCheckBox312:setLeft(155);
     obj.imageCheckBox312:setTop(58);
     obj.imageCheckBox312:setWidth(15);
@@ -5259,8 +5273,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox312:setName("imageCheckBox312");
 
     obj.imageCheckBox313 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox313:setParent(obj.layout85);
-    obj.imageCheckBox313:setField("1_33");
+    obj.imageCheckBox313:setParent(obj.layout84);
+    obj.imageCheckBox313:setField("sangue_33");
     obj.imageCheckBox313:setLeft(173);
     obj.imageCheckBox313:setTop(58);
     obj.imageCheckBox313:setWidth(15);
@@ -5270,8 +5284,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox313:setName("imageCheckBox313");
 
     obj.imageCheckBox314 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox314:setParent(obj.layout85);
-    obj.imageCheckBox314:setField("1_34");
+    obj.imageCheckBox314:setParent(obj.layout84);
+    obj.imageCheckBox314:setField("sangue_34");
     obj.imageCheckBox314:setLeft(191);
     obj.imageCheckBox314:setTop(58);
     obj.imageCheckBox314:setWidth(15);
@@ -5281,8 +5295,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox314:setName("imageCheckBox314");
 
     obj.imageCheckBox315 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox315:setParent(obj.layout85);
-    obj.imageCheckBox315:setField("1_35");
+    obj.imageCheckBox315:setParent(obj.layout84);
+    obj.imageCheckBox315:setField("sangue_35");
     obj.imageCheckBox315:setLeft(209);
     obj.imageCheckBox315:setTop(58);
     obj.imageCheckBox315:setWidth(15);
@@ -5292,8 +5306,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox315:setName("imageCheckBox315");
 
     obj.imageCheckBox316 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox316:setParent(obj.layout85);
-    obj.imageCheckBox316:setField("1_36");
+    obj.imageCheckBox316:setParent(obj.layout84);
+    obj.imageCheckBox316:setField("sangue_36");
     obj.imageCheckBox316:setLeft(227);
     obj.imageCheckBox316:setTop(58);
     obj.imageCheckBox316:setWidth(15);
@@ -5303,8 +5317,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox316:setName("imageCheckBox316");
 
     obj.imageCheckBox317 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox317:setParent(obj.layout85);
-    obj.imageCheckBox317:setField("1_37");
+    obj.imageCheckBox317:setParent(obj.layout84);
+    obj.imageCheckBox317:setField("sangue_37");
     obj.imageCheckBox317:setLeft(245);
     obj.imageCheckBox317:setTop(58);
     obj.imageCheckBox317:setWidth(15);
@@ -5314,8 +5328,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox317:setName("imageCheckBox317");
 
     obj.imageCheckBox318 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox318:setParent(obj.layout85);
-    obj.imageCheckBox318:setField("1_38");
+    obj.imageCheckBox318:setParent(obj.layout84);
+    obj.imageCheckBox318:setField("sangue_38");
     obj.imageCheckBox318:setLeft(263);
     obj.imageCheckBox318:setTop(58);
     obj.imageCheckBox318:setWidth(15);
@@ -5325,8 +5339,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox318:setName("imageCheckBox318");
 
     obj.imageCheckBox319 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox319:setParent(obj.layout85);
-    obj.imageCheckBox319:setField("1_39");
+    obj.imageCheckBox319:setParent(obj.layout84);
+    obj.imageCheckBox319:setField("sangue_39");
     obj.imageCheckBox319:setLeft(281);
     obj.imageCheckBox319:setTop(58);
     obj.imageCheckBox319:setWidth(15);
@@ -5336,8 +5350,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox319:setName("imageCheckBox319");
 
     obj.imageCheckBox320 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox320:setParent(obj.layout85);
-    obj.imageCheckBox320:setField("1_40");
+    obj.imageCheckBox320:setParent(obj.layout84);
+    obj.imageCheckBox320:setField("sangue_40");
     obj.imageCheckBox320:setLeft(299);
     obj.imageCheckBox320:setTop(58);
     obj.imageCheckBox320:setWidth(15);
@@ -5347,8 +5361,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox320:setName("imageCheckBox320");
 
     obj.imageCheckBox321 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox321:setParent(obj.layout85);
-    obj.imageCheckBox321:setField("1_41");
+    obj.imageCheckBox321:setParent(obj.layout84);
+    obj.imageCheckBox321:setField("sangue_41");
     obj.imageCheckBox321:setLeft(137);
     obj.imageCheckBox321:setTop(76);
     obj.imageCheckBox321:setWidth(15);
@@ -5358,8 +5372,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox321:setName("imageCheckBox321");
 
     obj.imageCheckBox322 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox322:setParent(obj.layout85);
-    obj.imageCheckBox322:setField("1_42");
+    obj.imageCheckBox322:setParent(obj.layout84);
+    obj.imageCheckBox322:setField("sangue_42");
     obj.imageCheckBox322:setLeft(155);
     obj.imageCheckBox322:setTop(76);
     obj.imageCheckBox322:setWidth(15);
@@ -5369,8 +5383,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox322:setName("imageCheckBox322");
 
     obj.imageCheckBox323 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox323:setParent(obj.layout85);
-    obj.imageCheckBox323:setField("1_43");
+    obj.imageCheckBox323:setParent(obj.layout84);
+    obj.imageCheckBox323:setField("sangue_43");
     obj.imageCheckBox323:setLeft(173);
     obj.imageCheckBox323:setTop(76);
     obj.imageCheckBox323:setWidth(15);
@@ -5380,8 +5394,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox323:setName("imageCheckBox323");
 
     obj.imageCheckBox324 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox324:setParent(obj.layout85);
-    obj.imageCheckBox324:setField("1_44");
+    obj.imageCheckBox324:setParent(obj.layout84);
+    obj.imageCheckBox324:setField("sangue_44");
     obj.imageCheckBox324:setLeft(191);
     obj.imageCheckBox324:setTop(76);
     obj.imageCheckBox324:setWidth(15);
@@ -5391,8 +5405,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox324:setName("imageCheckBox324");
 
     obj.imageCheckBox325 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox325:setParent(obj.layout85);
-    obj.imageCheckBox325:setField("1_45");
+    obj.imageCheckBox325:setParent(obj.layout84);
+    obj.imageCheckBox325:setField("sangue_45");
     obj.imageCheckBox325:setLeft(209);
     obj.imageCheckBox325:setTop(76);
     obj.imageCheckBox325:setWidth(15);
@@ -5402,8 +5416,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox325:setName("imageCheckBox325");
 
     obj.imageCheckBox326 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox326:setParent(obj.layout85);
-    obj.imageCheckBox326:setField("1_46");
+    obj.imageCheckBox326:setParent(obj.layout84);
+    obj.imageCheckBox326:setField("sangue_46");
     obj.imageCheckBox326:setLeft(227);
     obj.imageCheckBox326:setTop(76);
     obj.imageCheckBox326:setWidth(15);
@@ -5413,8 +5427,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox326:setName("imageCheckBox326");
 
     obj.imageCheckBox327 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox327:setParent(obj.layout85);
-    obj.imageCheckBox327:setField("1_47");
+    obj.imageCheckBox327:setParent(obj.layout84);
+    obj.imageCheckBox327:setField("sangue_47");
     obj.imageCheckBox327:setLeft(245);
     obj.imageCheckBox327:setTop(76);
     obj.imageCheckBox327:setWidth(15);
@@ -5424,8 +5438,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox327:setName("imageCheckBox327");
 
     obj.imageCheckBox328 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox328:setParent(obj.layout85);
-    obj.imageCheckBox328:setField("1_48");
+    obj.imageCheckBox328:setParent(obj.layout84);
+    obj.imageCheckBox328:setField("sangue_48");
     obj.imageCheckBox328:setLeft(263);
     obj.imageCheckBox328:setTop(76);
     obj.imageCheckBox328:setWidth(15);
@@ -5435,8 +5449,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox328:setName("imageCheckBox328");
 
     obj.imageCheckBox329 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox329:setParent(obj.layout85);
-    obj.imageCheckBox329:setField("1_49");
+    obj.imageCheckBox329:setParent(obj.layout84);
+    obj.imageCheckBox329:setField("sangue_49");
     obj.imageCheckBox329:setLeft(281);
     obj.imageCheckBox329:setTop(76);
     obj.imageCheckBox329:setWidth(15);
@@ -5446,8 +5460,8 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox329:setName("imageCheckBox329");
 
     obj.imageCheckBox330 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox330:setParent(obj.layout85);
-    obj.imageCheckBox330:setField("1_50");
+    obj.imageCheckBox330:setParent(obj.layout84);
+    obj.imageCheckBox330:setField("sangue_50");
     obj.imageCheckBox330:setLeft(299);
     obj.imageCheckBox330:setTop(76);
     obj.imageCheckBox330:setWidth(15);
@@ -5456,16 +5470,16 @@ local function constructNew_VampiroAMascara1()
     obj.imageCheckBox330:setImageUnchecked("/VampiroAMascara/img/bboll1.png");
     obj.imageCheckBox330:setName("imageCheckBox330");
 
-    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout86:setParent(obj.layout80);
-    obj.layout86:setLeft(630);
-    obj.layout86:setTop(60);
-    obj.layout86:setWidth(880);
-    obj.layout86:setHeight(300);
-    obj.layout86:setName("layout86");
+    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout85:setParent(obj.layout63);
+    obj.layout85:setLeft(630);
+    obj.layout85:setTop(220);
+    obj.layout85:setWidth(880);
+    obj.layout85:setHeight(300);
+    obj.layout85:setName("layout85");
 
     obj.label74 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label74:setParent(obj.layout86);
+    obj.label74:setParent(obj.layout85);
     obj.label74:setAutoSize(true);
     obj.label74:setText("Escoriado");
     obj.label74:setHorzTextAlign("leading");
@@ -5473,34 +5487,38 @@ local function constructNew_VampiroAMascara1()
     obj.label74:setFontColor("Black");
     obj.label74:setName("label74");
 
-    obj.checkBox1 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox1:setParent(obj.layout86);
-    obj.checkBox1:setField("escoridado_1");
-    obj.checkBox1:setLeft(187);
-    obj.checkBox1:setTop(0);
-    obj.checkBox1:setWidth(20);
-    obj.checkBox1:setHeight(20);
-    obj.checkBox1:setName("checkBox1");
+    obj.imageCheckBox331 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox331:setParent(obj.layout85);
+    obj.imageCheckBox331:setLeft(187);
+    obj.imageCheckBox331:setTop(0);
+    obj.imageCheckBox331:setWidth(15);
+    obj.imageCheckBox331:setHeight(15);
+    obj.imageCheckBox331:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox331:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox331:setField("escoridado_1");
+    obj.imageCheckBox331:setName("imageCheckBox331");
 
-    obj.checkBox2 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox2:setParent(obj.layout86);
-    obj.checkBox2:setField("escoridado_2");
-    obj.checkBox2:setLeft(205);
-    obj.checkBox2:setTop(0);
-    obj.checkBox2:setWidth(20);
-    obj.checkBox2:setHeight(20);
-    obj.checkBox2:setName("checkBox2");
+    obj.imageCheckBox332 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox332:setParent(obj.layout85);
+    obj.imageCheckBox332:setLeft(205);
+    obj.imageCheckBox332:setTop(0);
+    obj.imageCheckBox332:setWidth(15);
+    obj.imageCheckBox332:setHeight(15);
+    obj.imageCheckBox332:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox332:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox332:setField("escoridado_2");
+    obj.imageCheckBox332:setName("imageCheckBox332");
 
-    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout87:setParent(obj.layout80);
-    obj.layout87:setLeft(630);
-    obj.layout87:setTop(80);
-    obj.layout87:setWidth(880);
-    obj.layout87:setHeight(300);
-    obj.layout87:setName("layout87");
+    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout86:setParent(obj.layout63);
+    obj.layout86:setLeft(630);
+    obj.layout86:setTop(240);
+    obj.layout86:setWidth(880);
+    obj.layout86:setHeight(300);
+    obj.layout86:setName("layout86");
 
     obj.label75 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label75:setParent(obj.layout87);
+    obj.label75:setParent(obj.layout86);
     obj.label75:setAutoSize(true);
     obj.label75:setText("Machucado (-1)");
     obj.label75:setHorzTextAlign("leading");
@@ -5508,34 +5526,38 @@ local function constructNew_VampiroAMascara1()
     obj.label75:setFontColor("Black");
     obj.label75:setName("label75");
 
-    obj.checkBox3 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox3:setParent(obj.layout87);
-    obj.checkBox3:setField("machucado_1");
-    obj.checkBox3:setLeft(187);
-    obj.checkBox3:setTop(0);
-    obj.checkBox3:setWidth(20);
-    obj.checkBox3:setHeight(20);
-    obj.checkBox3:setName("checkBox3");
+    obj.imageCheckBox333 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox333:setParent(obj.layout86);
+    obj.imageCheckBox333:setLeft(187);
+    obj.imageCheckBox333:setTop(0);
+    obj.imageCheckBox333:setWidth(15);
+    obj.imageCheckBox333:setHeight(15);
+    obj.imageCheckBox333:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox333:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox333:setField("machucado_1");
+    obj.imageCheckBox333:setName("imageCheckBox333");
 
-    obj.checkBox4 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox4:setParent(obj.layout87);
-    obj.checkBox4:setField("machucado_2");
-    obj.checkBox4:setLeft(205);
-    obj.checkBox4:setTop(0);
-    obj.checkBox4:setWidth(20);
-    obj.checkBox4:setHeight(20);
-    obj.checkBox4:setName("checkBox4");
+    obj.imageCheckBox334 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox334:setParent(obj.layout86);
+    obj.imageCheckBox334:setLeft(205);
+    obj.imageCheckBox334:setTop(0);
+    obj.imageCheckBox334:setWidth(15);
+    obj.imageCheckBox334:setHeight(15);
+    obj.imageCheckBox334:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox334:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox334:setField("machucado_2");
+    obj.imageCheckBox334:setName("imageCheckBox334");
 
-    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout88:setParent(obj.layout80);
-    obj.layout88:setLeft(630);
-    obj.layout88:setTop(100);
-    obj.layout88:setWidth(880);
-    obj.layout88:setHeight(300);
-    obj.layout88:setName("layout88");
+    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout87:setParent(obj.layout63);
+    obj.layout87:setLeft(630);
+    obj.layout87:setTop(260);
+    obj.layout87:setWidth(880);
+    obj.layout87:setHeight(300);
+    obj.layout87:setName("layout87");
 
     obj.label76 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label76:setParent(obj.layout88);
+    obj.label76:setParent(obj.layout87);
     obj.label76:setAutoSize(true);
     obj.label76:setText("Ferido (-1)");
     obj.label76:setHorzTextAlign("leading");
@@ -5543,34 +5565,38 @@ local function constructNew_VampiroAMascara1()
     obj.label76:setFontColor("Black");
     obj.label76:setName("label76");
 
-    obj.checkBox5 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox5:setParent(obj.layout88);
-    obj.checkBox5:setField("ferido_1");
-    obj.checkBox5:setLeft(187);
-    obj.checkBox5:setTop(0);
-    obj.checkBox5:setWidth(20);
-    obj.checkBox5:setHeight(20);
-    obj.checkBox5:setName("checkBox5");
+    obj.imageCheckBox335 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox335:setParent(obj.layout87);
+    obj.imageCheckBox335:setLeft(187);
+    obj.imageCheckBox335:setTop(0);
+    obj.imageCheckBox335:setWidth(15);
+    obj.imageCheckBox335:setHeight(15);
+    obj.imageCheckBox335:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox335:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox335:setField("ferido_1");
+    obj.imageCheckBox335:setName("imageCheckBox335");
 
-    obj.checkBox6 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox6:setParent(obj.layout88);
-    obj.checkBox6:setField("ferido_2");
-    obj.checkBox6:setLeft(205);
-    obj.checkBox6:setTop(0);
-    obj.checkBox6:setWidth(20);
-    obj.checkBox6:setHeight(20);
-    obj.checkBox6:setName("checkBox6");
+    obj.imageCheckBox336 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox336:setParent(obj.layout87);
+    obj.imageCheckBox336:setLeft(205);
+    obj.imageCheckBox336:setTop(0);
+    obj.imageCheckBox336:setWidth(15);
+    obj.imageCheckBox336:setHeight(15);
+    obj.imageCheckBox336:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox336:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox336:setField("ferido_2");
+    obj.imageCheckBox336:setName("imageCheckBox336");
 
-    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout89:setParent(obj.layout80);
-    obj.layout89:setLeft(630);
-    obj.layout89:setTop(120);
-    obj.layout89:setWidth(880);
-    obj.layout89:setHeight(300);
-    obj.layout89:setName("layout89");
+    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout88:setParent(obj.layout63);
+    obj.layout88:setLeft(630);
+    obj.layout88:setTop(280);
+    obj.layout88:setWidth(880);
+    obj.layout88:setHeight(300);
+    obj.layout88:setName("layout88");
 
     obj.label77 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label77:setParent(obj.layout89);
+    obj.label77:setParent(obj.layout88);
     obj.label77:setText("Ferido Gravemente (-2)");
     obj.label77:setHorzTextAlign("leading");
     obj.label77:setWidth(160);
@@ -5578,34 +5604,38 @@ local function constructNew_VampiroAMascara1()
     obj.label77:setFontColor("Black");
     obj.label77:setName("label77");
 
-    obj.checkBox7 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox7:setParent(obj.layout89);
-    obj.checkBox7:setField("feridog_1");
-    obj.checkBox7:setLeft(187);
-    obj.checkBox7:setTop(0);
-    obj.checkBox7:setWidth(20);
-    obj.checkBox7:setHeight(20);
-    obj.checkBox7:setName("checkBox7");
+    obj.imageCheckBox337 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox337:setParent(obj.layout88);
+    obj.imageCheckBox337:setLeft(187);
+    obj.imageCheckBox337:setTop(0);
+    obj.imageCheckBox337:setWidth(15);
+    obj.imageCheckBox337:setHeight(15);
+    obj.imageCheckBox337:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox337:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox337:setField("feridog_1");
+    obj.imageCheckBox337:setName("imageCheckBox337");
 
-    obj.checkBox8 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox8:setParent(obj.layout89);
-    obj.checkBox8:setField("feridog_2");
-    obj.checkBox8:setLeft(205);
-    obj.checkBox8:setTop(0);
-    obj.checkBox8:setWidth(20);
-    obj.checkBox8:setHeight(20);
-    obj.checkBox8:setName("checkBox8");
+    obj.imageCheckBox338 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox338:setParent(obj.layout88);
+    obj.imageCheckBox338:setLeft(205);
+    obj.imageCheckBox338:setTop(0);
+    obj.imageCheckBox338:setWidth(15);
+    obj.imageCheckBox338:setHeight(15);
+    obj.imageCheckBox338:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox338:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox338:setField("feridog_2");
+    obj.imageCheckBox338:setName("imageCheckBox338");
 
-    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout90:setParent(obj.layout80);
-    obj.layout90:setLeft(630);
-    obj.layout90:setTop(140);
-    obj.layout90:setWidth(880);
-    obj.layout90:setHeight(300);
-    obj.layout90:setName("layout90");
+    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout89:setParent(obj.layout63);
+    obj.layout89:setLeft(630);
+    obj.layout89:setTop(300);
+    obj.layout89:setWidth(880);
+    obj.layout89:setHeight(300);
+    obj.layout89:setName("layout89");
 
     obj.label78 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label78:setParent(obj.layout90);
+    obj.label78:setParent(obj.layout89);
     obj.label78:setAutoSize(true);
     obj.label78:setText("Espancado (-2)");
     obj.label78:setHorzTextAlign("leading");
@@ -5613,34 +5643,38 @@ local function constructNew_VampiroAMascara1()
     obj.label78:setFontColor("Black");
     obj.label78:setName("label78");
 
-    obj.checkBox9 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox9:setParent(obj.layout90);
-    obj.checkBox9:setField("espancado_1");
-    obj.checkBox9:setLeft(187);
-    obj.checkBox9:setTop(0);
-    obj.checkBox9:setWidth(20);
-    obj.checkBox9:setHeight(20);
-    obj.checkBox9:setName("checkBox9");
+    obj.imageCheckBox339 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox339:setParent(obj.layout89);
+    obj.imageCheckBox339:setLeft(187);
+    obj.imageCheckBox339:setTop(0);
+    obj.imageCheckBox339:setWidth(15);
+    obj.imageCheckBox339:setHeight(15);
+    obj.imageCheckBox339:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox339:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox339:setField("espancado_1");
+    obj.imageCheckBox339:setName("imageCheckBox339");
 
-    obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.layout90);
-    obj.checkBox10:setField("espancado_2");
-    obj.checkBox10:setLeft(205);
-    obj.checkBox10:setTop(0);
-    obj.checkBox10:setWidth(20);
-    obj.checkBox10:setHeight(20);
-    obj.checkBox10:setName("checkBox10");
+    obj.imageCheckBox340 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox340:setParent(obj.layout89);
+    obj.imageCheckBox340:setLeft(205);
+    obj.imageCheckBox340:setTop(0);
+    obj.imageCheckBox340:setWidth(15);
+    obj.imageCheckBox340:setHeight(15);
+    obj.imageCheckBox340:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox340:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox340:setField("espancado_2");
+    obj.imageCheckBox340:setName("imageCheckBox340");
 
-    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout91:setParent(obj.layout80);
-    obj.layout91:setLeft(630);
-    obj.layout91:setTop(160);
-    obj.layout91:setWidth(880);
-    obj.layout91:setHeight(300);
-    obj.layout91:setName("layout91");
+    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout90:setParent(obj.layout63);
+    obj.layout90:setLeft(630);
+    obj.layout90:setTop(320);
+    obj.layout90:setWidth(880);
+    obj.layout90:setHeight(300);
+    obj.layout90:setName("layout90");
 
     obj.label79 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label79:setParent(obj.layout91);
+    obj.label79:setParent(obj.layout90);
     obj.label79:setAutoSize(true);
     obj.label79:setText("Aleijado (-5)");
     obj.label79:setHorzTextAlign("leading");
@@ -5648,34 +5682,38 @@ local function constructNew_VampiroAMascara1()
     obj.label79:setFontColor("Black");
     obj.label79:setName("label79");
 
-    obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.layout91);
-    obj.checkBox11:setField("aleijado_1");
-    obj.checkBox11:setLeft(187);
-    obj.checkBox11:setTop(0);
-    obj.checkBox11:setWidth(20);
-    obj.checkBox11:setHeight(20);
-    obj.checkBox11:setName("checkBox11");
+    obj.imageCheckBox341 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox341:setParent(obj.layout90);
+    obj.imageCheckBox341:setLeft(187);
+    obj.imageCheckBox341:setTop(0);
+    obj.imageCheckBox341:setWidth(15);
+    obj.imageCheckBox341:setHeight(15);
+    obj.imageCheckBox341:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox341:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox341:setField("aleijado_1");
+    obj.imageCheckBox341:setName("imageCheckBox341");
 
-    obj.checkBox12 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox12:setParent(obj.layout91);
-    obj.checkBox12:setField("aleijado_2");
-    obj.checkBox12:setLeft(205);
-    obj.checkBox12:setTop(0);
-    obj.checkBox12:setWidth(20);
-    obj.checkBox12:setHeight(20);
-    obj.checkBox12:setName("checkBox12");
+    obj.imageCheckBox342 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox342:setParent(obj.layout90);
+    obj.imageCheckBox342:setLeft(205);
+    obj.imageCheckBox342:setTop(0);
+    obj.imageCheckBox342:setWidth(15);
+    obj.imageCheckBox342:setHeight(15);
+    obj.imageCheckBox342:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox342:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox342:setField("aleijado_2");
+    obj.imageCheckBox342:setName("imageCheckBox342");
 
-    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout92:setParent(obj.layout80);
-    obj.layout92:setLeft(630);
-    obj.layout92:setTop(180);
-    obj.layout92:setWidth(880);
-    obj.layout92:setHeight(300);
-    obj.layout92:setName("layout92");
+    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout91:setParent(obj.layout63);
+    obj.layout91:setLeft(630);
+    obj.layout91:setTop(340);
+    obj.layout91:setWidth(880);
+    obj.layout91:setHeight(300);
+    obj.layout91:setName("layout91");
 
     obj.label80 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label80:setParent(obj.layout92);
+    obj.label80:setParent(obj.layout91);
     obj.label80:setAutoSize(true);
     obj.label80:setText("Incapacitado");
     obj.label80:setHorzTextAlign("leading");
@@ -5683,37 +5721,42 @@ local function constructNew_VampiroAMascara1()
     obj.label80:setFontColor("Black");
     obj.label80:setName("label80");
 
-    obj.checkBox13 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox13:setParent(obj.layout92);
-    obj.checkBox13:setField("incapacitado_1");
-    obj.checkBox13:setLeft(187);
-    obj.checkBox13:setTop(0);
-    obj.checkBox13:setWidth(20);
-    obj.checkBox13:setHeight(20);
-    obj.checkBox13:setName("checkBox13");
+    obj.imageCheckBox343 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox343:setParent(obj.layout91);
+    obj.imageCheckBox343:setLeft(187);
+    obj.imageCheckBox343:setTop(0);
+    obj.imageCheckBox343:setWidth(15);
+    obj.imageCheckBox343:setHeight(15);
+    obj.imageCheckBox343:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox343:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox343:setField("incapacitado_1");
+    obj.imageCheckBox343:setName("imageCheckBox343");
 
-    obj.checkBox14 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox14:setParent(obj.layout92);
-    obj.checkBox14:setField("incapacitado_2");
-    obj.checkBox14:setLeft(205);
-    obj.checkBox14:setTop(0);
-    obj.checkBox14:setWidth(20);
-    obj.checkBox14:setHeight(20);
-    obj.checkBox14:setName("checkBox14");
+    obj.imageCheckBox344 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox344:setParent(obj.layout91);
+    obj.imageCheckBox344:setLeft(205);
+    obj.imageCheckBox344:setTop(0);
+    obj.imageCheckBox344:setWidth(15);
+    obj.imageCheckBox344:setHeight(15);
+    obj.imageCheckBox344:setImageChecked("/VampiroAMascara/img/box.png");
+    obj.imageCheckBox344:setImageUnchecked("/VampiroAMascara/img/unbox.png");
+    obj.imageCheckBox344:setField("incapacitado_2");
+    obj.imageCheckBox344:setName("imageCheckBox344");
 
-    obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout93:setParent(obj.layout80);
-    obj.layout93:setLeft(600);
-    obj.layout93:setTop(240);
-    obj.layout93:setWidth(880);
-    obj.layout93:setHeight(300);
-    obj.layout93:setName("layout93");
+    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout92:setParent(obj.layout63);
+    obj.layout92:setLeft(600);
+    obj.layout92:setTop(400);
+    obj.layout92:setWidth(880);
+    obj.layout92:setHeight(300);
+    obj.layout92:setName("layout92");
 
     obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit20:setParent(obj.layout93);
+    obj.edit20:setParent(obj.layout92);
     obj.edit20:setLeft(30);
     obj.edit20:setTop(0);
     obj.edit20:setWidth(220);
+    obj.edit20:setFontColor("black");
     obj.edit20:setHeight(25);
     lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
     obj.edit20:setField("experiencia");
@@ -5728,1186 +5771,4828 @@ local function constructNew_VampiroAMascara1()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj.frmCodigo1);
-    obj.dataLink1:setFields({'musc_10', 'musc_9', 'musc_8', 'musc_7','musc_6', 'musc_5', 'musc_4', 'musc_3', 'musc_2', 'musc_1'});
+    obj.dataLink1:setFields({'fatributos1_1', 'fatributos2_1', 'fatributos3_1', 'satributos1_1', 'satributos2_1', 'satributos3_1', 'matributos1_1', 'matributos2_1', 'matributos3_1', 'virtude1_1', 'virtude2_1', 'virtude3_1'});
+    obj.dataLink1:setDefaultValues({'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true', 'true'});
     obj.dataLink1:setName("dataLink1");
 
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj.frmCodigo1);
-    obj.dataLink2:setFields({'cereb_10', 'cereb_9', 'cereb_8', 'cereb_7','cereb_6', 'cereb_5', 'cereb_4', 'cereb_3', 'cereb_2', 'cereb_1'});
+    obj.dataLink2:setFields({'fatributos1_5', 'fatributos1_4', 'fatributos1_3', 'fatributos1_2', 'fatributos1_1'});
     obj.dataLink2:setName("dataLink2");
 
     obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink3:setParent(obj.frmCodigo1);
-    obj.dataLink3:setFields({'corac_10', 'corac_9', 'corac_8', 'corac_7','corac_6', 'corac_5', 'corac_4', 'corac_3', 'corac_2', 'corac_1'});
+    obj.dataLink3:setFields({'fatributos2_5', 'fatributos2_4', 'fatributos2_3', 'fatributos2_2', 'fatributos2_1'});
     obj.dataLink3:setName("dataLink3");
 
     obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink4:setParent(obj.frmCodigo1);
-    obj.dataLink4:setFields({'mhabilidades1_6', 'mhabilidades1_5', 'mhabilidades1_4', 'mhabilidades1_3', 'mhabilidades1_2', 'mhabilidades1_1'});
+    obj.dataLink4:setFields({'fatributos3_5', 'fatributos3_4', 'fatributos3_3', 'fatributos3_2', 'fatributos3_1'});
     obj.dataLink4:setName("dataLink4");
 
     obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink5:setParent(obj.frmCodigo1);
-    obj.dataLink5:setFields({'mhabilidades2_6', 'mhabilidades2_5', 'mhabilidades2_4', 'mhabilidades2_3', 'mhabilidades2_2', 'mhabilidades2_1'});
+    obj.dataLink5:setFields({'satributos1_5', 'satributos1_4', 'satributos1_3', 'satributos1_2', 'satributos1_1'});
     obj.dataLink5:setName("dataLink5");
 
     obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink6:setParent(obj.frmCodigo1);
-    obj.dataLink6:setFields({'mhabilidades3_6', 'mhabilidades3_5', 'mhabilidades3_4', 'mhabilidades3_3', 'mhabilidades3_2', 'mhabilidades3_1'});
+    obj.dataLink6:setFields({'satributos2_5', 'satributos2_4', 'satributos2_3', 'satributos2_2', 'satributos2_1'});
     obj.dataLink6:setName("dataLink6");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink7:setParent(obj.frmCodigo1);
-    obj.dataLink7:setFields({'mhabilidades4_6', 'mhabilidades4_5', 'mhabilidades4_4', 'mhabilidades4_3', 'mhabilidades4_2', 'mhabilidades4_1'});
+    obj.dataLink7:setFields({'satributos3_5', 'satributos3_4', 'satributos3_3', 'satributos3_2', 'satributos3_1'});
     obj.dataLink7:setName("dataLink7");
 
     obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink8:setParent(obj.frmCodigo1);
-    obj.dataLink8:setFields({'mhabilidades5_6', 'mhabilidades5_5', 'mhabilidades5_4', 'mhabilidades5_3', 'mhabilidades5_2', 'mhabilidades5_1'});
+    obj.dataLink8:setFields({'matributos1_5', 'matributos1_4', 'matributos1_3', 'matributos1_2', 'matributos1_1'});
     obj.dataLink8:setName("dataLink8");
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink9:setParent(obj.frmCodigo1);
-    obj.dataLink9:setFields({'mhabilidades6_6', 'mhabilidades6_5', 'mhabilidades6_4', 'mhabilidades6_3', 'mhabilidades6_2', 'mhabilidades6_1'});
+    obj.dataLink9:setFields({'matributos2_5', 'matributos2_4', 'matributos2_3', 'matributos2_2', 'matributos2_1'});
     obj.dataLink9:setName("dataLink9");
 
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink10:setParent(obj.frmCodigo1);
-    obj.dataLink10:setFields({'mhabilidades7_6', 'mhabilidades7_5', 'mhabilidades7_4', 'mhabilidades7_3', 'mhabilidades7_2', 'mhabilidades7_1'});
+    obj.dataLink10:setFields({'matributos3_5', 'matributos3_4', 'matributos3_3', 'matributos3_2', 'matributos3_1'});
     obj.dataLink10:setName("dataLink10");
 
     obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink11:setParent(obj.frmCodigo1);
-    obj.dataLink11:setFields({'mhabilidades8_6', 'mhabilidades8_5', 'mhabilidades8_4', 'mhabilidades8_3', 'mhabilidades8_2', 'mhabilidades8_1'});
+    obj.dataLink11:setFields({'thabilidades1_5', 'thabilidades1_4', 'thabilidades1_3', 'thabilidades1_2', 'thabilidades1_1'});
     obj.dataLink11:setName("dataLink11");
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink12:setParent(obj.frmCodigo1);
-    obj.dataLink12:setFields({'mhabilidades1_h6', 'mhabilidades1_h5', 'mhabilidades1_h4', 'mhabilidades1_h3', 'mhabilidades1_h2', 'mhabilidades1_h1'});
+    obj.dataLink12:setFields({'thabilidades2_5', 'thabilidades2_4', 'thabilidades2_3', 'thabilidades2_2', 'thabilidades2_1'});
     obj.dataLink12:setName("dataLink12");
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink13:setParent(obj.frmCodigo1);
-    obj.dataLink13:setFields({'mhabilidades2_h6', 'mhabilidades2_h5', 'mhabilidades2_h4', 'mhabilidades2_h3', 'mhabilidades2_h2', 'mhabilidades2_h1'});
+    obj.dataLink13:setFields({'thabilidades3_5', 'thabilidades3_4', 'thabilidades3_3', 'thabilidades3_2', 'thabilidades3_1'});
     obj.dataLink13:setName("dataLink13");
 
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink14:setParent(obj.frmCodigo1);
-    obj.dataLink14:setFields({'mhabilidades3_h6', 'mhabilidades3_h5', 'mhabilidades3_h4', 'mhabilidades3_h3', 'mhabilidades3_h2', 'mhabilidades3_h1'});
+    obj.dataLink14:setFields({'thabilidades4_5', 'thabilidades4_4', 'thabilidades4_3', 'thabilidades4_2', 'thabilidades4_1'});
     obj.dataLink14:setName("dataLink14");
 
     obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink15:setParent(obj.frmCodigo1);
-    obj.dataLink15:setFields({'mhabilidades4_h6', 'mhabilidades4_h5', 'mhabilidades4_h4', 'mhabilidades4_h3', 'mhabilidades4_h2', 'mhabilidades4_h1'});
+    obj.dataLink15:setFields({'thabilidades5_5', 'thabilidades5_4', 'thabilidades5_3', 'thabilidades5_2', 'thabilidades5_1'});
     obj.dataLink15:setName("dataLink15");
 
     obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink16:setParent(obj.frmCodigo1);
-    obj.dataLink16:setFields({'mhabilidades5_h6', 'mhabilidades5_h5', 'mhabilidades5_h4', 'mhabilidades5_h3', 'mhabilidades5_h2', 'mhabilidades5_h1'});
+    obj.dataLink16:setFields({'thabilidades6_5', 'thabilidades6_4', 'thabilidades6_3', 'thabilidades6_2', 'thabilidades6_1'});
     obj.dataLink16:setName("dataLink16");
 
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink17:setParent(obj.frmCodigo1);
-    obj.dataLink17:setFields({'mhabilidades6_h6', 'mhabilidades6_h5', 'mhabilidades6_h4', 'mhabilidades6_h3', 'mhabilidades6_h2', 'mhabilidades6_h1'});
+    obj.dataLink17:setFields({'thabilidades7_5', 'thabilidades7_4', 'thabilidades7_3', 'thabilidades7_2', 'thabilidades7_1'});
     obj.dataLink17:setName("dataLink17");
 
     obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink18:setParent(obj.frmCodigo1);
-    obj.dataLink18:setFields({'mhabilidades7_h6', 'mhabilidades7_h5', 'mhabilidades7_h4', 'mhabilidades7_h3', 'mhabilidades7_h2', 'mhabilidades7_h1'});
+    obj.dataLink18:setFields({'thabilidades8_5', 'thabilidades8_4', 'thabilidades8_3', 'thabilidades8_2', 'thabilidades8_1'});
     obj.dataLink18:setName("dataLink18");
 
     obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink19:setParent(obj.frmCodigo1);
-    obj.dataLink19:setFields({'mhabilidades8_h6', 'mhabilidades8_h5', 'mhabilidades8_h4', 'mhabilidades8_h3', 'mhabilidades8_h2', 'mhabilidades8_h1'});
+    obj.dataLink19:setFields({'thabilidades9_5', 'thabilidades9_4', 'thabilidades9_3', 'thabilidades9_2', 'thabilidades9_1'});
     obj.dataLink19:setName("dataLink19");
 
-    obj._e_event0 = obj.dataLink1:addEventListener("onChange",
+    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink20:setParent(obj.frmCodigo1);
+    obj.dataLink20:setFields({'thabilidades10_5', 'thabilidades10_4', 'thabilidades10_3', 'thabilidades10_2', 'thabilidades10_1'});
+    obj.dataLink20:setName("dataLink20");
+
+    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink21:setParent(obj.frmCodigo1);
+    obj.dataLink21:setFields({'phabilidades1_5', 'phabilidades1_4', 'phabilidades1_3', 'phabilidades1_2', 'phabilidades1_1'});
+    obj.dataLink21:setName("dataLink21");
+
+    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink22:setParent(obj.frmCodigo1);
+    obj.dataLink22:setFields({'phabilidades2_5', 'phabilidades2_4', 'phabilidades2_3', 'phabilidades2_2', 'phabilidades2_1'});
+    obj.dataLink22:setName("dataLink22");
+
+    obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink23:setParent(obj.frmCodigo1);
+    obj.dataLink23:setFields({'phabilidades3_5', 'phabilidades3_4', 'phabilidades3_3', 'phabilidades3_2', 'phabilidades3_1'});
+    obj.dataLink23:setName("dataLink23");
+
+    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink24:setParent(obj.frmCodigo1);
+    obj.dataLink24:setFields({'phabilidades4_5', 'phabilidades4_4', 'phabilidades4_3', 'phabilidades4_2', 'phabilidades4_1'});
+    obj.dataLink24:setName("dataLink24");
+
+    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink25:setParent(obj.frmCodigo1);
+    obj.dataLink25:setFields({'phabilidades5_5', 'phabilidades5_4', 'phabilidades5_3', 'phabilidades5_2', 'phabilidades5_1'});
+    obj.dataLink25:setName("dataLink25");
+
+    obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink26:setParent(obj.frmCodigo1);
+    obj.dataLink26:setFields({'phabilidades6_5', 'phabilidades6_4', 'phabilidades6_3', 'phabilidades6_2', 'phabilidades6_1'});
+    obj.dataLink26:setName("dataLink26");
+
+    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink27:setParent(obj.frmCodigo1);
+    obj.dataLink27:setFields({'phabilidades7_5', 'phabilidades7_4', 'phabilidades7_3', 'phabilidades7_2', 'phabilidades7_1'});
+    obj.dataLink27:setName("dataLink27");
+
+    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink28:setParent(obj.frmCodigo1);
+    obj.dataLink28:setFields({'phabilidades8_5', 'phabilidades8_4', 'phabilidades8_3', 'phabilidades8_2', 'phabilidades8_1'});
+    obj.dataLink28:setName("dataLink28");
+
+    obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink29:setParent(obj.frmCodigo1);
+    obj.dataLink29:setFields({'phabilidades9_5', 'phabilidades9_4', 'phabilidades9_3', 'phabilidades9_2', 'phabilidades9_1'});
+    obj.dataLink29:setName("dataLink29");
+
+    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink30:setParent(obj.frmCodigo1);
+    obj.dataLink30:setFields({'phabilidades10_5', 'phabilidades10_4', 'phabilidades10_3', 'phabilidades10_2', 'phabilidades10_1'});
+    obj.dataLink30:setName("dataLink30");
+
+    obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink31:setParent(obj.frmCodigo1);
+    obj.dataLink31:setFields({'chabilidades1_5', 'chabilidades1_4', 'chabilidades1_3', 'chabilidades1_2', 'chabilidades1_1'});
+    obj.dataLink31:setName("dataLink31");
+
+    obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink32:setParent(obj.frmCodigo1);
+    obj.dataLink32:setFields({'chabilidades2_5', 'chabilidades2_4', 'chabilidades2_3', 'chabilidades2_2', 'chabilidades2_1'});
+    obj.dataLink32:setName("dataLink32");
+
+    obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink33:setParent(obj.frmCodigo1);
+    obj.dataLink33:setFields({'chabilidades3_5', 'chabilidades3_4', 'chabilidades3_3', 'chabilidades3_2', 'chabilidades3_1'});
+    obj.dataLink33:setName("dataLink33");
+
+    obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink34:setParent(obj.frmCodigo1);
+    obj.dataLink34:setFields({'chabilidades4_5', 'chabilidades4_4', 'chabilidades4_3', 'chabilidades4_2', 'chabilidades4_1'});
+    obj.dataLink34:setName("dataLink34");
+
+    obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink35:setParent(obj.frmCodigo1);
+    obj.dataLink35:setFields({'chabilidades5_5', 'chabilidades5_4', 'chabilidades5_3', 'chabilidades5_2', 'chabilidades5_1'});
+    obj.dataLink35:setName("dataLink35");
+
+    obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink36:setParent(obj.frmCodigo1);
+    obj.dataLink36:setFields({'chabilidades6_5', 'chabilidades6_4', 'chabilidades6_3', 'chabilidades6_2', 'chabilidades6_1'});
+    obj.dataLink36:setName("dataLink36");
+
+    obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink37:setParent(obj.frmCodigo1);
+    obj.dataLink37:setFields({'chabilidades7_5', 'chabilidades7_4', 'chabilidades7_3', 'chabilidades7_2', 'chabilidades7_1'});
+    obj.dataLink37:setName("dataLink37");
+
+    obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink38:setParent(obj.frmCodigo1);
+    obj.dataLink38:setFields({'chabilidades8_5', 'chabilidades8_4', 'chabilidades8_3', 'chabilidades8_2', 'chabilidades8_1'});
+    obj.dataLink38:setName("dataLink38");
+
+    obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink39:setParent(obj.frmCodigo1);
+    obj.dataLink39:setFields({'chabilidades9_5', 'chabilidades9_4', 'chabilidades9_3', 'chabilidades9_2', 'chabilidades9_1'});
+    obj.dataLink39:setName("dataLink39");
+
+    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink40:setParent(obj.frmCodigo1);
+    obj.dataLink40:setFields({'chabilidades10_5', 'chabilidades10_4', 'chabilidades10_3', 'chabilidades10_2', 'chabilidades10_1'});
+    obj.dataLink40:setName("dataLink40");
+
+    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink41:setParent(obj.frmCodigo1);
+    obj.dataLink41:setFields({'antecedentes1_5', 'antecedentes1_4', 'antecedentes1_3', 'antecedentes1_2', 'antecedentes1_1'});
+    obj.dataLink41:setName("dataLink41");
+
+    obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink42:setParent(obj.frmCodigo1);
+    obj.dataLink42:setFields({'antecedentes2_5', 'antecedentes2_4', 'antecedentes2_3', 'antecedentes2_2', 'antecedentes2_1'});
+    obj.dataLink42:setName("dataLink42");
+
+    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink43:setParent(obj.frmCodigo1);
+    obj.dataLink43:setFields({'antecedentes3_5', 'antecedentes3_4', 'antecedentes3_3', 'antecedentes3_2', 'antecedentes3_1'});
+    obj.dataLink43:setName("dataLink43");
+
+    obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink44:setParent(obj.frmCodigo1);
+    obj.dataLink44:setFields({'antecedentes4_5', 'antecedentes4_4', 'antecedentes4_3', 'antecedentes4_2', 'antecedentes4_1'});
+    obj.dataLink44:setName("dataLink44");
+
+    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink45:setParent(obj.frmCodigo1);
+    obj.dataLink45:setFields({'antecedentes5_5', 'antecedentes5_4', 'antecedentes5_3', 'antecedentes5_2', 'antecedentes5_1'});
+    obj.dataLink45:setName("dataLink45");
+
+    obj.dataLink46 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink46:setParent(obj.frmCodigo1);
+    obj.dataLink46:setFields({'disciplinas1_5', 'disciplinas1_4', 'disciplinas1_3', 'disciplinas1_2', 'disciplinas1_1'});
+    obj.dataLink46:setName("dataLink46");
+
+    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink47:setParent(obj.frmCodigo1);
+    obj.dataLink47:setFields({'disciplinas2_5', 'disciplinas2_4', 'disciplinas2_3', 'disciplinas2_2', 'disciplinas2_1'});
+    obj.dataLink47:setName("dataLink47");
+
+    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink48:setParent(obj.frmCodigo1);
+    obj.dataLink48:setFields({'disciplinas3_5', 'disciplinas3_4', 'disciplinas3_3', 'disciplinas3_2', 'disciplinas3_1'});
+    obj.dataLink48:setName("dataLink48");
+
+    obj.dataLink49 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink49:setParent(obj.frmCodigo1);
+    obj.dataLink49:setFields({'disciplinas4_5', 'disciplinas4_4', 'disciplinas4_3', 'disciplinas4_2', 'disciplinas4_1'});
+    obj.dataLink49:setName("dataLink49");
+
+    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink50:setParent(obj.frmCodigo1);
+    obj.dataLink50:setFields({'disciplinas5_5', 'disciplinas5_4', 'disciplinas5_3', 'disciplinas5_2', 'disciplinas5_1'});
+    obj.dataLink50:setName("dataLink50");
+
+    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink51:setParent(obj.frmCodigo1);
+    obj.dataLink51:setFields({'virtude1_5', 'virtude1_4', 'virtude1_3', 'virtude1_2', 'virtude1_1'});
+    obj.dataLink51:setName("dataLink51");
+
+    obj.dataLink52 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink52:setParent(obj.frmCodigo1);
+    obj.dataLink52:setFields({'virtude2_5', 'virtude2_4', 'virtude2_3', 'virtude2_2', 'virtude2_1'});
+    obj.dataLink52:setName("dataLink52");
+
+    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink53:setParent(obj.frmCodigo1);
+    obj.dataLink53:setFields({'virtude3_5', 'virtude3_4', 'virtude3_3', 'virtude3_2', 'virtude3_1'});
+    obj.dataLink53:setName("dataLink53");
+
+    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink54:setParent(obj.frmCodigo1);
+    obj.dataLink54:setFields({'humanidade_10', 'humanidade_9', 'humanidade_8', 'humanidade_7','humanidade_6', 'humanidade_5', 'humanidade_4', 'humanidade_3', 'humanidade_2', 'humanidade_1'});
+    obj.dataLink54:setName("dataLink54");
+
+    obj.dataLink55 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink55:setParent(obj.frmCodigo1);
+    obj.dataLink55:setFields({'fdv_10', 'fdv_9', 'fdv_8', 'fdv_7','fdv_6', 'fdv_5', 'fdv_4', 'fdv_3', 'fdv_2', 'fdv_1'});
+    obj.dataLink55:setName("dataLink55");
+
+    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink56:setParent(obj.frmCodigo1);
+    obj.dataLink56:setFields({'sangue_50', 'sangue_49', 'sangue_48', 'sangue_47', 'sangue_46', 'sangue_45', 'sangue_44', 'sangue_43', 'sangue_42', 'sangue_41',
+ 'sangue_40', 'sangue_39', 'sangue_38', 'sangue_37', 'sangue_36', 'sangue_35', 'sangue_34', 'sangue_33', 'sangue_32', 'sangue_31',
+ 'sangue_30', 'sangue_29', 'sangue_28', 'sangue_27', 'sangue_26', 'sangue_25', 'sangue_24', 'sangue_23', 'sangue_22', 'sangue_21', 'sangue_20',
+ 'sangue_19', 'sangue_18', 'sangue_17', 'sangue_16', 'sangue_15', 'sangue_14', 'sangue_13', 'sangue_12', 'sangue_11', 'sangue_10',
+ 'sangue_9', 'sangue_8', 'sangue_7', 'sangue_6', 'sangue_5', 'sangue_4', 'sangue_3', 'sangue_2', 'sangue_1'});
+    obj.dataLink56:setName("dataLink56");
+
+    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink57:setParent(obj.frmCodigo1);
+    obj.dataLink57:setFields({'incapacitado_1','aleijado_1', 'espancado_1', 'feridog_1', 'ferido_1', 'machucado_1', 'escoridado_1'});
+    obj.dataLink57:setName("dataLink57");
+
+    obj.dataLink58 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink58:setParent(obj.frmCodigo1);
+    obj.dataLink58:setFields({'incapacitado_2','aleijado_2', 'espancado_2', 'feridog_2', 'ferido_2', 'machucado_2', 'escoridado_2'});
+    obj.dataLink58:setName("dataLink58");
+
+    obj._e_event0 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.musc_10 == true then
-            		sheet.musc_9 = true;
-            		sheet.musc_8 = true;
-            		sheet.musc_7 = true;
-            		sheet.musc_6 = true;        
-            		sheet.musc_5 = true;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_9 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_8 = true;
-            		sheet.musc_7 = true;
-            		sheet.musc_6 = true;        
-            		sheet.musc_5 = true;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_8 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_7 = true;
-            		sheet.musc_6 = true;        
-            		sheet.musc_5 = true;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_7 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_6 = true;        
-            		sheet.musc_5 = true;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_6 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_5 = true;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_5 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_6 = false;
-            		sheet.musc_4 = true;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_4 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_6 = false;
-            		sheet.musc_5 = false;
-            		sheet.musc_3 = true;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_3 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_6 = false;
-            		sheet.musc_5 = false;
-            		sheet.musc_4 = false;
-            		sheet.musc_2 = true;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_2 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_6 = false;
-            		sheet.musc_5 = false;
-            		sheet.musc_4 = false;
-            		sheet.musc_3 = false;
-            		sheet.musc_1 = true;
-            	elseif sheet.musc_1 == true then
-            		sheet.musc_10 = false;
-            		sheet.musc_9 = false;
-            		sheet.musc_8 = false;
-            		sheet.musc_7 = false;        
-            		sheet.musc_6 = false;
-            		sheet.musc_5 = false;
-            		sheet.musc_4 = false;
-            		sheet.musc_3 = false;
-            		sheet.musc_2 = false;
+            	if sheet.fatributos1_5 == true then
+            		sheet.fatributos1_4 = true;
+            		sheet.fatributos1_3 = true;
+            		sheet.fatributos1_2 = true;
+            		sheet.fatributos1_1 = true;
+            	elseif sheet.fatributos1_4 == true then
+            		sheet.fatributos1_5 = false;
+            		sheet.fatributos1_3 = true;
+            		sheet.fatributos1_2 = true;
+            		sheet.fatributos1_1 = true;
+            	elseif sheet.fatributos1_3 == true then
+            		sheet.fatributos1_5 = false;
+            		sheet.fatributos1_4 = false;
+            		sheet.fatributos1_2 = true;
+            		sheet.fatributos1_1 = true;
+            	elseif sheet.fatributos1_2 == true then
+            		sheet.fatributos1_5 = false;
+            		sheet.fatributos1_4 = false;
+            		sheet.fatributos1_3 = false;
+            		sheet.fatributos1_1 = true;
+            	elseif sheet.fatributos1_1 == true then
+            		sheet.fatributos1_5 = false;
+            		sheet.fatributos1_4 = false;
+            		sheet.fatributos1_3 = false;
+            		sheet.fatributos1_2 = false;
             	end;
         end, obj);
 
-    obj._e_event1 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event1 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.cereb_10 == true then
-            		sheet.cereb_9 = true;
-            		sheet.cereb_8 = true;
-            		sheet.cereb_7 = true;
-            		sheet.cereb_6 = true;        
-            		sheet.cereb_5 = true;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_9 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_8 = true;
-            		sheet.cereb_7 = true;
-            		sheet.cereb_6 = true;        
-            		sheet.cereb_5 = true;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_8 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_7 = true;
-            		sheet.cereb_6 = true;        
-            		sheet.cereb_5 = true;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_7 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_6 = true;        
-            		sheet.cereb_5 = true;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_6 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_5 = true;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_5 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_6 = false;
-            		sheet.cereb_4 = true;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_4 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_6 = false;
-            		sheet.cereb_5 = false;
-            		sheet.cereb_3 = true;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_3 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_6 = false;
-            		sheet.cereb_5 = false;
-            		sheet.cereb_4 = false;
-            		sheet.cereb_2 = true;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_2 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_6 = false;
-            		sheet.cereb_5 = false;
-            		sheet.cereb_4 = false;
-            		sheet.cereb_3 = false;
-            		sheet.cereb_1 = true;
-            	elseif sheet.cereb_1 == true then
-            		sheet.cereb_10 = false;
-            		sheet.cereb_9 = false;
-            		sheet.cereb_8 = false;
-            		sheet.cereb_7 = false;        
-            		sheet.cereb_6 = false;
-            		sheet.cereb_5 = false;
-            		sheet.cereb_4 = false;
-            		sheet.cereb_3 = false;
-            		sheet.cereb_2 = false;
+            	if sheet.fatributos2_5 == true then
+            		sheet.fatributos2_4 = true;
+            		sheet.fatributos2_3 = true;
+            		sheet.fatributos2_2 = true;
+            		sheet.fatributos2_1 = true;
+            	elseif sheet.fatributos2_4 == true then
+            		sheet.fatributos2_5 = false;
+            		sheet.fatributos2_3 = true;
+            		sheet.fatributos2_2 = true;
+            		sheet.fatributos2_1 = true;
+            	elseif sheet.fatributos2_3 == true then
+            		sheet.fatributos2_5 = false;
+            		sheet.fatributos2_4 = false;
+            		sheet.fatributos2_2 = true;
+            		sheet.fatributos2_1 = true;
+            	elseif sheet.fatributos2_2 == true then
+            		sheet.fatributos2_5 = false;
+            		sheet.fatributos2_4 = false;
+            		sheet.fatributos2_3 = false;
+            		sheet.fatributos2_1 = true;
+            	elseif sheet.fatributos2_1 == true then
+            		sheet.fatributos2_5 = false;
+            		sheet.fatributos2_4 = false;
+            		sheet.fatributos2_3 = false;
+            		sheet.fatributos2_2 = false;
             	end;
         end, obj);
 
-    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event2 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.corac_10 == true then
-            		sheet.corac_9 = true;
-            		sheet.corac_8 = true;
-            		sheet.corac_7 = true;
-            		sheet.corac_6 = true;        
-            		sheet.corac_5 = true;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_9 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_8 = true;
-            		sheet.corac_7 = true;
-            		sheet.corac_6 = true;        
-            		sheet.corac_5 = true;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_8 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_7 = true;
-            		sheet.corac_6 = true;        
-            		sheet.corac_5 = true;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_7 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_6 = true;        
-            		sheet.corac_5 = true;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_6 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_5 = true;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_5 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_6 = false;
-            		sheet.corac_4 = true;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_4 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_6 = false;
-            		sheet.corac_5 = false;
-            		sheet.corac_3 = true;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_3 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_6 = false;
-            		sheet.corac_5 = false;
-            		sheet.corac_4 = false;
-            		sheet.corac_2 = true;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_2 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_6 = false;
-            		sheet.corac_5 = false;
-            		sheet.corac_4 = false;
-            		sheet.corac_3 = false;
-            		sheet.corac_1 = true;
-            	elseif sheet.corac_1 == true then
-            		sheet.corac_10 = false;
-            		sheet.corac_9 = false;
-            		sheet.corac_8 = false;
-            		sheet.corac_7 = false;        
-            		sheet.corac_6 = false;
-            		sheet.corac_5 = false;
-            		sheet.corac_4 = false;
-            		sheet.corac_3 = false;
-            		sheet.corac_2 = false;
+            	if sheet.fatributos3_5 == true then
+            		sheet.fatributos3_4 = true;
+            		sheet.fatributos3_3 = true;
+            		sheet.fatributos3_2 = true;
+            		sheet.fatributos3_1 = true;
+            	elseif sheet.fatributos3_4 == true then
+            		sheet.fatributos3_5 = false;
+            		sheet.fatributos3_3 = true;
+            		sheet.fatributos3_2 = true;
+            		sheet.fatributos3_1 = true;
+            	elseif sheet.fatributos3_3 == true then
+            		sheet.fatributos3_5 = false;
+            		sheet.fatributos3_4 = false;
+            		sheet.fatributos3_2 = true;
+            		sheet.fatributos3_1 = true;
+            	elseif sheet.fatributos3_2 == true then
+            		sheet.fatributos3_5 = false;
+            		sheet.fatributos3_4 = false;
+            		sheet.fatributos3_3 = false;
+            		sheet.fatributos3_1 = true;
+            	elseif sheet.fatributos3_1 == true then
+            		sheet.fatributos3_5 = false;
+            		sheet.fatributos3_4 = false;
+            		sheet.fatributos3_3 = false;
+            		sheet.fatributos3_2 = false;
             	end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event3 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades1_6 == true then
-            		sheet.mhabilidades1_5 = true;
-            		sheet.mhabilidades1_4 = true;
-            		sheet.mhabilidades1_3 = true;
-            		sheet.mhabilidades1_2 = true;
-            		sheet.mhabilidades1_1 = true;
-            	elseif sheet.mhabilidades1_5 == true then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_4 = true;
-            		sheet.mhabilidades1_3 = true;
-            		sheet.mhabilidades1_2 = true;
-            		sheet.mhabilidades1_1 = true;
-            	elseif sheet.mhabilidades1_4 == true then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_5 = false;
-            		sheet.mhabilidades1_3 = true;
-            		sheet.mhabilidades1_2 = true;
-            		sheet.mhabilidades1_1 = true;
-            	elseif sheet.mhabilidades1_3 == true then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_5 = false;
-            		sheet.mhabilidades1_4 = false;
-            		sheet.mhabilidades1_2 = true;
-            		sheet.mhabilidades1_1 = true;
-            	elseif sheet.mhabilidades1_2 == true then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_5 = false;
-            		sheet.mhabilidades1_4 = false;
-            		sheet.mhabilidades1_3 = false;
-            		sheet.mhabilidades1_1 = true;	
-            	elseif sheet.mhabilidades1_1 == true then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_5 = false;
-            		sheet.mhabilidades1_4 = false;
-            		sheet.mhabilidades1_3 = false;
-            		sheet.mhabilidades1_2 = false;
-            	elseif sheet.mhabilidades1_1 == false then
-            		sheet.mhabilidades1_6 = false;
-            		sheet.mhabilidades1_5 = false;
-            		sheet.mhabilidades1_4 = false;
-            		sheet.mhabilidades1_3 = false;
-            		sheet.mhabilidades1_2 = false;
+            	if sheet.satributos1_5 == true then
+            		sheet.satributos1_4 = true;
+            		sheet.satributos1_3 = true;
+            		sheet.satributos1_2 = true;
+            		sheet.satributos1_1 = true;
+            	elseif sheet.satributos1_4 == true then
+            		sheet.satributos1_5 = false;
+            		sheet.satributos1_3 = true;
+            		sheet.satributos1_2 = true;
+            		sheet.satributos1_1 = true;
+            	elseif sheet.satributos1_3 == true then
+            		sheet.satributos1_5 = false;
+            		sheet.satributos1_4 = false;
+            		sheet.satributos1_2 = true;
+            		sheet.satributos1_1 = true;
+            	elseif sheet.satributos1_2 == true then
+            		sheet.satributos1_5 = false;
+            		sheet.satributos1_4 = false;
+            		sheet.satributos1_3 = false;
+            		sheet.satributos1_1 = true;
+            	elseif sheet.satributos1_1 == true then
+            		sheet.satributos1_5 = false;
+            		sheet.satributos1_4 = false;
+            		sheet.satributos1_3 = false;
+            		sheet.satributos1_2 = false;
             	end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event4 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades2_6 == true then
-            		sheet.mhabilidades2_5 = true;
-            		sheet.mhabilidades2_4 = true;
-            		sheet.mhabilidades2_3 = true;
-            		sheet.mhabilidades2_2 = true;
-            		sheet.mhabilidades2_1 = true;
-            	elseif sheet.mhabilidades2_5 == true then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_4 = true;
-            		sheet.mhabilidades2_3 = true;
-            		sheet.mhabilidades2_2 = true;
-            		sheet.mhabilidades2_1 = true;
-            	elseif sheet.mhabilidades2_4 == true then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_5 = false;
-            		sheet.mhabilidades2_3 = true;
-            		sheet.mhabilidades2_2 = true;
-            		sheet.mhabilidades2_1 = true;
-            	elseif sheet.mhabilidades2_3 == true then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_5 = false;
-            		sheet.mhabilidades2_4 = false;
-            		sheet.mhabilidades2_2 = true;
-            		sheet.mhabilidades2_1 = true;
-            	elseif sheet.mhabilidades2_2 == true then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_5 = false;
-            		sheet.mhabilidades2_4 = false;
-            		sheet.mhabilidades2_3 = false;
-            		sheet.mhabilidades2_1 = true;	
-            	elseif sheet.mhabilidades2_1 == true then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_5 = false;
-            		sheet.mhabilidades2_4 = false;
-            		sheet.mhabilidades2_3 = false;
-            		sheet.mhabilidades2_2 = false;
-            	elseif sheet.mhabilidades2_1 == false then
-            		sheet.mhabilidades2_6 = false;
-            		sheet.mhabilidades2_5 = false;
-            		sheet.mhabilidades2_4 = false;
-            		sheet.mhabilidades2_3 = false;
-            		sheet.mhabilidades2_2 = false;
+            	if sheet.satributos2_5 == true then
+            		sheet.satributos2_4 = true;
+            		sheet.satributos2_3 = true;
+            		sheet.satributos2_2 = true;
+            		sheet.satributos2_1 = true;
+            	elseif sheet.satributos2_4 == true then
+            		sheet.satributos2_5 = false;
+            		sheet.satributos2_3 = true;
+            		sheet.satributos2_2 = true;
+            		sheet.satributos2_1 = true;
+            	elseif sheet.satributos2_3 == true then
+            		sheet.satributos2_5 = false;
+            		sheet.satributos2_4 = false;
+            		sheet.satributos2_2 = true;
+            		sheet.satributos2_1 = true;
+            	elseif sheet.satributos2_2 == true then
+            		sheet.satributos2_5 = false;
+            		sheet.satributos2_4 = false;
+            		sheet.satributos2_3 = false;
+            		sheet.satributos2_1 = true;
+            	elseif sheet.satributos2_1 == true then
+            		sheet.satributos2_5 = false;
+            		sheet.satributos2_4 = false;
+            		sheet.satributos2_3 = false;
+            		sheet.satributos2_2 = false;
             	end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event5 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades3_6 == true then
-            		sheet.mhabilidades3_5 = true;
-            		sheet.mhabilidades3_4 = true;
-            		sheet.mhabilidades3_3 = true;
-            		sheet.mhabilidades3_2 = true;
-            		sheet.mhabilidades3_1 = true;
-            	elseif sheet.mhabilidades3_5 == true then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_4 = true;
-            		sheet.mhabilidades3_3 = true;
-            		sheet.mhabilidades3_2 = true;
-            		sheet.mhabilidades3_1 = true;
-            	elseif sheet.mhabilidades3_4 == true then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_5 = false;
-            		sheet.mhabilidades3_3 = true;
-            		sheet.mhabilidades3_2 = true;
-            		sheet.mhabilidades3_1 = true;
-            	elseif sheet.mhabilidades3_3 == true then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_5 = false;
-            		sheet.mhabilidades3_4 = false;
-            		sheet.mhabilidades3_2 = true;
-            		sheet.mhabilidades3_1 = true;
-            	elseif sheet.mhabilidades3_2 == true then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_5 = false;
-            		sheet.mhabilidades3_4 = false;
-            		sheet.mhabilidades3_3 = false;
-            		sheet.mhabilidades3_1 = true;	
-            	elseif sheet.mhabilidades3_1 == true then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_5 = false;
-            		sheet.mhabilidades3_4 = false;
-            		sheet.mhabilidades3_3 = false;
-            		sheet.mhabilidades3_2 = false;
-            	elseif sheet.mhabilidades3_1 == false then
-            		sheet.mhabilidades3_6 = false;
-            		sheet.mhabilidades3_5 = false;
-            		sheet.mhabilidades3_4 = false;
-            		sheet.mhabilidades3_3 = false;
-            		sheet.mhabilidades3_2 = false;
+            	if sheet.satributos3_5 == true then
+            		sheet.satributos3_4 = true;
+            		sheet.satributos3_3 = true;
+            		sheet.satributos3_2 = true;
+            		sheet.satributos3_1 = true;
+            	elseif sheet.satributos3_4 == true then
+            		sheet.satributos3_5 = false;
+            		sheet.satributos3_3 = true;
+            		sheet.satributos3_2 = true;
+            		sheet.satributos3_1 = true;
+            	elseif sheet.satributos3_3 == true then
+            		sheet.satributos3_5 = false;
+            		sheet.satributos3_4 = false;
+            		sheet.satributos3_2 = true;
+            		sheet.satributos3_1 = true;
+            	elseif sheet.satributos3_2 == true then
+            		sheet.satributos3_5 = false;
+            		sheet.satributos3_4 = false;
+            		sheet.satributos3_3 = false;
+            		sheet.satributos3_1 = true;
+            	elseif sheet.satributos3_1 == true then
+            		sheet.satributos3_5 = false;
+            		sheet.satributos3_4 = false;
+            		sheet.satributos3_3 = false;
+            		sheet.satributos3_2 = false;
             	end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades4_6 == true then
-            		sheet.mhabilidades4_5 = true;
-            		sheet.mhabilidades4_4 = true;
-            		sheet.mhabilidades4_3 = true;
-            		sheet.mhabilidades4_2 = true;
-            		sheet.mhabilidades4_1 = true;
-            	elseif sheet.mhabilidades4_5 == true then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_4 = true;
-            		sheet.mhabilidades4_3 = true;
-            		sheet.mhabilidades4_2 = true;
-            		sheet.mhabilidades4_1 = true;
-            	elseif sheet.mhabilidades4_4 == true then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_5 = false;
-            		sheet.mhabilidades4_3 = true;
-            		sheet.mhabilidades4_2 = true;
-            		sheet.mhabilidades4_1 = true;
-            	elseif sheet.mhabilidades4_3 == true then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_5 = false;
-            		sheet.mhabilidades4_4 = false;
-            		sheet.mhabilidades4_2 = true;
-            		sheet.mhabilidades4_1 = true;
-            	elseif sheet.mhabilidades4_2 == true then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_5 = false;
-            		sheet.mhabilidades4_4 = false;
-            		sheet.mhabilidades4_3 = false;
-            		sheet.mhabilidades4_1 = true;	
-            	elseif sheet.mhabilidades4_1 == true then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_5 = false;
-            		sheet.mhabilidades4_4 = false;
-            		sheet.mhabilidades4_3 = false;
-            		sheet.mhabilidades4_2 = false;
-            	elseif sheet.mhabilidades4_1 == false then
-            		sheet.mhabilidades4_6 = false;
-            		sheet.mhabilidades4_5 = false;
-            		sheet.mhabilidades4_4 = false;
-            		sheet.mhabilidades4_3 = false;
-            		sheet.mhabilidades4_2 = false;
+            	if sheet.matributos1_5 == true then
+            		sheet.matributos1_4 = true;
+            		sheet.matributos1_3 = true;
+            		sheet.matributos1_2 = true;
+            		sheet.matributos1_1 = true;
+            	elseif sheet.matributos1_4 == true then
+            		sheet.matributos1_5 = false;
+            		sheet.matributos1_3 = true;
+            		sheet.matributos1_2 = true;
+            		sheet.matributos1_1 = true;
+            	elseif sheet.matributos1_3 == true then
+            		sheet.matributos1_5 = false;
+            		sheet.matributos1_4 = false;
+            		sheet.matributos1_2 = true;
+            		sheet.matributos1_1 = true;
+            	elseif sheet.matributos1_2 == true then
+            		sheet.matributos1_5 = false;
+            		sheet.matributos1_4 = false;
+            		sheet.matributos1_3 = false;
+            		sheet.matributos1_1 = true;
+            	elseif sheet.matributos1_1 == true then
+            		sheet.matributos1_5 = false;
+            		sheet.matributos1_4 = false;
+            		sheet.matributos1_3 = false;
+            		sheet.matributos1_2 = false;
             	end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades5_6 == true then
-            		sheet.mhabilidades5_5 = true;
-            		sheet.mhabilidades5_4 = true;
-            		sheet.mhabilidades5_3 = true;
-            		sheet.mhabilidades5_2 = true;
-            		sheet.mhabilidades5_1 = true;
-            	elseif sheet.mhabilidades5_5 == true then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_4 = true;
-            		sheet.mhabilidades5_3 = true;
-            		sheet.mhabilidades5_2 = true;
-            		sheet.mhabilidades5_1 = true;
-            	elseif sheet.mhabilidades5_4 == true then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_5 = false;
-            		sheet.mhabilidades5_3 = true;
-            		sheet.mhabilidades5_2 = true;
-            		sheet.mhabilidades5_1 = true;
-            	elseif sheet.mhabilidades5_3 == true then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_5 = false;
-            		sheet.mhabilidades5_4 = false;
-            		sheet.mhabilidades5_2 = true;
-            		sheet.mhabilidades5_1 = true;
-            	elseif sheet.mhabilidades5_2 == true then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_5 = false;
-            		sheet.mhabilidades5_4 = false;
-            		sheet.mhabilidades5_3 = false;
-            		sheet.mhabilidades5_1 = true;	
-            	elseif sheet.mhabilidades5_1 == true then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_5 = false;
-            		sheet.mhabilidades5_4 = false;
-            		sheet.mhabilidades5_3 = false;
-            		sheet.mhabilidades5_2 = false;
-            	elseif sheet.mhabilidades5_1 == false then
-            		sheet.mhabilidades5_6 = false;
-            		sheet.mhabilidades5_5 = false;
-            		sheet.mhabilidades5_4 = false;
-            		sheet.mhabilidades5_3 = false;
-            		sheet.mhabilidades5_2 = false;
+            	if sheet.matributos2_5 == true then
+            		sheet.matributos2_4 = true;
+            		sheet.matributos2_3 = true;
+            		sheet.matributos2_2 = true;
+            		sheet.matributos2_1 = true;
+            	elseif sheet.matributos2_4 == true then
+            		sheet.matributos2_5 = false;
+            		sheet.matributos2_3 = true;
+            		sheet.matributos2_2 = true;
+            		sheet.matributos2_1 = true;
+            	elseif sheet.matributos2_3 == true then
+            		sheet.matributos2_5 = false;
+            		sheet.matributos2_4 = false;
+            		sheet.matributos2_2 = true;
+            		sheet.matributos2_1 = true;
+            	elseif sheet.matributos2_2 == true then
+            		sheet.matributos2_5 = false;
+            		sheet.matributos2_4 = false;
+            		sheet.matributos2_3 = false;
+            		sheet.matributos2_1 = true;
+            	elseif sheet.matributos2_1 == true then
+            		sheet.matributos2_5 = false;
+            		sheet.matributos2_4 = false;
+            		sheet.matributos2_3 = false;
+            		sheet.matributos2_2 = false;
             	end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades6_6 == true then
-            		sheet.mhabilidades6_5 = true;
-            		sheet.mhabilidades6_4 = true;
-            		sheet.mhabilidades6_3 = true;
-            		sheet.mhabilidades6_2 = true;
-            		sheet.mhabilidades6_1 = true;
-            	elseif sheet.mhabilidades6_5 == true then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_4 = true;
-            		sheet.mhabilidades6_3 = true;
-            		sheet.mhabilidades6_2 = true;
-            		sheet.mhabilidades6_1 = true;
-            	elseif sheet.mhabilidades6_4 == true then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_5 = false;
-            		sheet.mhabilidades6_3 = true;
-            		sheet.mhabilidades6_2 = true;
-            		sheet.mhabilidades6_1 = true;
-            	elseif sheet.mhabilidades6_3 == true then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_5 = false;
-            		sheet.mhabilidades6_4 = false;
-            		sheet.mhabilidades6_2 = true;
-            		sheet.mhabilidades6_1 = true;
-            	elseif sheet.mhabilidades6_2 == true then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_5 = false;
-            		sheet.mhabilidades6_4 = false;
-            		sheet.mhabilidades6_3 = false;
-            		sheet.mhabilidades6_1 = true;	
-            	elseif sheet.mhabilidades6_1 == true then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_5 = false;
-            		sheet.mhabilidades6_4 = false;
-            		sheet.mhabilidades6_3 = false;
-            		sheet.mhabilidades6_2 = false;
-            	elseif sheet.mhabilidades6_1 == false then
-            		sheet.mhabilidades6_6 = false;
-            		sheet.mhabilidades6_5 = false;
-            		sheet.mhabilidades6_4 = false;
-            		sheet.mhabilidades6_3 = false;
-            		sheet.mhabilidades6_2 = false;
+            	if sheet.matributos3_5 == true then
+            		sheet.matributos3_4 = true;
+            		sheet.matributos3_3 = true;
+            		sheet.matributos3_2 = true;
+            		sheet.matributos3_1 = true;
+            	elseif sheet.matributos3_4 == true then
+            		sheet.matributos3_5 = false;
+            		sheet.matributos3_3 = true;
+            		sheet.matributos3_2 = true;
+            		sheet.matributos3_1 = true;
+            	elseif sheet.matributos3_3 == true then
+            		sheet.matributos3_5 = false;
+            		sheet.matributos3_4 = false;
+            		sheet.matributos3_2 = true;
+            		sheet.matributos3_1 = true;
+            	elseif sheet.matributos3_2 == true then
+            		sheet.matributos3_5 = false;
+            		sheet.matributos3_4 = false;
+            		sheet.matributos3_3 = false;
+            		sheet.matributos3_1 = true;
+            	elseif sheet.matributos3_1 == true then
+            		sheet.matributos3_5 = false;
+            		sheet.matributos3_4 = false;
+            		sheet.matributos3_3 = false;
+            		sheet.matributos3_2 = false;
             	end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades7_6 == true then
-            		sheet.mhabilidades7_5 = true;
-            		sheet.mhabilidades7_4 = true;
-            		sheet.mhabilidades7_3 = true;
-            		sheet.mhabilidades7_2 = true;
-            		sheet.mhabilidades7_1 = true;
-            	elseif sheet.mhabilidades7_5 == true then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_4 = true;
-            		sheet.mhabilidades7_3 = true;
-            		sheet.mhabilidades7_2 = true;
-            		sheet.mhabilidades7_1 = true;
-            	elseif sheet.mhabilidades7_4 == true then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_5 = false;
-            		sheet.mhabilidades7_3 = true;
-            		sheet.mhabilidades7_2 = true;
-            		sheet.mhabilidades7_1 = true;
-            	elseif sheet.mhabilidades7_3 == true then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_5 = false;
-            		sheet.mhabilidades7_4 = false;
-            		sheet.mhabilidades7_2 = true;
-            		sheet.mhabilidades7_1 = true;
-            	elseif sheet.mhabilidades7_2 == true then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_5 = false;
-            		sheet.mhabilidades7_4 = false;
-            		sheet.mhabilidades7_3 = false;
-            		sheet.mhabilidades7_1 = true;	
-            	elseif sheet.mhabilidades7_1 == true then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_5 = false;
-            		sheet.mhabilidades7_4 = false;
-            		sheet.mhabilidades7_3 = false;
-            		sheet.mhabilidades7_2 = false;
-            	elseif sheet.mhabilidades7_1 == false then
-            		sheet.mhabilidades7_6 = false;
-            		sheet.mhabilidades7_5 = false;
-            		sheet.mhabilidades7_4 = false;
-            		sheet.mhabilidades7_3 = false;
-            		sheet.mhabilidades7_2 = false;
+            	if sheet.thabilidades1_5 == true then
+            		sheet.thabilidades1_4 = true;
+            		sheet.thabilidades1_3 = true;
+            		sheet.thabilidades1_2 = true;
+            		sheet.thabilidades1_1 = true;
+            	elseif sheet.thabilidades1_4 == true then
+            		sheet.thabilidades1_5 = false;
+            		sheet.thabilidades1_3 = true;
+            		sheet.thabilidades1_2 = true;
+            		sheet.thabilidades1_1 = true;
+            	elseif sheet.thabilidades1_3 == true then
+            		sheet.thabilidades1_5 = false;
+            		sheet.thabilidades1_4 = false;
+            		sheet.thabilidades1_2 = true;
+            		sheet.thabilidades1_1 = true;
+            	elseif sheet.thabilidades1_2 == true then
+            		sheet.thabilidades1_5 = false;
+            		sheet.thabilidades1_4 = false;
+            		sheet.thabilidades1_3 = false;
+            		sheet.thabilidades1_1 = true;
+            	elseif sheet.thabilidades1_1 == true then
+            		sheet.thabilidades1_5 = false;
+            		sheet.thabilidades1_4 = false;
+            		sheet.thabilidades1_3 = false;
+            		sheet.thabilidades1_2 = false;
             	end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades8_6 == true then
-            		sheet.mhabilidades8_5 = true;
-            		sheet.mhabilidades8_4 = true;
-            		sheet.mhabilidades8_3 = true;
-            		sheet.mhabilidades8_2 = true;
-            		sheet.mhabilidades8_1 = true;
-            	elseif sheet.mhabilidades8_5 == true then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_4 = true;
-            		sheet.mhabilidades8_3 = true;
-            		sheet.mhabilidades8_2 = true;
-            		sheet.mhabilidades8_1 = true;
-            	elseif sheet.mhabilidades8_4 == true then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_5 = false;
-            		sheet.mhabilidades8_3 = true;
-            		sheet.mhabilidades8_2 = true;
-            		sheet.mhabilidades8_1 = true;
-            	elseif sheet.mhabilidades8_3 == true then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_5 = false;
-            		sheet.mhabilidades8_4 = false;
-            		sheet.mhabilidades8_2 = true;
-            		sheet.mhabilidades8_1 = true;
-            	elseif sheet.mhabilidades8_2 == true then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_5 = false;
-            		sheet.mhabilidades8_4 = false;
-            		sheet.mhabilidades8_3 = false;
-            		sheet.mhabilidades8_1 = true;	
-            	elseif sheet.mhabilidades8_1 == true then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_5 = false;
-            		sheet.mhabilidades8_4 = false;
-            		sheet.mhabilidades8_3 = false;
-            		sheet.mhabilidades8_2 = false;
-            	elseif sheet.mhabilidades8_1 == false then
-            		sheet.mhabilidades8_6 = false;
-            		sheet.mhabilidades8_5 = false;
-            		sheet.mhabilidades8_4 = false;
-            		sheet.mhabilidades8_3 = false;
-            		sheet.mhabilidades8_2 = false;
+            	if sheet.thabilidades2_5 == true then
+            		sheet.thabilidades2_4 = true;
+            		sheet.thabilidades2_3 = true;
+            		sheet.thabilidades2_2 = true;
+            		sheet.thabilidades2_1 = true;
+            	elseif sheet.thabilidades2_4 == true then
+            		sheet.thabilidades2_5 = false;
+            		sheet.thabilidades2_3 = true;
+            		sheet.thabilidades2_2 = true;
+            		sheet.thabilidades2_1 = true;
+            	elseif sheet.thabilidades2_3 == true then
+            		sheet.thabilidades2_5 = false;
+            		sheet.thabilidades2_4 = false;
+            		sheet.thabilidades2_2 = true;
+            		sheet.thabilidades2_1 = true;
+            	elseif sheet.thabilidades2_2 == true then
+            		sheet.thabilidades2_5 = false;
+            		sheet.thabilidades2_4 = false;
+            		sheet.thabilidades2_3 = false;
+            		sheet.thabilidades2_1 = true;
+            	elseif sheet.thabilidades2_1 == true then
+            		sheet.thabilidades2_5 = false;
+            		sheet.thabilidades2_4 = false;
+            		sheet.thabilidades2_3 = false;
+            		sheet.thabilidades2_2 = false;
             	end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades1_h6 == true then
-            		sheet.mhabilidades1_h5 = true;
-            		sheet.mhabilidades1_h4 = true;
-            		sheet.mhabilidades1_h3 = true;
-            		sheet.mhabilidades1_h2 = true;
-            		sheet.mhabilidades1_h1 = true;
-            	elseif sheet.mhabilidades1_h5 == true then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h4 = true;
-            		sheet.mhabilidades1_h3 = true;
-            		sheet.mhabilidades1_h2 = true;
-            		sheet.mhabilidades1_h1 = true;
-            	elseif sheet.mhabilidades1_h4 == true then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h5 = false;
-            		sheet.mhabilidades1_h3 = true;
-            		sheet.mhabilidades1_h2 = true;
-            		sheet.mhabilidades1_h1 = true;
-            	elseif sheet.mhabilidades1_h3 == true then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h5 = false;
-            		sheet.mhabilidades1_h4 = false;
-            		sheet.mhabilidades1_h2 = true;
-            		sheet.mhabilidades1_h1 = true;
-            	elseif sheet.mhabilidades1_h2 == true then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h5 = false;
-            		sheet.mhabilidades1_h4 = false;
-            		sheet.mhabilidades1_h3 = false;
-            		sheet.mhabilidades1_h1 = true;	
-            	elseif sheet.mhabilidades1_h1 == true then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h5 = false;
-            		sheet.mhabilidades1_h4 = false;
-            		sheet.mhabilidades1_h3 = false;
-            		sheet.mhabilidades1_h2 = false;
-            	elseif sheet.mhabilidades1_h1 == false then
-            		sheet.mhabilidades1_h6 = false;
-            		sheet.mhabilidades1_h5 = false;
-            		sheet.mhabilidades1_h4 = false;
-            		sheet.mhabilidades1_h3 = false;
-            		sheet.mhabilidades1_h2 = false;
+            	if sheet.thabilidades3_5 == true then
+            		sheet.thabilidades3_4 = true;
+            		sheet.thabilidades3_3 = true;
+            		sheet.thabilidades3_2 = true;
+            		sheet.thabilidades3_1 = true;
+            	elseif sheet.thabilidades3_4 == true then
+            		sheet.thabilidades3_5 = false;
+            		sheet.thabilidades3_3 = true;
+            		sheet.thabilidades3_2 = true;
+            		sheet.thabilidades3_1 = true;
+            	elseif sheet.thabilidades3_3 == true then
+            		sheet.thabilidades3_5 = false;
+            		sheet.thabilidades3_4 = false;
+            		sheet.thabilidades3_2 = true;
+            		sheet.thabilidades3_1 = true;
+            	elseif sheet.thabilidades3_2 == true then
+            		sheet.thabilidades3_5 = false;
+            		sheet.thabilidades3_4 = false;
+            		sheet.thabilidades3_3 = false;
+            		sheet.thabilidades3_1 = true;
+            	elseif sheet.thabilidades3_1 == true then
+            		sheet.thabilidades3_5 = false;
+            		sheet.thabilidades3_4 = false;
+            		sheet.thabilidades3_3 = false;
+            		sheet.thabilidades3_2 = false;
             	end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades2_h6 == true then
-            		sheet.mhabilidades2_h5 = true;
-            		sheet.mhabilidades2_h4 = true;
-            		sheet.mhabilidades2_h3 = true;
-            		sheet.mhabilidades2_h2 = true;
-            		sheet.mhabilidades2_h1 = true;
-            	elseif sheet.mhabilidades2_h5 == true then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h4 = true;
-            		sheet.mhabilidades2_h3 = true;
-            		sheet.mhabilidades2_h2 = true;
-            		sheet.mhabilidades2_h1 = true;
-            	elseif sheet.mhabilidades2_h4 == true then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h5 = false;
-            		sheet.mhabilidades2_h3 = true;
-            		sheet.mhabilidades2_h2 = true;
-            		sheet.mhabilidades2_h1 = true;
-            	elseif sheet.mhabilidades2_h3 == true then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h5 = false;
-            		sheet.mhabilidades2_h4 = false;
-            		sheet.mhabilidades2_h2 = true;
-            		sheet.mhabilidades2_h1 = true;
-            	elseif sheet.mhabilidades2_h2 == true then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h5 = false;
-            		sheet.mhabilidades2_h4 = false;
-            		sheet.mhabilidades2_h3 = false;
-            		sheet.mhabilidades2_h1 = true;	
-            	elseif sheet.mhabilidades2_h1 == true then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h5 = false;
-            		sheet.mhabilidades2_h4 = false;
-            		sheet.mhabilidades2_h3 = false;
-            		sheet.mhabilidades2_h2 = false;
-            	elseif sheet.mhabilidades2_h1 == false then
-            		sheet.mhabilidades2_h6 = false;
-            		sheet.mhabilidades2_h5 = false;
-            		sheet.mhabilidades2_h4 = false;
-            		sheet.mhabilidades2_h3 = false;
-            		sheet.mhabilidades2_h2 = false;
+            	if sheet.thabilidades4_5 == true then
+            		sheet.thabilidades4_4 = true;
+            		sheet.thabilidades4_3 = true;
+            		sheet.thabilidades4_2 = true;
+            		sheet.thabilidades4_1 = true;
+            	elseif sheet.thabilidades4_4 == true then
+            		sheet.thabilidades4_5 = false;
+            		sheet.thabilidades4_3 = true;
+            		sheet.thabilidades4_2 = true;
+            		sheet.thabilidades4_1 = true;
+            	elseif sheet.thabilidades4_3 == true then
+            		sheet.thabilidades4_5 = false;
+            		sheet.thabilidades4_4 = false;
+            		sheet.thabilidades4_2 = true;
+            		sheet.thabilidades4_1 = true;
+            	elseif sheet.thabilidades4_2 == true then
+            		sheet.thabilidades4_5 = false;
+            		sheet.thabilidades4_4 = false;
+            		sheet.thabilidades4_3 = false;
+            		sheet.thabilidades4_1 = true;
+            	elseif sheet.thabilidades4_1 == true then
+            		sheet.thabilidades4_5 = false;
+            		sheet.thabilidades4_4 = false;
+            		sheet.thabilidades4_3 = false;
+            		sheet.thabilidades4_2 = false;
             	end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades3_h6 == true then
-            		sheet.mhabilidades3_h5 = true;
-            		sheet.mhabilidades3_h4 = true;
-            		sheet.mhabilidades3_h3 = true;
-            		sheet.mhabilidades3_h2 = true;
-            		sheet.mhabilidades3_h1 = true;
-            	elseif sheet.mhabilidades3_h5 == true then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h4 = true;
-            		sheet.mhabilidades3_h3 = true;
-            		sheet.mhabilidades3_h2 = true;
-            		sheet.mhabilidades3_h1 = true;
-            	elseif sheet.mhabilidades3_h4 == true then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h5 = false;
-            		sheet.mhabilidades3_h3 = true;
-            		sheet.mhabilidades3_h2 = true;
-            		sheet.mhabilidades3_h1 = true;
-            	elseif sheet.mhabilidades3_h3 == true then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h5 = false;
-            		sheet.mhabilidades3_h4 = false;
-            		sheet.mhabilidades3_h2 = true;
-            		sheet.mhabilidades3_h1 = true;
-            	elseif sheet.mhabilidades3_h2 == true then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h5 = false;
-            		sheet.mhabilidades3_h4 = false;
-            		sheet.mhabilidades3_h3 = false;
-            		sheet.mhabilidades3_h1 = true;	
-            	elseif sheet.mhabilidades3_h1 == true then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h5 = false;
-            		sheet.mhabilidades3_h4 = false;
-            		sheet.mhabilidades3_h3 = false;
-            		sheet.mhabilidades3_h2 = false;
-            	elseif sheet.mhabilidades3_h1 == false then
-            		sheet.mhabilidades3_h6 = false;
-            		sheet.mhabilidades3_h5 = false;
-            		sheet.mhabilidades3_h4 = false;
-            		sheet.mhabilidades3_h3 = false;
-            		sheet.mhabilidades3_h2 = false;
+            	if sheet.thabilidades5_5 == true then
+            		sheet.thabilidades5_4 = true;
+            		sheet.thabilidades5_3 = true;
+            		sheet.thabilidades5_2 = true;
+            		sheet.thabilidades5_1 = true;
+            	elseif sheet.thabilidades5_4 == true then
+            		sheet.thabilidades5_5 = false;
+            		sheet.thabilidades5_3 = true;
+            		sheet.thabilidades5_2 = true;
+            		sheet.thabilidades5_1 = true;
+            	elseif sheet.thabilidades5_3 == true then
+            		sheet.thabilidades5_5 = false;
+            		sheet.thabilidades5_4 = false;
+            		sheet.thabilidades5_2 = true;
+            		sheet.thabilidades5_1 = true;
+            	elseif sheet.thabilidades5_2 == true then
+            		sheet.thabilidades5_5 = false;
+            		sheet.thabilidades5_4 = false;
+            		sheet.thabilidades5_3 = false;
+            		sheet.thabilidades5_1 = true;
+            	elseif sheet.thabilidades5_1 == true then
+            		sheet.thabilidades5_5 = false;
+            		sheet.thabilidades5_4 = false;
+            		sheet.thabilidades5_3 = false;
+            		sheet.thabilidades5_2 = false;
             	end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades4_h6 == true then
-            		sheet.mhabilidades4_h5 = true;
-            		sheet.mhabilidades4_h4 = true;
-            		sheet.mhabilidades4_h3 = true;
-            		sheet.mhabilidades4_h2 = true;
-            		sheet.mhabilidades4_h1 = true;
-            	elseif sheet.mhabilidades4_h5 == true then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h4 = true;
-            		sheet.mhabilidades4_h3 = true;
-            		sheet.mhabilidades4_h2 = true;
-            		sheet.mhabilidades4_h1 = true;
-            	elseif sheet.mhabilidades4_h4 == true then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h5 = false;
-            		sheet.mhabilidades4_h3 = true;
-            		sheet.mhabilidades4_h2 = true;
-            		sheet.mhabilidades4_h1 = true;
-            	elseif sheet.mhabilidades4_h3 == true then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h5 = false;
-            		sheet.mhabilidades4_h4 = false;
-            		sheet.mhabilidades4_h2 = true;
-            		sheet.mhabilidades4_h1 = true;
-            	elseif sheet.mhabilidades4_h2 == true then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h5 = false;
-            		sheet.mhabilidades4_h4 = false;
-            		sheet.mhabilidades4_h3 = false;
-            		sheet.mhabilidades4_h1 = true;	
-            	elseif sheet.mhabilidades4_h1 == true then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h5 = false;
-            		sheet.mhabilidades4_h4 = false;
-            		sheet.mhabilidades4_h3 = false;
-            		sheet.mhabilidades4_h2 = false;
-            	elseif sheet.mhabilidades4_h1 == false then
-            		sheet.mhabilidades4_h6 = false;
-            		sheet.mhabilidades4_h5 = false;
-            		sheet.mhabilidades4_h4 = false;
-            		sheet.mhabilidades4_h3 = false;
-            		sheet.mhabilidades4_h2 = false;
+            	if sheet.thabilidades6_5 == true then
+            		sheet.thabilidades6_4 = true;
+            		sheet.thabilidades6_3 = true;
+            		sheet.thabilidades6_2 = true;
+            		sheet.thabilidades6_1 = true;
+            	elseif sheet.thabilidades6_4 == true then
+            		sheet.thabilidades6_5 = false;
+            		sheet.thabilidades6_3 = true;
+            		sheet.thabilidades6_2 = true;
+            		sheet.thabilidades6_1 = true;
+            	elseif sheet.thabilidades6_3 == true then
+            		sheet.thabilidades6_5 = false;
+            		sheet.thabilidades6_4 = false;
+            		sheet.thabilidades6_2 = true;
+            		sheet.thabilidades6_1 = true;
+            	elseif sheet.thabilidades6_2 == true then
+            		sheet.thabilidades6_5 = false;
+            		sheet.thabilidades6_4 = false;
+            		sheet.thabilidades6_3 = false;
+            		sheet.thabilidades6_1 = true;
+            	elseif sheet.thabilidades6_1 == true then
+            		sheet.thabilidades6_5 = false;
+            		sheet.thabilidades6_4 = false;
+            		sheet.thabilidades6_3 = false;
+            		sheet.thabilidades6_2 = false;
             	end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades5_h6 == true then
-            		sheet.mhabilidades5_h5 = true;
-            		sheet.mhabilidades5_h4 = true;
-            		sheet.mhabilidades5_h3 = true;
-            		sheet.mhabilidades5_h2 = true;
-            		sheet.mhabilidades5_h1 = true;
-            	elseif sheet.mhabilidades5_h5 == true then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h4 = true;
-            		sheet.mhabilidades5_h3 = true;
-            		sheet.mhabilidades5_h2 = true;
-            		sheet.mhabilidades5_h1 = true;
-            	elseif sheet.mhabilidades5_h4 == true then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h5 = false;
-            		sheet.mhabilidades5_h3 = true;
-            		sheet.mhabilidades5_h2 = true;
-            		sheet.mhabilidades5_h1 = true;
-            	elseif sheet.mhabilidades5_h3 == true then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h5 = false;
-            		sheet.mhabilidades5_h4 = false;
-            		sheet.mhabilidades5_h2 = true;
-            		sheet.mhabilidades5_h1 = true;
-            	elseif sheet.mhabilidades5_h2 == true then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h5 = false;
-            		sheet.mhabilidades5_h4 = false;
-            		sheet.mhabilidades5_h3 = false;
-            		sheet.mhabilidades5_h1 = true;	
-            	elseif sheet.mhabilidades5_h1 == true then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h5 = false;
-            		sheet.mhabilidades5_h4 = false;
-            		sheet.mhabilidades5_h3 = false;
-            		sheet.mhabilidades5_h2 = false;
-            	elseif sheet.mhabilidades5_h1 == false then
-            		sheet.mhabilidades5_h6 = false;
-            		sheet.mhabilidades5_h5 = false;
-            		sheet.mhabilidades5_h4 = false;
-            		sheet.mhabilidades5_h3 = false;
-            		sheet.mhabilidades5_h2 = false;
+            	if sheet.thabilidades7_5 == true then
+            		sheet.thabilidades7_4 = true;
+            		sheet.thabilidades7_3 = true;
+            		sheet.thabilidades7_2 = true;
+            		sheet.thabilidades7_1 = true;
+            	elseif sheet.thabilidades7_4 == true then
+            		sheet.thabilidades7_5 = false;
+            		sheet.thabilidades7_3 = true;
+            		sheet.thabilidades7_2 = true;
+            		sheet.thabilidades7_1 = true;
+            	elseif sheet.thabilidades7_3 == true then
+            		sheet.thabilidades7_5 = false;
+            		sheet.thabilidades7_4 = false;
+            		sheet.thabilidades7_2 = true;
+            		sheet.thabilidades7_1 = true;
+            	elseif sheet.thabilidades7_2 == true then
+            		sheet.thabilidades7_5 = false;
+            		sheet.thabilidades7_4 = false;
+            		sheet.thabilidades7_3 = false;
+            		sheet.thabilidades7_1 = true;
+            	elseif sheet.thabilidades7_1 == true then
+            		sheet.thabilidades7_5 = false;
+            		sheet.thabilidades7_4 = false;
+            		sheet.thabilidades7_3 = false;
+            		sheet.thabilidades7_2 = false;
             	end;
         end, obj);
 
-    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event16 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades6_h6 == true then
-            		sheet.mhabilidades6_h5 = true;
-            		sheet.mhabilidades6_h4 = true;
-            		sheet.mhabilidades6_h3 = true;
-            		sheet.mhabilidades6_h2 = true;
-            		sheet.mhabilidades6_h1 = true;
-            	elseif sheet.mhabilidades6_h5 == true then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h4 = true;
-            		sheet.mhabilidades6_h3 = true;
-            		sheet.mhabilidades6_h2 = true;
-            		sheet.mhabilidades6_h1 = true;
-            	elseif sheet.mhabilidades6_h4 == true then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h5 = false;
-            		sheet.mhabilidades6_h3 = true;
-            		sheet.mhabilidades6_h2 = true;
-            		sheet.mhabilidades6_h1 = true;
-            	elseif sheet.mhabilidades6_h3 == true then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h5 = false;
-            		sheet.mhabilidades6_h4 = false;
-            		sheet.mhabilidades6_h2 = true;
-            		sheet.mhabilidades6_h1 = true;
-            	elseif sheet.mhabilidades6_h2 == true then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h5 = false;
-            		sheet.mhabilidades6_h4 = false;
-            		sheet.mhabilidades6_h3 = false;
-            		sheet.mhabilidades6_h1 = true;	
-            	elseif sheet.mhabilidades6_h1 == true then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h5 = false;
-            		sheet.mhabilidades6_h4 = false;
-            		sheet.mhabilidades6_h3 = false;
-            		sheet.mhabilidades6_h2 = false;
-            	elseif sheet.mhabilidades6_h1 == false then
-            		sheet.mhabilidades6_h6 = false;
-            		sheet.mhabilidades6_h5 = false;
-            		sheet.mhabilidades6_h4 = false;
-            		sheet.mhabilidades6_h3 = false;
-            		sheet.mhabilidades6_h2 = false;
+            	if sheet.thabilidades8_5 == true then
+            		sheet.thabilidades8_4 = true;
+            		sheet.thabilidades8_3 = true;
+            		sheet.thabilidades8_2 = true;
+            		sheet.thabilidades8_1 = true;
+            	elseif sheet.thabilidades8_4 == true then
+            		sheet.thabilidades8_5 = false;
+            		sheet.thabilidades8_3 = true;
+            		sheet.thabilidades8_2 = true;
+            		sheet.thabilidades8_1 = true;
+            	elseif sheet.thabilidades8_3 == true then
+            		sheet.thabilidades8_5 = false;
+            		sheet.thabilidades8_4 = false;
+            		sheet.thabilidades8_2 = true;
+            		sheet.thabilidades8_1 = true;
+            	elseif sheet.thabilidades8_2 == true then
+            		sheet.thabilidades8_5 = false;
+            		sheet.thabilidades8_4 = false;
+            		sheet.thabilidades8_3 = false;
+            		sheet.thabilidades8_1 = true;
+            	elseif sheet.thabilidades8_1 == true then
+            		sheet.thabilidades8_5 = false;
+            		sheet.thabilidades8_4 = false;
+            		sheet.thabilidades8_3 = false;
+            		sheet.thabilidades8_2 = false;
             	end;
         end, obj);
 
-    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event17 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades7_h6 == true then
-            		sheet.mhabilidades7_h5 = true;
-            		sheet.mhabilidades7_h4 = true;
-            		sheet.mhabilidades7_h3 = true;
-            		sheet.mhabilidades7_h2 = true;
-            		sheet.mhabilidades7_h1 = true;
-            	elseif sheet.mhabilidades7_h5 == true then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h4 = true;
-            		sheet.mhabilidades7_h3 = true;
-            		sheet.mhabilidades7_h2 = true;
-            		sheet.mhabilidades7_h1 = true;
-            	elseif sheet.mhabilidades7_h4 == true then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h5 = false;
-            		sheet.mhabilidades7_h3 = true;
-            		sheet.mhabilidades7_h2 = true;
-            		sheet.mhabilidades7_h1 = true;
-            	elseif sheet.mhabilidades7_h3 == true then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h5 = false;
-            		sheet.mhabilidades7_h4 = false;
-            		sheet.mhabilidades7_h2 = true;
-            		sheet.mhabilidades7_h1 = true;
-            	elseif sheet.mhabilidades7_h2 == true then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h5 = false;
-            		sheet.mhabilidades7_h4 = false;
-            		sheet.mhabilidades7_h3 = false;
-            		sheet.mhabilidades7_h1 = true;	
-            	elseif sheet.mhabilidades7_h1 == true then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h5 = false;
-            		sheet.mhabilidades7_h4 = false;
-            		sheet.mhabilidades7_h3 = false;
-            		sheet.mhabilidades7_h2 = false;
-            	elseif sheet.mhabilidades7_h1 == false then
-            		sheet.mhabilidades7_h6 = false;
-            		sheet.mhabilidades7_h5 = false;
-            		sheet.mhabilidades7_h4 = false;
-            		sheet.mhabilidades7_h3 = false;
-            		sheet.mhabilidades7_h2 = false;
+            	if sheet.thabilidades9_5 == true then
+            		sheet.thabilidades9_4 = true;
+            		sheet.thabilidades9_3 = true;
+            		sheet.thabilidades9_2 = true;
+            		sheet.thabilidades9_1 = true;
+            	elseif sheet.thabilidades9_4 == true then
+            		sheet.thabilidades9_5 = false;
+            		sheet.thabilidades9_3 = true;
+            		sheet.thabilidades9_2 = true;
+            		sheet.thabilidades9_1 = true;
+            	elseif sheet.thabilidades9_3 == true then
+            		sheet.thabilidades9_5 = false;
+            		sheet.thabilidades9_4 = false;
+            		sheet.thabilidades9_2 = true;
+            		sheet.thabilidades9_1 = true;
+            	elseif sheet.thabilidades9_2 == true then
+            		sheet.thabilidades9_5 = false;
+            		sheet.thabilidades9_4 = false;
+            		sheet.thabilidades9_3 = false;
+            		sheet.thabilidades9_1 = true;
+            	elseif sheet.thabilidades9_1 == true then
+            		sheet.thabilidades9_5 = false;
+            		sheet.thabilidades9_4 = false;
+            		sheet.thabilidades9_3 = false;
+            		sheet.thabilidades9_2 = false;
             	end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.mhabilidades8_h6 == true then
-            		sheet.mhabilidades8_h5 = true;
-            		sheet.mhabilidades8_h4 = true;
-            		sheet.mhabilidades8_h3 = true;
-            		sheet.mhabilidades8_h2 = true;
-            		sheet.mhabilidades8_h1 = true;
-            	elseif sheet.mhabilidades8_h5 == true then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h4 = true;
-            		sheet.mhabilidades8_h3 = true;
-            		sheet.mhabilidades8_h2 = true;
-            		sheet.mhabilidades8_h1 = true;
-            	elseif sheet.mhabilidades8_h4 == true then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h5 = false;
-            		sheet.mhabilidades8_h3 = true;
-            		sheet.mhabilidades8_h2 = true;
-            		sheet.mhabilidades8_h1 = true;
-            	elseif sheet.mhabilidades8_h3 == true then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h5 = false;
-            		sheet.mhabilidades8_h4 = false;
-            		sheet.mhabilidades8_h2 = true;
-            		sheet.mhabilidades8_h1 = true;
-            	elseif sheet.mhabilidades8_h2 == true then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h5 = false;
-            		sheet.mhabilidades8_h4 = false;
-            		sheet.mhabilidades8_h3 = false;
-            		sheet.mhabilidades8_h1 = true;	
-            	elseif sheet.mhabilidades8_h1 == true then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h5 = false;
-            		sheet.mhabilidades8_h4 = false;
-            		sheet.mhabilidades8_h3 = false;
-            		sheet.mhabilidades8_h2 = false;
-            	elseif sheet.mhabilidades8_h1 == false then
-            		sheet.mhabilidades8_h6 = false;
-            		sheet.mhabilidades8_h5 = false;
-            		sheet.mhabilidades8_h4 = false;
-            		sheet.mhabilidades8_h3 = false;
-            		sheet.mhabilidades8_h2 = false;
+            	if sheet.thabilidades10_5 == true then
+            		sheet.thabilidades10_4 = true;
+            		sheet.thabilidades10_3 = true;
+            		sheet.thabilidades10_2 = true;
+            		sheet.thabilidades10_1 = true;
+            	elseif sheet.thabilidades10_4 == true then
+            		sheet.thabilidades10_5 = false;
+            		sheet.thabilidades10_3 = true;
+            		sheet.thabilidades10_2 = true;
+            		sheet.thabilidades10_1 = true;
+            	elseif sheet.thabilidades10_3 == true then
+            		sheet.thabilidades10_5 = false;
+            		sheet.thabilidades10_4 = false;
+            		sheet.thabilidades10_2 = true;
+            		sheet.thabilidades10_1 = true;
+            	elseif sheet.thabilidades10_2 == true then
+            		sheet.thabilidades10_5 = false;
+            		sheet.thabilidades10_4 = false;
+            		sheet.thabilidades10_3 = false;
+            		sheet.thabilidades10_1 = true;
+            	elseif sheet.thabilidades10_1 == true then
+            		sheet.thabilidades10_5 = false;
+            		sheet.thabilidades10_4 = false;
+            		sheet.thabilidades10_3 = false;
+            		sheet.thabilidades10_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event19 = obj.dataLink21:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades1_5 == true then
+            		sheet.phabilidades1_4 = true;
+            		sheet.phabilidades1_3 = true;
+            		sheet.phabilidades1_2 = true;
+            		sheet.phabilidades1_1 = true;
+            	elseif sheet.phabilidades1_4 == true then
+            		sheet.phabilidades1_5 = false;
+            		sheet.phabilidades1_3 = true;
+            		sheet.phabilidades1_2 = true;
+            		sheet.phabilidades1_1 = true;
+            	elseif sheet.phabilidades1_3 == true then
+            		sheet.phabilidades1_5 = false;
+            		sheet.phabilidades1_4 = false;
+            		sheet.phabilidades1_2 = true;
+            		sheet.phabilidades1_1 = true;
+            	elseif sheet.phabilidades1_2 == true then
+            		sheet.phabilidades1_5 = false;
+            		sheet.phabilidades1_4 = false;
+            		sheet.phabilidades1_3 = false;
+            		sheet.phabilidades1_1 = true;
+            	elseif sheet.phabilidades1_1 == true then
+            		sheet.phabilidades1_5 = false;
+            		sheet.phabilidades1_4 = false;
+            		sheet.phabilidades1_3 = false;
+            		sheet.phabilidades1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event20 = obj.dataLink22:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades2_5 == true then
+            		sheet.phabilidades2_4 = true;
+            		sheet.phabilidades2_3 = true;
+            		sheet.phabilidades2_2 = true;
+            		sheet.phabilidades2_1 = true;
+            	elseif sheet.phabilidades2_4 == true then
+            		sheet.phabilidades2_5 = false;
+            		sheet.phabilidades2_3 = true;
+            		sheet.phabilidades2_2 = true;
+            		sheet.phabilidades2_1 = true;
+            	elseif sheet.phabilidades2_3 == true then
+            		sheet.phabilidades2_5 = false;
+            		sheet.phabilidades2_4 = false;
+            		sheet.phabilidades2_2 = true;
+            		sheet.phabilidades2_1 = true;
+            	elseif sheet.phabilidades2_2 == true then
+            		sheet.phabilidades2_5 = false;
+            		sheet.phabilidades2_4 = false;
+            		sheet.phabilidades2_3 = false;
+            		sheet.phabilidades2_1 = true;
+            	elseif sheet.phabilidades2_1 == true then
+            		sheet.phabilidades2_5 = false;
+            		sheet.phabilidades2_4 = false;
+            		sheet.phabilidades2_3 = false;
+            		sheet.phabilidades2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event21 = obj.dataLink23:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades3_5 == true then
+            		sheet.phabilidades3_4 = true;
+            		sheet.phabilidades3_3 = true;
+            		sheet.phabilidades3_2 = true;
+            		sheet.phabilidades3_1 = true;
+            	elseif sheet.phabilidades3_4 == true then
+            		sheet.phabilidades3_5 = false;
+            		sheet.phabilidades3_3 = true;
+            		sheet.phabilidades3_2 = true;
+            		sheet.phabilidades3_1 = true;
+            	elseif sheet.phabilidades3_3 == true then
+            		sheet.phabilidades3_5 = false;
+            		sheet.phabilidades3_4 = false;
+            		sheet.phabilidades3_2 = true;
+            		sheet.phabilidades3_1 = true;
+            	elseif sheet.phabilidades3_2 == true then
+            		sheet.phabilidades3_5 = false;
+            		sheet.phabilidades3_4 = false;
+            		sheet.phabilidades3_3 = false;
+            		sheet.phabilidades3_1 = true;
+            	elseif sheet.phabilidades3_1 == true then
+            		sheet.phabilidades3_5 = false;
+            		sheet.phabilidades3_4 = false;
+            		sheet.phabilidades3_3 = false;
+            		sheet.phabilidades3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event22 = obj.dataLink24:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades4_5 == true then
+            		sheet.phabilidades4_4 = true;
+            		sheet.phabilidades4_3 = true;
+            		sheet.phabilidades4_2 = true;
+            		sheet.phabilidades4_1 = true;
+            	elseif sheet.phabilidades4_4 == true then
+            		sheet.phabilidades4_5 = false;
+            		sheet.phabilidades4_3 = true;
+            		sheet.phabilidades4_2 = true;
+            		sheet.phabilidades4_1 = true;
+            	elseif sheet.phabilidades4_3 == true then
+            		sheet.phabilidades4_5 = false;
+            		sheet.phabilidades4_4 = false;
+            		sheet.phabilidades4_2 = true;
+            		sheet.phabilidades4_1 = true;
+            	elseif sheet.phabilidades4_2 == true then
+            		sheet.phabilidades4_5 = false;
+            		sheet.phabilidades4_4 = false;
+            		sheet.phabilidades4_3 = false;
+            		sheet.phabilidades4_1 = true;
+            	elseif sheet.phabilidades4_1 == true then
+            		sheet.phabilidades4_5 = false;
+            		sheet.phabilidades4_4 = false;
+            		sheet.phabilidades4_3 = false;
+            		sheet.phabilidades4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event23 = obj.dataLink25:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades5_5 == true then
+            		sheet.phabilidades5_4 = true;
+            		sheet.phabilidades5_3 = true;
+            		sheet.phabilidades5_2 = true;
+            		sheet.phabilidades5_1 = true;
+            	elseif sheet.phabilidades5_4 == true then
+            		sheet.phabilidades5_5 = false;
+            		sheet.phabilidades5_3 = true;
+            		sheet.phabilidades5_2 = true;
+            		sheet.phabilidades5_1 = true;
+            	elseif sheet.phabilidades5_3 == true then
+            		sheet.phabilidades5_5 = false;
+            		sheet.phabilidades5_4 = false;
+            		sheet.phabilidades5_2 = true;
+            		sheet.phabilidades5_1 = true;
+            	elseif sheet.phabilidades5_2 == true then
+            		sheet.phabilidades5_5 = false;
+            		sheet.phabilidades5_4 = false;
+            		sheet.phabilidades5_3 = false;
+            		sheet.phabilidades5_1 = true;
+            	elseif sheet.phabilidades5_1 == true then
+            		sheet.phabilidades5_5 = false;
+            		sheet.phabilidades5_4 = false;
+            		sheet.phabilidades5_3 = false;
+            		sheet.phabilidades5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event24 = obj.dataLink26:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades6_5 == true then
+            		sheet.phabilidades6_4 = true;
+            		sheet.phabilidades6_3 = true;
+            		sheet.phabilidades6_2 = true;
+            		sheet.phabilidades6_1 = true;
+            	elseif sheet.phabilidades6_4 == true then
+            		sheet.phabilidades6_5 = false;
+            		sheet.phabilidades6_3 = true;
+            		sheet.phabilidades6_2 = true;
+            		sheet.phabilidades6_1 = true;
+            	elseif sheet.phabilidades6_3 == true then
+            		sheet.phabilidades6_5 = false;
+            		sheet.phabilidades6_4 = false;
+            		sheet.phabilidades6_2 = true;
+            		sheet.phabilidades6_1 = true;
+            	elseif sheet.phabilidades6_2 == true then
+            		sheet.phabilidades6_5 = false;
+            		sheet.phabilidades6_4 = false;
+            		sheet.phabilidades6_3 = false;
+            		sheet.phabilidades6_1 = true;
+            	elseif sheet.phabilidades6_1 == true then
+            		sheet.phabilidades6_5 = false;
+            		sheet.phabilidades6_4 = false;
+            		sheet.phabilidades6_3 = false;
+            		sheet.phabilidades6_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event25 = obj.dataLink27:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades7_5 == true then
+            		sheet.phabilidades7_4 = true;
+            		sheet.phabilidades7_3 = true;
+            		sheet.phabilidades7_2 = true;
+            		sheet.phabilidades7_1 = true;
+            	elseif sheet.phabilidades7_4 == true then
+            		sheet.phabilidades7_5 = false;
+            		sheet.phabilidades7_3 = true;
+            		sheet.phabilidades7_2 = true;
+            		sheet.phabilidades7_1 = true;
+            	elseif sheet.phabilidades7_3 == true then
+            		sheet.phabilidades7_5 = false;
+            		sheet.phabilidades7_4 = false;
+            		sheet.phabilidades7_2 = true;
+            		sheet.phabilidades7_1 = true;
+            	elseif sheet.phabilidades7_2 == true then
+            		sheet.phabilidades7_5 = false;
+            		sheet.phabilidades7_4 = false;
+            		sheet.phabilidades7_3 = false;
+            		sheet.phabilidades7_1 = true;
+            	elseif sheet.phabilidades7_1 == true then
+            		sheet.phabilidades7_5 = false;
+            		sheet.phabilidades7_4 = false;
+            		sheet.phabilidades7_3 = false;
+            		sheet.phabilidades7_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event26 = obj.dataLink28:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades8_5 == true then
+            		sheet.phabilidades8_4 = true;
+            		sheet.phabilidades8_3 = true;
+            		sheet.phabilidades8_2 = true;
+            		sheet.phabilidades8_1 = true;
+            	elseif sheet.phabilidades8_4 == true then
+            		sheet.phabilidades8_5 = false;
+            		sheet.phabilidades8_3 = true;
+            		sheet.phabilidades8_2 = true;
+            		sheet.phabilidades8_1 = true;
+            	elseif sheet.phabilidades8_3 == true then
+            		sheet.phabilidades8_5 = false;
+            		sheet.phabilidades8_4 = false;
+            		sheet.phabilidades8_2 = true;
+            		sheet.phabilidades8_1 = true;
+            	elseif sheet.phabilidades8_2 == true then
+            		sheet.phabilidades8_5 = false;
+            		sheet.phabilidades8_4 = false;
+            		sheet.phabilidades8_3 = false;
+            		sheet.phabilidades8_1 = true;
+            	elseif sheet.phabilidades8_1 == true then
+            		sheet.phabilidades8_5 = false;
+            		sheet.phabilidades8_4 = false;
+            		sheet.phabilidades8_3 = false;
+            		sheet.phabilidades8_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event27 = obj.dataLink29:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades9_5 == true then
+            		sheet.phabilidades9_4 = true;
+            		sheet.phabilidades9_3 = true;
+            		sheet.phabilidades9_2 = true;
+            		sheet.phabilidades9_1 = true;
+            	elseif sheet.phabilidades9_4 == true then
+            		sheet.phabilidades9_5 = false;
+            		sheet.phabilidades9_3 = true;
+            		sheet.phabilidades9_2 = true;
+            		sheet.phabilidades9_1 = true;
+            	elseif sheet.phabilidades9_3 == true then
+            		sheet.phabilidades9_5 = false;
+            		sheet.phabilidades9_4 = false;
+            		sheet.phabilidades9_2 = true;
+            		sheet.phabilidades9_1 = true;
+            	elseif sheet.phabilidades9_2 == true then
+            		sheet.phabilidades9_5 = false;
+            		sheet.phabilidades9_4 = false;
+            		sheet.phabilidades9_3 = false;
+            		sheet.phabilidades9_1 = true;
+            	elseif sheet.phabilidades9_1 == true then
+            		sheet.phabilidades9_5 = false;
+            		sheet.phabilidades9_4 = false;
+            		sheet.phabilidades9_3 = false;
+            		sheet.phabilidades9_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event28 = obj.dataLink30:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.phabilidades10_5 == true then
+            		sheet.phabilidades10_4 = true;
+            		sheet.phabilidades10_3 = true;
+            		sheet.phabilidades10_2 = true;
+            		sheet.phabilidades10_1 = true;
+            	elseif sheet.phabilidades10_4 == true then
+            		sheet.phabilidades10_5 = false;
+            		sheet.phabilidades10_3 = true;
+            		sheet.phabilidades10_2 = true;
+            		sheet.phabilidades10_1 = true;
+            	elseif sheet.phabilidades10_3 == true then
+            		sheet.phabilidades10_5 = false;
+            		sheet.phabilidades10_4 = false;
+            		sheet.phabilidades10_2 = true;
+            		sheet.phabilidades10_1 = true;
+            	elseif sheet.phabilidades10_2 == true then
+            		sheet.phabilidades10_5 = false;
+            		sheet.phabilidades10_4 = false;
+            		sheet.phabilidades10_3 = false;
+            		sheet.phabilidades10_1 = true;
+            	elseif sheet.phabilidades10_1 == true then
+            		sheet.phabilidades10_5 = false;
+            		sheet.phabilidades10_4 = false;
+            		sheet.phabilidades10_3 = false;
+            		sheet.phabilidades10_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event29 = obj.dataLink31:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades1_5 == true then
+            		sheet.chabilidades1_4 = true;
+            		sheet.chabilidades1_3 = true;
+            		sheet.chabilidades1_2 = true;
+            		sheet.chabilidades1_1 = true;
+            	elseif sheet.chabilidades1_4 == true then
+            		sheet.chabilidades1_5 = false;
+            		sheet.chabilidades1_3 = true;
+            		sheet.chabilidades1_2 = true;
+            		sheet.chabilidades1_1 = true;
+            	elseif sheet.chabilidades1_3 == true then
+            		sheet.chabilidades1_5 = false;
+            		sheet.chabilidades1_4 = false;
+            		sheet.chabilidades1_2 = true;
+            		sheet.chabilidades1_1 = true;
+            	elseif sheet.chabilidades1_2 == true then
+            		sheet.chabilidades1_5 = false;
+            		sheet.chabilidades1_4 = false;
+            		sheet.chabilidades1_3 = false;
+            		sheet.chabilidades1_1 = true;
+            	elseif sheet.chabilidades1_1 == true then
+            		sheet.chabilidades1_5 = false;
+            		sheet.chabilidades1_4 = false;
+            		sheet.chabilidades1_3 = false;
+            		sheet.chabilidades1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event30 = obj.dataLink32:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades2_5 == true then
+            		sheet.chabilidades2_4 = true;
+            		sheet.chabilidades2_3 = true;
+            		sheet.chabilidades2_2 = true;
+            		sheet.chabilidades2_1 = true;
+            	elseif sheet.chabilidades2_4 == true then
+            		sheet.chabilidades2_5 = false;
+            		sheet.chabilidades2_3 = true;
+            		sheet.chabilidades2_2 = true;
+            		sheet.chabilidades2_1 = true;
+            	elseif sheet.chabilidades2_3 == true then
+            		sheet.chabilidades2_5 = false;
+            		sheet.chabilidades2_4 = false;
+            		sheet.chabilidades2_2 = true;
+            		sheet.chabilidades2_1 = true;
+            	elseif sheet.chabilidades2_2 == true then
+            		sheet.chabilidades2_5 = false;
+            		sheet.chabilidades2_4 = false;
+            		sheet.chabilidades2_3 = false;
+            		sheet.chabilidades2_1 = true;
+            	elseif sheet.chabilidades2_1 == true then
+            		sheet.chabilidades2_5 = false;
+            		sheet.chabilidades2_4 = false;
+            		sheet.chabilidades2_3 = false;
+            		sheet.chabilidades2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event31 = obj.dataLink33:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades3_5 == true then
+            		sheet.chabilidades3_4 = true;
+            		sheet.chabilidades3_3 = true;
+            		sheet.chabilidades3_2 = true;
+            		sheet.chabilidades3_1 = true;
+            	elseif sheet.chabilidades3_4 == true then
+            		sheet.chabilidades3_5 = false;
+            		sheet.chabilidades3_3 = true;
+            		sheet.chabilidades3_2 = true;
+            		sheet.chabilidades3_1 = true;
+            	elseif sheet.chabilidades3_3 == true then
+            		sheet.chabilidades3_5 = false;
+            		sheet.chabilidades3_4 = false;
+            		sheet.chabilidades3_2 = true;
+            		sheet.chabilidades3_1 = true;
+            	elseif sheet.chabilidades3_2 == true then
+            		sheet.chabilidades3_5 = false;
+            		sheet.chabilidades3_4 = false;
+            		sheet.chabilidades3_3 = false;
+            		sheet.chabilidades3_1 = true;
+            	elseif sheet.chabilidades3_1 == true then
+            		sheet.chabilidades3_5 = false;
+            		sheet.chabilidades3_4 = false;
+            		sheet.chabilidades3_3 = false;
+            		sheet.chabilidades3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event32 = obj.dataLink34:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades4_5 == true then
+            		sheet.chabilidades4_4 = true;
+            		sheet.chabilidades4_3 = true;
+            		sheet.chabilidades4_2 = true;
+            		sheet.chabilidades4_1 = true;
+            	elseif sheet.chabilidades4_4 == true then
+            		sheet.chabilidades4_5 = false;
+            		sheet.chabilidades4_3 = true;
+            		sheet.chabilidades4_2 = true;
+            		sheet.chabilidades4_1 = true;
+            	elseif sheet.chabilidades4_3 == true then
+            		sheet.chabilidades4_5 = false;
+            		sheet.chabilidades4_4 = false;
+            		sheet.chabilidades4_2 = true;
+            		sheet.chabilidades4_1 = true;
+            	elseif sheet.chabilidades4_2 == true then
+            		sheet.chabilidades4_5 = false;
+            		sheet.chabilidades4_4 = false;
+            		sheet.chabilidades4_3 = false;
+            		sheet.chabilidades4_1 = true;
+            	elseif sheet.chabilidades4_1 == true then
+            		sheet.chabilidades4_5 = false;
+            		sheet.chabilidades4_4 = false;
+            		sheet.chabilidades4_3 = false;
+            		sheet.chabilidades4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event33 = obj.dataLink35:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades5_5 == true then
+            		sheet.chabilidades5_4 = true;
+            		sheet.chabilidades5_3 = true;
+            		sheet.chabilidades5_2 = true;
+            		sheet.chabilidades5_1 = true;
+            	elseif sheet.chabilidades5_4 == true then
+            		sheet.chabilidades5_5 = false;
+            		sheet.chabilidades5_3 = true;
+            		sheet.chabilidades5_2 = true;
+            		sheet.chabilidades5_1 = true;
+            	elseif sheet.chabilidades5_3 == true then
+            		sheet.chabilidades5_5 = false;
+            		sheet.chabilidades5_4 = false;
+            		sheet.chabilidades5_2 = true;
+            		sheet.chabilidades5_1 = true;
+            	elseif sheet.chabilidades5_2 == true then
+            		sheet.chabilidades5_5 = false;
+            		sheet.chabilidades5_4 = false;
+            		sheet.chabilidades5_3 = false;
+            		sheet.chabilidades5_1 = true;
+            	elseif sheet.chabilidades5_1 == true then
+            		sheet.chabilidades5_5 = false;
+            		sheet.chabilidades5_4 = false;
+            		sheet.chabilidades5_3 = false;
+            		sheet.chabilidades5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event34 = obj.dataLink36:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades6_5 == true then
+            		sheet.chabilidades6_4 = true;
+            		sheet.chabilidades6_3 = true;
+            		sheet.chabilidades6_2 = true;
+            		sheet.chabilidades6_1 = true;
+            	elseif sheet.chabilidades6_4 == true then
+            		sheet.chabilidades6_5 = false;
+            		sheet.chabilidades6_3 = true;
+            		sheet.chabilidades6_2 = true;
+            		sheet.chabilidades6_1 = true;
+            	elseif sheet.chabilidades6_3 == true then
+            		sheet.chabilidades6_5 = false;
+            		sheet.chabilidades6_4 = false;
+            		sheet.chabilidades6_2 = true;
+            		sheet.chabilidades6_1 = true;
+            	elseif sheet.chabilidades6_2 == true then
+            		sheet.chabilidades6_5 = false;
+            		sheet.chabilidades6_4 = false;
+            		sheet.chabilidades6_3 = false;
+            		sheet.chabilidades6_1 = true;
+            	elseif sheet.chabilidades6_1 == true then
+            		sheet.chabilidades6_5 = false;
+            		sheet.chabilidades6_4 = false;
+            		sheet.chabilidades6_3 = false;
+            		sheet.chabilidades6_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event35 = obj.dataLink37:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades7_5 == true then
+            		sheet.chabilidades7_4 = true;
+            		sheet.chabilidades7_3 = true;
+            		sheet.chabilidades7_2 = true;
+            		sheet.chabilidades7_1 = true;
+            	elseif sheet.chabilidades7_4 == true then
+            		sheet.chabilidades7_5 = false;
+            		sheet.chabilidades7_3 = true;
+            		sheet.chabilidades7_2 = true;
+            		sheet.chabilidades7_1 = true;
+            	elseif sheet.chabilidades7_3 == true then
+            		sheet.chabilidades7_5 = false;
+            		sheet.chabilidades7_4 = false;
+            		sheet.chabilidades7_2 = true;
+            		sheet.chabilidades7_1 = true;
+            	elseif sheet.chabilidades7_2 == true then
+            		sheet.chabilidades7_5 = false;
+            		sheet.chabilidades7_4 = false;
+            		sheet.chabilidades7_3 = false;
+            		sheet.chabilidades7_1 = true;
+            	elseif sheet.chabilidades7_1 == true then
+            		sheet.chabilidades7_5 = false;
+            		sheet.chabilidades7_4 = false;
+            		sheet.chabilidades7_3 = false;
+            		sheet.chabilidades7_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event36 = obj.dataLink38:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades8_5 == true then
+            		sheet.chabilidades8_4 = true;
+            		sheet.chabilidades8_3 = true;
+            		sheet.chabilidades8_2 = true;
+            		sheet.chabilidades8_1 = true;
+            	elseif sheet.chabilidades8_4 == true then
+            		sheet.chabilidades8_5 = false;
+            		sheet.chabilidades8_3 = true;
+            		sheet.chabilidades8_2 = true;
+            		sheet.chabilidades8_1 = true;
+            	elseif sheet.chabilidades8_3 == true then
+            		sheet.chabilidades8_5 = false;
+            		sheet.chabilidades8_4 = false;
+            		sheet.chabilidades8_2 = true;
+            		sheet.chabilidades8_1 = true;
+            	elseif sheet.chabilidades8_2 == true then
+            		sheet.chabilidades8_5 = false;
+            		sheet.chabilidades8_4 = false;
+            		sheet.chabilidades8_3 = false;
+            		sheet.chabilidades8_1 = true;
+            	elseif sheet.chabilidades8_1 == true then
+            		sheet.chabilidades8_5 = false;
+            		sheet.chabilidades8_4 = false;
+            		sheet.chabilidades8_3 = false;
+            		sheet.chabilidades8_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event37 = obj.dataLink39:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades9_5 == true then
+            		sheet.chabilidades9_4 = true;
+            		sheet.chabilidades9_3 = true;
+            		sheet.chabilidades9_2 = true;
+            		sheet.chabilidades9_1 = true;
+            	elseif sheet.chabilidades9_4 == true then
+            		sheet.chabilidades9_5 = false;
+            		sheet.chabilidades9_3 = true;
+            		sheet.chabilidades9_2 = true;
+            		sheet.chabilidades9_1 = true;
+            	elseif sheet.chabilidades9_3 == true then
+            		sheet.chabilidades9_5 = false;
+            		sheet.chabilidades9_4 = false;
+            		sheet.chabilidades9_2 = true;
+            		sheet.chabilidades9_1 = true;
+            	elseif sheet.chabilidades9_2 == true then
+            		sheet.chabilidades9_5 = false;
+            		sheet.chabilidades9_4 = false;
+            		sheet.chabilidades9_3 = false;
+            		sheet.chabilidades9_1 = true;
+            	elseif sheet.chabilidades9_1 == true then
+            		sheet.chabilidades9_5 = false;
+            		sheet.chabilidades9_4 = false;
+            		sheet.chabilidades9_3 = false;
+            		sheet.chabilidades9_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event38 = obj.dataLink40:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.chabilidades10_5 == true then
+            		sheet.chabilidades10_4 = true;
+            		sheet.chabilidades10_3 = true;
+            		sheet.chabilidades10_2 = true;
+            		sheet.chabilidades10_1 = true;
+            	elseif sheet.chabilidades10_4 == true then
+            		sheet.chabilidades10_5 = false;
+            		sheet.chabilidades10_3 = true;
+            		sheet.chabilidades10_2 = true;
+            		sheet.chabilidades10_1 = true;
+            	elseif sheet.chabilidades10_3 == true then
+            		sheet.chabilidades10_5 = false;
+            		sheet.chabilidades10_4 = false;
+            		sheet.chabilidades10_2 = true;
+            		sheet.chabilidades10_1 = true;
+            	elseif sheet.chabilidades10_2 == true then
+            		sheet.chabilidades10_5 = false;
+            		sheet.chabilidades10_4 = false;
+            		sheet.chabilidades10_3 = false;
+            		sheet.chabilidades10_1 = true;
+            	elseif sheet.chabilidades10_1 == true then
+            		sheet.chabilidades10_5 = false;
+            		sheet.chabilidades10_4 = false;
+            		sheet.chabilidades10_3 = false;
+            		sheet.chabilidades10_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event39 = obj.dataLink41:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.antecedentes1_5 == true then
+            		sheet.antecedentes1_4 = true;
+            		sheet.antecedentes1_3 = true;
+            		sheet.antecedentes1_2 = true;
+            		sheet.antecedentes1_1 = true;
+            	elseif sheet.antecedentes1_4 == true then
+            		sheet.antecedentes1_5 = false;
+            		sheet.antecedentes1_3 = true;
+            		sheet.antecedentes1_2 = true;
+            		sheet.antecedentes1_1 = true;
+            	elseif sheet.antecedentes1_3 == true then
+            		sheet.antecedentes1_5 = false;
+            		sheet.antecedentes1_4 = false;
+            		sheet.antecedentes1_2 = true;
+            		sheet.antecedentes1_1 = true;
+            	elseif sheet.antecedentes1_2 == true then
+            		sheet.antecedentes1_5 = false;
+            		sheet.antecedentes1_4 = false;
+            		sheet.antecedentes1_3 = false;
+            		sheet.antecedentes1_1 = true;
+            	elseif sheet.antecedentes1_1 == true then
+            		sheet.antecedentes1_5 = false;
+            		sheet.antecedentes1_4 = false;
+            		sheet.antecedentes1_3 = false;
+            		sheet.antecedentes1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event40 = obj.dataLink42:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.antecedentes2_5 == true then
+            		sheet.antecedentes2_4 = true;
+            		sheet.antecedentes2_3 = true;
+            		sheet.antecedentes2_2 = true;
+            		sheet.antecedentes2_1 = true;
+            	elseif sheet.antecedentes2_4 == true then
+            		sheet.antecedentes2_5 = false;
+            		sheet.antecedentes2_3 = true;
+            		sheet.antecedentes2_2 = true;
+            		sheet.antecedentes2_1 = true;
+            	elseif sheet.antecedentes2_3 == true then
+            		sheet.antecedentes2_5 = false;
+            		sheet.antecedentes2_4 = false;
+            		sheet.antecedentes2_2 = true;
+            		sheet.antecedentes2_1 = true;
+            	elseif sheet.antecedentes2_2 == true then
+            		sheet.antecedentes2_5 = false;
+            		sheet.antecedentes2_4 = false;
+            		sheet.antecedentes2_3 = false;
+            		sheet.antecedentes2_1 = true;
+            	elseif sheet.antecedentes2_1 == true then
+            		sheet.antecedentes2_5 = false;
+            		sheet.antecedentes2_4 = false;
+            		sheet.antecedentes2_3 = false;
+            		sheet.antecedentes2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event41 = obj.dataLink43:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.antecedentes3_5 == true then
+            		sheet.antecedentes3_4 = true;
+            		sheet.antecedentes3_3 = true;
+            		sheet.antecedentes3_2 = true;
+            		sheet.antecedentes3_1 = true;
+            	elseif sheet.antecedentes3_4 == true then
+            		sheet.antecedentes3_5 = false;
+            		sheet.antecedentes3_3 = true;
+            		sheet.antecedentes3_2 = true;
+            		sheet.antecedentes3_1 = true;
+            	elseif sheet.antecedentes3_3 == true then
+            		sheet.antecedentes3_5 = false;
+            		sheet.antecedentes3_4 = false;
+            		sheet.antecedentes3_2 = true;
+            		sheet.antecedentes3_1 = true;
+            	elseif sheet.antecedentes3_2 == true then
+            		sheet.antecedentes3_5 = false;
+            		sheet.antecedentes3_4 = false;
+            		sheet.antecedentes3_3 = false;
+            		sheet.antecedentes3_1 = true;
+            	elseif sheet.antecedentes3_1 == true then
+            		sheet.antecedentes3_5 = false;
+            		sheet.antecedentes3_4 = false;
+            		sheet.antecedentes3_3 = false;
+            		sheet.antecedentes3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event42 = obj.dataLink44:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.antecedentes4_5 == true then
+            		sheet.antecedentes4_4 = true;
+            		sheet.antecedentes4_3 = true;
+            		sheet.antecedentes4_2 = true;
+            		sheet.antecedentes4_1 = true;
+            	elseif sheet.antecedentes4_4 == true then
+            		sheet.antecedentes4_5 = false;
+            		sheet.antecedentes4_3 = true;
+            		sheet.antecedentes4_2 = true;
+            		sheet.antecedentes4_1 = true;
+            	elseif sheet.antecedentes4_3 == true then
+            		sheet.antecedentes4_5 = false;
+            		sheet.antecedentes4_4 = false;
+            		sheet.antecedentes4_2 = true;
+            		sheet.antecedentes4_1 = true;
+            	elseif sheet.antecedentes4_2 == true then
+            		sheet.antecedentes4_5 = false;
+            		sheet.antecedentes4_4 = false;
+            		sheet.antecedentes4_3 = false;
+            		sheet.antecedentes4_1 = true;
+            	elseif sheet.antecedentes4_1 == true then
+            		sheet.antecedentes4_5 = false;
+            		sheet.antecedentes4_4 = false;
+            		sheet.antecedentes4_3 = false;
+            		sheet.antecedentes4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event43 = obj.dataLink45:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.antecedentes5_5 == true then
+            		sheet.antecedentes5_4 = true;
+            		sheet.antecedentes5_3 = true;
+            		sheet.antecedentes5_2 = true;
+            		sheet.antecedentes5_1 = true;
+            	elseif sheet.antecedentes5_4 == true then
+            		sheet.antecedentes5_5 = false;
+            		sheet.antecedentes5_3 = true;
+            		sheet.antecedentes5_2 = true;
+            		sheet.antecedentes5_1 = true;
+            	elseif sheet.antecedentes5_3 == true then
+            		sheet.antecedentes5_5 = false;
+            		sheet.antecedentes5_4 = false;
+            		sheet.antecedentes5_2 = true;
+            		sheet.antecedentes5_1 = true;
+            	elseif sheet.antecedentes5_2 == true then
+            		sheet.antecedentes5_5 = false;
+            		sheet.antecedentes5_4 = false;
+            		sheet.antecedentes5_3 = false;
+            		sheet.antecedentes5_1 = true;
+            	elseif sheet.antecedentes5_1 == true then
+            		sheet.antecedentes5_5 = false;
+            		sheet.antecedentes5_4 = false;
+            		sheet.antecedentes5_3 = false;
+            		sheet.antecedentes5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event44 = obj.dataLink46:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.disciplinas1_5 == true then
+            		sheet.disciplinas1_4 = true;
+            		sheet.disciplinas1_3 = true;
+            		sheet.disciplinas1_2 = true;
+            		sheet.disciplinas1_1 = true;
+            	elseif sheet.disciplinas1_4 == true then
+            		sheet.disciplinas1_5 = false;
+            		sheet.disciplinas1_3 = true;
+            		sheet.disciplinas1_2 = true;
+            		sheet.disciplinas1_1 = true;
+            	elseif sheet.disciplinas1_3 == true then
+            		sheet.disciplinas1_5 = false;
+            		sheet.disciplinas1_4 = false;
+            		sheet.disciplinas1_2 = true;
+            		sheet.disciplinas1_1 = true;
+            	elseif sheet.disciplinas1_2 == true then
+            		sheet.disciplinas1_5 = false;
+            		sheet.disciplinas1_4 = false;
+            		sheet.disciplinas1_3 = false;
+            		sheet.disciplinas1_1 = true;
+            	elseif sheet.disciplinas1_1 == true then
+            		sheet.disciplinas1_5 = false;
+            		sheet.disciplinas1_4 = false;
+            		sheet.disciplinas1_3 = false;
+            		sheet.disciplinas1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event45 = obj.dataLink47:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.disciplinas2_5 == true then
+            		sheet.disciplinas2_4 = true;
+            		sheet.disciplinas2_3 = true;
+            		sheet.disciplinas2_2 = true;
+            		sheet.disciplinas2_1 = true;
+            	elseif sheet.disciplinas2_4 == true then
+            		sheet.disciplinas2_5 = false;
+            		sheet.disciplinas2_3 = true;
+            		sheet.disciplinas2_2 = true;
+            		sheet.disciplinas2_1 = true;
+            	elseif sheet.disciplinas2_3 == true then
+            		sheet.disciplinas2_5 = false;
+            		sheet.disciplinas2_4 = false;
+            		sheet.disciplinas2_2 = true;
+            		sheet.disciplinas2_1 = true;
+            	elseif sheet.disciplinas2_2 == true then
+            		sheet.disciplinas2_5 = false;
+            		sheet.disciplinas2_4 = false;
+            		sheet.disciplinas2_3 = false;
+            		sheet.disciplinas2_1 = true;
+            	elseif sheet.disciplinas2_1 == true then
+            		sheet.disciplinas2_5 = false;
+            		sheet.disciplinas2_4 = false;
+            		sheet.disciplinas2_3 = false;
+            		sheet.disciplinas2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event46 = obj.dataLink48:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.disciplinas3_5 == true then
+            		sheet.disciplinas3_4 = true;
+            		sheet.disciplinas3_3 = true;
+            		sheet.disciplinas3_2 = true;
+            		sheet.disciplinas3_1 = true;
+            	elseif sheet.disciplinas3_4 == true then
+            		sheet.disciplinas3_5 = false;
+            		sheet.disciplinas3_3 = true;
+            		sheet.disciplinas3_2 = true;
+            		sheet.disciplinas3_1 = true;
+            	elseif sheet.disciplinas3_3 == true then
+            		sheet.disciplinas3_5 = false;
+            		sheet.disciplinas3_4 = false;
+            		sheet.disciplinas3_2 = true;
+            		sheet.disciplinas3_1 = true;
+            	elseif sheet.disciplinas3_2 == true then
+            		sheet.disciplinas3_5 = false;
+            		sheet.disciplinas3_4 = false;
+            		sheet.disciplinas3_3 = false;
+            		sheet.disciplinas3_1 = true;
+            	elseif sheet.disciplinas3_1 == true then
+            		sheet.disciplinas3_5 = false;
+            		sheet.disciplinas3_4 = false;
+            		sheet.disciplinas3_3 = false;
+            		sheet.disciplinas3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event47 = obj.dataLink49:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.disciplinas4_5 == true then
+            		sheet.disciplinas4_4 = true;
+            		sheet.disciplinas4_3 = true;
+            		sheet.disciplinas4_2 = true;
+            		sheet.disciplinas4_1 = true;
+            	elseif sheet.disciplinas4_4 == true then
+            		sheet.disciplinas4_5 = false;
+            		sheet.disciplinas4_3 = true;
+            		sheet.disciplinas4_2 = true;
+            		sheet.disciplinas4_1 = true;
+            	elseif sheet.disciplinas4_3 == true then
+            		sheet.disciplinas4_5 = false;
+            		sheet.disciplinas4_4 = false;
+            		sheet.disciplinas4_2 = true;
+            		sheet.disciplinas4_1 = true;
+            	elseif sheet.disciplinas4_2 == true then
+            		sheet.disciplinas4_5 = false;
+            		sheet.disciplinas4_4 = false;
+            		sheet.disciplinas4_3 = false;
+            		sheet.disciplinas4_1 = true;
+            	elseif sheet.disciplinas4_1 == true then
+            		sheet.disciplinas4_5 = false;
+            		sheet.disciplinas4_4 = false;
+            		sheet.disciplinas4_3 = false;
+            		sheet.disciplinas4_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event48 = obj.dataLink50:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.disciplinas5_5 == true then
+            		sheet.disciplinas5_4 = true;
+            		sheet.disciplinas5_3 = true;
+            		sheet.disciplinas5_2 = true;
+            		sheet.disciplinas5_1 = true;
+            	elseif sheet.disciplinas5_4 == true then
+            		sheet.disciplinas5_5 = false;
+            		sheet.disciplinas5_3 = true;
+            		sheet.disciplinas5_2 = true;
+            		sheet.disciplinas5_1 = true;
+            	elseif sheet.disciplinas5_3 == true then
+            		sheet.disciplinas5_5 = false;
+            		sheet.disciplinas5_4 = false;
+            		sheet.disciplinas5_2 = true;
+            		sheet.disciplinas5_1 = true;
+            	elseif sheet.disciplinas5_2 == true then
+            		sheet.disciplinas5_5 = false;
+            		sheet.disciplinas5_4 = false;
+            		sheet.disciplinas5_3 = false;
+            		sheet.disciplinas5_1 = true;
+            	elseif sheet.disciplinas5_1 == true then
+            		sheet.disciplinas5_5 = false;
+            		sheet.disciplinas5_4 = false;
+            		sheet.disciplinas5_3 = false;
+            		sheet.disciplinas5_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event49 = obj.dataLink51:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.virtude1_5 == true then
+            		sheet.virtude1_4 = true;
+            		sheet.virtude1_3 = true;
+            		sheet.virtude1_2 = true;
+            		sheet.virtude1_1 = true;
+            	elseif sheet.virtude1_4 == true then
+            		sheet.virtude1_5 = false;
+            		sheet.virtude1_3 = true;
+            		sheet.virtude1_2 = true;
+            		sheet.virtude1_1 = true;
+            	elseif sheet.virtude1_3 == true then
+            		sheet.virtude1_5 = false;
+            		sheet.virtude1_4 = false;
+            		sheet.virtude1_2 = true;
+            		sheet.virtude1_1 = true;
+            	elseif sheet.virtude1_2 == true then
+            		sheet.virtude1_5 = false;
+            		sheet.virtude1_4 = false;
+            		sheet.virtude1_3 = false;
+            		sheet.virtude1_1 = true;
+            	elseif sheet.virtude1_1 == true then
+            		sheet.virtude1_5 = false;
+            		sheet.virtude1_4 = false;
+            		sheet.virtude1_3 = false;
+            		sheet.virtude1_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event50 = obj.dataLink52:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.virtude2_5 == true then
+            		sheet.virtude2_4 = true;
+            		sheet.virtude2_3 = true;
+            		sheet.virtude2_2 = true;
+            		sheet.virtude2_1 = true;
+            	elseif sheet.virtude2_4 == true then
+            		sheet.virtude2_5 = false;
+            		sheet.virtude2_3 = true;
+            		sheet.virtude2_2 = true;
+            		sheet.virtude2_1 = true;
+            	elseif sheet.virtude2_3 == true then
+            		sheet.virtude2_5 = false;
+            		sheet.virtude2_4 = false;
+            		sheet.virtude2_2 = true;
+            		sheet.virtude2_1 = true;
+            	elseif sheet.virtude2_2 == true then
+            		sheet.virtude2_5 = false;
+            		sheet.virtude2_4 = false;
+            		sheet.virtude2_3 = false;
+            		sheet.virtude2_1 = true;
+            	elseif sheet.virtude2_1 == true then
+            		sheet.virtude2_5 = false;
+            		sheet.virtude2_4 = false;
+            		sheet.virtude2_3 = false;
+            		sheet.virtude2_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event51 = obj.dataLink53:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.virtude3_5 == true then
+            		sheet.virtude3_4 = true;
+            		sheet.virtude3_3 = true;
+            		sheet.virtude3_2 = true;
+            		sheet.virtude3_1 = true;
+            	elseif sheet.virtude3_4 == true then
+            		sheet.virtude3_5 = false;
+            		sheet.virtude3_3 = true;
+            		sheet.virtude3_2 = true;
+            		sheet.virtude3_1 = true;
+            	elseif sheet.virtude3_3 == true then
+            		sheet.virtude3_5 = false;
+            		sheet.virtude3_4 = false;
+            		sheet.virtude3_2 = true;
+            		sheet.virtude3_1 = true;
+            	elseif sheet.virtude3_2 == true then
+            		sheet.virtude3_5 = false;
+            		sheet.virtude3_4 = false;
+            		sheet.virtude3_3 = false;
+            		sheet.virtude3_1 = true;
+            	elseif sheet.virtude3_1 == true then
+            		sheet.virtude3_5 = false;
+            		sheet.virtude3_4 = false;
+            		sheet.virtude3_3 = false;
+            		sheet.virtude3_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event52 = obj.dataLink54:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.humanidade_10 == true then
+            		sheet.humanidade_9 = true;
+            		sheet.humanidade_8 = true;
+            		sheet.humanidade_7 = true;
+            		sheet.humanidade_6 = true;        
+            		sheet.humanidade_5 = true;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_9 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_8 = true;
+            		sheet.humanidade_7 = true;
+            		sheet.humanidade_6 = true;        
+            		sheet.humanidade_5 = true;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_8 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_7 = true;
+            		sheet.humanidade_6 = true;        
+            		sheet.humanidade_5 = true;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_7 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_6 = true;        
+            		sheet.humanidade_5 = true;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_6 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_5 = true;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_5 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_6 = false;
+            		sheet.humanidade_4 = true;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_4 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_6 = false;
+            		sheet.humanidade_5 = false;
+            		sheet.humanidade_3 = true;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_3 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_6 = false;
+            		sheet.humanidade_5 = false;
+            		sheet.humanidade_4 = false;
+            		sheet.humanidade_2 = true;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_2 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_6 = false;
+            		sheet.humanidade_5 = false;
+            		sheet.humanidade_4 = false;
+            		sheet.humanidade_3 = false;
+            		sheet.humanidade_1 = true;
+            	elseif sheet.humanidade_1 == true then
+            		sheet.humanidade_10 = false;
+            		sheet.humanidade_9 = false;
+            		sheet.humanidade_8 = false;
+            		sheet.humanidade_7 = false;        
+            		sheet.humanidade_6 = false;
+            		sheet.humanidade_5 = false;
+            		sheet.humanidade_4 = false;
+            		sheet.humanidade_3 = false;
+            		sheet.humanidade_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event53 = obj.dataLink55:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.fdv_10 == true then
+            		sheet.fdv_9 = true;
+            		sheet.fdv_8 = true;
+            		sheet.fdv_7 = true;
+            		sheet.fdv_6 = true;        
+            		sheet.fdv_5 = true;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_9 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_8 = true;
+            		sheet.fdv_7 = true;
+            		sheet.fdv_6 = true;        
+            		sheet.fdv_5 = true;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_8 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_7 = true;
+            		sheet.fdv_6 = true;        
+            		sheet.fdv_5 = true;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_7 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_6 = true;        
+            		sheet.fdv_5 = true;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_6 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_5 = true;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_5 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_6 = false;
+            		sheet.fdv_4 = true;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_4 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_6 = false;
+            		sheet.fdv_5 = false;
+            		sheet.fdv_3 = true;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_3 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_6 = false;
+            		sheet.fdv_5 = false;
+            		sheet.fdv_4 = false;
+            		sheet.fdv_2 = true;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_2 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_6 = false;
+            		sheet.fdv_5 = false;
+            		sheet.fdv_4 = false;
+            		sheet.fdv_3 = false;
+            		sheet.fdv_1 = true;
+            	elseif sheet.fdv_1 == true then
+            		sheet.fdv_10 = false;
+            		sheet.fdv_9 = false;
+            		sheet.fdv_8 = false;
+            		sheet.fdv_7 = false;        
+            		sheet.fdv_6 = false;
+            		sheet.fdv_5 = false;
+            		sheet.fdv_4 = false;
+            		sheet.fdv_3 = false;
+            		sheet.fdv_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event54 = obj.dataLink56:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.sangue_50 == true then
+                    sheet.sangue_49 = true;
+            		sheet.sangue_48 = true;
+            		sheet.sangue_47 = true;
+            		sheet.sangue_46 = true;
+            		sheet.sangue_45 = true;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_49 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_48 = true;
+            		sheet.sangue_47 = true;
+            		sheet.sangue_46 = true;
+            		sheet.sangue_45 = true;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_48 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_47 = true;
+            		sheet.sangue_46 = true;
+            		sheet.sangue_45 = true;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_47 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_46 = true;
+            		sheet.sangue_45 = true;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_46 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_45 = true;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_45 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_44 = true;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_44 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_43 = true;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_43 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_42 = true;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_42 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_41 = true;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_41 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_40 = true;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+                elseif sheet.sangue_40 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_39 = true;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_39 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_38 = true;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_38 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_37 = true;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_37 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_36 = true;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_36 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_35 = true;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_35 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_34 = true;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_34 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;		
+                    sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_33 = true;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_33 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_32 = true;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_32 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_31 = true;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_31 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_30 = true;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_30 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_29 = true;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_29 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_28 = true;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_28 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_27 = true;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_27 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_26 = true;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_26 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_25 = true;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_25 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_24 = true;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_24 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_23 = true;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_23 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_22 = true;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_22 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_21 = true;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_21 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_20 = true;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_20 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_19 = true;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_19 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_18 = true;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_18 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_17 = true;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_17 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_16 = true;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_16 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_15 = true;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_15 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_14 = true;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_14 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_13 = true;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_13 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_12 = true;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_12 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_11 = true;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_11 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_10 = true;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_10 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_9 = true;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_9 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_8 = true;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_8 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_7 = true;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_7 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_6 = true;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_6 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_5 = true;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_5 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_4 = true;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_4 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_5 = false;
+            		sheet.sangue_3 = true;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_3 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_5 = false;
+            		sheet.sangue_4 = false;
+            		sheet.sangue_2 = true;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_2 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_5 = false;
+            		sheet.sangue_4 = false;
+            		sheet.sangue_3 = false;
+            		sheet.sangue_1 = true;
+            	elseif sheet.sangue_1 == true then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_5 = false;
+            		sheet.sangue_4 = false;
+            		sheet.sangue_3 = false;
+            		sheet.sangue_2 = false;
+            	elseif sheet.sangue_1 == false then
+                    sheet.sangue_50 = false;
+            		sheet.sangue_49 = false;
+            		sheet.sangue_48 = false;
+            		sheet.sangue_47 = false;
+            		sheet.sangue_46 = false;
+            		sheet.sangue_45 = false;
+            		sheet.sangue_44 = false;
+            		sheet.sangue_43 = false;
+            		sheet.sangue_42 = false;
+            		sheet.sangue_41 = false;
+            		sheet.sangue_40 = false;
+            		sheet.sangue_39 = false;
+            		sheet.sangue_38 = false;
+            		sheet.sangue_37 = false;
+            		sheet.sangue_36 = false;
+            		sheet.sangue_35 = false;
+            		sheet.sangue_34 = false;
+            		sheet.sangue_33 = false;
+            		sheet.sangue_32 = false;
+            		sheet.sangue_31 = false;
+            		sheet.sangue_30 = false;
+            		sheet.sangue_29 = false;
+            		sheet.sangue_28 = false;
+            		sheet.sangue_27 = false;
+            		sheet.sangue_26 = false;
+            		sheet.sangue_25 = false;
+            		sheet.sangue_24 = false;
+            		sheet.sangue_23 = false;
+            		sheet.sangue_22 = false;
+            		sheet.sangue_21 = false;
+            		sheet.sangue_20 = false;
+            		sheet.sangue_19 = false;
+            		sheet.sangue_18 = false;
+            		sheet.sangue_17 = false;
+            		sheet.sangue_16 = false;
+            		sheet.sangue_15 = false;
+            		sheet.sangue_14 = false;
+            		sheet.sangue_13 = false;
+            		sheet.sangue_12 = false;
+            		sheet.sangue_11 = false;
+            		sheet.sangue_10 = false;
+            		sheet.sangue_9 = false;
+            		sheet.sangue_8 = false;
+            		sheet.sangue_7 = false;
+            		sheet.sangue_6 = false;
+            		sheet.sangue_5 = false;
+            		sheet.sangue_4 = false;
+            		sheet.sangue_3 = false;
+            		sheet.sangue_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event55 = obj.dataLink57:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+                if sheet.incapacitado_1 == true then
+            		sheet.aleijado_1 = true;        
+            		sheet.espancado_1 = true;
+            		sheet.feridog_1 = true;
+            		sheet.ferido_1 = true;
+            		sheet.machucado_1 = true;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.aleijado_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.espancado_1 = true;
+            		sheet.feridog_1 = true;
+            		sheet.ferido_1 = true;
+            		sheet.machucado_1 = true;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.espancado_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.aleijado_1 = false;
+            		sheet.feridog_1 = true;
+            		sheet.ferido_1 = true;
+            		sheet.machucado_1 = true;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.feridog_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.aleijado_1 = false;
+            		sheet.espancado_1 = false;
+            		sheet.ferido_1 = true;
+            		sheet.machucado_1 = true;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.ferido_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.aleijado_1 = false;
+            		sheet.espancado_1 = false;
+            		sheet.feridog_1 = false;
+            		sheet.machucado_1 = true;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.machucado_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.aleijado_1 = false;
+            		sheet.espancado_1 = false;
+            		sheet.feridog_1 = false;
+            		sheet.ferido_1 = false;
+            		sheet.escoridado_1 = true;
+            	elseif sheet.escoridado_1 == true then
+            		sheet.incapacitado_1 = false;        
+            		sheet.aleijado_1 = false;
+            		sheet.espancado_1 = false;
+            		sheet.feridog_1 = false;
+            		sheet.ferido_1 = false;
+            		sheet.machucado_1 = false;
+            	end;
+        end, obj);
+
+    obj._e_event56 = obj.dataLink58:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+                if sheet.incapacitado_2 == true then
+            		sheet.aleijado_2 = true;        
+            		sheet.espancado_2 = true;
+            		sheet.feridog_2 = true;
+            		sheet.ferido_2 = true;
+            		sheet.machucado_2 = true;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.aleijado_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.espancado_2 = true;
+            		sheet.feridog_2 = true;
+            		sheet.ferido_2 = true;
+            		sheet.machucado_2 = true;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.espancado_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.aleijado_2 = false;
+            		sheet.feridog_2 = true;
+            		sheet.ferido_2 = true;
+            		sheet.machucado_2 = true;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.feridog_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.aleijado_2 = false;
+            		sheet.espancado_2 = false;
+            		sheet.ferido_2 = true;
+            		sheet.machucado_2 = true;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.ferido_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.aleijado_2 = false;
+            		sheet.espancado_2 = false;
+            		sheet.feridog_2 = false;
+            		sheet.machucado_2 = true;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.machucado_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.aleijado_2 = false;
+            		sheet.espancado_2 = false;
+            		sheet.feridog_2 = false;
+            		sheet.ferido_2 = false;
+            		sheet.escoridado_2 = true;
+            	elseif sheet.escoridado_2 == true then
+            		sheet.incapacitado_2 = false;        
+            		sheet.aleijado_2 = false;
+            		sheet.espancado_2 = false;
+            		sheet.feridog_2 = false;
+            		sheet.ferido_2 = false;
+            		sheet.machucado_2 = false;
             	end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event56);
+        __o_rrpgObjs.removeEventListenerById(self._e_event55);
+        __o_rrpgObjs.removeEventListenerById(self._e_event54);
+        __o_rrpgObjs.removeEventListenerById(self._e_event53);
+        __o_rrpgObjs.removeEventListenerById(self._e_event52);
+        __o_rrpgObjs.removeEventListenerById(self._e_event51);
+        __o_rrpgObjs.removeEventListenerById(self._e_event50);
+        __o_rrpgObjs.removeEventListenerById(self._e_event49);
+        __o_rrpgObjs.removeEventListenerById(self._e_event48);
+        __o_rrpgObjs.removeEventListenerById(self._e_event47);
+        __o_rrpgObjs.removeEventListenerById(self._e_event46);
+        __o_rrpgObjs.removeEventListenerById(self._e_event45);
+        __o_rrpgObjs.removeEventListenerById(self._e_event44);
+        __o_rrpgObjs.removeEventListenerById(self._e_event43);
+        __o_rrpgObjs.removeEventListenerById(self._e_event42);
+        __o_rrpgObjs.removeEventListenerById(self._e_event41);
+        __o_rrpgObjs.removeEventListenerById(self._e_event40);
+        __o_rrpgObjs.removeEventListenerById(self._e_event39);
+        __o_rrpgObjs.removeEventListenerById(self._e_event38);
+        __o_rrpgObjs.removeEventListenerById(self._e_event37);
+        __o_rrpgObjs.removeEventListenerById(self._e_event36);
+        __o_rrpgObjs.removeEventListenerById(self._e_event35);
+        __o_rrpgObjs.removeEventListenerById(self._e_event34);
+        __o_rrpgObjs.removeEventListenerById(self._e_event33);
+        __o_rrpgObjs.removeEventListenerById(self._e_event32);
+        __o_rrpgObjs.removeEventListenerById(self._e_event31);
+        __o_rrpgObjs.removeEventListenerById(self._e_event30);
+        __o_rrpgObjs.removeEventListenerById(self._e_event29);
+        __o_rrpgObjs.removeEventListenerById(self._e_event28);
+        __o_rrpgObjs.removeEventListenerById(self._e_event27);
+        __o_rrpgObjs.removeEventListenerById(self._e_event26);
+        __o_rrpgObjs.removeEventListenerById(self._e_event25);
+        __o_rrpgObjs.removeEventListenerById(self._e_event24);
+        __o_rrpgObjs.removeEventListenerById(self._e_event23);
+        __o_rrpgObjs.removeEventListenerById(self._e_event22);
+        __o_rrpgObjs.removeEventListenerById(self._e_event21);
+        __o_rrpgObjs.removeEventListenerById(self._e_event20);
+        __o_rrpgObjs.removeEventListenerById(self._e_event19);
         __o_rrpgObjs.removeEventListenerById(self._e_event18);
         __o_rrpgObjs.removeEventListenerById(self._e_event17);
         __o_rrpgObjs.removeEventListenerById(self._e_event16);
@@ -6943,6 +10628,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox296 ~= nil then self.imageCheckBox296:destroy(); self.imageCheckBox296 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
+        if self.dataLink33 ~= nil then self.dataLink33:destroy(); self.dataLink33 = nil; end;
         if self.layout64 ~= nil then self.layout64:destroy(); self.layout64 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.label43 ~= nil then self.label43:destroy(); self.label43 = nil; end;
@@ -6983,6 +10669,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox289 ~= nil then self.imageCheckBox289:destroy(); self.imageCheckBox289 = nil; end;
         if self.layout71 ~= nil then self.layout71:destroy(); self.layout71 = nil; end;
         if self.frmCodigo1 ~= nil then self.frmCodigo1:destroy(); self.frmCodigo1 = nil; end;
+        if self.dataLink44 ~= nil then self.dataLink44:destroy(); self.dataLink44 = nil; end;
         if self.imageCheckBox304 ~= nil then self.imageCheckBox304:destroy(); self.imageCheckBox304 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
         if self.imageCheckBox190 ~= nil then self.imageCheckBox190:destroy(); self.imageCheckBox190 = nil; end;
@@ -7009,6 +10696,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox141 ~= nil then self.imageCheckBox141:destroy(); self.imageCheckBox141 = nil; end;
         if self.layout52 ~= nil then self.layout52:destroy(); self.layout52 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
+        if self.imageCheckBox337 ~= nil then self.imageCheckBox337:destroy(); self.imageCheckBox337 = nil; end;
         if self.imageCheckBox191 ~= nil then self.imageCheckBox191:destroy(); self.imageCheckBox191 = nil; end;
         if self.imageCheckBox145 ~= nil then self.imageCheckBox145:destroy(); self.imageCheckBox145 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
@@ -7022,13 +10710,14 @@ local function constructNew_VampiroAMascara1()
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.imageCheckBox78 ~= nil then self.imageCheckBox78:destroy(); self.imageCheckBox78 = nil; end;
-        if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
         if self.layout42 ~= nil then self.layout42:destroy(); self.layout42 = nil; end;
+        if self.imageCheckBox336 ~= nil then self.imageCheckBox336:destroy(); self.imageCheckBox336 = nil; end;
         if self.layout61 ~= nil then self.layout61:destroy(); self.layout61 = nil; end;
         if self.imageCheckBox103 ~= nil then self.imageCheckBox103:destroy(); self.imageCheckBox103 = nil; end;
         if self.imageCheckBox214 ~= nil then self.imageCheckBox214:destroy(); self.imageCheckBox214 = nil; end;
         if self.imageCheckBox241 ~= nil then self.imageCheckBox241:destroy(); self.imageCheckBox241 = nil; end;
         if self.imageCheckBox37 ~= nil then self.imageCheckBox37:destroy(); self.imageCheckBox37 = nil; end;
+        if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
         if self.imageCheckBox104 ~= nil then self.imageCheckBox104:destroy(); self.imageCheckBox104 = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
@@ -7048,6 +10737,7 @@ local function constructNew_VampiroAMascara1()
         if self.label51 ~= nil then self.label51:destroy(); self.label51 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
         if self.imageCheckBox326 ~= nil then self.imageCheckBox326:destroy(); self.imageCheckBox326 = nil; end;
+        if self.imageCheckBox331 ~= nil then self.imageCheckBox331:destroy(); self.imageCheckBox331 = nil; end;
         if self.imageCheckBox159 ~= nil then self.imageCheckBox159:destroy(); self.imageCheckBox159 = nil; end;
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
         if self.imageCheckBox224 ~= nil then self.imageCheckBox224:destroy(); self.imageCheckBox224 = nil; end;
@@ -7056,6 +10746,8 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox233 ~= nil then self.imageCheckBox233:destroy(); self.imageCheckBox233 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.imageCheckBox117 ~= nil then self.imageCheckBox117:destroy(); self.imageCheckBox117 = nil; end;
+        if self.dataLink34 ~= nil then self.dataLink34:destroy(); self.dataLink34 = nil; end;
+        if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
         if self.imageCheckBox28 ~= nil then self.imageCheckBox28:destroy(); self.imageCheckBox28 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
         if self.imageCheckBox208 ~= nil then self.imageCheckBox208:destroy(); self.imageCheckBox208 = nil; end;
@@ -7071,15 +10763,19 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox91 ~= nil then self.imageCheckBox91:destroy(); self.imageCheckBox91 = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
         if self.layout51 ~= nil then self.layout51:destroy(); self.layout51 = nil; end;
+        if self.imageCheckBox343 ~= nil then self.imageCheckBox343:destroy(); self.imageCheckBox343 = nil; end;
         if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.imageCheckBox155 ~= nil then self.imageCheckBox155:destroy(); self.imageCheckBox155 = nil; end;
         if self.layout39 ~= nil then self.layout39:destroy(); self.layout39 = nil; end;
         if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
+        if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
         if self.layout69 ~= nil then self.layout69:destroy(); self.layout69 = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.imageCheckBox59 ~= nil then self.imageCheckBox59:destroy(); self.imageCheckBox59 = nil; end;
+        if self.dataLink55 ~= nil then self.dataLink55:destroy(); self.dataLink55 = nil; end;
         if self.imageCheckBox90 ~= nil then self.imageCheckBox90:destroy(); self.imageCheckBox90 = nil; end;
+        if self.dataLink47 ~= nil then self.dataLink47:destroy(); self.dataLink47 = nil; end;
         if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
         if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.imageCheckBox182 ~= nil then self.imageCheckBox182:destroy(); self.imageCheckBox182 = nil; end;
@@ -7090,6 +10786,7 @@ local function constructNew_VampiroAMascara1()
         if self.layout59 ~= nil then self.layout59:destroy(); self.layout59 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
         if self.imageCheckBox314 ~= nil then self.imageCheckBox314:destroy(); self.imageCheckBox314 = nil; end;
+        if self.imageCheckBox341 ~= nil then self.imageCheckBox341:destroy(); self.imageCheckBox341 = nil; end;
         if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
         if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
         if self.imageCheckBox219 ~= nil then self.imageCheckBox219:destroy(); self.imageCheckBox219 = nil; end;
@@ -7100,9 +10797,10 @@ local function constructNew_VampiroAMascara1()
         if self.layout90 ~= nil then self.layout90:destroy(); self.layout90 = nil; end;
         if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
         if self.imageCheckBox246 ~= nil then self.imageCheckBox246:destroy(); self.imageCheckBox246 = nil; end;
-        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.imageCheckBox340 ~= nil then self.imageCheckBox340:destroy(); self.imageCheckBox340 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
         if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
+        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.imageCheckBox38 ~= nil then self.imageCheckBox38:destroy(); self.imageCheckBox38 = nil; end;
         if self.imageCheckBox260 ~= nil then self.imageCheckBox260:destroy(); self.imageCheckBox260 = nil; end;
@@ -7128,13 +10826,15 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
         if self.imageCheckBox298 ~= nil then self.imageCheckBox298:destroy(); self.imageCheckBox298 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.imageCheckBox333 ~= nil then self.imageCheckBox333:destroy(); self.imageCheckBox333 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
+        if self.dataLink45 ~= nil then self.dataLink45:destroy(); self.dataLink45 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
         if self.imageCheckBox62 ~= nil then self.imageCheckBox62:destroy(); self.imageCheckBox62 = nil; end;
+        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
         if self.imageCheckBox124 ~= nil then self.imageCheckBox124:destroy(); self.imageCheckBox124 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.imageCheckBox325 ~= nil then self.imageCheckBox325:destroy(); self.imageCheckBox325 = nil; end;
-        if self.checkBox9 ~= nil then self.checkBox9:destroy(); self.checkBox9 = nil; end;
         if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
         if self.imageCheckBox249 ~= nil then self.imageCheckBox249:destroy(); self.imageCheckBox249 = nil; end;
         if self.imageCheckBox94 ~= nil then self.imageCheckBox94:destroy(); self.imageCheckBox94 = nil; end;
@@ -7146,23 +10846,28 @@ local function constructNew_VampiroAMascara1()
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
         if self.imageCheckBox313 ~= nil then self.imageCheckBox313:destroy(); self.imageCheckBox313 = nil; end;
         if self.imageCheckBox71 ~= nil then self.imageCheckBox71:destroy(); self.imageCheckBox71 = nil; end;
+        if self.imageCheckBox339 ~= nil then self.imageCheckBox339:destroy(); self.imageCheckBox339 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.imageCheckBox137 ~= nil then self.imageCheckBox137:destroy(); self.imageCheckBox137 = nil; end;
         if self.layout76 ~= nil then self.layout76:destroy(); self.layout76 = nil; end;
-        if self.checkBox14 ~= nil then self.checkBox14:destroy(); self.checkBox14 = nil; end;
         if self.imageCheckBox305 ~= nil then self.imageCheckBox305:destroy(); self.imageCheckBox305 = nil; end;
         if self.imageCheckBox231 ~= nil then self.imageCheckBox231:destroy(); self.imageCheckBox231 = nil; end;
+        if self.dataLink54 ~= nil then self.dataLink54:destroy(); self.dataLink54 = nil; end;
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
         if self.imageCheckBox247 ~= nil then self.imageCheckBox247:destroy(); self.imageCheckBox247 = nil; end;
+        if self.dataLink24 ~= nil then self.dataLink24:destroy(); self.dataLink24 = nil; end;
+        if self.dataLink35 ~= nil then self.dataLink35:destroy(); self.dataLink35 = nil; end;
         if self.imageCheckBox125 ~= nil then self.imageCheckBox125:destroy(); self.imageCheckBox125 = nil; end;
         if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
+        if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
         if self.imageCheckBox87 ~= nil then self.imageCheckBox87:destroy(); self.imageCheckBox87 = nil; end;
-        if self.checkBox12 ~= nil then self.checkBox12:destroy(); self.checkBox12 = nil; end;
         if self.layout70 ~= nil then self.layout70:destroy(); self.layout70 = nil; end;
         if self.imageCheckBox56 ~= nil then self.imageCheckBox56:destroy(); self.imageCheckBox56 = nil; end;
         if self.layout31 ~= nil then self.layout31:destroy(); self.layout31 = nil; end;
+        if self.dataLink27 ~= nil then self.dataLink27:destroy(); self.dataLink27 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
         if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
+        if self.dataLink30 ~= nil then self.dataLink30:destroy(); self.dataLink30 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.layout67 ~= nil then self.layout67:destroy(); self.layout67 = nil; end;
         if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
@@ -7181,9 +10886,9 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox322 ~= nil then self.imageCheckBox322:destroy(); self.imageCheckBox322 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
         if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
+        if self.dataLink57 ~= nil then self.dataLink57:destroy(); self.dataLink57 = nil; end;
         if self.imageCheckBox262 ~= nil then self.imageCheckBox262:destroy(); self.imageCheckBox262 = nil; end;
         if self.imageCheckBox157 ~= nil then self.imageCheckBox157:destroy(); self.imageCheckBox157 = nil; end;
-        if self.checkBox10 ~= nil then self.checkBox10:destroy(); self.checkBox10 = nil; end;
         if self.imageCheckBox172 ~= nil then self.imageCheckBox172:destroy(); self.imageCheckBox172 = nil; end;
         if self.imageCheckBox156 ~= nil then self.imageCheckBox156:destroy(); self.imageCheckBox156 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
@@ -7197,11 +10902,13 @@ local function constructNew_VampiroAMascara1()
         if self.layout73 ~= nil then self.layout73:destroy(); self.layout73 = nil; end;
         if self.imageCheckBox294 ~= nil then self.imageCheckBox294:destroy(); self.imageCheckBox294 = nil; end;
         if self.imageCheckBox307 ~= nil then self.imageCheckBox307:destroy(); self.imageCheckBox307 = nil; end;
+        if self.dataLink38 ~= nil then self.dataLink38:destroy(); self.dataLink38 = nil; end;
         if self.imageCheckBox158 ~= nil then self.imageCheckBox158:destroy(); self.imageCheckBox158 = nil; end;
         if self.imageCheckBox179 ~= nil then self.imageCheckBox179:destroy(); self.imageCheckBox179 = nil; end;
         if self.imageCheckBox220 ~= nil then self.imageCheckBox220:destroy(); self.imageCheckBox220 = nil; end;
         if self.imageCheckBox171 ~= nil then self.imageCheckBox171:destroy(); self.imageCheckBox171 = nil; end;
         if self.imageCheckBox235 ~= nil then self.imageCheckBox235:destroy(); self.imageCheckBox235 = nil; end;
+        if self.imageCheckBox334 ~= nil then self.imageCheckBox334:destroy(); self.imageCheckBox334 = nil; end;
         if self.layout75 ~= nil then self.layout75:destroy(); self.layout75 = nil; end;
         if self.imageCheckBox204 ~= nil then self.imageCheckBox204:destroy(); self.imageCheckBox204 = nil; end;
         if self.imageCheckBox250 ~= nil then self.imageCheckBox250:destroy(); self.imageCheckBox250 = nil; end;
@@ -7215,7 +10922,9 @@ local function constructNew_VampiroAMascara1()
         if self.layout58 ~= nil then self.layout58:destroy(); self.layout58 = nil; end;
         if self.imageCheckBox268 ~= nil then self.imageCheckBox268:destroy(); self.imageCheckBox268 = nil; end;
         if self.imageCheckBox96 ~= nil then self.imageCheckBox96:destroy(); self.imageCheckBox96 = nil; end;
+        if self.dataLink28 ~= nil then self.dataLink28:destroy(); self.dataLink28 = nil; end;
         if self.imageCheckBox165 ~= nil then self.imageCheckBox165:destroy(); self.imageCheckBox165 = nil; end;
+        if self.dataLink42 ~= nil then self.dataLink42:destroy(); self.dataLink42 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
         if self.imageCheckBox105 ~= nil then self.imageCheckBox105:destroy(); self.imageCheckBox105 = nil; end;
         if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
@@ -7228,10 +10937,10 @@ local function constructNew_VampiroAMascara1()
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.imageCheckBox291 ~= nil then self.imageCheckBox291:destroy(); self.imageCheckBox291 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
-        if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
         if self.imageCheckBox186 ~= nil then self.imageCheckBox186:destroy(); self.imageCheckBox186 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
+        if self.dataLink21 ~= nil then self.dataLink21:destroy(); self.dataLink21 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
@@ -7241,13 +10950,15 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox149 ~= nil then self.imageCheckBox149:destroy(); self.imageCheckBox149 = nil; end;
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.imageCheckBox328 ~= nil then self.imageCheckBox328:destroy(); self.imageCheckBox328 = nil; end;
-        if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
+        if self.dataLink23 ~= nil then self.dataLink23:destroy(); self.dataLink23 = nil; end;
         if self.label67 ~= nil then self.label67:destroy(); self.label67 = nil; end;
         if self.layout68 ~= nil then self.layout68:destroy(); self.layout68 = nil; end;
+        if self.imageCheckBox344 ~= nil then self.imageCheckBox344:destroy(); self.imageCheckBox344 = nil; end;
         if self.imageCheckBox295 ~= nil then self.imageCheckBox295:destroy(); self.imageCheckBox295 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.imageCheckBox283 ~= nil then self.imageCheckBox283:destroy(); self.imageCheckBox283 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
+        if self.dataLink53 ~= nil then self.dataLink53:destroy(); self.dataLink53 = nil; end;
         if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
         if self.imageCheckBox215 ~= nil then self.imageCheckBox215:destroy(); self.imageCheckBox215 = nil; end;
@@ -7255,6 +10966,7 @@ local function constructNew_VampiroAMascara1()
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.layout54 ~= nil then self.layout54:destroy(); self.layout54 = nil; end;
+        if self.imageCheckBox332 ~= nil then self.imageCheckBox332:destroy(); self.imageCheckBox332 = nil; end;
         if self.layout50 ~= nil then self.layout50:destroy(); self.layout50 = nil; end;
         if self.label41 ~= nil then self.label41:destroy(); self.label41 = nil; end;
         if self.imageCheckBox153 ~= nil then self.imageCheckBox153:destroy(); self.imageCheckBox153 = nil; end;
@@ -7292,6 +11004,7 @@ local function constructNew_VampiroAMascara1()
         if self.label58 ~= nil then self.label58:destroy(); self.label58 = nil; end;
         if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
+        if self.imageCheckBox335 ~= nil then self.imageCheckBox335:destroy(); self.imageCheckBox335 = nil; end;
         if self.imageCheckBox31 ~= nil then self.imageCheckBox31:destroy(); self.imageCheckBox31 = nil; end;
         if self.imageCheckBox92 ~= nil then self.imageCheckBox92:destroy(); self.imageCheckBox92 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
@@ -7305,6 +11018,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.imageCheckBox169 ~= nil then self.imageCheckBox169:destroy(); self.imageCheckBox169 = nil; end;
+        if self.dataLink49 ~= nil then self.dataLink49:destroy(); self.dataLink49 = nil; end;
         if self.imageCheckBox26 ~= nil then self.imageCheckBox26:destroy(); self.imageCheckBox26 = nil; end;
         if self.imageCheckBox66 ~= nil then self.imageCheckBox66:destroy(); self.imageCheckBox66 = nil; end;
         if self.imageCheckBox134 ~= nil then self.imageCheckBox134:destroy(); self.imageCheckBox134 = nil; end;
@@ -7319,13 +11033,14 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox146 ~= nil then self.imageCheckBox146:destroy(); self.imageCheckBox146 = nil; end;
         if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.imageCheckBox300 ~= nil then self.imageCheckBox300:destroy(); self.imageCheckBox300 = nil; end;
+        if self.dataLink37 ~= nil then self.dataLink37:destroy(); self.dataLink37 = nil; end;
         if self.imageCheckBox95 ~= nil then self.imageCheckBox95:destroy(); self.imageCheckBox95 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.imageCheckBox279 ~= nil then self.imageCheckBox279:destroy(); self.imageCheckBox279 = nil; end;
         if self.imageCheckBox278 ~= nil then self.imageCheckBox278:destroy(); self.imageCheckBox278 = nil; end;
         if self.imageCheckBox297 ~= nil then self.imageCheckBox297:destroy(); self.imageCheckBox297 = nil; end;
         if self.imageCheckBox135 ~= nil then self.imageCheckBox135:destroy(); self.imageCheckBox135 = nil; end;
-        if self.checkBox13 ~= nil then self.checkBox13:destroy(); self.checkBox13 = nil; end;
+        if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
         if self.imageCheckBox206 ~= nil then self.imageCheckBox206:destroy(); self.imageCheckBox206 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
@@ -7333,10 +11048,12 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox162 ~= nil then self.imageCheckBox162:destroy(); self.imageCheckBox162 = nil; end;
         if self.imageCheckBox286 ~= nil then self.imageCheckBox286:destroy(); self.imageCheckBox286 = nil; end;
         if self.imageCheckBox48 ~= nil then self.imageCheckBox48:destroy(); self.imageCheckBox48 = nil; end;
+        if self.imageCheckBox338 ~= nil then self.imageCheckBox338:destroy(); self.imageCheckBox338 = nil; end;
         if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
         if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
         if self.imageCheckBox139 ~= nil then self.imageCheckBox139:destroy(); self.imageCheckBox139 = nil; end;
+        if self.dataLink56 ~= nil then self.dataLink56:destroy(); self.dataLink56 = nil; end;
         if self.label62 ~= nil then self.label62:destroy(); self.label62 = nil; end;
         if self.imageCheckBox102 ~= nil then self.imageCheckBox102:destroy(); self.imageCheckBox102 = nil; end;
         if self.imageCheckBox187 ~= nil then self.imageCheckBox187:destroy(); self.imageCheckBox187 = nil; end;
@@ -7351,8 +11068,9 @@ local function constructNew_VampiroAMascara1()
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.imageCheckBox35 ~= nil then self.imageCheckBox35:destroy(); self.imageCheckBox35 = nil; end;
         if self.imageCheckBox323 ~= nil then self.imageCheckBox323:destroy(); self.imageCheckBox323 = nil; end;
-        if self.checkBox4 ~= nil then self.checkBox4:destroy(); self.checkBox4 = nil; end;
+        if self.dataLink25 ~= nil then self.dataLink25:destroy(); self.dataLink25 = nil; end;
         if self.layout79 ~= nil then self.layout79:destroy(); self.layout79 = nil; end;
+        if self.dataLink58 ~= nil then self.dataLink58:destroy(); self.dataLink58 = nil; end;
         if self.imageCheckBox245 ~= nil then self.imageCheckBox245:destroy(); self.imageCheckBox245 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
@@ -7362,11 +11080,14 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox259 ~= nil then self.imageCheckBox259:destroy(); self.imageCheckBox259 = nil; end;
         if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
         if self.imageCheckBox303 ~= nil then self.imageCheckBox303:destroy(); self.imageCheckBox303 = nil; end;
+        if self.dataLink31 ~= nil then self.dataLink31:destroy(); self.dataLink31 = nil; end;
         if self.imageCheckBox88 ~= nil then self.imageCheckBox88:destroy(); self.imageCheckBox88 = nil; end;
         if self.imageCheckBox114 ~= nil then self.imageCheckBox114:destroy(); self.imageCheckBox114 = nil; end;
+        if self.dataLink39 ~= nil then self.dataLink39:destroy(); self.dataLink39 = nil; end;
         if self.imageCheckBox327 ~= nil then self.imageCheckBox327:destroy(); self.imageCheckBox327 = nil; end;
         if self.imageCheckBox329 ~= nil then self.imageCheckBox329:destroy(); self.imageCheckBox329 = nil; end;
         if self.layout80 ~= nil then self.layout80:destroy(); self.layout80 = nil; end;
+        if self.imageCheckBox342 ~= nil then self.imageCheckBox342:destroy(); self.imageCheckBox342 = nil; end;
         if self.imageCheckBox43 ~= nil then self.imageCheckBox43:destroy(); self.imageCheckBox43 = nil; end;
         if self.imageCheckBox202 ~= nil then self.imageCheckBox202:destroy(); self.imageCheckBox202 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
@@ -7383,14 +11104,11 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
         if self.imageCheckBox61 ~= nil then self.imageCheckBox61:destroy(); self.imageCheckBox61 = nil; end;
         if self.imageCheckBox75 ~= nil then self.imageCheckBox75:destroy(); self.imageCheckBox75 = nil; end;
-        if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
         if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
         if self.imageCheckBox51 ~= nil then self.imageCheckBox51:destroy(); self.imageCheckBox51 = nil; end;
         if self.imageCheckBox44 ~= nil then self.imageCheckBox44:destroy(); self.imageCheckBox44 = nil; end;
-        if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
         if self.layout81 ~= nil then self.layout81:destroy(); self.layout81 = nil; end;
-        if self.layout93 ~= nil then self.layout93:destroy(); self.layout93 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.imageCheckBox270 ~= nil then self.imageCheckBox270:destroy(); self.imageCheckBox270 = nil; end;
         if self.layout45 ~= nil then self.layout45:destroy(); self.layout45 = nil; end;
@@ -7418,12 +11136,14 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox203 ~= nil then self.imageCheckBox203:destroy(); self.imageCheckBox203 = nil; end;
         if self.imageCheckBox254 ~= nil then self.imageCheckBox254:destroy(); self.imageCheckBox254 = nil; end;
         if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
+        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
         if self.imageCheckBox113 ~= nil then self.imageCheckBox113:destroy(); self.imageCheckBox113 = nil; end;
         if self.imageCheckBox89 ~= nil then self.imageCheckBox89:destroy(); self.imageCheckBox89 = nil; end;
         if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
         if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
         if self.imageCheckBox69 ~= nil then self.imageCheckBox69:destroy(); self.imageCheckBox69 = nil; end;
         if self.imageCheckBox319 ~= nil then self.imageCheckBox319:destroy(); self.imageCheckBox319 = nil; end;
+        if self.dataLink36 ~= nil then self.dataLink36:destroy(); self.dataLink36 = nil; end;
         if self.imageCheckBox317 ~= nil then self.imageCheckBox317:destroy(); self.imageCheckBox317 = nil; end;
         if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
         if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
@@ -7449,7 +11169,6 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox284 ~= nil then self.imageCheckBox284:destroy(); self.imageCheckBox284 = nil; end;
         if self.imageCheckBox100 ~= nil then self.imageCheckBox100:destroy(); self.imageCheckBox100 = nil; end;
         if self.imageCheckBox321 ~= nil then self.imageCheckBox321:destroy(); self.imageCheckBox321 = nil; end;
-        if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
         if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
@@ -7460,6 +11179,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
         if self.imageCheckBox236 ~= nil then self.imageCheckBox236:destroy(); self.imageCheckBox236 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.dataLink52 ~= nil then self.dataLink52:destroy(); self.dataLink52 = nil; end;
         if self.imageCheckBox151 ~= nil then self.imageCheckBox151:destroy(); self.imageCheckBox151 = nil; end;
         if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
         if self.imageCheckBox49 ~= nil then self.imageCheckBox49:destroy(); self.imageCheckBox49 = nil; end;
@@ -7468,6 +11188,7 @@ local function constructNew_VampiroAMascara1()
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.imageCheckBox212 ~= nil then self.imageCheckBox212:destroy(); self.imageCheckBox212 = nil; end;
         if self.imageCheckBox27 ~= nil then self.imageCheckBox27:destroy(); self.imageCheckBox27 = nil; end;
+        if self.dataLink26 ~= nil then self.dataLink26:destroy(); self.dataLink26 = nil; end;
         if self.imageCheckBox70 ~= nil then self.imageCheckBox70:destroy(); self.imageCheckBox70 = nil; end;
         if self.imageCheckBox140 ~= nil then self.imageCheckBox140:destroy(); self.imageCheckBox140 = nil; end;
         if self.imageCheckBox221 ~= nil then self.imageCheckBox221:destroy(); self.imageCheckBox221 = nil; end;
@@ -7481,7 +11202,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox84 ~= nil then self.imageCheckBox84:destroy(); self.imageCheckBox84 = nil; end;
         if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
         if self.imageCheckBox269 ~= nil then self.imageCheckBox269:destroy(); self.imageCheckBox269 = nil; end;
-        if self.checkBox2 ~= nil then self.checkBox2:destroy(); self.checkBox2 = nil; end;
+        if self.dataLink48 ~= nil then self.dataLink48:destroy(); self.dataLink48 = nil; end;
         if self.imageCheckBox277 ~= nil then self.imageCheckBox277:destroy(); self.imageCheckBox277 = nil; end;
         if self.imageCheckBox311 ~= nil then self.imageCheckBox311:destroy(); self.imageCheckBox311 = nil; end;
         if self.imageCheckBox312 ~= nil then self.imageCheckBox312:destroy(); self.imageCheckBox312 = nil; end;
@@ -7493,6 +11214,7 @@ local function constructNew_VampiroAMascara1()
         if self.imageCheckBox324 ~= nil then self.imageCheckBox324:destroy(); self.imageCheckBox324 = nil; end;
         if self.imageCheckBox257 ~= nil then self.imageCheckBox257:destroy(); self.imageCheckBox257 = nil; end;
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
+        if self.dataLink51 ~= nil then self.dataLink51:destroy(); self.dataLink51 = nil; end;
         if self.imageCheckBox122 ~= nil then self.imageCheckBox122:destroy(); self.imageCheckBox122 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
@@ -7500,15 +11222,16 @@ local function constructNew_VampiroAMascara1()
         if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
         if self.imageCheckBox47 ~= nil then self.imageCheckBox47:destroy(); self.imageCheckBox47 = nil; end;
         if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
+        if self.dataLink46 ~= nil then self.dataLink46:destroy(); self.dataLink46 = nil; end;
         if self.imageCheckBox72 ~= nil then self.imageCheckBox72:destroy(); self.imageCheckBox72 = nil; end;
         if self.imageCheckBox230 ~= nil then self.imageCheckBox230:destroy(); self.imageCheckBox230 = nil; end;
         if self.imageCheckBox183 ~= nil then self.imageCheckBox183:destroy(); self.imageCheckBox183 = nil; end;
         if self.layout86 ~= nil then self.layout86:destroy(); self.layout86 = nil; end;
         if self.imageCheckBox98 ~= nil then self.imageCheckBox98:destroy(); self.imageCheckBox98 = nil; end;
+        if self.dataLink50 ~= nil then self.dataLink50:destroy(); self.dataLink50 = nil; end;
         if self.imageCheckBox40 ~= nil then self.imageCheckBox40:destroy(); self.imageCheckBox40 = nil; end;
-        if self.layout85 ~= nil then self.layout85:destroy(); self.layout85 = nil; end;
         if self.imageCheckBox310 ~= nil then self.imageCheckBox310:destroy(); self.imageCheckBox310 = nil; end;
-        if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
+        if self.layout85 ~= nil then self.layout85:destroy(); self.layout85 = nil; end;
         if self.imageCheckBox232 ~= nil then self.imageCheckBox232:destroy(); self.imageCheckBox232 = nil; end;
         if self.imageCheckBox167 ~= nil then self.imageCheckBox167:destroy(); self.imageCheckBox167 = nil; end;
         if self.layout91 ~= nil then self.layout91:destroy(); self.layout91 = nil; end;

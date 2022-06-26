@@ -32,854 +32,545 @@ local function constructNew_frmCodigo2()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'shabilidades1_6', 'shabilidades1_5', 'shabilidades1_4', 'shabilidades1_3', 'shabilidades1_2', 'shabilidades1_1'});
+    obj.dataLink1:setFields({'umoutras1_5', 'umoutras1_4', 'umoutras1_3', 'umoutras1_2', 'umoutras1_1'});
     obj.dataLink1:setName("dataLink1");
 
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj);
-    obj.dataLink2:setFields({'shabilidades2_6', 'shabilidades2_5', 'shabilidades2_4', 'shabilidades2_3', 'shabilidades2_2', 'shabilidades2_1'});
+    obj.dataLink2:setFields({'umoutras2_5', 'umoutras2_4', 'umoutras2_3', 'umoutras2_2', 'umoutras2_1'});
     obj.dataLink2:setName("dataLink2");
 
     obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink3:setParent(obj);
-    obj.dataLink3:setFields({'shabilidades3_6', 'shabilidades3_5', 'shabilidades3_4', 'shabilidades3_3', 'shabilidades3_2', 'shabilidades3_1'});
+    obj.dataLink3:setFields({'umoutras3_5', 'umoutras3_4', 'umoutras3_3', 'umoutras3_2', 'umoutras3_1'});
     obj.dataLink3:setName("dataLink3");
 
     obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink4:setParent(obj);
-    obj.dataLink4:setFields({'shabilidades4_6', 'shabilidades4_5', 'shabilidades4_4', 'shabilidades4_3', 'shabilidades4_2', 'shabilidades4_1'});
+    obj.dataLink4:setFields({'umoutras4_5', 'umoutras4_4', 'umoutras4_3', 'umoutras4_2', 'umoutras4_1'});
     obj.dataLink4:setName("dataLink4");
 
     obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink5:setParent(obj);
-    obj.dataLink5:setFields({'shabilidades5_6', 'shabilidades5_5', 'shabilidades5_4', 'shabilidades5_3', 'shabilidades5_2', 'shabilidades5_1'});
+    obj.dataLink5:setFields({'umoutras5_5', 'umoutras5_4', 'umoutras5_3', 'umoutras5_2', 'umoutras5_1'});
     obj.dataLink5:setName("dataLink5");
 
     obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink6:setParent(obj);
-    obj.dataLink6:setFields({'shabilidades6_6', 'shabilidades6_5', 'shabilidades6_4', 'shabilidades6_3', 'shabilidades6_2', 'shabilidades6_1'});
+    obj.dataLink6:setFields({'doisoutras1_5', 'doisoutras1_4', 'doisoutras1_3', 'doisoutras1_2', 'doisoutras1_1'});
     obj.dataLink6:setName("dataLink6");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink7:setParent(obj);
-    obj.dataLink7:setFields({'shabilidades7_6', 'shabilidades7_5', 'shabilidades7_4', 'shabilidades7_3', 'shabilidades7_2', 'shabilidades7_1'});
+    obj.dataLink7:setFields({'doisoutras2_5', 'doisoutras2_4', 'doisoutras2_3', 'doisoutras2_2', 'doisoutras2_1'});
     obj.dataLink7:setName("dataLink7");
 
     obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink8:setParent(obj);
-    obj.dataLink8:setFields({'shabilidades8_6', 'shabilidades8_5', 'shabilidades8_4', 'shabilidades8_3', 'shabilidades8_2', 'shabilidades8_1'});
+    obj.dataLink8:setFields({'doisoutras3_5', 'doisoutras3_4', 'doisoutras3_3', 'doisoutras3_2', 'doisoutras3_1'});
     obj.dataLink8:setName("dataLink8");
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink9:setParent(obj);
-    obj.dataLink9:setFields({'shabilidades1_h6', 'shabilidades1_h5', 'shabilidades1_h4', 'shabilidades1_h3', 'shabilidades1_h2', 'shabilidades1_h1'});
+    obj.dataLink9:setFields({'doisoutras4_5', 'doisoutras4_4', 'doisoutras4_3', 'doisoutras4_2', 'doisoutras4_1'});
     obj.dataLink9:setName("dataLink9");
 
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink10:setParent(obj);
-    obj.dataLink10:setFields({'shabilidades2_h6', 'shabilidades2_h5', 'shabilidades2_h4', 'shabilidades2_h3', 'shabilidades2_h2', 'shabilidades2_h1'});
+    obj.dataLink10:setFields({'doisoutras5_5', 'doisoutras5_4', 'doisoutras5_3', 'doisoutras5_2', 'doisoutras5_1'});
     obj.dataLink10:setName("dataLink10");
 
     obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink11:setParent(obj);
-    obj.dataLink11:setFields({'shabilidades3_h6', 'shabilidades3_h5', 'shabilidades3_h4', 'shabilidades3_h3', 'shabilidades3_h2', 'shabilidades3_h1'});
+    obj.dataLink11:setFields({'tresoutras1_5', 'tresoutras1_4', 'tresoutras1_3', 'tresoutras1_2', 'tresoutras1_1'});
     obj.dataLink11:setName("dataLink11");
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink12:setParent(obj);
-    obj.dataLink12:setFields({'shabilidades4_h6', 'shabilidades4_h5', 'shabilidades4_h4', 'shabilidades4_h3', 'shabilidades4_h2', 'shabilidades4_h1'});
+    obj.dataLink12:setFields({'tresoutras2_5', 'tresoutras2_4', 'tresoutras2_3', 'tresoutras2_2', 'tresoutras2_1'});
     obj.dataLink12:setName("dataLink12");
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink13:setParent(obj);
-    obj.dataLink13:setFields({'shabilidades5_h6', 'shabilidades5_h5', 'shabilidades5_h4', 'shabilidades5_h3', 'shabilidades5_h2', 'shabilidades5_h1'});
+    obj.dataLink13:setFields({'tresoutras3_5', 'tresoutras3_4', 'tresoutras3_3', 'tresoutras3_2', 'tresoutras3_1'});
     obj.dataLink13:setName("dataLink13");
 
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink14:setParent(obj);
-    obj.dataLink14:setFields({'shabilidades6_h6', 'shabilidades6_h5', 'shabilidades6_h4', 'shabilidades6_h3', 'shabilidades6_h2', 'shabilidades6_h1'});
+    obj.dataLink14:setFields({'tresoutras4_5', 'tresoutras4_4', 'tresoutras4_3', 'tresoutras4_2', 'tresoutras4_1'});
     obj.dataLink14:setName("dataLink14");
 
     obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink15:setParent(obj);
-    obj.dataLink15:setFields({'shabilidades7_h6', 'shabilidades7_h5', 'shabilidades7_h4', 'shabilidades7_h3', 'shabilidades7_h2', 'shabilidades7_h1'});
+    obj.dataLink15:setFields({'tresoutras5_5', 'tresoutras5_4', 'tresoutras5_3', 'tresoutras5_2', 'tresoutras5_1'});
     obj.dataLink15:setName("dataLink15");
-
-    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj);
-    obj.dataLink16:setFields({'shabilidades8_h6', 'shabilidades8_h5', 'shabilidades8_h4', 'shabilidades8_h3', 'shabilidades8_h2', 'shabilidades8_h1'});
-    obj.dataLink16:setName("dataLink16");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades1_6 == true then
-            		sheet.shabilidades1_5 = true;
-            		sheet.shabilidades1_4 = true;
-            		sheet.shabilidades1_3 = true;
-            		sheet.shabilidades1_2 = true;
-            		sheet.shabilidades1_1 = true;
-            	elseif sheet.shabilidades1_5 == true then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_4 = true;
-            		sheet.shabilidades1_3 = true;
-            		sheet.shabilidades1_2 = true;
-            		sheet.shabilidades1_1 = true;
-            	elseif sheet.shabilidades1_4 == true then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_5 = false;
-            		sheet.shabilidades1_3 = true;
-            		sheet.shabilidades1_2 = true;
-            		sheet.shabilidades1_1 = true;
-            	elseif sheet.shabilidades1_3 == true then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_5 = false;
-            		sheet.shabilidades1_4 = false;
-            		sheet.shabilidades1_2 = true;
-            		sheet.shabilidades1_1 = true;
-            	elseif sheet.shabilidades1_2 == true then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_5 = false;
-            		sheet.shabilidades1_4 = false;
-            		sheet.shabilidades1_3 = false;
-            		sheet.shabilidades1_1 = true;	
-            	elseif sheet.shabilidades1_1 == true then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_5 = false;
-            		sheet.shabilidades1_4 = false;
-            		sheet.shabilidades1_3 = false;
-            		sheet.shabilidades1_2 = false;
-            	elseif sheet.shabilidades1_1 == false then
-            		sheet.shabilidades1_6 = false;
-            		sheet.shabilidades1_5 = false;
-            		sheet.shabilidades1_4 = false;
-            		sheet.shabilidades1_3 = false;
-            		sheet.shabilidades1_2 = false;
+            	if sheet.umoutras1_5 == true then
+            		sheet.umoutras1_4 = true;
+            		sheet.umoutras1_3 = true;
+            		sheet.umoutras1_2 = true;
+            		sheet.umoutras1_1 = true;
+            	elseif sheet.umoutras1_4 == true then
+            		sheet.umoutras1_5 = false;
+            		sheet.umoutras1_3 = true;
+            		sheet.umoutras1_2 = true;
+            		sheet.umoutras1_1 = true;
+            	elseif sheet.umoutras1_3 == true then
+            		sheet.umoutras1_5 = false;
+            		sheet.umoutras1_4 = false;
+            		sheet.umoutras1_2 = true;
+            		sheet.umoutras1_1 = true;
+            	elseif sheet.umoutras1_2 == true then
+            		sheet.umoutras1_5 = false;
+            		sheet.umoutras1_4 = false;
+            		sheet.umoutras1_3 = false;
+            		sheet.umoutras1_1 = true;
+            	elseif sheet.umoutras1_1 == true then
+            		sheet.umoutras1_5 = false;
+            		sheet.umoutras1_4 = false;
+            		sheet.umoutras1_3 = false;
+            		sheet.umoutras1_2 = false;
             	end;
         end, obj);
 
     obj._e_event1 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades2_6 == true then
-            		sheet.shabilidades2_5 = true;
-            		sheet.shabilidades2_4 = true;
-            		sheet.shabilidades2_3 = true;
-            		sheet.shabilidades2_2 = true;
-            		sheet.shabilidades2_1 = true;
-            	elseif sheet.shabilidades2_5 == true then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_4 = true;
-            		sheet.shabilidades2_3 = true;
-            		sheet.shabilidades2_2 = true;
-            		sheet.shabilidades2_1 = true;
-            	elseif sheet.shabilidades2_4 == true then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_5 = false;
-            		sheet.shabilidades2_3 = true;
-            		sheet.shabilidades2_2 = true;
-            		sheet.shabilidades2_1 = true;
-            	elseif sheet.shabilidades2_3 == true then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_5 = false;
-            		sheet.shabilidades2_4 = false;
-            		sheet.shabilidades2_2 = true;
-            		sheet.shabilidades2_1 = true;
-            	elseif sheet.shabilidades2_2 == true then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_5 = false;
-            		sheet.shabilidades2_4 = false;
-            		sheet.shabilidades2_3 = false;
-            		sheet.shabilidades2_1 = true;	
-            	elseif sheet.shabilidades2_1 == true then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_5 = false;
-            		sheet.shabilidades2_4 = false;
-            		sheet.shabilidades2_3 = false;
-            		sheet.shabilidades2_2 = false;
-            	elseif sheet.shabilidades2_1 == false then
-            		sheet.shabilidades2_6 = false;
-            		sheet.shabilidades2_5 = false;
-            		sheet.shabilidades2_4 = false;
-            		sheet.shabilidades2_3 = false;
-            		sheet.shabilidades2_2 = false;
+            	if sheet.umoutras2_5 == true then
+            		sheet.umoutras2_4 = true;
+            		sheet.umoutras2_3 = true;
+            		sheet.umoutras2_2 = true;
+            		sheet.umoutras2_1 = true;
+            	elseif sheet.umoutras2_4 == true then
+            		sheet.umoutras2_5 = false;
+            		sheet.umoutras2_3 = true;
+            		sheet.umoutras2_2 = true;
+            		sheet.umoutras2_1 = true;
+            	elseif sheet.umoutras2_3 == true then
+            		sheet.umoutras2_5 = false;
+            		sheet.umoutras2_4 = false;
+            		sheet.umoutras2_2 = true;
+            		sheet.umoutras2_1 = true;
+            	elseif sheet.umoutras2_2 == true then
+            		sheet.umoutras2_5 = false;
+            		sheet.umoutras2_4 = false;
+            		sheet.umoutras2_3 = false;
+            		sheet.umoutras2_1 = true;
+            	elseif sheet.umoutras2_1 == true then
+            		sheet.umoutras2_5 = false;
+            		sheet.umoutras2_4 = false;
+            		sheet.umoutras2_3 = false;
+            		sheet.umoutras2_2 = false;
             	end;
         end, obj);
 
     obj._e_event2 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades3_6 == true then
-            		sheet.shabilidades3_5 = true;
-            		sheet.shabilidades3_4 = true;
-            		sheet.shabilidades3_3 = true;
-            		sheet.shabilidades3_2 = true;
-            		sheet.shabilidades3_1 = true;
-            	elseif sheet.shabilidades3_5 == true then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_4 = true;
-            		sheet.shabilidades3_3 = true;
-            		sheet.shabilidades3_2 = true;
-            		sheet.shabilidades3_1 = true;
-            	elseif sheet.shabilidades3_4 == true then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_5 = false;
-            		sheet.shabilidades3_3 = true;
-            		sheet.shabilidades3_2 = true;
-            		sheet.shabilidades3_1 = true;
-            	elseif sheet.shabilidades3_3 == true then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_5 = false;
-            		sheet.shabilidades3_4 = false;
-            		sheet.shabilidades3_2 = true;
-            		sheet.shabilidades3_1 = true;
-            	elseif sheet.shabilidades3_2 == true then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_5 = false;
-            		sheet.shabilidades3_4 = false;
-            		sheet.shabilidades3_3 = false;
-            		sheet.shabilidades3_1 = true;	
-            	elseif sheet.shabilidades3_1 == true then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_5 = false;
-            		sheet.shabilidades3_4 = false;
-            		sheet.shabilidades3_3 = false;
-            		sheet.shabilidades3_2 = false;
-            	elseif sheet.shabilidades3_1 == false then
-            		sheet.shabilidades3_6 = false;
-            		sheet.shabilidades3_5 = false;
-            		sheet.shabilidades3_4 = false;
-            		sheet.shabilidades3_3 = false;
-            		sheet.shabilidades3_2 = false;
+            	if sheet.umoutras3_5 == true then
+            		sheet.umoutras3_4 = true;
+            		sheet.umoutras3_3 = true;
+            		sheet.umoutras3_2 = true;
+            		sheet.umoutras3_1 = true;
+            	elseif sheet.umoutras3_4 == true then
+            		sheet.umoutras3_5 = false;
+            		sheet.umoutras3_3 = true;
+            		sheet.umoutras3_2 = true;
+            		sheet.umoutras3_1 = true;
+            	elseif sheet.umoutras3_3 == true then
+            		sheet.umoutras3_5 = false;
+            		sheet.umoutras3_4 = false;
+            		sheet.umoutras3_2 = true;
+            		sheet.umoutras3_1 = true;
+            	elseif sheet.umoutras3_2 == true then
+            		sheet.umoutras3_5 = false;
+            		sheet.umoutras3_4 = false;
+            		sheet.umoutras3_3 = false;
+            		sheet.umoutras3_1 = true;
+            	elseif sheet.umoutras3_1 == true then
+            		sheet.umoutras3_5 = false;
+            		sheet.umoutras3_4 = false;
+            		sheet.umoutras3_3 = false;
+            		sheet.umoutras3_2 = false;
             	end;
         end, obj);
 
     obj._e_event3 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades4_6 == true then
-            		sheet.shabilidades4_5 = true;
-            		sheet.shabilidades4_4 = true;
-            		sheet.shabilidades4_3 = true;
-            		sheet.shabilidades4_2 = true;
-            		sheet.shabilidades4_1 = true;
-            	elseif sheet.shabilidades4_5 == true then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_4 = true;
-            		sheet.shabilidades4_3 = true;
-            		sheet.shabilidades4_2 = true;
-            		sheet.shabilidades4_1 = true;
-            	elseif sheet.shabilidades4_4 == true then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_5 = false;
-            		sheet.shabilidades4_3 = true;
-            		sheet.shabilidades4_2 = true;
-            		sheet.shabilidades4_1 = true;
-            	elseif sheet.shabilidades4_3 == true then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_5 = false;
-            		sheet.shabilidades4_4 = false;
-            		sheet.shabilidades4_2 = true;
-            		sheet.shabilidades4_1 = true;
-            	elseif sheet.shabilidades4_2 == true then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_5 = false;
-            		sheet.shabilidades4_4 = false;
-            		sheet.shabilidades4_3 = false;
-            		sheet.shabilidades4_1 = true;	
-            	elseif sheet.shabilidades4_1 == true then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_5 = false;
-            		sheet.shabilidades4_4 = false;
-            		sheet.shabilidades4_3 = false;
-            		sheet.shabilidades4_2 = false;
-            	elseif sheet.shabilidades4_1 == false then
-            		sheet.shabilidades4_6 = false;
-            		sheet.shabilidades4_5 = false;
-            		sheet.shabilidades4_4 = false;
-            		sheet.shabilidades4_3 = false;
-            		sheet.shabilidades4_2 = false;
+            	if sheet.umoutras4_5 == true then
+            		sheet.umoutras4_4 = true;
+            		sheet.umoutras4_3 = true;
+            		sheet.umoutras4_2 = true;
+            		sheet.umoutras4_1 = true;
+            	elseif sheet.umoutras4_4 == true then
+            		sheet.umoutras4_5 = false;
+            		sheet.umoutras4_3 = true;
+            		sheet.umoutras4_2 = true;
+            		sheet.umoutras4_1 = true;
+            	elseif sheet.umoutras4_3 == true then
+            		sheet.umoutras4_5 = false;
+            		sheet.umoutras4_4 = false;
+            		sheet.umoutras4_2 = true;
+            		sheet.umoutras4_1 = true;
+            	elseif sheet.umoutras4_2 == true then
+            		sheet.umoutras4_5 = false;
+            		sheet.umoutras4_4 = false;
+            		sheet.umoutras4_3 = false;
+            		sheet.umoutras4_1 = true;
+            	elseif sheet.umoutras4_1 == true then
+            		sheet.umoutras4_5 = false;
+            		sheet.umoutras4_4 = false;
+            		sheet.umoutras4_3 = false;
+            		sheet.umoutras4_2 = false;
             	end;
         end, obj);
 
     obj._e_event4 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades5_6 == true then
-            		sheet.shabilidades5_5 = true;
-            		sheet.shabilidades5_4 = true;
-            		sheet.shabilidades5_3 = true;
-            		sheet.shabilidades5_2 = true;
-            		sheet.shabilidades5_1 = true;
-            	elseif sheet.shabilidades5_5 == true then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_4 = true;
-            		sheet.shabilidades5_3 = true;
-            		sheet.shabilidades5_2 = true;
-            		sheet.shabilidades5_1 = true;
-            	elseif sheet.shabilidades5_4 == true then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_5 = false;
-            		sheet.shabilidades5_3 = true;
-            		sheet.shabilidades5_2 = true;
-            		sheet.shabilidades5_1 = true;
-            	elseif sheet.shabilidades5_3 == true then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_5 = false;
-            		sheet.shabilidades5_4 = false;
-            		sheet.shabilidades5_2 = true;
-            		sheet.shabilidades5_1 = true;
-            	elseif sheet.shabilidades5_2 == true then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_5 = false;
-            		sheet.shabilidades5_4 = false;
-            		sheet.shabilidades5_3 = false;
-            		sheet.shabilidades5_1 = true;	
-            	elseif sheet.shabilidades5_1 == true then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_5 = false;
-            		sheet.shabilidades5_4 = false;
-            		sheet.shabilidades5_3 = false;
-            		sheet.shabilidades5_2 = false;
-            	elseif sheet.shabilidades5_1 == false then
-            		sheet.shabilidades5_6 = false;
-            		sheet.shabilidades5_5 = false;
-            		sheet.shabilidades5_4 = false;
-            		sheet.shabilidades5_3 = false;
-            		sheet.shabilidades5_2 = false;
+            	if sheet.umoutras5_5 == true then
+            		sheet.umoutras5_4 = true;
+            		sheet.umoutras5_3 = true;
+            		sheet.umoutras5_2 = true;
+            		sheet.umoutras5_1 = true;
+            	elseif sheet.umoutras5_4 == true then
+            		sheet.umoutras5_5 = false;
+            		sheet.umoutras5_3 = true;
+            		sheet.umoutras5_2 = true;
+            		sheet.umoutras5_1 = true;
+            	elseif sheet.umoutras5_3 == true then
+            		sheet.umoutras5_5 = false;
+            		sheet.umoutras5_4 = false;
+            		sheet.umoutras5_2 = true;
+            		sheet.umoutras5_1 = true;
+            	elseif sheet.umoutras5_2 == true then
+            		sheet.umoutras5_5 = false;
+            		sheet.umoutras5_4 = false;
+            		sheet.umoutras5_3 = false;
+            		sheet.umoutras5_1 = true;
+            	elseif sheet.umoutras5_1 == true then
+            		sheet.umoutras5_5 = false;
+            		sheet.umoutras5_4 = false;
+            		sheet.umoutras5_3 = false;
+            		sheet.umoutras5_2 = false;
             	end;
         end, obj);
 
     obj._e_event5 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades6_6 == true then
-            		sheet.shabilidades6_5 = true;
-            		sheet.shabilidades6_4 = true;
-            		sheet.shabilidades6_3 = true;
-            		sheet.shabilidades6_2 = true;
-            		sheet.shabilidades6_1 = true;
-            	elseif sheet.shabilidades6_5 == true then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_4 = true;
-            		sheet.shabilidades6_3 = true;
-            		sheet.shabilidades6_2 = true;
-            		sheet.shabilidades6_1 = true;
-            	elseif sheet.shabilidades6_4 == true then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_5 = false;
-            		sheet.shabilidades6_3 = true;
-            		sheet.shabilidades6_2 = true;
-            		sheet.shabilidades6_1 = true;
-            	elseif sheet.shabilidades6_3 == true then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_5 = false;
-            		sheet.shabilidades6_4 = false;
-            		sheet.shabilidades6_2 = true;
-            		sheet.shabilidades6_1 = true;
-            	elseif sheet.shabilidades6_2 == true then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_5 = false;
-            		sheet.shabilidades6_4 = false;
-            		sheet.shabilidades6_3 = false;
-            		sheet.shabilidades6_1 = true;	
-            	elseif sheet.shabilidades6_1 == true then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_5 = false;
-            		sheet.shabilidades6_4 = false;
-            		sheet.shabilidades6_3 = false;
-            		sheet.shabilidades6_2 = false;
-            	elseif sheet.shabilidades6_1 == false then
-            		sheet.shabilidades6_6 = false;
-            		sheet.shabilidades6_5 = false;
-            		sheet.shabilidades6_4 = false;
-            		sheet.shabilidades6_3 = false;
-            		sheet.shabilidades6_2 = false;
+            	if sheet.doisoutras1_5 == true then
+            		sheet.doisoutras1_4 = true;
+            		sheet.doisoutras1_3 = true;
+            		sheet.doisoutras1_2 = true;
+            		sheet.doisoutras1_1 = true;
+            	elseif sheet.doisoutras1_4 == true then
+            		sheet.doisoutras1_5 = false;
+            		sheet.doisoutras1_3 = true;
+            		sheet.doisoutras1_2 = true;
+            		sheet.doisoutras1_1 = true;
+            	elseif sheet.doisoutras1_3 == true then
+            		sheet.doisoutras1_5 = false;
+            		sheet.doisoutras1_4 = false;
+            		sheet.doisoutras1_2 = true;
+            		sheet.doisoutras1_1 = true;
+            	elseif sheet.doisoutras1_2 == true then
+            		sheet.doisoutras1_5 = false;
+            		sheet.doisoutras1_4 = false;
+            		sheet.doisoutras1_3 = false;
+            		sheet.doisoutras1_1 = true;
+            	elseif sheet.doisoutras1_1 == true then
+            		sheet.doisoutras1_5 = false;
+            		sheet.doisoutras1_4 = false;
+            		sheet.doisoutras1_3 = false;
+            		sheet.doisoutras1_2 = false;
             	end;
         end, obj);
 
     obj._e_event6 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades7_6 == true then
-            		sheet.shabilidades7_5 = true;
-            		sheet.shabilidades7_4 = true;
-            		sheet.shabilidades7_3 = true;
-            		sheet.shabilidades7_2 = true;
-            		sheet.shabilidades7_1 = true;
-            	elseif sheet.shabilidades7_5 == true then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_4 = true;
-            		sheet.shabilidades7_3 = true;
-            		sheet.shabilidades7_2 = true;
-            		sheet.shabilidades7_1 = true;
-            	elseif sheet.shabilidades7_4 == true then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_5 = false;
-            		sheet.shabilidades7_3 = true;
-            		sheet.shabilidades7_2 = true;
-            		sheet.shabilidades7_1 = true;
-            	elseif sheet.shabilidades7_3 == true then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_5 = false;
-            		sheet.shabilidades7_4 = false;
-            		sheet.shabilidades7_2 = true;
-            		sheet.shabilidades7_1 = true;
-            	elseif sheet.shabilidades7_2 == true then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_5 = false;
-            		sheet.shabilidades7_4 = false;
-            		sheet.shabilidades7_3 = false;
-            		sheet.shabilidades7_1 = true;	
-            	elseif sheet.shabilidades7_1 == true then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_5 = false;
-            		sheet.shabilidades7_4 = false;
-            		sheet.shabilidades7_3 = false;
-            		sheet.shabilidades7_2 = false;
-            	elseif sheet.shabilidades7_1 == false then
-            		sheet.shabilidades7_6 = false;
-            		sheet.shabilidades7_5 = false;
-            		sheet.shabilidades7_4 = false;
-            		sheet.shabilidades7_3 = false;
-            		sheet.shabilidades7_2 = false;
+            	if sheet.doisoutras2_5 == true then
+            		sheet.doisoutras2_4 = true;
+            		sheet.doisoutras2_3 = true;
+            		sheet.doisoutras2_2 = true;
+            		sheet.doisoutras2_1 = true;
+            	elseif sheet.doisoutras2_4 == true then
+            		sheet.doisoutras2_5 = false;
+            		sheet.doisoutras2_3 = true;
+            		sheet.doisoutras2_2 = true;
+            		sheet.doisoutras2_1 = true;
+            	elseif sheet.doisoutras2_3 == true then
+            		sheet.doisoutras2_5 = false;
+            		sheet.doisoutras2_4 = false;
+            		sheet.doisoutras2_2 = true;
+            		sheet.doisoutras2_1 = true;
+            	elseif sheet.doisoutras2_2 == true then
+            		sheet.doisoutras2_5 = false;
+            		sheet.doisoutras2_4 = false;
+            		sheet.doisoutras2_3 = false;
+            		sheet.doisoutras2_1 = true;
+            	elseif sheet.doisoutras2_1 == true then
+            		sheet.doisoutras2_5 = false;
+            		sheet.doisoutras2_4 = false;
+            		sheet.doisoutras2_3 = false;
+            		sheet.doisoutras2_2 = false;
             	end;
         end, obj);
 
     obj._e_event7 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades8_6 == true then
-            		sheet.shabilidades8_5 = true;
-            		sheet.shabilidades8_4 = true;
-            		sheet.shabilidades8_3 = true;
-            		sheet.shabilidades8_2 = true;
-            		sheet.shabilidades8_1 = true;
-            	elseif sheet.shabilidades8_5 == true then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_4 = true;
-            		sheet.shabilidades8_3 = true;
-            		sheet.shabilidades8_2 = true;
-            		sheet.shabilidades8_1 = true;
-            	elseif sheet.shabilidades8_4 == true then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_5 = false;
-            		sheet.shabilidades8_3 = true;
-            		sheet.shabilidades8_2 = true;
-            		sheet.shabilidades8_1 = true;
-            	elseif sheet.shabilidades8_3 == true then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_5 = false;
-            		sheet.shabilidades8_4 = false;
-            		sheet.shabilidades8_2 = true;
-            		sheet.shabilidades8_1 = true;
-            	elseif sheet.shabilidades8_2 == true then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_5 = false;
-            		sheet.shabilidades8_4 = false;
-            		sheet.shabilidades8_3 = false;
-            		sheet.shabilidades8_1 = true;	
-            	elseif sheet.shabilidades8_1 == true then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_5 = false;
-            		sheet.shabilidades8_4 = false;
-            		sheet.shabilidades8_3 = false;
-            		sheet.shabilidades8_2 = false;
-            	elseif sheet.shabilidades8_1 == false then
-            		sheet.shabilidades8_6 = false;
-            		sheet.shabilidades8_5 = false;
-            		sheet.shabilidades8_4 = false;
-            		sheet.shabilidades8_3 = false;
-            		sheet.shabilidades8_2 = false;
+            	if sheet.doisoutras3_5 == true then
+            		sheet.doisoutras3_4 = true;
+            		sheet.doisoutras3_3 = true;
+            		sheet.doisoutras3_2 = true;
+            		sheet.doisoutras3_1 = true;
+            	elseif sheet.doisoutras3_4 == true then
+            		sheet.doisoutras3_5 = false;
+            		sheet.doisoutras3_3 = true;
+            		sheet.doisoutras3_2 = true;
+            		sheet.doisoutras3_1 = true;
+            	elseif sheet.doisoutras3_3 == true then
+            		sheet.doisoutras3_5 = false;
+            		sheet.doisoutras3_4 = false;
+            		sheet.doisoutras3_2 = true;
+            		sheet.doisoutras3_1 = true;
+            	elseif sheet.doisoutras3_2 == true then
+            		sheet.doisoutras3_5 = false;
+            		sheet.doisoutras3_4 = false;
+            		sheet.doisoutras3_3 = false;
+            		sheet.doisoutras3_1 = true;
+            	elseif sheet.doisoutras3_1 == true then
+            		sheet.doisoutras3_5 = false;
+            		sheet.doisoutras3_4 = false;
+            		sheet.doisoutras3_3 = false;
+            		sheet.doisoutras3_2 = false;
             	end;
         end, obj);
 
     obj._e_event8 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades1_h6 == true then
-            		sheet.shabilidades1_h5 = true;
-            		sheet.shabilidades1_h4 = true;
-            		sheet.shabilidades1_h3 = true;
-            		sheet.shabilidades1_h2 = true;
-            		sheet.shabilidades1_h1 = true;
-            	elseif sheet.shabilidades1_h5 == true then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h4 = true;
-            		sheet.shabilidades1_h3 = true;
-            		sheet.shabilidades1_h2 = true;
-            		sheet.shabilidades1_h1 = true;
-            	elseif sheet.shabilidades1_h4 == true then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h5 = false;
-            		sheet.shabilidades1_h3 = true;
-            		sheet.shabilidades1_h2 = true;
-            		sheet.shabilidades1_h1 = true;
-            	elseif sheet.shabilidades1_h3 == true then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h5 = false;
-            		sheet.shabilidades1_h4 = false;
-            		sheet.shabilidades1_h2 = true;
-            		sheet.shabilidades1_h1 = true;
-            	elseif sheet.shabilidades1_h2 == true then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h5 = false;
-            		sheet.shabilidades1_h4 = false;
-            		sheet.shabilidades1_h3 = false;
-            		sheet.shabilidades1_h1 = true;	
-            	elseif sheet.shabilidades1_h1 == true then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h5 = false;
-            		sheet.shabilidades1_h4 = false;
-            		sheet.shabilidades1_h3 = false;
-            		sheet.shabilidades1_h2 = false;
-            	elseif sheet.shabilidades1_h1 == false then
-            		sheet.shabilidades1_h6 = false;
-            		sheet.shabilidades1_h5 = false;
-            		sheet.shabilidades1_h4 = false;
-            		sheet.shabilidades1_h3 = false;
-            		sheet.shabilidades1_h2 = false;
+            	if sheet.doisoutras4_5 == true then
+            		sheet.doisoutras4_4 = true;
+            		sheet.doisoutras4_3 = true;
+            		sheet.doisoutras4_2 = true;
+            		sheet.doisoutras4_1 = true;
+            	elseif sheet.doisoutras4_4 == true then
+            		sheet.doisoutras4_5 = false;
+            		sheet.doisoutras4_3 = true;
+            		sheet.doisoutras4_2 = true;
+            		sheet.doisoutras4_1 = true;
+            	elseif sheet.doisoutras4_3 == true then
+            		sheet.doisoutras4_5 = false;
+            		sheet.doisoutras4_4 = false;
+            		sheet.doisoutras4_2 = true;
+            		sheet.doisoutras4_1 = true;
+            	elseif sheet.doisoutras4_2 == true then
+            		sheet.doisoutras4_5 = false;
+            		sheet.doisoutras4_4 = false;
+            		sheet.doisoutras4_3 = false;
+            		sheet.doisoutras4_1 = true;
+            	elseif sheet.doisoutras4_1 == true then
+            		sheet.doisoutras4_5 = false;
+            		sheet.doisoutras4_4 = false;
+            		sheet.doisoutras4_3 = false;
+            		sheet.doisoutras4_2 = false;
             	end;
         end, obj);
 
     obj._e_event9 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades2_h6 == true then
-            		sheet.shabilidades2_h5 = true;
-            		sheet.shabilidades2_h4 = true;
-            		sheet.shabilidades2_h3 = true;
-            		sheet.shabilidades2_h2 = true;
-            		sheet.shabilidades2_h1 = true;
-            	elseif sheet.shabilidades2_h5 == true then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h4 = true;
-            		sheet.shabilidades2_h3 = true;
-            		sheet.shabilidades2_h2 = true;
-            		sheet.shabilidades2_h1 = true;
-            	elseif sheet.shabilidades2_h4 == true then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h5 = false;
-            		sheet.shabilidades2_h3 = true;
-            		sheet.shabilidades2_h2 = true;
-            		sheet.shabilidades2_h1 = true;
-            	elseif sheet.shabilidades2_h3 == true then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h5 = false;
-            		sheet.shabilidades2_h4 = false;
-            		sheet.shabilidades2_h2 = true;
-            		sheet.shabilidades2_h1 = true;
-            	elseif sheet.shabilidades2_h2 == true then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h5 = false;
-            		sheet.shabilidades2_h4 = false;
-            		sheet.shabilidades2_h3 = false;
-            		sheet.shabilidades2_h1 = true;	
-            	elseif sheet.shabilidades2_h1 == true then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h5 = false;
-            		sheet.shabilidades2_h4 = false;
-            		sheet.shabilidades2_h3 = false;
-            		sheet.shabilidades2_h2 = false;
-            	elseif sheet.shabilidades2_h1 == false then
-            		sheet.shabilidades2_h6 = false;
-            		sheet.shabilidades2_h5 = false;
-            		sheet.shabilidades2_h4 = false;
-            		sheet.shabilidades2_h3 = false;
-            		sheet.shabilidades2_h2 = false;
+            	if sheet.doisoutras5_5 == true then
+            		sheet.doisoutras5_4 = true;
+            		sheet.doisoutras5_3 = true;
+            		sheet.doisoutras5_2 = true;
+            		sheet.doisoutras5_1 = true;
+            	elseif sheet.doisoutras5_4 == true then
+            		sheet.doisoutras5_5 = false;
+            		sheet.doisoutras5_3 = true;
+            		sheet.doisoutras5_2 = true;
+            		sheet.doisoutras5_1 = true;
+            	elseif sheet.doisoutras5_3 == true then
+            		sheet.doisoutras5_5 = false;
+            		sheet.doisoutras5_4 = false;
+            		sheet.doisoutras5_2 = true;
+            		sheet.doisoutras5_1 = true;
+            	elseif sheet.doisoutras5_2 == true then
+            		sheet.doisoutras5_5 = false;
+            		sheet.doisoutras5_4 = false;
+            		sheet.doisoutras5_3 = false;
+            		sheet.doisoutras5_1 = true;
+            	elseif sheet.doisoutras5_1 == true then
+            		sheet.doisoutras5_5 = false;
+            		sheet.doisoutras5_4 = false;
+            		sheet.doisoutras5_3 = false;
+            		sheet.doisoutras5_2 = false;
             	end;
         end, obj);
 
     obj._e_event10 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades3_h6 == true then
-            		sheet.shabilidades3_h5 = true;
-            		sheet.shabilidades3_h4 = true;
-            		sheet.shabilidades3_h3 = true;
-            		sheet.shabilidades3_h2 = true;
-            		sheet.shabilidades3_h1 = true;
-            	elseif sheet.shabilidades3_h5 == true then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h4 = true;
-            		sheet.shabilidades3_h3 = true;
-            		sheet.shabilidades3_h2 = true;
-            		sheet.shabilidades3_h1 = true;
-            	elseif sheet.shabilidades3_h4 == true then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h5 = false;
-            		sheet.shabilidades3_h3 = true;
-            		sheet.shabilidades3_h2 = true;
-            		sheet.shabilidades3_h1 = true;
-            	elseif sheet.shabilidades3_h3 == true then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h5 = false;
-            		sheet.shabilidades3_h4 = false;
-            		sheet.shabilidades3_h2 = true;
-            		sheet.shabilidades3_h1 = true;
-            	elseif sheet.shabilidades3_h2 == true then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h5 = false;
-            		sheet.shabilidades3_h4 = false;
-            		sheet.shabilidades3_h3 = false;
-            		sheet.shabilidades3_h1 = true;	
-            	elseif sheet.shabilidades3_h1 == true then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h5 = false;
-            		sheet.shabilidades3_h4 = false;
-            		sheet.shabilidades3_h3 = false;
-            		sheet.shabilidades3_h2 = false;
-            	elseif sheet.shabilidades3_h1 == false then
-            		sheet.shabilidades3_h6 = false;
-            		sheet.shabilidades3_h5 = false;
-            		sheet.shabilidades3_h4 = false;
-            		sheet.shabilidades3_h3 = false;
-            		sheet.shabilidades3_h2 = false;
+            	if sheet.tresoutras1_5 == true then
+            		sheet.tresoutras1_4 = true;
+            		sheet.tresoutras1_3 = true;
+            		sheet.tresoutras1_2 = true;
+            		sheet.tresoutras1_1 = true;
+            	elseif sheet.tresoutras1_4 == true then
+            		sheet.tresoutras1_5 = false;
+            		sheet.tresoutras1_3 = true;
+            		sheet.tresoutras1_2 = true;
+            		sheet.tresoutras1_1 = true;
+            	elseif sheet.tresoutras1_3 == true then
+            		sheet.tresoutras1_5 = false;
+            		sheet.tresoutras1_4 = false;
+            		sheet.tresoutras1_2 = true;
+            		sheet.tresoutras1_1 = true;
+            	elseif sheet.tresoutras1_2 == true then
+            		sheet.tresoutras1_5 = false;
+            		sheet.tresoutras1_4 = false;
+            		sheet.tresoutras1_3 = false;
+            		sheet.tresoutras1_1 = true;
+            	elseif sheet.tresoutras1_1 == true then
+            		sheet.tresoutras1_5 = false;
+            		sheet.tresoutras1_4 = false;
+            		sheet.tresoutras1_3 = false;
+            		sheet.tresoutras1_2 = false;
             	end;
         end, obj);
 
     obj._e_event11 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades4_h6 == true then
-            		sheet.shabilidades4_h5 = true;
-            		sheet.shabilidades4_h4 = true;
-            		sheet.shabilidades4_h3 = true;
-            		sheet.shabilidades4_h2 = true;
-            		sheet.shabilidades4_h1 = true;
-            	elseif sheet.shabilidades4_h5 == true then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h4 = true;
-            		sheet.shabilidades4_h3 = true;
-            		sheet.shabilidades4_h2 = true;
-            		sheet.shabilidades4_h1 = true;
-            	elseif sheet.shabilidades4_h4 == true then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h5 = false;
-            		sheet.shabilidades4_h3 = true;
-            		sheet.shabilidades4_h2 = true;
-            		sheet.shabilidades4_h1 = true;
-            	elseif sheet.shabilidades4_h3 == true then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h5 = false;
-            		sheet.shabilidades4_h4 = false;
-            		sheet.shabilidades4_h2 = true;
-            		sheet.shabilidades4_h1 = true;
-            	elseif sheet.shabilidades4_h2 == true then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h5 = false;
-            		sheet.shabilidades4_h4 = false;
-            		sheet.shabilidades4_h3 = false;
-            		sheet.shabilidades4_h1 = true;	
-            	elseif sheet.shabilidades4_h1 == true then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h5 = false;
-            		sheet.shabilidades4_h4 = false;
-            		sheet.shabilidades4_h3 = false;
-            		sheet.shabilidades4_h2 = false;
-            	elseif sheet.shabilidades4_h1 == false then
-            		sheet.shabilidades4_h6 = false;
-            		sheet.shabilidades4_h5 = false;
-            		sheet.shabilidades4_h4 = false;
-            		sheet.shabilidades4_h3 = false;
-            		sheet.shabilidades4_h2 = false;
+            	if sheet.tresoutras2_5 == true then
+            		sheet.tresoutras2_4 = true;
+            		sheet.tresoutras2_3 = true;
+            		sheet.tresoutras2_2 = true;
+            		sheet.tresoutras2_1 = true;
+            	elseif sheet.tresoutras2_4 == true then
+            		sheet.tresoutras2_5 = false;
+            		sheet.tresoutras2_3 = true;
+            		sheet.tresoutras2_2 = true;
+            		sheet.tresoutras2_1 = true;
+            	elseif sheet.tresoutras2_3 == true then
+            		sheet.tresoutras2_5 = false;
+            		sheet.tresoutras2_4 = false;
+            		sheet.tresoutras2_2 = true;
+            		sheet.tresoutras2_1 = true;
+            	elseif sheet.tresoutras2_2 == true then
+            		sheet.tresoutras2_5 = false;
+            		sheet.tresoutras2_4 = false;
+            		sheet.tresoutras2_3 = false;
+            		sheet.tresoutras2_1 = true;
+            	elseif sheet.tresoutras2_1 == true then
+            		sheet.tresoutras2_5 = false;
+            		sheet.tresoutras2_4 = false;
+            		sheet.tresoutras2_3 = false;
+            		sheet.tresoutras2_2 = false;
             	end;
         end, obj);
 
     obj._e_event12 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades5_h6 == true then
-            		sheet.shabilidades5_h5 = true;
-            		sheet.shabilidades5_h4 = true;
-            		sheet.shabilidades5_h3 = true;
-            		sheet.shabilidades5_h2 = true;
-            		sheet.shabilidades5_h1 = true;
-            	elseif sheet.shabilidades5_h5 == true then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h4 = true;
-            		sheet.shabilidades5_h3 = true;
-            		sheet.shabilidades5_h2 = true;
-            		sheet.shabilidades5_h1 = true;
-            	elseif sheet.shabilidades5_h4 == true then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h5 = false;
-            		sheet.shabilidades5_h3 = true;
-            		sheet.shabilidades5_h2 = true;
-            		sheet.shabilidades5_h1 = true;
-            	elseif sheet.shabilidades5_h3 == true then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h5 = false;
-            		sheet.shabilidades5_h4 = false;
-            		sheet.shabilidades5_h2 = true;
-            		sheet.shabilidades5_h1 = true;
-            	elseif sheet.shabilidades5_h2 == true then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h5 = false;
-            		sheet.shabilidades5_h4 = false;
-            		sheet.shabilidades5_h3 = false;
-            		sheet.shabilidades5_h1 = true;	
-            	elseif sheet.shabilidades5_h1 == true then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h5 = false;
-            		sheet.shabilidades5_h4 = false;
-            		sheet.shabilidades5_h3 = false;
-            		sheet.shabilidades5_h2 = false;
-            	elseif sheet.shabilidades5_h1 == false then
-            		sheet.shabilidades5_h6 = false;
-            		sheet.shabilidades5_h5 = false;
-            		sheet.shabilidades5_h4 = false;
-            		sheet.shabilidades5_h3 = false;
-            		sheet.shabilidades5_h2 = false;
+            	if sheet.tresoutras3_5 == true then
+            		sheet.tresoutras3_4 = true;
+            		sheet.tresoutras3_3 = true;
+            		sheet.tresoutras3_2 = true;
+            		sheet.tresoutras3_1 = true;
+            	elseif sheet.tresoutras3_4 == true then
+            		sheet.tresoutras3_5 = false;
+            		sheet.tresoutras3_3 = true;
+            		sheet.tresoutras3_2 = true;
+            		sheet.tresoutras3_1 = true;
+            	elseif sheet.tresoutras3_3 == true then
+            		sheet.tresoutras3_5 = false;
+            		sheet.tresoutras3_4 = false;
+            		sheet.tresoutras3_2 = true;
+            		sheet.tresoutras3_1 = true;
+            	elseif sheet.tresoutras3_2 == true then
+            		sheet.tresoutras3_5 = false;
+            		sheet.tresoutras3_4 = false;
+            		sheet.tresoutras3_3 = false;
+            		sheet.tresoutras3_1 = true;
+            	elseif sheet.tresoutras3_1 == true then
+            		sheet.tresoutras3_5 = false;
+            		sheet.tresoutras3_4 = false;
+            		sheet.tresoutras3_3 = false;
+            		sheet.tresoutras3_2 = false;
             	end;
         end, obj);
 
     obj._e_event13 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades6_h6 == true then
-            		sheet.shabilidades6_h5 = true;
-            		sheet.shabilidades6_h4 = true;
-            		sheet.shabilidades6_h3 = true;
-            		sheet.shabilidades6_h2 = true;
-            		sheet.shabilidades6_h1 = true;
-            	elseif sheet.shabilidades6_h5 == true then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h4 = true;
-            		sheet.shabilidades6_h3 = true;
-            		sheet.shabilidades6_h2 = true;
-            		sheet.shabilidades6_h1 = true;
-            	elseif sheet.shabilidades6_h4 == true then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h5 = false;
-            		sheet.shabilidades6_h3 = true;
-            		sheet.shabilidades6_h2 = true;
-            		sheet.shabilidades6_h1 = true;
-            	elseif sheet.shabilidades6_h3 == true then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h5 = false;
-            		sheet.shabilidades6_h4 = false;
-            		sheet.shabilidades6_h2 = true;
-            		sheet.shabilidades6_h1 = true;
-            	elseif sheet.shabilidades6_h2 == true then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h5 = false;
-            		sheet.shabilidades6_h4 = false;
-            		sheet.shabilidades6_h3 = false;
-            		sheet.shabilidades6_h1 = true;	
-            	elseif sheet.shabilidades6_h1 == true then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h5 = false;
-            		sheet.shabilidades6_h4 = false;
-            		sheet.shabilidades6_h3 = false;
-            		sheet.shabilidades6_h2 = false;
-            	elseif sheet.shabilidades6_h1 == false then
-            		sheet.shabilidades6_h6 = false;
-            		sheet.shabilidades6_h5 = false;
-            		sheet.shabilidades6_h4 = false;
-            		sheet.shabilidades6_h3 = false;
-            		sheet.shabilidades6_h2 = false;
+            	if sheet.tresoutras4_5 == true then
+            		sheet.tresoutras4_4 = true;
+            		sheet.tresoutras4_3 = true;
+            		sheet.tresoutras4_2 = true;
+            		sheet.tresoutras4_1 = true;
+            	elseif sheet.tresoutras4_4 == true then
+            		sheet.tresoutras4_5 = false;
+            		sheet.tresoutras4_3 = true;
+            		sheet.tresoutras4_2 = true;
+            		sheet.tresoutras4_1 = true;
+            	elseif sheet.tresoutras4_3 == true then
+            		sheet.tresoutras4_5 = false;
+            		sheet.tresoutras4_4 = false;
+            		sheet.tresoutras4_2 = true;
+            		sheet.tresoutras4_1 = true;
+            	elseif sheet.tresoutras4_2 == true then
+            		sheet.tresoutras4_5 = false;
+            		sheet.tresoutras4_4 = false;
+            		sheet.tresoutras4_3 = false;
+            		sheet.tresoutras4_1 = true;
+            	elseif sheet.tresoutras4_1 == true then
+            		sheet.tresoutras4_5 = false;
+            		sheet.tresoutras4_4 = false;
+            		sheet.tresoutras4_3 = false;
+            		sheet.tresoutras4_2 = false;
             	end;
         end, obj);
 
     obj._e_event14 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            	if sheet.shabilidades7_h6 == true then
-            		sheet.shabilidades7_h5 = true;
-            		sheet.shabilidades7_h4 = true;
-            		sheet.shabilidades7_h3 = true;
-            		sheet.shabilidades7_h2 = true;
-            		sheet.shabilidades7_h1 = true;
-            	elseif sheet.shabilidades7_h5 == true then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h4 = true;
-            		sheet.shabilidades7_h3 = true;
-            		sheet.shabilidades7_h2 = true;
-            		sheet.shabilidades7_h1 = true;
-            	elseif sheet.shabilidades7_h4 == true then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h5 = false;
-            		sheet.shabilidades7_h3 = true;
-            		sheet.shabilidades7_h2 = true;
-            		sheet.shabilidades7_h1 = true;
-            	elseif sheet.shabilidades7_h3 == true then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h5 = false;
-            		sheet.shabilidades7_h4 = false;
-            		sheet.shabilidades7_h2 = true;
-            		sheet.shabilidades7_h1 = true;
-            	elseif sheet.shabilidades7_h2 == true then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h5 = false;
-            		sheet.shabilidades7_h4 = false;
-            		sheet.shabilidades7_h3 = false;
-            		sheet.shabilidades7_h1 = true;	
-            	elseif sheet.shabilidades7_h1 == true then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h5 = false;
-            		sheet.shabilidades7_h4 = false;
-            		sheet.shabilidades7_h3 = false;
-            		sheet.shabilidades7_h2 = false;
-            	elseif sheet.shabilidades7_h1 == false then
-            		sheet.shabilidades7_h6 = false;
-            		sheet.shabilidades7_h5 = false;
-            		sheet.shabilidades7_h4 = false;
-            		sheet.shabilidades7_h3 = false;
-            		sheet.shabilidades7_h2 = false;
-            	end;
-        end, obj);
-
-    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet == nil then return end;
-            	if sheet.shabilidades8_h6 == true then
-            		sheet.shabilidades8_h5 = true;
-            		sheet.shabilidades8_h4 = true;
-            		sheet.shabilidades8_h3 = true;
-            		sheet.shabilidades8_h2 = true;
-            		sheet.shabilidades8_h1 = true;
-            	elseif sheet.shabilidades8_h5 == true then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h4 = true;
-            		sheet.shabilidades8_h3 = true;
-            		sheet.shabilidades8_h2 = true;
-            		sheet.shabilidades8_h1 = true;
-            	elseif sheet.shabilidades8_h4 == true then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h5 = false;
-            		sheet.shabilidades8_h3 = true;
-            		sheet.shabilidades8_h2 = true;
-            		sheet.shabilidades8_h1 = true;
-            	elseif sheet.shabilidades8_h3 == true then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h5 = false;
-            		sheet.shabilidades8_h4 = false;
-            		sheet.shabilidades8_h2 = true;
-            		sheet.shabilidades8_h1 = true;
-            	elseif sheet.shabilidades8_h2 == true then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h5 = false;
-            		sheet.shabilidades8_h4 = false;
-            		sheet.shabilidades8_h3 = false;
-            		sheet.shabilidades8_h1 = true;	
-            	elseif sheet.shabilidades8_h1 == true then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h5 = false;
-            		sheet.shabilidades8_h4 = false;
-            		sheet.shabilidades8_h3 = false;
-            		sheet.shabilidades8_h2 = false;
-            	elseif sheet.shabilidades8_h1 == false then
-            		sheet.shabilidades8_h6 = false;
-            		sheet.shabilidades8_h5 = false;
-            		sheet.shabilidades8_h4 = false;
-            		sheet.shabilidades8_h3 = false;
-            		sheet.shabilidades8_h2 = false;
+            	if sheet.tresoutras5_5 == true then
+            		sheet.tresoutras5_4 = true;
+            		sheet.tresoutras5_3 = true;
+            		sheet.tresoutras5_2 = true;
+            		sheet.tresoutras5_1 = true;
+            	elseif sheet.tresoutras5_4 == true then
+            		sheet.tresoutras5_5 = false;
+            		sheet.tresoutras5_3 = true;
+            		sheet.tresoutras5_2 = true;
+            		sheet.tresoutras5_1 = true;
+            	elseif sheet.tresoutras5_3 == true then
+            		sheet.tresoutras5_5 = false;
+            		sheet.tresoutras5_4 = false;
+            		sheet.tresoutras5_2 = true;
+            		sheet.tresoutras5_1 = true;
+            	elseif sheet.tresoutras5_2 == true then
+            		sheet.tresoutras5_5 = false;
+            		sheet.tresoutras5_4 = false;
+            		sheet.tresoutras5_3 = false;
+            		sheet.tresoutras5_1 = true;
+            	elseif sheet.tresoutras5_1 == true then
+            		sheet.tresoutras5_5 = false;
+            		sheet.tresoutras5_4 = false;
+            		sheet.tresoutras5_3 = false;
+            		sheet.tresoutras5_2 = false;
             	end;
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event15);
         __o_rrpgObjs.removeEventListenerById(self._e_event14);
         __o_rrpgObjs.removeEventListenerById(self._e_event13);
         __o_rrpgObjs.removeEventListenerById(self._e_event12);
@@ -907,7 +598,6 @@ local function constructNew_frmCodigo2()
         end;
 
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;

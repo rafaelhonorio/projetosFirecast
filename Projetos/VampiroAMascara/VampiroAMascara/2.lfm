@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="VampiroAMascara2" align="client" theme="dark">
+<form name="VampiroAMascara2" align="client" theme="light">
 	<template name="caracteristicas">
-        <edit left="40" top="0" width="135" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+        <edit left="40" top="0" width="135" height="25" fontStyle="bold" fontColor="black" field="$(field)" type="$(nort)"/>
 		<imageCheckBox field="$(field)_1" left="177" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_2" left="195" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_3" left="213" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
@@ -11,7 +11,15 @@
     <template name="experiencia">
 		<rectangle left="5" top="31" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
 		<label left="5" top="3" width="100" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
-        <edit left="100" top="0" width="250" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+        <edit left="100" top="0" width="250" height="25" fontStyle="bold" fontColor="black" field="$(field)" type="$(nort)"/>
+	</template>
+	<template name="combate">
+		<edit left="15" top="0" width="200" height="25" fontStyle="bold" fontColor="black" field="$(field)_1" type="$(nort)"/>
+		<edit left="220" top="0" width="80" height="25" fontStyle="bold" fontColor="black" field="$(field)_2" type="$(nort)"/>
+		<edit left="305" top="0" width="80" height="25" fontStyle="bold" fontColor="black" field="$(field)_3" type="$(nort)"/>
+		<edit left="390" top="0" width="80" height="25" fontStyle="bold" fontColor="black" field="$(field)_4" type="$(nort)"/>
+		<edit left="475" top="0" width="80" height="25" fontStyle="bold" fontColor="black" field="$(field)_5" type="$(nort)"/>
+		<edit left="560" top="0" width="150" height="25" fontStyle="bold" fontColor="black" field="$(field)_6" type="$(nort)"/>		
 	</template>
 	<scrollBox align="client">
 		<layout left="0" top="29" width="880" height="3">
@@ -23,90 +31,160 @@
 		</layout>
 		<layout top="200" width="880" height="500">
 			<rectangle height="25" width="880" color="black"/>
-			<label left="350" top="2" width="250" height="20" text="Outros Características" fontStyle="bold" fontColor="White"/>
+			<label left="380" top="2" width="250" height="20" text="Outros Características" fontStyle="bold" fontColor="White"/>
 			<layout left="0" top="20" width="880" height="200">
 				<layout left="0" top="10" width="290" height="25" >
-					<caracteristicas field="1outras1" size="12" nort="text"/>
+					<caracteristicas field="umoutras1" size="12" nort="text"/>
 				</layout>
 				<layout left="0" top="35" width="290" height="25" >
-					<caracteristicas field="1outras2" size="12" nort="text"/>
+					<caracteristicas field="umoutras2" size="12" nort="text"/>
 				</layout>	
 				<layout left="0" top="60" width="290" height="25" >
-					<caracteristicas field="1outras3" size="12" nort="text"/>
+					<caracteristicas field="umoutras3" size="12" nort="text"/>
 				</layout>
 				<layout left="0" top="85" width="290" height="25" >
-					<caracteristicas field="1outras4" size="12" nort="text"/>
+					<caracteristicas field="umoutras4" size="12" nort="text"/>
 				</layout>	
 				<layout left="0" top="110" width="290" height="25" >
-					<caracteristicas field="1outras5" size="12" nort="text"/>
+					<caracteristicas field="umoutras5" size="12" nort="text"/>
 				</layout>	
 			</layout>	
 			<layout left="0" top="20" width="880" height="200">
 				<layout left="300" top="10" width="290" height="25" >
-					<caracteristicas field="2outras1" size="12" nort="text"/>
+					<caracteristicas field="doisoutras1" size="12" nort="text"/>
 				</layout>
 				<layout left="300" top="35" width="290" height="25" >
-					<caracteristicas field="2outras2" size="12" nort="text"/>
+					<caracteristicas field="doisoutras2" size="12" nort="text"/>
 				</layout>	
 				<layout left="300" top="60" width="290" height="25" >
-					<caracteristicas field="2outras3" size="12" nort="text"/>
+					<caracteristicas field="doisoutras3" size="12" nort="text"/>
 				</layout>
 				<layout left="300" top="85" width="290" height="25" >
-					<caracteristicas field="2outras4" size="12" nort="text"/>
+					<caracteristicas field="doisoutras4" size="12" nort="text"/>
 				</layout>	
 				<layout left="300" top="110" width="290" height="25" >
-					<caracteristicas field="2outras5" size="12" nort="text"/>
-				</layout>	
+					<caracteristicas field="doisoutras5" size="12" nort="text"/>
+				</layout>
 			</layout>
 			<layout left="0" top="20" width="880" height="200">
 				<layout left="600" top="10" width="290" height="25" >
-					<caracteristicas field="2outras1" size="12" nort="text"/>
+					<caracteristicas field="tresoutras1" size="12" nort="text"/>
 				</layout>
 				<layout left="600" top="35" width="290" height="25" >
-					<caracteristicas field="2outras2" size="12" nort="text"/>
-				</layout>	
+					<caracteristicas field="tresoutras2" size="12" nort="text"/>
+				</layout>
 				<layout left="600" top="60" width="290" height="25" >
-					<caracteristicas field="2outras3" size="12" nort="text"/>
+					<caracteristicas field="tresoutras3" size="12" nort="text"/>
 				</layout>
 				<layout left="600" top="85" width="290" height="25" >
-					<caracteristicas field="2outras4" size="12" nort="text"/>
-				</layout>	
+					<caracteristicas field="tresoutras4" size="12" nort="text"/>
+				</layout>
 				<layout left="600" top="110" width="290" height="25" >
-					<caracteristicas field="2outras5" size="12" nort="text"/>
-				</layout>	
-			</layout>			
+					<caracteristicas field="tresoutras5" size="12" nort="text"/>
+				</layout>
+			</layout>
 		</layout>
-		<layout top="370" width="880" height="300">
+		<layout top="355" width="880" height="300">
 			<label left="235" top="10" width="95" height="20" text="Experiência" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
 			<label left="595" top="0" autoSize="true" height="20" text="Laços de Sangue/ Vinculi" horzTextAlign="center" fontStyle="bold" fontColor="Black"/>
-			<layout left="40" top="45" width="880" height="25" >
+			<layout left="40" top="35" width="880" height="25" >
 				<experiencia field="total" texto="Total:" size="12" nort="text"/>
 			</layout>
-			<layout left="40" top="70" width="880" height="25" >
+			<layout left="40" top="60" width="880" height="25" >
 				<experiencia field="totalgasto" texto="Total Gasto:" size="12" nort="text"/>
 			</layout>	
-			<layout left="45" top="95" width="400" height="400">
-				<label autoSize="true" top="65" text="Gasto em:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
-				<textEditor left="95" top="0" width="250" height="150" field="gastoem" fontStyle="bold"/>		
+			<layout left="45" top="85" width="400" height="400">
+				<label autoSize="true" top="45" text="Gasto em:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>
+				<textEditor left="95" top="0" width="250" height="120" fontColor="black" field="gastoem" fontStyle="bold"/>		
 			</layout>	
-			<layout left="475" top="35" width="400" height="400">
+			<layout left="495" top="25" width="400" height="400">
 				<label autoSize="true" top="0" text="Laço com:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
 			</layout>
-			<layout left="425" top="55" width="400" height="400">
-				<textEditor left="45" top="0" width="350" height="80" field="laco" fontStyle="bold"/>		
+			<layout left="445" top="45" width="400" height="400">
+				<textEditor left="45" top="0" width="350" height="70" fontColor="black" field="laco" fontStyle="bold"/>		
 			</layout>
-			<layout left="475" top="145" width="400" height="400">
+			<layout left="495" top="115" width="400" height="400">
 				<label autoSize="true" top="0" text="Pertubações:" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
 			</layout>
-			<layout left="425" top="165" width="400" height="400">
-				<textEditor left="45" top="0" width="350" height="80" field="laco" fontStyle="bold"/>		
+			<layout left="445" top="135" width="400" height="400">
+				<textEditor left="45" top="0" width="350" height="70" fontColor="black" field="pertubacoes" fontStyle="bold"/>		
 			</layout>
 		</layout>
-		<layout top="630" width="880" height="500">
+		<layout top="570" width="880" height="25">
 			<rectangle height="25" width="880" color="black"/>
-			<label left="380" top="2" width="250" height="20" text="Combate" fontStyle="bold" fontColor="White"/>
+			<label left="415" top="2" width="250" height="20" text="Combate" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="605" width="880" height="300">
+			<rectangle left="15" height="25" width="200" color="black"/>
+			<label left="25" top="2" width="250" height="20" text="Arma" fontStyle="bold" fontColor="white"/>
+			<rectangle left="220" height="25" width="80" color="black"/>
+			<label left="230" top="2" width="250" height="20" text="Dano" fontStyle="bold" fontColor="white"/>
+			<rectangle left="305" height="25" width="80" color="black"/>
+			<label left="315" top="2" width="250" height="20" text="Alcance" fontStyle="bold" fontColor="white"/>
+			<rectangle left="390" height="25" width="80" color="black"/>
+			<label left="400" top="2" width="250" height="20" text="CdT" fontStyle="bold" fontColor="white"/>
+			<rectangle left="475" height="25" width="80" color="black"/>
+			<label left="485" top="2" width="250" height="20" text="Pente" fontStyle="bold" fontColor="white"/>
+			<rectangle left="560" height="25" width="150" color="black"/>
+			<label left="570" top="2" width="250" height="20" text="Ocultabilidade" fontStyle="bold" fontColor="white"/>
+			<rectangle left="715" height="25" width="150" color="black"/>
+			<label left="725" top="2" width="250" height="20" text="Armadura" fontStyle="bold" fontColor="white"/>
+			<layout left="0" top="0" width="880" height="300">
+				<layout left="0" top="30" width="880" height="200">
+					<combate field="combate1" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="60" width="880" height="200">
+					<combate field="combate2" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="90" width="880" height="200">
+					<combate field="combate3" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="120" width="880" height="200">
+					<combate field="combate4" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="150" width="880" height="200">
+					<combate field="combate5" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="180" width="880" height="200">
+					<combate field="combate6" size="12" nort="text"/>
+				</layout>
+				<layout left="0" top="210" width="880" height="200">
+					<combate field="combate7" size="12" nort="text"/>
+				</layout>
+			</layout>
+			<layout left="695" top="30" width="400" height="400">
+				<textEditor left="20" top="0" width="150" height="205" fontColor="black" field="armadura" fontStyle="bold"/>		
+			</layout>			
+		</layout>
+		<layout top="850" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="415" top="2" width="250" height="20" text="Pertences" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="845" width="880" height="200">
+			<layout left="20" top="35" width="400" height="400">
+				<label width="200" top="0" text="Equipamento (possuído):" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="0" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="equipP" fontStyle="bold"/>		
+			</layout>
+			<layout left="450" top="35" width="400" height="400">
+				<label width="200" top="0" text="Equipamento (carregado):" horzTextAlign="leading" fontStyle="bold" fontColor="Black"/>					
+			</layout>
+			<layout left="430" top="55" width="500" height="400">
+				<textEditor left="20" top="0" width="415" height="80" fontColor="black" field="equipC" fontStyle="bold"/>		
+			</layout>
+		</layout>
+		<layout top="990" width="880" height="25">
+			<rectangle height="25" width="880" color="black"/>
+			<label left="415" top="2" width="250" height="20" text="Refúgios" fontStyle="bold" fontColor="White"/>
+		</layout>
+		<layout top="1005" width="880" height="100">
+			<layout left="0" top="15" width="880" height="100">
+				<textEditor left="20" top="0" width="845" height="80" fontColor="black" field="refugios" fontStyle="bold"/>		
+			</layout>
 		</layout>
 	</scrollBox>
 
+	<import file="Codigo2.lfm"/>
 
 </form>
