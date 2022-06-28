@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.5" encoding="UTF-8"?>
 <module sdkVersion="3.5">
 	<id>TormentaRPG.Cast.RRPGFirecast</id>
-	<version>1.4a</version>
+	<version>1.5</version>
 	<name>Ficha Tormenta RPG</name>
 	<description>Ficha de Tormenta para o RRPG Firecast.</description>
-	<author>CastielAngels</author>
-	<site>http://www.rrpg.com.br</site>
-	<contact>castieldeseraphim@gmail.com</contact>
+	<author>Tricket</author>
+	<site>https://github.com/rafaelhonorio/projetosFirecast/tree/main/Projetos/Tormenta</site>
+	<contact>rafaelhgmr@gmail.com</contact>
 </module>

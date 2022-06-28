@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.5" encoding="UTF-8"?>
 <form name="TormentaCastfrm" formType="sheetTemplate" dataType="Cast.Tormenta.RPGFirecast" title="Ficha Tormenta RPG" align="client" theme="light">
 	<tabControl align="client">
 		<tab title="Características">
