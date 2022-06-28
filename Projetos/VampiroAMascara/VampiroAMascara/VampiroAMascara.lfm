@@ -12,6 +12,9 @@
 			<edit name="fdvtotais" left="410" top="3" width="40" height="25" fontColor="Black" type="number" field="fdvtotal" horzTextAlign="center"/>
 			<label left="448" top="5" width="138" height="20" text=" / " horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<edit name="fdvatuais" left="460" top="3" width="40" height="25" fontColor="Black" type="number" field="fdvatual" horzTextAlign="center"/>
+
+			<image left="860" top="6" name="update" animate="true" src="img/update.gif" width="15" height="15"/>
+			<button left="860" top="6" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');"/>
 		</layout>	
 		<tab title="Ficha">	
 			<import file="1.lfm"/>

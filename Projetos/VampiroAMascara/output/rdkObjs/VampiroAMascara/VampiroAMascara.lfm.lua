@@ -148,6 +148,28 @@ local function constructNew_VampiroAMascarafrm()
     obj.fdvatuais:setField("fdvatual");
     obj.fdvatuais:setHorzTextAlign("center");
 
+    obj.update = GUI.fromHandle(_obj_newObject("image"));
+    obj.update:setParent(obj.layout1);
+    obj.update:setLeft(860);
+    obj.update:setTop(6);
+    obj.update:setName("update");
+    lfm_setPropAsString(obj.update, "animate",  "true");
+    obj.update:setSRC("/VampiroAMascara/img/update.gif");
+    obj.update:setWidth(15);
+    obj.update:setHeight(15);
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.layout1);
+    obj.button1:setLeft(860);
+    obj.button1:setTop(6);
+    obj.button1:setWidth(15);
+    obj.button1:setHeight(15);
+    obj.button1:setOpacity(0.0);
+    obj.button1:setCanFocus(false);
+    obj.button1:setCursor("handPoint");
+    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0");
+    obj.button1:setName("button1");
+
     obj.tab1 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab1:setParent(obj.tabControl1);
     obj.tab1:setTitle("Ficha");
@@ -10046,7 +10068,12 @@ local function constructNew_VampiroAMascarafrm()
     obj.image5:setHeight(390);
     obj.image5:setName("image5");
 
-    obj._e_event0 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event0 = obj.button1:addEventListener("onClick",
+        function (_)
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');
+        end, obj);
+
+    obj._e_event1 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.fatributos1_5 == true then
@@ -10077,7 +10104,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event1 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.fatributos2_5 == true then
@@ -10108,7 +10135,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event2 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.fatributos3_5 == true then
@@ -10139,7 +10166,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.satributos1_5 == true then
@@ -10170,7 +10197,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.satributos2_5 == true then
@@ -10201,7 +10228,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.satributos3_5 == true then
@@ -10232,7 +10259,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.matributos1_5 == true then
@@ -10263,7 +10290,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.matributos2_5 == true then
@@ -10294,7 +10321,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.matributos3_5 == true then
@@ -10325,7 +10352,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades1_5 == true then
@@ -10356,7 +10383,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades2_5 == true then
@@ -10387,7 +10414,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades3_5 == true then
@@ -10418,7 +10445,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades4_5 == true then
@@ -10449,7 +10476,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades5_5 == true then
@@ -10480,7 +10507,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades6_5 == true then
@@ -10511,7 +10538,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades7_5 == true then
@@ -10542,7 +10569,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event16 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades8_5 == true then
@@ -10573,7 +10600,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event17 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades9_5 == true then
@@ -10604,7 +10631,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.thabilidades10_5 == true then
@@ -10635,7 +10662,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink21:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades1_5 == true then
@@ -10666,7 +10693,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event20 = obj.dataLink22:addEventListener("onChange",
+    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades2_5 == true then
@@ -10697,7 +10724,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event21 = obj.dataLink23:addEventListener("onChange",
+    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades3_5 == true then
@@ -10728,7 +10755,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event22 = obj.dataLink24:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades4_5 == true then
@@ -10759,7 +10786,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event23 = obj.dataLink25:addEventListener("onChange",
+    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades5_5 == true then
@@ -10790,7 +10817,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event24 = obj.dataLink26:addEventListener("onChange",
+    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades6_5 == true then
@@ -10821,7 +10848,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event25 = obj.dataLink27:addEventListener("onChange",
+    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades7_5 == true then
@@ -10852,7 +10879,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event26 = obj.dataLink28:addEventListener("onChange",
+    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades8_5 == true then
@@ -10883,7 +10910,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event27 = obj.dataLink29:addEventListener("onChange",
+    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades9_5 == true then
@@ -10914,7 +10941,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event28 = obj.dataLink30:addEventListener("onChange",
+    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.phabilidades10_5 == true then
@@ -10945,7 +10972,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event29 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades1_5 == true then
@@ -10976,7 +11003,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event30 = obj.dataLink32:addEventListener("onChange",
+    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades2_5 == true then
@@ -11007,7 +11034,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event31 = obj.dataLink33:addEventListener("onChange",
+    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades3_5 == true then
@@ -11038,7 +11065,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event32 = obj.dataLink34:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades4_5 == true then
@@ -11069,7 +11096,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event33 = obj.dataLink35:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades5_5 == true then
@@ -11100,7 +11127,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event34 = obj.dataLink36:addEventListener("onChange",
+    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades6_5 == true then
@@ -11131,7 +11158,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event35 = obj.dataLink37:addEventListener("onChange",
+    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades7_5 == true then
@@ -11162,7 +11189,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event36 = obj.dataLink38:addEventListener("onChange",
+    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades8_5 == true then
@@ -11193,7 +11220,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event37 = obj.dataLink39:addEventListener("onChange",
+    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades9_5 == true then
@@ -11224,7 +11251,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event38 = obj.dataLink40:addEventListener("onChange",
+    obj._e_event39 = obj.dataLink40:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.chabilidades10_5 == true then
@@ -11255,7 +11282,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event39 = obj.dataLink41:addEventListener("onChange",
+    obj._e_event40 = obj.dataLink41:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.antecedentes1_5 == true then
@@ -11286,7 +11313,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event40 = obj.dataLink42:addEventListener("onChange",
+    obj._e_event41 = obj.dataLink42:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.antecedentes2_5 == true then
@@ -11317,7 +11344,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event41 = obj.dataLink43:addEventListener("onChange",
+    obj._e_event42 = obj.dataLink43:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.antecedentes3_5 == true then
@@ -11348,7 +11375,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event42 = obj.dataLink44:addEventListener("onChange",
+    obj._e_event43 = obj.dataLink44:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.antecedentes4_5 == true then
@@ -11379,7 +11406,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event43 = obj.dataLink45:addEventListener("onChange",
+    obj._e_event44 = obj.dataLink45:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.antecedentes5_5 == true then
@@ -11410,7 +11437,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event44 = obj.dataLink46:addEventListener("onChange",
+    obj._e_event45 = obj.dataLink46:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.disciplinas1_5 == true then
@@ -11441,7 +11468,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event45 = obj.dataLink47:addEventListener("onChange",
+    obj._e_event46 = obj.dataLink47:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.disciplinas2_5 == true then
@@ -11472,7 +11499,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event46 = obj.dataLink48:addEventListener("onChange",
+    obj._e_event47 = obj.dataLink48:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.disciplinas3_5 == true then
@@ -11503,7 +11530,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event47 = obj.dataLink49:addEventListener("onChange",
+    obj._e_event48 = obj.dataLink49:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.disciplinas4_5 == true then
@@ -11534,7 +11561,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event48 = obj.dataLink50:addEventListener("onChange",
+    obj._e_event49 = obj.dataLink50:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.disciplinas5_5 == true then
@@ -11565,7 +11592,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event49 = obj.dataLink51:addEventListener("onChange",
+    obj._e_event50 = obj.dataLink51:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.virtude1_5 == true then
@@ -11596,7 +11623,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event50 = obj.dataLink52:addEventListener("onChange",
+    obj._e_event51 = obj.dataLink52:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.virtude2_5 == true then
@@ -11627,7 +11654,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event51 = obj.dataLink53:addEventListener("onChange",
+    obj._e_event52 = obj.dataLink53:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.virtude3_5 == true then
@@ -11658,7 +11685,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event52 = obj.dataLink54:addEventListener("onChange",
+    obj._e_event53 = obj.dataLink54:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.humanidade_10 == true then
@@ -11764,7 +11791,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event53 = obj.dataLink55:addEventListener("onChange",
+    obj._e_event54 = obj.dataLink55:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.fdv_10 == true then
@@ -11870,7 +11897,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event54 = obj.dataLink56:addEventListener("onChange",
+    obj._e_event55 = obj.dataLink56:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.sangue_50 == true then
@@ -14426,7 +14453,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event55 = obj.dataLink57:addEventListener("onChange",
+    obj._e_event56 = obj.dataLink57:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
                 if sheet.incapacitado_1 == true then
@@ -14481,7 +14508,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event56 = obj.dataLink58:addEventListener("onChange",
+    obj._e_event57 = obj.dataLink58:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
                 if sheet.incapacitado_2 == true then
@@ -14536,7 +14563,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event57 = obj.dataLink59:addEventListener("onChange",
+    obj._e_event58 = obj.dataLink59:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.umoutras1_5 == true then
@@ -14567,7 +14594,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event58 = obj.dataLink60:addEventListener("onChange",
+    obj._e_event59 = obj.dataLink60:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.umoutras2_5 == true then
@@ -14598,7 +14625,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event59 = obj.dataLink61:addEventListener("onChange",
+    obj._e_event60 = obj.dataLink61:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.umoutras3_5 == true then
@@ -14629,7 +14656,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event60 = obj.dataLink62:addEventListener("onChange",
+    obj._e_event61 = obj.dataLink62:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.umoutras4_5 == true then
@@ -14660,7 +14687,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event61 = obj.dataLink63:addEventListener("onChange",
+    obj._e_event62 = obj.dataLink63:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.umoutras5_5 == true then
@@ -14691,7 +14718,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event62 = obj.dataLink64:addEventListener("onChange",
+    obj._e_event63 = obj.dataLink64:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.doisoutras1_5 == true then
@@ -14722,7 +14749,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event63 = obj.dataLink65:addEventListener("onChange",
+    obj._e_event64 = obj.dataLink65:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.doisoutras2_5 == true then
@@ -14753,7 +14780,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event64 = obj.dataLink66:addEventListener("onChange",
+    obj._e_event65 = obj.dataLink66:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.doisoutras3_5 == true then
@@ -14784,7 +14811,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event65 = obj.dataLink67:addEventListener("onChange",
+    obj._e_event66 = obj.dataLink67:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.doisoutras4_5 == true then
@@ -14815,7 +14842,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event66 = obj.dataLink68:addEventListener("onChange",
+    obj._e_event67 = obj.dataLink68:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.doisoutras5_5 == true then
@@ -14846,7 +14873,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event67 = obj.dataLink69:addEventListener("onChange",
+    obj._e_event68 = obj.dataLink69:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.tresoutras1_5 == true then
@@ -14877,7 +14904,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event68 = obj.dataLink70:addEventListener("onChange",
+    obj._e_event69 = obj.dataLink70:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.tresoutras2_5 == true then
@@ -14908,7 +14935,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event69 = obj.dataLink71:addEventListener("onChange",
+    obj._e_event70 = obj.dataLink71:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.tresoutras3_5 == true then
@@ -14939,7 +14966,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event70 = obj.dataLink72:addEventListener("onChange",
+    obj._e_event71 = obj.dataLink72:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.tresoutras4_5 == true then
@@ -14970,7 +14997,7 @@ local function constructNew_VampiroAMascarafrm()
             	end;
         end, obj);
 
-    obj._e_event71 = obj.dataLink73:addEventListener("onChange",
+    obj._e_event72 = obj.dataLink73:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.tresoutras5_5 == true then
@@ -15002,6 +15029,7 @@ local function constructNew_VampiroAMascarafrm()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event72);
         __o_rrpgObjs.removeEventListenerById(self._e_event71);
         __o_rrpgObjs.removeEventListenerById(self._e_event70);
         __o_rrpgObjs.removeEventListenerById(self._e_event69);
@@ -15319,6 +15347,7 @@ local function constructNew_VampiroAMascarafrm()
         if self.imageCheckBox415 ~= nil then self.imageCheckBox415:destroy(); self.imageCheckBox415 = nil; end;
         if self.imageCheckBox179 ~= nil then self.imageCheckBox179:destroy(); self.imageCheckBox179 = nil; end;
         if self.imageCheckBox235 ~= nil then self.imageCheckBox235:destroy(); self.imageCheckBox235 = nil; end;
+        if self.update ~= nil then self.update:destroy(); self.update = nil; end;
         if self.layout75 ~= nil then self.layout75:destroy(); self.layout75 = nil; end;
         if self.imageCheckBox250 ~= nil then self.imageCheckBox250:destroy(); self.imageCheckBox250 = nil; end;
         if self.rectangle34 ~= nil then self.rectangle34:destroy(); self.rectangle34 = nil; end;
@@ -15876,6 +15905,7 @@ local function constructNew_VampiroAMascarafrm()
         if self.imageCheckBox149 ~= nil then self.imageCheckBox149:destroy(); self.imageCheckBox149 = nil; end;
         if self.edit47 ~= nil then self.edit47:destroy(); self.edit47 = nil; end;
         if self.imageCheckBox344 ~= nil then self.imageCheckBox344:destroy(); self.imageCheckBox344 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.imageCheckBox283 ~= nil then self.imageCheckBox283:destroy(); self.imageCheckBox283 = nil; end;
         if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
         if self.edit34 ~= nil then self.edit34:destroy(); self.edit34 = nil; end;
@@ -16036,8 +16066,8 @@ local function constructNew_VampiroAMascarafrm()
         if self.imageCheckBox188 ~= nil then self.imageCheckBox188:destroy(); self.imageCheckBox188 = nil; end;
         if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
         if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
-        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
+        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.imageCheckBox284 ~= nil then self.imageCheckBox284:destroy(); self.imageCheckBox284 = nil; end;
         if self.imageCheckBox19 ~= nil then self.imageCheckBox19:destroy(); self.imageCheckBox19 = nil; end;
         if self.imageCheckBox177 ~= nil then self.imageCheckBox177:destroy(); self.imageCheckBox177 = nil; end;

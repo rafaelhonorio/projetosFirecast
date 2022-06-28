@@ -3400,7 +3400,7 @@ local function constructNew_TormentaCastfrm()
     obj.calculos:setParent(obj.layout30);
     obj.calculos:setName("calculos");
     obj.calculos:setField("calculos");
-    obj.calculos:setLeft(14);
+    obj.calculos:setLeft(24);
     obj.calculos:setTop(136);
     obj.calculos:setImageChecked("/TRPG/img/xis.png");
     obj.calculos:setImageUnchecked("/TRPG/img/Cal.png");
@@ -3412,7 +3412,7 @@ local function constructNew_TormentaCastfrm()
     obj.acuidade:setParent(obj.layout30);
     obj.acuidade:setName("acuidade");
     obj.acuidade:setField("acuidade");
-    obj.acuidade:setLeft(34);
+    obj.acuidade:setLeft(44);
     obj.acuidade:setTop(136);
     obj.acuidade:setImageChecked("/TRPG/img/hand.png");
     obj.acuidade:setImageUnchecked("/TRPG/img/closedhand.png");
@@ -3424,7 +3424,7 @@ local function constructNew_TormentaCastfrm()
     obj.pontaria:setParent(obj.layout30);
     obj.pontaria:setName("pontaria");
     obj.pontaria:setField("pontaria");
-    obj.pontaria:setLeft(54);
+    obj.pontaria:setLeft(64);
     obj.pontaria:setTop(136);
     obj.pontaria:setImageChecked("/TRPG/img/wisdom.png");
     obj.pontaria:setImageUnchecked("/TRPG/img/bow.png");
@@ -3434,7 +3434,7 @@ local function constructNew_TormentaCastfrm()
 
     obj.update = GUI.fromHandle(_obj_newObject("image"));
     obj.update:setParent(obj.layout30);
-    obj.update:setLeft(74);
+    obj.update:setLeft(84);
     obj.update:setTop(136);
     obj.update:setName("update");
     lfm_setPropAsString(obj.update, "animate",  "true");
@@ -3444,7 +3444,7 @@ local function constructNew_TormentaCastfrm()
 
     obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout30);
-    obj.button1:setLeft(74);
+    obj.button1:setLeft(84);
     obj.button1:setTop(136);
     obj.button1:setWidth(15);
     obj.button1:setHeight(15);
@@ -10116,7 +10116,7 @@ local function constructNew_TormentaCastfrm()
 
     obj._e_event2 = obj.button1:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');
         end, obj);
 
     obj._e_event3 = obj.dataLink1:addEventListener("onChange",
