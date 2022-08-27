@@ -5,77 +5,77 @@
     <scrollBox align="client">
         <rectangle width="952" height="1347" color="white">&#xD;
 	
-            <image left="0" top="0" width="952" height="1347" src="images/4.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+            <image left="0" top="0" width="952" height="1347" src="images/4.png" style="stretch" optimize="true"/>&#xD;
 			<!-- Background -->
-			<layout left="44" top="277" width="873" height="541" compilerOrder="1">
-                <richEdit width="873" height="541" backgroundColor="transparent" field="ant2" compilerOrder="2"/>
+			<layout left="44" top="277" width="873" height="541">
+                <richEdit width="873" height="541" backgroundColor="transparent" field="ant2"/>
             </layout>&#xD;
 
 						<!-- Imagem de jogador -->
-			<layout left="125" top="886" width="338" height="370" compilerOrder="3">	
-			    <image field="imagemDoPersonagem" editable="true" style="autoFit" width="338" height="370" compilerOrder="4"/>
+			<layout left="125" top="886" width="338" height="370">	
+			    <image field="imagemDoPersonagem" editable="true" style="autoFit" width="338" height="370"/>
 			</layout>&#xD;
 			<!-- Nome -->			
-			<layout left="486" top="885" width="220" height="31" compilerOrder="5">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="nomeID" compilerOrder="6"/>
+			<layout left="486" top="885" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="nomeID"/>
             </layout>&#xD;			
 			<!-- Idade -->
-			<layout left="486" top="931" width="220" height="31" compilerOrder="7">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="idadeID" compilerOrder="8"/>
+			<layout left="486" top="931" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="idadeID"/>
             </layout>&#xD;
 			<!-- Genero -->			
-			<layout left="486" top="982" width="220" height="31" compilerOrder="9">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="generoID" compilerOrder="10"/>
+			<layout left="486" top="982" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="generoID"/>
             </layout>&#xD;
 			<!-- Regiao -->
-			<layout left="486" top="1028" width="220" height="31" compilerOrder="11">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="regiaoID" compilerOrder="12"/>
+			<layout left="486" top="1028" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="regiaoID"/>
             </layout>&#xD;			
 			<!-- CidadeNatal -->
-			<layout left="486" top="1074" width="220" height="31" compilerOrder="13">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="cidadeNatalID" compilerOrder="14"/>
+			<layout left="486" top="1074" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="cidadeNatalID"/>
             </layout>&#xD;	
 			<!-- Classe de Treinador -->
-			<layout left="486" top="1121" width="220" height="31" compilerOrder="15">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="classedeTreinadorID" compilerOrder="16"/>
+			<layout left="486" top="1121" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="classedeTreinadorID"/>
             </layout>&#xD;	
 			<!-- Altura -->
-			<layout left="486" top="1171" width="220" height="31" compilerOrder="17">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="alturaID" compilerOrder="18"/>
+			<layout left="486" top="1171" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="alturaID"/>
             </layout>&#xD;	
 			<!-- Peso -->
-			<layout left="486" top="1217" width="220" height="31" compilerOrder="19">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="pesoID" compilerOrder="20"/>
+			<layout left="486" top="1217" width="220" height="31">
+                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="pesoID"/>
             </layout>&#xD;	
 
 			<!-- Imagem de Pokemon 1 -->
-			<layout left="722" top="886" width="89" height="109" compilerOrder="21">	
-			    <image field="imagemDoPokemon1" editable="true" style="autoFit" width="89" height="109" compilerOrder="22"/>
+			<layout left="722" top="886" width="89" height="109">	
+			    <image field="imagemDoPokemon1" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;
 
 			<!-- Imagem de Pokemon 2 -->
-			<layout left="820" top="886" width="89" height="109" compilerOrder="23">	
-			    <image field="imagemDoPokemon2" editable="true" style="autoFit" width="89" height="109" compilerOrder="24"/>
+			<layout left="820" top="886" width="89" height="109">	
+			    <image field="imagemDoPokemon2" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;
 			
 			<!-- Imagem de Pokemon 3 -->
-			<layout left="722" top="1004" width="89" height="109" compilerOrder="25">	
-			    <image field="imagemDoPokemon3" editable="true" style="autoFit" width="89" height="109" compilerOrder="26"/>
+			<layout left="722" top="1004" width="89" height="109">	
+			    <image field="imagemDoPokemon3" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;
 
 			<!-- Imagem de Pokemon 4 -->
-			<layout left="820" top="1004" width="89" height="109" compilerOrder="27">	
-			    <image field="imagemDoPokemon4" editable="true" style="autoFit" width="89" height="109" compilerOrder="28"/>
+			<layout left="820" top="1004" width="89" height="109">	
+			    <image field="imagemDoPokemon4" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;
 
 			<!-- Imagem de Pokemon 5 -->
-			<layout left="722" top="1122" width="89" height="109" compilerOrder="29">	
-			    <image field="imagemDoPokemon5" editable="true" style="autoFit" width="89" height="109" compilerOrder="30"/>
+			<layout left="722" top="1122" width="89" height="109">	
+			    <image field="imagemDoPokemon5" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;
 
 			<!-- Imagem de Pokemon 6 -->
-			<layout left="820" top="1122" width="89" height="109" compilerOrder="31">	
-			    <image field="imagemDoPokemon6" editable="true" style="autoFit" width="89" height="109" compilerOrder="32"/>
+			<layout left="820" top="1122" width="89" height="109">	
+			    <image field="imagemDoPokemon6" editable="true" style="autoFit" width="89" height="109"/>
 			</layout>&#xD;			
         </rectangle>
     </scrollBox>

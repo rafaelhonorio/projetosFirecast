@@ -5,10 +5,10 @@
     <scrollBox align="client">
         <rectangle width="952" height="1347" color="white">&#xD;
 	
-            <image left="0" top="0" width="952" height="1347" src="images/6.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+            <image left="0" top="0" width="952" height="1347" src="images/6.png" style="stretch" optimize="true"/>&#xD;
 			
-			<layout left="43" top="227" width="873" height="1050" compilerOrder="1">
-                <richEdit width="873" height="1050" backgroundColor="transparent" field="txt" compilerOrder="2"/>
+			<layout left="43" top="227" width="873" height="1050">
+                <richEdit width="873" height="1050" backgroundColor="transparent" field="txt"/>
             </layout>&#xD;	
 								
         </rectangle>

@@ -5,9 +5,9 @@
     <scrollBox align="client">
         <rectangle width="952" height="1347" color="white">&#xD;
 	
-            <image left="0" top="0" width="952" height="1347" src="images/3.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+            <image left="0" top="0" width="952" height="1347" src="images/3.png" style="stretch" optimize="true"/>&#xD;
 		<!-- KANTO -->
-			<button left="85" top="290" width="29" height="29" compilerOrder="1">
+			<button left="85" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_0"  />
@@ -33,7 +33,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="290" width="29" height="29" compilerOrder="2">
+			<button left="185" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_1"  />
@@ -59,7 +59,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="290" width="29" height="29" compilerOrder="3">
+			<button left="290" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_2"  />
@@ -85,7 +85,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="290" width="29" height="29" compilerOrder="4">
+			<button left="402" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_3"  />
@@ -111,7 +111,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="290" width="29" height="29" compilerOrder="5">
+			<button left="505" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_4" />
@@ -137,7 +137,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="290" width="29" height="29" compilerOrder="6">
+			<button left="615" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_5"  />
@@ -163,7 +163,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="290" width="29" height="29" compilerOrder="7">
+			<button left="715" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_6"  />
@@ -189,7 +189,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="290" width="29" height="29" compilerOrder="8">
+			<button left="807" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxK_7"  />
@@ -215,12 +215,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="290" width="29" height="29" compilerOrder="9">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxK_8" compilerOrder="10"/>
+            <layout left="898" top="290" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxK_8"/>
             </layout>&#xD;		
 
 		<!-- JOHTO -->
-			<button left="85" top="384" width="29" height="29" compilerOrder="11">
+			<button left="85" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_0"  />
@@ -246,7 +246,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="384" width="29" height="29" compilerOrder="12">
+			<button left="185" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_1"  />
@@ -272,7 +272,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="384" width="29" height="29" compilerOrder="13">
+			<button left="290" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_2"  />
@@ -298,7 +298,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="384" width="29" height="29" compilerOrder="14">
+			<button left="402" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_3"  />
@@ -324,7 +324,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="384" width="29" height="29" compilerOrder="15">
+			<button left="505" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_4" />
@@ -350,7 +350,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="384" width="29" height="29" compilerOrder="16">
+			<button left="615" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_5"  />
@@ -376,7 +376,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="384" width="29" height="29" compilerOrder="17">
+			<button left="715" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_6"  />
@@ -402,7 +402,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="384" width="29" height="29" compilerOrder="18">
+			<button left="807" top="384" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxJ_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxJ_7"  />
@@ -428,12 +428,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="384" width="29" height="29" compilerOrder="19">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxJ_8" compilerOrder="20"/>
+            <layout left="898" top="384" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxJ_8"/>
             </layout>&#xD;				
 			
 		<!-- HOENN -->
-			<button left="85" top="474" width="29" height="29" compilerOrder="21">
+			<button left="85" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_0"  />
@@ -459,7 +459,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="474" width="29" height="29" compilerOrder="22">
+			<button left="185" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_1"  />
@@ -485,7 +485,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="474" width="29" height="29" compilerOrder="23">
+			<button left="290" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_2"  />
@@ -511,7 +511,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="474" width="29" height="29" compilerOrder="24">
+			<button left="402" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_3"  />
@@ -537,7 +537,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="474" width="29" height="29" compilerOrder="25">
+			<button left="505" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_4" />
@@ -563,7 +563,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="474" width="29" height="29" compilerOrder="26">
+			<button left="615" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_5"  />
@@ -589,7 +589,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="474" width="29" height="29" compilerOrder="27">
+			<button left="715" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_6"  />
@@ -615,7 +615,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="474" width="29" height="29" compilerOrder="28">
+			<button left="807" top="474" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxH_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxH_7"  />
@@ -641,12 +641,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="474" width="29" height="29" compilerOrder="29">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxH_8" compilerOrder="30"/>
+            <layout left="898" top="474" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxH_8"/>
             </layout>&#xD;				
 			
 		<!-- SINNOH -->
-			<button left="85" top="565" width="29" height="29" compilerOrder="31">
+			<button left="85" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_0"  />
@@ -672,7 +672,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="565" width="29" height="29" compilerOrder="32">
+			<button left="185" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_1"  />
@@ -698,7 +698,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="565" width="29" height="29" compilerOrder="33">
+			<button left="290" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_2"  />
@@ -724,7 +724,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="565" width="29" height="29" compilerOrder="34">
+			<button left="402" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_3"  />
@@ -750,7 +750,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="565" width="29" height="29" compilerOrder="35">
+			<button left="505" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_4" />
@@ -776,7 +776,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="565" width="29" height="29" compilerOrder="36">
+			<button left="615" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_5"  />
@@ -802,7 +802,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="565" width="29" height="29" compilerOrder="37">
+			<button left="715" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_6"  />
@@ -828,7 +828,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="565" width="29" height="29" compilerOrder="38">
+			<button left="807" top="565" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxS_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxS_7"  />
@@ -854,12 +854,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="565" width="29" height="29" compilerOrder="39">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxS_8" compilerOrder="40"/>
+            <layout left="898" top="565" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxS_8"/>
             </layout>&#xD;				
 			
 		<!-- UNOVA -->
-			<button left="85" top="661" width="29" height="29" compilerOrder="41">
+			<button left="85" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_0"  />
@@ -885,7 +885,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="661" width="29" height="29" compilerOrder="42">
+			<button left="185" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_1"  />
@@ -911,7 +911,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="661" width="29" height="29" compilerOrder="43">
+			<button left="290" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_2"  />
@@ -937,7 +937,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="661" width="29" height="29" compilerOrder="44">
+			<button left="402" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_3"  />
@@ -963,7 +963,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="661" width="29" height="29" compilerOrder="45">
+			<button left="505" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_4" />
@@ -989,7 +989,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="661" width="29" height="29" compilerOrder="46">
+			<button left="615" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_5"  />
@@ -1015,7 +1015,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="661" width="29" height="29" compilerOrder="47">
+			<button left="715" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_6"  />
@@ -1041,7 +1041,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="661" width="29" height="29" compilerOrder="48">
+			<button left="807" top="661" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxU_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxU_7"  />
@@ -1067,12 +1067,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="661" width="29" height="29" compilerOrder="49">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxU_8" compilerOrder="50"/>
+            <layout left="898" top="661" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxU_8"/>
             </layout>&#xD;				
 			
 		<!-- KALOS -->
-			<button left="85" top="755" width="29" height="29" compilerOrder="51">
+			<button left="85" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_0"  />
@@ -1098,7 +1098,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="755" width="29" height="29" compilerOrder="52">
+			<button left="185" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_1"  />
@@ -1124,7 +1124,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="755" width="29" height="29" compilerOrder="53">
+			<button left="290" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_2"  />
@@ -1150,7 +1150,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="755" width="29" height="29" compilerOrder="54">
+			<button left="402" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_3"  />
@@ -1176,7 +1176,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="755" width="29" height="29" compilerOrder="55">
+			<button left="505" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_4" />
@@ -1202,7 +1202,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="755" width="29" height="29" compilerOrder="56">
+			<button left="615" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_5"  />
@@ -1228,7 +1228,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="755" width="29" height="29" compilerOrder="57">
+			<button left="715" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_6"  />
@@ -1254,7 +1254,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="755" width="29" height="29" compilerOrder="58">
+			<button left="807" top="755" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxKL_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxKL_7"  />
@@ -1280,12 +1280,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="755" width="29" height="29" compilerOrder="59">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxKL_8" compilerOrder="60"/>
+            <layout left="898" top="755" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxKL_8"/>
             </layout>&#xD;
 			
 		<!-- ALOLA -->
-			<button left="85" top="842" width="29" height="29" compilerOrder="61">
+			<button left="85" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_0"  />
@@ -1311,7 +1311,7 @@
 				</event>
 			</button>	
 			
-			<button left="185" top="842" width="29" height="29" compilerOrder="62">
+			<button left="185" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_1"  />
@@ -1337,7 +1337,7 @@
 				</event>
 			</button>
 			
-			<button left="290" top="842" width="29" height="29" compilerOrder="63">
+			<button left="290" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_2"  />
@@ -1363,7 +1363,7 @@
 				</event>
 			</button>
 			
-			<button left="402" top="842" width="29" height="29" compilerOrder="64">
+			<button left="402" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_3"  />
@@ -1389,7 +1389,7 @@
 				</event>
 			</button>		
 
-			<button left="505" top="842" width="29" height="29" compilerOrder="65">
+			<button left="505" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_4" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_4" />
@@ -1415,7 +1415,7 @@
 				</event>
 			</button>
 
-			<button left="615" top="842" width="29" height="29" compilerOrder="66">
+			<button left="615" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_5" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_5"  />
@@ -1441,7 +1441,7 @@
 				</event>
 			</button>
 			
-			<button left="715" top="842" width="29" height="29" compilerOrder="67">
+			<button left="715" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_6" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_6"  />
@@ -1467,7 +1467,7 @@
 				</event>
 			</button>			
 
-			<button left="807" top="842" width="29" height="29" compilerOrder="68">
+			<button left="807" top="842" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxA_7" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxA_7"  />
@@ -1493,12 +1493,12 @@
 				</event>
 			</button>		
 
-            <layout left="898" top="842" width="29" height="29" compilerOrder="69">
-                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxA_8" compilerOrder="70"/>
+            <layout left="898" top="842" width="29" height="29">
+                <imageCheckBox checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball1_off.png" width="29" height="29" field="Check_BoxA_8"/>
             </layout>&#xD;						
 			
 		<!-- ORANGE ISLAND -->
-			<button left="330" top="930" width="29" height="29" compilerOrder="71">
+			<button left="330" top="930" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxOL_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxOL_0"  />
@@ -1524,7 +1524,7 @@
 				</event>
 			</button>
 			
-			<button left="442" top="930" width="29" height="29" compilerOrder="72">
+			<button left="442" top="930" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxOL_1" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxOL_1"  />
@@ -1550,7 +1550,7 @@
 				</event>
 			</button>
 
-			<button left="555" top="930" width="29" height="29" compilerOrder="73">
+			<button left="555" top="930" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxOL_2" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxOL_2"  />
@@ -1576,7 +1576,7 @@
 				</event>
 			</button>			
 
-			<button left="667" top="930" width="29" height="29" compilerOrder="74">
+			<button left="667" top="930" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxOL_3" defaultValue="PokeRPGT/images/pokeball1_off.png" />
 				<image align="client" field="Check_BoxOL_3"  />
@@ -1604,8 +1604,8 @@
 			
 		<!-- GASTO DE XP -->
 			
-            <layout left="35" top="1014" width="885" height="265" compilerOrder="61">
-                <textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="885" height="265"  field="ant3" compilerOrder="75"/>
+            <layout left="35" top="1014" width="885" height="265">
+                <textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="885" height="265"  field="ant3"/>
             </layout>&#xD;							
 
         </rectangle>
