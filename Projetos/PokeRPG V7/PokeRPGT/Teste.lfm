@@ -909,6 +909,103 @@
 	</event>
 </dataLink>
 
+<dataLink fields="{'inteligencia_9', 'inteligencia_8', 'inteligencia_7', 'inteligencia_6', 'inteligencia_5', 'inteligencia_4', 'inteligencia_3', 'inteligencia_2', 'inteligencia_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.inteligencia_9 == true then
+		sheet.inteligencia_8 = true;
+		sheet.inteligencia_7 = true;
+		sheet.inteligencia_6 = true;
+		sheet.inteligencia_5 = true;
+		sheet.inteligencia_4 = true;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_8 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_7 = true;
+		sheet.inteligencia_6 = true;
+		sheet.inteligencia_5 = true;
+		sheet.inteligencia_4 = true;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_7 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_6 = true;
+		sheet.inteligencia_5 = true;
+		sheet.inteligencia_4 = true;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_6 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_5 = true;
+		sheet.inteligencia_4 = true;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_5 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_4 = true;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_4 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_5 = false;
+		sheet.inteligencia_3 = true;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_3 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_5 = false;
+		sheet.inteligencia_4 = false;
+		sheet.inteligencia_2 = true;
+		sheet.inteligencia_1 = true;
+	elseif sheet.inteligencia_2 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_5 = false;
+		sheet.inteligencia_4 = false;
+		sheet.inteligencia_3 = false;
+		sheet.inteligencia_1 = true;	
+	elseif sheet.inteligencia_1 == true then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_5 = false;
+		sheet.inteligencia_4 = false;
+		sheet.inteligencia_3 = false;
+		sheet.inteligencia_2 = false;
+	elseif sheet.inteligencia_1 == false then
+		sheet.inteligencia_9 = false;
+		sheet.inteligencia_8 = false;
+		sheet.inteligencia_7 = false;
+		sheet.inteligencia_6 = false;
+		sheet.inteligencia_5 = false;
+		sheet.inteligencia_4 = false;
+		sheet.inteligencia_3 = false;
+		sheet.inteligencia_2 = false;
+	end;
+	</event>
+</dataLink>
+
 <dataLink fields="{'vigor_9', 'vigor_8', 'vigor_7', 'vigor_6', 'vigor_5', 'vigor_4', 'vigor_3', 'vigor_2', 'vigor_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
@@ -2169,8 +2266,8 @@
 	end;
 	</event>
 </dataLink>
-	
-<dataLink fields="{'et9', 'et8', 'et7', 'et6', 'et5', 'et4', 'et3', 'et2', 'et1'}">
+
+<dataLink fields="{'etiqueta_9', 'etiqueta_8', 'etiqueta_7', 'etiqueta_6', 'etiqueta_5', 'etiqueta_4', 'etiqueta_3', 'etiqueta_2', 'etiqueta_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
 	if sheet.etiqueta_9 == true then
@@ -4016,465 +4113,589 @@
 	end;
 	</event>
 </dataLink>
-<!--
-<dataLink fields="{'recon10', 'recon9', 'recon8', 'recon7', 'recon6', 'recon5', 'recon4', 'recon3', 'recon2', 'recon1'}">
-	<event name="onChange">
-		if sheet == nil then return end;
-		if sheet.recon10 == 3 then
-		sheet.recon9 = 3;
-		sheet.recon8 = 3;
-		sheet.recon7 = 3;
-		sheet.recon6 = 3;
-		sheet.recon5 = 3;
-		sheet.recon4 = 3;
-		sheet.recon3 = 3;
-		sheet.recon2 = 3;
-		sheet.recon1 = 3;	
-		end;		
-	</event>
-</dataLink>
--->
 
-<!--
- <dataLink fields="{'imageCounterR10', 'imageCounterR9', 'imageCounterR8', 'imageCounterR7', 'imageCounterR6', 'imageCounterR5', 'imageCounterR4', 'imageCounterR3', 'imageCounterR2', 'imageCounterR1'}">
+<dataLink fields="{'famaBoa_10', 'famaBoa_9', 'famaBoa_8', 'famaBoa_7', 'famaBoa_6', 'famaBoa_5', 'famaBoa_4', 'famaBoa_3', 'famaBoa_2', 'famaBoa_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
-if sheet.imageCounterR10 == 2 then
-		sheet.imageCounterR9 = 2;
-		sheet.imageCounterR8 = 2;
-		sheet.imageCounterR7 = 2;
-		sheet.imageCounterR6 = 2;
-		sheet.imageCounterR5 = 2;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR9 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR8 = 2;
-		sheet.imageCounterR7 = 2;
-		sheet.imageCounterR6 = 2;
-		sheet.imageCounterR5 = 2;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR8 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR7 = 2;
-		sheet.imageCounterR6 = 2;
-		sheet.imageCounterR5 = 2;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR7 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR6 = 2;
-		sheet.imageCounterR5 = 2;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR6 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR5 = 2;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR5 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR4 = 2;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR4 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR3 = 2;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR3 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR2 = 2;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR2 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR3 = 1;
-		sheet.imageCounterR1 = 2;
-	elseif sheet.imageCounterR1 == 2 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR3 = 1;
-		sheet.imageCounterR1 = 1;
-	elseif sheet.imageCounterR10 == 3 then
-		sheet.imageCounterR9 = 3;
-		sheet.imageCounterR8 = 3;
-		sheet.imageCounterR7 = 3;
-		sheet.imageCounterR6 = 3;
-		sheet.imageCounterR5 = 3;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR9 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR8 = 3;
-		sheet.imageCounterR7 = 3;
-		sheet.imageCounterR6 = 3;
-		sheet.imageCounterR5 = 3;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR8 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR7 = 3;
-		sheet.imageCounterR6 = 3;
-		sheet.imageCounterR5 = 3;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR7 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR6 = 3;
-		sheet.imageCounterR5 = 3;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR6 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR5 = 3;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR5 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR4 = 3;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR4 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR3 = 3;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR3 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR2 = 3;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR2 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR3 = 1;
-		sheet.imageCounterR1 = 3;
-	elseif sheet.imageCounterR1 == 3 then
-		sheet.imageCounterR10 = 1;
-		sheet.imageCounterR9 = 1;
-		sheet.imageCounterR8 = 1;
-		sheet.imageCounterR7 = 1;
-		sheet.imageCounterR6 = 1;
-		sheet.imageCounterR5 = 1;
-		sheet.imageCounterR4 = 1;
-		sheet.imageCounterR3 = 1;
-		sheet.imageCounterR1 = 1;	
+	if sheet.famaBoa_10 == true then
+		sheet.famaBoa_9 = true;
+		sheet.famaBoa_8 = true;
+		sheet.famaBoa_7 = true;
+		sheet.famaBoa_6 = true;
+		sheet.famaBoa_5 = true;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_9 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_8 = true;
+		sheet.famaBoa_7 = true;
+		sheet.famaBoa_6 = true;
+		sheet.famaBoa_5 = true;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_8 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_7 = true;
+		sheet.famaBoa_6 = true;
+		sheet.famaBoa_5 = true;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_7 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_6 = true;
+		sheet.famaBoa_5 = true;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_6 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_5 = true;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_5 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_4 = true;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_4 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_5 = false;
+		sheet.famaBoa_3 = true;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_3 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_5 = false;
+		sheet.famaBoa_4 = false;
+		sheet.famaBoa_2 = true;
+		sheet.famaBoa_1 = true;
+	elseif sheet.famaBoa_2 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_5 = false;
+		sheet.famaBoa_4 = false;
+		sheet.famaBoa_3 = false;
+		sheet.famaBoa_1 = true;	
+	elseif sheet.famaBoa_1 == true then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_5 = false;
+		sheet.famaBoa_4 = false;
+		sheet.famaBoa_3 = false;
+		sheet.famaBoa_2 = false;
+	elseif sheet.famaBoa_1 == false then
+		sheet.famaBoa_10 = false;
+		sheet.famaBoa_9 = false;
+		sheet.famaBoa_8 = false;
+		sheet.famaBoa_7 = false;
+		sheet.famaBoa_6 = false;
+		sheet.famaBoa_5 = false;
+		sheet.famaBoa_4 = false;
+		sheet.famaBoa_3 = false;
+		sheet.famaBoa_2 = false;
 	end;
 	</event>
 </dataLink>
 
-<dataLink fields="{'fama10', 'fama9', 'fama8', 'fama7', 'fama6', 'fama5', 'fama4', 'fama3', 'fama2', 'fama1'}">
+<dataLink fields="{'reconhecimento_10', 'reconhecimento_9', 'reconhecimento_8', 'reconhecimento_7', 'reconhecimento_6', 'reconhecimento_5', 'reconhecimento_4', 'reconhecimento_3', 'reconhecimento_2', 'reconhecimento_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
-	if sheet.fama10 == true then
-		sheet.fama9 = true;
-		sheet.fama8 = true;
-		sheet.fama7 = true;
-		sheet.fama6 = true;
-		sheet.fama5 = true;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama9 == true then
-		sheet.fama10 = false;
-		sheet.fama8 = true;
-		sheet.fama7 = true;
-		sheet.fama6 = true;
-		sheet.fama5 = true;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama8 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama7 = true;
-		sheet.fama6 = true;
-		sheet.fama5 = true;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama7 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama6 = true;
-		sheet.fama5 = true;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama6 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama5 = true;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama5 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama4 = true;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama4 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama5 = false;
-		sheet.fama3 = true;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama3 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama5 = false;
-		sheet.fama4 = false;
-		sheet.fama2 = true;
-		sheet.fama1 = true;
-	elseif sheet.fama2 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama5 = false;
-		sheet.fama4 = false;
-		sheet.fama3 = false;
-		sheet.fama1 = true;	
-	elseif sheet.fama1 == true then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama5 = false;
-		sheet.fama4 = false;
-		sheet.fama3 = false;
-		sheet.fama2 = false;
-	elseif sheet.fama1 == false then
-		sheet.fama10 = false;
-		sheet.fama9 = false;
-		sheet.fama8 = false;
-		sheet.fama7 = false;
-		sheet.fama6 = false;
-		sheet.fama5 = false;
-		sheet.fama4 = false;
-		sheet.fama3 = false;
-		sheet.fama2 = false;
+	if sheet.reconhecimento_10 == true then
+		sheet.reconhecimento_9 = true;
+		sheet.reconhecimento_8 = true;
+		sheet.reconhecimento_7 = true;
+		sheet.reconhecimento_6 = true;
+		sheet.reconhecimento_5 = true;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_9 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_8 = true;
+		sheet.reconhecimento_7 = true;
+		sheet.reconhecimento_6 = true;
+		sheet.reconhecimento_5 = true;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_8 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_7 = true;
+		sheet.reconhecimento_6 = true;
+		sheet.reconhecimento_5 = true;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_7 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_6 = true;
+		sheet.reconhecimento_5 = true;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_6 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_5 = true;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_5 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_4 = true;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_4 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_5 = false;
+		sheet.reconhecimento_3 = true;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_3 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_5 = false;
+		sheet.reconhecimento_4 = false;
+		sheet.reconhecimento_2 = true;
+		sheet.reconhecimento_1 = true;
+	elseif sheet.reconhecimento_2 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_5 = false;
+		sheet.reconhecimento_4 = false;
+		sheet.reconhecimento_3 = false;
+		sheet.reconhecimento_1 = true;	
+	elseif sheet.reconhecimento_1 == true then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_5 = false;
+		sheet.reconhecimento_4 = false;
+		sheet.reconhecimento_3 = false;
+		sheet.reconhecimento_2 = false;
+	elseif sheet.reconhecimento_1 == false then
+		sheet.reconhecimento_10 = false;
+		sheet.reconhecimento_9 = false;
+		sheet.reconhecimento_8 = false;
+		sheet.reconhecimento_7 = false;
+		sheet.reconhecimento_6 = false;
+		sheet.reconhecimento_5 = false;
+		sheet.reconhecimento_4 = false;
+		sheet.reconhecimento_3 = false;
+		sheet.reconhecimento_2 = false;
 	end;
 	</event>
 </dataLink>
 
-<dataLink fields="{'influ10', 'influ9', 'influ8', 'influ7', 'influ6', 'influ5', 'influ4', 'influ3', 'influ2', 'influ1'}">
+<dataLink fields="{'influenciaBoa_10', 'influenciaBoa_9', 'influenciaBoa_8', 'influenciaBoa_7', 'influenciaBoa_6', 'influenciaBoa_5', 'influenciaBoa_4', 'influenciaBoa_3', 'influenciaBoa_2', 'influenciaBoa_1'}">
 	<event name="onChange">
 	if sheet == nil then return end;
-	if sheet.influ10 == true then
-		sheet.influ9 = true;
-		sheet.influ8 = true;
-		sheet.influ7 = true;
-		sheet.influ6 = true;
-		sheet.influ5 = true;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ9 == true then
-		sheet.influ10 = false;
-		sheet.influ8 = true;
-		sheet.influ7 = true;
-		sheet.influ6 = true;
-		sheet.influ5 = true;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ8 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ7 = true;
-		sheet.influ6 = true;
-		sheet.influ5 = true;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ7 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ6 = true;
-		sheet.influ5 = true;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ6 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ5 = true;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ5 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ4 = true;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ4 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ5 = false;
-		sheet.influ3 = true;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ3 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ5 = false;
-		sheet.influ4 = false;
-		sheet.influ2 = true;
-		sheet.influ1 = true;
-	elseif sheet.influ2 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ5 = false;
-		sheet.influ4 = false;
-		sheet.influ3 = false;
-		sheet.influ1 = true;	
-	elseif sheet.influ1 == true then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ5 = false;
-		sheet.influ4 = false;
-		sheet.influ3 = false;
-		sheet.influ2 = false;
-	elseif sheet.influ1 == false then
-		sheet.influ10 = false;
-		sheet.influ9 = false;
-		sheet.influ8 = false;
-		sheet.influ7 = false;
-		sheet.influ6 = false;
-		sheet.influ5 = false;
-		sheet.influ4 = false;
-		sheet.influ3 = false;
-		sheet.influ2 = false;
+	if sheet.influenciaBoa_10 == true then
+		sheet.influenciaBoa_9 = true;
+		sheet.influenciaBoa_8 = true;
+		sheet.influenciaBoa_7 = true;
+		sheet.influenciaBoa_6 = true;
+		sheet.influenciaBoa_5 = true;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_9 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_8 = true;
+		sheet.influenciaBoa_7 = true;
+		sheet.influenciaBoa_6 = true;
+		sheet.influenciaBoa_5 = true;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_8 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_7 = true;
+		sheet.influenciaBoa_6 = true;
+		sheet.influenciaBoa_5 = true;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_7 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_6 = true;
+		sheet.influenciaBoa_5 = true;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_6 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_5 = true;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_5 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_4 = true;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_4 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_5 = false;
+		sheet.influenciaBoa_3 = true;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_3 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_5 = false;
+		sheet.influenciaBoa_4 = false;
+		sheet.influenciaBoa_2 = true;
+		sheet.influenciaBoa_1 = true;
+	elseif sheet.influenciaBoa_2 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_5 = false;
+		sheet.influenciaBoa_4 = false;
+		sheet.influenciaBoa_3 = false;
+		sheet.influenciaBoa_1 = true;	
+	elseif sheet.influenciaBoa_1 == true then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_5 = false;
+		sheet.influenciaBoa_4 = false;
+		sheet.influenciaBoa_3 = false;
+		sheet.influenciaBoa_2 = false;
+	elseif sheet.influenciaBoa_1 == false then
+		sheet.influenciaBoa_10 = false;
+		sheet.influenciaBoa_9 = false;
+		sheet.influenciaBoa_8 = false;
+		sheet.influenciaBoa_7 = false;
+		sheet.influenciaBoa_6 = false;
+		sheet.influenciaBoa_5 = false;
+		sheet.influenciaBoa_4 = false;
+		sheet.influenciaBoa_3 = false;
+		sheet.influenciaBoa_2 = false;
 	end;
 	</event>
-</dataLink> -->
+</dataLink>
 
+<dataLink fields="{'famaRuim_10', 'famaRuim_9', 'famaRuim_8', 'famaRuim_7', 'famaRuim_6', 'famaRuim_5', 'famaRuim_4', 'famaRuim_3', 'famaRuim_2', 'famaRuim_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.famaRuim_10 == true then
+		sheet.famaRuim_9 = true;
+		sheet.famaRuim_8 = true;
+		sheet.famaRuim_7 = true;
+		sheet.famaRuim_6 = true;
+		sheet.famaRuim_5 = true;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_9 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_8 = true;
+		sheet.famaRuim_7 = true;
+		sheet.famaRuim_6 = true;
+		sheet.famaRuim_5 = true;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_8 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_7 = true;
+		sheet.famaRuim_6 = true;
+		sheet.famaRuim_5 = true;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_7 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_6 = true;
+		sheet.famaRuim_5 = true;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_6 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_5 = true;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_5 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_4 = true;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_4 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_5 = false;
+		sheet.famaRuim_3 = true;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_3 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_5 = false;
+		sheet.famaRuim_4 = false;
+		sheet.famaRuim_2 = true;
+		sheet.famaRuim_1 = true;
+	elseif sheet.famaRuim_2 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_5 = false;
+		sheet.famaRuim_4 = false;
+		sheet.famaRuim_3 = false;
+		sheet.famaRuim_1 = true;	
+	elseif sheet.famaRuim_1 == true then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_5 = false;
+		sheet.famaRuim_4 = false;
+		sheet.famaRuim_3 = false;
+		sheet.famaRuim_2 = false;
+	elseif sheet.famaRuim_1 == false then
+		sheet.famaRuim_10 = false;
+		sheet.famaRuim_9 = false;
+		sheet.famaRuim_8 = false;
+		sheet.famaRuim_7 = false;
+		sheet.famaRuim_6 = false;
+		sheet.famaRuim_5 = false;
+		sheet.famaRuim_4 = false;
+		sheet.famaRuim_3 = false;
+		sheet.famaRuim_2 = false;
+	end;
+	</event>
+</dataLink>
+
+<dataLink fields="{'influenciaRuim_10', 'influenciaRuim_9', 'influenciaRuim_8', 'influenciaRuim_7', 'influenciaRuim_6', 'influenciaRuim_5', 'influenciaRuim_4', 'influenciaRuim_3', 'influenciaRuim_2', 'influenciaRuim_1'}">
+	<event name="onChange">
+	if sheet == nil then return end;
+	if sheet.influenciaRuim_10 == true then
+		sheet.influenciaRuim_9 = true;
+		sheet.influenciaRuim_8 = true;
+		sheet.influenciaRuim_7 = true;
+		sheet.influenciaRuim_6 = true;
+		sheet.influenciaRuim_5 = true;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_9 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_8 = true;
+		sheet.influenciaRuim_7 = true;
+		sheet.influenciaRuim_6 = true;
+		sheet.influenciaRuim_5 = true;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_8 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_7 = true;
+		sheet.influenciaRuim_6 = true;
+		sheet.influenciaRuim_5 = true;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_7 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_6 = true;
+		sheet.influenciaRuim_5 = true;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_6 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_5 = true;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_5 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_4 = true;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_4 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_5 = false;
+		sheet.influenciaRuim_3 = true;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_3 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_5 = false;
+		sheet.influenciaRuim_4 = false;
+		sheet.influenciaRuim_2 = true;
+		sheet.influenciaRuim_1 = true;
+	elseif sheet.influenciaRuim_2 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_5 = false;
+		sheet.influenciaRuim_4 = false;
+		sheet.influenciaRuim_3 = false;
+		sheet.influenciaRuim_1 = true;	
+	elseif sheet.influenciaRuim_1 == true then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_5 = false;
+		sheet.influenciaRuim_4 = false;
+		sheet.influenciaRuim_3 = false;
+		sheet.influenciaRuim_2 = false;
+	elseif sheet.influenciaRuim_1 == false then
+		sheet.influenciaRuim_10 = false;
+		sheet.influenciaRuim_9 = false;
+		sheet.influenciaRuim_8 = false;
+		sheet.influenciaRuim_7 = false;
+		sheet.influenciaRuim_6 = false;
+		sheet.influenciaRuim_5 = false;
+		sheet.influenciaRuim_4 = false;
+		sheet.influenciaRuim_3 = false;
+		sheet.influenciaRuim_2 = false;
+	end;
+	</event>
+</dataLink>
 </form>

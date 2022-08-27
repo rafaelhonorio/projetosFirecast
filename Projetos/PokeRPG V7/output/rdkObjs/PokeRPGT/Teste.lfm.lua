@@ -72,158 +72,183 @@ local function constructNew_frmTeste()
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink9:setParent(obj);
-    obj.dataLink9:setFields({'vigor_9', 'vigor_8', 'vigor_7', 'vigor_6', 'vigor_5', 'vigor_4', 'vigor_3', 'vigor_2', 'vigor_1'});
+    obj.dataLink9:setFields({'inteligencia_9', 'inteligencia_8', 'inteligencia_7', 'inteligencia_6', 'inteligencia_5', 'inteligencia_4', 'inteligencia_3', 'inteligencia_2', 'inteligencia_1'});
     obj.dataLink9:setName("dataLink9");
 
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink10:setParent(obj);
-    obj.dataLink10:setFields({'raciocinio_9', 'raciocinio_8', 'raciocinio_7', 'raciocinio_6', 'raciocinio_5', 'raciocinio_4', 'raciocinio_3', 'raciocinio_2', 'raciocinio_1'});
+    obj.dataLink10:setFields({'vigor_9', 'vigor_8', 'vigor_7', 'vigor_6', 'vigor_5', 'vigor_4', 'vigor_3', 'vigor_2', 'vigor_1'});
     obj.dataLink10:setName("dataLink10");
 
     obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink11:setParent(obj);
-    obj.dataLink11:setFields({'aparencia_9', 'aparencia_8', 'aparencia_7', 'aparencia_6', 'aparencia_5', 'aparencia_4', 'aparencia_3', 'aparencia_2', 'aparencia_1'});
+    obj.dataLink11:setFields({'raciocinio_9', 'raciocinio_8', 'raciocinio_7', 'raciocinio_6', 'raciocinio_5', 'raciocinio_4', 'raciocinio_3', 'raciocinio_2', 'raciocinio_1'});
     obj.dataLink11:setName("dataLink11");
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink12:setParent(obj);
-    obj.dataLink12:setFields({'prontidao_9', 'prontidao_8', 'prontidao_7', 'prontidao_6', 'prontidao_5', 'prontidao_4', 'prontidao_3', 'prontidao_2', 'prontidao_1'});
+    obj.dataLink12:setFields({'aparencia_9', 'aparencia_8', 'aparencia_7', 'aparencia_6', 'aparencia_5', 'aparencia_4', 'aparencia_3', 'aparencia_2', 'aparencia_1'});
     obj.dataLink12:setName("dataLink12");
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink13:setParent(obj);
-    obj.dataLink13:setFields({'academicos_9', 'academicos_8', 'academicos_7', 'academicos_6', 'academicos_5', 'academicos_4', 'academicos_3', 'academicos_2', 'academicos_1'});
+    obj.dataLink13:setFields({'prontidao_9', 'prontidao_8', 'prontidao_7', 'prontidao_6', 'prontidao_5', 'prontidao_4', 'prontidao_3', 'prontidao_2', 'prontidao_1'});
     obj.dataLink13:setName("dataLink13");
 
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink14:setParent(obj);
-    obj.dataLink14:setFields({'empatiaPokemon_9', 'empatiaPokemon_8', 'empatiaPokemon_7', 'empatiaPokemon_6', 'empatiaPokemon_5', 'empatiaPokemon_4', 'empatiaPokemon_3', 'empatiaPokemon_2', 'empatiaPokemon_1'});
+    obj.dataLink14:setFields({'academicos_9', 'academicos_8', 'academicos_7', 'academicos_6', 'academicos_5', 'academicos_4', 'academicos_3', 'academicos_2', 'academicos_1'});
     obj.dataLink14:setName("dataLink14");
 
     obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink15:setParent(obj);
-    obj.dataLink15:setFields({'esportes_9', 'esportes_8', 'esportes_7', 'esportes_6', 'esportes_5', 'esportes_4', 'esportes_3', 'esportes_2', 'esportes_1'});
+    obj.dataLink15:setFields({'empatiaPokemon_9', 'empatiaPokemon_8', 'empatiaPokemon_7', 'empatiaPokemon_6', 'empatiaPokemon_5', 'empatiaPokemon_4', 'empatiaPokemon_3', 'empatiaPokemon_2', 'empatiaPokemon_1'});
     obj.dataLink15:setName("dataLink15");
 
     obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink16:setParent(obj);
-    obj.dataLink16:setFields({'computador_9', 'computador_8', 'computador_7', 'computador_6', 'computador_5', 'computador_4', 'computador_3', 'computador_2', 'computador_1'});
+    obj.dataLink16:setFields({'esportes_9', 'esportes_8', 'esportes_7', 'esportes_6', 'esportes_5', 'esportes_4', 'esportes_3', 'esportes_2', 'esportes_1'});
     obj.dataLink16:setName("dataLink16");
 
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink17:setParent(obj);
-    obj.dataLink17:setFields({'oficios_9', 'oficios_8', 'oficios_7', 'oficios_6', 'oficios_5', 'oficios_4', 'oficios_3', 'oficios_2', 'oficios_1'});
+    obj.dataLink17:setFields({'computador_9', 'computador_8', 'computador_7', 'computador_6', 'computador_5', 'computador_4', 'computador_3', 'computador_2', 'computador_1'});
     obj.dataLink17:setName("dataLink17");
 
     obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink18:setParent(obj);
-    obj.dataLink18:setFields({'briga_9', 'briga_8', 'briga_7', 'briga_6', 'briga_5', 'briga_4', 'briga_3', 'briga_2', 'briga_1'});
+    obj.dataLink18:setFields({'oficios_9', 'oficios_8', 'oficios_7', 'oficios_6', 'oficios_5', 'oficios_4', 'oficios_3', 'oficios_2', 'oficios_1'});
     obj.dataLink18:setName("dataLink18");
 
     obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink19:setParent(obj);
-    obj.dataLink19:setFields({'habitats_9', 'habitats_8', 'habitats_7', 'habitats_6', 'habitats_5', 'habitats_4', 'habitats_3', 'habitats_2', 'habitats_1'});
+    obj.dataLink19:setFields({'briga_9', 'briga_8', 'briga_7', 'briga_6', 'briga_5', 'briga_4', 'briga_3', 'briga_2', 'briga_1'});
     obj.dataLink19:setName("dataLink19");
 
     obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink20:setParent(obj);
-    obj.dataLink20:setFields({'esquiva_9', 'esquiva_8', 'esquiva_7', 'esquiva_6', 'esquiva_5', 'esquiva_4', 'esquiva_3', 'esquiva_2', 'esquiva_1'});
+    obj.dataLink20:setFields({'habitats_9', 'habitats_8', 'habitats_7', 'habitats_6', 'habitats_5', 'habitats_4', 'habitats_3', 'habitats_2', 'habitats_1'});
     obj.dataLink20:setName("dataLink20");
 
     obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink21:setParent(obj);
-    obj.dataLink21:setFields({'investigacao_9', 'investigacao_8', 'investigacao_7', 'investigacao_6', 'investigacao_5', 'investigacao_4', 'investigacao_3', 'investigacao_2', 'investigacao_1'});
+    obj.dataLink21:setFields({'esquiva_9', 'esquiva_8', 'esquiva_7', 'esquiva_6', 'esquiva_5', 'esquiva_4', 'esquiva_3', 'esquiva_2', 'esquiva_1'});
     obj.dataLink21:setName("dataLink21");
 
     obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink22:setParent(obj);
-    obj.dataLink22:setFields({'et9', 'et8', 'et7', 'et6', 'et5', 'et4', 'et3', 'et2', 'et1'});
+    obj.dataLink22:setFields({'investigacao_9', 'investigacao_8', 'investigacao_7', 'investigacao_6', 'investigacao_5', 'investigacao_4', 'investigacao_3', 'investigacao_2', 'investigacao_1'});
     obj.dataLink22:setName("dataLink22");
 
     obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink23:setParent(obj);
-    obj.dataLink23:setFields({'empatia_9', 'empatia_8', 'empatia_7', 'empatia_6', 'empatia_5', 'empatia_4', 'empatia_3', 'empatia_2', 'empatia_1'});
+    obj.dataLink23:setFields({'etiqueta_9', 'etiqueta_8', 'etiqueta_7', 'etiqueta_6', 'etiqueta_5', 'etiqueta_4', 'etiqueta_3', 'etiqueta_2', 'etiqueta_1'});
     obj.dataLink23:setName("dataLink23");
 
     obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink24:setParent(obj);
-    obj.dataLink24:setFields({'atuacao_9', 'atuacao_8', 'atuacao_7', 'atuacao_6', 'atuacao_5', 'atuacao_4', 'atuacao_3', 'atuacao_2', 'atuacao_1'});
+    obj.dataLink24:setFields({'empatia_9', 'empatia_8', 'empatia_7', 'empatia_6', 'empatia_5', 'empatia_4', 'empatia_3', 'empatia_2', 'empatia_1'});
     obj.dataLink24:setName("dataLink24");
 
     obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink25:setParent(obj);
-    obj.dataLink25:setFields({'direito_9', 'direito_8', 'direito_7', 'direito_6', 'direito_5', 'direito_4', 'direito_3', 'direito_2', 'direito_1'});
+    obj.dataLink25:setFields({'atuacao_9', 'atuacao_8', 'atuacao_7', 'atuacao_6', 'atuacao_5', 'atuacao_4', 'atuacao_3', 'atuacao_2', 'atuacao_1'});
     obj.dataLink25:setName("dataLink25");
 
     obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink26:setParent(obj);
-    obj.dataLink26:setFields({'expressao_9', 'expressao_8', 'expressao_7', 'expressao_6', 'expressao_5', 'expressao_4', 'expressao_3', 'expressao_2', 'expressao_1'});
+    obj.dataLink26:setFields({'direito_9', 'direito_8', 'direito_7', 'direito_6', 'direito_5', 'direito_4', 'direito_3', 'direito_2', 'direito_1'});
     obj.dataLink26:setName("dataLink26");
 
     obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink27:setParent(obj);
-    obj.dataLink27:setFields({'seguranca_9', 'seguranca_8', 'seguranca_7', 'seguranca_6', 'seguranca_5', 'seguranca_4', 'seguranca_3', 'seguranca_2', 'seguranca_1'});
+    obj.dataLink27:setFields({'expressao_9', 'expressao_8', 'expressao_7', 'expressao_6', 'expressao_5', 'expressao_4', 'expressao_3', 'expressao_2', 'expressao_1'});
     obj.dataLink27:setName("dataLink27");
 
     obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink28:setParent(obj);
-    obj.dataLink28:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
+    obj.dataLink28:setFields({'seguranca_9', 'seguranca_8', 'seguranca_7', 'seguranca_6', 'seguranca_5', 'seguranca_4', 'seguranca_3', 'seguranca_2', 'seguranca_1'});
     obj.dataLink28:setName("dataLink28");
 
     obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink29:setParent(obj);
-    obj.dataLink29:setFields({'medicina_9', 'medicina_8', 'medicina_7', 'medicina_6', 'medicina_5', 'medicina_4', 'medicina_3', 'medicina_2', 'medicina_1'});
+    obj.dataLink29:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
     obj.dataLink29:setName("dataLink29");
 
     obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink30:setParent(obj);
-    obj.dataLink30:setFields({'furtividade_9', 'furtividade_8', 'furtividade_7', 'furtividade_6', 'furtividade_5', 'furtividade_4', 'furtividade_3', 'furtividade_2', 'furtividade_1'});
+    obj.dataLink30:setFields({'medicina_9', 'medicina_8', 'medicina_7', 'medicina_6', 'medicina_5', 'medicina_4', 'medicina_3', 'medicina_2', 'medicina_1'});
     obj.dataLink30:setName("dataLink30");
 
     obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink31:setParent(obj);
-    obj.dataLink31:setFields({'lideranca_9', 'lideranca_8', 'lideranca_7', 'lideranca_6', 'lideranca_5', 'lideranca_4', 'lideranca_3', 'lideranca_2', 'lideranca_1'});
+    obj.dataLink31:setFields({'furtividade_9', 'furtividade_8', 'furtividade_7', 'furtividade_6', 'furtividade_5', 'furtividade_4', 'furtividade_3', 'furtividade_2', 'furtividade_1'});
     obj.dataLink31:setName("dataLink31");
 
     obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink32:setParent(obj);
-    obj.dataLink32:setFields({'ciencia_9', 'ciencia_8', 'ciencia_7', 'ciencia_6', 'ciencia_5', 'ciencia_4', 'ciencia_3', 'ciencia_2', 'ciencia_1'});
+    obj.dataLink32:setFields({'lideranca_9', 'lideranca_8', 'lideranca_7', 'lideranca_6', 'lideranca_5', 'lideranca_4', 'lideranca_3', 'lideranca_2', 'lideranca_1'});
     obj.dataLink32:setName("dataLink32");
 
     obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink33:setParent(obj);
-    obj.dataLink33:setFields({'sobrevivencia_9', 'sobrevivencia_8', 'sobrevivencia_7', 'sobrevivencia_6', 'sobrevivencia_5', 'sobrevivencia_4', 'sobrevivencia_3', 'sobrevivencia_2', 'sobrevivencia_1'});
+    obj.dataLink33:setFields({'ciencia_9', 'ciencia_8', 'ciencia_7', 'ciencia_6', 'ciencia_5', 'ciencia_4', 'ciencia_3', 'ciencia_2', 'ciencia_1'});
     obj.dataLink33:setName("dataLink33");
 
     obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink34:setParent(obj);
-    obj.dataLink34:setFields({'culinaria_9', 'culinaria_8', 'culinaria_7', 'culinaria_6', 'culinaria_5', 'culinaria_4', 'culinaria_3', 'culinaria_2', 'culinaria_1'});
+    obj.dataLink34:setFields({'sobrevivencia_9', 'sobrevivencia_8', 'sobrevivencia_7', 'sobrevivencia_6', 'sobrevivencia_5', 'sobrevivencia_4', 'sobrevivencia_3', 'sobrevivencia_2', 'sobrevivencia_1'});
     obj.dataLink34:setName("dataLink34");
 
     obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink35:setParent(obj);
-    obj.dataLink35:setFields({'caca_9', 'caca_8', 'caca_7', 'caca_6', 'caca_5', 'caca_4', 'caca_3', 'caca_2', 'caca_1'});
+    obj.dataLink35:setFields({'culinaria_9', 'culinaria_8', 'culinaria_7', 'culinaria_6', 'culinaria_5', 'culinaria_4', 'culinaria_3', 'culinaria_2', 'culinaria_1'});
     obj.dataLink35:setName("dataLink35");
 
     obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink36:setParent(obj);
-    obj.dataLink36:setFields({'coragem_12', 'coragem_11', 'coragem_10', 'coragem_9', 'coragem_8', 'coragem_7', 'coragem_6', 'coragem_5', 'coragem_4', 'coragem_3', 'coragem_2', 'coragem_1'});
+    obj.dataLink36:setFields({'caca_9', 'caca_8', 'caca_7', 'caca_6', 'caca_5', 'caca_4', 'caca_3', 'caca_2', 'caca_1'});
     obj.dataLink36:setName("dataLink36");
 
     obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink37:setParent(obj);
-    obj.dataLink37:setFields({'conviccao_12', 'conviccao_11', 'conviccao_10', 'conviccao_9', 'conviccao_8', 'conviccao_7', 'conviccao_6', 'conviccao_5', 'conviccao_4', 'conviccao_3', 'conviccao_2', 'conviccao_1'});
+    obj.dataLink37:setFields({'coragem_12', 'coragem_11', 'coragem_10', 'coragem_9', 'coragem_8', 'coragem_7', 'coragem_6', 'coragem_5', 'coragem_4', 'coragem_3', 'coragem_2', 'coragem_1'});
     obj.dataLink37:setName("dataLink37");
 
     obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink38:setParent(obj);
-    obj.dataLink38:setFields({'forcaDeVontade_12', 'forcaDeVontade_11', 'forcaDeVontade_10', 'forcaDeVontade_9', 'forcaDeVontade_8', 'forcaDeVontade_7', 'forcaDeVontade_6', 'forcaDeVontade_5', 'forcaDeVontade_4', 'forcaDeVontade_3', 'forcaDeVontade_2', 'forcaDeVontade_1'});
+    obj.dataLink38:setFields({'conviccao_12', 'conviccao_11', 'conviccao_10', 'conviccao_9', 'conviccao_8', 'conviccao_7', 'conviccao_6', 'conviccao_5', 'conviccao_4', 'conviccao_3', 'conviccao_2', 'conviccao_1'});
     obj.dataLink38:setName("dataLink38");
 
     obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink39:setParent(obj);
-    obj.dataLink39:setFields({'recon10', 'recon9', 'recon8', 'recon7', 'recon6', 'recon5', 'recon4', 'recon3', 'recon2', 'recon1'});
+    obj.dataLink39:setFields({'forcaDeVontade_12', 'forcaDeVontade_11', 'forcaDeVontade_10', 'forcaDeVontade_9', 'forcaDeVontade_8', 'forcaDeVontade_7', 'forcaDeVontade_6', 'forcaDeVontade_5', 'forcaDeVontade_4', 'forcaDeVontade_3', 'forcaDeVontade_2', 'forcaDeVontade_1'});
     obj.dataLink39:setName("dataLink39");
+
+    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink40:setParent(obj);
+    obj.dataLink40:setFields({'famaBoa_10', 'famaBoa_9', 'famaBoa_8', 'famaBoa_7', 'famaBoa_6', 'famaBoa_5', 'famaBoa_4', 'famaBoa_3', 'famaBoa_2', 'famaBoa_1'});
+    obj.dataLink40:setName("dataLink40");
+
+    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink41:setParent(obj);
+    obj.dataLink41:setFields({'reconhecimento_10', 'reconhecimento_9', 'reconhecimento_8', 'reconhecimento_7', 'reconhecimento_6', 'reconhecimento_5', 'reconhecimento_4', 'reconhecimento_3', 'reconhecimento_2', 'reconhecimento_1'});
+    obj.dataLink41:setName("dataLink41");
+
+    obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink42:setParent(obj);
+    obj.dataLink42:setFields({'influenciaBoa_10', 'influenciaBoa_9', 'influenciaBoa_8', 'influenciaBoa_7', 'influenciaBoa_6', 'influenciaBoa_5', 'influenciaBoa_4', 'influenciaBoa_3', 'influenciaBoa_2', 'influenciaBoa_1'});
+    obj.dataLink42:setName("dataLink42");
+
+    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink43:setParent(obj);
+    obj.dataLink43:setFields({'famaRuim_10', 'famaRuim_9', 'famaRuim_8', 'famaRuim_7', 'famaRuim_6', 'famaRuim_5', 'famaRuim_4', 'famaRuim_3', 'famaRuim_2', 'famaRuim_1'});
+    obj.dataLink43:setName("dataLink43");
+
+    obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink44:setParent(obj);
+    obj.dataLink44:setFields({'influenciaRuim_10', 'influenciaRuim_9', 'influenciaRuim_8', 'influenciaRuim_7', 'influenciaRuim_6', 'influenciaRuim_5', 'influenciaRuim_4', 'influenciaRuim_3', 'influenciaRuim_2', 'influenciaRuim_1'});
+    obj.dataLink44:setName("dataLink44");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -1128,6 +1153,102 @@ local function constructNew_frmTeste()
     obj._e_event8 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
+            	if sheet.inteligencia_9 == true then
+            		sheet.inteligencia_8 = true;
+            		sheet.inteligencia_7 = true;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_8 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_7 = true;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_7 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_6 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_5 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_4 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_3 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_2 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_1 = true;	
+            	elseif sheet.inteligencia_1 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_2 = false;
+            	elseif sheet.inteligencia_1 == false then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
             	if sheet.vigor_9 == true then
             		sheet.vigor_8 = true;
             		sheet.vigor_7 = true;
@@ -1221,7 +1342,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.raciocinio_9 == true then
@@ -1317,7 +1438,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.aparencia_9 == true then
@@ -1413,7 +1534,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.prontidao_9 == true then
@@ -1509,7 +1630,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.academicos_9 == true then
@@ -1605,7 +1726,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatiaPokemon_9 == true then
@@ -1701,7 +1822,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esportes_9 == true then
@@ -1797,7 +1918,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.computador_9 == true then
@@ -1893,7 +2014,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.oficios_9 == true then
@@ -1989,7 +2110,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.briga_9 == true then
@@ -2085,7 +2206,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.habitats_9 == true then
@@ -2181,7 +2302,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esquiva_9 == true then
@@ -2277,7 +2398,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
+    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.investigacao_9 == true then
@@ -2373,7 +2494,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
+    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.etiqueta_9 == true then
@@ -2469,7 +2590,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatia_9 == true then
@@ -2565,7 +2686,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
+    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.atuacao_9 == true then
@@ -2661,7 +2782,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
+    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.direito_9 == true then
@@ -2757,7 +2878,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
+    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.expressao_9 == true then
@@ -2853,7 +2974,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
+    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.seguranca_9 == true then
@@ -2949,7 +3070,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
+    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.intimidacao_9 == true then
@@ -3045,7 +3166,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
+    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.medicina_9 == true then
@@ -3141,7 +3262,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
+    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.furtividade_9 == true then
@@ -3237,7 +3358,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.lideranca_9 == true then
@@ -3333,7 +3454,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
+    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.ciencia_9 == true then
@@ -3429,7 +3550,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.sobrevivencia_9 == true then
@@ -3525,7 +3646,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.culinaria_9 == true then
@@ -3621,7 +3742,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
+    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.caca_9 == true then
@@ -3717,7 +3838,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
+    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.coragem_12 == true then
@@ -3879,7 +4000,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
+    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.conviccao_12 == true then
@@ -4041,7 +4162,7 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
+    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.forcaDeVontade_12 == true then
@@ -4203,23 +4324,592 @@ local function constructNew_frmTeste()
             	end;
         end, obj);
 
-    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
+    obj._e_event39 = obj.dataLink40:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            		if sheet.recon10 == 3 then
-            		sheet.recon9 = 3;
-            		sheet.recon8 = 3;
-            		sheet.recon7 = 3;
-            		sheet.recon6 = 3;
-            		sheet.recon5 = 3;
-            		sheet.recon4 = 3;
-            		sheet.recon3 = 3;
-            		sheet.recon2 = 3;
-            		sheet.recon1 = 3;	
-            		end;
+            	if sheet.famaBoa_10 == true then
+            		sheet.famaBoa_9 = true;
+            		sheet.famaBoa_8 = true;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_9 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_8 = true;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_8 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_7 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_6 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_5 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_4 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_3 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_2 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_1 = true;	
+            	elseif sheet.famaBoa_1 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_2 = false;
+            	elseif sheet.famaBoa_1 == false then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event40 = obj.dataLink41:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.reconhecimento_10 == true then
+            		sheet.reconhecimento_9 = true;
+            		sheet.reconhecimento_8 = true;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_9 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_8 = true;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_8 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_7 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_6 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_5 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_4 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_3 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_2 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_1 = true;	
+            	elseif sheet.reconhecimento_1 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_2 = false;
+            	elseif sheet.reconhecimento_1 == false then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event41 = obj.dataLink42:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.influenciaBoa_10 == true then
+            		sheet.influenciaBoa_9 = true;
+            		sheet.influenciaBoa_8 = true;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_9 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_8 = true;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_8 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_7 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_6 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_5 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_4 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_3 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_2 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_1 = true;	
+            	elseif sheet.influenciaBoa_1 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_2 = false;
+            	elseif sheet.influenciaBoa_1 == false then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event42 = obj.dataLink43:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.famaRuim_10 == true then
+            		sheet.famaRuim_9 = true;
+            		sheet.famaRuim_8 = true;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_9 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_8 = true;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_8 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_7 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_6 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_5 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_4 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_3 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_2 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_1 = true;	
+            	elseif sheet.famaRuim_1 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_2 = false;
+            	elseif sheet.famaRuim_1 == false then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event43 = obj.dataLink44:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.influenciaRuim_10 == true then
+            		sheet.influenciaRuim_9 = true;
+            		sheet.influenciaRuim_8 = true;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_9 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_8 = true;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_8 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_7 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_6 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_5 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_4 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_3 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_2 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_1 = true;	
+            	elseif sheet.influenciaRuim_1 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_2 = false;
+            	elseif sheet.influenciaRuim_1 == false then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_2 = false;
+            	end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event43);
+        __o_rrpgObjs.removeEventListenerById(self._e_event42);
+        __o_rrpgObjs.removeEventListenerById(self._e_event41);
+        __o_rrpgObjs.removeEventListenerById(self._e_event40);
+        __o_rrpgObjs.removeEventListenerById(self._e_event39);
         __o_rrpgObjs.removeEventListenerById(self._e_event38);
         __o_rrpgObjs.removeEventListenerById(self._e_event37);
         __o_rrpgObjs.removeEventListenerById(self._e_event36);
@@ -4273,6 +4963,7 @@ local function constructNew_frmTeste()
         if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.dataLink31 ~= nil then self.dataLink31:destroy(); self.dataLink31 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
+        if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
         if self.dataLink37 ~= nil then self.dataLink37:destroy(); self.dataLink37 = nil; end;
         if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
         if self.dataLink28 ~= nil then self.dataLink28:destroy(); self.dataLink28 = nil; end;
@@ -4282,12 +4973,16 @@ local function constructNew_frmTeste()
         if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
         if self.dataLink39 ~= nil then self.dataLink39:destroy(); self.dataLink39 = nil; end;
         if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
+        if self.dataLink42 ~= nil then self.dataLink42:destroy(); self.dataLink42 = nil; end;
         if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.dataLink24 ~= nil then self.dataLink24:destroy(); self.dataLink24 = nil; end;
         if self.dataLink35 ~= nil then self.dataLink35:destroy(); self.dataLink35 = nil; end;
+        if self.dataLink44 ~= nil then self.dataLink44:destroy(); self.dataLink44 = nil; end;
+        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
         if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
         if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;

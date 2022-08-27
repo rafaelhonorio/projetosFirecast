@@ -2454,8 +2454,8 @@ local function constructNew_frmPokeRPGT2_svg()
 
     obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout110:setParent(obj.rectangle1);
-    obj.layout110:setLeft(344);
-    obj.layout110:setTop(1245);
+    obj.layout110:setLeft(478);
+    obj.layout110:setTop(1210);
     obj.layout110:setWidth(130);
     obj.layout110:setHeight(31);
     obj.layout110:setName("layout110");
@@ -2471,13 +2471,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit110:setTop(0);
     obj.edit110:setWidth(130);
     obj.edit110:setHeight(32);
-    obj.edit110:setField("item__27");
+    obj.edit110:setField("item__26");
     obj.edit110:setName("edit110");
 
     obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout111:setParent(obj.rectangle1);
-    obj.layout111:setLeft(478);
-    obj.layout111:setTop(1210);
+    obj.layout111:setLeft(344);
+    obj.layout111:setTop(1245);
     obj.layout111:setWidth(130);
     obj.layout111:setHeight(31);
     obj.layout111:setName("layout111");
@@ -2493,7 +2493,7 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit111:setTop(0);
     obj.edit111:setWidth(130);
     obj.edit111:setHeight(32);
-    obj.edit111:setField("item__26");
+    obj.edit111:setField("item__27");
     obj.edit111:setName("edit111");
 
     obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
@@ -2542,8 +2542,8 @@ local function constructNew_frmPokeRPGT2_svg()
 
     obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout114:setParent(obj.rectangle1);
-    obj.layout114:setLeft(773);
-    obj.layout114:setTop(800);
+    obj.layout114:setLeft(623);
+    obj.layout114:setTop(835);
     obj.layout114:setWidth(146);
     obj.layout114:setHeight(31);
     obj.layout114:setName("layout114");
@@ -2559,13 +2559,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit114:setTop(0);
     obj.edit114:setWidth(146);
     obj.edit114:setHeight(32);
-    obj.edit114:setField("fruta__15");
+    obj.edit114:setField("fruta__2");
     obj.edit114:setName("edit114");
 
     obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout115:setParent(obj.rectangle1);
     obj.layout115:setLeft(623);
-    obj.layout115:setTop(835);
+    obj.layout115:setTop(870);
     obj.layout115:setWidth(146);
     obj.layout115:setHeight(31);
     obj.layout115:setName("layout115");
@@ -2581,13 +2581,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit115:setTop(0);
     obj.edit115:setWidth(146);
     obj.edit115:setHeight(32);
-    obj.edit115:setField("fruta__2");
+    obj.edit115:setField("fruta__3");
     obj.edit115:setName("edit115");
 
     obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout116:setParent(obj.rectangle1);
-    obj.layout116:setLeft(773);
-    obj.layout116:setTop(835);
+    obj.layout116:setLeft(623);
+    obj.layout116:setTop(904);
     obj.layout116:setWidth(146);
     obj.layout116:setHeight(31);
     obj.layout116:setName("layout116");
@@ -2603,13 +2603,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit116:setTop(0);
     obj.edit116:setWidth(146);
     obj.edit116:setHeight(32);
-    obj.edit116:setField("fruta__16");
+    obj.edit116:setField("fruta__4");
     obj.edit116:setName("edit116");
 
     obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout117:setParent(obj.rectangle1);
     obj.layout117:setLeft(623);
-    obj.layout117:setTop(870);
+    obj.layout117:setTop(938);
     obj.layout117:setWidth(146);
     obj.layout117:setHeight(31);
     obj.layout117:setName("layout117");
@@ -2625,13 +2625,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit117:setTop(0);
     obj.edit117:setWidth(146);
     obj.edit117:setHeight(32);
-    obj.edit117:setField("fruta__3");
+    obj.edit117:setField("fruta__5");
     obj.edit117:setName("edit117");
 
     obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout118:setParent(obj.rectangle1);
-    obj.layout118:setLeft(773);
-    obj.layout118:setTop(870);
+    obj.layout118:setLeft(623);
+    obj.layout118:setTop(972);
     obj.layout118:setWidth(146);
     obj.layout118:setHeight(31);
     obj.layout118:setName("layout118");
@@ -2647,13 +2647,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit118:setTop(0);
     obj.edit118:setWidth(146);
     obj.edit118:setHeight(32);
-    obj.edit118:setField("fruta__17");
+    obj.edit118:setField("fruta__6");
     obj.edit118:setName("edit118");
 
     obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout119:setParent(obj.rectangle1);
     obj.layout119:setLeft(623);
-    obj.layout119:setTop(904);
+    obj.layout119:setTop(1006);
     obj.layout119:setWidth(146);
     obj.layout119:setHeight(31);
     obj.layout119:setName("layout119");
@@ -2669,13 +2669,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit119:setTop(0);
     obj.edit119:setWidth(146);
     obj.edit119:setHeight(32);
-    obj.edit119:setField("fruta__4");
+    obj.edit119:setField("fruta__7");
     obj.edit119:setName("edit119");
 
     obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout120:setParent(obj.rectangle1);
-    obj.layout120:setLeft(773);
-    obj.layout120:setTop(904);
+    obj.layout120:setLeft(623);
+    obj.layout120:setTop(1040);
     obj.layout120:setWidth(146);
     obj.layout120:setHeight(31);
     obj.layout120:setName("layout120");
@@ -2691,13 +2691,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit120:setTop(0);
     obj.edit120:setWidth(146);
     obj.edit120:setHeight(32);
-    obj.edit120:setField("fruta__18");
+    obj.edit120:setField("fruta__8");
     obj.edit120:setName("edit120");
 
     obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout121:setParent(obj.rectangle1);
     obj.layout121:setLeft(623);
-    obj.layout121:setTop(938);
+    obj.layout121:setTop(1074);
     obj.layout121:setWidth(146);
     obj.layout121:setHeight(31);
     obj.layout121:setName("layout121");
@@ -2713,13 +2713,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit121:setTop(0);
     obj.edit121:setWidth(146);
     obj.edit121:setHeight(32);
-    obj.edit121:setField("fruta__5");
+    obj.edit121:setField("fruta__9");
     obj.edit121:setName("edit121");
 
     obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout122:setParent(obj.rectangle1);
-    obj.layout122:setLeft(773);
-    obj.layout122:setTop(938);
+    obj.layout122:setLeft(623);
+    obj.layout122:setTop(1108);
     obj.layout122:setWidth(146);
     obj.layout122:setHeight(31);
     obj.layout122:setName("layout122");
@@ -2735,13 +2735,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit122:setTop(0);
     obj.edit122:setWidth(146);
     obj.edit122:setHeight(32);
-    obj.edit122:setField("fruta__19");
+    obj.edit122:setField("fruta__10");
     obj.edit122:setName("edit122");
 
     obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout123:setParent(obj.rectangle1);
     obj.layout123:setLeft(623);
-    obj.layout123:setTop(972);
+    obj.layout123:setTop(1144);
     obj.layout123:setWidth(146);
     obj.layout123:setHeight(31);
     obj.layout123:setName("layout123");
@@ -2757,13 +2757,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit123:setTop(0);
     obj.edit123:setWidth(146);
     obj.edit123:setHeight(32);
-    obj.edit123:setField("fruta__6");
+    obj.edit123:setField("fruta__11");
     obj.edit123:setName("edit123");
 
     obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout124:setParent(obj.rectangle1);
-    obj.layout124:setLeft(773);
-    obj.layout124:setTop(972);
+    obj.layout124:setLeft(623);
+    obj.layout124:setTop(1178);
     obj.layout124:setWidth(146);
     obj.layout124:setHeight(31);
     obj.layout124:setName("layout124");
@@ -2779,13 +2779,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit124:setTop(0);
     obj.edit124:setWidth(146);
     obj.edit124:setHeight(32);
-    obj.edit124:setField("fruta__20");
+    obj.edit124:setField("fruta__12");
     obj.edit124:setName("edit124");
 
     obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout125:setParent(obj.rectangle1);
     obj.layout125:setLeft(623);
-    obj.layout125:setTop(1006);
+    obj.layout125:setTop(1210);
     obj.layout125:setWidth(146);
     obj.layout125:setHeight(31);
     obj.layout125:setName("layout125");
@@ -2801,13 +2801,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit125:setTop(0);
     obj.edit125:setWidth(146);
     obj.edit125:setHeight(32);
-    obj.edit125:setField("fruta__7");
+    obj.edit125:setField("fruta__13");
     obj.edit125:setName("edit125");
 
     obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout126:setParent(obj.rectangle1);
-    obj.layout126:setLeft(773);
-    obj.layout126:setTop(1006);
+    obj.layout126:setLeft(623);
+    obj.layout126:setTop(1245);
     obj.layout126:setWidth(146);
     obj.layout126:setHeight(31);
     obj.layout126:setName("layout126");
@@ -2823,13 +2823,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit126:setTop(0);
     obj.edit126:setWidth(146);
     obj.edit126:setHeight(32);
-    obj.edit126:setField("fruta__21");
+    obj.edit126:setField("fruta__14");
     obj.edit126:setName("edit126");
 
     obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout127:setParent(obj.rectangle1);
-    obj.layout127:setLeft(623);
-    obj.layout127:setTop(1040);
+    obj.layout127:setLeft(773);
+    obj.layout127:setTop(800);
     obj.layout127:setWidth(146);
     obj.layout127:setHeight(31);
     obj.layout127:setName("layout127");
@@ -2845,13 +2845,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit127:setTop(0);
     obj.edit127:setWidth(146);
     obj.edit127:setHeight(32);
-    obj.edit127:setField("fruta__8");
+    obj.edit127:setField("fruta__15");
     obj.edit127:setName("edit127");
 
     obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout128:setParent(obj.rectangle1);
     obj.layout128:setLeft(773);
-    obj.layout128:setTop(1040);
+    obj.layout128:setTop(835);
     obj.layout128:setWidth(146);
     obj.layout128:setHeight(31);
     obj.layout128:setName("layout128");
@@ -2867,13 +2867,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit128:setTop(0);
     obj.edit128:setWidth(146);
     obj.edit128:setHeight(32);
-    obj.edit128:setField("fruta__22");
+    obj.edit128:setField("fruta__16");
     obj.edit128:setName("edit128");
 
     obj.layout129 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout129:setParent(obj.rectangle1);
-    obj.layout129:setLeft(623);
-    obj.layout129:setTop(1074);
+    obj.layout129:setLeft(773);
+    obj.layout129:setTop(870);
     obj.layout129:setWidth(146);
     obj.layout129:setHeight(31);
     obj.layout129:setName("layout129");
@@ -2889,13 +2889,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit129:setTop(0);
     obj.edit129:setWidth(146);
     obj.edit129:setHeight(32);
-    obj.edit129:setField("fruta__9");
+    obj.edit129:setField("fruta__17");
     obj.edit129:setName("edit129");
 
     obj.layout130 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout130:setParent(obj.rectangle1);
     obj.layout130:setLeft(773);
-    obj.layout130:setTop(1074);
+    obj.layout130:setTop(904);
     obj.layout130:setWidth(146);
     obj.layout130:setHeight(31);
     obj.layout130:setName("layout130");
@@ -2911,13 +2911,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit130:setTop(0);
     obj.edit130:setWidth(146);
     obj.edit130:setHeight(32);
-    obj.edit130:setField("fruta__23");
+    obj.edit130:setField("fruta__18");
     obj.edit130:setName("edit130");
 
     obj.layout131 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout131:setParent(obj.rectangle1);
-    obj.layout131:setLeft(623);
-    obj.layout131:setTop(1108);
+    obj.layout131:setLeft(773);
+    obj.layout131:setTop(938);
     obj.layout131:setWidth(146);
     obj.layout131:setHeight(31);
     obj.layout131:setName("layout131");
@@ -2933,13 +2933,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit131:setTop(0);
     obj.edit131:setWidth(146);
     obj.edit131:setHeight(32);
-    obj.edit131:setField("fruta__10");
+    obj.edit131:setField("fruta__19");
     obj.edit131:setName("edit131");
 
     obj.layout132 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout132:setParent(obj.rectangle1);
     obj.layout132:setLeft(773);
-    obj.layout132:setTop(1108);
+    obj.layout132:setTop(972);
     obj.layout132:setWidth(146);
     obj.layout132:setHeight(31);
     obj.layout132:setName("layout132");
@@ -2955,13 +2955,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit132:setTop(0);
     obj.edit132:setWidth(146);
     obj.edit132:setHeight(32);
-    obj.edit132:setField("fruta__24");
+    obj.edit132:setField("fruta__20");
     obj.edit132:setName("edit132");
 
     obj.layout133 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout133:setParent(obj.rectangle1);
-    obj.layout133:setLeft(623);
-    obj.layout133:setTop(1144);
+    obj.layout133:setLeft(773);
+    obj.layout133:setTop(1006);
     obj.layout133:setWidth(146);
     obj.layout133:setHeight(31);
     obj.layout133:setName("layout133");
@@ -2977,13 +2977,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit133:setTop(0);
     obj.edit133:setWidth(146);
     obj.edit133:setHeight(32);
-    obj.edit133:setField("fruta__11");
+    obj.edit133:setField("fruta__21");
     obj.edit133:setName("edit133");
 
     obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout134:setParent(obj.rectangle1);
     obj.layout134:setLeft(773);
-    obj.layout134:setTop(1144);
+    obj.layout134:setTop(1040);
     obj.layout134:setWidth(146);
     obj.layout134:setHeight(31);
     obj.layout134:setName("layout134");
@@ -2999,13 +2999,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit134:setTop(0);
     obj.edit134:setWidth(146);
     obj.edit134:setHeight(32);
-    obj.edit134:setField("fruta__25");
+    obj.edit134:setField("fruta__22");
     obj.edit134:setName("edit134");
 
     obj.layout135 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout135:setParent(obj.rectangle1);
-    obj.layout135:setLeft(623);
-    obj.layout135:setTop(1178);
+    obj.layout135:setLeft(773);
+    obj.layout135:setTop(1074);
     obj.layout135:setWidth(146);
     obj.layout135:setHeight(31);
     obj.layout135:setName("layout135");
@@ -3021,13 +3021,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit135:setTop(0);
     obj.edit135:setWidth(146);
     obj.edit135:setHeight(32);
-    obj.edit135:setField("fruta__12");
+    obj.edit135:setField("fruta__23");
     obj.edit135:setName("edit135");
 
     obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout136:setParent(obj.rectangle1);
     obj.layout136:setLeft(773);
-    obj.layout136:setTop(1178);
+    obj.layout136:setTop(1108);
     obj.layout136:setWidth(146);
     obj.layout136:setHeight(31);
     obj.layout136:setName("layout136");
@@ -3043,13 +3043,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit136:setTop(0);
     obj.edit136:setWidth(146);
     obj.edit136:setHeight(32);
-    obj.edit136:setField("fruta__26");
+    obj.edit136:setField("fruta__24");
     obj.edit136:setName("edit136");
 
     obj.layout137 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout137:setParent(obj.rectangle1);
-    obj.layout137:setLeft(623);
-    obj.layout137:setTop(1210);
+    obj.layout137:setLeft(773);
+    obj.layout137:setTop(1144);
     obj.layout137:setWidth(146);
     obj.layout137:setHeight(31);
     obj.layout137:setName("layout137");
@@ -3065,13 +3065,13 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit137:setTop(0);
     obj.edit137:setWidth(146);
     obj.edit137:setHeight(32);
-    obj.edit137:setField("fruta__13");
+    obj.edit137:setField("fruta__25");
     obj.edit137:setName("edit137");
 
     obj.layout138 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout138:setParent(obj.rectangle1);
-    obj.layout138:setLeft(623);
-    obj.layout138:setTop(1245);
+    obj.layout138:setLeft(773);
+    obj.layout138:setTop(1178);
     obj.layout138:setWidth(146);
     obj.layout138:setHeight(31);
     obj.layout138:setName("layout138");
@@ -3087,7 +3087,7 @@ local function constructNew_frmPokeRPGT2_svg()
     obj.edit138:setTop(0);
     obj.edit138:setWidth(146);
     obj.edit138:setHeight(32);
-    obj.edit138:setField("fruta__14");
+    obj.edit138:setField("fruta__26");
     obj.edit138:setName("edit138");
 
     obj.layout139 = GUI.fromHandle(_obj_newObject("layout"));

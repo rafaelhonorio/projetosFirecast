@@ -1577,24 +1577,6 @@ local function constructNew_frmPokeRPGT3_svg()
 					
 
 
-    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout7:setParent(obj.rectangle1);
-    obj.layout7:setLeft(35);
-    obj.layout7:setTop(1014);
-    obj.layout7:setWidth(885);
-    obj.layout7:setHeight(265);
-    obj.layout7:setName("layout7");
-
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout7);
-    obj.textEditor1:setTransparent(true);
-    obj.textEditor1:setFontSize(16);
-    obj.textEditor1:setFontColor("#ffffff");
-    obj.textEditor1:setWidth(885);
-    obj.textEditor1:setHeight(265);
-    obj.textEditor1:setField("ant3");
-    obj.textEditor1:setName("textEditor1");
-
     obj.button50 = GUI.fromHandle(_obj_newObject("button"));
     obj.button50:setParent(obj.rectangle1);
     obj.button50:setLeft(185);
@@ -1798,16 +1780,16 @@ local function constructNew_frmPokeRPGT3_svg()
 					
 
 
-    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout8:setParent(obj.rectangle1);
-    obj.layout8:setLeft(898);
-    obj.layout8:setTop(842);
-    obj.layout8:setWidth(29);
-    obj.layout8:setHeight(29);
-    obj.layout8:setName("layout8");
+    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout7:setParent(obj.rectangle1);
+    obj.layout7:setLeft(898);
+    obj.layout7:setTop(842);
+    obj.layout7:setWidth(29);
+    obj.layout7:setHeight(29);
+    obj.layout7:setName("layout7");
 
     obj.imageCheckBox7 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox7:setParent(obj.layout8);
+    obj.imageCheckBox7:setParent(obj.layout7);
     obj.imageCheckBox7:setImageChecked("PokeRPGT/images/masterball_on.png");
     obj.imageCheckBox7:setImageUnchecked("PokeRPGT/images/pokeball1_off.png");
     obj.imageCheckBox7:setWidth(29);
@@ -1930,6 +1912,24 @@ local function constructNew_frmPokeRPGT3_svg()
 									"PokeRPGT/images/ultraball1_on.png"};
 					
 
+
+    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout8:setParent(obj.rectangle1);
+    obj.layout8:setLeft(35);
+    obj.layout8:setTop(1014);
+    obj.layout8:setWidth(885);
+    obj.layout8:setHeight(265);
+    obj.layout8:setName("layout8");
+
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.layout8);
+    obj.textEditor1:setTransparent(true);
+    obj.textEditor1:setFontSize(16);
+    obj.textEditor1:setFontColor("#ffffff");
+    obj.textEditor1:setWidth(885);
+    obj.textEditor1:setHeight(265);
+    obj.textEditor1:setField("ant3");
+    obj.textEditor1:setName("textEditor1");
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)

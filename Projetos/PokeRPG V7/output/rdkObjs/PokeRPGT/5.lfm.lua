@@ -228,6 +228,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit5:setField("Tipos");
     obj.edit5:setName("edit5");
 
+    obj.comboBox1 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox1:setParent(obj.rectangle2);
+    obj.comboBox1:setLeft(544);
+    obj.comboBox1:setTop(236);
+    obj.comboBox1:setWidth(160);
+    obj.comboBox1:setItems({'Pokeball', 'GreatBall', 'UltraBall', 'MasterBall','SafariBall',
+			'ParkBall', 'SportBall', 'LevelBall', 'LureBall', 'MoonBall', 'FriendBall', 'LoveBall', 'HeavyBall', 'FastBall', 'PremierBall',
+			'RepeatBall', 'TimerBall', 'NestBall', 'NetBall','DiveBall', 'LuxuryBall', 'HealBall', 'QuickBall', 'DuskBall', 'CherishBall'});
+    obj.comboBox1:setFontColor("#ffffff");
+    obj.comboBox1:setTransparent(true);
+    obj.comboBox1:setField("TipoDePokébola");
+    obj.comboBox1:setName("comboBox1");
+
     obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.rectangle2);
     obj.layout8:setLeft(709);
@@ -416,6 +429,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit11:setHeight(28);
     obj.edit11:setField("LXP");
     obj.edit11:setName("edit11");
+
+    obj.comboBox2 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox2:setParent(obj.rectangle2);
+    obj.comboBox2:setLeft(31);
+    obj.comboBox2:setTop(330);
+    obj.comboBox2:setWidth(175);
+    obj.comboBox2:setItems({'Ousado', 'Solitário', 'Duro', 'Desobediente','Valente',
+			'Atrevido', 'Dócil', 'Diabólico', 'Medroso', 'Relaxado', 'Modesto', 'Meigo', 'Tímido', 'Precipitado','Tranquilo',
+			'Calmo', 'Amável', 'Cuidadoso', 'Peculiar','Petulante', 'Receoso', 'Imprudente', 'Divertido', 'Ingênuo', 'Sério'});
+    obj.comboBox2:setFontColor("#ffffff");
+    obj.comboBox2:setTransparent(true);
+    obj.comboBox2:setField("Natureza");
+    obj.comboBox2:setName("comboBox2");
 
     obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout17:setParent(obj.rectangle2);
@@ -2078,1401 +2104,320 @@ local function constructNew_frmPokeRPGT5_svg()
 
     obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout96:setParent(obj.rectangle2);
-    obj.layout96:setLeft(35);
-    obj.layout96:setTop(633);
-    obj.layout96:setWidth(15);
-    obj.layout96:setHeight(15);
+    obj.layout96:setLeft(698);
+    obj.layout96:setTop(400);
+    obj.layout96:setWidth(30);
+    obj.layout96:setHeight(30);
     obj.layout96:setName("layout96");
 
-    obj.imageCheckBox30 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox30:setParent(obj.layout96);
-    obj.imageCheckBox30:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox30:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox30:setLeft(0);
-    obj.imageCheckBox30:setTop(0);
-    obj.imageCheckBox30:setWidth(15);
-    obj.imageCheckBox30:setHeight(15);
-    obj.imageCheckBox30:setField("ATQN5");
-    obj.imageCheckBox30:setName("imageCheckBox30");
+    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image2:setParent(obj.layout96);
+    obj.image2:setHitTest(true);
+    obj.image2:setHint("Normal");
+    obj.image2:setWidth(30);
+    obj.image2:setHeight(30);
+    obj.image2:setField("IMGNOR");
+    obj.image2:setName("image2");
 
     obj.layout97 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout97:setParent(obj.rectangle2);
-    obj.layout97:setLeft(50);
-    obj.layout97:setTop(633);
-    obj.layout97:setWidth(15);
-    obj.layout97:setHeight(15);
+    obj.layout97:setLeft(733);
+    obj.layout97:setTop(400);
+    obj.layout97:setWidth(30);
+    obj.layout97:setHeight(30);
     obj.layout97:setName("layout97");
 
-    obj.imageCheckBox31 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox31:setParent(obj.layout97);
-    obj.imageCheckBox31:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox31:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox31:setLeft(0);
-    obj.imageCheckBox31:setTop(0);
-    obj.imageCheckBox31:setWidth(15);
-    obj.imageCheckBox31:setHeight(15);
-    obj.imageCheckBox31:setField("ATQN4");
-    obj.imageCheckBox31:setName("imageCheckBox31");
+    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image3:setParent(obj.layout97);
+    obj.image3:setHitTest(true);
+    obj.image3:setHint("Fogo");
+    obj.image3:setWidth(30);
+    obj.image3:setHeight(30);
+    obj.image3:setField("IMGFIR");
+    obj.image3:setName("image3");
 
     obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout98:setParent(obj.rectangle2);
-    obj.layout98:setLeft(64);
-    obj.layout98:setTop(633);
-    obj.layout98:setWidth(15);
-    obj.layout98:setHeight(15);
+    obj.layout98:setLeft(768);
+    obj.layout98:setTop(400);
+    obj.layout98:setWidth(30);
+    obj.layout98:setHeight(30);
     obj.layout98:setName("layout98");
 
-    obj.imageCheckBox32 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox32:setParent(obj.layout98);
-    obj.imageCheckBox32:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox32:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox32:setLeft(0);
-    obj.imageCheckBox32:setTop(0);
-    obj.imageCheckBox32:setWidth(15);
-    obj.imageCheckBox32:setHeight(15);
-    obj.imageCheckBox32:setField("ATQN3");
-    obj.imageCheckBox32:setName("imageCheckBox32");
+    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image4:setParent(obj.layout98);
+    obj.image4:setHitTest(true);
+    obj.image4:setHint("Água");
+    obj.image4:setWidth(30);
+    obj.image4:setHeight(30);
+    obj.image4:setField("IMGFIR");
+    obj.image4:setName("image4");
 
     obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout99:setParent(obj.rectangle2);
-    obj.layout99:setLeft(78);
-    obj.layout99:setTop(633);
-    obj.layout99:setWidth(15);
-    obj.layout99:setHeight(15);
+    obj.layout99:setLeft(803);
+    obj.layout99:setTop(400);
+    obj.layout99:setWidth(30);
+    obj.layout99:setHeight(30);
     obj.layout99:setName("layout99");
 
-    obj.imageCheckBox33 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox33:setParent(obj.layout99);
-    obj.imageCheckBox33:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox33:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox33:setLeft(0);
-    obj.imageCheckBox33:setTop(0);
-    obj.imageCheckBox33:setWidth(15);
-    obj.imageCheckBox33:setHeight(15);
-    obj.imageCheckBox33:setField("ATQN2");
-    obj.imageCheckBox33:setName("imageCheckBox33");
+    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image5:setParent(obj.layout99);
+    obj.image5:setHitTest(true);
+    obj.image5:setHint("Elétrico");
+    obj.image5:setWidth(30);
+    obj.image5:setHeight(30);
+    obj.image5:setField("IMGELE");
+    obj.image5:setName("image5");
 
     obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout100:setParent(obj.rectangle2);
-    obj.layout100:setLeft(92);
-    obj.layout100:setTop(633);
-    obj.layout100:setWidth(15);
-    obj.layout100:setHeight(15);
+    obj.layout100:setLeft(837);
+    obj.layout100:setTop(400);
+    obj.layout100:setWidth(30);
+    obj.layout100:setHeight(30);
     obj.layout100:setName("layout100");
 
-    obj.imageCheckBox34 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox34:setParent(obj.layout100);
-    obj.imageCheckBox34:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox34:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox34:setLeft(0);
-    obj.imageCheckBox34:setTop(0);
-    obj.imageCheckBox34:setWidth(15);
-    obj.imageCheckBox34:setHeight(15);
-    obj.imageCheckBox34:setField("ATQN1");
-    obj.imageCheckBox34:setName("imageCheckBox34");
+    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.layout100);
+    obj.image6:setHitTest(true);
+    obj.image6:setHint("Grama");
+    obj.image6:setWidth(30);
+    obj.image6:setHeight(30);
+    obj.image6:setField("IMGGRA");
+    obj.image6:setName("image6");
 
     obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout101:setParent(obj.rectangle2);
-    obj.layout101:setLeft(203);
-    obj.layout101:setTop(633);
-    obj.layout101:setWidth(15);
-    obj.layout101:setHeight(15);
+    obj.layout101:setLeft(873);
+    obj.layout101:setTop(400);
+    obj.layout101:setWidth(30);
+    obj.layout101:setHeight(30);
     obj.layout101:setName("layout101");
 
-    obj.imageCheckBox35 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox35:setParent(obj.layout101);
-    obj.imageCheckBox35:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox35:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox35:setLeft(0);
-    obj.imageCheckBox35:setTop(0);
-    obj.imageCheckBox35:setWidth(15);
-    obj.imageCheckBox35:setHeight(15);
-    obj.imageCheckBox35:setField("ATQP1");
-    obj.imageCheckBox35:setName("imageCheckBox35");
+    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image7:setParent(obj.layout101);
+    obj.image7:setHitTest(true);
+    obj.image7:setHint("Gelo");
+    obj.image7:setWidth(30);
+    obj.image7:setHeight(30);
+    obj.image7:setField("IMGICE");
+    obj.image7:setName("image7");
 
     obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout102:setParent(obj.rectangle2);
-    obj.layout102:setLeft(217 );
-    obj.layout102:setTop(633);
-    obj.layout102:setWidth(15);
-    obj.layout102:setHeight(15);
+    obj.layout102:setLeft(698);
+    obj.layout102:setTop(450);
+    obj.layout102:setWidth(30);
+    obj.layout102:setHeight(30);
     obj.layout102:setName("layout102");
 
-    obj.imageCheckBox36 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox36:setParent(obj.layout102);
-    obj.imageCheckBox36:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox36:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox36:setLeft(0);
-    obj.imageCheckBox36:setTop(0);
-    obj.imageCheckBox36:setWidth(15);
-    obj.imageCheckBox36:setHeight(15);
-    obj.imageCheckBox36:setField("ATQP2");
-    obj.imageCheckBox36:setName("imageCheckBox36");
+    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image8:setParent(obj.layout102);
+    obj.image8:setHitTest(true);
+    obj.image8:setHint("Lutador");
+    obj.image8:setWidth(30);
+    obj.image8:setHeight(30);
+    obj.image8:setField("IMGFIG");
+    obj.image8:setName("image8");
 
     obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout103:setParent(obj.rectangle2);
-    obj.layout103:setLeft(231);
-    obj.layout103:setTop(633);
-    obj.layout103:setWidth(15);
-    obj.layout103:setHeight(15);
+    obj.layout103:setLeft(733);
+    obj.layout103:setTop(450);
+    obj.layout103:setWidth(30);
+    obj.layout103:setHeight(30);
     obj.layout103:setName("layout103");
 
-    obj.imageCheckBox37 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox37:setParent(obj.layout103);
-    obj.imageCheckBox37:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox37:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox37:setLeft(0);
-    obj.imageCheckBox37:setTop(0);
-    obj.imageCheckBox37:setWidth(15);
-    obj.imageCheckBox37:setHeight(15);
-    obj.imageCheckBox37:setField("ATQP3");
-    obj.imageCheckBox37:setName("imageCheckBox37");
+    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image9:setParent(obj.layout103);
+    obj.image9:setHitTest(true);
+    obj.image9:setHint("Veneno");
+    obj.image9:setWidth(30);
+    obj.image9:setHeight(30);
+    obj.image9:setField("IMGPOI");
+    obj.image9:setName("image9");
 
     obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout104:setParent(obj.rectangle2);
-    obj.layout104:setLeft(245);
-    obj.layout104:setTop(633);
-    obj.layout104:setWidth(15);
-    obj.layout104:setHeight(15);
+    obj.layout104:setLeft(768);
+    obj.layout104:setTop(450);
+    obj.layout104:setWidth(30);
+    obj.layout104:setHeight(30);
     obj.layout104:setName("layout104");
 
-    obj.imageCheckBox38 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox38:setParent(obj.layout104);
-    obj.imageCheckBox38:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox38:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox38:setLeft(0);
-    obj.imageCheckBox38:setTop(0);
-    obj.imageCheckBox38:setWidth(15);
-    obj.imageCheckBox38:setHeight(15);
-    obj.imageCheckBox38:setField("ATQP4");
-    obj.imageCheckBox38:setName("imageCheckBox38");
+    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image10:setParent(obj.layout104);
+    obj.image10:setHitTest(true);
+    obj.image10:setHint("Terra");
+    obj.image10:setWidth(30);
+    obj.image10:setHeight(30);
+    obj.image10:setField("IMGGRO");
+    obj.image10:setName("image10");
 
     obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout105:setParent(obj.rectangle2);
-    obj.layout105:setLeft(259);
-    obj.layout105:setTop(633);
-    obj.layout105:setWidth(15);
-    obj.layout105:setHeight(15);
+    obj.layout105:setLeft(803);
+    obj.layout105:setTop(450);
+    obj.layout105:setWidth(30);
+    obj.layout105:setHeight(30);
     obj.layout105:setName("layout105");
 
-    obj.imageCheckBox39 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox39:setParent(obj.layout105);
-    obj.imageCheckBox39:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox39:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox39:setLeft(0);
-    obj.imageCheckBox39:setTop(0);
-    obj.imageCheckBox39:setWidth(15);
-    obj.imageCheckBox39:setHeight(15);
-    obj.imageCheckBox39:setField("ATQP5");
-    obj.imageCheckBox39:setName("imageCheckBox39");
+    obj.image11 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image11:setParent(obj.layout105);
+    obj.image11:setHitTest(true);
+    obj.image11:setHint("Voador");
+    obj.image11:setWidth(30);
+    obj.image11:setHeight(30);
+    obj.image11:setField("IMGFLY");
+    obj.image11:setName("image11");
 
     obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout106:setParent(obj.rectangle2);
-    obj.layout106:setLeft(356);
-    obj.layout106:setTop(662);
-    obj.layout106:setWidth(15);
-    obj.layout106:setHeight(15);
+    obj.layout106:setLeft(837);
+    obj.layout106:setTop(450);
+    obj.layout106:setWidth(30);
+    obj.layout106:setHeight(30);
     obj.layout106:setName("layout106");
 
-    obj.imageCheckBox40 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox40:setParent(obj.layout106);
-    obj.imageCheckBox40:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox40:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox40:setLeft(0);
-    obj.imageCheckBox40:setTop(0);
-    obj.imageCheckBox40:setWidth(15);
-    obj.imageCheckBox40:setHeight(15);
-    obj.imageCheckBox40:setField("PREN5");
-    obj.imageCheckBox40:setName("imageCheckBox40");
+    obj.image12 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image12:setParent(obj.layout106);
+    obj.image12:setHitTest(true);
+    obj.image12:setHint("Psiquico");
+    obj.image12:setWidth(30);
+    obj.image12:setHeight(30);
+    obj.image12:setField("IMGPSI");
+    obj.image12:setName("image12");
 
     obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout107:setParent(obj.rectangle2);
-    obj.layout107:setLeft(370);
-    obj.layout107:setTop(662);
-    obj.layout107:setWidth(15);
-    obj.layout107:setHeight(15);
+    obj.layout107:setLeft(873);
+    obj.layout107:setTop(450);
+    obj.layout107:setWidth(30);
+    obj.layout107:setHeight(30);
     obj.layout107:setName("layout107");
 
-    obj.imageCheckBox41 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox41:setParent(obj.layout107);
-    obj.imageCheckBox41:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox41:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox41:setLeft(0);
-    obj.imageCheckBox41:setTop(0);
-    obj.imageCheckBox41:setWidth(15);
-    obj.imageCheckBox41:setHeight(15);
-    obj.imageCheckBox41:setField("PREN4");
-    obj.imageCheckBox41:setName("imageCheckBox41");
+    obj.image13 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image13:setParent(obj.layout107);
+    obj.image13:setHitTest(true);
+    obj.image13:setHint("Inseto");
+    obj.image13:setWidth(30);
+    obj.image13:setHeight(30);
+    obj.image13:setField("IMGBUG");
+    obj.image13:setName("image13");
 
     obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout108:setParent(obj.rectangle2);
-    obj.layout108:setLeft(384);
-    obj.layout108:setTop(662);
-    obj.layout108:setWidth(15);
-    obj.layout108:setHeight(15);
+    obj.layout108:setLeft(698);
+    obj.layout108:setTop(505);
+    obj.layout108:setWidth(30);
+    obj.layout108:setHeight(30);
     obj.layout108:setName("layout108");
 
-    obj.imageCheckBox42 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox42:setParent(obj.layout108);
-    obj.imageCheckBox42:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox42:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox42:setLeft(0);
-    obj.imageCheckBox42:setTop(0);
-    obj.imageCheckBox42:setWidth(15);
-    obj.imageCheckBox42:setHeight(15);
-    obj.imageCheckBox42:setField("PREN3");
-    obj.imageCheckBox42:setName("imageCheckBox42");
+    obj.image14 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image14:setParent(obj.layout108);
+    obj.image14:setHitTest(true);
+    obj.image14:setHint("Pedra");
+    obj.image14:setWidth(30);
+    obj.image14:setHeight(30);
+    obj.image14:setField("IMGROC");
+    obj.image14:setName("image14");
 
     obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout109:setParent(obj.rectangle2);
-    obj.layout109:setLeft(398);
-    obj.layout109:setTop(662);
-    obj.layout109:setWidth(15);
-    obj.layout109:setHeight(15);
+    obj.layout109:setLeft(733);
+    obj.layout109:setTop(505);
+    obj.layout109:setWidth(30);
+    obj.layout109:setHeight(30);
     obj.layout109:setName("layout109");
 
-    obj.imageCheckBox43 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox43:setParent(obj.layout109);
-    obj.imageCheckBox43:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox43:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox43:setLeft(0);
-    obj.imageCheckBox43:setTop(0);
-    obj.imageCheckBox43:setWidth(15);
-    obj.imageCheckBox43:setHeight(15);
-    obj.imageCheckBox43:setField("PREN2");
-    obj.imageCheckBox43:setName("imageCheckBox43");
+    obj.image15 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image15:setParent(obj.layout109);
+    obj.image15:setHitTest(true);
+    obj.image15:setHint("Fantasma");
+    obj.image15:setWidth(30);
+    obj.image15:setHeight(30);
+    obj.image15:setField("IMGGHO");
+    obj.image15:setName("image15");
 
     obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout110:setParent(obj.rectangle2);
-    obj.layout110:setLeft(412);
-    obj.layout110:setTop(662);
-    obj.layout110:setWidth(15);
-    obj.layout110:setHeight(15);
+    obj.layout110:setLeft(768);
+    obj.layout110:setTop(505);
+    obj.layout110:setWidth(30);
+    obj.layout110:setHeight(30);
     obj.layout110:setName("layout110");
 
-    obj.imageCheckBox44 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox44:setParent(obj.layout110);
-    obj.imageCheckBox44:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox44:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox44:setLeft(0);
-    obj.imageCheckBox44:setTop(0);
-    obj.imageCheckBox44:setWidth(15);
-    obj.imageCheckBox44:setHeight(15);
-    obj.imageCheckBox44:setField("PREN1");
-    obj.imageCheckBox44:setName("imageCheckBox44");
+    obj.image16 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image16:setParent(obj.layout110);
+    obj.image16:setHitTest(true);
+    obj.image16:setHint("Dragão");
+    obj.image16:setWidth(30);
+    obj.image16:setHeight(30);
+    obj.image16:setField("IMGDRA");
+    obj.image16:setName("image16");
 
     obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout111:setParent(obj.rectangle2);
-    obj.layout111:setLeft(524);
-    obj.layout111:setTop(662);
-    obj.layout111:setWidth(15);
-    obj.layout111:setHeight(15);
+    obj.layout111:setLeft(803);
+    obj.layout111:setTop(505);
+    obj.layout111:setWidth(30);
+    obj.layout111:setHeight(30);
     obj.layout111:setName("layout111");
 
-    obj.imageCheckBox45 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox45:setParent(obj.layout111);
-    obj.imageCheckBox45:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox45:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox45:setLeft(0);
-    obj.imageCheckBox45:setTop(0);
-    obj.imageCheckBox45:setWidth(15);
-    obj.imageCheckBox45:setHeight(15);
-    obj.imageCheckBox45:setField("PREP1");
-    obj.imageCheckBox45:setName("imageCheckBox45");
+    obj.image17 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image17:setParent(obj.layout111);
+    obj.image17:setHitTest(true);
+    obj.image17:setHint("Sombrio");
+    obj.image17:setWidth(30);
+    obj.image17:setHeight(30);
+    obj.image17:setField("IMGDAR");
+    obj.image17:setName("image17");
 
     obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout112:setParent(obj.rectangle2);
-    obj.layout112:setLeft(538);
-    obj.layout112:setTop(662);
-    obj.layout112:setWidth(15);
-    obj.layout112:setHeight(15);
+    obj.layout112:setLeft(837);
+    obj.layout112:setTop(505);
+    obj.layout112:setWidth(30);
+    obj.layout112:setHeight(30);
     obj.layout112:setName("layout112");
 
-    obj.imageCheckBox46 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox46:setParent(obj.layout112);
-    obj.imageCheckBox46:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox46:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox46:setLeft(0);
-    obj.imageCheckBox46:setTop(0);
-    obj.imageCheckBox46:setWidth(15);
-    obj.imageCheckBox46:setHeight(15);
-    obj.imageCheckBox46:setField("PREP2");
-    obj.imageCheckBox46:setName("imageCheckBox46");
+    obj.image18 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image18:setParent(obj.layout112);
+    obj.image18:setHitTest(true);
+    obj.image18:setHint("Ferro");
+    obj.image18:setWidth(30);
+    obj.image18:setHeight(30);
+    obj.image18:setField("IMGSTE");
+    obj.image18:setName("image18");
 
     obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout113:setParent(obj.rectangle2);
-    obj.layout113:setLeft(552);
-    obj.layout113:setTop(662);
-    obj.layout113:setWidth(15);
-    obj.layout113:setHeight(15);
+    obj.layout113:setLeft(873);
+    obj.layout113:setTop(505);
+    obj.layout113:setWidth(30);
+    obj.layout113:setHeight(30);
     obj.layout113:setName("layout113");
 
-    obj.imageCheckBox47 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox47:setParent(obj.layout113);
-    obj.imageCheckBox47:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox47:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox47:setLeft(0);
-    obj.imageCheckBox47:setTop(0);
-    obj.imageCheckBox47:setWidth(15);
-    obj.imageCheckBox47:setHeight(15);
-    obj.imageCheckBox47:setField("PREP3");
-    obj.imageCheckBox47:setName("imageCheckBox47");
+    obj.image19 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image19:setParent(obj.layout113);
+    obj.image19:setHitTest(true);
+    obj.image19:setHint("Fada");
+    obj.image19:setWidth(30);
+    obj.image19:setHeight(30);
+    obj.image19:setField("IMGFAI");
+    obj.image19:setName("image19");
 
     obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout114:setParent(obj.rectangle2);
-    obj.layout114:setLeft(566);
-    obj.layout114:setTop(662);
-    obj.layout114:setWidth(15);
-    obj.layout114:setHeight(15);
+    obj.layout114:setLeft(698);
+    obj.layout114:setTop(429);
+    obj.layout114:setWidth(32);
+    obj.layout114:setHeight(28);
     obj.layout114:setName("layout114");
 
-    obj.imageCheckBox48 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox48:setParent(obj.layout114);
-    obj.imageCheckBox48:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox48:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox48:setLeft(0);
-    obj.imageCheckBox48:setTop(0);
-    obj.imageCheckBox48:setWidth(15);
-    obj.imageCheckBox48:setHeight(15);
-    obj.imageCheckBox48:setField("PREP4");
-    obj.imageCheckBox48:setName("imageCheckBox48");
-
-    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout115:setParent(obj.rectangle2);
-    obj.layout115:setLeft(580);
-    obj.layout115:setTop(662);
-    obj.layout115:setWidth(15);
-    obj.layout115:setHeight(15);
-    obj.layout115:setName("layout115");
-
-    obj.imageCheckBox49 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox49:setParent(obj.layout115);
-    obj.imageCheckBox49:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox49:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox49:setLeft(0);
-    obj.imageCheckBox49:setTop(0);
-    obj.imageCheckBox49:setWidth(15);
-    obj.imageCheckBox49:setHeight(15);
-    obj.imageCheckBox49:setField("PREP5");
-    obj.imageCheckBox49:setName("imageCheckBox49");
-
-    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout116:setParent(obj.rectangle2);
-    obj.layout116:setLeft(442);
-    obj.layout116:setTop(640);
-    obj.layout116:setWidth(15);
-    obj.layout116:setHeight(15);
-    obj.layout116:setName("layout116");
-
-    obj.imageCheckBox50 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox50:setParent(obj.layout116);
-    obj.imageCheckBox50:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox50:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox50:setLeft(0);
-    obj.imageCheckBox50:setTop(0);
-    obj.imageCheckBox50:setWidth(15);
-    obj.imageCheckBox50:setHeight(15);
-    obj.imageCheckBox50:setField("CRIT1");
-    obj.imageCheckBox50:setName("imageCheckBox50");
-
-    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout117:setParent(obj.rectangle2);
-    obj.layout117:setLeft(456);
-    obj.layout117:setTop(640);
-    obj.layout117:setWidth(15);
-    obj.layout117:setHeight(15);
-    obj.layout117:setName("layout117");
-
-    obj.imageCheckBox51 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox51:setParent(obj.layout117);
-    obj.imageCheckBox51:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox51:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox51:setLeft(0);
-    obj.imageCheckBox51:setTop(0);
-    obj.imageCheckBox51:setWidth(15);
-    obj.imageCheckBox51:setHeight(15);
-    obj.imageCheckBox51:setField("CRIT2");
-    obj.imageCheckBox51:setName("imageCheckBox51");
-
-    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout118:setParent(obj.rectangle2);
-    obj.layout118:setLeft(470);
-    obj.layout118:setTop(640);
-    obj.layout118:setWidth(15);
-    obj.layout118:setHeight(15);
-    obj.layout118:setName("layout118");
-
-    obj.imageCheckBox52 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox52:setParent(obj.layout118);
-    obj.imageCheckBox52:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox52:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox52:setLeft(0);
-    obj.imageCheckBox52:setTop(0);
-    obj.imageCheckBox52:setWidth(15);
-    obj.imageCheckBox52:setHeight(15);
-    obj.imageCheckBox52:setField("CRIT3");
-    obj.imageCheckBox52:setName("imageCheckBox52");
-
-    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout119:setParent(obj.rectangle2);
-    obj.layout119:setLeft(484);
-    obj.layout119:setTop(640);
-    obj.layout119:setWidth(15);
-    obj.layout119:setHeight(15);
-    obj.layout119:setName("layout119");
-
-    obj.imageCheckBox53 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox53:setParent(obj.layout119);
-    obj.imageCheckBox53:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox53:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox53:setLeft(0);
-    obj.imageCheckBox53:setTop(0);
-    obj.imageCheckBox53:setWidth(15);
-    obj.imageCheckBox53:setHeight(15);
-    obj.imageCheckBox53:setField("CRIT4");
-    obj.imageCheckBox53:setName("imageCheckBox53");
-
-    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout120:setParent(obj.rectangle2);
-    obj.layout120:setLeft(498);
-    obj.layout120:setTop(640);
-    obj.layout120:setWidth(15);
-    obj.layout120:setHeight(15);
-    obj.layout120:setName("layout120");
-
-    obj.imageCheckBox54 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox54:setParent(obj.layout120);
-    obj.imageCheckBox54:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox54:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox54:setLeft(0);
-    obj.imageCheckBox54:setTop(0);
-    obj.imageCheckBox54:setWidth(15);
-    obj.imageCheckBox54:setHeight(15);
-    obj.imageCheckBox54:setField("CRIT5");
-    obj.imageCheckBox54:setName("imageCheckBox54");
-
-    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout121:setParent(obj.rectangle2);
-    obj.layout121:setLeft(35);
-    obj.layout121:setTop(656);
-    obj.layout121:setWidth(15);
-    obj.layout121:setHeight(15);
-    obj.layout121:setName("layout121");
-
-    obj.imageCheckBox55 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox55:setParent(obj.layout121);
-    obj.imageCheckBox55:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox55:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox55:setLeft(0);
-    obj.imageCheckBox55:setTop(0);
-    obj.imageCheckBox55:setWidth(15);
-    obj.imageCheckBox55:setHeight(15);
-    obj.imageCheckBox55:setField("DEFN5");
-    obj.imageCheckBox55:setName("imageCheckBox55");
-
-    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout122:setParent(obj.rectangle2);
-    obj.layout122:setLeft(50);
-    obj.layout122:setTop(656);
-    obj.layout122:setWidth(15);
-    obj.layout122:setHeight(15);
-    obj.layout122:setName("layout122");
-
-    obj.imageCheckBox56 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox56:setParent(obj.layout122);
-    obj.imageCheckBox56:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox56:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox56:setLeft(0);
-    obj.imageCheckBox56:setTop(0);
-    obj.imageCheckBox56:setWidth(15);
-    obj.imageCheckBox56:setHeight(15);
-    obj.imageCheckBox56:setField("DEFN4");
-    obj.imageCheckBox56:setName("imageCheckBox56");
-
-    obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout123:setParent(obj.rectangle2);
-    obj.layout123:setLeft(64);
-    obj.layout123:setTop(656);
-    obj.layout123:setWidth(15);
-    obj.layout123:setHeight(15);
-    obj.layout123:setName("layout123");
-
-    obj.imageCheckBox57 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox57:setParent(obj.layout123);
-    obj.imageCheckBox57:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox57:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox57:setLeft(0);
-    obj.imageCheckBox57:setTop(0);
-    obj.imageCheckBox57:setWidth(15);
-    obj.imageCheckBox57:setHeight(15);
-    obj.imageCheckBox57:setField("DEFN3");
-    obj.imageCheckBox57:setName("imageCheckBox57");
-
-    obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout124:setParent(obj.rectangle2);
-    obj.layout124:setLeft(78);
-    obj.layout124:setTop(656);
-    obj.layout124:setWidth(15);
-    obj.layout124:setHeight(15);
-    obj.layout124:setName("layout124");
-
-    obj.imageCheckBox58 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox58:setParent(obj.layout124);
-    obj.imageCheckBox58:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox58:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox58:setLeft(0);
-    obj.imageCheckBox58:setTop(0);
-    obj.imageCheckBox58:setWidth(15);
-    obj.imageCheckBox58:setHeight(15);
-    obj.imageCheckBox58:setField("DEFN2");
-    obj.imageCheckBox58:setName("imageCheckBox58");
-
-    obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout125:setParent(obj.rectangle2);
-    obj.layout125:setLeft(92);
-    obj.layout125:setTop(656);
-    obj.layout125:setWidth(15);
-    obj.layout125:setHeight(15);
-    obj.layout125:setName("layout125");
-
-    obj.imageCheckBox59 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox59:setParent(obj.layout125);
-    obj.imageCheckBox59:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox59:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox59:setLeft(0);
-    obj.imageCheckBox59:setTop(0);
-    obj.imageCheckBox59:setWidth(15);
-    obj.imageCheckBox59:setHeight(15);
-    obj.imageCheckBox59:setField("DEFN1");
-    obj.imageCheckBox59:setName("imageCheckBox59");
-
-    obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout126:setParent(obj.rectangle2);
-    obj.layout126:setLeft(203);
-    obj.layout126:setTop(656);
-    obj.layout126:setWidth(15);
-    obj.layout126:setHeight(15);
-    obj.layout126:setName("layout126");
-
-    obj.imageCheckBox60 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox60:setParent(obj.layout126);
-    obj.imageCheckBox60:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox60:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox60:setLeft(0);
-    obj.imageCheckBox60:setTop(0);
-    obj.imageCheckBox60:setWidth(15);
-    obj.imageCheckBox60:setHeight(15);
-    obj.imageCheckBox60:setField("DEFP1");
-    obj.imageCheckBox60:setName("imageCheckBox60");
-
-    obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout127:setParent(obj.rectangle2);
-    obj.layout127:setLeft(217);
-    obj.layout127:setTop(656);
-    obj.layout127:setWidth(15);
-    obj.layout127:setHeight(15);
-    obj.layout127:setName("layout127");
-
-    obj.imageCheckBox61 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox61:setParent(obj.layout127);
-    obj.imageCheckBox61:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox61:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox61:setLeft(0);
-    obj.imageCheckBox61:setTop(0);
-    obj.imageCheckBox61:setWidth(15);
-    obj.imageCheckBox61:setHeight(15);
-    obj.imageCheckBox61:setField("DEFP2");
-    obj.imageCheckBox61:setName("imageCheckBox61");
-
-    obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout128:setParent(obj.rectangle2);
-    obj.layout128:setLeft(231);
-    obj.layout128:setTop(656);
-    obj.layout128:setWidth(15);
-    obj.layout128:setHeight(15);
-    obj.layout128:setName("layout128");
-
-    obj.imageCheckBox62 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox62:setParent(obj.layout128);
-    obj.imageCheckBox62:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox62:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox62:setLeft(0);
-    obj.imageCheckBox62:setTop(0);
-    obj.imageCheckBox62:setWidth(15);
-    obj.imageCheckBox62:setHeight(15);
-    obj.imageCheckBox62:setField("DEFP3");
-    obj.imageCheckBox62:setName("imageCheckBox62");
-
-    obj.layout129 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout129:setParent(obj.rectangle2);
-    obj.layout129:setLeft(245);
-    obj.layout129:setTop(656);
-    obj.layout129:setWidth(15);
-    obj.layout129:setHeight(15);
-    obj.layout129:setName("layout129");
-
-    obj.imageCheckBox63 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox63:setParent(obj.layout129);
-    obj.imageCheckBox63:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox63:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox63:setLeft(0);
-    obj.imageCheckBox63:setTop(0);
-    obj.imageCheckBox63:setWidth(15);
-    obj.imageCheckBox63:setHeight(15);
-    obj.imageCheckBox63:setField("DEFP4");
-    obj.imageCheckBox63:setName("imageCheckBox63");
-
-    obj.layout130 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout130:setParent(obj.rectangle2);
-    obj.layout130:setLeft(259);
-    obj.layout130:setTop(656);
-    obj.layout130:setWidth(15);
-    obj.layout130:setHeight(15);
-    obj.layout130:setName("layout130");
-
-    obj.imageCheckBox64 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox64:setParent(obj.layout130);
-    obj.imageCheckBox64:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox64:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox64:setLeft(0);
-    obj.imageCheckBox64:setTop(0);
-    obj.imageCheckBox64:setWidth(15);
-    obj.imageCheckBox64:setHeight(15);
-    obj.imageCheckBox64:setField("DEFP5");
-    obj.imageCheckBox64:setName("imageCheckBox64");
-
-    obj.layout131 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout131:setParent(obj.rectangle2);
-    obj.layout131:setLeft(356);
-    obj.layout131:setTop(686);
-    obj.layout131:setWidth(15);
-    obj.layout131:setHeight(15);
-    obj.layout131:setName("layout131");
-
-    obj.imageCheckBox65 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox65:setParent(obj.layout131);
-    obj.imageCheckBox65:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox65:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox65:setLeft(0);
-    obj.imageCheckBox65:setTop(0);
-    obj.imageCheckBox65:setWidth(15);
-    obj.imageCheckBox65:setHeight(15);
-    obj.imageCheckBox65:setField("EVAN5");
-    obj.imageCheckBox65:setName("imageCheckBox65");
-
-    obj.layout132 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout132:setParent(obj.rectangle2);
-    obj.layout132:setLeft(370);
-    obj.layout132:setTop(686);
-    obj.layout132:setWidth(15);
-    obj.layout132:setHeight(15);
-    obj.layout132:setName("layout132");
-
-    obj.imageCheckBox66 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox66:setParent(obj.layout132);
-    obj.imageCheckBox66:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox66:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox66:setLeft(0);
-    obj.imageCheckBox66:setTop(0);
-    obj.imageCheckBox66:setWidth(15);
-    obj.imageCheckBox66:setHeight(15);
-    obj.imageCheckBox66:setField("EVAN4");
-    obj.imageCheckBox66:setName("imageCheckBox66");
-
-    obj.layout133 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout133:setParent(obj.rectangle2);
-    obj.layout133:setLeft(384);
-    obj.layout133:setTop(686);
-    obj.layout133:setWidth(15);
-    obj.layout133:setHeight(15);
-    obj.layout133:setName("layout133");
-
-    obj.imageCheckBox67 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox67:setParent(obj.layout133);
-    obj.imageCheckBox67:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox67:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox67:setLeft(0);
-    obj.imageCheckBox67:setTop(0);
-    obj.imageCheckBox67:setWidth(15);
-    obj.imageCheckBox67:setHeight(15);
-    obj.imageCheckBox67:setField("EVAN3");
-    obj.imageCheckBox67:setName("imageCheckBox67");
-
-    obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout134:setParent(obj.rectangle2);
-    obj.layout134:setLeft(398);
-    obj.layout134:setTop(686);
-    obj.layout134:setWidth(15);
-    obj.layout134:setHeight(15);
-    obj.layout134:setName("layout134");
-
-    obj.imageCheckBox68 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox68:setParent(obj.layout134);
-    obj.imageCheckBox68:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox68:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox68:setLeft(0);
-    obj.imageCheckBox68:setTop(0);
-    obj.imageCheckBox68:setWidth(15);
-    obj.imageCheckBox68:setHeight(15);
-    obj.imageCheckBox68:setField("EVAN2");
-    obj.imageCheckBox68:setName("imageCheckBox68");
-
-    obj.layout135 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout135:setParent(obj.rectangle2);
-    obj.layout135:setLeft(412);
-    obj.layout135:setTop(686);
-    obj.layout135:setWidth(15);
-    obj.layout135:setHeight(15);
-    obj.layout135:setName("layout135");
-
-    obj.imageCheckBox69 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox69:setParent(obj.layout135);
-    obj.imageCheckBox69:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox69:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox69:setLeft(0);
-    obj.imageCheckBox69:setTop(0);
-    obj.imageCheckBox69:setWidth(15);
-    obj.imageCheckBox69:setHeight(15);
-    obj.imageCheckBox69:setField("EVAN1");
-    obj.imageCheckBox69:setName("imageCheckBox69");
-
-    obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout136:setParent(obj.rectangle2);
-    obj.layout136:setLeft(524);
-    obj.layout136:setTop(686);
-    obj.layout136:setWidth(15);
-    obj.layout136:setHeight(15);
-    obj.layout136:setName("layout136");
-
-    obj.imageCheckBox70 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox70:setParent(obj.layout136);
-    obj.imageCheckBox70:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox70:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox70:setLeft(0);
-    obj.imageCheckBox70:setTop(0);
-    obj.imageCheckBox70:setWidth(15);
-    obj.imageCheckBox70:setHeight(15);
-    obj.imageCheckBox70:setField("EVAP1");
-    obj.imageCheckBox70:setName("imageCheckBox70");
-
-    obj.layout137 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout137:setParent(obj.rectangle2);
-    obj.layout137:setLeft(538);
-    obj.layout137:setTop(686);
-    obj.layout137:setWidth(15);
-    obj.layout137:setHeight(15);
-    obj.layout137:setName("layout137");
-
-    obj.imageCheckBox71 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox71:setParent(obj.layout137);
-    obj.imageCheckBox71:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox71:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox71:setLeft(0);
-    obj.imageCheckBox71:setTop(0);
-    obj.imageCheckBox71:setWidth(15);
-    obj.imageCheckBox71:setHeight(15);
-    obj.imageCheckBox71:setField("EVAP2");
-    obj.imageCheckBox71:setName("imageCheckBox71");
-
-    obj.layout138 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout138:setParent(obj.rectangle2);
-    obj.layout138:setLeft(552);
-    obj.layout138:setTop(686);
-    obj.layout138:setWidth(15);
-    obj.layout138:setHeight(15);
-    obj.layout138:setName("layout138");
-
-    obj.imageCheckBox72 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox72:setParent(obj.layout138);
-    obj.imageCheckBox72:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox72:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox72:setLeft(0);
-    obj.imageCheckBox72:setTop(0);
-    obj.imageCheckBox72:setWidth(15);
-    obj.imageCheckBox72:setHeight(15);
-    obj.imageCheckBox72:setField("EVAP3");
-    obj.imageCheckBox72:setName("imageCheckBox72");
-
-    obj.layout139 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout139:setParent(obj.rectangle2);
-    obj.layout139:setLeft(566);
-    obj.layout139:setTop(686);
-    obj.layout139:setWidth(15);
-    obj.layout139:setHeight(15);
-    obj.layout139:setName("layout139");
-
-    obj.imageCheckBox73 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox73:setParent(obj.layout139);
-    obj.imageCheckBox73:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox73:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox73:setLeft(0);
-    obj.imageCheckBox73:setTop(0);
-    obj.imageCheckBox73:setWidth(15);
-    obj.imageCheckBox73:setHeight(15);
-    obj.imageCheckBox73:setField("EVAP4");
-    obj.imageCheckBox73:setName("imageCheckBox73");
-
-    obj.layout140 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout140:setParent(obj.rectangle2);
-    obj.layout140:setLeft(580);
-    obj.layout140:setTop(686);
-    obj.layout140:setWidth(15);
-    obj.layout140:setHeight(15);
-    obj.layout140:setName("layout140");
-
-    obj.imageCheckBox74 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox74:setParent(obj.layout140);
-    obj.imageCheckBox74:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox74:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox74:setLeft(0);
-    obj.imageCheckBox74:setTop(0);
-    obj.imageCheckBox74:setWidth(15);
-    obj.imageCheckBox74:setHeight(15);
-    obj.imageCheckBox74:setField("EVAP5");
-    obj.imageCheckBox74:setName("imageCheckBox74");
-
-    obj.layout141 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout141:setParent(obj.rectangle2);
-    obj.layout141:setLeft(35);
-    obj.layout141:setTop(678);
-    obj.layout141:setWidth(15);
-    obj.layout141:setHeight(15);
-    obj.layout141:setName("layout141");
-
-    obj.imageCheckBox75 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox75:setParent(obj.layout141);
-    obj.imageCheckBox75:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox75:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox75:setLeft(0);
-    obj.imageCheckBox75:setTop(0);
-    obj.imageCheckBox75:setWidth(15);
-    obj.imageCheckBox75:setHeight(15);
-    obj.imageCheckBox75:setField("ATEN5");
-    obj.imageCheckBox75:setName("imageCheckBox75");
-
-    obj.layout142 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout142:setParent(obj.rectangle2);
-    obj.layout142:setLeft(50);
-    obj.layout142:setTop(678);
-    obj.layout142:setWidth(15);
-    obj.layout142:setHeight(15);
-    obj.layout142:setName("layout142");
-
-    obj.imageCheckBox76 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox76:setParent(obj.layout142);
-    obj.imageCheckBox76:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox76:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox76:setLeft(0);
-    obj.imageCheckBox76:setTop(0);
-    obj.imageCheckBox76:setWidth(15);
-    obj.imageCheckBox76:setHeight(15);
-    obj.imageCheckBox76:setField("ATEN4");
-    obj.imageCheckBox76:setName("imageCheckBox76");
-
-    obj.layout143 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout143:setParent(obj.rectangle2);
-    obj.layout143:setLeft(64);
-    obj.layout143:setTop(678);
-    obj.layout143:setWidth(15);
-    obj.layout143:setHeight(15);
-    obj.layout143:setName("layout143");
-
-    obj.imageCheckBox77 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox77:setParent(obj.layout143);
-    obj.imageCheckBox77:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox77:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox77:setLeft(0);
-    obj.imageCheckBox77:setTop(0);
-    obj.imageCheckBox77:setWidth(15);
-    obj.imageCheckBox77:setHeight(15);
-    obj.imageCheckBox77:setField("ATEN3");
-    obj.imageCheckBox77:setName("imageCheckBox77");
-
-    obj.layout144 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout144:setParent(obj.rectangle2);
-    obj.layout144:setLeft(78);
-    obj.layout144:setTop(678);
-    obj.layout144:setWidth(15);
-    obj.layout144:setHeight(15);
-    obj.layout144:setName("layout144");
-
-    obj.imageCheckBox78 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox78:setParent(obj.layout144);
-    obj.imageCheckBox78:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox78:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox78:setLeft(0);
-    obj.imageCheckBox78:setTop(0);
-    obj.imageCheckBox78:setWidth(15);
-    obj.imageCheckBox78:setHeight(15);
-    obj.imageCheckBox78:setField("ATEN2");
-    obj.imageCheckBox78:setName("imageCheckBox78");
-
-    obj.layout145 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout145:setParent(obj.rectangle2);
-    obj.layout145:setLeft(92);
-    obj.layout145:setTop(678);
-    obj.layout145:setWidth(15);
-    obj.layout145:setHeight(15);
-    obj.layout145:setName("layout145");
-
-    obj.imageCheckBox79 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox79:setParent(obj.layout145);
-    obj.imageCheckBox79:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox79:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox79:setLeft(0);
-    obj.imageCheckBox79:setTop(0);
-    obj.imageCheckBox79:setWidth(15);
-    obj.imageCheckBox79:setHeight(15);
-    obj.imageCheckBox79:setField("ATEN1");
-    obj.imageCheckBox79:setName("imageCheckBox79");
-
-    obj.layout146 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout146:setParent(obj.rectangle2);
-    obj.layout146:setLeft(203);
-    obj.layout146:setTop(678);
-    obj.layout146:setWidth(15);
-    obj.layout146:setHeight(15);
-    obj.layout146:setName("layout146");
-
-    obj.imageCheckBox80 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox80:setParent(obj.layout146);
-    obj.imageCheckBox80:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox80:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox80:setLeft(0);
-    obj.imageCheckBox80:setTop(0);
-    obj.imageCheckBox80:setWidth(15);
-    obj.imageCheckBox80:setHeight(15);
-    obj.imageCheckBox80:setField("ATEP1");
-    obj.imageCheckBox80:setName("imageCheckBox80");
-
-    obj.layout147 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout147:setParent(obj.rectangle2);
-    obj.layout147:setLeft(217);
-    obj.layout147:setTop(678);
-    obj.layout147:setWidth(15);
-    obj.layout147:setHeight(15);
-    obj.layout147:setName("layout147");
-
-    obj.imageCheckBox81 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox81:setParent(obj.layout147);
-    obj.imageCheckBox81:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox81:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox81:setLeft(0);
-    obj.imageCheckBox81:setTop(0);
-    obj.imageCheckBox81:setWidth(15);
-    obj.imageCheckBox81:setHeight(15);
-    obj.imageCheckBox81:setField("ATEP2");
-    obj.imageCheckBox81:setName("imageCheckBox81");
-
-    obj.layout148 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout148:setParent(obj.rectangle2);
-    obj.layout148:setLeft(231);
-    obj.layout148:setTop(678);
-    obj.layout148:setWidth(15);
-    obj.layout148:setHeight(15);
-    obj.layout148:setName("layout148");
-
-    obj.imageCheckBox82 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox82:setParent(obj.layout148);
-    obj.imageCheckBox82:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox82:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox82:setLeft(0);
-    obj.imageCheckBox82:setTop(0);
-    obj.imageCheckBox82:setWidth(15);
-    obj.imageCheckBox82:setHeight(15);
-    obj.imageCheckBox82:setField("ATEP3");
-    obj.imageCheckBox82:setName("imageCheckBox82");
-
-    obj.layout149 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout149:setParent(obj.rectangle2);
-    obj.layout149:setLeft(245);
-    obj.layout149:setTop(678);
-    obj.layout149:setWidth(15);
-    obj.layout149:setHeight(15);
-    obj.layout149:setName("layout149");
-
-    obj.imageCheckBox83 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox83:setParent(obj.layout149);
-    obj.imageCheckBox83:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox83:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox83:setLeft(0);
-    obj.imageCheckBox83:setTop(0);
-    obj.imageCheckBox83:setWidth(15);
-    obj.imageCheckBox83:setHeight(15);
-    obj.imageCheckBox83:setField("ATEP4");
-    obj.imageCheckBox83:setName("imageCheckBox83");
-
-    obj.layout150 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout150:setParent(obj.rectangle2);
-    obj.layout150:setLeft(259);
-    obj.layout150:setTop(678);
-    obj.layout150:setWidth(15);
-    obj.layout150:setHeight(15);
-    obj.layout150:setName("layout150");
-
-    obj.imageCheckBox84 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox84:setParent(obj.layout150);
-    obj.imageCheckBox84:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox84:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox84:setLeft(0);
-    obj.imageCheckBox84:setTop(0);
-    obj.imageCheckBox84:setWidth(15);
-    obj.imageCheckBox84:setHeight(15);
-    obj.imageCheckBox84:setField("ATEP5");
-    obj.imageCheckBox84:setName("imageCheckBox84");
-
-    obj.layout151 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout151:setParent(obj.rectangle2);
-    obj.layout151:setLeft(35);
-    obj.layout151:setTop(701);
-    obj.layout151:setWidth(15);
-    obj.layout151:setHeight(15);
-    obj.layout151:setName("layout151");
-
-    obj.imageCheckBox85 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox85:setParent(obj.layout151);
-    obj.imageCheckBox85:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox85:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox85:setLeft(0);
-    obj.imageCheckBox85:setTop(0);
-    obj.imageCheckBox85:setWidth(15);
-    obj.imageCheckBox85:setHeight(15);
-    obj.imageCheckBox85:setField("DFESN5");
-    obj.imageCheckBox85:setName("imageCheckBox85");
-
-    obj.layout152 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout152:setParent(obj.rectangle2);
-    obj.layout152:setLeft(50);
-    obj.layout152:setTop(701);
-    obj.layout152:setWidth(15);
-    obj.layout152:setHeight(15);
-    obj.layout152:setName("layout152");
-
-    obj.imageCheckBox86 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox86:setParent(obj.layout152);
-    obj.imageCheckBox86:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox86:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox86:setLeft(0);
-    obj.imageCheckBox86:setTop(0);
-    obj.imageCheckBox86:setWidth(15);
-    obj.imageCheckBox86:setHeight(15);
-    obj.imageCheckBox86:setField("DFESN4");
-    obj.imageCheckBox86:setName("imageCheckBox86");
-
-    obj.layout153 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout153:setParent(obj.rectangle2);
-    obj.layout153:setLeft(64);
-    obj.layout153:setTop(701);
-    obj.layout153:setWidth(15);
-    obj.layout153:setHeight(15);
-    obj.layout153:setName("layout153");
-
-    obj.imageCheckBox87 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox87:setParent(obj.layout153);
-    obj.imageCheckBox87:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox87:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox87:setLeft(0);
-    obj.imageCheckBox87:setTop(0);
-    obj.imageCheckBox87:setWidth(15);
-    obj.imageCheckBox87:setHeight(15);
-    obj.imageCheckBox87:setField("DFESN3");
-    obj.imageCheckBox87:setName("imageCheckBox87");
-
-    obj.layout154 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout154:setParent(obj.rectangle2);
-    obj.layout154:setLeft(78);
-    obj.layout154:setTop(701);
-    obj.layout154:setWidth(15);
-    obj.layout154:setHeight(15);
-    obj.layout154:setName("layout154");
-
-    obj.imageCheckBox88 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox88:setParent(obj.layout154);
-    obj.imageCheckBox88:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox88:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox88:setLeft(0);
-    obj.imageCheckBox88:setTop(0);
-    obj.imageCheckBox88:setWidth(15);
-    obj.imageCheckBox88:setHeight(15);
-    obj.imageCheckBox88:setField("DFESN2");
-    obj.imageCheckBox88:setName("imageCheckBox88");
-
-    obj.layout155 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout155:setParent(obj.rectangle2);
-    obj.layout155:setLeft(91);
-    obj.layout155:setTop(701);
-    obj.layout155:setWidth(15);
-    obj.layout155:setHeight(15);
-    obj.layout155:setName("layout155");
-
-    obj.imageCheckBox89 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox89:setParent(obj.layout155);
-    obj.imageCheckBox89:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox89:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox89:setLeft(0);
-    obj.imageCheckBox89:setTop(0);
-    obj.imageCheckBox89:setWidth(15);
-    obj.imageCheckBox89:setHeight(15);
-    obj.imageCheckBox89:setField("DFESN1");
-    obj.imageCheckBox89:setName("imageCheckBox89");
-
-    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout156:setParent(obj.rectangle2);
-    obj.layout156:setLeft(203);
-    obj.layout156:setTop(701);
-    obj.layout156:setWidth(15);
-    obj.layout156:setHeight(15);
-    obj.layout156:setName("layout156");
-
-    obj.imageCheckBox90 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox90:setParent(obj.layout156);
-    obj.imageCheckBox90:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox90:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox90:setLeft(0);
-    obj.imageCheckBox90:setTop(0);
-    obj.imageCheckBox90:setWidth(15);
-    obj.imageCheckBox90:setHeight(15);
-    obj.imageCheckBox90:setField("DFESP1");
-    obj.imageCheckBox90:setName("imageCheckBox90");
-
-    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout157:setParent(obj.rectangle2);
-    obj.layout157:setLeft(217);
-    obj.layout157:setTop(701);
-    obj.layout157:setWidth(15);
-    obj.layout157:setHeight(15);
-    obj.layout157:setName("layout157");
-
-    obj.imageCheckBox91 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox91:setParent(obj.layout157);
-    obj.imageCheckBox91:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox91:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox91:setLeft(0);
-    obj.imageCheckBox91:setTop(0);
-    obj.imageCheckBox91:setWidth(15);
-    obj.imageCheckBox91:setHeight(15);
-    obj.imageCheckBox91:setField("DFESP2");
-    obj.imageCheckBox91:setName("imageCheckBox91");
-
-    obj.layout158 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout158:setParent(obj.rectangle2);
-    obj.layout158:setLeft(231);
-    obj.layout158:setTop(701);
-    obj.layout158:setWidth(15);
-    obj.layout158:setHeight(15);
-    obj.layout158:setName("layout158");
-
-    obj.imageCheckBox92 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox92:setParent(obj.layout158);
-    obj.imageCheckBox92:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox92:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox92:setLeft(0);
-    obj.imageCheckBox92:setTop(0);
-    obj.imageCheckBox92:setWidth(15);
-    obj.imageCheckBox92:setHeight(15);
-    obj.imageCheckBox92:setField("DFESP3");
-    obj.imageCheckBox92:setName("imageCheckBox92");
-
-    obj.layout159 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout159:setParent(obj.rectangle2);
-    obj.layout159:setLeft(245);
-    obj.layout159:setTop(701);
-    obj.layout159:setWidth(15);
-    obj.layout159:setHeight(15);
-    obj.layout159:setName("layout159");
-
-    obj.imageCheckBox93 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox93:setParent(obj.layout159);
-    obj.imageCheckBox93:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox93:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox93:setLeft(0);
-    obj.imageCheckBox93:setTop(0);
-    obj.imageCheckBox93:setWidth(15);
-    obj.imageCheckBox93:setHeight(15);
-    obj.imageCheckBox93:setField("DFESP4");
-    obj.imageCheckBox93:setName("imageCheckBox93");
-
-    obj.layout160 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout160:setParent(obj.rectangle2);
-    obj.layout160:setLeft(259);
-    obj.layout160:setTop(701);
-    obj.layout160:setWidth(15);
-    obj.layout160:setHeight(15);
-    obj.layout160:setName("layout160");
-
-    obj.imageCheckBox94 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox94:setParent(obj.layout160);
-    obj.imageCheckBox94:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox94:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox94:setLeft(0);
-    obj.imageCheckBox94:setTop(0);
-    obj.imageCheckBox94:setWidth(15);
-    obj.imageCheckBox94:setHeight(15);
-    obj.imageCheckBox94:setField("DFESP5");
-    obj.imageCheckBox94:setName("imageCheckBox94");
-
-    obj.layout161 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout161:setParent(obj.rectangle2);
-    obj.layout161:setLeft(35);
-    obj.layout161:setTop(723);
-    obj.layout161:setWidth(15);
-    obj.layout161:setHeight(15);
-    obj.layout161:setName("layout161");
-
-    obj.imageCheckBox95 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox95:setParent(obj.layout161);
-    obj.imageCheckBox95:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox95:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox95:setLeft(0);
-    obj.imageCheckBox95:setTop(0);
-    obj.imageCheckBox95:setWidth(15);
-    obj.imageCheckBox95:setHeight(15);
-    obj.imageCheckBox95:setField("VELN5");
-    obj.imageCheckBox95:setName("imageCheckBox95");
-
-    obj.layout162 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout162:setParent(obj.rectangle2);
-    obj.layout162:setLeft(50);
-    obj.layout162:setTop(723);
-    obj.layout162:setWidth(15);
-    obj.layout162:setHeight(15);
-    obj.layout162:setName("layout162");
-
-    obj.imageCheckBox96 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox96:setParent(obj.layout162);
-    obj.imageCheckBox96:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox96:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox96:setLeft(0);
-    obj.imageCheckBox96:setTop(0);
-    obj.imageCheckBox96:setWidth(15);
-    obj.imageCheckBox96:setHeight(15);
-    obj.imageCheckBox96:setField("VELN4");
-    obj.imageCheckBox96:setName("imageCheckBox96");
-
-    obj.layout163 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout163:setParent(obj.rectangle2);
-    obj.layout163:setLeft(64);
-    obj.layout163:setTop(723);
-    obj.layout163:setWidth(15);
-    obj.layout163:setHeight(15);
-    obj.layout163:setName("layout163");
-
-    obj.imageCheckBox97 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox97:setParent(obj.layout163);
-    obj.imageCheckBox97:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox97:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox97:setLeft(0);
-    obj.imageCheckBox97:setTop(0);
-    obj.imageCheckBox97:setWidth(15);
-    obj.imageCheckBox97:setHeight(15);
-    obj.imageCheckBox97:setField("VELN3");
-    obj.imageCheckBox97:setName("imageCheckBox97");
-
-    obj.layout164 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout164:setParent(obj.rectangle2);
-    obj.layout164:setLeft(78);
-    obj.layout164:setTop(723);
-    obj.layout164:setWidth(15);
-    obj.layout164:setHeight(15);
-    obj.layout164:setName("layout164");
-
-    obj.imageCheckBox98 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox98:setParent(obj.layout164);
-    obj.imageCheckBox98:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox98:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox98:setLeft(0);
-    obj.imageCheckBox98:setTop(0);
-    obj.imageCheckBox98:setWidth(15);
-    obj.imageCheckBox98:setHeight(15);
-    obj.imageCheckBox98:setField("VELN2");
-    obj.imageCheckBox98:setName("imageCheckBox98");
-
-    obj.layout165 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout165:setParent(obj.rectangle2);
-    obj.layout165:setLeft(92);
-    obj.layout165:setTop(723);
-    obj.layout165:setWidth(15);
-    obj.layout165:setHeight(15);
-    obj.layout165:setName("layout165");
-
-    obj.imageCheckBox99 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox99:setParent(obj.layout165);
-    obj.imageCheckBox99:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox99:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox99:setLeft(0);
-    obj.imageCheckBox99:setTop(0);
-    obj.imageCheckBox99:setWidth(15);
-    obj.imageCheckBox99:setHeight(15);
-    obj.imageCheckBox99:setField("VELN1");
-    obj.imageCheckBox99:setName("imageCheckBox99");
-
-    obj.layout166 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout166:setParent(obj.rectangle2);
-    obj.layout166:setLeft(203);
-    obj.layout166:setTop(723);
-    obj.layout166:setWidth(15);
-    obj.layout166:setHeight(15);
-    obj.layout166:setName("layout166");
-
-    obj.imageCheckBox100 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox100:setParent(obj.layout166);
-    obj.imageCheckBox100:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox100:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox100:setLeft(0);
-    obj.imageCheckBox100:setTop(0);
-    obj.imageCheckBox100:setWidth(15);
-    obj.imageCheckBox100:setHeight(15);
-    obj.imageCheckBox100:setField("VELP1");
-    obj.imageCheckBox100:setName("imageCheckBox100");
-
-    obj.layout167 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout167:setParent(obj.rectangle2);
-    obj.layout167:setLeft(217);
-    obj.layout167:setTop(723);
-    obj.layout167:setWidth(15);
-    obj.layout167:setHeight(15);
-    obj.layout167:setName("layout167");
-
-    obj.imageCheckBox101 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox101:setParent(obj.layout167);
-    obj.imageCheckBox101:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox101:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox101:setLeft(0);
-    obj.imageCheckBox101:setTop(0);
-    obj.imageCheckBox101:setWidth(15);
-    obj.imageCheckBox101:setHeight(15);
-    obj.imageCheckBox101:setField("VELP2");
-    obj.imageCheckBox101:setName("imageCheckBox101");
-
-    obj.layout168 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout168:setParent(obj.rectangle2);
-    obj.layout168:setLeft(231);
-    obj.layout168:setTop(723);
-    obj.layout168:setWidth(15);
-    obj.layout168:setHeight(15);
-    obj.layout168:setName("layout168");
-
-    obj.imageCheckBox102 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox102:setParent(obj.layout168);
-    obj.imageCheckBox102:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox102:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox102:setLeft(0);
-    obj.imageCheckBox102:setTop(0);
-    obj.imageCheckBox102:setWidth(15);
-    obj.imageCheckBox102:setHeight(15);
-    obj.imageCheckBox102:setField("VELP3");
-    obj.imageCheckBox102:setName("imageCheckBox102");
-
-    obj.layout169 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout169:setParent(obj.rectangle2);
-    obj.layout169:setLeft(698);
-    obj.layout169:setTop(429);
-    obj.layout169:setWidth(32);
-    obj.layout169:setHeight(28);
-    obj.layout169:setName("layout169");
-
     obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.layout169);
+    obj.edit65:setParent(obj.layout114);
     obj.edit65:setTransparent(true);
     obj.edit65:setFontSize(13);
     obj.edit65:setFontColor("#ffffff");
@@ -3485,16 +2430,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit65:setField("TXTNOR");
     obj.edit65:setName("edit65");
 
-    obj.layout170 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout170:setParent(obj.rectangle2);
-    obj.layout170:setLeft(698);
-    obj.layout170:setTop(482);
-    obj.layout170:setWidth(32);
-    obj.layout170:setHeight(28);
-    obj.layout170:setName("layout170");
+    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout115:setParent(obj.rectangle2);
+    obj.layout115:setLeft(733);
+    obj.layout115:setTop(429);
+    obj.layout115:setWidth(32);
+    obj.layout115:setHeight(28);
+    obj.layout115:setName("layout115");
 
     obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.layout170);
+    obj.edit66:setParent(obj.layout115);
     obj.edit66:setTransparent(true);
     obj.edit66:setFontSize(13);
     obj.edit66:setFontColor("#ffffff");
@@ -3504,19 +2449,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit66:setTop(0);
     obj.edit66:setWidth(32);
     obj.edit66:setHeight(28);
-    obj.edit66:setField("TXTFIG");
+    obj.edit66:setField("TXTFIR");
     obj.edit66:setName("edit66");
 
-    obj.layout171 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout171:setParent(obj.rectangle2);
-    obj.layout171:setLeft(698);
-    obj.layout171:setTop(535);
-    obj.layout171:setWidth(32);
-    obj.layout171:setHeight(28);
-    obj.layout171:setName("layout171");
+    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout116:setParent(obj.rectangle2);
+    obj.layout116:setLeft(768);
+    obj.layout116:setTop(429);
+    obj.layout116:setWidth(32);
+    obj.layout116:setHeight(28);
+    obj.layout116:setName("layout116");
 
     obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.layout171);
+    obj.edit67:setParent(obj.layout116);
     obj.edit67:setTransparent(true);
     obj.edit67:setFontSize(13);
     obj.edit67:setFontColor("#ffffff");
@@ -3526,38 +2471,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit67:setTop(0);
     obj.edit67:setWidth(32);
     obj.edit67:setHeight(28);
-    obj.edit67:setField("TXTROC");
+    obj.edit67:setField("TXTWAT");
     obj.edit67:setName("edit67");
 
-    obj.layout172 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout172:setParent(obj.rectangle2);
-    obj.layout172:setLeft(245);
-    obj.layout172:setTop(723);
-    obj.layout172:setWidth(15);
-    obj.layout172:setHeight(15);
-    obj.layout172:setName("layout172");
-
-    obj.imageCheckBox103 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox103:setParent(obj.layout172);
-    obj.imageCheckBox103:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox103:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox103:setLeft(0);
-    obj.imageCheckBox103:setTop(0);
-    obj.imageCheckBox103:setWidth(15);
-    obj.imageCheckBox103:setHeight(15);
-    obj.imageCheckBox103:setField("VELP4");
-    obj.imageCheckBox103:setName("imageCheckBox103");
-
-    obj.layout173 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout173:setParent(obj.rectangle2);
-    obj.layout173:setLeft(733);
-    obj.layout173:setTop(429);
-    obj.layout173:setWidth(32);
-    obj.layout173:setHeight(28);
-    obj.layout173:setName("layout173");
+    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout117:setParent(obj.rectangle2);
+    obj.layout117:setLeft(803);
+    obj.layout117:setTop(429);
+    obj.layout117:setWidth(32);
+    obj.layout117:setHeight(28);
+    obj.layout117:setName("layout117");
 
     obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.layout173);
+    obj.edit68:setParent(obj.layout117);
     obj.edit68:setTransparent(true);
     obj.edit68:setFontSize(13);
     obj.edit68:setFontColor("#ffffff");
@@ -3567,19 +2493,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit68:setTop(0);
     obj.edit68:setWidth(32);
     obj.edit68:setHeight(28);
-    obj.edit68:setField("TXTFIR");
+    obj.edit68:setField("TXTELE");
     obj.edit68:setName("edit68");
 
-    obj.layout174 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout174:setParent(obj.rectangle2);
-    obj.layout174:setLeft(733);
-    obj.layout174:setTop(482);
-    obj.layout174:setWidth(32);
-    obj.layout174:setHeight(28);
-    obj.layout174:setName("layout174");
+    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout118:setParent(obj.rectangle2);
+    obj.layout118:setLeft(837);
+    obj.layout118:setTop(429);
+    obj.layout118:setWidth(32);
+    obj.layout118:setHeight(28);
+    obj.layout118:setName("layout118");
 
     obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.layout174);
+    obj.edit69:setParent(obj.layout118);
     obj.edit69:setTransparent(true);
     obj.edit69:setFontSize(13);
     obj.edit69:setFontColor("#ffffff");
@@ -3589,19 +2515,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit69:setTop(0);
     obj.edit69:setWidth(32);
     obj.edit69:setHeight(28);
-    obj.edit69:setField("TXPOI");
+    obj.edit69:setField("TXTGRA");
     obj.edit69:setName("edit69");
 
-    obj.layout175 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout175:setParent(obj.rectangle2);
-    obj.layout175:setLeft(733);
-    obj.layout175:setTop(535);
-    obj.layout175:setWidth(32);
-    obj.layout175:setHeight(28);
-    obj.layout175:setName("layout175");
+    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout119:setParent(obj.rectangle2);
+    obj.layout119:setLeft(873);
+    obj.layout119:setTop(429);
+    obj.layout119:setWidth(32);
+    obj.layout119:setHeight(28);
+    obj.layout119:setName("layout119");
 
     obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.layout175);
+    obj.edit70:setParent(obj.layout119);
     obj.edit70:setTransparent(true);
     obj.edit70:setFontSize(13);
     obj.edit70:setFontColor("#ffffff");
@@ -3611,38 +2537,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit70:setTop(0);
     obj.edit70:setWidth(32);
     obj.edit70:setHeight(28);
-    obj.edit70:setField("TXTGHO");
+    obj.edit70:setField("TXTICE");
     obj.edit70:setName("edit70");
 
-    obj.layout176 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout176:setParent(obj.rectangle2);
-    obj.layout176:setLeft(259);
-    obj.layout176:setTop(723);
-    obj.layout176:setWidth(15);
-    obj.layout176:setHeight(15);
-    obj.layout176:setName("layout176");
-
-    obj.imageCheckBox104 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox104:setParent(obj.layout176);
-    obj.imageCheckBox104:setImageChecked("PokeRPGT/images/pokeball_on.png");
-    obj.imageCheckBox104:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
-    obj.imageCheckBox104:setLeft(0);
-    obj.imageCheckBox104:setTop(0);
-    obj.imageCheckBox104:setWidth(15);
-    obj.imageCheckBox104:setHeight(15);
-    obj.imageCheckBox104:setField("VELP5");
-    obj.imageCheckBox104:setName("imageCheckBox104");
-
-    obj.layout177 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout177:setParent(obj.rectangle2);
-    obj.layout177:setLeft(768);
-    obj.layout177:setTop(429);
-    obj.layout177:setWidth(32);
-    obj.layout177:setHeight(28);
-    obj.layout177:setName("layout177");
+    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout120:setParent(obj.rectangle2);
+    obj.layout120:setLeft(698);
+    obj.layout120:setTop(482);
+    obj.layout120:setWidth(32);
+    obj.layout120:setHeight(28);
+    obj.layout120:setName("layout120");
 
     obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.layout177);
+    obj.edit71:setParent(obj.layout120);
     obj.edit71:setTransparent(true);
     obj.edit71:setFontSize(13);
     obj.edit71:setFontColor("#ffffff");
@@ -3652,19 +2559,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit71:setTop(0);
     obj.edit71:setWidth(32);
     obj.edit71:setHeight(28);
-    obj.edit71:setField("TXTWAT");
+    obj.edit71:setField("TXTFIG");
     obj.edit71:setName("edit71");
 
-    obj.layout178 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout178:setParent(obj.rectangle2);
-    obj.layout178:setLeft(768);
-    obj.layout178:setTop(482);
-    obj.layout178:setWidth(32);
-    obj.layout178:setHeight(28);
-    obj.layout178:setName("layout178");
+    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout121:setParent(obj.rectangle2);
+    obj.layout121:setLeft(733);
+    obj.layout121:setTop(482);
+    obj.layout121:setWidth(32);
+    obj.layout121:setHeight(28);
+    obj.layout121:setName("layout121");
 
     obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit72:setParent(obj.layout178);
+    obj.edit72:setParent(obj.layout121);
     obj.edit72:setTransparent(true);
     obj.edit72:setFontSize(13);
     obj.edit72:setFontColor("#ffffff");
@@ -3674,19 +2581,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit72:setTop(0);
     obj.edit72:setWidth(32);
     obj.edit72:setHeight(28);
-    obj.edit72:setField("TXTGRO");
+    obj.edit72:setField("TXPOI");
     obj.edit72:setName("edit72");
 
-    obj.layout179 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout179:setParent(obj.rectangle2);
-    obj.layout179:setLeft(768);
-    obj.layout179:setTop(535);
-    obj.layout179:setWidth(32);
-    obj.layout179:setHeight(28);
-    obj.layout179:setName("layout179");
+    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout122:setParent(obj.rectangle2);
+    obj.layout122:setLeft(768);
+    obj.layout122:setTop(482);
+    obj.layout122:setWidth(32);
+    obj.layout122:setHeight(28);
+    obj.layout122:setName("layout122");
 
     obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit73:setParent(obj.layout179);
+    obj.edit73:setParent(obj.layout122);
     obj.edit73:setTransparent(true);
     obj.edit73:setFontSize(13);
     obj.edit73:setFontColor("#ffffff");
@@ -3696,19 +2603,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit73:setTop(0);
     obj.edit73:setWidth(32);
     obj.edit73:setHeight(28);
-    obj.edit73:setField("TXTDRA");
+    obj.edit73:setField("TXTGRO");
     obj.edit73:setName("edit73");
 
-    obj.layout180 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout180:setParent(obj.rectangle2);
-    obj.layout180:setLeft(280);
-    obj.layout180:setTop(702);
-    obj.layout180:setWidth(190);
-    obj.layout180:setHeight(24);
-    obj.layout180:setName("layout180");
+    obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout123:setParent(obj.rectangle2);
+    obj.layout123:setLeft(803);
+    obj.layout123:setTop(482);
+    obj.layout123:setWidth(32);
+    obj.layout123:setHeight(28);
+    obj.layout123:setName("layout123");
 
     obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit74:setParent(obj.layout180);
+    obj.edit74:setParent(obj.layout123);
     obj.edit74:setTransparent(true);
     obj.edit74:setFontSize(13);
     obj.edit74:setFontColor("#ffffff");
@@ -3716,21 +2623,21 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit74:setVertTextAlign("center");
     obj.edit74:setLeft(0);
     obj.edit74:setTop(0);
-    obj.edit74:setWidth(190);
-    obj.edit74:setHeight(24);
-    obj.edit74:setField("CondVolateis");
+    obj.edit74:setWidth(32);
+    obj.edit74:setHeight(28);
+    obj.edit74:setField("TXTFLY");
     obj.edit74:setName("edit74");
 
-    obj.layout181 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout181:setParent(obj.rectangle2);
-    obj.layout181:setLeft(803);
-    obj.layout181:setTop(429);
-    obj.layout181:setWidth(32);
-    obj.layout181:setHeight(28);
-    obj.layout181:setName("layout181");
+    obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout124:setParent(obj.rectangle2);
+    obj.layout124:setLeft(837);
+    obj.layout124:setTop(482);
+    obj.layout124:setWidth(32);
+    obj.layout124:setHeight(28);
+    obj.layout124:setName("layout124");
 
     obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit75:setParent(obj.layout181);
+    obj.edit75:setParent(obj.layout124);
     obj.edit75:setTransparent(true);
     obj.edit75:setFontSize(13);
     obj.edit75:setFontColor("#ffffff");
@@ -3740,19 +2647,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit75:setTop(0);
     obj.edit75:setWidth(32);
     obj.edit75:setHeight(28);
-    obj.edit75:setField("TXTELE");
+    obj.edit75:setField("TXTPSY");
     obj.edit75:setName("edit75");
 
-    obj.layout182 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout182:setParent(obj.rectangle2);
-    obj.layout182:setLeft(803);
-    obj.layout182:setTop(482);
-    obj.layout182:setWidth(32);
-    obj.layout182:setHeight(28);
-    obj.layout182:setName("layout182");
+    obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout125:setParent(obj.rectangle2);
+    obj.layout125:setLeft(873);
+    obj.layout125:setTop(482);
+    obj.layout125:setWidth(32);
+    obj.layout125:setHeight(28);
+    obj.layout125:setName("layout125");
 
     obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit76:setParent(obj.layout182);
+    obj.edit76:setParent(obj.layout125);
     obj.edit76:setTransparent(true);
     obj.edit76:setFontSize(13);
     obj.edit76:setFontColor("#ffffff");
@@ -3762,19 +2669,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit76:setTop(0);
     obj.edit76:setWidth(32);
     obj.edit76:setHeight(28);
-    obj.edit76:setField("TXTFLY");
+    obj.edit76:setField("TXTBUG");
     obj.edit76:setName("edit76");
 
-    obj.layout183 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout183:setParent(obj.rectangle2);
-    obj.layout183:setLeft(803);
-    obj.layout183:setTop(535);
-    obj.layout183:setWidth(32);
-    obj.layout183:setHeight(28);
-    obj.layout183:setName("layout183");
+    obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout126:setParent(obj.rectangle2);
+    obj.layout126:setLeft(698);
+    obj.layout126:setTop(535);
+    obj.layout126:setWidth(32);
+    obj.layout126:setHeight(28);
+    obj.layout126:setName("layout126");
 
     obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit77:setParent(obj.layout183);
+    obj.edit77:setParent(obj.layout126);
     obj.edit77:setTransparent(true);
     obj.edit77:setFontSize(13);
     obj.edit77:setFontColor("#ffffff");
@@ -3784,19 +2691,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit77:setTop(0);
     obj.edit77:setWidth(32);
     obj.edit77:setHeight(28);
-    obj.edit77:setField("TXTDAR");
+    obj.edit77:setField("TXTROC");
     obj.edit77:setName("edit77");
 
-    obj.layout184 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout184:setParent(obj.rectangle2);
-    obj.layout184:setLeft(483);
-    obj.layout184:setTop(702);
-    obj.layout184:setWidth(190);
-    obj.layout184:setHeight(24);
-    obj.layout184:setName("layout184");
+    obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout127:setParent(obj.rectangle2);
+    obj.layout127:setLeft(733);
+    obj.layout127:setTop(535);
+    obj.layout127:setWidth(32);
+    obj.layout127:setHeight(28);
+    obj.layout127:setName("layout127");
 
     obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit78:setParent(obj.layout184);
+    obj.edit78:setParent(obj.layout127);
     obj.edit78:setTransparent(true);
     obj.edit78:setFontSize(13);
     obj.edit78:setFontColor("#ffffff");
@@ -3804,21 +2711,21 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit78:setVertTextAlign("center");
     obj.edit78:setLeft(0);
     obj.edit78:setTop(0);
-    obj.edit78:setWidth(190);
-    obj.edit78:setHeight(24);
-    obj.edit78:setField("CondPerm");
+    obj.edit78:setWidth(32);
+    obj.edit78:setHeight(28);
+    obj.edit78:setField("TXTGHO");
     obj.edit78:setName("edit78");
 
-    obj.layout185 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout185:setParent(obj.rectangle2);
-    obj.layout185:setLeft(837);
-    obj.layout185:setTop(429);
-    obj.layout185:setWidth(32);
-    obj.layout185:setHeight(28);
-    obj.layout185:setName("layout185");
+    obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout128:setParent(obj.rectangle2);
+    obj.layout128:setLeft(768);
+    obj.layout128:setTop(535);
+    obj.layout128:setWidth(32);
+    obj.layout128:setHeight(28);
+    obj.layout128:setName("layout128");
 
     obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit79:setParent(obj.layout185);
+    obj.edit79:setParent(obj.layout128);
     obj.edit79:setTransparent(true);
     obj.edit79:setFontSize(13);
     obj.edit79:setFontColor("#ffffff");
@@ -3828,19 +2735,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit79:setTop(0);
     obj.edit79:setWidth(32);
     obj.edit79:setHeight(28);
-    obj.edit79:setField("TXTGRA");
+    obj.edit79:setField("TXTDRA");
     obj.edit79:setName("edit79");
 
-    obj.layout186 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout186:setParent(obj.rectangle2);
-    obj.layout186:setLeft(837);
-    obj.layout186:setTop(482);
-    obj.layout186:setWidth(32);
-    obj.layout186:setHeight(28);
-    obj.layout186:setName("layout186");
+    obj.layout129 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout129:setParent(obj.rectangle2);
+    obj.layout129:setLeft(803);
+    obj.layout129:setTop(535);
+    obj.layout129:setWidth(32);
+    obj.layout129:setHeight(28);
+    obj.layout129:setName("layout129");
 
     obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit80:setParent(obj.layout186);
+    obj.edit80:setParent(obj.layout129);
     obj.edit80:setTransparent(true);
     obj.edit80:setFontSize(13);
     obj.edit80:setFontColor("#ffffff");
@@ -3850,19 +2757,19 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit80:setTop(0);
     obj.edit80:setWidth(32);
     obj.edit80:setHeight(28);
-    obj.edit80:setField("TXTPSY");
+    obj.edit80:setField("TXTDAR");
     obj.edit80:setName("edit80");
 
-    obj.layout187 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout187:setParent(obj.rectangle2);
-    obj.layout187:setLeft(837);
-    obj.layout187:setTop(535);
-    obj.layout187:setWidth(32);
-    obj.layout187:setHeight(28);
-    obj.layout187:setName("layout187");
+    obj.layout130 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout130:setParent(obj.rectangle2);
+    obj.layout130:setLeft(837);
+    obj.layout130:setTop(535);
+    obj.layout130:setWidth(32);
+    obj.layout130:setHeight(28);
+    obj.layout130:setName("layout130");
 
     obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit81:setParent(obj.layout187);
+    obj.edit81:setParent(obj.layout130);
     obj.edit81:setTransparent(true);
     obj.edit81:setFontSize(13);
     obj.edit81:setFontColor("#ffffff");
@@ -3875,16 +2782,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit81:setField("TXTSTE");
     obj.edit81:setName("edit81");
 
-    obj.layout188 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout188:setParent(obj.rectangle2);
-    obj.layout188:setLeft(37);
-    obj.layout188:setTop(779);
-    obj.layout188:setWidth(115);
-    obj.layout188:setHeight(24);
-    obj.layout188:setName("layout188");
+    obj.layout131 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout131:setParent(obj.rectangle2);
+    obj.layout131:setLeft(873);
+    obj.layout131:setTop(535);
+    obj.layout131:setWidth(32);
+    obj.layout131:setHeight(28);
+    obj.layout131:setName("layout131");
 
     obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit82:setParent(obj.layout188);
+    obj.edit82:setParent(obj.layout131);
     obj.edit82:setTransparent(true);
     obj.edit82:setFontSize(13);
     obj.edit82:setFontColor("#ffffff");
@@ -3892,21 +2799,1446 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit82:setVertTextAlign("center");
     obj.edit82:setLeft(0);
     obj.edit82:setTop(0);
-    obj.edit82:setWidth(115);
-    obj.edit82:setHeight(30);
-    obj.edit82:setField("Golpe1");
+    obj.edit82:setWidth(32);
+    obj.edit82:setHeight(28);
+    obj.edit82:setField("TXTFAI");
     obj.edit82:setName("edit82");
+
+    obj.layout132 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout132:setParent(obj.rectangle2);
+    obj.layout132:setLeft(35);
+    obj.layout132:setTop(633);
+    obj.layout132:setWidth(15);
+    obj.layout132:setHeight(15);
+    obj.layout132:setName("layout132");
+
+    obj.imageCheckBox30 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox30:setParent(obj.layout132);
+    obj.imageCheckBox30:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox30:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox30:setLeft(0);
+    obj.imageCheckBox30:setTop(0);
+    obj.imageCheckBox30:setWidth(15);
+    obj.imageCheckBox30:setHeight(15);
+    obj.imageCheckBox30:setField("ATQN5");
+    obj.imageCheckBox30:setName("imageCheckBox30");
+
+    obj.layout133 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout133:setParent(obj.rectangle2);
+    obj.layout133:setLeft(50);
+    obj.layout133:setTop(633);
+    obj.layout133:setWidth(15);
+    obj.layout133:setHeight(15);
+    obj.layout133:setName("layout133");
+
+    obj.imageCheckBox31 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox31:setParent(obj.layout133);
+    obj.imageCheckBox31:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox31:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox31:setLeft(0);
+    obj.imageCheckBox31:setTop(0);
+    obj.imageCheckBox31:setWidth(15);
+    obj.imageCheckBox31:setHeight(15);
+    obj.imageCheckBox31:setField("ATQN4");
+    obj.imageCheckBox31:setName("imageCheckBox31");
+
+    obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout134:setParent(obj.rectangle2);
+    obj.layout134:setLeft(64);
+    obj.layout134:setTop(633);
+    obj.layout134:setWidth(15);
+    obj.layout134:setHeight(15);
+    obj.layout134:setName("layout134");
+
+    obj.imageCheckBox32 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox32:setParent(obj.layout134);
+    obj.imageCheckBox32:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox32:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox32:setLeft(0);
+    obj.imageCheckBox32:setTop(0);
+    obj.imageCheckBox32:setWidth(15);
+    obj.imageCheckBox32:setHeight(15);
+    obj.imageCheckBox32:setField("ATQN3");
+    obj.imageCheckBox32:setName("imageCheckBox32");
+
+    obj.layout135 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout135:setParent(obj.rectangle2);
+    obj.layout135:setLeft(78);
+    obj.layout135:setTop(633);
+    obj.layout135:setWidth(15);
+    obj.layout135:setHeight(15);
+    obj.layout135:setName("layout135");
+
+    obj.imageCheckBox33 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox33:setParent(obj.layout135);
+    obj.imageCheckBox33:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox33:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox33:setLeft(0);
+    obj.imageCheckBox33:setTop(0);
+    obj.imageCheckBox33:setWidth(15);
+    obj.imageCheckBox33:setHeight(15);
+    obj.imageCheckBox33:setField("ATQN2");
+    obj.imageCheckBox33:setName("imageCheckBox33");
+
+    obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout136:setParent(obj.rectangle2);
+    obj.layout136:setLeft(92);
+    obj.layout136:setTop(633);
+    obj.layout136:setWidth(15);
+    obj.layout136:setHeight(15);
+    obj.layout136:setName("layout136");
+
+    obj.imageCheckBox34 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox34:setParent(obj.layout136);
+    obj.imageCheckBox34:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox34:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox34:setLeft(0);
+    obj.imageCheckBox34:setTop(0);
+    obj.imageCheckBox34:setWidth(15);
+    obj.imageCheckBox34:setHeight(15);
+    obj.imageCheckBox34:setField("ATQN1");
+    obj.imageCheckBox34:setName("imageCheckBox34");
+
+    obj.layout137 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout137:setParent(obj.rectangle2);
+    obj.layout137:setLeft(203);
+    obj.layout137:setTop(633);
+    obj.layout137:setWidth(15);
+    obj.layout137:setHeight(15);
+    obj.layout137:setName("layout137");
+
+    obj.imageCheckBox35 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox35:setParent(obj.layout137);
+    obj.imageCheckBox35:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox35:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox35:setLeft(0);
+    obj.imageCheckBox35:setTop(0);
+    obj.imageCheckBox35:setWidth(15);
+    obj.imageCheckBox35:setHeight(15);
+    obj.imageCheckBox35:setField("ATQP1");
+    obj.imageCheckBox35:setName("imageCheckBox35");
+
+    obj.layout138 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout138:setParent(obj.rectangle2);
+    obj.layout138:setLeft(217 );
+    obj.layout138:setTop(633);
+    obj.layout138:setWidth(15);
+    obj.layout138:setHeight(15);
+    obj.layout138:setName("layout138");
+
+    obj.imageCheckBox36 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox36:setParent(obj.layout138);
+    obj.imageCheckBox36:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox36:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox36:setLeft(0);
+    obj.imageCheckBox36:setTop(0);
+    obj.imageCheckBox36:setWidth(15);
+    obj.imageCheckBox36:setHeight(15);
+    obj.imageCheckBox36:setField("ATQP2");
+    obj.imageCheckBox36:setName("imageCheckBox36");
+
+    obj.layout139 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout139:setParent(obj.rectangle2);
+    obj.layout139:setLeft(231);
+    obj.layout139:setTop(633);
+    obj.layout139:setWidth(15);
+    obj.layout139:setHeight(15);
+    obj.layout139:setName("layout139");
+
+    obj.imageCheckBox37 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox37:setParent(obj.layout139);
+    obj.imageCheckBox37:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox37:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox37:setLeft(0);
+    obj.imageCheckBox37:setTop(0);
+    obj.imageCheckBox37:setWidth(15);
+    obj.imageCheckBox37:setHeight(15);
+    obj.imageCheckBox37:setField("ATQP3");
+    obj.imageCheckBox37:setName("imageCheckBox37");
+
+    obj.layout140 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout140:setParent(obj.rectangle2);
+    obj.layout140:setLeft(245);
+    obj.layout140:setTop(633);
+    obj.layout140:setWidth(15);
+    obj.layout140:setHeight(15);
+    obj.layout140:setName("layout140");
+
+    obj.imageCheckBox38 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox38:setParent(obj.layout140);
+    obj.imageCheckBox38:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox38:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox38:setLeft(0);
+    obj.imageCheckBox38:setTop(0);
+    obj.imageCheckBox38:setWidth(15);
+    obj.imageCheckBox38:setHeight(15);
+    obj.imageCheckBox38:setField("ATQP4");
+    obj.imageCheckBox38:setName("imageCheckBox38");
+
+    obj.layout141 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout141:setParent(obj.rectangle2);
+    obj.layout141:setLeft(259);
+    obj.layout141:setTop(633);
+    obj.layout141:setWidth(15);
+    obj.layout141:setHeight(15);
+    obj.layout141:setName("layout141");
+
+    obj.imageCheckBox39 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox39:setParent(obj.layout141);
+    obj.imageCheckBox39:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox39:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox39:setLeft(0);
+    obj.imageCheckBox39:setTop(0);
+    obj.imageCheckBox39:setWidth(15);
+    obj.imageCheckBox39:setHeight(15);
+    obj.imageCheckBox39:setField("ATQP5");
+    obj.imageCheckBox39:setName("imageCheckBox39");
+
+    obj.layout142 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout142:setParent(obj.rectangle2);
+    obj.layout142:setLeft(356);
+    obj.layout142:setTop(662);
+    obj.layout142:setWidth(15);
+    obj.layout142:setHeight(15);
+    obj.layout142:setName("layout142");
+
+    obj.imageCheckBox40 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox40:setParent(obj.layout142);
+    obj.imageCheckBox40:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox40:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox40:setLeft(0);
+    obj.imageCheckBox40:setTop(0);
+    obj.imageCheckBox40:setWidth(15);
+    obj.imageCheckBox40:setHeight(15);
+    obj.imageCheckBox40:setField("PREN5");
+    obj.imageCheckBox40:setName("imageCheckBox40");
+
+    obj.layout143 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout143:setParent(obj.rectangle2);
+    obj.layout143:setLeft(370);
+    obj.layout143:setTop(662);
+    obj.layout143:setWidth(15);
+    obj.layout143:setHeight(15);
+    obj.layout143:setName("layout143");
+
+    obj.imageCheckBox41 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox41:setParent(obj.layout143);
+    obj.imageCheckBox41:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox41:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox41:setLeft(0);
+    obj.imageCheckBox41:setTop(0);
+    obj.imageCheckBox41:setWidth(15);
+    obj.imageCheckBox41:setHeight(15);
+    obj.imageCheckBox41:setField("PREN4");
+    obj.imageCheckBox41:setName("imageCheckBox41");
+
+    obj.layout144 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout144:setParent(obj.rectangle2);
+    obj.layout144:setLeft(384);
+    obj.layout144:setTop(662);
+    obj.layout144:setWidth(15);
+    obj.layout144:setHeight(15);
+    obj.layout144:setName("layout144");
+
+    obj.imageCheckBox42 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox42:setParent(obj.layout144);
+    obj.imageCheckBox42:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox42:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox42:setLeft(0);
+    obj.imageCheckBox42:setTop(0);
+    obj.imageCheckBox42:setWidth(15);
+    obj.imageCheckBox42:setHeight(15);
+    obj.imageCheckBox42:setField("PREN3");
+    obj.imageCheckBox42:setName("imageCheckBox42");
+
+    obj.layout145 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout145:setParent(obj.rectangle2);
+    obj.layout145:setLeft(398);
+    obj.layout145:setTop(662);
+    obj.layout145:setWidth(15);
+    obj.layout145:setHeight(15);
+    obj.layout145:setName("layout145");
+
+    obj.imageCheckBox43 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox43:setParent(obj.layout145);
+    obj.imageCheckBox43:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox43:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox43:setLeft(0);
+    obj.imageCheckBox43:setTop(0);
+    obj.imageCheckBox43:setWidth(15);
+    obj.imageCheckBox43:setHeight(15);
+    obj.imageCheckBox43:setField("PREN2");
+    obj.imageCheckBox43:setName("imageCheckBox43");
+
+    obj.layout146 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout146:setParent(obj.rectangle2);
+    obj.layout146:setLeft(412);
+    obj.layout146:setTop(662);
+    obj.layout146:setWidth(15);
+    obj.layout146:setHeight(15);
+    obj.layout146:setName("layout146");
+
+    obj.imageCheckBox44 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox44:setParent(obj.layout146);
+    obj.imageCheckBox44:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox44:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox44:setLeft(0);
+    obj.imageCheckBox44:setTop(0);
+    obj.imageCheckBox44:setWidth(15);
+    obj.imageCheckBox44:setHeight(15);
+    obj.imageCheckBox44:setField("PREN1");
+    obj.imageCheckBox44:setName("imageCheckBox44");
+
+    obj.layout147 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout147:setParent(obj.rectangle2);
+    obj.layout147:setLeft(524);
+    obj.layout147:setTop(662);
+    obj.layout147:setWidth(15);
+    obj.layout147:setHeight(15);
+    obj.layout147:setName("layout147");
+
+    obj.imageCheckBox45 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox45:setParent(obj.layout147);
+    obj.imageCheckBox45:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox45:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox45:setLeft(0);
+    obj.imageCheckBox45:setTop(0);
+    obj.imageCheckBox45:setWidth(15);
+    obj.imageCheckBox45:setHeight(15);
+    obj.imageCheckBox45:setField("PREP1");
+    obj.imageCheckBox45:setName("imageCheckBox45");
+
+    obj.layout148 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout148:setParent(obj.rectangle2);
+    obj.layout148:setLeft(538);
+    obj.layout148:setTop(662);
+    obj.layout148:setWidth(15);
+    obj.layout148:setHeight(15);
+    obj.layout148:setName("layout148");
+
+    obj.imageCheckBox46 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox46:setParent(obj.layout148);
+    obj.imageCheckBox46:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox46:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox46:setLeft(0);
+    obj.imageCheckBox46:setTop(0);
+    obj.imageCheckBox46:setWidth(15);
+    obj.imageCheckBox46:setHeight(15);
+    obj.imageCheckBox46:setField("PREP2");
+    obj.imageCheckBox46:setName("imageCheckBox46");
+
+    obj.layout149 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout149:setParent(obj.rectangle2);
+    obj.layout149:setLeft(552);
+    obj.layout149:setTop(662);
+    obj.layout149:setWidth(15);
+    obj.layout149:setHeight(15);
+    obj.layout149:setName("layout149");
+
+    obj.imageCheckBox47 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox47:setParent(obj.layout149);
+    obj.imageCheckBox47:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox47:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox47:setLeft(0);
+    obj.imageCheckBox47:setTop(0);
+    obj.imageCheckBox47:setWidth(15);
+    obj.imageCheckBox47:setHeight(15);
+    obj.imageCheckBox47:setField("PREP3");
+    obj.imageCheckBox47:setName("imageCheckBox47");
+
+    obj.layout150 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout150:setParent(obj.rectangle2);
+    obj.layout150:setLeft(566);
+    obj.layout150:setTop(662);
+    obj.layout150:setWidth(15);
+    obj.layout150:setHeight(15);
+    obj.layout150:setName("layout150");
+
+    obj.imageCheckBox48 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox48:setParent(obj.layout150);
+    obj.imageCheckBox48:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox48:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox48:setLeft(0);
+    obj.imageCheckBox48:setTop(0);
+    obj.imageCheckBox48:setWidth(15);
+    obj.imageCheckBox48:setHeight(15);
+    obj.imageCheckBox48:setField("PREP4");
+    obj.imageCheckBox48:setName("imageCheckBox48");
+
+    obj.layout151 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout151:setParent(obj.rectangle2);
+    obj.layout151:setLeft(580);
+    obj.layout151:setTop(662);
+    obj.layout151:setWidth(15);
+    obj.layout151:setHeight(15);
+    obj.layout151:setName("layout151");
+
+    obj.imageCheckBox49 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox49:setParent(obj.layout151);
+    obj.imageCheckBox49:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox49:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox49:setLeft(0);
+    obj.imageCheckBox49:setTop(0);
+    obj.imageCheckBox49:setWidth(15);
+    obj.imageCheckBox49:setHeight(15);
+    obj.imageCheckBox49:setField("PREP5");
+    obj.imageCheckBox49:setName("imageCheckBox49");
+
+    obj.layout152 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout152:setParent(obj.rectangle2);
+    obj.layout152:setLeft(442);
+    obj.layout152:setTop(640);
+    obj.layout152:setWidth(15);
+    obj.layout152:setHeight(15);
+    obj.layout152:setName("layout152");
+
+    obj.imageCheckBox50 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox50:setParent(obj.layout152);
+    obj.imageCheckBox50:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox50:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox50:setLeft(0);
+    obj.imageCheckBox50:setTop(0);
+    obj.imageCheckBox50:setWidth(15);
+    obj.imageCheckBox50:setHeight(15);
+    obj.imageCheckBox50:setField("CRIT1");
+    obj.imageCheckBox50:setName("imageCheckBox50");
+
+    obj.layout153 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout153:setParent(obj.rectangle2);
+    obj.layout153:setLeft(456);
+    obj.layout153:setTop(640);
+    obj.layout153:setWidth(15);
+    obj.layout153:setHeight(15);
+    obj.layout153:setName("layout153");
+
+    obj.imageCheckBox51 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox51:setParent(obj.layout153);
+    obj.imageCheckBox51:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox51:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox51:setLeft(0);
+    obj.imageCheckBox51:setTop(0);
+    obj.imageCheckBox51:setWidth(15);
+    obj.imageCheckBox51:setHeight(15);
+    obj.imageCheckBox51:setField("CRIT2");
+    obj.imageCheckBox51:setName("imageCheckBox51");
+
+    obj.layout154 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout154:setParent(obj.rectangle2);
+    obj.layout154:setLeft(470);
+    obj.layout154:setTop(640);
+    obj.layout154:setWidth(15);
+    obj.layout154:setHeight(15);
+    obj.layout154:setName("layout154");
+
+    obj.imageCheckBox52 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox52:setParent(obj.layout154);
+    obj.imageCheckBox52:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox52:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox52:setLeft(0);
+    obj.imageCheckBox52:setTop(0);
+    obj.imageCheckBox52:setWidth(15);
+    obj.imageCheckBox52:setHeight(15);
+    obj.imageCheckBox52:setField("CRIT3");
+    obj.imageCheckBox52:setName("imageCheckBox52");
+
+    obj.layout155 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout155:setParent(obj.rectangle2);
+    obj.layout155:setLeft(484);
+    obj.layout155:setTop(640);
+    obj.layout155:setWidth(15);
+    obj.layout155:setHeight(15);
+    obj.layout155:setName("layout155");
+
+    obj.imageCheckBox53 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox53:setParent(obj.layout155);
+    obj.imageCheckBox53:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox53:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox53:setLeft(0);
+    obj.imageCheckBox53:setTop(0);
+    obj.imageCheckBox53:setWidth(15);
+    obj.imageCheckBox53:setHeight(15);
+    obj.imageCheckBox53:setField("CRIT4");
+    obj.imageCheckBox53:setName("imageCheckBox53");
+
+    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout156:setParent(obj.rectangle2);
+    obj.layout156:setLeft(498);
+    obj.layout156:setTop(640);
+    obj.layout156:setWidth(15);
+    obj.layout156:setHeight(15);
+    obj.layout156:setName("layout156");
+
+    obj.imageCheckBox54 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox54:setParent(obj.layout156);
+    obj.imageCheckBox54:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox54:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox54:setLeft(0);
+    obj.imageCheckBox54:setTop(0);
+    obj.imageCheckBox54:setWidth(15);
+    obj.imageCheckBox54:setHeight(15);
+    obj.imageCheckBox54:setField("CRIT5");
+    obj.imageCheckBox54:setName("imageCheckBox54");
+
+    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout157:setParent(obj.rectangle2);
+    obj.layout157:setLeft(35);
+    obj.layout157:setTop(656);
+    obj.layout157:setWidth(15);
+    obj.layout157:setHeight(15);
+    obj.layout157:setName("layout157");
+
+    obj.imageCheckBox55 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox55:setParent(obj.layout157);
+    obj.imageCheckBox55:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox55:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox55:setLeft(0);
+    obj.imageCheckBox55:setTop(0);
+    obj.imageCheckBox55:setWidth(15);
+    obj.imageCheckBox55:setHeight(15);
+    obj.imageCheckBox55:setField("DEFN5");
+    obj.imageCheckBox55:setName("imageCheckBox55");
+
+    obj.layout158 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout158:setParent(obj.rectangle2);
+    obj.layout158:setLeft(50);
+    obj.layout158:setTop(656);
+    obj.layout158:setWidth(15);
+    obj.layout158:setHeight(15);
+    obj.layout158:setName("layout158");
+
+    obj.imageCheckBox56 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox56:setParent(obj.layout158);
+    obj.imageCheckBox56:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox56:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox56:setLeft(0);
+    obj.imageCheckBox56:setTop(0);
+    obj.imageCheckBox56:setWidth(15);
+    obj.imageCheckBox56:setHeight(15);
+    obj.imageCheckBox56:setField("DEFN4");
+    obj.imageCheckBox56:setName("imageCheckBox56");
+
+    obj.layout159 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout159:setParent(obj.rectangle2);
+    obj.layout159:setLeft(64);
+    obj.layout159:setTop(656);
+    obj.layout159:setWidth(15);
+    obj.layout159:setHeight(15);
+    obj.layout159:setName("layout159");
+
+    obj.imageCheckBox57 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox57:setParent(obj.layout159);
+    obj.imageCheckBox57:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox57:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox57:setLeft(0);
+    obj.imageCheckBox57:setTop(0);
+    obj.imageCheckBox57:setWidth(15);
+    obj.imageCheckBox57:setHeight(15);
+    obj.imageCheckBox57:setField("DEFN3");
+    obj.imageCheckBox57:setName("imageCheckBox57");
+
+    obj.layout160 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout160:setParent(obj.rectangle2);
+    obj.layout160:setLeft(78);
+    obj.layout160:setTop(656);
+    obj.layout160:setWidth(15);
+    obj.layout160:setHeight(15);
+    obj.layout160:setName("layout160");
+
+    obj.imageCheckBox58 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox58:setParent(obj.layout160);
+    obj.imageCheckBox58:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox58:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox58:setLeft(0);
+    obj.imageCheckBox58:setTop(0);
+    obj.imageCheckBox58:setWidth(15);
+    obj.imageCheckBox58:setHeight(15);
+    obj.imageCheckBox58:setField("DEFN2");
+    obj.imageCheckBox58:setName("imageCheckBox58");
+
+    obj.layout161 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout161:setParent(obj.rectangle2);
+    obj.layout161:setLeft(92);
+    obj.layout161:setTop(656);
+    obj.layout161:setWidth(15);
+    obj.layout161:setHeight(15);
+    obj.layout161:setName("layout161");
+
+    obj.imageCheckBox59 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox59:setParent(obj.layout161);
+    obj.imageCheckBox59:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox59:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox59:setLeft(0);
+    obj.imageCheckBox59:setTop(0);
+    obj.imageCheckBox59:setWidth(15);
+    obj.imageCheckBox59:setHeight(15);
+    obj.imageCheckBox59:setField("DEFN1");
+    obj.imageCheckBox59:setName("imageCheckBox59");
+
+    obj.layout162 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout162:setParent(obj.rectangle2);
+    obj.layout162:setLeft(203);
+    obj.layout162:setTop(656);
+    obj.layout162:setWidth(15);
+    obj.layout162:setHeight(15);
+    obj.layout162:setName("layout162");
+
+    obj.imageCheckBox60 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox60:setParent(obj.layout162);
+    obj.imageCheckBox60:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox60:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox60:setLeft(0);
+    obj.imageCheckBox60:setTop(0);
+    obj.imageCheckBox60:setWidth(15);
+    obj.imageCheckBox60:setHeight(15);
+    obj.imageCheckBox60:setField("DEFP1");
+    obj.imageCheckBox60:setName("imageCheckBox60");
+
+    obj.layout163 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout163:setParent(obj.rectangle2);
+    obj.layout163:setLeft(217);
+    obj.layout163:setTop(656);
+    obj.layout163:setWidth(15);
+    obj.layout163:setHeight(15);
+    obj.layout163:setName("layout163");
+
+    obj.imageCheckBox61 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox61:setParent(obj.layout163);
+    obj.imageCheckBox61:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox61:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox61:setLeft(0);
+    obj.imageCheckBox61:setTop(0);
+    obj.imageCheckBox61:setWidth(15);
+    obj.imageCheckBox61:setHeight(15);
+    obj.imageCheckBox61:setField("DEFP2");
+    obj.imageCheckBox61:setName("imageCheckBox61");
+
+    obj.layout164 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout164:setParent(obj.rectangle2);
+    obj.layout164:setLeft(231);
+    obj.layout164:setTop(656);
+    obj.layout164:setWidth(15);
+    obj.layout164:setHeight(15);
+    obj.layout164:setName("layout164");
+
+    obj.imageCheckBox62 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox62:setParent(obj.layout164);
+    obj.imageCheckBox62:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox62:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox62:setLeft(0);
+    obj.imageCheckBox62:setTop(0);
+    obj.imageCheckBox62:setWidth(15);
+    obj.imageCheckBox62:setHeight(15);
+    obj.imageCheckBox62:setField("DEFP3");
+    obj.imageCheckBox62:setName("imageCheckBox62");
+
+    obj.layout165 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout165:setParent(obj.rectangle2);
+    obj.layout165:setLeft(245);
+    obj.layout165:setTop(656);
+    obj.layout165:setWidth(15);
+    obj.layout165:setHeight(15);
+    obj.layout165:setName("layout165");
+
+    obj.imageCheckBox63 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox63:setParent(obj.layout165);
+    obj.imageCheckBox63:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox63:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox63:setLeft(0);
+    obj.imageCheckBox63:setTop(0);
+    obj.imageCheckBox63:setWidth(15);
+    obj.imageCheckBox63:setHeight(15);
+    obj.imageCheckBox63:setField("DEFP4");
+    obj.imageCheckBox63:setName("imageCheckBox63");
+
+    obj.layout166 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout166:setParent(obj.rectangle2);
+    obj.layout166:setLeft(259);
+    obj.layout166:setTop(656);
+    obj.layout166:setWidth(15);
+    obj.layout166:setHeight(15);
+    obj.layout166:setName("layout166");
+
+    obj.imageCheckBox64 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox64:setParent(obj.layout166);
+    obj.imageCheckBox64:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox64:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox64:setLeft(0);
+    obj.imageCheckBox64:setTop(0);
+    obj.imageCheckBox64:setWidth(15);
+    obj.imageCheckBox64:setHeight(15);
+    obj.imageCheckBox64:setField("DEFP5");
+    obj.imageCheckBox64:setName("imageCheckBox64");
+
+    obj.layout167 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout167:setParent(obj.rectangle2);
+    obj.layout167:setLeft(356);
+    obj.layout167:setTop(686);
+    obj.layout167:setWidth(15);
+    obj.layout167:setHeight(15);
+    obj.layout167:setName("layout167");
+
+    obj.imageCheckBox65 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox65:setParent(obj.layout167);
+    obj.imageCheckBox65:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox65:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox65:setLeft(0);
+    obj.imageCheckBox65:setTop(0);
+    obj.imageCheckBox65:setWidth(15);
+    obj.imageCheckBox65:setHeight(15);
+    obj.imageCheckBox65:setField("EVAN5");
+    obj.imageCheckBox65:setName("imageCheckBox65");
+
+    obj.layout168 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout168:setParent(obj.rectangle2);
+    obj.layout168:setLeft(370);
+    obj.layout168:setTop(686);
+    obj.layout168:setWidth(15);
+    obj.layout168:setHeight(15);
+    obj.layout168:setName("layout168");
+
+    obj.imageCheckBox66 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox66:setParent(obj.layout168);
+    obj.imageCheckBox66:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox66:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox66:setLeft(0);
+    obj.imageCheckBox66:setTop(0);
+    obj.imageCheckBox66:setWidth(15);
+    obj.imageCheckBox66:setHeight(15);
+    obj.imageCheckBox66:setField("EVAN4");
+    obj.imageCheckBox66:setName("imageCheckBox66");
+
+    obj.layout169 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout169:setParent(obj.rectangle2);
+    obj.layout169:setLeft(384);
+    obj.layout169:setTop(686);
+    obj.layout169:setWidth(15);
+    obj.layout169:setHeight(15);
+    obj.layout169:setName("layout169");
+
+    obj.imageCheckBox67 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox67:setParent(obj.layout169);
+    obj.imageCheckBox67:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox67:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox67:setLeft(0);
+    obj.imageCheckBox67:setTop(0);
+    obj.imageCheckBox67:setWidth(15);
+    obj.imageCheckBox67:setHeight(15);
+    obj.imageCheckBox67:setField("EVAN3");
+    obj.imageCheckBox67:setName("imageCheckBox67");
+
+    obj.layout170 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout170:setParent(obj.rectangle2);
+    obj.layout170:setLeft(398);
+    obj.layout170:setTop(686);
+    obj.layout170:setWidth(15);
+    obj.layout170:setHeight(15);
+    obj.layout170:setName("layout170");
+
+    obj.imageCheckBox68 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox68:setParent(obj.layout170);
+    obj.imageCheckBox68:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox68:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox68:setLeft(0);
+    obj.imageCheckBox68:setTop(0);
+    obj.imageCheckBox68:setWidth(15);
+    obj.imageCheckBox68:setHeight(15);
+    obj.imageCheckBox68:setField("EVAN2");
+    obj.imageCheckBox68:setName("imageCheckBox68");
+
+    obj.layout171 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout171:setParent(obj.rectangle2);
+    obj.layout171:setLeft(412);
+    obj.layout171:setTop(686);
+    obj.layout171:setWidth(15);
+    obj.layout171:setHeight(15);
+    obj.layout171:setName("layout171");
+
+    obj.imageCheckBox69 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox69:setParent(obj.layout171);
+    obj.imageCheckBox69:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox69:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox69:setLeft(0);
+    obj.imageCheckBox69:setTop(0);
+    obj.imageCheckBox69:setWidth(15);
+    obj.imageCheckBox69:setHeight(15);
+    obj.imageCheckBox69:setField("EVAN1");
+    obj.imageCheckBox69:setName("imageCheckBox69");
+
+    obj.layout172 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout172:setParent(obj.rectangle2);
+    obj.layout172:setLeft(524);
+    obj.layout172:setTop(686);
+    obj.layout172:setWidth(15);
+    obj.layout172:setHeight(15);
+    obj.layout172:setName("layout172");
+
+    obj.imageCheckBox70 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox70:setParent(obj.layout172);
+    obj.imageCheckBox70:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox70:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox70:setLeft(0);
+    obj.imageCheckBox70:setTop(0);
+    obj.imageCheckBox70:setWidth(15);
+    obj.imageCheckBox70:setHeight(15);
+    obj.imageCheckBox70:setField("EVAP1");
+    obj.imageCheckBox70:setName("imageCheckBox70");
+
+    obj.layout173 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout173:setParent(obj.rectangle2);
+    obj.layout173:setLeft(538);
+    obj.layout173:setTop(686);
+    obj.layout173:setWidth(15);
+    obj.layout173:setHeight(15);
+    obj.layout173:setName("layout173");
+
+    obj.imageCheckBox71 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox71:setParent(obj.layout173);
+    obj.imageCheckBox71:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox71:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox71:setLeft(0);
+    obj.imageCheckBox71:setTop(0);
+    obj.imageCheckBox71:setWidth(15);
+    obj.imageCheckBox71:setHeight(15);
+    obj.imageCheckBox71:setField("EVAP2");
+    obj.imageCheckBox71:setName("imageCheckBox71");
+
+    obj.layout174 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout174:setParent(obj.rectangle2);
+    obj.layout174:setLeft(552);
+    obj.layout174:setTop(686);
+    obj.layout174:setWidth(15);
+    obj.layout174:setHeight(15);
+    obj.layout174:setName("layout174");
+
+    obj.imageCheckBox72 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox72:setParent(obj.layout174);
+    obj.imageCheckBox72:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox72:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox72:setLeft(0);
+    obj.imageCheckBox72:setTop(0);
+    obj.imageCheckBox72:setWidth(15);
+    obj.imageCheckBox72:setHeight(15);
+    obj.imageCheckBox72:setField("EVAP3");
+    obj.imageCheckBox72:setName("imageCheckBox72");
+
+    obj.layout175 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout175:setParent(obj.rectangle2);
+    obj.layout175:setLeft(566);
+    obj.layout175:setTop(686);
+    obj.layout175:setWidth(15);
+    obj.layout175:setHeight(15);
+    obj.layout175:setName("layout175");
+
+    obj.imageCheckBox73 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox73:setParent(obj.layout175);
+    obj.imageCheckBox73:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox73:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox73:setLeft(0);
+    obj.imageCheckBox73:setTop(0);
+    obj.imageCheckBox73:setWidth(15);
+    obj.imageCheckBox73:setHeight(15);
+    obj.imageCheckBox73:setField("EVAP4");
+    obj.imageCheckBox73:setName("imageCheckBox73");
+
+    obj.layout176 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout176:setParent(obj.rectangle2);
+    obj.layout176:setLeft(580);
+    obj.layout176:setTop(686);
+    obj.layout176:setWidth(15);
+    obj.layout176:setHeight(15);
+    obj.layout176:setName("layout176");
+
+    obj.imageCheckBox74 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox74:setParent(obj.layout176);
+    obj.imageCheckBox74:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox74:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox74:setLeft(0);
+    obj.imageCheckBox74:setTop(0);
+    obj.imageCheckBox74:setWidth(15);
+    obj.imageCheckBox74:setHeight(15);
+    obj.imageCheckBox74:setField("EVAP5");
+    obj.imageCheckBox74:setName("imageCheckBox74");
+
+    obj.layout177 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout177:setParent(obj.rectangle2);
+    obj.layout177:setLeft(35);
+    obj.layout177:setTop(678);
+    obj.layout177:setWidth(15);
+    obj.layout177:setHeight(15);
+    obj.layout177:setName("layout177");
+
+    obj.imageCheckBox75 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox75:setParent(obj.layout177);
+    obj.imageCheckBox75:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox75:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox75:setLeft(0);
+    obj.imageCheckBox75:setTop(0);
+    obj.imageCheckBox75:setWidth(15);
+    obj.imageCheckBox75:setHeight(15);
+    obj.imageCheckBox75:setField("ATEN5");
+    obj.imageCheckBox75:setName("imageCheckBox75");
+
+    obj.layout178 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout178:setParent(obj.rectangle2);
+    obj.layout178:setLeft(50);
+    obj.layout178:setTop(678);
+    obj.layout178:setWidth(15);
+    obj.layout178:setHeight(15);
+    obj.layout178:setName("layout178");
+
+    obj.imageCheckBox76 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox76:setParent(obj.layout178);
+    obj.imageCheckBox76:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox76:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox76:setLeft(0);
+    obj.imageCheckBox76:setTop(0);
+    obj.imageCheckBox76:setWidth(15);
+    obj.imageCheckBox76:setHeight(15);
+    obj.imageCheckBox76:setField("ATEN4");
+    obj.imageCheckBox76:setName("imageCheckBox76");
+
+    obj.layout179 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout179:setParent(obj.rectangle2);
+    obj.layout179:setLeft(64);
+    obj.layout179:setTop(678);
+    obj.layout179:setWidth(15);
+    obj.layout179:setHeight(15);
+    obj.layout179:setName("layout179");
+
+    obj.imageCheckBox77 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox77:setParent(obj.layout179);
+    obj.imageCheckBox77:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox77:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox77:setLeft(0);
+    obj.imageCheckBox77:setTop(0);
+    obj.imageCheckBox77:setWidth(15);
+    obj.imageCheckBox77:setHeight(15);
+    obj.imageCheckBox77:setField("ATEN3");
+    obj.imageCheckBox77:setName("imageCheckBox77");
+
+    obj.layout180 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout180:setParent(obj.rectangle2);
+    obj.layout180:setLeft(78);
+    obj.layout180:setTop(678);
+    obj.layout180:setWidth(15);
+    obj.layout180:setHeight(15);
+    obj.layout180:setName("layout180");
+
+    obj.imageCheckBox78 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox78:setParent(obj.layout180);
+    obj.imageCheckBox78:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox78:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox78:setLeft(0);
+    obj.imageCheckBox78:setTop(0);
+    obj.imageCheckBox78:setWidth(15);
+    obj.imageCheckBox78:setHeight(15);
+    obj.imageCheckBox78:setField("ATEN2");
+    obj.imageCheckBox78:setName("imageCheckBox78");
+
+    obj.layout181 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout181:setParent(obj.rectangle2);
+    obj.layout181:setLeft(92);
+    obj.layout181:setTop(678);
+    obj.layout181:setWidth(15);
+    obj.layout181:setHeight(15);
+    obj.layout181:setName("layout181");
+
+    obj.imageCheckBox79 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox79:setParent(obj.layout181);
+    obj.imageCheckBox79:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox79:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox79:setLeft(0);
+    obj.imageCheckBox79:setTop(0);
+    obj.imageCheckBox79:setWidth(15);
+    obj.imageCheckBox79:setHeight(15);
+    obj.imageCheckBox79:setField("ATEN1");
+    obj.imageCheckBox79:setName("imageCheckBox79");
+
+    obj.layout182 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout182:setParent(obj.rectangle2);
+    obj.layout182:setLeft(203);
+    obj.layout182:setTop(678);
+    obj.layout182:setWidth(15);
+    obj.layout182:setHeight(15);
+    obj.layout182:setName("layout182");
+
+    obj.imageCheckBox80 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox80:setParent(obj.layout182);
+    obj.imageCheckBox80:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox80:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox80:setLeft(0);
+    obj.imageCheckBox80:setTop(0);
+    obj.imageCheckBox80:setWidth(15);
+    obj.imageCheckBox80:setHeight(15);
+    obj.imageCheckBox80:setField("ATEP1");
+    obj.imageCheckBox80:setName("imageCheckBox80");
+
+    obj.layout183 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout183:setParent(obj.rectangle2);
+    obj.layout183:setLeft(217);
+    obj.layout183:setTop(678);
+    obj.layout183:setWidth(15);
+    obj.layout183:setHeight(15);
+    obj.layout183:setName("layout183");
+
+    obj.imageCheckBox81 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox81:setParent(obj.layout183);
+    obj.imageCheckBox81:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox81:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox81:setLeft(0);
+    obj.imageCheckBox81:setTop(0);
+    obj.imageCheckBox81:setWidth(15);
+    obj.imageCheckBox81:setHeight(15);
+    obj.imageCheckBox81:setField("ATEP2");
+    obj.imageCheckBox81:setName("imageCheckBox81");
+
+    obj.layout184 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout184:setParent(obj.rectangle2);
+    obj.layout184:setLeft(231);
+    obj.layout184:setTop(678);
+    obj.layout184:setWidth(15);
+    obj.layout184:setHeight(15);
+    obj.layout184:setName("layout184");
+
+    obj.imageCheckBox82 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox82:setParent(obj.layout184);
+    obj.imageCheckBox82:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox82:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox82:setLeft(0);
+    obj.imageCheckBox82:setTop(0);
+    obj.imageCheckBox82:setWidth(15);
+    obj.imageCheckBox82:setHeight(15);
+    obj.imageCheckBox82:setField("ATEP3");
+    obj.imageCheckBox82:setName("imageCheckBox82");
+
+    obj.layout185 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout185:setParent(obj.rectangle2);
+    obj.layout185:setLeft(245);
+    obj.layout185:setTop(678);
+    obj.layout185:setWidth(15);
+    obj.layout185:setHeight(15);
+    obj.layout185:setName("layout185");
+
+    obj.imageCheckBox83 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox83:setParent(obj.layout185);
+    obj.imageCheckBox83:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox83:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox83:setLeft(0);
+    obj.imageCheckBox83:setTop(0);
+    obj.imageCheckBox83:setWidth(15);
+    obj.imageCheckBox83:setHeight(15);
+    obj.imageCheckBox83:setField("ATEP4");
+    obj.imageCheckBox83:setName("imageCheckBox83");
+
+    obj.layout186 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout186:setParent(obj.rectangle2);
+    obj.layout186:setLeft(259);
+    obj.layout186:setTop(678);
+    obj.layout186:setWidth(15);
+    obj.layout186:setHeight(15);
+    obj.layout186:setName("layout186");
+
+    obj.imageCheckBox84 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox84:setParent(obj.layout186);
+    obj.imageCheckBox84:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox84:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox84:setLeft(0);
+    obj.imageCheckBox84:setTop(0);
+    obj.imageCheckBox84:setWidth(15);
+    obj.imageCheckBox84:setHeight(15);
+    obj.imageCheckBox84:setField("ATEP5");
+    obj.imageCheckBox84:setName("imageCheckBox84");
+
+    obj.layout187 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout187:setParent(obj.rectangle2);
+    obj.layout187:setLeft(35);
+    obj.layout187:setTop(701);
+    obj.layout187:setWidth(15);
+    obj.layout187:setHeight(15);
+    obj.layout187:setName("layout187");
+
+    obj.imageCheckBox85 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox85:setParent(obj.layout187);
+    obj.imageCheckBox85:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox85:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox85:setLeft(0);
+    obj.imageCheckBox85:setTop(0);
+    obj.imageCheckBox85:setWidth(15);
+    obj.imageCheckBox85:setHeight(15);
+    obj.imageCheckBox85:setField("DFESN5");
+    obj.imageCheckBox85:setName("imageCheckBox85");
+
+    obj.layout188 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout188:setParent(obj.rectangle2);
+    obj.layout188:setLeft(50);
+    obj.layout188:setTop(701);
+    obj.layout188:setWidth(15);
+    obj.layout188:setHeight(15);
+    obj.layout188:setName("layout188");
+
+    obj.imageCheckBox86 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox86:setParent(obj.layout188);
+    obj.imageCheckBox86:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox86:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox86:setLeft(0);
+    obj.imageCheckBox86:setTop(0);
+    obj.imageCheckBox86:setWidth(15);
+    obj.imageCheckBox86:setHeight(15);
+    obj.imageCheckBox86:setField("DFESN4");
+    obj.imageCheckBox86:setName("imageCheckBox86");
 
     obj.layout189 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout189:setParent(obj.rectangle2);
-    obj.layout189:setLeft(873);
-    obj.layout189:setTop(429);
-    obj.layout189:setWidth(32);
-    obj.layout189:setHeight(28);
+    obj.layout189:setLeft(64);
+    obj.layout189:setTop(701);
+    obj.layout189:setWidth(15);
+    obj.layout189:setHeight(15);
     obj.layout189:setName("layout189");
 
+    obj.imageCheckBox87 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox87:setParent(obj.layout189);
+    obj.imageCheckBox87:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox87:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox87:setLeft(0);
+    obj.imageCheckBox87:setTop(0);
+    obj.imageCheckBox87:setWidth(15);
+    obj.imageCheckBox87:setHeight(15);
+    obj.imageCheckBox87:setField("DFESN3");
+    obj.imageCheckBox87:setName("imageCheckBox87");
+
+    obj.layout190 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout190:setParent(obj.rectangle2);
+    obj.layout190:setLeft(78);
+    obj.layout190:setTop(701);
+    obj.layout190:setWidth(15);
+    obj.layout190:setHeight(15);
+    obj.layout190:setName("layout190");
+
+    obj.imageCheckBox88 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox88:setParent(obj.layout190);
+    obj.imageCheckBox88:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox88:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox88:setLeft(0);
+    obj.imageCheckBox88:setTop(0);
+    obj.imageCheckBox88:setWidth(15);
+    obj.imageCheckBox88:setHeight(15);
+    obj.imageCheckBox88:setField("DFESN2");
+    obj.imageCheckBox88:setName("imageCheckBox88");
+
+    obj.layout191 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout191:setParent(obj.rectangle2);
+    obj.layout191:setLeft(91);
+    obj.layout191:setTop(701);
+    obj.layout191:setWidth(15);
+    obj.layout191:setHeight(15);
+    obj.layout191:setName("layout191");
+
+    obj.imageCheckBox89 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox89:setParent(obj.layout191);
+    obj.imageCheckBox89:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox89:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox89:setLeft(0);
+    obj.imageCheckBox89:setTop(0);
+    obj.imageCheckBox89:setWidth(15);
+    obj.imageCheckBox89:setHeight(15);
+    obj.imageCheckBox89:setField("DFESN1");
+    obj.imageCheckBox89:setName("imageCheckBox89");
+
+    obj.layout192 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout192:setParent(obj.rectangle2);
+    obj.layout192:setLeft(203);
+    obj.layout192:setTop(701);
+    obj.layout192:setWidth(15);
+    obj.layout192:setHeight(15);
+    obj.layout192:setName("layout192");
+
+    obj.imageCheckBox90 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox90:setParent(obj.layout192);
+    obj.imageCheckBox90:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox90:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox90:setLeft(0);
+    obj.imageCheckBox90:setTop(0);
+    obj.imageCheckBox90:setWidth(15);
+    obj.imageCheckBox90:setHeight(15);
+    obj.imageCheckBox90:setField("DFESP1");
+    obj.imageCheckBox90:setName("imageCheckBox90");
+
+    obj.layout193 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout193:setParent(obj.rectangle2);
+    obj.layout193:setLeft(217);
+    obj.layout193:setTop(701);
+    obj.layout193:setWidth(15);
+    obj.layout193:setHeight(15);
+    obj.layout193:setName("layout193");
+
+    obj.imageCheckBox91 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox91:setParent(obj.layout193);
+    obj.imageCheckBox91:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox91:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox91:setLeft(0);
+    obj.imageCheckBox91:setTop(0);
+    obj.imageCheckBox91:setWidth(15);
+    obj.imageCheckBox91:setHeight(15);
+    obj.imageCheckBox91:setField("DFESP2");
+    obj.imageCheckBox91:setName("imageCheckBox91");
+
+    obj.layout194 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout194:setParent(obj.rectangle2);
+    obj.layout194:setLeft(231);
+    obj.layout194:setTop(701);
+    obj.layout194:setWidth(15);
+    obj.layout194:setHeight(15);
+    obj.layout194:setName("layout194");
+
+    obj.imageCheckBox92 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox92:setParent(obj.layout194);
+    obj.imageCheckBox92:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox92:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox92:setLeft(0);
+    obj.imageCheckBox92:setTop(0);
+    obj.imageCheckBox92:setWidth(15);
+    obj.imageCheckBox92:setHeight(15);
+    obj.imageCheckBox92:setField("DFESP3");
+    obj.imageCheckBox92:setName("imageCheckBox92");
+
+    obj.layout195 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout195:setParent(obj.rectangle2);
+    obj.layout195:setLeft(245);
+    obj.layout195:setTop(701);
+    obj.layout195:setWidth(15);
+    obj.layout195:setHeight(15);
+    obj.layout195:setName("layout195");
+
+    obj.imageCheckBox93 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox93:setParent(obj.layout195);
+    obj.imageCheckBox93:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox93:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox93:setLeft(0);
+    obj.imageCheckBox93:setTop(0);
+    obj.imageCheckBox93:setWidth(15);
+    obj.imageCheckBox93:setHeight(15);
+    obj.imageCheckBox93:setField("DFESP4");
+    obj.imageCheckBox93:setName("imageCheckBox93");
+
+    obj.layout196 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout196:setParent(obj.rectangle2);
+    obj.layout196:setLeft(259);
+    obj.layout196:setTop(701);
+    obj.layout196:setWidth(15);
+    obj.layout196:setHeight(15);
+    obj.layout196:setName("layout196");
+
+    obj.imageCheckBox94 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox94:setParent(obj.layout196);
+    obj.imageCheckBox94:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox94:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox94:setLeft(0);
+    obj.imageCheckBox94:setTop(0);
+    obj.imageCheckBox94:setWidth(15);
+    obj.imageCheckBox94:setHeight(15);
+    obj.imageCheckBox94:setField("DFESP5");
+    obj.imageCheckBox94:setName("imageCheckBox94");
+
+    obj.layout197 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout197:setParent(obj.rectangle2);
+    obj.layout197:setLeft(35);
+    obj.layout197:setTop(723);
+    obj.layout197:setWidth(15);
+    obj.layout197:setHeight(15);
+    obj.layout197:setName("layout197");
+
+    obj.imageCheckBox95 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox95:setParent(obj.layout197);
+    obj.imageCheckBox95:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox95:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox95:setLeft(0);
+    obj.imageCheckBox95:setTop(0);
+    obj.imageCheckBox95:setWidth(15);
+    obj.imageCheckBox95:setHeight(15);
+    obj.imageCheckBox95:setField("VELN5");
+    obj.imageCheckBox95:setName("imageCheckBox95");
+
+    obj.layout198 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout198:setParent(obj.rectangle2);
+    obj.layout198:setLeft(50);
+    obj.layout198:setTop(723);
+    obj.layout198:setWidth(15);
+    obj.layout198:setHeight(15);
+    obj.layout198:setName("layout198");
+
+    obj.imageCheckBox96 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox96:setParent(obj.layout198);
+    obj.imageCheckBox96:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox96:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox96:setLeft(0);
+    obj.imageCheckBox96:setTop(0);
+    obj.imageCheckBox96:setWidth(15);
+    obj.imageCheckBox96:setHeight(15);
+    obj.imageCheckBox96:setField("VELN4");
+    obj.imageCheckBox96:setName("imageCheckBox96");
+
+    obj.layout199 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout199:setParent(obj.rectangle2);
+    obj.layout199:setLeft(64);
+    obj.layout199:setTop(723);
+    obj.layout199:setWidth(15);
+    obj.layout199:setHeight(15);
+    obj.layout199:setName("layout199");
+
+    obj.imageCheckBox97 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox97:setParent(obj.layout199);
+    obj.imageCheckBox97:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox97:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox97:setLeft(0);
+    obj.imageCheckBox97:setTop(0);
+    obj.imageCheckBox97:setWidth(15);
+    obj.imageCheckBox97:setHeight(15);
+    obj.imageCheckBox97:setField("VELN3");
+    obj.imageCheckBox97:setName("imageCheckBox97");
+
+    obj.layout200 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout200:setParent(obj.rectangle2);
+    obj.layout200:setLeft(78);
+    obj.layout200:setTop(723);
+    obj.layout200:setWidth(15);
+    obj.layout200:setHeight(15);
+    obj.layout200:setName("layout200");
+
+    obj.imageCheckBox98 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox98:setParent(obj.layout200);
+    obj.imageCheckBox98:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox98:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox98:setLeft(0);
+    obj.imageCheckBox98:setTop(0);
+    obj.imageCheckBox98:setWidth(15);
+    obj.imageCheckBox98:setHeight(15);
+    obj.imageCheckBox98:setField("VELN2");
+    obj.imageCheckBox98:setName("imageCheckBox98");
+
+    obj.layout201 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout201:setParent(obj.rectangle2);
+    obj.layout201:setLeft(92);
+    obj.layout201:setTop(723);
+    obj.layout201:setWidth(15);
+    obj.layout201:setHeight(15);
+    obj.layout201:setName("layout201");
+
+    obj.imageCheckBox99 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox99:setParent(obj.layout201);
+    obj.imageCheckBox99:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox99:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox99:setLeft(0);
+    obj.imageCheckBox99:setTop(0);
+    obj.imageCheckBox99:setWidth(15);
+    obj.imageCheckBox99:setHeight(15);
+    obj.imageCheckBox99:setField("VELN1");
+    obj.imageCheckBox99:setName("imageCheckBox99");
+
+    obj.layout202 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout202:setParent(obj.rectangle2);
+    obj.layout202:setLeft(203);
+    obj.layout202:setTop(723);
+    obj.layout202:setWidth(15);
+    obj.layout202:setHeight(15);
+    obj.layout202:setName("layout202");
+
+    obj.imageCheckBox100 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox100:setParent(obj.layout202);
+    obj.imageCheckBox100:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox100:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox100:setLeft(0);
+    obj.imageCheckBox100:setTop(0);
+    obj.imageCheckBox100:setWidth(15);
+    obj.imageCheckBox100:setHeight(15);
+    obj.imageCheckBox100:setField("VELP1");
+    obj.imageCheckBox100:setName("imageCheckBox100");
+
+    obj.layout203 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout203:setParent(obj.rectangle2);
+    obj.layout203:setLeft(217);
+    obj.layout203:setTop(723);
+    obj.layout203:setWidth(15);
+    obj.layout203:setHeight(15);
+    obj.layout203:setName("layout203");
+
+    obj.imageCheckBox101 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox101:setParent(obj.layout203);
+    obj.imageCheckBox101:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox101:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox101:setLeft(0);
+    obj.imageCheckBox101:setTop(0);
+    obj.imageCheckBox101:setWidth(15);
+    obj.imageCheckBox101:setHeight(15);
+    obj.imageCheckBox101:setField("VELP2");
+    obj.imageCheckBox101:setName("imageCheckBox101");
+
+    obj.layout204 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout204:setParent(obj.rectangle2);
+    obj.layout204:setLeft(231);
+    obj.layout204:setTop(723);
+    obj.layout204:setWidth(15);
+    obj.layout204:setHeight(15);
+    obj.layout204:setName("layout204");
+
+    obj.imageCheckBox102 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox102:setParent(obj.layout204);
+    obj.imageCheckBox102:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox102:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox102:setLeft(0);
+    obj.imageCheckBox102:setTop(0);
+    obj.imageCheckBox102:setWidth(15);
+    obj.imageCheckBox102:setHeight(15);
+    obj.imageCheckBox102:setField("VELP3");
+    obj.imageCheckBox102:setName("imageCheckBox102");
+
+    obj.layout205 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout205:setParent(obj.rectangle2);
+    obj.layout205:setLeft(245);
+    obj.layout205:setTop(723);
+    obj.layout205:setWidth(15);
+    obj.layout205:setHeight(15);
+    obj.layout205:setName("layout205");
+
+    obj.imageCheckBox103 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox103:setParent(obj.layout205);
+    obj.imageCheckBox103:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox103:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox103:setLeft(0);
+    obj.imageCheckBox103:setTop(0);
+    obj.imageCheckBox103:setWidth(15);
+    obj.imageCheckBox103:setHeight(15);
+    obj.imageCheckBox103:setField("VELP4");
+    obj.imageCheckBox103:setName("imageCheckBox103");
+
+    obj.layout206 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout206:setParent(obj.rectangle2);
+    obj.layout206:setLeft(259);
+    obj.layout206:setTop(723);
+    obj.layout206:setWidth(15);
+    obj.layout206:setHeight(15);
+    obj.layout206:setName("layout206");
+
+    obj.imageCheckBox104 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox104:setParent(obj.layout206);
+    obj.imageCheckBox104:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox104:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox104:setLeft(0);
+    obj.imageCheckBox104:setTop(0);
+    obj.imageCheckBox104:setWidth(15);
+    obj.imageCheckBox104:setHeight(15);
+    obj.imageCheckBox104:setField("VELP5");
+    obj.imageCheckBox104:setName("imageCheckBox104");
+
+    obj.layout207 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout207:setParent(obj.rectangle2);
+    obj.layout207:setLeft(280);
+    obj.layout207:setTop(702);
+    obj.layout207:setWidth(190);
+    obj.layout207:setHeight(24);
+    obj.layout207:setName("layout207");
+
     obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit83:setParent(obj.layout189);
+    obj.edit83:setParent(obj.layout207);
     obj.edit83:setTransparent(true);
     obj.edit83:setFontSize(13);
     obj.edit83:setFontColor("#ffffff");
@@ -3914,21 +4246,21 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit83:setVertTextAlign("center");
     obj.edit83:setLeft(0);
     obj.edit83:setTop(0);
-    obj.edit83:setWidth(32);
-    obj.edit83:setHeight(28);
-    obj.edit83:setField("TXTICE");
+    obj.edit83:setWidth(190);
+    obj.edit83:setHeight(24);
+    obj.edit83:setField("CondVolateis");
     obj.edit83:setName("edit83");
 
-    obj.layout190 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout190:setParent(obj.rectangle2);
-    obj.layout190:setLeft(873);
-    obj.layout190:setTop(482);
-    obj.layout190:setWidth(32);
-    obj.layout190:setHeight(28);
-    obj.layout190:setName("layout190");
+    obj.layout208 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout208:setParent(obj.rectangle2);
+    obj.layout208:setLeft(483);
+    obj.layout208:setTop(702);
+    obj.layout208:setWidth(190);
+    obj.layout208:setHeight(24);
+    obj.layout208:setName("layout208");
 
     obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit84:setParent(obj.layout190);
+    obj.edit84:setParent(obj.layout208);
     obj.edit84:setTransparent(true);
     obj.edit84:setFontSize(13);
     obj.edit84:setFontColor("#ffffff");
@@ -3936,21 +4268,21 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit84:setVertTextAlign("center");
     obj.edit84:setLeft(0);
     obj.edit84:setTop(0);
-    obj.edit84:setWidth(32);
-    obj.edit84:setHeight(28);
-    obj.edit84:setField("TXTBUG");
+    obj.edit84:setWidth(190);
+    obj.edit84:setHeight(24);
+    obj.edit84:setField("CondPerm");
     obj.edit84:setName("edit84");
 
-    obj.layout191 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout191:setParent(obj.rectangle2);
-    obj.layout191:setLeft(873);
-    obj.layout191:setTop(535);
-    obj.layout191:setWidth(32);
-    obj.layout191:setHeight(28);
-    obj.layout191:setName("layout191");
+    obj.layout209 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout209:setParent(obj.rectangle2);
+    obj.layout209:setLeft(37);
+    obj.layout209:setTop(779);
+    obj.layout209:setWidth(115);
+    obj.layout209:setHeight(24);
+    obj.layout209:setName("layout209");
 
     obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit85:setParent(obj.layout191);
+    obj.edit85:setParent(obj.layout209);
     obj.edit85:setTransparent(true);
     obj.edit85:setFontSize(13);
     obj.edit85:setFontColor("#ffffff");
@@ -3958,21 +4290,21 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit85:setVertTextAlign("center");
     obj.edit85:setLeft(0);
     obj.edit85:setTop(0);
-    obj.edit85:setWidth(32);
-    obj.edit85:setHeight(28);
-    obj.edit85:setField("TXTFAI");
+    obj.edit85:setWidth(115);
+    obj.edit85:setHeight(30);
+    obj.edit85:setField("Golpe1");
     obj.edit85:setName("edit85");
 
-    obj.layout192 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout192:setParent(obj.rectangle2);
-    obj.layout192:setLeft(155);
-    obj.layout192:setTop(779);
-    obj.layout192:setWidth(115);
-    obj.layout192:setHeight(24);
-    obj.layout192:setName("layout192");
+    obj.layout210 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout210:setParent(obj.rectangle2);
+    obj.layout210:setLeft(155);
+    obj.layout210:setTop(779);
+    obj.layout210:setWidth(115);
+    obj.layout210:setHeight(24);
+    obj.layout210:setName("layout210");
 
     obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit86:setParent(obj.layout192);
+    obj.edit86:setParent(obj.layout210);
     obj.edit86:setTransparent(true);
     obj.edit86:setFontSize(13);
     obj.edit86:setFontColor("#ffffff");
@@ -3985,16 +4317,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit86:setField("TipoG1");
     obj.edit86:setName("edit86");
 
-    obj.layout193 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout193:setParent(obj.rectangle2);
-    obj.layout193:setLeft(37);
-    obj.layout193:setTop(810);
-    obj.layout193:setWidth(236);
-    obj.layout193:setHeight(24);
-    obj.layout193:setName("layout193");
+    obj.layout211 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout211:setParent(obj.rectangle2);
+    obj.layout211:setLeft(37);
+    obj.layout211:setTop(810);
+    obj.layout211:setWidth(236);
+    obj.layout211:setHeight(24);
+    obj.layout211:setName("layout211");
 
     obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit87:setParent(obj.layout193);
+    obj.edit87:setParent(obj.layout211);
     obj.edit87:setTransparent(true);
     obj.edit87:setFontSize(12);
     obj.edit87:setFontColor("#ffffff");
@@ -4007,16 +4339,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit87:setField("EfeitoG1");
     obj.edit87:setName("edit87");
 
-    obj.layout194 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout194:setParent(obj.rectangle2);
-    obj.layout194:setLeft(37);
-    obj.layout194:setTop(843);
-    obj.layout194:setWidth(45);
-    obj.layout194:setHeight(30);
-    obj.layout194:setName("layout194");
+    obj.layout212 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout212:setParent(obj.rectangle2);
+    obj.layout212:setLeft(37);
+    obj.layout212:setTop(843);
+    obj.layout212:setWidth(45);
+    obj.layout212:setHeight(30);
+    obj.layout212:setName("layout212");
 
     obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit88:setParent(obj.layout194);
+    obj.edit88:setParent(obj.layout212);
     obj.edit88:setTransparent(true);
     obj.edit88:setFontSize(12);
     obj.edit88:setFontColor("#ffffff");
@@ -4029,16 +4361,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit88:setField("PPG1");
     obj.edit88:setName("edit88");
 
-    obj.layout195 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout195:setParent(obj.rectangle2);
-    obj.layout195:setLeft(88);
-    obj.layout195:setTop(843);
-    obj.layout195:setWidth(45);
-    obj.layout195:setHeight(30);
-    obj.layout195:setName("layout195");
+    obj.layout213 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout213:setParent(obj.rectangle2);
+    obj.layout213:setLeft(88);
+    obj.layout213:setTop(843);
+    obj.layout213:setWidth(45);
+    obj.layout213:setHeight(30);
+    obj.layout213:setName("layout213");
 
     obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit89:setParent(obj.layout195);
+    obj.edit89:setParent(obj.layout213);
     obj.edit89:setTransparent(true);
     obj.edit89:setFontSize(12);
     obj.edit89:setFontColor("#ffffff");
@@ -4051,16 +4383,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit89:setField("PPResG1");
     obj.edit89:setName("edit89");
 
-    obj.layout196 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout196:setParent(obj.rectangle2);
-    obj.layout196:setLeft(138);
-    obj.layout196:setTop(843);
-    obj.layout196:setWidth(45);
-    obj.layout196:setHeight(30);
-    obj.layout196:setName("layout196");
+    obj.layout214 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout214:setParent(obj.rectangle2);
+    obj.layout214:setLeft(138);
+    obj.layout214:setTop(843);
+    obj.layout214:setWidth(45);
+    obj.layout214:setHeight(30);
+    obj.layout214:setName("layout214");
 
     obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit90:setParent(obj.layout196);
+    obj.edit90:setParent(obj.layout214);
     obj.edit90:setTransparent(true);
     obj.edit90:setFontSize(12);
     obj.edit90:setFontColor("#ffffff");
@@ -4073,16 +4405,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit90:setField("_AG1");
     obj.edit90:setName("edit90");
 
-    obj.layout197 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout197:setParent(obj.rectangle2);
-    obj.layout197:setLeft(288);
-    obj.layout197:setTop(798);
-    obj.layout197:setWidth(25);
-    obj.layout197:setHeight(23);
-    obj.layout197:setName("layout197");
+    obj.layout215 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout215:setParent(obj.rectangle2);
+    obj.layout215:setLeft(288);
+    obj.layout215:setTop(798);
+    obj.layout215:setWidth(25);
+    obj.layout215:setHeight(23);
+    obj.layout215:setName("layout215");
 
     obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit91:setParent(obj.layout197);
+    obj.edit91:setParent(obj.layout215);
     obj.edit91:setTransparent(true);
     obj.edit91:setFontSize(10);
     obj.edit91:setFontColor("#ffffff");
@@ -4095,16 +4427,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit91:setField("PODERF1G1");
     obj.edit91:setName("edit91");
 
-    obj.layout198 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout198:setParent(obj.rectangle2);
-    obj.layout198:setLeft(323);
-    obj.layout198:setTop(798);
-    obj.layout198:setWidth(25);
-    obj.layout198:setHeight(23);
-    obj.layout198:setName("layout198");
+    obj.layout216 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout216:setParent(obj.rectangle2);
+    obj.layout216:setLeft(323);
+    obj.layout216:setTop(798);
+    obj.layout216:setWidth(25);
+    obj.layout216:setHeight(23);
+    obj.layout216:setName("layout216");
 
     obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit92:setParent(obj.layout198);
+    obj.edit92:setParent(obj.layout216);
     obj.edit92:setTransparent(true);
     obj.edit92:setFontSize(10);
     obj.edit92:setFontColor("#ffffff");
@@ -4117,16 +4449,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit92:setField("STABF1G1");
     obj.edit92:setName("edit92");
 
-    obj.layout199 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout199:setParent(obj.rectangle2);
-    obj.layout199:setLeft(355);
-    obj.layout199:setTop(798);
-    obj.layout199:setWidth(25);
-    obj.layout199:setHeight(23);
-    obj.layout199:setName("layout199");
+    obj.layout217 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout217:setParent(obj.rectangle2);
+    obj.layout217:setLeft(355);
+    obj.layout217:setTop(798);
+    obj.layout217:setWidth(25);
+    obj.layout217:setHeight(23);
+    obj.layout217:setName("layout217");
 
     obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit93:setParent(obj.layout199);
+    obj.edit93:setParent(obj.layout217);
     obj.edit93:setTransparent(true);
     obj.edit93:setFontSize(10);
     obj.edit93:setFontColor("#ffffff");
@@ -4139,16 +4471,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit93:setField("ATRF1G1");
     obj.edit93:setName("edit93");
 
-    obj.layout200 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout200:setParent(obj.rectangle2);
-    obj.layout200:setLeft(392);
-    obj.layout200:setTop(798);
-    obj.layout200:setWidth(25);
-    obj.layout200:setHeight(23);
-    obj.layout200:setName("layout200");
+    obj.layout218 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout218:setParent(obj.rectangle2);
+    obj.layout218:setLeft(392);
+    obj.layout218:setTop(798);
+    obj.layout218:setWidth(25);
+    obj.layout218:setHeight(23);
+    obj.layout218:setName("layout218");
 
     obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit94:setParent(obj.layout200);
+    obj.edit94:setParent(obj.layout218);
     obj.edit94:setTransparent(true);
     obj.edit94:setFontSize(10);
     obj.edit94:setFontColor("#ffffff");
@@ -4161,16 +4493,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit94:setField("BONF1G1");
     obj.edit94:setName("edit94");
 
-    obj.layout201 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout201:setParent(obj.rectangle2);
-    obj.layout201:setLeft(427);
-    obj.layout201:setTop(798);
-    obj.layout201:setWidth(38);
-    obj.layout201:setHeight(23);
-    obj.layout201:setName("layout201");
+    obj.layout219 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout219:setParent(obj.rectangle2);
+    obj.layout219:setLeft(427);
+    obj.layout219:setTop(798);
+    obj.layout219:setWidth(38);
+    obj.layout219:setHeight(23);
+    obj.layout219:setName("layout219");
 
     obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit95:setParent(obj.layout201);
+    obj.edit95:setParent(obj.layout219);
     obj.edit95:setTransparent(true);
     obj.edit95:setFontSize(10);
     obj.edit95:setFontColor("#ffffff");
@@ -4183,16 +4515,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit95:setField("TOTALF1G1");
     obj.edit95:setName("edit95");
 
-    obj.layout202 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout202:setParent(obj.rectangle2);
-    obj.layout202:setLeft(288);
-    obj.layout202:setTop(825);
-    obj.layout202:setWidth(25);
-    obj.layout202:setHeight(23);
-    obj.layout202:setName("layout202");
+    obj.layout220 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout220:setParent(obj.rectangle2);
+    obj.layout220:setLeft(288);
+    obj.layout220:setTop(825);
+    obj.layout220:setWidth(25);
+    obj.layout220:setHeight(23);
+    obj.layout220:setName("layout220");
 
     obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit96:setParent(obj.layout202);
+    obj.edit96:setParent(obj.layout220);
     obj.edit96:setTransparent(true);
     obj.edit96:setFontSize(10);
     obj.edit96:setFontColor("#ffffff");
@@ -4205,16 +4537,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit96:setField("PODERF2G1");
     obj.edit96:setName("edit96");
 
-    obj.layout203 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout203:setParent(obj.rectangle2);
-    obj.layout203:setLeft(323);
-    obj.layout203:setTop(825);
-    obj.layout203:setWidth(25);
-    obj.layout203:setHeight(23);
-    obj.layout203:setName("layout203");
+    obj.layout221 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout221:setParent(obj.rectangle2);
+    obj.layout221:setLeft(323);
+    obj.layout221:setTop(825);
+    obj.layout221:setWidth(25);
+    obj.layout221:setHeight(23);
+    obj.layout221:setName("layout221");
 
     obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit97:setParent(obj.layout203);
+    obj.edit97:setParent(obj.layout221);
     obj.edit97:setTransparent(true);
     obj.edit97:setFontSize(10);
     obj.edit97:setFontColor("#ffffff");
@@ -4227,16 +4559,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit97:setField("STABF2G1");
     obj.edit97:setName("edit97");
 
-    obj.layout204 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout204:setParent(obj.rectangle2);
-    obj.layout204:setLeft(355);
-    obj.layout204:setTop(825);
-    obj.layout204:setWidth(25);
-    obj.layout204:setHeight(23);
-    obj.layout204:setName("layout204");
+    obj.layout222 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout222:setParent(obj.rectangle2);
+    obj.layout222:setLeft(355);
+    obj.layout222:setTop(825);
+    obj.layout222:setWidth(25);
+    obj.layout222:setHeight(23);
+    obj.layout222:setName("layout222");
 
     obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit98:setParent(obj.layout204);
+    obj.edit98:setParent(obj.layout222);
     obj.edit98:setTransparent(true);
     obj.edit98:setFontSize(10);
     obj.edit98:setFontColor("#ffffff");
@@ -4249,16 +4581,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit98:setField("ATRF2G1");
     obj.edit98:setName("edit98");
 
-    obj.layout205 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout205:setParent(obj.rectangle2);
-    obj.layout205:setLeft(392);
-    obj.layout205:setTop(825);
-    obj.layout205:setWidth(25);
-    obj.layout205:setHeight(23);
-    obj.layout205:setName("layout205");
+    obj.layout223 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout223:setParent(obj.rectangle2);
+    obj.layout223:setLeft(392);
+    obj.layout223:setTop(825);
+    obj.layout223:setWidth(25);
+    obj.layout223:setHeight(23);
+    obj.layout223:setName("layout223");
 
     obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit99:setParent(obj.layout205);
+    obj.edit99:setParent(obj.layout223);
     obj.edit99:setTransparent(true);
     obj.edit99:setFontSize(10);
     obj.edit99:setFontColor("#ffffff");
@@ -4271,16 +4603,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit99:setField("BONF2G1");
     obj.edit99:setName("edit99");
 
-    obj.layout206 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout206:setParent(obj.rectangle2);
-    obj.layout206:setLeft(427);
-    obj.layout206:setTop(825);
-    obj.layout206:setWidth(38);
-    obj.layout206:setHeight(23);
-    obj.layout206:setName("layout206");
+    obj.layout224 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout224:setParent(obj.rectangle2);
+    obj.layout224:setLeft(427);
+    obj.layout224:setTop(825);
+    obj.layout224:setWidth(38);
+    obj.layout224:setHeight(23);
+    obj.layout224:setName("layout224");
 
     obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit100:setParent(obj.layout206);
+    obj.edit100:setParent(obj.layout224);
     obj.edit100:setTransparent(true);
     obj.edit100:setFontSize(10);
     obj.edit100:setFontColor("#ffffff");
@@ -4293,16 +4625,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit100:setField("TOTALF2G1");
     obj.edit100:setName("edit100");
 
-    obj.layout207 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout207:setParent(obj.rectangle2);
-    obj.layout207:setLeft(288);
-    obj.layout207:setTop(851);
-    obj.layout207:setWidth(25);
-    obj.layout207:setHeight(23);
-    obj.layout207:setName("layout207");
+    obj.layout225 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout225:setParent(obj.rectangle2);
+    obj.layout225:setLeft(288);
+    obj.layout225:setTop(851);
+    obj.layout225:setWidth(25);
+    obj.layout225:setHeight(23);
+    obj.layout225:setName("layout225");
 
     obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit101:setParent(obj.layout207);
+    obj.edit101:setParent(obj.layout225);
     obj.edit101:setTransparent(true);
     obj.edit101:setFontSize(10);
     obj.edit101:setFontColor("#ffffff");
@@ -4315,16 +4647,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit101:setField("PODERF1G1D2");
     obj.edit101:setName("edit101");
 
-    obj.layout208 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout208:setParent(obj.rectangle2);
-    obj.layout208:setLeft(323);
-    obj.layout208:setTop(851);
-    obj.layout208:setWidth(25);
-    obj.layout208:setHeight(23);
-    obj.layout208:setName("layout208");
+    obj.layout226 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout226:setParent(obj.rectangle2);
+    obj.layout226:setLeft(323);
+    obj.layout226:setTop(851);
+    obj.layout226:setWidth(25);
+    obj.layout226:setHeight(23);
+    obj.layout226:setName("layout226");
 
     obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit102:setParent(obj.layout208);
+    obj.edit102:setParent(obj.layout226);
     obj.edit102:setTransparent(true);
     obj.edit102:setFontSize(10);
     obj.edit102:setFontColor("#ffffff");
@@ -4337,16 +4669,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit102:setField("STABF1G1");
     obj.edit102:setName("edit102");
 
-    obj.layout209 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout209:setParent(obj.rectangle2);
-    obj.layout209:setLeft(355);
-    obj.layout209:setTop(851);
-    obj.layout209:setWidth(25);
-    obj.layout209:setHeight(23);
-    obj.layout209:setName("layout209");
+    obj.layout227 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout227:setParent(obj.rectangle2);
+    obj.layout227:setLeft(355);
+    obj.layout227:setTop(851);
+    obj.layout227:setWidth(25);
+    obj.layout227:setHeight(23);
+    obj.layout227:setName("layout227");
 
     obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit103:setParent(obj.layout209);
+    obj.edit103:setParent(obj.layout227);
     obj.edit103:setTransparent(true);
     obj.edit103:setFontSize(10);
     obj.edit103:setFontColor("#ffffff");
@@ -4359,16 +4691,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit103:setField("ATRF1G1");
     obj.edit103:setName("edit103");
 
-    obj.layout210 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout210:setParent(obj.rectangle2);
-    obj.layout210:setLeft(392);
-    obj.layout210:setTop(851);
-    obj.layout210:setWidth(25);
-    obj.layout210:setHeight(23);
-    obj.layout210:setName("layout210");
+    obj.layout228 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout228:setParent(obj.rectangle2);
+    obj.layout228:setLeft(392);
+    obj.layout228:setTop(851);
+    obj.layout228:setWidth(25);
+    obj.layout228:setHeight(23);
+    obj.layout228:setName("layout228");
 
     obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit104:setParent(obj.layout210);
+    obj.edit104:setParent(obj.layout228);
     obj.edit104:setTransparent(true);
     obj.edit104:setFontSize(10);
     obj.edit104:setFontColor("#ffffff");
@@ -4381,16 +4713,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit104:setField("BONF1G1");
     obj.edit104:setName("edit104");
 
-    obj.layout211 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout211:setParent(obj.rectangle2);
-    obj.layout211:setLeft(427);
-    obj.layout211:setTop(851);
-    obj.layout211:setWidth(38);
-    obj.layout211:setHeight(23);
-    obj.layout211:setName("layout211");
+    obj.layout229 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout229:setParent(obj.rectangle2);
+    obj.layout229:setLeft(427);
+    obj.layout229:setTop(851);
+    obj.layout229:setWidth(38);
+    obj.layout229:setHeight(23);
+    obj.layout229:setName("layout229");
 
     obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit105:setParent(obj.layout211);
+    obj.edit105:setParent(obj.layout229);
     obj.edit105:setTransparent(true);
     obj.edit105:setFontSize(10);
     obj.edit105:setFontColor("#ffffff");
@@ -4403,16 +4735,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit105:setField("TOTALF1G1D2");
     obj.edit105:setName("edit105");
 
-    obj.layout212 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout212:setParent(obj.rectangle2);
-    obj.layout212:setLeft(288);
-    obj.layout212:setTop(877);
-    obj.layout212:setWidth(25);
-    obj.layout212:setHeight(23);
-    obj.layout212:setName("layout212");
+    obj.layout230 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout230:setParent(obj.rectangle2);
+    obj.layout230:setLeft(288);
+    obj.layout230:setTop(877);
+    obj.layout230:setWidth(25);
+    obj.layout230:setHeight(23);
+    obj.layout230:setName("layout230");
 
     obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit106:setParent(obj.layout212);
+    obj.edit106:setParent(obj.layout230);
     obj.edit106:setTransparent(true);
     obj.edit106:setFontSize(10);
     obj.edit106:setFontColor("#ffffff");
@@ -4425,16 +4757,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit106:setField("PODERF1G1X2");
     obj.edit106:setName("edit106");
 
-    obj.layout213 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout213:setParent(obj.rectangle2);
-    obj.layout213:setLeft(323);
-    obj.layout213:setTop(877);
-    obj.layout213:setWidth(25);
-    obj.layout213:setHeight(23);
-    obj.layout213:setName("layout213");
+    obj.layout231 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout231:setParent(obj.rectangle2);
+    obj.layout231:setLeft(323);
+    obj.layout231:setTop(877);
+    obj.layout231:setWidth(25);
+    obj.layout231:setHeight(23);
+    obj.layout231:setName("layout231");
 
     obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit107:setParent(obj.layout213);
+    obj.edit107:setParent(obj.layout231);
     obj.edit107:setTransparent(true);
     obj.edit107:setFontSize(10);
     obj.edit107:setFontColor("#ffffff");
@@ -4447,16 +4779,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit107:setField("STABF1G1");
     obj.edit107:setName("edit107");
 
-    obj.layout214 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout214:setParent(obj.rectangle2);
-    obj.layout214:setLeft(355);
-    obj.layout214:setTop(877);
-    obj.layout214:setWidth(25);
-    obj.layout214:setHeight(23);
-    obj.layout214:setName("layout214");
+    obj.layout232 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout232:setParent(obj.rectangle2);
+    obj.layout232:setLeft(355);
+    obj.layout232:setTop(877);
+    obj.layout232:setWidth(25);
+    obj.layout232:setHeight(23);
+    obj.layout232:setName("layout232");
 
     obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit108:setParent(obj.layout214);
+    obj.edit108:setParent(obj.layout232);
     obj.edit108:setTransparent(true);
     obj.edit108:setFontSize(10);
     obj.edit108:setFontColor("#ffffff");
@@ -4469,16 +4801,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit108:setField("ATRF1G1");
     obj.edit108:setName("edit108");
 
-    obj.layout215 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout215:setParent(obj.rectangle2);
-    obj.layout215:setLeft(392);
-    obj.layout215:setTop(877);
-    obj.layout215:setWidth(25);
-    obj.layout215:setHeight(23);
-    obj.layout215:setName("layout215");
+    obj.layout233 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout233:setParent(obj.rectangle2);
+    obj.layout233:setLeft(392);
+    obj.layout233:setTop(877);
+    obj.layout233:setWidth(25);
+    obj.layout233:setHeight(23);
+    obj.layout233:setName("layout233");
 
     obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit109:setParent(obj.layout215);
+    obj.edit109:setParent(obj.layout233);
     obj.edit109:setTransparent(true);
     obj.edit109:setFontSize(10);
     obj.edit109:setFontColor("#ffffff");
@@ -4491,16 +4823,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit109:setField("BONF1G1");
     obj.edit109:setName("edit109");
 
-    obj.layout216 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout216:setParent(obj.rectangle2);
-    obj.layout216:setLeft(427);
-    obj.layout216:setTop(877);
-    obj.layout216:setWidth(38);
-    obj.layout216:setHeight(23);
-    obj.layout216:setName("layout216");
+    obj.layout234 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout234:setParent(obj.rectangle2);
+    obj.layout234:setLeft(427);
+    obj.layout234:setTop(877);
+    obj.layout234:setWidth(38);
+    obj.layout234:setHeight(23);
+    obj.layout234:setName("layout234");
 
     obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit110:setParent(obj.layout216);
+    obj.edit110:setParent(obj.layout234);
     obj.edit110:setTransparent(true);
     obj.edit110:setFontSize(10);
     obj.edit110:setFontColor("#ffffff");
@@ -4513,16 +4845,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit110:setField("TOTALF1G1X2");
     obj.edit110:setName("edit110");
 
-    obj.layout217 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout217:setParent(obj.rectangle2);
-    obj.layout217:setLeft(230);
-    obj.layout217:setTop(850);
-    obj.layout217:setWidth(15);
-    obj.layout217:setHeight(15);
-    obj.layout217:setName("layout217");
+    obj.layout235 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout235:setParent(obj.rectangle2);
+    obj.layout235:setLeft(230);
+    obj.layout235:setTop(850);
+    obj.layout235:setWidth(15);
+    obj.layout235:setHeight(15);
+    obj.layout235:setName("layout235");
 
     obj.imageCheckBox105 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox105:setParent(obj.layout217);
+    obj.imageCheckBox105:setParent(obj.layout235);
     obj.imageCheckBox105:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox105:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox105:setLeft(0);
@@ -4532,16 +4864,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox105:setField("A2G1");
     obj.imageCheckBox105:setName("imageCheckBox105");
 
-    obj.layout218 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout218:setParent(obj.rectangle2);
-    obj.layout218:setLeft(250);
-    obj.layout218:setTop(850);
-    obj.layout218:setWidth(15);
-    obj.layout218:setHeight(15);
-    obj.layout218:setName("layout218");
+    obj.layout236 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout236:setParent(obj.rectangle2);
+    obj.layout236:setLeft(250);
+    obj.layout236:setTop(850);
+    obj.layout236:setWidth(15);
+    obj.layout236:setHeight(15);
+    obj.layout236:setName("layout236");
 
     obj.imageCheckBox106 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox106:setParent(obj.layout218);
+    obj.imageCheckBox106:setParent(obj.layout236);
     obj.imageCheckBox106:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox106:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox106:setLeft(0);
@@ -4551,16 +4883,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox106:setField("A4G1");
     obj.imageCheckBox106:setName("imageCheckBox106");
 
-    obj.layout219 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout219:setParent(obj.rectangle2);
-    obj.layout219:setLeft(230);
-    obj.layout219:setTop(869);
-    obj.layout219:setWidth(15);
-    obj.layout219:setHeight(15);
-    obj.layout219:setName("layout219");
+    obj.layout237 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout237:setParent(obj.rectangle2);
+    obj.layout237:setLeft(230);
+    obj.layout237:setTop(869);
+    obj.layout237:setWidth(15);
+    obj.layout237:setHeight(15);
+    obj.layout237:setName("layout237");
 
     obj.imageCheckBox107 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox107:setParent(obj.layout219);
+    obj.imageCheckBox107:setParent(obj.layout237);
     obj.imageCheckBox107:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox107:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox107:setLeft(0);
@@ -4570,16 +4902,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox107:setField("A1G1");
     obj.imageCheckBox107:setName("imageCheckBox107");
 
-    obj.layout220 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout220:setParent(obj.rectangle2);
-    obj.layout220:setLeft(250);
-    obj.layout220:setTop(869);
-    obj.layout220:setWidth(15);
-    obj.layout220:setHeight(15);
-    obj.layout220:setName("layout220");
+    obj.layout238 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout238:setParent(obj.rectangle2);
+    obj.layout238:setLeft(250);
+    obj.layout238:setTop(869);
+    obj.layout238:setWidth(15);
+    obj.layout238:setHeight(15);
+    obj.layout238:setName("layout238");
 
     obj.imageCheckBox108 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox108:setParent(obj.layout220);
+    obj.imageCheckBox108:setParent(obj.layout238);
     obj.imageCheckBox108:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox108:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox108:setLeft(0);
@@ -4589,16 +4921,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox108:setField("A3G1");
     obj.imageCheckBox108:setName("imageCheckBox108");
 
-    obj.layout221 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout221:setParent(obj.rectangle2);
-    obj.layout221:setLeft(87);
-    obj.layout221:setTop(885);
-    obj.layout221:setWidth(15);
-    obj.layout221:setHeight(15);
-    obj.layout221:setName("layout221");
+    obj.layout239 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout239:setParent(obj.rectangle2);
+    obj.layout239:setLeft(87);
+    obj.layout239:setTop(885);
+    obj.layout239:setWidth(15);
+    obj.layout239:setHeight(15);
+    obj.layout239:setName("layout239");
 
     obj.imageCheckBox109 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox109:setParent(obj.layout221);
+    obj.imageCheckBox109:setParent(obj.layout239);
     obj.imageCheckBox109:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox109:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox109:setLeft(0);
@@ -4608,16 +4940,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox109:setField("EFG1");
     obj.imageCheckBox109:setName("imageCheckBox109");
 
-    obj.layout222 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout222:setParent(obj.rectangle2);
-    obj.layout222:setLeft(121);
-    obj.layout222:setTop(885);
-    obj.layout222:setWidth(15);
-    obj.layout222:setHeight(15);
-    obj.layout222:setName("layout222");
+    obj.layout240 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout240:setParent(obj.rectangle2);
+    obj.layout240:setLeft(121);
+    obj.layout240:setTop(885);
+    obj.layout240:setWidth(15);
+    obj.layout240:setHeight(15);
+    obj.layout240:setName("layout240");
 
     obj.imageCheckBox110 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox110:setParent(obj.layout222);
+    obj.imageCheckBox110:setParent(obj.layout240);
     obj.imageCheckBox110:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox110:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox110:setLeft(0);
@@ -4627,16 +4959,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox110:setField("ESPG1");
     obj.imageCheckBox110:setName("imageCheckBox110");
 
-    obj.layout223 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout223:setParent(obj.rectangle2);
-    obj.layout223:setLeft(156);
-    obj.layout223:setTop(885);
-    obj.layout223:setWidth(15);
-    obj.layout223:setHeight(15);
-    obj.layout223:setName("layout223");
+    obj.layout241 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout241:setParent(obj.rectangle2);
+    obj.layout241:setLeft(156);
+    obj.layout241:setTop(885);
+    obj.layout241:setWidth(15);
+    obj.layout241:setHeight(15);
+    obj.layout241:setName("layout241");
 
     obj.imageCheckBox111 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox111:setParent(obj.layout223);
+    obj.imageCheckBox111:setParent(obj.layout241);
     obj.imageCheckBox111:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox111:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox111:setLeft(0);
@@ -4646,16 +4978,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox111:setField("FISG1");
     obj.imageCheckBox111:setName("imageCheckBox111");
 
-    obj.layout224 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout224:setParent(obj.rectangle2);
-    obj.layout224:setLeft(488);
-    obj.layout224:setTop(779);
-    obj.layout224:setWidth(115);
-    obj.layout224:setHeight(24);
-    obj.layout224:setName("layout224");
+    obj.layout242 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout242:setParent(obj.rectangle2);
+    obj.layout242:setLeft(488);
+    obj.layout242:setTop(779);
+    obj.layout242:setWidth(115);
+    obj.layout242:setHeight(24);
+    obj.layout242:setName("layout242");
 
     obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit111:setParent(obj.layout224);
+    obj.edit111:setParent(obj.layout242);
     obj.edit111:setTransparent(true);
     obj.edit111:setFontSize(13);
     obj.edit111:setFontColor("#ffffff");
@@ -4668,16 +5000,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit111:setField("Golpe2");
     obj.edit111:setName("edit111");
 
-    obj.layout225 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout225:setParent(obj.rectangle2);
-    obj.layout225:setLeft(608);
-    obj.layout225:setTop(779);
-    obj.layout225:setWidth(115);
-    obj.layout225:setHeight(24);
-    obj.layout225:setName("layout225");
+    obj.layout243 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout243:setParent(obj.rectangle2);
+    obj.layout243:setLeft(608);
+    obj.layout243:setTop(779);
+    obj.layout243:setWidth(115);
+    obj.layout243:setHeight(24);
+    obj.layout243:setName("layout243");
 
     obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit112:setParent(obj.layout225);
+    obj.edit112:setParent(obj.layout243);
     obj.edit112:setTransparent(true);
     obj.edit112:setFontSize(13);
     obj.edit112:setFontColor("#ffffff");
@@ -4690,16 +5022,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit112:setField("TipoG2");
     obj.edit112:setName("edit112");
 
-    obj.layout226 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout226:setParent(obj.rectangle2);
-    obj.layout226:setLeft(488);
-    obj.layout226:setTop(810);
-    obj.layout226:setWidth(238);
-    obj.layout226:setHeight(24);
-    obj.layout226:setName("layout226");
+    obj.layout244 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout244:setParent(obj.rectangle2);
+    obj.layout244:setLeft(488);
+    obj.layout244:setTop(810);
+    obj.layout244:setWidth(238);
+    obj.layout244:setHeight(24);
+    obj.layout244:setName("layout244");
 
     obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit113:setParent(obj.layout226);
+    obj.edit113:setParent(obj.layout244);
     obj.edit113:setTransparent(true);
     obj.edit113:setFontSize(12);
     obj.edit113:setFontColor("#ffffff");
@@ -4712,16 +5044,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit113:setField("EfeitoG2");
     obj.edit113:setName("edit113");
 
-    obj.layout227 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout227:setParent(obj.rectangle2);
-    obj.layout227:setLeft(488);
-    obj.layout227:setTop(843);
-    obj.layout227:setWidth(45);
-    obj.layout227:setHeight(30);
-    obj.layout227:setName("layout227");
+    obj.layout245 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout245:setParent(obj.rectangle2);
+    obj.layout245:setLeft(488);
+    obj.layout245:setTop(843);
+    obj.layout245:setWidth(45);
+    obj.layout245:setHeight(30);
+    obj.layout245:setName("layout245");
 
     obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit114:setParent(obj.layout227);
+    obj.edit114:setParent(obj.layout245);
     obj.edit114:setTransparent(true);
     obj.edit114:setFontSize(12);
     obj.edit114:setFontColor("#ffffff");
@@ -4734,16 +5066,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit114:setField("PPG2");
     obj.edit114:setName("edit114");
 
-    obj.layout228 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout228:setParent(obj.rectangle2);
-    obj.layout228:setLeft(539);
-    obj.layout228:setTop(843);
-    obj.layout228:setWidth(45);
-    obj.layout228:setHeight(30);
-    obj.layout228:setName("layout228");
+    obj.layout246 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout246:setParent(obj.rectangle2);
+    obj.layout246:setLeft(539);
+    obj.layout246:setTop(843);
+    obj.layout246:setWidth(45);
+    obj.layout246:setHeight(30);
+    obj.layout246:setName("layout246");
 
     obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit115:setParent(obj.layout228);
+    obj.edit115:setParent(obj.layout246);
     obj.edit115:setTransparent(true);
     obj.edit115:setFontSize(12);
     obj.edit115:setFontColor("#ffffff");
@@ -4756,16 +5088,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit115:setField("PPResG2");
     obj.edit115:setName("edit115");
 
-    obj.layout229 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout229:setParent(obj.rectangle2);
-    obj.layout229:setLeft(589);
-    obj.layout229:setTop(843);
-    obj.layout229:setWidth(45);
-    obj.layout229:setHeight(30);
-    obj.layout229:setName("layout229");
+    obj.layout247 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout247:setParent(obj.rectangle2);
+    obj.layout247:setLeft(589);
+    obj.layout247:setTop(843);
+    obj.layout247:setWidth(45);
+    obj.layout247:setHeight(30);
+    obj.layout247:setName("layout247");
 
     obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit116:setParent(obj.layout229);
+    obj.edit116:setParent(obj.layout247);
     obj.edit116:setTransparent(true);
     obj.edit116:setFontSize(12);
     obj.edit116:setFontColor("#ffffff");
@@ -4778,16 +5110,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit116:setField("_AG2");
     obj.edit116:setName("edit116");
 
-    obj.layout230 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout230:setParent(obj.rectangle2);
-    obj.layout230:setLeft(741);
-    obj.layout230:setTop(798);
-    obj.layout230:setWidth(25);
-    obj.layout230:setHeight(23);
-    obj.layout230:setName("layout230");
+    obj.layout248 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout248:setParent(obj.rectangle2);
+    obj.layout248:setLeft(741);
+    obj.layout248:setTop(798);
+    obj.layout248:setWidth(25);
+    obj.layout248:setHeight(23);
+    obj.layout248:setName("layout248");
 
     obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit117:setParent(obj.layout230);
+    obj.edit117:setParent(obj.layout248);
     obj.edit117:setTransparent(true);
     obj.edit117:setFontSize(10);
     obj.edit117:setFontColor("#ffffff");
@@ -4800,16 +5132,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit117:setField("PODERF1G2");
     obj.edit117:setName("edit117");
 
-    obj.layout231 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout231:setParent(obj.rectangle2);
-    obj.layout231:setLeft(777);
-    obj.layout231:setTop(798);
-    obj.layout231:setWidth(25);
-    obj.layout231:setHeight(23);
-    obj.layout231:setName("layout231");
+    obj.layout249 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout249:setParent(obj.rectangle2);
+    obj.layout249:setLeft(777);
+    obj.layout249:setTop(798);
+    obj.layout249:setWidth(25);
+    obj.layout249:setHeight(23);
+    obj.layout249:setName("layout249");
 
     obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit118:setParent(obj.layout231);
+    obj.edit118:setParent(obj.layout249);
     obj.edit118:setTransparent(true);
     obj.edit118:setFontSize(10);
     obj.edit118:setFontColor("#ffffff");
@@ -4822,16 +5154,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit118:setField("STABF1G2");
     obj.edit118:setName("edit118");
 
-    obj.layout232 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout232:setParent(obj.rectangle2);
-    obj.layout232:setLeft(809);
-    obj.layout232:setTop(798);
-    obj.layout232:setWidth(25);
-    obj.layout232:setHeight(23);
-    obj.layout232:setName("layout232");
+    obj.layout250 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout250:setParent(obj.rectangle2);
+    obj.layout250:setLeft(809);
+    obj.layout250:setTop(798);
+    obj.layout250:setWidth(25);
+    obj.layout250:setHeight(23);
+    obj.layout250:setName("layout250");
 
     obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit119:setParent(obj.layout232);
+    obj.edit119:setParent(obj.layout250);
     obj.edit119:setTransparent(true);
     obj.edit119:setFontSize(10);
     obj.edit119:setFontColor("#ffffff");
@@ -4844,16 +5176,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit119:setField("ATRF1G2");
     obj.edit119:setName("edit119");
 
-    obj.layout233 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout233:setParent(obj.rectangle2);
-    obj.layout233:setLeft(846);
-    obj.layout233:setTop(798);
-    obj.layout233:setWidth(25);
-    obj.layout233:setHeight(23);
-    obj.layout233:setName("layout233");
+    obj.layout251 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout251:setParent(obj.rectangle2);
+    obj.layout251:setLeft(846);
+    obj.layout251:setTop(798);
+    obj.layout251:setWidth(25);
+    obj.layout251:setHeight(23);
+    obj.layout251:setName("layout251");
 
     obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit120:setParent(obj.layout233);
+    obj.edit120:setParent(obj.layout251);
     obj.edit120:setTransparent(true);
     obj.edit120:setFontSize(10);
     obj.edit120:setFontColor("#ffffff");
@@ -4866,16 +5198,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit120:setField("BONF1G2");
     obj.edit120:setName("edit120");
 
-    obj.layout234 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout234:setParent(obj.rectangle2);
-    obj.layout234:setLeft(883);
-    obj.layout234:setTop(798);
-    obj.layout234:setWidth(38);
-    obj.layout234:setHeight(23);
-    obj.layout234:setName("layout234");
+    obj.layout252 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout252:setParent(obj.rectangle2);
+    obj.layout252:setLeft(883);
+    obj.layout252:setTop(798);
+    obj.layout252:setWidth(38);
+    obj.layout252:setHeight(23);
+    obj.layout252:setName("layout252");
 
     obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit121:setParent(obj.layout234);
+    obj.edit121:setParent(obj.layout252);
     obj.edit121:setTransparent(true);
     obj.edit121:setFontSize(10);
     obj.edit121:setFontColor("#ffffff");
@@ -4888,16 +5220,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit121:setField("TOTALF1G2");
     obj.edit121:setName("edit121");
 
-    obj.layout235 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout235:setParent(obj.rectangle2);
-    obj.layout235:setLeft(741);
-    obj.layout235:setTop(825);
-    obj.layout235:setWidth(25);
-    obj.layout235:setHeight(23);
-    obj.layout235:setName("layout235");
+    obj.layout253 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout253:setParent(obj.rectangle2);
+    obj.layout253:setLeft(741);
+    obj.layout253:setTop(825);
+    obj.layout253:setWidth(25);
+    obj.layout253:setHeight(23);
+    obj.layout253:setName("layout253");
 
     obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit122:setParent(obj.layout235);
+    obj.edit122:setParent(obj.layout253);
     obj.edit122:setTransparent(true);
     obj.edit122:setFontSize(10);
     obj.edit122:setFontColor("#ffffff");
@@ -4910,16 +5242,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit122:setField("PODERF2G2");
     obj.edit122:setName("edit122");
 
-    obj.layout236 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout236:setParent(obj.rectangle2);
-    obj.layout236:setLeft(777);
-    obj.layout236:setTop(825);
-    obj.layout236:setWidth(25);
-    obj.layout236:setHeight(23);
-    obj.layout236:setName("layout236");
+    obj.layout254 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout254:setParent(obj.rectangle2);
+    obj.layout254:setLeft(777);
+    obj.layout254:setTop(825);
+    obj.layout254:setWidth(25);
+    obj.layout254:setHeight(23);
+    obj.layout254:setName("layout254");
 
     obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit123:setParent(obj.layout236);
+    obj.edit123:setParent(obj.layout254);
     obj.edit123:setTransparent(true);
     obj.edit123:setFontSize(10);
     obj.edit123:setFontColor("#ffffff");
@@ -4932,16 +5264,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit123:setField("STABF2G2");
     obj.edit123:setName("edit123");
 
-    obj.layout237 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout237:setParent(obj.rectangle2);
-    obj.layout237:setLeft(809);
-    obj.layout237:setTop(825);
-    obj.layout237:setWidth(25);
-    obj.layout237:setHeight(23);
-    obj.layout237:setName("layout237");
+    obj.layout255 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout255:setParent(obj.rectangle2);
+    obj.layout255:setLeft(809);
+    obj.layout255:setTop(825);
+    obj.layout255:setWidth(25);
+    obj.layout255:setHeight(23);
+    obj.layout255:setName("layout255");
 
     obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit124:setParent(obj.layout237);
+    obj.edit124:setParent(obj.layout255);
     obj.edit124:setTransparent(true);
     obj.edit124:setFontSize(10);
     obj.edit124:setFontColor("#ffffff");
@@ -4954,16 +5286,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit124:setField("ATRF2G2");
     obj.edit124:setName("edit124");
 
-    obj.layout238 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout238:setParent(obj.rectangle2);
-    obj.layout238:setLeft(846);
-    obj.layout238:setTop(825);
-    obj.layout238:setWidth(25);
-    obj.layout238:setHeight(23);
-    obj.layout238:setName("layout238");
+    obj.layout256 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout256:setParent(obj.rectangle2);
+    obj.layout256:setLeft(846);
+    obj.layout256:setTop(825);
+    obj.layout256:setWidth(25);
+    obj.layout256:setHeight(23);
+    obj.layout256:setName("layout256");
 
     obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit125:setParent(obj.layout238);
+    obj.edit125:setParent(obj.layout256);
     obj.edit125:setTransparent(true);
     obj.edit125:setFontSize(10);
     obj.edit125:setFontColor("#ffffff");
@@ -4976,16 +5308,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit125:setField("BONF2G2");
     obj.edit125:setName("edit125");
 
-    obj.layout239 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout239:setParent(obj.rectangle2);
-    obj.layout239:setLeft(883);
-    obj.layout239:setTop(825);
-    obj.layout239:setWidth(38);
-    obj.layout239:setHeight(23);
-    obj.layout239:setName("layout239");
+    obj.layout257 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout257:setParent(obj.rectangle2);
+    obj.layout257:setLeft(883);
+    obj.layout257:setTop(825);
+    obj.layout257:setWidth(38);
+    obj.layout257:setHeight(23);
+    obj.layout257:setName("layout257");
 
     obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit126:setParent(obj.layout239);
+    obj.edit126:setParent(obj.layout257);
     obj.edit126:setTransparent(true);
     obj.edit126:setFontSize(10);
     obj.edit126:setFontColor("#ffffff");
@@ -4998,16 +5330,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit126:setField("TOTALF2G2");
     obj.edit126:setName("edit126");
 
-    obj.layout240 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout240:setParent(obj.rectangle2);
-    obj.layout240:setLeft(741);
-    obj.layout240:setTop(851);
-    obj.layout240:setWidth(25);
-    obj.layout240:setHeight(23);
-    obj.layout240:setName("layout240");
+    obj.layout258 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout258:setParent(obj.rectangle2);
+    obj.layout258:setLeft(741);
+    obj.layout258:setTop(851);
+    obj.layout258:setWidth(25);
+    obj.layout258:setHeight(23);
+    obj.layout258:setName("layout258");
 
     obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit127:setParent(obj.layout240);
+    obj.edit127:setParent(obj.layout258);
     obj.edit127:setTransparent(true);
     obj.edit127:setFontSize(10);
     obj.edit127:setFontColor("#ffffff");
@@ -5020,16 +5352,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit127:setField("PODERF1G2D2");
     obj.edit127:setName("edit127");
 
-    obj.layout241 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout241:setParent(obj.rectangle2);
-    obj.layout241:setLeft(777);
-    obj.layout241:setTop(851);
-    obj.layout241:setWidth(25);
-    obj.layout241:setHeight(23);
-    obj.layout241:setName("layout241");
+    obj.layout259 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout259:setParent(obj.rectangle2);
+    obj.layout259:setLeft(777);
+    obj.layout259:setTop(851);
+    obj.layout259:setWidth(25);
+    obj.layout259:setHeight(23);
+    obj.layout259:setName("layout259");
 
     obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit128:setParent(obj.layout241);
+    obj.edit128:setParent(obj.layout259);
     obj.edit128:setTransparent(true);
     obj.edit128:setFontSize(10);
     obj.edit128:setFontColor("#ffffff");
@@ -5042,16 +5374,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit128:setField("STABF1G2");
     obj.edit128:setName("edit128");
 
-    obj.layout242 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout242:setParent(obj.rectangle2);
-    obj.layout242:setLeft(809);
-    obj.layout242:setTop(851);
-    obj.layout242:setWidth(25);
-    obj.layout242:setHeight(23);
-    obj.layout242:setName("layout242");
+    obj.layout260 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout260:setParent(obj.rectangle2);
+    obj.layout260:setLeft(809);
+    obj.layout260:setTop(851);
+    obj.layout260:setWidth(25);
+    obj.layout260:setHeight(23);
+    obj.layout260:setName("layout260");
 
     obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit129:setParent(obj.layout242);
+    obj.edit129:setParent(obj.layout260);
     obj.edit129:setTransparent(true);
     obj.edit129:setFontSize(10);
     obj.edit129:setFontColor("#ffffff");
@@ -5064,16 +5396,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit129:setField("ATRF1G2");
     obj.edit129:setName("edit129");
 
-    obj.layout243 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout243:setParent(obj.rectangle2);
-    obj.layout243:setLeft(846);
-    obj.layout243:setTop(851);
-    obj.layout243:setWidth(25);
-    obj.layout243:setHeight(23);
-    obj.layout243:setName("layout243");
+    obj.layout261 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout261:setParent(obj.rectangle2);
+    obj.layout261:setLeft(846);
+    obj.layout261:setTop(851);
+    obj.layout261:setWidth(25);
+    obj.layout261:setHeight(23);
+    obj.layout261:setName("layout261");
 
     obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit130:setParent(obj.layout243);
+    obj.edit130:setParent(obj.layout261);
     obj.edit130:setTransparent(true);
     obj.edit130:setFontSize(10);
     obj.edit130:setFontColor("#ffffff");
@@ -5086,16 +5418,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit130:setField("BONF1G2");
     obj.edit130:setName("edit130");
 
-    obj.layout244 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout244:setParent(obj.rectangle2);
-    obj.layout244:setLeft(883);
-    obj.layout244:setTop(851);
-    obj.layout244:setWidth(38);
-    obj.layout244:setHeight(23);
-    obj.layout244:setName("layout244");
+    obj.layout262 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout262:setParent(obj.rectangle2);
+    obj.layout262:setLeft(883);
+    obj.layout262:setTop(851);
+    obj.layout262:setWidth(38);
+    obj.layout262:setHeight(23);
+    obj.layout262:setName("layout262");
 
     obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit131:setParent(obj.layout244);
+    obj.edit131:setParent(obj.layout262);
     obj.edit131:setTransparent(true);
     obj.edit131:setFontSize(10);
     obj.edit131:setFontColor("#ffffff");
@@ -5108,16 +5440,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit131:setField("TOTALF1G2D2");
     obj.edit131:setName("edit131");
 
-    obj.layout245 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout245:setParent(obj.rectangle2);
-    obj.layout245:setLeft(741);
-    obj.layout245:setTop(877);
-    obj.layout245:setWidth(25);
-    obj.layout245:setHeight(23);
-    obj.layout245:setName("layout245");
+    obj.layout263 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout263:setParent(obj.rectangle2);
+    obj.layout263:setLeft(741);
+    obj.layout263:setTop(877);
+    obj.layout263:setWidth(25);
+    obj.layout263:setHeight(23);
+    obj.layout263:setName("layout263");
 
     obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit132:setParent(obj.layout245);
+    obj.edit132:setParent(obj.layout263);
     obj.edit132:setTransparent(true);
     obj.edit132:setFontSize(10);
     obj.edit132:setFontColor("#ffffff");
@@ -5130,16 +5462,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit132:setField("PODERF1G2X2");
     obj.edit132:setName("edit132");
 
-    obj.layout246 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout246:setParent(obj.rectangle2);
-    obj.layout246:setLeft(777);
-    obj.layout246:setTop(877);
-    obj.layout246:setWidth(25);
-    obj.layout246:setHeight(23);
-    obj.layout246:setName("layout246");
+    obj.layout264 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout264:setParent(obj.rectangle2);
+    obj.layout264:setLeft(777);
+    obj.layout264:setTop(877);
+    obj.layout264:setWidth(25);
+    obj.layout264:setHeight(23);
+    obj.layout264:setName("layout264");
 
     obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit133:setParent(obj.layout246);
+    obj.edit133:setParent(obj.layout264);
     obj.edit133:setTransparent(true);
     obj.edit133:setFontSize(10);
     obj.edit133:setFontColor("#ffffff");
@@ -5152,16 +5484,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit133:setField("STABF1G2");
     obj.edit133:setName("edit133");
 
-    obj.layout247 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout247:setParent(obj.rectangle2);
-    obj.layout247:setLeft(809);
-    obj.layout247:setTop(877);
-    obj.layout247:setWidth(25);
-    obj.layout247:setHeight(23);
-    obj.layout247:setName("layout247");
+    obj.layout265 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout265:setParent(obj.rectangle2);
+    obj.layout265:setLeft(809);
+    obj.layout265:setTop(877);
+    obj.layout265:setWidth(25);
+    obj.layout265:setHeight(23);
+    obj.layout265:setName("layout265");
 
     obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit134:setParent(obj.layout247);
+    obj.edit134:setParent(obj.layout265);
     obj.edit134:setTransparent(true);
     obj.edit134:setFontSize(10);
     obj.edit134:setFontColor("#ffffff");
@@ -5174,16 +5506,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit134:setField("ATRF1G2");
     obj.edit134:setName("edit134");
 
-    obj.layout248 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout248:setParent(obj.rectangle2);
-    obj.layout248:setLeft(846);
-    obj.layout248:setTop(877);
-    obj.layout248:setWidth(25);
-    obj.layout248:setHeight(23);
-    obj.layout248:setName("layout248");
+    obj.layout266 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout266:setParent(obj.rectangle2);
+    obj.layout266:setLeft(846);
+    obj.layout266:setTop(877);
+    obj.layout266:setWidth(25);
+    obj.layout266:setHeight(23);
+    obj.layout266:setName("layout266");
 
     obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit135:setParent(obj.layout248);
+    obj.edit135:setParent(obj.layout266);
     obj.edit135:setTransparent(true);
     obj.edit135:setFontSize(10);
     obj.edit135:setFontColor("#ffffff");
@@ -5196,16 +5528,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit135:setField("BONF1G2");
     obj.edit135:setName("edit135");
 
-    obj.layout249 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout249:setParent(obj.rectangle2);
-    obj.layout249:setLeft(883);
-    obj.layout249:setTop(877);
-    obj.layout249:setWidth(38);
-    obj.layout249:setHeight(23);
-    obj.layout249:setName("layout249");
+    obj.layout267 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout267:setParent(obj.rectangle2);
+    obj.layout267:setLeft(883);
+    obj.layout267:setTop(877);
+    obj.layout267:setWidth(38);
+    obj.layout267:setHeight(23);
+    obj.layout267:setName("layout267");
 
     obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit136:setParent(obj.layout249);
+    obj.edit136:setParent(obj.layout267);
     obj.edit136:setTransparent(true);
     obj.edit136:setFontSize(10);
     obj.edit136:setFontColor("#ffffff");
@@ -5218,16 +5550,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit136:setField("TOTALF1G2X2");
     obj.edit136:setName("edit136");
 
-    obj.layout250 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout250:setParent(obj.rectangle2);
-    obj.layout250:setLeft(684);
-    obj.layout250:setTop(850);
-    obj.layout250:setWidth(15);
-    obj.layout250:setHeight(15);
-    obj.layout250:setName("layout250");
+    obj.layout268 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout268:setParent(obj.rectangle2);
+    obj.layout268:setLeft(684);
+    obj.layout268:setTop(850);
+    obj.layout268:setWidth(15);
+    obj.layout268:setHeight(15);
+    obj.layout268:setName("layout268");
 
     obj.imageCheckBox112 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox112:setParent(obj.layout250);
+    obj.imageCheckBox112:setParent(obj.layout268);
     obj.imageCheckBox112:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox112:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox112:setLeft(0);
@@ -5237,16 +5569,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox112:setField("A2G2");
     obj.imageCheckBox112:setName("imageCheckBox112");
 
-    obj.layout251 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout251:setParent(obj.rectangle2);
-    obj.layout251:setLeft(704);
-    obj.layout251:setTop(850);
-    obj.layout251:setWidth(15);
-    obj.layout251:setHeight(15);
-    obj.layout251:setName("layout251");
+    obj.layout269 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout269:setParent(obj.rectangle2);
+    obj.layout269:setLeft(704);
+    obj.layout269:setTop(850);
+    obj.layout269:setWidth(15);
+    obj.layout269:setHeight(15);
+    obj.layout269:setName("layout269");
 
     obj.imageCheckBox113 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox113:setParent(obj.layout251);
+    obj.imageCheckBox113:setParent(obj.layout269);
     obj.imageCheckBox113:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox113:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox113:setLeft(0);
@@ -5256,16 +5588,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox113:setField("A4G2");
     obj.imageCheckBox113:setName("imageCheckBox113");
 
-    obj.layout252 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout252:setParent(obj.rectangle2);
-    obj.layout252:setLeft(684);
-    obj.layout252:setTop(869);
-    obj.layout252:setWidth(15);
-    obj.layout252:setHeight(15);
-    obj.layout252:setName("layout252");
+    obj.layout270 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout270:setParent(obj.rectangle2);
+    obj.layout270:setLeft(684);
+    obj.layout270:setTop(869);
+    obj.layout270:setWidth(15);
+    obj.layout270:setHeight(15);
+    obj.layout270:setName("layout270");
 
     obj.imageCheckBox114 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox114:setParent(obj.layout252);
+    obj.imageCheckBox114:setParent(obj.layout270);
     obj.imageCheckBox114:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox114:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox114:setLeft(0);
@@ -5275,16 +5607,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox114:setField("A1G2");
     obj.imageCheckBox114:setName("imageCheckBox114");
 
-    obj.layout253 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout253:setParent(obj.rectangle2);
-    obj.layout253:setLeft(704);
-    obj.layout253:setTop(869);
-    obj.layout253:setWidth(15);
-    obj.layout253:setHeight(15);
-    obj.layout253:setName("layout253");
+    obj.layout271 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout271:setParent(obj.rectangle2);
+    obj.layout271:setLeft(704);
+    obj.layout271:setTop(869);
+    obj.layout271:setWidth(15);
+    obj.layout271:setHeight(15);
+    obj.layout271:setName("layout271");
 
     obj.imageCheckBox115 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox115:setParent(obj.layout253);
+    obj.imageCheckBox115:setParent(obj.layout271);
     obj.imageCheckBox115:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox115:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox115:setLeft(0);
@@ -5294,16 +5626,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox115:setField("A3G2");
     obj.imageCheckBox115:setName("imageCheckBox115");
 
-    obj.layout254 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout254:setParent(obj.rectangle2);
-    obj.layout254:setLeft(539);
-    obj.layout254:setTop(885);
-    obj.layout254:setWidth(15);
-    obj.layout254:setHeight(15);
-    obj.layout254:setName("layout254");
+    obj.layout272 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout272:setParent(obj.rectangle2);
+    obj.layout272:setLeft(539);
+    obj.layout272:setTop(885);
+    obj.layout272:setWidth(15);
+    obj.layout272:setHeight(15);
+    obj.layout272:setName("layout272");
 
     obj.imageCheckBox116 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox116:setParent(obj.layout254);
+    obj.imageCheckBox116:setParent(obj.layout272);
     obj.imageCheckBox116:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox116:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox116:setLeft(0);
@@ -5313,16 +5645,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox116:setField("EFG2");
     obj.imageCheckBox116:setName("imageCheckBox116");
 
-    obj.layout255 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout255:setParent(obj.rectangle2);
-    obj.layout255:setLeft(574);
-    obj.layout255:setTop(885);
-    obj.layout255:setWidth(15);
-    obj.layout255:setHeight(15);
-    obj.layout255:setName("layout255");
+    obj.layout273 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout273:setParent(obj.rectangle2);
+    obj.layout273:setLeft(574);
+    obj.layout273:setTop(885);
+    obj.layout273:setWidth(15);
+    obj.layout273:setHeight(15);
+    obj.layout273:setName("layout273");
 
     obj.imageCheckBox117 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox117:setParent(obj.layout255);
+    obj.imageCheckBox117:setParent(obj.layout273);
     obj.imageCheckBox117:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox117:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox117:setLeft(0);
@@ -5332,16 +5664,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox117:setField("ESPG2");
     obj.imageCheckBox117:setName("imageCheckBox117");
 
-    obj.layout256 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout256:setParent(obj.rectangle2);
-    obj.layout256:setLeft(609);
-    obj.layout256:setTop(885);
-    obj.layout256:setWidth(15);
-    obj.layout256:setHeight(15);
-    obj.layout256:setName("layout256");
+    obj.layout274 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout274:setParent(obj.rectangle2);
+    obj.layout274:setLeft(609);
+    obj.layout274:setTop(885);
+    obj.layout274:setWidth(15);
+    obj.layout274:setHeight(15);
+    obj.layout274:setName("layout274");
 
     obj.imageCheckBox118 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox118:setParent(obj.layout256);
+    obj.imageCheckBox118:setParent(obj.layout274);
     obj.imageCheckBox118:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox118:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox118:setLeft(0);
@@ -5351,16 +5683,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox118:setField("FISG2");
     obj.imageCheckBox118:setName("imageCheckBox118");
 
-    obj.layout257 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout257:setParent(obj.rectangle2);
-    obj.layout257:setLeft(37);
-    obj.layout257:setTop(940);
-    obj.layout257:setWidth(115);
-    obj.layout257:setHeight(24);
-    obj.layout257:setName("layout257");
+    obj.layout275 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout275:setParent(obj.rectangle2);
+    obj.layout275:setLeft(37);
+    obj.layout275:setTop(940);
+    obj.layout275:setWidth(115);
+    obj.layout275:setHeight(24);
+    obj.layout275:setName("layout275");
 
     obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit137:setParent(obj.layout257);
+    obj.edit137:setParent(obj.layout275);
     obj.edit137:setTransparent(true);
     obj.edit137:setFontSize(13);
     obj.edit137:setFontColor("#ffffff");
@@ -5373,16 +5705,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit137:setField("Golpe3");
     obj.edit137:setName("edit137");
 
-    obj.layout258 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout258:setParent(obj.rectangle2);
-    obj.layout258:setLeft(155);
-    obj.layout258:setTop(940);
-    obj.layout258:setWidth(115);
-    obj.layout258:setHeight(24);
-    obj.layout258:setName("layout258");
+    obj.layout276 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout276:setParent(obj.rectangle2);
+    obj.layout276:setLeft(155);
+    obj.layout276:setTop(940);
+    obj.layout276:setWidth(115);
+    obj.layout276:setHeight(24);
+    obj.layout276:setName("layout276");
 
     obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit138:setParent(obj.layout258);
+    obj.edit138:setParent(obj.layout276);
     obj.edit138:setTransparent(true);
     obj.edit138:setFontSize(13);
     obj.edit138:setFontColor("#ffffff");
@@ -5395,16 +5727,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit138:setField("TipoG3");
     obj.edit138:setName("edit138");
 
-    obj.layout259 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout259:setParent(obj.rectangle2);
-    obj.layout259:setLeft(37);
-    obj.layout259:setTop(972);
-    obj.layout259:setWidth(236);
-    obj.layout259:setHeight(24);
-    obj.layout259:setName("layout259");
+    obj.layout277 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout277:setParent(obj.rectangle2);
+    obj.layout277:setLeft(37);
+    obj.layout277:setTop(972);
+    obj.layout277:setWidth(236);
+    obj.layout277:setHeight(24);
+    obj.layout277:setName("layout277");
 
     obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit139:setParent(obj.layout259);
+    obj.edit139:setParent(obj.layout277);
     obj.edit139:setTransparent(true);
     obj.edit139:setFontSize(12);
     obj.edit139:setFontColor("#ffffff");
@@ -5417,16 +5749,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit139:setField("EfeitoG3");
     obj.edit139:setName("edit139");
 
-    obj.layout260 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout260:setParent(obj.rectangle2);
-    obj.layout260:setLeft(37);
-    obj.layout260:setTop(1005);
-    obj.layout260:setWidth(45);
-    obj.layout260:setHeight(24);
-    obj.layout260:setName("layout260");
+    obj.layout278 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout278:setParent(obj.rectangle2);
+    obj.layout278:setLeft(37);
+    obj.layout278:setTop(1005);
+    obj.layout278:setWidth(45);
+    obj.layout278:setHeight(24);
+    obj.layout278:setName("layout278");
 
     obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit140:setParent(obj.layout260);
+    obj.edit140:setParent(obj.layout278);
     obj.edit140:setTransparent(true);
     obj.edit140:setFontSize(12);
     obj.edit140:setFontColor("#ffffff");
@@ -5439,16 +5771,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit140:setField("PPG3");
     obj.edit140:setName("edit140");
 
-    obj.layout261 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout261:setParent(obj.rectangle2);
-    obj.layout261:setLeft(88);
-    obj.layout261:setTop(1005);
-    obj.layout261:setWidth(45);
-    obj.layout261:setHeight(24);
-    obj.layout261:setName("layout261");
+    obj.layout279 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout279:setParent(obj.rectangle2);
+    obj.layout279:setLeft(88);
+    obj.layout279:setTop(1005);
+    obj.layout279:setWidth(45);
+    obj.layout279:setHeight(24);
+    obj.layout279:setName("layout279");
 
     obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit141:setParent(obj.layout261);
+    obj.edit141:setParent(obj.layout279);
     obj.edit141:setTransparent(true);
     obj.edit141:setFontSize(12);
     obj.edit141:setFontColor("#ffffff");
@@ -5461,16 +5793,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit141:setField("PPResG3");
     obj.edit141:setName("edit141");
 
-    obj.layout262 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout262:setParent(obj.rectangle2);
-    obj.layout262:setLeft(138);
-    obj.layout262:setTop(1005);
-    obj.layout262:setWidth(45);
-    obj.layout262:setHeight(24);
-    obj.layout262:setName("layout262");
+    obj.layout280 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout280:setParent(obj.rectangle2);
+    obj.layout280:setLeft(138);
+    obj.layout280:setTop(1005);
+    obj.layout280:setWidth(45);
+    obj.layout280:setHeight(24);
+    obj.layout280:setName("layout280");
 
     obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit142:setParent(obj.layout262);
+    obj.edit142:setParent(obj.layout280);
     obj.edit142:setTransparent(true);
     obj.edit142:setFontSize(12);
     obj.edit142:setFontColor("#ffffff");
@@ -5483,16 +5815,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit142:setField("_AG3");
     obj.edit142:setName("edit142");
 
-    obj.layout263 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout263:setParent(obj.rectangle2);
-    obj.layout263:setLeft(288);
-    obj.layout263:setTop(957);
-    obj.layout263:setWidth(25);
-    obj.layout263:setHeight(23);
-    obj.layout263:setName("layout263");
+    obj.layout281 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout281:setParent(obj.rectangle2);
+    obj.layout281:setLeft(288);
+    obj.layout281:setTop(957);
+    obj.layout281:setWidth(25);
+    obj.layout281:setHeight(23);
+    obj.layout281:setName("layout281");
 
     obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit143:setParent(obj.layout263);
+    obj.edit143:setParent(obj.layout281);
     obj.edit143:setTransparent(true);
     obj.edit143:setFontSize(10);
     obj.edit143:setFontColor("#ffffff");
@@ -5505,16 +5837,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit143:setField("PODERF1G3");
     obj.edit143:setName("edit143");
 
-    obj.layout264 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout264:setParent(obj.rectangle2);
-    obj.layout264:setLeft(323);
-    obj.layout264:setTop(957);
-    obj.layout264:setWidth(25);
-    obj.layout264:setHeight(23);
-    obj.layout264:setName("layout264");
+    obj.layout282 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout282:setParent(obj.rectangle2);
+    obj.layout282:setLeft(323);
+    obj.layout282:setTop(957);
+    obj.layout282:setWidth(25);
+    obj.layout282:setHeight(23);
+    obj.layout282:setName("layout282");
 
     obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit144:setParent(obj.layout264);
+    obj.edit144:setParent(obj.layout282);
     obj.edit144:setTransparent(true);
     obj.edit144:setFontSize(10);
     obj.edit144:setFontColor("#ffffff");
@@ -5527,16 +5859,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit144:setField("STABF1G3");
     obj.edit144:setName("edit144");
 
-    obj.layout265 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout265:setParent(obj.rectangle2);
-    obj.layout265:setLeft(355);
-    obj.layout265:setTop(957);
-    obj.layout265:setWidth(25);
-    obj.layout265:setHeight(23);
-    obj.layout265:setName("layout265");
+    obj.layout283 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout283:setParent(obj.rectangle2);
+    obj.layout283:setLeft(355);
+    obj.layout283:setTop(957);
+    obj.layout283:setWidth(25);
+    obj.layout283:setHeight(23);
+    obj.layout283:setName("layout283");
 
     obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit145:setParent(obj.layout265);
+    obj.edit145:setParent(obj.layout283);
     obj.edit145:setTransparent(true);
     obj.edit145:setFontSize(10);
     obj.edit145:setFontColor("#ffffff");
@@ -5549,16 +5881,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit145:setField("ATRF1G3");
     obj.edit145:setName("edit145");
 
-    obj.layout266 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout266:setParent(obj.rectangle2);
-    obj.layout266:setLeft(392);
-    obj.layout266:setTop(957);
-    obj.layout266:setWidth(25);
-    obj.layout266:setHeight(23);
-    obj.layout266:setName("layout266");
+    obj.layout284 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout284:setParent(obj.rectangle2);
+    obj.layout284:setLeft(392);
+    obj.layout284:setTop(957);
+    obj.layout284:setWidth(25);
+    obj.layout284:setHeight(23);
+    obj.layout284:setName("layout284");
 
     obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit146:setParent(obj.layout266);
+    obj.edit146:setParent(obj.layout284);
     obj.edit146:setTransparent(true);
     obj.edit146:setFontSize(10);
     obj.edit146:setFontColor("#ffffff");
@@ -5571,16 +5903,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit146:setField("BONF1G3");
     obj.edit146:setName("edit146");
 
-    obj.layout267 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout267:setParent(obj.rectangle2);
-    obj.layout267:setLeft(427);
-    obj.layout267:setTop(957);
-    obj.layout267:setWidth(38);
-    obj.layout267:setHeight(23);
-    obj.layout267:setName("layout267");
+    obj.layout285 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout285:setParent(obj.rectangle2);
+    obj.layout285:setLeft(427);
+    obj.layout285:setTop(957);
+    obj.layout285:setWidth(38);
+    obj.layout285:setHeight(23);
+    obj.layout285:setName("layout285");
 
     obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit147:setParent(obj.layout267);
+    obj.edit147:setParent(obj.layout285);
     obj.edit147:setTransparent(true);
     obj.edit147:setFontSize(10);
     obj.edit147:setFontColor("#ffffff");
@@ -5593,16 +5925,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit147:setField("TOTALF1G3");
     obj.edit147:setName("edit147");
 
-    obj.layout268 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout268:setParent(obj.rectangle2);
-    obj.layout268:setLeft(288);
-    obj.layout268:setTop(983);
-    obj.layout268:setWidth(25);
-    obj.layout268:setHeight(23);
-    obj.layout268:setName("layout268");
+    obj.layout286 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout286:setParent(obj.rectangle2);
+    obj.layout286:setLeft(288);
+    obj.layout286:setTop(983);
+    obj.layout286:setWidth(25);
+    obj.layout286:setHeight(23);
+    obj.layout286:setName("layout286");
 
     obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit148:setParent(obj.layout268);
+    obj.edit148:setParent(obj.layout286);
     obj.edit148:setTransparent(true);
     obj.edit148:setFontSize(10);
     obj.edit148:setFontColor("#ffffff");
@@ -5615,16 +5947,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit148:setField("PODERF2G3");
     obj.edit148:setName("edit148");
 
-    obj.layout269 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout269:setParent(obj.rectangle2);
-    obj.layout269:setLeft(323);
-    obj.layout269:setTop(983);
-    obj.layout269:setWidth(25);
-    obj.layout269:setHeight(23);
-    obj.layout269:setName("layout269");
+    obj.layout287 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout287:setParent(obj.rectangle2);
+    obj.layout287:setLeft(323);
+    obj.layout287:setTop(983);
+    obj.layout287:setWidth(25);
+    obj.layout287:setHeight(23);
+    obj.layout287:setName("layout287");
 
     obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit149:setParent(obj.layout269);
+    obj.edit149:setParent(obj.layout287);
     obj.edit149:setTransparent(true);
     obj.edit149:setFontSize(10);
     obj.edit149:setFontColor("#ffffff");
@@ -5637,16 +5969,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit149:setField("STABF2G3");
     obj.edit149:setName("edit149");
 
-    obj.layout270 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout270:setParent(obj.rectangle2);
-    obj.layout270:setLeft(355);
-    obj.layout270:setTop(983);
-    obj.layout270:setWidth(25);
-    obj.layout270:setHeight(23);
-    obj.layout270:setName("layout270");
+    obj.layout288 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout288:setParent(obj.rectangle2);
+    obj.layout288:setLeft(355);
+    obj.layout288:setTop(983);
+    obj.layout288:setWidth(25);
+    obj.layout288:setHeight(23);
+    obj.layout288:setName("layout288");
 
     obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit150:setParent(obj.layout270);
+    obj.edit150:setParent(obj.layout288);
     obj.edit150:setTransparent(true);
     obj.edit150:setFontSize(10);
     obj.edit150:setFontColor("#ffffff");
@@ -5659,16 +5991,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit150:setField("ATRF2G3");
     obj.edit150:setName("edit150");
 
-    obj.layout271 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout271:setParent(obj.rectangle2);
-    obj.layout271:setLeft(392);
-    obj.layout271:setTop(983);
-    obj.layout271:setWidth(25);
-    obj.layout271:setHeight(23);
-    obj.layout271:setName("layout271");
+    obj.layout289 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout289:setParent(obj.rectangle2);
+    obj.layout289:setLeft(392);
+    obj.layout289:setTop(983);
+    obj.layout289:setWidth(25);
+    obj.layout289:setHeight(23);
+    obj.layout289:setName("layout289");
 
     obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit151:setParent(obj.layout271);
+    obj.edit151:setParent(obj.layout289);
     obj.edit151:setTransparent(true);
     obj.edit151:setFontSize(10);
     obj.edit151:setFontColor("#ffffff");
@@ -5681,16 +6013,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit151:setField("BONF2G3");
     obj.edit151:setName("edit151");
 
-    obj.layout272 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout272:setParent(obj.rectangle2);
-    obj.layout272:setLeft(427);
-    obj.layout272:setTop(983);
-    obj.layout272:setWidth(38);
-    obj.layout272:setHeight(23);
-    obj.layout272:setName("layout272");
+    obj.layout290 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout290:setParent(obj.rectangle2);
+    obj.layout290:setLeft(427);
+    obj.layout290:setTop(983);
+    obj.layout290:setWidth(38);
+    obj.layout290:setHeight(23);
+    obj.layout290:setName("layout290");
 
     obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit152:setParent(obj.layout272);
+    obj.edit152:setParent(obj.layout290);
     obj.edit152:setTransparent(true);
     obj.edit152:setFontSize(10);
     obj.edit152:setFontColor("#ffffff");
@@ -5703,16 +6035,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit152:setField("TOTALF2G3");
     obj.edit152:setName("edit152");
 
-    obj.layout273 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout273:setParent(obj.rectangle2);
-    obj.layout273:setLeft(288);
-    obj.layout273:setTop(1010);
-    obj.layout273:setWidth(25);
-    obj.layout273:setHeight(23);
-    obj.layout273:setName("layout273");
+    obj.layout291 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout291:setParent(obj.rectangle2);
+    obj.layout291:setLeft(288);
+    obj.layout291:setTop(1010);
+    obj.layout291:setWidth(25);
+    obj.layout291:setHeight(23);
+    obj.layout291:setName("layout291");
 
     obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit153:setParent(obj.layout273);
+    obj.edit153:setParent(obj.layout291);
     obj.edit153:setTransparent(true);
     obj.edit153:setFontSize(10);
     obj.edit153:setFontColor("#ffffff");
@@ -5725,16 +6057,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit153:setField("PODERF1G3D2");
     obj.edit153:setName("edit153");
 
-    obj.layout274 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout274:setParent(obj.rectangle2);
-    obj.layout274:setLeft(323);
-    obj.layout274:setTop(1010);
-    obj.layout274:setWidth(25);
-    obj.layout274:setHeight(23);
-    obj.layout274:setName("layout274");
+    obj.layout292 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout292:setParent(obj.rectangle2);
+    obj.layout292:setLeft(323);
+    obj.layout292:setTop(1010);
+    obj.layout292:setWidth(25);
+    obj.layout292:setHeight(23);
+    obj.layout292:setName("layout292");
 
     obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit154:setParent(obj.layout274);
+    obj.edit154:setParent(obj.layout292);
     obj.edit154:setTransparent(true);
     obj.edit154:setFontSize(10);
     obj.edit154:setFontColor("#ffffff");
@@ -5747,16 +6079,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit154:setField("STABF1G3");
     obj.edit154:setName("edit154");
 
-    obj.layout275 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout275:setParent(obj.rectangle2);
-    obj.layout275:setLeft(355);
-    obj.layout275:setTop(1010);
-    obj.layout275:setWidth(25);
-    obj.layout275:setHeight(23);
-    obj.layout275:setName("layout275");
+    obj.layout293 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout293:setParent(obj.rectangle2);
+    obj.layout293:setLeft(355);
+    obj.layout293:setTop(1010);
+    obj.layout293:setWidth(25);
+    obj.layout293:setHeight(23);
+    obj.layout293:setName("layout293");
 
     obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit155:setParent(obj.layout275);
+    obj.edit155:setParent(obj.layout293);
     obj.edit155:setTransparent(true);
     obj.edit155:setFontSize(10);
     obj.edit155:setFontColor("#ffffff");
@@ -5769,16 +6101,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit155:setField("ATRF1G3");
     obj.edit155:setName("edit155");
 
-    obj.layout276 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout276:setParent(obj.rectangle2);
-    obj.layout276:setLeft(392);
-    obj.layout276:setTop(1010);
-    obj.layout276:setWidth(25);
-    obj.layout276:setHeight(23);
-    obj.layout276:setName("layout276");
+    obj.layout294 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout294:setParent(obj.rectangle2);
+    obj.layout294:setLeft(392);
+    obj.layout294:setTop(1010);
+    obj.layout294:setWidth(25);
+    obj.layout294:setHeight(23);
+    obj.layout294:setName("layout294");
 
     obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit156:setParent(obj.layout276);
+    obj.edit156:setParent(obj.layout294);
     obj.edit156:setTransparent(true);
     obj.edit156:setFontSize(10);
     obj.edit156:setFontColor("#ffffff");
@@ -5791,16 +6123,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit156:setField("BONF1G3");
     obj.edit156:setName("edit156");
 
-    obj.layout277 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout277:setParent(obj.rectangle2);
-    obj.layout277:setLeft(427);
-    obj.layout277:setTop(1010);
-    obj.layout277:setWidth(38);
-    obj.layout277:setHeight(23);
-    obj.layout277:setName("layout277");
+    obj.layout295 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout295:setParent(obj.rectangle2);
+    obj.layout295:setLeft(427);
+    obj.layout295:setTop(1010);
+    obj.layout295:setWidth(38);
+    obj.layout295:setHeight(23);
+    obj.layout295:setName("layout295");
 
     obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit157:setParent(obj.layout277);
+    obj.edit157:setParent(obj.layout295);
     obj.edit157:setTransparent(true);
     obj.edit157:setFontSize(10);
     obj.edit157:setFontColor("#ffffff");
@@ -5813,16 +6145,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit157:setField("TOTALF1G3D2");
     obj.edit157:setName("edit157");
 
-    obj.layout278 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout278:setParent(obj.rectangle2);
-    obj.layout278:setLeft(288);
-    obj.layout278:setTop(1038);
-    obj.layout278:setWidth(25);
-    obj.layout278:setHeight(23);
-    obj.layout278:setName("layout278");
+    obj.layout296 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout296:setParent(obj.rectangle2);
+    obj.layout296:setLeft(288);
+    obj.layout296:setTop(1038);
+    obj.layout296:setWidth(25);
+    obj.layout296:setHeight(23);
+    obj.layout296:setName("layout296");
 
     obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit158:setParent(obj.layout278);
+    obj.edit158:setParent(obj.layout296);
     obj.edit158:setTransparent(true);
     obj.edit158:setFontSize(10);
     obj.edit158:setFontColor("#ffffff");
@@ -5835,16 +6167,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit158:setField("PODERF1G3X2");
     obj.edit158:setName("edit158");
 
-    obj.layout279 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout279:setParent(obj.rectangle2);
-    obj.layout279:setLeft(323);
-    obj.layout279:setTop(1038);
-    obj.layout279:setWidth(25);
-    obj.layout279:setHeight(23);
-    obj.layout279:setName("layout279");
+    obj.layout297 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout297:setParent(obj.rectangle2);
+    obj.layout297:setLeft(323);
+    obj.layout297:setTop(1038);
+    obj.layout297:setWidth(25);
+    obj.layout297:setHeight(23);
+    obj.layout297:setName("layout297");
 
     obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit159:setParent(obj.layout279);
+    obj.edit159:setParent(obj.layout297);
     obj.edit159:setTransparent(true);
     obj.edit159:setFontSize(10);
     obj.edit159:setFontColor("#ffffff");
@@ -5857,16 +6189,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit159:setField("STABF1G3");
     obj.edit159:setName("edit159");
 
-    obj.layout280 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout280:setParent(obj.rectangle2);
-    obj.layout280:setLeft(355);
-    obj.layout280:setTop(1038);
-    obj.layout280:setWidth(25);
-    obj.layout280:setHeight(23);
-    obj.layout280:setName("layout280");
+    obj.layout298 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout298:setParent(obj.rectangle2);
+    obj.layout298:setLeft(355);
+    obj.layout298:setTop(1038);
+    obj.layout298:setWidth(25);
+    obj.layout298:setHeight(23);
+    obj.layout298:setName("layout298");
 
     obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit160:setParent(obj.layout280);
+    obj.edit160:setParent(obj.layout298);
     obj.edit160:setTransparent(true);
     obj.edit160:setFontSize(10);
     obj.edit160:setFontColor("#ffffff");
@@ -5879,16 +6211,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit160:setField("ATRF1G3");
     obj.edit160:setName("edit160");
 
-    obj.layout281 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout281:setParent(obj.rectangle2);
-    obj.layout281:setLeft(392);
-    obj.layout281:setTop(1038);
-    obj.layout281:setWidth(25);
-    obj.layout281:setHeight(23);
-    obj.layout281:setName("layout281");
+    obj.layout299 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout299:setParent(obj.rectangle2);
+    obj.layout299:setLeft(392);
+    obj.layout299:setTop(1038);
+    obj.layout299:setWidth(25);
+    obj.layout299:setHeight(23);
+    obj.layout299:setName("layout299");
 
     obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit161:setParent(obj.layout281);
+    obj.edit161:setParent(obj.layout299);
     obj.edit161:setTransparent(true);
     obj.edit161:setFontSize(10);
     obj.edit161:setFontColor("#ffffff");
@@ -5901,16 +6233,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit161:setField("BONF1G3");
     obj.edit161:setName("edit161");
 
-    obj.layout282 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout282:setParent(obj.rectangle2);
-    obj.layout282:setLeft(427);
-    obj.layout282:setTop(1038);
-    obj.layout282:setWidth(38);
-    obj.layout282:setHeight(23);
-    obj.layout282:setName("layout282");
+    obj.layout300 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout300:setParent(obj.rectangle2);
+    obj.layout300:setLeft(427);
+    obj.layout300:setTop(1038);
+    obj.layout300:setWidth(38);
+    obj.layout300:setHeight(23);
+    obj.layout300:setName("layout300");
 
     obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit162:setParent(obj.layout282);
+    obj.edit162:setParent(obj.layout300);
     obj.edit162:setTransparent(true);
     obj.edit162:setFontSize(10);
     obj.edit162:setFontColor("#ffffff");
@@ -5923,16 +6255,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit162:setField("TOTALF1G3X2");
     obj.edit162:setName("edit162");
 
-    obj.layout283 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout283:setParent(obj.rectangle2);
-    obj.layout283:setLeft(230);
-    obj.layout283:setTop(1009);
-    obj.layout283:setWidth(15);
-    obj.layout283:setHeight(15);
-    obj.layout283:setName("layout283");
+    obj.layout301 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout301:setParent(obj.rectangle2);
+    obj.layout301:setLeft(230);
+    obj.layout301:setTop(1009);
+    obj.layout301:setWidth(15);
+    obj.layout301:setHeight(15);
+    obj.layout301:setName("layout301");
 
     obj.imageCheckBox119 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox119:setParent(obj.layout283);
+    obj.imageCheckBox119:setParent(obj.layout301);
     obj.imageCheckBox119:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox119:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox119:setLeft(0);
@@ -5942,16 +6274,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox119:setField("A2G3");
     obj.imageCheckBox119:setName("imageCheckBox119");
 
-    obj.layout284 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout284:setParent(obj.rectangle2);
-    obj.layout284:setLeft(250);
-    obj.layout284:setTop(1009);
-    obj.layout284:setWidth(15);
-    obj.layout284:setHeight(15);
-    obj.layout284:setName("layout284");
+    obj.layout302 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout302:setParent(obj.rectangle2);
+    obj.layout302:setLeft(250);
+    obj.layout302:setTop(1009);
+    obj.layout302:setWidth(15);
+    obj.layout302:setHeight(15);
+    obj.layout302:setName("layout302");
 
     obj.imageCheckBox120 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox120:setParent(obj.layout284);
+    obj.imageCheckBox120:setParent(obj.layout302);
     obj.imageCheckBox120:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox120:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox120:setLeft(0);
@@ -5961,16 +6293,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox120:setField("A4G3");
     obj.imageCheckBox120:setName("imageCheckBox120");
 
-    obj.layout285 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout285:setParent(obj.rectangle2);
-    obj.layout285:setLeft(230);
-    obj.layout285:setTop(1028);
-    obj.layout285:setWidth(15);
-    obj.layout285:setHeight(15);
-    obj.layout285:setName("layout285");
+    obj.layout303 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout303:setParent(obj.rectangle2);
+    obj.layout303:setLeft(230);
+    obj.layout303:setTop(1028);
+    obj.layout303:setWidth(15);
+    obj.layout303:setHeight(15);
+    obj.layout303:setName("layout303");
 
     obj.imageCheckBox121 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox121:setParent(obj.layout285);
+    obj.imageCheckBox121:setParent(obj.layout303);
     obj.imageCheckBox121:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox121:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox121:setLeft(0);
@@ -5980,16 +6312,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox121:setField("A1G3");
     obj.imageCheckBox121:setName("imageCheckBox121");
 
-    obj.layout286 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout286:setParent(obj.rectangle2);
-    obj.layout286:setLeft(250);
-    obj.layout286:setTop(1028);
-    obj.layout286:setWidth(15);
-    obj.layout286:setHeight(15);
-    obj.layout286:setName("layout286");
+    obj.layout304 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout304:setParent(obj.rectangle2);
+    obj.layout304:setLeft(250);
+    obj.layout304:setTop(1028);
+    obj.layout304:setWidth(15);
+    obj.layout304:setHeight(15);
+    obj.layout304:setName("layout304");
 
     obj.imageCheckBox122 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox122:setParent(obj.layout286);
+    obj.imageCheckBox122:setParent(obj.layout304);
     obj.imageCheckBox122:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox122:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox122:setLeft(0);
@@ -5999,16 +6331,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox122:setField("A3G3");
     obj.imageCheckBox122:setName("imageCheckBox122");
 
-    obj.layout287 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout287:setParent(obj.rectangle2);
-    obj.layout287:setLeft(87);
-    obj.layout287:setTop(1045);
-    obj.layout287:setWidth(15);
-    obj.layout287:setHeight(15);
-    obj.layout287:setName("layout287");
+    obj.layout305 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout305:setParent(obj.rectangle2);
+    obj.layout305:setLeft(87);
+    obj.layout305:setTop(1045);
+    obj.layout305:setWidth(15);
+    obj.layout305:setHeight(15);
+    obj.layout305:setName("layout305");
 
     obj.imageCheckBox123 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox123:setParent(obj.layout287);
+    obj.imageCheckBox123:setParent(obj.layout305);
     obj.imageCheckBox123:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox123:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox123:setLeft(0);
@@ -6018,16 +6350,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox123:setField("EFG3");
     obj.imageCheckBox123:setName("imageCheckBox123");
 
-    obj.layout288 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout288:setParent(obj.rectangle2);
-    obj.layout288:setLeft(121);
-    obj.layout288:setTop(1045);
-    obj.layout288:setWidth(15);
-    obj.layout288:setHeight(15);
-    obj.layout288:setName("layout288");
+    obj.layout306 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout306:setParent(obj.rectangle2);
+    obj.layout306:setLeft(121);
+    obj.layout306:setTop(1045);
+    obj.layout306:setWidth(15);
+    obj.layout306:setHeight(15);
+    obj.layout306:setName("layout306");
 
     obj.imageCheckBox124 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox124:setParent(obj.layout288);
+    obj.imageCheckBox124:setParent(obj.layout306);
     obj.imageCheckBox124:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox124:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox124:setLeft(0);
@@ -6037,16 +6369,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox124:setField("ESPG3");
     obj.imageCheckBox124:setName("imageCheckBox124");
 
-    obj.layout289 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout289:setParent(obj.rectangle2);
-    obj.layout289:setLeft(156);
-    obj.layout289:setTop(1045);
-    obj.layout289:setWidth(15);
-    obj.layout289:setHeight(15);
-    obj.layout289:setName("layout289");
+    obj.layout307 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout307:setParent(obj.rectangle2);
+    obj.layout307:setLeft(156);
+    obj.layout307:setTop(1045);
+    obj.layout307:setWidth(15);
+    obj.layout307:setHeight(15);
+    obj.layout307:setName("layout307");
 
     obj.imageCheckBox125 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox125:setParent(obj.layout289);
+    obj.imageCheckBox125:setParent(obj.layout307);
     obj.imageCheckBox125:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox125:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox125:setLeft(0);
@@ -6056,16 +6388,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox125:setField("FISG3");
     obj.imageCheckBox125:setName("imageCheckBox125");
 
-    obj.layout290 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout290:setParent(obj.rectangle2);
-    obj.layout290:setLeft(488);
-    obj.layout290:setTop(940);
-    obj.layout290:setWidth(115);
-    obj.layout290:setHeight(24);
-    obj.layout290:setName("layout290");
+    obj.layout308 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout308:setParent(obj.rectangle2);
+    obj.layout308:setLeft(488);
+    obj.layout308:setTop(940);
+    obj.layout308:setWidth(115);
+    obj.layout308:setHeight(24);
+    obj.layout308:setName("layout308");
 
     obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit163:setParent(obj.layout290);
+    obj.edit163:setParent(obj.layout308);
     obj.edit163:setTransparent(true);
     obj.edit163:setFontSize(13);
     obj.edit163:setFontColor("#ffffff");
@@ -6078,16 +6410,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit163:setField("Golpe4");
     obj.edit163:setName("edit163");
 
-    obj.layout291 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout291:setParent(obj.rectangle2);
-    obj.layout291:setLeft(608);
-    obj.layout291:setTop(940);
-    obj.layout291:setWidth(115);
-    obj.layout291:setHeight(24);
-    obj.layout291:setName("layout291");
+    obj.layout309 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout309:setParent(obj.rectangle2);
+    obj.layout309:setLeft(608);
+    obj.layout309:setTop(940);
+    obj.layout309:setWidth(115);
+    obj.layout309:setHeight(24);
+    obj.layout309:setName("layout309");
 
     obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit164:setParent(obj.layout291);
+    obj.edit164:setParent(obj.layout309);
     obj.edit164:setTransparent(true);
     obj.edit164:setFontSize(13);
     obj.edit164:setFontColor("#ffffff");
@@ -6100,16 +6432,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit164:setField("TipoG4");
     obj.edit164:setName("edit164");
 
-    obj.layout292 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout292:setParent(obj.rectangle2);
-    obj.layout292:setLeft(488);
-    obj.layout292:setTop(972);
-    obj.layout292:setWidth(238);
-    obj.layout292:setHeight(24);
-    obj.layout292:setName("layout292");
+    obj.layout310 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout310:setParent(obj.rectangle2);
+    obj.layout310:setLeft(488);
+    obj.layout310:setTop(972);
+    obj.layout310:setWidth(238);
+    obj.layout310:setHeight(24);
+    obj.layout310:setName("layout310");
 
     obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit165:setParent(obj.layout292);
+    obj.edit165:setParent(obj.layout310);
     obj.edit165:setTransparent(true);
     obj.edit165:setFontSize(12);
     obj.edit165:setFontColor("#ffffff");
@@ -6122,16 +6454,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit165:setField("EfeitoG4");
     obj.edit165:setName("edit165");
 
-    obj.layout293 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout293:setParent(obj.rectangle2);
-    obj.layout293:setLeft(488);
-    obj.layout293:setTop(1005);
-    obj.layout293:setWidth(45);
-    obj.layout293:setHeight(24);
-    obj.layout293:setName("layout293");
+    obj.layout311 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout311:setParent(obj.rectangle2);
+    obj.layout311:setLeft(488);
+    obj.layout311:setTop(1005);
+    obj.layout311:setWidth(45);
+    obj.layout311:setHeight(24);
+    obj.layout311:setName("layout311");
 
     obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit166:setParent(obj.layout293);
+    obj.edit166:setParent(obj.layout311);
     obj.edit166:setTransparent(true);
     obj.edit166:setFontSize(12);
     obj.edit166:setFontColor("#ffffff");
@@ -6144,16 +6476,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit166:setField("PPG4");
     obj.edit166:setName("edit166");
 
-    obj.layout294 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout294:setParent(obj.rectangle2);
-    obj.layout294:setLeft(539);
-    obj.layout294:setTop(1005);
-    obj.layout294:setWidth(45);
-    obj.layout294:setHeight(24);
-    obj.layout294:setName("layout294");
+    obj.layout312 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout312:setParent(obj.rectangle2);
+    obj.layout312:setLeft(539);
+    obj.layout312:setTop(1005);
+    obj.layout312:setWidth(45);
+    obj.layout312:setHeight(24);
+    obj.layout312:setName("layout312");
 
     obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit167:setParent(obj.layout294);
+    obj.edit167:setParent(obj.layout312);
     obj.edit167:setTransparent(true);
     obj.edit167:setFontSize(12);
     obj.edit167:setFontColor("#ffffff");
@@ -6166,16 +6498,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit167:setField("PPResG4");
     obj.edit167:setName("edit167");
 
-    obj.layout295 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout295:setParent(obj.rectangle2);
-    obj.layout295:setLeft(589);
-    obj.layout295:setTop(1005);
-    obj.layout295:setWidth(45);
-    obj.layout295:setHeight(24);
-    obj.layout295:setName("layout295");
+    obj.layout313 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout313:setParent(obj.rectangle2);
+    obj.layout313:setLeft(589);
+    obj.layout313:setTop(1005);
+    obj.layout313:setWidth(45);
+    obj.layout313:setHeight(24);
+    obj.layout313:setName("layout313");
 
     obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit168:setParent(obj.layout295);
+    obj.edit168:setParent(obj.layout313);
     obj.edit168:setTransparent(true);
     obj.edit168:setFontSize(12);
     obj.edit168:setFontColor("#ffffff");
@@ -6188,16 +6520,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit168:setField("_AG4");
     obj.edit168:setName("edit168");
 
-    obj.layout296 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout296:setParent(obj.rectangle2);
-    obj.layout296:setLeft(741);
-    obj.layout296:setTop(957);
-    obj.layout296:setWidth(25);
-    obj.layout296:setHeight(23);
-    obj.layout296:setName("layout296");
+    obj.layout314 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout314:setParent(obj.rectangle2);
+    obj.layout314:setLeft(741);
+    obj.layout314:setTop(957);
+    obj.layout314:setWidth(25);
+    obj.layout314:setHeight(23);
+    obj.layout314:setName("layout314");
 
     obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit169:setParent(obj.layout296);
+    obj.edit169:setParent(obj.layout314);
     obj.edit169:setTransparent(true);
     obj.edit169:setFontSize(10);
     obj.edit169:setFontColor("#ffffff");
@@ -6210,16 +6542,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit169:setField("PODERF1G4");
     obj.edit169:setName("edit169");
 
-    obj.layout297 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout297:setParent(obj.rectangle2);
-    obj.layout297:setLeft(777);
-    obj.layout297:setTop(957);
-    obj.layout297:setWidth(25);
-    obj.layout297:setHeight(23);
-    obj.layout297:setName("layout297");
+    obj.layout315 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout315:setParent(obj.rectangle2);
+    obj.layout315:setLeft(777);
+    obj.layout315:setTop(957);
+    obj.layout315:setWidth(25);
+    obj.layout315:setHeight(23);
+    obj.layout315:setName("layout315");
 
     obj.edit170 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit170:setParent(obj.layout297);
+    obj.edit170:setParent(obj.layout315);
     obj.edit170:setTransparent(true);
     obj.edit170:setFontSize(10);
     obj.edit170:setFontColor("#ffffff");
@@ -6232,16 +6564,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit170:setField("STABF1G4");
     obj.edit170:setName("edit170");
 
-    obj.layout298 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout298:setParent(obj.rectangle2);
-    obj.layout298:setLeft(809);
-    obj.layout298:setTop(957);
-    obj.layout298:setWidth(25);
-    obj.layout298:setHeight(23);
-    obj.layout298:setName("layout298");
+    obj.layout316 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout316:setParent(obj.rectangle2);
+    obj.layout316:setLeft(809);
+    obj.layout316:setTop(957);
+    obj.layout316:setWidth(25);
+    obj.layout316:setHeight(23);
+    obj.layout316:setName("layout316");
 
     obj.edit171 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit171:setParent(obj.layout298);
+    obj.edit171:setParent(obj.layout316);
     obj.edit171:setTransparent(true);
     obj.edit171:setFontSize(10);
     obj.edit171:setFontColor("#ffffff");
@@ -6254,16 +6586,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit171:setField("ATRF1G4");
     obj.edit171:setName("edit171");
 
-    obj.layout299 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout299:setParent(obj.rectangle2);
-    obj.layout299:setLeft(846);
-    obj.layout299:setTop(957);
-    obj.layout299:setWidth(25);
-    obj.layout299:setHeight(23);
-    obj.layout299:setName("layout299");
+    obj.layout317 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout317:setParent(obj.rectangle2);
+    obj.layout317:setLeft(846);
+    obj.layout317:setTop(957);
+    obj.layout317:setWidth(25);
+    obj.layout317:setHeight(23);
+    obj.layout317:setName("layout317");
 
     obj.edit172 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit172:setParent(obj.layout299);
+    obj.edit172:setParent(obj.layout317);
     obj.edit172:setTransparent(true);
     obj.edit172:setFontSize(10);
     obj.edit172:setFontColor("#ffffff");
@@ -6276,16 +6608,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit172:setField("BONF1G4");
     obj.edit172:setName("edit172");
 
-    obj.layout300 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout300:setParent(obj.rectangle2);
-    obj.layout300:setLeft(883);
-    obj.layout300:setTop(957);
-    obj.layout300:setWidth(38);
-    obj.layout300:setHeight(23);
-    obj.layout300:setName("layout300");
+    obj.layout318 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout318:setParent(obj.rectangle2);
+    obj.layout318:setLeft(883);
+    obj.layout318:setTop(957);
+    obj.layout318:setWidth(38);
+    obj.layout318:setHeight(23);
+    obj.layout318:setName("layout318");
 
     obj.edit173 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit173:setParent(obj.layout300);
+    obj.edit173:setParent(obj.layout318);
     obj.edit173:setTransparent(true);
     obj.edit173:setFontSize(10);
     obj.edit173:setFontColor("#ffffff");
@@ -6298,16 +6630,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit173:setField("TOTALF1G4");
     obj.edit173:setName("edit173");
 
-    obj.layout301 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout301:setParent(obj.rectangle2);
-    obj.layout301:setLeft(741);
-    obj.layout301:setTop(983);
-    obj.layout301:setWidth(25);
-    obj.layout301:setHeight(23);
-    obj.layout301:setName("layout301");
+    obj.layout319 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout319:setParent(obj.rectangle2);
+    obj.layout319:setLeft(741);
+    obj.layout319:setTop(983);
+    obj.layout319:setWidth(25);
+    obj.layout319:setHeight(23);
+    obj.layout319:setName("layout319");
 
     obj.edit174 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit174:setParent(obj.layout301);
+    obj.edit174:setParent(obj.layout319);
     obj.edit174:setTransparent(true);
     obj.edit174:setFontSize(10);
     obj.edit174:setFontColor("#ffffff");
@@ -6320,16 +6652,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit174:setField("PODERF2G4");
     obj.edit174:setName("edit174");
 
-    obj.layout302 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout302:setParent(obj.rectangle2);
-    obj.layout302:setLeft(777);
-    obj.layout302:setTop(983);
-    obj.layout302:setWidth(25);
-    obj.layout302:setHeight(23);
-    obj.layout302:setName("layout302");
+    obj.layout320 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout320:setParent(obj.rectangle2);
+    obj.layout320:setLeft(777);
+    obj.layout320:setTop(983);
+    obj.layout320:setWidth(25);
+    obj.layout320:setHeight(23);
+    obj.layout320:setName("layout320");
 
     obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit175:setParent(obj.layout302);
+    obj.edit175:setParent(obj.layout320);
     obj.edit175:setTransparent(true);
     obj.edit175:setFontSize(10);
     obj.edit175:setFontColor("#ffffff");
@@ -6342,16 +6674,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit175:setField("STABF2G4");
     obj.edit175:setName("edit175");
 
-    obj.layout303 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout303:setParent(obj.rectangle2);
-    obj.layout303:setLeft(809);
-    obj.layout303:setTop(983);
-    obj.layout303:setWidth(25);
-    obj.layout303:setHeight(23);
-    obj.layout303:setName("layout303");
+    obj.layout321 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout321:setParent(obj.rectangle2);
+    obj.layout321:setLeft(809);
+    obj.layout321:setTop(983);
+    obj.layout321:setWidth(25);
+    obj.layout321:setHeight(23);
+    obj.layout321:setName("layout321");
 
     obj.edit176 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit176:setParent(obj.layout303);
+    obj.edit176:setParent(obj.layout321);
     obj.edit176:setTransparent(true);
     obj.edit176:setFontSize(10);
     obj.edit176:setFontColor("#ffffff");
@@ -6364,16 +6696,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit176:setField("ATRF2G4");
     obj.edit176:setName("edit176");
 
-    obj.layout304 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout304:setParent(obj.rectangle2);
-    obj.layout304:setLeft(846);
-    obj.layout304:setTop(983);
-    obj.layout304:setWidth(25);
-    obj.layout304:setHeight(23);
-    obj.layout304:setName("layout304");
+    obj.layout322 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout322:setParent(obj.rectangle2);
+    obj.layout322:setLeft(846);
+    obj.layout322:setTop(983);
+    obj.layout322:setWidth(25);
+    obj.layout322:setHeight(23);
+    obj.layout322:setName("layout322");
 
     obj.edit177 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit177:setParent(obj.layout304);
+    obj.edit177:setParent(obj.layout322);
     obj.edit177:setTransparent(true);
     obj.edit177:setFontSize(10);
     obj.edit177:setFontColor("#ffffff");
@@ -6386,16 +6718,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit177:setField("BONF2G4");
     obj.edit177:setName("edit177");
 
-    obj.layout305 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout305:setParent(obj.rectangle2);
-    obj.layout305:setLeft(883);
-    obj.layout305:setTop(983);
-    obj.layout305:setWidth(38);
-    obj.layout305:setHeight(23);
-    obj.layout305:setName("layout305");
+    obj.layout323 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout323:setParent(obj.rectangle2);
+    obj.layout323:setLeft(883);
+    obj.layout323:setTop(983);
+    obj.layout323:setWidth(38);
+    obj.layout323:setHeight(23);
+    obj.layout323:setName("layout323");
 
     obj.edit178 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit178:setParent(obj.layout305);
+    obj.edit178:setParent(obj.layout323);
     obj.edit178:setTransparent(true);
     obj.edit178:setFontSize(10);
     obj.edit178:setFontColor("#ffffff");
@@ -6408,16 +6740,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit178:setField("TOTALF2G4");
     obj.edit178:setName("edit178");
 
-    obj.layout306 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout306:setParent(obj.rectangle2);
-    obj.layout306:setLeft(741);
-    obj.layout306:setTop(1010);
-    obj.layout306:setWidth(25);
-    obj.layout306:setHeight(23);
-    obj.layout306:setName("layout306");
+    obj.layout324 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout324:setParent(obj.rectangle2);
+    obj.layout324:setLeft(741);
+    obj.layout324:setTop(1010);
+    obj.layout324:setWidth(25);
+    obj.layout324:setHeight(23);
+    obj.layout324:setName("layout324");
 
     obj.edit179 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit179:setParent(obj.layout306);
+    obj.edit179:setParent(obj.layout324);
     obj.edit179:setTransparent(true);
     obj.edit179:setFontSize(10);
     obj.edit179:setFontColor("#ffffff");
@@ -6430,16 +6762,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit179:setField("PODERF1G4D2");
     obj.edit179:setName("edit179");
 
-    obj.layout307 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout307:setParent(obj.rectangle2);
-    obj.layout307:setLeft(777);
-    obj.layout307:setTop(1010);
-    obj.layout307:setWidth(25);
-    obj.layout307:setHeight(23);
-    obj.layout307:setName("layout307");
+    obj.layout325 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout325:setParent(obj.rectangle2);
+    obj.layout325:setLeft(777);
+    obj.layout325:setTop(1010);
+    obj.layout325:setWidth(25);
+    obj.layout325:setHeight(23);
+    obj.layout325:setName("layout325");
 
     obj.edit180 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit180:setParent(obj.layout307);
+    obj.edit180:setParent(obj.layout325);
     obj.edit180:setTransparent(true);
     obj.edit180:setFontSize(10);
     obj.edit180:setFontColor("#ffffff");
@@ -6452,16 +6784,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit180:setField("STABF1G4");
     obj.edit180:setName("edit180");
 
-    obj.layout308 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout308:setParent(obj.rectangle2);
-    obj.layout308:setLeft(809);
-    obj.layout308:setTop(1010);
-    obj.layout308:setWidth(25);
-    obj.layout308:setHeight(23);
-    obj.layout308:setName("layout308");
+    obj.layout326 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout326:setParent(obj.rectangle2);
+    obj.layout326:setLeft(809);
+    obj.layout326:setTop(1010);
+    obj.layout326:setWidth(25);
+    obj.layout326:setHeight(23);
+    obj.layout326:setName("layout326");
 
     obj.edit181 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit181:setParent(obj.layout308);
+    obj.edit181:setParent(obj.layout326);
     obj.edit181:setTransparent(true);
     obj.edit181:setFontSize(10);
     obj.edit181:setFontColor("#ffffff");
@@ -6474,16 +6806,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit181:setField("ATRF1G4");
     obj.edit181:setName("edit181");
 
-    obj.layout309 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout309:setParent(obj.rectangle2);
-    obj.layout309:setLeft(846);
-    obj.layout309:setTop(1010);
-    obj.layout309:setWidth(25);
-    obj.layout309:setHeight(23);
-    obj.layout309:setName("layout309");
+    obj.layout327 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout327:setParent(obj.rectangle2);
+    obj.layout327:setLeft(846);
+    obj.layout327:setTop(1010);
+    obj.layout327:setWidth(25);
+    obj.layout327:setHeight(23);
+    obj.layout327:setName("layout327");
 
     obj.edit182 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit182:setParent(obj.layout309);
+    obj.edit182:setParent(obj.layout327);
     obj.edit182:setTransparent(true);
     obj.edit182:setFontSize(10);
     obj.edit182:setFontColor("#ffffff");
@@ -6496,16 +6828,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit182:setField("BONF1G4");
     obj.edit182:setName("edit182");
 
-    obj.layout310 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout310:setParent(obj.rectangle2);
-    obj.layout310:setLeft(883);
-    obj.layout310:setTop(1010);
-    obj.layout310:setWidth(38);
-    obj.layout310:setHeight(23);
-    obj.layout310:setName("layout310");
+    obj.layout328 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout328:setParent(obj.rectangle2);
+    obj.layout328:setLeft(883);
+    obj.layout328:setTop(1010);
+    obj.layout328:setWidth(38);
+    obj.layout328:setHeight(23);
+    obj.layout328:setName("layout328");
 
     obj.edit183 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit183:setParent(obj.layout310);
+    obj.edit183:setParent(obj.layout328);
     obj.edit183:setTransparent(true);
     obj.edit183:setFontSize(10);
     obj.edit183:setFontColor("#ffffff");
@@ -6518,16 +6850,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit183:setField("TOTALF1G4D2");
     obj.edit183:setName("edit183");
 
-    obj.layout311 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout311:setParent(obj.rectangle2);
-    obj.layout311:setLeft(741);
-    obj.layout311:setTop(1038);
-    obj.layout311:setWidth(25);
-    obj.layout311:setHeight(23);
-    obj.layout311:setName("layout311");
+    obj.layout329 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout329:setParent(obj.rectangle2);
+    obj.layout329:setLeft(741);
+    obj.layout329:setTop(1038);
+    obj.layout329:setWidth(25);
+    obj.layout329:setHeight(23);
+    obj.layout329:setName("layout329");
 
     obj.edit184 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit184:setParent(obj.layout311);
+    obj.edit184:setParent(obj.layout329);
     obj.edit184:setTransparent(true);
     obj.edit184:setFontSize(10);
     obj.edit184:setFontColor("#ffffff");
@@ -6540,16 +6872,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit184:setField("PODERF1G4X2");
     obj.edit184:setName("edit184");
 
-    obj.layout312 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout312:setParent(obj.rectangle2);
-    obj.layout312:setLeft(777);
-    obj.layout312:setTop(1038);
-    obj.layout312:setWidth(25);
-    obj.layout312:setHeight(23);
-    obj.layout312:setName("layout312");
+    obj.layout330 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout330:setParent(obj.rectangle2);
+    obj.layout330:setLeft(777);
+    obj.layout330:setTop(1038);
+    obj.layout330:setWidth(25);
+    obj.layout330:setHeight(23);
+    obj.layout330:setName("layout330");
 
     obj.edit185 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit185:setParent(obj.layout312);
+    obj.edit185:setParent(obj.layout330);
     obj.edit185:setTransparent(true);
     obj.edit185:setFontSize(10);
     obj.edit185:setFontColor("#ffffff");
@@ -6562,16 +6894,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit185:setField("STABF1G4");
     obj.edit185:setName("edit185");
 
-    obj.layout313 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout313:setParent(obj.rectangle2);
-    obj.layout313:setLeft(809);
-    obj.layout313:setTop(1038);
-    obj.layout313:setWidth(25);
-    obj.layout313:setHeight(23);
-    obj.layout313:setName("layout313");
+    obj.layout331 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout331:setParent(obj.rectangle2);
+    obj.layout331:setLeft(809);
+    obj.layout331:setTop(1038);
+    obj.layout331:setWidth(25);
+    obj.layout331:setHeight(23);
+    obj.layout331:setName("layout331");
 
     obj.edit186 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit186:setParent(obj.layout313);
+    obj.edit186:setParent(obj.layout331);
     obj.edit186:setTransparent(true);
     obj.edit186:setFontSize(10);
     obj.edit186:setFontColor("#ffffff");
@@ -6584,16 +6916,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit186:setField("ATRF1G4");
     obj.edit186:setName("edit186");
 
-    obj.layout314 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout314:setParent(obj.rectangle2);
-    obj.layout314:setLeft(846);
-    obj.layout314:setTop(1038);
-    obj.layout314:setWidth(25);
-    obj.layout314:setHeight(23);
-    obj.layout314:setName("layout314");
+    obj.layout332 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout332:setParent(obj.rectangle2);
+    obj.layout332:setLeft(846);
+    obj.layout332:setTop(1038);
+    obj.layout332:setWidth(25);
+    obj.layout332:setHeight(23);
+    obj.layout332:setName("layout332");
 
     obj.edit187 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit187:setParent(obj.layout314);
+    obj.edit187:setParent(obj.layout332);
     obj.edit187:setTransparent(true);
     obj.edit187:setFontSize(10);
     obj.edit187:setFontColor("#ffffff");
@@ -6606,16 +6938,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit187:setField("BONF1G4");
     obj.edit187:setName("edit187");
 
-    obj.layout315 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout315:setParent(obj.rectangle2);
-    obj.layout315:setLeft(883);
-    obj.layout315:setTop(1038);
-    obj.layout315:setWidth(38);
-    obj.layout315:setHeight(23);
-    obj.layout315:setName("layout315");
+    obj.layout333 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout333:setParent(obj.rectangle2);
+    obj.layout333:setLeft(883);
+    obj.layout333:setTop(1038);
+    obj.layout333:setWidth(38);
+    obj.layout333:setHeight(23);
+    obj.layout333:setName("layout333");
 
     obj.edit188 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit188:setParent(obj.layout315);
+    obj.edit188:setParent(obj.layout333);
     obj.edit188:setTransparent(true);
     obj.edit188:setFontSize(10);
     obj.edit188:setFontColor("#ffffff");
@@ -6628,16 +6960,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.edit188:setField("TOTALF1G4X2");
     obj.edit188:setName("edit188");
 
-    obj.layout316 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout316:setParent(obj.rectangle2);
-    obj.layout316:setLeft(684);
-    obj.layout316:setTop(1009);
-    obj.layout316:setWidth(15);
-    obj.layout316:setHeight(15);
-    obj.layout316:setName("layout316");
+    obj.layout334 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout334:setParent(obj.rectangle2);
+    obj.layout334:setLeft(684);
+    obj.layout334:setTop(1009);
+    obj.layout334:setWidth(15);
+    obj.layout334:setHeight(15);
+    obj.layout334:setName("layout334");
 
     obj.imageCheckBox126 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox126:setParent(obj.layout316);
+    obj.imageCheckBox126:setParent(obj.layout334);
     obj.imageCheckBox126:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox126:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox126:setLeft(0);
@@ -6647,16 +6979,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox126:setField("A2G4");
     obj.imageCheckBox126:setName("imageCheckBox126");
 
-    obj.layout317 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout317:setParent(obj.rectangle2);
-    obj.layout317:setLeft(704);
-    obj.layout317:setTop(1009);
-    obj.layout317:setWidth(15);
-    obj.layout317:setHeight(15);
-    obj.layout317:setName("layout317");
+    obj.layout335 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout335:setParent(obj.rectangle2);
+    obj.layout335:setLeft(704);
+    obj.layout335:setTop(1009);
+    obj.layout335:setWidth(15);
+    obj.layout335:setHeight(15);
+    obj.layout335:setName("layout335");
 
     obj.imageCheckBox127 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox127:setParent(obj.layout317);
+    obj.imageCheckBox127:setParent(obj.layout335);
     obj.imageCheckBox127:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox127:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox127:setLeft(0);
@@ -6666,16 +6998,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox127:setField("A4G4");
     obj.imageCheckBox127:setName("imageCheckBox127");
 
-    obj.layout318 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout318:setParent(obj.rectangle2);
-    obj.layout318:setLeft(684);
-    obj.layout318:setTop(1028);
-    obj.layout318:setWidth(15);
-    obj.layout318:setHeight(15);
-    obj.layout318:setName("layout318");
+    obj.layout336 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout336:setParent(obj.rectangle2);
+    obj.layout336:setLeft(684);
+    obj.layout336:setTop(1028);
+    obj.layout336:setWidth(15);
+    obj.layout336:setHeight(15);
+    obj.layout336:setName("layout336");
 
     obj.imageCheckBox128 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox128:setParent(obj.layout318);
+    obj.imageCheckBox128:setParent(obj.layout336);
     obj.imageCheckBox128:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox128:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox128:setLeft(0);
@@ -6685,16 +7017,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox128:setField("A1G4");
     obj.imageCheckBox128:setName("imageCheckBox128");
 
-    obj.layout319 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout319:setParent(obj.rectangle2);
-    obj.layout319:setLeft(704);
-    obj.layout319:setTop(1028);
-    obj.layout319:setWidth(15);
-    obj.layout319:setHeight(15);
-    obj.layout319:setName("layout319");
+    obj.layout337 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout337:setParent(obj.rectangle2);
+    obj.layout337:setLeft(704);
+    obj.layout337:setTop(1028);
+    obj.layout337:setWidth(15);
+    obj.layout337:setHeight(15);
+    obj.layout337:setName("layout337");
 
     obj.imageCheckBox129 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox129:setParent(obj.layout319);
+    obj.imageCheckBox129:setParent(obj.layout337);
     obj.imageCheckBox129:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox129:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox129:setLeft(0);
@@ -6704,16 +7036,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox129:setField("A3G4");
     obj.imageCheckBox129:setName("imageCheckBox129");
 
-    obj.layout320 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout320:setParent(obj.rectangle2);
-    obj.layout320:setLeft(539);
-    obj.layout320:setTop(1045);
-    obj.layout320:setWidth(15);
-    obj.layout320:setHeight(15);
-    obj.layout320:setName("layout320");
+    obj.layout338 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout338:setParent(obj.rectangle2);
+    obj.layout338:setLeft(539);
+    obj.layout338:setTop(1045);
+    obj.layout338:setWidth(15);
+    obj.layout338:setHeight(15);
+    obj.layout338:setName("layout338");
 
     obj.imageCheckBox130 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox130:setParent(obj.layout320);
+    obj.imageCheckBox130:setParent(obj.layout338);
     obj.imageCheckBox130:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox130:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox130:setLeft(0);
@@ -6723,16 +7055,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox130:setField("EFG4");
     obj.imageCheckBox130:setName("imageCheckBox130");
 
-    obj.layout321 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout321:setParent(obj.rectangle2);
-    obj.layout321:setLeft(574);
-    obj.layout321:setTop(1045);
-    obj.layout321:setWidth(15);
-    obj.layout321:setHeight(15);
-    obj.layout321:setName("layout321");
+    obj.layout339 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout339:setParent(obj.rectangle2);
+    obj.layout339:setLeft(574);
+    obj.layout339:setTop(1045);
+    obj.layout339:setWidth(15);
+    obj.layout339:setHeight(15);
+    obj.layout339:setName("layout339");
 
     obj.imageCheckBox131 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox131:setParent(obj.layout321);
+    obj.imageCheckBox131:setParent(obj.layout339);
     obj.imageCheckBox131:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox131:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox131:setLeft(0);
@@ -6742,16 +7074,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox131:setField("ESPG4");
     obj.imageCheckBox131:setName("imageCheckBox131");
 
-    obj.layout322 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout322:setParent(obj.rectangle2);
-    obj.layout322:setLeft(609);
-    obj.layout322:setTop(1045);
-    obj.layout322:setWidth(15);
-    obj.layout322:setHeight(15);
-    obj.layout322:setName("layout322");
+    obj.layout340 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout340:setParent(obj.rectangle2);
+    obj.layout340:setLeft(609);
+    obj.layout340:setTop(1045);
+    obj.layout340:setWidth(15);
+    obj.layout340:setHeight(15);
+    obj.layout340:setName("layout340");
 
     obj.imageCheckBox132 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox132:setParent(obj.layout322);
+    obj.imageCheckBox132:setParent(obj.layout340);
     obj.imageCheckBox132:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox132:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox132:setLeft(0);
@@ -6761,16 +7093,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox132:setField("FISG4");
     obj.imageCheckBox132:setName("imageCheckBox132");
 
-    obj.layout323 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout323:setParent(obj.rectangle2);
-    obj.layout323:setLeft(175);
-    obj.layout323:setTop(1133);
-    obj.layout323:setWidth(17);
-    obj.layout323:setHeight(17);
-    obj.layout323:setName("layout323");
+    obj.layout341 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout341:setParent(obj.rectangle2);
+    obj.layout341:setLeft(175);
+    obj.layout341:setTop(1133);
+    obj.layout341:setWidth(17);
+    obj.layout341:setHeight(17);
+    obj.layout341:setName("layout341");
 
     obj.imageCheckBox133 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox133:setParent(obj.layout323);
+    obj.imageCheckBox133:setParent(obj.layout341);
     obj.imageCheckBox133:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox133:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox133:setLeft(0);
@@ -6780,16 +7112,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox133:setField("Força");
     obj.imageCheckBox133:setName("imageCheckBox133");
 
-    obj.layout324 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout324:setParent(obj.rectangle2);
-    obj.layout324:setLeft(358);
-    obj.layout324:setTop(1133);
-    obj.layout324:setWidth(17);
-    obj.layout324:setHeight(17);
-    obj.layout324:setName("layout324");
+    obj.layout342 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout342:setParent(obj.rectangle2);
+    obj.layout342:setLeft(358);
+    obj.layout342:setTop(1133);
+    obj.layout342:setWidth(17);
+    obj.layout342:setHeight(17);
+    obj.layout342:setName("layout342");
 
     obj.imageCheckBox134 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox134:setParent(obj.layout324);
+    obj.imageCheckBox134:setParent(obj.layout342);
     obj.imageCheckBox134:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox134:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox134:setLeft(0);
@@ -6799,16 +7131,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox134:setField("Cavar");
     obj.imageCheckBox134:setName("imageCheckBox134");
 
-    obj.layout325 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout325:setParent(obj.rectangle2);
-    obj.layout325:setLeft(43);
-    obj.layout325:setTop(1146);
-    obj.layout325:setWidth(17);
-    obj.layout325:setHeight(17);
-    obj.layout325:setName("layout325");
+    obj.layout343 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout343:setParent(obj.rectangle2);
+    obj.layout343:setLeft(43);
+    obj.layout343:setTop(1146);
+    obj.layout343:setWidth(17);
+    obj.layout343:setHeight(17);
+    obj.layout343:setName("layout343");
 
     obj.imageCheckBox135 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox135:setParent(obj.layout325);
+    obj.imageCheckBox135:setParent(obj.layout343);
     obj.imageCheckBox135:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox135:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox135:setLeft(0);
@@ -6818,16 +7150,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox135:setField("Voar");
     obj.imageCheckBox135:setName("imageCheckBox135");
 
-    obj.layout326 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout326:setParent(obj.rectangle2);
-    obj.layout326:setLeft(175);
-    obj.layout326:setTop(1158);
-    obj.layout326:setWidth(17);
-    obj.layout326:setHeight(17);
-    obj.layout326:setName("layout326");
+    obj.layout344 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout344:setParent(obj.rectangle2);
+    obj.layout344:setLeft(175);
+    obj.layout344:setTop(1158);
+    obj.layout344:setWidth(17);
+    obj.layout344:setHeight(17);
+    obj.layout344:setName("layout344");
 
     obj.imageCheckBox136 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox136:setParent(obj.layout326);
+    obj.imageCheckBox136:setParent(obj.layout344);
     obj.imageCheckBox136:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox136:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox136:setLeft(0);
@@ -6837,16 +7169,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox136:setField("Destreza");
     obj.imageCheckBox136:setName("imageCheckBox136");
 
-    obj.layout327 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout327:setParent(obj.rectangle2);
-    obj.layout327:setLeft(358);
-    obj.layout327:setTop(1158);
-    obj.layout327:setWidth(17);
-    obj.layout327:setHeight(17);
-    obj.layout327:setName("layout327");
+    obj.layout345 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout345:setParent(obj.rectangle2);
+    obj.layout345:setLeft(358);
+    obj.layout345:setTop(1158);
+    obj.layout345:setWidth(17);
+    obj.layout345:setHeight(17);
+    obj.layout345:setName("layout345");
 
     obj.imageCheckBox137 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox137:setParent(obj.layout327);
+    obj.imageCheckBox137:setParent(obj.layout345);
     obj.imageCheckBox137:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox137:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox137:setLeft(0);
@@ -6856,16 +7188,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox137:setField("Correr");
     obj.imageCheckBox137:setName("imageCheckBox137");
 
-    obj.layout328 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout328:setParent(obj.rectangle2);
-    obj.layout328:setLeft(43);
-    obj.layout328:setTop(1170);
-    obj.layout328:setWidth(17);
-    obj.layout328:setHeight(17);
-    obj.layout328:setName("layout328");
+    obj.layout346 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout346:setParent(obj.rectangle2);
+    obj.layout346:setLeft(43);
+    obj.layout346:setTop(1170);
+    obj.layout346:setWidth(17);
+    obj.layout346:setHeight(17);
+    obj.layout346:setName("layout346");
 
     obj.imageCheckBox138 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox138:setParent(obj.layout328);
+    obj.imageCheckBox138:setParent(obj.layout346);
     obj.imageCheckBox138:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox138:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox138:setLeft(0);
@@ -6875,16 +7207,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox138:setField("Nadar");
     obj.imageCheckBox138:setName("imageCheckBox138");
 
-    obj.layout329 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout329:setParent(obj.rectangle2);
-    obj.layout329:setLeft(175);
-    obj.layout329:setTop(1182);
-    obj.layout329:setWidth(17);
-    obj.layout329:setHeight(17);
-    obj.layout329:setName("layout329");
+    obj.layout347 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout347:setParent(obj.rectangle2);
+    obj.layout347:setLeft(175);
+    obj.layout347:setTop(1182);
+    obj.layout347:setWidth(17);
+    obj.layout347:setHeight(17);
+    obj.layout347:setName("layout347");
 
     obj.imageCheckBox139 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox139:setParent(obj.layout329);
+    obj.imageCheckBox139:setParent(obj.layout347);
     obj.imageCheckBox139:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox139:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox139:setLeft(0);
@@ -6894,16 +7226,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox139:setField("Inteligencia");
     obj.imageCheckBox139:setName("imageCheckBox139");
 
-    obj.layout330 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout330:setParent(obj.rectangle2);
-    obj.layout330:setLeft(358);
-    obj.layout330:setTop(1182);
-    obj.layout330:setWidth(17);
-    obj.layout330:setHeight(17);
-    obj.layout330:setName("layout330");
+    obj.layout348 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout348:setParent(obj.rectangle2);
+    obj.layout348:setLeft(358);
+    obj.layout348:setTop(1182);
+    obj.layout348:setWidth(17);
+    obj.layout348:setHeight(17);
+    obj.layout348:setName("layout348");
 
     obj.imageCheckBox140 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox140:setParent(obj.layout330);
+    obj.imageCheckBox140:setParent(obj.layout348);
     obj.imageCheckBox140:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox140:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox140:setLeft(0);
@@ -6913,16 +7245,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox140:setField("Saltar");
     obj.imageCheckBox140:setName("imageCheckBox140");
 
-    obj.layout331 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout331:setParent(obj.rectangle2);
-    obj.layout331:setLeft(480);
-    obj.layout331:setTop(1123);
-    obj.layout331:setWidth(445);
-    obj.layout331:setHeight(87);
-    obj.layout331:setName("layout331");
+    obj.layout349 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout349:setParent(obj.rectangle2);
+    obj.layout349:setLeft(480);
+    obj.layout349:setTop(1123);
+    obj.layout349:setWidth(445);
+    obj.layout349:setHeight(87);
+    obj.layout349:setName("layout349");
 
     obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.layout331);
+    obj.textEditor2:setParent(obj.layout349);
     obj.textEditor2:setTransparent(true);
     obj.textEditor2:setFontSize(14);
     obj.textEditor2:setFontColor("#ffffff");
@@ -6931,16 +7263,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.textEditor2:setField("ant3");
     obj.textEditor2:setName("textEditor2");
 
-    obj.layout332 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout332:setParent(obj.rectangle2);
-    obj.layout332:setLeft(45);
-    obj.layout332:setTop(1266);
-    obj.layout332:setWidth(15);
-    obj.layout332:setHeight(15);
-    obj.layout332:setName("layout332");
+    obj.layout350 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout350:setParent(obj.rectangle2);
+    obj.layout350:setLeft(45);
+    obj.layout350:setTop(1266);
+    obj.layout350:setWidth(15);
+    obj.layout350:setHeight(15);
+    obj.layout350:setName("layout350");
 
     obj.imageCheckBox141 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox141:setParent(obj.layout332);
+    obj.imageCheckBox141:setParent(obj.layout350);
     obj.imageCheckBox141:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox141:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox141:setLeft(0);
@@ -6950,16 +7282,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox141:setField("CAR1");
     obj.imageCheckBox141:setName("imageCheckBox141");
 
-    obj.layout333 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout333:setParent(obj.rectangle2);
-    obj.layout333:setLeft(61);
-    obj.layout333:setTop(1266);
-    obj.layout333:setWidth(15);
-    obj.layout333:setHeight(15);
-    obj.layout333:setName("layout333");
+    obj.layout351 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout351:setParent(obj.rectangle2);
+    obj.layout351:setLeft(61);
+    obj.layout351:setTop(1266);
+    obj.layout351:setWidth(15);
+    obj.layout351:setHeight(15);
+    obj.layout351:setName("layout351");
 
     obj.imageCheckBox142 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox142:setParent(obj.layout333);
+    obj.imageCheckBox142:setParent(obj.layout351);
     obj.imageCheckBox142:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox142:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox142:setLeft(0);
@@ -6969,16 +7301,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox142:setField("CAR2");
     obj.imageCheckBox142:setName("imageCheckBox142");
 
-    obj.layout334 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout334:setParent(obj.rectangle2);
-    obj.layout334:setLeft(77);
-    obj.layout334:setTop(1266);
-    obj.layout334:setWidth(15);
-    obj.layout334:setHeight(15);
-    obj.layout334:setName("layout334");
+    obj.layout352 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout352:setParent(obj.rectangle2);
+    obj.layout352:setLeft(77);
+    obj.layout352:setTop(1266);
+    obj.layout352:setWidth(15);
+    obj.layout352:setHeight(15);
+    obj.layout352:setName("layout352");
 
     obj.imageCheckBox143 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox143:setParent(obj.layout334);
+    obj.imageCheckBox143:setParent(obj.layout352);
     obj.imageCheckBox143:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox143:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox143:setLeft(0);
@@ -6988,16 +7320,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox143:setField("CAR3");
     obj.imageCheckBox143:setName("imageCheckBox143");
 
-    obj.layout335 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout335:setParent(obj.rectangle2);
-    obj.layout335:setLeft(93);
-    obj.layout335:setTop(1266);
-    obj.layout335:setWidth(15);
-    obj.layout335:setHeight(15);
-    obj.layout335:setName("layout335");
+    obj.layout353 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout353:setParent(obj.rectangle2);
+    obj.layout353:setLeft(93);
+    obj.layout353:setTop(1266);
+    obj.layout353:setWidth(15);
+    obj.layout353:setHeight(15);
+    obj.layout353:setName("layout353");
 
     obj.imageCheckBox144 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox144:setParent(obj.layout335);
+    obj.imageCheckBox144:setParent(obj.layout353);
     obj.imageCheckBox144:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox144:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox144:setLeft(0);
@@ -7007,16 +7339,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox144:setField("CAR4");
     obj.imageCheckBox144:setName("imageCheckBox144");
 
-    obj.layout336 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout336:setParent(obj.rectangle2);
-    obj.layout336:setLeft(109);
-    obj.layout336:setTop(1266);
-    obj.layout336:setWidth(15);
-    obj.layout336:setHeight(15);
-    obj.layout336:setName("layout336");
+    obj.layout354 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout354:setParent(obj.rectangle2);
+    obj.layout354:setLeft(109);
+    obj.layout354:setTop(1266);
+    obj.layout354:setWidth(15);
+    obj.layout354:setHeight(15);
+    obj.layout354:setName("layout354");
 
     obj.imageCheckBox145 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox145:setParent(obj.layout336);
+    obj.imageCheckBox145:setParent(obj.layout354);
     obj.imageCheckBox145:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox145:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox145:setLeft(0);
@@ -7026,16 +7358,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox145:setField("CAR5");
     obj.imageCheckBox145:setName("imageCheckBox145");
 
-    obj.layout337 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout337:setParent(obj.rectangle2);
-    obj.layout337:setLeft(125);
-    obj.layout337:setTop(1266);
-    obj.layout337:setWidth(15);
-    obj.layout337:setHeight(15);
-    obj.layout337:setName("layout337");
+    obj.layout355 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout355:setParent(obj.rectangle2);
+    obj.layout355:setLeft(125);
+    obj.layout355:setTop(1266);
+    obj.layout355:setWidth(15);
+    obj.layout355:setHeight(15);
+    obj.layout355:setName("layout355");
 
     obj.imageCheckBox146 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox146:setParent(obj.layout337);
+    obj.imageCheckBox146:setParent(obj.layout355);
     obj.imageCheckBox146:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox146:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox146:setLeft(0);
@@ -7045,16 +7377,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox146:setField("CAR6");
     obj.imageCheckBox146:setName("imageCheckBox146");
 
-    obj.layout338 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout338:setParent(obj.rectangle2);
-    obj.layout338:setLeft(141);
-    obj.layout338:setTop(1266);
-    obj.layout338:setWidth(15);
-    obj.layout338:setHeight(15);
-    obj.layout338:setName("layout338");
+    obj.layout356 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout356:setParent(obj.rectangle2);
+    obj.layout356:setLeft(141);
+    obj.layout356:setTop(1266);
+    obj.layout356:setWidth(15);
+    obj.layout356:setHeight(15);
+    obj.layout356:setName("layout356");
 
     obj.imageCheckBox147 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox147:setParent(obj.layout338);
+    obj.imageCheckBox147:setParent(obj.layout356);
     obj.imageCheckBox147:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox147:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox147:setLeft(0);
@@ -7064,16 +7396,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox147:setField("CAR7");
     obj.imageCheckBox147:setName("imageCheckBox147");
 
-    obj.layout339 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout339:setParent(obj.rectangle2);
-    obj.layout339:setLeft(157);
-    obj.layout339:setTop(1266);
-    obj.layout339:setWidth(15);
-    obj.layout339:setHeight(15);
-    obj.layout339:setName("layout339");
+    obj.layout357 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout357:setParent(obj.rectangle2);
+    obj.layout357:setLeft(157);
+    obj.layout357:setTop(1266);
+    obj.layout357:setWidth(15);
+    obj.layout357:setHeight(15);
+    obj.layout357:setName("layout357");
 
     obj.imageCheckBox148 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox148:setParent(obj.layout339);
+    obj.imageCheckBox148:setParent(obj.layout357);
     obj.imageCheckBox148:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox148:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox148:setLeft(0);
@@ -7083,16 +7415,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox148:setField("CAR8");
     obj.imageCheckBox148:setName("imageCheckBox148");
 
-    obj.layout340 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout340:setParent(obj.rectangle2);
-    obj.layout340:setLeft(173);
-    obj.layout340:setTop(1266);
-    obj.layout340:setWidth(15);
-    obj.layout340:setHeight(15);
-    obj.layout340:setName("layout340");
+    obj.layout358 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout358:setParent(obj.rectangle2);
+    obj.layout358:setLeft(173);
+    obj.layout358:setTop(1266);
+    obj.layout358:setWidth(15);
+    obj.layout358:setHeight(15);
+    obj.layout358:setName("layout358");
 
     obj.imageCheckBox149 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox149:setParent(obj.layout340);
+    obj.imageCheckBox149:setParent(obj.layout358);
     obj.imageCheckBox149:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox149:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox149:setLeft(0);
@@ -7102,16 +7434,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox149:setField("CAR9");
     obj.imageCheckBox149:setName("imageCheckBox149");
 
-    obj.layout341 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout341:setParent(obj.rectangle2);
-    obj.layout341:setLeft(189);
-    obj.layout341:setTop(1266);
-    obj.layout341:setWidth(15);
-    obj.layout341:setHeight(15);
-    obj.layout341:setName("layout341");
+    obj.layout359 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout359:setParent(obj.rectangle2);
+    obj.layout359:setLeft(189);
+    obj.layout359:setTop(1266);
+    obj.layout359:setWidth(15);
+    obj.layout359:setHeight(15);
+    obj.layout359:setName("layout359");
 
     obj.imageCheckBox150 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox150:setParent(obj.layout341);
+    obj.imageCheckBox150:setParent(obj.layout359);
     obj.imageCheckBox150:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox150:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox150:setLeft(0);
@@ -7121,16 +7453,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox150:setField("CAR10");
     obj.imageCheckBox150:setName("imageCheckBox150");
 
-    obj.layout342 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout342:setParent(obj.rectangle2);
-    obj.layout342:setLeft(222);
-    obj.layout342:setTop(1266);
-    obj.layout342:setWidth(15);
-    obj.layout342:setHeight(15);
-    obj.layout342:setName("layout342");
+    obj.layout360 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout360:setParent(obj.rectangle2);
+    obj.layout360:setLeft(222);
+    obj.layout360:setTop(1266);
+    obj.layout360:setWidth(15);
+    obj.layout360:setHeight(15);
+    obj.layout360:setName("layout360");
 
     obj.imageCheckBox151 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox151:setParent(obj.layout342);
+    obj.imageCheckBox151:setParent(obj.layout360);
     obj.imageCheckBox151:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox151:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox151:setLeft(0);
@@ -7140,16 +7472,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox151:setField("BEL1");
     obj.imageCheckBox151:setName("imageCheckBox151");
 
-    obj.layout343 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout343:setParent(obj.rectangle2);
-    obj.layout343:setLeft(238);
-    obj.layout343:setTop(1266);
-    obj.layout343:setWidth(15);
-    obj.layout343:setHeight(15);
-    obj.layout343:setName("layout343");
+    obj.layout361 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout361:setParent(obj.rectangle2);
+    obj.layout361:setLeft(238);
+    obj.layout361:setTop(1266);
+    obj.layout361:setWidth(15);
+    obj.layout361:setHeight(15);
+    obj.layout361:setName("layout361");
 
     obj.imageCheckBox152 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox152:setParent(obj.layout343);
+    obj.imageCheckBox152:setParent(obj.layout361);
     obj.imageCheckBox152:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox152:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox152:setLeft(0);
@@ -7159,16 +7491,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox152:setField("BEL2");
     obj.imageCheckBox152:setName("imageCheckBox152");
 
-    obj.layout344 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout344:setParent(obj.rectangle2);
-    obj.layout344:setLeft(254);
-    obj.layout344:setTop(1266);
-    obj.layout344:setWidth(15);
-    obj.layout344:setHeight(15);
-    obj.layout344:setName("layout344");
+    obj.layout362 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout362:setParent(obj.rectangle2);
+    obj.layout362:setLeft(254);
+    obj.layout362:setTop(1266);
+    obj.layout362:setWidth(15);
+    obj.layout362:setHeight(15);
+    obj.layout362:setName("layout362");
 
     obj.imageCheckBox153 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox153:setParent(obj.layout344);
+    obj.imageCheckBox153:setParent(obj.layout362);
     obj.imageCheckBox153:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox153:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox153:setLeft(0);
@@ -7178,16 +7510,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox153:setField("BEL3");
     obj.imageCheckBox153:setName("imageCheckBox153");
 
-    obj.layout345 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout345:setParent(obj.rectangle2);
-    obj.layout345:setLeft(270);
-    obj.layout345:setTop(1266);
-    obj.layout345:setWidth(15);
-    obj.layout345:setHeight(15);
-    obj.layout345:setName("layout345");
+    obj.layout363 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout363:setParent(obj.rectangle2);
+    obj.layout363:setLeft(270);
+    obj.layout363:setTop(1266);
+    obj.layout363:setWidth(15);
+    obj.layout363:setHeight(15);
+    obj.layout363:setName("layout363");
 
     obj.imageCheckBox154 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox154:setParent(obj.layout345);
+    obj.imageCheckBox154:setParent(obj.layout363);
     obj.imageCheckBox154:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox154:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox154:setLeft(0);
@@ -7197,16 +7529,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox154:setField("BEL4");
     obj.imageCheckBox154:setName("imageCheckBox154");
 
-    obj.layout346 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout346:setParent(obj.rectangle2);
-    obj.layout346:setLeft(286);
-    obj.layout346:setTop(1266);
-    obj.layout346:setWidth(15);
-    obj.layout346:setHeight(15);
-    obj.layout346:setName("layout346");
+    obj.layout364 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout364:setParent(obj.rectangle2);
+    obj.layout364:setLeft(286);
+    obj.layout364:setTop(1266);
+    obj.layout364:setWidth(15);
+    obj.layout364:setHeight(15);
+    obj.layout364:setName("layout364");
 
     obj.imageCheckBox155 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox155:setParent(obj.layout346);
+    obj.imageCheckBox155:setParent(obj.layout364);
     obj.imageCheckBox155:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox155:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox155:setLeft(0);
@@ -7216,16 +7548,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox155:setField("BEL5");
     obj.imageCheckBox155:setName("imageCheckBox155");
 
-    obj.layout347 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout347:setParent(obj.rectangle2);
-    obj.layout347:setLeft(302);
-    obj.layout347:setTop(1266);
-    obj.layout347:setWidth(15);
-    obj.layout347:setHeight(15);
-    obj.layout347:setName("layout347");
+    obj.layout365 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout365:setParent(obj.rectangle2);
+    obj.layout365:setLeft(302);
+    obj.layout365:setTop(1266);
+    obj.layout365:setWidth(15);
+    obj.layout365:setHeight(15);
+    obj.layout365:setName("layout365");
 
     obj.imageCheckBox156 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox156:setParent(obj.layout347);
+    obj.imageCheckBox156:setParent(obj.layout365);
     obj.imageCheckBox156:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox156:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox156:setLeft(0);
@@ -7235,16 +7567,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox156:setField("BEL6");
     obj.imageCheckBox156:setName("imageCheckBox156");
 
-    obj.layout348 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout348:setParent(obj.rectangle2);
-    obj.layout348:setLeft(318);
-    obj.layout348:setTop(1266);
-    obj.layout348:setWidth(15);
-    obj.layout348:setHeight(15);
-    obj.layout348:setName("layout348");
+    obj.layout366 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout366:setParent(obj.rectangle2);
+    obj.layout366:setLeft(318);
+    obj.layout366:setTop(1266);
+    obj.layout366:setWidth(15);
+    obj.layout366:setHeight(15);
+    obj.layout366:setName("layout366");
 
     obj.imageCheckBox157 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox157:setParent(obj.layout348);
+    obj.imageCheckBox157:setParent(obj.layout366);
     obj.imageCheckBox157:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox157:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox157:setLeft(0);
@@ -7254,16 +7586,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox157:setField("BEL7");
     obj.imageCheckBox157:setName("imageCheckBox157");
 
-    obj.layout349 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout349:setParent(obj.rectangle2);
-    obj.layout349:setLeft(334);
-    obj.layout349:setTop(1266);
-    obj.layout349:setWidth(15);
-    obj.layout349:setHeight(15);
-    obj.layout349:setName("layout349");
+    obj.layout367 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout367:setParent(obj.rectangle2);
+    obj.layout367:setLeft(334);
+    obj.layout367:setTop(1266);
+    obj.layout367:setWidth(15);
+    obj.layout367:setHeight(15);
+    obj.layout367:setName("layout367");
 
     obj.imageCheckBox158 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox158:setParent(obj.layout349);
+    obj.imageCheckBox158:setParent(obj.layout367);
     obj.imageCheckBox158:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox158:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox158:setLeft(0);
@@ -7273,16 +7605,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox158:setField("BEL8");
     obj.imageCheckBox158:setName("imageCheckBox158");
 
-    obj.layout350 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout350:setParent(obj.rectangle2);
-    obj.layout350:setLeft(350);
-    obj.layout350:setTop(1266);
-    obj.layout350:setWidth(15);
-    obj.layout350:setHeight(15);
-    obj.layout350:setName("layout350");
+    obj.layout368 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout368:setParent(obj.rectangle2);
+    obj.layout368:setLeft(350);
+    obj.layout368:setTop(1266);
+    obj.layout368:setWidth(15);
+    obj.layout368:setHeight(15);
+    obj.layout368:setName("layout368");
 
     obj.imageCheckBox159 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox159:setParent(obj.layout350);
+    obj.imageCheckBox159:setParent(obj.layout368);
     obj.imageCheckBox159:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox159:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox159:setLeft(0);
@@ -7292,16 +7624,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox159:setField("BEL9");
     obj.imageCheckBox159:setName("imageCheckBox159");
 
-    obj.layout351 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout351:setParent(obj.rectangle2);
-    obj.layout351:setLeft(366);
-    obj.layout351:setTop(1266);
-    obj.layout351:setWidth(15);
-    obj.layout351:setHeight(15);
-    obj.layout351:setName("layout351");
+    obj.layout369 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout369:setParent(obj.rectangle2);
+    obj.layout369:setLeft(366);
+    obj.layout369:setTop(1266);
+    obj.layout369:setWidth(15);
+    obj.layout369:setHeight(15);
+    obj.layout369:setName("layout369");
 
     obj.imageCheckBox160 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox160:setParent(obj.layout351);
+    obj.imageCheckBox160:setParent(obj.layout369);
     obj.imageCheckBox160:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox160:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox160:setLeft(0);
@@ -7311,16 +7643,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox160:setField("BEL10");
     obj.imageCheckBox160:setName("imageCheckBox160");
 
-    obj.layout352 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout352:setParent(obj.rectangle2);
-    obj.layout352:setLeft(398);
-    obj.layout352:setTop(1266);
-    obj.layout352:setWidth(15);
-    obj.layout352:setHeight(15);
-    obj.layout352:setName("layout352");
+    obj.layout370 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout370:setParent(obj.rectangle2);
+    obj.layout370:setLeft(398);
+    obj.layout370:setTop(1266);
+    obj.layout370:setWidth(15);
+    obj.layout370:setHeight(15);
+    obj.layout370:setName("layout370");
 
     obj.imageCheckBox161 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox161:setParent(obj.layout352);
+    obj.imageCheckBox161:setParent(obj.layout370);
     obj.imageCheckBox161:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox161:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox161:setLeft(0);
@@ -7330,16 +7662,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox161:setField("FOF1");
     obj.imageCheckBox161:setName("imageCheckBox161");
 
-    obj.layout353 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout353:setParent(obj.rectangle2);
-    obj.layout353:setLeft(414);
-    obj.layout353:setTop(1266);
-    obj.layout353:setWidth(15);
-    obj.layout353:setHeight(15);
-    obj.layout353:setName("layout353");
+    obj.layout371 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout371:setParent(obj.rectangle2);
+    obj.layout371:setLeft(414);
+    obj.layout371:setTop(1266);
+    obj.layout371:setWidth(15);
+    obj.layout371:setHeight(15);
+    obj.layout371:setName("layout371");
 
     obj.imageCheckBox162 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox162:setParent(obj.layout353);
+    obj.imageCheckBox162:setParent(obj.layout371);
     obj.imageCheckBox162:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox162:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox162:setLeft(0);
@@ -7349,16 +7681,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox162:setField("FOF2");
     obj.imageCheckBox162:setName("imageCheckBox162");
 
-    obj.layout354 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout354:setParent(obj.rectangle2);
-    obj.layout354:setLeft(430);
-    obj.layout354:setTop(1266);
-    obj.layout354:setWidth(15);
-    obj.layout354:setHeight(15);
-    obj.layout354:setName("layout354");
+    obj.layout372 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout372:setParent(obj.rectangle2);
+    obj.layout372:setLeft(430);
+    obj.layout372:setTop(1266);
+    obj.layout372:setWidth(15);
+    obj.layout372:setHeight(15);
+    obj.layout372:setName("layout372");
 
     obj.imageCheckBox163 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox163:setParent(obj.layout354);
+    obj.imageCheckBox163:setParent(obj.layout372);
     obj.imageCheckBox163:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox163:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox163:setLeft(0);
@@ -7368,16 +7700,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox163:setField("FOF3");
     obj.imageCheckBox163:setName("imageCheckBox163");
 
-    obj.layout355 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout355:setParent(obj.rectangle2);
-    obj.layout355:setLeft(446);
-    obj.layout355:setTop(1266);
-    obj.layout355:setWidth(15);
-    obj.layout355:setHeight(15);
-    obj.layout355:setName("layout355");
+    obj.layout373 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout373:setParent(obj.rectangle2);
+    obj.layout373:setLeft(446);
+    obj.layout373:setTop(1266);
+    obj.layout373:setWidth(15);
+    obj.layout373:setHeight(15);
+    obj.layout373:setName("layout373");
 
     obj.imageCheckBox164 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox164:setParent(obj.layout355);
+    obj.imageCheckBox164:setParent(obj.layout373);
     obj.imageCheckBox164:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox164:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox164:setLeft(0);
@@ -7387,16 +7719,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox164:setField("FOF4");
     obj.imageCheckBox164:setName("imageCheckBox164");
 
-    obj.layout356 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout356:setParent(obj.rectangle2);
-    obj.layout356:setLeft(462);
-    obj.layout356:setTop(1266);
-    obj.layout356:setWidth(15);
-    obj.layout356:setHeight(15);
-    obj.layout356:setName("layout356");
+    obj.layout374 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout374:setParent(obj.rectangle2);
+    obj.layout374:setLeft(462);
+    obj.layout374:setTop(1266);
+    obj.layout374:setWidth(15);
+    obj.layout374:setHeight(15);
+    obj.layout374:setName("layout374");
 
     obj.imageCheckBox165 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox165:setParent(obj.layout356);
+    obj.imageCheckBox165:setParent(obj.layout374);
     obj.imageCheckBox165:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox165:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox165:setLeft(0);
@@ -7406,16 +7738,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox165:setField("FOF5");
     obj.imageCheckBox165:setName("imageCheckBox165");
 
-    obj.layout357 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout357:setParent(obj.rectangle2);
-    obj.layout357:setLeft(478);
-    obj.layout357:setTop(1266);
-    obj.layout357:setWidth(15);
-    obj.layout357:setHeight(15);
-    obj.layout357:setName("layout357");
+    obj.layout375 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout375:setParent(obj.rectangle2);
+    obj.layout375:setLeft(478);
+    obj.layout375:setTop(1266);
+    obj.layout375:setWidth(15);
+    obj.layout375:setHeight(15);
+    obj.layout375:setName("layout375");
 
     obj.imageCheckBox166 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox166:setParent(obj.layout357);
+    obj.imageCheckBox166:setParent(obj.layout375);
     obj.imageCheckBox166:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox166:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox166:setLeft(0);
@@ -7425,16 +7757,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox166:setField("FOF6");
     obj.imageCheckBox166:setName("imageCheckBox166");
 
-    obj.layout358 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout358:setParent(obj.rectangle2);
-    obj.layout358:setLeft(494);
-    obj.layout358:setTop(1266);
-    obj.layout358:setWidth(15);
-    obj.layout358:setHeight(15);
-    obj.layout358:setName("layout358");
+    obj.layout376 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout376:setParent(obj.rectangle2);
+    obj.layout376:setLeft(494);
+    obj.layout376:setTop(1266);
+    obj.layout376:setWidth(15);
+    obj.layout376:setHeight(15);
+    obj.layout376:setName("layout376");
 
     obj.imageCheckBox167 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox167:setParent(obj.layout358);
+    obj.imageCheckBox167:setParent(obj.layout376);
     obj.imageCheckBox167:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox167:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox167:setLeft(0);
@@ -7444,16 +7776,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox167:setField("FOF7");
     obj.imageCheckBox167:setName("imageCheckBox167");
 
-    obj.layout359 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout359:setParent(obj.rectangle2);
-    obj.layout359:setLeft(510);
-    obj.layout359:setTop(1266);
-    obj.layout359:setWidth(15);
-    obj.layout359:setHeight(15);
-    obj.layout359:setName("layout359");
+    obj.layout377 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout377:setParent(obj.rectangle2);
+    obj.layout377:setLeft(510);
+    obj.layout377:setTop(1266);
+    obj.layout377:setWidth(15);
+    obj.layout377:setHeight(15);
+    obj.layout377:setName("layout377");
 
     obj.imageCheckBox168 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox168:setParent(obj.layout359);
+    obj.imageCheckBox168:setParent(obj.layout377);
     obj.imageCheckBox168:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox168:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox168:setLeft(0);
@@ -7463,16 +7795,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox168:setField("FOF8");
     obj.imageCheckBox168:setName("imageCheckBox168");
 
-    obj.layout360 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout360:setParent(obj.rectangle2);
-    obj.layout360:setLeft(526);
-    obj.layout360:setTop(1266);
-    obj.layout360:setWidth(15);
-    obj.layout360:setHeight(15);
-    obj.layout360:setName("layout360");
+    obj.layout378 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout378:setParent(obj.rectangle2);
+    obj.layout378:setLeft(526);
+    obj.layout378:setTop(1266);
+    obj.layout378:setWidth(15);
+    obj.layout378:setHeight(15);
+    obj.layout378:setName("layout378");
 
     obj.imageCheckBox169 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox169:setParent(obj.layout360);
+    obj.imageCheckBox169:setParent(obj.layout378);
     obj.imageCheckBox169:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox169:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox169:setLeft(0);
@@ -7482,16 +7814,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox169:setField("FOF9");
     obj.imageCheckBox169:setName("imageCheckBox169");
 
-    obj.layout361 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout361:setParent(obj.rectangle2);
-    obj.layout361:setLeft(542);
-    obj.layout361:setTop(1266);
-    obj.layout361:setWidth(15);
-    obj.layout361:setHeight(15);
-    obj.layout361:setName("layout361");
+    obj.layout379 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout379:setParent(obj.rectangle2);
+    obj.layout379:setLeft(542);
+    obj.layout379:setTop(1266);
+    obj.layout379:setWidth(15);
+    obj.layout379:setHeight(15);
+    obj.layout379:setName("layout379");
 
     obj.imageCheckBox170 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox170:setParent(obj.layout361);
+    obj.imageCheckBox170:setParent(obj.layout379);
     obj.imageCheckBox170:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox170:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox170:setLeft(0);
@@ -7501,16 +7833,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox170:setField("FOF10");
     obj.imageCheckBox170:setName("imageCheckBox170");
 
-    obj.layout362 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout362:setParent(obj.rectangle2);
-    obj.layout362:setLeft(574);
-    obj.layout362:setTop(1266);
-    obj.layout362:setWidth(15);
-    obj.layout362:setHeight(15);
-    obj.layout362:setName("layout362");
+    obj.layout380 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout380:setParent(obj.rectangle2);
+    obj.layout380:setLeft(574);
+    obj.layout380:setTop(1266);
+    obj.layout380:setWidth(15);
+    obj.layout380:setHeight(15);
+    obj.layout380:setName("layout380");
 
     obj.imageCheckBox171 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox171:setParent(obj.layout362);
+    obj.imageCheckBox171:setParent(obj.layout380);
     obj.imageCheckBox171:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox171:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox171:setLeft(0);
@@ -7520,16 +7852,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox171:setField("INT1");
     obj.imageCheckBox171:setName("imageCheckBox171");
 
-    obj.layout363 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout363:setParent(obj.rectangle2);
-    obj.layout363:setLeft(590);
-    obj.layout363:setTop(1266);
-    obj.layout363:setWidth(15);
-    obj.layout363:setHeight(15);
-    obj.layout363:setName("layout363");
+    obj.layout381 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout381:setParent(obj.rectangle2);
+    obj.layout381:setLeft(590);
+    obj.layout381:setTop(1266);
+    obj.layout381:setWidth(15);
+    obj.layout381:setHeight(15);
+    obj.layout381:setName("layout381");
 
     obj.imageCheckBox172 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox172:setParent(obj.layout363);
+    obj.imageCheckBox172:setParent(obj.layout381);
     obj.imageCheckBox172:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox172:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox172:setLeft(0);
@@ -7539,16 +7871,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox172:setField("INT2");
     obj.imageCheckBox172:setName("imageCheckBox172");
 
-    obj.layout364 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout364:setParent(obj.rectangle2);
-    obj.layout364:setLeft(606);
-    obj.layout364:setTop(1266);
-    obj.layout364:setWidth(15);
-    obj.layout364:setHeight(15);
-    obj.layout364:setName("layout364");
+    obj.layout382 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout382:setParent(obj.rectangle2);
+    obj.layout382:setLeft(606);
+    obj.layout382:setTop(1266);
+    obj.layout382:setWidth(15);
+    obj.layout382:setHeight(15);
+    obj.layout382:setName("layout382");
 
     obj.imageCheckBox173 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox173:setParent(obj.layout364);
+    obj.imageCheckBox173:setParent(obj.layout382);
     obj.imageCheckBox173:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox173:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox173:setLeft(0);
@@ -7558,16 +7890,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox173:setField("INT3");
     obj.imageCheckBox173:setName("imageCheckBox173");
 
-    obj.layout365 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout365:setParent(obj.rectangle2);
-    obj.layout365:setLeft(622);
-    obj.layout365:setTop(1266);
-    obj.layout365:setWidth(15);
-    obj.layout365:setHeight(15);
-    obj.layout365:setName("layout365");
+    obj.layout383 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout383:setParent(obj.rectangle2);
+    obj.layout383:setLeft(622);
+    obj.layout383:setTop(1266);
+    obj.layout383:setWidth(15);
+    obj.layout383:setHeight(15);
+    obj.layout383:setName("layout383");
 
     obj.imageCheckBox174 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox174:setParent(obj.layout365);
+    obj.imageCheckBox174:setParent(obj.layout383);
     obj.imageCheckBox174:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox174:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox174:setLeft(0);
@@ -7577,16 +7909,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox174:setField("INT4");
     obj.imageCheckBox174:setName("imageCheckBox174");
 
-    obj.layout366 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout366:setParent(obj.rectangle2);
-    obj.layout366:setLeft(638);
-    obj.layout366:setTop(1266);
-    obj.layout366:setWidth(15);
-    obj.layout366:setHeight(15);
-    obj.layout366:setName("layout366");
+    obj.layout384 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout384:setParent(obj.rectangle2);
+    obj.layout384:setLeft(638);
+    obj.layout384:setTop(1266);
+    obj.layout384:setWidth(15);
+    obj.layout384:setHeight(15);
+    obj.layout384:setName("layout384");
 
     obj.imageCheckBox175 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox175:setParent(obj.layout366);
+    obj.imageCheckBox175:setParent(obj.layout384);
     obj.imageCheckBox175:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox175:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox175:setLeft(0);
@@ -7596,16 +7928,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox175:setField("INT5");
     obj.imageCheckBox175:setName("imageCheckBox175");
 
-    obj.layout367 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout367:setParent(obj.rectangle2);
-    obj.layout367:setLeft(654);
-    obj.layout367:setTop(1266);
-    obj.layout367:setWidth(15);
-    obj.layout367:setHeight(15);
-    obj.layout367:setName("layout367");
+    obj.layout385 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout385:setParent(obj.rectangle2);
+    obj.layout385:setLeft(654);
+    obj.layout385:setTop(1266);
+    obj.layout385:setWidth(15);
+    obj.layout385:setHeight(15);
+    obj.layout385:setName("layout385");
 
     obj.imageCheckBox176 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox176:setParent(obj.layout367);
+    obj.imageCheckBox176:setParent(obj.layout385);
     obj.imageCheckBox176:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox176:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox176:setLeft(0);
@@ -7615,16 +7947,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox176:setField("INT6");
     obj.imageCheckBox176:setName("imageCheckBox176");
 
-    obj.layout368 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout368:setParent(obj.rectangle2);
-    obj.layout368:setLeft(670);
-    obj.layout368:setTop(1266);
-    obj.layout368:setWidth(15);
-    obj.layout368:setHeight(15);
-    obj.layout368:setName("layout368");
+    obj.layout386 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout386:setParent(obj.rectangle2);
+    obj.layout386:setLeft(670);
+    obj.layout386:setTop(1266);
+    obj.layout386:setWidth(15);
+    obj.layout386:setHeight(15);
+    obj.layout386:setName("layout386");
 
     obj.imageCheckBox177 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox177:setParent(obj.layout368);
+    obj.imageCheckBox177:setParent(obj.layout386);
     obj.imageCheckBox177:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox177:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox177:setLeft(0);
@@ -7634,16 +7966,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox177:setField("INT7");
     obj.imageCheckBox177:setName("imageCheckBox177");
 
-    obj.layout369 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout369:setParent(obj.rectangle2);
-    obj.layout369:setLeft(686);
-    obj.layout369:setTop(1266);
-    obj.layout369:setWidth(15);
-    obj.layout369:setHeight(15);
-    obj.layout369:setName("layout369");
+    obj.layout387 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout387:setParent(obj.rectangle2);
+    obj.layout387:setLeft(686);
+    obj.layout387:setTop(1266);
+    obj.layout387:setWidth(15);
+    obj.layout387:setHeight(15);
+    obj.layout387:setName("layout387");
 
     obj.imageCheckBox178 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox178:setParent(obj.layout369);
+    obj.imageCheckBox178:setParent(obj.layout387);
     obj.imageCheckBox178:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox178:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox178:setLeft(0);
@@ -7653,16 +7985,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox178:setField("INT8");
     obj.imageCheckBox178:setName("imageCheckBox178");
 
-    obj.layout370 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout370:setParent(obj.rectangle2);
-    obj.layout370:setLeft(702);
-    obj.layout370:setTop(1266);
-    obj.layout370:setWidth(15);
-    obj.layout370:setHeight(15);
-    obj.layout370:setName("layout370");
+    obj.layout388 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout388:setParent(obj.rectangle2);
+    obj.layout388:setLeft(702);
+    obj.layout388:setTop(1266);
+    obj.layout388:setWidth(15);
+    obj.layout388:setHeight(15);
+    obj.layout388:setName("layout388");
 
     obj.imageCheckBox179 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox179:setParent(obj.layout370);
+    obj.imageCheckBox179:setParent(obj.layout388);
     obj.imageCheckBox179:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox179:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox179:setLeft(0);
@@ -7672,16 +8004,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox179:setField("INT9");
     obj.imageCheckBox179:setName("imageCheckBox179");
 
-    obj.layout371 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout371:setParent(obj.rectangle2);
-    obj.layout371:setLeft(718);
-    obj.layout371:setTop(1266);
-    obj.layout371:setWidth(15);
-    obj.layout371:setHeight(15);
-    obj.layout371:setName("layout371");
+    obj.layout389 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout389:setParent(obj.rectangle2);
+    obj.layout389:setLeft(718);
+    obj.layout389:setTop(1266);
+    obj.layout389:setWidth(15);
+    obj.layout389:setHeight(15);
+    obj.layout389:setName("layout389");
 
     obj.imageCheckBox180 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox180:setParent(obj.layout371);
+    obj.imageCheckBox180:setParent(obj.layout389);
     obj.imageCheckBox180:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox180:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox180:setLeft(0);
@@ -7691,16 +8023,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox180:setField("INT10");
     obj.imageCheckBox180:setName("imageCheckBox180");
 
-    obj.layout372 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout372:setParent(obj.rectangle2);
-    obj.layout372:setLeft(755);
-    obj.layout372:setTop(1266);
-    obj.layout372:setWidth(15);
-    obj.layout372:setHeight(15);
-    obj.layout372:setName("layout372");
+    obj.layout390 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout390:setParent(obj.rectangle2);
+    obj.layout390:setLeft(755);
+    obj.layout390:setTop(1266);
+    obj.layout390:setWidth(15);
+    obj.layout390:setHeight(15);
+    obj.layout390:setName("layout390");
 
     obj.imageCheckBox181 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox181:setParent(obj.layout372);
+    obj.imageCheckBox181:setParent(obj.layout390);
     obj.imageCheckBox181:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox181:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox181:setLeft(0);
@@ -7710,16 +8042,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox181:setField("RES1");
     obj.imageCheckBox181:setName("imageCheckBox181");
 
-    obj.layout373 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout373:setParent(obj.rectangle2);
-    obj.layout373:setLeft(771);
-    obj.layout373:setTop(1266);
-    obj.layout373:setWidth(15);
-    obj.layout373:setHeight(15);
-    obj.layout373:setName("layout373");
+    obj.layout391 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout391:setParent(obj.rectangle2);
+    obj.layout391:setLeft(771);
+    obj.layout391:setTop(1266);
+    obj.layout391:setWidth(15);
+    obj.layout391:setHeight(15);
+    obj.layout391:setName("layout391");
 
     obj.imageCheckBox182 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox182:setParent(obj.layout373);
+    obj.imageCheckBox182:setParent(obj.layout391);
     obj.imageCheckBox182:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox182:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox182:setLeft(0);
@@ -7729,16 +8061,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox182:setField("RES2");
     obj.imageCheckBox182:setName("imageCheckBox182");
 
-    obj.layout374 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout374:setParent(obj.rectangle2);
-    obj.layout374:setLeft(787);
-    obj.layout374:setTop(1266);
-    obj.layout374:setWidth(15);
-    obj.layout374:setHeight(15);
-    obj.layout374:setName("layout374");
+    obj.layout392 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout392:setParent(obj.rectangle2);
+    obj.layout392:setLeft(787);
+    obj.layout392:setTop(1266);
+    obj.layout392:setWidth(15);
+    obj.layout392:setHeight(15);
+    obj.layout392:setName("layout392");
 
     obj.imageCheckBox183 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox183:setParent(obj.layout374);
+    obj.imageCheckBox183:setParent(obj.layout392);
     obj.imageCheckBox183:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox183:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox183:setLeft(0);
@@ -7748,16 +8080,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox183:setField("RES3");
     obj.imageCheckBox183:setName("imageCheckBox183");
 
-    obj.layout375 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout375:setParent(obj.rectangle2);
-    obj.layout375:setLeft(803);
-    obj.layout375:setTop(1266);
-    obj.layout375:setWidth(15);
-    obj.layout375:setHeight(15);
-    obj.layout375:setName("layout375");
+    obj.layout393 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout393:setParent(obj.rectangle2);
+    obj.layout393:setLeft(803);
+    obj.layout393:setTop(1266);
+    obj.layout393:setWidth(15);
+    obj.layout393:setHeight(15);
+    obj.layout393:setName("layout393");
 
     obj.imageCheckBox184 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox184:setParent(obj.layout375);
+    obj.imageCheckBox184:setParent(obj.layout393);
     obj.imageCheckBox184:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox184:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox184:setLeft(0);
@@ -7767,16 +8099,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox184:setField("RES4");
     obj.imageCheckBox184:setName("imageCheckBox184");
 
-    obj.layout376 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout376:setParent(obj.rectangle2);
-    obj.layout376:setLeft(819);
-    obj.layout376:setTop(1266);
-    obj.layout376:setWidth(15);
-    obj.layout376:setHeight(15);
-    obj.layout376:setName("layout376");
+    obj.layout394 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout394:setParent(obj.rectangle2);
+    obj.layout394:setLeft(819);
+    obj.layout394:setTop(1266);
+    obj.layout394:setWidth(15);
+    obj.layout394:setHeight(15);
+    obj.layout394:setName("layout394");
 
     obj.imageCheckBox185 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox185:setParent(obj.layout376);
+    obj.imageCheckBox185:setParent(obj.layout394);
     obj.imageCheckBox185:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox185:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox185:setLeft(0);
@@ -7786,16 +8118,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox185:setField("RES5");
     obj.imageCheckBox185:setName("imageCheckBox185");
 
-    obj.layout377 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout377:setParent(obj.rectangle2);
-    obj.layout377:setLeft(835);
-    obj.layout377:setTop(1266);
-    obj.layout377:setWidth(15);
-    obj.layout377:setHeight(15);
-    obj.layout377:setName("layout377");
+    obj.layout395 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout395:setParent(obj.rectangle2);
+    obj.layout395:setLeft(835);
+    obj.layout395:setTop(1266);
+    obj.layout395:setWidth(15);
+    obj.layout395:setHeight(15);
+    obj.layout395:setName("layout395");
 
     obj.imageCheckBox186 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox186:setParent(obj.layout377);
+    obj.imageCheckBox186:setParent(obj.layout395);
     obj.imageCheckBox186:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox186:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox186:setLeft(0);
@@ -7805,16 +8137,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox186:setField("RES6");
     obj.imageCheckBox186:setName("imageCheckBox186");
 
-    obj.layout378 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout378:setParent(obj.rectangle2);
-    obj.layout378:setLeft(851);
-    obj.layout378:setTop(1266);
-    obj.layout378:setWidth(15);
-    obj.layout378:setHeight(15);
-    obj.layout378:setName("layout378");
+    obj.layout396 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout396:setParent(obj.rectangle2);
+    obj.layout396:setLeft(851);
+    obj.layout396:setTop(1266);
+    obj.layout396:setWidth(15);
+    obj.layout396:setHeight(15);
+    obj.layout396:setName("layout396");
 
     obj.imageCheckBox187 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox187:setParent(obj.layout378);
+    obj.imageCheckBox187:setParent(obj.layout396);
     obj.imageCheckBox187:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox187:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox187:setLeft(0);
@@ -7824,16 +8156,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox187:setField("RES7");
     obj.imageCheckBox187:setName("imageCheckBox187");
 
-    obj.layout379 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout379:setParent(obj.rectangle2);
-    obj.layout379:setLeft(867);
-    obj.layout379:setTop(1266);
-    obj.layout379:setWidth(15);
-    obj.layout379:setHeight(15);
-    obj.layout379:setName("layout379");
+    obj.layout397 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout397:setParent(obj.rectangle2);
+    obj.layout397:setLeft(867);
+    obj.layout397:setTop(1266);
+    obj.layout397:setWidth(15);
+    obj.layout397:setHeight(15);
+    obj.layout397:setName("layout397");
 
     obj.imageCheckBox188 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox188:setParent(obj.layout379);
+    obj.imageCheckBox188:setParent(obj.layout397);
     obj.imageCheckBox188:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox188:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox188:setLeft(0);
@@ -7843,16 +8175,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox188:setField("RES8");
     obj.imageCheckBox188:setName("imageCheckBox188");
 
-    obj.layout380 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout380:setParent(obj.rectangle2);
-    obj.layout380:setLeft(883);
-    obj.layout380:setTop(1266);
-    obj.layout380:setWidth(15);
-    obj.layout380:setHeight(15);
-    obj.layout380:setName("layout380");
+    obj.layout398 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout398:setParent(obj.rectangle2);
+    obj.layout398:setLeft(883);
+    obj.layout398:setTop(1266);
+    obj.layout398:setWidth(15);
+    obj.layout398:setHeight(15);
+    obj.layout398:setName("layout398");
 
     obj.imageCheckBox189 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox189:setParent(obj.layout380);
+    obj.imageCheckBox189:setParent(obj.layout398);
     obj.imageCheckBox189:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox189:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox189:setLeft(0);
@@ -7862,16 +8194,16 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox189:setField("RES9");
     obj.imageCheckBox189:setName("imageCheckBox189");
 
-    obj.layout381 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout381:setParent(obj.rectangle2);
-    obj.layout381:setLeft(899);
-    obj.layout381:setTop(1266);
-    obj.layout381:setWidth(15);
-    obj.layout381:setHeight(15);
-    obj.layout381:setName("layout381");
+    obj.layout399 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout399:setParent(obj.rectangle2);
+    obj.layout399:setLeft(899);
+    obj.layout399:setTop(1266);
+    obj.layout399:setWidth(15);
+    obj.layout399:setHeight(15);
+    obj.layout399:setName("layout399");
 
     obj.imageCheckBox190 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox190:setParent(obj.layout381);
+    obj.imageCheckBox190:setParent(obj.layout399);
     obj.imageCheckBox190:setImageChecked("PokeRPGT/images/pokeball_on.png");
     obj.imageCheckBox190:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox190:setLeft(0);
@@ -7880,338 +8212,6 @@ local function constructNew_frmPokeRPGT5_svg()
     obj.imageCheckBox190:setHeight(15);
     obj.imageCheckBox190:setField("RES10");
     obj.imageCheckBox190:setName("imageCheckBox190");
-
-    obj.comboBox1 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox1:setParent(obj.rectangle2);
-    obj.comboBox1:setLeft(544);
-    obj.comboBox1:setTop(236);
-    obj.comboBox1:setWidth(160);
-    obj.comboBox1:setItems({'Pokeball', 'GreatBall', 'UltraBall', 'MasterBall','SafariBall',
-			'ParkBall', 'SportBall', 'LevelBall', 'LureBall', 'MoonBall', 'FriendBall', 'LoveBall', 'HeavyBall', 'FastBall', 'PremierBall',
-			'RepeatBall', 'TimerBall', 'NestBall', 'NetBall','DiveBall', 'LuxuryBall', 'HealBall', 'QuickBall', 'DuskBall', 'CherishBall'});
-    obj.comboBox1:setFontColor("#ffffff");
-    obj.comboBox1:setTransparent(true);
-    obj.comboBox1:setField("TipoDePokébola");
-    obj.comboBox1:setName("comboBox1");
-
-    obj.comboBox2 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox2:setParent(obj.rectangle2);
-    obj.comboBox2:setLeft(31);
-    obj.comboBox2:setTop(330);
-    obj.comboBox2:setWidth(175);
-    obj.comboBox2:setItems({'Ousado', 'Solitário', 'Duro', 'Desobediente','Valente',
-			'Atrevido', 'Dócil', 'Diabólico', 'Medroso', 'Relaxado', 'Modesto', 'Meigo', 'Tímido', 'Precipitado','Tranquilo',
-			'Calmo', 'Amável', 'Cuidadoso', 'Peculiar','Petulante', 'Receoso', 'Imprudente', 'Divertido', 'Ingênuo', 'Sério'});
-    obj.comboBox2:setFontColor("#ffffff");
-    obj.comboBox2:setTransparent(true);
-    obj.comboBox2:setField("Natureza");
-    obj.comboBox2:setName("comboBox2");
-
-    obj.layout382 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout382:setParent(obj.rectangle2);
-    obj.layout382:setLeft(698);
-    obj.layout382:setTop(400);
-    obj.layout382:setWidth(30);
-    obj.layout382:setHeight(30);
-    obj.layout382:setName("layout382");
-
-    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image2:setParent(obj.layout382);
-    obj.image2:setHitTest(true);
-    obj.image2:setHint("Normal");
-    obj.image2:setWidth(30);
-    obj.image2:setHeight(30);
-    obj.image2:setField("IMGNOR");
-    obj.image2:setName("image2");
-
-    obj.layout383 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout383:setParent(obj.rectangle2);
-    obj.layout383:setLeft(733);
-    obj.layout383:setTop(400);
-    obj.layout383:setWidth(30);
-    obj.layout383:setHeight(30);
-    obj.layout383:setName("layout383");
-
-    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout383);
-    obj.image3:setHitTest(true);
-    obj.image3:setHint("Fogo");
-    obj.image3:setWidth(30);
-    obj.image3:setHeight(30);
-    obj.image3:setField("IMGFIR");
-    obj.image3:setName("image3");
-
-    obj.layout384 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout384:setParent(obj.rectangle2);
-    obj.layout384:setLeft(768);
-    obj.layout384:setTop(400);
-    obj.layout384:setWidth(30);
-    obj.layout384:setHeight(30);
-    obj.layout384:setName("layout384");
-
-    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.layout384);
-    obj.image4:setHitTest(true);
-    obj.image4:setHint("Água");
-    obj.image4:setWidth(30);
-    obj.image4:setHeight(30);
-    obj.image4:setField("IMGFIR");
-    obj.image4:setName("image4");
-
-    obj.layout385 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout385:setParent(obj.rectangle2);
-    obj.layout385:setLeft(803);
-    obj.layout385:setTop(400);
-    obj.layout385:setWidth(30);
-    obj.layout385:setHeight(30);
-    obj.layout385:setName("layout385");
-
-    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.layout385);
-    obj.image5:setHitTest(true);
-    obj.image5:setHint("Elétrico");
-    obj.image5:setWidth(30);
-    obj.image5:setHeight(30);
-    obj.image5:setField("IMGELE");
-    obj.image5:setName("image5");
-
-    obj.layout386 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout386:setParent(obj.rectangle2);
-    obj.layout386:setLeft(837);
-    obj.layout386:setTop(400);
-    obj.layout386:setWidth(30);
-    obj.layout386:setHeight(30);
-    obj.layout386:setName("layout386");
-
-    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.layout386);
-    obj.image6:setHitTest(true);
-    obj.image6:setHint("Grama");
-    obj.image6:setWidth(30);
-    obj.image6:setHeight(30);
-    obj.image6:setField("IMGGRA");
-    obj.image6:setName("image6");
-
-    obj.layout387 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout387:setParent(obj.rectangle2);
-    obj.layout387:setLeft(873);
-    obj.layout387:setTop(400);
-    obj.layout387:setWidth(30);
-    obj.layout387:setHeight(30);
-    obj.layout387:setName("layout387");
-
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.layout387);
-    obj.image7:setHitTest(true);
-    obj.image7:setHint("Gelo");
-    obj.image7:setWidth(30);
-    obj.image7:setHeight(30);
-    obj.image7:setField("IMGICE");
-    obj.image7:setName("image7");
-
-    obj.layout388 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout388:setParent(obj.rectangle2);
-    obj.layout388:setLeft(698);
-    obj.layout388:setTop(450);
-    obj.layout388:setWidth(30);
-    obj.layout388:setHeight(30);
-    obj.layout388:setName("layout388");
-
-    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.layout388);
-    obj.image8:setHitTest(true);
-    obj.image8:setHint("Lutador");
-    obj.image8:setWidth(30);
-    obj.image8:setHeight(30);
-    obj.image8:setField("IMGFIG");
-    obj.image8:setName("image8");
-
-    obj.layout389 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout389:setParent(obj.rectangle2);
-    obj.layout389:setLeft(733);
-    obj.layout389:setTop(450);
-    obj.layout389:setWidth(30);
-    obj.layout389:setHeight(30);
-    obj.layout389:setName("layout389");
-
-    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image9:setParent(obj.layout389);
-    obj.image9:setHitTest(true);
-    obj.image9:setHint("Veneno");
-    obj.image9:setWidth(30);
-    obj.image9:setHeight(30);
-    obj.image9:setField("IMGPOI");
-    obj.image9:setName("image9");
-
-    obj.layout390 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout390:setParent(obj.rectangle2);
-    obj.layout390:setLeft(768);
-    obj.layout390:setTop(450);
-    obj.layout390:setWidth(30);
-    obj.layout390:setHeight(30);
-    obj.layout390:setName("layout390");
-
-    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image10:setParent(obj.layout390);
-    obj.image10:setHitTest(true);
-    obj.image10:setHint("Terra");
-    obj.image10:setWidth(30);
-    obj.image10:setHeight(30);
-    obj.image10:setField("IMGGRO");
-    obj.image10:setName("image10");
-
-    obj.layout391 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout391:setParent(obj.rectangle2);
-    obj.layout391:setLeft(803);
-    obj.layout391:setTop(450);
-    obj.layout391:setWidth(30);
-    obj.layout391:setHeight(30);
-    obj.layout391:setName("layout391");
-
-    obj.image11 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image11:setParent(obj.layout391);
-    obj.image11:setHitTest(true);
-    obj.image11:setHint("Voador");
-    obj.image11:setWidth(30);
-    obj.image11:setHeight(30);
-    obj.image11:setField("IMGFLY");
-    obj.image11:setName("image11");
-
-    obj.layout392 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout392:setParent(obj.rectangle2);
-    obj.layout392:setLeft(837);
-    obj.layout392:setTop(450);
-    obj.layout392:setWidth(30);
-    obj.layout392:setHeight(30);
-    obj.layout392:setName("layout392");
-
-    obj.image12 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image12:setParent(obj.layout392);
-    obj.image12:setHitTest(true);
-    obj.image12:setHint("Psiquico");
-    obj.image12:setWidth(30);
-    obj.image12:setHeight(30);
-    obj.image12:setField("IMGPSI");
-    obj.image12:setName("image12");
-
-    obj.layout393 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout393:setParent(obj.rectangle2);
-    obj.layout393:setLeft(873);
-    obj.layout393:setTop(450);
-    obj.layout393:setWidth(30);
-    obj.layout393:setHeight(30);
-    obj.layout393:setName("layout393");
-
-    obj.image13 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image13:setParent(obj.layout393);
-    obj.image13:setHitTest(true);
-    obj.image13:setHint("Inseto");
-    obj.image13:setWidth(30);
-    obj.image13:setHeight(30);
-    obj.image13:setField("IMGBUG");
-    obj.image13:setName("image13");
-
-    obj.layout394 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout394:setParent(obj.rectangle2);
-    obj.layout394:setLeft(698);
-    obj.layout394:setTop(505);
-    obj.layout394:setWidth(30);
-    obj.layout394:setHeight(30);
-    obj.layout394:setName("layout394");
-
-    obj.image14 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image14:setParent(obj.layout394);
-    obj.image14:setHitTest(true);
-    obj.image14:setHint("Pedra");
-    obj.image14:setWidth(30);
-    obj.image14:setHeight(30);
-    obj.image14:setField("IMGROC");
-    obj.image14:setName("image14");
-
-    obj.layout395 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout395:setParent(obj.rectangle2);
-    obj.layout395:setLeft(733);
-    obj.layout395:setTop(505);
-    obj.layout395:setWidth(30);
-    obj.layout395:setHeight(30);
-    obj.layout395:setName("layout395");
-
-    obj.image15 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image15:setParent(obj.layout395);
-    obj.image15:setHitTest(true);
-    obj.image15:setHint("Fantasma");
-    obj.image15:setWidth(30);
-    obj.image15:setHeight(30);
-    obj.image15:setField("IMGGHO");
-    obj.image15:setName("image15");
-
-    obj.layout396 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout396:setParent(obj.rectangle2);
-    obj.layout396:setLeft(768);
-    obj.layout396:setTop(505);
-    obj.layout396:setWidth(30);
-    obj.layout396:setHeight(30);
-    obj.layout396:setName("layout396");
-
-    obj.image16 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image16:setParent(obj.layout396);
-    obj.image16:setHitTest(true);
-    obj.image16:setHint("Dragão");
-    obj.image16:setWidth(30);
-    obj.image16:setHeight(30);
-    obj.image16:setField("IMGDRA");
-    obj.image16:setName("image16");
-
-    obj.layout397 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout397:setParent(obj.rectangle2);
-    obj.layout397:setLeft(803);
-    obj.layout397:setTop(505);
-    obj.layout397:setWidth(30);
-    obj.layout397:setHeight(30);
-    obj.layout397:setName("layout397");
-
-    obj.image17 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image17:setParent(obj.layout397);
-    obj.image17:setHitTest(true);
-    obj.image17:setHint("Sombrio");
-    obj.image17:setWidth(30);
-    obj.image17:setHeight(30);
-    obj.image17:setField("IMGDAR");
-    obj.image17:setName("image17");
-
-    obj.layout398 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout398:setParent(obj.rectangle2);
-    obj.layout398:setLeft(837);
-    obj.layout398:setTop(505);
-    obj.layout398:setWidth(30);
-    obj.layout398:setHeight(30);
-    obj.layout398:setName("layout398");
-
-    obj.image18 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image18:setParent(obj.layout398);
-    obj.image18:setHitTest(true);
-    obj.image18:setHint("Ferro");
-    obj.image18:setWidth(30);
-    obj.image18:setHeight(30);
-    obj.image18:setField("IMGSTE");
-    obj.image18:setName("image18");
-
-    obj.layout399 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout399:setParent(obj.rectangle2);
-    obj.layout399:setLeft(873);
-    obj.layout399:setTop(505);
-    obj.layout399:setWidth(30);
-    obj.layout399:setHeight(30);
-    obj.layout399:setName("layout399");
-
-    obj.image19 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image19:setParent(obj.layout399);
-    obj.image19:setHitTest(true);
-    obj.image19:setHint("Fada");
-    obj.image19:setWidth(30);
-    obj.image19:setHeight(30);
-    obj.image19:setField("IMGFAI");
-    obj.image19:setName("image19");
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
@@ -8286,9 +8286,9 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout365 ~= nil then self.layout365:destroy(); self.layout365 = nil; end;
         if self.imageCheckBox174 ~= nil then self.imageCheckBox174:destroy(); self.imageCheckBox174 = nil; end;
         if self.imageCheckBox176 ~= nil then self.imageCheckBox176:destroy(); self.imageCheckBox176 = nil; end;
+        if self.image11 ~= nil then self.image11:destroy(); self.image11 = nil; end;
         if self.imageCheckBox129 ~= nil then self.imageCheckBox129:destroy(); self.imageCheckBox129 = nil; end;
         if self.imageCheckBox181 ~= nil then self.imageCheckBox181:destroy(); self.imageCheckBox181 = nil; end;
-        if self.image11 ~= nil then self.image11:destroy(); self.image11 = nil; end;
         if self.imageCheckBox99 ~= nil then self.imageCheckBox99:destroy(); self.imageCheckBox99 = nil; end;
         if self.imageCheckBox133 ~= nil then self.imageCheckBox133:destroy(); self.imageCheckBox133 = nil; end;
         if self.imageCheckBox13 ~= nil then self.imageCheckBox13:destroy(); self.imageCheckBox13 = nil; end;
@@ -8321,8 +8321,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
         if self.layout248 ~= nil then self.layout248:destroy(); self.layout248 = nil; end;
         if self.layout341 ~= nil then self.layout341:destroy(); self.layout341 = nil; end;
-        if self.layout259 ~= nil then self.layout259:destroy(); self.layout259 = nil; end;
         if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
+        if self.layout259 ~= nil then self.layout259:destroy(); self.layout259 = nil; end;
         if self.layout392 ~= nil then self.layout392:destroy(); self.layout392 = nil; end;
         if self.edit182 ~= nil then self.edit182:destroy(); self.edit182 = nil; end;
         if self.layout103 ~= nil then self.layout103:destroy(); self.layout103 = nil; end;
@@ -8382,8 +8382,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.imageCheckBox32 ~= nil then self.imageCheckBox32:destroy(); self.imageCheckBox32 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
-        if self.imageCheckBox128 ~= nil then self.imageCheckBox128:destroy(); self.imageCheckBox128 = nil; end;
         if self.layout320 ~= nil then self.layout320:destroy(); self.layout320 = nil; end;
+        if self.imageCheckBox128 ~= nil then self.imageCheckBox128:destroy(); self.imageCheckBox128 = nil; end;
         if self.edit128 ~= nil then self.edit128:destroy(); self.edit128 = nil; end;
         if self.layout200 ~= nil then self.layout200:destroy(); self.layout200 = nil; end;
         if self.imageCheckBox107 ~= nil then self.imageCheckBox107:destroy(); self.imageCheckBox107 = nil; end;
@@ -8432,8 +8432,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout202 ~= nil then self.layout202:destroy(); self.layout202 = nil; end;
         if self.layout220 ~= nil then self.layout220:destroy(); self.layout220 = nil; end;
         if self.layout373 ~= nil then self.layout373:destroy(); self.layout373 = nil; end;
-        if self.edit154 ~= nil then self.edit154:destroy(); self.edit154 = nil; end;
         if self.image15 ~= nil then self.image15:destroy(); self.image15 = nil; end;
+        if self.edit154 ~= nil then self.edit154:destroy(); self.edit154 = nil; end;
         if self.layout170 ~= nil then self.layout170:destroy(); self.layout170 = nil; end;
         if self.imageCheckBox172 ~= nil then self.imageCheckBox172:destroy(); self.imageCheckBox172 = nil; end;
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
@@ -8452,9 +8452,9 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout110 ~= nil then self.layout110:destroy(); self.layout110 = nil; end;
         if self.imageCheckBox105 ~= nil then self.imageCheckBox105:destroy(); self.imageCheckBox105 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
-        if self.layout114 ~= nil then self.layout114:destroy(); self.layout114 = nil; end;
-        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
+        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
+        if self.layout114 ~= nil then self.layout114:destroy(); self.layout114 = nil; end;
         if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
         if self.layout374 ~= nil then self.layout374:destroy(); self.layout374 = nil; end;
         if self.layout219 ~= nil then self.layout219:destroy(); self.layout219 = nil; end;
@@ -8483,8 +8483,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.edit72 ~= nil then self.edit72:destroy(); self.edit72 = nil; end;
         if self.layout243 ~= nil then self.layout243:destroy(); self.layout243 = nil; end;
         if self.layout92 ~= nil then self.layout92:destroy(); self.layout92 = nil; end;
-        if self.imageCheckBox101 ~= nil then self.imageCheckBox101:destroy(); self.imageCheckBox101 = nil; end;
         if self.layout178 ~= nil then self.layout178:destroy(); self.layout178 = nil; end;
+        if self.imageCheckBox101 ~= nil then self.imageCheckBox101:destroy(); self.imageCheckBox101 = nil; end;
         if self.edit158 ~= nil then self.edit158:destroy(); self.edit158 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.layout339 ~= nil then self.layout339:destroy(); self.layout339 = nil; end;
@@ -8561,15 +8561,15 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.imageCheckBox75 ~= nil then self.imageCheckBox75:destroy(); self.imageCheckBox75 = nil; end;
         if self.edit57 ~= nil then self.edit57:destroy(); self.edit57 = nil; end;
         if self.layout208 ~= nil then self.layout208:destroy(); self.layout208 = nil; end;
-        if self.edit147 ~= nil then self.edit147:destroy(); self.edit147 = nil; end;
+        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
         if self.layout95 ~= nil then self.layout95:destroy(); self.layout95 = nil; end;
-        if self.layout293 ~= nil then self.layout293:destroy(); self.layout293 = nil; end;
+        if self.edit147 ~= nil then self.edit147:destroy(); self.edit147 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
-        if self.layout356 ~= nil then self.layout356:destroy(); self.layout356 = nil; end;
+        if self.layout293 ~= nil then self.layout293:destroy(); self.layout293 = nil; end;
         if self.layout93 ~= nil then self.layout93:destroy(); self.layout93 = nil; end;
         if self.edit63 ~= nil then self.edit63:destroy(); self.edit63 = nil; end;
         if self.imageCheckBox51 ~= nil then self.imageCheckBox51:destroy(); self.imageCheckBox51 = nil; end;
-        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
+        if self.layout356 ~= nil then self.layout356:destroy(); self.layout356 = nil; end;
         if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
         if self.layout297 ~= nil then self.layout297:destroy(); self.layout297 = nil; end;
         if self.layout122 ~= nil then self.layout122:destroy(); self.layout122 = nil; end;
@@ -8591,9 +8591,9 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout372 ~= nil then self.layout372:destroy(); self.layout372 = nil; end;
         if self.layout44 ~= nil then self.layout44:destroy(); self.layout44 = nil; end;
         if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
-        if self.layout319 ~= nil then self.layout319:destroy(); self.layout319 = nil; end;
-        if self.edit107 ~= nil then self.edit107:destroy(); self.edit107 = nil; end;
         if self.image16 ~= nil then self.image16:destroy(); self.image16 = nil; end;
+        if self.edit107 ~= nil then self.edit107:destroy(); self.edit107 = nil; end;
+        if self.layout319 ~= nil then self.layout319:destroy(); self.layout319 = nil; end;
         if self.imageCheckBox178 ~= nil then self.imageCheckBox178:destroy(); self.imageCheckBox178 = nil; end;
         if self.layout74 ~= nil then self.layout74:destroy(); self.layout74 = nil; end;
         if self.imageCheckBox132 ~= nil then self.imageCheckBox132:destroy(); self.imageCheckBox132 = nil; end;
@@ -8672,8 +8672,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout140 ~= nil then self.layout140:destroy(); self.layout140 = nil; end;
         if self.layout71 ~= nil then self.layout71:destroy(); self.layout71 = nil; end;
         if self.edit183 ~= nil then self.edit183:destroy(); self.edit183 = nil; end;
-        if self.imageCheckBox166 ~= nil then self.imageCheckBox166:destroy(); self.imageCheckBox166 = nil; end;
         if self.layout369 ~= nil then self.layout369:destroy(); self.layout369 = nil; end;
+        if self.imageCheckBox166 ~= nil then self.imageCheckBox166:destroy(); self.imageCheckBox166 = nil; end;
         if self.layout283 ~= nil then self.layout283:destroy(); self.layout283 = nil; end;
         if self.layout385 ~= nil then self.layout385:destroy(); self.layout385 = nil; end;
         if self.layout276 ~= nil then self.layout276:destroy(); self.layout276 = nil; end;
@@ -8771,9 +8771,9 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout116 ~= nil then self.layout116:destroy(); self.layout116 = nil; end;
         if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
         if self.edit103 ~= nil then self.edit103:destroy(); self.edit103 = nil; end;
+        if self.image12 ~= nil then self.image12:destroy(); self.image12 = nil; end;
         if self.layout318 ~= nil then self.layout318:destroy(); self.layout318 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
-        if self.image12 ~= nil then self.image12:destroy(); self.image12 = nil; end;
         if self.imageCheckBox124 ~= nil then self.imageCheckBox124:destroy(); self.imageCheckBox124 = nil; end;
         if self.layout101 ~= nil then self.layout101:destroy(); self.layout101 = nil; end;
         if self.edit45 ~= nil then self.edit45:destroy(); self.edit45 = nil; end;
@@ -8831,8 +8831,8 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout227 ~= nil then self.layout227:destroy(); self.layout227 = nil; end;
         if self.imageCheckBox116 ~= nil then self.imageCheckBox116:destroy(); self.imageCheckBox116 = nil; end;
         if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
-        if self.edit178 ~= nil then self.edit178:destroy(); self.edit178 = nil; end;
         if self.image13 ~= nil then self.image13:destroy(); self.image13 = nil; end;
+        if self.edit178 ~= nil then self.edit178:destroy(); self.edit178 = nil; end;
         if self.edit102 ~= nil then self.edit102:destroy(); self.edit102 = nil; end;
         if self.imageCheckBox158 ~= nil then self.imageCheckBox158:destroy(); self.imageCheckBox158 = nil; end;
         if self.layout115 ~= nil then self.layout115:destroy(); self.layout115 = nil; end;
@@ -8900,12 +8900,12 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.imageCheckBox119 ~= nil then self.imageCheckBox119:destroy(); self.imageCheckBox119 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.layout215 ~= nil then self.layout215:destroy(); self.layout215 = nil; end;
-        if self.layout221 ~= nil then self.layout221:destroy(); self.layout221 = nil; end;
         if self.image8 ~= nil then self.image8:destroy(); self.image8 = nil; end;
-        if self.layout334 ~= nil then self.layout334:destroy(); self.layout334 = nil; end;
+        if self.layout221 ~= nil then self.layout221:destroy(); self.layout221 = nil; end;
+        if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
         if self.layout167 ~= nil then self.layout167:destroy(); self.layout167 = nil; end;
         if self.layout147 ~= nil then self.layout147:destroy(); self.layout147 = nil; end;
-        if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
+        if self.layout334 ~= nil then self.layout334:destroy(); self.layout334 = nil; end;
         if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
         if self.layout352 ~= nil then self.layout352:destroy(); self.layout352 = nil; end;
         if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
@@ -9020,9 +9020,9 @@ local function constructNew_frmPokeRPGT5_svg()
         if self.layout131 ~= nil then self.layout131:destroy(); self.layout131 = nil; end;
         if self.layout286 ~= nil then self.layout286:destroy(); self.layout286 = nil; end;
         if self.layout349 ~= nil then self.layout349:destroy(); self.layout349 = nil; end;
+        if self.image17 ~= nil then self.image17:destroy(); self.image17 = nil; end;
         if self.layout265 ~= nil then self.layout265:destroy(); self.layout265 = nil; end;
         if self.edit151 ~= nil then self.edit151:destroy(); self.edit151 = nil; end;
-        if self.image17 ~= nil then self.image17:destroy(); self.image17 = nil; end;
         if self.imageCheckBox70 ~= nil then self.imageCheckBox70:destroy(); self.imageCheckBox70 = nil; end;
         if self.edit132 ~= nil then self.edit132:destroy(); self.edit132 = nil; end;
         if self.layout182 ~= nil then self.layout182:destroy(); self.layout182 = nil; end;

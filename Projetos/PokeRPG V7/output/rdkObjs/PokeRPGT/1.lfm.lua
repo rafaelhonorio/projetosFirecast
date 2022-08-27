@@ -59,7 +59,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.layout1:setLeft(0);
     obj.layout1:setTop(0);
     obj.layout1:setWidth(900);
-    obj.layout1:setHeight(400);
+    obj.layout1:setHeight(450);
     obj.layout1:setName("layout1");
 
     obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
@@ -339,7 +339,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.layout9:setLeft(630);
     obj.layout9:setTop(383);
     obj.layout9:setWidth(85);
-    obj.layout9:setHeight(30);
+    obj.layout9:setHeight(50);
     obj.layout9:setName("layout9");
 
     obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
@@ -361,7 +361,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.layout10:setLeft(768);
     obj.layout10:setTop(383);
     obj.layout10:setWidth(85);
-    obj.layout10:setHeight(30);
+    obj.layout10:setHeight(50);
     obj.layout10:setName("layout10");
 
     obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
@@ -3219,7 +3219,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox250 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox250:setParent(obj.layout39);
-    obj.imageCheckBox250:setField("academico_1");
+    obj.imageCheckBox250:setField("academicos_1");
     obj.imageCheckBox250:setLeft(10);
     obj.imageCheckBox250:setTop(4);
     obj.imageCheckBox250:setWidth(19);
@@ -3230,7 +3230,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox251 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox251:setParent(obj.layout39);
-    obj.imageCheckBox251:setField("academico_2");
+    obj.imageCheckBox251:setField("academicos_2");
     obj.imageCheckBox251:setLeft(29);
     obj.imageCheckBox251:setTop(4);
     obj.imageCheckBox251:setWidth(19);
@@ -3241,7 +3241,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox252 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox252:setParent(obj.layout39);
-    obj.imageCheckBox252:setField("academico_3");
+    obj.imageCheckBox252:setField("academicos_3");
     obj.imageCheckBox252:setLeft(48);
     obj.imageCheckBox252:setTop(4);
     obj.imageCheckBox252:setWidth(19);
@@ -3252,7 +3252,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox253 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox253:setParent(obj.layout39);
-    obj.imageCheckBox253:setField("academico_4");
+    obj.imageCheckBox253:setField("academicos_4");
     obj.imageCheckBox253:setLeft(67);
     obj.imageCheckBox253:setTop(4);
     obj.imageCheckBox253:setWidth(19);
@@ -3263,7 +3263,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox254 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox254:setParent(obj.layout39);
-    obj.imageCheckBox254:setField("academico_5");
+    obj.imageCheckBox254:setField("academicos_5");
     obj.imageCheckBox254:setLeft(86);
     obj.imageCheckBox254:setTop(4);
     obj.imageCheckBox254:setWidth(19);
@@ -3274,7 +3274,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox255 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox255:setParent(obj.layout39);
-    obj.imageCheckBox255:setField("academico_6");
+    obj.imageCheckBox255:setField("academicos_6");
     obj.imageCheckBox255:setLeft(105);
     obj.imageCheckBox255:setTop(4);
     obj.imageCheckBox255:setWidth(19);
@@ -3285,7 +3285,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox256 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox256:setParent(obj.layout39);
-    obj.imageCheckBox256:setField("academico_7");
+    obj.imageCheckBox256:setField("academicos_7");
     obj.imageCheckBox256:setLeft(124);
     obj.imageCheckBox256:setTop(4);
     obj.imageCheckBox256:setWidth(19);
@@ -3296,7 +3296,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox257 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox257:setParent(obj.layout39);
-    obj.imageCheckBox257:setField("academico_8");
+    obj.imageCheckBox257:setField("academicos_8");
     obj.imageCheckBox257:setLeft(143);
     obj.imageCheckBox257:setTop(4);
     obj.imageCheckBox257:setWidth(19);
@@ -3307,7 +3307,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj.imageCheckBox258 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox258:setParent(obj.layout39);
-    obj.imageCheckBox258:setField("academico_9");
+    obj.imageCheckBox258:setField("academicos_9");
     obj.imageCheckBox258:setLeft(162);
     obj.imageCheckBox258:setTop(4);
     obj.imageCheckBox258:setWidth(19);
@@ -4070,7 +4070,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.layout47:setLeft(37);
     obj.layout47:setTop(999);
     obj.layout47:setWidth(285);
-    obj.layout47:setHeight(272);
+    obj.layout47:setHeight(122);
     obj.layout47:setName("layout47");
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
@@ -4079,20 +4079,38 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.textEditor1:setFontSize(16);
     obj.textEditor1:setFontColor("#ffffff");
     obj.textEditor1:setWidth(285);
-    obj.textEditor1:setHeight(272);
+    obj.textEditor1:setHeight(122);
     obj.textEditor1:setField("ant1");
     obj.textEditor1:setName("textEditor1");
 
     obj.layout48 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout48:setParent(obj.rectangle1);
-    obj.layout48:setLeft(336);
-    obj.layout48:setTop(1065);
-    obj.layout48:setWidth(300);
-    obj.layout48:setHeight(50);
+    obj.layout48:setLeft(37);
+    obj.layout48:setTop(1149);
+    obj.layout48:setWidth(285);
+    obj.layout48:setHeight(122);
     obj.layout48:setName("layout48");
 
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2:setParent(obj.layout48);
+    obj.textEditor2:setTransparent(true);
+    obj.textEditor2:setFontSize(16);
+    obj.textEditor2:setFontColor("#ffffff");
+    obj.textEditor2:setWidth(285);
+    obj.textEditor2:setHeight(122);
+    obj.textEditor2:setField("especializacao");
+    obj.textEditor2:setName("textEditor2");
+
+    obj.layout49 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout49:setParent(obj.rectangle1);
+    obj.layout49:setLeft(336);
+    obj.layout49:setTop(1065);
+    obj.layout49:setWidth(300);
+    obj.layout49:setHeight(50);
+    obj.layout49:setName("layout49");
+
     obj.imageCheckBox322 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox322:setParent(obj.layout48);
+    obj.imageCheckBox322:setParent(obj.layout49);
     obj.imageCheckBox322:setField("coragem_1");
     obj.imageCheckBox322:setLeft(10);
     obj.imageCheckBox322:setTop(4);
@@ -4103,7 +4121,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox322:setName("imageCheckBox322");
 
     obj.imageCheckBox323 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox323:setParent(obj.layout48);
+    obj.imageCheckBox323:setParent(obj.layout49);
     obj.imageCheckBox323:setField("coragem_2");
     obj.imageCheckBox323:setLeft(32);
     obj.imageCheckBox323:setTop(4);
@@ -4114,7 +4132,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox323:setName("imageCheckBox323");
 
     obj.imageCheckBox324 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox324:setParent(obj.layout48);
+    obj.imageCheckBox324:setParent(obj.layout49);
     obj.imageCheckBox324:setField("coragem_3");
     obj.imageCheckBox324:setLeft(54);
     obj.imageCheckBox324:setTop(4);
@@ -4125,7 +4143,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox324:setName("imageCheckBox324");
 
     obj.imageCheckBox325 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox325:setParent(obj.layout48);
+    obj.imageCheckBox325:setParent(obj.layout49);
     obj.imageCheckBox325:setField("coragem_4");
     obj.imageCheckBox325:setLeft(76);
     obj.imageCheckBox325:setTop(4);
@@ -4136,7 +4154,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox325:setName("imageCheckBox325");
 
     obj.imageCheckBox326 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox326:setParent(obj.layout48);
+    obj.imageCheckBox326:setParent(obj.layout49);
     obj.imageCheckBox326:setField("coragem_5");
     obj.imageCheckBox326:setLeft(98);
     obj.imageCheckBox326:setTop(4);
@@ -4147,7 +4165,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox326:setName("imageCheckBox326");
 
     obj.imageCheckBox327 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox327:setParent(obj.layout48);
+    obj.imageCheckBox327:setParent(obj.layout49);
     obj.imageCheckBox327:setField("coragem_6");
     obj.imageCheckBox327:setLeft(120);
     obj.imageCheckBox327:setTop(4);
@@ -4158,7 +4176,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox327:setName("imageCheckBox327");
 
     obj.imageCheckBox328 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox328:setParent(obj.layout48);
+    obj.imageCheckBox328:setParent(obj.layout49);
     obj.imageCheckBox328:setField("coragem_7");
     obj.imageCheckBox328:setLeft(142);
     obj.imageCheckBox328:setTop(4);
@@ -4169,7 +4187,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox328:setName("imageCheckBox328");
 
     obj.imageCheckBox329 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox329:setParent(obj.layout48);
+    obj.imageCheckBox329:setParent(obj.layout49);
     obj.imageCheckBox329:setField("coragem_8");
     obj.imageCheckBox329:setLeft(164);
     obj.imageCheckBox329:setTop(4);
@@ -4180,7 +4198,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox329:setName("imageCheckBox329");
 
     obj.imageCheckBox330 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox330:setParent(obj.layout48);
+    obj.imageCheckBox330:setParent(obj.layout49);
     obj.imageCheckBox330:setField("coragem_9");
     obj.imageCheckBox330:setLeft(186);
     obj.imageCheckBox330:setTop(4);
@@ -4191,7 +4209,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox330:setName("imageCheckBox330");
 
     obj.imageCheckBox331 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox331:setParent(obj.layout48);
+    obj.imageCheckBox331:setParent(obj.layout49);
     obj.imageCheckBox331:setField("coragem_10");
     obj.imageCheckBox331:setLeft(208);
     obj.imageCheckBox331:setTop(4);
@@ -4202,7 +4220,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox331:setName("imageCheckBox331");
 
     obj.imageCheckBox332 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox332:setParent(obj.layout48);
+    obj.imageCheckBox332:setParent(obj.layout49);
     obj.imageCheckBox332:setField("coragem_11");
     obj.imageCheckBox332:setLeft(230);
     obj.imageCheckBox332:setTop(4);
@@ -4213,7 +4231,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox332:setName("imageCheckBox332");
 
     obj.imageCheckBox333 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox333:setParent(obj.layout48);
+    obj.imageCheckBox333:setParent(obj.layout49);
     obj.imageCheckBox333:setField("coragem_12");
     obj.imageCheckBox333:setLeft(252);
     obj.imageCheckBox333:setTop(4);
@@ -4223,16 +4241,16 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox333:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox333:setName("imageCheckBox333");
 
-    obj.layout49 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout49:setParent(obj.rectangle1);
-    obj.layout49:setLeft(336);
-    obj.layout49:setTop(1143);
-    obj.layout49:setWidth(300);
-    obj.layout49:setHeight(50);
-    obj.layout49:setName("layout49");
+    obj.layout50 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout50:setParent(obj.rectangle1);
+    obj.layout50:setLeft(336);
+    obj.layout50:setTop(1143);
+    obj.layout50:setWidth(300);
+    obj.layout50:setHeight(50);
+    obj.layout50:setName("layout50");
 
     obj.imageCheckBox334 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox334:setParent(obj.layout49);
+    obj.imageCheckBox334:setParent(obj.layout50);
     obj.imageCheckBox334:setField("conviccao_1");
     obj.imageCheckBox334:setLeft(10);
     obj.imageCheckBox334:setTop(4);
@@ -4243,7 +4261,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox334:setName("imageCheckBox334");
 
     obj.imageCheckBox335 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox335:setParent(obj.layout49);
+    obj.imageCheckBox335:setParent(obj.layout50);
     obj.imageCheckBox335:setField("conviccao_2");
     obj.imageCheckBox335:setLeft(32);
     obj.imageCheckBox335:setTop(4);
@@ -4254,7 +4272,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox335:setName("imageCheckBox335");
 
     obj.imageCheckBox336 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox336:setParent(obj.layout49);
+    obj.imageCheckBox336:setParent(obj.layout50);
     obj.imageCheckBox336:setField("conviccao_3");
     obj.imageCheckBox336:setLeft(54);
     obj.imageCheckBox336:setTop(4);
@@ -4265,7 +4283,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox336:setName("imageCheckBox336");
 
     obj.imageCheckBox337 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox337:setParent(obj.layout49);
+    obj.imageCheckBox337:setParent(obj.layout50);
     obj.imageCheckBox337:setField("conviccao_4");
     obj.imageCheckBox337:setLeft(76);
     obj.imageCheckBox337:setTop(4);
@@ -4276,7 +4294,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox337:setName("imageCheckBox337");
 
     obj.imageCheckBox338 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox338:setParent(obj.layout49);
+    obj.imageCheckBox338:setParent(obj.layout50);
     obj.imageCheckBox338:setField("conviccao_5");
     obj.imageCheckBox338:setLeft(98);
     obj.imageCheckBox338:setTop(4);
@@ -4287,7 +4305,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox338:setName("imageCheckBox338");
 
     obj.imageCheckBox339 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox339:setParent(obj.layout49);
+    obj.imageCheckBox339:setParent(obj.layout50);
     obj.imageCheckBox339:setField("conviccao_6");
     obj.imageCheckBox339:setLeft(120);
     obj.imageCheckBox339:setTop(4);
@@ -4298,7 +4316,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox339:setName("imageCheckBox339");
 
     obj.imageCheckBox340 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox340:setParent(obj.layout49);
+    obj.imageCheckBox340:setParent(obj.layout50);
     obj.imageCheckBox340:setField("conviccao_7");
     obj.imageCheckBox340:setLeft(142);
     obj.imageCheckBox340:setTop(4);
@@ -4309,7 +4327,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox340:setName("imageCheckBox340");
 
     obj.imageCheckBox341 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox341:setParent(obj.layout49);
+    obj.imageCheckBox341:setParent(obj.layout50);
     obj.imageCheckBox341:setField("conviccao_8");
     obj.imageCheckBox341:setLeft(164);
     obj.imageCheckBox341:setTop(4);
@@ -4320,7 +4338,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox341:setName("imageCheckBox341");
 
     obj.imageCheckBox342 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox342:setParent(obj.layout49);
+    obj.imageCheckBox342:setParent(obj.layout50);
     obj.imageCheckBox342:setField("conviccao_9");
     obj.imageCheckBox342:setLeft(186);
     obj.imageCheckBox342:setTop(4);
@@ -4331,7 +4349,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox342:setName("imageCheckBox342");
 
     obj.imageCheckBox343 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox343:setParent(obj.layout49);
+    obj.imageCheckBox343:setParent(obj.layout50);
     obj.imageCheckBox343:setField("conviccao_10");
     obj.imageCheckBox343:setLeft(208);
     obj.imageCheckBox343:setTop(4);
@@ -4342,7 +4360,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox343:setName("imageCheckBox343");
 
     obj.imageCheckBox344 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox344:setParent(obj.layout49);
+    obj.imageCheckBox344:setParent(obj.layout50);
     obj.imageCheckBox344:setField("conviccao_11");
     obj.imageCheckBox344:setLeft(230);
     obj.imageCheckBox344:setTop(4);
@@ -4353,7 +4371,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox344:setName("imageCheckBox344");
 
     obj.imageCheckBox345 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox345:setParent(obj.layout49);
+    obj.imageCheckBox345:setParent(obj.layout50);
     obj.imageCheckBox345:setField("conviccao_12");
     obj.imageCheckBox345:setLeft(252);
     obj.imageCheckBox345:setTop(4);
@@ -4363,16 +4381,16 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox345:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox345:setName("imageCheckBox345");
 
-    obj.layout50 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout50:setParent(obj.rectangle1);
-    obj.layout50:setLeft(336);
-    obj.layout50:setTop(1221);
-    obj.layout50:setWidth(300);
-    obj.layout50:setHeight(50);
-    obj.layout50:setName("layout50");
+    obj.layout51 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout51:setParent(obj.rectangle1);
+    obj.layout51:setLeft(336);
+    obj.layout51:setTop(1221);
+    obj.layout51:setWidth(300);
+    obj.layout51:setHeight(50);
+    obj.layout51:setName("layout51");
 
     obj.imageCheckBox346 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox346:setParent(obj.layout50);
+    obj.imageCheckBox346:setParent(obj.layout51);
     obj.imageCheckBox346:setField("forcaDeVontade_1");
     obj.imageCheckBox346:setLeft(10);
     obj.imageCheckBox346:setTop(4);
@@ -4383,7 +4401,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox346:setName("imageCheckBox346");
 
     obj.imageCheckBox347 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox347:setParent(obj.layout50);
+    obj.imageCheckBox347:setParent(obj.layout51);
     obj.imageCheckBox347:setField("forcaDeVontade_2");
     obj.imageCheckBox347:setLeft(32);
     obj.imageCheckBox347:setTop(4);
@@ -4394,7 +4412,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox347:setName("imageCheckBox347");
 
     obj.imageCheckBox348 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox348:setParent(obj.layout50);
+    obj.imageCheckBox348:setParent(obj.layout51);
     obj.imageCheckBox348:setField("forcaDeVontade_3");
     obj.imageCheckBox348:setLeft(54);
     obj.imageCheckBox348:setTop(4);
@@ -4405,7 +4423,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox348:setName("imageCheckBox348");
 
     obj.imageCheckBox349 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox349:setParent(obj.layout50);
+    obj.imageCheckBox349:setParent(obj.layout51);
     obj.imageCheckBox349:setField("forcaDeVontade_4");
     obj.imageCheckBox349:setLeft(76);
     obj.imageCheckBox349:setTop(4);
@@ -4416,7 +4434,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox349:setName("imageCheckBox349");
 
     obj.imageCheckBox350 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox350:setParent(obj.layout50);
+    obj.imageCheckBox350:setParent(obj.layout51);
     obj.imageCheckBox350:setField("forcaDeVontade_5");
     obj.imageCheckBox350:setLeft(98);
     obj.imageCheckBox350:setTop(4);
@@ -4427,7 +4445,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox350:setName("imageCheckBox350");
 
     obj.imageCheckBox351 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox351:setParent(obj.layout50);
+    obj.imageCheckBox351:setParent(obj.layout51);
     obj.imageCheckBox351:setField("forcaDeVontade_6");
     obj.imageCheckBox351:setLeft(120);
     obj.imageCheckBox351:setTop(4);
@@ -4438,7 +4456,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox351:setName("imageCheckBox351");
 
     obj.imageCheckBox352 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox352:setParent(obj.layout50);
+    obj.imageCheckBox352:setParent(obj.layout51);
     obj.imageCheckBox352:setField("forcaDeVontade_7");
     obj.imageCheckBox352:setLeft(142);
     obj.imageCheckBox352:setTop(4);
@@ -4449,7 +4467,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox352:setName("imageCheckBox352");
 
     obj.imageCheckBox353 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox353:setParent(obj.layout50);
+    obj.imageCheckBox353:setParent(obj.layout51);
     obj.imageCheckBox353:setField("forcaDeVontade_8");
     obj.imageCheckBox353:setLeft(164);
     obj.imageCheckBox353:setTop(4);
@@ -4460,7 +4478,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox353:setName("imageCheckBox353");
 
     obj.imageCheckBox354 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox354:setParent(obj.layout50);
+    obj.imageCheckBox354:setParent(obj.layout51);
     obj.imageCheckBox354:setField("forcaDeVontade_9");
     obj.imageCheckBox354:setLeft(186);
     obj.imageCheckBox354:setTop(4);
@@ -4471,7 +4489,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox354:setName("imageCheckBox354");
 
     obj.imageCheckBox355 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox355:setParent(obj.layout50);
+    obj.imageCheckBox355:setParent(obj.layout51);
     obj.imageCheckBox355:setField("forcaDeVontade_10");
     obj.imageCheckBox355:setLeft(208);
     obj.imageCheckBox355:setTop(4);
@@ -4482,7 +4500,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox355:setName("imageCheckBox355");
 
     obj.imageCheckBox356 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox356:setParent(obj.layout50);
+    obj.imageCheckBox356:setParent(obj.layout51);
     obj.imageCheckBox356:setField("forcaDeVontade_11");
     obj.imageCheckBox356:setLeft(230);
     obj.imageCheckBox356:setTop(4);
@@ -4493,7 +4511,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox356:setName("imageCheckBox356");
 
     obj.imageCheckBox357 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox357:setParent(obj.layout50);
+    obj.imageCheckBox357:setParent(obj.layout51);
     obj.imageCheckBox357:setField("forcaDeVontade_12");
     obj.imageCheckBox357:setLeft(252);
     obj.imageCheckBox357:setTop(4);
@@ -4503,875 +4521,705 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.imageCheckBox357:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
     obj.imageCheckBox357:setName("imageCheckBox357");
 
-    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button1:setParent(obj.rectangle1);
-    obj.button1:setLeft(670);
-    obj.button1:setTop(1070);
-    obj.button1:setWidth(21);
-    obj.button1:setHeight(21);
-    obj.button1:setName("button1");
-
-    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink1:setParent(obj.button1);
-    obj.dataLink1:setField("recon1");
-    obj.dataLink1:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink1:setName("dataLink1");
-
-    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image2:setParent(obj.button1);
-    obj.image2:setAlign("client");
-    obj.image2:setField("recon1");
-    obj.image2:setName("image2");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR1 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button2 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button2:setParent(obj.rectangle1);
-    obj.button2:setLeft(692);
-    obj.button2:setTop(1070);
-    obj.button2:setWidth(21);
-    obj.button2:setHeight(21);
-    obj.button2:setName("button2");
-
-    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink2:setParent(obj.button2);
-    obj.dataLink2:setField("recon2");
-    obj.dataLink2:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink2:setName("dataLink2");
-
-    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.button2);
-    obj.image3:setAlign("client");
-    obj.image3:setField("recon2");
-    obj.image3:setName("image3");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR2 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button3 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button3:setParent(obj.rectangle1);
-    obj.button3:setLeft(714);
-    obj.button3:setTop(1070);
-    obj.button3:setWidth(21);
-    obj.button3:setHeight(21);
-    obj.button3:setName("button3");
-
-    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink3:setParent(obj.button3);
-    obj.dataLink3:setField("recon3");
-    obj.dataLink3:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink3:setName("dataLink3");
-
-    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.button3);
-    obj.image4:setAlign("client");
-    obj.image4:setField("recon3");
-    obj.image4:setName("image4");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR3 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button4 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button4:setParent(obj.rectangle1);
-    obj.button4:setLeft(736);
-    obj.button4:setTop(1070);
-    obj.button4:setWidth(21);
-    obj.button4:setHeight(21);
-    obj.button4:setName("button4");
-
-    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink4:setParent(obj.button4);
-    obj.dataLink4:setField("recon4");
-    obj.dataLink4:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink4:setName("dataLink4");
-
-    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.button4);
-    obj.image5:setAlign("client");
-    obj.image5:setField("recon4");
-    obj.image5:setName("image5");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR4 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button5 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button5:setParent(obj.rectangle1);
-    obj.button5:setLeft(758);
-    obj.button5:setTop(1070);
-    obj.button5:setWidth(21);
-    obj.button5:setHeight(21);
-    obj.button5:setName("button5");
-
-    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink5:setParent(obj.button5);
-    obj.dataLink5:setField("recon5");
-    obj.dataLink5:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink5:setName("dataLink5");
-
-    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.button5);
-    obj.image6:setAlign("client");
-    obj.image6:setField("recon5");
-    obj.image6:setName("image6");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR5 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button6 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button6:setParent(obj.rectangle1);
-    obj.button6:setLeft(780);
-    obj.button6:setTop(1070);
-    obj.button6:setWidth(21);
-    obj.button6:setHeight(21);
-    obj.button6:setName("button6");
-
-    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink6:setParent(obj.button6);
-    obj.dataLink6:setField("recon6");
-    obj.dataLink6:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink6:setName("dataLink6");
-
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.button6);
-    obj.image7:setAlign("client");
-    obj.image7:setField("recon6");
-    obj.image7:setName("image7");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR6 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button7 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button7:setParent(obj.rectangle1);
-    obj.button7:setLeft(802);
-    obj.button7:setTop(1070);
-    obj.button7:setWidth(21);
-    obj.button7:setHeight(21);
-    obj.button7:setName("button7");
-
-    obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink7:setParent(obj.button7);
-    obj.dataLink7:setField("recon7");
-    obj.dataLink7:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink7:setName("dataLink7");
-
-    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.button7);
-    obj.image8:setAlign("client");
-    obj.image8:setField("recon7");
-    obj.image8:setName("image8");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR7 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button8 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button8:setParent(obj.rectangle1);
-    obj.button8:setLeft(824);
-    obj.button8:setTop(1070);
-    obj.button8:setWidth(21);
-    obj.button8:setHeight(21);
-    obj.button8:setName("button8");
-
-    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink8:setParent(obj.button8);
-    obj.dataLink8:setField("recon8");
-    obj.dataLink8:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink8:setName("dataLink8");
-
-    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image9:setParent(obj.button8);
-    obj.image9:setAlign("client");
-    obj.image9:setField("recon8");
-    obj.image9:setName("image9");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR8 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button9 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button9:setParent(obj.rectangle1);
-    obj.button9:setLeft(846);
-    obj.button9:setTop(1070);
-    obj.button9:setWidth(21);
-    obj.button9:setHeight(21);
-    obj.button9:setName("button9");
-
-    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink9:setParent(obj.button9);
-    obj.dataLink9:setField("recon9");
-    obj.dataLink9:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink9:setName("dataLink9");
-
-    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image10:setParent(obj.button9);
-    obj.image10:setAlign("client");
-    obj.image10:setField("recon9");
-    obj.image10:setName("image10");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR9 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button10 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button10:setParent(obj.rectangle1);
-    obj.button10:setLeft(868);
-    obj.button10:setTop(1070);
-    obj.button10:setWidth(21);
-    obj.button10:setHeight(21);
-    obj.button10:setName("button10");
-
-    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink10:setParent(obj.button10);
-    obj.dataLink10:setField("recon10");
-    obj.dataLink10:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink10:setName("dataLink10");
-
-    obj.image11 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image11:setParent(obj.button10);
-    obj.image11:setAlign("client");
-    obj.image11:setField("recon10");
-    obj.image11:setName("image11");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsR10 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/masterball1_on.png", 
-									"PokeRPGT/images/rocketmaster_on.png"};
-					
-
-
-    obj.button11 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button11:setParent(obj.rectangle1);
-    obj.button11:setLeft(670);
-    obj.button11:setTop(1148);
-    obj.button11:setWidth(21);
-    obj.button11:setHeight(21);
-    obj.button11:setName("button11");
-
-    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink11:setParent(obj.button11);
-    obj.dataLink11:setField("fama1");
-    obj.dataLink11:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink11:setName("dataLink11");
-
-    obj.image12 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image12:setParent(obj.button11);
-    obj.image12:setAlign("client");
-    obj.image12:setField("fama1");
-    obj.image12:setName("image12");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF1 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button12 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button12:setParent(obj.rectangle1);
-    obj.button12:setLeft(692);
-    obj.button12:setTop(1148);
-    obj.button12:setWidth(21);
-    obj.button12:setHeight(21);
-    obj.button12:setName("button12");
-
-    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink12:setParent(obj.button12);
-    obj.dataLink12:setField("fama2");
-    obj.dataLink12:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink12:setName("dataLink12");
-
-    obj.image13 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image13:setParent(obj.button12);
-    obj.image13:setAlign("client");
-    obj.image13:setField("fama2");
-    obj.image13:setName("image13");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF2 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button13 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button13:setParent(obj.rectangle1);
-    obj.button13:setLeft(714);
-    obj.button13:setTop(1148);
-    obj.button13:setWidth(21);
-    obj.button13:setHeight(21);
-    obj.button13:setName("button13");
-
-    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink13:setParent(obj.button13);
-    obj.dataLink13:setField("fama3");
-    obj.dataLink13:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink13:setName("dataLink13");
-
-    obj.image14 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image14:setParent(obj.button13);
-    obj.image14:setAlign("client");
-    obj.image14:setField("fama3");
-    obj.image14:setName("image14");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF3 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button14 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button14:setParent(obj.rectangle1);
-    obj.button14:setLeft(736);
-    obj.button14:setTop(1148);
-    obj.button14:setWidth(21);
-    obj.button14:setHeight(21);
-    obj.button14:setName("button14");
-
-    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink14:setParent(obj.button14);
-    obj.dataLink14:setField("fama4");
-    obj.dataLink14:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink14:setName("dataLink14");
-
-    obj.image15 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image15:setParent(obj.button14);
-    obj.image15:setAlign("client");
-    obj.image15:setField("fama4");
-    obj.image15:setName("image15");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF4 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button15 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button15:setParent(obj.rectangle1);
-    obj.button15:setLeft(758);
-    obj.button15:setTop(1148);
-    obj.button15:setWidth(21);
-    obj.button15:setHeight(21);
-    obj.button15:setName("button15");
-
-    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink15:setParent(obj.button15);
-    obj.dataLink15:setField("fama5");
-    obj.dataLink15:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink15:setName("dataLink15");
-
-    obj.image16 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image16:setParent(obj.button15);
-    obj.image16:setAlign("client");
-    obj.image16:setField("fama5");
-    obj.image16:setName("image16");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF5 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button16 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button16:setParent(obj.rectangle1);
-    obj.button16:setLeft(780);
-    obj.button16:setTop(1148);
-    obj.button16:setWidth(21);
-    obj.button16:setHeight(21);
-    obj.button16:setName("button16");
-
-    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj.button16);
-    obj.dataLink16:setField("fama6");
-    obj.dataLink16:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink16:setName("dataLink16");
-
-    obj.image17 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image17:setParent(obj.button16);
-    obj.image17:setAlign("client");
-    obj.image17:setField("fama6");
-    obj.image17:setName("image17");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF6 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button17 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button17:setParent(obj.rectangle1);
-    obj.button17:setLeft(802);
-    obj.button17:setTop(1148);
-    obj.button17:setWidth(21);
-    obj.button17:setHeight(21);
-    obj.button17:setName("button17");
-
-    obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink17:setParent(obj.button17);
-    obj.dataLink17:setField("fama7");
-    obj.dataLink17:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink17:setName("dataLink17");
-
-    obj.image18 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image18:setParent(obj.button17);
-    obj.image18:setAlign("client");
-    obj.image18:setField("fama7");
-    obj.image18:setName("image18");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF7 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button18 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button18:setParent(obj.rectangle1);
-    obj.button18:setLeft(824);
-    obj.button18:setTop(1148);
-    obj.button18:setWidth(21);
-    obj.button18:setHeight(21);
-    obj.button18:setName("button18");
-
-    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink18:setParent(obj.button18);
-    obj.dataLink18:setField("fama8");
-    obj.dataLink18:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink18:setName("dataLink18");
-
-    obj.image19 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image19:setParent(obj.button18);
-    obj.image19:setAlign("client");
-    obj.image19:setField("fama8");
-    obj.image19:setName("image19");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF8 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button19 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button19:setParent(obj.rectangle1);
-    obj.button19:setLeft(846);
-    obj.button19:setTop(1148);
-    obj.button19:setWidth(21);
-    obj.button19:setHeight(21);
-    obj.button19:setName("button19");
-
-    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink19:setParent(obj.button19);
-    obj.dataLink19:setField("fama9");
-    obj.dataLink19:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink19:setName("dataLink19");
-
-    obj.image20 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image20:setParent(obj.button19);
-    obj.image20:setAlign("client");
-    obj.image20:setField("fama9");
-    obj.image20:setName("image20");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF9 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button20 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button20:setParent(obj.rectangle1);
-    obj.button20:setLeft(868);
-    obj.button20:setTop(1148);
-    obj.button20:setWidth(21);
-    obj.button20:setHeight(21);
-    obj.button20:setName("button20");
-
-    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink20:setParent(obj.button20);
-    obj.dataLink20:setField("fama10");
-    obj.dataLink20:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink20:setName("dataLink20");
-
-    obj.image21 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image21:setParent(obj.button20);
-    obj.image21:setAlign("client");
-    obj.image21:setField("fama10");
-    obj.image21:setName("image21");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsF10 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/masterball1_on.png", 
-									"PokeRPGT/images/rocketmaster_on.png"};
-					
-
-
-    obj.button21 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button21:setParent(obj.rectangle1);
-    obj.button21:setLeft(670);
-    obj.button21:setTop(1226);
-    obj.button21:setWidth(21);
-    obj.button21:setHeight(21);
-    obj.button21:setName("button21");
-
-    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink21:setParent(obj.button21);
-    obj.dataLink21:setField("influ1");
-    obj.dataLink21:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink21:setName("dataLink21");
-
-    obj.image22 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image22:setParent(obj.button21);
-    obj.image22:setAlign("client");
-    obj.image22:setField("influ1");
-    obj.image22:setName("image22");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI1 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button22 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button22:setParent(obj.rectangle1);
-    obj.button22:setLeft(692);
-    obj.button22:setTop(1226);
-    obj.button22:setWidth(21);
-    obj.button22:setHeight(21);
-    obj.button22:setName("button22");
-
-    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink22:setParent(obj.button22);
-    obj.dataLink22:setField("influ2");
-    obj.dataLink22:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink22:setName("dataLink22");
-
-    obj.image23 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image23:setParent(obj.button22);
-    obj.image23:setAlign("client");
-    obj.image23:setField("influ2");
-    obj.image23:setName("image23");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI2 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button23 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button23:setParent(obj.rectangle1);
-    obj.button23:setLeft(714);
-    obj.button23:setTop(1226);
-    obj.button23:setWidth(21);
-    obj.button23:setHeight(21);
-    obj.button23:setName("button23");
-
-    obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink23:setParent(obj.button23);
-    obj.dataLink23:setField("influ3");
-    obj.dataLink23:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink23:setName("dataLink23");
-
-    obj.image24 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image24:setParent(obj.button23);
-    obj.image24:setAlign("client");
-    obj.image24:setField("influ3");
-    obj.image24:setName("image24");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI3 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button24 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button24:setParent(obj.rectangle1);
-    obj.button24:setLeft(736);
-    obj.button24:setTop(1226);
-    obj.button24:setWidth(21);
-    obj.button24:setHeight(21);
-    obj.button24:setName("button24");
-
-    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink24:setParent(obj.button24);
-    obj.dataLink24:setField("influ4");
-    obj.dataLink24:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink24:setName("dataLink24");
-
-    obj.image25 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image25:setParent(obj.button24);
-    obj.image25:setAlign("client");
-    obj.image25:setField("influ4");
-    obj.image25:setName("image25");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI4 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/pokeball1_on.png", 
-									"PokeRPGT/images/rocketball_on.png"};
-					
-
-
-    obj.button25 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button25:setParent(obj.rectangle1);
-    obj.button25:setLeft(758);
-    obj.button25:setTop(1226);
-    obj.button25:setWidth(21);
-    obj.button25:setHeight(21);
-    obj.button25:setName("button25");
-
-    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink25:setParent(obj.button25);
-    obj.dataLink25:setField("influ5");
-    obj.dataLink25:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink25:setName("dataLink25");
-
-    obj.image26 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image26:setParent(obj.button25);
-    obj.image26:setAlign("client");
-    obj.image26:setField("influ5");
-    obj.image26:setName("image26");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI5 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button26 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button26:setParent(obj.rectangle1);
-    obj.button26:setLeft(780);
-    obj.button26:setTop(1226);
-    obj.button26:setWidth(21);
-    obj.button26:setHeight(21);
-    obj.button26:setName("button26");
-
-    obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink26:setParent(obj.button26);
-    obj.dataLink26:setField("influ6");
-    obj.dataLink26:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink26:setName("dataLink26");
-
-    obj.image27 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image27:setParent(obj.button26);
-    obj.image27:setAlign("client");
-    obj.image27:setField("influ6");
-    obj.image27:setName("image27");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI6 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button27 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button27:setParent(obj.rectangle1);
-    obj.button27:setLeft(802);
-    obj.button27:setTop(1226);
-    obj.button27:setWidth(21);
-    obj.button27:setHeight(21);
-    obj.button27:setName("button27");
-
-    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink27:setParent(obj.button27);
-    obj.dataLink27:setField("influ7");
-    obj.dataLink27:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink27:setName("dataLink27");
-
-    obj.image28 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image28:setParent(obj.button27);
-    obj.image28:setAlign("client");
-    obj.image28:setField("influ7");
-    obj.image28:setName("image28");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI7 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/greatball1_on.png", 
-									"PokeRPGT/images/rocketgreat_on.png"};
-					
-
-
-    obj.button28 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button28:setParent(obj.rectangle1);
-    obj.button28:setLeft(824);
-    obj.button28:setTop(1226);
-    obj.button28:setWidth(21);
-    obj.button28:setHeight(21);
-    obj.button28:setName("button28");
-
-    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink28:setParent(obj.button28);
-    obj.dataLink28:setField("influ8");
-    obj.dataLink28:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink28:setName("dataLink28");
-
-    obj.image29 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image29:setParent(obj.button28);
-    obj.image29:setAlign("client");
-    obj.image29:setField("influ8");
-    obj.image29:setName("image29");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI8 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button29 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button29:setParent(obj.rectangle1);
-    obj.button29:setLeft(846);
-    obj.button29:setTop(1226);
-    obj.button29:setWidth(21);
-    obj.button29:setHeight(21);
-    obj.button29:setName("button29");
-
-    obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink29:setParent(obj.button29);
-    obj.dataLink29:setField("influ9");
-    obj.dataLink29:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink29:setName("dataLink29");
-
-    obj.image30 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image30:setParent(obj.button29);
-    obj.image30:setAlign("client");
-    obj.image30:setField("influ9");
-    obj.image30:setName("image30");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI9 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/ultraball1_on.png", 
-									"PokeRPGT/images/rocketultra_on.png"};
-					
-
-
-    obj.button30 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button30:setParent(obj.rectangle1);
-    obj.button30:setLeft(868);
-    obj.button30:setTop(1226);
-    obj.button30:setWidth(21);
-    obj.button30:setHeight(21);
-    obj.button30:setName("button30");
-
-    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink30:setParent(obj.button30);
-    obj.dataLink30:setField("influ10");
-    obj.dataLink30:setDefaultValue("PokeRPGT/images/pokeball1_off.png");
-    obj.dataLink30:setName("dataLink30");
-
-    obj.image31 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image31:setParent(obj.button30);
-    obj.image31:setAlign("client");
-    obj.image31:setField("influ10");
-    obj.image31:setName("image31");
-
-
-					-- criando array das imagens que vão ser utilizadas. 
-					-- melhor usar imagens hospedadas no firedrive nesse caso
-					local picsI10 = {"PokeRPGT/images/pokeball1_off.png",
-									"PokeRPGT/images/masterball1_on.png", 
-									"PokeRPGT/images/rocketmaster_on.png"};
-					
-
+    obj.layout52 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout52:setParent(obj.rectangle1);
+    obj.layout52:setLeft(635);
+    obj.layout52:setTop(1065);
+    obj.layout52:setWidth(300);
+    obj.layout52:setHeight(50);
+    obj.layout52:setName("layout52");
+
+    obj.imageCheckBox358 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox358:setParent(obj.layout52);
+    obj.imageCheckBox358:setField("reconhecimento_1");
+    obj.imageCheckBox358:setLeft(10);
+    obj.imageCheckBox358:setTop(4);
+    obj.imageCheckBox358:setWidth(21);
+    obj.imageCheckBox358:setHeight(21);
+    obj.imageCheckBox358:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox358:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox358:setName("imageCheckBox358");
+
+    obj.imageCheckBox359 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox359:setParent(obj.layout52);
+    obj.imageCheckBox359:setField("reconhecimento_2");
+    obj.imageCheckBox359:setLeft(32);
+    obj.imageCheckBox359:setTop(4);
+    obj.imageCheckBox359:setWidth(21);
+    obj.imageCheckBox359:setHeight(21);
+    obj.imageCheckBox359:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox359:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox359:setName("imageCheckBox359");
+
+    obj.imageCheckBox360 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox360:setParent(obj.layout52);
+    obj.imageCheckBox360:setField("reconhecimento_3");
+    obj.imageCheckBox360:setLeft(54);
+    obj.imageCheckBox360:setTop(4);
+    obj.imageCheckBox360:setWidth(21);
+    obj.imageCheckBox360:setHeight(21);
+    obj.imageCheckBox360:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox360:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox360:setName("imageCheckBox360");
+
+    obj.imageCheckBox361 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox361:setParent(obj.layout52);
+    obj.imageCheckBox361:setField("reconhecimento_4");
+    obj.imageCheckBox361:setLeft(76);
+    obj.imageCheckBox361:setTop(4);
+    obj.imageCheckBox361:setWidth(21);
+    obj.imageCheckBox361:setHeight(21);
+    obj.imageCheckBox361:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox361:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox361:setName("imageCheckBox361");
+
+    obj.imageCheckBox362 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox362:setParent(obj.layout52);
+    obj.imageCheckBox362:setField("reconhecimento_5");
+    obj.imageCheckBox362:setLeft(98);
+    obj.imageCheckBox362:setTop(4);
+    obj.imageCheckBox362:setWidth(21);
+    obj.imageCheckBox362:setHeight(21);
+    obj.imageCheckBox362:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox362:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox362:setName("imageCheckBox362");
+
+    obj.imageCheckBox363 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox363:setParent(obj.layout52);
+    obj.imageCheckBox363:setField("reconhecimento_6");
+    obj.imageCheckBox363:setLeft(120);
+    obj.imageCheckBox363:setTop(4);
+    obj.imageCheckBox363:setWidth(21);
+    obj.imageCheckBox363:setHeight(21);
+    obj.imageCheckBox363:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox363:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox363:setName("imageCheckBox363");
+
+    obj.imageCheckBox364 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox364:setParent(obj.layout52);
+    obj.imageCheckBox364:setField("reconhecimento_7");
+    obj.imageCheckBox364:setLeft(142);
+    obj.imageCheckBox364:setTop(4);
+    obj.imageCheckBox364:setWidth(21);
+    obj.imageCheckBox364:setHeight(21);
+    obj.imageCheckBox364:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox364:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox364:setName("imageCheckBox364");
+
+    obj.imageCheckBox365 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox365:setParent(obj.layout52);
+    obj.imageCheckBox365:setField("reconhecimento_8");
+    obj.imageCheckBox365:setLeft(164);
+    obj.imageCheckBox365:setTop(4);
+    obj.imageCheckBox365:setWidth(21);
+    obj.imageCheckBox365:setHeight(21);
+    obj.imageCheckBox365:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox365:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox365:setName("imageCheckBox365");
+
+    obj.imageCheckBox366 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox366:setParent(obj.layout52);
+    obj.imageCheckBox366:setField("reconhecimento_9");
+    obj.imageCheckBox366:setLeft(186);
+    obj.imageCheckBox366:setTop(4);
+    obj.imageCheckBox366:setWidth(21);
+    obj.imageCheckBox366:setHeight(21);
+    obj.imageCheckBox366:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox366:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox366:setName("imageCheckBox366");
+
+    obj.imageCheckBox367 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox367:setParent(obj.layout52);
+    obj.imageCheckBox367:setField("reconhecimento_10");
+    obj.imageCheckBox367:setLeft(208);
+    obj.imageCheckBox367:setTop(4);
+    obj.imageCheckBox367:setWidth(21);
+    obj.imageCheckBox367:setHeight(21);
+    obj.imageCheckBox367:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox367:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox367:setName("imageCheckBox367");
+
+    obj.imageCheckBox368 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox368:setParent(obj.layout52);
+    obj.imageCheckBox368:setField("reconhecimento_11");
+    obj.imageCheckBox368:setLeft(230);
+    obj.imageCheckBox368:setTop(4);
+    obj.imageCheckBox368:setWidth(21);
+    obj.imageCheckBox368:setHeight(21);
+    obj.imageCheckBox368:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox368:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox368:setName("imageCheckBox368");
+
+    obj.imageCheckBox369 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox369:setParent(obj.layout52);
+    obj.imageCheckBox369:setField("reconhecimento_12");
+    obj.imageCheckBox369:setLeft(252);
+    obj.imageCheckBox369:setTop(4);
+    obj.imageCheckBox369:setWidth(21);
+    obj.imageCheckBox369:setHeight(21);
+    obj.imageCheckBox369:setImageChecked("PokeRPGT/images/masterball_on.png");
+    obj.imageCheckBox369:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox369:setName("imageCheckBox369");
+
+    obj.layout53 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout53:setParent(obj.rectangle1);
+    obj.layout53:setLeft(635);
+    obj.layout53:setTop(1133);
+    obj.layout53:setWidth(300);
+    obj.layout53:setHeight(50);
+    obj.layout53:setName("layout53");
+
+    obj.imageCheckBox370 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox370:setParent(obj.layout53);
+    obj.imageCheckBox370:setField("famaBoa_1");
+    obj.imageCheckBox370:setLeft(10);
+    obj.imageCheckBox370:setTop(4);
+    obj.imageCheckBox370:setWidth(21);
+    obj.imageCheckBox370:setHeight(21);
+    obj.imageCheckBox370:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox370:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox370:setName("imageCheckBox370");
+
+    obj.imageCheckBox371 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox371:setParent(obj.layout53);
+    obj.imageCheckBox371:setField("famaBoa_2");
+    obj.imageCheckBox371:setLeft(32);
+    obj.imageCheckBox371:setTop(4);
+    obj.imageCheckBox371:setWidth(21);
+    obj.imageCheckBox371:setHeight(21);
+    obj.imageCheckBox371:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox371:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox371:setName("imageCheckBox371");
+
+    obj.imageCheckBox372 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox372:setParent(obj.layout53);
+    obj.imageCheckBox372:setField("famaBoa_3");
+    obj.imageCheckBox372:setLeft(54);
+    obj.imageCheckBox372:setTop(4);
+    obj.imageCheckBox372:setWidth(21);
+    obj.imageCheckBox372:setHeight(21);
+    obj.imageCheckBox372:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox372:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox372:setName("imageCheckBox372");
+
+    obj.imageCheckBox373 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox373:setParent(obj.layout53);
+    obj.imageCheckBox373:setField("famaBoa_4");
+    obj.imageCheckBox373:setLeft(76);
+    obj.imageCheckBox373:setTop(4);
+    obj.imageCheckBox373:setWidth(21);
+    obj.imageCheckBox373:setHeight(21);
+    obj.imageCheckBox373:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox373:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox373:setName("imageCheckBox373");
+
+    obj.imageCheckBox374 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox374:setParent(obj.layout53);
+    obj.imageCheckBox374:setField("famaBoa_5");
+    obj.imageCheckBox374:setLeft(98);
+    obj.imageCheckBox374:setTop(4);
+    obj.imageCheckBox374:setWidth(21);
+    obj.imageCheckBox374:setHeight(21);
+    obj.imageCheckBox374:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox374:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox374:setName("imageCheckBox374");
+
+    obj.imageCheckBox375 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox375:setParent(obj.layout53);
+    obj.imageCheckBox375:setField("famaBoa_6");
+    obj.imageCheckBox375:setLeft(120);
+    obj.imageCheckBox375:setTop(4);
+    obj.imageCheckBox375:setWidth(21);
+    obj.imageCheckBox375:setHeight(21);
+    obj.imageCheckBox375:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox375:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox375:setName("imageCheckBox375");
+
+    obj.imageCheckBox376 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox376:setParent(obj.layout53);
+    obj.imageCheckBox376:setField("famaBoa_7");
+    obj.imageCheckBox376:setLeft(142);
+    obj.imageCheckBox376:setTop(4);
+    obj.imageCheckBox376:setWidth(21);
+    obj.imageCheckBox376:setHeight(21);
+    obj.imageCheckBox376:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox376:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox376:setName("imageCheckBox376");
+
+    obj.imageCheckBox377 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox377:setParent(obj.layout53);
+    obj.imageCheckBox377:setField("famaBoa_8");
+    obj.imageCheckBox377:setLeft(164);
+    obj.imageCheckBox377:setTop(4);
+    obj.imageCheckBox377:setWidth(21);
+    obj.imageCheckBox377:setHeight(21);
+    obj.imageCheckBox377:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox377:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox377:setName("imageCheckBox377");
+
+    obj.imageCheckBox378 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox378:setParent(obj.layout53);
+    obj.imageCheckBox378:setField("famaBoa_9");
+    obj.imageCheckBox378:setLeft(186);
+    obj.imageCheckBox378:setTop(4);
+    obj.imageCheckBox378:setWidth(21);
+    obj.imageCheckBox378:setHeight(21);
+    obj.imageCheckBox378:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox378:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox378:setName("imageCheckBox378");
+
+    obj.imageCheckBox379 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox379:setParent(obj.layout53);
+    obj.imageCheckBox379:setField("famaBoa_10");
+    obj.imageCheckBox379:setLeft(208);
+    obj.imageCheckBox379:setTop(4);
+    obj.imageCheckBox379:setWidth(21);
+    obj.imageCheckBox379:setHeight(21);
+    obj.imageCheckBox379:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox379:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox379:setName("imageCheckBox379");
+
+    obj.imageCheckBox380 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox380:setParent(obj.layout53);
+    obj.imageCheckBox380:setField("famaBoa_11");
+    obj.imageCheckBox380:setLeft(230);
+    obj.imageCheckBox380:setTop(4);
+    obj.imageCheckBox380:setWidth(21);
+    obj.imageCheckBox380:setHeight(21);
+    obj.imageCheckBox380:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox380:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox380:setName("imageCheckBox380");
+
+    obj.imageCheckBox381 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox381:setParent(obj.layout53);
+    obj.imageCheckBox381:setField("famaBoa_12");
+    obj.imageCheckBox381:setLeft(252);
+    obj.imageCheckBox381:setTop(4);
+    obj.imageCheckBox381:setWidth(21);
+    obj.imageCheckBox381:setHeight(21);
+    obj.imageCheckBox381:setImageChecked("PokeRPGT/images/masterball_on.png");
+    obj.imageCheckBox381:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox381:setName("imageCheckBox381");
+
+    obj.layout54 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout54:setParent(obj.rectangle1);
+    obj.layout54:setLeft(635);
+    obj.layout54:setTop(1158);
+    obj.layout54:setWidth(300);
+    obj.layout54:setHeight(50);
+    obj.layout54:setName("layout54");
+
+    obj.imageCheckBox382 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox382:setParent(obj.layout54);
+    obj.imageCheckBox382:setField("famaRuim_1");
+    obj.imageCheckBox382:setLeft(10);
+    obj.imageCheckBox382:setTop(4);
+    obj.imageCheckBox382:setWidth(21);
+    obj.imageCheckBox382:setHeight(21);
+    obj.imageCheckBox382:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox382:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox382:setName("imageCheckBox382");
+
+    obj.imageCheckBox383 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox383:setParent(obj.layout54);
+    obj.imageCheckBox383:setField("famaRuim_2");
+    obj.imageCheckBox383:setLeft(32);
+    obj.imageCheckBox383:setTop(4);
+    obj.imageCheckBox383:setWidth(21);
+    obj.imageCheckBox383:setHeight(21);
+    obj.imageCheckBox383:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox383:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox383:setName("imageCheckBox383");
+
+    obj.imageCheckBox384 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox384:setParent(obj.layout54);
+    obj.imageCheckBox384:setField("famaRuim_3");
+    obj.imageCheckBox384:setLeft(54);
+    obj.imageCheckBox384:setTop(4);
+    obj.imageCheckBox384:setWidth(21);
+    obj.imageCheckBox384:setHeight(21);
+    obj.imageCheckBox384:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox384:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox384:setName("imageCheckBox384");
+
+    obj.imageCheckBox385 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox385:setParent(obj.layout54);
+    obj.imageCheckBox385:setField("famaRuim_4");
+    obj.imageCheckBox385:setLeft(76);
+    obj.imageCheckBox385:setTop(4);
+    obj.imageCheckBox385:setWidth(21);
+    obj.imageCheckBox385:setHeight(21);
+    obj.imageCheckBox385:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox385:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox385:setName("imageCheckBox385");
+
+    obj.imageCheckBox386 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox386:setParent(obj.layout54);
+    obj.imageCheckBox386:setField("famaRuim_5");
+    obj.imageCheckBox386:setLeft(98);
+    obj.imageCheckBox386:setTop(4);
+    obj.imageCheckBox386:setWidth(21);
+    obj.imageCheckBox386:setHeight(21);
+    obj.imageCheckBox386:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox386:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox386:setName("imageCheckBox386");
+
+    obj.imageCheckBox387 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox387:setParent(obj.layout54);
+    obj.imageCheckBox387:setField("famaRuim_6");
+    obj.imageCheckBox387:setLeft(120);
+    obj.imageCheckBox387:setTop(4);
+    obj.imageCheckBox387:setWidth(21);
+    obj.imageCheckBox387:setHeight(21);
+    obj.imageCheckBox387:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox387:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox387:setName("imageCheckBox387");
+
+    obj.imageCheckBox388 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox388:setParent(obj.layout54);
+    obj.imageCheckBox388:setField("famaRuim_7");
+    obj.imageCheckBox388:setLeft(142);
+    obj.imageCheckBox388:setTop(4);
+    obj.imageCheckBox388:setWidth(21);
+    obj.imageCheckBox388:setHeight(21);
+    obj.imageCheckBox388:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox388:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox388:setName("imageCheckBox388");
+
+    obj.imageCheckBox389 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox389:setParent(obj.layout54);
+    obj.imageCheckBox389:setField("famaRuim_8");
+    obj.imageCheckBox389:setLeft(164);
+    obj.imageCheckBox389:setTop(4);
+    obj.imageCheckBox389:setWidth(21);
+    obj.imageCheckBox389:setHeight(21);
+    obj.imageCheckBox389:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox389:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox389:setName("imageCheckBox389");
+
+    obj.imageCheckBox390 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox390:setParent(obj.layout54);
+    obj.imageCheckBox390:setField("famaRuim_9");
+    obj.imageCheckBox390:setLeft(186);
+    obj.imageCheckBox390:setTop(4);
+    obj.imageCheckBox390:setWidth(21);
+    obj.imageCheckBox390:setHeight(21);
+    obj.imageCheckBox390:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox390:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox390:setName("imageCheckBox390");
+
+    obj.imageCheckBox391 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox391:setParent(obj.layout54);
+    obj.imageCheckBox391:setField("famaRuim_10");
+    obj.imageCheckBox391:setLeft(208);
+    obj.imageCheckBox391:setTop(4);
+    obj.imageCheckBox391:setWidth(21);
+    obj.imageCheckBox391:setHeight(21);
+    obj.imageCheckBox391:setImageChecked("PokeRPGT/images/rocketultra_on.png");
+    obj.imageCheckBox391:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox391:setName("imageCheckBox391");
+
+    obj.imageCheckBox392 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox392:setParent(obj.layout54);
+    obj.imageCheckBox392:setField("famaRuim_11");
+    obj.imageCheckBox392:setLeft(230);
+    obj.imageCheckBox392:setTop(4);
+    obj.imageCheckBox392:setWidth(21);
+    obj.imageCheckBox392:setHeight(21);
+    obj.imageCheckBox392:setImageChecked("PokeRPGT/images/rocketultra_on.png");
+    obj.imageCheckBox392:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox392:setName("imageCheckBox392");
+
+    obj.imageCheckBox393 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox393:setParent(obj.layout54);
+    obj.imageCheckBox393:setField("famaRuim_12");
+    obj.imageCheckBox393:setLeft(252);
+    obj.imageCheckBox393:setTop(4);
+    obj.imageCheckBox393:setWidth(21);
+    obj.imageCheckBox393:setHeight(21);
+    obj.imageCheckBox393:setImageChecked("PokeRPGT/images/rocketmaster_on.png");
+    obj.imageCheckBox393:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox393:setName("imageCheckBox393");
+
+    obj.layout55 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout55:setParent(obj.rectangle1);
+    obj.layout55:setLeft(635);
+    obj.layout55:setTop(1213);
+    obj.layout55:setWidth(300);
+    obj.layout55:setHeight(50);
+    obj.layout55:setName("layout55");
+
+    obj.imageCheckBox394 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox394:setParent(obj.layout55);
+    obj.imageCheckBox394:setField("influenciaBoa_1");
+    obj.imageCheckBox394:setLeft(10);
+    obj.imageCheckBox394:setTop(4);
+    obj.imageCheckBox394:setWidth(21);
+    obj.imageCheckBox394:setHeight(21);
+    obj.imageCheckBox394:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox394:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox394:setName("imageCheckBox394");
+
+    obj.imageCheckBox395 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox395:setParent(obj.layout55);
+    obj.imageCheckBox395:setField("influenciaBoa_2");
+    obj.imageCheckBox395:setLeft(32);
+    obj.imageCheckBox395:setTop(4);
+    obj.imageCheckBox395:setWidth(21);
+    obj.imageCheckBox395:setHeight(21);
+    obj.imageCheckBox395:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox395:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox395:setName("imageCheckBox395");
+
+    obj.imageCheckBox396 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox396:setParent(obj.layout55);
+    obj.imageCheckBox396:setField("influenciaBoa_3");
+    obj.imageCheckBox396:setLeft(54);
+    obj.imageCheckBox396:setTop(4);
+    obj.imageCheckBox396:setWidth(21);
+    obj.imageCheckBox396:setHeight(21);
+    obj.imageCheckBox396:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox396:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox396:setName("imageCheckBox396");
+
+    obj.imageCheckBox397 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox397:setParent(obj.layout55);
+    obj.imageCheckBox397:setField("influenciaBoa_4");
+    obj.imageCheckBox397:setLeft(76);
+    obj.imageCheckBox397:setTop(4);
+    obj.imageCheckBox397:setWidth(21);
+    obj.imageCheckBox397:setHeight(21);
+    obj.imageCheckBox397:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox397:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox397:setName("imageCheckBox397");
+
+    obj.imageCheckBox398 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox398:setParent(obj.layout55);
+    obj.imageCheckBox398:setField("influenciaBoa_5");
+    obj.imageCheckBox398:setLeft(98);
+    obj.imageCheckBox398:setTop(4);
+    obj.imageCheckBox398:setWidth(21);
+    obj.imageCheckBox398:setHeight(21);
+    obj.imageCheckBox398:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox398:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox398:setName("imageCheckBox398");
+
+    obj.imageCheckBox399 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox399:setParent(obj.layout55);
+    obj.imageCheckBox399:setField("influenciaBoa_6");
+    obj.imageCheckBox399:setLeft(120);
+    obj.imageCheckBox399:setTop(4);
+    obj.imageCheckBox399:setWidth(21);
+    obj.imageCheckBox399:setHeight(21);
+    obj.imageCheckBox399:setImageChecked("PokeRPGT/images/pokeball_on.png");
+    obj.imageCheckBox399:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox399:setName("imageCheckBox399");
+
+    obj.imageCheckBox400 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox400:setParent(obj.layout55);
+    obj.imageCheckBox400:setField("influenciaBoa_7");
+    obj.imageCheckBox400:setLeft(142);
+    obj.imageCheckBox400:setTop(4);
+    obj.imageCheckBox400:setWidth(21);
+    obj.imageCheckBox400:setHeight(21);
+    obj.imageCheckBox400:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox400:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox400:setName("imageCheckBox400");
+
+    obj.imageCheckBox401 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox401:setParent(obj.layout55);
+    obj.imageCheckBox401:setField("influenciaBoa_8");
+    obj.imageCheckBox401:setLeft(164);
+    obj.imageCheckBox401:setTop(4);
+    obj.imageCheckBox401:setWidth(21);
+    obj.imageCheckBox401:setHeight(21);
+    obj.imageCheckBox401:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox401:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox401:setName("imageCheckBox401");
+
+    obj.imageCheckBox402 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox402:setParent(obj.layout55);
+    obj.imageCheckBox402:setField("influenciaBoa_9");
+    obj.imageCheckBox402:setLeft(186);
+    obj.imageCheckBox402:setTop(4);
+    obj.imageCheckBox402:setWidth(21);
+    obj.imageCheckBox402:setHeight(21);
+    obj.imageCheckBox402:setImageChecked("PokeRPGT/images/greatball_on.png");
+    obj.imageCheckBox402:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox402:setName("imageCheckBox402");
+
+    obj.imageCheckBox403 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox403:setParent(obj.layout55);
+    obj.imageCheckBox403:setField("influenciaBoa_10");
+    obj.imageCheckBox403:setLeft(208);
+    obj.imageCheckBox403:setTop(4);
+    obj.imageCheckBox403:setWidth(21);
+    obj.imageCheckBox403:setHeight(21);
+    obj.imageCheckBox403:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox403:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox403:setName("imageCheckBox403");
+
+    obj.imageCheckBox404 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox404:setParent(obj.layout55);
+    obj.imageCheckBox404:setField("influenciaBoa_11");
+    obj.imageCheckBox404:setLeft(230);
+    obj.imageCheckBox404:setTop(4);
+    obj.imageCheckBox404:setWidth(21);
+    obj.imageCheckBox404:setHeight(21);
+    obj.imageCheckBox404:setImageChecked("PokeRPGT/images/ultraball_on.png");
+    obj.imageCheckBox404:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox404:setName("imageCheckBox404");
+
+    obj.imageCheckBox405 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox405:setParent(obj.layout55);
+    obj.imageCheckBox405:setField("influenciaBoa_12");
+    obj.imageCheckBox405:setLeft(252);
+    obj.imageCheckBox405:setTop(4);
+    obj.imageCheckBox405:setWidth(21);
+    obj.imageCheckBox405:setHeight(21);
+    obj.imageCheckBox405:setImageChecked("PokeRPGT/images/masterball_on.png");
+    obj.imageCheckBox405:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox405:setName("imageCheckBox405");
+
+    obj.layout56 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout56:setParent(obj.rectangle1);
+    obj.layout56:setLeft(635);
+    obj.layout56:setTop(1238);
+    obj.layout56:setWidth(300);
+    obj.layout56:setHeight(50);
+    obj.layout56:setName("layout56");
+
+    obj.imageCheckBox406 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox406:setParent(obj.layout56);
+    obj.imageCheckBox406:setField("influenciaRuim_1");
+    obj.imageCheckBox406:setLeft(10);
+    obj.imageCheckBox406:setTop(4);
+    obj.imageCheckBox406:setWidth(21);
+    obj.imageCheckBox406:setHeight(21);
+    obj.imageCheckBox406:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox406:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox406:setName("imageCheckBox406");
+
+    obj.imageCheckBox407 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox407:setParent(obj.layout56);
+    obj.imageCheckBox407:setField("influenciaRuim_2");
+    obj.imageCheckBox407:setLeft(32);
+    obj.imageCheckBox407:setTop(4);
+    obj.imageCheckBox407:setWidth(21);
+    obj.imageCheckBox407:setHeight(21);
+    obj.imageCheckBox407:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox407:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox407:setName("imageCheckBox407");
+
+    obj.imageCheckBox408 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox408:setParent(obj.layout56);
+    obj.imageCheckBox408:setField("influenciaRuim_3");
+    obj.imageCheckBox408:setLeft(54);
+    obj.imageCheckBox408:setTop(4);
+    obj.imageCheckBox408:setWidth(21);
+    obj.imageCheckBox408:setHeight(21);
+    obj.imageCheckBox408:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox408:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox408:setName("imageCheckBox408");
+
+    obj.imageCheckBox409 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox409:setParent(obj.layout56);
+    obj.imageCheckBox409:setField("influenciaRuim_4");
+    obj.imageCheckBox409:setLeft(76);
+    obj.imageCheckBox409:setTop(4);
+    obj.imageCheckBox409:setWidth(21);
+    obj.imageCheckBox409:setHeight(21);
+    obj.imageCheckBox409:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox409:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox409:setName("imageCheckBox409");
+
+    obj.imageCheckBox410 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox410:setParent(obj.layout56);
+    obj.imageCheckBox410:setField("influenciaRuim_5");
+    obj.imageCheckBox410:setLeft(98);
+    obj.imageCheckBox410:setTop(4);
+    obj.imageCheckBox410:setWidth(21);
+    obj.imageCheckBox410:setHeight(21);
+    obj.imageCheckBox410:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox410:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox410:setName("imageCheckBox410");
+
+    obj.imageCheckBox411 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox411:setParent(obj.layout56);
+    obj.imageCheckBox411:setField("influenciaRuim_6");
+    obj.imageCheckBox411:setLeft(120);
+    obj.imageCheckBox411:setTop(4);
+    obj.imageCheckBox411:setWidth(21);
+    obj.imageCheckBox411:setHeight(21);
+    obj.imageCheckBox411:setImageChecked("PokeRPGT/images/rocketball_on.png");
+    obj.imageCheckBox411:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox411:setName("imageCheckBox411");
+
+    obj.imageCheckBox412 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox412:setParent(obj.layout56);
+    obj.imageCheckBox412:setField("influenciaRuim_7");
+    obj.imageCheckBox412:setLeft(142);
+    obj.imageCheckBox412:setTop(4);
+    obj.imageCheckBox412:setWidth(21);
+    obj.imageCheckBox412:setHeight(21);
+    obj.imageCheckBox412:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox412:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox412:setName("imageCheckBox412");
+
+    obj.imageCheckBox413 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox413:setParent(obj.layout56);
+    obj.imageCheckBox413:setField("influenciaRuim_8");
+    obj.imageCheckBox413:setLeft(164);
+    obj.imageCheckBox413:setTop(4);
+    obj.imageCheckBox413:setWidth(21);
+    obj.imageCheckBox413:setHeight(21);
+    obj.imageCheckBox413:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox413:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox413:setName("imageCheckBox413");
+
+    obj.imageCheckBox414 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox414:setParent(obj.layout56);
+    obj.imageCheckBox414:setField("influenciaRuim_9");
+    obj.imageCheckBox414:setLeft(186);
+    obj.imageCheckBox414:setTop(4);
+    obj.imageCheckBox414:setWidth(21);
+    obj.imageCheckBox414:setHeight(21);
+    obj.imageCheckBox414:setImageChecked("PokeRPGT/images/rocketgreat_on.png");
+    obj.imageCheckBox414:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox414:setName("imageCheckBox414");
+
+    obj.imageCheckBox415 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox415:setParent(obj.layout56);
+    obj.imageCheckBox415:setField("influenciaRuim_10");
+    obj.imageCheckBox415:setLeft(208);
+    obj.imageCheckBox415:setTop(4);
+    obj.imageCheckBox415:setWidth(21);
+    obj.imageCheckBox415:setHeight(21);
+    obj.imageCheckBox415:setImageChecked("PokeRPGT/images/rocketultra_on.png");
+    obj.imageCheckBox415:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox415:setName("imageCheckBox415");
+
+    obj.imageCheckBox416 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox416:setParent(obj.layout56);
+    obj.imageCheckBox416:setField("influenciaRuim_11");
+    obj.imageCheckBox416:setLeft(230);
+    obj.imageCheckBox416:setTop(4);
+    obj.imageCheckBox416:setWidth(21);
+    obj.imageCheckBox416:setHeight(21);
+    obj.imageCheckBox416:setImageChecked("PokeRPGT/images/rocketultra_on.png");
+    obj.imageCheckBox416:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox416:setName("imageCheckBox416");
+
+    obj.imageCheckBox417 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox417:setParent(obj.layout56);
+    obj.imageCheckBox417:setField("influenciaRuim_12");
+    obj.imageCheckBox417:setLeft(252);
+    obj.imageCheckBox417:setTop(4);
+    obj.imageCheckBox417:setWidth(21);
+    obj.imageCheckBox417:setHeight(21);
+    obj.imageCheckBox417:setImageChecked("PokeRPGT/images/rocketmaster_on.png");
+    obj.imageCheckBox417:setImageUnchecked("PokeRPGT/images/pokeball_off.png");
+    obj.imageCheckBox417:setName("imageCheckBox417");
 
     obj.frmTeste = GUI.fromHandle(_obj_newObject("form"));
     obj.frmTeste:setParent(obj);
@@ -5379,532 +5227,227 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.frmTeste:setHeight(0);
     obj.frmTeste:setTheme("light");
 
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.frmTeste);
+    obj.dataLink1:setFields({'vitalidade_12', 'vitalidade_11', 'vitalidade_10', 'vitalidade_9', 'vitalidade_8', 'vitalidade_7', 'vitalidade_6', 'vitalidade_5', 'vitalidade_4', 'vitalidade_3', 'vitalidade_2', 'vitalidade_1'});
+    obj.dataLink1:setName("dataLink1");
+
+    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink2:setParent(obj.frmTeste);
+    obj.dataLink2:setFields({'acoesDiarias_12', 'acoesDiarias_11', 'acoesDiarias_10', 'acoesDiarias_9', 'acoesDiarias_8', 'acoesDiarias_7', 'acoesDiarias_6', 'acoesDiarias_5', 'acoesDiarias_4', 'acoesDiarias_3', 'acoesDiarias_2', 'acoesDiarias_1'});
+    obj.dataLink2:setName("dataLink2");
+
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.frmTeste);
+    obj.dataLink3:setFields({'forca_9', 'forca_8', 'forca_7', 'forca_6', 'forca_5', 'forca_4', 'forca_3', 'forca_2', 'forca_1'});
+    obj.dataLink3:setName("dataLink3");
+
+    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink4:setParent(obj.frmTeste);
+    obj.dataLink4:setFields({'percepcao_9', 'percepcao_8', 'percepcao_7', 'percepcao_6', 'percepcao_5', 'percepcao_4', 'percepcao_3', 'percepcao_2', 'percepcao_1'});
+    obj.dataLink4:setName("dataLink4");
+
+    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink5:setParent(obj.frmTeste);
+    obj.dataLink5:setFields({'carisma_9', 'carisma_8', 'carisma_7', 'carisma_6', 'carisma_5', 'carisma_4', 'carisma_3', 'carisma_2', 'carisma_1'});
+    obj.dataLink5:setName("dataLink5");
+
+    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink6:setParent(obj.frmTeste);
+    obj.dataLink6:setFields({'destreza_9', 'destreza_8', 'destreza_7', 'destreza_6', 'destreza_5', 'destreza_4', 'destreza_3', 'destreza_2', 'destreza_1'});
+    obj.dataLink6:setName("dataLink6");
+
+    obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink7:setParent(obj.frmTeste);
+    obj.dataLink7:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
+    obj.dataLink7:setName("dataLink7");
+
+    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink8:setParent(obj.frmTeste);
+    obj.dataLink8:setFields({'manipulacao_9', 'manipulacao_8', 'manipulacao_7', 'manipulacao_6', 'manipulacao_5', 'manipulacao_4', 'manipulacao_3', 'manipulacao_2', 'manipulacao_1'});
+    obj.dataLink8:setName("dataLink8");
+
+    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink9:setParent(obj.frmTeste);
+    obj.dataLink9:setFields({'inteligencia_9', 'inteligencia_8', 'inteligencia_7', 'inteligencia_6', 'inteligencia_5', 'inteligencia_4', 'inteligencia_3', 'inteligencia_2', 'inteligencia_1'});
+    obj.dataLink9:setName("dataLink9");
+
+    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink10:setParent(obj.frmTeste);
+    obj.dataLink10:setFields({'vigor_9', 'vigor_8', 'vigor_7', 'vigor_6', 'vigor_5', 'vigor_4', 'vigor_3', 'vigor_2', 'vigor_1'});
+    obj.dataLink10:setName("dataLink10");
+
+    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink11:setParent(obj.frmTeste);
+    obj.dataLink11:setFields({'raciocinio_9', 'raciocinio_8', 'raciocinio_7', 'raciocinio_6', 'raciocinio_5', 'raciocinio_4', 'raciocinio_3', 'raciocinio_2', 'raciocinio_1'});
+    obj.dataLink11:setName("dataLink11");
+
+    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink12:setParent(obj.frmTeste);
+    obj.dataLink12:setFields({'aparencia_9', 'aparencia_8', 'aparencia_7', 'aparencia_6', 'aparencia_5', 'aparencia_4', 'aparencia_3', 'aparencia_2', 'aparencia_1'});
+    obj.dataLink12:setName("dataLink12");
+
+    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink13:setParent(obj.frmTeste);
+    obj.dataLink13:setFields({'prontidao_9', 'prontidao_8', 'prontidao_7', 'prontidao_6', 'prontidao_5', 'prontidao_4', 'prontidao_3', 'prontidao_2', 'prontidao_1'});
+    obj.dataLink13:setName("dataLink13");
+
+    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink14:setParent(obj.frmTeste);
+    obj.dataLink14:setFields({'academicos_9', 'academicos_8', 'academicos_7', 'academicos_6', 'academicos_5', 'academicos_4', 'academicos_3', 'academicos_2', 'academicos_1'});
+    obj.dataLink14:setName("dataLink14");
+
+    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink15:setParent(obj.frmTeste);
+    obj.dataLink15:setFields({'empatiaPokemon_9', 'empatiaPokemon_8', 'empatiaPokemon_7', 'empatiaPokemon_6', 'empatiaPokemon_5', 'empatiaPokemon_4', 'empatiaPokemon_3', 'empatiaPokemon_2', 'empatiaPokemon_1'});
+    obj.dataLink15:setName("dataLink15");
+
+    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink16:setParent(obj.frmTeste);
+    obj.dataLink16:setFields({'esportes_9', 'esportes_8', 'esportes_7', 'esportes_6', 'esportes_5', 'esportes_4', 'esportes_3', 'esportes_2', 'esportes_1'});
+    obj.dataLink16:setName("dataLink16");
+
+    obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink17:setParent(obj.frmTeste);
+    obj.dataLink17:setFields({'computador_9', 'computador_8', 'computador_7', 'computador_6', 'computador_5', 'computador_4', 'computador_3', 'computador_2', 'computador_1'});
+    obj.dataLink17:setName("dataLink17");
+
+    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink18:setParent(obj.frmTeste);
+    obj.dataLink18:setFields({'oficios_9', 'oficios_8', 'oficios_7', 'oficios_6', 'oficios_5', 'oficios_4', 'oficios_3', 'oficios_2', 'oficios_1'});
+    obj.dataLink18:setName("dataLink18");
+
+    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink19:setParent(obj.frmTeste);
+    obj.dataLink19:setFields({'briga_9', 'briga_8', 'briga_7', 'briga_6', 'briga_5', 'briga_4', 'briga_3', 'briga_2', 'briga_1'});
+    obj.dataLink19:setName("dataLink19");
+
+    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink20:setParent(obj.frmTeste);
+    obj.dataLink20:setFields({'habitats_9', 'habitats_8', 'habitats_7', 'habitats_6', 'habitats_5', 'habitats_4', 'habitats_3', 'habitats_2', 'habitats_1'});
+    obj.dataLink20:setName("dataLink20");
+
+    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink21:setParent(obj.frmTeste);
+    obj.dataLink21:setFields({'esquiva_9', 'esquiva_8', 'esquiva_7', 'esquiva_6', 'esquiva_5', 'esquiva_4', 'esquiva_3', 'esquiva_2', 'esquiva_1'});
+    obj.dataLink21:setName("dataLink21");
+
+    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink22:setParent(obj.frmTeste);
+    obj.dataLink22:setFields({'investigacao_9', 'investigacao_8', 'investigacao_7', 'investigacao_6', 'investigacao_5', 'investigacao_4', 'investigacao_3', 'investigacao_2', 'investigacao_1'});
+    obj.dataLink22:setName("dataLink22");
+
+    obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink23:setParent(obj.frmTeste);
+    obj.dataLink23:setFields({'etiqueta_9', 'etiqueta_8', 'etiqueta_7', 'etiqueta_6', 'etiqueta_5', 'etiqueta_4', 'etiqueta_3', 'etiqueta_2', 'etiqueta_1'});
+    obj.dataLink23:setName("dataLink23");
+
+    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink24:setParent(obj.frmTeste);
+    obj.dataLink24:setFields({'empatia_9', 'empatia_8', 'empatia_7', 'empatia_6', 'empatia_5', 'empatia_4', 'empatia_3', 'empatia_2', 'empatia_1'});
+    obj.dataLink24:setName("dataLink24");
+
+    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink25:setParent(obj.frmTeste);
+    obj.dataLink25:setFields({'atuacao_9', 'atuacao_8', 'atuacao_7', 'atuacao_6', 'atuacao_5', 'atuacao_4', 'atuacao_3', 'atuacao_2', 'atuacao_1'});
+    obj.dataLink25:setName("dataLink25");
+
+    obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink26:setParent(obj.frmTeste);
+    obj.dataLink26:setFields({'direito_9', 'direito_8', 'direito_7', 'direito_6', 'direito_5', 'direito_4', 'direito_3', 'direito_2', 'direito_1'});
+    obj.dataLink26:setName("dataLink26");
+
+    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink27:setParent(obj.frmTeste);
+    obj.dataLink27:setFields({'expressao_9', 'expressao_8', 'expressao_7', 'expressao_6', 'expressao_5', 'expressao_4', 'expressao_3', 'expressao_2', 'expressao_1'});
+    obj.dataLink27:setName("dataLink27");
+
+    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink28:setParent(obj.frmTeste);
+    obj.dataLink28:setFields({'seguranca_9', 'seguranca_8', 'seguranca_7', 'seguranca_6', 'seguranca_5', 'seguranca_4', 'seguranca_3', 'seguranca_2', 'seguranca_1'});
+    obj.dataLink28:setName("dataLink28");
+
+    obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink29:setParent(obj.frmTeste);
+    obj.dataLink29:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
+    obj.dataLink29:setName("dataLink29");
+
+    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink30:setParent(obj.frmTeste);
+    obj.dataLink30:setFields({'medicina_9', 'medicina_8', 'medicina_7', 'medicina_6', 'medicina_5', 'medicina_4', 'medicina_3', 'medicina_2', 'medicina_1'});
+    obj.dataLink30:setName("dataLink30");
+
     obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink31:setParent(obj.frmTeste);
-    obj.dataLink31:setFields({'vitalidade_12', 'vitalidade_11', 'vitalidade_10', 'vitalidade_9', 'vitalidade_8', 'vitalidade_7', 'vitalidade_6', 'vitalidade_5', 'vitalidade_4', 'vitalidade_3', 'vitalidade_2', 'vitalidade_1'});
+    obj.dataLink31:setFields({'furtividade_9', 'furtividade_8', 'furtividade_7', 'furtividade_6', 'furtividade_5', 'furtividade_4', 'furtividade_3', 'furtividade_2', 'furtividade_1'});
     obj.dataLink31:setName("dataLink31");
 
     obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink32:setParent(obj.frmTeste);
-    obj.dataLink32:setFields({'acoesDiarias_12', 'acoesDiarias_11', 'acoesDiarias_10', 'acoesDiarias_9', 'acoesDiarias_8', 'acoesDiarias_7', 'acoesDiarias_6', 'acoesDiarias_5', 'acoesDiarias_4', 'acoesDiarias_3', 'acoesDiarias_2', 'acoesDiarias_1'});
+    obj.dataLink32:setFields({'lideranca_9', 'lideranca_8', 'lideranca_7', 'lideranca_6', 'lideranca_5', 'lideranca_4', 'lideranca_3', 'lideranca_2', 'lideranca_1'});
     obj.dataLink32:setName("dataLink32");
 
     obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink33:setParent(obj.frmTeste);
-    obj.dataLink33:setFields({'forca_9', 'forca_8', 'forca_7', 'forca_6', 'forca_5', 'forca_4', 'forca_3', 'forca_2', 'forca_1'});
+    obj.dataLink33:setFields({'ciencia_9', 'ciencia_8', 'ciencia_7', 'ciencia_6', 'ciencia_5', 'ciencia_4', 'ciencia_3', 'ciencia_2', 'ciencia_1'});
     obj.dataLink33:setName("dataLink33");
 
     obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink34:setParent(obj.frmTeste);
-    obj.dataLink34:setFields({'percepcao_9', 'percepcao_8', 'percepcao_7', 'percepcao_6', 'percepcao_5', 'percepcao_4', 'percepcao_3', 'percepcao_2', 'percepcao_1'});
+    obj.dataLink34:setFields({'sobrevivencia_9', 'sobrevivencia_8', 'sobrevivencia_7', 'sobrevivencia_6', 'sobrevivencia_5', 'sobrevivencia_4', 'sobrevivencia_3', 'sobrevivencia_2', 'sobrevivencia_1'});
     obj.dataLink34:setName("dataLink34");
 
     obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink35:setParent(obj.frmTeste);
-    obj.dataLink35:setFields({'carisma_9', 'carisma_8', 'carisma_7', 'carisma_6', 'carisma_5', 'carisma_4', 'carisma_3', 'carisma_2', 'carisma_1'});
+    obj.dataLink35:setFields({'culinaria_9', 'culinaria_8', 'culinaria_7', 'culinaria_6', 'culinaria_5', 'culinaria_4', 'culinaria_3', 'culinaria_2', 'culinaria_1'});
     obj.dataLink35:setName("dataLink35");
 
     obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink36:setParent(obj.frmTeste);
-    obj.dataLink36:setFields({'destreza_9', 'destreza_8', 'destreza_7', 'destreza_6', 'destreza_5', 'destreza_4', 'destreza_3', 'destreza_2', 'destreza_1'});
+    obj.dataLink36:setFields({'caca_9', 'caca_8', 'caca_7', 'caca_6', 'caca_5', 'caca_4', 'caca_3', 'caca_2', 'caca_1'});
     obj.dataLink36:setName("dataLink36");
 
     obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink37:setParent(obj.frmTeste);
-    obj.dataLink37:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
+    obj.dataLink37:setFields({'coragem_12', 'coragem_11', 'coragem_10', 'coragem_9', 'coragem_8', 'coragem_7', 'coragem_6', 'coragem_5', 'coragem_4', 'coragem_3', 'coragem_2', 'coragem_1'});
     obj.dataLink37:setName("dataLink37");
 
     obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink38:setParent(obj.frmTeste);
-    obj.dataLink38:setFields({'manipulacao_9', 'manipulacao_8', 'manipulacao_7', 'manipulacao_6', 'manipulacao_5', 'manipulacao_4', 'manipulacao_3', 'manipulacao_2', 'manipulacao_1'});
+    obj.dataLink38:setFields({'conviccao_12', 'conviccao_11', 'conviccao_10', 'conviccao_9', 'conviccao_8', 'conviccao_7', 'conviccao_6', 'conviccao_5', 'conviccao_4', 'conviccao_3', 'conviccao_2', 'conviccao_1'});
     obj.dataLink38:setName("dataLink38");
 
     obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink39:setParent(obj.frmTeste);
-    obj.dataLink39:setFields({'vigor_9', 'vigor_8', 'vigor_7', 'vigor_6', 'vigor_5', 'vigor_4', 'vigor_3', 'vigor_2', 'vigor_1'});
+    obj.dataLink39:setFields({'forcaDeVontade_12', 'forcaDeVontade_11', 'forcaDeVontade_10', 'forcaDeVontade_9', 'forcaDeVontade_8', 'forcaDeVontade_7', 'forcaDeVontade_6', 'forcaDeVontade_5', 'forcaDeVontade_4', 'forcaDeVontade_3', 'forcaDeVontade_2', 'forcaDeVontade_1'});
     obj.dataLink39:setName("dataLink39");
 
     obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink40:setParent(obj.frmTeste);
-    obj.dataLink40:setFields({'raciocinio_9', 'raciocinio_8', 'raciocinio_7', 'raciocinio_6', 'raciocinio_5', 'raciocinio_4', 'raciocinio_3', 'raciocinio_2', 'raciocinio_1'});
+    obj.dataLink40:setFields({'famaBoa_10', 'famaBoa_9', 'famaBoa_8', 'famaBoa_7', 'famaBoa_6', 'famaBoa_5', 'famaBoa_4', 'famaBoa_3', 'famaBoa_2', 'famaBoa_1'});
     obj.dataLink40:setName("dataLink40");
 
     obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink41:setParent(obj.frmTeste);
-    obj.dataLink41:setFields({'aparencia_9', 'aparencia_8', 'aparencia_7', 'aparencia_6', 'aparencia_5', 'aparencia_4', 'aparencia_3', 'aparencia_2', 'aparencia_1'});
+    obj.dataLink41:setFields({'reconhecimento_10', 'reconhecimento_9', 'reconhecimento_8', 'reconhecimento_7', 'reconhecimento_6', 'reconhecimento_5', 'reconhecimento_4', 'reconhecimento_3', 'reconhecimento_2', 'reconhecimento_1'});
     obj.dataLink41:setName("dataLink41");
 
     obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink42:setParent(obj.frmTeste);
-    obj.dataLink42:setFields({'prontidao_9', 'prontidao_8', 'prontidao_7', 'prontidao_6', 'prontidao_5', 'prontidao_4', 'prontidao_3', 'prontidao_2', 'prontidao_1'});
+    obj.dataLink42:setFields({'influenciaBoa_10', 'influenciaBoa_9', 'influenciaBoa_8', 'influenciaBoa_7', 'influenciaBoa_6', 'influenciaBoa_5', 'influenciaBoa_4', 'influenciaBoa_3', 'influenciaBoa_2', 'influenciaBoa_1'});
     obj.dataLink42:setName("dataLink42");
 
     obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink43:setParent(obj.frmTeste);
-    obj.dataLink43:setFields({'academicos_9', 'academicos_8', 'academicos_7', 'academicos_6', 'academicos_5', 'academicos_4', 'academicos_3', 'academicos_2', 'academicos_1'});
+    obj.dataLink43:setFields({'famaRuim_10', 'famaRuim_9', 'famaRuim_8', 'famaRuim_7', 'famaRuim_6', 'famaRuim_5', 'famaRuim_4', 'famaRuim_3', 'famaRuim_2', 'famaRuim_1'});
     obj.dataLink43:setName("dataLink43");
 
     obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink44:setParent(obj.frmTeste);
-    obj.dataLink44:setFields({'empatiaPokemon_9', 'empatiaPokemon_8', 'empatiaPokemon_7', 'empatiaPokemon_6', 'empatiaPokemon_5', 'empatiaPokemon_4', 'empatiaPokemon_3', 'empatiaPokemon_2', 'empatiaPokemon_1'});
+    obj.dataLink44:setFields({'influenciaRuim_10', 'influenciaRuim_9', 'influenciaRuim_8', 'influenciaRuim_7', 'influenciaRuim_6', 'influenciaRuim_5', 'influenciaRuim_4', 'influenciaRuim_3', 'influenciaRuim_2', 'influenciaRuim_1'});
     obj.dataLink44:setName("dataLink44");
 
-    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink45:setParent(obj.frmTeste);
-    obj.dataLink45:setFields({'esportes_9', 'esportes_8', 'esportes_7', 'esportes_6', 'esportes_5', 'esportes_4', 'esportes_3', 'esportes_2', 'esportes_1'});
-    obj.dataLink45:setName("dataLink45");
-
-    obj.dataLink46 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink46:setParent(obj.frmTeste);
-    obj.dataLink46:setFields({'computador_9', 'computador_8', 'computador_7', 'computador_6', 'computador_5', 'computador_4', 'computador_3', 'computador_2', 'computador_1'});
-    obj.dataLink46:setName("dataLink46");
-
-    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink47:setParent(obj.frmTeste);
-    obj.dataLink47:setFields({'oficios_9', 'oficios_8', 'oficios_7', 'oficios_6', 'oficios_5', 'oficios_4', 'oficios_3', 'oficios_2', 'oficios_1'});
-    obj.dataLink47:setName("dataLink47");
-
-    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink48:setParent(obj.frmTeste);
-    obj.dataLink48:setFields({'briga_9', 'briga_8', 'briga_7', 'briga_6', 'briga_5', 'briga_4', 'briga_3', 'briga_2', 'briga_1'});
-    obj.dataLink48:setName("dataLink48");
-
-    obj.dataLink49 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink49:setParent(obj.frmTeste);
-    obj.dataLink49:setFields({'habitats_9', 'habitats_8', 'habitats_7', 'habitats_6', 'habitats_5', 'habitats_4', 'habitats_3', 'habitats_2', 'habitats_1'});
-    obj.dataLink49:setName("dataLink49");
-
-    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink50:setParent(obj.frmTeste);
-    obj.dataLink50:setFields({'esquiva_9', 'esquiva_8', 'esquiva_7', 'esquiva_6', 'esquiva_5', 'esquiva_4', 'esquiva_3', 'esquiva_2', 'esquiva_1'});
-    obj.dataLink50:setName("dataLink50");
-
-    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink51:setParent(obj.frmTeste);
-    obj.dataLink51:setFields({'investigacao_9', 'investigacao_8', 'investigacao_7', 'investigacao_6', 'investigacao_5', 'investigacao_4', 'investigacao_3', 'investigacao_2', 'investigacao_1'});
-    obj.dataLink51:setName("dataLink51");
-
-    obj.dataLink52 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink52:setParent(obj.frmTeste);
-    obj.dataLink52:setFields({'et9', 'et8', 'et7', 'et6', 'et5', 'et4', 'et3', 'et2', 'et1'});
-    obj.dataLink52:setName("dataLink52");
-
-    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink53:setParent(obj.frmTeste);
-    obj.dataLink53:setFields({'empatia_9', 'empatia_8', 'empatia_7', 'empatia_6', 'empatia_5', 'empatia_4', 'empatia_3', 'empatia_2', 'empatia_1'});
-    obj.dataLink53:setName("dataLink53");
-
-    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink54:setParent(obj.frmTeste);
-    obj.dataLink54:setFields({'atuacao_9', 'atuacao_8', 'atuacao_7', 'atuacao_6', 'atuacao_5', 'atuacao_4', 'atuacao_3', 'atuacao_2', 'atuacao_1'});
-    obj.dataLink54:setName("dataLink54");
-
-    obj.dataLink55 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink55:setParent(obj.frmTeste);
-    obj.dataLink55:setFields({'direito_9', 'direito_8', 'direito_7', 'direito_6', 'direito_5', 'direito_4', 'direito_3', 'direito_2', 'direito_1'});
-    obj.dataLink55:setName("dataLink55");
-
-    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink56:setParent(obj.frmTeste);
-    obj.dataLink56:setFields({'expressao_9', 'expressao_8', 'expressao_7', 'expressao_6', 'expressao_5', 'expressao_4', 'expressao_3', 'expressao_2', 'expressao_1'});
-    obj.dataLink56:setName("dataLink56");
-
-    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink57:setParent(obj.frmTeste);
-    obj.dataLink57:setFields({'seguranca_9', 'seguranca_8', 'seguranca_7', 'seguranca_6', 'seguranca_5', 'seguranca_4', 'seguranca_3', 'seguranca_2', 'seguranca_1'});
-    obj.dataLink57:setName("dataLink57");
-
-    obj.dataLink58 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink58:setParent(obj.frmTeste);
-    obj.dataLink58:setFields({'intimidacao_9', 'intimidacao_8', 'intimidacao_7', 'intimidacao_6', 'intimidacao_5', 'intimidacao_4', 'intimidacao_3', 'intimidacao_2', 'intimidacao_1'});
-    obj.dataLink58:setName("dataLink58");
-
-    obj.dataLink59 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink59:setParent(obj.frmTeste);
-    obj.dataLink59:setFields({'medicina_9', 'medicina_8', 'medicina_7', 'medicina_6', 'medicina_5', 'medicina_4', 'medicina_3', 'medicina_2', 'medicina_1'});
-    obj.dataLink59:setName("dataLink59");
-
-    obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink60:setParent(obj.frmTeste);
-    obj.dataLink60:setFields({'furtividade_9', 'furtividade_8', 'furtividade_7', 'furtividade_6', 'furtividade_5', 'furtividade_4', 'furtividade_3', 'furtividade_2', 'furtividade_1'});
-    obj.dataLink60:setName("dataLink60");
-
-    obj.dataLink61 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink61:setParent(obj.frmTeste);
-    obj.dataLink61:setFields({'lideranca_9', 'lideranca_8', 'lideranca_7', 'lideranca_6', 'lideranca_5', 'lideranca_4', 'lideranca_3', 'lideranca_2', 'lideranca_1'});
-    obj.dataLink61:setName("dataLink61");
-
-    obj.dataLink62 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink62:setParent(obj.frmTeste);
-    obj.dataLink62:setFields({'ciencia_9', 'ciencia_8', 'ciencia_7', 'ciencia_6', 'ciencia_5', 'ciencia_4', 'ciencia_3', 'ciencia_2', 'ciencia_1'});
-    obj.dataLink62:setName("dataLink62");
-
-    obj.dataLink63 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink63:setParent(obj.frmTeste);
-    obj.dataLink63:setFields({'sobrevivencia_9', 'sobrevivencia_8', 'sobrevivencia_7', 'sobrevivencia_6', 'sobrevivencia_5', 'sobrevivencia_4', 'sobrevivencia_3', 'sobrevivencia_2', 'sobrevivencia_1'});
-    obj.dataLink63:setName("dataLink63");
-
-    obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink64:setParent(obj.frmTeste);
-    obj.dataLink64:setFields({'culinaria_9', 'culinaria_8', 'culinaria_7', 'culinaria_6', 'culinaria_5', 'culinaria_4', 'culinaria_3', 'culinaria_2', 'culinaria_1'});
-    obj.dataLink64:setName("dataLink64");
-
-    obj.dataLink65 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink65:setParent(obj.frmTeste);
-    obj.dataLink65:setFields({'caca_9', 'caca_8', 'caca_7', 'caca_6', 'caca_5', 'caca_4', 'caca_3', 'caca_2', 'caca_1'});
-    obj.dataLink65:setName("dataLink65");
-
-    obj.dataLink66 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink66:setParent(obj.frmTeste);
-    obj.dataLink66:setFields({'coragem_12', 'coragem_11', 'coragem_10', 'coragem_9', 'coragem_8', 'coragem_7', 'coragem_6', 'coragem_5', 'coragem_4', 'coragem_3', 'coragem_2', 'coragem_1'});
-    obj.dataLink66:setName("dataLink66");
-
-    obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink67:setParent(obj.frmTeste);
-    obj.dataLink67:setFields({'conviccao_12', 'conviccao_11', 'conviccao_10', 'conviccao_9', 'conviccao_8', 'conviccao_7', 'conviccao_6', 'conviccao_5', 'conviccao_4', 'conviccao_3', 'conviccao_2', 'conviccao_1'});
-    obj.dataLink67:setName("dataLink67");
-
-    obj.dataLink68 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink68:setParent(obj.frmTeste);
-    obj.dataLink68:setFields({'forcaDeVontade_12', 'forcaDeVontade_11', 'forcaDeVontade_10', 'forcaDeVontade_9', 'forcaDeVontade_8', 'forcaDeVontade_7', 'forcaDeVontade_6', 'forcaDeVontade_5', 'forcaDeVontade_4', 'forcaDeVontade_3', 'forcaDeVontade_2', 'forcaDeVontade_1'});
-    obj.dataLink68:setName("dataLink68");
-
-    obj.dataLink69 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink69:setParent(obj.frmTeste);
-    obj.dataLink69:setFields({'recon10', 'recon9', 'recon8', 'recon7', 'recon6', 'recon5', 'recon4', 'recon3', 'recon2', 'recon1'});
-    obj.dataLink69:setName("dataLink69");
-
-    obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR1 == nil then
-            						sheet.imageCounterR1 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR1 = (sheet.imageCounterR1 + 1) % #picsR1;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon1 = picsR1[sheet.imageCounterR1 +1];
-        end, obj);
-
-    obj._e_event1 = obj.button2:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR2 == nil then
-            						sheet.imageCounterR2 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR2 = (sheet.imageCounterR2 + 1) % #picsR2;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon2 = picsR2[sheet.imageCounterR2 +1];
-        end, obj);
-
-    obj._e_event2 = obj.button3:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR3 == nil then
-            						sheet.imageCounterR3 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR3 = (sheet.imageCounterR3 + 1) % #picsR3;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon3 = picsR3[sheet.imageCounterR3 +1];
-        end, obj);
-
-    obj._e_event3 = obj.button4:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR4 == nil then
-            						sheet.imageCounterR4 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR4 = (sheet.imageCounterR4 + 1) % #picsR4;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon4 = picsR4[sheet.imageCounterR4 +1];
-        end, obj);
-
-    obj._e_event4 = obj.button5:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR5 == nil then
-            						sheet.imageCounterR5 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR5 = (sheet.imageCounterR5 + 1) % #picsR5;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon5 = picsR5[sheet.imageCounterR5 +1];
-        end, obj);
-
-    obj._e_event5 = obj.button6:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR6 == nil then
-            						sheet.imageCounterR6 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR6 = (sheet.imageCounterR6 + 1) % #picsR6;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon6 = picsR6[sheet.imageCounterR6 +1];
-        end, obj);
-
-    obj._e_event6 = obj.button7:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR7 == nil then
-            						sheet.imageCounterR7 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR7 = (sheet.imageCounterR7 + 1) % #picsR7;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon7 = picsR7[sheet.imageCounterR7 +1];
-        end, obj);
-
-    obj._e_event7 = obj.button8:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR8 == nil then
-            						sheet.imageCounterR8 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR8 = (sheet.imageCounterR8 + 1) % #picsR8;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon8 = picsR8[sheet.imageCounterR8 +1];
-        end, obj);
-
-    obj._e_event8 = obj.button9:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR9 == nil then
-            						sheet.imageCounterR9 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR9 = (sheet.imageCounterR9 + 1) % #picsR9;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon9 = picsR9[sheet.imageCounterR9 +1];
-        end, obj);
-
-    obj._e_event9 = obj.button10:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterR10 == nil then
-            						sheet.imageCounterR10 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterR10 = (sheet.imageCounterR10 + 1) % #picsR10;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.recon10 = picsR10[sheet.imageCounterR10 +1];
-        end, obj);
-
-    obj._e_event10 = obj.button11:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF1 == nil then
-            						sheet.imageCounterF1 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF1 = (sheet.imageCounterF1 + 1) % #picsF1;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama1 = picsF1[sheet.imageCounterF1 +1];
-        end, obj);
-
-    obj._e_event11 = obj.button12:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF2 == nil then
-            						sheet.imageCounterF2 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF2 = (sheet.imageCounterF2 + 1) % #picsF2;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama2 = picsF2[sheet.imageCounterF2 +1];
-        end, obj);
-
-    obj._e_event12 = obj.button13:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF3 == nil then
-            						sheet.imageCounterF3 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF3 = (sheet.imageCounterF3 + 1) % #picsF3;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama3 = picsF3[sheet.imageCounterF3 +1];
-        end, obj);
-
-    obj._e_event13 = obj.button14:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF4 == nil then
-            						sheet.imageCounterF4 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF4 = (sheet.imageCounterF4 + 1) % #picsF4;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama4 = picsF4[sheet.imageCounterF4 +1];
-        end, obj);
-
-    obj._e_event14 = obj.button15:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF5 == nil then
-            						sheet.imageCounterF5 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF5 = (sheet.imageCounterF5 + 1) % #picsF5;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama5 = picsF5[sheet.imageCounterF5 +1];
-        end, obj);
-
-    obj._e_event15 = obj.button16:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF6 == nil then
-            						sheet.imageCounterF6 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF6 = (sheet.imageCounterF6 + 1) % #picsF6;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama6 = picsF6[sheet.imageCounterF6 +1];
-        end, obj);
-
-    obj._e_event16 = obj.button17:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF7 == nil then
-            						sheet.imageCounterF7 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF7 = (sheet.imageCounterF7 + 1) % #picsF7;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama7 = picsF7[sheet.imageCounterF7 +1];
-        end, obj);
-
-    obj._e_event17 = obj.button18:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF8 == nil then
-            						sheet.imageCounterF8 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF8 = (sheet.imageCounterF8 + 1) % #picsF8;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama8 = picsF8[sheet.imageCounterF8 +1];
-        end, obj);
-
-    obj._e_event18 = obj.button19:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF9 == nil then
-            						sheet.imageCounterF9 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF9 = (sheet.imageCounterF9 + 1) % #picsF9;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama9 = picsF9[sheet.imageCounterF9 +1];
-        end, obj);
-
-    obj._e_event19 = obj.button20:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterF10 == nil then
-            						sheet.imageCounterF10 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterF10 = (sheet.imageCounterF10 + 1) % #picsF10;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.fama10 = picsF10[sheet.imageCounterF10 +1];
-        end, obj);
-
-    obj._e_event20 = obj.button21:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI1 == nil then
-            						sheet.imageCounterI1 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI1 = (sheet.imageCounterI1 + 1) % #picsI1;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ1 = picsI1[sheet.imageCounterI1 +1];
-        end, obj);
-
-    obj._e_event21 = obj.button22:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI2 == nil then
-            						sheet.imageCounterI2 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI2 = (sheet.imageCounterI2 + 1) % #picsI2;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ2 = picsI2[sheet.imageCounterI2 +1];
-        end, obj);
-
-    obj._e_event22 = obj.button23:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI3 == nil then
-            						sheet.imageCounterI3 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI3 = (sheet.imageCounterI3 + 1) % #picsI3;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ3 = picsI3[sheet.imageCounterI3 +1];
-        end, obj);
-
-    obj._e_event23 = obj.button24:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI4 == nil then
-            						sheet.imageCounterI4 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI4 = (sheet.imageCounterI4 + 1) % #picsI4;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ4 = picsI4[sheet.imageCounterI4 +1];
-        end, obj);
-
-    obj._e_event24 = obj.button25:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI5 == nil then
-            						sheet.imageCounterI5 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI5 = (sheet.imageCounterI5 + 1) % #picsI5;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ5 = picsI5[sheet.imageCounterI5 +1];
-        end, obj);
-
-    obj._e_event25 = obj.button26:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI6 == nil then
-            						sheet.imageCounterI6 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI6 = (sheet.imageCounterI6 + 1) % #picsI6;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ6 = picsI6[sheet.imageCounterI6 +1];
-        end, obj);
-
-    obj._e_event26 = obj.button27:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI7 == nil then
-            						sheet.imageCounterI7 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI7 = (sheet.imageCounterI7 + 1) % #picsI7;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ7 = picsI7[sheet.imageCounterI7 +1];
-        end, obj);
-
-    obj._e_event27 = obj.button28:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI8 == nil then
-            						sheet.imageCounterI8 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI8 = (sheet.imageCounterI8 + 1) % #picsI8;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ8 = picsI8[sheet.imageCounterI8 +1];
-        end, obj);
-
-    obj._e_event28 = obj.button29:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI9 == nil then
-            						sheet.imageCounterI9 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI9 = (sheet.imageCounterI9 + 1) % #picsI9;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ9 = picsI9[sheet.imageCounterI9 +1];
-        end, obj);
-
-    obj._e_event29 = obj.button30:addEventListener("onClick",
-        function (_)
-            if sheet.imageCounterI10 == nil then
-            						sheet.imageCounterI10 = 0;
-            					end;
-            					-- Contador que vai de 0 a 2 e reseta ao passar de 2
-            					sheet.imageCounterI10 = (sheet.imageCounterI10 + 1) % #picsI10;
-            					-- pegando imagem do array. O +1 é por que arrays em lua começam em 1 e não em 0
-            					sheet.influ10 = picsI10[sheet.imageCounterI10 +1];
-        end, obj);
-
-    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.vitalidade_12 == true then
@@ -6066,7 +5609,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
+    obj._e_event1 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.acoesDiarias_12 == true then
@@ -6228,7 +5771,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
+    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.forca_9 == true then
@@ -6324,7 +5867,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
+    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.percepcao_9 == true then
@@ -6420,7 +5963,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
+    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.carisma_9 == true then
@@ -6516,7 +6059,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
+    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.destreza_9 == true then
@@ -6612,7 +6155,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.intimidacao_9 == true then
@@ -6708,7 +6251,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.manipulacao_9 == true then
@@ -6804,7 +6347,103 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.inteligencia_9 == true then
+            		sheet.inteligencia_8 = true;
+            		sheet.inteligencia_7 = true;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_8 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_7 = true;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_7 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_6 = true;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_6 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_5 = true;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_5 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_4 = true;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_4 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_3 = true;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_3 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_2 = true;
+            		sheet.inteligencia_1 = true;
+            	elseif sheet.inteligencia_2 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_1 = true;	
+            	elseif sheet.inteligencia_1 == true then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_2 = false;
+            	elseif sheet.inteligencia_1 == false then
+            		sheet.inteligencia_9 = false;
+            		sheet.inteligencia_8 = false;
+            		sheet.inteligencia_7 = false;
+            		sheet.inteligencia_6 = false;
+            		sheet.inteligencia_5 = false;
+            		sheet.inteligencia_4 = false;
+            		sheet.inteligencia_3 = false;
+            		sheet.inteligencia_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.vigor_9 == true then
@@ -6900,7 +6539,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event39 = obj.dataLink40:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.raciocinio_9 == true then
@@ -6996,7 +6635,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event40 = obj.dataLink41:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.aparencia_9 == true then
@@ -7092,7 +6731,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event41 = obj.dataLink42:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.prontidao_9 == true then
@@ -7188,7 +6827,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event42 = obj.dataLink43:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.academicos_9 == true then
@@ -7284,7 +6923,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event43 = obj.dataLink44:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatiaPokemon_9 == true then
@@ -7380,7 +7019,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event44 = obj.dataLink45:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esportes_9 == true then
@@ -7476,7 +7115,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event45 = obj.dataLink46:addEventListener("onChange",
+    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.computador_9 == true then
@@ -7572,7 +7211,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event46 = obj.dataLink47:addEventListener("onChange",
+    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.oficios_9 == true then
@@ -7668,7 +7307,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event47 = obj.dataLink48:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.briga_9 == true then
@@ -7764,7 +7403,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event48 = obj.dataLink49:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.habitats_9 == true then
@@ -7860,7 +7499,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event49 = obj.dataLink50:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esquiva_9 == true then
@@ -7956,7 +7595,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event50 = obj.dataLink51:addEventListener("onChange",
+    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.investigacao_9 == true then
@@ -8052,7 +7691,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event51 = obj.dataLink52:addEventListener("onChange",
+    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.etiqueta_9 == true then
@@ -8148,7 +7787,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event52 = obj.dataLink53:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatia_9 == true then
@@ -8244,7 +7883,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event53 = obj.dataLink54:addEventListener("onChange",
+    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.atuacao_9 == true then
@@ -8340,7 +7979,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event54 = obj.dataLink55:addEventListener("onChange",
+    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.direito_9 == true then
@@ -8436,7 +8075,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event55 = obj.dataLink56:addEventListener("onChange",
+    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.expressao_9 == true then
@@ -8532,7 +8171,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event56 = obj.dataLink57:addEventListener("onChange",
+    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.seguranca_9 == true then
@@ -8628,7 +8267,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event57 = obj.dataLink58:addEventListener("onChange",
+    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.intimidacao_9 == true then
@@ -8724,7 +8363,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event58 = obj.dataLink59:addEventListener("onChange",
+    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.medicina_9 == true then
@@ -8820,7 +8459,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event59 = obj.dataLink60:addEventListener("onChange",
+    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.furtividade_9 == true then
@@ -8916,7 +8555,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event60 = obj.dataLink61:addEventListener("onChange",
+    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.lideranca_9 == true then
@@ -9012,7 +8651,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event61 = obj.dataLink62:addEventListener("onChange",
+    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.ciencia_9 == true then
@@ -9108,7 +8747,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event62 = obj.dataLink63:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.sobrevivencia_9 == true then
@@ -9204,7 +8843,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event63 = obj.dataLink64:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.culinaria_9 == true then
@@ -9300,7 +8939,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event64 = obj.dataLink65:addEventListener("onChange",
+    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.caca_9 == true then
@@ -9396,7 +9035,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event65 = obj.dataLink66:addEventListener("onChange",
+    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.coragem_12 == true then
@@ -9558,7 +9197,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event66 = obj.dataLink67:addEventListener("onChange",
+    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.conviccao_12 == true then
@@ -9720,7 +9359,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event67 = obj.dataLink68:addEventListener("onChange",
+    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.forcaDeVontade_12 == true then
@@ -9882,48 +9521,587 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event68 = obj.dataLink69:addEventListener("onChange",
+    obj._e_event39 = obj.dataLink40:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
-            		if sheet.recon10 == 3 then
-            		sheet.recon9 = 3;
-            		sheet.recon8 = 3;
-            		sheet.recon7 = 3;
-            		sheet.recon6 = 3;
-            		sheet.recon5 = 3;
-            		sheet.recon4 = 3;
-            		sheet.recon3 = 3;
-            		sheet.recon2 = 3;
-            		sheet.recon1 = 3;	
-            		end;
+            	if sheet.famaBoa_10 == true then
+            		sheet.famaBoa_9 = true;
+            		sheet.famaBoa_8 = true;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_9 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_8 = true;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_8 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_7 = true;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_7 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_6 = true;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_6 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_5 = true;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_5 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_4 = true;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_4 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_3 = true;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_3 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_2 = true;
+            		sheet.famaBoa_1 = true;
+            	elseif sheet.famaBoa_2 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_1 = true;	
+            	elseif sheet.famaBoa_1 == true then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_2 = false;
+            	elseif sheet.famaBoa_1 == false then
+            		sheet.famaBoa_10 = false;
+            		sheet.famaBoa_9 = false;
+            		sheet.famaBoa_8 = false;
+            		sheet.famaBoa_7 = false;
+            		sheet.famaBoa_6 = false;
+            		sheet.famaBoa_5 = false;
+            		sheet.famaBoa_4 = false;
+            		sheet.famaBoa_3 = false;
+            		sheet.famaBoa_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event40 = obj.dataLink41:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.reconhecimento_10 == true then
+            		sheet.reconhecimento_9 = true;
+            		sheet.reconhecimento_8 = true;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_9 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_8 = true;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_8 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_7 = true;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_7 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_6 = true;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_6 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_5 = true;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_5 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_4 = true;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_4 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_3 = true;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_3 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_2 = true;
+            		sheet.reconhecimento_1 = true;
+            	elseif sheet.reconhecimento_2 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_1 = true;	
+            	elseif sheet.reconhecimento_1 == true then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_2 = false;
+            	elseif sheet.reconhecimento_1 == false then
+            		sheet.reconhecimento_10 = false;
+            		sheet.reconhecimento_9 = false;
+            		sheet.reconhecimento_8 = false;
+            		sheet.reconhecimento_7 = false;
+            		sheet.reconhecimento_6 = false;
+            		sheet.reconhecimento_5 = false;
+            		sheet.reconhecimento_4 = false;
+            		sheet.reconhecimento_3 = false;
+            		sheet.reconhecimento_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event41 = obj.dataLink42:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.influenciaBoa_10 == true then
+            		sheet.influenciaBoa_9 = true;
+            		sheet.influenciaBoa_8 = true;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_9 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_8 = true;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_8 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_7 = true;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_7 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_6 = true;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_6 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_5 = true;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_5 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_4 = true;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_4 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_3 = true;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_3 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_2 = true;
+            		sheet.influenciaBoa_1 = true;
+            	elseif sheet.influenciaBoa_2 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_1 = true;	
+            	elseif sheet.influenciaBoa_1 == true then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_2 = false;
+            	elseif sheet.influenciaBoa_1 == false then
+            		sheet.influenciaBoa_10 = false;
+            		sheet.influenciaBoa_9 = false;
+            		sheet.influenciaBoa_8 = false;
+            		sheet.influenciaBoa_7 = false;
+            		sheet.influenciaBoa_6 = false;
+            		sheet.influenciaBoa_5 = false;
+            		sheet.influenciaBoa_4 = false;
+            		sheet.influenciaBoa_3 = false;
+            		sheet.influenciaBoa_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event42 = obj.dataLink43:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.famaRuim_10 == true then
+            		sheet.famaRuim_9 = true;
+            		sheet.famaRuim_8 = true;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_9 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_8 = true;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_8 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_7 = true;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_7 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_6 = true;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_6 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_5 = true;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_5 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_4 = true;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_4 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_3 = true;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_3 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_2 = true;
+            		sheet.famaRuim_1 = true;
+            	elseif sheet.famaRuim_2 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_1 = true;	
+            	elseif sheet.famaRuim_1 == true then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_2 = false;
+            	elseif sheet.famaRuim_1 == false then
+            		sheet.famaRuim_10 = false;
+            		sheet.famaRuim_9 = false;
+            		sheet.famaRuim_8 = false;
+            		sheet.famaRuim_7 = false;
+            		sheet.famaRuim_6 = false;
+            		sheet.famaRuim_5 = false;
+            		sheet.famaRuim_4 = false;
+            		sheet.famaRuim_3 = false;
+            		sheet.famaRuim_2 = false;
+            	end;
+        end, obj);
+
+    obj._e_event43 = obj.dataLink44:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            if sheet == nil then return end;
+            	if sheet.influenciaRuim_10 == true then
+            		sheet.influenciaRuim_9 = true;
+            		sheet.influenciaRuim_8 = true;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_9 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_8 = true;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_8 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_7 = true;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_7 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_6 = true;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_6 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_5 = true;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_5 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_4 = true;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_4 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_3 = true;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_3 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_2 = true;
+            		sheet.influenciaRuim_1 = true;
+            	elseif sheet.influenciaRuim_2 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_1 = true;	
+            	elseif sheet.influenciaRuim_1 == true then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_2 = false;
+            	elseif sheet.influenciaRuim_1 == false then
+            		sheet.influenciaRuim_10 = false;
+            		sheet.influenciaRuim_9 = false;
+            		sheet.influenciaRuim_8 = false;
+            		sheet.influenciaRuim_7 = false;
+            		sheet.influenciaRuim_6 = false;
+            		sheet.influenciaRuim_5 = false;
+            		sheet.influenciaRuim_4 = false;
+            		sheet.influenciaRuim_3 = false;
+            		sheet.influenciaRuim_2 = false;
+            	end;
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event68);
-        __o_rrpgObjs.removeEventListenerById(self._e_event67);
-        __o_rrpgObjs.removeEventListenerById(self._e_event66);
-        __o_rrpgObjs.removeEventListenerById(self._e_event65);
-        __o_rrpgObjs.removeEventListenerById(self._e_event64);
-        __o_rrpgObjs.removeEventListenerById(self._e_event63);
-        __o_rrpgObjs.removeEventListenerById(self._e_event62);
-        __o_rrpgObjs.removeEventListenerById(self._e_event61);
-        __o_rrpgObjs.removeEventListenerById(self._e_event60);
-        __o_rrpgObjs.removeEventListenerById(self._e_event59);
-        __o_rrpgObjs.removeEventListenerById(self._e_event58);
-        __o_rrpgObjs.removeEventListenerById(self._e_event57);
-        __o_rrpgObjs.removeEventListenerById(self._e_event56);
-        __o_rrpgObjs.removeEventListenerById(self._e_event55);
-        __o_rrpgObjs.removeEventListenerById(self._e_event54);
-        __o_rrpgObjs.removeEventListenerById(self._e_event53);
-        __o_rrpgObjs.removeEventListenerById(self._e_event52);
-        __o_rrpgObjs.removeEventListenerById(self._e_event51);
-        __o_rrpgObjs.removeEventListenerById(self._e_event50);
-        __o_rrpgObjs.removeEventListenerById(self._e_event49);
-        __o_rrpgObjs.removeEventListenerById(self._e_event48);
-        __o_rrpgObjs.removeEventListenerById(self._e_event47);
-        __o_rrpgObjs.removeEventListenerById(self._e_event46);
-        __o_rrpgObjs.removeEventListenerById(self._e_event45);
-        __o_rrpgObjs.removeEventListenerById(self._e_event44);
         __o_rrpgObjs.removeEventListenerById(self._e_event43);
         __o_rrpgObjs.removeEventListenerById(self._e_event42);
         __o_rrpgObjs.removeEventListenerById(self._e_event41);
@@ -9980,7 +10158,8 @@ local function constructNew_frmPokeRPGT1_svg()
         end;
 
         if self.imageCheckBox296 ~= nil then self.imageCheckBox296:destroy(); self.imageCheckBox296 = nil; end;
-        if self.button15 ~= nil then self.button15:destroy(); self.button15 = nil; end;
+        if self.imageCheckBox377 ~= nil then self.imageCheckBox377:destroy(); self.imageCheckBox377 = nil; end;
+        if self.imageCheckBox364 ~= nil then self.imageCheckBox364:destroy(); self.imageCheckBox364 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.dataLink33 ~= nil then self.dataLink33:destroy(); self.dataLink33 = nil; end;
@@ -9988,22 +10167,24 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox287 ~= nil then self.imageCheckBox287:destroy(); self.imageCheckBox287 = nil; end;
         if self.imageCheckBox200 ~= nil then self.imageCheckBox200:destroy(); self.imageCheckBox200 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
+        if self.imageCheckBox376 ~= nil then self.imageCheckBox376:destroy(); self.imageCheckBox376 = nil; end;
         if self.imageCheckBox357 ~= nil then self.imageCheckBox357:destroy(); self.imageCheckBox357 = nil; end;
         if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
         if self.imageCheckBox58 ~= nil then self.imageCheckBox58:destroy(); self.imageCheckBox58 = nil; end;
         if self.imageCheckBox175 ~= nil then self.imageCheckBox175:destroy(); self.imageCheckBox175 = nil; end;
         if self.imageCheckBox225 ~= nil then self.imageCheckBox225:destroy(); self.imageCheckBox225 = nil; end;
+        if self.imageCheckBox360 ~= nil then self.imageCheckBox360:destroy(); self.imageCheckBox360 = nil; end;
         if self.imageCheckBox50 ~= nil then self.imageCheckBox50:destroy(); self.imageCheckBox50 = nil; end;
         if self.imageCheckBox185 ~= nil then self.imageCheckBox185:destroy(); self.imageCheckBox185 = nil; end;
-        if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
+        if self.imageCheckBox417 ~= nil then self.imageCheckBox417:destroy(); self.imageCheckBox417 = nil; end;
         if self.imageCheckBox148 ~= nil then self.imageCheckBox148:destroy(); self.imageCheckBox148 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
+        if self.imageCheckBox414 ~= nil then self.imageCheckBox414:destroy(); self.imageCheckBox414 = nil; end;
         if self.imageCheckBox115 ~= nil then self.imageCheckBox115:destroy(); self.imageCheckBox115 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.imageCheckBox67 ~= nil then self.imageCheckBox67:destroy(); self.imageCheckBox67 = nil; end;
         if self.imageCheckBox288 ~= nil then self.imageCheckBox288:destroy(); self.imageCheckBox288 = nil; end;
-        if self.dataLink68 ~= nil then self.dataLink68:destroy(); self.dataLink68 = nil; end;
         if self.imageCheckBox251 ~= nil then self.imageCheckBox251:destroy(); self.imageCheckBox251 = nil; end;
         if self.imageCheckBox210 ~= nil then self.imageCheckBox210:destroy(); self.imageCheckBox210 = nil; end;
         if self.imageCheckBox126 ~= nil then self.imageCheckBox126:destroy(); self.imageCheckBox126 = nil; end;
@@ -10036,22 +10217,16 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox290 ~= nil then self.imageCheckBox290:destroy(); self.imageCheckBox290 = nil; end;
         if self.imageCheckBox141 ~= nil then self.imageCheckBox141:destroy(); self.imageCheckBox141 = nil; end;
         if self.imageCheckBox337 ~= nil then self.imageCheckBox337:destroy(); self.imageCheckBox337 = nil; end;
-        if self.image11 ~= nil then self.image11:destroy(); self.image11 = nil; end;
-        if self.button21 ~= nil then self.button21:destroy(); self.button21 = nil; end;
+        if self.layout52 ~= nil then self.layout52:destroy(); self.layout52 = nil; end;
         if self.imageCheckBox191 ~= nil then self.imageCheckBox191:destroy(); self.imageCheckBox191 = nil; end;
         if self.imageCheckBox145 ~= nil then self.imageCheckBox145:destroy(); self.imageCheckBox145 = nil; end;
-        if self.dataLink63 ~= nil then self.dataLink63:destroy(); self.dataLink63 = nil; end;
-        if self.button26 ~= nil then self.button26:destroy(); self.button26 = nil; end;
         if self.imageCheckBox79 ~= nil then self.imageCheckBox79:destroy(); self.imageCheckBox79 = nil; end;
         if self.imageCheckBox150 ~= nil then self.imageCheckBox150:destroy(); self.imageCheckBox150 = nil; end;
         if self.imageCheckBox136 ~= nil then self.imageCheckBox136:destroy(); self.imageCheckBox136 = nil; end;
         if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
-        if self.button4 ~= nil then self.button4:destroy(); self.button4 = nil; end;
         if self.imageCheckBox78 ~= nil then self.imageCheckBox78:destroy(); self.imageCheckBox78 = nil; end;
-        if self.image9 ~= nil then self.image9:destroy(); self.image9 = nil; end;
         if self.layout42 ~= nil then self.layout42:destroy(); self.layout42 = nil; end;
         if self.imageCheckBox336 ~= nil then self.imageCheckBox336:destroy(); self.imageCheckBox336 = nil; end;
-        if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
         if self.imageCheckBox103 ~= nil then self.imageCheckBox103:destroy(); self.imageCheckBox103 = nil; end;
         if self.imageCheckBox214 ~= nil then self.imageCheckBox214:destroy(); self.imageCheckBox214 = nil; end;
         if self.imageCheckBox241 ~= nil then self.imageCheckBox241:destroy(); self.imageCheckBox241 = nil; end;
@@ -10059,8 +10234,10 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.imageCheckBox349 ~= nil then self.imageCheckBox349:destroy(); self.imageCheckBox349 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
+        if self.imageCheckBox401 ~= nil then self.imageCheckBox401:destroy(); self.imageCheckBox401 = nil; end;
         if self.imageCheckBox104 ~= nil then self.imageCheckBox104:destroy(); self.imageCheckBox104 = nil; end;
         if self.imageCheckBox346 ~= nil then self.imageCheckBox346:destroy(); self.imageCheckBox346 = nil; end;
+        if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
         if self.imageCheckBox131 ~= nil then self.imageCheckBox131:destroy(); self.imageCheckBox131 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
@@ -10069,12 +10246,13 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox17 ~= nil then self.imageCheckBox17:destroy(); self.imageCheckBox17 = nil; end;
         if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
         if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
-        if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
         if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.imageCheckBox326 ~= nil then self.imageCheckBox326:destroy(); self.imageCheckBox326 = nil; end;
         if self.imageCheckBox331 ~= nil then self.imageCheckBox331:destroy(); self.imageCheckBox331 = nil; end;
         if self.imageCheckBox159 ~= nil then self.imageCheckBox159:destroy(); self.imageCheckBox159 = nil; end;
+        if self.imageCheckBox358 ~= nil then self.imageCheckBox358:destroy(); self.imageCheckBox358 = nil; end;
         if self.imageCheckBox224 ~= nil then self.imageCheckBox224:destroy(); self.imageCheckBox224 = nil; end;
+        if self.imageCheckBox373 ~= nil then self.imageCheckBox373:destroy(); self.imageCheckBox373 = nil; end;
         if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
         if self.imageCheckBox285 ~= nil then self.imageCheckBox285:destroy(); self.imageCheckBox285 = nil; end;
         if self.imageCheckBox233 ~= nil then self.imageCheckBox233:destroy(); self.imageCheckBox233 = nil; end;
@@ -10083,8 +10261,10 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox354 ~= nil then self.imageCheckBox354:destroy(); self.imageCheckBox354 = nil; end;
         if self.imageCheckBox117 ~= nil then self.imageCheckBox117:destroy(); self.imageCheckBox117 = nil; end;
         if self.dataLink34 ~= nil then self.dataLink34:destroy(); self.dataLink34 = nil; end;
+        if self.imageCheckBox390 ~= nil then self.imageCheckBox390:destroy(); self.imageCheckBox390 = nil; end;
         if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
         if self.imageCheckBox28 ~= nil then self.imageCheckBox28:destroy(); self.imageCheckBox28 = nil; end;
+        if self.imageCheckBox371 ~= nil then self.imageCheckBox371:destroy(); self.imageCheckBox371 = nil; end;
         if self.imageCheckBox239 ~= nil then self.imageCheckBox239:destroy(); self.imageCheckBox239 = nil; end;
         if self.imageCheckBox208 ~= nil then self.imageCheckBox208:destroy(); self.imageCheckBox208 = nil; end;
         if self.imageCheckBox112 ~= nil then self.imageCheckBox112:destroy(); self.imageCheckBox112 = nil; end;
@@ -10096,6 +10276,7 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox302 ~= nil then self.imageCheckBox302:destroy(); self.imageCheckBox302 = nil; end;
         if self.imageCheckBox91 ~= nil then self.imageCheckBox91:destroy(); self.imageCheckBox91 = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.layout51 ~= nil then self.layout51:destroy(); self.layout51 = nil; end;
         if self.imageCheckBox343 ~= nil then self.imageCheckBox343:destroy(); self.imageCheckBox343 = nil; end;
         if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
@@ -10104,10 +10285,8 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
         if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
         if self.imageCheckBox59 ~= nil then self.imageCheckBox59:destroy(); self.imageCheckBox59 = nil; end;
-        if self.dataLink55 ~= nil then self.dataLink55:destroy(); self.dataLink55 = nil; end;
+        if self.imageCheckBox406 ~= nil then self.imageCheckBox406:destroy(); self.imageCheckBox406 = nil; end;
         if self.imageCheckBox90 ~= nil then self.imageCheckBox90:destroy(); self.imageCheckBox90 = nil; end;
-        if self.button28 ~= nil then self.button28:destroy(); self.button28 = nil; end;
-        if self.dataLink47 ~= nil then self.dataLink47:destroy(); self.dataLink47 = nil; end;
         if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
         if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.imageCheckBox182 ~= nil then self.imageCheckBox182:destroy(); self.imageCheckBox182 = nil; end;
@@ -10116,19 +10295,20 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
         if self.imageCheckBox341 ~= nil then self.imageCheckBox341:destroy(); self.imageCheckBox341 = nil; end;
         if self.imageCheckBox314 ~= nil then self.imageCheckBox314:destroy(); self.imageCheckBox314 = nil; end;
+        if self.imageCheckBox382 ~= nil then self.imageCheckBox382:destroy(); self.imageCheckBox382 = nil; end;
         if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
         if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
         if self.imageCheckBox219 ~= nil then self.imageCheckBox219:destroy(); self.imageCheckBox219 = nil; end;
         if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
         if self.imageCheckBox246 ~= nil then self.imageCheckBox246:destroy(); self.imageCheckBox246 = nil; end;
         if self.imageCheckBox340 ~= nil then self.imageCheckBox340:destroy(); self.imageCheckBox340 = nil; end;
+        if self.imageCheckBox391 ~= nil then self.imageCheckBox391:destroy(); self.imageCheckBox391 = nil; end;
         if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
-        if self.image25 ~= nil then self.image25:destroy(); self.image25 = nil; end;
-        if self.button30 ~= nil then self.button30:destroy(); self.button30 = nil; end;
         if self.imageCheckBox38 ~= nil then self.imageCheckBox38:destroy(); self.imageCheckBox38 = nil; end;
         if self.imageCheckBox260 ~= nil then self.imageCheckBox260:destroy(); self.imageCheckBox260 = nil; end;
         if self.imageCheckBox55 ~= nil then self.imageCheckBox55:destroy(); self.imageCheckBox55 = nil; end;
+        if self.imageCheckBox381 ~= nil then self.imageCheckBox381:destroy(); self.imageCheckBox381 = nil; end;
         if self.imageCheckBox173 ~= nil then self.imageCheckBox173:destroy(); self.imageCheckBox173 = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
         if self.imageCheckBox309 ~= nil then self.imageCheckBox309:destroy(); self.imageCheckBox309 = nil; end;
@@ -10145,73 +10325,60 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox213 ~= nil then self.imageCheckBox213:destroy(); self.imageCheckBox213 = nil; end;
         if self.imageCheckBox315 ~= nil then self.imageCheckBox315:destroy(); self.imageCheckBox315 = nil; end;
         if self.imageCheckBox333 ~= nil then self.imageCheckBox333:destroy(); self.imageCheckBox333 = nil; end;
-        if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
+        if self.imageCheckBox399 ~= nil then self.imageCheckBox399:destroy(); self.imageCheckBox399 = nil; end;
         if self.imageCheckBox107 ~= nil then self.imageCheckBox107:destroy(); self.imageCheckBox107 = nil; end;
         if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
         if self.imageCheckBox298 ~= nil then self.imageCheckBox298:destroy(); self.imageCheckBox298 = nil; end;
-        if self.button13 ~= nil then self.button13:destroy(); self.button13 = nil; end;
-        if self.image12 ~= nil then self.image12:destroy(); self.image12 = nil; end;
-        if self.dataLink45 ~= nil then self.dataLink45:destroy(); self.dataLink45 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.imageCheckBox62 ~= nil then self.imageCheckBox62:destroy(); self.imageCheckBox62 = nil; end;
         if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
         if self.imageCheckBox124 ~= nil then self.imageCheckBox124:destroy(); self.imageCheckBox124 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
+        if self.imageCheckBox400 ~= nil then self.imageCheckBox400:destroy(); self.imageCheckBox400 = nil; end;
         if self.imageCheckBox325 ~= nil then self.imageCheckBox325:destroy(); self.imageCheckBox325 = nil; end;
         if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
         if self.imageCheckBox249 ~= nil then self.imageCheckBox249:destroy(); self.imageCheckBox249 = nil; end;
         if self.imageCheckBox94 ~= nil then self.imageCheckBox94:destroy(); self.imageCheckBox94 = nil; end;
+        if self.imageCheckBox392 ~= nil then self.imageCheckBox392:destroy(); self.imageCheckBox392 = nil; end;
         if self.imageCheckBox10 ~= nil then self.imageCheckBox10:destroy(); self.imageCheckBox10 = nil; end;
         if self.imageCheckBox110 ~= nil then self.imageCheckBox110:destroy(); self.imageCheckBox110 = nil; end;
         if self.imageCheckBox22 ~= nil then self.imageCheckBox22:destroy(); self.imageCheckBox22 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.imageCheckBox189 ~= nil then self.imageCheckBox189:destroy(); self.imageCheckBox189 = nil; end;
+        if self.imageCheckBox361 ~= nil then self.imageCheckBox361:destroy(); self.imageCheckBox361 = nil; end;
+        if self.imageCheckBox403 ~= nil then self.imageCheckBox403:destroy(); self.imageCheckBox403 = nil; end;
         if self.imageCheckBox313 ~= nil then self.imageCheckBox313:destroy(); self.imageCheckBox313 = nil; end;
-        if self.button27 ~= nil then self.button27:destroy(); self.button27 = nil; end;
         if self.imageCheckBox71 ~= nil then self.imageCheckBox71:destroy(); self.imageCheckBox71 = nil; end;
         if self.imageCheckBox339 ~= nil then self.imageCheckBox339:destroy(); self.imageCheckBox339 = nil; end;
-        if self.button24 ~= nil then self.button24:destroy(); self.button24 = nil; end;
-        if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
-        if self.dataLink64 ~= nil then self.dataLink64:destroy(); self.dataLink64 = nil; end;
         if self.imageCheckBox137 ~= nil then self.imageCheckBox137:destroy(); self.imageCheckBox137 = nil; end;
         if self.imageCheckBox305 ~= nil then self.imageCheckBox305:destroy(); self.imageCheckBox305 = nil; end;
         if self.imageCheckBox231 ~= nil then self.imageCheckBox231:destroy(); self.imageCheckBox231 = nil; end;
-        if self.image26 ~= nil then self.image26:destroy(); self.image26 = nil; end;
-        if self.dataLink54 ~= nil then self.dataLink54:destroy(); self.dataLink54 = nil; end;
         if self.imageCheckBox351 ~= nil then self.imageCheckBox351:destroy(); self.imageCheckBox351 = nil; end;
         if self.dataLink24 ~= nil then self.dataLink24:destroy(); self.dataLink24 = nil; end;
         if self.imageCheckBox247 ~= nil then self.imageCheckBox247:destroy(); self.imageCheckBox247 = nil; end;
         if self.dataLink35 ~= nil then self.dataLink35:destroy(); self.dataLink35 = nil; end;
-        if self.dataLink69 ~= nil then self.dataLink69:destroy(); self.dataLink69 = nil; end;
-        if self.button11 ~= nil then self.button11:destroy(); self.button11 = nil; end;
         if self.imageCheckBox125 ~= nil then self.imageCheckBox125:destroy(); self.imageCheckBox125 = nil; end;
         if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
         if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
-        if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
-        if self.dataLink61 ~= nil then self.dataLink61:destroy(); self.dataLink61 = nil; end;
         if self.imageCheckBox87 ~= nil then self.imageCheckBox87:destroy(); self.imageCheckBox87 = nil; end;
-        if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
         if self.imageCheckBox56 ~= nil then self.imageCheckBox56:destroy(); self.imageCheckBox56 = nil; end;
         if self.layout31 ~= nil then self.layout31:destroy(); self.layout31 = nil; end;
         if self.dataLink27 ~= nil then self.dataLink27:destroy(); self.dataLink27 = nil; end;
         if self.dataLink30 ~= nil then self.dataLink30:destroy(); self.dataLink30 = nil; end;
-        if self.button10 ~= nil then self.button10:destroy(); self.button10 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.imageCheckBox370 ~= nil then self.imageCheckBox370:destroy(); self.imageCheckBox370 = nil; end;
         if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
         if self.imageCheckBox142 ~= nil then self.imageCheckBox142:destroy(); self.imageCheckBox142 = nil; end;
         if self.imageCheckBox264 ~= nil then self.imageCheckBox264:destroy(); self.imageCheckBox264 = nil; end;
         if self.imageCheckBox180 ~= nil then self.imageCheckBox180:destroy(); self.imageCheckBox180 = nil; end;
         if self.imageCheckBox253 ~= nil then self.imageCheckBox253:destroy(); self.imageCheckBox253 = nil; end;
-        if self.dataLink67 ~= nil then self.dataLink67:destroy(); self.dataLink67 = nil; end;
         if self.imageCheckBox85 ~= nil then self.imageCheckBox85:destroy(); self.imageCheckBox85 = nil; end;
         if self.imageCheckBox252 ~= nil then self.imageCheckBox252:destroy(); self.imageCheckBox252 = nil; end;
         if self.imageCheckBox322 ~= nil then self.imageCheckBox322:destroy(); self.imageCheckBox322 = nil; end;
-        if self.button8 ~= nil then self.button8:destroy(); self.button8 = nil; end;
-        if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
-        if self.dataLink57 ~= nil then self.dataLink57:destroy(); self.dataLink57 = nil; end;
         if self.imageCheckBox262 ~= nil then self.imageCheckBox262:destroy(); self.imageCheckBox262 = nil; end;
         if self.imageCheckBox157 ~= nil then self.imageCheckBox157:destroy(); self.imageCheckBox157 = nil; end;
         if self.imageCheckBox355 ~= nil then self.imageCheckBox355:destroy(); self.imageCheckBox355 = nil; end;
-        if self.image15 ~= nil then self.image15:destroy(); self.image15 = nil; end;
         if self.imageCheckBox172 ~= nil then self.imageCheckBox172:destroy(); self.imageCheckBox172 = nil; end;
         if self.imageCheckBox156 ~= nil then self.imageCheckBox156:destroy(); self.imageCheckBox156 = nil; end;
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
@@ -10223,8 +10390,8 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox86 ~= nil then self.imageCheckBox86:destroy(); self.imageCheckBox86 = nil; end;
         if self.imageCheckBox307 ~= nil then self.imageCheckBox307:destroy(); self.imageCheckBox307 = nil; end;
         if self.imageCheckBox294 ~= nil then self.imageCheckBox294:destroy(); self.imageCheckBox294 = nil; end;
-        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
-        if self.image13 ~= nil then self.image13:destroy(); self.image13 = nil; end;
+        if self.imageCheckBox405 ~= nil then self.imageCheckBox405:destroy(); self.imageCheckBox405 = nil; end;
+        if self.imageCheckBox415 ~= nil then self.imageCheckBox415:destroy(); self.imageCheckBox415 = nil; end;
         if self.dataLink38 ~= nil then self.dataLink38:destroy(); self.dataLink38 = nil; end;
         if self.imageCheckBox158 ~= nil then self.imageCheckBox158:destroy(); self.imageCheckBox158 = nil; end;
         if self.imageCheckBox179 ~= nil then self.imageCheckBox179:destroy(); self.imageCheckBox179 = nil; end;
@@ -10245,41 +10412,34 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox96 ~= nil then self.imageCheckBox96:destroy(); self.imageCheckBox96 = nil; end;
         if self.dataLink28 ~= nil then self.dataLink28:destroy(); self.dataLink28 = nil; end;
         if self.imageCheckBox165 ~= nil then self.imageCheckBox165:destroy(); self.imageCheckBox165 = nil; end;
-        if self.image30 ~= nil then self.image30:destroy(); self.image30 = nil; end;
         if self.dataLink42 ~= nil then self.dataLink42:destroy(); self.dataLink42 = nil; end;
-        if self.dataLink62 ~= nil then self.dataLink62:destroy(); self.dataLink62 = nil; end;
         if self.imageCheckBox105 ~= nil then self.imageCheckBox105:destroy(); self.imageCheckBox105 = nil; end;
         if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
-        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.imageCheckBox76 ~= nil then self.imageCheckBox76:destroy(); self.imageCheckBox76 = nil; end;
         if self.imageCheckBox237 ~= nil then self.imageCheckBox237:destroy(); self.imageCheckBox237 = nil; end;
         if self.imageCheckBox292 ~= nil then self.imageCheckBox292:destroy(); self.imageCheckBox292 = nil; end;
         if self.imageCheckBox347 ~= nil then self.imageCheckBox347:destroy(); self.imageCheckBox347 = nil; end;
         if self.imageCheckBox308 ~= nil then self.imageCheckBox308:destroy(); self.imageCheckBox308 = nil; end;
+        if self.imageCheckBox375 ~= nil then self.imageCheckBox375:destroy(); self.imageCheckBox375 = nil; end;
         if self.imageCheckBox291 ~= nil then self.imageCheckBox291:destroy(); self.imageCheckBox291 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
-        if self.image20 ~= nil then self.image20:destroy(); self.image20 = nil; end;
         if self.imageCheckBox186 ~= nil then self.imageCheckBox186:destroy(); self.imageCheckBox186 = nil; end;
         if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
-        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.dataLink21 ~= nil then self.dataLink21:destroy(); self.dataLink21 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
         if self.imageCheckBox195 ~= nil then self.imageCheckBox195:destroy(); self.imageCheckBox195 = nil; end;
-        if self.button20 ~= nil then self.button20:destroy(); self.button20 = nil; end;
         if self.imageCheckBox149 ~= nil then self.imageCheckBox149:destroy(); self.imageCheckBox149 = nil; end;
         if self.imageCheckBox328 ~= nil then self.imageCheckBox328:destroy(); self.imageCheckBox328 = nil; end;
         if self.dataLink23 ~= nil then self.dataLink23:destroy(); self.dataLink23 = nil; end;
         if self.imageCheckBox344 ~= nil then self.imageCheckBox344:destroy(); self.imageCheckBox344 = nil; end;
         if self.imageCheckBox295 ~= nil then self.imageCheckBox295:destroy(); self.imageCheckBox295 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.imageCheckBox283 ~= nil then self.imageCheckBox283:destroy(); self.imageCheckBox283 = nil; end;
-        if self.dataLink53 ~= nil then self.dataLink53:destroy(); self.dataLink53 = nil; end;
         if self.imageCheckBox306 ~= nil then self.imageCheckBox306:destroy(); self.imageCheckBox306 = nil; end;
         if self.imageCheckBox215 ~= nil then self.imageCheckBox215:destroy(); self.imageCheckBox215 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
+        if self.layout54 ~= nil then self.layout54:destroy(); self.layout54 = nil; end;
         if self.imageCheckBox332 ~= nil then self.imageCheckBox332:destroy(); self.imageCheckBox332 = nil; end;
         if self.layout50 ~= nil then self.layout50:destroy(); self.layout50 = nil; end;
         if self.imageCheckBox153 ~= nil then self.imageCheckBox153:destroy(); self.imageCheckBox153 = nil; end;
@@ -10293,27 +10453,26 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox199 ~= nil then self.imageCheckBox199:destroy(); self.imageCheckBox199 = nil; end;
         if self.imageCheckBox101 ~= nil then self.imageCheckBox101:destroy(); self.imageCheckBox101 = nil; end;
         if self.imageCheckBox267 ~= nil then self.imageCheckBox267:destroy(); self.imageCheckBox267 = nil; end;
-        if self.button29 ~= nil then self.button29:destroy(); self.button29 = nil; end;
         if self.imageCheckBox258 ~= nil then self.imageCheckBox258:destroy(); self.imageCheckBox258 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.imageCheckBox330 ~= nil then self.imageCheckBox330:destroy(); self.imageCheckBox330 = nil; end;
-        if self.image29 ~= nil then self.image29:destroy(); self.image29 = nil; end;
         if self.imageCheckBox263 ~= nil then self.imageCheckBox263:destroy(); self.imageCheckBox263 = nil; end;
         if self.imageCheckBox130 ~= nil then self.imageCheckBox130:destroy(); self.imageCheckBox130 = nil; end;
+        if self.imageCheckBox367 ~= nil then self.imageCheckBox367:destroy(); self.imageCheckBox367 = nil; end;
+        if self.imageCheckBox412 ~= nil then self.imageCheckBox412:destroy(); self.imageCheckBox412 = nil; end;
         if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
-        if self.image27 ~= nil then self.image27:destroy(); self.image27 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.imageCheckBox80 ~= nil then self.imageCheckBox80:destroy(); self.imageCheckBox80 = nil; end;
         if self.imageCheckBox229 ~= nil then self.imageCheckBox229:destroy(); self.imageCheckBox229 = nil; end;
         if self.imageCheckBox265 ~= nil then self.imageCheckBox265:destroy(); self.imageCheckBox265 = nil; end;
         if self.imageCheckBox119 ~= nil then self.imageCheckBox119:destroy(); self.imageCheckBox119 = nil; end;
         if self.imageCheckBox54 ~= nil then self.imageCheckBox54:destroy(); self.imageCheckBox54 = nil; end;
-        if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
+        if self.imageCheckBox385 ~= nil then self.imageCheckBox385:destroy(); self.imageCheckBox385 = nil; end;
         if self.imageCheckBox293 ~= nil then self.imageCheckBox293:destroy(); self.imageCheckBox293 = nil; end;
-        if self.image28 ~= nil then self.image28:destroy(); self.image28 = nil; end;
         if self.imageCheckBox81 ~= nil then self.imageCheckBox81:destroy(); self.imageCheckBox81 = nil; end;
+        if self.imageCheckBox393 ~= nil then self.imageCheckBox393:destroy(); self.imageCheckBox393 = nil; end;
         if self.imageCheckBox256 ~= nil then self.imageCheckBox256:destroy(); self.imageCheckBox256 = nil; end;
-        if self.image8 ~= nil then self.image8:destroy(); self.image8 = nil; end;
+        if self.imageCheckBox366 ~= nil then self.imageCheckBox366:destroy(); self.imageCheckBox366 = nil; end;
         if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.imageCheckBox335 ~= nil then self.imageCheckBox335:destroy(); self.imageCheckBox335 = nil; end;
@@ -10327,7 +10486,6 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox184 ~= nil then self.imageCheckBox184:destroy(); self.imageCheckBox184 = nil; end;
         if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
         if self.imageCheckBox169 ~= nil then self.imageCheckBox169:destroy(); self.imageCheckBox169 = nil; end;
-        if self.dataLink49 ~= nil then self.dataLink49:destroy(); self.dataLink49 = nil; end;
         if self.imageCheckBox26 ~= nil then self.imageCheckBox26:destroy(); self.imageCheckBox26 = nil; end;
         if self.imageCheckBox66 ~= nil then self.imageCheckBox66:destroy(); self.imageCheckBox66 = nil; end;
         if self.imageCheckBox134 ~= nil then self.imageCheckBox134:destroy(); self.imageCheckBox134 = nil; end;
@@ -10339,7 +10497,6 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox280 ~= nil then self.imageCheckBox280:destroy(); self.imageCheckBox280 = nil; end;
         if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
         if self.layout49 ~= nil then self.layout49:destroy(); self.layout49 = nil; end;
-        if self.image22 ~= nil then self.image22:destroy(); self.image22 = nil; end;
         if self.imageCheckBox146 ~= nil then self.imageCheckBox146:destroy(); self.imageCheckBox146 = nil; end;
         if self.imageCheckBox300 ~= nil then self.imageCheckBox300:destroy(); self.imageCheckBox300 = nil; end;
         if self.dataLink37 ~= nil then self.dataLink37:destroy(); self.dataLink37 = nil; end;
@@ -10349,9 +10506,9 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox278 ~= nil then self.imageCheckBox278:destroy(); self.imageCheckBox278 = nil; end;
         if self.imageCheckBox297 ~= nil then self.imageCheckBox297:destroy(); self.imageCheckBox297 = nil; end;
         if self.imageCheckBox135 ~= nil then self.imageCheckBox135:destroy(); self.imageCheckBox135 = nil; end;
-        if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
+        if self.imageCheckBox380 ~= nil then self.imageCheckBox380:destroy(); self.imageCheckBox380 = nil; end;
         if self.imageCheckBox206 ~= nil then self.imageCheckBox206:destroy(); self.imageCheckBox206 = nil; end;
-        if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
+        if self.imageCheckBox386 ~= nil then self.imageCheckBox386:destroy(); self.imageCheckBox386 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
         if self.imageCheckBox120 ~= nil then self.imageCheckBox120:destroy(); self.imageCheckBox120 = nil; end;
@@ -10359,15 +10516,16 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox286 ~= nil then self.imageCheckBox286:destroy(); self.imageCheckBox286 = nil; end;
         if self.imageCheckBox48 ~= nil then self.imageCheckBox48:destroy(); self.imageCheckBox48 = nil; end;
         if self.imageCheckBox338 ~= nil then self.imageCheckBox338:destroy(); self.imageCheckBox338 = nil; end;
+        if self.imageCheckBox404 ~= nil then self.imageCheckBox404:destroy(); self.imageCheckBox404 = nil; end;
+        if self.imageCheckBox410 ~= nil then self.imageCheckBox410:destroy(); self.imageCheckBox410 = nil; end;
+        if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
         if self.imageCheckBox139 ~= nil then self.imageCheckBox139:destroy(); self.imageCheckBox139 = nil; end;
         if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
-        if self.dataLink56 ~= nil then self.dataLink56:destroy(); self.dataLink56 = nil; end;
         if self.imageCheckBox102 ~= nil then self.imageCheckBox102:destroy(); self.imageCheckBox102 = nil; end;
         if self.imageCheckBox187 ~= nil then self.imageCheckBox187:destroy(); self.imageCheckBox187 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.layout21 ~= nil then self.layout21:destroy(); self.layout21 = nil; end;
-        if self.image18 ~= nil then self.image18:destroy(); self.image18 = nil; end;
         if self.imageCheckBox163 ~= nil then self.imageCheckBox163:destroy(); self.imageCheckBox163 = nil; end;
         if self.imageCheckBox109 ~= nil then self.imageCheckBox109:destroy(); self.imageCheckBox109 = nil; end;
         if self.imageCheckBox223 ~= nil then self.imageCheckBox223:destroy(); self.imageCheckBox223 = nil; end;
@@ -10376,49 +10534,49 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox266 ~= nil then self.imageCheckBox266:destroy(); self.imageCheckBox266 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.imageCheckBox35 ~= nil then self.imageCheckBox35:destroy(); self.imageCheckBox35 = nil; end;
+        if self.imageCheckBox379 ~= nil then self.imageCheckBox379:destroy(); self.imageCheckBox379 = nil; end;
         if self.dataLink25 ~= nil then self.dataLink25:destroy(); self.dataLink25 = nil; end;
-        if self.dataLink58 ~= nil then self.dataLink58:destroy(); self.dataLink58 = nil; end;
+        if self.imageCheckBox409 ~= nil then self.imageCheckBox409:destroy(); self.imageCheckBox409 = nil; end;
         if self.imageCheckBox245 ~= nil then self.imageCheckBox245:destroy(); self.imageCheckBox245 = nil; end;
         if self.imageCheckBox164 ~= nil then self.imageCheckBox164:destroy(); self.imageCheckBox164 = nil; end;
         if self.imageCheckBox303 ~= nil then self.imageCheckBox303:destroy(); self.imageCheckBox303 = nil; end;
         if self.dataLink31 ~= nil then self.dataLink31:destroy(); self.dataLink31 = nil; end;
         if self.imageCheckBox160 ~= nil then self.imageCheckBox160:destroy(); self.imageCheckBox160 = nil; end;
-        if self.image19 ~= nil then self.image19:destroy(); self.image19 = nil; end;
         if self.imageCheckBox259 ~= nil then self.imageCheckBox259:destroy(); self.imageCheckBox259 = nil; end;
         if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
+        if self.imageCheckBox369 ~= nil then self.imageCheckBox369:destroy(); self.imageCheckBox369 = nil; end;
         if self.imageCheckBox88 ~= nil then self.imageCheckBox88:destroy(); self.imageCheckBox88 = nil; end;
         if self.imageCheckBox114 ~= nil then self.imageCheckBox114:destroy(); self.imageCheckBox114 = nil; end;
         if self.dataLink39 ~= nil then self.dataLink39:destroy(); self.dataLink39 = nil; end;
         if self.imageCheckBox327 ~= nil then self.imageCheckBox327:destroy(); self.imageCheckBox327 = nil; end;
         if self.imageCheckBox329 ~= nil then self.imageCheckBox329:destroy(); self.imageCheckBox329 = nil; end;
         if self.imageCheckBox342 ~= nil then self.imageCheckBox342:destroy(); self.imageCheckBox342 = nil; end;
+        if self.imageCheckBox374 ~= nil then self.imageCheckBox374:destroy(); self.imageCheckBox374 = nil; end;
         if self.imageCheckBox43 ~= nil then self.imageCheckBox43:destroy(); self.imageCheckBox43 = nil; end;
         if self.imageCheckBox202 ~= nil then self.imageCheckBox202:destroy(); self.imageCheckBox202 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.imageCheckBox226 ~= nil then self.imageCheckBox226:destroy(); self.imageCheckBox226 = nil; end;
         if self.imageCheckBox348 ~= nil then self.imageCheckBox348:destroy(); self.imageCheckBox348 = nil; end;
         if self.imageCheckBox276 ~= nil then self.imageCheckBox276:destroy(); self.imageCheckBox276 = nil; end;
-        if self.image14 ~= nil then self.image14:destroy(); self.image14 = nil; end;
         if self.dataLink13 ~= nil then self.dataLink13:destroy(); self.dataLink13 = nil; end;
-        if self.dataLink59 ~= nil then self.dataLink59:destroy(); self.dataLink59 = nil; end;
+        if self.imageCheckBox389 ~= nil then self.imageCheckBox389:destroy(); self.imageCheckBox389 = nil; end;
         if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
         if self.imageCheckBox61 ~= nil then self.imageCheckBox61:destroy(); self.imageCheckBox61 = nil; end;
         if self.imageCheckBox75 ~= nil then self.imageCheckBox75:destroy(); self.imageCheckBox75 = nil; end;
         if self.imageCheckBox353 ~= nil then self.imageCheckBox353:destroy(); self.imageCheckBox353 = nil; end;
-        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.imageCheckBox396 ~= nil then self.imageCheckBox396:destroy(); self.imageCheckBox396 = nil; end;
         if self.imageCheckBox51 ~= nil then self.imageCheckBox51:destroy(); self.imageCheckBox51 = nil; end;
         if self.imageCheckBox44 ~= nil then self.imageCheckBox44:destroy(); self.imageCheckBox44 = nil; end;
-        if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.imageCheckBox270 ~= nil then self.imageCheckBox270:destroy(); self.imageCheckBox270 = nil; end;
         if self.layout45 ~= nil then self.layout45:destroy(); self.layout45 = nil; end;
         if self.imageCheckBox64 ~= nil then self.imageCheckBox64:destroy(); self.imageCheckBox64 = nil; end;
         if self.imageCheckBox161 ~= nil then self.imageCheckBox161:destroy(); self.imageCheckBox161 = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
+        if self.layout56 ~= nil then self.layout56:destroy(); self.layout56 = nil; end;
         if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
         if self.imageCheckBox274 ~= nil then self.imageCheckBox274:destroy(); self.imageCheckBox274 = nil; end;
-        if self.dataLink65 ~= nil then self.dataLink65:destroy(); self.dataLink65 = nil; end;
         if self.imageCheckBox281 ~= nil then self.imageCheckBox281:destroy(); self.imageCheckBox281 = nil; end;
         if self.imageCheckBox60 ~= nil then self.imageCheckBox60:destroy(); self.imageCheckBox60 = nil; end;
         if self.imageCheckBox52 ~= nil then self.imageCheckBox52:destroy(); self.imageCheckBox52 = nil; end;
@@ -10427,22 +10585,24 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox152 ~= nil then self.imageCheckBox152:destroy(); self.imageCheckBox152 = nil; end;
         if self.imageCheckBox170 ~= nil then self.imageCheckBox170:destroy(); self.imageCheckBox170 = nil; end;
         if self.imageCheckBox41 ~= nil then self.imageCheckBox41:destroy(); self.imageCheckBox41 = nil; end;
-        if self.image24 ~= nil then self.image24:destroy(); self.image24 = nil; end;
+        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
         if self.imageCheckBox201 ~= nil then self.imageCheckBox201:destroy(); self.imageCheckBox201 = nil; end;
         if self.imageCheckBox203 ~= nil then self.imageCheckBox203:destroy(); self.imageCheckBox203 = nil; end;
         if self.imageCheckBox254 ~= nil then self.imageCheckBox254:destroy(); self.imageCheckBox254 = nil; end;
-        if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
-        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
+        if self.imageCheckBox398 ~= nil then self.imageCheckBox398:destroy(); self.imageCheckBox398 = nil; end;
+        if self.imageCheckBox372 ~= nil then self.imageCheckBox372:destroy(); self.imageCheckBox372 = nil; end;
         if self.imageCheckBox113 ~= nil then self.imageCheckBox113:destroy(); self.imageCheckBox113 = nil; end;
+        if self.imageCheckBox359 ~= nil then self.imageCheckBox359:destroy(); self.imageCheckBox359 = nil; end;
+        if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
         if self.imageCheckBox89 ~= nil then self.imageCheckBox89:destroy(); self.imageCheckBox89 = nil; end;
         if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
-        if self.button22 ~= nil then self.button22:destroy(); self.button22 = nil; end;
         if self.imageCheckBox69 ~= nil then self.imageCheckBox69:destroy(); self.imageCheckBox69 = nil; end;
         if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
         if self.imageCheckBox319 ~= nil then self.imageCheckBox319:destroy(); self.imageCheckBox319 = nil; end;
-        if self.dataLink36 ~= nil then self.dataLink36:destroy(); self.dataLink36 = nil; end;
+        if self.imageCheckBox363 ~= nil then self.imageCheckBox363:destroy(); self.imageCheckBox363 = nil; end;
         if self.imageCheckBox317 ~= nil then self.imageCheckBox317:destroy(); self.imageCheckBox317 = nil; end;
-        if self.dataLink60 ~= nil then self.dataLink60:destroy(); self.dataLink60 = nil; end;
+        if self.dataLink36 ~= nil then self.dataLink36:destroy(); self.dataLink36 = nil; end;
+        if self.imageCheckBox378 ~= nil then self.imageCheckBox378:destroy(); self.imageCheckBox378 = nil; end;
         if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
         if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
         if self.imageCheckBox188 ~= nil then self.imageCheckBox188:destroy(); self.imageCheckBox188 = nil; end;
@@ -10458,28 +10618,29 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.layout44 ~= nil then self.layout44:destroy(); self.layout44 = nil; end;
         if self.imageCheckBox321 ~= nil then self.imageCheckBox321:destroy(); self.imageCheckBox321 = nil; end;
         if self.imageCheckBox132 ~= nil then self.imageCheckBox132:destroy(); self.imageCheckBox132 = nil; end;
-        if self.image16 ~= nil then self.image16:destroy(); self.image16 = nil; end;
+        if self.imageCheckBox407 ~= nil then self.imageCheckBox407:destroy(); self.imageCheckBox407 = nil; end;
         if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
         if self.imageCheckBox25 ~= nil then self.imageCheckBox25:destroy(); self.imageCheckBox25 = nil; end;
         if self.imageCheckBox14 ~= nil then self.imageCheckBox14:destroy(); self.imageCheckBox14 = nil; end;
         if self.imageCheckBox97 ~= nil then self.imageCheckBox97:destroy(); self.imageCheckBox97 = nil; end;
         if self.imageCheckBox147 ~= nil then self.imageCheckBox147:destroy(); self.imageCheckBox147 = nil; end;
+        if self.imageCheckBox368 ~= nil then self.imageCheckBox368:destroy(); self.imageCheckBox368 = nil; end;
         if self.imageCheckBox100 ~= nil then self.imageCheckBox100:destroy(); self.imageCheckBox100 = nil; end;
-        if self.button23 ~= nil then self.button23:destroy(); self.button23 = nil; end;
-        if self.dataLink66 ~= nil then self.dataLink66:destroy(); self.dataLink66 = nil; end;
+        if self.layout53 ~= nil then self.layout53:destroy(); self.layout53 = nil; end;
         if self.imageCheckBox144 ~= nil then self.imageCheckBox144:destroy(); self.imageCheckBox144 = nil; end;
         if self.imageCheckBox299 ~= nil then self.imageCheckBox299:destroy(); self.imageCheckBox299 = nil; end;
         if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
         if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
         if self.imageCheckBox236 ~= nil then self.imageCheckBox236:destroy(); self.imageCheckBox236 = nil; end;
+        if self.imageCheckBox413 ~= nil then self.imageCheckBox413:destroy(); self.imageCheckBox413 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.dataLink52 ~= nil then self.dataLink52:destroy(); self.dataLink52 = nil; end;
+        if self.imageCheckBox395 ~= nil then self.imageCheckBox395:destroy(); self.imageCheckBox395 = nil; end;
         if self.imageCheckBox151 ~= nil then self.imageCheckBox151:destroy(); self.imageCheckBox151 = nil; end;
         if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
         if self.imageCheckBox49 ~= nil then self.imageCheckBox49:destroy(); self.imageCheckBox49 = nil; end;
         if self.imageCheckBox243 ~= nil then self.imageCheckBox243:destroy(); self.imageCheckBox243 = nil; end;
-        if self.button12 ~= nil then self.button12:destroy(); self.button12 = nil; end;
-        if self.image17 ~= nil then self.image17:destroy(); self.image17 = nil; end;
+        if self.imageCheckBox388 ~= nil then self.imageCheckBox388:destroy(); self.imageCheckBox388 = nil; end;
+        if self.imageCheckBox397 ~= nil then self.imageCheckBox397:destroy(); self.imageCheckBox397 = nil; end;
         if self.imageCheckBox212 ~= nil then self.imageCheckBox212:destroy(); self.imageCheckBox212 = nil; end;
         if self.imageCheckBox27 ~= nil then self.imageCheckBox27:destroy(); self.imageCheckBox27 = nil; end;
         if self.dataLink26 ~= nil then self.dataLink26:destroy(); self.dataLink26 = nil; end;
@@ -10490,44 +10651,43 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox53 ~= nil then self.imageCheckBox53:destroy(); self.imageCheckBox53 = nil; end;
         if self.imageCheckBox216 ~= nil then self.imageCheckBox216:destroy(); self.imageCheckBox216 = nil; end;
         if self.imageCheckBox57 ~= nil then self.imageCheckBox57:destroy(); self.imageCheckBox57 = nil; end;
-        if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
         if self.imageCheckBox143 ~= nil then self.imageCheckBox143:destroy(); self.imageCheckBox143 = nil; end;
+        if self.imageCheckBox365 ~= nil then self.imageCheckBox365:destroy(); self.imageCheckBox365 = nil; end;
         if self.imageCheckBox273 ~= nil then self.imageCheckBox273:destroy(); self.imageCheckBox273 = nil; end;
-        if self.button25 ~= nil then self.button25:destroy(); self.button25 = nil; end;
+        if self.imageCheckBox387 ~= nil then self.imageCheckBox387:destroy(); self.imageCheckBox387 = nil; end;
         if self.imageCheckBox84 ~= nil then self.imageCheckBox84:destroy(); self.imageCheckBox84 = nil; end;
         if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
         if self.imageCheckBox269 ~= nil then self.imageCheckBox269:destroy(); self.imageCheckBox269 = nil; end;
-        if self.dataLink48 ~= nil then self.dataLink48:destroy(); self.dataLink48 = nil; end;
+        if self.imageCheckBox411 ~= nil then self.imageCheckBox411:destroy(); self.imageCheckBox411 = nil; end;
         if self.imageCheckBox277 ~= nil then self.imageCheckBox277:destroy(); self.imageCheckBox277 = nil; end;
         if self.imageCheckBox311 ~= nil then self.imageCheckBox311:destroy(); self.imageCheckBox311 = nil; end;
         if self.imageCheckBox312 ~= nil then self.imageCheckBox312:destroy(); self.imageCheckBox312 = nil; end;
         if self.imageCheckBox356 ~= nil then self.imageCheckBox356:destroy(); self.imageCheckBox356 = nil; end;
         if self.imageCheckBox108 ~= nil then self.imageCheckBox108:destroy(); self.imageCheckBox108 = nil; end;
+        if self.imageCheckBox384 ~= nil then self.imageCheckBox384:destroy(); self.imageCheckBox384 = nil; end;
         if self.imageCheckBox240 ~= nil then self.imageCheckBox240:destroy(); self.imageCheckBox240 = nil; end;
         if self.layout40 ~= nil then self.layout40:destroy(); self.layout40 = nil; end;
+        if self.imageCheckBox416 ~= nil then self.imageCheckBox416:destroy(); self.imageCheckBox416 = nil; end;
         if self.imageCheckBox324 ~= nil then self.imageCheckBox324:destroy(); self.imageCheckBox324 = nil; end;
         if self.imageCheckBox257 ~= nil then self.imageCheckBox257:destroy(); self.imageCheckBox257 = nil; end;
-        if self.dataLink51 ~= nil then self.dataLink51:destroy(); self.dataLink51 = nil; end;
-        if self.image23 ~= nil then self.image23:destroy(); self.image23 = nil; end;
+        if self.imageCheckBox402 ~= nil then self.imageCheckBox402:destroy(); self.imageCheckBox402 = nil; end;
         if self.imageCheckBox122 ~= nil then self.imageCheckBox122:destroy(); self.imageCheckBox122 = nil; end;
-        if self.image31 ~= nil then self.image31:destroy(); self.image31 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
         if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
         if self.imageCheckBox47 ~= nil then self.imageCheckBox47:destroy(); self.imageCheckBox47 = nil; end;
         if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
-        if self.dataLink46 ~= nil then self.dataLink46:destroy(); self.dataLink46 = nil; end;
+        if self.imageCheckBox394 ~= nil then self.imageCheckBox394:destroy(); self.imageCheckBox394 = nil; end;
         if self.imageCheckBox72 ~= nil then self.imageCheckBox72:destroy(); self.imageCheckBox72 = nil; end;
         if self.imageCheckBox230 ~= nil then self.imageCheckBox230:destroy(); self.imageCheckBox230 = nil; end;
-        if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
-        if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
         if self.imageCheckBox183 ~= nil then self.imageCheckBox183:destroy(); self.imageCheckBox183 = nil; end;
-        if self.dataLink50 ~= nil then self.dataLink50:destroy(); self.dataLink50 = nil; end;
         if self.imageCheckBox98 ~= nil then self.imageCheckBox98:destroy(); self.imageCheckBox98 = nil; end;
+        if self.imageCheckBox408 ~= nil then self.imageCheckBox408:destroy(); self.imageCheckBox408 = nil; end;
         if self.imageCheckBox310 ~= nil then self.imageCheckBox310:destroy(); self.imageCheckBox310 = nil; end;
         if self.imageCheckBox40 ~= nil then self.imageCheckBox40:destroy(); self.imageCheckBox40 = nil; end;
         if self.imageCheckBox232 ~= nil then self.imageCheckBox232:destroy(); self.imageCheckBox232 = nil; end;
+        if self.imageCheckBox383 ~= nil then self.imageCheckBox383:destroy(); self.imageCheckBox383 = nil; end;
         if self.imageCheckBox167 ~= nil then self.imageCheckBox167:destroy(); self.imageCheckBox167 = nil; end;
-        if self.image21 ~= nil then self.image21:destroy(); self.image21 = nil; end;
+        if self.imageCheckBox362 ~= nil then self.imageCheckBox362:destroy(); self.imageCheckBox362 = nil; end;
         self:_oldLFMDestroy();
     end;
 
