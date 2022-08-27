@@ -7,6 +7,10 @@
             <image left="0" top="0" width="952" height="1347" src="images/2.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
 			
 		<!-- Technical Machine's - TM's -->
+            <template name="tm">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="283" width="145" height="32 "/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="283" width="145" height="32 "/>
+            </template>
 		
 			<layout left="33" top="283" width="145" height="31" compilerOrder="1">
                 <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__1" compilerOrder="2"/>
