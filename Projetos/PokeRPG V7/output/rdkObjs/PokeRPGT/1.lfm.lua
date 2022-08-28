@@ -73,7 +73,7 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.button1:setOpacity(0.0);
     obj.button1:setCanFocus(false);
     obj.button1:setCursor("handPoint");
-    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 7.0");
     obj.button1:setName("button1");
 
     obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
@@ -5471,7 +5471,7 @@ local function constructNew_frmPokeRPGT1_svg()
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/PokeRPG%20V7/output/PokeRPG%20V7.rpk');
         end, obj);
 
     obj._e_event1 = obj.dataLink1:addEventListener("onChange",
