@@ -65,7 +65,7 @@
     </template>
 <!-- _______________________________________________________________________________Área do Treinador_______________________________________________________________________________ -->
     <image left="475" top="1290" name="update" animate="true" src="images/update.gif" width="15" height="15"/>
-	<button left="475" top="1290" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 7.0" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');"/>
+	<button left="475" top="1290" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 7.0" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/PokeRPG%20V7/output/PokeRPG%20V7.rpk');"/>
     
     <layout left="0" top="0" width="900" height="450">
         <!--Vitalidade-->
