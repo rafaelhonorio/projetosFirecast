@@ -54,6 +54,28 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.image1:setOptimize(true);
     obj.image1:setName("image1");
 
+    obj.update = GUI.fromHandle(_obj_newObject("image"));
+    obj.update:setParent(obj.rectangle1);
+    obj.update:setLeft(475);
+    obj.update:setTop(1290);
+    obj.update:setName("update");
+    lfm_setPropAsString(obj.update, "animate",  "true");
+    obj.update:setSRC("/PokeRPGT/images/update.gif");
+    obj.update:setWidth(15);
+    obj.update:setHeight(15);
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.rectangle1);
+    obj.button1:setLeft(475);
+    obj.button1:setTop(1290);
+    obj.button1:setWidth(15);
+    obj.button1:setHeight(15);
+    obj.button1:setOpacity(0.0);
+    obj.button1:setCanFocus(false);
+    obj.button1:setCursor("handPoint");
+    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button1:setName("button1");
+
     obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.rectangle1);
     obj.layout1:setLeft(0);
@@ -5447,7 +5469,12 @@ local function constructNew_frmPokeRPGT1_svg()
     obj.dataLink44:setFields({'influenciaRuim_10', 'influenciaRuim_9', 'influenciaRuim_8', 'influenciaRuim_7', 'influenciaRuim_6', 'influenciaRuim_5', 'influenciaRuim_4', 'influenciaRuim_3', 'influenciaRuim_2', 'influenciaRuim_1'});
     obj.dataLink44:setName("dataLink44");
 
-    obj._e_event0 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event0 = obj.button1:addEventListener("onClick",
+        function (_)
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta/output/Tormenta.rpk');
+        end, obj);
+
+    obj._e_event1 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.vitalidade_12 == true then
@@ -5609,7 +5636,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event1 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event2 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.acoesDiarias_12 == true then
@@ -5771,7 +5798,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event3 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.forca_9 == true then
@@ -5867,7 +5894,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event4 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.percepcao_9 == true then
@@ -5963,7 +5990,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event5 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.carisma_9 == true then
@@ -6059,7 +6086,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.destreza_9 == true then
@@ -6155,7 +6182,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.intimidacao_9 == true then
@@ -6251,7 +6278,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.manipulacao_9 == true then
@@ -6347,7 +6374,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.inteligencia_9 == true then
@@ -6443,7 +6470,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.vigor_9 == true then
@@ -6539,7 +6566,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.raciocinio_9 == true then
@@ -6635,7 +6662,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.aparencia_9 == true then
@@ -6731,7 +6758,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.prontidao_9 == true then
@@ -6827,7 +6854,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.academicos_9 == true then
@@ -6923,7 +6950,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatiaPokemon_9 == true then
@@ -7019,7 +7046,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event16 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esportes_9 == true then
@@ -7115,7 +7142,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event16 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event17 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.computador_9 == true then
@@ -7211,7 +7238,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event17 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.oficios_9 == true then
@@ -7307,7 +7334,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.briga_9 == true then
@@ -7403,7 +7430,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.habitats_9 == true then
@@ -7499,7 +7526,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event20 = obj.dataLink21:addEventListener("onChange",
+    obj._e_event21 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.esquiva_9 == true then
@@ -7595,7 +7622,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event21 = obj.dataLink22:addEventListener("onChange",
+    obj._e_event22 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.investigacao_9 == true then
@@ -7691,7 +7718,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event22 = obj.dataLink23:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.etiqueta_9 == true then
@@ -7787,7 +7814,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event23 = obj.dataLink24:addEventListener("onChange",
+    obj._e_event24 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.empatia_9 == true then
@@ -7883,7 +7910,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event24 = obj.dataLink25:addEventListener("onChange",
+    obj._e_event25 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.atuacao_9 == true then
@@ -7979,7 +8006,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event25 = obj.dataLink26:addEventListener("onChange",
+    obj._e_event26 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.direito_9 == true then
@@ -8075,7 +8102,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event26 = obj.dataLink27:addEventListener("onChange",
+    obj._e_event27 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.expressao_9 == true then
@@ -8171,7 +8198,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event27 = obj.dataLink28:addEventListener("onChange",
+    obj._e_event28 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.seguranca_9 == true then
@@ -8267,7 +8294,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event28 = obj.dataLink29:addEventListener("onChange",
+    obj._e_event29 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.intimidacao_9 == true then
@@ -8363,7 +8390,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event29 = obj.dataLink30:addEventListener("onChange",
+    obj._e_event30 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.medicina_9 == true then
@@ -8459,7 +8486,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event30 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event31 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.furtividade_9 == true then
@@ -8555,7 +8582,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event31 = obj.dataLink32:addEventListener("onChange",
+    obj._e_event32 = obj.dataLink32:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.lideranca_9 == true then
@@ -8651,7 +8678,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event32 = obj.dataLink33:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink33:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.ciencia_9 == true then
@@ -8747,7 +8774,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event33 = obj.dataLink34:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink34:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.sobrevivencia_9 == true then
@@ -8843,7 +8870,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event34 = obj.dataLink35:addEventListener("onChange",
+    obj._e_event35 = obj.dataLink35:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.culinaria_9 == true then
@@ -8939,7 +8966,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event35 = obj.dataLink36:addEventListener("onChange",
+    obj._e_event36 = obj.dataLink36:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.caca_9 == true then
@@ -9035,7 +9062,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event36 = obj.dataLink37:addEventListener("onChange",
+    obj._e_event37 = obj.dataLink37:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.coragem_12 == true then
@@ -9197,7 +9224,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event37 = obj.dataLink38:addEventListener("onChange",
+    obj._e_event38 = obj.dataLink38:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.conviccao_12 == true then
@@ -9359,7 +9386,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event38 = obj.dataLink39:addEventListener("onChange",
+    obj._e_event39 = obj.dataLink39:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.forcaDeVontade_12 == true then
@@ -9521,7 +9548,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event39 = obj.dataLink40:addEventListener("onChange",
+    obj._e_event40 = obj.dataLink40:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.famaBoa_10 == true then
@@ -9637,7 +9664,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event40 = obj.dataLink41:addEventListener("onChange",
+    obj._e_event41 = obj.dataLink41:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.reconhecimento_10 == true then
@@ -9753,7 +9780,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event41 = obj.dataLink42:addEventListener("onChange",
+    obj._e_event42 = obj.dataLink42:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.influenciaBoa_10 == true then
@@ -9869,7 +9896,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event42 = obj.dataLink43:addEventListener("onChange",
+    obj._e_event43 = obj.dataLink43:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.famaRuim_10 == true then
@@ -9985,7 +10012,7 @@ local function constructNew_frmPokeRPGT1_svg()
             	end;
         end, obj);
 
-    obj._e_event43 = obj.dataLink44:addEventListener("onChange",
+    obj._e_event44 = obj.dataLink44:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             	if sheet.influenciaRuim_10 == true then
@@ -10102,6 +10129,7 @@ local function constructNew_frmPokeRPGT1_svg()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event44);
         __o_rrpgObjs.removeEventListenerById(self._e_event43);
         __o_rrpgObjs.removeEventListenerById(self._e_event42);
         __o_rrpgObjs.removeEventListenerById(self._e_event41);
@@ -10398,6 +10426,7 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.imageCheckBox220 ~= nil then self.imageCheckBox220:destroy(); self.imageCheckBox220 = nil; end;
         if self.imageCheckBox171 ~= nil then self.imageCheckBox171:destroy(); self.imageCheckBox171 = nil; end;
         if self.imageCheckBox235 ~= nil then self.imageCheckBox235:destroy(); self.imageCheckBox235 = nil; end;
+        if self.update ~= nil then self.update:destroy(); self.update = nil; end;
         if self.imageCheckBox334 ~= nil then self.imageCheckBox334:destroy(); self.imageCheckBox334 = nil; end;
         if self.imageCheckBox204 ~= nil then self.imageCheckBox204:destroy(); self.imageCheckBox204 = nil; end;
         if self.imageCheckBox250 ~= nil then self.imageCheckBox250:destroy(); self.imageCheckBox250 = nil; end;
@@ -10434,6 +10463,7 @@ local function constructNew_frmPokeRPGT1_svg()
         if self.dataLink23 ~= nil then self.dataLink23:destroy(); self.dataLink23 = nil; end;
         if self.imageCheckBox344 ~= nil then self.imageCheckBox344:destroy(); self.imageCheckBox344 = nil; end;
         if self.imageCheckBox295 ~= nil then self.imageCheckBox295:destroy(); self.imageCheckBox295 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.imageCheckBox283 ~= nil then self.imageCheckBox283:destroy(); self.imageCheckBox283 = nil; end;
         if self.imageCheckBox306 ~= nil then self.imageCheckBox306:destroy(); self.imageCheckBox306 = nil; end;

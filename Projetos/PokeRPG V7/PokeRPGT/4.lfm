@@ -11,72 +11,39 @@
                 <richEdit width="873" height="541" backgroundColor="transparent" field="ant2"/>
             </layout>&#xD;
 
+			<template name="infos">
+				<edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="85" width="220" height="32"/>
+				<edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="131" width="220" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="182" width="220" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="228" width="220" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="274" width="220" height="32"/>	
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="321" width="220" height="32"/>	
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="371" width="220" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="486" top="417" width="220" height="32"/>																						
+			</template>
+
+			<template name="imagens">
+				<image field="imagemDoPokemon1" editable="true" style="autoFit" left="22" top="86" width="89" height="109"/>
+				<image field="imagemDoPokemon2" editable="true" style="autoFit" left="120" top="86" width="89" height="109"/>
+				<image field="imagemDoPokemon3" editable="true" style="autoFit" left="22" top="204" width="89" height="109"/>
+				<image field="imagemDoPokemon4" editable="true" style="autoFit" left="120" top="204" width="89" height="109"/>
+				<image field="imagemDoPokemon5" editable="true" style="autoFit" left="22" top="322" width="89" height="109"/>
+				<image field="imagemDoPokemon6" editable="true" style="autoFit" left="120" top="322" width="89" height="109"/>
+			</template>
+
 						<!-- Imagem de jogador -->
 			<layout left="125" top="886" width="338" height="370">	
 			    <image field="imagemDoPersonagem" editable="true" style="autoFit" width="338" height="370"/>
 			</layout>&#xD;
-			<!-- Nome -->			
-			<layout left="486" top="885" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="nomeID"/>
-            </layout>&#xD;			
-			<!-- Idade -->
-			<layout left="486" top="931" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="idadeID"/>
-            </layout>&#xD;
-			<!-- Genero -->			
-			<layout left="486" top="982" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="generoID"/>
-            </layout>&#xD;
-			<!-- Regiao -->
-			<layout left="486" top="1028" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="regiaoID"/>
-            </layout>&#xD;			
-			<!-- CidadeNatal -->
-			<layout left="486" top="1074" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="cidadeNatalID"/>
-            </layout>&#xD;	
-			<!-- Classe de Treinador -->
-			<layout left="486" top="1121" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="classedeTreinadorID"/>
-            </layout>&#xD;	
-			<!-- Altura -->
-			<layout left="486" top="1171" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="alturaID"/>
-            </layout>&#xD;	
-			<!-- Peso -->
-			<layout left="486" top="1217" width="220" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" width="220" height="32" field="pesoID"/>
-            </layout>&#xD;	
 
-			<!-- Imagem de Pokemon 1 -->
-			<layout left="722" top="886" width="89" height="109">	
-			    <image field="imagemDoPokemon1" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;
+			<layout left="0" top="800" width="900" height="900">
+				<infos field="infos"/>
+			</layout>	
 
-			<!-- Imagem de Pokemon 2 -->
-			<layout left="820" top="886" width="89" height="109">	
-			    <image field="imagemDoPokemon2" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;
-			
-			<!-- Imagem de Pokemon 3 -->
-			<layout left="722" top="1004" width="89" height="109">	
-			    <image field="imagemDoPokemon3" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;
-
-			<!-- Imagem de Pokemon 4 -->
-			<layout left="820" top="1004" width="89" height="109">	
-			    <image field="imagemDoPokemon4" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;
-
-			<!-- Imagem de Pokemon 5 -->
-			<layout left="722" top="1122" width="89" height="109">	
-			    <image field="imagemDoPokemon5" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;
-
-			<!-- Imagem de Pokemon 6 -->
-			<layout left="820" top="1122" width="89" height="109">	
-			    <image field="imagemDoPokemon6" editable="true" style="autoFit" width="89" height="109"/>
-			</layout>&#xD;			
+			<layout left="700" top="800" width="900" height="900">
+				<imagens/>
+			</layout>		
+		
         </rectangle>
     </scrollBox>
 		

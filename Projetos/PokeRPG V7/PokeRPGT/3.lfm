@@ -3,10 +3,11 @@
     <style>#frmPokeRPGT3_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
 #frmPokeRPGT3_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
     <scrollBox align="client">
-        <rectangle width="952" height="1347" color="white">&#xD;
+        <rectangle width="952" height="1347" color="white">
 	
             <image left="0" top="0" width="952" height="1347" src="images/3.png" style="stretch" optimize="true"/>&#xD;
-		<!-- KANTO -->
+			
+					<!-- KANTO -->
 			<button left="85" top="290" width="29" height="29">
 				<!-- Coloca imagem padrão -->
 				<dataLink field="Check_BoxK_0" defaultValue="PokeRPGT/images/pokeball1_off.png" />
@@ -1600,9 +1601,9 @@
 					sheet.Check_BoxOL_3 = picsOL3[sheet.imageCounterOL3 +1];
 				]]>
 				</event>
-			</button>				
-			
-		<!-- GASTO DE XP -->
+			</button>
+
+			<!-- GASTO DE XP -->
 			
             <layout left="35" top="1014" width="885" height="265">
                 <textEditor transparent="true" fontSize="16" fontColor="#ffffff" width="885" height="265"  field="ant3"/>

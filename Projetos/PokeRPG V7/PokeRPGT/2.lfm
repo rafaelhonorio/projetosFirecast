@@ -1,449 +1,164 @@
 <?xml version="1.7" encoding="UTF-8"?>
 <form name="frmPokeRPGT2_svg" align="client" theme="light" margins="{top=1}">
     <style>#frmPokeRPGT2_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
-#frmPokeRPGT2_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+#frmPokeRPGT2_svg label {fontColor: black; textTrimming: none; wordWrap: true; autoSize: true;}</style>
     <scrollBox align="client">
         <rectangle width="952" height="1347" color="white">&#xD;
             <image left="0" top="0" width="952" height="1347" src="images/2.png" style="stretch" optimize="true"/>&#xD;
 			
-		<!-- Technical Machine's - TM's -->
-            <template name="tm">
-                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="283" width="145" height="32 "/>
-                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="283" width="145" height="32 "/>
+<!-- _______________________________________________________________________________TEMPLATES_______________________________________________________________________________ -->
+            <template name="mediumSlot">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="283" width="145" height="32"/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="283" width="145" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="318" width="145" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="318" width="145" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="352" width="145" height="32"/>
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="352" width="145" height="32"/>
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="386" width="145" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="386" width="145" height="32"/>
+                <edit field="$(field)_9" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="420" width="145" height="32"/>
+                <edit field="$(field)_10" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="420" width="145" height="32"/>
+                <edit field="$(field)_11" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="454" width="145" height="32"/>
+                <edit field="$(field)_12" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="454" width="145" height="32"/>
+                <edit field="$(field)_13" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="489" width="145" height="32"/>
+                <edit field="$(field)_14" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="489" width="145" height="32"/>
+                <edit field="$(field)_15" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="523" width="145" height="32"/>
+                <edit field="$(field)_16" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="523" width="145" height="32"/>
+                <edit field="$(field)_17" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="557" width="145" height="32"/>
+                <edit field="$(field)_18" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="557" width="145" height="32"/>
+                <edit field="$(field)_19" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="592" width="145" height="32"/>
+                <edit field="$(field)_20" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="592" width="145" height="32"/>
+                <edit field="$(field)_21" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="626" width="145" height="32"/>
+                <edit field="$(field)_22" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="626" width="145" height="32"/>
+                <edit field="$(field)_23" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="661" width="145" height="32"/>
+                <edit field="$(field)_24" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="661" width="145" height="32"/>
+                <edit field="$(field)_25" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="696" width="145" height="32"/>
+                <edit field="$(field)_26" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="696" width="145" height="32"/>
+                <edit field="$(field)_27" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="33" top="730" width="145" height="32"/>
+                <edit field="$(field)_28" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="185" top="730" width="145" height="32"/>            
             </template>
-		
-			<layout left="33" top="283" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__1"/>
-            </layout>&#xD;
-            <layout left="185" top="283" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__2"/>
-            </layout>&#xD;	
-            <layout left="33" top="318" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__3"/>
-            </layout>&#xD;				
-            <layout left="185" top="318" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__4"/>
-            </layout>&#xD;	
-            <layout left="33" top="353" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__5"/>
-            </layout>&#xD;
-            <layout left="185" top="353" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__6"/>
-            </layout>&#xD;
-            <layout left="33" top="386" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__7"/>
-            </layout>&#xD;
-            <layout left="185" top="386" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__8"/>
-            </layout>&#xD;			
-            <layout left="33" top="421" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__9"/>
-            </layout>&#xD;
-            <layout left="185" top="421" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__10"/>
-            </layout>&#xD;			
-            <layout left="33" top="455" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__11"/>
-            </layout>&#xD;
-            <layout left="185" top="455" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__12"/>
-            </layout>&#xD;
-            <layout left="33" top="490" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__13"/>
-            </layout>&#xD;			
-            <layout left="185" top="490" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__14"/>
-            </layout>&#xD;			
-			<layout left="33" top="523" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__15"/>
-            </layout>&#xD;
-            <layout left="185" top="523" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__16"/>
-            </layout>&#xD;
-            <layout left="33" top="559" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__17"/>
-            </layout>&#xD;
-            <layout left="185" top="559" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__18"/>
-            </layout>&#xD;
-            <layout left="33" top="594" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__19"/>
-            </layout>&#xD;
-            <layout left="185" top="594" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__20"/>
-            </layout>&#xD;
-            <layout left="33" top="628" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__21"/>
-            </layout>&#xD;
-            <layout left="185" top="628" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__22"/>
-            </layout>&#xD;
-            <layout left="33" top="663" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__23"/>
-            </layout>&#xD;
-            <layout left="185" top="663" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__24"/>
-            </layout>&#xD;
-            <layout left="33" top="697" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__25"/>
-            </layout>&#xD;
-            <layout left="185" top="697" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__26"/>
-            </layout>&#xD;
-            <layout left="33" top="731" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__27"/>
-            </layout>&#xD;	
-            <layout left="185" top="731" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__28"/>
-            </layout>&#xD;	
-			<!--Tutor Move-->
-            <layout left="33" top="800" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__29"/>
-            </layout>&#xD;			
-            <layout left="185" top="800" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__30"/>
-            </layout>&#xD;
-            <layout left="33" top="834" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__31"/>
-            </layout>&#xD;
-            <layout left="185" top="834" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__32"/>
-            </layout>&#xD;
-            <layout left="33" top="868" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__33"/>
-            </layout>&#xD;
-            <layout left="185" top="868" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__34"/>
-            </layout>&#xD;
-            <layout left="33" top="903" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__35"/>
-            </layout>&#xD;
-            <layout left="185" top="903" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__36"/>
-            </layout>&#xD;			
-            <layout left="33" top="938" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__37"/>
-            </layout>&#xD;
-            <layout left="185" top="938" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__38"/>
-            </layout>&#xD;	
-            <layout left="33" top="972" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__39"/>
-            </layout>&#xD;				
-            <layout left="185" top="972" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__40"/>
-            </layout>&#xD;
-            <layout left="33" top="1007" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__41"/>
-            </layout>&#xD;
-            <layout left="185" top="1007" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__42"/>
-            </layout>&#xD;
-            <layout left="33" top="1039" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__43"/>
-            </layout>&#xD;			
-            <layout left="185" top="1039" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__44"/>
-            </layout>&#xD;
-            <layout left="33" top="1076" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__45"/>
-            </layout>&#xD;
-            <layout left="185" top="1076" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__46"/>
-            </layout>&#xD;		
-            <layout left="33" top="1110" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__47"/>
-            </layout>&#xD;				
-			<layout left="185" top="1110" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__48"/>
-            </layout>&#xD;
-            <layout left="33" top="1144" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__49"/>
-            </layout>&#xD;
-            <layout left="185" top="1144" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__50"/>
-            </layout>&#xD;			
-            <layout left="33" top="1178" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__51"/>
-            </layout>&#xD;
-            <layout left="185" top="1178" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__52"/>
-            </layout>&#xD;
-            <layout left="33" top="1212" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__53"/>
-            </layout>&#xD;
-            <layout left="185" top="1212" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__54"/>
-            </layout>&#xD;			
-            <layout left="33" top="1247" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__55"/>
-            </layout>&#xD;
-            <layout left="185" top="1247" width="145" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="145" height="32" field="tm__56"/>
-            </layout>&#xD;
-			
-		<!-- Pokebolas -->
-		    <layout left="344" top="283" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__1"/>
-            </layout>&#xD;
-            <layout left="344" top="317" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__2"/>
-            </layout>&#xD;	
-			<layout left="344" top="352" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__3"/>
-            </layout>&#xD;	
-            <layout left="344" top="386" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__4"/>
-            </layout>&#xD;
-            <layout left="344" top="420" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__5"/>
-            </layout>&#xD;				
-            <layout left="344" top="454" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__6"/>
-            </layout>&#xD;
-            <layout left="344" top="490" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__7"/>
-            </layout>&#xD;	
-            <layout left="344" top="524" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__8"/>
-            </layout>&#xD;	
-            <layout left="344" top="558" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__9"/>
-            </layout>&#xD;	
-            <layout left="344" top="593" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__10"/>
-            </layout>&#xD;	
-            <layout left="344" top="628" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__11"/>
-            </layout>&#xD;			
-            <layout left="344" top="662" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__12"/>
-            </layout>&#xD;
-            <layout left="344" top="696" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__13"/>
-            </layout>&#xD;
-            <layout left="344" top="730" width="265" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="265" height="32" field="pkb__14"/>
-            </layout>&#xD;
-			
-		<!-- Chaves -->
-		
-            <layout left="623" top="283" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__0"/>
-            </layout>&#xD;
-            <layout left="623" top="317" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__1"/>
-            </layout>&#xD;
-            <layout left="623" top="351" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__2"/>
-            </layout>&#xD;
-            <layout left="623" top="386" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__3"/>
-            </layout>&#xD;
-            <layout left="623" top="420" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__4"/>
-            </layout>&#xD;
-            <layout left="623" top="454" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__5"/>
-            </layout>&#xD;
-            <layout left="623" top="490" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__6"/>
-            </layout>&#xD;			
-            <layout left="623" top="524" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__7"/>
-            </layout>&#xD;			
-            <layout left="623" top="559" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__8"/>
-            </layout>&#xD;			
-            <layout left="623" top="592" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__9"/>
-            </layout>&#xD;	
-            <layout left="623" top="628" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__10"/>
-            </layout>&#xD;
-            <layout left="623" top="662" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__11"/>
-            </layout>&#xD;	
-            <layout left="623" top="696" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__12"/>
-            </layout>&#xD;	
-            <layout left="623" top="730" width="296" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="296" height="32" field="chave__13"/>
-            </layout>&#xD;	
-			
-		<!-- Itens -->
-		
-            <layout left="344" top="800" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__1"/>
-            </layout>&#xD;	
-			<layout left="478" top="800" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__2"/>
-            </layout>&#xD;
-			<layout left="344" top="836" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__3"/>
-            </layout>&#xD;	
-            <layout left="478" top="836" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__4"/>
-            </layout>&#xD;					
-            <layout left="344" top="870" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__5"/>
-            </layout>&#xD;
-            <layout left="478" top="870" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__6"/>
-            </layout>&#xD;				
-            <layout left="344" top="904" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__7"/>
-            </layout>&#xD;
-            <layout left="478" top="904" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__8"/>
-            </layout>&#xD;			
-            <layout left="344" top="938" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__9"/>
-            </layout>&#xD;		
-            <layout left="478" top="938" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__10"/>
-            </layout>&#xD;
-            <layout left="344" top="971" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__11"/>
-            </layout>&#xD;	
-            <layout left="478" top="971" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__12"/>
-            </layout>&#xD;							
-            <layout left="344" top="1006" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__13"/>
-            </layout>&#xD;	
-            <layout left="478" top="1006" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__14"/>
-            </layout>&#xD;	
-            <layout left="344" top="1040" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__15"/>
-            </layout>&#xD;			
-            <layout left="478" top="1040" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__16"/>
-            </layout>&#xD;
-            <layout left="344" top="1074" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__17"/>
-            </layout>&#xD;	
-            <layout left="478" top="1074" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__18"/>
-            </layout>&#xD;			
-            <layout left="344" top="1108" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__19"/>
-            </layout>&#xD;			
-            <layout left="478" top="1108" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__20"/>
-            </layout>&#xD;			
-            <layout left="344" top="1142" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__21"/>
-            </layout>&#xD;
-            <layout left="478" top="1142" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__22"/>
-            </layout>&#xD;						
-            <layout left="344" top="1176" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__23"/>
-            </layout>&#xD;	
-            <layout left="478" top="1176" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__24"/>
-            </layout>&#xD;				
-            <layout left="344" top="1210" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__25"/>
-            </layout>&#xD;			
-            <layout left="478" top="1210" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__26"/>
-            </layout>&#xD;
-            <layout left="344" top="1245" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__27"/>
-            </layout>&#xD;			
-            <layout left="478" top="1245" width="130" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="130" height="32" field="item__28"/>
-            </layout>&#xD;
-			
-		<!-- Berrys/Frutas -->
-          
-            <layout left="623" top="800" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__1"/>
-            </layout>&#xD;			
-            <layout left="623" top="835" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__2"/>
-            </layout>&#xD;	
-            <layout left="623" top="870" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__3"/>
-            </layout>&#xD;			
-            <layout left="623" top="904" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__4"/>
-            </layout>&#xD;
-            <layout left="623" top="938" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__5"/>
-            </layout>&#xD;
-            <layout left="623" top="972" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__6"/>
-            </layout>&#xD;
-            <layout left="623" top="1006" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__7"/>
-            </layout>&#xD;
-            <layout left="623" top="1040" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__8"/>
-            </layout>&#xD;
-            <layout left="623" top="1074" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__9"/>
-            </layout>&#xD;	
-            <layout left="623" top="1108" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__10"/>
-            </layout>&#xD;			
-            <layout left="623" top="1144" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__11"/>
-            </layout>&#xD;	
-            <layout left="623" top="1178" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__12"/>
-            </layout>&#xD;				
-            <layout left="623" top="1210" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__13"/>
-            </layout>&#xD;
-            <layout left="623" top="1245" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__14"/>
-            </layout>&#xD;
-            <layout left="773" top="800" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__15"/>
-            </layout>&#xD;			
-            <layout left="773" top="835" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__16"/>
-            </layout>&#xD;	
-            <layout left="773" top="870" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__17"/>
-            </layout>&#xD;			
-            <layout left="773" top="904" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__18"/>
-            </layout>&#xD;
-            <layout left="773" top="938" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__19"/>
-            </layout>&#xD;
-            <layout left="773" top="972" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__20"/>
-            </layout>&#xD;
-            <layout left="773" top="1006" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__21"/>
-            </layout>&#xD;
-            <layout left="773" top="1040" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__22"/>
-            </layout>&#xD;
-            <layout left="773" top="1074" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__23"/>
-            </layout>&#xD;	
-            <layout left="773" top="1108" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__24"/>
-            </layout>&#xD;			
-            <layout left="773" top="1144" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__25"/>
-            </layout>&#xD;	
-            <layout left="773" top="1178" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__26"/>
-            </layout>&#xD;				
-            <layout left="773" top="1210" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__27"/>
-            </layout>&#xD;
-            <layout left="773" top="1245" width="146" height="31">
-                <edit transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="146" height="32" field="fruta__28"/>
-            </layout>&#xD;
+
+            <template name="pokebolasSlot">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="283" width="265" height="32"/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="318" width="265" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="352" width="265" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="386" width="265" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="420" width="265" height="32"/>
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="454" width="265" height="32"/>
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="489" width="265" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="523" width="265" height="32"/>
+                <edit field="$(field)_9" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="557" width="265" height="32"/>
+                <edit field="$(field)_10" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="592" width="265" height="32"/>
+                <edit field="$(field)_11" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="626" width="265" height="32"/>
+                <edit field="$(field)_12" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="661" width="265" height="32"/>
+                <edit field="$(field)_13" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="696" width="265" height="32"/>
+                <edit field="$(field)_14" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="730" width="265" height="32"/>
+            </template>
+
+            <template name="keySlot">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="283" width="296" height="32"/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="318" width="296" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="352" width="296" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="386" width="296" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="420" width="296" height="32"/>
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="454" width="296" height="32"/>
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="489" width="296" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="523" width="296" height="32"/>
+                <edit field="$(field)_9" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="557" width="296" height="32"/>
+                <edit field="$(field)_10" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="592" width="296" height="32"/>
+                <edit field="$(field)_11" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="626" width="296" height="32"/>
+                <edit field="$(field)_12" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="661" width="296" height="32"/>
+                <edit field="$(field)_13" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="696" width="296" height="32"/>
+                <edit field="$(field)_14" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" top="730" width="296" height="32"/>
+            </template>
+
+            <template name="smallSlot">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="0" width="130" height="32"/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="0" width="130" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="36" width="130" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="36" width="130" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="70" width="130" height="32"/>
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="70" width="130" height="32"/>
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="104" width="130" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="104" width="130" height="32"/>
+                <edit field="$(field)_9" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="138" width="130" height="32"/>
+                <edit field="$(field)_10" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="138" width="130" height="32"/>
+                <edit field="$(field)_11" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="171" width="130" height="32"/>
+                <edit field="$(field)_12" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="171" width="130" height="32"/>
+                <edit field="$(field)_13" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="206" width="130" height="32"/>
+                <edit field="$(field)_14" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="206" width="130" height="32"/>
+                <edit field="$(field)_15" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="240" width="130" height="32"/>
+                <edit field="$(field)_16" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="240" width="130" height="32"/>
+                <edit field="$(field)_17" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="274" width="130" height="32"/>
+                <edit field="$(field)_18" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="274" width="130" height="32"/>
+                <edit field="$(field)_19" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="308" width="130" height="32"/>
+                <edit field="$(field)_20" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="308" width="130" height="32"/>
+                <edit field="$(field)_21" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="342" width="130" height="32"/>
+                <edit field="$(field)_22" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="342" width="130" height="32"/>
+                <edit field="$(field)_23" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="376" width="130" height="32"/>
+                <edit field="$(field)_24" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="376" width="130" height="32"/>
+                <edit field="$(field)_25" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="410" width="130" height="32"/>
+                <edit field="$(field)_26" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="410" width="130" height="32"/>
+                <edit field="$(field)_27" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="344" top="445" width="130" height="32"/>
+                <edit field="$(field)_28" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="478" top="445" width="130" height="32"/>
+            </template>
+
+            <template name="bigSlot">
+                <edit field="$(field)_1" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="0" width="146" height="32"/>
+                <edit field="$(field)_2" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="0" width="146" height="32"/>
+                <edit field="$(field)_3" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="36" width="146" height="32"/>
+                <edit field="$(field)_4" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="36" width="146" height="32"/>
+                <edit field="$(field)_5" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="70" width="146" height="32"/>
+                <edit field="$(field)_6" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="70" width="146" height="32"/>
+                <edit field="$(field)_7" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="104" width="146" height="32"/>
+                <edit field="$(field)_8" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="104" width="146" height="32"/>
+                <edit field="$(field)_9" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="138" width="146" height="32"/>
+                <edit field="$(field)_10" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="138" width="146" height="32"/>
+                <edit field="$(field)_11" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="171" width="146" height="32"/>
+                <edit field="$(field)_12" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="171" width="146" height="32"/>
+                <edit field="$(field)_13" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="206" width="146" height="32"/>
+                <edit field="$(field)_14" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="206" width="146" height="32"/>
+                <edit field="$(field)_15" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="240" width="146" height="32"/>
+                <edit field="$(field)_16" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="240" width="146" height="32"/>
+                <edit field="$(field)_17" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="274" width="146" height="32"/>
+                <edit field="$(field)_18" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="274" width="146" height="32"/>
+                <edit field="$(field)_19" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="308" width="146" height="32"/>
+                <edit field="$(field)_20" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="308" width="146" height="32"/>
+                <edit field="$(field)_21" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="342" width="146" height="32"/>
+                <edit field="$(field)_22" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="342" width="146" height="32"/>
+                <edit field="$(field)_23" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="376" width="146" height="32"/>
+                <edit field="$(field)_24" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="376" width="146" height="32"/>
+                <edit field="$(field)_25" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="410" width="146" height="32"/>
+                <edit field="$(field)_26" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="410" width="146" height="32"/>
+                <edit field="$(field)_27" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="323" top="445" width="146" height="32"/>
+                <edit field="$(field)_28" transparent="true" fontSize="16" fontColor="#ffffff" horzTextAlign="leading" vertTextAlign="center" left="473" top="445" width="146" height="32"/>
+            </template>
+
+<!-- _______________________________________________________________________________Mochila do Treinador_______________________________________________________________________________ -->
+            <!--Technical Machine - TM-->
+            <layout left="0" top="0" width="900" height="900">
+                <mediumSlot field="tm"/>
+            </layout>
+            <!-- Pokebolas -->
+            <layout left="343" top="0" width="900" height="900">
+                <pokebolasSlot field="pokebolas"/>
+            </layout>
+            <!-- Itens Chave -->
+            <layout left="623" top="0" width="900" height="900">
+                <keySlot field="key"/>
+            </layout>
+            <!--Move Tutor - MT-->
+            <layout left="0" top="516" width="900" height="900">
+                <mediumSlot field="mt"/>
+            </layout>
+            <!-- Itens -->
+            <layout left="0" top="800" width="900" height="500">
+                <smallSlot field="itens"/>
+            </layout>
+            <!-- Berrys/Frutas -->
+            <layout left="300" top="800" width="900" height="500">
+                <bigSlot field="berrys"/>
+            </layout>
         </rectangle>
     </scrollBox>
 </form>
