@@ -49,19 +49,30 @@
 		<imageCheckBox field="$(field)_12" left="252" top="4" width="21" height="21" checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
     </template>
 
-	    <template name="vantagensMalignas">
+        <template name="virtudes">
+		<imageCheckBox field="$(field)_1" left="10" top="4" width="21" height="21" checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_2" left="32" top="4" width="21" height="21" checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_3" left="54" top="4" width="21" height="21" checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_4" left="76" top="4" width="21" height="21" checkedImage="PokeRPGT/images/pokeball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_5" left="98" top="4" width="21" height="21" checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+ 		<imageCheckBox field="$(field)_6" left="120" top="4" width="21" height="21" checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_7" left="142" top="4" width="21" height="21" checkedImage="PokeRPGT/images/greatball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_8" left="164" top="4" width="21" height="21" checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_9" left="186" top="4" width="21" height="21" checkedImage="PokeRPGT/images/ultraball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>  
+		<imageCheckBox field="$(field)_10" left="208" top="4" width="21" height="21" checkedImage="PokeRPGT/images/masterball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+    </template>
+
+        <template name="virtudesMalignas">
 		<imageCheckBox field="$(field)_1" left="10" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
 		<imageCheckBox field="$(field)_2" left="32" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
 		<imageCheckBox field="$(field)_3" left="54" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
 		<imageCheckBox field="$(field)_4" left="76" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
-		<imageCheckBox field="$(field)_5" left="98" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
- 		<imageCheckBox field="$(field)_6" left="120" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketball_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_5" left="98" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketgreat_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+ 		<imageCheckBox field="$(field)_6" left="120" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketgreat_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
 		<imageCheckBox field="$(field)_7" left="142" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketgreat_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
-		<imageCheckBox field="$(field)_8" left="164" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketgreat_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
-		<imageCheckBox field="$(field)_9" left="186" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketgreat_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>  
-		<imageCheckBox field="$(field)_10" left="208" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketultra_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
-		<imageCheckBox field="$(field)_11" left="230" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketultra_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
-		<imageCheckBox field="$(field)_12" left="252" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketmaster_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_8" left="164" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketultra_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
+		<imageCheckBox field="$(field)_9" left="186" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketultra_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>  
+		<imageCheckBox field="$(field)_10" left="208" top="4" width="21" height="21" checkedImage="PokeRPGT/images/rocketmaster_on.png" uncheckedImage="PokeRPGT/images/pokeball_off.png"/>
     </template>
 <!-- _______________________________________________________________________________Área do Treinador_______________________________________________________________________________ -->
     <image left="475" top="1290" name="update" animate="true" src="images/update.gif" width="15" height="15"/>
@@ -238,20 +249,20 @@
         <layout left="336" top="1221" width="300" height="50">
             <vantagens field="forcaDeVontade"/>            
         </layout> 
-        <layout left="635" top="1065" width="300" height="50">
-            <vantagens field="reconhecimento"/>            
+        <layout left="660" top="1065" width="300" height="50">
+            <virtudes field="reconhecimento"/>            
         </layout> 
-        <layout left="635" top="1133" width="300" height="50">
-            <vantagens field="famaBoa"/>            
+        <layout left="660" top="1133" width="300" height="50">
+            <virtudes field="famaBoa"/>            
         </layout>
-        <layout left="635" top="1158" width="300" height="50">
-            <vantagensMalignas field="famaRuim"/>            
+        <layout left="660" top="1158" width="300" height="50">
+            <virtudesMalignas field="famaRuim"/>            
         </layout>
-        <layout left="635" top="1213" width="300" height="50">
-            <vantagens field="influenciaBoa"/>            
+        <layout left="660" top="1213" width="300" height="50">
+            <virtudes field="influenciaBoa"/>            
         </layout>
-        <layout left="635" top="1238" width="300" height="50">
-            <vantagensMalignas field="influenciaRuim"/>            
+        <layout left="660" top="1238" width="300" height="50">
+            <virtudesMalignas field="influenciaRuim"/>            
         </layout> 		
         </rectangle>
     </scrollBox>
