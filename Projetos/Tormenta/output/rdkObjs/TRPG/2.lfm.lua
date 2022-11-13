@@ -4629,6 +4629,7 @@ local function constructNew_Tormenta02()
     obj.textEditor1:setAlign("client");
     obj.textEditor1:setField("talentos");
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
+    obj.textEditor1:setFontColor("black");
     obj.textEditor1:setName("textEditor1");
 
     obj.layout29 = GUI.fromHandle(_obj_newObject("layout"));

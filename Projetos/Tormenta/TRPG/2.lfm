@@ -389,7 +389,7 @@
 			<rectangle left="357" top="338" color="Black" width="107" height="15" xradius="2" yradius="2"/>
 			<label left="360" top="341" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Classe"/>
 			<layout left="5" top="17" width="265" height="671">
-				<textEditor align="client" field="talentos" fontStyle="bold"/>
+				<textEditor align="client" field="talentos" fontStyle="bold" fontColor="black"/>
 			</layout>
 			<layout left="275" top="17" width="265" height="317">
 				<textEditor align="client" field="hraca" fontStyle="bold" fontColor="black"/>

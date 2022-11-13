@@ -235,7 +235,7 @@ local function constructNew_Tormenta05()
     lfm_setPropAsString(obj.richEdit1, "animateImages",  "true");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "black");
     obj.richEdit1:setField("background");
-    obj.richEdit1:setWidth(712);
+    obj.richEdit1:setWidth(680);
     obj.richEdit1:setHeight(272);
     obj.richEdit1:setName("richEdit1");
 

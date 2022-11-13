@@ -8124,6 +8124,7 @@ local function constructNew_TormentaCastfrm()
     obj.textEditor1:setAlign("client");
     obj.textEditor1:setField("talentos");
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
+    obj.textEditor1:setFontColor("black");
     obj.textEditor1:setName("textEditor1");
 
     obj.layout59 = GUI.fromHandle(_obj_newObject("layout"));
@@ -9861,7 +9862,7 @@ local function constructNew_TormentaCastfrm()
     lfm_setPropAsString(obj.richEdit1, "animateImages",  "true");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "black");
     obj.richEdit1:setField("background");
-    obj.richEdit1:setWidth(712);
+    obj.richEdit1:setWidth(680);
     obj.richEdit1:setHeight(272);
     obj.richEdit1:setName("richEdit1");
 

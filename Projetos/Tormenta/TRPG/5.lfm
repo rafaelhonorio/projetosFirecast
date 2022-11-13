@@ -22,7 +22,7 @@
 
 			<rectangle left="600" top="3" color="Black" width="77" height="28" xradius="2" yradius="2"/>
 			<label left="605" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="white" text="História"/>
-			<richEdit left="300" top="27" backgroundColor="#ffffff" animateImages="true" defaultFontColor="black" field="background" width="712" height="272"/>
+			<richEdit left="300" top="27" backgroundColor="#ffffff" animateImages="true" defaultFontColor="black" field="background" width="680" height="272"/>
 		</layout>
 		<layout left="21" top="316" width="969" height="358">
 			<rectangle left="86" top="3" color="Black" width="128" height="28" xradius="2" yradius="2"/>
