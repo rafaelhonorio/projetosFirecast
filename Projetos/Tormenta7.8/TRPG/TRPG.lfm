@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormentafrm" formType="sheetTemplate" dataType="Tormenta.RPGFirecast" title="Ficha Tormenta RPG 7.8" align="client" theme="light">
+	<tabControl align="client">
+		<tab title="Características">
+			<import file="1.lfm"/>
+		</tab>
+		<tab title="Perícias e Talentos">
+			<import file="2.lfm"/>
+		</tab>
+		<tab title="Equipamentos">
+			<import file="3.lfm"/>
+		</tab>
+		<tab title="Magias">
+			<import file="4.lfm"/>
+		</tab>
+		<tab title="Histórico">
+			<import file="5.lfm"/>
+		</tab>
+		<tab title="Ataques e macros">
+			<import file="6.lfm"/>
+		</tab>
+	</tabControl>
+</form>

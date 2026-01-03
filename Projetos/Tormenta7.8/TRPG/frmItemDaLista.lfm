@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmItemDaLista" height="50" theme="light"> 
+    <layout align="client" margins="{left=4, right=4, top=4, bottom=4}">
+        <button align="left" width="32" text="X" onDblClick="ndb.deleteNode(sheet);"/> 
+        <label name="lblTitulo" left="40" top="5" width="200" height="25" horzTextAlign="center" fontStyle="bold" fontColor="black" text="(sem nome)"/>
+        <button left="245" top="5" width="25" height="25"
+                text="🎲" fontSize="14" fontColor="black" canFocus="false" cursor="handPoint"
+                hint="Rolar este macro na mesa">
+            <event name="onClick">
+                if TRPG_roll == nil then
+                    function TRPG_roll(sheetAny, expr, label)
+                        local mesa = rrpg.getMesaDe(sheetAny);
+                        if mesa ~= nil and mesa.activeChat ~= nil then
+                            mesa.activeChat:rolarDados(expr, label);
+                        else
+                            local r = rrpg.interpretarRolagem(expr);
+                            r:rolarLocalmente();
+                        end
+                    end
+                end
+
+                if sheet.campoSubTitulo ~= nil and sheet.campoSubTitulo ~= "" then
+                    TRPG_roll(sheet, sheet.campoSubTitulo, sheet.campoTitulo or "Ataque/Macro");
+                else
+                    showMessage("Preencha o macro antes de rolar.");
+                end
+            </event>
+        </button>
+        <dataLink fields="{'campoTitulo'}">
+            <event name="onChange">
+                self.lblTitulo.text = sheet.campoTitulo or "(sem nome)";
+            </event>
+        </dataLink>  
+    </layout>
+</form>

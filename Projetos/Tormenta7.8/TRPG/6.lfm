@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta06" align="client" theme="light">
+    <scrollBox align="client">
+		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
+        <layout align="top" height="30" margins="{bottom=4}">
+                <button text="Adicionar Novo Ataque/Macro" width="250" align="left">
+                        <event name="onClick">                           
+                                self.rclListaDosItens:append();
+                        </event>
+                </button>
+        </layout>
+		<!-- Área principal: lista à esquerda + detalhes à direita (sem sobrepor) -->
+		<layout align="client" margins="{left=8, right=8, top=0, bottom=8}">
+			<recordList name="rclListaDosItens" field="campoDosItens" templateForm="frmItemDaLista" align="left" width="560" height="650" selectable="true">
+				<event name="onSelect">
+					local node = self.rclListaDosItens.selectedNode;
+					self.boxDetalhesDoItem.node = node;
+					self.boxDetalhesDoItem.visible = (node ~= nil);
+				</event>
+			</recordList>
+
+			<!-- Coluna da direita: detalhes do item selecionado -->
+			<layout left="300" width="390" height="650">
+				<dataScopeBox name="boxDetalhesDoItem" visible="false" align="top" width="420" height="180">
+					<rectangle align="client" color="#999999" xradius="10" yradius="10" padding="{top=3, left=3, right=3, bottom=3}">
+						<layout align="top" height="30" margins="{bottom=4}">
+							<label align="left" text="Ataque/Macro:" fontColor="black" autoSize="true"/>
+							<edit align="client" field="campoTitulo" fontColor="black"/>
+						</layout>
+						<layout align="top" height="30" margins="{bottom=4}">
+							<label align="left" text="Macro:" fontColor="black" autoSize="true"/>
+
+							<!-- Limita a largura para o 🎲 ficar do lado do campo -->
+							<edit align="left" width="260" field="campoSubTitulo" name="edtMacro" fontColor="black" margins="{left=6}"/>
+							<button align="left" width="25" height="25" text="🎲" fontSize="14" fontColor="black" canFocus="false" cursor="handPoint" margins="{left=6}" hint="Rolar este macro na mesa">
+								<event name="onClick">
+									local nd = self.boxDetalhesDoItem.node;
+									if nd ~= nil then
+										TRPG_rollMacro(nd, nd.campoSubTitulo, nd.campoTitulo or "Ataque/Macro");
+									end;
+								</event>
+							</button>
+						</layout>
+						<layout align="top" height="100">
+							<label align="left" text="Descrição:" fontColor="black" autoSize="true"/>
+							<textEditor align="client" field="campoDescrição" fontColor="black"/>
+						</layout>
+					</rectangle>
+				</dataScopeBox>
+			</layout>
+		</layout>
+	</scrollBox>
+
+	<script>
+		<![CDATA[
+
+			if TRPG_rollMacro == nil then
+				function TRPG_rollMacro(nodeOrSheet, macroText, label)
+					if nodeOrSheet == nil then return end
+
+					local expr = tostring(macroText or ""):gsub("^%s+", ""):gsub("%s+$", "")
+					if expr == "" then
+						showMessage("Preencha o macro antes de rolar.")
+						return
+					end
+
+					local rolagem = rrpg.interpretarRolagem(expr)
+					if rolagem == nil then
+						showMessage("Rolagem inválida: " .. expr)
+						return
+					end
+
+					-- se não tiver dado, prefixa 1d20
+					if not rolagem.possuiAlgumDado then
+						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+					end
+
+					local mesa = rrpg.getMesaDe(nodeOrSheet)
+					local titulo = tostring(label or "Rolagem")
+
+					if mesa ~= nil then
+						local chat = mesa.activeChat or mesa.chat
+						if chat ~= nil then
+							chat:rolarDados(rolagem, titulo)
+							return
+						end
+					end
+
+					-- fallback: rolar local e exibir
+					rolagem:rolarLocalmente()
+					showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+				end
+			end
+
+		]]>
+	</script>
+
+</form>

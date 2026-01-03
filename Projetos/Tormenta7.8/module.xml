@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.4b">
+    <id>rrpg.com.tricket.tormentarpg</id>
+    <version>1.0</version>
+    <name>Ficha Tormenta RPG para 7.8</name>
+    <description>Ficha Tormenta RPG apenas para o uso no 7.8 RRPG Firecast.</description>
+    <author>Tricket</author>
+    <site>https://github.com/rafaelhonorio/projetosFirecast/</site>
+    <contact>rafaelhgmr@gmail.com</contact>
+</module>

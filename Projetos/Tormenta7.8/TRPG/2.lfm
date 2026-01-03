@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta02" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="desCalculos2();">
+	<scrollBox align="client">
+		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
+		<layout left="3" top="10" width="480" height="700">
+			<rectangle left="249" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="256" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+			<rectangle left="308" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="316" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Grad"/>
+			<rectangle left="374" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="378" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+			<rectangle left="440" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="443" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+			<layout left="0" top="17" width="480" height="700">
+				<layout left="0" top="0" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxacrobacia"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_acrobacia", "DES");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Acrobacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20"
+							opacity="0.0"
+							canFocus="false"
+							cursor="handPoint"
+							hint="Rolar 1d20 + Acrobacia">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalacrobacia, "Acrobacia");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalacrobacia" field="totalacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradacrobacia" field="gradacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modacrobacia" field="modacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosacrobacia" field="outrosacrobacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="28" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxadestrar"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_adestrar", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Adestrar Animais" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20"
+							opacity="0.0"
+							canFocus="false"
+							cursor="handPoint"
+							hint="Rolar 1d20 + Adestrar Animais">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaladestrar, "Adestrar Animais");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totaladestrar" field="totaladestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradadestrar" field="gradadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modadestrar" field="modadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosadestrar" field="outrosadestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="56" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatletismo"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_atletismo", "FOR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Atletismo" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20"
+							opacity="0.0"
+							canFocus="false"
+							cursor="handPoint"
+							hint="Rolar 1d20 + Atletismo">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalatletismo, "Atletismo");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalatletismo" field="totalatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradatletismo" field="gradatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modatletismo" field="modatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosatletismo" field="outrosatletismo" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="84" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatuacao1"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_atuacao1", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Atuação">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Atuação";
+							local extra = tostring(sh.atuacao1 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totalatuacao1, nome);
+						</event>
+					</button>
+					<edit field="atuacao1" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="249" top="3" width="40" height="25" name="totalatuacao1" field="totalatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradatuacao1" field="gradatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modatuacao1" field="modatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosatuacao1" field="outrosatuacao1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="112" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxatuacao2"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_atuacao2", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Atuação">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Atuação";
+							local extra = tostring(sh.atuacao2 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totalatuacao2, nome);
+						</event>
+					</button>
+					<edit field="atuacao2" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="249" top="3" width="40" height="25" name="totalatuacao2" field="totalatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradatuacao2" field="gradatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modatuacao2" field="modatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosatuacao2" field="outrosatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>				
+				<layout left="0" top="140" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxcavalgar"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_cavalgar", "DES");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Cavalgar" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Cavalgar">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcavalgar, "Cavalgar");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalcavalgar" field="totalcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradcavalgar" field="gradcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modcavalgar" field="modcavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outroscavalgar" field="outroscavalgar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="168" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxconhecimento1"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento1", "INT");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Conhecimento">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Conhecimento";
+							local extra = tostring(sh.conhecimento1 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totalconhecimento1, nome);
+						</event>
+					</button>
+					<edit field="conhecimento1" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
+					<edit left="249" top="3" width="40" height="25" name="totalconhecimento1" field="totalconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradconhecimento1" field="gradconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modconhecimento1" field="modconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosconhecimento1" field="outrosconhecimento1" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="196" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxconhecimento2"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento2", "INT");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Conhecimento">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Conhecimento";
+							local extra = tostring(sh.conhecimento2 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totalconhecimento2, nome);
+						</event>
+					</button>
+					<edit field="conhecimento2" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontColor="black" fontStyle="bold"/>
+					<edit left="249" top="3" width="40" height="25" name="totalconhecimento2" field="totalconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradconhecimento2" field="gradconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modconhecimento2" field="modconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosconhecimento2" field="outrosconhecimento2" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="224" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxcura"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_cura", "SAB");
+						</event
+					></button>
+					<label left="50" top="5" width="150" height="20" text="Cura" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Cura">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcura, "Cura");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalcura" field="totalcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradcura" field="gradcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modcura" field="modcura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outroscura" field="outroscura" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="252" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxdiplomacia"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_diplomacia", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Diplomacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Diplomacia">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldiplomacia, "Diplomacia");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totaldiplomacia" field="totaldiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="graddiplomacia" field="graddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="moddiplomacia" field="moddiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosdiplomacia" field="outrosdiplomacia" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="280" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxenganacao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_enganacao", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Enganação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Enganação">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalenganacao, "Enganação");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalenganacao" field="totalenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradenganacao" field="gradenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modenganacao" field="modenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosenganacao" field="outrosenganacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="308" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxfurtividade"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_furtividade", "DES");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Furtividade" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Furtividade">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfurtividade, "Furtividade");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalfurtividade" field="totalfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradfurtividade" field="gradfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modfurtividade" field="modfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosfurtividade" field="outrosfurtividade" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="336" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbximagia"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_imagia", "INT");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Identificar Magia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Identificar Magia">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalimagia" field="totalimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradimagia" field="gradimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modimagia" field="modimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosimagia" field="outrosimagia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="364" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxiniciativa"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_iniciativa", "DES");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Iniciativa" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Iniciativa">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaliniciativa, "Iniciativa");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totaliniciativa" field="totaliniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradiniciativa" field="gradiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modiniciativa" field="modiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosiniciativa" field="outrosiniciativa" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="392" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxintimidacao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_intimidacao", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Intimidação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Intimidação">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintimidacao, "Intimidação");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalintimidacao" field="totalintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradintimidacao" field="gradintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modintimidacao" field="modintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosintimidacao" field="outrosintimidacao" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="420" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxintuicao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_intuicao", "SAB");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Intuição" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Intuição">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintuicao, "Intuição");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalintuicao" field="totalintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradintuicao" field="gradintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modintuicao" field="modintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosintuicao" field="outrosintuicao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="448" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxjogatina"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_jogatina", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Jogatina" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Jogatina">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaljogatina, "Jogatina");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totaljogatina" field="totaljogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradjogatina" field="gradjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modjogatina" field="modjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosjogatina" field="outrosjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="476" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxladinagem"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_ladinagem", "DES");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Ladinagem" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Ladinagem">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalladinagem" field="totalladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradladinagem" field="gradladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modladinagem" field="modladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosladinagem" field="outrosladinagem" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="504" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoinformacao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_oinformacao", "CAR");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Obter Informação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Obter Informação">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaloinformacao, "Obter Informação");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totaloinformacao" field="totaloinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradoinformacao" field="gradoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modoinformacao" field="modoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosoinformacao" field="outrosoinformacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="532" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoficio1"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_oficio1", "INT");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Ofício">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Ofício";
+							local extra = tostring(sh.oficio1 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totaloficio1, nome);
+						</event>
+					</button>
+					<edit field="oficio1" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="249" top="3" width="40" height="25" name="totaloficio1" field="totaloficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradoficio1" field="gradoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modoficio1" field="modoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosoficio1" field="outrosoficio1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+				</layout>
+				<layout left="0" top="560" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxoficio2"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_oficio2", "INT");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Ofício">
+						<event name="onClick">
+							local sh = sheet or self.sheet;
+							local nome = "Ofício";
+							local extra = tostring(sh.oficio2 or ""):gsub("^%s+",""):gsub("%s+$","");
+							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							TRPG_rollValue(sh, sh.totaloficio2, nome);
+						</event>
+					</button>
+					<edit field="oficio2" left="167" top="3" width="80" height="25" fontSize="13.0" horzTextAlign="center" fontStyle="bold" fontColor="black"/>
+					<edit left="249" top="3" width="40" height="25" name="totaloficio2" field="totaloficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradoficio2" field="gradoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modoficio2" field="modoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosoficio2" field="outrosoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+				</layout>
+				<layout left="0" top="588" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxmeditacao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_meditacao", "SAB");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Meditação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Meditação">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalmeditacao" field="totalmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradmeditacao" field="gradmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modmeditacao" field="modmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrosmeditacao" field="outrosmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="616" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxpercepcao"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_percepcao", "SAB");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Percepção" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Percepção">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalpercepcao, "Percepção");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalpercepcao" field="totalpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradpercepcao" field="gradpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modpercepcao" field="modpercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrospercepcao" field="outrospercepcao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="644" width="480" height="32">
+					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
+					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxsobrevivencia"/>
+					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
+						<event name="onClick">
+							TRPG_chooseHab(sheet or self.sheet, "hab_sobrevivencia", "SAB");
+						</event>
+					</button>
+					<label left="50" top="5" width="150" height="20" text="Sobrevivência" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Sobrevivência">
+						<event name="onClick">
+							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalsobrevivencia, "Sobrevivência");
+						</event>
+					</button>
+					<edit left="249" top="3" width="40" height="25" name="totalsobrevivencia" field="totalsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="292" top="6"  width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="="/>
+					<edit left="306" top="3" width="40" height="25" name="gradsobrevivencia" field="gradsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="373" top="3" width="40" height="25" name="modsobrevivencia" field="modsobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+					<rectangle left="416" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="419" top="6" width="20" height="15" fontSize="18" fontStyle="bold" fontColor="white" text="+"/>
+					<edit left="439" top="3" width="40" height="25" name="outrossobrevivencia" field="outrossobrevivencia" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				</layout>
+			</layout>
+		</layout>
+		<layout left="470" top="10" width="545" height="700">
+			<rectangle left="115" top="5" color="Black" width="45" height="15" xradius="2" yradius="2"/>
+			<label left="118" top="8" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Talentos"/>
+			<rectangle left="357" top="5" color="Black" width="105" height="15" xradius="2" yradius="2"/>
+			<label left="360" top="8" width="98" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Raça"/>
+			<rectangle left="357" top="338" color="Black" width="107" height="15" xradius="2" yradius="2"/>
+			<label left="360" top="341" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Classe"/>
+			<layout left="15" top="17" width="255" height="671">
+				<textEditor align="client" field="talentos" fontStyle="bold" fontColor="black"/>
+			</layout>
+			<layout left="275" top="17" width="260" height="317">
+				<textEditor align="client" field="hraca" fontStyle="bold" fontColor="black"/>
+			</layout>
+			<layout left="275" top="350" width="260" height="339">
+				<textEditor align="client" field="hclasse" fontStyle="bold" fontColor="black"/>
+			</layout>
+		</layout>
+	</scrollBox>
+	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'}">
+		<event name="onChange">
+			onDataLinkChange();
+		</event>
+	</dataLink>
+	<script>
+		<![CDATA[
+			-- garante que as funções existam sempre
+			if TRPG_getMod == nil then
+				function TRPG_getMod(sheet, habCode, defaultValue)
+					local c = tostring(habCode or ""):upper()
+					if c == "FOR" then return sheet.modforca or 0 end
+					if c == "DES" then return sheet.moddestreza or 0 end
+					if c == "CON" then return sheet.modconstituicao or 0 end
+					if c == "INT" then return sheet.modinteligencia or 0 end
+					if c == "SAB" then return sheet.modsabedoria or 0 end
+					if c == "CAR" then return sheet.modcarisma or 0 end
+					return defaultValue or 0
+				end
+			end
+
+			local function normalizeChooseResult(a, b)
+				if type(a) == "number" then return a end
+				if type(b) == "number" then return b end
+				if type(a) == "table" then
+					return tonumber(a.index or a.selectedIndex or a.idx or a[1])
+				end
+				return nil
+			end
+
+			function TRPG_chooseHab(sheet, fieldName, defaultCode)
+				if sheet == nil then return end
+				local items  = {"FOR", "DES", "CON", "INT", "SAB", "CAR", "DEFAULT"}
+				local labels = {
+					"Força (FOR)",
+					"Destreza (DES)",
+					"Constituição (CON)",
+					"Inteligência (INT)",
+					"Sabedoria (SAB)",
+					"Carisma (CAR)",
+					"Padrão (" .. tostring(defaultCode) .. ")"
+				}
+				local current = tostring(sheet[fieldName] or ""):upper()
+				local defaultIndex = 1
+				for i = 1, #items do
+					if items[i] == current then defaultIndex = i break end
+				end
+				Dialogs.choose("Habilidade", labels,
+					function(a, b)
+						local idx = normalizeChooseResult(a, b)
+						if idx == nil then return end
+						local chosenCode = items[idx] or "DEFAULT"
+						if chosenCode == "DEFAULT" then
+							sheet[fieldName] = defaultCode
+						else
+							sheet[fieldName] = chosenCode
+						end
+						sheet.__forceRecalc = true
+						recalcAll2()
+						sheet.__forceRecalc = false
+						sheet.__recalc = (tonumber(sheet.__recalc) or 0) + 1
+					end,
+					defaultIndex
+				)
+				if sheet[fieldName] == nil or sheet[fieldName] == "" then
+					sheet[fieldName] = defaultCode
+				end
+			end
+
+			function desCalculos2()
+				if self == nil or self.sheet == nil then return end
+				local manual = (self.sheet.calculos == true)
+				local function ht(name, val)
+					local o = self[name]
+					if o ~= nil then o.hitTest = val end
+				end
+				ht("gradacrobacia", manual)
+				ht("gradadestrar", manual)
+				ht("gradatletismo", manual)
+				ht("gradatuacao1", manual)
+				ht("gradatuacao2", manual)
+				ht("gradcavalgar", manual)
+				ht("gradconhecimento1", manual)
+				ht("gradconhecimento2", manual)
+				ht("gradcura", manual)
+				ht("graddiplomacia", manual)
+				ht("gradenganacao", manual)
+				ht("gradfurtividade", manual)
+				ht("gradimagia", manual)
+				ht("gradiniciativa", manual)
+				ht("gradintimidacao", manual)
+				ht("gradintuicao", manual)
+				ht("gradjogatina", manual)
+				ht("gradladinagem", manual)
+				ht("gradmeditacao", manual)
+				ht("gradoficio1", manual)
+				ht("gradoficio2", manual)
+				ht("gradoinformacao", manual)
+				ht("gradpercepcao", manual)
+				ht("gradsobrevivencia", manual)
+				ht("modacrobacia", manual)
+				ht("modadestrar", manual)
+				ht("modatletismo", manual)
+				ht("modatuacao1", manual)
+				ht("modatuacao2", manual)
+				ht("modcavalgar", manual)
+				ht("modconhecimento1", manual)
+				ht("modconhecimento2", manual)
+				ht("modcura", manual)
+				ht("moddiplomacia", manual)
+				ht("modenganacao", manual)
+				ht("modfurtividade", manual)
+				ht("modimagia", manual)
+				ht("modiniciativa", manual)
+				ht("modintimidacao", manual)
+				ht("modintuicao", manual)
+				ht("modjogatina", manual)
+				ht("modladinagem", manual)
+				ht("modmeditacao", manual)
+				ht("modoficio1", manual)
+				ht("modoficio2", manual)
+				ht("modoinformacao", manual)
+				ht("modpercepcao", manual)
+				ht("modsobrevivencia", manual)
+				ht("totalacrobacia", manual)
+				ht("totaladestrar", manual)
+				ht("totalatletismo", manual)
+				ht("totalatuacao1", manual)
+				ht("totalatuacao2", manual)
+				ht("totalcavalgar", manual)
+				ht("totalconhecimento1", manual)
+				ht("totalconhecimento2", manual)
+				ht("totalcura", manual)
+				ht("totaldiplomacia", manual)
+				ht("totalenganacao", manual)
+				ht("totalfurtividade", manual)
+				ht("totalimagia", manual)
+				ht("totaliniciativa", manual)
+				ht("totalintimidacao", manual)
+				ht("totalintuicao", manual)
+				ht("totaljogatina", manual)
+				ht("totalladinagem", manual)
+				ht("totalmeditacao", manual)
+				ht("totaloficio1", manual)
+				ht("totaloficio2", manual)
+				ht("totaloinformacao", manual)
+				ht("totalpercepcao", manual)
+				ht("totalsobrevivencia", manual)
+			end
+
+			function recalcAll2()
+				local sheet = self.sheet or sheet
+				if sheet == nil then return end
+				if sheet.calculos == true and sheet.__forceRecalc ~= true then
+					return
+				end
+				local function N(v, d)
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+				-- metadenivel pode vir da Tela 1; garante aqui também
+				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+				local penA = math.floor(N(sheet.penarmadura))
+				local penE = math.floor(N(sheet.penescudo))
+
+				if sheet.hab_acrobacia == nil or sheet.hab_acrobacia == "" then sheet.hab_acrobacia = "DES" end
+				if sheet.hab_adestrar == nil or sheet.hab_adestrar == "" then sheet.hab_adestrar = "CAR" end
+				if sheet.hab_atletismo == nil or sheet.hab_atletismo == "" then sheet.hab_atletismo = "FOR" end
+				if sheet.hab_atuacao1 == nil or sheet.hab_atuacao1 == "" then sheet.hab_atuacao1 = "CAR" end
+				if sheet.hab_atuacao2 == nil or sheet.hab_atuacao2 == "" then sheet.hab_atuacao2 = "CAR" end
+				if sheet.hab_jogatina == nil or sheet.hab_jogatina == "" then sheet.hab_jogatina = "CAR" end
+				if sheet.hab_cavalgar == nil or sheet.hab_cavalgar == "" then sheet.hab_cavalgar = "DES" end
+				if sheet.hab_conhecimento1 == nil or sheet.hab_conhecimento1 == "" then sheet.hab_conhecimento1 = "INT" end
+				if sheet.hab_conhecimento2 == nil or sheet.hab_conhecimento2 == "" then sheet.hab_conhecimento2 = "INT" end
+				if sheet.hab_cura == nil or sheet.hab_cura == "" then sheet.hab_cura = "SAB" end
+				if sheet.hab_diplomacia == nil or sheet.hab_diplomacia == "" then sheet.hab_diplomacia = "CAR" end
+				if sheet.hab_enganacao == nil or sheet.hab_enganacao == "" then sheet.hab_enganacao = "CAR" end
+				if sheet.hab_furtividade == nil or sheet.hab_furtividade == "" then sheet.hab_furtividade = "DES" end
+				if sheet.hab_imagia == nil or sheet.hab_imagia == "" then sheet.hab_imagia = "INT" end
+				if sheet.hab_iniciativa == nil or sheet.hab_iniciativa == "" then sheet.hab_iniciativa = "DES" end
+				if sheet.hab_intimidacao == nil or sheet.hab_intimidacao == "" then sheet.hab_intimidacao = "CAR" end
+				if sheet.hab_intuicao == nil or sheet.hab_intuicao == "" then sheet.hab_intuicao = "SAB" end
+				if sheet.hab_ladinagem == nil or sheet.hab_ladinagem == "" then sheet.hab_ladinagem = "DES" end
+				if sheet.hab_oinformacao == nil or sheet.hab_oinformacao == "" then sheet.hab_oinformacao = "CAR" end
+				if sheet.hab_oficio1 == nil or sheet.hab_oficio1 == "" then sheet.hab_oficio1 = "INT" end
+				if sheet.hab_oficio2 == nil or sheet.hab_oficio2 == "" then sheet.hab_oficio2 = "INT" end
+				if sheet.hab_meditacao == nil or sheet.hab_meditacao == "" then sheet.hab_meditacao = "SAB" end
+				if sheet.hab_percepcao == nil or sheet.hab_percepcao == "" then sheet.hab_percepcao = "SAB" end
+				if sheet.hab_sobrevivencia == nil or sheet.hab_sobrevivencia == "" then sheet.hab_sobrevivencia = "SAB" end
+
+				local nivel = math.floor(N(sheet.nivel))
+				local metanivel = math.floor(N(sheet.metadenivel))
+
+				sheet.modacrobacia = TRPG_getMod(sheet, sheet.hab_acrobacia, 0)
+				if sheet.cbxacrobacia then
+					sheet.gradacrobacia = math.floor(nivel + 3)
+				else
+					sheet.gradacrobacia = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradacrobacia)) + math.floor(N(sheet.modacrobacia)) + math.floor(N(sheet.outrosacrobacia))
+				total = total - penA - penE
+				sheet.totalacrobacia = total
+
+				sheet.modadestrar = TRPG_getMod(sheet, sheet.hab_adestrar, 0)
+				if sheet.cbxadestrar then
+					sheet.gradadestrar = math.floor(nivel + 3)
+				else
+					sheet.gradadestrar = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradadestrar)) + math.floor(N(sheet.modadestrar)) + math.floor(N(sheet.outrosadestrar))
+				sheet.totaladestrar = total
+
+				sheet.modatletismo = TRPG_getMod(sheet, sheet.hab_atletismo, 0)
+				if sheet.cbxatletismo then
+					sheet.gradatletismo = math.floor(nivel + 3)
+				else
+					sheet.gradatletismo = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradatletismo)) + math.floor(N(sheet.modatletismo)) + math.floor(N(sheet.outrosatletismo))
+				total = total - penA - penE
+				sheet.totalatletismo = total
+
+				sheet.modatuacao1 = TRPG_getMod(sheet, sheet.hab_atuacao1, 0)
+				if sheet.cbxatuacao1 then
+					sheet.gradatuacao1 = math.floor(nivel + 3)
+				else
+					sheet.gradatuacao1 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradatuacao1)) + math.floor(N(sheet.modatuacao1)) + math.floor(N(sheet.outrosatuacao1))
+				sheet.totalatuacao1 = total
+
+				sheet.modatuacao2 = TRPG_getMod(sheet, sheet.hab_atuacao2, 0)
+				if sheet.cbxatuacao2 then
+					sheet.gradatuacao2 = math.floor(nivel + 3)
+				else
+					sheet.gradatuacao2 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradatuacao2)) + math.floor(N(sheet.modatuacao2)) + math.floor(N(sheet.outrosatuacao2))
+				sheet.totalatuacao2 = total
+
+				sheet.modjogatina = TRPG_getMod(sheet, sheet.hab_jogatina, 0)
+				if sheet.cbxjogatina then
+					sheet.gradjogatina = math.floor(nivel + 3)
+				else
+					sheet.gradjogatina = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradjogatina)) + math.floor(N(sheet.modjogatina)) + math.floor(N(sheet.outrosjogatina))
+				sheet.totaljogatina = total
+
+				sheet.modcavalgar = TRPG_getMod(sheet, sheet.hab_cavalgar, 0)
+				if sheet.cbxcavalgar then
+					sheet.gradcavalgar = math.floor(nivel + 3)
+				else
+					sheet.gradcavalgar = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradcavalgar)) + math.floor(N(sheet.modcavalgar)) + math.floor(N(sheet.outroscavalgar))
+				sheet.totalcavalgar = total
+
+				sheet.modconhecimento1 = TRPG_getMod(sheet, sheet.hab_conhecimento1, 0)
+				if sheet.cbxconhecimento1 then
+					sheet.gradconhecimento1 = math.floor(nivel + 3)
+				else
+					sheet.gradconhecimento1 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradconhecimento1)) + math.floor(N(sheet.modconhecimento1)) + math.floor(N(sheet.outrosconhecimento1))
+				sheet.totalconhecimento1 = total
+
+				sheet.modconhecimento2 = TRPG_getMod(sheet, sheet.hab_conhecimento2, 0)
+				if sheet.cbxconhecimento2 then
+					sheet.gradconhecimento2 = math.floor(nivel + 3)
+				else
+					sheet.gradconhecimento2 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradconhecimento2)) + math.floor(N(sheet.modconhecimento2)) + math.floor(N(sheet.outrosconhecimento2))
+				sheet.totalconhecimento2 = total
+
+				sheet.modcura = TRPG_getMod(sheet, sheet.hab_cura, 0)
+				if sheet.cbxcura then
+					sheet.gradcura = math.floor(nivel + 3)
+				else
+					sheet.gradcura = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradcura)) + math.floor(N(sheet.modcura)) + math.floor(N(sheet.outroscura))
+				sheet.totalcura = total
+
+				sheet.moddiplomacia = TRPG_getMod(sheet, sheet.hab_diplomacia, 0)
+				if sheet.cbxdiplomacia then
+					sheet.graddiplomacia = math.floor(nivel + 3)
+				else
+					sheet.graddiplomacia = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.graddiplomacia)) + math.floor(N(sheet.moddiplomacia)) + math.floor(N(sheet.outrosdiplomacia))
+				sheet.totaldiplomacia = total
+
+				sheet.modenganacao = TRPG_getMod(sheet, sheet.hab_enganacao, 0)
+				if sheet.cbxenganacao then
+					sheet.gradenganacao = math.floor(nivel + 3)
+				else
+					sheet.gradenganacao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradenganacao)) + math.floor(N(sheet.modenganacao)) + math.floor(N(sheet.outrosenganacao))
+				sheet.totalenganacao = total
+
+				sheet.modfurtividade = TRPG_getMod(sheet, sheet.hab_furtividade, 0)
+				if sheet.cbxfurtividade then
+					sheet.gradfurtividade = math.floor(nivel + 3)
+				else
+					sheet.gradfurtividade = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradfurtividade)) + math.floor(N(sheet.modfurtividade)) + math.floor(N(sheet.outrosfurtividade))
+				total = total - penA - penE
+				sheet.totalfurtividade = total
+
+				sheet.modimagia = TRPG_getMod(sheet, sheet.hab_imagia, 0)
+				if sheet.cbximagia then
+					sheet.gradimagia = math.floor(nivel + 3)
+				else
+					sheet.gradimagia = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradimagia)) + math.floor(N(sheet.modimagia)) + math.floor(N(sheet.outrosimagia))
+				sheet.totalimagia = total
+
+				sheet.modiniciativa = TRPG_getMod(sheet, sheet.hab_iniciativa, 0)
+				if sheet.cbxiniciativa then
+					sheet.gradiniciativa = math.floor(nivel + 3)
+				else
+					sheet.gradiniciativa = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradiniciativa)) + math.floor(N(sheet.modiniciativa)) + math.floor(N(sheet.outrosiniciativa))
+				sheet.totaliniciativa = total
+
+				sheet.modintimidacao = TRPG_getMod(sheet, sheet.hab_intimidacao, 0)
+				if sheet.cbxintimidacao then
+					sheet.gradintimidacao = math.floor(nivel + 3)
+				else
+					sheet.gradintimidacao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradintimidacao)) + math.floor(N(sheet.modintimidacao)) + math.floor(N(sheet.outrosintimidacao))
+				sheet.totalintimidacao = total
+
+				sheet.modintuicao = TRPG_getMod(sheet, sheet.hab_intuicao, 0)
+				if sheet.cbxintuicao then
+					sheet.gradintuicao = math.floor(nivel + 3)
+				else
+					sheet.gradintuicao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradintuicao)) + math.floor(N(sheet.modintuicao)) + math.floor(N(sheet.outrosintuicao))
+				sheet.totalintuicao = total
+
+				sheet.modladinagem = TRPG_getMod(sheet, sheet.hab_ladinagem, 0)
+				if sheet.cbxladinagem then
+					sheet.gradladinagem = math.floor(nivel + 3)
+				else
+					sheet.gradladinagem = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradladinagem)) + math.floor(N(sheet.modladinagem)) + math.floor(N(sheet.outrosladinagem))
+				total = total - penA - penE
+				sheet.totalladinagem = total
+
+				sheet.modoinformacao = TRPG_getMod(sheet, sheet.hab_oinformacao, 0)
+				if sheet.cbxoinformacao then
+					sheet.gradoinformacao = math.floor(nivel + 3)
+				else
+					sheet.gradoinformacao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradoinformacao)) + math.floor(N(sheet.modoinformacao)) + math.floor(N(sheet.outrosoinformacao))
+				sheet.totaloinformacao = total
+
+				sheet.modoficio1 = TRPG_getMod(sheet, sheet.hab_oficio1, 0)
+				if sheet.cbxoficio1 then
+					sheet.gradoficio1 = math.floor(nivel + 3)
+				else
+					sheet.gradoficio1 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradoficio1)) + math.floor(N(sheet.modoficio1)) + math.floor(N(sheet.outrosoficio1))
+				sheet.totaloficio1 = total
+
+				sheet.modoficio2 = TRPG_getMod(sheet, sheet.hab_oficio2, 0)
+				if sheet.cbxoficio2 then
+					sheet.gradoficio2 = math.floor(nivel + 3)
+				else
+					sheet.gradoficio2 = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradoficio2)) + math.floor(N(sheet.modoficio2)) + math.floor(N(sheet.outrosoficio2))
+				sheet.totaloficio2 = total
+
+				sheet.modmeditacao = TRPG_getMod(sheet, sheet.hab_meditacao, 0)
+				if sheet.cbxmeditacao then
+					sheet.gradmeditacao = math.floor(nivel + 3)
+				else
+					sheet.gradmeditacao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradmeditacao)) + math.floor(N(sheet.modmeditacao)) + math.floor(N(sheet.outrosmeditacao))
+				sheet.totalmeditacao = total
+
+				sheet.modpercepcao = TRPG_getMod(sheet, sheet.hab_percepcao, 0)
+				if sheet.cbxpercepcao then
+					sheet.gradpercepcao = math.floor(nivel + 3)
+				else
+					sheet.gradpercepcao = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradpercepcao)) + math.floor(N(sheet.modpercepcao)) + math.floor(N(sheet.outrospercepcao))
+				sheet.totalpercepcao = total
+
+				sheet.modsobrevivencia = TRPG_getMod(sheet, sheet.hab_sobrevivencia, 0)
+				if sheet.cbxsobrevivencia then
+					sheet.gradsobrevivencia = math.floor(nivel + 3)
+				else
+					sheet.gradsobrevivencia = math.floor(metanivel)
+				end
+				local total = math.floor(N(sheet.gradsobrevivencia)) + math.floor(N(sheet.modsobrevivencia)) + math.floor(N(sheet.outrossobrevivencia))
+				sheet.totalsobrevivencia = total
+
+			end
+
+			function onDataLinkChange()
+				desCalculos2()
+				recalcAll2()
+			end
+
+		]]>
+	</script>
+</form>
