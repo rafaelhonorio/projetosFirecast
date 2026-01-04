@@ -11618,7 +11618,7 @@ function newTormentafrm()
 
     obj._e_event16 = obj.button15:addEventListener("onClick",
         function (self)
-            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta/output/Tormenta.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');
         end, obj);
 
     obj._e_event17 = obj.dataLink1:addEventListener("onChange",
