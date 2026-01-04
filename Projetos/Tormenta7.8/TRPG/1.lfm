@@ -440,6 +440,20 @@
 	<script>
 		<![CDATA[
 
+			-- === Compatibilidade / correções ===
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("rrpgGUI")).
+			if GUI == nil then GUI = gui end
+
+			-- 'desCalculos' era chamado no 1.lfm (onNodeReady / checkbox) mas não existia; mantemos compat.
+			if desCalculos == nil then
+				function desCalculos()
+					-- se existir a versão nova (desCalculos2), executa; se não, não quebra a ficha.
+					if desCalculos2 ~= nil then
+						pcall(desCalculos2)
+					end
+				end
+			end
+
 			-- garante que as funções existam sempre
 			if TRPG_getMod == nil then
 				function TRPG_getMod(sheet, habCode, defaultValue)
