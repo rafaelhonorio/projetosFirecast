@@ -2474,9 +2474,24 @@ function newTormenta01()
     obj.layout25:setHeight(41);
     obj.layout25:setName("layout25");
 
+    obj.button14 = gui.fromHandle(_obj_newObject("button"));
+    obj.button14:setParent(obj.layout25);
+    obj.button14:setLeft(53);
+    obj.button14:setTop(18);
+    obj.button14:setWidth(20);
+    obj.button14:setHeight(20);
+    obj.button14:setText("H");
+    obj.button14:setFontSize(12);
+    obj.button14:setFontColor("black");
+    obj.button14:setOpacity(1.0);
+    obj.button14:setCanFocus(false);
+    obj.button14:setCursor("handPoint");
+    obj.button14:setHint("Escolher habilidade base (corpo a corpo)");
+    obj.button14:setName("button14");
+
     obj.rectangle57 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle57:setParent(obj.layout25);
-    obj.rectangle57:setLeft(73);
+    obj.rectangle57:setLeft(94);
     obj.rectangle57:setTop(3);
     obj.rectangle57:setColor("Black");
     obj.rectangle57:setWidth(28);
@@ -2487,7 +2502,7 @@ function newTormenta01()
 
     obj.label59 = gui.fromHandle(_obj_newObject("label"));
     obj.label59:setParent(obj.layout25);
-    obj.label59:setLeft(75);
+    obj.label59:setLeft(96);
     obj.label59:setTop(5);
     obj.label59:setWidth(28);
     obj.label59:setHeight(8);
@@ -2499,7 +2514,7 @@ function newTormenta01()
 
     obj.totalcac = gui.fromHandle(_obj_newObject("edit"));
     obj.totalcac:setParent(obj.layout25);
-    obj.totalcac:setLeft(57);
+    obj.totalcac:setLeft(78);
     obj.totalcac:setTop(15);
     obj.totalcac:setWidth(60);
     obj.totalcac:setHeight(25);
@@ -2516,7 +2531,7 @@ function newTormenta01()
 
     obj.rectangle58 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle58:setParent(obj.layout25);
-    obj.rectangle58:setLeft(132);
+    obj.rectangle58:setLeft(153);
     obj.rectangle58:setTop(20);
     obj.rectangle58:setColor("Black");
     obj.rectangle58:setWidth(20);
@@ -2527,7 +2542,7 @@ function newTormenta01()
 
     obj.label60 = gui.fromHandle(_obj_newObject("label"));
     obj.label60:setParent(obj.layout25);
-    obj.label60:setLeft(135);
+    obj.label60:setLeft(156);
     obj.label60:setTop(18);
     obj.label60:setWidth(20);
     obj.label60:setHeight(15);
@@ -2539,7 +2554,7 @@ function newTormenta01()
 
     obj.rectangle59 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle59:setParent(obj.layout25);
-    obj.rectangle59:setLeft(185);
+    obj.rectangle59:setLeft(206);
     obj.rectangle59:setTop(3);
     obj.rectangle59:setColor("Black");
     obj.rectangle59:setWidth(25);
@@ -2550,7 +2565,7 @@ function newTormenta01()
 
     obj.label61 = gui.fromHandle(_obj_newObject("label"));
     obj.label61:setParent(obj.layout25);
-    obj.label61:setLeft(187);
+    obj.label61:setLeft(208);
     obj.label61:setTop(5);
     obj.label61:setWidth(58);
     obj.label61:setHeight(8);
@@ -2562,7 +2577,7 @@ function newTormenta01()
 
     obj.edit28 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout25);
-    obj.edit28:setLeft(167);
+    obj.edit28:setLeft(188);
     obj.edit28:setTop(15);
     obj.edit28:setWidth(60);
     obj.edit28:setHeight(25);
@@ -2578,7 +2593,7 @@ function newTormenta01()
 
     obj.rectangle60 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle60:setParent(obj.layout25);
-    obj.rectangle60:setLeft(232);
+    obj.rectangle60:setLeft(253);
     obj.rectangle60:setTop(20);
     obj.rectangle60:setColor("Black");
     obj.rectangle60:setWidth(20);
@@ -2589,7 +2604,7 @@ function newTormenta01()
 
     obj.label62 = gui.fromHandle(_obj_newObject("label"));
     obj.label62:setParent(obj.layout25);
-    obj.label62:setLeft(235);
+    obj.label62:setLeft(256);
     obj.label62:setTop(18);
     obj.label62:setWidth(20);
     obj.label62:setHeight(15);
@@ -2601,7 +2616,7 @@ function newTormenta01()
 
     obj.rectangle61 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle61:setParent(obj.layout25);
-    obj.rectangle61:setLeft(263);
+    obj.rectangle61:setLeft(284);
     obj.rectangle61:setTop(3);
     obj.rectangle61:setColor("Black");
     obj.rectangle61:setWidth(48);
@@ -2612,7 +2627,7 @@ function newTormenta01()
 
     obj.label63 = gui.fromHandle(_obj_newObject("label"));
     obj.label63:setParent(obj.layout25);
-    obj.label63:setLeft(271);
+    obj.label63:setLeft(292);
     obj.label63:setTop(5);
     obj.label63:setWidth(48);
     obj.label63:setHeight(8);
@@ -2624,7 +2639,7 @@ function newTormenta01()
 
     obj.cac2 = gui.fromHandle(_obj_newObject("edit"));
     obj.cac2:setParent(obj.layout25);
-    obj.cac2:setLeft(257);
+    obj.cac2:setLeft(278);
     obj.cac2:setTop(15);
     obj.cac2:setWidth(60);
     obj.cac2:setHeight(25);
@@ -2641,7 +2656,7 @@ function newTormenta01()
 
     obj.rectangle62 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle62:setParent(obj.layout25);
-    obj.rectangle62:setLeft(322);
+    obj.rectangle62:setLeft(343);
     obj.rectangle62:setTop(20);
     obj.rectangle62:setColor("Black");
     obj.rectangle62:setWidth(20);
@@ -2652,7 +2667,7 @@ function newTormenta01()
 
     obj.label64 = gui.fromHandle(_obj_newObject("label"));
     obj.label64:setParent(obj.layout25);
-    obj.label64:setLeft(325);
+    obj.label64:setLeft(346);
     obj.label64:setTop(18);
     obj.label64:setWidth(20);
     obj.label64:setHeight(15);
@@ -2664,7 +2679,7 @@ function newTormenta01()
 
     obj.rectangle63 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle63:setParent(obj.layout25);
-    obj.rectangle63:setLeft(359);
+    obj.rectangle63:setLeft(380);
     obj.rectangle63:setTop(3);
     obj.rectangle63:setColor("Black");
     obj.rectangle63:setWidth(38);
@@ -2675,7 +2690,7 @@ function newTormenta01()
 
     obj.label65 = gui.fromHandle(_obj_newObject("label"));
     obj.label65:setParent(obj.layout25);
-    obj.label65:setLeft(362);
+    obj.label65:setLeft(383);
     obj.label65:setTop(5);
     obj.label65:setWidth(38);
     obj.label65:setHeight(8);
@@ -2687,7 +2702,7 @@ function newTormenta01()
 
     obj.edit29 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout25);
-    obj.edit29:setLeft(348);
+    obj.edit29:setLeft(369);
     obj.edit29:setTop(15);
     obj.edit29:setWidth(60);
     obj.edit29:setHeight(25);
@@ -2703,7 +2718,7 @@ function newTormenta01()
 
     obj.rectangle64 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle64:setParent(obj.layout25);
-    obj.rectangle64:setLeft(413);
+    obj.rectangle64:setLeft(434);
     obj.rectangle64:setTop(20);
     obj.rectangle64:setColor("Black");
     obj.rectangle64:setWidth(20);
@@ -2714,7 +2729,7 @@ function newTormenta01()
 
     obj.label66 = gui.fromHandle(_obj_newObject("label"));
     obj.label66:setParent(obj.layout25);
-    obj.label66:setLeft(416);
+    obj.label66:setLeft(437);
     obj.label66:setTop(18);
     obj.label66:setWidth(20);
     obj.label66:setHeight(15);
@@ -2726,7 +2741,7 @@ function newTormenta01()
 
     obj.rectangle65 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle65:setParent(obj.layout25);
-    obj.rectangle65:setLeft(450);
+    obj.rectangle65:setLeft(471);
     obj.rectangle65:setTop(3);
     obj.rectangle65:setColor("Black");
     obj.rectangle65:setWidth(38);
@@ -2737,7 +2752,7 @@ function newTormenta01()
 
     obj.label67 = gui.fromHandle(_obj_newObject("label"));
     obj.label67:setParent(obj.layout25);
-    obj.label67:setLeft(453);
+    obj.label67:setLeft(474);
     obj.label67:setTop(5);
     obj.label67:setWidth(38);
     obj.label67:setHeight(8);
@@ -2749,7 +2764,7 @@ function newTormenta01()
 
     obj.edit30 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout25);
-    obj.edit30:setLeft(439);
+    obj.edit30:setLeft(460);
     obj.edit30:setTop(15);
     obj.edit30:setWidth(60);
     obj.edit30:setHeight(25);
@@ -2795,17 +2810,17 @@ function newTormenta01()
     obj.label68:setText("À Distância");
     obj.label68:setName("label68");
 
-    obj.button14 = gui.fromHandle(_obj_newObject("button"));
-    obj.button14:setParent(obj.layout26);
-    obj.button14:setLeft(27);
-    obj.button14:setTop(15);
-    obj.button14:setWidth(105);
-    obj.button14:setHeight(25);
-    obj.button14:setOpacity(0.0);
-    obj.button14:setCanFocus(false);
-    obj.button14:setCursor("handPoint");
-    obj.button14:setHint("Rolar 1d20 + À Distância");
-    obj.button14:setName("button14");
+    obj.button15 = gui.fromHandle(_obj_newObject("button"));
+    obj.button15:setParent(obj.layout26);
+    obj.button15:setLeft(27);
+    obj.button15:setTop(15);
+    obj.button15:setWidth(105);
+    obj.button15:setHeight(25);
+    obj.button15:setOpacity(0.0);
+    obj.button15:setCanFocus(false);
+    obj.button15:setCursor("handPoint");
+    obj.button15:setHint("Rolar 1d20 + À Distância");
+    obj.button15:setName("button15");
 
     obj.layout27 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.layout26);
@@ -2815,9 +2830,24 @@ function newTormenta01()
     obj.layout27:setHeight(41);
     obj.layout27:setName("layout27");
 
+    obj.button16 = gui.fromHandle(_obj_newObject("button"));
+    obj.button16:setParent(obj.layout27);
+    obj.button16:setLeft(53);
+    obj.button16:setTop(18);
+    obj.button16:setWidth(20);
+    obj.button16:setHeight(20);
+    obj.button16:setText("H");
+    obj.button16:setFontSize(12);
+    obj.button16:setFontColor("black");
+    obj.button16:setOpacity(1.0);
+    obj.button16:setCanFocus(false);
+    obj.button16:setCursor("handPoint");
+    obj.button16:setHint("Escolher habilidade base (à distância)");
+    obj.button16:setName("button16");
+
     obj.totaldis = gui.fromHandle(_obj_newObject("edit"));
     obj.totaldis:setParent(obj.layout27);
-    obj.totaldis:setLeft(57);
+    obj.totaldis:setLeft(78);
     obj.totaldis:setTop(15);
     obj.totaldis:setWidth(60);
     obj.totaldis:setHeight(25);
@@ -2834,7 +2864,7 @@ function newTormenta01()
 
     obj.rectangle67 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle67:setParent(obj.layout27);
-    obj.rectangle67:setLeft(132);
+    obj.rectangle67:setLeft(153);
     obj.rectangle67:setTop(20);
     obj.rectangle67:setColor("Black");
     obj.rectangle67:setWidth(20);
@@ -2845,7 +2875,7 @@ function newTormenta01()
 
     obj.label69 = gui.fromHandle(_obj_newObject("label"));
     obj.label69:setParent(obj.layout27);
-    obj.label69:setLeft(135);
+    obj.label69:setLeft(156);
     obj.label69:setTop(18);
     obj.label69:setWidth(20);
     obj.label69:setHeight(15);
@@ -2857,7 +2887,7 @@ function newTormenta01()
 
     obj.edit31 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit31:setParent(obj.layout27);
-    obj.edit31:setLeft(167);
+    obj.edit31:setLeft(188);
     obj.edit31:setTop(15);
     obj.edit31:setWidth(60);
     obj.edit31:setHeight(25);
@@ -2873,7 +2903,7 @@ function newTormenta01()
 
     obj.rectangle68 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle68:setParent(obj.layout27);
-    obj.rectangle68:setLeft(232);
+    obj.rectangle68:setLeft(253);
     obj.rectangle68:setTop(20);
     obj.rectangle68:setColor("Black");
     obj.rectangle68:setWidth(20);
@@ -2884,7 +2914,7 @@ function newTormenta01()
 
     obj.label70 = gui.fromHandle(_obj_newObject("label"));
     obj.label70:setParent(obj.layout27);
-    obj.label70:setLeft(235);
+    obj.label70:setLeft(256);
     obj.label70:setTop(18);
     obj.label70:setWidth(20);
     obj.label70:setHeight(15);
@@ -2896,7 +2926,7 @@ function newTormenta01()
 
     obj.dis2 = gui.fromHandle(_obj_newObject("edit"));
     obj.dis2:setParent(obj.layout27);
-    obj.dis2:setLeft(257);
+    obj.dis2:setLeft(278);
     obj.dis2:setTop(15);
     obj.dis2:setWidth(60);
     obj.dis2:setHeight(25);
@@ -2913,7 +2943,7 @@ function newTormenta01()
 
     obj.rectangle69 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle69:setParent(obj.layout27);
-    obj.rectangle69:setLeft(322);
+    obj.rectangle69:setLeft(343);
     obj.rectangle69:setTop(20);
     obj.rectangle69:setColor("Black");
     obj.rectangle69:setWidth(20);
@@ -2924,7 +2954,7 @@ function newTormenta01()
 
     obj.label71 = gui.fromHandle(_obj_newObject("label"));
     obj.label71:setParent(obj.layout27);
-    obj.label71:setLeft(325);
+    obj.label71:setLeft(346);
     obj.label71:setTop(18);
     obj.label71:setWidth(20);
     obj.label71:setHeight(15);
@@ -2936,7 +2966,7 @@ function newTormenta01()
 
     obj.edit32 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit32:setParent(obj.layout27);
-    obj.edit32:setLeft(348);
+    obj.edit32:setLeft(369);
     obj.edit32:setTop(15);
     obj.edit32:setWidth(60);
     obj.edit32:setHeight(25);
@@ -2952,7 +2982,7 @@ function newTormenta01()
 
     obj.rectangle70 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle70:setParent(obj.layout27);
-    obj.rectangle70:setLeft(413);
+    obj.rectangle70:setLeft(434);
     obj.rectangle70:setTop(20);
     obj.rectangle70:setColor("Black");
     obj.rectangle70:setWidth(20);
@@ -2963,7 +2993,7 @@ function newTormenta01()
 
     obj.label72 = gui.fromHandle(_obj_newObject("label"));
     obj.label72:setParent(obj.layout27);
-    obj.label72:setLeft(416);
+    obj.label72:setLeft(437);
     obj.label72:setTop(18);
     obj.label72:setWidth(20);
     obj.label72:setHeight(15);
@@ -2975,7 +3005,7 @@ function newTormenta01()
 
     obj.edit33 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit33:setParent(obj.layout27);
-    obj.edit33:setLeft(439);
+    obj.edit33:setLeft(460);
     obj.edit33:setTop(15);
     obj.edit33:setWidth(60);
     obj.edit33:setHeight(25);
@@ -3557,7 +3587,7 @@ function newTormenta01()
     obj.calculos:setParent(obj.layout30);
     obj.calculos:setName("calculos");
     obj.calculos:setField("calculos");
-    obj.calculos:setLeft(24);
+    obj.calculos:setLeft(44);
     obj.calculos:setTop(136);
     obj.calculos:setImageChecked("/TRPG/img/xis.png");
     obj.calculos:setImageUnchecked("/TRPG/img/Cal.png");
@@ -3565,50 +3595,26 @@ function newTormenta01()
     obj.calculos:setHeight(15);
     obj.calculos:setHint("Desabilita os cálculos automáticos da ficha.");
 
-    obj.acuidade = gui.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.acuidade:setParent(obj.layout30);
-    obj.acuidade:setName("acuidade");
-    obj.acuidade:setField("acuidade");
-    obj.acuidade:setLeft(44);
-    obj.acuidade:setTop(136);
-    obj.acuidade:setImageChecked("/TRPG/img/hand.png");
-    obj.acuidade:setImageUnchecked("/TRPG/img/closedhand.png");
-    obj.acuidade:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
-    obj.acuidade:setWidth(15);
-    obj.acuidade:setHeight(15);
-
-    obj.pontaria = gui.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.pontaria:setParent(obj.layout30);
-    obj.pontaria:setName("pontaria");
-    obj.pontaria:setField("pontaria");
-    obj.pontaria:setLeft(64);
-    obj.pontaria:setTop(136);
-    obj.pontaria:setImageChecked("/TRPG/img/wisdom.png");
-    obj.pontaria:setImageUnchecked("/TRPG/img/bow.png");
-    obj.pontaria:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
-    obj.pontaria:setWidth(15);
-    obj.pontaria:setHeight(15);
-
     obj.update = gui.fromHandle(_obj_newObject("image"));
     obj.update:setParent(obj.layout30);
-    obj.update:setLeft(84);
+    obj.update:setLeft(64);
     obj.update:setTop(136);
     obj.update:setName("update");
     obj.update:setSRC("/TRPG/img/update.gif");
     obj.update:setWidth(15);
     obj.update:setHeight(15);
 
-    obj.button15 = gui.fromHandle(_obj_newObject("button"));
-    obj.button15:setParent(obj.layout30);
-    obj.button15:setLeft(84);
-    obj.button15:setTop(136);
-    obj.button15:setWidth(15);
-    obj.button15:setHeight(15);
-    obj.button15:setOpacity(0.0);
-    obj.button15:setCanFocus(false);
-    obj.button15:setCursor("handPoint");
-    obj.button15:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
-    obj.button15:setName("button15");
+    obj.button17 = gui.fromHandle(_obj_newObject("button"));
+    obj.button17:setParent(obj.layout30);
+    obj.button17:setLeft(64);
+    obj.button17:setTop(136);
+    obj.button17:setWidth(15);
+    obj.button17:setHeight(15);
+    obj.button17:setOpacity(0.0);
+    obj.button17:setCanFocus(false);
+    obj.button17:setCursor("handPoint");
+    obj.button17:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button17:setName("button17");
 
     obj.label80 = gui.fromHandle(_obj_newObject("label"));
     obj.label80:setParent(obj.layout30);
@@ -3792,21 +3798,25 @@ function newTormenta01()
 				sheet.von2 = TRPG_getMod(sheet, sheet.hab_von, N(sheet.modsabedoria))
 				sheet.totalvon = math.floor(N(sheet.von1)) + math.floor(N(sheet.von2)) + math.floor(N(sheet.von3))
 
-				if sheet.acuidade == true then
-					sheet.cac2 = N(sheet.moddestreza)
-				else
-					sheet.cac2 = N(sheet.modforca)
-				end
-				sheet.totalcac =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+				local cacPadrao = (sheet.acuidade == true) and N(sheet.moddestreza) or N(sheet.modforca);
 
-				if sheet.pontaria == true then
-					sheet.dis2 = N(sheet.modsabedoria)
+				if tostring(sheet.hab_cac or "") ~= "" then
+					sheet.cac2 = TRPG_getMod(sheet, sheet.hab_cac, cacPadrao);
 				else
-					sheet.dis2 = N(sheet.moddestreza)
+					sheet.cac2 = cacPadrao;
 				end
-				sheet.totaldis =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
+
+				sheet.totalcac = math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+
+				local disPadrao = (sheet.pontaria == true) and N(sheet.modsabedoria) or N(sheet.moddestreza);
+
+				if tostring(sheet.hab_dis or "") ~= "" then
+					sheet.dis2 = TRPG_getMod(sheet, sheet.hab_dis, disPadrao);
+				else
+					sheet.dis2 = disPadrao;
+				end
+
+				sheet.totaldis = math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
 			end
 
 			if TRPG_rollValue == nil then
@@ -3918,25 +3928,37 @@ function newTormenta01()
 
     obj._e_event14 = obj.button14:addEventListener("onClick",
         function (self)
+            TRPG_chooseHab(sheet or self.sheet, "hab_cac", "FOR");
+        end, obj);
+
+    obj._e_event15 = obj.button15:addEventListener("onClick",
+        function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldis, "Ataque À Distância");
         end, obj);
 
-    obj._e_event15 = obj.calculos:addEventListener("onClick",
+    obj._e_event16 = obj.button16:addEventListener("onClick",
+        function (self)
+            TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
+        end, obj);
+
+    obj._e_event17 = obj.calculos:addEventListener("onClick",
         function (self)
             desCalculos(); desCalculos2();
         end, obj);
 
-    obj._e_event16 = obj.button15:addEventListener("onClick",
+    obj._e_event18 = obj.button17:addEventListener("onClick",
         function (self)
             GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');
         end, obj);
 
-    obj._e_event17 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink1:addEventListener("onChange",
         function (self, field, oldValue, newValue)
             recalcAll();
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event19);
+        __o_rrpgObjs.removeEventListenerById(self._e_event18);
         __o_rrpgObjs.removeEventListenerById(self._e_event17);
         __o_rrpgObjs.removeEventListenerById(self._e_event16);
         __o_rrpgObjs.removeEventListenerById(self._e_event15);
@@ -3992,6 +4014,7 @@ function newTormenta01()
         if self.rectangle46 ~= nil then self.rectangle46:destroy(); self.rectangle46 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
+        if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
         if self.rectangle47 ~= nil then self.rectangle47:destroy(); self.rectangle47 = nil; end;
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
@@ -4072,7 +4095,6 @@ function newTormenta01()
         if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
-        if self.pontaria ~= nil then self.pontaria:destroy(); self.pontaria = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
@@ -4173,7 +4195,6 @@ function newTormenta01()
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
-        if self.acuidade ~= nil then self.acuidade:destroy(); self.acuidade = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.edit45 ~= nil then self.edit45:destroy(); self.edit45 = nil; end;
@@ -4229,6 +4250,7 @@ function newTormenta01()
         if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
         if self.edit51 ~= nil then self.edit51:destroy(); self.edit51 = nil; end;
         if self.rectangle78 ~= nil then self.rectangle78:destroy(); self.rectangle78 = nil; end;
+        if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
         if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
         if self.rectangle63 ~= nil then self.rectangle63:destroy(); self.rectangle63 = nil; end;

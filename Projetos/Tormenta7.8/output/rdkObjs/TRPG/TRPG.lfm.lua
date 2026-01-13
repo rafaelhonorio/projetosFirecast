@@ -2493,9 +2493,24 @@ function newTormentafrm()
     obj.layout25:setHeight(41);
     obj.layout25:setName("layout25");
 
+    obj.button14 = gui.fromHandle(_obj_newObject("button"));
+    obj.button14:setParent(obj.layout25);
+    obj.button14:setLeft(53);
+    obj.button14:setTop(18);
+    obj.button14:setWidth(20);
+    obj.button14:setHeight(20);
+    obj.button14:setText("H");
+    obj.button14:setFontSize(12);
+    obj.button14:setFontColor("black");
+    obj.button14:setOpacity(1.0);
+    obj.button14:setCanFocus(false);
+    obj.button14:setCursor("handPoint");
+    obj.button14:setHint("Escolher habilidade base (corpo a corpo)");
+    obj.button14:setName("button14");
+
     obj.rectangle57 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle57:setParent(obj.layout25);
-    obj.rectangle57:setLeft(73);
+    obj.rectangle57:setLeft(94);
     obj.rectangle57:setTop(3);
     obj.rectangle57:setColor("Black");
     obj.rectangle57:setWidth(28);
@@ -2506,7 +2521,7 @@ function newTormentafrm()
 
     obj.label59 = gui.fromHandle(_obj_newObject("label"));
     obj.label59:setParent(obj.layout25);
-    obj.label59:setLeft(75);
+    obj.label59:setLeft(96);
     obj.label59:setTop(5);
     obj.label59:setWidth(28);
     obj.label59:setHeight(8);
@@ -2518,7 +2533,7 @@ function newTormentafrm()
 
     obj.totalcac = gui.fromHandle(_obj_newObject("edit"));
     obj.totalcac:setParent(obj.layout25);
-    obj.totalcac:setLeft(57);
+    obj.totalcac:setLeft(78);
     obj.totalcac:setTop(15);
     obj.totalcac:setWidth(60);
     obj.totalcac:setHeight(25);
@@ -2535,7 +2550,7 @@ function newTormentafrm()
 
     obj.rectangle58 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle58:setParent(obj.layout25);
-    obj.rectangle58:setLeft(132);
+    obj.rectangle58:setLeft(153);
     obj.rectangle58:setTop(20);
     obj.rectangle58:setColor("Black");
     obj.rectangle58:setWidth(20);
@@ -2546,7 +2561,7 @@ function newTormentafrm()
 
     obj.label60 = gui.fromHandle(_obj_newObject("label"));
     obj.label60:setParent(obj.layout25);
-    obj.label60:setLeft(135);
+    obj.label60:setLeft(156);
     obj.label60:setTop(18);
     obj.label60:setWidth(20);
     obj.label60:setHeight(15);
@@ -2558,7 +2573,7 @@ function newTormentafrm()
 
     obj.rectangle59 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle59:setParent(obj.layout25);
-    obj.rectangle59:setLeft(185);
+    obj.rectangle59:setLeft(206);
     obj.rectangle59:setTop(3);
     obj.rectangle59:setColor("Black");
     obj.rectangle59:setWidth(25);
@@ -2569,7 +2584,7 @@ function newTormentafrm()
 
     obj.label61 = gui.fromHandle(_obj_newObject("label"));
     obj.label61:setParent(obj.layout25);
-    obj.label61:setLeft(187);
+    obj.label61:setLeft(208);
     obj.label61:setTop(5);
     obj.label61:setWidth(58);
     obj.label61:setHeight(8);
@@ -2581,7 +2596,7 @@ function newTormentafrm()
 
     obj.edit28 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout25);
-    obj.edit28:setLeft(167);
+    obj.edit28:setLeft(188);
     obj.edit28:setTop(15);
     obj.edit28:setWidth(60);
     obj.edit28:setHeight(25);
@@ -2597,7 +2612,7 @@ function newTormentafrm()
 
     obj.rectangle60 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle60:setParent(obj.layout25);
-    obj.rectangle60:setLeft(232);
+    obj.rectangle60:setLeft(253);
     obj.rectangle60:setTop(20);
     obj.rectangle60:setColor("Black");
     obj.rectangle60:setWidth(20);
@@ -2608,7 +2623,7 @@ function newTormentafrm()
 
     obj.label62 = gui.fromHandle(_obj_newObject("label"));
     obj.label62:setParent(obj.layout25);
-    obj.label62:setLeft(235);
+    obj.label62:setLeft(256);
     obj.label62:setTop(18);
     obj.label62:setWidth(20);
     obj.label62:setHeight(15);
@@ -2620,7 +2635,7 @@ function newTormentafrm()
 
     obj.rectangle61 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle61:setParent(obj.layout25);
-    obj.rectangle61:setLeft(263);
+    obj.rectangle61:setLeft(284);
     obj.rectangle61:setTop(3);
     obj.rectangle61:setColor("Black");
     obj.rectangle61:setWidth(48);
@@ -2631,7 +2646,7 @@ function newTormentafrm()
 
     obj.label63 = gui.fromHandle(_obj_newObject("label"));
     obj.label63:setParent(obj.layout25);
-    obj.label63:setLeft(271);
+    obj.label63:setLeft(292);
     obj.label63:setTop(5);
     obj.label63:setWidth(48);
     obj.label63:setHeight(8);
@@ -2643,7 +2658,7 @@ function newTormentafrm()
 
     obj.cac2 = gui.fromHandle(_obj_newObject("edit"));
     obj.cac2:setParent(obj.layout25);
-    obj.cac2:setLeft(257);
+    obj.cac2:setLeft(278);
     obj.cac2:setTop(15);
     obj.cac2:setWidth(60);
     obj.cac2:setHeight(25);
@@ -2660,7 +2675,7 @@ function newTormentafrm()
 
     obj.rectangle62 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle62:setParent(obj.layout25);
-    obj.rectangle62:setLeft(322);
+    obj.rectangle62:setLeft(343);
     obj.rectangle62:setTop(20);
     obj.rectangle62:setColor("Black");
     obj.rectangle62:setWidth(20);
@@ -2671,7 +2686,7 @@ function newTormentafrm()
 
     obj.label64 = gui.fromHandle(_obj_newObject("label"));
     obj.label64:setParent(obj.layout25);
-    obj.label64:setLeft(325);
+    obj.label64:setLeft(346);
     obj.label64:setTop(18);
     obj.label64:setWidth(20);
     obj.label64:setHeight(15);
@@ -2683,7 +2698,7 @@ function newTormentafrm()
 
     obj.rectangle63 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle63:setParent(obj.layout25);
-    obj.rectangle63:setLeft(359);
+    obj.rectangle63:setLeft(380);
     obj.rectangle63:setTop(3);
     obj.rectangle63:setColor("Black");
     obj.rectangle63:setWidth(38);
@@ -2694,7 +2709,7 @@ function newTormentafrm()
 
     obj.label65 = gui.fromHandle(_obj_newObject("label"));
     obj.label65:setParent(obj.layout25);
-    obj.label65:setLeft(362);
+    obj.label65:setLeft(383);
     obj.label65:setTop(5);
     obj.label65:setWidth(38);
     obj.label65:setHeight(8);
@@ -2706,7 +2721,7 @@ function newTormentafrm()
 
     obj.edit29 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout25);
-    obj.edit29:setLeft(348);
+    obj.edit29:setLeft(369);
     obj.edit29:setTop(15);
     obj.edit29:setWidth(60);
     obj.edit29:setHeight(25);
@@ -2722,7 +2737,7 @@ function newTormentafrm()
 
     obj.rectangle64 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle64:setParent(obj.layout25);
-    obj.rectangle64:setLeft(413);
+    obj.rectangle64:setLeft(434);
     obj.rectangle64:setTop(20);
     obj.rectangle64:setColor("Black");
     obj.rectangle64:setWidth(20);
@@ -2733,7 +2748,7 @@ function newTormentafrm()
 
     obj.label66 = gui.fromHandle(_obj_newObject("label"));
     obj.label66:setParent(obj.layout25);
-    obj.label66:setLeft(416);
+    obj.label66:setLeft(437);
     obj.label66:setTop(18);
     obj.label66:setWidth(20);
     obj.label66:setHeight(15);
@@ -2745,7 +2760,7 @@ function newTormentafrm()
 
     obj.rectangle65 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle65:setParent(obj.layout25);
-    obj.rectangle65:setLeft(450);
+    obj.rectangle65:setLeft(471);
     obj.rectangle65:setTop(3);
     obj.rectangle65:setColor("Black");
     obj.rectangle65:setWidth(38);
@@ -2756,7 +2771,7 @@ function newTormentafrm()
 
     obj.label67 = gui.fromHandle(_obj_newObject("label"));
     obj.label67:setParent(obj.layout25);
-    obj.label67:setLeft(453);
+    obj.label67:setLeft(474);
     obj.label67:setTop(5);
     obj.label67:setWidth(38);
     obj.label67:setHeight(8);
@@ -2768,7 +2783,7 @@ function newTormentafrm()
 
     obj.edit30 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout25);
-    obj.edit30:setLeft(439);
+    obj.edit30:setLeft(460);
     obj.edit30:setTop(15);
     obj.edit30:setWidth(60);
     obj.edit30:setHeight(25);
@@ -2814,17 +2829,17 @@ function newTormentafrm()
     obj.label68:setText("À Distância");
     obj.label68:setName("label68");
 
-    obj.button14 = gui.fromHandle(_obj_newObject("button"));
-    obj.button14:setParent(obj.layout26);
-    obj.button14:setLeft(27);
-    obj.button14:setTop(15);
-    obj.button14:setWidth(105);
-    obj.button14:setHeight(25);
-    obj.button14:setOpacity(0.0);
-    obj.button14:setCanFocus(false);
-    obj.button14:setCursor("handPoint");
-    obj.button14:setHint("Rolar 1d20 + À Distância");
-    obj.button14:setName("button14");
+    obj.button15 = gui.fromHandle(_obj_newObject("button"));
+    obj.button15:setParent(obj.layout26);
+    obj.button15:setLeft(27);
+    obj.button15:setTop(15);
+    obj.button15:setWidth(105);
+    obj.button15:setHeight(25);
+    obj.button15:setOpacity(0.0);
+    obj.button15:setCanFocus(false);
+    obj.button15:setCursor("handPoint");
+    obj.button15:setHint("Rolar 1d20 + À Distância");
+    obj.button15:setName("button15");
 
     obj.layout27 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.layout26);
@@ -2834,9 +2849,24 @@ function newTormentafrm()
     obj.layout27:setHeight(41);
     obj.layout27:setName("layout27");
 
+    obj.button16 = gui.fromHandle(_obj_newObject("button"));
+    obj.button16:setParent(obj.layout27);
+    obj.button16:setLeft(53);
+    obj.button16:setTop(18);
+    obj.button16:setWidth(20);
+    obj.button16:setHeight(20);
+    obj.button16:setText("H");
+    obj.button16:setFontSize(12);
+    obj.button16:setFontColor("black");
+    obj.button16:setOpacity(1.0);
+    obj.button16:setCanFocus(false);
+    obj.button16:setCursor("handPoint");
+    obj.button16:setHint("Escolher habilidade base (à distância)");
+    obj.button16:setName("button16");
+
     obj.totaldis = gui.fromHandle(_obj_newObject("edit"));
     obj.totaldis:setParent(obj.layout27);
-    obj.totaldis:setLeft(57);
+    obj.totaldis:setLeft(78);
     obj.totaldis:setTop(15);
     obj.totaldis:setWidth(60);
     obj.totaldis:setHeight(25);
@@ -2853,7 +2883,7 @@ function newTormentafrm()
 
     obj.rectangle67 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle67:setParent(obj.layout27);
-    obj.rectangle67:setLeft(132);
+    obj.rectangle67:setLeft(153);
     obj.rectangle67:setTop(20);
     obj.rectangle67:setColor("Black");
     obj.rectangle67:setWidth(20);
@@ -2864,7 +2894,7 @@ function newTormentafrm()
 
     obj.label69 = gui.fromHandle(_obj_newObject("label"));
     obj.label69:setParent(obj.layout27);
-    obj.label69:setLeft(135);
+    obj.label69:setLeft(156);
     obj.label69:setTop(18);
     obj.label69:setWidth(20);
     obj.label69:setHeight(15);
@@ -2876,7 +2906,7 @@ function newTormentafrm()
 
     obj.edit31 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit31:setParent(obj.layout27);
-    obj.edit31:setLeft(167);
+    obj.edit31:setLeft(188);
     obj.edit31:setTop(15);
     obj.edit31:setWidth(60);
     obj.edit31:setHeight(25);
@@ -2892,7 +2922,7 @@ function newTormentafrm()
 
     obj.rectangle68 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle68:setParent(obj.layout27);
-    obj.rectangle68:setLeft(232);
+    obj.rectangle68:setLeft(253);
     obj.rectangle68:setTop(20);
     obj.rectangle68:setColor("Black");
     obj.rectangle68:setWidth(20);
@@ -2903,7 +2933,7 @@ function newTormentafrm()
 
     obj.label70 = gui.fromHandle(_obj_newObject("label"));
     obj.label70:setParent(obj.layout27);
-    obj.label70:setLeft(235);
+    obj.label70:setLeft(256);
     obj.label70:setTop(18);
     obj.label70:setWidth(20);
     obj.label70:setHeight(15);
@@ -2915,7 +2945,7 @@ function newTormentafrm()
 
     obj.dis2 = gui.fromHandle(_obj_newObject("edit"));
     obj.dis2:setParent(obj.layout27);
-    obj.dis2:setLeft(257);
+    obj.dis2:setLeft(278);
     obj.dis2:setTop(15);
     obj.dis2:setWidth(60);
     obj.dis2:setHeight(25);
@@ -2932,7 +2962,7 @@ function newTormentafrm()
 
     obj.rectangle69 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle69:setParent(obj.layout27);
-    obj.rectangle69:setLeft(322);
+    obj.rectangle69:setLeft(343);
     obj.rectangle69:setTop(20);
     obj.rectangle69:setColor("Black");
     obj.rectangle69:setWidth(20);
@@ -2943,7 +2973,7 @@ function newTormentafrm()
 
     obj.label71 = gui.fromHandle(_obj_newObject("label"));
     obj.label71:setParent(obj.layout27);
-    obj.label71:setLeft(325);
+    obj.label71:setLeft(346);
     obj.label71:setTop(18);
     obj.label71:setWidth(20);
     obj.label71:setHeight(15);
@@ -2955,7 +2985,7 @@ function newTormentafrm()
 
     obj.edit32 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit32:setParent(obj.layout27);
-    obj.edit32:setLeft(348);
+    obj.edit32:setLeft(369);
     obj.edit32:setTop(15);
     obj.edit32:setWidth(60);
     obj.edit32:setHeight(25);
@@ -2971,7 +3001,7 @@ function newTormentafrm()
 
     obj.rectangle70 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle70:setParent(obj.layout27);
-    obj.rectangle70:setLeft(413);
+    obj.rectangle70:setLeft(434);
     obj.rectangle70:setTop(20);
     obj.rectangle70:setColor("Black");
     obj.rectangle70:setWidth(20);
@@ -2982,7 +3012,7 @@ function newTormentafrm()
 
     obj.label72 = gui.fromHandle(_obj_newObject("label"));
     obj.label72:setParent(obj.layout27);
-    obj.label72:setLeft(416);
+    obj.label72:setLeft(437);
     obj.label72:setTop(18);
     obj.label72:setWidth(20);
     obj.label72:setHeight(15);
@@ -2994,7 +3024,7 @@ function newTormentafrm()
 
     obj.edit33 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit33:setParent(obj.layout27);
-    obj.edit33:setLeft(439);
+    obj.edit33:setLeft(460);
     obj.edit33:setTop(15);
     obj.edit33:setWidth(60);
     obj.edit33:setHeight(25);
@@ -3576,7 +3606,7 @@ function newTormentafrm()
     obj.calculos:setParent(obj.layout30);
     obj.calculos:setName("calculos");
     obj.calculos:setField("calculos");
-    obj.calculos:setLeft(24);
+    obj.calculos:setLeft(44);
     obj.calculos:setTop(136);
     obj.calculos:setImageChecked("/TRPG/img/xis.png");
     obj.calculos:setImageUnchecked("/TRPG/img/Cal.png");
@@ -3584,50 +3614,26 @@ function newTormentafrm()
     obj.calculos:setHeight(15);
     obj.calculos:setHint("Desabilita os cálculos automáticos da ficha.");
 
-    obj.acuidade = gui.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.acuidade:setParent(obj.layout30);
-    obj.acuidade:setName("acuidade");
-    obj.acuidade:setField("acuidade");
-    obj.acuidade:setLeft(44);
-    obj.acuidade:setTop(136);
-    obj.acuidade:setImageChecked("/TRPG/img/hand.png");
-    obj.acuidade:setImageUnchecked("/TRPG/img/closedhand.png");
-    obj.acuidade:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
-    obj.acuidade:setWidth(15);
-    obj.acuidade:setHeight(15);
-
-    obj.pontaria = gui.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.pontaria:setParent(obj.layout30);
-    obj.pontaria:setName("pontaria");
-    obj.pontaria:setField("pontaria");
-    obj.pontaria:setLeft(64);
-    obj.pontaria:setTop(136);
-    obj.pontaria:setImageChecked("/TRPG/img/wisdom.png");
-    obj.pontaria:setImageUnchecked("/TRPG/img/bow.png");
-    obj.pontaria:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
-    obj.pontaria:setWidth(15);
-    obj.pontaria:setHeight(15);
-
     obj.update = gui.fromHandle(_obj_newObject("image"));
     obj.update:setParent(obj.layout30);
-    obj.update:setLeft(84);
+    obj.update:setLeft(64);
     obj.update:setTop(136);
     obj.update:setName("update");
     obj.update:setSRC("/TRPG/img/update.gif");
     obj.update:setWidth(15);
     obj.update:setHeight(15);
 
-    obj.button15 = gui.fromHandle(_obj_newObject("button"));
-    obj.button15:setParent(obj.layout30);
-    obj.button15:setLeft(84);
-    obj.button15:setTop(136);
-    obj.button15:setWidth(15);
-    obj.button15:setHeight(15);
-    obj.button15:setOpacity(0.0);
-    obj.button15:setCanFocus(false);
-    obj.button15:setCursor("handPoint");
-    obj.button15:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
-    obj.button15:setName("button15");
+    obj.button17 = gui.fromHandle(_obj_newObject("button"));
+    obj.button17:setParent(obj.layout30);
+    obj.button17:setLeft(64);
+    obj.button17:setTop(136);
+    obj.button17:setWidth(15);
+    obj.button17:setHeight(15);
+    obj.button17:setOpacity(0.0);
+    obj.button17:setCanFocus(false);
+    obj.button17:setCursor("handPoint");
+    obj.button17:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button17:setName("button17");
 
     obj.label80 = gui.fromHandle(_obj_newObject("label"));
     obj.label80:setParent(obj.layout30);
@@ -3811,21 +3817,25 @@ function newTormentafrm()
 				sheet.von2 = TRPG_getMod(sheet, sheet.hab_von, N(sheet.modsabedoria))
 				sheet.totalvon = math.floor(N(sheet.von1)) + math.floor(N(sheet.von2)) + math.floor(N(sheet.von3))
 
-				if sheet.acuidade == true then
-					sheet.cac2 = N(sheet.moddestreza)
-				else
-					sheet.cac2 = N(sheet.modforca)
-				end
-				sheet.totalcac =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+				local cacPadrao = (sheet.acuidade == true) and N(sheet.moddestreza) or N(sheet.modforca);
 
-				if sheet.pontaria == true then
-					sheet.dis2 = N(sheet.modsabedoria)
+				if tostring(sheet.hab_cac or "") ~= "" then
+					sheet.cac2 = TRPG_getMod(sheet, sheet.hab_cac, cacPadrao);
 				else
-					sheet.dis2 = N(sheet.moddestreza)
+					sheet.cac2 = cacPadrao;
 				end
-				sheet.totaldis =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
+
+				sheet.totalcac = math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+
+				local disPadrao = (sheet.pontaria == true) and N(sheet.modsabedoria) or N(sheet.moddestreza);
+
+				if tostring(sheet.hab_dis or "") ~= "" then
+					sheet.dis2 = TRPG_getMod(sheet, sheet.hab_dis, disPadrao);
+				else
+					sheet.dis2 = disPadrao;
+				end
+
+				sheet.totaldis = math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
 			end
 
 			if TRPG_rollValue == nil then
@@ -4029,15 +4039,15 @@ function newTormentafrm()
     obj.imageCheckBox1:setField("cbxacrobacia");
     obj.imageCheckBox1:setName("imageCheckBox1");
 
-    obj.button16 = gui.fromHandle(_obj_newObject("button"));
-    obj.button16:setParent(obj.layout33);
-    obj.button16:setLeft(27);
-    obj.button16:setTop(5);
-    obj.button16:setWidth(20);
-    obj.button16:setHeight(20);
-    obj.button16:setText("H");
-    obj.button16:setHint("Escolher habilidade base");
-    obj.button16:setName("button16");
+    obj.button18 = gui.fromHandle(_obj_newObject("button"));
+    obj.button18:setParent(obj.layout33);
+    obj.button18:setLeft(27);
+    obj.button18:setTop(5);
+    obj.button18:setWidth(20);
+    obj.button18:setHeight(20);
+    obj.button18:setText("H");
+    obj.button18:setHint("Escolher habilidade base");
+    obj.button18:setName("button18");
 
     obj.label85 = gui.fromHandle(_obj_newObject("label"));
     obj.label85:setParent(obj.layout33);
@@ -4052,17 +4062,17 @@ function newTormentafrm()
     obj.label85:setFontColor("white");
     obj.label85:setName("label85");
 
-    obj.button17 = gui.fromHandle(_obj_newObject("button"));
-    obj.button17:setParent(obj.layout33);
-    obj.button17:setLeft(50);
-    obj.button17:setTop(5);
-    obj.button17:setWidth(150);
-    obj.button17:setHeight(20);
-    obj.button17:setOpacity(0.0);
-    obj.button17:setCanFocus(false);
-    obj.button17:setCursor("handPoint");
-    obj.button17:setHint("Rolar 1d20 + Acrobacia");
-    obj.button17:setName("button17");
+    obj.button19 = gui.fromHandle(_obj_newObject("button"));
+    obj.button19:setParent(obj.layout33);
+    obj.button19:setLeft(50);
+    obj.button19:setTop(5);
+    obj.button19:setWidth(150);
+    obj.button19:setHeight(20);
+    obj.button19:setOpacity(0.0);
+    obj.button19:setCanFocus(false);
+    obj.button19:setCursor("handPoint");
+    obj.button19:setHint("Rolar 1d20 + Acrobacia");
+    obj.button19:setName("button19");
 
     obj.totalacrobacia = gui.fromHandle(_obj_newObject("edit"));
     obj.totalacrobacia:setParent(obj.layout33);
@@ -4230,15 +4240,15 @@ function newTormentafrm()
     obj.imageCheckBox2:setField("cbxadestrar");
     obj.imageCheckBox2:setName("imageCheckBox2");
 
-    obj.button18 = gui.fromHandle(_obj_newObject("button"));
-    obj.button18:setParent(obj.layout34);
-    obj.button18:setLeft(27);
-    obj.button18:setTop(5);
-    obj.button18:setWidth(20);
-    obj.button18:setHeight(20);
-    obj.button18:setText("H");
-    obj.button18:setHint("Escolher habilidade base");
-    obj.button18:setName("button18");
+    obj.button20 = gui.fromHandle(_obj_newObject("button"));
+    obj.button20:setParent(obj.layout34);
+    obj.button20:setLeft(27);
+    obj.button20:setTop(5);
+    obj.button20:setWidth(20);
+    obj.button20:setHeight(20);
+    obj.button20:setText("H");
+    obj.button20:setHint("Escolher habilidade base");
+    obj.button20:setName("button20");
 
     obj.label89 = gui.fromHandle(_obj_newObject("label"));
     obj.label89:setParent(obj.layout34);
@@ -4253,17 +4263,17 @@ function newTormentafrm()
     obj.label89:setFontColor("white");
     obj.label89:setName("label89");
 
-    obj.button19 = gui.fromHandle(_obj_newObject("button"));
-    obj.button19:setParent(obj.layout34);
-    obj.button19:setLeft(50);
-    obj.button19:setTop(5);
-    obj.button19:setWidth(150);
-    obj.button19:setHeight(20);
-    obj.button19:setOpacity(0.0);
-    obj.button19:setCanFocus(false);
-    obj.button19:setCursor("handPoint");
-    obj.button19:setHint("Rolar 1d20 + Adestrar Animais");
-    obj.button19:setName("button19");
+    obj.button21 = gui.fromHandle(_obj_newObject("button"));
+    obj.button21:setParent(obj.layout34);
+    obj.button21:setLeft(50);
+    obj.button21:setTop(5);
+    obj.button21:setWidth(150);
+    obj.button21:setHeight(20);
+    obj.button21:setOpacity(0.0);
+    obj.button21:setCanFocus(false);
+    obj.button21:setCursor("handPoint");
+    obj.button21:setHint("Rolar 1d20 + Adestrar Animais");
+    obj.button21:setName("button21");
 
     obj.totaladestrar = gui.fromHandle(_obj_newObject("edit"));
     obj.totaladestrar:setParent(obj.layout34);
@@ -4431,15 +4441,15 @@ function newTormentafrm()
     obj.imageCheckBox3:setField("cbxatletismo");
     obj.imageCheckBox3:setName("imageCheckBox3");
 
-    obj.button20 = gui.fromHandle(_obj_newObject("button"));
-    obj.button20:setParent(obj.layout35);
-    obj.button20:setLeft(27);
-    obj.button20:setTop(5);
-    obj.button20:setWidth(20);
-    obj.button20:setHeight(20);
-    obj.button20:setText("H");
-    obj.button20:setHint("Escolher habilidade base");
-    obj.button20:setName("button20");
+    obj.button22 = gui.fromHandle(_obj_newObject("button"));
+    obj.button22:setParent(obj.layout35);
+    obj.button22:setLeft(27);
+    obj.button22:setTop(5);
+    obj.button22:setWidth(20);
+    obj.button22:setHeight(20);
+    obj.button22:setText("H");
+    obj.button22:setHint("Escolher habilidade base");
+    obj.button22:setName("button22");
 
     obj.label93 = gui.fromHandle(_obj_newObject("label"));
     obj.label93:setParent(obj.layout35);
@@ -4454,17 +4464,17 @@ function newTormentafrm()
     obj.label93:setFontColor("white");
     obj.label93:setName("label93");
 
-    obj.button21 = gui.fromHandle(_obj_newObject("button"));
-    obj.button21:setParent(obj.layout35);
-    obj.button21:setLeft(50);
-    obj.button21:setTop(5);
-    obj.button21:setWidth(150);
-    obj.button21:setHeight(20);
-    obj.button21:setOpacity(0.0);
-    obj.button21:setCanFocus(false);
-    obj.button21:setCursor("handPoint");
-    obj.button21:setHint("Rolar 1d20 + Atletismo");
-    obj.button21:setName("button21");
+    obj.button23 = gui.fromHandle(_obj_newObject("button"));
+    obj.button23:setParent(obj.layout35);
+    obj.button23:setLeft(50);
+    obj.button23:setTop(5);
+    obj.button23:setWidth(150);
+    obj.button23:setHeight(20);
+    obj.button23:setOpacity(0.0);
+    obj.button23:setCanFocus(false);
+    obj.button23:setCursor("handPoint");
+    obj.button23:setHint("Rolar 1d20 + Atletismo");
+    obj.button23:setName("button23");
 
     obj.totalatletismo = gui.fromHandle(_obj_newObject("edit"));
     obj.totalatletismo:setParent(obj.layout35);
@@ -4632,15 +4642,15 @@ function newTormentafrm()
     obj.imageCheckBox4:setField("cbxatuacao1");
     obj.imageCheckBox4:setName("imageCheckBox4");
 
-    obj.button22 = gui.fromHandle(_obj_newObject("button"));
-    obj.button22:setParent(obj.layout36);
-    obj.button22:setLeft(27);
-    obj.button22:setTop(5);
-    obj.button22:setWidth(20);
-    obj.button22:setHeight(20);
-    obj.button22:setText("H");
-    obj.button22:setHint("Escolher habilidade base");
-    obj.button22:setName("button22");
+    obj.button24 = gui.fromHandle(_obj_newObject("button"));
+    obj.button24:setParent(obj.layout36);
+    obj.button24:setLeft(27);
+    obj.button24:setTop(5);
+    obj.button24:setWidth(20);
+    obj.button24:setHeight(20);
+    obj.button24:setText("H");
+    obj.button24:setHint("Escolher habilidade base");
+    obj.button24:setName("button24");
 
     obj.label97 = gui.fromHandle(_obj_newObject("label"));
     obj.label97:setParent(obj.layout36);
@@ -4655,17 +4665,17 @@ function newTormentafrm()
     obj.label97:setFontColor("white");
     obj.label97:setName("label97");
 
-    obj.button23 = gui.fromHandle(_obj_newObject("button"));
-    obj.button23:setParent(obj.layout36);
-    obj.button23:setLeft(50);
-    obj.button23:setTop(5);
-    obj.button23:setWidth(150);
-    obj.button23:setHeight(20);
-    obj.button23:setOpacity(0.0);
-    obj.button23:setCanFocus(false);
-    obj.button23:setCursor("handPoint");
-    obj.button23:setHint("Rolar 1d20 + Atuação");
-    obj.button23:setName("button23");
+    obj.button25 = gui.fromHandle(_obj_newObject("button"));
+    obj.button25:setParent(obj.layout36);
+    obj.button25:setLeft(50);
+    obj.button25:setTop(5);
+    obj.button25:setWidth(150);
+    obj.button25:setHeight(20);
+    obj.button25:setOpacity(0.0);
+    obj.button25:setCanFocus(false);
+    obj.button25:setCursor("handPoint");
+    obj.button25:setHint("Rolar 1d20 + Atuação");
+    obj.button25:setName("button25");
 
     obj.edit55 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit55:setParent(obj.layout36);
@@ -4846,15 +4856,15 @@ function newTormentafrm()
     obj.imageCheckBox5:setField("cbxatuacao2");
     obj.imageCheckBox5:setName("imageCheckBox5");
 
-    obj.button24 = gui.fromHandle(_obj_newObject("button"));
-    obj.button24:setParent(obj.layout37);
-    obj.button24:setLeft(27);
-    obj.button24:setTop(5);
-    obj.button24:setWidth(20);
-    obj.button24:setHeight(20);
-    obj.button24:setText("H");
-    obj.button24:setHint("Escolher habilidade base");
-    obj.button24:setName("button24");
+    obj.button26 = gui.fromHandle(_obj_newObject("button"));
+    obj.button26:setParent(obj.layout37);
+    obj.button26:setLeft(27);
+    obj.button26:setTop(5);
+    obj.button26:setWidth(20);
+    obj.button26:setHeight(20);
+    obj.button26:setText("H");
+    obj.button26:setHint("Escolher habilidade base");
+    obj.button26:setName("button26");
 
     obj.label101 = gui.fromHandle(_obj_newObject("label"));
     obj.label101:setParent(obj.layout37);
@@ -4869,17 +4879,17 @@ function newTormentafrm()
     obj.label101:setFontColor("white");
     obj.label101:setName("label101");
 
-    obj.button25 = gui.fromHandle(_obj_newObject("button"));
-    obj.button25:setParent(obj.layout37);
-    obj.button25:setLeft(50);
-    obj.button25:setTop(5);
-    obj.button25:setWidth(150);
-    obj.button25:setHeight(20);
-    obj.button25:setOpacity(0.0);
-    obj.button25:setCanFocus(false);
-    obj.button25:setCursor("handPoint");
-    obj.button25:setHint("Rolar 1d20 + Atuação");
-    obj.button25:setName("button25");
+    obj.button27 = gui.fromHandle(_obj_newObject("button"));
+    obj.button27:setParent(obj.layout37);
+    obj.button27:setLeft(50);
+    obj.button27:setTop(5);
+    obj.button27:setWidth(150);
+    obj.button27:setHeight(20);
+    obj.button27:setOpacity(0.0);
+    obj.button27:setCanFocus(false);
+    obj.button27:setCursor("handPoint");
+    obj.button27:setHint("Rolar 1d20 + Atuação");
+    obj.button27:setName("button27");
 
     obj.edit56 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit56:setParent(obj.layout37);
@@ -5060,15 +5070,15 @@ function newTormentafrm()
     obj.imageCheckBox6:setField("cbxcavalgar");
     obj.imageCheckBox6:setName("imageCheckBox6");
 
-    obj.button26 = gui.fromHandle(_obj_newObject("button"));
-    obj.button26:setParent(obj.layout38);
-    obj.button26:setLeft(27);
-    obj.button26:setTop(5);
-    obj.button26:setWidth(20);
-    obj.button26:setHeight(20);
-    obj.button26:setText("H");
-    obj.button26:setHint("Escolher habilidade base");
-    obj.button26:setName("button26");
+    obj.button28 = gui.fromHandle(_obj_newObject("button"));
+    obj.button28:setParent(obj.layout38);
+    obj.button28:setLeft(27);
+    obj.button28:setTop(5);
+    obj.button28:setWidth(20);
+    obj.button28:setHeight(20);
+    obj.button28:setText("H");
+    obj.button28:setHint("Escolher habilidade base");
+    obj.button28:setName("button28");
 
     obj.label105 = gui.fromHandle(_obj_newObject("label"));
     obj.label105:setParent(obj.layout38);
@@ -5083,17 +5093,17 @@ function newTormentafrm()
     obj.label105:setFontColor("white");
     obj.label105:setName("label105");
 
-    obj.button27 = gui.fromHandle(_obj_newObject("button"));
-    obj.button27:setParent(obj.layout38);
-    obj.button27:setLeft(50);
-    obj.button27:setTop(5);
-    obj.button27:setWidth(150);
-    obj.button27:setHeight(20);
-    obj.button27:setOpacity(0.0);
-    obj.button27:setCanFocus(false);
-    obj.button27:setCursor("handPoint");
-    obj.button27:setHint("Rolar 1d20 + Cavalgar");
-    obj.button27:setName("button27");
+    obj.button29 = gui.fromHandle(_obj_newObject("button"));
+    obj.button29:setParent(obj.layout38);
+    obj.button29:setLeft(50);
+    obj.button29:setTop(5);
+    obj.button29:setWidth(150);
+    obj.button29:setHeight(20);
+    obj.button29:setOpacity(0.0);
+    obj.button29:setCanFocus(false);
+    obj.button29:setCursor("handPoint");
+    obj.button29:setHint("Rolar 1d20 + Cavalgar");
+    obj.button29:setName("button29");
 
     obj.totalcavalgar = gui.fromHandle(_obj_newObject("edit"));
     obj.totalcavalgar:setParent(obj.layout38);
@@ -5261,15 +5271,15 @@ function newTormentafrm()
     obj.imageCheckBox7:setField("cbxconhecimento1");
     obj.imageCheckBox7:setName("imageCheckBox7");
 
-    obj.button28 = gui.fromHandle(_obj_newObject("button"));
-    obj.button28:setParent(obj.layout39);
-    obj.button28:setLeft(27);
-    obj.button28:setTop(5);
-    obj.button28:setWidth(20);
-    obj.button28:setHeight(20);
-    obj.button28:setText("H");
-    obj.button28:setHint("Escolher habilidade base");
-    obj.button28:setName("button28");
+    obj.button30 = gui.fromHandle(_obj_newObject("button"));
+    obj.button30:setParent(obj.layout39);
+    obj.button30:setLeft(27);
+    obj.button30:setTop(5);
+    obj.button30:setWidth(20);
+    obj.button30:setHeight(20);
+    obj.button30:setText("H");
+    obj.button30:setHint("Escolher habilidade base");
+    obj.button30:setName("button30");
 
     obj.label109 = gui.fromHandle(_obj_newObject("label"));
     obj.label109:setParent(obj.layout39);
@@ -5284,17 +5294,17 @@ function newTormentafrm()
     obj.label109:setFontColor("white");
     obj.label109:setName("label109");
 
-    obj.button29 = gui.fromHandle(_obj_newObject("button"));
-    obj.button29:setParent(obj.layout39);
-    obj.button29:setLeft(50);
-    obj.button29:setTop(5);
-    obj.button29:setWidth(150);
-    obj.button29:setHeight(20);
-    obj.button29:setOpacity(0.0);
-    obj.button29:setCanFocus(false);
-    obj.button29:setCursor("handPoint");
-    obj.button29:setHint("Rolar 1d20 + Conhecimento");
-    obj.button29:setName("button29");
+    obj.button31 = gui.fromHandle(_obj_newObject("button"));
+    obj.button31:setParent(obj.layout39);
+    obj.button31:setLeft(50);
+    obj.button31:setTop(5);
+    obj.button31:setWidth(150);
+    obj.button31:setHeight(20);
+    obj.button31:setOpacity(0.0);
+    obj.button31:setCanFocus(false);
+    obj.button31:setCursor("handPoint");
+    obj.button31:setHint("Rolar 1d20 + Conhecimento");
+    obj.button31:setName("button31");
 
     obj.edit57 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit57:setParent(obj.layout39);
@@ -5475,15 +5485,15 @@ function newTormentafrm()
     obj.imageCheckBox8:setField("cbxconhecimento2");
     obj.imageCheckBox8:setName("imageCheckBox8");
 
-    obj.button30 = gui.fromHandle(_obj_newObject("button"));
-    obj.button30:setParent(obj.layout40);
-    obj.button30:setLeft(27);
-    obj.button30:setTop(5);
-    obj.button30:setWidth(20);
-    obj.button30:setHeight(20);
-    obj.button30:setText("H");
-    obj.button30:setHint("Escolher habilidade base");
-    obj.button30:setName("button30");
+    obj.button32 = gui.fromHandle(_obj_newObject("button"));
+    obj.button32:setParent(obj.layout40);
+    obj.button32:setLeft(27);
+    obj.button32:setTop(5);
+    obj.button32:setWidth(20);
+    obj.button32:setHeight(20);
+    obj.button32:setText("H");
+    obj.button32:setHint("Escolher habilidade base");
+    obj.button32:setName("button32");
 
     obj.label113 = gui.fromHandle(_obj_newObject("label"));
     obj.label113:setParent(obj.layout40);
@@ -5498,17 +5508,17 @@ function newTormentafrm()
     obj.label113:setFontColor("white");
     obj.label113:setName("label113");
 
-    obj.button31 = gui.fromHandle(_obj_newObject("button"));
-    obj.button31:setParent(obj.layout40);
-    obj.button31:setLeft(50);
-    obj.button31:setTop(5);
-    obj.button31:setWidth(150);
-    obj.button31:setHeight(20);
-    obj.button31:setOpacity(0.0);
-    obj.button31:setCanFocus(false);
-    obj.button31:setCursor("handPoint");
-    obj.button31:setHint("Rolar 1d20 + Conhecimento");
-    obj.button31:setName("button31");
+    obj.button33 = gui.fromHandle(_obj_newObject("button"));
+    obj.button33:setParent(obj.layout40);
+    obj.button33:setLeft(50);
+    obj.button33:setTop(5);
+    obj.button33:setWidth(150);
+    obj.button33:setHeight(20);
+    obj.button33:setOpacity(0.0);
+    obj.button33:setCanFocus(false);
+    obj.button33:setCursor("handPoint");
+    obj.button33:setHint("Rolar 1d20 + Conhecimento");
+    obj.button33:setName("button33");
 
     obj.edit58 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit58:setParent(obj.layout40);
@@ -5689,15 +5699,15 @@ function newTormentafrm()
     obj.imageCheckBox9:setField("cbxcura");
     obj.imageCheckBox9:setName("imageCheckBox9");
 
-    obj.button32 = gui.fromHandle(_obj_newObject("button"));
-    obj.button32:setParent(obj.layout41);
-    obj.button32:setLeft(27);
-    obj.button32:setTop(5);
-    obj.button32:setWidth(20);
-    obj.button32:setHeight(20);
-    obj.button32:setText("H");
-    obj.button32:setHint("Escolher habilidade base");
-    obj.button32:setName("button32");
+    obj.button34 = gui.fromHandle(_obj_newObject("button"));
+    obj.button34:setParent(obj.layout41);
+    obj.button34:setLeft(27);
+    obj.button34:setTop(5);
+    obj.button34:setWidth(20);
+    obj.button34:setHeight(20);
+    obj.button34:setText("H");
+    obj.button34:setHint("Escolher habilidade base");
+    obj.button34:setName("button34");
 
     obj.label117 = gui.fromHandle(_obj_newObject("label"));
     obj.label117:setParent(obj.layout41);
@@ -5712,17 +5722,17 @@ function newTormentafrm()
     obj.label117:setFontColor("white");
     obj.label117:setName("label117");
 
-    obj.button33 = gui.fromHandle(_obj_newObject("button"));
-    obj.button33:setParent(obj.layout41);
-    obj.button33:setLeft(50);
-    obj.button33:setTop(5);
-    obj.button33:setWidth(150);
-    obj.button33:setHeight(20);
-    obj.button33:setOpacity(0.0);
-    obj.button33:setCanFocus(false);
-    obj.button33:setCursor("handPoint");
-    obj.button33:setHint("Rolar 1d20 + Cura");
-    obj.button33:setName("button33");
+    obj.button35 = gui.fromHandle(_obj_newObject("button"));
+    obj.button35:setParent(obj.layout41);
+    obj.button35:setLeft(50);
+    obj.button35:setTop(5);
+    obj.button35:setWidth(150);
+    obj.button35:setHeight(20);
+    obj.button35:setOpacity(0.0);
+    obj.button35:setCanFocus(false);
+    obj.button35:setCursor("handPoint");
+    obj.button35:setHint("Rolar 1d20 + Cura");
+    obj.button35:setName("button35");
 
     obj.totalcura = gui.fromHandle(_obj_newObject("edit"));
     obj.totalcura:setParent(obj.layout41);
@@ -5890,15 +5900,15 @@ function newTormentafrm()
     obj.imageCheckBox10:setField("cbxdiplomacia");
     obj.imageCheckBox10:setName("imageCheckBox10");
 
-    obj.button34 = gui.fromHandle(_obj_newObject("button"));
-    obj.button34:setParent(obj.layout42);
-    obj.button34:setLeft(27);
-    obj.button34:setTop(5);
-    obj.button34:setWidth(20);
-    obj.button34:setHeight(20);
-    obj.button34:setText("H");
-    obj.button34:setHint("Escolher habilidade base");
-    obj.button34:setName("button34");
+    obj.button36 = gui.fromHandle(_obj_newObject("button"));
+    obj.button36:setParent(obj.layout42);
+    obj.button36:setLeft(27);
+    obj.button36:setTop(5);
+    obj.button36:setWidth(20);
+    obj.button36:setHeight(20);
+    obj.button36:setText("H");
+    obj.button36:setHint("Escolher habilidade base");
+    obj.button36:setName("button36");
 
     obj.label121 = gui.fromHandle(_obj_newObject("label"));
     obj.label121:setParent(obj.layout42);
@@ -5913,17 +5923,17 @@ function newTormentafrm()
     obj.label121:setFontColor("white");
     obj.label121:setName("label121");
 
-    obj.button35 = gui.fromHandle(_obj_newObject("button"));
-    obj.button35:setParent(obj.layout42);
-    obj.button35:setLeft(50);
-    obj.button35:setTop(5);
-    obj.button35:setWidth(150);
-    obj.button35:setHeight(20);
-    obj.button35:setOpacity(0.0);
-    obj.button35:setCanFocus(false);
-    obj.button35:setCursor("handPoint");
-    obj.button35:setHint("Rolar 1d20 + Diplomacia");
-    obj.button35:setName("button35");
+    obj.button37 = gui.fromHandle(_obj_newObject("button"));
+    obj.button37:setParent(obj.layout42);
+    obj.button37:setLeft(50);
+    obj.button37:setTop(5);
+    obj.button37:setWidth(150);
+    obj.button37:setHeight(20);
+    obj.button37:setOpacity(0.0);
+    obj.button37:setCanFocus(false);
+    obj.button37:setCursor("handPoint");
+    obj.button37:setHint("Rolar 1d20 + Diplomacia");
+    obj.button37:setName("button37");
 
     obj.totaldiplomacia = gui.fromHandle(_obj_newObject("edit"));
     obj.totaldiplomacia:setParent(obj.layout42);
@@ -6091,15 +6101,15 @@ function newTormentafrm()
     obj.imageCheckBox11:setField("cbxenganacao");
     obj.imageCheckBox11:setName("imageCheckBox11");
 
-    obj.button36 = gui.fromHandle(_obj_newObject("button"));
-    obj.button36:setParent(obj.layout43);
-    obj.button36:setLeft(27);
-    obj.button36:setTop(5);
-    obj.button36:setWidth(20);
-    obj.button36:setHeight(20);
-    obj.button36:setText("H");
-    obj.button36:setHint("Escolher habilidade base");
-    obj.button36:setName("button36");
+    obj.button38 = gui.fromHandle(_obj_newObject("button"));
+    obj.button38:setParent(obj.layout43);
+    obj.button38:setLeft(27);
+    obj.button38:setTop(5);
+    obj.button38:setWidth(20);
+    obj.button38:setHeight(20);
+    obj.button38:setText("H");
+    obj.button38:setHint("Escolher habilidade base");
+    obj.button38:setName("button38");
 
     obj.label125 = gui.fromHandle(_obj_newObject("label"));
     obj.label125:setParent(obj.layout43);
@@ -6114,17 +6124,17 @@ function newTormentafrm()
     obj.label125:setFontColor("white");
     obj.label125:setName("label125");
 
-    obj.button37 = gui.fromHandle(_obj_newObject("button"));
-    obj.button37:setParent(obj.layout43);
-    obj.button37:setLeft(50);
-    obj.button37:setTop(5);
-    obj.button37:setWidth(150);
-    obj.button37:setHeight(20);
-    obj.button37:setOpacity(0.0);
-    obj.button37:setCanFocus(false);
-    obj.button37:setCursor("handPoint");
-    obj.button37:setHint("Rolar 1d20 + Enganação");
-    obj.button37:setName("button37");
+    obj.button39 = gui.fromHandle(_obj_newObject("button"));
+    obj.button39:setParent(obj.layout43);
+    obj.button39:setLeft(50);
+    obj.button39:setTop(5);
+    obj.button39:setWidth(150);
+    obj.button39:setHeight(20);
+    obj.button39:setOpacity(0.0);
+    obj.button39:setCanFocus(false);
+    obj.button39:setCursor("handPoint");
+    obj.button39:setHint("Rolar 1d20 + Enganação");
+    obj.button39:setName("button39");
 
     obj.totalenganacao = gui.fromHandle(_obj_newObject("edit"));
     obj.totalenganacao:setParent(obj.layout43);
@@ -6292,15 +6302,15 @@ function newTormentafrm()
     obj.imageCheckBox12:setField("cbxfurtividade");
     obj.imageCheckBox12:setName("imageCheckBox12");
 
-    obj.button38 = gui.fromHandle(_obj_newObject("button"));
-    obj.button38:setParent(obj.layout44);
-    obj.button38:setLeft(27);
-    obj.button38:setTop(5);
-    obj.button38:setWidth(20);
-    obj.button38:setHeight(20);
-    obj.button38:setText("H");
-    obj.button38:setHint("Escolher habilidade base");
-    obj.button38:setName("button38");
+    obj.button40 = gui.fromHandle(_obj_newObject("button"));
+    obj.button40:setParent(obj.layout44);
+    obj.button40:setLeft(27);
+    obj.button40:setTop(5);
+    obj.button40:setWidth(20);
+    obj.button40:setHeight(20);
+    obj.button40:setText("H");
+    obj.button40:setHint("Escolher habilidade base");
+    obj.button40:setName("button40");
 
     obj.label129 = gui.fromHandle(_obj_newObject("label"));
     obj.label129:setParent(obj.layout44);
@@ -6315,17 +6325,17 @@ function newTormentafrm()
     obj.label129:setFontColor("white");
     obj.label129:setName("label129");
 
-    obj.button39 = gui.fromHandle(_obj_newObject("button"));
-    obj.button39:setParent(obj.layout44);
-    obj.button39:setLeft(50);
-    obj.button39:setTop(5);
-    obj.button39:setWidth(150);
-    obj.button39:setHeight(20);
-    obj.button39:setOpacity(0.0);
-    obj.button39:setCanFocus(false);
-    obj.button39:setCursor("handPoint");
-    obj.button39:setHint("Rolar 1d20 + Furtividade");
-    obj.button39:setName("button39");
+    obj.button41 = gui.fromHandle(_obj_newObject("button"));
+    obj.button41:setParent(obj.layout44);
+    obj.button41:setLeft(50);
+    obj.button41:setTop(5);
+    obj.button41:setWidth(150);
+    obj.button41:setHeight(20);
+    obj.button41:setOpacity(0.0);
+    obj.button41:setCanFocus(false);
+    obj.button41:setCursor("handPoint");
+    obj.button41:setHint("Rolar 1d20 + Furtividade");
+    obj.button41:setName("button41");
 
     obj.totalfurtividade = gui.fromHandle(_obj_newObject("edit"));
     obj.totalfurtividade:setParent(obj.layout44);
@@ -6493,15 +6503,15 @@ function newTormentafrm()
     obj.imageCheckBox13:setField("cbximagia");
     obj.imageCheckBox13:setName("imageCheckBox13");
 
-    obj.button40 = gui.fromHandle(_obj_newObject("button"));
-    obj.button40:setParent(obj.layout45);
-    obj.button40:setLeft(27);
-    obj.button40:setTop(5);
-    obj.button40:setWidth(20);
-    obj.button40:setHeight(20);
-    obj.button40:setText("H");
-    obj.button40:setHint("Escolher habilidade base");
-    obj.button40:setName("button40");
+    obj.button42 = gui.fromHandle(_obj_newObject("button"));
+    obj.button42:setParent(obj.layout45);
+    obj.button42:setLeft(27);
+    obj.button42:setTop(5);
+    obj.button42:setWidth(20);
+    obj.button42:setHeight(20);
+    obj.button42:setText("H");
+    obj.button42:setHint("Escolher habilidade base");
+    obj.button42:setName("button42");
 
     obj.label133 = gui.fromHandle(_obj_newObject("label"));
     obj.label133:setParent(obj.layout45);
@@ -6516,17 +6526,17 @@ function newTormentafrm()
     obj.label133:setFontColor("white");
     obj.label133:setName("label133");
 
-    obj.button41 = gui.fromHandle(_obj_newObject("button"));
-    obj.button41:setParent(obj.layout45);
-    obj.button41:setLeft(50);
-    obj.button41:setTop(5);
-    obj.button41:setWidth(150);
-    obj.button41:setHeight(20);
-    obj.button41:setOpacity(0.0);
-    obj.button41:setCanFocus(false);
-    obj.button41:setCursor("handPoint");
-    obj.button41:setHint("Rolar 1d20 + Identificar Magia");
-    obj.button41:setName("button41");
+    obj.button43 = gui.fromHandle(_obj_newObject("button"));
+    obj.button43:setParent(obj.layout45);
+    obj.button43:setLeft(50);
+    obj.button43:setTop(5);
+    obj.button43:setWidth(150);
+    obj.button43:setHeight(20);
+    obj.button43:setOpacity(0.0);
+    obj.button43:setCanFocus(false);
+    obj.button43:setCursor("handPoint");
+    obj.button43:setHint("Rolar 1d20 + Identificar Magia");
+    obj.button43:setName("button43");
 
     obj.totalimagia = gui.fromHandle(_obj_newObject("edit"));
     obj.totalimagia:setParent(obj.layout45);
@@ -6694,15 +6704,15 @@ function newTormentafrm()
     obj.imageCheckBox14:setField("cbxiniciativa");
     obj.imageCheckBox14:setName("imageCheckBox14");
 
-    obj.button42 = gui.fromHandle(_obj_newObject("button"));
-    obj.button42:setParent(obj.layout46);
-    obj.button42:setLeft(27);
-    obj.button42:setTop(5);
-    obj.button42:setWidth(20);
-    obj.button42:setHeight(20);
-    obj.button42:setText("H");
-    obj.button42:setHint("Escolher habilidade base");
-    obj.button42:setName("button42");
+    obj.button44 = gui.fromHandle(_obj_newObject("button"));
+    obj.button44:setParent(obj.layout46);
+    obj.button44:setLeft(27);
+    obj.button44:setTop(5);
+    obj.button44:setWidth(20);
+    obj.button44:setHeight(20);
+    obj.button44:setText("H");
+    obj.button44:setHint("Escolher habilidade base");
+    obj.button44:setName("button44");
 
     obj.label137 = gui.fromHandle(_obj_newObject("label"));
     obj.label137:setParent(obj.layout46);
@@ -6717,17 +6727,17 @@ function newTormentafrm()
     obj.label137:setFontColor("white");
     obj.label137:setName("label137");
 
-    obj.button43 = gui.fromHandle(_obj_newObject("button"));
-    obj.button43:setParent(obj.layout46);
-    obj.button43:setLeft(50);
-    obj.button43:setTop(5);
-    obj.button43:setWidth(150);
-    obj.button43:setHeight(20);
-    obj.button43:setOpacity(0.0);
-    obj.button43:setCanFocus(false);
-    obj.button43:setCursor("handPoint");
-    obj.button43:setHint("Rolar 1d20 + Iniciativa");
-    obj.button43:setName("button43");
+    obj.button45 = gui.fromHandle(_obj_newObject("button"));
+    obj.button45:setParent(obj.layout46);
+    obj.button45:setLeft(50);
+    obj.button45:setTop(5);
+    obj.button45:setWidth(150);
+    obj.button45:setHeight(20);
+    obj.button45:setOpacity(0.0);
+    obj.button45:setCanFocus(false);
+    obj.button45:setCursor("handPoint");
+    obj.button45:setHint("Rolar 1d20 + Iniciativa");
+    obj.button45:setName("button45");
 
     obj.totaliniciativa = gui.fromHandle(_obj_newObject("edit"));
     obj.totaliniciativa:setParent(obj.layout46);
@@ -6895,15 +6905,15 @@ function newTormentafrm()
     obj.imageCheckBox15:setField("cbxintimidacao");
     obj.imageCheckBox15:setName("imageCheckBox15");
 
-    obj.button44 = gui.fromHandle(_obj_newObject("button"));
-    obj.button44:setParent(obj.layout47);
-    obj.button44:setLeft(27);
-    obj.button44:setTop(5);
-    obj.button44:setWidth(20);
-    obj.button44:setHeight(20);
-    obj.button44:setText("H");
-    obj.button44:setHint("Escolher habilidade base");
-    obj.button44:setName("button44");
+    obj.button46 = gui.fromHandle(_obj_newObject("button"));
+    obj.button46:setParent(obj.layout47);
+    obj.button46:setLeft(27);
+    obj.button46:setTop(5);
+    obj.button46:setWidth(20);
+    obj.button46:setHeight(20);
+    obj.button46:setText("H");
+    obj.button46:setHint("Escolher habilidade base");
+    obj.button46:setName("button46");
 
     obj.label141 = gui.fromHandle(_obj_newObject("label"));
     obj.label141:setParent(obj.layout47);
@@ -6918,17 +6928,17 @@ function newTormentafrm()
     obj.label141:setFontColor("white");
     obj.label141:setName("label141");
 
-    obj.button45 = gui.fromHandle(_obj_newObject("button"));
-    obj.button45:setParent(obj.layout47);
-    obj.button45:setLeft(50);
-    obj.button45:setTop(5);
-    obj.button45:setWidth(150);
-    obj.button45:setHeight(20);
-    obj.button45:setOpacity(0.0);
-    obj.button45:setCanFocus(false);
-    obj.button45:setCursor("handPoint");
-    obj.button45:setHint("Rolar 1d20 + Intimidação");
-    obj.button45:setName("button45");
+    obj.button47 = gui.fromHandle(_obj_newObject("button"));
+    obj.button47:setParent(obj.layout47);
+    obj.button47:setLeft(50);
+    obj.button47:setTop(5);
+    obj.button47:setWidth(150);
+    obj.button47:setHeight(20);
+    obj.button47:setOpacity(0.0);
+    obj.button47:setCanFocus(false);
+    obj.button47:setCursor("handPoint");
+    obj.button47:setHint("Rolar 1d20 + Intimidação");
+    obj.button47:setName("button47");
 
     obj.totalintimidacao = gui.fromHandle(_obj_newObject("edit"));
     obj.totalintimidacao:setParent(obj.layout47);
@@ -7096,15 +7106,15 @@ function newTormentafrm()
     obj.imageCheckBox16:setField("cbxintuicao");
     obj.imageCheckBox16:setName("imageCheckBox16");
 
-    obj.button46 = gui.fromHandle(_obj_newObject("button"));
-    obj.button46:setParent(obj.layout48);
-    obj.button46:setLeft(27);
-    obj.button46:setTop(5);
-    obj.button46:setWidth(20);
-    obj.button46:setHeight(20);
-    obj.button46:setText("H");
-    obj.button46:setHint("Escolher habilidade base");
-    obj.button46:setName("button46");
+    obj.button48 = gui.fromHandle(_obj_newObject("button"));
+    obj.button48:setParent(obj.layout48);
+    obj.button48:setLeft(27);
+    obj.button48:setTop(5);
+    obj.button48:setWidth(20);
+    obj.button48:setHeight(20);
+    obj.button48:setText("H");
+    obj.button48:setHint("Escolher habilidade base");
+    obj.button48:setName("button48");
 
     obj.label145 = gui.fromHandle(_obj_newObject("label"));
     obj.label145:setParent(obj.layout48);
@@ -7119,17 +7129,17 @@ function newTormentafrm()
     obj.label145:setFontColor("white");
     obj.label145:setName("label145");
 
-    obj.button47 = gui.fromHandle(_obj_newObject("button"));
-    obj.button47:setParent(obj.layout48);
-    obj.button47:setLeft(50);
-    obj.button47:setTop(5);
-    obj.button47:setWidth(150);
-    obj.button47:setHeight(20);
-    obj.button47:setOpacity(0.0);
-    obj.button47:setCanFocus(false);
-    obj.button47:setCursor("handPoint");
-    obj.button47:setHint("Rolar 1d20 + Intuição");
-    obj.button47:setName("button47");
+    obj.button49 = gui.fromHandle(_obj_newObject("button"));
+    obj.button49:setParent(obj.layout48);
+    obj.button49:setLeft(50);
+    obj.button49:setTop(5);
+    obj.button49:setWidth(150);
+    obj.button49:setHeight(20);
+    obj.button49:setOpacity(0.0);
+    obj.button49:setCanFocus(false);
+    obj.button49:setCursor("handPoint");
+    obj.button49:setHint("Rolar 1d20 + Intuição");
+    obj.button49:setName("button49");
 
     obj.totalintuicao = gui.fromHandle(_obj_newObject("edit"));
     obj.totalintuicao:setParent(obj.layout48);
@@ -7297,15 +7307,15 @@ function newTormentafrm()
     obj.imageCheckBox17:setField("cbxjogatina");
     obj.imageCheckBox17:setName("imageCheckBox17");
 
-    obj.button48 = gui.fromHandle(_obj_newObject("button"));
-    obj.button48:setParent(obj.layout49);
-    obj.button48:setLeft(27);
-    obj.button48:setTop(5);
-    obj.button48:setWidth(20);
-    obj.button48:setHeight(20);
-    obj.button48:setText("H");
-    obj.button48:setHint("Escolher habilidade base");
-    obj.button48:setName("button48");
+    obj.button50 = gui.fromHandle(_obj_newObject("button"));
+    obj.button50:setParent(obj.layout49);
+    obj.button50:setLeft(27);
+    obj.button50:setTop(5);
+    obj.button50:setWidth(20);
+    obj.button50:setHeight(20);
+    obj.button50:setText("H");
+    obj.button50:setHint("Escolher habilidade base");
+    obj.button50:setName("button50");
 
     obj.label149 = gui.fromHandle(_obj_newObject("label"));
     obj.label149:setParent(obj.layout49);
@@ -7320,17 +7330,17 @@ function newTormentafrm()
     obj.label149:setFontColor("white");
     obj.label149:setName("label149");
 
-    obj.button49 = gui.fromHandle(_obj_newObject("button"));
-    obj.button49:setParent(obj.layout49);
-    obj.button49:setLeft(50);
-    obj.button49:setTop(5);
-    obj.button49:setWidth(150);
-    obj.button49:setHeight(20);
-    obj.button49:setOpacity(0.0);
-    obj.button49:setCanFocus(false);
-    obj.button49:setCursor("handPoint");
-    obj.button49:setHint("Rolar 1d20 + Jogatina");
-    obj.button49:setName("button49");
+    obj.button51 = gui.fromHandle(_obj_newObject("button"));
+    obj.button51:setParent(obj.layout49);
+    obj.button51:setLeft(50);
+    obj.button51:setTop(5);
+    obj.button51:setWidth(150);
+    obj.button51:setHeight(20);
+    obj.button51:setOpacity(0.0);
+    obj.button51:setCanFocus(false);
+    obj.button51:setCursor("handPoint");
+    obj.button51:setHint("Rolar 1d20 + Jogatina");
+    obj.button51:setName("button51");
 
     obj.totaljogatina = gui.fromHandle(_obj_newObject("edit"));
     obj.totaljogatina:setParent(obj.layout49);
@@ -7498,15 +7508,15 @@ function newTormentafrm()
     obj.imageCheckBox18:setField("cbxladinagem");
     obj.imageCheckBox18:setName("imageCheckBox18");
 
-    obj.button50 = gui.fromHandle(_obj_newObject("button"));
-    obj.button50:setParent(obj.layout50);
-    obj.button50:setLeft(27);
-    obj.button50:setTop(5);
-    obj.button50:setWidth(20);
-    obj.button50:setHeight(20);
-    obj.button50:setText("H");
-    obj.button50:setHint("Escolher habilidade base");
-    obj.button50:setName("button50");
+    obj.button52 = gui.fromHandle(_obj_newObject("button"));
+    obj.button52:setParent(obj.layout50);
+    obj.button52:setLeft(27);
+    obj.button52:setTop(5);
+    obj.button52:setWidth(20);
+    obj.button52:setHeight(20);
+    obj.button52:setText("H");
+    obj.button52:setHint("Escolher habilidade base");
+    obj.button52:setName("button52");
 
     obj.label153 = gui.fromHandle(_obj_newObject("label"));
     obj.label153:setParent(obj.layout50);
@@ -7521,17 +7531,17 @@ function newTormentafrm()
     obj.label153:setFontColor("white");
     obj.label153:setName("label153");
 
-    obj.button51 = gui.fromHandle(_obj_newObject("button"));
-    obj.button51:setParent(obj.layout50);
-    obj.button51:setLeft(50);
-    obj.button51:setTop(5);
-    obj.button51:setWidth(150);
-    obj.button51:setHeight(20);
-    obj.button51:setOpacity(0.0);
-    obj.button51:setCanFocus(false);
-    obj.button51:setCursor("handPoint");
-    obj.button51:setHint("Rolar 1d20 + Ladinagem");
-    obj.button51:setName("button51");
+    obj.button53 = gui.fromHandle(_obj_newObject("button"));
+    obj.button53:setParent(obj.layout50);
+    obj.button53:setLeft(50);
+    obj.button53:setTop(5);
+    obj.button53:setWidth(150);
+    obj.button53:setHeight(20);
+    obj.button53:setOpacity(0.0);
+    obj.button53:setCanFocus(false);
+    obj.button53:setCursor("handPoint");
+    obj.button53:setHint("Rolar 1d20 + Ladinagem");
+    obj.button53:setName("button53");
 
     obj.totalladinagem = gui.fromHandle(_obj_newObject("edit"));
     obj.totalladinagem:setParent(obj.layout50);
@@ -7699,15 +7709,15 @@ function newTormentafrm()
     obj.imageCheckBox19:setField("cbxoinformacao");
     obj.imageCheckBox19:setName("imageCheckBox19");
 
-    obj.button52 = gui.fromHandle(_obj_newObject("button"));
-    obj.button52:setParent(obj.layout51);
-    obj.button52:setLeft(27);
-    obj.button52:setTop(5);
-    obj.button52:setWidth(20);
-    obj.button52:setHeight(20);
-    obj.button52:setText("H");
-    obj.button52:setHint("Escolher habilidade base");
-    obj.button52:setName("button52");
+    obj.button54 = gui.fromHandle(_obj_newObject("button"));
+    obj.button54:setParent(obj.layout51);
+    obj.button54:setLeft(27);
+    obj.button54:setTop(5);
+    obj.button54:setWidth(20);
+    obj.button54:setHeight(20);
+    obj.button54:setText("H");
+    obj.button54:setHint("Escolher habilidade base");
+    obj.button54:setName("button54");
 
     obj.label157 = gui.fromHandle(_obj_newObject("label"));
     obj.label157:setParent(obj.layout51);
@@ -7722,17 +7732,17 @@ function newTormentafrm()
     obj.label157:setFontColor("white");
     obj.label157:setName("label157");
 
-    obj.button53 = gui.fromHandle(_obj_newObject("button"));
-    obj.button53:setParent(obj.layout51);
-    obj.button53:setLeft(50);
-    obj.button53:setTop(5);
-    obj.button53:setWidth(150);
-    obj.button53:setHeight(20);
-    obj.button53:setOpacity(0.0);
-    obj.button53:setCanFocus(false);
-    obj.button53:setCursor("handPoint");
-    obj.button53:setHint("Rolar 1d20 + Obter Informação");
-    obj.button53:setName("button53");
+    obj.button55 = gui.fromHandle(_obj_newObject("button"));
+    obj.button55:setParent(obj.layout51);
+    obj.button55:setLeft(50);
+    obj.button55:setTop(5);
+    obj.button55:setWidth(150);
+    obj.button55:setHeight(20);
+    obj.button55:setOpacity(0.0);
+    obj.button55:setCanFocus(false);
+    obj.button55:setCursor("handPoint");
+    obj.button55:setHint("Rolar 1d20 + Obter Informação");
+    obj.button55:setName("button55");
 
     obj.totaloinformacao = gui.fromHandle(_obj_newObject("edit"));
     obj.totaloinformacao:setParent(obj.layout51);
@@ -7900,15 +7910,15 @@ function newTormentafrm()
     obj.imageCheckBox20:setField("cbxoficio1");
     obj.imageCheckBox20:setName("imageCheckBox20");
 
-    obj.button54 = gui.fromHandle(_obj_newObject("button"));
-    obj.button54:setParent(obj.layout52);
-    obj.button54:setLeft(27);
-    obj.button54:setTop(5);
-    obj.button54:setWidth(20);
-    obj.button54:setHeight(20);
-    obj.button54:setText("H");
-    obj.button54:setHint("Escolher habilidade base");
-    obj.button54:setName("button54");
+    obj.button56 = gui.fromHandle(_obj_newObject("button"));
+    obj.button56:setParent(obj.layout52);
+    obj.button56:setLeft(27);
+    obj.button56:setTop(5);
+    obj.button56:setWidth(20);
+    obj.button56:setHeight(20);
+    obj.button56:setText("H");
+    obj.button56:setHint("Escolher habilidade base");
+    obj.button56:setName("button56");
 
     obj.label161 = gui.fromHandle(_obj_newObject("label"));
     obj.label161:setParent(obj.layout52);
@@ -7923,17 +7933,17 @@ function newTormentafrm()
     obj.label161:setFontColor("white");
     obj.label161:setName("label161");
 
-    obj.button55 = gui.fromHandle(_obj_newObject("button"));
-    obj.button55:setParent(obj.layout52);
-    obj.button55:setLeft(50);
-    obj.button55:setTop(5);
-    obj.button55:setWidth(150);
-    obj.button55:setHeight(20);
-    obj.button55:setOpacity(0.0);
-    obj.button55:setCanFocus(false);
-    obj.button55:setCursor("handPoint");
-    obj.button55:setHint("Rolar 1d20 + Ofício");
-    obj.button55:setName("button55");
+    obj.button57 = gui.fromHandle(_obj_newObject("button"));
+    obj.button57:setParent(obj.layout52);
+    obj.button57:setLeft(50);
+    obj.button57:setTop(5);
+    obj.button57:setWidth(150);
+    obj.button57:setHeight(20);
+    obj.button57:setOpacity(0.0);
+    obj.button57:setCanFocus(false);
+    obj.button57:setCursor("handPoint");
+    obj.button57:setHint("Rolar 1d20 + Ofício");
+    obj.button57:setName("button57");
 
     obj.edit59 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit59:setParent(obj.layout52);
@@ -8114,15 +8124,15 @@ function newTormentafrm()
     obj.imageCheckBox21:setField("cbxoficio2");
     obj.imageCheckBox21:setName("imageCheckBox21");
 
-    obj.button56 = gui.fromHandle(_obj_newObject("button"));
-    obj.button56:setParent(obj.layout53);
-    obj.button56:setLeft(27);
-    obj.button56:setTop(5);
-    obj.button56:setWidth(20);
-    obj.button56:setHeight(20);
-    obj.button56:setText("H");
-    obj.button56:setHint("Escolher habilidade base");
-    obj.button56:setName("button56");
+    obj.button58 = gui.fromHandle(_obj_newObject("button"));
+    obj.button58:setParent(obj.layout53);
+    obj.button58:setLeft(27);
+    obj.button58:setTop(5);
+    obj.button58:setWidth(20);
+    obj.button58:setHeight(20);
+    obj.button58:setText("H");
+    obj.button58:setHint("Escolher habilidade base");
+    obj.button58:setName("button58");
 
     obj.label165 = gui.fromHandle(_obj_newObject("label"));
     obj.label165:setParent(obj.layout53);
@@ -8137,17 +8147,17 @@ function newTormentafrm()
     obj.label165:setFontColor("white");
     obj.label165:setName("label165");
 
-    obj.button57 = gui.fromHandle(_obj_newObject("button"));
-    obj.button57:setParent(obj.layout53);
-    obj.button57:setLeft(50);
-    obj.button57:setTop(5);
-    obj.button57:setWidth(150);
-    obj.button57:setHeight(20);
-    obj.button57:setOpacity(0.0);
-    obj.button57:setCanFocus(false);
-    obj.button57:setCursor("handPoint");
-    obj.button57:setHint("Rolar 1d20 + Ofício");
-    obj.button57:setName("button57");
+    obj.button59 = gui.fromHandle(_obj_newObject("button"));
+    obj.button59:setParent(obj.layout53);
+    obj.button59:setLeft(50);
+    obj.button59:setTop(5);
+    obj.button59:setWidth(150);
+    obj.button59:setHeight(20);
+    obj.button59:setOpacity(0.0);
+    obj.button59:setCanFocus(false);
+    obj.button59:setCursor("handPoint");
+    obj.button59:setHint("Rolar 1d20 + Ofício");
+    obj.button59:setName("button59");
 
     obj.edit60 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit60:setParent(obj.layout53);
@@ -8328,15 +8338,15 @@ function newTormentafrm()
     obj.imageCheckBox22:setField("cbxmeditacao");
     obj.imageCheckBox22:setName("imageCheckBox22");
 
-    obj.button58 = gui.fromHandle(_obj_newObject("button"));
-    obj.button58:setParent(obj.layout54);
-    obj.button58:setLeft(27);
-    obj.button58:setTop(5);
-    obj.button58:setWidth(20);
-    obj.button58:setHeight(20);
-    obj.button58:setText("H");
-    obj.button58:setHint("Escolher habilidade base");
-    obj.button58:setName("button58");
+    obj.button60 = gui.fromHandle(_obj_newObject("button"));
+    obj.button60:setParent(obj.layout54);
+    obj.button60:setLeft(27);
+    obj.button60:setTop(5);
+    obj.button60:setWidth(20);
+    obj.button60:setHeight(20);
+    obj.button60:setText("H");
+    obj.button60:setHint("Escolher habilidade base");
+    obj.button60:setName("button60");
 
     obj.label169 = gui.fromHandle(_obj_newObject("label"));
     obj.label169:setParent(obj.layout54);
@@ -8351,17 +8361,17 @@ function newTormentafrm()
     obj.label169:setFontColor("white");
     obj.label169:setName("label169");
 
-    obj.button59 = gui.fromHandle(_obj_newObject("button"));
-    obj.button59:setParent(obj.layout54);
-    obj.button59:setLeft(50);
-    obj.button59:setTop(5);
-    obj.button59:setWidth(150);
-    obj.button59:setHeight(20);
-    obj.button59:setOpacity(0.0);
-    obj.button59:setCanFocus(false);
-    obj.button59:setCursor("handPoint");
-    obj.button59:setHint("Rolar 1d20 + Meditação");
-    obj.button59:setName("button59");
+    obj.button61 = gui.fromHandle(_obj_newObject("button"));
+    obj.button61:setParent(obj.layout54);
+    obj.button61:setLeft(50);
+    obj.button61:setTop(5);
+    obj.button61:setWidth(150);
+    obj.button61:setHeight(20);
+    obj.button61:setOpacity(0.0);
+    obj.button61:setCanFocus(false);
+    obj.button61:setCursor("handPoint");
+    obj.button61:setHint("Rolar 1d20 + Meditação");
+    obj.button61:setName("button61");
 
     obj.totalmeditacao = gui.fromHandle(_obj_newObject("edit"));
     obj.totalmeditacao:setParent(obj.layout54);
@@ -8529,15 +8539,15 @@ function newTormentafrm()
     obj.imageCheckBox23:setField("cbxpercepcao");
     obj.imageCheckBox23:setName("imageCheckBox23");
 
-    obj.button60 = gui.fromHandle(_obj_newObject("button"));
-    obj.button60:setParent(obj.layout55);
-    obj.button60:setLeft(27);
-    obj.button60:setTop(5);
-    obj.button60:setWidth(20);
-    obj.button60:setHeight(20);
-    obj.button60:setText("H");
-    obj.button60:setHint("Escolher habilidade base");
-    obj.button60:setName("button60");
+    obj.button62 = gui.fromHandle(_obj_newObject("button"));
+    obj.button62:setParent(obj.layout55);
+    obj.button62:setLeft(27);
+    obj.button62:setTop(5);
+    obj.button62:setWidth(20);
+    obj.button62:setHeight(20);
+    obj.button62:setText("H");
+    obj.button62:setHint("Escolher habilidade base");
+    obj.button62:setName("button62");
 
     obj.label173 = gui.fromHandle(_obj_newObject("label"));
     obj.label173:setParent(obj.layout55);
@@ -8552,17 +8562,17 @@ function newTormentafrm()
     obj.label173:setFontColor("white");
     obj.label173:setName("label173");
 
-    obj.button61 = gui.fromHandle(_obj_newObject("button"));
-    obj.button61:setParent(obj.layout55);
-    obj.button61:setLeft(50);
-    obj.button61:setTop(5);
-    obj.button61:setWidth(150);
-    obj.button61:setHeight(20);
-    obj.button61:setOpacity(0.0);
-    obj.button61:setCanFocus(false);
-    obj.button61:setCursor("handPoint");
-    obj.button61:setHint("Rolar 1d20 + Percepção");
-    obj.button61:setName("button61");
+    obj.button63 = gui.fromHandle(_obj_newObject("button"));
+    obj.button63:setParent(obj.layout55);
+    obj.button63:setLeft(50);
+    obj.button63:setTop(5);
+    obj.button63:setWidth(150);
+    obj.button63:setHeight(20);
+    obj.button63:setOpacity(0.0);
+    obj.button63:setCanFocus(false);
+    obj.button63:setCursor("handPoint");
+    obj.button63:setHint("Rolar 1d20 + Percepção");
+    obj.button63:setName("button63");
 
     obj.totalpercepcao = gui.fromHandle(_obj_newObject("edit"));
     obj.totalpercepcao:setParent(obj.layout55);
@@ -8730,15 +8740,15 @@ function newTormentafrm()
     obj.imageCheckBox24:setField("cbxsobrevivencia");
     obj.imageCheckBox24:setName("imageCheckBox24");
 
-    obj.button62 = gui.fromHandle(_obj_newObject("button"));
-    obj.button62:setParent(obj.layout56);
-    obj.button62:setLeft(27);
-    obj.button62:setTop(5);
-    obj.button62:setWidth(20);
-    obj.button62:setHeight(20);
-    obj.button62:setText("H");
-    obj.button62:setHint("Escolher habilidade base");
-    obj.button62:setName("button62");
+    obj.button64 = gui.fromHandle(_obj_newObject("button"));
+    obj.button64:setParent(obj.layout56);
+    obj.button64:setLeft(27);
+    obj.button64:setTop(5);
+    obj.button64:setWidth(20);
+    obj.button64:setHeight(20);
+    obj.button64:setText("H");
+    obj.button64:setHint("Escolher habilidade base");
+    obj.button64:setName("button64");
 
     obj.label177 = gui.fromHandle(_obj_newObject("label"));
     obj.label177:setParent(obj.layout56);
@@ -8753,17 +8763,17 @@ function newTormentafrm()
     obj.label177:setFontColor("white");
     obj.label177:setName("label177");
 
-    obj.button63 = gui.fromHandle(_obj_newObject("button"));
-    obj.button63:setParent(obj.layout56);
-    obj.button63:setLeft(50);
-    obj.button63:setTop(5);
-    obj.button63:setWidth(150);
-    obj.button63:setHeight(20);
-    obj.button63:setOpacity(0.0);
-    obj.button63:setCanFocus(false);
-    obj.button63:setCursor("handPoint");
-    obj.button63:setHint("Rolar 1d20 + Sobrevivência");
-    obj.button63:setName("button63");
+    obj.button65 = gui.fromHandle(_obj_newObject("button"));
+    obj.button65:setParent(obj.layout56);
+    obj.button65:setLeft(50);
+    obj.button65:setTop(5);
+    obj.button65:setWidth(150);
+    obj.button65:setHeight(20);
+    obj.button65:setOpacity(0.0);
+    obj.button65:setCanFocus(false);
+    obj.button65:setCursor("handPoint");
+    obj.button65:setHint("Rolar 1d20 + Sobrevivência");
+    obj.button65:setName("button65");
 
     obj.totalsobrevivencia = gui.fromHandle(_obj_newObject("edit"));
     obj.totalsobrevivencia:setParent(obj.layout56);
@@ -11379,12 +11389,12 @@ function newTormentafrm()
     obj.layout80:setMargins({bottom=4});
     obj.layout80:setName("layout80");
 
-    obj.button64 = gui.fromHandle(_obj_newObject("button"));
-    obj.button64:setParent(obj.layout80);
-    obj.button64:setText("Adicionar Novo Ataque/Macro");
-    obj.button64:setWidth(250);
-    obj.button64:setAlign("left");
-    obj.button64:setName("button64");
+    obj.button66 = gui.fromHandle(_obj_newObject("button"));
+    obj.button66:setParent(obj.layout80);
+    obj.button66:setText("Adicionar Novo Ataque/Macro");
+    obj.button66:setWidth(250);
+    obj.button66:setAlign("left");
+    obj.button66:setName("button66");
 
     obj.layout81 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout81:setParent(obj.scrollBox6);
@@ -11472,19 +11482,19 @@ function newTormentafrm()
     obj.edtMacro:setFontColor("black");
     obj.edtMacro:setMargins({left=6});
 
-    obj.button65 = gui.fromHandle(_obj_newObject("button"));
-    obj.button65:setParent(obj.layout84);
-    obj.button65:setAlign("left");
-    obj.button65:setWidth(25);
-    obj.button65:setHeight(25);
-    obj.button65:setText("🎲");
-    obj.button65:setFontSize(14);
-    obj.button65:setFontColor("black");
-    obj.button65:setCanFocus(false);
-    obj.button65:setCursor("handPoint");
-    obj.button65:setMargins({left=6});
-    obj.button65:setHint("Rolar este macro na mesa");
-    obj.button65:setName("button65");
+    obj.button67 = gui.fromHandle(_obj_newObject("button"));
+    obj.button67:setParent(obj.layout84);
+    obj.button67:setAlign("left");
+    obj.button67:setWidth(25);
+    obj.button67:setHeight(25);
+    obj.button67:setText("🎲");
+    obj.button67:setFontSize(14);
+    obj.button67:setFontColor("black");
+    obj.button67:setCanFocus(false);
+    obj.button67:setCursor("handPoint");
+    obj.button67:setMargins({left=6});
+    obj.button67:setHint("Rolar este macro na mesa");
+    obj.button67:setName("button67");
 
     obj.layout85 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout85:setParent(obj.rectangle237);
@@ -11622,65 +11632,75 @@ function newTormentafrm()
 
     obj._e_event14 = obj.button14:addEventListener("onClick",
         function (self)
+            TRPG_chooseHab(sheet or self.sheet, "hab_cac", "FOR");
+        end, obj);
+
+    obj._e_event15 = obj.button15:addEventListener("onClick",
+        function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldis, "Ataque À Distância");
         end, obj);
 
-    obj._e_event15 = obj.calculos:addEventListener("onClick",
+    obj._e_event16 = obj.button16:addEventListener("onClick",
+        function (self)
+            TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
+        end, obj);
+
+    obj._e_event17 = obj.calculos:addEventListener("onClick",
         function (self)
             desCalculos(); desCalculos2();
         end, obj);
 
-    obj._e_event16 = obj.button15:addEventListener("onClick",
+    obj._e_event18 = obj.button17:addEventListener("onClick",
         function (self)
             GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');
         end, obj);
 
-    obj._e_event17 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink1:addEventListener("onChange",
         function (self, field, oldValue, newValue)
             recalcAll();
         end, obj);
 
-    obj._e_event18 = obj.Tormenta02:addEventListener("onNodeReady",
+    obj._e_event20 = obj.Tormenta02:addEventListener("onNodeReady",
         function (self)
             desCalculos2();
         end, obj);
 
-    obj._e_event19 = obj.button16:addEventListener("onClick",
+    obj._e_event21 = obj.button18:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_acrobacia", "DES");
         end, obj);
 
-    obj._e_event20 = obj.button17:addEventListener("onClick",
+    obj._e_event22 = obj.button19:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalacrobacia, "Acrobacia");
         end, obj);
 
-    obj._e_event21 = obj.button18:addEventListener("onClick",
+    obj._e_event23 = obj.button20:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_adestrar", "CAR");
         end, obj);
 
-    obj._e_event22 = obj.button19:addEventListener("onClick",
+    obj._e_event24 = obj.button21:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaladestrar, "Adestrar Animais");
         end, obj);
 
-    obj._e_event23 = obj.button20:addEventListener("onClick",
+    obj._e_event25 = obj.button22:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_atletismo", "FOR");
         end, obj);
 
-    obj._e_event24 = obj.button21:addEventListener("onClick",
+    obj._e_event26 = obj.button23:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalatletismo, "Atletismo");
         end, obj);
 
-    obj._e_event25 = obj.button22:addEventListener("onClick",
+    obj._e_event27 = obj.button24:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_atuacao1", "CAR");
         end, obj);
 
-    obj._e_event26 = obj.button23:addEventListener("onClick",
+    obj._e_event28 = obj.button25:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Atuação";
@@ -11689,12 +11709,12 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totalatuacao1, nome);
         end, obj);
 
-    obj._e_event27 = obj.button24:addEventListener("onClick",
+    obj._e_event29 = obj.button26:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_atuacao2", "CAR");
         end, obj);
 
-    obj._e_event28 = obj.button25:addEventListener("onClick",
+    obj._e_event30 = obj.button27:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Atuação";
@@ -11703,22 +11723,22 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totalatuacao2, nome);
         end, obj);
 
-    obj._e_event29 = obj.button26:addEventListener("onClick",
+    obj._e_event31 = obj.button28:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_cavalgar", "DES");
         end, obj);
 
-    obj._e_event30 = obj.button27:addEventListener("onClick",
+    obj._e_event32 = obj.button29:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcavalgar, "Cavalgar");
         end, obj);
 
-    obj._e_event31 = obj.button28:addEventListener("onClick",
+    obj._e_event33 = obj.button30:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento1", "INT");
         end, obj);
 
-    obj._e_event32 = obj.button29:addEventListener("onClick",
+    obj._e_event34 = obj.button31:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Conhecimento";
@@ -11727,12 +11747,12 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totalconhecimento1, nome);
         end, obj);
 
-    obj._e_event33 = obj.button30:addEventListener("onClick",
+    obj._e_event35 = obj.button32:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento2", "INT");
         end, obj);
 
-    obj._e_event34 = obj.button31:addEventListener("onClick",
+    obj._e_event36 = obj.button33:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Conhecimento";
@@ -11741,122 +11761,122 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totalconhecimento2, nome);
         end, obj);
 
-    obj._e_event35 = obj.button32:addEventListener("onClick",
+    obj._e_event37 = obj.button34:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_cura", "SAB");
         end, obj);
 
-    obj._e_event36 = obj.button33:addEventListener("onClick",
+    obj._e_event38 = obj.button35:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcura, "Cura");
         end, obj);
 
-    obj._e_event37 = obj.button34:addEventListener("onClick",
+    obj._e_event39 = obj.button36:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_diplomacia", "CAR");
         end, obj);
 
-    obj._e_event38 = obj.button35:addEventListener("onClick",
+    obj._e_event40 = obj.button37:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldiplomacia, "Diplomacia");
         end, obj);
 
-    obj._e_event39 = obj.button36:addEventListener("onClick",
+    obj._e_event41 = obj.button38:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_enganacao", "CAR");
         end, obj);
 
-    obj._e_event40 = obj.button37:addEventListener("onClick",
+    obj._e_event42 = obj.button39:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalenganacao, "Enganação");
         end, obj);
 
-    obj._e_event41 = obj.button38:addEventListener("onClick",
+    obj._e_event43 = obj.button40:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_furtividade", "DES");
         end, obj);
 
-    obj._e_event42 = obj.button39:addEventListener("onClick",
+    obj._e_event44 = obj.button41:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfurtividade, "Furtividade");
         end, obj);
 
-    obj._e_event43 = obj.button40:addEventListener("onClick",
+    obj._e_event45 = obj.button42:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_imagia", "INT");
         end, obj);
 
-    obj._e_event44 = obj.button41:addEventListener("onClick",
+    obj._e_event46 = obj.button43:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
         end, obj);
 
-    obj._e_event45 = obj.button42:addEventListener("onClick",
+    obj._e_event47 = obj.button44:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_iniciativa", "DES");
         end, obj);
 
-    obj._e_event46 = obj.button43:addEventListener("onClick",
+    obj._e_event48 = obj.button45:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaliniciativa, "Iniciativa");
         end, obj);
 
-    obj._e_event47 = obj.button44:addEventListener("onClick",
+    obj._e_event49 = obj.button46:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_intimidacao", "CAR");
         end, obj);
 
-    obj._e_event48 = obj.button45:addEventListener("onClick",
+    obj._e_event50 = obj.button47:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintimidacao, "Intimidação");
         end, obj);
 
-    obj._e_event49 = obj.button46:addEventListener("onClick",
+    obj._e_event51 = obj.button48:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_intuicao", "SAB");
         end, obj);
 
-    obj._e_event50 = obj.button47:addEventListener("onClick",
+    obj._e_event52 = obj.button49:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintuicao, "Intuição");
         end, obj);
 
-    obj._e_event51 = obj.button48:addEventListener("onClick",
+    obj._e_event53 = obj.button50:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_jogatina", "CAR");
         end, obj);
 
-    obj._e_event52 = obj.button49:addEventListener("onClick",
+    obj._e_event54 = obj.button51:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaljogatina, "Jogatina");
         end, obj);
 
-    obj._e_event53 = obj.button50:addEventListener("onClick",
+    obj._e_event55 = obj.button52:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_ladinagem", "DES");
         end, obj);
 
-    obj._e_event54 = obj.button51:addEventListener("onClick",
+    obj._e_event56 = obj.button53:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
         end, obj);
 
-    obj._e_event55 = obj.button52:addEventListener("onClick",
+    obj._e_event57 = obj.button54:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_oinformacao", "CAR");
         end, obj);
 
-    obj._e_event56 = obj.button53:addEventListener("onClick",
+    obj._e_event58 = obj.button55:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaloinformacao, "Obter Informação");
         end, obj);
 
-    obj._e_event57 = obj.button54:addEventListener("onClick",
+    obj._e_event59 = obj.button56:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_oficio1", "INT");
         end, obj);
 
-    obj._e_event58 = obj.button55:addEventListener("onClick",
+    obj._e_event60 = obj.button57:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Ofício";
@@ -11865,12 +11885,12 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totaloficio1, nome);
         end, obj);
 
-    obj._e_event59 = obj.button56:addEventListener("onClick",
+    obj._e_event61 = obj.button58:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_oficio2", "INT");
         end, obj);
 
-    obj._e_event60 = obj.button57:addEventListener("onClick",
+    obj._e_event62 = obj.button59:addEventListener("onClick",
         function (self)
             local sh = sheet or self.sheet;
             							local nome = "Ofício";
@@ -11879,54 +11899,54 @@ function newTormentafrm()
             							TRPG_rollValue(sh, sh.totaloficio2, nome);
         end, obj);
 
-    obj._e_event61 = obj.button58:addEventListener("onClick",
+    obj._e_event63 = obj.button60:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_meditacao", "SAB");
         end, obj);
 
-    obj._e_event62 = obj.button59:addEventListener("onClick",
+    obj._e_event64 = obj.button61:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
         end, obj);
 
-    obj._e_event63 = obj.button60:addEventListener("onClick",
+    obj._e_event65 = obj.button62:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_percepcao", "SAB");
         end, obj);
 
-    obj._e_event64 = obj.button61:addEventListener("onClick",
+    obj._e_event66 = obj.button63:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalpercepcao, "Percepção");
         end, obj);
 
-    obj._e_event65 = obj.button62:addEventListener("onClick",
+    obj._e_event67 = obj.button64:addEventListener("onClick",
         function (self)
             TRPG_chooseHab(sheet or self.sheet, "hab_sobrevivencia", "SAB");
         end, obj);
 
-    obj._e_event66 = obj.button63:addEventListener("onClick",
+    obj._e_event68 = obj.button65:addEventListener("onClick",
         function (self)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalsobrevivencia, "Sobrevivência");
         end, obj);
 
-    obj._e_event67 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event69 = obj.dataLink2:addEventListener("onChange",
         function (self, field, oldValue, newValue)
             onDataLinkChange();
         end, obj);
 
-    obj._e_event68 = obj.button64:addEventListener("onClick",
+    obj._e_event70 = obj.button66:addEventListener("onClick",
         function (self)
             self.rclListaDosItens:append();
         end, obj);
 
-    obj._e_event69 = obj.rclListaDosItens:addEventListener("onSelect",
+    obj._e_event71 = obj.rclListaDosItens:addEventListener("onSelect",
         function (self)
             local node = self.rclListaDosItens.selectedNode;
             					self.boxDetalhesDoItem.node = node;
             					self.boxDetalhesDoItem.visible = (node ~= nil);
         end, obj);
 
-    obj._e_event70 = obj.button65:addEventListener("onClick",
+    obj._e_event72 = obj.button67:addEventListener("onClick",
         function (self)
             local nd = self.boxDetalhesDoItem.node;
             									if nd ~= nil then
@@ -11935,6 +11955,8 @@ function newTormentafrm()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event72);
+        __o_rrpgObjs.removeEventListenerById(self._e_event71);
         __o_rrpgObjs.removeEventListenerById(self._e_event70);
         __o_rrpgObjs.removeEventListenerById(self._e_event69);
         __o_rrpgObjs.removeEventListenerById(self._e_event68);
@@ -12032,6 +12054,7 @@ function newTormentafrm()
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.label97 ~= nil then self.label97:destroy(); self.label97 = nil; end;
         if self.layout64 ~= nil then self.layout64:destroy(); self.layout64 = nil; end;
+        if self.button67 ~= nil then self.button67:destroy(); self.button67 = nil; end;
         if self.label77 ~= nil then self.label77:destroy(); self.label77 = nil; end;
         if self.label128 ~= nil then self.label128:destroy(); self.label128 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
@@ -12085,13 +12108,13 @@ function newTormentafrm()
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.totalatuacao1 ~= nil then self.totalatuacao1:destroy(); self.totalatuacao1 = nil; end;
+        if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
         if self.rectangle68 ~= nil then self.rectangle68:destroy(); self.rectangle68 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
-        if self.pontaria ~= nil then self.pontaria:destroy(); self.pontaria = nil; end;
-        if self.totalcura ~= nil then self.totalcura:destroy(); self.totalcura = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
+        if self.totalcura ~= nil then self.totalcura:destroy(); self.totalcura = nil; end;
         if self.rectangle211 ~= nil then self.rectangle211:destroy(); self.rectangle211 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
@@ -12629,7 +12652,6 @@ function newTormentafrm()
         if self.penescudo ~= nil then self.penescudo:destroy(); self.penescudo = nil; end;
         if self.ncabeca ~= nil then self.ncabeca:destroy(); self.ncabeca = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
-        if self.acuidade ~= nil then self.acuidade:destroy(); self.acuidade = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.outrosdiplomacia ~= nil then self.outrosdiplomacia:destroy(); self.outrosdiplomacia = nil; end;
         if self.button55 ~= nil then self.button55:destroy(); self.button55 = nil; end;

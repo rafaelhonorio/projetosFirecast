@@ -324,29 +324,41 @@
 				</event>
 			</button>
 			<layout left="118" top="0" width="688" height="41">
-				<rectangle left="73" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
-				<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
-				<edit left="57" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-				<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-				<rectangle left="185" top="3" color="Black" width="25" height="15" xradius="2" yradius="2"/>
-				<label left="187" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="BBA"/>
-				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
-				<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<rectangle left="263" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
-				<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
-				<edit left="257" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-				<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<rectangle left="359" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-				<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-				<edit left="348" top="15" width="60" height="25" field="cac3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
-				<rectangle left="413" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<rectangle left="450" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-				<label left="453" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-				<edit left="439" top="15" width="60" height="25" field="cac4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<button left="53" top="18" width="20" height="20"
+					text="H"
+					fontSize="12"
+					fontColor="black"
+					opacity="1.0"
+					canFocus="false"
+					cursor="handPoint"
+					hint="Escolher habilidade base (corpo a corpo)">
+					<event name="onClick">
+						TRPG_chooseHab(sheet or self.sheet, "hab_cac", "FOR");
+					</event>
+				</button>
+				<rectangle left="94" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
+				<label left="96" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+				<edit left="78" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+				<rectangle left="206" top="3" color="Black" width="25" height="15" xradius="2" yradius="2"/>
+				<label left="208" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="BBA"/>
+				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="284" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
+				<label left="292" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+				<edit left="278" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="380" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+				<label left="383" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+				<edit left="369" top="15" width="60" height="25" field="cac3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<rectangle left="471" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+				<label left="474" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+				<edit left="460" top="15" width="60" height="25" field="cac4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="6" top="461" width="688" height="41">
@@ -362,19 +374,31 @@
 				</event>
 			</button>
 			<layout left="118" top="0" width="688" height="41">
-				<edit left="57" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
-				<rectangle left="132" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-				<edit left="167" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
-				<rectangle left="232" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="257" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
-				<rectangle left="322" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="348" top="15" width="60" height="25" field="dis3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
-				<rectangle left="413" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
-				<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="439" top="15" width="60" height="25" field="dis4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<button left="53" top="18" width="20" height="20"
+					text="H"
+					fontSize="12"
+					fontColor="black"
+					opacity="1.0"
+					canFocus="false"
+					cursor="handPoint"
+					hint="Escolher habilidade base (à distância)">
+					<event name="onClick">
+						TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
+					</event>
+				</button>
+				<edit left="78" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
+				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="278" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="369" top="15" width="60" height="25" field="dis3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
+				<label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
+				<edit left="460" top="15" width="60" height="25" field="dis4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="8" top="516" width="237" height="160">
@@ -424,11 +448,9 @@
 			<rectangle left="41" top="121" color="Black" width="42" height="15" xradius="2" yradius="2"/>
 			<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Funções"/>
 			<rectangle left="3" top="131" color="#ffffff" width="119" height="25"/>
-			<imageCheckBox name="calculos" field="calculos" left="24" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
-			<imageCheckBox name="acuidade" field="acuidade" left="44" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
-			<imageCheckBox name="pontaria" field="pontaria" left="64" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
-			<image left="84" top="136" name="update" src="img/update.gif" width="15" height="15"/>
-			<button left="84" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.5" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');"/>
+			<imageCheckBox name="calculos" field="calculos" left="44" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
+			<image left="64" top="136" name="update" src="img/update.gif" width="15" height="15"/>
+			<button left="64" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.5" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');"/>
 			<label left="10" top="690" width="990" height="20" fontSize="10" fontColor="black" text="$(debugMsg)"/>
 		</layout>
 	</scrollBox>
@@ -604,21 +626,25 @@
 				sheet.von2 = TRPG_getMod(sheet, sheet.hab_von, N(sheet.modsabedoria))
 				sheet.totalvon = math.floor(N(sheet.von1)) + math.floor(N(sheet.von2)) + math.floor(N(sheet.von3))
 
-				if sheet.acuidade == true then
-					sheet.cac2 = N(sheet.moddestreza)
-				else
-					sheet.cac2 = N(sheet.modforca)
-				end
-				sheet.totalcac =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+				local cacPadrao = (sheet.acuidade == true) and N(sheet.moddestreza) or N(sheet.modforca);
 
-				if sheet.pontaria == true then
-					sheet.dis2 = N(sheet.modsabedoria)
+				if tostring(sheet.hab_cac or "") ~= "" then
+					sheet.cac2 = TRPG_getMod(sheet, sheet.hab_cac, cacPadrao);
 				else
-					sheet.dis2 = N(sheet.moddestreza)
+					sheet.cac2 = cacPadrao;
 				end
-				sheet.totaldis =
-					math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
+
+				sheet.totalcac = math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+
+				local disPadrao = (sheet.pontaria == true) and N(sheet.modsabedoria) or N(sheet.moddestreza);
+
+				if tostring(sheet.hab_dis or "") ~= "" then
+					sheet.dis2 = TRPG_getMod(sheet, sheet.hab_dis, disPadrao);
+				else
+					sheet.dis2 = disPadrao;
+				end
+
+				sheet.totaldis = math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
 			end
 
 			if TRPG_rollValue == nil then
