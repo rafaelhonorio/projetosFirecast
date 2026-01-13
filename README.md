@@ -1,108 +1,59 @@
-# 🎲 Projetos Firecast RPG
+# Projetos Firecast (RPG)
 
-Repositório contendo **fichas de RPG desenvolvidas para o Firecast**, utilizando **Lua** e o **SDK oficial**, com foco em organização, automação de cálculos e boa experiência para o jogador e o mestre.
+Coleção de **fichas/plug-ins (.rpk)** para **RRPG Firecast**, organizadas por sistema/mesa.
 
-## 📌 Sobre o Projeto
+> Cada pasta em `Projetos/` é um módulo do Firecast e já possui um `.rpk` compilado dentro de `output/` (pronto para instalar).
 
-Este repositório reúne diferentes fichas e projetos de RPG criados para a plataforma **Firecast**, incluindo:
+## Projetos incluídos
 
-- Fichas completas e jogáveis (`.rpk`)
-- Código-fonte em Lua para estudo e manutenção
-- Estrutura organizada para facilitar evolução e correções
-- Compatibilidade com versões recentes do Firecast SDK
+| Projeto | Pasta | SDK | Arquivo .rpk (pronto) |
+|---|---:|:---:|---|
+| Changeling: Morganna's Dream | `Changeling - Morganna's Dream` | SDK 3.5 | Changeling - Morganna's Dream.rpk |
+| Ficha Os Mundos Dos Mortos | `OsMundosDosMortos` | SDK 3.5 | OsMundosDosMortos.rpk |
+| Ficha Tormenta RPG | `Tormenta` | SDK 3.5 | Tormenta.rpk |
+| Ficha Tormenta RPG para 7.8 | `Tormenta7.8` | SDK 3.4b | Tormenta7.8.rpk |
+| Ficha Vampiro a Mascara | `VampiroAMascara` | SDK 3.5 | VampiroAMascara.rpk |
+| Lobisomen: Drake's Chronicles | `Lobisomen - Drakes's Chronicles V2` | SDK 3.5 | Lobisomen - Drakes's Chronicles V2.rpk |
+| PokeRPG | `PokeRPG V7` | SDK 3.5 | PokeRPG V11.rpk, PokeRPG V7.rpk |
+| Vampiro: Drake's Chronicles | `Vampiro - Drake's Chronicles` | SDK 3.5 | Vampiro - Drake's Chronicles.rpk |
 
-Os projetos aqui presentes são voltados tanto para **uso direto em mesas** quanto para **aprendizado e referência técnica**.
+## Instalação (usuário)
 
----
+1. Entre na pasta do projeto desejado (ex.: `Projetos/Tormenta/`).
+2. Abra `output/` e pegue o arquivo **`.rpk`**.
+3. No **Firecast**, instale o plugin pelo menu de plugins (opção de *instalar/importar plugin* a partir de um arquivo) e selecione o `.rpk`.
+4. Reinicie o Firecast se necessário.
 
-## 🗂 Estrutura do Repositório
+### Observações importantes
 
-```text
-/
-├── PokeRPG/
-│   ├── sdk/
-│   │   ├── form/
-│   │   ├── macros/
-│   │   ├── images/
-│   │   └── scripts/
-│   └── PokeRPG.rpk
-│
-├── Ficha RPG Meister/
-│   ├── sdk/
-│   │   ├── form/
-│   │   ├── macros/
-│   │   └── scripts/
-│   └── FichaRPGMeister.rpk
-│
-└── README.md
-```
+- **Tormenta7.8**: projeto feito especificamente para a versão **RRPG 7.8** (SDK `3.4b`). Os demais estão em SDK `3.5`.
+- Alguns módulos são **customizados para mesas específicas** (ex.: *Drake's Chronicles* / *Morganna's Dream*), então podem ter campos/regras bem direcionados.
 
-📦 Cada pasta contém tanto o **arquivo `.rpk` pronto para uso** quanto o **SDK aberto** para edição.
+## Desenvolvimento (para quem quer mexer no código)
 
----
+### Estrutura típica
 
-## 🚀 Como Usar
+- `module.xml` — metadados do módulo (id, nome, descrição, SDK, autor etc.).
+- Pastas do sistema (ex.: `TRPG/`, etc.) — telas **.lfm** e scripts **.lua/.dlua**.
+- `sdk/` — arquivos do SDK/engine usados pelo projeto (normalmente não precisa editar).
+- `output/` — **build compilado** do plugin (`.rpk`) + artefatos.
 
-### ▶️ Usar a ficha pronta
+### Como gerar um novo `.rpk`
 
-1. Baixe o arquivo `.rpk` do projeto desejado  
-2. Abra o **Firecast**
-3. Vá em **Ferramentas → Instalar Plugin**
-4. Selecione o arquivo `.rpk`
-5. Reinicie o Firecast, se necessário
+Dependendo da sua versão do Firecast/SDK:
 
----
+1. Abra o projeto no ambiente do Firecast/SDK (quando aplicável).
+2. Compile/empacote o módulo para gerar o `.rpk`.
+3. O resultado costuma ir para `output/`.
 
-### 🛠 Desenvolver ou editar a ficha
+> Dica: se você só quer **testar rápido**, normalmente basta substituir o `.rpk` instalado no Firecast por uma versão nova gerada.
 
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
+## Créditos / Autor
 
-1. Abra o **Firecast SDK**
-2. Utilize a pasta `sdk/` do projeto desejado
-3. Faça alterações em Lua, formulários (`.lfm`) ou macros
-4. Gere um novo `.rpk` pelo SDK
+Os metadados em `module.xml` apontam os autores e contatos de cada módulo.  
+Em geral, os projetos são assinados como **Tricket** / **Rafael Honorio** (ver `module.xml` de cada pasta).
 
----
+## Licença
 
-## 🧠 Tecnologias Utilizadas
-
-- Lua
-- Firecast SDK
-- XML (.lfm)
-- Macros personalizadas
-
----
-
-## ✨ Funcionalidades
-
-- ✔️ Cálculos automáticos
-- ✔️ Macros integradas
-- ✔️ Interface organizada
-- ✔️ Layout responsivo
-- ✔️ Estrutura modular
-
----
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas!
-
-1. Faça um fork do projeto  
-2. Crie uma branch para sua feature  
-3. Commit suas alterações  
-4. Abra um Pull Request  
-
----
-
-## 📄 Licença
-
-Projeto distribuído para fins educacionais e uso em RPG, sem fins comerciais.
-
----
-
-## 👤 Autor
-
-**Rafael Honorio**  
-Desenvolvedor Full Stack & Criador de Fichas Firecast  
+Este repositório **não inclui um arquivo de licença** no momento.  
+Se você pretende distribuir/colaborar publicamente, recomenda-se adicionar uma licença (ex.: MIT) e esclarecer quais partes (imagens, regras, textos) podem ser reutilizadas.
