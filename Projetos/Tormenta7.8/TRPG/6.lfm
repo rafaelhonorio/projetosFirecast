@@ -9,9 +9,16 @@
                         </event>
                 </button>
         </layout>
-		<!-- Área principal: lista à esquerda + detalhes à direita (sem sobrepor) -->
-		<layout align="client" margins="{left=8, right=8, top=0, bottom=8}">
-			<recordList name="rclListaDosItens" field="campoDosItens" templateForm="frmItemDaLista" align="left" width="560" height="650" selectable="true">
+		<!-- Área principal FIXA (não cresce) -->
+		<layout align="top" height="650" margins="{left=8, right=8, top=0, bottom=8}">
+
+			<!-- Lista trava e rola DENTRO -->
+			<recordList name="rclListaDosItens"
+						field="campoDosItens"
+						templateForm="frmItemDaLista"
+						align="left"
+						width="560"
+						selectable="true">
 				<event name="onSelect">
 					local node = self.rclListaDosItens.selectedNode;
 					self.boxDetalhesDoItem.node = node;
@@ -19,18 +26,17 @@
 				</event>
 			</recordList>
 
-			<!-- Coluna da direita: detalhes do item selecionado -->
-			<layout left="300" width="390" height="650">
-				<dataScopeBox name="boxDetalhesDoItem" visible="false" align="top" width="420" height="180">
+			<!-- Coluna da direita fixa ao lado -->
+			<layout align="left" width="420" margins="{left=8}">
+				<dataScopeBox name="boxDetalhesDoItem" visible="false" align="top" height="180">
 					<rectangle align="client" color="#999999" xradius="10" yradius="10" padding="{top=3, left=3, right=3, bottom=3}">
 						<layout align="top" height="30" margins="{bottom=4}">
 							<label align="left" text="Ataque/Macro:" fontColor="black" autoSize="true"/>
 							<edit align="client" field="campoTitulo" fontColor="black"/>
 						</layout>
+
 						<layout align="top" height="30" margins="{bottom=4}">
 							<label align="left" text="Macro:" fontColor="black" autoSize="true"/>
-
-							<!-- Limita a largura para o 🎲 ficar do lado do campo -->
 							<edit align="left" width="260" field="campoSubTitulo" name="edtMacro" fontColor="black" margins="{left=6}"/>
 							<button align="left" width="25" height="25" text="🎲" fontSize="14" fontColor="black" canFocus="false" cursor="handPoint" margins="{left=6}" hint="Rolar este macro na mesa">
 								<event name="onClick">
@@ -41,6 +47,7 @@
 								</event>
 							</button>
 						</layout>
+
 						<layout align="top" height="100">
 							<label align="left" text="Descrição:" fontColor="black" autoSize="true"/>
 							<textEditor align="client" field="campoDescrição" fontColor="black"/>

@@ -3629,7 +3629,7 @@ function newTormenta01()
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'ca3','ca4','ca5','fort3','ref3','von3','acuidade','pontaria','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','__recalc'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca3','ca4','ca5','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -3765,12 +3765,19 @@ function newTormenta01()
 				if sheet.hab_ref  == nil or sheet.hab_ref  == "" then sheet.hab_ref  = "DES" end
 				if sheet.hab_von  == nil or sheet.hab_von  == "" then sheet.hab_von  = "SAB" end
 
-				sheet.modforca        = math.floor((N(sheet.forca, 10) / 2) - 5)
-				sheet.moddestreza     = math.floor((N(sheet.destreza, 10) / 2) - 5)
-				sheet.modconstituicao = math.floor((N(sheet.constituicao, 10) / 2) - 5)
-				sheet.modinteligencia = math.floor((N(sheet.inteligencia, 10) / 2) - 5)
-				sheet.modsabedoria    = math.floor((N(sheet.sabedoria, 10) / 2) - 5)
-				sheet.modcarisma      = math.floor((N(sheet.carisma, 10) / 2) - 5)
+				local forEff = N(sheet.forca, 10) - N(sheet.danoforca, 0)
+				local desEff = N(sheet.destreza, 10) - N(sheet.danodestreza, 0)
+				local conEff = N(sheet.constituicao, 10) - N(sheet.danoconstituicao, 0)
+				local intEff = N(sheet.inteligencia, 10) - N(sheet.danointeligencia, 0)
+				local sabEff = N(sheet.sabedoria, 10) - N(sheet.danosabedoria, 0)
+				local carEff = N(sheet.carisma, 10) - N(sheet.danocarisma, 0)
+
+				sheet.modforca        = math.floor((forEff / 2) - 5)
+				sheet.moddestreza     = math.floor((desEff / 2) - 5)
+				sheet.modconstituicao = math.floor((conEff / 2) - 5)
+				sheet.modinteligencia = math.floor((intEff / 2) - 5)
+				sheet.modsabedoria    = math.floor((sabEff / 2) - 5)
+				sheet.modcarisma      = math.floor((carEff / 2) - 5)
 
 				sheet.nivel =
 					math.floor(N(sheet.nvclasse1)) + math.floor(N(sheet.nvclasse2)) + math.floor(N(sheet.nvclasse3)) +
@@ -3798,8 +3805,6 @@ function newTormenta01()
 				sheet.von2 = TRPG_getMod(sheet, sheet.hab_von, N(sheet.modsabedoria))
 				sheet.totalvon = math.floor(N(sheet.von1)) + math.floor(N(sheet.von2)) + math.floor(N(sheet.von3))
 
-				local cacPadrao = (sheet.acuidade == true) and N(sheet.moddestreza) or N(sheet.modforca);
-
 				if tostring(sheet.hab_cac or "") ~= "" then
 					sheet.cac2 = TRPG_getMod(sheet, sheet.hab_cac, cacPadrao);
 				else
@@ -3807,8 +3812,6 @@ function newTormenta01()
 				end
 
 				sheet.totalcac = math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
-
-				local disPadrao = (sheet.pontaria == true) and N(sheet.modsabedoria) or N(sheet.moddestreza);
 
 				if tostring(sheet.hab_dis or "") ~= "" then
 					sheet.dis2 = TRPG_getMod(sheet, sheet.hab_dis, disPadrao);

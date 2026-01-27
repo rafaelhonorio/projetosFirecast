@@ -60,7 +60,8 @@ function newTormenta06()
 
     obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
-    obj.layout2:setAlign("client");
+    obj.layout2:setAlign("top");
+    obj.layout2:setHeight(650);
     obj.layout2:setMargins({left=8, right=8, top=0, bottom=8});
     obj.layout2:setName("layout2");
 
@@ -71,14 +72,13 @@ function newTormenta06()
     obj.rclListaDosItens:setTemplateForm("frmItemDaLista");
     obj.rclListaDosItens:setAlign("left");
     obj.rclListaDosItens:setWidth(560);
-    obj.rclListaDosItens:setHeight(650);
     obj.rclListaDosItens:setSelectable(true);
 
     obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.layout2);
-    obj.layout3:setLeft(300);
-    obj.layout3:setWidth(390);
-    obj.layout3:setHeight(650);
+    obj.layout3:setAlign("left");
+    obj.layout3:setWidth(420);
+    obj.layout3:setMargins({left=8});
     obj.layout3:setName("layout3");
 
     obj.boxDetalhesDoItem = gui.fromHandle(_obj_newObject("dataScopeBox"));
@@ -86,7 +86,6 @@ function newTormenta06()
     obj.boxDetalhesDoItem:setName("boxDetalhesDoItem");
     obj.boxDetalhesDoItem:setVisible(false);
     obj.boxDetalhesDoItem:setAlign("top");
-    obj.boxDetalhesDoItem:setWidth(420);
     obj.boxDetalhesDoItem:setHeight(180);
 
     obj.rectangle2 = gui.fromHandle(_obj_newObject("rectangle"));
