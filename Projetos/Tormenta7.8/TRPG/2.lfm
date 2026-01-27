@@ -2,17 +2,17 @@
 <form name="Tormenta02" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="desCalculos2();">
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
-		<layout left="3" top="10" width="480" height="700">
-			<rectangle left="249" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="256" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
-			<rectangle left="308" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="316" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Grad"/>
-			<rectangle left="374" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="378" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
-			<rectangle left="440" top="10" color="Black" width="38" height="15" xradius="2" yradius="2"/>
-			<label left="443" top="11" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-			<layout left="0" top="17" width="480" height="700">
-				<layout left="0" top="0" width="480" height="32">
+		<layout left="3" top="1" width="480" height="700">
+			<rectangle left="249" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="256" top="2" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
+			<rectangle left="308" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="316" top="2" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Grad"/>
+			<rectangle left="374" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="378" top="2" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
+			<rectangle left="440" top="1" color="Black" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="443" top="2" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
+			<layout left="0" top="7" width="480" height="700">
+				<layout left="0" top="1" width="480" height="32">
 					<rectangle left="3" top="3" color="Black" width="244" height="25" xradius="2" yradius="2"/>
 					<imageCheckBox left="3" top="5" width="20" height="20" checkedImage="img/box.png" uncheckedImage="img/unbox.png" field="cbxacrobacia"/>
 					<button left="27" top="5" width="20" height="20" text="H" hint="Escolher habilidade base">
@@ -20,7 +20,7 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_acrobacia", "DES");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Acrobacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Acrobacia ⚔" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20"
 							opacity="0.0"
 							canFocus="false"
@@ -49,15 +49,16 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_adestrar", "CAR");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Adestrar Animais" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
-					<button left="50" top="5" width="150" height="20"
-							opacity="0.0"
-							canFocus="false"
-							cursor="handPoint"
-							hint="Rolar 1d20 + Adestrar Animais">
-						<event name="onClick">
-							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaladestrar, "Adestrar Animais");
-						</event>
+					<label left="50" top="5" width="150" height="20" text="Adestrar Animais ❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Adestrar Animais">
+					<event name="onClick">
+						local sh = sheet or self.sheet;
+						if not (sh.cbxadestrar == true) then
+							 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+							return;
+						end;
+						TRPG_rollValue(sh, sh.totaladestrar, "Adestrar Animais");
+					</event>
 					</button>
 					<edit left="249" top="3" width="40" height="25" name="totaladestrar" field="totaladestrar" type="number" min="-999" max="999" horzTextAlign="center" fontColor="black" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="290" top="8" color="Black" width="20" height="15" xradius="2" yradius="2"/>
@@ -78,7 +79,7 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_atletismo", "FOR");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Atletismo" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Atletismo ⚔" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20"
 							opacity="0.0"
 							canFocus="false"
@@ -192,13 +193,17 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento1", "INT");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Conhecimento ❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Conhecimento">
 						<event name="onClick">
 							local sh = sheet or self.sheet;
 							local nome = "Conhecimento";
 							local extra = tostring(sh.conhecimento1 or ""):gsub("^%s+",""):gsub("%s+$","");
 							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							if not (sh.cbxconhecimento1 == true) then
+								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+								return;
+							end;
 							TRPG_rollValue(sh, sh.totalconhecimento1, nome);
 						</event>
 					</button>
@@ -222,13 +227,17 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento2", "INT");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Conhecimento ❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Conhecimento">
 						<event name="onClick">
 							local sh = sheet or self.sheet;
 							local nome = "Conhecimento";
 							local extra = tostring(sh.conhecimento2 or ""):gsub("^%s+",""):gsub("%s+$","");
 							if extra ~= "" then nome = nome .. " - " .. extra; end;
+							if not (sh.cbxconhecimento2 == true) then
+								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+								return;
+							end;
 							TRPG_rollValue(sh, sh.totalconhecimento2, nome);
 						</event>
 					</button>
@@ -327,7 +336,7 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_furtividade", "DES");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Furtividade" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Furtividade ⚔" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Furtividade">
 						<event name="onClick">
 							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfurtividade, "Furtividade");
@@ -352,9 +361,14 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_imagia", "INT");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Identificar Magia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Identificar Magia ❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Identificar Magia">
 						<event name="onClick">
+							local sh = sheet or self.sheet;
+							if not (sh.cbximagia == true) then
+								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+								return;
+							end;
 							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
 						</event>
 					</button>
@@ -477,9 +491,14 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_ladinagem", "DES");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Ladinagem" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Ladinagem ⚔❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Ladinagem">
 						<event name="onClick">
+							local sh = sheet or self.sheet;
+							if not (sh.cbxladinagem == true) then
+								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+								return;
+							end;
 							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
 						</event>
 					</button>
@@ -587,9 +606,14 @@
 							TRPG_chooseHab(sheet or self.sheet, "hab_meditacao", "SAB");
 						</event>
 					</button>
-					<label left="50" top="5" width="150" height="20" text="Meditação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
+					<label left="50" top="5" width="150" height="20" text="Meditação ❄" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
 					<button left="50" top="5" width="150" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Meditação">
 						<event name="onClick">
+							local sh = sheet or self.sheet;
+							if not (sh.cbxmeditacao == true) then
+								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+								return;
+							end;
 							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
 						</event>
 					</button>
@@ -656,22 +680,40 @@
 				</layout>
 			</layout>
 		</layout>
-		<layout left="470" top="10" width="545" height="700">
-			<rectangle left="115" top="5" color="Black" width="45" height="15" xradius="2" yradius="2"/>
-			<label left="118" top="8" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Talentos"/>
-			<rectangle left="357" top="5" color="Black" width="105" height="15" xradius="2" yradius="2"/>
-			<label left="360" top="8" width="98" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Raça"/>
-			<rectangle left="357" top="338" color="Black" width="107" height="15" xradius="2" yradius="2"/>
-			<label left="360" top="341" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Classe"/>
-			<layout left="15" top="17" width="255" height="671">
+		<layout left="470" top="0" width="545" height="700">
+			<rectangle left="115" top="1" color="Black" width="45" height="15" xradius="2" yradius="2"/>
+			<label left="118" top="2" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Talentos"/>
+			<rectangle left="357" top="1" color="Black" width="105" height="15" xradius="2" yradius="2"/>
+			<label left="360" top="2" width="98" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Raça"/>
+			<rectangle left="357" top="332" color="Black" width="107" height="15" xradius="2" yradius="2"/>
+			<label left="360" top="335" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades de Classe"/>
+			<layout left="15" top="11" width="255" height="686">
 				<textEditor align="client" field="talentos" fontStyle="bold" fontColor="black"/>
 			</layout>
-			<layout left="275" top="17" width="260" height="317">
+			<layout left="275" top="11" width="260" height="317">
 				<textEditor align="client" field="hraca" fontStyle="bold" fontColor="black"/>
 			</layout>
-			<layout left="275" top="350" width="260" height="339">
+			<layout left="275" top="344" width="260" height="354">
 				<textEditor align="client" field="hclasse" fontStyle="bold" fontColor="black"/>
 			</layout>
+		</layout>
+		<!-- Legenda de perícias -->
+		<layout left="6" top="680" width="300" height="20">
+			<label left="0" top="0" width="150" height="20"
+				text="⚔ Penalidade de armadura"
+				fontSize="12"
+				fontColor="#333333"
+				hitTest="true"
+				hint="Armaduras e Escudos dão penalidade nessas pericias"
+				vertTextAlign="center"/>
+
+			<label left="160" top="0" width="140" height="20"
+				text="❄ Somente treinado"
+				fontSize="12"
+				fontColor="#333333"
+				hitTest="true"
+				hint="Essas pericias só podem ser utilizadas caso sejam treinadas"
+				vertTextAlign="center"/>
 		</layout>
 	</scrollBox>
 	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'}">

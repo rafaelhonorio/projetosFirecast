@@ -4186,7 +4186,7 @@ function newTormentafrm()
     obj.layout41 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout41:setParent(obj.scrollBox2);
     obj.layout41:setLeft(3);
-    obj.layout41:setTop(10);
+    obj.layout41:setTop(1);
     obj.layout41:setWidth(480);
     obj.layout41:setHeight(700);
     obj.layout41:setName("layout41");
@@ -4194,7 +4194,7 @@ function newTormentafrm()
     obj.rectangle89 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle89:setParent(obj.layout41);
     obj.rectangle89:setLeft(249);
-    obj.rectangle89:setTop(10);
+    obj.rectangle89:setTop(1);
     obj.rectangle89:setColor("Black");
     obj.rectangle89:setWidth(38);
     obj.rectangle89:setHeight(15);
@@ -4205,7 +4205,7 @@ function newTormentafrm()
     obj.label83 = gui.fromHandle(_obj_newObject("label"));
     obj.label83:setParent(obj.layout41);
     obj.label83:setLeft(256);
-    obj.label83:setTop(11);
+    obj.label83:setTop(2);
     obj.label83:setWidth(48);
     obj.label83:setHeight(8);
     obj.label83:setFontSize(10);
@@ -4217,7 +4217,7 @@ function newTormentafrm()
     obj.rectangle90 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle90:setParent(obj.layout41);
     obj.rectangle90:setLeft(308);
-    obj.rectangle90:setTop(10);
+    obj.rectangle90:setTop(1);
     obj.rectangle90:setColor("Black");
     obj.rectangle90:setWidth(38);
     obj.rectangle90:setHeight(15);
@@ -4228,7 +4228,7 @@ function newTormentafrm()
     obj.label84 = gui.fromHandle(_obj_newObject("label"));
     obj.label84:setParent(obj.layout41);
     obj.label84:setLeft(316);
-    obj.label84:setTop(11);
+    obj.label84:setTop(2);
     obj.label84:setWidth(48);
     obj.label84:setHeight(8);
     obj.label84:setFontSize(10);
@@ -4240,7 +4240,7 @@ function newTormentafrm()
     obj.rectangle91 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle91:setParent(obj.layout41);
     obj.rectangle91:setLeft(374);
-    obj.rectangle91:setTop(10);
+    obj.rectangle91:setTop(1);
     obj.rectangle91:setColor("Black");
     obj.rectangle91:setWidth(38);
     obj.rectangle91:setHeight(15);
@@ -4251,7 +4251,7 @@ function newTormentafrm()
     obj.label85 = gui.fromHandle(_obj_newObject("label"));
     obj.label85:setParent(obj.layout41);
     obj.label85:setLeft(378);
-    obj.label85:setTop(11);
+    obj.label85:setTop(2);
     obj.label85:setWidth(48);
     obj.label85:setHeight(8);
     obj.label85:setFontSize(10);
@@ -4263,7 +4263,7 @@ function newTormentafrm()
     obj.rectangle92 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle92:setParent(obj.layout41);
     obj.rectangle92:setLeft(440);
-    obj.rectangle92:setTop(10);
+    obj.rectangle92:setTop(1);
     obj.rectangle92:setColor("Black");
     obj.rectangle92:setWidth(38);
     obj.rectangle92:setHeight(15);
@@ -4274,7 +4274,7 @@ function newTormentafrm()
     obj.label86 = gui.fromHandle(_obj_newObject("label"));
     obj.label86:setParent(obj.layout41);
     obj.label86:setLeft(443);
-    obj.label86:setTop(11);
+    obj.label86:setTop(2);
     obj.label86:setWidth(48);
     obj.label86:setHeight(8);
     obj.label86:setFontSize(10);
@@ -4286,7 +4286,7 @@ function newTormentafrm()
     obj.layout42 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout42:setParent(obj.layout41);
     obj.layout42:setLeft(0);
-    obj.layout42:setTop(17);
+    obj.layout42:setTop(7);
     obj.layout42:setWidth(480);
     obj.layout42:setHeight(700);
     obj.layout42:setName("layout42");
@@ -4294,7 +4294,7 @@ function newTormentafrm()
     obj.layout43 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout43:setParent(obj.layout42);
     obj.layout43:setLeft(0);
-    obj.layout43:setTop(0);
+    obj.layout43:setTop(1);
     obj.layout43:setWidth(480);
     obj.layout43:setHeight(32);
     obj.layout43:setName("layout43");
@@ -4337,7 +4337,7 @@ function newTormentafrm()
     obj.label87:setTop(5);
     obj.label87:setWidth(150);
     obj.label87:setHeight(20);
-    obj.label87:setText("Acrobacia");
+    obj.label87:setText("Acrobacia ⚔");
     obj.label87:setHorzTextAlign("leading");
     obj.label87:setFontSize(15.0);
     lfm_setPropAsString(obj.label87, "fontStyle",  "bold");
@@ -4538,7 +4538,7 @@ function newTormentafrm()
     obj.label91:setTop(5);
     obj.label91:setWidth(150);
     obj.label91:setHeight(20);
-    obj.label91:setText("Adestrar Animais");
+    obj.label91:setText("Adestrar Animais ❄");
     obj.label91:setHorzTextAlign("leading");
     obj.label91:setFontSize(15.0);
     lfm_setPropAsString(obj.label91, "fontStyle",  "bold");
@@ -4739,7 +4739,7 @@ function newTormentafrm()
     obj.label95:setTop(5);
     obj.label95:setWidth(150);
     obj.label95:setHeight(20);
-    obj.label95:setText("Atletismo");
+    obj.label95:setText("Atletismo ⚔");
     obj.label95:setHorzTextAlign("leading");
     obj.label95:setFontSize(15.0);
     lfm_setPropAsString(obj.label95, "fontStyle",  "bold");
@@ -5569,7 +5569,7 @@ function newTormentafrm()
     obj.label111:setTop(5);
     obj.label111:setWidth(150);
     obj.label111:setHeight(20);
-    obj.label111:setText("Conhecimento");
+    obj.label111:setText("Conhecimento ❄");
     obj.label111:setHorzTextAlign("leading");
     obj.label111:setFontSize(15.0);
     lfm_setPropAsString(obj.label111, "fontStyle",  "bold");
@@ -5783,7 +5783,7 @@ function newTormentafrm()
     obj.label115:setTop(5);
     obj.label115:setWidth(150);
     obj.label115:setHeight(20);
-    obj.label115:setText("Conhecimento");
+    obj.label115:setText("Conhecimento ❄");
     obj.label115:setHorzTextAlign("leading");
     obj.label115:setFontSize(15.0);
     lfm_setPropAsString(obj.label115, "fontStyle",  "bold");
@@ -6600,7 +6600,7 @@ function newTormentafrm()
     obj.label131:setTop(5);
     obj.label131:setWidth(150);
     obj.label131:setHeight(20);
-    obj.label131:setText("Furtividade");
+    obj.label131:setText("Furtividade ⚔");
     obj.label131:setHorzTextAlign("leading");
     obj.label131:setFontSize(15.0);
     lfm_setPropAsString(obj.label131, "fontStyle",  "bold");
@@ -6801,7 +6801,7 @@ function newTormentafrm()
     obj.label135:setTop(5);
     obj.label135:setWidth(150);
     obj.label135:setHeight(20);
-    obj.label135:setText("Identificar Magia");
+    obj.label135:setText("Identificar Magia ❄");
     obj.label135:setHorzTextAlign("leading");
     obj.label135:setFontSize(15.0);
     lfm_setPropAsString(obj.label135, "fontStyle",  "bold");
@@ -7806,7 +7806,7 @@ function newTormentafrm()
     obj.label155:setTop(5);
     obj.label155:setWidth(150);
     obj.label155:setHeight(20);
-    obj.label155:setText("Ladinagem");
+    obj.label155:setText("Ladinagem ⚔❄");
     obj.label155:setHorzTextAlign("leading");
     obj.label155:setFontSize(15.0);
     lfm_setPropAsString(obj.label155, "fontStyle",  "bold");
@@ -8636,7 +8636,7 @@ function newTormentafrm()
     obj.label171:setTop(5);
     obj.label171:setWidth(150);
     obj.label171:setHeight(20);
-    obj.label171:setText("Meditação");
+    obj.label171:setText("Meditação ❄");
     obj.label171:setHorzTextAlign("leading");
     obj.label171:setFontSize(15.0);
     lfm_setPropAsString(obj.label171, "fontStyle",  "bold");
@@ -9196,7 +9196,7 @@ function newTormentafrm()
     obj.layout67 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout67:setParent(obj.scrollBox2);
     obj.layout67:setLeft(470);
-    obj.layout67:setTop(10);
+    obj.layout67:setTop(0);
     obj.layout67:setWidth(545);
     obj.layout67:setHeight(700);
     obj.layout67:setName("layout67");
@@ -9204,7 +9204,7 @@ function newTormentafrm()
     obj.rectangle189 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle189:setParent(obj.layout67);
     obj.rectangle189:setLeft(115);
-    obj.rectangle189:setTop(5);
+    obj.rectangle189:setTop(1);
     obj.rectangle189:setColor("Black");
     obj.rectangle189:setWidth(45);
     obj.rectangle189:setHeight(15);
@@ -9215,7 +9215,7 @@ function newTormentafrm()
     obj.label183 = gui.fromHandle(_obj_newObject("label"));
     obj.label183:setParent(obj.layout67);
     obj.label183:setLeft(118);
-    obj.label183:setTop(8);
+    obj.label183:setTop(2);
     obj.label183:setWidth(58);
     obj.label183:setHeight(8);
     obj.label183:setFontSize(10);
@@ -9227,7 +9227,7 @@ function newTormentafrm()
     obj.rectangle190 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle190:setParent(obj.layout67);
     obj.rectangle190:setLeft(357);
-    obj.rectangle190:setTop(5);
+    obj.rectangle190:setTop(1);
     obj.rectangle190:setColor("Black");
     obj.rectangle190:setWidth(105);
     obj.rectangle190:setHeight(15);
@@ -9238,7 +9238,7 @@ function newTormentafrm()
     obj.label184 = gui.fromHandle(_obj_newObject("label"));
     obj.label184:setParent(obj.layout67);
     obj.label184:setLeft(360);
-    obj.label184:setTop(8);
+    obj.label184:setTop(2);
     obj.label184:setWidth(98);
     obj.label184:setHeight(8);
     obj.label184:setFontSize(10);
@@ -9250,7 +9250,7 @@ function newTormentafrm()
     obj.rectangle191 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle191:setParent(obj.layout67);
     obj.rectangle191:setLeft(357);
-    obj.rectangle191:setTop(338);
+    obj.rectangle191:setTop(332);
     obj.rectangle191:setColor("Black");
     obj.rectangle191:setWidth(107);
     obj.rectangle191:setHeight(15);
@@ -9261,7 +9261,7 @@ function newTormentafrm()
     obj.label185 = gui.fromHandle(_obj_newObject("label"));
     obj.label185:setParent(obj.layout67);
     obj.label185:setLeft(360);
-    obj.label185:setTop(341);
+    obj.label185:setTop(335);
     obj.label185:setWidth(115);
     obj.label185:setHeight(8);
     obj.label185:setFontSize(10);
@@ -9273,9 +9273,9 @@ function newTormentafrm()
     obj.layout68 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout68:setParent(obj.layout67);
     obj.layout68:setLeft(15);
-    obj.layout68:setTop(17);
+    obj.layout68:setTop(11);
     obj.layout68:setWidth(255);
-    obj.layout68:setHeight(671);
+    obj.layout68:setHeight(686);
     obj.layout68:setName("layout68");
 
     obj.textEditor1 = gui.fromHandle(_obj_newObject("textEditor"));
@@ -9289,7 +9289,7 @@ function newTormentafrm()
     obj.layout69 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout69:setParent(obj.layout67);
     obj.layout69:setLeft(275);
-    obj.layout69:setTop(17);
+    obj.layout69:setTop(11);
     obj.layout69:setWidth(260);
     obj.layout69:setHeight(317);
     obj.layout69:setName("layout69");
@@ -9305,9 +9305,9 @@ function newTormentafrm()
     obj.layout70 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout70:setParent(obj.layout67);
     obj.layout70:setLeft(275);
-    obj.layout70:setTop(350);
+    obj.layout70:setTop(344);
     obj.layout70:setWidth(260);
-    obj.layout70:setHeight(339);
+    obj.layout70:setHeight(354);
     obj.layout70:setName("layout70");
 
     obj.textEditor3 = gui.fromHandle(_obj_newObject("textEditor"));
@@ -9317,6 +9317,42 @@ function newTormentafrm()
     lfm_setPropAsString(obj.textEditor3, "fontStyle",  "bold");
     obj.textEditor3:setFontColor("black");
     obj.textEditor3:setName("textEditor3");
+
+    obj.layout71 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout71:setParent(obj.scrollBox2);
+    obj.layout71:setLeft(6);
+    obj.layout71:setTop(680);
+    obj.layout71:setWidth(300);
+    obj.layout71:setHeight(20);
+    obj.layout71:setName("layout71");
+
+    obj.label186 = gui.fromHandle(_obj_newObject("label"));
+    obj.label186:setParent(obj.layout71);
+    obj.label186:setLeft(0);
+    obj.label186:setTop(0);
+    obj.label186:setWidth(150);
+    obj.label186:setHeight(20);
+    obj.label186:setText("⚔ Penalidade de armadura");
+    obj.label186:setFontSize(12);
+    obj.label186:setFontColor("#333333");
+    obj.label186:setHitTest(true);
+    obj.label186:setHint("Armaduras e Escudos dão penalidade nessas pericias");
+    obj.label186:setVertTextAlign("center");
+    obj.label186:setName("label186");
+
+    obj.label187 = gui.fromHandle(_obj_newObject("label"));
+    obj.label187:setParent(obj.layout71);
+    obj.label187:setLeft(160);
+    obj.label187:setTop(0);
+    obj.label187:setWidth(140);
+    obj.label187:setHeight(20);
+    obj.label187:setText("❄ Somente treinado");
+    obj.label187:setFontSize(12);
+    obj.label187:setFontColor("#333333");
+    obj.label187:setHitTest(true);
+    obj.label187:setHint("Essas pericias só podem ser utilizadas caso sejam treinadas");
+    obj.label187:setVertTextAlign("center");
+    obj.label187:setName("label187");
 
     obj.dataLink2 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj.Tormenta02);
@@ -9767,16 +9803,16 @@ function newTormentafrm()
     obj.rectangle192:setYradius(10);
     obj.rectangle192:setName("rectangle192");
 
-    obj.layout71 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout71:setParent(obj.scrollBox3);
-    obj.layout71:setLeft(10);
-    obj.layout71:setTop(13);
-    obj.layout71:setWidth(585);
-    obj.layout71:setHeight(677);
-    obj.layout71:setName("layout71");
+    obj.layout72 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout72:setParent(obj.scrollBox3);
+    obj.layout72:setLeft(10);
+    obj.layout72:setTop(13);
+    obj.layout72:setWidth(585);
+    obj.layout72:setHeight(677);
+    obj.layout72:setName("layout72");
 
     obj.image3 = gui.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout71);
+    obj.image3:setParent(obj.layout72);
     obj.image3:setLeft(131);
     obj.image3:setTop(60);
     obj.image3:setWidth(274);
@@ -9784,16 +9820,16 @@ function newTormentafrm()
     obj.image3:setSRC("/TRPG/img/silhouette.png");
     obj.image3:setName("image3");
 
-    obj.layout72 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout72:setParent(obj.layout71);
-    obj.layout72:setLeft(19);
-    obj.layout72:setTop(59);
-    obj.layout72:setWidth(200);
-    obj.layout72:setHeight(125);
-    obj.layout72:setName("layout72");
+    obj.layout73 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout73:setParent(obj.layout72);
+    obj.layout73:setLeft(19);
+    obj.layout73:setTop(59);
+    obj.layout73:setWidth(200);
+    obj.layout73:setHeight(125);
+    obj.layout73:setName("layout73");
 
     obj.rectangle193 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle193:setParent(obj.layout72);
+    obj.rectangle193:setParent(obj.layout73);
     obj.rectangle193:setLeft(6);
     obj.rectangle193:setTop(17);
     obj.rectangle193:setColor("Black");
@@ -9803,21 +9839,21 @@ function newTormentafrm()
     obj.rectangle193:setYradius(2);
     obj.rectangle193:setName("rectangle193");
 
-    obj.label186 = gui.fromHandle(_obj_newObject("label"));
-    obj.label186:setParent(obj.layout72);
-    obj.label186:setLeft(9);
-    obj.label186:setTop(16);
-    obj.label186:setWidth(98);
-    obj.label186:setHeight(15);
-    obj.label186:setFontSize(13);
-    obj.label186:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label186, "fontStyle",  "bold");
-    obj.label186:setFontColor("white");
-    obj.label186:setText("Armadura");
-    obj.label186:setName("label186");
+    obj.label188 = gui.fromHandle(_obj_newObject("label"));
+    obj.label188:setParent(obj.layout73);
+    obj.label188:setLeft(9);
+    obj.label188:setTop(16);
+    obj.label188:setWidth(98);
+    obj.label188:setHeight(15);
+    obj.label188:setFontSize(13);
+    obj.label188:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label188, "fontStyle",  "bold");
+    obj.label188:setFontColor("white");
+    obj.label188:setText("Armadura");
+    obj.label188:setName("label188");
 
     obj.rectangle194 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle194:setParent(obj.layout72);
+    obj.rectangle194:setParent(obj.layout73);
     obj.rectangle194:setLeft(1);
     obj.rectangle194:setTop(31);
     obj.rectangle194:setWidth(200);
@@ -9828,7 +9864,7 @@ function newTormentafrm()
     obj.rectangle194:setName("rectangle194");
 
     obj.narmadura = gui.fromHandle(_obj_newObject("edit"));
-    obj.narmadura:setParent(obj.layout72);
+    obj.narmadura:setParent(obj.layout73);
     obj.narmadura:setLeft(3);
     obj.narmadura:setTop(33);
     obj.narmadura:setWidth(195);
@@ -9839,21 +9875,21 @@ function newTormentafrm()
     obj.narmadura:setFontColor("black");
     lfm_setPropAsString(obj.narmadura, "fontStyle",  "bold");
 
-    obj.label187 = gui.fromHandle(_obj_newObject("label"));
-    obj.label187:setParent(obj.layout72);
-    obj.label187:setLeft(18);
-    obj.label187:setTop(63);
-    obj.label187:setWidth(30);
-    obj.label187:setHeight(15);
-    obj.label187:setFontSize(13);
-    obj.label187:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label187, "fontStyle",  "bold");
-    obj.label187:setFontColor("black");
-    obj.label187:setText("CA");
-    obj.label187:setName("label187");
+    obj.label189 = gui.fromHandle(_obj_newObject("label"));
+    obj.label189:setParent(obj.layout73);
+    obj.label189:setLeft(18);
+    obj.label189:setTop(63);
+    obj.label189:setWidth(30);
+    obj.label189:setHeight(15);
+    obj.label189:setFontSize(13);
+    obj.label189:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label189, "fontStyle",  "bold");
+    obj.label189:setFontColor("black");
+    obj.label189:setText("CA");
+    obj.label189:setName("label189");
 
     obj.caarmadura = gui.fromHandle(_obj_newObject("edit"));
-    obj.caarmadura:setParent(obj.layout72);
+    obj.caarmadura:setParent(obj.layout73);
     obj.caarmadura:setLeft(13);
     obj.caarmadura:setTop(84);
     obj.caarmadura:setWidth(40);
@@ -9868,21 +9904,21 @@ function newTormentafrm()
     obj.caarmadura:setFontSize(15.0);
     lfm_setPropAsString(obj.caarmadura, "fontStyle",  "bold");
 
-    obj.label188 = gui.fromHandle(_obj_newObject("label"));
-    obj.label188:setParent(obj.layout72);
-    obj.label188:setLeft(63);
-    obj.label188:setTop(63);
-    obj.label188:setWidth(30);
-    obj.label188:setHeight(15);
-    obj.label188:setFontSize(13);
-    obj.label188:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label188, "fontStyle",  "bold");
-    obj.label188:setFontColor("black");
-    obj.label188:setText("PEN");
-    obj.label188:setName("label188");
+    obj.label190 = gui.fromHandle(_obj_newObject("label"));
+    obj.label190:setParent(obj.layout73);
+    obj.label190:setLeft(63);
+    obj.label190:setTop(63);
+    obj.label190:setWidth(30);
+    obj.label190:setHeight(15);
+    obj.label190:setFontSize(13);
+    obj.label190:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label190, "fontStyle",  "bold");
+    obj.label190:setFontColor("black");
+    obj.label190:setText("PEN");
+    obj.label190:setName("label190");
 
     obj.penarmadura = gui.fromHandle(_obj_newObject("edit"));
-    obj.penarmadura:setParent(obj.layout72);
+    obj.penarmadura:setParent(obj.layout73);
     obj.penarmadura:setLeft(58);
     obj.penarmadura:setTop(84);
     obj.penarmadura:setWidth(40);
@@ -9897,21 +9933,21 @@ function newTormentafrm()
     obj.penarmadura:setFontSize(15.0);
     lfm_setPropAsString(obj.penarmadura, "fontStyle",  "bold");
 
-    obj.label189 = gui.fromHandle(_obj_newObject("label"));
-    obj.label189:setParent(obj.layout72);
-    obj.label189:setLeft(101);
-    obj.label189:setTop(63);
-    obj.label189:setWidth(45);
-    obj.label189:setHeight(15);
-    obj.label189:setFontSize(13);
-    obj.label189:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label189, "fontStyle",  "bold");
-    obj.label189:setFontColor("black");
-    obj.label189:setText("DES M.");
-    obj.label189:setName("label189");
+    obj.label191 = gui.fromHandle(_obj_newObject("label"));
+    obj.label191:setParent(obj.layout73);
+    obj.label191:setLeft(101);
+    obj.label191:setTop(63);
+    obj.label191:setWidth(45);
+    obj.label191:setHeight(15);
+    obj.label191:setFontSize(13);
+    obj.label191:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label191, "fontStyle",  "bold");
+    obj.label191:setFontColor("black");
+    obj.label191:setText("DES M.");
+    obj.label191:setName("label191");
 
     obj.desmnarmadura = gui.fromHandle(_obj_newObject("edit"));
-    obj.desmnarmadura:setParent(obj.layout72);
+    obj.desmnarmadura:setParent(obj.layout73);
     obj.desmnarmadura:setLeft(103);
     obj.desmnarmadura:setTop(84);
     obj.desmnarmadura:setWidth(40);
@@ -9926,21 +9962,21 @@ function newTormentafrm()
     obj.desmnarmadura:setFontSize(15.0);
     lfm_setPropAsString(obj.desmnarmadura, "fontStyle",  "bold");
 
-    obj.label190 = gui.fromHandle(_obj_newObject("label"));
-    obj.label190:setParent(obj.layout72);
-    obj.label190:setLeft(154);
-    obj.label190:setTop(63);
-    obj.label190:setWidth(30);
-    obj.label190:setHeight(15);
-    obj.label190:setFontSize(13);
-    obj.label190:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label190, "fontStyle",  "bold");
-    obj.label190:setFontColor("black");
-    obj.label190:setText("F. M.");
-    obj.label190:setName("label190");
+    obj.label192 = gui.fromHandle(_obj_newObject("label"));
+    obj.label192:setParent(obj.layout73);
+    obj.label192:setLeft(154);
+    obj.label192:setTop(63);
+    obj.label192:setWidth(30);
+    obj.label192:setHeight(15);
+    obj.label192:setFontSize(13);
+    obj.label192:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label192, "fontStyle",  "bold");
+    obj.label192:setFontColor("black");
+    obj.label192:setText("F. M.");
+    obj.label192:setName("label192");
 
     obj.falhamarmadura = gui.fromHandle(_obj_newObject("edit"));
-    obj.falhamarmadura:setParent(obj.layout72);
+    obj.falhamarmadura:setParent(obj.layout73);
     obj.falhamarmadura:setLeft(148);
     obj.falhamarmadura:setTop(84);
     obj.falhamarmadura:setWidth(40);
@@ -9955,16 +9991,16 @@ function newTormentafrm()
     obj.falhamarmadura:setFontSize(15.0);
     lfm_setPropAsString(obj.falhamarmadura, "fontStyle",  "bold");
 
-    obj.layout73 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout73:setParent(obj.layout71);
-    obj.layout73:setLeft(370);
-    obj.layout73:setTop(229);
-    obj.layout73:setWidth(200);
-    obj.layout73:setHeight(125);
-    obj.layout73:setName("layout73");
+    obj.layout74 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout74:setParent(obj.layout72);
+    obj.layout74:setLeft(370);
+    obj.layout74:setTop(229);
+    obj.layout74:setWidth(200);
+    obj.layout74:setHeight(125);
+    obj.layout74:setName("layout74");
 
     obj.rectangle195 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle195:setParent(obj.layout73);
+    obj.rectangle195:setParent(obj.layout74);
     obj.rectangle195:setLeft(26);
     obj.rectangle195:setTop(17);
     obj.rectangle195:setColor("Black");
@@ -9974,21 +10010,21 @@ function newTormentafrm()
     obj.rectangle195:setYradius(2);
     obj.rectangle195:setName("rectangle195");
 
-    obj.label191 = gui.fromHandle(_obj_newObject("label"));
-    obj.label191:setParent(obj.layout73);
-    obj.label191:setLeft(29);
-    obj.label191:setTop(16);
-    obj.label191:setWidth(98);
-    obj.label191:setHeight(15);
-    obj.label191:setFontSize(13);
-    obj.label191:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label191, "fontStyle",  "bold");
-    obj.label191:setFontColor("white");
-    obj.label191:setText("Escudo");
-    obj.label191:setName("label191");
+    obj.label193 = gui.fromHandle(_obj_newObject("label"));
+    obj.label193:setParent(obj.layout74);
+    obj.label193:setLeft(29);
+    obj.label193:setTop(16);
+    obj.label193:setWidth(98);
+    obj.label193:setHeight(15);
+    obj.label193:setFontSize(13);
+    obj.label193:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label193, "fontStyle",  "bold");
+    obj.label193:setFontColor("white");
+    obj.label193:setText("Escudo");
+    obj.label193:setName("label193");
 
     obj.rectangle196 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle196:setParent(obj.layout73);
+    obj.rectangle196:setParent(obj.layout74);
     obj.rectangle196:setLeft(1);
     obj.rectangle196:setTop(31);
     obj.rectangle196:setWidth(200);
@@ -9999,7 +10035,7 @@ function newTormentafrm()
     obj.rectangle196:setName("rectangle196");
 
     obj.nescudo = gui.fromHandle(_obj_newObject("edit"));
-    obj.nescudo:setParent(obj.layout73);
+    obj.nescudo:setParent(obj.layout74);
     obj.nescudo:setLeft(3);
     obj.nescudo:setTop(33);
     obj.nescudo:setWidth(195);
@@ -10010,21 +10046,21 @@ function newTormentafrm()
     obj.nescudo:setHorzTextAlign("center");
     lfm_setPropAsString(obj.nescudo, "fontStyle",  "bold");
 
-    obj.label192 = gui.fromHandle(_obj_newObject("label"));
-    obj.label192:setParent(obj.layout73);
-    obj.label192:setLeft(41);
-    obj.label192:setTop(63);
-    obj.label192:setWidth(30);
-    obj.label192:setHeight(15);
-    obj.label192:setFontSize(13);
-    obj.label192:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label192, "fontStyle",  "bold");
-    obj.label192:setFontColor("black");
-    obj.label192:setText("CA");
-    obj.label192:setName("label192");
+    obj.label194 = gui.fromHandle(_obj_newObject("label"));
+    obj.label194:setParent(obj.layout74);
+    obj.label194:setLeft(41);
+    obj.label194:setTop(63);
+    obj.label194:setWidth(30);
+    obj.label194:setHeight(15);
+    obj.label194:setFontSize(13);
+    obj.label194:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label194, "fontStyle",  "bold");
+    obj.label194:setFontColor("black");
+    obj.label194:setText("CA");
+    obj.label194:setName("label194");
 
     obj.caescudo = gui.fromHandle(_obj_newObject("edit"));
-    obj.caescudo:setParent(obj.layout73);
+    obj.caescudo:setParent(obj.layout74);
     obj.caescudo:setLeft(36);
     obj.caescudo:setTop(84);
     obj.caescudo:setWidth(40);
@@ -10039,21 +10075,21 @@ function newTormentafrm()
     obj.caescudo:setFontSize(15.0);
     lfm_setPropAsString(obj.caescudo, "fontStyle",  "bold");
 
-    obj.label193 = gui.fromHandle(_obj_newObject("label"));
-    obj.label193:setParent(obj.layout73);
-    obj.label193:setLeft(86);
-    obj.label193:setTop(63);
-    obj.label193:setWidth(30);
-    obj.label193:setHeight(15);
-    obj.label193:setFontSize(13);
-    obj.label193:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label193, "fontStyle",  "bold");
-    obj.label193:setFontColor("black");
-    obj.label193:setText("PEN");
-    obj.label193:setName("label193");
+    obj.label195 = gui.fromHandle(_obj_newObject("label"));
+    obj.label195:setParent(obj.layout74);
+    obj.label195:setLeft(86);
+    obj.label195:setTop(63);
+    obj.label195:setWidth(30);
+    obj.label195:setHeight(15);
+    obj.label195:setFontSize(13);
+    obj.label195:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label195, "fontStyle",  "bold");
+    obj.label195:setFontColor("black");
+    obj.label195:setText("PEN");
+    obj.label195:setName("label195");
 
     obj.penescudo = gui.fromHandle(_obj_newObject("edit"));
-    obj.penescudo:setParent(obj.layout73);
+    obj.penescudo:setParent(obj.layout74);
     obj.penescudo:setLeft(81);
     obj.penescudo:setTop(84);
     obj.penescudo:setWidth(40);
@@ -10068,21 +10104,21 @@ function newTormentafrm()
     obj.penescudo:setFontSize(15.0);
     lfm_setPropAsString(obj.penescudo, "fontStyle",  "bold");
 
-    obj.label194 = gui.fromHandle(_obj_newObject("label"));
-    obj.label194:setParent(obj.layout73);
-    obj.label194:setLeft(132);
-    obj.label194:setTop(63);
-    obj.label194:setWidth(30);
-    obj.label194:setHeight(15);
-    obj.label194:setFontSize(13);
-    obj.label194:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label194, "fontStyle",  "bold");
-    obj.label194:setFontColor("black");
-    obj.label194:setText("F. M.");
-    obj.label194:setName("label194");
+    obj.label196 = gui.fromHandle(_obj_newObject("label"));
+    obj.label196:setParent(obj.layout74);
+    obj.label196:setLeft(132);
+    obj.label196:setTop(63);
+    obj.label196:setWidth(30);
+    obj.label196:setHeight(15);
+    obj.label196:setFontSize(13);
+    obj.label196:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label196, "fontStyle",  "bold");
+    obj.label196:setFontColor("black");
+    obj.label196:setText("F. M.");
+    obj.label196:setName("label196");
 
     obj.falhamescudo = gui.fromHandle(_obj_newObject("edit"));
-    obj.falhamescudo:setParent(obj.layout73);
+    obj.falhamescudo:setParent(obj.layout74);
     obj.falhamescudo:setLeft(126);
     obj.falhamescudo:setTop(84);
     obj.falhamescudo:setWidth(40);
@@ -10097,16 +10133,16 @@ function newTormentafrm()
     obj.falhamescudo:setFontSize(15.0);
     lfm_setPropAsString(obj.falhamescudo, "fontStyle",  "bold");
 
-    obj.layout74 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout74:setParent(obj.layout71);
-    obj.layout74:setLeft(290);
-    obj.layout74:setTop(0);
-    obj.layout74:setWidth(200);
-    obj.layout74:setHeight(125);
-    obj.layout74:setName("layout74");
+    obj.layout75 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout75:setParent(obj.layout72);
+    obj.layout75:setLeft(290);
+    obj.layout75:setTop(0);
+    obj.layout75:setWidth(200);
+    obj.layout75:setHeight(125);
+    obj.layout75:setName("layout75");
 
     obj.rectangle197 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle197:setParent(obj.layout74);
+    obj.rectangle197:setParent(obj.layout75);
     obj.rectangle197:setLeft(6);
     obj.rectangle197:setTop(17);
     obj.rectangle197:setColor("Black");
@@ -10115,87 +10151,6 @@ function newTormentafrm()
     obj.rectangle197:setXradius(2);
     obj.rectangle197:setYradius(2);
     obj.rectangle197:setName("rectangle197");
-
-    obj.label195 = gui.fromHandle(_obj_newObject("label"));
-    obj.label195:setParent(obj.layout74);
-    obj.label195:setLeft(9);
-    obj.label195:setTop(16);
-    obj.label195:setWidth(98);
-    obj.label195:setHeight(15);
-    obj.label195:setFontSize(13);
-    obj.label195:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label195, "fontStyle",  "bold");
-    obj.label195:setFontColor("white");
-    obj.label195:setText("Cabeça");
-    obj.label195:setName("label195");
-
-    obj.rectangle198 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle198:setParent(obj.layout74);
-    obj.rectangle198:setLeft(1);
-    obj.rectangle198:setTop(31);
-    obj.rectangle198:setWidth(200);
-    obj.rectangle198:setHeight(90);
-    obj.rectangle198:setColor("Gray");
-    obj.rectangle198:setXradius(2);
-    obj.rectangle198:setYradius(2);
-    obj.rectangle198:setName("rectangle198");
-
-    obj.ncabeca = gui.fromHandle(_obj_newObject("edit"));
-    obj.ncabeca:setParent(obj.layout74);
-    obj.ncabeca:setLeft(3);
-    obj.ncabeca:setTop(33);
-    obj.ncabeca:setWidth(195);
-    obj.ncabeca:setHeight(25);
-    obj.ncabeca:setName("ncabeca");
-    obj.ncabeca:setField("ncabeca");
-    obj.ncabeca:setHorzTextAlign("center");
-    obj.ncabeca:setFontColor("black");
-    lfm_setPropAsString(obj.ncabeca, "fontStyle",  "bold");
-
-    obj.label196 = gui.fromHandle(_obj_newObject("label"));
-    obj.label196:setParent(obj.layout74);
-    obj.label196:setLeft(5);
-    obj.label196:setTop(63);
-    obj.label196:setWidth(90);
-    obj.label196:setHeight(15);
-    obj.label196:setFontSize(13);
-    obj.label196:setHorzTextAlign("leading");
-    lfm_setPropAsString(obj.label196, "fontStyle",  "bold");
-    obj.label196:setFontColor("black");
-    obj.label196:setText("Descrição:");
-    obj.label196:setName("label196");
-
-    obj.desccabeca = gui.fromHandle(_obj_newObject("edit"));
-    obj.desccabeca:setParent(obj.layout74);
-    obj.desccabeca:setLeft(3);
-    obj.desccabeca:setTop(84);
-    obj.desccabeca:setWidth(195);
-    obj.desccabeca:setHeight(35);
-    obj.desccabeca:setName("desccabeca");
-    obj.desccabeca:setField("desccabeca");
-    obj.desccabeca:setHorzTextAlign("leading");
-    obj.desccabeca:setFontSize(12.0);
-    obj.desccabeca:setFontColor("black");
-    lfm_setPropAsString(obj.desccabeca, "fontStyle",  "bold");
-
-    obj.layout75 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout75:setParent(obj.layout71);
-    obj.layout75:setLeft(350);
-    obj.layout75:setTop(110);
-    obj.layout75:setWidth(200);
-    obj.layout75:setHeight(125);
-    obj.layout75:setName("layout75");
-
-    obj.rectangle199 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle199:setParent(obj.layout75);
-    obj.rectangle199:setLeft(6);
-    obj.rectangle199:setTop(17);
-    obj.rectangle199:setColor("Black");
-    obj.rectangle199:setWidth(104);
-    obj.rectangle199:setHeight(15);
-    obj.rectangle199:setXradius(2);
-    obj.rectangle199:setYradius(2);
-    obj.rectangle199:setName("rectangle199");
 
     obj.label197 = gui.fromHandle(_obj_newObject("label"));
     obj.label197:setParent(obj.layout75);
@@ -10207,31 +10162,31 @@ function newTormentafrm()
     obj.label197:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label197, "fontStyle",  "bold");
     obj.label197:setFontColor("white");
-    obj.label197:setText("Pescoço");
+    obj.label197:setText("Cabeça");
     obj.label197:setName("label197");
 
-    obj.rectangle200 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle200:setParent(obj.layout75);
-    obj.rectangle200:setLeft(1);
-    obj.rectangle200:setTop(31);
-    obj.rectangle200:setWidth(200);
-    obj.rectangle200:setHeight(90);
-    obj.rectangle200:setColor("Gray");
-    obj.rectangle200:setXradius(2);
-    obj.rectangle200:setYradius(2);
-    obj.rectangle200:setName("rectangle200");
+    obj.rectangle198 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle198:setParent(obj.layout75);
+    obj.rectangle198:setLeft(1);
+    obj.rectangle198:setTop(31);
+    obj.rectangle198:setWidth(200);
+    obj.rectangle198:setHeight(90);
+    obj.rectangle198:setColor("Gray");
+    obj.rectangle198:setXradius(2);
+    obj.rectangle198:setYradius(2);
+    obj.rectangle198:setName("rectangle198");
 
-    obj.npescoco = gui.fromHandle(_obj_newObject("edit"));
-    obj.npescoco:setParent(obj.layout75);
-    obj.npescoco:setLeft(3);
-    obj.npescoco:setTop(33);
-    obj.npescoco:setWidth(195);
-    obj.npescoco:setHeight(25);
-    obj.npescoco:setName("npescoco");
-    obj.npescoco:setField("npescoco");
-    obj.npescoco:setHorzTextAlign("center");
-    obj.npescoco:setFontColor("black");
-    lfm_setPropAsString(obj.npescoco, "fontStyle",  "bold");
+    obj.ncabeca = gui.fromHandle(_obj_newObject("edit"));
+    obj.ncabeca:setParent(obj.layout75);
+    obj.ncabeca:setLeft(3);
+    obj.ncabeca:setTop(33);
+    obj.ncabeca:setWidth(195);
+    obj.ncabeca:setHeight(25);
+    obj.ncabeca:setName("ncabeca");
+    obj.ncabeca:setField("ncabeca");
+    obj.ncabeca:setHorzTextAlign("center");
+    obj.ncabeca:setFontColor("black");
+    lfm_setPropAsString(obj.ncabeca, "fontStyle",  "bold");
 
     obj.label198 = gui.fromHandle(_obj_newObject("label"));
     obj.label198:setParent(obj.layout75);
@@ -10246,37 +10201,37 @@ function newTormentafrm()
     obj.label198:setText("Descrição:");
     obj.label198:setName("label198");
 
-    obj.descpescoco = gui.fromHandle(_obj_newObject("edit"));
-    obj.descpescoco:setParent(obj.layout75);
-    obj.descpescoco:setLeft(3);
-    obj.descpescoco:setTop(84);
-    obj.descpescoco:setWidth(195);
-    obj.descpescoco:setHeight(35);
-    obj.descpescoco:setName("descpescoco");
-    obj.descpescoco:setField("descpescoco");
-    obj.descpescoco:setHorzTextAlign("leading");
-    obj.descpescoco:setFontColor("black");
-    obj.descpescoco:setFontSize(12.0);
-    lfm_setPropAsString(obj.descpescoco, "fontStyle",  "bold");
+    obj.desccabeca = gui.fromHandle(_obj_newObject("edit"));
+    obj.desccabeca:setParent(obj.layout75);
+    obj.desccabeca:setLeft(3);
+    obj.desccabeca:setTop(84);
+    obj.desccabeca:setWidth(195);
+    obj.desccabeca:setHeight(35);
+    obj.desccabeca:setName("desccabeca");
+    obj.desccabeca:setField("desccabeca");
+    obj.desccabeca:setHorzTextAlign("leading");
+    obj.desccabeca:setFontSize(12.0);
+    obj.desccabeca:setFontColor("black");
+    lfm_setPropAsString(obj.desccabeca, "fontStyle",  "bold");
 
     obj.layout76 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout76:setParent(obj.layout71);
-    obj.layout76:setLeft(0);
-    obj.layout76:setTop(179);
+    obj.layout76:setParent(obj.layout72);
+    obj.layout76:setLeft(350);
+    obj.layout76:setTop(110);
     obj.layout76:setWidth(200);
     obj.layout76:setHeight(125);
     obj.layout76:setName("layout76");
 
-    obj.rectangle201 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle201:setParent(obj.layout76);
-    obj.rectangle201:setLeft(6);
-    obj.rectangle201:setTop(17);
-    obj.rectangle201:setColor("Black");
-    obj.rectangle201:setWidth(104);
-    obj.rectangle201:setHeight(15);
-    obj.rectangle201:setXradius(2);
-    obj.rectangle201:setYradius(2);
-    obj.rectangle201:setName("rectangle201");
+    obj.rectangle199 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle199:setParent(obj.layout76);
+    obj.rectangle199:setLeft(6);
+    obj.rectangle199:setTop(17);
+    obj.rectangle199:setColor("Black");
+    obj.rectangle199:setWidth(104);
+    obj.rectangle199:setHeight(15);
+    obj.rectangle199:setXradius(2);
+    obj.rectangle199:setYradius(2);
+    obj.rectangle199:setName("rectangle199");
 
     obj.label199 = gui.fromHandle(_obj_newObject("label"));
     obj.label199:setParent(obj.layout76);
@@ -10288,31 +10243,31 @@ function newTormentafrm()
     obj.label199:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label199, "fontStyle",  "bold");
     obj.label199:setFontColor("white");
-    obj.label199:setText("Mão 1");
+    obj.label199:setText("Pescoço");
     obj.label199:setName("label199");
 
-    obj.rectangle202 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle202:setParent(obj.layout76);
-    obj.rectangle202:setLeft(1);
-    obj.rectangle202:setTop(31);
-    obj.rectangle202:setWidth(200);
-    obj.rectangle202:setHeight(90);
-    obj.rectangle202:setColor("Gray");
-    obj.rectangle202:setXradius(2);
-    obj.rectangle202:setYradius(2);
-    obj.rectangle202:setName("rectangle202");
+    obj.rectangle200 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle200:setParent(obj.layout76);
+    obj.rectangle200:setLeft(1);
+    obj.rectangle200:setTop(31);
+    obj.rectangle200:setWidth(200);
+    obj.rectangle200:setHeight(90);
+    obj.rectangle200:setColor("Gray");
+    obj.rectangle200:setXradius(2);
+    obj.rectangle200:setYradius(2);
+    obj.rectangle200:setName("rectangle200");
 
-    obj.nmao1 = gui.fromHandle(_obj_newObject("edit"));
-    obj.nmao1:setParent(obj.layout76);
-    obj.nmao1:setLeft(3);
-    obj.nmao1:setTop(33);
-    obj.nmao1:setWidth(195);
-    obj.nmao1:setHeight(25);
-    obj.nmao1:setName("nmao1");
-    obj.nmao1:setField("nmao1");
-    obj.nmao1:setHorzTextAlign("center");
-    obj.nmao1:setFontColor("black");
-    lfm_setPropAsString(obj.nmao1, "fontStyle",  "bold");
+    obj.npescoco = gui.fromHandle(_obj_newObject("edit"));
+    obj.npescoco:setParent(obj.layout76);
+    obj.npescoco:setLeft(3);
+    obj.npescoco:setTop(33);
+    obj.npescoco:setWidth(195);
+    obj.npescoco:setHeight(25);
+    obj.npescoco:setName("npescoco");
+    obj.npescoco:setField("npescoco");
+    obj.npescoco:setHorzTextAlign("center");
+    obj.npescoco:setFontColor("black");
+    lfm_setPropAsString(obj.npescoco, "fontStyle",  "bold");
 
     obj.label200 = gui.fromHandle(_obj_newObject("label"));
     obj.label200:setParent(obj.layout76);
@@ -10327,37 +10282,37 @@ function newTormentafrm()
     obj.label200:setText("Descrição:");
     obj.label200:setName("label200");
 
-    obj.descmao1 = gui.fromHandle(_obj_newObject("edit"));
-    obj.descmao1:setParent(obj.layout76);
-    obj.descmao1:setLeft(3);
-    obj.descmao1:setTop(84);
-    obj.descmao1:setWidth(195);
-    obj.descmao1:setHeight(35);
-    obj.descmao1:setName("descmao1");
-    obj.descmao1:setField("descmao1");
-    obj.descmao1:setHorzTextAlign("leading");
-    obj.descmao1:setFontColor("black");
-    obj.descmao1:setFontSize(12.0);
-    lfm_setPropAsString(obj.descmao1, "fontStyle",  "bold");
+    obj.descpescoco = gui.fromHandle(_obj_newObject("edit"));
+    obj.descpescoco:setParent(obj.layout76);
+    obj.descpescoco:setLeft(3);
+    obj.descpescoco:setTop(84);
+    obj.descpescoco:setWidth(195);
+    obj.descpescoco:setHeight(35);
+    obj.descpescoco:setName("descpescoco");
+    obj.descpescoco:setField("descpescoco");
+    obj.descpescoco:setHorzTextAlign("leading");
+    obj.descpescoco:setFontColor("black");
+    obj.descpescoco:setFontSize(12.0);
+    lfm_setPropAsString(obj.descpescoco, "fontStyle",  "bold");
 
     obj.layout77 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout77:setParent(obj.layout71);
-    obj.layout77:setLeft(210);
+    obj.layout77:setParent(obj.layout72);
+    obj.layout77:setLeft(0);
     obj.layout77:setTop(179);
     obj.layout77:setWidth(200);
     obj.layout77:setHeight(125);
     obj.layout77:setName("layout77");
 
-    obj.rectangle203 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle203:setParent(obj.layout77);
-    obj.rectangle203:setLeft(6);
-    obj.rectangle203:setTop(17);
-    obj.rectangle203:setColor("Black");
-    obj.rectangle203:setWidth(104);
-    obj.rectangle203:setHeight(15);
-    obj.rectangle203:setXradius(2);
-    obj.rectangle203:setYradius(2);
-    obj.rectangle203:setName("rectangle203");
+    obj.rectangle201 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle201:setParent(obj.layout77);
+    obj.rectangle201:setLeft(6);
+    obj.rectangle201:setTop(17);
+    obj.rectangle201:setColor("Black");
+    obj.rectangle201:setWidth(104);
+    obj.rectangle201:setHeight(15);
+    obj.rectangle201:setXradius(2);
+    obj.rectangle201:setYradius(2);
+    obj.rectangle201:setName("rectangle201");
 
     obj.label201 = gui.fromHandle(_obj_newObject("label"));
     obj.label201:setParent(obj.layout77);
@@ -10369,31 +10324,31 @@ function newTormentafrm()
     obj.label201:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label201, "fontStyle",  "bold");
     obj.label201:setFontColor("white");
-    obj.label201:setText("Luva");
+    obj.label201:setText("Mão 1");
     obj.label201:setName("label201");
 
-    obj.rectangle204 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle204:setParent(obj.layout77);
-    obj.rectangle204:setLeft(1);
-    obj.rectangle204:setTop(31);
-    obj.rectangle204:setWidth(200);
-    obj.rectangle204:setHeight(90);
-    obj.rectangle204:setColor("Gray");
-    obj.rectangle204:setXradius(2);
-    obj.rectangle204:setYradius(2);
-    obj.rectangle204:setName("rectangle204");
+    obj.rectangle202 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle202:setParent(obj.layout77);
+    obj.rectangle202:setLeft(1);
+    obj.rectangle202:setTop(31);
+    obj.rectangle202:setWidth(200);
+    obj.rectangle202:setHeight(90);
+    obj.rectangle202:setColor("Gray");
+    obj.rectangle202:setXradius(2);
+    obj.rectangle202:setYradius(2);
+    obj.rectangle202:setName("rectangle202");
 
-    obj.nluva = gui.fromHandle(_obj_newObject("edit"));
-    obj.nluva:setParent(obj.layout77);
-    obj.nluva:setLeft(3);
-    obj.nluva:setTop(33);
-    obj.nluva:setWidth(195);
-    obj.nluva:setHeight(25);
-    obj.nluva:setName("nluva");
-    obj.nluva:setField("nluva");
-    obj.nluva:setHorzTextAlign("center");
-    obj.nluva:setFontColor("black");
-    lfm_setPropAsString(obj.nluva, "fontStyle",  "bold");
+    obj.nmao1 = gui.fromHandle(_obj_newObject("edit"));
+    obj.nmao1:setParent(obj.layout77);
+    obj.nmao1:setLeft(3);
+    obj.nmao1:setTop(33);
+    obj.nmao1:setWidth(195);
+    obj.nmao1:setHeight(25);
+    obj.nmao1:setName("nmao1");
+    obj.nmao1:setField("nmao1");
+    obj.nmao1:setHorzTextAlign("center");
+    obj.nmao1:setFontColor("black");
+    lfm_setPropAsString(obj.nmao1, "fontStyle",  "bold");
 
     obj.label202 = gui.fromHandle(_obj_newObject("label"));
     obj.label202:setParent(obj.layout77);
@@ -10408,37 +10363,37 @@ function newTormentafrm()
     obj.label202:setText("Descrição:");
     obj.label202:setName("label202");
 
-    obj.descluva = gui.fromHandle(_obj_newObject("edit"));
-    obj.descluva:setParent(obj.layout77);
-    obj.descluva:setLeft(3);
-    obj.descluva:setTop(84);
-    obj.descluva:setWidth(195);
-    obj.descluva:setHeight(35);
-    obj.descluva:setName("descluva");
-    obj.descluva:setField("descluva");
-    obj.descluva:setHorzTextAlign("leading");
-    obj.descluva:setFontColor("black");
-    obj.descluva:setFontSize(12.0);
-    lfm_setPropAsString(obj.descluva, "fontStyle",  "bold");
+    obj.descmao1 = gui.fromHandle(_obj_newObject("edit"));
+    obj.descmao1:setParent(obj.layout77);
+    obj.descmao1:setLeft(3);
+    obj.descmao1:setTop(84);
+    obj.descmao1:setWidth(195);
+    obj.descmao1:setHeight(35);
+    obj.descmao1:setName("descmao1");
+    obj.descmao1:setField("descmao1");
+    obj.descmao1:setHorzTextAlign("leading");
+    obj.descmao1:setFontColor("black");
+    obj.descmao1:setFontSize(12.0);
+    lfm_setPropAsString(obj.descmao1, "fontStyle",  "bold");
 
     obj.layout78 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout78:setParent(obj.layout71);
+    obj.layout78:setParent(obj.layout72);
     obj.layout78:setLeft(210);
-    obj.layout78:setTop(314);
+    obj.layout78:setTop(179);
     obj.layout78:setWidth(200);
     obj.layout78:setHeight(125);
     obj.layout78:setName("layout78");
 
-    obj.rectangle205 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle205:setParent(obj.layout78);
-    obj.rectangle205:setLeft(6);
-    obj.rectangle205:setTop(17);
-    obj.rectangle205:setColor("Black");
-    obj.rectangle205:setWidth(104);
-    obj.rectangle205:setHeight(15);
-    obj.rectangle205:setXradius(2);
-    obj.rectangle205:setYradius(2);
-    obj.rectangle205:setName("rectangle205");
+    obj.rectangle203 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle203:setParent(obj.layout78);
+    obj.rectangle203:setLeft(6);
+    obj.rectangle203:setTop(17);
+    obj.rectangle203:setColor("Black");
+    obj.rectangle203:setWidth(104);
+    obj.rectangle203:setHeight(15);
+    obj.rectangle203:setXradius(2);
+    obj.rectangle203:setYradius(2);
+    obj.rectangle203:setName("rectangle203");
 
     obj.label203 = gui.fromHandle(_obj_newObject("label"));
     obj.label203:setParent(obj.layout78);
@@ -10450,31 +10405,31 @@ function newTormentafrm()
     obj.label203:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label203, "fontStyle",  "bold");
     obj.label203:setFontColor("white");
-    obj.label203:setText("Mão 2");
+    obj.label203:setText("Luva");
     obj.label203:setName("label203");
 
-    obj.rectangle206 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle206:setParent(obj.layout78);
-    obj.rectangle206:setLeft(1);
-    obj.rectangle206:setTop(31);
-    obj.rectangle206:setWidth(200);
-    obj.rectangle206:setHeight(90);
-    obj.rectangle206:setColor("Gray");
-    obj.rectangle206:setXradius(2);
-    obj.rectangle206:setYradius(2);
-    obj.rectangle206:setName("rectangle206");
+    obj.rectangle204 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle204:setParent(obj.layout78);
+    obj.rectangle204:setLeft(1);
+    obj.rectangle204:setTop(31);
+    obj.rectangle204:setWidth(200);
+    obj.rectangle204:setHeight(90);
+    obj.rectangle204:setColor("Gray");
+    obj.rectangle204:setXradius(2);
+    obj.rectangle204:setYradius(2);
+    obj.rectangle204:setName("rectangle204");
 
-    obj.nmao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.nmao2:setParent(obj.layout78);
-    obj.nmao2:setLeft(3);
-    obj.nmao2:setTop(33);
-    obj.nmao2:setWidth(195);
-    obj.nmao2:setHeight(25);
-    obj.nmao2:setName("nmao2");
-    obj.nmao2:setField("nmao2");
-    obj.nmao2:setHorzTextAlign("center");
-    obj.nmao2:setFontColor("black");
-    lfm_setPropAsString(obj.nmao2, "fontStyle",  "bold");
+    obj.nluva = gui.fromHandle(_obj_newObject("edit"));
+    obj.nluva:setParent(obj.layout78);
+    obj.nluva:setLeft(3);
+    obj.nluva:setTop(33);
+    obj.nluva:setWidth(195);
+    obj.nluva:setHeight(25);
+    obj.nluva:setName("nluva");
+    obj.nluva:setField("nluva");
+    obj.nluva:setHorzTextAlign("center");
+    obj.nluva:setFontColor("black");
+    lfm_setPropAsString(obj.nluva, "fontStyle",  "bold");
 
     obj.label204 = gui.fromHandle(_obj_newObject("label"));
     obj.label204:setParent(obj.layout78);
@@ -10489,37 +10444,37 @@ function newTormentafrm()
     obj.label204:setText("Descrição:");
     obj.label204:setName("label204");
 
-    obj.descmao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.descmao2:setParent(obj.layout78);
-    obj.descmao2:setLeft(3);
-    obj.descmao2:setTop(84);
-    obj.descmao2:setWidth(195);
-    obj.descmao2:setHeight(35);
-    obj.descmao2:setName("descmao2");
-    obj.descmao2:setField("descmao2");
-    obj.descmao2:setHorzTextAlign("leading");
-    obj.descmao2:setFontColor("black");
-    obj.descmao2:setFontSize(12.0);
-    lfm_setPropAsString(obj.descmao2, "fontStyle",  "bold");
+    obj.descluva = gui.fromHandle(_obj_newObject("edit"));
+    obj.descluva:setParent(obj.layout78);
+    obj.descluva:setLeft(3);
+    obj.descluva:setTop(84);
+    obj.descluva:setWidth(195);
+    obj.descluva:setHeight(35);
+    obj.descluva:setName("descluva");
+    obj.descluva:setField("descluva");
+    obj.descluva:setHorzTextAlign("leading");
+    obj.descluva:setFontColor("black");
+    obj.descluva:setFontSize(12.0);
+    lfm_setPropAsString(obj.descluva, "fontStyle",  "bold");
 
     obj.layout79 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout79:setParent(obj.layout71);
-    obj.layout79:setLeft(0);
-    obj.layout79:setTop(444);
+    obj.layout79:setParent(obj.layout72);
+    obj.layout79:setLeft(210);
+    obj.layout79:setTop(314);
     obj.layout79:setWidth(200);
     obj.layout79:setHeight(125);
     obj.layout79:setName("layout79");
 
-    obj.rectangle207 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle207:setParent(obj.layout79);
-    obj.rectangle207:setLeft(6);
-    obj.rectangle207:setTop(17);
-    obj.rectangle207:setColor("Black");
-    obj.rectangle207:setWidth(104);
-    obj.rectangle207:setHeight(15);
-    obj.rectangle207:setXradius(2);
-    obj.rectangle207:setYradius(2);
-    obj.rectangle207:setName("rectangle207");
+    obj.rectangle205 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle205:setParent(obj.layout79);
+    obj.rectangle205:setLeft(6);
+    obj.rectangle205:setTop(17);
+    obj.rectangle205:setColor("Black");
+    obj.rectangle205:setWidth(104);
+    obj.rectangle205:setHeight(15);
+    obj.rectangle205:setXradius(2);
+    obj.rectangle205:setYradius(2);
+    obj.rectangle205:setName("rectangle205");
 
     obj.label205 = gui.fromHandle(_obj_newObject("label"));
     obj.label205:setParent(obj.layout79);
@@ -10531,31 +10486,31 @@ function newTormentafrm()
     obj.label205:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label205, "fontStyle",  "bold");
     obj.label205:setFontColor("white");
-    obj.label205:setText("Anel");
+    obj.label205:setText("Mão 2");
     obj.label205:setName("label205");
 
-    obj.rectangle208 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle208:setParent(obj.layout79);
-    obj.rectangle208:setLeft(1);
-    obj.rectangle208:setTop(31);
-    obj.rectangle208:setWidth(200);
-    obj.rectangle208:setHeight(90);
-    obj.rectangle208:setColor("Gray");
-    obj.rectangle208:setXradius(2);
-    obj.rectangle208:setYradius(2);
-    obj.rectangle208:setName("rectangle208");
+    obj.rectangle206 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle206:setParent(obj.layout79);
+    obj.rectangle206:setLeft(1);
+    obj.rectangle206:setTop(31);
+    obj.rectangle206:setWidth(200);
+    obj.rectangle206:setHeight(90);
+    obj.rectangle206:setColor("Gray");
+    obj.rectangle206:setXradius(2);
+    obj.rectangle206:setYradius(2);
+    obj.rectangle206:setName("rectangle206");
 
-    obj.nanel = gui.fromHandle(_obj_newObject("edit"));
-    obj.nanel:setParent(obj.layout79);
-    obj.nanel:setLeft(3);
-    obj.nanel:setTop(33);
-    obj.nanel:setWidth(195);
-    obj.nanel:setHeight(25);
-    obj.nanel:setName("nanel");
-    obj.nanel:setField("nanel");
-    obj.nanel:setHorzTextAlign("center");
-    obj.nanel:setFontColor("black");
-    lfm_setPropAsString(obj.nanel, "fontStyle",  "bold");
+    obj.nmao2 = gui.fromHandle(_obj_newObject("edit"));
+    obj.nmao2:setParent(obj.layout79);
+    obj.nmao2:setLeft(3);
+    obj.nmao2:setTop(33);
+    obj.nmao2:setWidth(195);
+    obj.nmao2:setHeight(25);
+    obj.nmao2:setName("nmao2");
+    obj.nmao2:setField("nmao2");
+    obj.nmao2:setHorzTextAlign("center");
+    obj.nmao2:setFontColor("black");
+    lfm_setPropAsString(obj.nmao2, "fontStyle",  "bold");
 
     obj.label206 = gui.fromHandle(_obj_newObject("label"));
     obj.label206:setParent(obj.layout79);
@@ -10570,37 +10525,37 @@ function newTormentafrm()
     obj.label206:setText("Descrição:");
     obj.label206:setName("label206");
 
-    obj.descanel = gui.fromHandle(_obj_newObject("edit"));
-    obj.descanel:setParent(obj.layout79);
-    obj.descanel:setLeft(3);
-    obj.descanel:setTop(84);
-    obj.descanel:setWidth(195);
-    obj.descanel:setHeight(35);
-    obj.descanel:setName("descanel");
-    obj.descanel:setField("descanel");
-    obj.descanel:setHorzTextAlign("leading");
-    obj.descanel:setFontColor("black");
-    obj.descanel:setFontSize(12.0);
-    lfm_setPropAsString(obj.descanel, "fontStyle",  "bold");
+    obj.descmao2 = gui.fromHandle(_obj_newObject("edit"));
+    obj.descmao2:setParent(obj.layout79);
+    obj.descmao2:setLeft(3);
+    obj.descmao2:setTop(84);
+    obj.descmao2:setWidth(195);
+    obj.descmao2:setHeight(35);
+    obj.descmao2:setName("descmao2");
+    obj.descmao2:setField("descmao2");
+    obj.descmao2:setHorzTextAlign("leading");
+    obj.descmao2:setFontColor("black");
+    obj.descmao2:setFontSize(12.0);
+    lfm_setPropAsString(obj.descmao2, "fontStyle",  "bold");
 
     obj.layout80 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout80:setParent(obj.layout71);
-    obj.layout80:setLeft(10);
-    obj.layout80:setTop(314);
+    obj.layout80:setParent(obj.layout72);
+    obj.layout80:setLeft(0);
+    obj.layout80:setTop(444);
     obj.layout80:setWidth(200);
     obj.layout80:setHeight(125);
     obj.layout80:setName("layout80");
 
-    obj.rectangle209 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle209:setParent(obj.layout80);
-    obj.rectangle209:setLeft(6);
-    obj.rectangle209:setTop(17);
-    obj.rectangle209:setColor("Black");
-    obj.rectangle209:setWidth(104);
-    obj.rectangle209:setHeight(15);
-    obj.rectangle209:setXradius(2);
-    obj.rectangle209:setYradius(2);
-    obj.rectangle209:setName("rectangle209");
+    obj.rectangle207 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle207:setParent(obj.layout80);
+    obj.rectangle207:setLeft(6);
+    obj.rectangle207:setTop(17);
+    obj.rectangle207:setColor("Black");
+    obj.rectangle207:setWidth(104);
+    obj.rectangle207:setHeight(15);
+    obj.rectangle207:setXradius(2);
+    obj.rectangle207:setYradius(2);
+    obj.rectangle207:setName("rectangle207");
 
     obj.label207 = gui.fromHandle(_obj_newObject("label"));
     obj.label207:setParent(obj.layout80);
@@ -10612,31 +10567,31 @@ function newTormentafrm()
     obj.label207:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label207, "fontStyle",  "bold");
     obj.label207:setFontColor("white");
-    obj.label207:setText("Cintura");
+    obj.label207:setText("Anel");
     obj.label207:setName("label207");
 
-    obj.rectangle210 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle210:setParent(obj.layout80);
-    obj.rectangle210:setLeft(1);
-    obj.rectangle210:setTop(31);
-    obj.rectangle210:setWidth(200);
-    obj.rectangle210:setHeight(90);
-    obj.rectangle210:setColor("Gray");
-    obj.rectangle210:setXradius(2);
-    obj.rectangle210:setYradius(2);
-    obj.rectangle210:setName("rectangle210");
+    obj.rectangle208 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle208:setParent(obj.layout80);
+    obj.rectangle208:setLeft(1);
+    obj.rectangle208:setTop(31);
+    obj.rectangle208:setWidth(200);
+    obj.rectangle208:setHeight(90);
+    obj.rectangle208:setColor("Gray");
+    obj.rectangle208:setXradius(2);
+    obj.rectangle208:setYradius(2);
+    obj.rectangle208:setName("rectangle208");
 
-    obj.ncintura = gui.fromHandle(_obj_newObject("edit"));
-    obj.ncintura:setParent(obj.layout80);
-    obj.ncintura:setLeft(3);
-    obj.ncintura:setTop(33);
-    obj.ncintura:setWidth(195);
-    obj.ncintura:setHeight(25);
-    obj.ncintura:setName("ncintura");
-    obj.ncintura:setField("ncintura");
-    obj.ncintura:setHorzTextAlign("center");
-    obj.ncintura:setFontColor("black");
-    lfm_setPropAsString(obj.ncintura, "fontStyle",  "bold");
+    obj.nanel = gui.fromHandle(_obj_newObject("edit"));
+    obj.nanel:setParent(obj.layout80);
+    obj.nanel:setLeft(3);
+    obj.nanel:setTop(33);
+    obj.nanel:setWidth(195);
+    obj.nanel:setHeight(25);
+    obj.nanel:setName("nanel");
+    obj.nanel:setField("nanel");
+    obj.nanel:setHorzTextAlign("center");
+    obj.nanel:setFontColor("black");
+    lfm_setPropAsString(obj.nanel, "fontStyle",  "bold");
 
     obj.label208 = gui.fromHandle(_obj_newObject("label"));
     obj.label208:setParent(obj.layout80);
@@ -10651,37 +10606,37 @@ function newTormentafrm()
     obj.label208:setText("Descrição:");
     obj.label208:setName("label208");
 
-    obj.desccintura = gui.fromHandle(_obj_newObject("edit"));
-    obj.desccintura:setParent(obj.layout80);
-    obj.desccintura:setLeft(3);
-    obj.desccintura:setTop(84);
-    obj.desccintura:setWidth(195);
-    obj.desccintura:setHeight(35);
-    obj.desccintura:setName("desccintura");
-    obj.desccintura:setField("desccintura");
-    obj.desccintura:setHorzTextAlign("leading");
-    obj.desccintura:setFontColor("black");
-    obj.desccintura:setFontSize(12.0);
-    lfm_setPropAsString(obj.desccintura, "fontStyle",  "bold");
+    obj.descanel = gui.fromHandle(_obj_newObject("edit"));
+    obj.descanel:setParent(obj.layout80);
+    obj.descanel:setLeft(3);
+    obj.descanel:setTop(84);
+    obj.descanel:setWidth(195);
+    obj.descanel:setHeight(35);
+    obj.descanel:setName("descanel");
+    obj.descanel:setField("descanel");
+    obj.descanel:setHorzTextAlign("leading");
+    obj.descanel:setFontColor("black");
+    obj.descanel:setFontSize(12.0);
+    lfm_setPropAsString(obj.descanel, "fontStyle",  "bold");
 
     obj.layout81 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout81:setParent(obj.layout71);
-    obj.layout81:setLeft(350);
-    obj.layout81:setTop(384);
+    obj.layout81:setParent(obj.layout72);
+    obj.layout81:setLeft(10);
+    obj.layout81:setTop(314);
     obj.layout81:setWidth(200);
     obj.layout81:setHeight(125);
     obj.layout81:setName("layout81");
 
-    obj.rectangle211 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle211:setParent(obj.layout81);
-    obj.rectangle211:setLeft(6);
-    obj.rectangle211:setTop(17);
-    obj.rectangle211:setColor("Black");
-    obj.rectangle211:setWidth(104);
-    obj.rectangle211:setHeight(15);
-    obj.rectangle211:setXradius(2);
-    obj.rectangle211:setYradius(2);
-    obj.rectangle211:setName("rectangle211");
+    obj.rectangle209 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle209:setParent(obj.layout81);
+    obj.rectangle209:setLeft(6);
+    obj.rectangle209:setTop(17);
+    obj.rectangle209:setColor("Black");
+    obj.rectangle209:setWidth(104);
+    obj.rectangle209:setHeight(15);
+    obj.rectangle209:setXradius(2);
+    obj.rectangle209:setYradius(2);
+    obj.rectangle209:setName("rectangle209");
 
     obj.label209 = gui.fromHandle(_obj_newObject("label"));
     obj.label209:setParent(obj.layout81);
@@ -10693,31 +10648,31 @@ function newTormentafrm()
     obj.label209:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label209, "fontStyle",  "bold");
     obj.label209:setFontColor("white");
-    obj.label209:setText("Pés");
+    obj.label209:setText("Cintura");
     obj.label209:setName("label209");
 
-    obj.rectangle212 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle212:setParent(obj.layout81);
-    obj.rectangle212:setLeft(1);
-    obj.rectangle212:setTop(31);
-    obj.rectangle212:setWidth(200);
-    obj.rectangle212:setHeight(90);
-    obj.rectangle212:setColor("Gray");
-    obj.rectangle212:setXradius(2);
-    obj.rectangle212:setYradius(2);
-    obj.rectangle212:setName("rectangle212");
+    obj.rectangle210 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle210:setParent(obj.layout81);
+    obj.rectangle210:setLeft(1);
+    obj.rectangle210:setTop(31);
+    obj.rectangle210:setWidth(200);
+    obj.rectangle210:setHeight(90);
+    obj.rectangle210:setColor("Gray");
+    obj.rectangle210:setXradius(2);
+    obj.rectangle210:setYradius(2);
+    obj.rectangle210:setName("rectangle210");
 
-    obj.npes = gui.fromHandle(_obj_newObject("edit"));
-    obj.npes:setParent(obj.layout81);
-    obj.npes:setLeft(3);
-    obj.npes:setTop(33);
-    obj.npes:setWidth(195);
-    obj.npes:setHeight(25);
-    obj.npes:setName("npes");
-    obj.npes:setField("npes");
-    obj.npes:setHorzTextAlign("center");
-    obj.npes:setFontColor("black");
-    lfm_setPropAsString(obj.npes, "fontStyle",  "bold");
+    obj.ncintura = gui.fromHandle(_obj_newObject("edit"));
+    obj.ncintura:setParent(obj.layout81);
+    obj.ncintura:setLeft(3);
+    obj.ncintura:setTop(33);
+    obj.ncintura:setWidth(195);
+    obj.ncintura:setHeight(25);
+    obj.ncintura:setName("ncintura");
+    obj.ncintura:setField("ncintura");
+    obj.ncintura:setHorzTextAlign("center");
+    obj.ncintura:setFontColor("black");
+    lfm_setPropAsString(obj.ncintura, "fontStyle",  "bold");
 
     obj.label210 = gui.fromHandle(_obj_newObject("label"));
     obj.label210:setParent(obj.layout81);
@@ -10732,8 +10687,89 @@ function newTormentafrm()
     obj.label210:setText("Descrição:");
     obj.label210:setName("label210");
 
+    obj.desccintura = gui.fromHandle(_obj_newObject("edit"));
+    obj.desccintura:setParent(obj.layout81);
+    obj.desccintura:setLeft(3);
+    obj.desccintura:setTop(84);
+    obj.desccintura:setWidth(195);
+    obj.desccintura:setHeight(35);
+    obj.desccintura:setName("desccintura");
+    obj.desccintura:setField("desccintura");
+    obj.desccintura:setHorzTextAlign("leading");
+    obj.desccintura:setFontColor("black");
+    obj.desccintura:setFontSize(12.0);
+    lfm_setPropAsString(obj.desccintura, "fontStyle",  "bold");
+
+    obj.layout82 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout82:setParent(obj.layout72);
+    obj.layout82:setLeft(350);
+    obj.layout82:setTop(384);
+    obj.layout82:setWidth(200);
+    obj.layout82:setHeight(125);
+    obj.layout82:setName("layout82");
+
+    obj.rectangle211 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle211:setParent(obj.layout82);
+    obj.rectangle211:setLeft(6);
+    obj.rectangle211:setTop(17);
+    obj.rectangle211:setColor("Black");
+    obj.rectangle211:setWidth(104);
+    obj.rectangle211:setHeight(15);
+    obj.rectangle211:setXradius(2);
+    obj.rectangle211:setYradius(2);
+    obj.rectangle211:setName("rectangle211");
+
+    obj.label211 = gui.fromHandle(_obj_newObject("label"));
+    obj.label211:setParent(obj.layout82);
+    obj.label211:setLeft(9);
+    obj.label211:setTop(16);
+    obj.label211:setWidth(98);
+    obj.label211:setHeight(15);
+    obj.label211:setFontSize(13);
+    obj.label211:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label211, "fontStyle",  "bold");
+    obj.label211:setFontColor("white");
+    obj.label211:setText("Pés");
+    obj.label211:setName("label211");
+
+    obj.rectangle212 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle212:setParent(obj.layout82);
+    obj.rectangle212:setLeft(1);
+    obj.rectangle212:setTop(31);
+    obj.rectangle212:setWidth(200);
+    obj.rectangle212:setHeight(90);
+    obj.rectangle212:setColor("Gray");
+    obj.rectangle212:setXradius(2);
+    obj.rectangle212:setYradius(2);
+    obj.rectangle212:setName("rectangle212");
+
+    obj.npes = gui.fromHandle(_obj_newObject("edit"));
+    obj.npes:setParent(obj.layout82);
+    obj.npes:setLeft(3);
+    obj.npes:setTop(33);
+    obj.npes:setWidth(195);
+    obj.npes:setHeight(25);
+    obj.npes:setName("npes");
+    obj.npes:setField("npes");
+    obj.npes:setHorzTextAlign("center");
+    obj.npes:setFontColor("black");
+    lfm_setPropAsString(obj.npes, "fontStyle",  "bold");
+
+    obj.label212 = gui.fromHandle(_obj_newObject("label"));
+    obj.label212:setParent(obj.layout82);
+    obj.label212:setLeft(5);
+    obj.label212:setTop(63);
+    obj.label212:setWidth(90);
+    obj.label212:setHeight(15);
+    obj.label212:setFontSize(13);
+    obj.label212:setHorzTextAlign("leading");
+    lfm_setPropAsString(obj.label212, "fontStyle",  "bold");
+    obj.label212:setFontColor("black");
+    obj.label212:setText("Descrição:");
+    obj.label212:setName("label212");
+
     obj.descpes = gui.fromHandle(_obj_newObject("edit"));
-    obj.descpes:setParent(obj.layout81);
+    obj.descpes:setParent(obj.layout82);
     obj.descpes:setLeft(3);
     obj.descpes:setTop(84);
     obj.descpes:setWidth(195);
@@ -10745,16 +10781,16 @@ function newTormentafrm()
     obj.descpes:setFontSize(12.0);
     lfm_setPropAsString(obj.descpes, "fontStyle",  "bold");
 
-    obj.layout82 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout82:setParent(obj.scrollBox3);
-    obj.layout82:setLeft(605);
-    obj.layout82:setTop(0);
-    obj.layout82:setWidth(395);
-    obj.layout82:setHeight(700);
-    obj.layout82:setName("layout82");
+    obj.layout83 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout83:setParent(obj.scrollBox3);
+    obj.layout83:setLeft(605);
+    obj.layout83:setTop(0);
+    obj.layout83:setWidth(395);
+    obj.layout83:setHeight(700);
+    obj.layout83:setName("layout83");
 
     obj.rectangle213 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle213:setParent(obj.layout82);
+    obj.rectangle213:setParent(obj.layout83);
     obj.rectangle213:setLeft(150);
     obj.rectangle213:setTop(1);
     obj.rectangle213:setColor("Black");
@@ -10764,29 +10800,29 @@ function newTormentafrm()
     obj.rectangle213:setYradius(2);
     obj.rectangle213:setName("rectangle213");
 
-    obj.label211 = gui.fromHandle(_obj_newObject("label"));
-    obj.label211:setParent(obj.layout82);
-    obj.label211:setLeft(153);
-    obj.label211:setTop(1);
-    obj.label211:setWidth(98);
-    obj.label211:setHeight(12);
-    obj.label211:setFontSize(10);
-    obj.label211:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label211, "fontStyle",  "bold");
-    obj.label211:setFontColor("white");
-    obj.label211:setText("Equipamentos");
-    obj.label211:setName("label211");
+    obj.label213 = gui.fromHandle(_obj_newObject("label"));
+    obj.label213:setParent(obj.layout83);
+    obj.label213:setLeft(153);
+    obj.label213:setTop(1);
+    obj.label213:setWidth(98);
+    obj.label213:setHeight(12);
+    obj.label213:setFontSize(10);
+    obj.label213:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label213, "fontStyle",  "bold");
+    obj.label213:setFontColor("white");
+    obj.label213:setText("Equipamentos");
+    obj.label213:setName("label213");
 
-    obj.layout83 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout83:setParent(obj.layout82);
-    obj.layout83:setLeft(0);
-    obj.layout83:setTop(13);
-    obj.layout83:setWidth(395);
-    obj.layout83:setHeight(418);
-    obj.layout83:setName("layout83");
+    obj.layout84 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout84:setParent(obj.layout83);
+    obj.layout84:setLeft(0);
+    obj.layout84:setTop(13);
+    obj.layout84:setWidth(395);
+    obj.layout84:setHeight(418);
+    obj.layout84:setName("layout84");
 
     obj.textEditor4 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.layout83);
+    obj.textEditor4:setParent(obj.layout84);
     obj.textEditor4:setAlign("client");
     obj.textEditor4:setField("equipamentos");
     obj.textEditor4:setFontColor("black");
@@ -10794,7 +10830,7 @@ function newTormentafrm()
     obj.textEditor4:setName("textEditor4");
 
     obj.rectangle214 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle214:setParent(obj.layout82);
+    obj.rectangle214:setParent(obj.layout83);
     obj.rectangle214:setLeft(150);
     obj.rectangle214:setTop(434);
     obj.rectangle214:setColor("Black");
@@ -10804,29 +10840,29 @@ function newTormentafrm()
     obj.rectangle214:setYradius(2);
     obj.rectangle214:setName("rectangle214");
 
-    obj.label212 = gui.fromHandle(_obj_newObject("label"));
-    obj.label212:setParent(obj.layout82);
-    obj.label212:setLeft(153);
-    obj.label212:setTop(434);
-    obj.label212:setWidth(98);
-    obj.label212:setHeight(12);
-    obj.label212:setFontSize(10);
-    obj.label212:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label212, "fontStyle",  "bold");
-    obj.label212:setFontColor("white");
-    obj.label212:setText("Dinheiro");
-    obj.label212:setName("label212");
+    obj.label214 = gui.fromHandle(_obj_newObject("label"));
+    obj.label214:setParent(obj.layout83);
+    obj.label214:setLeft(153);
+    obj.label214:setTop(434);
+    obj.label214:setWidth(98);
+    obj.label214:setHeight(12);
+    obj.label214:setFontSize(10);
+    obj.label214:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label214, "fontStyle",  "bold");
+    obj.label214:setFontColor("white");
+    obj.label214:setText("Dinheiro");
+    obj.label214:setName("label214");
 
-    obj.layout84 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout84:setParent(obj.layout82);
-    obj.layout84:setLeft(0);
-    obj.layout84:setTop(446);
-    obj.layout84:setWidth(395);
-    obj.layout84:setHeight(100);
-    obj.layout84:setName("layout84");
+    obj.layout85 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout85:setParent(obj.layout83);
+    obj.layout85:setLeft(0);
+    obj.layout85:setTop(446);
+    obj.layout85:setWidth(395);
+    obj.layout85:setHeight(100);
+    obj.layout85:setName("layout85");
 
     obj.rectangle215 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle215:setParent(obj.layout84);
+    obj.rectangle215:setParent(obj.layout85);
     obj.rectangle215:setLeft(0);
     obj.rectangle215:setTop(1);
     obj.rectangle215:setColor("#333333");
@@ -10837,7 +10873,7 @@ function newTormentafrm()
     obj.rectangle215:setName("rectangle215");
 
     obj.rectangle216 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle216:setParent(obj.layout84);
+    obj.rectangle216:setParent(obj.layout85);
     obj.rectangle216:setLeft(5);
     obj.rectangle216:setTop(6);
     obj.rectangle216:setColor("#999999");
@@ -10848,7 +10884,7 @@ function newTormentafrm()
     obj.rectangle216:setName("rectangle216");
 
     obj.rectangle217 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle217:setParent(obj.layout84);
+    obj.rectangle217:setParent(obj.layout85);
     obj.rectangle217:setLeft(15);
     obj.rectangle217:setTop(20);
     obj.rectangle217:setColor("Black");
@@ -10858,31 +10894,31 @@ function newTormentafrm()
     obj.rectangle217:setYradius(2);
     obj.rectangle217:setName("rectangle217");
 
-    obj.label213 = gui.fromHandle(_obj_newObject("label"));
-    obj.label213:setParent(obj.layout84);
-    obj.label213:setLeft(47);
-    obj.label213:setTop(15);
-    obj.label213:setWidth(25);
-    obj.label213:setHeight(25);
-    obj.label213:setFontSize(14);
-    lfm_setPropAsString(obj.label213, "fontStyle",  "bold");
-    obj.label213:setFontColor("white");
-    obj.label213:setText("T$");
-    obj.label213:setName("label213");
+    obj.label215 = gui.fromHandle(_obj_newObject("label"));
+    obj.label215:setParent(obj.layout85);
+    obj.label215:setLeft(47);
+    obj.label215:setTop(15);
+    obj.label215:setWidth(25);
+    obj.label215:setHeight(25);
+    obj.label215:setFontSize(14);
+    lfm_setPropAsString(obj.label215, "fontStyle",  "bold");
+    obj.label215:setFontColor("white");
+    obj.label215:setText("T$");
+    obj.label215:setName("label215");
 
-    obj.label214 = gui.fromHandle(_obj_newObject("label"));
-    obj.label214:setParent(obj.layout84);
-    obj.label214:setLeft(22);
-    obj.label214:setTop(25);
-    obj.label214:setWidth(80);
-    obj.label214:setHeight(25);
-    obj.label214:setFontSize(10);
-    obj.label214:setFontColor("white");
-    obj.label214:setText("Tibar de Cobre");
-    obj.label214:setName("label214");
+    obj.label216 = gui.fromHandle(_obj_newObject("label"));
+    obj.label216:setParent(obj.layout85);
+    obj.label216:setLeft(22);
+    obj.label216:setTop(25);
+    obj.label216:setWidth(80);
+    obj.label216:setHeight(25);
+    obj.label216:setFontSize(10);
+    obj.label216:setFontColor("white");
+    obj.label216:setText("Tibar de Cobre");
+    obj.label216:setName("label216");
 
     obj.totalCobre = gui.fromHandle(_obj_newObject("edit"));
-    obj.totalCobre:setParent(obj.layout84);
+    obj.totalCobre:setParent(obj.layout85);
     obj.totalCobre:setLeft(15);
     obj.totalCobre:setTop(50);
     obj.totalCobre:setWidth(80);
@@ -10896,7 +10932,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.totalCobre, "fontStyle",  "bold");
 
     obj.rectangle218 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle218:setParent(obj.layout84);
+    obj.rectangle218:setParent(obj.layout85);
     obj.rectangle218:setLeft(110);
     obj.rectangle218:setTop(20);
     obj.rectangle218:setColor("Black");
@@ -10906,31 +10942,31 @@ function newTormentafrm()
     obj.rectangle218:setYradius(2);
     obj.rectangle218:setName("rectangle218");
 
-    obj.label215 = gui.fromHandle(_obj_newObject("label"));
-    obj.label215:setParent(obj.layout84);
-    obj.label215:setLeft(142);
-    obj.label215:setTop(15);
-    obj.label215:setWidth(25);
-    obj.label215:setHeight(25);
-    obj.label215:setFontSize(14);
-    lfm_setPropAsString(obj.label215, "fontStyle",  "bold");
-    obj.label215:setFontColor("white");
-    obj.label215:setText("TP");
-    obj.label215:setName("label215");
+    obj.label217 = gui.fromHandle(_obj_newObject("label"));
+    obj.label217:setParent(obj.layout85);
+    obj.label217:setLeft(142);
+    obj.label217:setTop(15);
+    obj.label217:setWidth(25);
+    obj.label217:setHeight(25);
+    obj.label217:setFontSize(14);
+    lfm_setPropAsString(obj.label217, "fontStyle",  "bold");
+    obj.label217:setFontColor("white");
+    obj.label217:setText("TP");
+    obj.label217:setName("label217");
 
-    obj.label216 = gui.fromHandle(_obj_newObject("label"));
-    obj.label216:setParent(obj.layout84);
-    obj.label216:setLeft(119);
-    obj.label216:setTop(25);
-    obj.label216:setWidth(80);
-    obj.label216:setHeight(25);
-    obj.label216:setFontSize(10);
-    obj.label216:setFontColor("white");
-    obj.label216:setText("Tibar de Prata");
-    obj.label216:setName("label216");
+    obj.label218 = gui.fromHandle(_obj_newObject("label"));
+    obj.label218:setParent(obj.layout85);
+    obj.label218:setLeft(119);
+    obj.label218:setTop(25);
+    obj.label218:setWidth(80);
+    obj.label218:setHeight(25);
+    obj.label218:setFontSize(10);
+    obj.label218:setFontColor("white");
+    obj.label218:setText("Tibar de Prata");
+    obj.label218:setName("label218");
 
     obj.totalPrata = gui.fromHandle(_obj_newObject("edit"));
-    obj.totalPrata:setParent(obj.layout84);
+    obj.totalPrata:setParent(obj.layout85);
     obj.totalPrata:setLeft(110);
     obj.totalPrata:setTop(50);
     obj.totalPrata:setWidth(80);
@@ -10944,7 +10980,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.totalPrata, "fontStyle",  "bold");
 
     obj.rectangle219 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle219:setParent(obj.layout84);
+    obj.rectangle219:setParent(obj.layout85);
     obj.rectangle219:setLeft(205);
     obj.rectangle219:setTop(20);
     obj.rectangle219:setColor("Black");
@@ -10954,31 +10990,31 @@ function newTormentafrm()
     obj.rectangle219:setYradius(2);
     obj.rectangle219:setName("rectangle219");
 
-    obj.label217 = gui.fromHandle(_obj_newObject("label"));
-    obj.label217:setParent(obj.layout84);
-    obj.label217:setLeft(237);
-    obj.label217:setTop(15);
-    obj.label217:setWidth(25);
-    obj.label217:setHeight(25);
-    obj.label217:setFontSize(14);
-    lfm_setPropAsString(obj.label217, "fontStyle",  "bold");
-    obj.label217:setFontColor("white");
-    obj.label217:setText("TO");
-    obj.label217:setName("label217");
+    obj.label219 = gui.fromHandle(_obj_newObject("label"));
+    obj.label219:setParent(obj.layout85);
+    obj.label219:setLeft(237);
+    obj.label219:setTop(15);
+    obj.label219:setWidth(25);
+    obj.label219:setHeight(25);
+    obj.label219:setFontSize(14);
+    lfm_setPropAsString(obj.label219, "fontStyle",  "bold");
+    obj.label219:setFontColor("white");
+    obj.label219:setText("TO");
+    obj.label219:setName("label219");
 
-    obj.label218 = gui.fromHandle(_obj_newObject("label"));
-    obj.label218:setParent(obj.layout84);
-    obj.label218:setLeft(214);
-    obj.label218:setTop(25);
-    obj.label218:setWidth(80);
-    obj.label218:setHeight(25);
-    obj.label218:setFontSize(10);
-    obj.label218:setFontColor("white");
-    obj.label218:setText("Tibar de Ouro");
-    obj.label218:setName("label218");
+    obj.label220 = gui.fromHandle(_obj_newObject("label"));
+    obj.label220:setParent(obj.layout85);
+    obj.label220:setLeft(214);
+    obj.label220:setTop(25);
+    obj.label220:setWidth(80);
+    obj.label220:setHeight(25);
+    obj.label220:setFontSize(10);
+    obj.label220:setFontColor("white");
+    obj.label220:setText("Tibar de Ouro");
+    obj.label220:setName("label220");
 
     obj.totalOuro = gui.fromHandle(_obj_newObject("edit"));
-    obj.totalOuro:setParent(obj.layout84);
+    obj.totalOuro:setParent(obj.layout85);
     obj.totalOuro:setLeft(205);
     obj.totalOuro:setTop(50);
     obj.totalOuro:setWidth(80);
@@ -10992,7 +11028,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.totalOuro, "fontStyle",  "bold");
 
     obj.rectangle220 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle220:setParent(obj.layout84);
+    obj.rectangle220:setParent(obj.layout85);
     obj.rectangle220:setLeft(300);
     obj.rectangle220:setTop(20);
     obj.rectangle220:setColor("Black");
@@ -11002,31 +11038,31 @@ function newTormentafrm()
     obj.rectangle220:setYradius(2);
     obj.rectangle220:setName("rectangle220");
 
-    obj.label219 = gui.fromHandle(_obj_newObject("label"));
-    obj.label219:setParent(obj.layout84);
-    obj.label219:setLeft(332);
-    obj.label219:setTop(15);
-    obj.label219:setWidth(25);
-    obj.label219:setHeight(25);
-    obj.label219:setFontSize(14);
-    lfm_setPropAsString(obj.label219, "fontStyle",  "bold");
-    obj.label219:setFontColor("white");
-    obj.label219:setText("TL");
-    obj.label219:setName("label219");
+    obj.label221 = gui.fromHandle(_obj_newObject("label"));
+    obj.label221:setParent(obj.layout85);
+    obj.label221:setLeft(332);
+    obj.label221:setTop(15);
+    obj.label221:setWidth(25);
+    obj.label221:setHeight(25);
+    obj.label221:setFontSize(14);
+    lfm_setPropAsString(obj.label221, "fontStyle",  "bold");
+    obj.label221:setFontColor("white");
+    obj.label221:setText("TL");
+    obj.label221:setName("label221");
 
-    obj.label220 = gui.fromHandle(_obj_newObject("label"));
-    obj.label220:setParent(obj.layout84);
-    obj.label220:setLeft(305);
-    obj.label220:setTop(25);
-    obj.label220:setWidth(80);
-    obj.label220:setHeight(25);
-    obj.label220:setFontSize(10);
-    obj.label220:setFontColor("white");
-    obj.label220:setText("Tibar de Platina");
-    obj.label220:setName("label220");
+    obj.label222 = gui.fromHandle(_obj_newObject("label"));
+    obj.label222:setParent(obj.layout85);
+    obj.label222:setLeft(305);
+    obj.label222:setTop(25);
+    obj.label222:setWidth(80);
+    obj.label222:setHeight(25);
+    obj.label222:setFontSize(10);
+    obj.label222:setFontColor("white");
+    obj.label222:setText("Tibar de Platina");
+    obj.label222:setName("label222");
 
     obj.totalPlatina = gui.fromHandle(_obj_newObject("edit"));
-    obj.totalPlatina:setParent(obj.layout84);
+    obj.totalPlatina:setParent(obj.layout85);
     obj.totalPlatina:setLeft(300);
     obj.totalPlatina:setTop(50);
     obj.totalPlatina:setWidth(80);
@@ -11040,7 +11076,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.totalPlatina, "fontStyle",  "bold");
 
     obj.rectangle221 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle221:setParent(obj.layout82);
+    obj.rectangle221:setParent(obj.layout83);
     obj.rectangle221:setLeft(150);
     obj.rectangle221:setTop(539);
     obj.rectangle221:setColor("Black");
@@ -11050,29 +11086,29 @@ function newTormentafrm()
     obj.rectangle221:setYradius(2);
     obj.rectangle221:setName("rectangle221");
 
-    obj.label221 = gui.fromHandle(_obj_newObject("label"));
-    obj.label221:setParent(obj.layout82);
-    obj.label221:setLeft(153);
-    obj.label221:setTop(539);
-    obj.label221:setWidth(98);
-    obj.label221:setHeight(12);
-    obj.label221:setFontSize(10);
-    obj.label221:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label221, "fontStyle",  "bold");
-    obj.label221:setFontColor("white");
-    obj.label221:setText("Anotações");
-    obj.label221:setName("label221");
+    obj.label223 = gui.fromHandle(_obj_newObject("label"));
+    obj.label223:setParent(obj.layout83);
+    obj.label223:setLeft(153);
+    obj.label223:setTop(539);
+    obj.label223:setWidth(98);
+    obj.label223:setHeight(12);
+    obj.label223:setFontSize(10);
+    obj.label223:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label223, "fontStyle",  "bold");
+    obj.label223:setFontColor("white");
+    obj.label223:setText("Anotações");
+    obj.label223:setName("label223");
 
-    obj.layout85 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout85:setParent(obj.layout82);
-    obj.layout85:setLeft(0);
-    obj.layout85:setTop(553);
-    obj.layout85:setWidth(395);
-    obj.layout85:setHeight(145);
-    obj.layout85:setName("layout85");
+    obj.layout86 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout86:setParent(obj.layout83);
+    obj.layout86:setLeft(0);
+    obj.layout86:setTop(553);
+    obj.layout86:setWidth(395);
+    obj.layout86:setHeight(145);
+    obj.layout86:setName("layout86");
 
     obj.textEditor5 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor5:setParent(obj.layout85);
+    obj.textEditor5:setParent(obj.layout86);
     obj.textEditor5:setAlign("client");
     obj.textEditor5:setField("eqanotacoes");
     obj.textEditor5:setFontColor("black");
@@ -11138,28 +11174,28 @@ function newTormentafrm()
     obj.rectangle225:setYradius(2);
     obj.rectangle225:setName("rectangle225");
 
-    obj.label222 = gui.fromHandle(_obj_newObject("label"));
-    obj.label222:setParent(obj.scrollBox4);
-    obj.label222:setLeft(429);
-    obj.label222:setTop(22);
-    obj.label222:setWidth(35);
-    obj.label222:setHeight(25);
-    obj.label222:setFontSize(14);
-    lfm_setPropAsString(obj.label222, "fontStyle",  "bold");
-    obj.label222:setFontColor("white");
-    obj.label222:setText("PM");
-    obj.label222:setName("label222");
+    obj.label224 = gui.fromHandle(_obj_newObject("label"));
+    obj.label224:setParent(obj.scrollBox4);
+    obj.label224:setLeft(429);
+    obj.label224:setTop(22);
+    obj.label224:setWidth(35);
+    obj.label224:setHeight(25);
+    obj.label224:setFontSize(14);
+    lfm_setPropAsString(obj.label224, "fontStyle",  "bold");
+    obj.label224:setFontColor("white");
+    obj.label224:setText("PM");
+    obj.label224:setName("label224");
 
-    obj.label223 = gui.fromHandle(_obj_newObject("label"));
-    obj.label223:setParent(obj.scrollBox4);
-    obj.label223:setLeft(404);
-    obj.label223:setTop(33);
-    obj.label223:setWidth(90);
-    obj.label223:setHeight(25);
-    obj.label223:setFontSize(10);
-    obj.label223:setFontColor("white");
-    obj.label223:setText("Pontos de Magia");
-    obj.label223:setName("label223");
+    obj.label225 = gui.fromHandle(_obj_newObject("label"));
+    obj.label225:setParent(obj.scrollBox4);
+    obj.label225:setLeft(404);
+    obj.label225:setTop(33);
+    obj.label225:setWidth(90);
+    obj.label225:setHeight(25);
+    obj.label225:setFontSize(10);
+    obj.label225:setFontColor("white");
+    obj.label225:setText("Pontos de Magia");
+    obj.label225:setName("label225");
 
     obj.rectangle226 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle226:setParent(obj.scrollBox4);
@@ -11172,17 +11208,17 @@ function newTormentafrm()
     obj.rectangle226:setYradius(2);
     obj.rectangle226:setName("rectangle226");
 
-    obj.label224 = gui.fromHandle(_obj_newObject("label"));
-    obj.label224:setParent(obj.scrollBox4);
-    obj.label224:setLeft(509);
-    obj.label224:setTop(18);
-    obj.label224:setWidth(28);
-    obj.label224:setHeight(8);
-    obj.label224:setFontSize(10);
-    lfm_setPropAsString(obj.label224, "fontStyle",  "bold");
-    obj.label224:setFontColor("white");
-    obj.label224:setText("Total");
-    obj.label224:setName("label224");
+    obj.label226 = gui.fromHandle(_obj_newObject("label"));
+    obj.label226:setParent(obj.scrollBox4);
+    obj.label226:setLeft(509);
+    obj.label226:setTop(18);
+    obj.label226:setWidth(28);
+    obj.label226:setHeight(8);
+    obj.label226:setFontSize(10);
+    lfm_setPropAsString(obj.label226, "fontStyle",  "bold");
+    obj.label226:setFontColor("white");
+    obj.label226:setText("Total");
+    obj.label226:setName("label226");
 
     obj.totalPM = gui.fromHandle(_obj_newObject("edit"));
     obj.totalPM:setParent(obj.scrollBox4);
@@ -11209,17 +11245,17 @@ function newTormentafrm()
     obj.rectangle227:setYradius(2);
     obj.rectangle227:setName("rectangle227");
 
-    obj.label225 = gui.fromHandle(_obj_newObject("label"));
-    obj.label225:setParent(obj.scrollBox4);
-    obj.label225:setLeft(568);
-    obj.label225:setTop(18);
-    obj.label225:setWidth(38);
-    obj.label225:setHeight(8);
-    obj.label225:setFontSize(10);
-    lfm_setPropAsString(obj.label225, "fontStyle",  "bold");
-    obj.label225:setFontColor("white");
-    obj.label225:setText("Atuais");
-    obj.label225:setName("label225");
+    obj.label227 = gui.fromHandle(_obj_newObject("label"));
+    obj.label227:setParent(obj.scrollBox4);
+    obj.label227:setLeft(568);
+    obj.label227:setTop(18);
+    obj.label227:setWidth(38);
+    obj.label227:setHeight(8);
+    obj.label227:setFontSize(10);
+    lfm_setPropAsString(obj.label227, "fontStyle",  "bold");
+    obj.label227:setFontColor("white");
+    obj.label227:setText("Atuais");
+    obj.label227:setName("label227");
 
     obj.atuaisPM = gui.fromHandle(_obj_newObject("edit"));
     obj.atuaisPM:setParent(obj.scrollBox4);
@@ -11246,28 +11282,28 @@ function newTormentafrm()
     obj.rectangle228:setYradius(2);
     obj.rectangle228:setName("rectangle228");
 
-    obj.label226 = gui.fromHandle(_obj_newObject("label"));
-    obj.label226:setParent(obj.scrollBox4);
-    obj.label226:setLeft(183);
-    obj.label226:setTop(47);
-    obj.label226:setWidth(160);
-    obj.label226:setHeight(23);
-    obj.label226:setFontSize(16.0);
-    lfm_setPropAsString(obj.label226, "fontStyle",  "bold");
-    obj.label226:setFontColor("white");
-    obj.label226:setText("Magias Conhecidas");
-    obj.label226:setName("label226");
+    obj.label228 = gui.fromHandle(_obj_newObject("label"));
+    obj.label228:setParent(obj.scrollBox4);
+    obj.label228:setLeft(183);
+    obj.label228:setTop(47);
+    obj.label228:setWidth(160);
+    obj.label228:setHeight(23);
+    obj.label228:setFontSize(16.0);
+    lfm_setPropAsString(obj.label228, "fontStyle",  "bold");
+    obj.label228:setFontColor("white");
+    obj.label228:setText("Magias Conhecidas");
+    obj.label228:setName("label228");
 
-    obj.layout86 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout86:setParent(obj.scrollBox4);
-    obj.layout86:setLeft(10);
-    obj.layout86:setTop(72);
-    obj.layout86:setWidth(490);
-    obj.layout86:setHeight(615);
-    obj.layout86:setName("layout86");
+    obj.layout87 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout87:setParent(obj.scrollBox4);
+    obj.layout87:setLeft(10);
+    obj.layout87:setTop(72);
+    obj.layout87:setWidth(490);
+    obj.layout87:setHeight(615);
+    obj.layout87:setName("layout87");
 
     obj.textEditor6 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor6:setParent(obj.layout86);
+    obj.textEditor6:setParent(obj.layout87);
     obj.textEditor6:setAlign("client");
     obj.textEditor6:setField("mconhecidas");
     obj.textEditor6:setFontColor("black");
@@ -11285,28 +11321,28 @@ function newTormentafrm()
     obj.rectangle229:setYradius(2);
     obj.rectangle229:setName("rectangle229");
 
-    obj.label227 = gui.fromHandle(_obj_newObject("label"));
-    obj.label227:setParent(obj.scrollBox4);
-    obj.label227:setLeft(683);
-    obj.label227:setTop(47);
-    obj.label227:setWidth(160);
-    obj.label227:setHeight(23);
-    obj.label227:setFontSize(16.0);
-    lfm_setPropAsString(obj.label227, "fontStyle",  "bold");
-    obj.label227:setFontColor("white");
-    obj.label227:setText("Magias Preparadas");
-    obj.label227:setName("label227");
+    obj.label229 = gui.fromHandle(_obj_newObject("label"));
+    obj.label229:setParent(obj.scrollBox4);
+    obj.label229:setLeft(683);
+    obj.label229:setTop(47);
+    obj.label229:setWidth(160);
+    obj.label229:setHeight(23);
+    obj.label229:setFontSize(16.0);
+    lfm_setPropAsString(obj.label229, "fontStyle",  "bold");
+    obj.label229:setFontColor("white");
+    obj.label229:setText("Magias Preparadas");
+    obj.label229:setName("label229");
 
-    obj.layout87 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout87:setParent(obj.scrollBox4);
-    obj.layout87:setLeft(510);
-    obj.layout87:setTop(72);
-    obj.layout87:setWidth(490);
-    obj.layout87:setHeight(615);
-    obj.layout87:setName("layout87");
+    obj.layout88 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout88:setParent(obj.scrollBox4);
+    obj.layout88:setLeft(510);
+    obj.layout88:setTop(72);
+    obj.layout88:setWidth(490);
+    obj.layout88:setHeight(615);
+    obj.layout88:setName("layout88");
 
     obj.textEditor7 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.layout87);
+    obj.textEditor7:setParent(obj.layout88);
     obj.textEditor7:setAlign("client");
     obj.textEditor7:setField("mpreparadas");
     obj.textEditor7:setFontColor("black");
@@ -11339,16 +11375,16 @@ function newTormentafrm()
     obj.rectangle230:setYradius(10);
     obj.rectangle230:setName("rectangle230");
 
-    obj.layout88 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout88:setParent(obj.scrollBox5);
-    obj.layout88:setLeft(10);
-    obj.layout88:setTop(8);
-    obj.layout88:setWidth(980);
-    obj.layout88:setHeight(300);
-    obj.layout88:setName("layout88");
+    obj.layout89 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout89:setParent(obj.scrollBox5);
+    obj.layout89:setLeft(10);
+    obj.layout89:setTop(8);
+    obj.layout89:setWidth(980);
+    obj.layout89:setHeight(300);
+    obj.layout89:setName("layout89");
 
     obj.rectangle231 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle231:setParent(obj.layout88);
+    obj.rectangle231:setParent(obj.layout89);
     obj.rectangle231:setLeft(1);
     obj.rectangle231:setTop(230);
     obj.rectangle231:setColor("#333333");
@@ -11359,7 +11395,7 @@ function newTormentafrm()
     obj.rectangle231:setName("rectangle231");
 
     obj.rectangle232 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle232:setParent(obj.layout88);
+    obj.rectangle232:setParent(obj.layout89);
     obj.rectangle232:setLeft(5);
     obj.rectangle232:setTop(235);
     obj.rectangle232:setColor("#999999");
@@ -11370,7 +11406,7 @@ function newTormentafrm()
     obj.rectangle232:setName("rectangle232");
 
     obj.rectangle233 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle233:setParent(obj.layout88);
+    obj.rectangle233:setParent(obj.layout89);
     obj.rectangle233:setLeft(15);
     obj.rectangle233:setTop(238);
     obj.rectangle233:setColor("Black");
@@ -11380,31 +11416,31 @@ function newTormentafrm()
     obj.rectangle233:setYradius(2);
     obj.rectangle233:setName("rectangle233");
 
-    obj.label228 = gui.fromHandle(_obj_newObject("label"));
-    obj.label228:setParent(obj.layout88);
-    obj.label228:setLeft(37);
-    obj.label228:setTop(233);
-    obj.label228:setWidth(75);
-    obj.label228:setHeight(25);
-    obj.label228:setFontSize(14);
-    lfm_setPropAsString(obj.label228, "fontStyle",  "bold");
-    obj.label228:setFontColor("white");
-    obj.label228:setText("EXP ATUAL");
-    obj.label228:setName("label228");
+    obj.label230 = gui.fromHandle(_obj_newObject("label"));
+    obj.label230:setParent(obj.layout89);
+    obj.label230:setLeft(37);
+    obj.label230:setTop(233);
+    obj.label230:setWidth(75);
+    obj.label230:setHeight(25);
+    obj.label230:setFontSize(14);
+    lfm_setPropAsString(obj.label230, "fontStyle",  "bold");
+    obj.label230:setFontColor("white");
+    obj.label230:setText("EXP ATUAL");
+    obj.label230:setName("label230");
 
-    obj.label229 = gui.fromHandle(_obj_newObject("label"));
-    obj.label229:setParent(obj.layout88);
-    obj.label229:setLeft(36);
-    obj.label229:setTop(243);
-    obj.label229:setWidth(120);
-    obj.label229:setHeight(25);
-    obj.label229:setFontSize(10);
-    obj.label229:setFontColor("white");
-    obj.label229:setText("Experiência Atual");
-    obj.label229:setName("label229");
+    obj.label231 = gui.fromHandle(_obj_newObject("label"));
+    obj.label231:setParent(obj.layout89);
+    obj.label231:setLeft(36);
+    obj.label231:setTop(243);
+    obj.label231:setWidth(120);
+    obj.label231:setHeight(25);
+    obj.label231:setFontSize(10);
+    obj.label231:setFontColor("white");
+    obj.label231:setText("Experiência Atual");
+    obj.label231:setName("label231");
 
     obj.XPAtual = gui.fromHandle(_obj_newObject("edit"));
-    obj.XPAtual:setParent(obj.layout88);
+    obj.XPAtual:setParent(obj.layout89);
     obj.XPAtual:setLeft(146);
     obj.XPAtual:setTop(238);
     obj.XPAtual:setWidth(120);
@@ -11418,7 +11454,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.XPAtual, "fontStyle",  "bold");
 
     obj.rectangle234 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle234:setParent(obj.layout88);
+    obj.rectangle234:setParent(obj.layout89);
     obj.rectangle234:setLeft(15);
     obj.rectangle234:setTop(266);
     obj.rectangle234:setColor("Black");
@@ -11428,31 +11464,31 @@ function newTormentafrm()
     obj.rectangle234:setYradius(2);
     obj.rectangle234:setName("rectangle234");
 
-    obj.label230 = gui.fromHandle(_obj_newObject("label"));
-    obj.label230:setParent(obj.layout88);
-    obj.label230:setLeft(38);
-    obj.label230:setTop(261);
-    obj.label230:setWidth(75);
-    obj.label230:setHeight(25);
-    obj.label230:setFontSize(14);
-    lfm_setPropAsString(obj.label230, "fontStyle",  "bold");
-    obj.label230:setFontColor("white");
-    obj.label230:setText("EXP NIVEL");
-    obj.label230:setName("label230");
+    obj.label232 = gui.fromHandle(_obj_newObject("label"));
+    obj.label232:setParent(obj.layout89);
+    obj.label232:setLeft(38);
+    obj.label232:setTop(261);
+    obj.label232:setWidth(75);
+    obj.label232:setHeight(25);
+    obj.label232:setFontSize(14);
+    lfm_setPropAsString(obj.label232, "fontStyle",  "bold");
+    obj.label232:setFontColor("white");
+    obj.label232:setText("EXP NIVEL");
+    obj.label232:setName("label232");
 
-    obj.label231 = gui.fromHandle(_obj_newObject("label"));
-    obj.label231:setParent(obj.layout88);
-    obj.label231:setLeft(18);
-    obj.label231:setTop(271);
-    obj.label231:setWidth(120);
-    obj.label231:setHeight(25);
-    obj.label231:setFontSize(10);
-    obj.label231:setFontColor("white");
-    obj.label231:setText("Experiência Próximo Nível");
-    obj.label231:setName("label231");
+    obj.label233 = gui.fromHandle(_obj_newObject("label"));
+    obj.label233:setParent(obj.layout89);
+    obj.label233:setLeft(18);
+    obj.label233:setTop(271);
+    obj.label233:setWidth(120);
+    obj.label233:setHeight(25);
+    obj.label233:setFontSize(10);
+    obj.label233:setFontColor("white");
+    obj.label233:setText("Experiência Próximo Nível");
+    obj.label233:setName("label233");
 
     obj.XPNivel = gui.fromHandle(_obj_newObject("edit"));
-    obj.XPNivel:setParent(obj.layout88);
+    obj.XPNivel:setParent(obj.layout89);
     obj.XPNivel:setLeft(146);
     obj.XPNivel:setTop(266);
     obj.XPNivel:setWidth(120);
@@ -11466,7 +11502,7 @@ function newTormentafrm()
     lfm_setPropAsString(obj.XPNivel, "fontStyle",  "bold");
 
     obj.rectangle235 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle235:setParent(obj.layout88);
+    obj.rectangle235:setParent(obj.layout89);
     obj.rectangle235:setLeft(84);
     obj.rectangle235:setTop(3);
     obj.rectangle235:setColor("Black");
@@ -11476,20 +11512,20 @@ function newTormentafrm()
     obj.rectangle235:setYradius(2);
     obj.rectangle235:setName("rectangle235");
 
-    obj.label232 = gui.fromHandle(_obj_newObject("label"));
-    obj.label232:setParent(obj.layout88);
-    obj.label232:setLeft(90);
-    obj.label232:setTop(5);
-    obj.label232:setWidth(110);
-    obj.label232:setHeight(20);
-    obj.label232:setFontSize(18.0);
-    lfm_setPropAsString(obj.label232, "fontStyle",  "bold");
-    obj.label232:setFontColor("white");
-    obj.label232:setText("Informações");
-    obj.label232:setName("label232");
+    obj.label234 = gui.fromHandle(_obj_newObject("label"));
+    obj.label234:setParent(obj.layout89);
+    obj.label234:setLeft(90);
+    obj.label234:setTop(5);
+    obj.label234:setWidth(110);
+    obj.label234:setHeight(20);
+    obj.label234:setFontSize(18.0);
+    lfm_setPropAsString(obj.label234, "fontStyle",  "bold");
+    obj.label234:setFontColor("white");
+    obj.label234:setText("Informações");
+    obj.label234:setName("label234");
 
     obj.textEditor8 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor8:setParent(obj.layout88);
+    obj.textEditor8:setParent(obj.layout89);
     obj.textEditor8:setLeft(1);
     obj.textEditor8:setTop(27);
     obj.textEditor8:setWidth(280);
@@ -11499,7 +11535,7 @@ function newTormentafrm()
     obj.textEditor8:setName("textEditor8");
 
     obj.rectangle236 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle236:setParent(obj.layout88);
+    obj.rectangle236:setParent(obj.layout89);
     obj.rectangle236:setLeft(600);
     obj.rectangle236:setTop(3);
     obj.rectangle236:setColor("Black");
@@ -11509,20 +11545,20 @@ function newTormentafrm()
     obj.rectangle236:setYradius(2);
     obj.rectangle236:setName("rectangle236");
 
-    obj.label233 = gui.fromHandle(_obj_newObject("label"));
-    obj.label233:setParent(obj.layout88);
-    obj.label233:setLeft(605);
-    obj.label233:setTop(6);
-    obj.label233:setWidth(100);
-    obj.label233:setHeight(20);
-    obj.label233:setFontSize(18.0);
-    lfm_setPropAsString(obj.label233, "fontStyle",  "bold");
-    obj.label233:setFontColor("white");
-    obj.label233:setText("História");
-    obj.label233:setName("label233");
+    obj.label235 = gui.fromHandle(_obj_newObject("label"));
+    obj.label235:setParent(obj.layout89);
+    obj.label235:setLeft(605);
+    obj.label235:setTop(6);
+    obj.label235:setWidth(100);
+    obj.label235:setHeight(20);
+    obj.label235:setFontSize(18.0);
+    lfm_setPropAsString(obj.label235, "fontStyle",  "bold");
+    obj.label235:setFontColor("white");
+    obj.label235:setText("História");
+    obj.label235:setName("label235");
 
     obj.richEdit1 = gui.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit1:setParent(obj.layout88);
+    obj.richEdit1:setParent(obj.layout89);
     obj.richEdit1:setLeft(300);
     obj.richEdit1:setTop(27);
     lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#ffffff");
@@ -11532,16 +11568,16 @@ function newTormentafrm()
     obj.richEdit1:setHeight(272);
     obj.richEdit1:setName("richEdit1");
 
-    obj.layout89 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout89:setParent(obj.scrollBox5);
-    obj.layout89:setLeft(21);
-    obj.layout89:setTop(316);
-    obj.layout89:setWidth(969);
-    obj.layout89:setHeight(358);
-    obj.layout89:setName("layout89");
+    obj.layout90 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout90:setParent(obj.scrollBox5);
+    obj.layout90:setLeft(21);
+    obj.layout90:setTop(316);
+    obj.layout90:setWidth(969);
+    obj.layout90:setHeight(358);
+    obj.layout90:setName("layout90");
 
     obj.rectangle237 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle237:setParent(obj.layout89);
+    obj.rectangle237:setParent(obj.layout90);
     obj.rectangle237:setLeft(86);
     obj.rectangle237:setTop(3);
     obj.rectangle237:setColor("Black");
@@ -11551,20 +11587,20 @@ function newTormentafrm()
     obj.rectangle237:setYradius(2);
     obj.rectangle237:setName("rectangle237");
 
-    obj.label234 = gui.fromHandle(_obj_newObject("label"));
-    obj.label234:setParent(obj.layout89);
-    obj.label234:setLeft(90);
-    obj.label234:setTop(6);
-    obj.label234:setWidth(120);
-    obj.label234:setHeight(20);
-    obj.label234:setFontSize(18.0);
-    lfm_setPropAsString(obj.label234, "fontStyle",  "bold");
-    obj.label234:setFontColor("white");
-    obj.label234:setText("Personalidade");
-    obj.label234:setName("label234");
+    obj.label236 = gui.fromHandle(_obj_newObject("label"));
+    obj.label236:setParent(obj.layout90);
+    obj.label236:setLeft(90);
+    obj.label236:setTop(6);
+    obj.label236:setWidth(120);
+    obj.label236:setHeight(20);
+    obj.label236:setFontSize(18.0);
+    lfm_setPropAsString(obj.label236, "fontStyle",  "bold");
+    obj.label236:setFontColor("white");
+    obj.label236:setText("Personalidade");
+    obj.label236:setName("label236");
 
     obj.textEditor9 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor9:setParent(obj.layout89);
+    obj.textEditor9:setParent(obj.layout90);
     obj.textEditor9:setLeft(0);
     obj.textEditor9:setTop(30);
     obj.textEditor9:setWidth(300);
@@ -11574,7 +11610,7 @@ function newTormentafrm()
     obj.textEditor9:setName("textEditor9");
 
     obj.rectangle238 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle238:setParent(obj.layout89);
+    obj.rectangle238:setParent(obj.layout90);
     obj.rectangle238:setLeft(435);
     obj.rectangle238:setTop(3);
     obj.rectangle238:setColor("Black");
@@ -11584,20 +11620,20 @@ function newTormentafrm()
     obj.rectangle238:setYradius(2);
     obj.rectangle238:setName("rectangle238");
 
-    obj.label235 = gui.fromHandle(_obj_newObject("label"));
-    obj.label235:setParent(obj.layout89);
-    obj.label235:setLeft(439);
-    obj.label235:setTop(6);
-    obj.label235:setWidth(100);
-    obj.label235:setHeight(20);
-    obj.label235:setFontSize(18.0);
-    lfm_setPropAsString(obj.label235, "fontStyle",  "bold");
-    obj.label235:setFontColor("white");
-    obj.label235:setText("Aparência");
-    obj.label235:setName("label235");
+    obj.label237 = gui.fromHandle(_obj_newObject("label"));
+    obj.label237:setParent(obj.layout90);
+    obj.label237:setLeft(439);
+    obj.label237:setTop(6);
+    obj.label237:setWidth(100);
+    obj.label237:setHeight(20);
+    obj.label237:setFontSize(18.0);
+    lfm_setPropAsString(obj.label237, "fontStyle",  "bold");
+    obj.label237:setFontColor("white");
+    obj.label237:setText("Aparência");
+    obj.label237:setName("label237");
 
     obj.textEditor10 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor10:setParent(obj.layout89);
+    obj.textEditor10:setParent(obj.layout90);
     obj.textEditor10:setLeft(334);
     obj.textEditor10:setTop(30);
     obj.textEditor10:setWidth(300);
@@ -11607,7 +11643,7 @@ function newTormentafrm()
     obj.textEditor10:setName("textEditor10");
 
     obj.rectangle239 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle239:setParent(obj.layout89);
+    obj.rectangle239:setParent(obj.layout90);
     obj.rectangle239:setLeft(770);
     obj.rectangle239:setTop(3);
     obj.rectangle239:setColor("Black");
@@ -11617,20 +11653,20 @@ function newTormentafrm()
     obj.rectangle239:setYradius(2);
     obj.rectangle239:setName("rectangle239");
 
-    obj.label236 = gui.fromHandle(_obj_newObject("label"));
-    obj.label236:setParent(obj.layout89);
-    obj.label236:setLeft(774);
-    obj.label236:setTop(6);
-    obj.label236:setWidth(100);
-    obj.label236:setHeight(20);
-    obj.label236:setFontSize(18.0);
-    lfm_setPropAsString(obj.label236, "fontStyle",  "bold");
-    obj.label236:setFontColor("white");
-    obj.label236:setText("Anotações");
-    obj.label236:setName("label236");
+    obj.label238 = gui.fromHandle(_obj_newObject("label"));
+    obj.label238:setParent(obj.layout90);
+    obj.label238:setLeft(774);
+    obj.label238:setTop(6);
+    obj.label238:setWidth(100);
+    obj.label238:setHeight(20);
+    obj.label238:setFontSize(18.0);
+    lfm_setPropAsString(obj.label238, "fontStyle",  "bold");
+    obj.label238:setFontColor("white");
+    obj.label238:setText("Anotações");
+    obj.label238:setName("label238");
 
     obj.textEditor11 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor11:setParent(obj.layout89);
+    obj.textEditor11:setParent(obj.layout90);
     obj.textEditor11:setLeft(669);
     obj.textEditor11:setTop(30);
     obj.textEditor11:setWidth(300);
@@ -11664,29 +11700,29 @@ function newTormentafrm()
     obj.rectangle240:setYradius(10);
     obj.rectangle240:setName("rectangle240");
 
-    obj.layout90 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout90:setParent(obj.scrollBox6);
-    obj.layout90:setAlign("top");
-    obj.layout90:setHeight(30);
-    obj.layout90:setMargins({bottom=4});
-    obj.layout90:setName("layout90");
+    obj.layout91 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout91:setParent(obj.scrollBox6);
+    obj.layout91:setAlign("top");
+    obj.layout91:setHeight(30);
+    obj.layout91:setMargins({bottom=4});
+    obj.layout91:setName("layout91");
 
     obj.button68 = gui.fromHandle(_obj_newObject("button"));
-    obj.button68:setParent(obj.layout90);
+    obj.button68:setParent(obj.layout91);
     obj.button68:setText("Adicionar Novo Ataque/Macro");
     obj.button68:setWidth(250);
     obj.button68:setAlign("left");
     obj.button68:setName("button68");
 
-    obj.layout91 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout91:setParent(obj.scrollBox6);
-    obj.layout91:setAlign("top");
-    obj.layout91:setHeight(650);
-    obj.layout91:setMargins({left=8, right=8, top=0, bottom=8});
-    obj.layout91:setName("layout91");
+    obj.layout92 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout92:setParent(obj.scrollBox6);
+    obj.layout92:setAlign("top");
+    obj.layout92:setHeight(650);
+    obj.layout92:setMargins({left=8, right=8, top=0, bottom=8});
+    obj.layout92:setName("layout92");
 
     obj.rclListaDosItens = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclListaDosItens:setParent(obj.layout91);
+    obj.rclListaDosItens:setParent(obj.layout92);
     obj.rclListaDosItens:setName("rclListaDosItens");
     obj.rclListaDosItens:setField("campoDosItens");
     obj.rclListaDosItens:setTemplateForm("frmItemDaLista");
@@ -11694,15 +11730,15 @@ function newTormentafrm()
     obj.rclListaDosItens:setWidth(560);
     obj.rclListaDosItens:setSelectable(true);
 
-    obj.layout92 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout92:setParent(obj.layout91);
-    obj.layout92:setAlign("left");
-    obj.layout92:setWidth(420);
-    obj.layout92:setMargins({left=8});
-    obj.layout92:setName("layout92");
+    obj.layout93 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout93:setParent(obj.layout92);
+    obj.layout93:setAlign("left");
+    obj.layout93:setWidth(420);
+    obj.layout93:setMargins({left=8});
+    obj.layout93:setName("layout93");
 
     obj.boxDetalhesDoItem = gui.fromHandle(_obj_newObject("dataScopeBox"));
-    obj.boxDetalhesDoItem:setParent(obj.layout92);
+    obj.boxDetalhesDoItem:setParent(obj.layout93);
     obj.boxDetalhesDoItem:setName("boxDetalhesDoItem");
     obj.boxDetalhesDoItem:setVisible(false);
     obj.boxDetalhesDoItem:setAlign("top");
@@ -11717,28 +11753,6 @@ function newTormentafrm()
     obj.rectangle241:setPadding({top=3, left=3, right=3, bottom=3});
     obj.rectangle241:setName("rectangle241");
 
-    obj.layout93 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout93:setParent(obj.rectangle241);
-    obj.layout93:setAlign("top");
-    obj.layout93:setHeight(30);
-    obj.layout93:setMargins({bottom=4});
-    obj.layout93:setName("layout93");
-
-    obj.label237 = gui.fromHandle(_obj_newObject("label"));
-    obj.label237:setParent(obj.layout93);
-    obj.label237:setAlign("left");
-    obj.label237:setText("Ataque/Macro:");
-    obj.label237:setFontColor("black");
-    obj.label237:setAutoSize(true);
-    obj.label237:setName("label237");
-
-    obj.edit61 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.layout93);
-    obj.edit61:setAlign("client");
-    obj.edit61:setField("campoTitulo");
-    obj.edit61:setFontColor("black");
-    obj.edit61:setName("edit61");
-
     obj.layout94 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout94:setParent(obj.rectangle241);
     obj.layout94:setAlign("top");
@@ -11746,16 +11760,38 @@ function newTormentafrm()
     obj.layout94:setMargins({bottom=4});
     obj.layout94:setName("layout94");
 
-    obj.label238 = gui.fromHandle(_obj_newObject("label"));
-    obj.label238:setParent(obj.layout94);
-    obj.label238:setAlign("left");
-    obj.label238:setText("Macro:");
-    obj.label238:setFontColor("black");
-    obj.label238:setAutoSize(true);
-    obj.label238:setName("label238");
+    obj.label239 = gui.fromHandle(_obj_newObject("label"));
+    obj.label239:setParent(obj.layout94);
+    obj.label239:setAlign("left");
+    obj.label239:setText("Ataque/Macro:");
+    obj.label239:setFontColor("black");
+    obj.label239:setAutoSize(true);
+    obj.label239:setName("label239");
+
+    obj.edit61 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit61:setParent(obj.layout94);
+    obj.edit61:setAlign("client");
+    obj.edit61:setField("campoTitulo");
+    obj.edit61:setFontColor("black");
+    obj.edit61:setName("edit61");
+
+    obj.layout95 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout95:setParent(obj.rectangle241);
+    obj.layout95:setAlign("top");
+    obj.layout95:setHeight(30);
+    obj.layout95:setMargins({bottom=4});
+    obj.layout95:setName("layout95");
+
+    obj.label240 = gui.fromHandle(_obj_newObject("label"));
+    obj.label240:setParent(obj.layout95);
+    obj.label240:setAlign("left");
+    obj.label240:setText("Macro:");
+    obj.label240:setFontColor("black");
+    obj.label240:setAutoSize(true);
+    obj.label240:setName("label240");
 
     obj.edtMacro = gui.fromHandle(_obj_newObject("edit"));
-    obj.edtMacro:setParent(obj.layout94);
+    obj.edtMacro:setParent(obj.layout95);
     obj.edtMacro:setAlign("left");
     obj.edtMacro:setWidth(260);
     obj.edtMacro:setField("campoSubTitulo");
@@ -11764,7 +11800,7 @@ function newTormentafrm()
     obj.edtMacro:setMargins({left=6});
 
     obj.button69 = gui.fromHandle(_obj_newObject("button"));
-    obj.button69:setParent(obj.layout94);
+    obj.button69:setParent(obj.layout95);
     obj.button69:setAlign("left");
     obj.button69:setWidth(25);
     obj.button69:setHeight(25);
@@ -11777,22 +11813,22 @@ function newTormentafrm()
     obj.button69:setHint("Rolar este macro na mesa");
     obj.button69:setName("button69");
 
-    obj.layout95 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout95:setParent(obj.rectangle241);
-    obj.layout95:setAlign("top");
-    obj.layout95:setHeight(100);
-    obj.layout95:setName("layout95");
+    obj.layout96 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout96:setParent(obj.rectangle241);
+    obj.layout96:setAlign("top");
+    obj.layout96:setHeight(100);
+    obj.layout96:setName("layout96");
 
-    obj.label239 = gui.fromHandle(_obj_newObject("label"));
-    obj.label239:setParent(obj.layout95);
-    obj.label239:setAlign("left");
-    obj.label239:setText("Descrição:");
-    obj.label239:setFontColor("black");
-    obj.label239:setAutoSize(true);
-    obj.label239:setName("label239");
+    obj.label241 = gui.fromHandle(_obj_newObject("label"));
+    obj.label241:setParent(obj.layout96);
+    obj.label241:setAlign("left");
+    obj.label241:setText("Descrição:");
+    obj.label241:setFontColor("black");
+    obj.label241:setAutoSize(true);
+    obj.label241:setName("label241");
 
     obj.textEditor12 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor12:setParent(obj.layout95);
+    obj.textEditor12:setParent(obj.layout96);
     obj.textEditor12:setAlign("client");
     obj.textEditor12:setField("campoDescrição");
     obj.textEditor12:setFontColor("black");
@@ -11973,7 +12009,12 @@ function newTormentafrm()
 
     obj._e_event26 = obj.button23:addEventListener("onClick",
         function (self)
-            TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaladestrar, "Adestrar Animais");
+            local sh = sheet or self.sheet;
+            						if not (sh.cbxadestrar == true) then
+            							 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            							return;
+            						end;
+            						TRPG_rollValue(sh, sh.totaladestrar, "Adestrar Animais");
         end, obj);
 
     obj._e_event27 = obj.button24:addEventListener("onClick",
@@ -12035,6 +12076,10 @@ function newTormentafrm()
             							local nome = "Conhecimento";
             							local extra = tostring(sh.conhecimento1 or ""):gsub("^%s+",""):gsub("%s+$","");
             							if extra ~= "" then nome = nome .. " - " .. extra; end;
+            							if not (sh.cbxconhecimento1 == true) then
+            								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            								return;
+            							end;
             							TRPG_rollValue(sh, sh.totalconhecimento1, nome);
         end, obj);
 
@@ -12049,6 +12094,10 @@ function newTormentafrm()
             							local nome = "Conhecimento";
             							local extra = tostring(sh.conhecimento2 or ""):gsub("^%s+",""):gsub("%s+$","");
             							if extra ~= "" then nome = nome .. " - " .. extra; end;
+            							if not (sh.cbxconhecimento2 == true) then
+            								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            								return;
+            							end;
             							TRPG_rollValue(sh, sh.totalconhecimento2, nome);
         end, obj);
 
@@ -12099,7 +12148,12 @@ function newTormentafrm()
 
     obj._e_event48 = obj.button45:addEventListener("onClick",
         function (self)
-            TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
+            local sh = sheet or self.sheet;
+            							if not (sh.cbximagia == true) then
+            								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            								return;
+            							end;
+            							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
         end, obj);
 
     obj._e_event49 = obj.button46:addEventListener("onClick",
@@ -12149,7 +12203,12 @@ function newTormentafrm()
 
     obj._e_event58 = obj.button55:addEventListener("onClick",
         function (self)
-            TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
+            local sh = sheet or self.sheet;
+            							if not (sh.cbxladinagem == true) then
+            								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            								return;
+            							end;
+            							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
         end, obj);
 
     obj._e_event59 = obj.button56:addEventListener("onClick",
@@ -12197,7 +12256,12 @@ function newTormentafrm()
 
     obj._e_event66 = obj.button63:addEventListener("onClick",
         function (self)
-            TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
+            local sh = sheet or self.sheet;
+            							if not (sh.cbxmeditacao == true) then
+            								 showMessage("Essa é uma pericia que precisa ser treinada para poder rolar.");
+            								return;
+            							end;
+            							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
         end, obj);
 
     obj._e_event67 = obj.button64:addEventListener("onClick",
@@ -12540,6 +12604,7 @@ function newTormentafrm()
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
         if self.rectangle182 ~= nil then self.rectangle182:destroy(); self.rectangle182 = nil; end;
         if self.rectangle229 ~= nil then self.rectangle229:destroy(); self.rectangle229 = nil; end;
+        if self.label240 ~= nil then self.label240:destroy(); self.label240 = nil; end;
         if self.rectangle36 ~= nil then self.rectangle36:destroy(); self.rectangle36 = nil; end;
         if self.totalpercepcao ~= nil then self.totalpercepcao:destroy(); self.totalpercepcao = nil; end;
         if self.rectangle146 ~= nil then self.rectangle146:destroy(); self.rectangle146 = nil; end;
@@ -13121,8 +13186,8 @@ function newTormentafrm()
         if self.modcarisma ~= nil then self.modcarisma:destroy(); self.modcarisma = nil; end;
         if self.edit49 ~= nil then self.edit49:destroy(); self.edit49 = nil; end;
         if self.desccintura ~= nil then self.desccintura:destroy(); self.desccintura = nil; end;
-        if self.boxDetalhesDoItem ~= nil then self.boxDetalhesDoItem:destroy(); self.boxDetalhesDoItem = nil; end;
         if self.label238 ~= nil then self.label238:destroy(); self.label238 = nil; end;
+        if self.boxDetalhesDoItem ~= nil then self.boxDetalhesDoItem:destroy(); self.boxDetalhesDoItem = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.rectangle204 ~= nil then self.rectangle204:destroy(); self.rectangle204 = nil; end;
         if self.gradfurtividade ~= nil then self.gradfurtividade:destroy(); self.gradfurtividade = nil; end;
@@ -13221,6 +13286,7 @@ function newTormentafrm()
         if self.rectangle215 ~= nil then self.rectangle215:destroy(); self.rectangle215 = nil; end;
         if self.totaloficio1 ~= nil then self.totaloficio1:destroy(); self.totaloficio1 = nil; end;
         if self.button12 ~= nil then self.button12:destroy(); self.button12 = nil; end;
+        if self.label241 ~= nil then self.label241:destroy(); self.label241 = nil; end;
         if self.modconhecimento1 ~= nil then self.modconhecimento1:destroy(); self.modconhecimento1 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.rectangle102 ~= nil then self.rectangle102:destroy(); self.rectangle102 = nil; end;
@@ -13238,6 +13304,7 @@ function newTormentafrm()
         if self.layout84 ~= nil then self.layout84:destroy(); self.layout84 = nil; end;
         if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
         if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
+        if self.layout96 ~= nil then self.layout96:destroy(); self.layout96 = nil; end;
         if self.rectangle106 ~= nil then self.rectangle106:destroy(); self.rectangle106 = nil; end;
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.gradjogatina ~= nil then self.gradjogatina:destroy(); self.gradjogatina = nil; end;
