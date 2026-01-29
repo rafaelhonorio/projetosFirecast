@@ -1,105 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="Tormenta06" align="client" theme="light">
-    <scrollBox align="client">
+	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
-        <layout align="top" height="30" margins="{bottom=4}">
-                <button text="Adicionar Novo Ataque/Macro" width="250" align="left">
-                        <event name="onClick">                           
-                                self.rclListaDosItens:append();
-                        </event>
-                </button>
-        </layout>
-		<!-- Área principal FIXA (não cresce) -->
+
+		<layout align="top" height="30" margins="{left=8,right=8,top=8,bottom=4}">
+			<button text="Adicionar (Ataque)" width="170" align="left">
+				<event name="onClick">
+					self.rclAtaque:append();
+				</event>
+			</button>
+			<button text="Adicionar (Danos)" width="170" align="left" margins="{left=6}">
+				<event name="onClick">
+					self.rclDanos:append();
+				</event>
+			</button>
+			<button text="Adicionar (Magias)" width="170" align="left" margins="{left=6}">
+				<event name="onClick">
+					self.rclMagias:append();
+				</event>
+			</button>
+		</layout>
+
+		<!-- Área principal -->
 		<layout align="top" height="650" margins="{left=8, right=8, top=0, bottom=8}">
 
-			<!-- Lista trava e rola DENTRO -->
-			<recordList name="rclListaDosItens"
-						field="campoDosItens"
-						templateForm="frmItemDaLista"
+			<!-- 3 colunas de listas (Ataque / Danos / Magias) -->
+			<layout align="left" width="560">
+
+				<layout align="top" height="20">
+					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="ATAQUE"/>
+					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="DANOS"/>
+					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="MAGIAS"/>
+				</layout>
+
+				<layout align="client">
+					<recordList name="rclAtaque"
+						field="campoDosItensAtaque"
+						templateForm="frmMacroColuna"
 						align="left"
-						width="560"
+						width="185"
 						selectable="true">
-				<event name="onSelect">
-					local node = self.rclListaDosItens.selectedNode;
-					self.boxDetalhesDoItem.node = node;
-					self.boxDetalhesDoItem.visible = (node ~= nil);
-				</event>
-			</recordList>
+						<event name="onSelect">
+							self.rclDanos.selectedNode = nil;
+							self.rclMagias.selectedNode = nil;
+							local node = self.rclAtaque.selectedNode;
+							self.boxDetalhesDoItem.node = node;
+							self.boxDetalhesDoItem.visible = (node ~= nil);
+						</event>
+					</recordList>
 
-			<!-- Coluna da direita fixa ao lado -->
-			<layout align="left" width="420" margins="{left=8}">
-				<dataScopeBox name="boxDetalhesDoItem" visible="false" align="top" height="180">
-					<rectangle align="client" color="#999999" xradius="10" yradius="10" padding="{top=3, left=3, right=3, bottom=3}">
-						<layout align="top" height="30" margins="{bottom=4}">
-							<label align="left" text="Ataque/Macro:" fontColor="black" autoSize="true"/>
-							<edit align="client" field="campoTitulo" fontColor="black"/>
-						</layout>
+					<recordList name="rclDanos"
+						field="campoDosItensDanos"
+						templateForm="frmMacroColuna"
+						align="left"
+						width="185"
+						selectable="true">
+						<event name="onSelect">
+							self.rclAtaque.selectedNode = nil;
+							self.rclMagias.selectedNode = nil;
+							local node = self.rclDanos.selectedNode;
+							self.boxDetalhesDoItem.node = node;
+							self.boxDetalhesDoItem.visible = (node ~= nil);
+						</event>
+					</recordList>
 
-						<layout align="top" height="30" margins="{bottom=4}">
-							<label align="left" text="Macro:" fontColor="black" autoSize="true"/>
-							<edit align="left" width="260" field="campoSubTitulo" name="edtMacro" fontColor="black" margins="{left=6}"/>
-							<button align="left" width="25" height="25" text="🎲" fontSize="14" fontColor="black" canFocus="false" cursor="handPoint" margins="{left=6}" hint="Rolar este macro na mesa">
-								<event name="onClick">
-									local nd = self.boxDetalhesDoItem.node;
-									if nd ~= nil then
-										TRPG_rollMacro(nd, nd.campoSubTitulo, nd.campoTitulo or "Ataque/Macro");
-									end;
-								</event>
-							</button>
-						</layout>
-
-						<layout align="top" height="100">
-							<label align="left" text="Descrição:" fontColor="black" autoSize="true"/>
-							<textEditor align="client" field="campoDescrição" fontColor="black"/>
-						</layout>
-					</rectangle>
-				</dataScopeBox>
+					<recordList name="rclMagias"
+						field="campoDosItensMagias"
+						templateForm="frmMacroColuna"
+						align="left"
+						width="185"
+						selectable="true">
+						<event name="onSelect">
+							self.rclAtaque.selectedNode = nil;
+							self.rclDanos.selectedNode = nil;
+							local node = self.rclMagias.selectedNode;
+							self.boxDetalhesDoItem.node = node;
+							self.boxDetalhesDoItem.visible = (node ~= nil);
+						</event>
+					</recordList>
+				</layout>
 			</layout>
+
+			<!-- Coluna da direita: detalhes -->
+			<layout align="left" width="420" margins="{left=10}">
+				<rectangle align="client" color="Gray" xradius="8" yradius="8"/>
+
+				<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
+					<rectangle align="client" color="Black" xradius="4" yradius="4"/>
+					<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="Detalhes do Macro"/>
+				</layout>
+
+				<layout name="boxDetalhesDoItem" align="client" margins="{left=8,right=8,top=6,bottom=8}" visible="false">
+					<label align="top" height="18" fontStyle="bold" text="Nome"/>
+					<edit align="top" height="26" field="campoTitulo" fontStyle="bold"/>
+
+					<label align="top" height="18" fontStyle="bold" text="Rolagem (Ataque/Dano/etc)"/>
+					<edit align="top" height="26" field="campoSubTitulo"/>
+
+					<label align="top" height="18" fontStyle="bold" text="Descrição"/>
+					<textEditor align="client" field="campoDescrição"/>
+				</layout>
+			</layout>
+
 		</layout>
 	</scrollBox>
-
-	<script>
-		<![CDATA[
-
-			if TRPG_rollMacro == nil then
-				function TRPG_rollMacro(nodeOrSheet, macroText, label)
-					if nodeOrSheet == nil then return end
-
-					local expr = tostring(macroText or ""):gsub("^%s+", ""):gsub("%s+$", "")
-					if expr == "" then
-						showMessage("Preencha o macro antes de rolar.")
-						return
-					end
-
-					local rolagem = rrpg.interpretarRolagem(expr)
-					if rolagem == nil then
-						showMessage("Rolagem inválida: " .. expr)
-						return
-					end
-
-					-- se não tiver dado, prefixa 1d20
-					if not rolagem.possuiAlgumDado then
-						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
-					end
-
-					local mesa = rrpg.getMesaDe(nodeOrSheet)
-					local titulo = tostring(label or "Rolagem")
-
-					if mesa ~= nil then
-						local chat = mesa.activeChat or mesa.chat
-						if chat ~= nil then
-							chat:rolarDados(rolagem, titulo)
-							return
-						end
-					end
-
-					-- fallback: rolar local e exibir
-					rolagem:rolarLocalmente()
-					showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
-				end
-			end
-
-		]]>
-	</script>
-
 </form>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmDefesaLinha" height="28" theme="light">
+  <layout align="client" height="28">
+    <edit align="left" width="110" field="categoria"/>
+    <edit align="left" width="190" field="nome" fontStyle="bold"/>
+    <edit align="left" width="90"  field="bonusCA" type="number" min="-99" max="99" horzTextAlign="center"/>
+    <edit align="left" width="140" field="bonusMaxDes" type="number" min="-99" max="99" horzTextAlign="center"/>
+    <edit align="left" width="120" field="penalidade" type="number" min="-99" max="99" horzTextAlign="center"/>
+    <edit align="left" width="70"  field="peso" type="number" min="0" max="9999" horzTextAlign="center"/>
+
+    <button align="left" width="26" text="X" hint="Excluir">
+      <event name="onClick">
+        if sheet ~= nil then ndb.deleteNode(sheet); end;
+      </event>
+    </button>
+  </layout>
+</form>
