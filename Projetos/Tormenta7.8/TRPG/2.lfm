@@ -716,7 +716,7 @@
 				vertTextAlign="center"/>
 		</layout>
 	</scrollBox>
-	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'}">
+	<dataLink fields="{'penarmadura', 'penescudo', 'penoutros', 'pencarga',  'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'}">
 		<event name="onChange">
 			onDataLinkChange();
 		</event>
@@ -792,6 +792,7 @@
 					local o = self[name]
 					if o ~= nil then o.hitTest = val end
 				end
+
 				ht("gradacrobacia", manual)
 				ht("gradadestrar", manual)
 				ht("gradatletismo", manual)
@@ -816,6 +817,7 @@
 				ht("gradoinformacao", manual)
 				ht("gradpercepcao", manual)
 				ht("gradsobrevivencia", manual)
+
 				ht("modacrobacia", manual)
 				ht("modadestrar", manual)
 				ht("modatletismo", manual)
@@ -840,6 +842,7 @@
 				ht("modoinformacao", manual)
 				ht("modpercepcao", manual)
 				ht("modsobrevivencia", manual)
+
 				ht("totalacrobacia", manual)
 				ht("totaladestrar", manual)
 				ht("totalatletismo", manual)
@@ -872,16 +875,37 @@
 				if sheet.calculos == true and sheet.__forceRecalc ~= true then
 					return
 				end
+
 				local function N(v, d)
 					local n = tonumber(v)
 					if n == nil then return d or 0 end
 					return n
 				end
+
 				-- metadenivel pode vir da Tela 1; garante aqui também
 				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+
 				local penA = math.floor(N(sheet.penarmadura))
 				local penE = math.floor(N(sheet.penescudo))
+				local penO = math.floor(N(sheet.penoutros))
+				local penC = math.floor(N(sheet.pencarga))
 
+				-- totalPericia(grad, mod, outros, sofrePenArmadura, sofrePenCarga)
+				local function totalPericia(grad, mod, outros, sofrePenArmadura, sofrePenCarga)
+					local t = math.floor(N(grad)) + math.floor(N(mod)) + math.floor(N(outros))
+
+					if sofrePenArmadura then
+						t = t - penA - penE - penO
+					end
+
+					if sofrePenCarga then
+						t = t - penC
+					end
+
+					return t
+				end
+
+				-- defaults das habilidades-base
 				if sheet.hab_acrobacia == nil or sheet.hab_acrobacia == "" then sheet.hab_acrobacia = "DES" end
 				if sheet.hab_adestrar == nil or sheet.hab_adestrar == "" then sheet.hab_adestrar = "CAR" end
 				if sheet.hab_atletismo == nil or sheet.hab_atletismo == "" then sheet.hab_atletismo = "FOR" end
@@ -910,233 +934,137 @@
 				local nivel = math.floor(N(sheet.nivel))
 				local metanivel = math.floor(N(sheet.metadenivel))
 
+				-- ⚔ = sofre penalidade de armadura/escudo/outros + carga
+				-- (Aqui estou assumindo que CARGA afeta as mesmas ⚔)
+				-- Se quiser mudar isso depois, é só alterar o último boolean.
+
+				-- Acrobacia ⚔
 				sheet.modacrobacia = TRPG_getMod(sheet, sheet.hab_acrobacia, 0)
-				if sheet.cbxacrobacia then
-					sheet.gradacrobacia = math.floor(nivel + 3)
-				else
-					sheet.gradacrobacia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradacrobacia)) + math.floor(N(sheet.modacrobacia)) + math.floor(N(sheet.outrosacrobacia))
-				total = total - penA - penE
-				sheet.totalacrobacia = total
+				if sheet.cbxacrobacia then sheet.gradacrobacia = math.floor(nivel + 3) else sheet.gradacrobacia = math.floor(metanivel) end
+				sheet.totalacrobacia = totalPericia(sheet.gradacrobacia, sheet.modacrobacia, sheet.outrosacrobacia, true, true)
 
+				-- Adestrar Animais ❄ (sem penalidades)
 				sheet.modadestrar = TRPG_getMod(sheet, sheet.hab_adestrar, 0)
-				if sheet.cbxadestrar then
-					sheet.gradadestrar = math.floor(nivel + 3)
-				else
-					sheet.gradadestrar = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradadestrar)) + math.floor(N(sheet.modadestrar)) + math.floor(N(sheet.outrosadestrar))
-				sheet.totaladestrar = total
+				if sheet.cbxadestrar then sheet.gradadestrar = math.floor(nivel + 3) else sheet.gradadestrar = math.floor(metanivel) end
+				sheet.totaladestrar = totalPericia(sheet.gradadestrar, sheet.modadestrar, sheet.outrosadestrar, false, false)
 
+				-- Atletismo ⚔
 				sheet.modatletismo = TRPG_getMod(sheet, sheet.hab_atletismo, 0)
-				if sheet.cbxatletismo then
-					sheet.gradatletismo = math.floor(nivel + 3)
-				else
-					sheet.gradatletismo = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatletismo)) + math.floor(N(sheet.modatletismo)) + math.floor(N(sheet.outrosatletismo))
-				total = total - penA - penE
-				sheet.totalatletismo = total
+				if sheet.cbxatletismo then sheet.gradatletismo = math.floor(nivel + 3) else sheet.gradatletismo = math.floor(metanivel) end
+				sheet.totalatletismo = totalPericia(sheet.gradatletismo, sheet.modatletismo, sheet.outrosatletismo, true, true)
 
+				-- Atuação (1)
 				sheet.modatuacao1 = TRPG_getMod(sheet, sheet.hab_atuacao1, 0)
-				if sheet.cbxatuacao1 then
-					sheet.gradatuacao1 = math.floor(nivel + 3)
-				else
-					sheet.gradatuacao1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatuacao1)) + math.floor(N(sheet.modatuacao1)) + math.floor(N(sheet.outrosatuacao1))
-				sheet.totalatuacao1 = total
+				if sheet.cbxatuacao1 then sheet.gradatuacao1 = math.floor(nivel + 3) else sheet.gradatuacao1 = math.floor(metanivel) end
+				sheet.totalatuacao1 = totalPericia(sheet.gradatuacao1, sheet.modatuacao1, sheet.outrosatuacao1, false, false)
 
+				-- Atuação (2)
 				sheet.modatuacao2 = TRPG_getMod(sheet, sheet.hab_atuacao2, 0)
-				if sheet.cbxatuacao2 then
-					sheet.gradatuacao2 = math.floor(nivel + 3)
-				else
-					sheet.gradatuacao2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatuacao2)) + math.floor(N(sheet.modatuacao2)) + math.floor(N(sheet.outrosatuacao2))
-				sheet.totalatuacao2 = total
+				if sheet.cbxatuacao2 then sheet.gradatuacao2 = math.floor(nivel + 3) else sheet.gradatuacao2 = math.floor(metanivel) end
+				sheet.totalatuacao2 = totalPericia(sheet.gradatuacao2, sheet.modatuacao2, sheet.outrosatuacao2, false, false)
 
-				sheet.modjogatina = TRPG_getMod(sheet, sheet.hab_jogatina, 0)
-				if sheet.cbxjogatina then
-					sheet.gradjogatina = math.floor(nivel + 3)
-				else
-					sheet.gradjogatina = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradjogatina)) + math.floor(N(sheet.modjogatina)) + math.floor(N(sheet.outrosjogatina))
-				sheet.totaljogatina = total
-
+				-- Cavalgar
 				sheet.modcavalgar = TRPG_getMod(sheet, sheet.hab_cavalgar, 0)
-				if sheet.cbxcavalgar then
-					sheet.gradcavalgar = math.floor(nivel + 3)
-				else
-					sheet.gradcavalgar = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradcavalgar)) + math.floor(N(sheet.modcavalgar)) + math.floor(N(sheet.outroscavalgar))
-				sheet.totalcavalgar = total
+				if sheet.cbxcavalgar then sheet.gradcavalgar = math.floor(nivel + 3) else sheet.gradcavalgar = math.floor(metanivel) end
+				sheet.totalcavalgar = totalPericia(sheet.gradcavalgar, sheet.modcavalgar, sheet.outroscavalgar, true, true)
 
+				-- Conhecimento (1) ❄
 				sheet.modconhecimento1 = TRPG_getMod(sheet, sheet.hab_conhecimento1, 0)
-				if sheet.cbxconhecimento1 then
-					sheet.gradconhecimento1 = math.floor(nivel + 3)
-				else
-					sheet.gradconhecimento1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradconhecimento1)) + math.floor(N(sheet.modconhecimento1)) + math.floor(N(sheet.outrosconhecimento1))
-				sheet.totalconhecimento1 = total
+				if sheet.cbxconhecimento1 then sheet.gradconhecimento1 = math.floor(nivel + 3) else sheet.gradconhecimento1 = math.floor(metanivel) end
+				sheet.totalconhecimento1 = totalPericia(sheet.gradconhecimento1, sheet.modconhecimento1, sheet.outrosconhecimento1, false, false)
 
+				-- Conhecimento (2) ❄
 				sheet.modconhecimento2 = TRPG_getMod(sheet, sheet.hab_conhecimento2, 0)
-				if sheet.cbxconhecimento2 then
-					sheet.gradconhecimento2 = math.floor(nivel + 3)
-				else
-					sheet.gradconhecimento2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradconhecimento2)) + math.floor(N(sheet.modconhecimento2)) + math.floor(N(sheet.outrosconhecimento2))
-				sheet.totalconhecimento2 = total
+				if sheet.cbxconhecimento2 then sheet.gradconhecimento2 = math.floor(nivel + 3) else sheet.gradconhecimento2 = math.floor(metanivel) end
+				sheet.totalconhecimento2 = totalPericia(sheet.gradconhecimento2, sheet.modconhecimento2, sheet.outrosconhecimento2, false, false)
 
+				-- Cura
 				sheet.modcura = TRPG_getMod(sheet, sheet.hab_cura, 0)
-				if sheet.cbxcura then
-					sheet.gradcura = math.floor(nivel + 3)
-				else
-					sheet.gradcura = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradcura)) + math.floor(N(sheet.modcura)) + math.floor(N(sheet.outroscura))
-				sheet.totalcura = total
+				if sheet.cbxcura then sheet.gradcura = math.floor(nivel + 3) else sheet.gradcura = math.floor(metanivel) end
+				sheet.totalcura = totalPericia(sheet.gradcura, sheet.modcura, sheet.outroscura, false, false)
 
+				-- Diplomacia
 				sheet.moddiplomacia = TRPG_getMod(sheet, sheet.hab_diplomacia, 0)
-				if sheet.cbxdiplomacia then
-					sheet.graddiplomacia = math.floor(nivel + 3)
-				else
-					sheet.graddiplomacia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.graddiplomacia)) + math.floor(N(sheet.moddiplomacia)) + math.floor(N(sheet.outrosdiplomacia))
-				sheet.totaldiplomacia = total
+				if sheet.cbxdiplomacia then sheet.graddiplomacia = math.floor(nivel + 3) else sheet.graddiplomacia = math.floor(metanivel) end
+				sheet.totaldiplomacia = totalPericia(sheet.graddiplomacia, sheet.moddiplomacia, sheet.outrosdiplomacia, false, false)
 
+				-- Enganação
 				sheet.modenganacao = TRPG_getMod(sheet, sheet.hab_enganacao, 0)
-				if sheet.cbxenganacao then
-					sheet.gradenganacao = math.floor(nivel + 3)
-				else
-					sheet.gradenganacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradenganacao)) + math.floor(N(sheet.modenganacao)) + math.floor(N(sheet.outrosenganacao))
-				sheet.totalenganacao = total
+				if sheet.cbxenganacao then sheet.gradenganacao = math.floor(nivel + 3) else sheet.gradenganacao = math.floor(metanivel) end
+				sheet.totalenganacao = totalPericia(sheet.gradenganacao, sheet.modenganacao, sheet.outrosenganacao, false, false)
 
+				-- Furtividade ⚔
 				sheet.modfurtividade = TRPG_getMod(sheet, sheet.hab_furtividade, 0)
-				if sheet.cbxfurtividade then
-					sheet.gradfurtividade = math.floor(nivel + 3)
-				else
-					sheet.gradfurtividade = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradfurtividade)) + math.floor(N(sheet.modfurtividade)) + math.floor(N(sheet.outrosfurtividade))
-				total = total - penA - penE
-				sheet.totalfurtividade = total
+				if sheet.cbxfurtividade then sheet.gradfurtividade = math.floor(nivel + 3) else sheet.gradfurtividade = math.floor(metanivel) end
+				sheet.totalfurtividade = totalPericia(sheet.gradfurtividade, sheet.modfurtividade, sheet.outrosfurtividade, true, true)
 
+				-- Identificar Magia ❄
 				sheet.modimagia = TRPG_getMod(sheet, sheet.hab_imagia, 0)
-				if sheet.cbximagia then
-					sheet.gradimagia = math.floor(nivel + 3)
-				else
-					sheet.gradimagia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradimagia)) + math.floor(N(sheet.modimagia)) + math.floor(N(sheet.outrosimagia))
-				sheet.totalimagia = total
+				if sheet.cbximagia then sheet.gradimagia = math.floor(nivel + 3) else sheet.gradimagia = math.floor(metanivel) end
+				sheet.totalimagia = totalPericia(sheet.gradimagia, sheet.modimagia, sheet.outrosimagia, false, false)
 
+				-- Iniciativa
 				sheet.modiniciativa = TRPG_getMod(sheet, sheet.hab_iniciativa, 0)
-				if sheet.cbxiniciativa then
-					sheet.gradiniciativa = math.floor(nivel + 3)
-				else
-					sheet.gradiniciativa = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradiniciativa)) + math.floor(N(sheet.modiniciativa)) + math.floor(N(sheet.outrosiniciativa))
-				sheet.totaliniciativa = total
+				if sheet.cbxiniciativa then sheet.gradiniciativa = math.floor(nivel + 3) else sheet.gradiniciativa = math.floor(metanivel) end
+				sheet.totaliniciativa = totalPericia(sheet.gradiniciativa, sheet.modiniciativa, sheet.outrosiniciativa, false, false)
 
+				-- Intimidação
 				sheet.modintimidacao = TRPG_getMod(sheet, sheet.hab_intimidacao, 0)
-				if sheet.cbxintimidacao then
-					sheet.gradintimidacao = math.floor(nivel + 3)
-				else
-					sheet.gradintimidacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradintimidacao)) + math.floor(N(sheet.modintimidacao)) + math.floor(N(sheet.outrosintimidacao))
-				sheet.totalintimidacao = total
+				if sheet.cbxintimidacao then sheet.gradintimidacao = math.floor(nivel + 3) else sheet.gradintimidacao = math.floor(metanivel) end
+				sheet.totalintimidacao = totalPericia(sheet.gradintimidacao, sheet.modintimidacao, sheet.outrosintimidacao, false, false)
 
+				-- Intuição
 				sheet.modintuicao = TRPG_getMod(sheet, sheet.hab_intuicao, 0)
-				if sheet.cbxintuicao then
-					sheet.gradintuicao = math.floor(nivel + 3)
-				else
-					sheet.gradintuicao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradintuicao)) + math.floor(N(sheet.modintuicao)) + math.floor(N(sheet.outrosintuicao))
-				sheet.totalintuicao = total
+				if sheet.cbxintuicao then sheet.gradintuicao = math.floor(nivel + 3) else sheet.gradintuicao = math.floor(metanivel) end
+				sheet.totalintuicao = totalPericia(sheet.gradintuicao, sheet.modintuicao, sheet.outrosintuicao, false, false)
 
+				-- Jogatina
+				sheet.modjogatina = TRPG_getMod(sheet, sheet.hab_jogatina, 0)
+				if sheet.cbxjogatina then sheet.gradjogatina = math.floor(nivel + 3) else sheet.gradjogatina = math.floor(metanivel) end
+				sheet.totaljogatina = totalPericia(sheet.gradjogatina, sheet.modjogatina, sheet.outrosjogatina, false, false)
+
+				-- Ladinagem ⚔❄
 				sheet.modladinagem = TRPG_getMod(sheet, sheet.hab_ladinagem, 0)
-				if sheet.cbxladinagem then
-					sheet.gradladinagem = math.floor(nivel + 3)
-				else
-					sheet.gradladinagem = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradladinagem)) + math.floor(N(sheet.modladinagem)) + math.floor(N(sheet.outrosladinagem))
-				total = total - penA - penE
-				sheet.totalladinagem = total
+				if sheet.cbxladinagem then sheet.gradladinagem = math.floor(nivel + 3) else sheet.gradladinagem = math.floor(metanivel) end
+				sheet.totalladinagem = totalPericia(sheet.gradladinagem, sheet.modladinagem, sheet.outrosladinagem, true, true)
 
+				-- Obter Informação
 				sheet.modoinformacao = TRPG_getMod(sheet, sheet.hab_oinformacao, 0)
-				if sheet.cbxoinformacao then
-					sheet.gradoinformacao = math.floor(nivel + 3)
-				else
-					sheet.gradoinformacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoinformacao)) + math.floor(N(sheet.modoinformacao)) + math.floor(N(sheet.outrosoinformacao))
-				sheet.totaloinformacao = total
+				if sheet.cbxoinformacao then sheet.gradoinformacao = math.floor(nivel + 3) else sheet.gradoinformacao = math.floor(metanivel) end
+				sheet.totaloinformacao = totalPericia(sheet.gradoinformacao, sheet.modoinformacao, sheet.outrosoinformacao, false, false)
 
+				-- Ofício (1)
 				sheet.modoficio1 = TRPG_getMod(sheet, sheet.hab_oficio1, 0)
-				if sheet.cbxoficio1 then
-					sheet.gradoficio1 = math.floor(nivel + 3)
-				else
-					sheet.gradoficio1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoficio1)) + math.floor(N(sheet.modoficio1)) + math.floor(N(sheet.outrosoficio1))
-				sheet.totaloficio1 = total
+				if sheet.cbxoficio1 then sheet.gradoficio1 = math.floor(nivel + 3) else sheet.gradoficio1 = math.floor(metanivel) end
+				sheet.totaloficio1 = totalPericia(sheet.gradoficio1, sheet.modoficio1, sheet.outrosoficio1, false, false)
 
+				-- Ofício (2)
 				sheet.modoficio2 = TRPG_getMod(sheet, sheet.hab_oficio2, 0)
-				if sheet.cbxoficio2 then
-					sheet.gradoficio2 = math.floor(nivel + 3)
-				else
-					sheet.gradoficio2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoficio2)) + math.floor(N(sheet.modoficio2)) + math.floor(N(sheet.outrosoficio2))
-				sheet.totaloficio2 = total
+				if sheet.cbxoficio2 then sheet.gradoficio2 = math.floor(nivel + 3) else sheet.gradoficio2 = math.floor(metanivel) end
+				sheet.totaloficio2 = totalPericia(sheet.gradoficio2, sheet.modoficio2, sheet.outrosoficio2, false, false)
 
+				-- Meditação ❄
 				sheet.modmeditacao = TRPG_getMod(sheet, sheet.hab_meditacao, 0)
-				if sheet.cbxmeditacao then
-					sheet.gradmeditacao = math.floor(nivel + 3)
-				else
-					sheet.gradmeditacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradmeditacao)) + math.floor(N(sheet.modmeditacao)) + math.floor(N(sheet.outrosmeditacao))
-				sheet.totalmeditacao = total
+				if sheet.cbxmeditacao then sheet.gradmeditacao = math.floor(nivel + 3) else sheet.gradmeditacao = math.floor(metanivel) end
+				sheet.totalmeditacao = totalPericia(sheet.gradmeditacao, sheet.modmeditacao, sheet.outrosmeditacao, false, false)
 
+				-- Percepção
 				sheet.modpercepcao = TRPG_getMod(sheet, sheet.hab_percepcao, 0)
-				if sheet.cbxpercepcao then
-					sheet.gradpercepcao = math.floor(nivel + 3)
-				else
-					sheet.gradpercepcao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradpercepcao)) + math.floor(N(sheet.modpercepcao)) + math.floor(N(sheet.outrospercepcao))
-				sheet.totalpercepcao = total
+				if sheet.cbxpercepcao then sheet.gradpercepcao = math.floor(nivel + 3) else sheet.gradpercepcao = math.floor(metanivel) end
+				sheet.totalpercepcao = totalPericia(sheet.gradpercepcao, sheet.modpercepcao, sheet.outrospercepcao, false, false)
 
+				-- Sobrevivência
 				sheet.modsobrevivencia = TRPG_getMod(sheet, sheet.hab_sobrevivencia, 0)
-				if sheet.cbxsobrevivencia then
-					sheet.gradsobrevivencia = math.floor(nivel + 3)
-				else
-					sheet.gradsobrevivencia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradsobrevivencia)) + math.floor(N(sheet.modsobrevivencia)) + math.floor(N(sheet.outrossobrevivencia))
-				sheet.totalsobrevivencia = total
-
+				if sheet.cbxsobrevivencia then sheet.gradsobrevivencia = math.floor(nivel + 3) else sheet.gradsobrevivencia = math.floor(metanivel) end
+				sheet.totalsobrevivencia = totalPericia(sheet.gradsobrevivencia, sheet.modsobrevivencia, sheet.outrossobrevivencia, false, false)
 			end
+
+
 
 			function onDataLinkChange()
 				desCalculos2()
 				recalcAll2()
 			end
-
 		]]>
 	</script>
 </form>

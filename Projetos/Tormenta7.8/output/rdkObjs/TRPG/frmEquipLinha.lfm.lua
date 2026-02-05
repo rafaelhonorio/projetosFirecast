@@ -40,7 +40,7 @@ function newfrmEquipLinha()
     obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setAlign("left");
-    obj.edit1:setWidth(334);
+    obj.edit1:setWidth(296);
     obj.edit1:setField("nome");
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
@@ -48,7 +48,7 @@ function newfrmEquipLinha()
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout1);
     obj.edit2:setAlign("left");
-    obj.edit2:setWidth(100);
+    obj.edit2:setWidth(70);
     obj.edit2:setField("valor");
     obj.edit2:setHorzTextAlign("center");
     obj.edit2:setName("edit2");
@@ -72,36 +72,71 @@ function newfrmEquipLinha()
     obj.button1:setHint("Excluir item");
     obj.button1:setName("button1");
 
+    obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.layout1);
+    obj.dataLink1:setFields({'peso'});
+    obj.dataLink1:setName("dataLink1");
+
     obj._e_event0 = obj.layout1:addEventListener("onMouseDown",
         function (self, event)
             local rl = self:findControlByName("rclEquip");
                   if rl ~= nil then rl.selectedNode = sheet; end;
+            
+                  local box = self:findControlByName("boxEquipDetalhes");
+                  if box ~= nil then
+                    box.node = sheet;
+                    box.visible = true;
+                  end;
         end, obj);
 
-    obj._e_event1 = obj.edit1:addEventListener("onClick",
+    obj._e_event1 = obj.edit1:addEventListener("onEnter",
         function (self)
             local rl = self:findControlByName("rclEquip");
                     if rl ~= nil then rl.selectedNode = sheet; end;
+            
+                    local box = self:findControlByName("boxEquipDetalhes");
+                    if box ~= nil then box.node = sheet; box.visible = true; end;
         end, obj);
 
-    obj._e_event2 = obj.edit2:addEventListener("onClick",
+    obj._e_event2 = obj.edit2:addEventListener("onEnter",
         function (self)
             local rl = self:findControlByName("rclEquip");
                     if rl ~= nil then rl.selectedNode = sheet; end;
+            
+                    local box = self:findControlByName("boxEquipDetalhes");
+                    if box ~= nil then box.node = sheet; box.visible = true; end;
         end, obj);
 
-    obj._e_event3 = obj.edit3:addEventListener("onClick",
+    obj._e_event3 = obj.edit3:addEventListener("onEnter",
         function (self)
             local rl = self:findControlByName("rclEquip");
                     if rl ~= nil then rl.selectedNode = sheet; end;
+            
+                    local box = self:findControlByName("boxEquipDetalhes");
+                    if box ~= nil then box.node = sheet; box.visible = true; end;
         end, obj);
 
     obj._e_event4 = obj.button1:addEventListener("onClick",
         function (self)
-            ndb.deleteNode(sheet);
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      ndb.deleteNode(sheet);
+                      TRPG_touch03(root);
+                    end;
+        end, obj);
+
+    obj._e_event5 = obj.dataLink1:addEventListener("onChange",
+        function (self, field, oldValue, newValue)
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
         __o_rrpgObjs.removeEventListenerById(self._e_event4);
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
@@ -123,6 +158,7 @@ function newfrmEquipLinha()
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         self:_oldLFMDestroy();
     end;
 

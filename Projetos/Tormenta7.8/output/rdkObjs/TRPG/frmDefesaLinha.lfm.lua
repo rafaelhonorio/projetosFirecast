@@ -39,14 +39,14 @@ function newfrmDefesaLinha()
     obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setAlign("left");
-    obj.edit1:setWidth(110);
+    obj.edit1:setWidth(80);
     obj.edit1:setField("categoria");
     obj.edit1:setName("edit1");
 
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout1);
     obj.edit2:setAlign("left");
-    obj.edit2:setWidth(190);
+    obj.edit2:setWidth(140);
     obj.edit2:setField("nome");
     lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setName("edit2");
@@ -54,7 +54,7 @@ function newfrmDefesaLinha()
     obj.edit3 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.layout1);
     obj.edit3:setAlign("left");
-    obj.edit3:setWidth(90);
+    obj.edit3:setWidth(55);
     obj.edit3:setField("bonusCA");
     obj.edit3:setType("number");
     obj.edit3:setMin(-99);
@@ -65,7 +65,7 @@ function newfrmDefesaLinha()
     obj.edit4 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit4:setParent(obj.layout1);
     obj.edit4:setAlign("left");
-    obj.edit4:setWidth(140);
+    obj.edit4:setWidth(70);
     obj.edit4:setField("bonusMaxDes");
     obj.edit4:setType("number");
     obj.edit4:setMin(-99);
@@ -76,7 +76,7 @@ function newfrmDefesaLinha()
     obj.edit5 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit5:setParent(obj.layout1);
     obj.edit5:setAlign("left");
-    obj.edit5:setWidth(120);
+    obj.edit5:setWidth(65);
     obj.edit5:setField("penalidade");
     obj.edit5:setType("number");
     obj.edit5:setMin(-99);
@@ -87,7 +87,7 @@ function newfrmDefesaLinha()
     obj.edit6 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit6:setParent(obj.layout1);
     obj.edit6:setAlign("left");
-    obj.edit6:setWidth(70);
+    obj.edit6:setWidth(40);
     obj.edit6:setField("peso");
     obj.edit6:setType("number");
     obj.edit6:setMin(0);
@@ -98,17 +98,62 @@ function newfrmDefesaLinha()
     obj.button1 = gui.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
-    obj.button1:setWidth(26);
+    obj.button1:setWidth(24);
     obj.button1:setText("X");
     obj.button1:setHint("Excluir");
     obj.button1:setName("button1");
 
-    obj._e_event0 = obj.button1:addEventListener("onClick",
+    obj._e_event0 = obj.edit3:addEventListener("onChange",
         function (self)
-            if sheet ~= nil then ndb.deleteNode(sheet); end;
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event1 = obj.edit4:addEventListener("onChange",
+        function (self)
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event2 = obj.edit5:addEventListener("onChange",
+        function (self)
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event3 = obj.edit6:addEventListener("onChange",
+        function (self)
+            -- se peso impacta carga, mantém __recalc03
+                    if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
+            
+                    -- e também toca a CA (caso você use peso pra algo de defesa, ou só pra padronizar)
+                    TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event4 = obj.button1:addEventListener("onClick",
+        function (self)
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+            
+                      -- toca antes de deletar (depois o node some)
+                      TRPG_touchCA(sheet);
+            
+                      ndb.deleteNode(sheet);
+            
+                      -- mantém seu gatilho de tela 3/carga, se você usa
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event4);
+        __o_rrpgObjs.removeEventListenerById(self._e_event3);
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
+        __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 

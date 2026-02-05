@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="frmDefesaLinha" height="28" theme="light">
   <layout align="client" height="28">
-    <edit align="left" width="110" field="categoria"/>
-    <edit align="left" width="190" field="nome" fontStyle="bold"/>
-    <edit align="left" width="90"  field="bonusCA" type="number" min="-99" max="99" horzTextAlign="center"/>
-    <edit align="left" width="140" field="bonusMaxDes" type="number" min="-99" max="99" horzTextAlign="center"/>
-    <edit align="left" width="120" field="penalidade" type="number" min="-99" max="99" horzTextAlign="center"/>
-    <edit align="left" width="70"  field="peso" type="number" min="0" max="9999" horzTextAlign="center"/>
 
-    <button align="left" width="26" text="X" hint="Excluir">
+    <edit align="left" width="80" field="categoria"/>
+    <edit align="left" width="140" field="nome" fontStyle="bold"/>
+    <edit align="left" width="55" field="bonusCA" type="number" min="-99" max="99" horzTextAlign="center">
+        <event name="onChange">
+            TRPG_touchCA(sheet);
+        </event>
+    </edit>
+    <edit align="left" width="70" field="bonusMaxDes" type="number" min="-99" max="99" horzTextAlign="center">
+        <event name="onChange">
+            TRPG_touchCA(sheet);
+        </event>
+    </edit>
+    <edit align="left" width="65" field="penalidade" type="number" min="-99" max="99" horzTextAlign="center">
+        <event name="onChange">
+            TRPG_touchCA(sheet);
+        </event>
+    </edit>
+    <edit align="left" width="40" field="peso" type="number" min="0" max="9999" horzTextAlign="center">
+      <event name="onChange">
+        -- se peso impacta carga, mantém __recalc03
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+
+        -- e também toca a CA (caso você use peso pra algo de defesa, ou só pra padronizar)
+        TRPG_touchCA(sheet);
+      </event>
+    </edit>
+
+    <button align="left" width="24" text="X" hint="Excluir">
       <event name="onClick">
-        if sheet ~= nil then ndb.deleteNode(sheet); end;
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+
+          -- toca antes de deletar (depois o node some)
+          TRPG_touchCA(sheet);
+
+          ndb.deleteNode(sheet);
+
+          -- mantém seu gatilho de tela 3/carga, se você usa
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
       </event>
     </button>
   </layout>

@@ -1379,20 +1379,20 @@ function newTormenta01()
     obj.label27:setVertTextAlign("center");
     obj.label27:setName("label27");
 
-    obj.caExtra = gui.fromHandle(_obj_newObject("edit"));
-    obj.caExtra:setParent(obj.layout16);
-    obj.caExtra:setLeft(324);
-    obj.caExtra:setTop(15);
-    obj.caExtra:setWidth(60);
-    obj.caExtra:setHeight(25);
-    obj.caExtra:setName("caExtra");
-    obj.caExtra:setField("caExtra");
-    obj.caExtra:setType("number");
-    obj.caExtra:setHorzTextAlign("center");
-    obj.caExtra:setFontSize(15.0);
-    lfm_setPropAsString(obj.caExtra, "fontStyle",  "bold");
-    obj.caExtra:setFontColor("black");
-    obj.caExtra:setHitTest(false);
+    obj.ca3 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca3:setParent(obj.layout16);
+    obj.ca3:setLeft(324);
+    obj.ca3:setTop(15);
+    obj.ca3:setWidth(60);
+    obj.ca3:setHeight(25);
+    obj.ca3:setName("ca3");
+    obj.ca3:setField("ca3");
+    obj.ca3:setType("number");
+    obj.ca3:setHorzTextAlign("center");
+    obj.ca3:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca3, "fontStyle",  "bold");
+    obj.ca3:setFontColor("black");
+    obj.ca3:setHitTest(false);
 
     obj.rectangle28 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle28:setParent(obj.layout16);
@@ -1448,19 +1448,20 @@ function newTormenta01()
     obj.label29:setVertTextAlign("center");
     obj.label29:setName("label29");
 
-    obj.ca3 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca3:setParent(obj.layout16);
-    obj.ca3:setLeft(408);
-    obj.ca3:setTop(15);
-    obj.ca3:setWidth(60);
-    obj.ca3:setHeight(25);
-    obj.ca3:setName("ca3");
-    obj.ca3:setField("ca3");
-    obj.ca3:setType("number");
-    obj.ca3:setHorzTextAlign("center");
-    obj.ca3:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca3, "fontStyle",  "bold");
-    obj.ca3:setFontColor("black");
+    obj.ca4 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca4:setParent(obj.layout16);
+    obj.ca4:setLeft(408);
+    obj.ca4:setTop(15);
+    obj.ca4:setWidth(60);
+    obj.ca4:setHeight(25);
+    obj.ca4:setName("ca4");
+    obj.ca4:setField("ca4");
+    obj.ca4:setType("number");
+    obj.ca4:setHorzTextAlign("center");
+    obj.ca4:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca4, "fontStyle",  "bold");
+    obj.ca4:setFontColor("black");
+    obj.ca4:setHitTest(false);
 
     obj.rectangle30 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle30:setParent(obj.layout16);
@@ -1516,21 +1517,20 @@ function newTormenta01()
     obj.label31:setVertTextAlign("center");
     obj.label31:setName("label31");
 
-    obj.ca4 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca4:setParent(obj.layout16);
-    obj.ca4:setLeft(492);
-    obj.ca4:setTop(15);
-    obj.ca4:setWidth(60);
-    obj.ca4:setHeight(25);
-    obj.ca4:setName("ca4");
-    obj.ca4:setField("ca4");
-    obj.ca4:setType("number");
-    obj.ca4:setMin(-99);
-    obj.ca4:setMax(99);
-    obj.ca4:setHorzTextAlign("center");
-    obj.ca4:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca4, "fontStyle",  "bold");
-    obj.ca4:setFontColor("black");
+    obj.ca5 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca5:setParent(obj.layout16);
+    obj.ca5:setLeft(492);
+    obj.ca5:setTop(15);
+    obj.ca5:setWidth(60);
+    obj.ca5:setHeight(25);
+    obj.ca5:setName("ca5");
+    obj.ca5:setField("ca5");
+    obj.ca5:setType("number");
+    obj.ca5:setHorzTextAlign("center");
+    obj.ca5:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca5, "fontStyle",  "bold");
+    obj.ca5:setFontColor("black");
+    obj.ca5:setHitTest(false);
 
     obj.rectangle32 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle32:setParent(obj.layout16);
@@ -1586,21 +1586,21 @@ function newTormenta01()
     obj.label33:setVertTextAlign("center");
     obj.label33:setName("label33");
 
-    obj.caTamanho = gui.fromHandle(_obj_newObject("edit"));
-    obj.caTamanho:setParent(obj.layout16);
-    obj.caTamanho:setLeft(576);
-    obj.caTamanho:setTop(15);
-    obj.caTamanho:setWidth(60);
-    obj.caTamanho:setHeight(25);
-    obj.caTamanho:setName("caTamanho");
-    obj.caTamanho:setField("caTamanho");
-    obj.caTamanho:setType("number");
-    obj.caTamanho:setMin(-99);
-    obj.caTamanho:setMax(99);
-    obj.caTamanho:setHorzTextAlign("center");
-    obj.caTamanho:setFontSize(15.0);
-    lfm_setPropAsString(obj.caTamanho, "fontStyle",  "bold");
-    obj.caTamanho:setFontColor("black");
+    obj.ca6 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca6:setParent(obj.layout16);
+    obj.ca6:setLeft(576);
+    obj.ca6:setTop(15);
+    obj.ca6:setWidth(60);
+    obj.ca6:setHeight(25);
+    obj.ca6:setName("ca6");
+    obj.ca6:setField("ca6");
+    obj.ca6:setType("number");
+    obj.ca6:setMin(-99);
+    obj.ca6:setMax(99);
+    obj.ca6:setHorzTextAlign("center");
+    obj.ca6:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca6, "fontStyle",  "bold");
+    obj.ca6:setFontColor("black");
 
     obj.rectangle34 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle34:setParent(obj.layout16);
@@ -1654,19 +1654,20 @@ function newTormenta01()
     obj.label35:setVertTextAlign("center");
     obj.label35:setName("label35");
 
-    obj.ca5 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca5:setParent(obj.layout16);
-    obj.ca5:setLeft(660);
-    obj.ca5:setTop(15);
-    obj.ca5:setWidth(60);
-    obj.ca5:setHeight(25);
-    obj.ca5:setName("ca5");
-    obj.ca5:setField("ca5");
-    obj.ca5:setType("number");
-    obj.ca5:setHorzTextAlign("center");
-    obj.ca5:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca5, "fontStyle",  "bold");
-    obj.ca5:setFontColor("black");
+    obj.ca7 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca7:setParent(obj.layout16);
+    obj.ca7:setLeft(660);
+    obj.ca7:setTop(15);
+    obj.ca7:setWidth(60);
+    obj.ca7:setHeight(25);
+    obj.ca7:setName("ca7");
+    obj.ca7:setField("ca7");
+    obj.ca7:setType("number");
+    obj.ca7:setHorzTextAlign("center");
+    obj.ca7:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca7, "fontStyle",  "bold");
+    obj.ca7:setFontColor("black");
+    obj.ca7:setHitTest(false);
 
     obj.layout28 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout28:setParent(obj.scrollBox1);
@@ -3823,7 +3824,7 @@ function newTormenta01()
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'caTamanho', 'caExtra', 'ca3','ca4','ca5','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -3999,6 +4000,64 @@ function newTormenta01()
 				)
 			end
 
+			local function getChildNodesSafe(listNode)
+				if listNode == nil then return {} end
+				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
+				if ok and children ~= nil then return children end
+				return {}
+			end
+
+			local function trimLower(s)
+				s = tostring(s or ""):gsub("^%s+",""):gsub("%s+$","")
+				return s:lower()
+			end
+
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			-- Ajuste os nomes de campo abaixo se no seu node forem diferentes:
+			-- bonusCA = n.bca
+			-- bmDex   = n.bmdex
+			function TRPG_calcDefesasCA(sheet)
+				local armadura = 0
+				local escudo   = 0
+				local outros   = 0
+				local capDex   = nil -- menor bônus máximo de DES entre armaduras
+
+				for _, n in ipairs(getChildNodesSafe(sheet.listaDefesas)) do
+					local cat = trimLower(n.categoria)
+
+					local bonusCA = N(n.bonusCA, 0)
+					local bmDex   = tonumber(n.bonusMaxDes)
+
+					if cat == "armadura" then
+						armadura = armadura + bonusCA
+
+						-- só aplica cap se for um valor "válido"
+						-- (se estiver vazio/0/negativo, trata como "sem limite" e ignora)
+						if bmDex ~= nil then
+							bmDex = math.floor(bmDex)
+							if bmDex > 0 then
+								if capDex == nil or bmDex < capDex then
+									capDex = bmDex
+								end
+							end
+						end
+
+					elseif cat == "escudo" then
+						escudo = escudo + bonusCA
+
+					elseif cat == "outros" then
+						outros = outros + bonusCA
+					end
+				end
+
+				return armadura, escudo, outros, capDex
+			end
+
 			function recalcAll()
 				if sheet == nil then return end
 
@@ -4054,23 +4113,35 @@ function newTormenta01()
 				-- Mod H padrão da CA (mantém Destreza)
 				sheet.ca2 = N(sheet.moddestreza)
 
-				-- Defaults (pra não somar nil)
-				if sheet.ca3 == nil then sheet.ca3 = 0 end
-				if sheet.ca4 == nil then sheet.ca4 = 0 end
-				if sheet.ca5 == nil then sheet.ca5 = 0 end
-				if sheet.caTamanho == nil then sheet.caTamanho = 0 end
+				local arm, esc, outrosEq, capDex = TRPG_calcDefesasCA(sheet)
 
-				-- ===== Extra (botão A) =====
-				local extraCode = tostring(sheet.ca_extraHab or ""):upper()
-				if extraCode == "" then
-					sheet.caExtra = 0
+				local modDes = math.floor(N(sheet.moddestreza, 0))
+				if capDex ~= nil and modDes > capDex then
+					sheet.ca2 = capDex
 				else
-					sheet.caExtra = TRPG_getMod(sheet, extraCode, 0)
+					sheet.ca2 = modDes
 				end
 
-				-- ORDEM NOVA:
-				-- TOTAL = CA BASE + MOD H + EXTRA + ARMADURA + ESCUDO + TAM + OUTROS
-				sheet.totalca = math.floor(N(sheet.ca1)) + math.floor(N(sheet.ca2)) + math.floor(N(sheet.caExtra)) + math.floor(N(sheet.ca3)) + math.floor(N(sheet.ca4)) + math.floor(N(sheet.caTamanho)) + math.floor(N(sheet.ca5))
+				-- ===== Extra (botão A) agora é ca3 =====
+				local extraCode = tostring(sheet.ca_extraHab or ""):upper()
+				if extraCode == "" then
+					sheet.ca3 = 0
+				else
+					sheet.ca3 = math.floor(TRPG_getMod(sheet, extraCode, 0))
+				end
+
+				-- ===== Armadura / Escudo vindos da Tela 3 =====
+				sheet.ca4 = math.floor(arm)
+				sheet.ca5 = math.floor(esc)
+				sheet.ca7 = math.floor(outrosEq)
+
+				-- ===== Tamanho agora é ca6 =====
+				if sheet.ca6 == nil then sheet.ca6 = 0 end  -- ou mantém default
+
+				-- ===== TOTAL na ordem nova =====
+				sheet.totalca =
+					math.floor(N(sheet.ca1)) + math.floor(N(sheet.ca2)) + math.floor(N(sheet.ca3)) + math.floor(N(sheet.ca4)) +
+					math.floor(N(sheet.ca5)) + math.floor(N(sheet.ca6)) + math.floor(N(sheet.ca7))
 
 				sheet.fort1 = N(sheet.metadenivel)
 				sheet.fort2 = TRPG_getMod(sheet, sheet.hab_fort, N(sheet.modconstituicao))
@@ -4132,6 +4203,38 @@ function newTormenta01()
 
 					rolagem:rolarLocalmente()
 					showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+				end
+			end
+
+			-- garante rootOf (alguns projetos antigos tinham isso pronto)
+			if rootOf == nil then
+				function rootOf(node)
+					if node == nil then return nil end
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					if ok then return r end
+					return nil
+				end
+			end
+
+			-- versão segura do touch da CA
+			function TRPG_touchCA(node)
+				if node == nil then return end
+
+				local root = nil
+
+				-- tenta rootOf (se existir)
+				if rootOf ~= nil then
+					root = rootOf(node)
+				end
+
+				-- fallback direto pro ndb.getRoot
+				if root == nil then
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					if ok then root = r end
+				end
+
+				if root ~= nil then
+					root.__recalcCA = (tonumber(root.__recalcCA) or 0) + 1
 				end
 			end
 
@@ -4383,7 +4486,6 @@ function newTormenta01()
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
-        if self.caTamanho ~= nil then self.caTamanho:destroy(); self.caTamanho = nil; end;
         if self.rectangle55 ~= nil then self.rectangle55:destroy(); self.rectangle55 = nil; end;
         if self.rectangle65 ~= nil then self.rectangle65:destroy(); self.rectangle65 = nil; end;
         if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
@@ -4581,6 +4683,7 @@ function newTormenta01()
         if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
         if self.rectangle84 ~= nil then self.rectangle84:destroy(); self.rectangle84 = nil; end;
         if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
+        if self.ca6 ~= nil then self.ca6:destroy(); self.ca6 = nil; end;
         if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
@@ -4593,8 +4696,8 @@ function newTormenta01()
         if self.modconstituicao ~= nil then self.modconstituicao:destroy(); self.modconstituicao = nil; end;
         if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
         if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
-        if self.caExtra ~= nil then self.caExtra:destroy(); self.caExtra = nil; end;
         if self.edit32 ~= nil then self.edit32:destroy(); self.edit32 = nil; end;
+        if self.ca7 ~= nil then self.ca7:destroy(); self.ca7 = nil; end;
         if self.update ~= nil then self.update:destroy(); self.update = nil; end;
         if self.rectangle24 ~= nil then self.rectangle24:destroy(); self.rectangle24 = nil; end;
         if self.rectangle34 ~= nil then self.rectangle34:destroy(); self.rectangle34 = nil; end;

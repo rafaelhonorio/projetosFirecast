@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta03" align="client" theme="light" lockWhileNodeIsLoading="true">
+<form name="Tormenta03" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);">
 	<scrollBox align="client">
 		<layout name="page" align="none" left="0" top="0" width="1010" height="700" margins="{left=0,top=0,right=0,bottom=0}">
 			<rectangle align="client" color="LightGray" xradius="10" yradius="10"/>
-    		<layout name="content" align="client" margins="{top=8,bottom=8}">
+
+			<layout name="content" align="client" margins="{top=8,bottom=8,left=8,right=8}">
+
+			<!-- GRID 2x2 -->
+			<layout name="grid" align="client">
+
+				<!-- =========================
+					COLUNA 1 (ESQUERDA)
+					Armas / Armadura-Escudo
+					========================= -->
+				<layout name="colEsq" align="left" width="500">
+
 				<!-- ===== ARMAS ===== -->
-				<layout align="top" height="170" margins="{top=8,bottom=4}">
+				<layout align="top" height="335" margins="{bottom=6}">
 					<rectangle align="client" color="Gray" xradius="6" yradius="6"/>
 					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
 						<rectangle align="client" color="Black" xradius="4" yradius="4"/>
@@ -13,207 +24,551 @@
 					</layout>
 
 					<layout align="top" height="24" margins="{left=6,right=6,top=0,bottom=2}">
-						<button align="left" width="160" text="Adicionar Arma">
-							<event name="onClick"> self.rclArmas:append(); </event>
+						<button align="left" width="160" fontColor="black" text="Adicionar Arma">
+							<event name="onClick">
+								TRPG_addArma(self, sheet or self.sheet);
+							</event>
 						</button>
-						<label align="left" width="200" text="(peso em kg)"/>
+						<label align="left" width="200"/>
 					</layout>
 
 					<layout align="top" height="20" margins="{left=6,right=6,top=0,bottom=0}">
-						<label align="left" width="226" fontStyle="bold" text="Arma"/>
-						<label align="left" width="55" fontStyle="bold" horzTextAlign="center" text="Ataque"/>
-						<label align="left" width="85" fontStyle="bold" horzTextAlign="center" text="Dano"/>
-						<label align="left" width="70" fontStyle="bold" horzTextAlign="center" text="Crítico"/>
-						<label align="left" width="70" fontStyle="bold" horzTextAlign="center" text="Dist."/>
-						<label align="left" width="90" fontStyle="bold" horzTextAlign="center" text="Tipo"/>
-						<label align="left" width="60" fontStyle="bold" horzTextAlign="center" text="Peso"/>
+						<label align="left" width="140" fontStyle="bold" fontColor="black" text="Arma"/>
+						<label align="left" width="48"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Ataque"/>
+						<label align="left" width="60"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Dano"/>
+						<label align="left" width="52"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Crítico"/>
+						<label align="left" width="48"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Dist." hitTest="true" hint="Distância"/>
+						<label align="left" width="62"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Tipo"/>
+						<label align="left" width="40"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso em Kg"/>
+						<label align="left" width="24"  fontStyle="bold" fontColor="black" horzTextAlign="center" text=""/>
 					</layout>
 
-					<recordList name="rclArmas" field="listaArmas" templateForm="frmArmaLinha" align="top" height="120" margins="{left=6,right=6,top=0,bottom=6}" selectable="true"/>
-				</layout>
-
-				<!-- ===== ARMADURA / ESCUDO (igual ficha editável) ===== -->
-				<layout align="top" height="150" margins="{top=0,bottom=4}">
-					<rectangle align="client" color="Gray" xradius="6" yradius="6"/>
-
-					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
-						<rectangle align="client" color="Black" xradius="4" yradius="4"/>
-						<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ARMADURA / ESCUDO"/>
-					</layout>
-
-					<layout align="top" height="24" margins="{left=6,right=6,top=0,bottom=2}">
-						<button align="left" width="170" text="Adicionar Armadura">
-						<event name="onClick">
-							local n = self.rclDefesas:append();
-							if n ~= nil then n.categoria = "Armadura"; end;
-						</event>
-						</button>
-
-						<button align="left" width="170" margins="{left=8}" text="Adicionar Escudo">
-						<event name="onClick">
-							local n = self.rclDefesas:append();
-							if n ~= nil then n.categoria = "Escudo"; end;
-						</event>
-						</button>
-					</layout>
-
-					<layout align="top" height="20" margins="{left=6,right=6,top=0,bottom=0}">
-						<label align="left" width="110" fontStyle="bold" text="Categoria"/>
-						<label align="left" width="190" fontStyle="bold" text="Nome"/>
-						<label align="left" width="90"  fontStyle="bold" horzTextAlign="center" text="Bônus CA"/>
-						<label align="left" width="140" fontStyle="bold" horzTextAlign="center" text="Bônus Máx. DES"/>
-						<label align="left" width="120" fontStyle="bold" horzTextAlign="center" text="Penalidade"/>
-						<label align="left" width="70"  fontStyle="bold" horzTextAlign="center" text="Peso"/>
-					</layout>
-
-					<recordList name="rclDefesas"
-								field="listaDefesas"
-								templateForm="frmDefesaLinha"
-								align="top"
-								height="60"
+					<recordList name="rclArmas"
+								field="listaArmas"
+								templateForm="frmArmaLinha"
+								align="client"
 								margins="{left=6,right=6,top=0,bottom=6}"
 								selectable="true"/>
 				</layout>
 
-				<!-- ===== EQUIPAMENTO (linha editável + descrição no detalhes) ===== -->
-				<layout align="top" height="260" margins="{top=0,bottom=4}">
+				<!-- ===== ARMADURA / ESCUDO ===== -->
+				<layout align="client">
 					<rectangle align="client" color="Gray" xradius="6" yradius="6"/>
-					<!-- Título -->
+
 					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
 						<rectangle align="client" color="Black" xradius="4" yradius="4"/>
-						<label align="client" fontSize="14" fontStyle="bold" fontColor="white"
-							horzTextAlign="center" text="EQUIPAMENTO"/>
+						<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ARMADURAS / ESCUDOS / OUTROS"/>
 					</layout>
 
-					<!-- Botões -->
-					<layout align="top" height="24" margins="{left=6,right=6,top=0,bottom=4}">
-						<button align="left" width="190" text="Adicionar Item">
+					<layout align="top" height="24" margins="{left=6,right=6,top=0,bottom=2}">
+						<button align="left" width="150" fontColor="black" text="Adicionar Armadura">
 							<event name="onClick">
-								local n = self.rclEquip:append();
-								if n ~= nil then
-									-- cria limpo
-									n.nome = "";
-									n.descricao = "";
-									n.valor = "";
-									n.peso = 0;
+								TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
+							</event>
+						</button>
 
-									-- seleciona e abre detalhes
-									self.rclEquip.selectedNode = n;
-									self.pnlEquipDetalhes.node = n;
-									self.boxEquipDetalhes.node = n;
-									self.pnlEquipDetalhes.visible = true;
-								end;
+						<button align="left" width="150" margins="{left=8}" fontColor="black" text="Adicionar Escudo">
+							<event name="onClick">
+								TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
+							</event>
+						</button>
+
+						<button align="left" width="150" fontColor="black" margins="{left=8}" text="Adicionar Outros">
+							<event name="onClick">
+								TRPG_addDefesa(self, sheet or self.sheet, "Outros");
 							</event>
 						</button>
 					</layout>
 
-					<!-- Conteúdo -->
-					<layout align="client" margins="{left=6,right=6,top=0,bottom=6}">
-						<rectangle align="client" color="Transparent" hitTest="true">
+					<layout align="top" height="20" margins="{left=6,right=6,top=0,bottom=0}">
+						<label align="left" width="80"  fontStyle="bold" fontColor="black" text="Categoria"/>
+						<label align="left" width="140" fontStyle="bold" fontColor="black" text="Nome"/>
+						<label align="left" width="55"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. CA" hitTest="true" hint="Bônus na Classe de Armadura"/>
+						<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. M. Dex" hitTest="true" hint="Bônus Máximo de Destreza"/>
+						<label align="left" width="65"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Penal." hitTest="true" hint="Penalidade de Armadura"/>
+						<label align="left" width="40"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso em Kg"/>
+						<label align="left" width="24"  fontStyle="bold" fontColor="black" horzTextAlign="center" text=""/>
+					</layout>
+
+					<recordList name="rclDefesas" field="listaDefesas" templateForm="frmDefesaLinha" align="client" margins="{left=6,right=6,top=0,bottom=6}" selectable="true"/>
+				</layout>
+
+				</layout>
+
+				<!-- =========================
+					COLUNA 2 (DIREITA)
+					Equipamento / Carga-Dinheiro-Anotações
+					========================= -->
+				<layout name="colDir" align="client" margins="{left=6}">
+
+					<!-- ===== EQUIPAMENTO (lista em cima + descrição embaixo) ===== -->
+					<layout align="top" height="410" margins="{top=0,bottom=4}">
+						<rectangle align="client" color="Gray" xradius="6" yradius="6" hitTest="false"/>
+
+						<!-- Click no FUNDO fecha detalhes -->
+						<rectangle name="rcEquipCloseArea" align="client" color="Transparent" hitTest="true">
 							<event name="onClick">
-								self.rclEquip.selectedNode = nil;
-								self.pnlEquipDetalhes.visible = false;
-								self.pnlEquipDetalhes.node = nil;
-								self.boxEquipDetalhes.node = nil;
+								TRPG_equipClose(self, sheet or self.sheet);
 							</event>
 						</rectangle>
-						<!-- ===== COLUNA ESQUERDA: LISTA EDITÁVEL ===== -->
-						<layout align="left" width="560">
 
-							<!-- Header -->
-							<layout align="top" height="20" margins="{bottom=2}">
-								<label align="left" width="334" fontStyle="bold" text="Nome"/>
-								<label align="left" width="100" fontStyle="bold" horzTextAlign="center" text="Valor"/>
-								<label align="left" width="70"  fontStyle="bold" horzTextAlign="center" text="Peso"/>
-								<label align="left" width="26"  fontStyle="bold" horzTextAlign="center" text=""/>
+						<!-- Conteúdo por cima do click-catcher -->
+						<layout align="client" margins="{left=6,right=6,top=6,bottom=6}" hitTest="true">
+
+							<!-- Título -->
+							<layout align="top" height="28" margins="{bottom=2}" hitTest="false">
+								<rectangle align="client" color="Black" xradius="4" yradius="4" hitTest="false"/>
+								<label align="client" fontSize="14" fontStyle="bold" fontColor="white"
+										horzTextAlign="center" text="EQUIPAMENTO" hitTest="false"/>
 							</layout>
 
-							<!-- Lista -->
-							<recordList name="rclEquip"
-										field="listaEquipamentos"
-										templateForm="frmEquipLinha"
-										align="client"
-										selectable="true">
-								<event name="onSelect">
-									local node = self.rclEquip.selectedNode;
+							<!-- Botões -->
+							<layout align="top" height="24" margins="{bottom=4}" hitTest="true">
+								<button align="left" width="190" fontColor="black" text="Adicionar Item">
+									<event name="onClick">
+										TRPG_equipAddItem(self, sheet or self.sheet);
+									</event>
+								</button>
 
-									self.pnlEquipDetalhes.node = node;
-									self.boxEquipDetalhes.node = node;
-									self.pnlEquipDetalhes.visible = (node ~= nil);
-								</event>
-							</recordList>
+								<label align="left" width="140" margins="{left=8}" hitTest="false"/>
+							</layout>
+
+							<!-- ===== PARTE DE CIMA: LISTA ===== -->
+							<layout align="top" height="185" hitTest="true">
+
+								<!-- Header -->
+								<layout align="top" height="20" margins="{bottom=2}" hitTest="false">
+									<label align="left" width="296" fontStyle="bold" fontColor="black" text="Nome" hitTest="false"/>
+									<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Valor" hitTest="false"/>
+									<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="false"/>
+									<label align="left" width="26"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false"/>
+								</layout>
+
+								<!-- Lista -->
+								<recordList name="rclEquip"
+											field="listaEquipamentos"
+											templateForm="frmEquipLinha"
+											align="client"
+											selectable="true">
+									<event name="onSelect">
+										TRPG_equipOnSelect(self, sheet or self.sheet);
+									</event>
+								</recordList>
+
+							</layout>
+
+							<!-- ===== PARTE DE BAIXO: DETALHES ===== -->
+							<layout align="client" margins="{top=6}" hitTest="true">
+
+								<dataScopeBox name="boxEquipDetalhes" visible="false" align="client">
+									<rectangle align="client"
+											color="LightGray"
+											xradius="6" yradius="6"
+											padding="{left=6,right=6,top=6,bottom=6}">
+
+										<!-- Header: título + fechar na mesma linha -->
+										<layout align="top" height="26" margins="{bottom=6}" hitTest="true">
+											<label name="lblEquipTitulo"
+												align="client"
+												fontStyle="bold"
+												fontColor="black"
+												horzTextAlign="center"
+												text="Detalhes do Item"
+												hitTest="false"/>
+
+											<button align="right" width="90" fontColor="black" text="Fechar">
+												<event name="onClick">
+													TRPG_equipClose(self, sheet or self.sheet);
+												</event>
+											</button>
+										</layout>
+
+										<textEditor align="client" fontColor="black" field="descricao"/>
+
+										<!-- Atualiza o título quando o NOME muda -->
+										<dataLink fields="{'nome'}">
+											<event name="onChange">
+												TRPG_equipUpdateTitulo(self);
+											</event>
+										</dataLink>
+
+									</rectangle>
+								</dataScopeBox>
+
+							</layout>
+
 						</layout>
+					</layout>
 
-						<!-- ===== COLUNA DIREITA: DETALHES (SÓ DESCRIÇÃO) ===== -->
-						<layout name="pnlEquipDetalhes" align="left" width="420" margins="{left=8}" visible="false">
-							<rectangle align="client" color="LightGray" xradius="6" yradius="6"/>
+					<!-- ===== CARGA / DINHEIRO / ANOTAÇÕES ===== -->
+					<layout align="client" margins="{left=6,right=6,top=0,bottom=6}">
 
-							<layout align="top" height="26" margins="{left=6,right=6,top=6,bottom=2}">
-								<label align="client" fontStyle="bold" horzTextAlign="center"
-									text="Detalhes do Item: $(nome)"/>
+						<!-- Linha de cima: Carga + Dinheiro (2 colunas) -->
+						<layout align="top" height="120">
+
+							<!-- CARGA -->
+							<layout align="left" width="240">
+								<label align="top" height="18" fontStyle="bold" fontColor="black" text="Carga (regra automática)"/>
+
+								<layout align="top" height="24">
+									<label align="left" width="120" fontColor="black" text="Peso total:"/>
+									<edit align="client" field="pesototal" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="120" fontColor="black" text="Sem penalidade:"/>
+									<edit align="client" field="cargaSemPenal" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="120" fontColor="black" text="Máximo:"/>
+									<edit align="client" field="cargaMaxima" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="120" fontColor="black" text="Status:"/>
+								<!-- área do campo (edit) + overlay invisível do hint -->
+									<layout align="client">
+										<edit name="edtCargaStatus" align="client" field="cargaStatus" fontColor="black" canFocus="false" horzTextAlign="center"/>
+
+										<!-- overlay invisível só pra hint -->
+										<button name="btnHintCargaStatus" align="client" opacity="0.0" canFocus="false" cursor="help" hint=""/>
+									</layout>
+								</layout>
+
 							</layout>
 
-							<layout align="client" margins="{left=6,right=6,top=0,bottom=6}">
-								<layout name="boxEquipDetalhes" align="client">
-									<label align="top" height="18" fontStyle="bold" text="Descrição"/>
-									<textEditor align="client" field="descricao"/>
+							<!-- DINHEIRO -->
+							<layout align="client" margins="{left=10}">
+								<label align="top" height="18" fontColor="black" fontStyle="bold" text="Dinheiro"/>
+
+								<layout align="top" height="24">
+									<label align="left" width="90" fontColor="black" text="T$ (Cobre)"/>
+									<edit align="client" field="totalCobre" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="90" fontColor="black" text="TP (Prata)"/>
+									<edit align="client" field="totalPrata" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="90" fontColor="black" text="TO (Ouro)"/>
+									<edit align="client" field="totalOuro" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center"/>
+								</layout>
+
+								<layout align="top" height="24">
+									<label align="left" width="90" fontColor="black" text="TL (Platina)"/>
+									<edit align="client" field="totalPlatina" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center"/>
 								</layout>
 							</layout>
+
+						</layout>
+
+						<!-- Linha de baixo: Anotações -->
+						<layout align="client" margins="{top=8}">
+							<label align="top" height="18" fontColor="black" fontStyle="bold" text="Anotações"/>
+							<textEditor align="client" fontColor="black" field="eqanotacoes"/>
 						</layout>
 
 					</layout>
+
 				</layout>
 
-				<!-- ===== CARGA (automático) + DINHEIRO + ANOTAÇÕES ===== -->
-				<layout align="top" height="110" margins="{top=0,bottom=8}">
-					<rectangle align="client" color="Gray" xradius="6" yradius="6"/>
-
-					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
-						<rectangle align="client" color="Black" xradius="4" yradius="4"/>
-						<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="CARGA / DINHEIRO / ANOTAÇÕES"/>
-					</layout>
-
-					<layout align="client" margins="{left=6,right=6,top=0,bottom=6}">
-						<!-- coluna esquerda: carga -->
-						<layout align="left" width="360">
-							<label align="top" height="18" fontStyle="bold" text="Carga (regra automática)"/>
-							<label align="top" height="18" text="Peso total:"/>
-							<edit align="top" height="24" field="pesototal" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
-
-							<label align="top" height="18" text="Sem penalidade até:"/>
-							<edit align="top" height="24" field="cargaSemPenal" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
-
-							<label align="top" height="18" text="Máximo:"/>
-							<edit align="top" height="24" field="cargaMaxima" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
-
-							<label align="top" height="18" text="Deslocamento efetivo:"/>
-							<edit align="top" height="24" field="deslocamentoEfetivo" canFocus="false" horzTextAlign="center"/>
-
-							<label align="top" height="18" text="Status:"/>
-							<edit align="top" height="24" field="cargaStatus" canFocus="false" horzTextAlign="center"/>
-						</layout>
-
-						<!-- coluna meio: dinheiro -->
-						<layout align="left" width="240" margins="{left=10}">
-							<label align="top" height="18" fontStyle="bold" text="Dinheiro"/>
-							<label align="top" height="18" text="T$ (Cobre)"/>
-							<edit align="top" height="24" field="totalCobre" type="number" min="0" max="999999" horzTextAlign="center"/>
-							<label align="top" height="18" text="TP (Prata)"/>
-							<edit align="top" height="24" field="totalPrata" type="number" min="0" max="999999" horzTextAlign="center"/>
-							<label align="top" height="18" text="TO (Ouro)"/>
-							<edit align="top" height="24" field="totalOuro" type="number" min="0" max="999999" horzTextAlign="center"/>
-							<label align="top" height="18" text="TL (Platina)"/>
-							<edit align="top" height="24" field="totalPlatina" type="number" min="0" max="999999" horzTextAlign="center"/>
-						</layout>
-
-						<!-- coluna direita: anotações -->
-						<layout align="left" width="360" margins="{left=10}">
-							<label align="top" height="18" fontStyle="bold" text="Anotações"/>
-							<textEditor align="client" field="eqanotacoes"/>
-						</layout>
-					</layout>
-				</layout>
+			</layout>
 			</layout>
 		</layout>
 	</scrollBox>
+
+	<!-- =========================
+		DATALINK (motor da tela 3)
+	========================= -->
+	<dataLink fields="{'__recalc03','forca','danoforca','pesototal','cargaSemPenal','cargaMaxima','listaArmas','listaDefesas','listaEquipamentos'}">
+		<event name="onChange">
+			TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
+		</event>
+	</dataLink>
+
+	<script>
+		<![CDATA[
+
+			-- === util ===
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			local function trim(s)
+				s = tostring(s or "")
+				s = s:gsub("^%s+",""):gsub("%s+$","")
+				return s
+			end
+
+			local function rootOf(nodeOrSheet)
+				if nodeOrSheet == nil then return nil end
+				-- se já for sheet raiz, ok; se for node de lista, sobe
+				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				if ok and r ~= nil then return r end
+				return nodeOrSheet
+			end
+
+			function TRPG_touchCA(itemNode)
+				TRPG_recalcPenDefesas(itemNode)
+				local r = rootOf(itemNode)
+				if r == nil then return end
+				r.__recalcCA = (tonumber(r.__recalcCA) or 0) + 1
+			end
+
+			function TRPG_touch03(nodeOrSheet)
+				local r = rootOf(nodeOrSheet)
+				if r == nil then return end
+				r.__recalc03 = (tonumber(r.__recalc03) or 0) + 1
+			end
+
+			-- === armas / defesas ===
+			function TRPG_addArma(ctrl, sh)
+				local rl = ctrl and ctrl:findControlByName("rclArmas") or nil
+				if rl ~= nil then
+					rl:append()
+					TRPG_touch03(sh)
+				end
+			end
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- === equipamento ===
+			function TRPG_equipUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.nome)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes do Item"
+				else
+					lbl.text = "Detalhes do Item: " .. nome
+				end
+			end
+
+			function TRPG_equipClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes do Item"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_equipOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_equipUpdateTitulo(ctrl)
+			end
+
+			function TRPG_equipAddItem(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+
+				if rl == nil or box == nil then return end
+
+				local n = rl:append()
+				if n ~= nil then
+					n.nome = ""
+					n.valor = ""
+					n.peso = 0
+					n.descricao = ""
+
+					rl.selectedNode = n
+					box.node = n
+					box.visible = true
+
+					TRPG_equipUpdateTitulo(ctrl)
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- === carga (cálculo seguro e simples) ===
+			local function sumPeso(listNode)
+				local total = 0
+				if listNode == nil then return 0 end
+
+				local ok, children = pcall(function()
+					return ndb.getChildNodes(listNode)
+				end)
+				if not ok or children == nil then return 0 end
+
+				for _, n in ipairs(children) do
+					total = total + N(n.peso, 0)
+				end
+				return total
+			end
+
+			function TRPG_calcCarga03(ctrl, sh)
+				local sheet = rootOf(sh)
+				if sheet == nil then return end
+
+				-- peso total (armas + defesas + equipamentos)
+				local total =
+					sumPeso(sheet.listaArmas) +
+					sumPeso(sheet.listaDefesas) +
+					sumPeso(sheet.listaEquipamentos)
+
+				total = math.floor(total * 100 + 0.5) / 100
+
+				if N(sheet.pesototal, -1) ~= total then
+					sheet.pesototal = total
+				end
+
+				-- ===== regra oficial: 3x FOR / 10x FOR (FOR efetiva) =====
+				local forBase = N(sheet.forca, 10)
+				local danoFor = N(sheet.danoforca, 0)
+				local forEff  = forBase - danoFor
+				if forEff < 0 then forEff = 0 end
+
+				local semPenal = forEff * 3
+				local maximo   = forEff * 10
+
+				if N(sheet.cargaSemPenal, -1) ~= semPenal then
+					sheet.cargaSemPenal = semPenal
+				end
+
+				if N(sheet.cargaMaxima, -1) ~= maximo then
+					sheet.cargaMaxima = maximo
+				end
+
+				-- status + flags pra outras telas
+				local status = "OK"
+				local penal = 0
+				local deslocPenal = 0
+
+				if total > semPenal then
+					status = "Pesada"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if total > maximo then
+					status = "Excedida"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if tostring(sheet.cargaStatus or "") ~= status then
+					sheet.cargaStatus = status
+				end
+
+				TRPG_updateHintCarga03(ctrl, sheet)
+
+				-- esses campos você usa em outras telas (perícias)
+				if N(sheet.cargaPenalidade, 999) ~= penal then
+					sheet.cargaPenalidade = penal   -- 0 ou -2
+				end
+
+				sheet.cargaAfetada = (penal ~= 0)
+
+				local penCargaPos = 0
+				if penal < 0 then penCargaPos = -penal end
+
+				if (tonumber(sheet.pencarga) or 0) ~= penCargaPos then
+				sheet.pencarga = penCargaPos
+				end
+			end
+
+			function TRPG_updateHintCarga03(ctrl, sh)
+				local root = rootOf(sh)
+				if root == nil then return end
+
+				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				if btn == nil then return end
+
+				local st = tostring(root.cargaStatus or "OK")
+
+				if st == "OK" then
+					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
+				elseif st == "Pesada" then
+					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
+				elseif st == "Excedida" then
+					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
+				else
+					btn.hint = "Status de carga: " .. st
+				end
+			end
+
+			-- ===== Penalidades automáticas vindas de listaDefesas (Tela 3) =====
+
+			local function sumPenalidadeDefesas(root)
+				if root == nil then return 0,0,0 end
+
+				local arm, esc, out = 0, 0, 0
+				local lista = root.listaDefesas
+				if lista == nil then return 0,0,0 end
+
+				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				if not ok or children == nil then return 0,0,0 end
+
+				for _, item in ipairs(children) do
+					local cat = tostring(item.categoria or ""):lower()
+					local pen = tonumber(item.penalidade) or 0
+
+					-- como você disse que só existem esses 3 tipos:
+					if cat == "armadura" then
+						arm = arm + pen
+					elseif cat == "escudo" or cat == "escudos" then
+						esc = esc + pen
+					elseif cat == "outros" or cat == "outro" then
+						out = out + pen
+					end
+				end
+
+				return arm, esc, out
+			end
+
+			-- Use isso quando mudar defesas / CA / peso
+			function TRPG_recalcPenDefesas(sheetAny)
+				local root = rootOf(sheetAny)
+				if root == nil then return end
+
+				local arm, esc, out = sumPenalidadeDefesas(root)
+
+				if (tonumber(root.penarmadura) or 0) ~= arm then root.penarmadura = arm end
+				if (tonumber(root.penescudo) or 0) ~= esc then root.penescudo = esc end
+				if (tonumber(root.penoutros) or 0) ~= out then root.penoutros = out end
+			end
+
+		]]>
+	</script>
 </form>

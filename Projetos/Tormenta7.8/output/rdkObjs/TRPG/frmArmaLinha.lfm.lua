@@ -39,14 +39,14 @@ function newfrmArmaLinha()
     obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setAlign("left");
-    obj.edit1:setWidth(226);
+    obj.edit1:setWidth(140);
     obj.edit1:setField("arma");
     obj.edit1:setName("edit1");
 
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout1);
     obj.edit2:setAlign("left");
-    obj.edit2:setWidth(55);
+    obj.edit2:setWidth(48);
     obj.edit2:setField("ataque");
     obj.edit2:setHorzTextAlign("center");
     obj.edit2:setName("edit2");
@@ -54,7 +54,7 @@ function newfrmArmaLinha()
     obj.edit3 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.layout1);
     obj.edit3:setAlign("left");
-    obj.edit3:setWidth(85);
+    obj.edit3:setWidth(60);
     obj.edit3:setField("dano");
     obj.edit3:setHorzTextAlign("center");
     obj.edit3:setName("edit3");
@@ -62,7 +62,7 @@ function newfrmArmaLinha()
     obj.edit4 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit4:setParent(obj.layout1);
     obj.edit4:setAlign("left");
-    obj.edit4:setWidth(70);
+    obj.edit4:setWidth(52);
     obj.edit4:setField("critico");
     obj.edit4:setHorzTextAlign("center");
     obj.edit4:setName("edit4");
@@ -70,7 +70,7 @@ function newfrmArmaLinha()
     obj.edit5 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit5:setParent(obj.layout1);
     obj.edit5:setAlign("left");
-    obj.edit5:setWidth(70);
+    obj.edit5:setWidth(48);
     obj.edit5:setField("dist");
     obj.edit5:setHorzTextAlign("center");
     obj.edit5:setName("edit5");
@@ -78,7 +78,7 @@ function newfrmArmaLinha()
     obj.edit6 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit6:setParent(obj.layout1);
     obj.edit6:setAlign("left");
-    obj.edit6:setWidth(90);
+    obj.edit6:setWidth(62);
     obj.edit6:setField("tipo");
     obj.edit6:setHorzTextAlign("center");
     obj.edit6:setName("edit6");
@@ -86,7 +86,7 @@ function newfrmArmaLinha()
     obj.edit7 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit7:setParent(obj.layout1);
     obj.edit7:setAlign("left");
-    obj.edit7:setWidth(60);
+    obj.edit7:setWidth(40);
     obj.edit7:setField("peso");
     obj.edit7:setType("number");
     obj.edit7:setMin(0);
@@ -97,17 +97,39 @@ function newfrmArmaLinha()
     obj.button1 = gui.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
-    obj.button1:setWidth(26);
+    obj.button1:setWidth(24);
     obj.button1:setText("X");
     obj.button1:setHint("Excluir arma");
     obj.button1:setName("button1");
 
+    obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.layout1);
+    obj.dataLink1:setFields({'peso'});
+    obj.dataLink1:setName("dataLink1");
+
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (self)
-            if sheet ~= nil then ndb.deleteNode(sheet); end;
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      ndb.deleteNode(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
+        end, obj);
+
+    obj._e_event1 = obj.dataLink1:addEventListener("onChange",
+        function (self, field, oldValue, newValue)
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
@@ -129,6 +151,7 @@ function newfrmArmaLinha()
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         self:_oldLFMDestroy();
     end;
 

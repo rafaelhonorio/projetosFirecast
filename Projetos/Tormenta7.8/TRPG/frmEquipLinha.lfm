@@ -2,38 +2,69 @@
 <form name="frmEquipLinha" height="28" theme="light">
   <layout align="client" height="28" hitTest="true">
 
-    <!-- Clique na linha seleciona e abre detalhes -->
     <event name="onMouseDown">
       local rl = self:findControlByName("rclEquip");
       if rl ~= nil then rl.selectedNode = sheet; end;
+
+      local box = self:findControlByName("boxEquipDetalhes");
+      if box ~= nil then
+        box.node = sheet;
+        box.visible = true;
+      end;
     </event>
 
-    <edit align="left" width="334" field="nome" fontStyle="bold">
-      <event name="onClick">
+    <!-- Linha editável -->
+    <edit align="left" width="296" field="nome" fontStyle="bold">
+      <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
       </event>
     </edit>
 
-    <edit align="left" width="100" field="valor" horzTextAlign="center">
-      <event name="onClick">
+    <edit align="left" width="70" field="valor" horzTextAlign="center">
+      <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
       </event>
     </edit>
 
     <edit align="left" width="70" field="peso" type="number" min="0" max="9999" horzTextAlign="center">
-      <event name="onClick">
+      <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
       </event>
     </edit>
 
+    <!-- Excluir -->
     <button align="left" width="26" text="X" hint="Excluir item">
       <event name="onClick">
-        ndb.deleteNode(sheet);
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          ndb.deleteNode(sheet);
+          TRPG_touch03(root);
+        end;
       </event>
     </button>
 
+    <!-- Recalcula carga sempre que o peso mudar -->
+    <dataLink fields="{'peso'}">
+      <event name="onChange">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+    </dataLink>
   </layout>
 </form>

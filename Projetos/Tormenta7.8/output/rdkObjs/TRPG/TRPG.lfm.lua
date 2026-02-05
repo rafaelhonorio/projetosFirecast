@@ -1398,20 +1398,20 @@ function newTormentafrm()
     obj.label27:setVertTextAlign("center");
     obj.label27:setName("label27");
 
-    obj.caExtra = gui.fromHandle(_obj_newObject("edit"));
-    obj.caExtra:setParent(obj.layout16);
-    obj.caExtra:setLeft(324);
-    obj.caExtra:setTop(15);
-    obj.caExtra:setWidth(60);
-    obj.caExtra:setHeight(25);
-    obj.caExtra:setName("caExtra");
-    obj.caExtra:setField("caExtra");
-    obj.caExtra:setType("number");
-    obj.caExtra:setHorzTextAlign("center");
-    obj.caExtra:setFontSize(15.0);
-    lfm_setPropAsString(obj.caExtra, "fontStyle",  "bold");
-    obj.caExtra:setFontColor("black");
-    obj.caExtra:setHitTest(false);
+    obj.ca3 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca3:setParent(obj.layout16);
+    obj.ca3:setLeft(324);
+    obj.ca3:setTop(15);
+    obj.ca3:setWidth(60);
+    obj.ca3:setHeight(25);
+    obj.ca3:setName("ca3");
+    obj.ca3:setField("ca3");
+    obj.ca3:setType("number");
+    obj.ca3:setHorzTextAlign("center");
+    obj.ca3:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca3, "fontStyle",  "bold");
+    obj.ca3:setFontColor("black");
+    obj.ca3:setHitTest(false);
 
     obj.rectangle28 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle28:setParent(obj.layout16);
@@ -1467,19 +1467,20 @@ function newTormentafrm()
     obj.label29:setVertTextAlign("center");
     obj.label29:setName("label29");
 
-    obj.ca3 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca3:setParent(obj.layout16);
-    obj.ca3:setLeft(408);
-    obj.ca3:setTop(15);
-    obj.ca3:setWidth(60);
-    obj.ca3:setHeight(25);
-    obj.ca3:setName("ca3");
-    obj.ca3:setField("ca3");
-    obj.ca3:setType("number");
-    obj.ca3:setHorzTextAlign("center");
-    obj.ca3:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca3, "fontStyle",  "bold");
-    obj.ca3:setFontColor("black");
+    obj.ca4 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca4:setParent(obj.layout16);
+    obj.ca4:setLeft(408);
+    obj.ca4:setTop(15);
+    obj.ca4:setWidth(60);
+    obj.ca4:setHeight(25);
+    obj.ca4:setName("ca4");
+    obj.ca4:setField("ca4");
+    obj.ca4:setType("number");
+    obj.ca4:setHorzTextAlign("center");
+    obj.ca4:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca4, "fontStyle",  "bold");
+    obj.ca4:setFontColor("black");
+    obj.ca4:setHitTest(false);
 
     obj.rectangle30 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle30:setParent(obj.layout16);
@@ -1535,21 +1536,20 @@ function newTormentafrm()
     obj.label31:setVertTextAlign("center");
     obj.label31:setName("label31");
 
-    obj.ca4 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca4:setParent(obj.layout16);
-    obj.ca4:setLeft(492);
-    obj.ca4:setTop(15);
-    obj.ca4:setWidth(60);
-    obj.ca4:setHeight(25);
-    obj.ca4:setName("ca4");
-    obj.ca4:setField("ca4");
-    obj.ca4:setType("number");
-    obj.ca4:setMin(-99);
-    obj.ca4:setMax(99);
-    obj.ca4:setHorzTextAlign("center");
-    obj.ca4:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca4, "fontStyle",  "bold");
-    obj.ca4:setFontColor("black");
+    obj.ca5 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca5:setParent(obj.layout16);
+    obj.ca5:setLeft(492);
+    obj.ca5:setTop(15);
+    obj.ca5:setWidth(60);
+    obj.ca5:setHeight(25);
+    obj.ca5:setName("ca5");
+    obj.ca5:setField("ca5");
+    obj.ca5:setType("number");
+    obj.ca5:setHorzTextAlign("center");
+    obj.ca5:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca5, "fontStyle",  "bold");
+    obj.ca5:setFontColor("black");
+    obj.ca5:setHitTest(false);
 
     obj.rectangle32 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle32:setParent(obj.layout16);
@@ -1605,21 +1605,21 @@ function newTormentafrm()
     obj.label33:setVertTextAlign("center");
     obj.label33:setName("label33");
 
-    obj.caTamanho = gui.fromHandle(_obj_newObject("edit"));
-    obj.caTamanho:setParent(obj.layout16);
-    obj.caTamanho:setLeft(576);
-    obj.caTamanho:setTop(15);
-    obj.caTamanho:setWidth(60);
-    obj.caTamanho:setHeight(25);
-    obj.caTamanho:setName("caTamanho");
-    obj.caTamanho:setField("caTamanho");
-    obj.caTamanho:setType("number");
-    obj.caTamanho:setMin(-99);
-    obj.caTamanho:setMax(99);
-    obj.caTamanho:setHorzTextAlign("center");
-    obj.caTamanho:setFontSize(15.0);
-    lfm_setPropAsString(obj.caTamanho, "fontStyle",  "bold");
-    obj.caTamanho:setFontColor("black");
+    obj.ca6 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca6:setParent(obj.layout16);
+    obj.ca6:setLeft(576);
+    obj.ca6:setTop(15);
+    obj.ca6:setWidth(60);
+    obj.ca6:setHeight(25);
+    obj.ca6:setName("ca6");
+    obj.ca6:setField("ca6");
+    obj.ca6:setType("number");
+    obj.ca6:setMin(-99);
+    obj.ca6:setMax(99);
+    obj.ca6:setHorzTextAlign("center");
+    obj.ca6:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca6, "fontStyle",  "bold");
+    obj.ca6:setFontColor("black");
 
     obj.rectangle34 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle34:setParent(obj.layout16);
@@ -1673,19 +1673,20 @@ function newTormentafrm()
     obj.label35:setVertTextAlign("center");
     obj.label35:setName("label35");
 
-    obj.ca5 = gui.fromHandle(_obj_newObject("edit"));
-    obj.ca5:setParent(obj.layout16);
-    obj.ca5:setLeft(660);
-    obj.ca5:setTop(15);
-    obj.ca5:setWidth(60);
-    obj.ca5:setHeight(25);
-    obj.ca5:setName("ca5");
-    obj.ca5:setField("ca5");
-    obj.ca5:setType("number");
-    obj.ca5:setHorzTextAlign("center");
-    obj.ca5:setFontSize(15.0);
-    lfm_setPropAsString(obj.ca5, "fontStyle",  "bold");
-    obj.ca5:setFontColor("black");
+    obj.ca7 = gui.fromHandle(_obj_newObject("edit"));
+    obj.ca7:setParent(obj.layout16);
+    obj.ca7:setLeft(660);
+    obj.ca7:setTop(15);
+    obj.ca7:setWidth(60);
+    obj.ca7:setHeight(25);
+    obj.ca7:setName("ca7");
+    obj.ca7:setField("ca7");
+    obj.ca7:setType("number");
+    obj.ca7:setHorzTextAlign("center");
+    obj.ca7:setFontSize(15.0);
+    lfm_setPropAsString(obj.ca7, "fontStyle",  "bold");
+    obj.ca7:setFontColor("black");
+    obj.ca7:setHitTest(false);
 
     obj.layout28 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout28:setParent(obj.scrollBox1);
@@ -3842,7 +3843,7 @@ function newTormentafrm()
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj.Tormenta01);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'caTamanho', 'caExtra', 'ca3','ca4','ca5','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -4018,6 +4019,64 @@ function newTormentafrm()
 				)
 			end
 
+			local function getChildNodesSafe(listNode)
+				if listNode == nil then return {} end
+				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
+				if ok and children ~= nil then return children end
+				return {}
+			end
+
+			local function trimLower(s)
+				s = tostring(s or ""):gsub("^%s+",""):gsub("%s+$","")
+				return s:lower()
+			end
+
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			-- Ajuste os nomes de campo abaixo se no seu node forem diferentes:
+			-- bonusCA = n.bca
+			-- bmDex   = n.bmdex
+			function TRPG_calcDefesasCA(sheet)
+				local armadura = 0
+				local escudo   = 0
+				local outros   = 0
+				local capDex   = nil -- menor bônus máximo de DES entre armaduras
+
+				for _, n in ipairs(getChildNodesSafe(sheet.listaDefesas)) do
+					local cat = trimLower(n.categoria)
+
+					local bonusCA = N(n.bonusCA, 0)
+					local bmDex   = tonumber(n.bonusMaxDes)
+
+					if cat == "armadura" then
+						armadura = armadura + bonusCA
+
+						-- só aplica cap se for um valor "válido"
+						-- (se estiver vazio/0/negativo, trata como "sem limite" e ignora)
+						if bmDex ~= nil then
+							bmDex = math.floor(bmDex)
+							if bmDex > 0 then
+								if capDex == nil or bmDex < capDex then
+									capDex = bmDex
+								end
+							end
+						end
+
+					elseif cat == "escudo" then
+						escudo = escudo + bonusCA
+
+					elseif cat == "outros" then
+						outros = outros + bonusCA
+					end
+				end
+
+				return armadura, escudo, outros, capDex
+			end
+
 			function recalcAll()
 				if sheet == nil then return end
 
@@ -4073,23 +4132,35 @@ function newTormentafrm()
 				-- Mod H padrão da CA (mantém Destreza)
 				sheet.ca2 = N(sheet.moddestreza)
 
-				-- Defaults (pra não somar nil)
-				if sheet.ca3 == nil then sheet.ca3 = 0 end
-				if sheet.ca4 == nil then sheet.ca4 = 0 end
-				if sheet.ca5 == nil then sheet.ca5 = 0 end
-				if sheet.caTamanho == nil then sheet.caTamanho = 0 end
+				local arm, esc, outrosEq, capDex = TRPG_calcDefesasCA(sheet)
 
-				-- ===== Extra (botão A) =====
-				local extraCode = tostring(sheet.ca_extraHab or ""):upper()
-				if extraCode == "" then
-					sheet.caExtra = 0
+				local modDes = math.floor(N(sheet.moddestreza, 0))
+				if capDex ~= nil and modDes > capDex then
+					sheet.ca2 = capDex
 				else
-					sheet.caExtra = TRPG_getMod(sheet, extraCode, 0)
+					sheet.ca2 = modDes
 				end
 
-				-- ORDEM NOVA:
-				-- TOTAL = CA BASE + MOD H + EXTRA + ARMADURA + ESCUDO + TAM + OUTROS
-				sheet.totalca = math.floor(N(sheet.ca1)) + math.floor(N(sheet.ca2)) + math.floor(N(sheet.caExtra)) + math.floor(N(sheet.ca3)) + math.floor(N(sheet.ca4)) + math.floor(N(sheet.caTamanho)) + math.floor(N(sheet.ca5))
+				-- ===== Extra (botão A) agora é ca3 =====
+				local extraCode = tostring(sheet.ca_extraHab or ""):upper()
+				if extraCode == "" then
+					sheet.ca3 = 0
+				else
+					sheet.ca3 = math.floor(TRPG_getMod(sheet, extraCode, 0))
+				end
+
+				-- ===== Armadura / Escudo vindos da Tela 3 =====
+				sheet.ca4 = math.floor(arm)
+				sheet.ca5 = math.floor(esc)
+				sheet.ca7 = math.floor(outrosEq)
+
+				-- ===== Tamanho agora é ca6 =====
+				if sheet.ca6 == nil then sheet.ca6 = 0 end  -- ou mantém default
+
+				-- ===== TOTAL na ordem nova =====
+				sheet.totalca =
+					math.floor(N(sheet.ca1)) + math.floor(N(sheet.ca2)) + math.floor(N(sheet.ca3)) + math.floor(N(sheet.ca4)) +
+					math.floor(N(sheet.ca5)) + math.floor(N(sheet.ca6)) + math.floor(N(sheet.ca7))
 
 				sheet.fort1 = N(sheet.metadenivel)
 				sheet.fort2 = TRPG_getMod(sheet, sheet.hab_fort, N(sheet.modconstituicao))
@@ -4151,6 +4222,38 @@ function newTormentafrm()
 
 					rolagem:rolarLocalmente()
 					showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+				end
+			end
+
+			-- garante rootOf (alguns projetos antigos tinham isso pronto)
+			if rootOf == nil then
+				function rootOf(node)
+					if node == nil then return nil end
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					if ok then return r end
+					return nil
+				end
+			end
+
+			-- versão segura do touch da CA
+			function TRPG_touchCA(node)
+				if node == nil then return end
+
+				local root = nil
+
+				-- tenta rootOf (se existir)
+				if rootOf ~= nil then
+					root = rootOf(node)
+				end
+
+				-- fallback direto pro ndb.getRoot
+				if root == nil then
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					if ok then root = r end
+				end
+
+				if root ~= nil then
+					root.__recalcCA = (tonumber(root.__recalcCA) or 0) + 1
 				end
 			end
 
@@ -9356,7 +9459,7 @@ function newTormentafrm()
 
     obj.dataLink2 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj.Tormenta02);
-    obj.dataLink2:setFields({'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'});
+    obj.dataLink2:setFields({'penarmadura', 'penescudo', 'penoutros', 'pencarga',  'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'});
     obj.dataLink2:setName("dataLink2");
 
 
@@ -9429,6 +9532,7 @@ function newTormentafrm()
 					local o = self[name]
 					if o ~= nil then o.hitTest = val end
 				end
+
 				ht("gradacrobacia", manual)
 				ht("gradadestrar", manual)
 				ht("gradatletismo", manual)
@@ -9453,6 +9557,7 @@ function newTormentafrm()
 				ht("gradoinformacao", manual)
 				ht("gradpercepcao", manual)
 				ht("gradsobrevivencia", manual)
+
 				ht("modacrobacia", manual)
 				ht("modadestrar", manual)
 				ht("modatletismo", manual)
@@ -9477,6 +9582,7 @@ function newTormentafrm()
 				ht("modoinformacao", manual)
 				ht("modpercepcao", manual)
 				ht("modsobrevivencia", manual)
+
 				ht("totalacrobacia", manual)
 				ht("totaladestrar", manual)
 				ht("totalatletismo", manual)
@@ -9509,16 +9615,37 @@ function newTormentafrm()
 				if sheet.calculos == true and sheet.__forceRecalc ~= true then
 					return
 				end
+
 				local function N(v, d)
 					local n = tonumber(v)
 					if n == nil then return d or 0 end
 					return n
 				end
+
 				-- metadenivel pode vir da Tela 1; garante aqui também
 				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+
 				local penA = math.floor(N(sheet.penarmadura))
 				local penE = math.floor(N(sheet.penescudo))
+				local penO = math.floor(N(sheet.penoutros))
+				local penC = math.floor(N(sheet.pencarga))
 
+				-- totalPericia(grad, mod, outros, sofrePenArmadura, sofrePenCarga)
+				local function totalPericia(grad, mod, outros, sofrePenArmadura, sofrePenCarga)
+					local t = math.floor(N(grad)) + math.floor(N(mod)) + math.floor(N(outros))
+
+					if sofrePenArmadura then
+						t = t - penA - penE - penO
+					end
+
+					if sofrePenCarga then
+						t = t - penC
+					end
+
+					return t
+				end
+
+				-- defaults das habilidades-base
 				if sheet.hab_acrobacia == nil or sheet.hab_acrobacia == "" then sheet.hab_acrobacia = "DES" end
 				if sheet.hab_adestrar == nil or sheet.hab_adestrar == "" then sheet.hab_adestrar = "CAR" end
 				if sheet.hab_atletismo == nil or sheet.hab_atletismo == "" then sheet.hab_atletismo = "FOR" end
@@ -9547,233 +9674,137 @@ function newTormentafrm()
 				local nivel = math.floor(N(sheet.nivel))
 				local metanivel = math.floor(N(sheet.metadenivel))
 
+				-- ⚔ = sofre penalidade de armadura/escudo/outros + carga
+				-- (Aqui estou assumindo que CARGA afeta as mesmas ⚔)
+				-- Se quiser mudar isso depois, é só alterar o último boolean.
+
+				-- Acrobacia ⚔
 				sheet.modacrobacia = TRPG_getMod(sheet, sheet.hab_acrobacia, 0)
-				if sheet.cbxacrobacia then
-					sheet.gradacrobacia = math.floor(nivel + 3)
-				else
-					sheet.gradacrobacia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradacrobacia)) + math.floor(N(sheet.modacrobacia)) + math.floor(N(sheet.outrosacrobacia))
-				total = total - penA - penE
-				sheet.totalacrobacia = total
+				if sheet.cbxacrobacia then sheet.gradacrobacia = math.floor(nivel + 3) else sheet.gradacrobacia = math.floor(metanivel) end
+				sheet.totalacrobacia = totalPericia(sheet.gradacrobacia, sheet.modacrobacia, sheet.outrosacrobacia, true, true)
 
+				-- Adestrar Animais ❄ (sem penalidades)
 				sheet.modadestrar = TRPG_getMod(sheet, sheet.hab_adestrar, 0)
-				if sheet.cbxadestrar then
-					sheet.gradadestrar = math.floor(nivel + 3)
-				else
-					sheet.gradadestrar = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradadestrar)) + math.floor(N(sheet.modadestrar)) + math.floor(N(sheet.outrosadestrar))
-				sheet.totaladestrar = total
+				if sheet.cbxadestrar then sheet.gradadestrar = math.floor(nivel + 3) else sheet.gradadestrar = math.floor(metanivel) end
+				sheet.totaladestrar = totalPericia(sheet.gradadestrar, sheet.modadestrar, sheet.outrosadestrar, false, false)
 
+				-- Atletismo ⚔
 				sheet.modatletismo = TRPG_getMod(sheet, sheet.hab_atletismo, 0)
-				if sheet.cbxatletismo then
-					sheet.gradatletismo = math.floor(nivel + 3)
-				else
-					sheet.gradatletismo = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatletismo)) + math.floor(N(sheet.modatletismo)) + math.floor(N(sheet.outrosatletismo))
-				total = total - penA - penE
-				sheet.totalatletismo = total
+				if sheet.cbxatletismo then sheet.gradatletismo = math.floor(nivel + 3) else sheet.gradatletismo = math.floor(metanivel) end
+				sheet.totalatletismo = totalPericia(sheet.gradatletismo, sheet.modatletismo, sheet.outrosatletismo, true, true)
 
+				-- Atuação (1)
 				sheet.modatuacao1 = TRPG_getMod(sheet, sheet.hab_atuacao1, 0)
-				if sheet.cbxatuacao1 then
-					sheet.gradatuacao1 = math.floor(nivel + 3)
-				else
-					sheet.gradatuacao1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatuacao1)) + math.floor(N(sheet.modatuacao1)) + math.floor(N(sheet.outrosatuacao1))
-				sheet.totalatuacao1 = total
+				if sheet.cbxatuacao1 then sheet.gradatuacao1 = math.floor(nivel + 3) else sheet.gradatuacao1 = math.floor(metanivel) end
+				sheet.totalatuacao1 = totalPericia(sheet.gradatuacao1, sheet.modatuacao1, sheet.outrosatuacao1, false, false)
 
+				-- Atuação (2)
 				sheet.modatuacao2 = TRPG_getMod(sheet, sheet.hab_atuacao2, 0)
-				if sheet.cbxatuacao2 then
-					sheet.gradatuacao2 = math.floor(nivel + 3)
-				else
-					sheet.gradatuacao2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradatuacao2)) + math.floor(N(sheet.modatuacao2)) + math.floor(N(sheet.outrosatuacao2))
-				sheet.totalatuacao2 = total
+				if sheet.cbxatuacao2 then sheet.gradatuacao2 = math.floor(nivel + 3) else sheet.gradatuacao2 = math.floor(metanivel) end
+				sheet.totalatuacao2 = totalPericia(sheet.gradatuacao2, sheet.modatuacao2, sheet.outrosatuacao2, false, false)
 
-				sheet.modjogatina = TRPG_getMod(sheet, sheet.hab_jogatina, 0)
-				if sheet.cbxjogatina then
-					sheet.gradjogatina = math.floor(nivel + 3)
-				else
-					sheet.gradjogatina = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradjogatina)) + math.floor(N(sheet.modjogatina)) + math.floor(N(sheet.outrosjogatina))
-				sheet.totaljogatina = total
-
+				-- Cavalgar
 				sheet.modcavalgar = TRPG_getMod(sheet, sheet.hab_cavalgar, 0)
-				if sheet.cbxcavalgar then
-					sheet.gradcavalgar = math.floor(nivel + 3)
-				else
-					sheet.gradcavalgar = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradcavalgar)) + math.floor(N(sheet.modcavalgar)) + math.floor(N(sheet.outroscavalgar))
-				sheet.totalcavalgar = total
+				if sheet.cbxcavalgar then sheet.gradcavalgar = math.floor(nivel + 3) else sheet.gradcavalgar = math.floor(metanivel) end
+				sheet.totalcavalgar = totalPericia(sheet.gradcavalgar, sheet.modcavalgar, sheet.outroscavalgar, true, true)
 
+				-- Conhecimento (1) ❄
 				sheet.modconhecimento1 = TRPG_getMod(sheet, sheet.hab_conhecimento1, 0)
-				if sheet.cbxconhecimento1 then
-					sheet.gradconhecimento1 = math.floor(nivel + 3)
-				else
-					sheet.gradconhecimento1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradconhecimento1)) + math.floor(N(sheet.modconhecimento1)) + math.floor(N(sheet.outrosconhecimento1))
-				sheet.totalconhecimento1 = total
+				if sheet.cbxconhecimento1 then sheet.gradconhecimento1 = math.floor(nivel + 3) else sheet.gradconhecimento1 = math.floor(metanivel) end
+				sheet.totalconhecimento1 = totalPericia(sheet.gradconhecimento1, sheet.modconhecimento1, sheet.outrosconhecimento1, false, false)
 
+				-- Conhecimento (2) ❄
 				sheet.modconhecimento2 = TRPG_getMod(sheet, sheet.hab_conhecimento2, 0)
-				if sheet.cbxconhecimento2 then
-					sheet.gradconhecimento2 = math.floor(nivel + 3)
-				else
-					sheet.gradconhecimento2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradconhecimento2)) + math.floor(N(sheet.modconhecimento2)) + math.floor(N(sheet.outrosconhecimento2))
-				sheet.totalconhecimento2 = total
+				if sheet.cbxconhecimento2 then sheet.gradconhecimento2 = math.floor(nivel + 3) else sheet.gradconhecimento2 = math.floor(metanivel) end
+				sheet.totalconhecimento2 = totalPericia(sheet.gradconhecimento2, sheet.modconhecimento2, sheet.outrosconhecimento2, false, false)
 
+				-- Cura
 				sheet.modcura = TRPG_getMod(sheet, sheet.hab_cura, 0)
-				if sheet.cbxcura then
-					sheet.gradcura = math.floor(nivel + 3)
-				else
-					sheet.gradcura = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradcura)) + math.floor(N(sheet.modcura)) + math.floor(N(sheet.outroscura))
-				sheet.totalcura = total
+				if sheet.cbxcura then sheet.gradcura = math.floor(nivel + 3) else sheet.gradcura = math.floor(metanivel) end
+				sheet.totalcura = totalPericia(sheet.gradcura, sheet.modcura, sheet.outroscura, false, false)
 
+				-- Diplomacia
 				sheet.moddiplomacia = TRPG_getMod(sheet, sheet.hab_diplomacia, 0)
-				if sheet.cbxdiplomacia then
-					sheet.graddiplomacia = math.floor(nivel + 3)
-				else
-					sheet.graddiplomacia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.graddiplomacia)) + math.floor(N(sheet.moddiplomacia)) + math.floor(N(sheet.outrosdiplomacia))
-				sheet.totaldiplomacia = total
+				if sheet.cbxdiplomacia then sheet.graddiplomacia = math.floor(nivel + 3) else sheet.graddiplomacia = math.floor(metanivel) end
+				sheet.totaldiplomacia = totalPericia(sheet.graddiplomacia, sheet.moddiplomacia, sheet.outrosdiplomacia, false, false)
 
+				-- Enganação
 				sheet.modenganacao = TRPG_getMod(sheet, sheet.hab_enganacao, 0)
-				if sheet.cbxenganacao then
-					sheet.gradenganacao = math.floor(nivel + 3)
-				else
-					sheet.gradenganacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradenganacao)) + math.floor(N(sheet.modenganacao)) + math.floor(N(sheet.outrosenganacao))
-				sheet.totalenganacao = total
+				if sheet.cbxenganacao then sheet.gradenganacao = math.floor(nivel + 3) else sheet.gradenganacao = math.floor(metanivel) end
+				sheet.totalenganacao = totalPericia(sheet.gradenganacao, sheet.modenganacao, sheet.outrosenganacao, false, false)
 
+				-- Furtividade ⚔
 				sheet.modfurtividade = TRPG_getMod(sheet, sheet.hab_furtividade, 0)
-				if sheet.cbxfurtividade then
-					sheet.gradfurtividade = math.floor(nivel + 3)
-				else
-					sheet.gradfurtividade = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradfurtividade)) + math.floor(N(sheet.modfurtividade)) + math.floor(N(sheet.outrosfurtividade))
-				total = total - penA - penE
-				sheet.totalfurtividade = total
+				if sheet.cbxfurtividade then sheet.gradfurtividade = math.floor(nivel + 3) else sheet.gradfurtividade = math.floor(metanivel) end
+				sheet.totalfurtividade = totalPericia(sheet.gradfurtividade, sheet.modfurtividade, sheet.outrosfurtividade, true, true)
 
+				-- Identificar Magia ❄
 				sheet.modimagia = TRPG_getMod(sheet, sheet.hab_imagia, 0)
-				if sheet.cbximagia then
-					sheet.gradimagia = math.floor(nivel + 3)
-				else
-					sheet.gradimagia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradimagia)) + math.floor(N(sheet.modimagia)) + math.floor(N(sheet.outrosimagia))
-				sheet.totalimagia = total
+				if sheet.cbximagia then sheet.gradimagia = math.floor(nivel + 3) else sheet.gradimagia = math.floor(metanivel) end
+				sheet.totalimagia = totalPericia(sheet.gradimagia, sheet.modimagia, sheet.outrosimagia, false, false)
 
+				-- Iniciativa
 				sheet.modiniciativa = TRPG_getMod(sheet, sheet.hab_iniciativa, 0)
-				if sheet.cbxiniciativa then
-					sheet.gradiniciativa = math.floor(nivel + 3)
-				else
-					sheet.gradiniciativa = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradiniciativa)) + math.floor(N(sheet.modiniciativa)) + math.floor(N(sheet.outrosiniciativa))
-				sheet.totaliniciativa = total
+				if sheet.cbxiniciativa then sheet.gradiniciativa = math.floor(nivel + 3) else sheet.gradiniciativa = math.floor(metanivel) end
+				sheet.totaliniciativa = totalPericia(sheet.gradiniciativa, sheet.modiniciativa, sheet.outrosiniciativa, false, false)
 
+				-- Intimidação
 				sheet.modintimidacao = TRPG_getMod(sheet, sheet.hab_intimidacao, 0)
-				if sheet.cbxintimidacao then
-					sheet.gradintimidacao = math.floor(nivel + 3)
-				else
-					sheet.gradintimidacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradintimidacao)) + math.floor(N(sheet.modintimidacao)) + math.floor(N(sheet.outrosintimidacao))
-				sheet.totalintimidacao = total
+				if sheet.cbxintimidacao then sheet.gradintimidacao = math.floor(nivel + 3) else sheet.gradintimidacao = math.floor(metanivel) end
+				sheet.totalintimidacao = totalPericia(sheet.gradintimidacao, sheet.modintimidacao, sheet.outrosintimidacao, false, false)
 
+				-- Intuição
 				sheet.modintuicao = TRPG_getMod(sheet, sheet.hab_intuicao, 0)
-				if sheet.cbxintuicao then
-					sheet.gradintuicao = math.floor(nivel + 3)
-				else
-					sheet.gradintuicao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradintuicao)) + math.floor(N(sheet.modintuicao)) + math.floor(N(sheet.outrosintuicao))
-				sheet.totalintuicao = total
+				if sheet.cbxintuicao then sheet.gradintuicao = math.floor(nivel + 3) else sheet.gradintuicao = math.floor(metanivel) end
+				sheet.totalintuicao = totalPericia(sheet.gradintuicao, sheet.modintuicao, sheet.outrosintuicao, false, false)
 
+				-- Jogatina
+				sheet.modjogatina = TRPG_getMod(sheet, sheet.hab_jogatina, 0)
+				if sheet.cbxjogatina then sheet.gradjogatina = math.floor(nivel + 3) else sheet.gradjogatina = math.floor(metanivel) end
+				sheet.totaljogatina = totalPericia(sheet.gradjogatina, sheet.modjogatina, sheet.outrosjogatina, false, false)
+
+				-- Ladinagem ⚔❄
 				sheet.modladinagem = TRPG_getMod(sheet, sheet.hab_ladinagem, 0)
-				if sheet.cbxladinagem then
-					sheet.gradladinagem = math.floor(nivel + 3)
-				else
-					sheet.gradladinagem = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradladinagem)) + math.floor(N(sheet.modladinagem)) + math.floor(N(sheet.outrosladinagem))
-				total = total - penA - penE
-				sheet.totalladinagem = total
+				if sheet.cbxladinagem then sheet.gradladinagem = math.floor(nivel + 3) else sheet.gradladinagem = math.floor(metanivel) end
+				sheet.totalladinagem = totalPericia(sheet.gradladinagem, sheet.modladinagem, sheet.outrosladinagem, true, true)
 
+				-- Obter Informação
 				sheet.modoinformacao = TRPG_getMod(sheet, sheet.hab_oinformacao, 0)
-				if sheet.cbxoinformacao then
-					sheet.gradoinformacao = math.floor(nivel + 3)
-				else
-					sheet.gradoinformacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoinformacao)) + math.floor(N(sheet.modoinformacao)) + math.floor(N(sheet.outrosoinformacao))
-				sheet.totaloinformacao = total
+				if sheet.cbxoinformacao then sheet.gradoinformacao = math.floor(nivel + 3) else sheet.gradoinformacao = math.floor(metanivel) end
+				sheet.totaloinformacao = totalPericia(sheet.gradoinformacao, sheet.modoinformacao, sheet.outrosoinformacao, false, false)
 
+				-- Ofício (1)
 				sheet.modoficio1 = TRPG_getMod(sheet, sheet.hab_oficio1, 0)
-				if sheet.cbxoficio1 then
-					sheet.gradoficio1 = math.floor(nivel + 3)
-				else
-					sheet.gradoficio1 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoficio1)) + math.floor(N(sheet.modoficio1)) + math.floor(N(sheet.outrosoficio1))
-				sheet.totaloficio1 = total
+				if sheet.cbxoficio1 then sheet.gradoficio1 = math.floor(nivel + 3) else sheet.gradoficio1 = math.floor(metanivel) end
+				sheet.totaloficio1 = totalPericia(sheet.gradoficio1, sheet.modoficio1, sheet.outrosoficio1, false, false)
 
+				-- Ofício (2)
 				sheet.modoficio2 = TRPG_getMod(sheet, sheet.hab_oficio2, 0)
-				if sheet.cbxoficio2 then
-					sheet.gradoficio2 = math.floor(nivel + 3)
-				else
-					sheet.gradoficio2 = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradoficio2)) + math.floor(N(sheet.modoficio2)) + math.floor(N(sheet.outrosoficio2))
-				sheet.totaloficio2 = total
+				if sheet.cbxoficio2 then sheet.gradoficio2 = math.floor(nivel + 3) else sheet.gradoficio2 = math.floor(metanivel) end
+				sheet.totaloficio2 = totalPericia(sheet.gradoficio2, sheet.modoficio2, sheet.outrosoficio2, false, false)
 
+				-- Meditação ❄
 				sheet.modmeditacao = TRPG_getMod(sheet, sheet.hab_meditacao, 0)
-				if sheet.cbxmeditacao then
-					sheet.gradmeditacao = math.floor(nivel + 3)
-				else
-					sheet.gradmeditacao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradmeditacao)) + math.floor(N(sheet.modmeditacao)) + math.floor(N(sheet.outrosmeditacao))
-				sheet.totalmeditacao = total
+				if sheet.cbxmeditacao then sheet.gradmeditacao = math.floor(nivel + 3) else sheet.gradmeditacao = math.floor(metanivel) end
+				sheet.totalmeditacao = totalPericia(sheet.gradmeditacao, sheet.modmeditacao, sheet.outrosmeditacao, false, false)
 
+				-- Percepção
 				sheet.modpercepcao = TRPG_getMod(sheet, sheet.hab_percepcao, 0)
-				if sheet.cbxpercepcao then
-					sheet.gradpercepcao = math.floor(nivel + 3)
-				else
-					sheet.gradpercepcao = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradpercepcao)) + math.floor(N(sheet.modpercepcao)) + math.floor(N(sheet.outrospercepcao))
-				sheet.totalpercepcao = total
+				if sheet.cbxpercepcao then sheet.gradpercepcao = math.floor(nivel + 3) else sheet.gradpercepcao = math.floor(metanivel) end
+				sheet.totalpercepcao = totalPericia(sheet.gradpercepcao, sheet.modpercepcao, sheet.outrospercepcao, false, false)
 
+				-- Sobrevivência
 				sheet.modsobrevivencia = TRPG_getMod(sheet, sheet.hab_sobrevivencia, 0)
-				if sheet.cbxsobrevivencia then
-					sheet.gradsobrevivencia = math.floor(nivel + 3)
-				else
-					sheet.gradsobrevivencia = math.floor(metanivel)
-				end
-				local total = math.floor(N(sheet.gradsobrevivencia)) + math.floor(N(sheet.modsobrevivencia)) + math.floor(N(sheet.outrossobrevivencia))
-				sheet.totalsobrevivencia = total
-
+				if sheet.cbxsobrevivencia then sheet.gradsobrevivencia = math.floor(nivel + 3) else sheet.gradsobrevivencia = math.floor(metanivel) end
+				sheet.totalsobrevivencia = totalPericia(sheet.gradsobrevivencia, sheet.modsobrevivencia, sheet.outrossobrevivencia, false, false)
 			end
+
+
 
 			function onDataLinkChange()
 				desCalculos2()
 				recalcAll2()
 			end
-
 		
 
 
@@ -9816,13 +9847,24 @@ function newTormentafrm()
     obj.content:setParent(obj.page);
     obj.content:setName("content");
     obj.content:setAlign("client");
-    obj.content:setMargins({top=8,bottom=8});
+    obj.content:setMargins({top=8,bottom=8,left=8,right=8});
+
+    obj.grid = gui.fromHandle(_obj_newObject("layout"));
+    obj.grid:setParent(obj.content);
+    obj.grid:setName("grid");
+    obj.grid:setAlign("client");
+
+    obj.colEsq = gui.fromHandle(_obj_newObject("layout"));
+    obj.colEsq:setParent(obj.grid);
+    obj.colEsq:setName("colEsq");
+    obj.colEsq:setAlign("left");
+    obj.colEsq:setWidth(500);
 
     obj.layout72 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout72:setParent(obj.content);
+    obj.layout72:setParent(obj.colEsq);
     obj.layout72:setAlign("top");
-    obj.layout72:setHeight(170);
-    obj.layout72:setMargins({top=8,bottom=4});
+    obj.layout72:setHeight(335);
+    obj.layout72:setMargins({bottom=6});
     obj.layout72:setName("layout72");
 
     obj.rectangle193 = gui.fromHandle(_obj_newObject("rectangle"));
@@ -9869,6 +9911,7 @@ function newTormentafrm()
     obj.button68:setParent(obj.layout74);
     obj.button68:setAlign("left");
     obj.button68:setWidth(160);
+    obj.button68:setFontColor("black");
     obj.button68:setText("Adicionar Arma");
     obj.button68:setName("button68");
 
@@ -9876,7 +9919,6 @@ function newTormentafrm()
     obj.label189:setParent(obj.layout74);
     obj.label189:setAlign("left");
     obj.label189:setWidth(200);
-    obj.label189:setText("(peso em kg)");
     obj.label189:setName("label189");
 
     obj.layout75 = gui.fromHandle(_obj_newObject("layout"));
@@ -9889,16 +9931,18 @@ function newTormentafrm()
     obj.label190 = gui.fromHandle(_obj_newObject("label"));
     obj.label190:setParent(obj.layout75);
     obj.label190:setAlign("left");
-    obj.label190:setWidth(226);
+    obj.label190:setWidth(140);
     lfm_setPropAsString(obj.label190, "fontStyle",  "bold");
+    obj.label190:setFontColor("black");
     obj.label190:setText("Arma");
     obj.label190:setName("label190");
 
     obj.label191 = gui.fromHandle(_obj_newObject("label"));
     obj.label191:setParent(obj.layout75);
     obj.label191:setAlign("left");
-    obj.label191:setWidth(55);
+    obj.label191:setWidth(48);
     lfm_setPropAsString(obj.label191, "fontStyle",  "bold");
+    obj.label191:setFontColor("black");
     obj.label191:setHorzTextAlign("center");
     obj.label191:setText("Ataque");
     obj.label191:setName("label191");
@@ -9906,8 +9950,9 @@ function newTormentafrm()
     obj.label192 = gui.fromHandle(_obj_newObject("label"));
     obj.label192:setParent(obj.layout75);
     obj.label192:setAlign("left");
-    obj.label192:setWidth(85);
+    obj.label192:setWidth(60);
     lfm_setPropAsString(obj.label192, "fontStyle",  "bold");
+    obj.label192:setFontColor("black");
     obj.label192:setHorzTextAlign("center");
     obj.label192:setText("Dano");
     obj.label192:setName("label192");
@@ -9915,8 +9960,9 @@ function newTormentafrm()
     obj.label193 = gui.fromHandle(_obj_newObject("label"));
     obj.label193:setParent(obj.layout75);
     obj.label193:setAlign("left");
-    obj.label193:setWidth(70);
+    obj.label193:setWidth(52);
     lfm_setPropAsString(obj.label193, "fontStyle",  "bold");
+    obj.label193:setFontColor("black");
     obj.label193:setHorzTextAlign("center");
     obj.label193:setText("Crítico");
     obj.label193:setName("label193");
@@ -9924,17 +9970,21 @@ function newTormentafrm()
     obj.label194 = gui.fromHandle(_obj_newObject("label"));
     obj.label194:setParent(obj.layout75);
     obj.label194:setAlign("left");
-    obj.label194:setWidth(70);
+    obj.label194:setWidth(48);
     lfm_setPropAsString(obj.label194, "fontStyle",  "bold");
+    obj.label194:setFontColor("black");
     obj.label194:setHorzTextAlign("center");
     obj.label194:setText("Dist.");
+    obj.label194:setHitTest(true);
+    obj.label194:setHint("Distância");
     obj.label194:setName("label194");
 
     obj.label195 = gui.fromHandle(_obj_newObject("label"));
     obj.label195:setParent(obj.layout75);
     obj.label195:setAlign("left");
-    obj.label195:setWidth(90);
+    obj.label195:setWidth(62);
     lfm_setPropAsString(obj.label195, "fontStyle",  "bold");
+    obj.label195:setFontColor("black");
     obj.label195:setHorzTextAlign("center");
     obj.label195:setText("Tipo");
     obj.label195:setName("label195");
@@ -9942,27 +9992,37 @@ function newTormentafrm()
     obj.label196 = gui.fromHandle(_obj_newObject("label"));
     obj.label196:setParent(obj.layout75);
     obj.label196:setAlign("left");
-    obj.label196:setWidth(60);
+    obj.label196:setWidth(40);
     lfm_setPropAsString(obj.label196, "fontStyle",  "bold");
+    obj.label196:setFontColor("black");
     obj.label196:setHorzTextAlign("center");
     obj.label196:setText("Peso");
+    obj.label196:setHitTest(true);
+    obj.label196:setHint("Peso em Kg");
     obj.label196:setName("label196");
+
+    obj.label197 = gui.fromHandle(_obj_newObject("label"));
+    obj.label197:setParent(obj.layout75);
+    obj.label197:setAlign("left");
+    obj.label197:setWidth(24);
+    lfm_setPropAsString(obj.label197, "fontStyle",  "bold");
+    obj.label197:setFontColor("black");
+    obj.label197:setHorzTextAlign("center");
+    obj.label197:setText("");
+    obj.label197:setName("label197");
 
     obj.rclArmas = gui.fromHandle(_obj_newObject("recordList"));
     obj.rclArmas:setParent(obj.layout72);
     obj.rclArmas:setName("rclArmas");
     obj.rclArmas:setField("listaArmas");
     obj.rclArmas:setTemplateForm("frmArmaLinha");
-    obj.rclArmas:setAlign("top");
-    obj.rclArmas:setHeight(120);
+    obj.rclArmas:setAlign("client");
     obj.rclArmas:setMargins({left=6,right=6,top=0,bottom=6});
     obj.rclArmas:setSelectable(true);
 
     obj.layout76 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout76:setParent(obj.content);
-    obj.layout76:setAlign("top");
-    obj.layout76:setHeight(150);
-    obj.layout76:setMargins({top=0,bottom=4});
+    obj.layout76:setParent(obj.colEsq);
+    obj.layout76:setAlign("client");
     obj.layout76:setName("layout76");
 
     obj.rectangle195 = gui.fromHandle(_obj_newObject("rectangle"));
@@ -9988,15 +10048,15 @@ function newTormentafrm()
     obj.rectangle196:setYradius(4);
     obj.rectangle196:setName("rectangle196");
 
-    obj.label197 = gui.fromHandle(_obj_newObject("label"));
-    obj.label197:setParent(obj.layout77);
-    obj.label197:setAlign("client");
-    obj.label197:setFontSize(14);
-    lfm_setPropAsString(obj.label197, "fontStyle",  "bold");
-    obj.label197:setFontColor("white");
-    obj.label197:setHorzTextAlign("center");
-    obj.label197:setText("ARMADURA / ESCUDO");
-    obj.label197:setName("label197");
+    obj.label198 = gui.fromHandle(_obj_newObject("label"));
+    obj.label198:setParent(obj.layout77);
+    obj.label198:setAlign("client");
+    obj.label198:setFontSize(14);
+    lfm_setPropAsString(obj.label198, "fontStyle",  "bold");
+    obj.label198:setFontColor("white");
+    obj.label198:setHorzTextAlign("center");
+    obj.label198:setText("ARMADURAS / ESCUDOS / OUTROS");
+    obj.label198:setName("label198");
 
     obj.layout78 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout78:setParent(obj.layout76);
@@ -10008,17 +10068,28 @@ function newTormentafrm()
     obj.button69 = gui.fromHandle(_obj_newObject("button"));
     obj.button69:setParent(obj.layout78);
     obj.button69:setAlign("left");
-    obj.button69:setWidth(170);
+    obj.button69:setWidth(150);
+    obj.button69:setFontColor("black");
     obj.button69:setText("Adicionar Armadura");
     obj.button69:setName("button69");
 
     obj.button70 = gui.fromHandle(_obj_newObject("button"));
     obj.button70:setParent(obj.layout78);
     obj.button70:setAlign("left");
-    obj.button70:setWidth(170);
+    obj.button70:setWidth(150);
     obj.button70:setMargins({left=8});
+    obj.button70:setFontColor("black");
     obj.button70:setText("Adicionar Escudo");
     obj.button70:setName("button70");
+
+    obj.button71 = gui.fromHandle(_obj_newObject("button"));
+    obj.button71:setParent(obj.layout78);
+    obj.button71:setAlign("left");
+    obj.button71:setWidth(150);
+    obj.button71:setFontColor("black");
+    obj.button71:setMargins({left=8});
+    obj.button71:setText("Adicionar Outros");
+    obj.button71:setName("button71");
 
     obj.layout79 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout79:setParent(obj.layout76);
@@ -10027,72 +10098,101 @@ function newTormentafrm()
     obj.layout79:setMargins({left=6,right=6,top=0,bottom=0});
     obj.layout79:setName("layout79");
 
-    obj.label198 = gui.fromHandle(_obj_newObject("label"));
-    obj.label198:setParent(obj.layout79);
-    obj.label198:setAlign("left");
-    obj.label198:setWidth(110);
-    lfm_setPropAsString(obj.label198, "fontStyle",  "bold");
-    obj.label198:setText("Categoria");
-    obj.label198:setName("label198");
-
     obj.label199 = gui.fromHandle(_obj_newObject("label"));
     obj.label199:setParent(obj.layout79);
     obj.label199:setAlign("left");
-    obj.label199:setWidth(190);
+    obj.label199:setWidth(80);
     lfm_setPropAsString(obj.label199, "fontStyle",  "bold");
-    obj.label199:setText("Nome");
+    obj.label199:setFontColor("black");
+    obj.label199:setText("Categoria");
     obj.label199:setName("label199");
 
     obj.label200 = gui.fromHandle(_obj_newObject("label"));
     obj.label200:setParent(obj.layout79);
     obj.label200:setAlign("left");
-    obj.label200:setWidth(90);
+    obj.label200:setWidth(140);
     lfm_setPropAsString(obj.label200, "fontStyle",  "bold");
-    obj.label200:setHorzTextAlign("center");
-    obj.label200:setText("Bônus CA");
+    obj.label200:setFontColor("black");
+    obj.label200:setText("Nome");
     obj.label200:setName("label200");
 
     obj.label201 = gui.fromHandle(_obj_newObject("label"));
     obj.label201:setParent(obj.layout79);
     obj.label201:setAlign("left");
-    obj.label201:setWidth(140);
+    obj.label201:setWidth(55);
     lfm_setPropAsString(obj.label201, "fontStyle",  "bold");
+    obj.label201:setFontColor("black");
     obj.label201:setHorzTextAlign("center");
-    obj.label201:setText("Bônus Máx. DES");
+    obj.label201:setText("B. CA");
+    obj.label201:setHitTest(true);
+    obj.label201:setHint("Bônus na Classe de Armadura");
     obj.label201:setName("label201");
 
     obj.label202 = gui.fromHandle(_obj_newObject("label"));
     obj.label202:setParent(obj.layout79);
     obj.label202:setAlign("left");
-    obj.label202:setWidth(120);
+    obj.label202:setWidth(70);
     lfm_setPropAsString(obj.label202, "fontStyle",  "bold");
+    obj.label202:setFontColor("black");
     obj.label202:setHorzTextAlign("center");
-    obj.label202:setText("Penalidade");
+    obj.label202:setText("B. M. Dex");
+    obj.label202:setHitTest(true);
+    obj.label202:setHint("Bônus Máximo de Destreza");
     obj.label202:setName("label202");
 
     obj.label203 = gui.fromHandle(_obj_newObject("label"));
     obj.label203:setParent(obj.layout79);
     obj.label203:setAlign("left");
-    obj.label203:setWidth(70);
+    obj.label203:setWidth(65);
     lfm_setPropAsString(obj.label203, "fontStyle",  "bold");
+    obj.label203:setFontColor("black");
     obj.label203:setHorzTextAlign("center");
-    obj.label203:setText("Peso");
+    obj.label203:setText("Penal.");
+    obj.label203:setHitTest(true);
+    obj.label203:setHint("Penalidade de Armadura");
     obj.label203:setName("label203");
+
+    obj.label204 = gui.fromHandle(_obj_newObject("label"));
+    obj.label204:setParent(obj.layout79);
+    obj.label204:setAlign("left");
+    obj.label204:setWidth(40);
+    lfm_setPropAsString(obj.label204, "fontStyle",  "bold");
+    obj.label204:setFontColor("black");
+    obj.label204:setHorzTextAlign("center");
+    obj.label204:setText("Peso");
+    obj.label204:setHitTest(true);
+    obj.label204:setHint("Peso em Kg");
+    obj.label204:setName("label204");
+
+    obj.label205 = gui.fromHandle(_obj_newObject("label"));
+    obj.label205:setParent(obj.layout79);
+    obj.label205:setAlign("left");
+    obj.label205:setWidth(24);
+    lfm_setPropAsString(obj.label205, "fontStyle",  "bold");
+    obj.label205:setFontColor("black");
+    obj.label205:setHorzTextAlign("center");
+    obj.label205:setText("");
+    obj.label205:setName("label205");
 
     obj.rclDefesas = gui.fromHandle(_obj_newObject("recordList"));
     obj.rclDefesas:setParent(obj.layout76);
     obj.rclDefesas:setName("rclDefesas");
     obj.rclDefesas:setField("listaDefesas");
     obj.rclDefesas:setTemplateForm("frmDefesaLinha");
-    obj.rclDefesas:setAlign("top");
-    obj.rclDefesas:setHeight(60);
+    obj.rclDefesas:setAlign("client");
     obj.rclDefesas:setMargins({left=6,right=6,top=0,bottom=6});
     obj.rclDefesas:setSelectable(true);
 
+    obj.colDir = gui.fromHandle(_obj_newObject("layout"));
+    obj.colDir:setParent(obj.grid);
+    obj.colDir:setName("colDir");
+    obj.colDir:setAlign("client");
+    obj.colDir:setMargins({left=6});
+
     obj.layout80 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout80:setParent(obj.content);
+    obj.layout80:setParent(obj.colDir);
     obj.layout80:setAlign("top");
-    obj.layout80:setHeight(260);
+    obj.layout80:setHeight(410);
     obj.layout80:setMargins({top=0,bottom=4});
     obj.layout80:setName("layout80");
 
@@ -10102,64 +10202,80 @@ function newTormentafrm()
     obj.rectangle197:setColor("Gray");
     obj.rectangle197:setXradius(6);
     obj.rectangle197:setYradius(6);
+    obj.rectangle197:setHitTest(false);
     obj.rectangle197:setName("rectangle197");
+
+    obj.rcEquipCloseArea = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rcEquipCloseArea:setParent(obj.layout80);
+    obj.rcEquipCloseArea:setName("rcEquipCloseArea");
+    obj.rcEquipCloseArea:setAlign("client");
+    obj.rcEquipCloseArea:setColor("Transparent");
+    obj.rcEquipCloseArea:setHitTest(true);
 
     obj.layout81 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout81:setParent(obj.layout80);
-    obj.layout81:setAlign("top");
-    obj.layout81:setHeight(28);
-    obj.layout81:setMargins({left=6,right=6,top=6,bottom=2});
+    obj.layout81:setAlign("client");
+    obj.layout81:setMargins({left=6,right=6,top=6,bottom=6});
+    obj.layout81:setHitTest(true);
     obj.layout81:setName("layout81");
 
+    obj.layout82 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout82:setParent(obj.layout81);
+    obj.layout82:setAlign("top");
+    obj.layout82:setHeight(28);
+    obj.layout82:setMargins({bottom=2});
+    obj.layout82:setHitTest(false);
+    obj.layout82:setName("layout82");
+
     obj.rectangle198 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle198:setParent(obj.layout81);
+    obj.rectangle198:setParent(obj.layout82);
     obj.rectangle198:setAlign("client");
     obj.rectangle198:setColor("Black");
     obj.rectangle198:setXradius(4);
     obj.rectangle198:setYradius(4);
+    obj.rectangle198:setHitTest(false);
     obj.rectangle198:setName("rectangle198");
 
-    obj.label204 = gui.fromHandle(_obj_newObject("label"));
-    obj.label204:setParent(obj.layout81);
-    obj.label204:setAlign("client");
-    obj.label204:setFontSize(14);
-    lfm_setPropAsString(obj.label204, "fontStyle",  "bold");
-    obj.label204:setFontColor("white");
-    obj.label204:setHorzTextAlign("center");
-    obj.label204:setText("EQUIPAMENTO");
-    obj.label204:setName("label204");
-
-    obj.layout82 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout82:setParent(obj.layout80);
-    obj.layout82:setAlign("top");
-    obj.layout82:setHeight(24);
-    obj.layout82:setMargins({left=6,right=6,top=0,bottom=4});
-    obj.layout82:setName("layout82");
-
-    obj.button71 = gui.fromHandle(_obj_newObject("button"));
-    obj.button71:setParent(obj.layout82);
-    obj.button71:setAlign("left");
-    obj.button71:setWidth(190);
-    obj.button71:setText("Adicionar Item");
-    obj.button71:setName("button71");
+    obj.label206 = gui.fromHandle(_obj_newObject("label"));
+    obj.label206:setParent(obj.layout82);
+    obj.label206:setAlign("client");
+    obj.label206:setFontSize(14);
+    lfm_setPropAsString(obj.label206, "fontStyle",  "bold");
+    obj.label206:setFontColor("white");
+    obj.label206:setHorzTextAlign("center");
+    obj.label206:setText("EQUIPAMENTO");
+    obj.label206:setHitTest(false);
+    obj.label206:setName("label206");
 
     obj.layout83 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout83:setParent(obj.layout80);
-    obj.layout83:setAlign("client");
-    obj.layout83:setMargins({left=6,right=6,top=0,bottom=6});
+    obj.layout83:setParent(obj.layout81);
+    obj.layout83:setAlign("top");
+    obj.layout83:setHeight(24);
+    obj.layout83:setMargins({bottom=4});
+    obj.layout83:setHitTest(true);
     obj.layout83:setName("layout83");
 
-    obj.rectangle199 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle199:setParent(obj.layout83);
-    obj.rectangle199:setAlign("client");
-    obj.rectangle199:setColor("Transparent");
-    obj.rectangle199:setHitTest(true);
-    obj.rectangle199:setName("rectangle199");
+    obj.button72 = gui.fromHandle(_obj_newObject("button"));
+    obj.button72:setParent(obj.layout83);
+    obj.button72:setAlign("left");
+    obj.button72:setWidth(190);
+    obj.button72:setFontColor("black");
+    obj.button72:setText("Adicionar Item");
+    obj.button72:setName("button72");
+
+    obj.label207 = gui.fromHandle(_obj_newObject("label"));
+    obj.label207:setParent(obj.layout83);
+    obj.label207:setAlign("left");
+    obj.label207:setWidth(140);
+    obj.label207:setMargins({left=8});
+    obj.label207:setHitTest(false);
+    obj.label207:setName("label207");
 
     obj.layout84 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout84:setParent(obj.layout83);
-    obj.layout84:setAlign("left");
-    obj.layout84:setWidth(560);
+    obj.layout84:setParent(obj.layout81);
+    obj.layout84:setAlign("top");
+    obj.layout84:setHeight(185);
+    obj.layout84:setHitTest(true);
     obj.layout84:setName("layout84");
 
     obj.layout85 = gui.fromHandle(_obj_newObject("layout"));
@@ -10167,42 +10283,51 @@ function newTormentafrm()
     obj.layout85:setAlign("top");
     obj.layout85:setHeight(20);
     obj.layout85:setMargins({bottom=2});
+    obj.layout85:setHitTest(false);
     obj.layout85:setName("layout85");
-
-    obj.label205 = gui.fromHandle(_obj_newObject("label"));
-    obj.label205:setParent(obj.layout85);
-    obj.label205:setAlign("left");
-    obj.label205:setWidth(334);
-    lfm_setPropAsString(obj.label205, "fontStyle",  "bold");
-    obj.label205:setText("Nome");
-    obj.label205:setName("label205");
-
-    obj.label206 = gui.fromHandle(_obj_newObject("label"));
-    obj.label206:setParent(obj.layout85);
-    obj.label206:setAlign("left");
-    obj.label206:setWidth(100);
-    lfm_setPropAsString(obj.label206, "fontStyle",  "bold");
-    obj.label206:setHorzTextAlign("center");
-    obj.label206:setText("Valor");
-    obj.label206:setName("label206");
-
-    obj.label207 = gui.fromHandle(_obj_newObject("label"));
-    obj.label207:setParent(obj.layout85);
-    obj.label207:setAlign("left");
-    obj.label207:setWidth(70);
-    lfm_setPropAsString(obj.label207, "fontStyle",  "bold");
-    obj.label207:setHorzTextAlign("center");
-    obj.label207:setText("Peso");
-    obj.label207:setName("label207");
 
     obj.label208 = gui.fromHandle(_obj_newObject("label"));
     obj.label208:setParent(obj.layout85);
     obj.label208:setAlign("left");
-    obj.label208:setWidth(26);
+    obj.label208:setWidth(296);
     lfm_setPropAsString(obj.label208, "fontStyle",  "bold");
-    obj.label208:setHorzTextAlign("center");
-    obj.label208:setText("");
+    obj.label208:setFontColor("black");
+    obj.label208:setText("Nome");
+    obj.label208:setHitTest(false);
     obj.label208:setName("label208");
+
+    obj.label209 = gui.fromHandle(_obj_newObject("label"));
+    obj.label209:setParent(obj.layout85);
+    obj.label209:setAlign("left");
+    obj.label209:setWidth(70);
+    lfm_setPropAsString(obj.label209, "fontStyle",  "bold");
+    obj.label209:setFontColor("black");
+    obj.label209:setHorzTextAlign("center");
+    obj.label209:setText("Valor");
+    obj.label209:setHitTest(false);
+    obj.label209:setName("label209");
+
+    obj.label210 = gui.fromHandle(_obj_newObject("label"));
+    obj.label210:setParent(obj.layout85);
+    obj.label210:setAlign("left");
+    obj.label210:setWidth(70);
+    lfm_setPropAsString(obj.label210, "fontStyle",  "bold");
+    obj.label210:setFontColor("black");
+    obj.label210:setHorzTextAlign("center");
+    obj.label210:setText("Peso");
+    obj.label210:setHitTest(false);
+    obj.label210:setName("label210");
+
+    obj.label211 = gui.fromHandle(_obj_newObject("label"));
+    obj.label211:setParent(obj.layout85);
+    obj.label211:setAlign("left");
+    obj.label211:setWidth(26);
+    lfm_setPropAsString(obj.label211, "fontStyle",  "bold");
+    obj.label211:setFontColor("black");
+    obj.label211:setHorzTextAlign("center");
+    obj.label211:setText("");
+    obj.label211:setHitTest(false);
+    obj.label211:setName("label211");
 
     obj.rclEquip = gui.fromHandle(_obj_newObject("recordList"));
     obj.rclEquip:setParent(obj.layout84);
@@ -10212,134 +10337,112 @@ function newTormentafrm()
     obj.rclEquip:setAlign("client");
     obj.rclEquip:setSelectable(true);
 
-    obj.pnlEquipDetalhes = gui.fromHandle(_obj_newObject("layout"));
-    obj.pnlEquipDetalhes:setParent(obj.layout83);
-    obj.pnlEquipDetalhes:setName("pnlEquipDetalhes");
-    obj.pnlEquipDetalhes:setAlign("left");
-    obj.pnlEquipDetalhes:setWidth(420);
-    obj.pnlEquipDetalhes:setMargins({left=8});
-    obj.pnlEquipDetalhes:setVisible(false);
-
-    obj.rectangle200 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle200:setParent(obj.pnlEquipDetalhes);
-    obj.rectangle200:setAlign("client");
-    obj.rectangle200:setColor("LightGray");
-    obj.rectangle200:setXradius(6);
-    obj.rectangle200:setYradius(6);
-    obj.rectangle200:setName("rectangle200");
-
     obj.layout86 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout86:setParent(obj.pnlEquipDetalhes);
-    obj.layout86:setAlign("top");
-    obj.layout86:setHeight(26);
-    obj.layout86:setMargins({left=6,right=6,top=6,bottom=2});
+    obj.layout86:setParent(obj.layout81);
+    obj.layout86:setAlign("client");
+    obj.layout86:setMargins({top=6});
+    obj.layout86:setHitTest(true);
     obj.layout86:setName("layout86");
 
-    obj.label209 = gui.fromHandle(_obj_newObject("label"));
-    obj.label209:setParent(obj.layout86);
-    obj.label209:setAlign("client");
-    lfm_setPropAsString(obj.label209, "fontStyle",  "bold");
-    obj.label209:setHorzTextAlign("center");
-    obj.label209:setText("Detalhes do Item: $(nome)");
-    obj.label209:setName("label209");
-
-    obj.layout87 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout87:setParent(obj.pnlEquipDetalhes);
-    obj.layout87:setAlign("client");
-    obj.layout87:setMargins({left=6,right=6,top=0,bottom=6});
-    obj.layout87:setName("layout87");
-
-    obj.boxEquipDetalhes = gui.fromHandle(_obj_newObject("layout"));
-    obj.boxEquipDetalhes:setParent(obj.layout87);
+    obj.boxEquipDetalhes = gui.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.boxEquipDetalhes:setParent(obj.layout86);
     obj.boxEquipDetalhes:setName("boxEquipDetalhes");
+    obj.boxEquipDetalhes:setVisible(false);
     obj.boxEquipDetalhes:setAlign("client");
 
-    obj.label210 = gui.fromHandle(_obj_newObject("label"));
-    obj.label210:setParent(obj.boxEquipDetalhes);
-    obj.label210:setAlign("top");
-    obj.label210:setHeight(18);
-    lfm_setPropAsString(obj.label210, "fontStyle",  "bold");
-    obj.label210:setText("Descrição");
-    obj.label210:setName("label210");
+    obj.rectangle199 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle199:setParent(obj.boxEquipDetalhes);
+    obj.rectangle199:setAlign("client");
+    obj.rectangle199:setColor("LightGray");
+    obj.rectangle199:setXradius(6);
+    obj.rectangle199:setYradius(6);
+    obj.rectangle199:setPadding({left=6,right=6,top=6,bottom=6});
+    obj.rectangle199:setName("rectangle199");
+
+    obj.layout87 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout87:setParent(obj.rectangle199);
+    obj.layout87:setAlign("top");
+    obj.layout87:setHeight(26);
+    obj.layout87:setMargins({bottom=6});
+    obj.layout87:setHitTest(true);
+    obj.layout87:setName("layout87");
+
+    obj.lblEquipTitulo = gui.fromHandle(_obj_newObject("label"));
+    obj.lblEquipTitulo:setParent(obj.layout87);
+    obj.lblEquipTitulo:setName("lblEquipTitulo");
+    obj.lblEquipTitulo:setAlign("client");
+    lfm_setPropAsString(obj.lblEquipTitulo, "fontStyle",  "bold");
+    obj.lblEquipTitulo:setFontColor("black");
+    obj.lblEquipTitulo:setHorzTextAlign("center");
+    obj.lblEquipTitulo:setText("Detalhes do Item");
+    obj.lblEquipTitulo:setHitTest(false);
+
+    obj.button73 = gui.fromHandle(_obj_newObject("button"));
+    obj.button73:setParent(obj.layout87);
+    obj.button73:setAlign("right");
+    obj.button73:setWidth(90);
+    obj.button73:setFontColor("black");
+    obj.button73:setText("Fechar");
+    obj.button73:setName("button73");
 
     obj.textEditor4 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.boxEquipDetalhes);
+    obj.textEditor4:setParent(obj.rectangle199);
     obj.textEditor4:setAlign("client");
+    obj.textEditor4:setFontColor("black");
     obj.textEditor4:setField("descricao");
     obj.textEditor4:setName("textEditor4");
 
-    obj.layout88 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout88:setParent(obj.content);
-    obj.layout88:setAlign("top");
-    obj.layout88:setHeight(110);
-    obj.layout88:setMargins({top=0,bottom=8});
-    obj.layout88:setName("layout88");
+    obj.dataLink3 = gui.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.rectangle199);
+    obj.dataLink3:setFields({'nome'});
+    obj.dataLink3:setName("dataLink3");
 
-    obj.rectangle201 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle201:setParent(obj.layout88);
-    obj.rectangle201:setAlign("client");
-    obj.rectangle201:setColor("Gray");
-    obj.rectangle201:setXradius(6);
-    obj.rectangle201:setYradius(6);
-    obj.rectangle201:setName("rectangle201");
+    obj.layout88 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout88:setParent(obj.colDir);
+    obj.layout88:setAlign("client");
+    obj.layout88:setMargins({left=6,right=6,top=0,bottom=6});
+    obj.layout88:setName("layout88");
 
     obj.layout89 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout89:setParent(obj.layout88);
     obj.layout89:setAlign("top");
-    obj.layout89:setHeight(28);
-    obj.layout89:setMargins({left=6,right=6,top=6,bottom=2});
+    obj.layout89:setHeight(120);
     obj.layout89:setName("layout89");
 
-    obj.rectangle202 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle202:setParent(obj.layout89);
-    obj.rectangle202:setAlign("client");
-    obj.rectangle202:setColor("Black");
-    obj.rectangle202:setXradius(4);
-    obj.rectangle202:setYradius(4);
-    obj.rectangle202:setName("rectangle202");
-
-    obj.label211 = gui.fromHandle(_obj_newObject("label"));
-    obj.label211:setParent(obj.layout89);
-    obj.label211:setAlign("client");
-    obj.label211:setFontSize(14);
-    lfm_setPropAsString(obj.label211, "fontStyle",  "bold");
-    obj.label211:setFontColor("white");
-    obj.label211:setHorzTextAlign("center");
-    obj.label211:setText("CARGA / DINHEIRO / ANOTAÇÕES");
-    obj.label211:setName("label211");
-
     obj.layout90 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout90:setParent(obj.layout88);
-    obj.layout90:setAlign("client");
-    obj.layout90:setMargins({left=6,right=6,top=0,bottom=6});
+    obj.layout90:setParent(obj.layout89);
+    obj.layout90:setAlign("left");
+    obj.layout90:setWidth(240);
     obj.layout90:setName("layout90");
 
-    obj.layout91 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout91:setParent(obj.layout90);
-    obj.layout91:setAlign("left");
-    obj.layout91:setWidth(360);
-    obj.layout91:setName("layout91");
-
     obj.label212 = gui.fromHandle(_obj_newObject("label"));
-    obj.label212:setParent(obj.layout91);
+    obj.label212:setParent(obj.layout90);
     obj.label212:setAlign("top");
     obj.label212:setHeight(18);
     lfm_setPropAsString(obj.label212, "fontStyle",  "bold");
+    obj.label212:setFontColor("black");
     obj.label212:setText("Carga (regra automática)");
     obj.label212:setName("label212");
 
+    obj.layout91 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout91:setParent(obj.layout90);
+    obj.layout91:setAlign("top");
+    obj.layout91:setHeight(24);
+    obj.layout91:setName("layout91");
+
     obj.label213 = gui.fromHandle(_obj_newObject("label"));
     obj.label213:setParent(obj.layout91);
-    obj.label213:setAlign("top");
-    obj.label213:setHeight(18);
+    obj.label213:setAlign("left");
+    obj.label213:setWidth(120);
+    obj.label213:setFontColor("black");
     obj.label213:setText("Peso total:");
     obj.label213:setName("label213");
 
     obj.edit61 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit61:setParent(obj.layout91);
-    obj.edit61:setAlign("top");
-    obj.edit61:setHeight(24);
+    obj.edit61:setAlign("client");
     obj.edit61:setField("pesototal");
+    obj.edit61:setFontColor("black");
     obj.edit61:setType("number");
     obj.edit61:setMin(0);
     obj.edit61:setMax(999999);
@@ -10347,18 +10450,25 @@ function newTormentafrm()
     obj.edit61:setCanFocus(false);
     obj.edit61:setName("edit61");
 
+    obj.layout92 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout92:setParent(obj.layout90);
+    obj.layout92:setAlign("top");
+    obj.layout92:setHeight(24);
+    obj.layout92:setName("layout92");
+
     obj.label214 = gui.fromHandle(_obj_newObject("label"));
-    obj.label214:setParent(obj.layout91);
-    obj.label214:setAlign("top");
-    obj.label214:setHeight(18);
-    obj.label214:setText("Sem penalidade até:");
+    obj.label214:setParent(obj.layout92);
+    obj.label214:setAlign("left");
+    obj.label214:setWidth(120);
+    obj.label214:setFontColor("black");
+    obj.label214:setText("Sem penalidade:");
     obj.label214:setName("label214");
 
     obj.edit62 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.layout91);
-    obj.edit62:setAlign("top");
-    obj.edit62:setHeight(24);
+    obj.edit62:setParent(obj.layout92);
+    obj.edit62:setAlign("client");
     obj.edit62:setField("cargaSemPenal");
+    obj.edit62:setFontColor("black");
     obj.edit62:setType("number");
     obj.edit62:setMin(0);
     obj.edit62:setMax(999999);
@@ -10366,18 +10476,25 @@ function newTormentafrm()
     obj.edit62:setCanFocus(false);
     obj.edit62:setName("edit62");
 
+    obj.layout93 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout93:setParent(obj.layout90);
+    obj.layout93:setAlign("top");
+    obj.layout93:setHeight(24);
+    obj.layout93:setName("layout93");
+
     obj.label215 = gui.fromHandle(_obj_newObject("label"));
-    obj.label215:setParent(obj.layout91);
-    obj.label215:setAlign("top");
-    obj.label215:setHeight(18);
+    obj.label215:setParent(obj.layout93);
+    obj.label215:setAlign("left");
+    obj.label215:setWidth(120);
+    obj.label215:setFontColor("black");
     obj.label215:setText("Máximo:");
     obj.label215:setName("label215");
 
     obj.edit63 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.layout91);
-    obj.edit63:setAlign("top");
-    obj.edit63:setHeight(24);
+    obj.edit63:setParent(obj.layout93);
+    obj.edit63:setAlign("client");
     obj.edit63:setField("cargaMaxima");
+    obj.edit63:setFontColor("black");
     obj.edit63:setType("number");
     obj.edit63:setMin(0);
     obj.edit63:setMax(999999);
@@ -10385,145 +10502,466 @@ function newTormentafrm()
     obj.edit63:setCanFocus(false);
     obj.edit63:setName("edit63");
 
+    obj.layout94 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout94:setParent(obj.layout90);
+    obj.layout94:setAlign("top");
+    obj.layout94:setHeight(24);
+    obj.layout94:setName("layout94");
+
     obj.label216 = gui.fromHandle(_obj_newObject("label"));
-    obj.label216:setParent(obj.layout91);
-    obj.label216:setAlign("top");
-    obj.label216:setHeight(18);
-    obj.label216:setText("Deslocamento efetivo:");
+    obj.label216:setParent(obj.layout94);
+    obj.label216:setAlign("left");
+    obj.label216:setWidth(120);
+    obj.label216:setFontColor("black");
+    obj.label216:setText("Status:");
     obj.label216:setName("label216");
 
+    obj.layout95 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout95:setParent(obj.layout94);
+    obj.layout95:setAlign("client");
+    obj.layout95:setName("layout95");
+
+    obj.edtCargaStatus = gui.fromHandle(_obj_newObject("edit"));
+    obj.edtCargaStatus:setParent(obj.layout95);
+    obj.edtCargaStatus:setName("edtCargaStatus");
+    obj.edtCargaStatus:setAlign("client");
+    obj.edtCargaStatus:setField("cargaStatus");
+    obj.edtCargaStatus:setFontColor("black");
+    obj.edtCargaStatus:setCanFocus(false);
+    obj.edtCargaStatus:setHorzTextAlign("center");
+
+    obj.btnHintCargaStatus = gui.fromHandle(_obj_newObject("button"));
+    obj.btnHintCargaStatus:setParent(obj.layout95);
+    obj.btnHintCargaStatus:setName("btnHintCargaStatus");
+    obj.btnHintCargaStatus:setAlign("client");
+    obj.btnHintCargaStatus:setOpacity(0.0);
+    obj.btnHintCargaStatus:setCanFocus(false);
+    obj.btnHintCargaStatus:setCursor("help");
+    obj.btnHintCargaStatus:setHint("");
+
+    obj.layout96 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout96:setParent(obj.layout89);
+    obj.layout96:setAlign("client");
+    obj.layout96:setMargins({left=10});
+    obj.layout96:setName("layout96");
+
+    obj.label217 = gui.fromHandle(_obj_newObject("label"));
+    obj.label217:setParent(obj.layout96);
+    obj.label217:setAlign("top");
+    obj.label217:setHeight(18);
+    obj.label217:setFontColor("black");
+    lfm_setPropAsString(obj.label217, "fontStyle",  "bold");
+    obj.label217:setText("Dinheiro");
+    obj.label217:setName("label217");
+
+    obj.layout97 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout97:setParent(obj.layout96);
+    obj.layout97:setAlign("top");
+    obj.layout97:setHeight(24);
+    obj.layout97:setName("layout97");
+
+    obj.label218 = gui.fromHandle(_obj_newObject("label"));
+    obj.label218:setParent(obj.layout97);
+    obj.label218:setAlign("left");
+    obj.label218:setWidth(90);
+    obj.label218:setFontColor("black");
+    obj.label218:setText("T$ (Cobre)");
+    obj.label218:setName("label218");
+
     obj.edit64 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.layout91);
-    obj.edit64:setAlign("top");
-    obj.edit64:setHeight(24);
-    obj.edit64:setField("deslocamentoEfetivo");
-    obj.edit64:setCanFocus(false);
+    obj.edit64:setParent(obj.layout97);
+    obj.edit64:setAlign("client");
+    obj.edit64:setField("totalCobre");
+    obj.edit64:setFontColor("black");
+    obj.edit64:setType("number");
+    obj.edit64:setMin(0);
+    obj.edit64:setMax(999999);
     obj.edit64:setHorzTextAlign("center");
     obj.edit64:setName("edit64");
 
-    obj.label217 = gui.fromHandle(_obj_newObject("label"));
-    obj.label217:setParent(obj.layout91);
-    obj.label217:setAlign("top");
-    obj.label217:setHeight(18);
-    obj.label217:setText("Status:");
-    obj.label217:setName("label217");
+    obj.layout98 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout98:setParent(obj.layout96);
+    obj.layout98:setAlign("top");
+    obj.layout98:setHeight(24);
+    obj.layout98:setName("layout98");
+
+    obj.label219 = gui.fromHandle(_obj_newObject("label"));
+    obj.label219:setParent(obj.layout98);
+    obj.label219:setAlign("left");
+    obj.label219:setWidth(90);
+    obj.label219:setFontColor("black");
+    obj.label219:setText("TP (Prata)");
+    obj.label219:setName("label219");
 
     obj.edit65 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.layout91);
-    obj.edit65:setAlign("top");
-    obj.edit65:setHeight(24);
-    obj.edit65:setField("cargaStatus");
-    obj.edit65:setCanFocus(false);
+    obj.edit65:setParent(obj.layout98);
+    obj.edit65:setAlign("client");
+    obj.edit65:setField("totalPrata");
+    obj.edit65:setFontColor("black");
+    obj.edit65:setType("number");
+    obj.edit65:setMin(0);
+    obj.edit65:setMax(999999);
     obj.edit65:setHorzTextAlign("center");
     obj.edit65:setName("edit65");
 
-    obj.layout92 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout92:setParent(obj.layout90);
-    obj.layout92:setAlign("left");
-    obj.layout92:setWidth(240);
-    obj.layout92:setMargins({left=10});
-    obj.layout92:setName("layout92");
+    obj.layout99 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout99:setParent(obj.layout96);
+    obj.layout99:setAlign("top");
+    obj.layout99:setHeight(24);
+    obj.layout99:setName("layout99");
 
-    obj.label218 = gui.fromHandle(_obj_newObject("label"));
-    obj.label218:setParent(obj.layout92);
-    obj.label218:setAlign("top");
-    obj.label218:setHeight(18);
-    lfm_setPropAsString(obj.label218, "fontStyle",  "bold");
-    obj.label218:setText("Dinheiro");
-    obj.label218:setName("label218");
-
-    obj.label219 = gui.fromHandle(_obj_newObject("label"));
-    obj.label219:setParent(obj.layout92);
-    obj.label219:setAlign("top");
-    obj.label219:setHeight(18);
-    obj.label219:setText("T$ (Cobre)");
-    obj.label219:setName("label219");
+    obj.label220 = gui.fromHandle(_obj_newObject("label"));
+    obj.label220:setParent(obj.layout99);
+    obj.label220:setAlign("left");
+    obj.label220:setWidth(90);
+    obj.label220:setFontColor("black");
+    obj.label220:setText("TO (Ouro)");
+    obj.label220:setName("label220");
 
     obj.edit66 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.layout92);
-    obj.edit66:setAlign("top");
-    obj.edit66:setHeight(24);
-    obj.edit66:setField("totalCobre");
+    obj.edit66:setParent(obj.layout99);
+    obj.edit66:setAlign("client");
+    obj.edit66:setField("totalOuro");
+    obj.edit66:setFontColor("black");
     obj.edit66:setType("number");
     obj.edit66:setMin(0);
     obj.edit66:setMax(999999);
     obj.edit66:setHorzTextAlign("center");
     obj.edit66:setName("edit66");
 
-    obj.label220 = gui.fromHandle(_obj_newObject("label"));
-    obj.label220:setParent(obj.layout92);
-    obj.label220:setAlign("top");
-    obj.label220:setHeight(18);
-    obj.label220:setText("TP (Prata)");
-    obj.label220:setName("label220");
+    obj.layout100 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout100:setParent(obj.layout96);
+    obj.layout100:setAlign("top");
+    obj.layout100:setHeight(24);
+    obj.layout100:setName("layout100");
+
+    obj.label221 = gui.fromHandle(_obj_newObject("label"));
+    obj.label221:setParent(obj.layout100);
+    obj.label221:setAlign("left");
+    obj.label221:setWidth(90);
+    obj.label221:setFontColor("black");
+    obj.label221:setText("TL (Platina)");
+    obj.label221:setName("label221");
 
     obj.edit67 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.layout92);
-    obj.edit67:setAlign("top");
-    obj.edit67:setHeight(24);
-    obj.edit67:setField("totalPrata");
+    obj.edit67:setParent(obj.layout100);
+    obj.edit67:setAlign("client");
+    obj.edit67:setField("totalPlatina");
+    obj.edit67:setFontColor("black");
     obj.edit67:setType("number");
     obj.edit67:setMin(0);
     obj.edit67:setMax(999999);
     obj.edit67:setHorzTextAlign("center");
     obj.edit67:setName("edit67");
 
-    obj.label221 = gui.fromHandle(_obj_newObject("label"));
-    obj.label221:setParent(obj.layout92);
-    obj.label221:setAlign("top");
-    obj.label221:setHeight(18);
-    obj.label221:setText("TO (Ouro)");
-    obj.label221:setName("label221");
-
-    obj.edit68 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.layout92);
-    obj.edit68:setAlign("top");
-    obj.edit68:setHeight(24);
-    obj.edit68:setField("totalOuro");
-    obj.edit68:setType("number");
-    obj.edit68:setMin(0);
-    obj.edit68:setMax(999999);
-    obj.edit68:setHorzTextAlign("center");
-    obj.edit68:setName("edit68");
+    obj.layout101 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout101:setParent(obj.layout88);
+    obj.layout101:setAlign("client");
+    obj.layout101:setMargins({top=8});
+    obj.layout101:setName("layout101");
 
     obj.label222 = gui.fromHandle(_obj_newObject("label"));
-    obj.label222:setParent(obj.layout92);
+    obj.label222:setParent(obj.layout101);
     obj.label222:setAlign("top");
     obj.label222:setHeight(18);
-    obj.label222:setText("TL (Platina)");
+    obj.label222:setFontColor("black");
+    lfm_setPropAsString(obj.label222, "fontStyle",  "bold");
+    obj.label222:setText("Anotações");
     obj.label222:setName("label222");
 
-    obj.edit69 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.layout92);
-    obj.edit69:setAlign("top");
-    obj.edit69:setHeight(24);
-    obj.edit69:setField("totalPlatina");
-    obj.edit69:setType("number");
-    obj.edit69:setMin(0);
-    obj.edit69:setMax(999999);
-    obj.edit69:setHorzTextAlign("center");
-    obj.edit69:setName("edit69");
-
-    obj.layout93 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout93:setParent(obj.layout90);
-    obj.layout93:setAlign("left");
-    obj.layout93:setWidth(360);
-    obj.layout93:setMargins({left=10});
-    obj.layout93:setName("layout93");
-
-    obj.label223 = gui.fromHandle(_obj_newObject("label"));
-    obj.label223:setParent(obj.layout93);
-    obj.label223:setAlign("top");
-    obj.label223:setHeight(18);
-    lfm_setPropAsString(obj.label223, "fontStyle",  "bold");
-    obj.label223:setText("Anotações");
-    obj.label223:setName("label223");
-
     obj.textEditor5 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor5:setParent(obj.layout93);
+    obj.textEditor5:setParent(obj.layout101);
     obj.textEditor5:setAlign("client");
+    obj.textEditor5:setFontColor("black");
     obj.textEditor5:setField("eqanotacoes");
     obj.textEditor5:setName("textEditor5");
+
+    obj.dataLink4 = gui.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink4:setParent(obj.Tormenta03);
+    obj.dataLink4:setFields({'__recalc03','forca','danoforca','pesototal','cargaSemPenal','cargaMaxima','listaArmas','listaDefesas','listaEquipamentos'});
+    obj.dataLink4:setName("dataLink4");
+
+
+
+			-- === util ===
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			local function trim(s)
+				s = tostring(s or "")
+				s = s:gsub("^%s+",""):gsub("%s+$","")
+				return s
+			end
+
+			local function rootOf(nodeOrSheet)
+				if nodeOrSheet == nil then return nil end
+				-- se já for sheet raiz, ok; se for node de lista, sobe
+				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				if ok and r ~= nil then return r end
+				return nodeOrSheet
+			end
+
+			function TRPG_touchCA(itemNode)
+				TRPG_recalcPenDefesas(itemNode)
+				local r = rootOf(itemNode)
+				if r == nil then return end
+				r.__recalcCA = (tonumber(r.__recalcCA) or 0) + 1
+			end
+
+			function TRPG_touch03(nodeOrSheet)
+				local r = rootOf(nodeOrSheet)
+				if r == nil then return end
+				r.__recalc03 = (tonumber(r.__recalc03) or 0) + 1
+			end
+
+			-- === armas / defesas ===
+			function TRPG_addArma(ctrl, sh)
+				local rl = ctrl and ctrl:findControlByName("rclArmas") or nil
+				if rl ~= nil then
+					rl:append()
+					TRPG_touch03(sh)
+				end
+			end
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- === equipamento ===
+			function TRPG_equipUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.nome)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes do Item"
+				else
+					lbl.text = "Detalhes do Item: " .. nome
+				end
+			end
+
+			function TRPG_equipClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes do Item"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_equipOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_equipUpdateTitulo(ctrl)
+			end
+
+			function TRPG_equipAddItem(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+
+				if rl == nil or box == nil then return end
+
+				local n = rl:append()
+				if n ~= nil then
+					n.nome = ""
+					n.valor = ""
+					n.peso = 0
+					n.descricao = ""
+
+					rl.selectedNode = n
+					box.node = n
+					box.visible = true
+
+					TRPG_equipUpdateTitulo(ctrl)
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- === carga (cálculo seguro e simples) ===
+			local function sumPeso(listNode)
+				local total = 0
+				if listNode == nil then return 0 end
+
+				local ok, children = pcall(function()
+					return ndb.getChildNodes(listNode)
+				end)
+				if not ok or children == nil then return 0 end
+
+				for _, n in ipairs(children) do
+					total = total + N(n.peso, 0)
+				end
+				return total
+			end
+
+			function TRPG_calcCarga03(ctrl, sh)
+				local sheet = rootOf(sh)
+				if sheet == nil then return end
+
+				-- peso total (armas + defesas + equipamentos)
+				local total =
+					sumPeso(sheet.listaArmas) +
+					sumPeso(sheet.listaDefesas) +
+					sumPeso(sheet.listaEquipamentos)
+
+				total = math.floor(total * 100 + 0.5) / 100
+
+				if N(sheet.pesototal, -1) ~= total then
+					sheet.pesototal = total
+				end
+
+				-- ===== regra oficial: 3x FOR / 10x FOR (FOR efetiva) =====
+				local forBase = N(sheet.forca, 10)
+				local danoFor = N(sheet.danoforca, 0)
+				local forEff  = forBase - danoFor
+				if forEff < 0 then forEff = 0 end
+
+				local semPenal = forEff * 3
+				local maximo   = forEff * 10
+
+				if N(sheet.cargaSemPenal, -1) ~= semPenal then
+					sheet.cargaSemPenal = semPenal
+				end
+
+				if N(sheet.cargaMaxima, -1) ~= maximo then
+					sheet.cargaMaxima = maximo
+				end
+
+				-- status + flags pra outras telas
+				local status = "OK"
+				local penal = 0
+				local deslocPenal = 0
+
+				if total > semPenal then
+					status = "Pesada"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if total > maximo then
+					status = "Excedida"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if tostring(sheet.cargaStatus or "") ~= status then
+					sheet.cargaStatus = status
+				end
+
+				TRPG_updateHintCarga03(ctrl, sheet)
+
+				-- esses campos você usa em outras telas (perícias)
+				if N(sheet.cargaPenalidade, 999) ~= penal then
+					sheet.cargaPenalidade = penal   -- 0 ou -2
+				end
+
+				sheet.cargaAfetada = (penal ~= 0)
+
+				local penCargaPos = 0
+				if penal < 0 then penCargaPos = -penal end
+
+				if (tonumber(sheet.pencarga) or 0) ~= penCargaPos then
+				sheet.pencarga = penCargaPos
+				end
+			end
+
+			function TRPG_updateHintCarga03(ctrl, sh)
+				local root = rootOf(sh)
+				if root == nil then return end
+
+				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				if btn == nil then return end
+
+				local st = tostring(root.cargaStatus or "OK")
+
+				if st == "OK" then
+					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
+				elseif st == "Pesada" then
+					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
+				elseif st == "Excedida" then
+					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
+				else
+					btn.hint = "Status de carga: " .. st
+				end
+			end
+
+			-- ===== Penalidades automáticas vindas de listaDefesas (Tela 3) =====
+
+			local function sumPenalidadeDefesas(root)
+				if root == nil then return 0,0,0 end
+
+				local arm, esc, out = 0, 0, 0
+				local lista = root.listaDefesas
+				if lista == nil then return 0,0,0 end
+
+				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				if not ok or children == nil then return 0,0,0 end
+
+				for _, item in ipairs(children) do
+					local cat = tostring(item.categoria or ""):lower()
+					local pen = tonumber(item.penalidade) or 0
+
+					-- como você disse que só existem esses 3 tipos:
+					if cat == "armadura" then
+						arm = arm + pen
+					elseif cat == "escudo" or cat == "escudos" then
+						esc = esc + pen
+					elseif cat == "outros" or cat == "outro" then
+						out = out + pen
+					end
+				end
+
+				return arm, esc, out
+			end
+
+			-- Use isso quando mudar defesas / CA / peso
+			function TRPG_recalcPenDefesas(sheetAny)
+				local root = rootOf(sheetAny)
+				if root == nil then return end
+
+				local arm, esc, out = sumPenalidadeDefesas(root)
+
+				if (tonumber(root.penarmadura) or 0) ~= arm then root.penarmadura = arm end
+				if (tonumber(root.penescudo) or 0) ~= esc then root.penescudo = esc end
+				if (tonumber(root.penoutros) or 0) ~= out then root.penoutros = out end
+			end
+
+		
+
 
     obj.tab4 = gui.fromHandle(_obj_newObject("tab"));
     obj.tab4:setParent(obj.tabControl1);
@@ -10542,93 +10980,93 @@ function newTormentafrm()
     obj.scrollBox4:setAlign("client");
     obj.scrollBox4:setName("scrollBox4");
 
+    obj.rectangle200 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle200:setParent(obj.scrollBox4);
+    obj.rectangle200:setWidth(1010);
+    obj.rectangle200:setHeight(700);
+    obj.rectangle200:setColor("LightGray");
+    obj.rectangle200:setXradius(10);
+    obj.rectangle200:setYradius(10);
+    obj.rectangle200:setName("rectangle200");
+
+    obj.rectangle201 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle201:setParent(obj.scrollBox4);
+    obj.rectangle201:setLeft(373);
+    obj.rectangle201:setTop(10);
+    obj.rectangle201:setColor("#333333");
+    obj.rectangle201:setWidth(265);
+    obj.rectangle201:setHeight(50);
+    obj.rectangle201:setXradius(2);
+    obj.rectangle201:setYradius(2);
+    obj.rectangle201:setName("rectangle201");
+
+    obj.rectangle202 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle202:setParent(obj.scrollBox4);
+    obj.rectangle202:setLeft(378);
+    obj.rectangle202:setTop(15);
+    obj.rectangle202:setColor("#999999");
+    obj.rectangle202:setWidth(255);
+    obj.rectangle202:setHeight(40);
+    obj.rectangle202:setXradius(2);
+    obj.rectangle202:setYradius(2);
+    obj.rectangle202:setName("rectangle202");
+
     obj.rectangle203 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle203:setParent(obj.scrollBox4);
-    obj.rectangle203:setWidth(1010);
-    obj.rectangle203:setHeight(700);
-    obj.rectangle203:setColor("LightGray");
-    obj.rectangle203:setXradius(10);
-    obj.rectangle203:setYradius(10);
+    obj.rectangle203:setLeft(397);
+    obj.rectangle203:setTop(28);
+    obj.rectangle203:setColor("Black");
+    obj.rectangle203:setWidth(90);
+    obj.rectangle203:setHeight(25);
+    obj.rectangle203:setXradius(2);
+    obj.rectangle203:setYradius(2);
     obj.rectangle203:setName("rectangle203");
+
+    obj.label223 = gui.fromHandle(_obj_newObject("label"));
+    obj.label223:setParent(obj.scrollBox4);
+    obj.label223:setLeft(429);
+    obj.label223:setTop(22);
+    obj.label223:setWidth(35);
+    obj.label223:setHeight(25);
+    obj.label223:setFontSize(14);
+    lfm_setPropAsString(obj.label223, "fontStyle",  "bold");
+    obj.label223:setFontColor("white");
+    obj.label223:setText("PM");
+    obj.label223:setName("label223");
+
+    obj.label224 = gui.fromHandle(_obj_newObject("label"));
+    obj.label224:setParent(obj.scrollBox4);
+    obj.label224:setLeft(404);
+    obj.label224:setTop(33);
+    obj.label224:setWidth(90);
+    obj.label224:setHeight(25);
+    obj.label224:setFontSize(10);
+    obj.label224:setFontColor("white");
+    obj.label224:setText("Pontos de Magia");
+    obj.label224:setName("label224");
 
     obj.rectangle204 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle204:setParent(obj.scrollBox4);
-    obj.rectangle204:setLeft(373);
-    obj.rectangle204:setTop(10);
-    obj.rectangle204:setColor("#333333");
-    obj.rectangle204:setWidth(265);
-    obj.rectangle204:setHeight(50);
+    obj.rectangle204:setLeft(507);
+    obj.rectangle204:setTop(16);
+    obj.rectangle204:setColor("Black");
+    obj.rectangle204:setWidth(28);
+    obj.rectangle204:setHeight(15);
     obj.rectangle204:setXradius(2);
     obj.rectangle204:setYradius(2);
     obj.rectangle204:setName("rectangle204");
 
-    obj.rectangle205 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle205:setParent(obj.scrollBox4);
-    obj.rectangle205:setLeft(378);
-    obj.rectangle205:setTop(15);
-    obj.rectangle205:setColor("#999999");
-    obj.rectangle205:setWidth(255);
-    obj.rectangle205:setHeight(40);
-    obj.rectangle205:setXradius(2);
-    obj.rectangle205:setYradius(2);
-    obj.rectangle205:setName("rectangle205");
-
-    obj.rectangle206 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle206:setParent(obj.scrollBox4);
-    obj.rectangle206:setLeft(397);
-    obj.rectangle206:setTop(28);
-    obj.rectangle206:setColor("Black");
-    obj.rectangle206:setWidth(90);
-    obj.rectangle206:setHeight(25);
-    obj.rectangle206:setXradius(2);
-    obj.rectangle206:setYradius(2);
-    obj.rectangle206:setName("rectangle206");
-
-    obj.label224 = gui.fromHandle(_obj_newObject("label"));
-    obj.label224:setParent(obj.scrollBox4);
-    obj.label224:setLeft(429);
-    obj.label224:setTop(22);
-    obj.label224:setWidth(35);
-    obj.label224:setHeight(25);
-    obj.label224:setFontSize(14);
-    lfm_setPropAsString(obj.label224, "fontStyle",  "bold");
-    obj.label224:setFontColor("white");
-    obj.label224:setText("PM");
-    obj.label224:setName("label224");
-
     obj.label225 = gui.fromHandle(_obj_newObject("label"));
     obj.label225:setParent(obj.scrollBox4);
-    obj.label225:setLeft(404);
-    obj.label225:setTop(33);
-    obj.label225:setWidth(90);
-    obj.label225:setHeight(25);
+    obj.label225:setLeft(509);
+    obj.label225:setTop(18);
+    obj.label225:setWidth(28);
+    obj.label225:setHeight(8);
     obj.label225:setFontSize(10);
+    lfm_setPropAsString(obj.label225, "fontStyle",  "bold");
     obj.label225:setFontColor("white");
-    obj.label225:setText("Pontos de Magia");
+    obj.label225:setText("Total");
     obj.label225:setName("label225");
-
-    obj.rectangle207 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle207:setParent(obj.scrollBox4);
-    obj.rectangle207:setLeft(507);
-    obj.rectangle207:setTop(16);
-    obj.rectangle207:setColor("Black");
-    obj.rectangle207:setWidth(28);
-    obj.rectangle207:setHeight(15);
-    obj.rectangle207:setXradius(2);
-    obj.rectangle207:setYradius(2);
-    obj.rectangle207:setName("rectangle207");
-
-    obj.label226 = gui.fromHandle(_obj_newObject("label"));
-    obj.label226:setParent(obj.scrollBox4);
-    obj.label226:setLeft(509);
-    obj.label226:setTop(18);
-    obj.label226:setWidth(28);
-    obj.label226:setHeight(8);
-    obj.label226:setFontSize(10);
-    lfm_setPropAsString(obj.label226, "fontStyle",  "bold");
-    obj.label226:setFontColor("white");
-    obj.label226:setText("Total");
-    obj.label226:setName("label226");
 
     obj.totalPM = gui.fromHandle(_obj_newObject("edit"));
     obj.totalPM:setParent(obj.scrollBox4);
@@ -10644,28 +11082,28 @@ function newTormentafrm()
     obj.totalPM:setFontSize(15.0);
     lfm_setPropAsString(obj.totalPM, "fontStyle",  "bold");
 
-    obj.rectangle208 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle208:setParent(obj.scrollBox4);
-    obj.rectangle208:setLeft(564);
-    obj.rectangle208:setTop(16);
-    obj.rectangle208:setColor("Black");
-    obj.rectangle208:setWidth(38);
-    obj.rectangle208:setHeight(15);
-    obj.rectangle208:setXradius(2);
-    obj.rectangle208:setYradius(2);
-    obj.rectangle208:setName("rectangle208");
+    obj.rectangle205 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle205:setParent(obj.scrollBox4);
+    obj.rectangle205:setLeft(564);
+    obj.rectangle205:setTop(16);
+    obj.rectangle205:setColor("Black");
+    obj.rectangle205:setWidth(38);
+    obj.rectangle205:setHeight(15);
+    obj.rectangle205:setXradius(2);
+    obj.rectangle205:setYradius(2);
+    obj.rectangle205:setName("rectangle205");
 
-    obj.label227 = gui.fromHandle(_obj_newObject("label"));
-    obj.label227:setParent(obj.scrollBox4);
-    obj.label227:setLeft(568);
-    obj.label227:setTop(18);
-    obj.label227:setWidth(38);
-    obj.label227:setHeight(8);
-    obj.label227:setFontSize(10);
-    lfm_setPropAsString(obj.label227, "fontStyle",  "bold");
-    obj.label227:setFontColor("white");
-    obj.label227:setText("Atuais");
-    obj.label227:setName("label227");
+    obj.label226 = gui.fromHandle(_obj_newObject("label"));
+    obj.label226:setParent(obj.scrollBox4);
+    obj.label226:setLeft(568);
+    obj.label226:setTop(18);
+    obj.label226:setWidth(38);
+    obj.label226:setHeight(8);
+    obj.label226:setFontSize(10);
+    lfm_setPropAsString(obj.label226, "fontStyle",  "bold");
+    obj.label226:setFontColor("white");
+    obj.label226:setText("Atuais");
+    obj.label226:setName("label226");
 
     obj.atuaisPM = gui.fromHandle(_obj_newObject("edit"));
     obj.atuaisPM:setParent(obj.scrollBox4);
@@ -10681,78 +11119,78 @@ function newTormentafrm()
     obj.atuaisPM:setFontSize(15.0);
     lfm_setPropAsString(obj.atuaisPM, "fontStyle",  "bold");
 
-    obj.rectangle209 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle209:setParent(obj.scrollBox4);
-    obj.rectangle209:setLeft(175);
-    obj.rectangle209:setTop(46);
-    obj.rectangle209:setColor("Black");
-    obj.rectangle209:setWidth(160);
-    obj.rectangle209:setHeight(28);
-    obj.rectangle209:setXradius(2);
-    obj.rectangle209:setYradius(2);
-    obj.rectangle209:setName("rectangle209");
+    obj.rectangle206 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle206:setParent(obj.scrollBox4);
+    obj.rectangle206:setLeft(175);
+    obj.rectangle206:setTop(46);
+    obj.rectangle206:setColor("Black");
+    obj.rectangle206:setWidth(160);
+    obj.rectangle206:setHeight(28);
+    obj.rectangle206:setXradius(2);
+    obj.rectangle206:setYradius(2);
+    obj.rectangle206:setName("rectangle206");
 
-    obj.label228 = gui.fromHandle(_obj_newObject("label"));
-    obj.label228:setParent(obj.scrollBox4);
-    obj.label228:setLeft(183);
-    obj.label228:setTop(47);
-    obj.label228:setWidth(160);
-    obj.label228:setHeight(23);
-    obj.label228:setFontSize(16.0);
-    lfm_setPropAsString(obj.label228, "fontStyle",  "bold");
-    obj.label228:setFontColor("white");
-    obj.label228:setText("Magias Conhecidas");
-    obj.label228:setName("label228");
+    obj.label227 = gui.fromHandle(_obj_newObject("label"));
+    obj.label227:setParent(obj.scrollBox4);
+    obj.label227:setLeft(183);
+    obj.label227:setTop(47);
+    obj.label227:setWidth(160);
+    obj.label227:setHeight(23);
+    obj.label227:setFontSize(16.0);
+    lfm_setPropAsString(obj.label227, "fontStyle",  "bold");
+    obj.label227:setFontColor("white");
+    obj.label227:setText("Magias Conhecidas");
+    obj.label227:setName("label227");
 
-    obj.layout94 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout94:setParent(obj.scrollBox4);
-    obj.layout94:setLeft(10);
-    obj.layout94:setTop(72);
-    obj.layout94:setWidth(490);
-    obj.layout94:setHeight(615);
-    obj.layout94:setName("layout94");
+    obj.layout102 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout102:setParent(obj.scrollBox4);
+    obj.layout102:setLeft(10);
+    obj.layout102:setTop(72);
+    obj.layout102:setWidth(490);
+    obj.layout102:setHeight(615);
+    obj.layout102:setName("layout102");
 
     obj.textEditor6 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor6:setParent(obj.layout94);
+    obj.textEditor6:setParent(obj.layout102);
     obj.textEditor6:setAlign("client");
     obj.textEditor6:setField("mconhecidas");
     obj.textEditor6:setFontColor("black");
     lfm_setPropAsString(obj.textEditor6, "fontStyle",  "bold");
     obj.textEditor6:setName("textEditor6");
 
-    obj.rectangle210 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle210:setParent(obj.scrollBox4);
-    obj.rectangle210:setLeft(675);
-    obj.rectangle210:setTop(46);
-    obj.rectangle210:setColor("Black");
-    obj.rectangle210:setWidth(160);
-    obj.rectangle210:setHeight(28);
-    obj.rectangle210:setXradius(2);
-    obj.rectangle210:setYradius(2);
-    obj.rectangle210:setName("rectangle210");
+    obj.rectangle207 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle207:setParent(obj.scrollBox4);
+    obj.rectangle207:setLeft(675);
+    obj.rectangle207:setTop(46);
+    obj.rectangle207:setColor("Black");
+    obj.rectangle207:setWidth(160);
+    obj.rectangle207:setHeight(28);
+    obj.rectangle207:setXradius(2);
+    obj.rectangle207:setYradius(2);
+    obj.rectangle207:setName("rectangle207");
 
-    obj.label229 = gui.fromHandle(_obj_newObject("label"));
-    obj.label229:setParent(obj.scrollBox4);
-    obj.label229:setLeft(683);
-    obj.label229:setTop(47);
-    obj.label229:setWidth(160);
-    obj.label229:setHeight(23);
-    obj.label229:setFontSize(16.0);
-    lfm_setPropAsString(obj.label229, "fontStyle",  "bold");
-    obj.label229:setFontColor("white");
-    obj.label229:setText("Magias Preparadas");
-    obj.label229:setName("label229");
+    obj.label228 = gui.fromHandle(_obj_newObject("label"));
+    obj.label228:setParent(obj.scrollBox4);
+    obj.label228:setLeft(683);
+    obj.label228:setTop(47);
+    obj.label228:setWidth(160);
+    obj.label228:setHeight(23);
+    obj.label228:setFontSize(16.0);
+    lfm_setPropAsString(obj.label228, "fontStyle",  "bold");
+    obj.label228:setFontColor("white");
+    obj.label228:setText("Magias Preparadas");
+    obj.label228:setName("label228");
 
-    obj.layout95 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout95:setParent(obj.scrollBox4);
-    obj.layout95:setLeft(510);
-    obj.layout95:setTop(72);
-    obj.layout95:setWidth(490);
-    obj.layout95:setHeight(615);
-    obj.layout95:setName("layout95");
+    obj.layout103 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout103:setParent(obj.scrollBox4);
+    obj.layout103:setLeft(510);
+    obj.layout103:setTop(72);
+    obj.layout103:setWidth(490);
+    obj.layout103:setHeight(615);
+    obj.layout103:setName("layout103");
 
     obj.textEditor7 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.layout95);
+    obj.textEditor7:setParent(obj.layout103);
     obj.textEditor7:setAlign("client");
     obj.textEditor7:setField("mpreparadas");
     obj.textEditor7:setFontColor("black");
@@ -10776,81 +11214,81 @@ function newTormentafrm()
     obj.scrollBox5:setAlign("client");
     obj.scrollBox5:setName("scrollBox5");
 
+    obj.rectangle208 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle208:setParent(obj.scrollBox5);
+    obj.rectangle208:setWidth(1010);
+    obj.rectangle208:setHeight(700);
+    obj.rectangle208:setColor("LightGray");
+    obj.rectangle208:setXradius(10);
+    obj.rectangle208:setYradius(10);
+    obj.rectangle208:setName("rectangle208");
+
+    obj.layout104 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout104:setParent(obj.scrollBox5);
+    obj.layout104:setLeft(10);
+    obj.layout104:setTop(8);
+    obj.layout104:setWidth(980);
+    obj.layout104:setHeight(300);
+    obj.layout104:setName("layout104");
+
+    obj.rectangle209 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle209:setParent(obj.layout104);
+    obj.rectangle209:setLeft(1);
+    obj.rectangle209:setTop(230);
+    obj.rectangle209:setColor("#333333");
+    obj.rectangle209:setWidth(280);
+    obj.rectangle209:setHeight(70);
+    obj.rectangle209:setXradius(2);
+    obj.rectangle209:setYradius(2);
+    obj.rectangle209:setName("rectangle209");
+
+    obj.rectangle210 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle210:setParent(obj.layout104);
+    obj.rectangle210:setLeft(5);
+    obj.rectangle210:setTop(235);
+    obj.rectangle210:setColor("#999999");
+    obj.rectangle210:setWidth(270);
+    obj.rectangle210:setHeight(60);
+    obj.rectangle210:setXradius(2);
+    obj.rectangle210:setYradius(2);
+    obj.rectangle210:setName("rectangle210");
+
     obj.rectangle211 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle211:setParent(obj.scrollBox5);
-    obj.rectangle211:setWidth(1010);
-    obj.rectangle211:setHeight(700);
-    obj.rectangle211:setColor("LightGray");
-    obj.rectangle211:setXradius(10);
-    obj.rectangle211:setYradius(10);
+    obj.rectangle211:setParent(obj.layout104);
+    obj.rectangle211:setLeft(15);
+    obj.rectangle211:setTop(238);
+    obj.rectangle211:setColor("Black");
+    obj.rectangle211:setWidth(120);
+    obj.rectangle211:setHeight(25);
+    obj.rectangle211:setXradius(2);
+    obj.rectangle211:setYradius(2);
     obj.rectangle211:setName("rectangle211");
 
-    obj.layout96 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout96:setParent(obj.scrollBox5);
-    obj.layout96:setLeft(10);
-    obj.layout96:setTop(8);
-    obj.layout96:setWidth(980);
-    obj.layout96:setHeight(300);
-    obj.layout96:setName("layout96");
-
-    obj.rectangle212 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle212:setParent(obj.layout96);
-    obj.rectangle212:setLeft(1);
-    obj.rectangle212:setTop(230);
-    obj.rectangle212:setColor("#333333");
-    obj.rectangle212:setWidth(280);
-    obj.rectangle212:setHeight(70);
-    obj.rectangle212:setXradius(2);
-    obj.rectangle212:setYradius(2);
-    obj.rectangle212:setName("rectangle212");
-
-    obj.rectangle213 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle213:setParent(obj.layout96);
-    obj.rectangle213:setLeft(5);
-    obj.rectangle213:setTop(235);
-    obj.rectangle213:setColor("#999999");
-    obj.rectangle213:setWidth(270);
-    obj.rectangle213:setHeight(60);
-    obj.rectangle213:setXradius(2);
-    obj.rectangle213:setYradius(2);
-    obj.rectangle213:setName("rectangle213");
-
-    obj.rectangle214 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle214:setParent(obj.layout96);
-    obj.rectangle214:setLeft(15);
-    obj.rectangle214:setTop(238);
-    obj.rectangle214:setColor("Black");
-    obj.rectangle214:setWidth(120);
-    obj.rectangle214:setHeight(25);
-    obj.rectangle214:setXradius(2);
-    obj.rectangle214:setYradius(2);
-    obj.rectangle214:setName("rectangle214");
+    obj.label229 = gui.fromHandle(_obj_newObject("label"));
+    obj.label229:setParent(obj.layout104);
+    obj.label229:setLeft(37);
+    obj.label229:setTop(233);
+    obj.label229:setWidth(75);
+    obj.label229:setHeight(25);
+    obj.label229:setFontSize(14);
+    lfm_setPropAsString(obj.label229, "fontStyle",  "bold");
+    obj.label229:setFontColor("white");
+    obj.label229:setText("EXP ATUAL");
+    obj.label229:setName("label229");
 
     obj.label230 = gui.fromHandle(_obj_newObject("label"));
-    obj.label230:setParent(obj.layout96);
-    obj.label230:setLeft(37);
-    obj.label230:setTop(233);
-    obj.label230:setWidth(75);
+    obj.label230:setParent(obj.layout104);
+    obj.label230:setLeft(36);
+    obj.label230:setTop(243);
+    obj.label230:setWidth(120);
     obj.label230:setHeight(25);
-    obj.label230:setFontSize(14);
-    lfm_setPropAsString(obj.label230, "fontStyle",  "bold");
+    obj.label230:setFontSize(10);
     obj.label230:setFontColor("white");
-    obj.label230:setText("EXP ATUAL");
+    obj.label230:setText("Experiência Atual");
     obj.label230:setName("label230");
 
-    obj.label231 = gui.fromHandle(_obj_newObject("label"));
-    obj.label231:setParent(obj.layout96);
-    obj.label231:setLeft(36);
-    obj.label231:setTop(243);
-    obj.label231:setWidth(120);
-    obj.label231:setHeight(25);
-    obj.label231:setFontSize(10);
-    obj.label231:setFontColor("white");
-    obj.label231:setText("Experiência Atual");
-    obj.label231:setName("label231");
-
     obj.XPAtual = gui.fromHandle(_obj_newObject("edit"));
-    obj.XPAtual:setParent(obj.layout96);
+    obj.XPAtual:setParent(obj.layout104);
     obj.XPAtual:setLeft(146);
     obj.XPAtual:setTop(238);
     obj.XPAtual:setWidth(120);
@@ -10863,42 +11301,42 @@ function newTormentafrm()
     obj.XPAtual:setFontSize(15.0);
     lfm_setPropAsString(obj.XPAtual, "fontStyle",  "bold");
 
-    obj.rectangle215 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle215:setParent(obj.layout96);
-    obj.rectangle215:setLeft(15);
-    obj.rectangle215:setTop(266);
-    obj.rectangle215:setColor("Black");
-    obj.rectangle215:setWidth(120);
-    obj.rectangle215:setHeight(25);
-    obj.rectangle215:setXradius(2);
-    obj.rectangle215:setYradius(2);
-    obj.rectangle215:setName("rectangle215");
+    obj.rectangle212 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle212:setParent(obj.layout104);
+    obj.rectangle212:setLeft(15);
+    obj.rectangle212:setTop(266);
+    obj.rectangle212:setColor("Black");
+    obj.rectangle212:setWidth(120);
+    obj.rectangle212:setHeight(25);
+    obj.rectangle212:setXradius(2);
+    obj.rectangle212:setYradius(2);
+    obj.rectangle212:setName("rectangle212");
+
+    obj.label231 = gui.fromHandle(_obj_newObject("label"));
+    obj.label231:setParent(obj.layout104);
+    obj.label231:setLeft(38);
+    obj.label231:setTop(261);
+    obj.label231:setWidth(75);
+    obj.label231:setHeight(25);
+    obj.label231:setFontSize(14);
+    lfm_setPropAsString(obj.label231, "fontStyle",  "bold");
+    obj.label231:setFontColor("white");
+    obj.label231:setText("EXP NIVEL");
+    obj.label231:setName("label231");
 
     obj.label232 = gui.fromHandle(_obj_newObject("label"));
-    obj.label232:setParent(obj.layout96);
-    obj.label232:setLeft(38);
-    obj.label232:setTop(261);
-    obj.label232:setWidth(75);
+    obj.label232:setParent(obj.layout104);
+    obj.label232:setLeft(18);
+    obj.label232:setTop(271);
+    obj.label232:setWidth(120);
     obj.label232:setHeight(25);
-    obj.label232:setFontSize(14);
-    lfm_setPropAsString(obj.label232, "fontStyle",  "bold");
+    obj.label232:setFontSize(10);
     obj.label232:setFontColor("white");
-    obj.label232:setText("EXP NIVEL");
+    obj.label232:setText("Experiência Próximo Nível");
     obj.label232:setName("label232");
 
-    obj.label233 = gui.fromHandle(_obj_newObject("label"));
-    obj.label233:setParent(obj.layout96);
-    obj.label233:setLeft(18);
-    obj.label233:setTop(271);
-    obj.label233:setWidth(120);
-    obj.label233:setHeight(25);
-    obj.label233:setFontSize(10);
-    obj.label233:setFontColor("white");
-    obj.label233:setText("Experiência Próximo Nível");
-    obj.label233:setName("label233");
-
     obj.XPNivel = gui.fromHandle(_obj_newObject("edit"));
-    obj.XPNivel:setParent(obj.layout96);
+    obj.XPNivel:setParent(obj.layout104);
     obj.XPNivel:setLeft(146);
     obj.XPNivel:setTop(266);
     obj.XPNivel:setWidth(120);
@@ -10911,31 +11349,31 @@ function newTormentafrm()
     obj.XPNivel:setFontSize(15.0);
     lfm_setPropAsString(obj.XPNivel, "fontStyle",  "bold");
 
-    obj.rectangle216 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle216:setParent(obj.layout96);
-    obj.rectangle216:setLeft(84);
-    obj.rectangle216:setTop(3);
-    obj.rectangle216:setColor("Black");
-    obj.rectangle216:setWidth(115);
-    obj.rectangle216:setHeight(28);
-    obj.rectangle216:setXradius(2);
-    obj.rectangle216:setYradius(2);
-    obj.rectangle216:setName("rectangle216");
+    obj.rectangle213 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle213:setParent(obj.layout104);
+    obj.rectangle213:setLeft(84);
+    obj.rectangle213:setTop(3);
+    obj.rectangle213:setColor("Black");
+    obj.rectangle213:setWidth(115);
+    obj.rectangle213:setHeight(28);
+    obj.rectangle213:setXradius(2);
+    obj.rectangle213:setYradius(2);
+    obj.rectangle213:setName("rectangle213");
 
-    obj.label234 = gui.fromHandle(_obj_newObject("label"));
-    obj.label234:setParent(obj.layout96);
-    obj.label234:setLeft(90);
-    obj.label234:setTop(5);
-    obj.label234:setWidth(110);
-    obj.label234:setHeight(20);
-    obj.label234:setFontSize(18.0);
-    lfm_setPropAsString(obj.label234, "fontStyle",  "bold");
-    obj.label234:setFontColor("white");
-    obj.label234:setText("Informações");
-    obj.label234:setName("label234");
+    obj.label233 = gui.fromHandle(_obj_newObject("label"));
+    obj.label233:setParent(obj.layout104);
+    obj.label233:setLeft(90);
+    obj.label233:setTop(5);
+    obj.label233:setWidth(110);
+    obj.label233:setHeight(20);
+    obj.label233:setFontSize(18.0);
+    lfm_setPropAsString(obj.label233, "fontStyle",  "bold");
+    obj.label233:setFontColor("white");
+    obj.label233:setText("Informações");
+    obj.label233:setName("label233");
 
     obj.textEditor8 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor8:setParent(obj.layout96);
+    obj.textEditor8:setParent(obj.layout104);
     obj.textEditor8:setLeft(1);
     obj.textEditor8:setTop(27);
     obj.textEditor8:setWidth(280);
@@ -10944,31 +11382,31 @@ function newTormentafrm()
     obj.textEditor8:setField("informacoes");
     obj.textEditor8:setName("textEditor8");
 
-    obj.rectangle217 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle217:setParent(obj.layout96);
-    obj.rectangle217:setLeft(600);
-    obj.rectangle217:setTop(3);
-    obj.rectangle217:setColor("Black");
-    obj.rectangle217:setWidth(77);
-    obj.rectangle217:setHeight(28);
-    obj.rectangle217:setXradius(2);
-    obj.rectangle217:setYradius(2);
-    obj.rectangle217:setName("rectangle217");
+    obj.rectangle214 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle214:setParent(obj.layout104);
+    obj.rectangle214:setLeft(600);
+    obj.rectangle214:setTop(3);
+    obj.rectangle214:setColor("Black");
+    obj.rectangle214:setWidth(77);
+    obj.rectangle214:setHeight(28);
+    obj.rectangle214:setXradius(2);
+    obj.rectangle214:setYradius(2);
+    obj.rectangle214:setName("rectangle214");
 
-    obj.label235 = gui.fromHandle(_obj_newObject("label"));
-    obj.label235:setParent(obj.layout96);
-    obj.label235:setLeft(605);
-    obj.label235:setTop(6);
-    obj.label235:setWidth(100);
-    obj.label235:setHeight(20);
-    obj.label235:setFontSize(18.0);
-    lfm_setPropAsString(obj.label235, "fontStyle",  "bold");
-    obj.label235:setFontColor("white");
-    obj.label235:setText("História");
-    obj.label235:setName("label235");
+    obj.label234 = gui.fromHandle(_obj_newObject("label"));
+    obj.label234:setParent(obj.layout104);
+    obj.label234:setLeft(605);
+    obj.label234:setTop(6);
+    obj.label234:setWidth(100);
+    obj.label234:setHeight(20);
+    obj.label234:setFontSize(18.0);
+    lfm_setPropAsString(obj.label234, "fontStyle",  "bold");
+    obj.label234:setFontColor("white");
+    obj.label234:setText("História");
+    obj.label234:setName("label234");
 
     obj.richEdit1 = gui.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit1:setParent(obj.layout96);
+    obj.richEdit1:setParent(obj.layout104);
     obj.richEdit1:setLeft(300);
     obj.richEdit1:setTop(27);
     lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#ffffff");
@@ -10978,39 +11416,39 @@ function newTormentafrm()
     obj.richEdit1:setHeight(272);
     obj.richEdit1:setName("richEdit1");
 
-    obj.layout97 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout97:setParent(obj.scrollBox5);
-    obj.layout97:setLeft(21);
-    obj.layout97:setTop(316);
-    obj.layout97:setWidth(969);
-    obj.layout97:setHeight(358);
-    obj.layout97:setName("layout97");
+    obj.layout105 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout105:setParent(obj.scrollBox5);
+    obj.layout105:setLeft(21);
+    obj.layout105:setTop(316);
+    obj.layout105:setWidth(969);
+    obj.layout105:setHeight(358);
+    obj.layout105:setName("layout105");
 
-    obj.rectangle218 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle218:setParent(obj.layout97);
-    obj.rectangle218:setLeft(86);
-    obj.rectangle218:setTop(3);
-    obj.rectangle218:setColor("Black");
-    obj.rectangle218:setWidth(128);
-    obj.rectangle218:setHeight(28);
-    obj.rectangle218:setXradius(2);
-    obj.rectangle218:setYradius(2);
-    obj.rectangle218:setName("rectangle218");
+    obj.rectangle215 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle215:setParent(obj.layout105);
+    obj.rectangle215:setLeft(86);
+    obj.rectangle215:setTop(3);
+    obj.rectangle215:setColor("Black");
+    obj.rectangle215:setWidth(128);
+    obj.rectangle215:setHeight(28);
+    obj.rectangle215:setXradius(2);
+    obj.rectangle215:setYradius(2);
+    obj.rectangle215:setName("rectangle215");
 
-    obj.label236 = gui.fromHandle(_obj_newObject("label"));
-    obj.label236:setParent(obj.layout97);
-    obj.label236:setLeft(90);
-    obj.label236:setTop(6);
-    obj.label236:setWidth(120);
-    obj.label236:setHeight(20);
-    obj.label236:setFontSize(18.0);
-    lfm_setPropAsString(obj.label236, "fontStyle",  "bold");
-    obj.label236:setFontColor("white");
-    obj.label236:setText("Personalidade");
-    obj.label236:setName("label236");
+    obj.label235 = gui.fromHandle(_obj_newObject("label"));
+    obj.label235:setParent(obj.layout105);
+    obj.label235:setLeft(90);
+    obj.label235:setTop(6);
+    obj.label235:setWidth(120);
+    obj.label235:setHeight(20);
+    obj.label235:setFontSize(18.0);
+    lfm_setPropAsString(obj.label235, "fontStyle",  "bold");
+    obj.label235:setFontColor("white");
+    obj.label235:setText("Personalidade");
+    obj.label235:setName("label235");
 
     obj.textEditor9 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor9:setParent(obj.layout97);
+    obj.textEditor9:setParent(obj.layout105);
     obj.textEditor9:setLeft(0);
     obj.textEditor9:setTop(30);
     obj.textEditor9:setWidth(300);
@@ -11019,31 +11457,31 @@ function newTormentafrm()
     obj.textEditor9:setField("personalidade");
     obj.textEditor9:setName("textEditor9");
 
-    obj.rectangle219 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle219:setParent(obj.layout97);
-    obj.rectangle219:setLeft(435);
-    obj.rectangle219:setTop(3);
-    obj.rectangle219:setColor("Black");
-    obj.rectangle219:setWidth(93);
-    obj.rectangle219:setHeight(28);
-    obj.rectangle219:setXradius(2);
-    obj.rectangle219:setYradius(2);
-    obj.rectangle219:setName("rectangle219");
+    obj.rectangle216 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle216:setParent(obj.layout105);
+    obj.rectangle216:setLeft(435);
+    obj.rectangle216:setTop(3);
+    obj.rectangle216:setColor("Black");
+    obj.rectangle216:setWidth(93);
+    obj.rectangle216:setHeight(28);
+    obj.rectangle216:setXradius(2);
+    obj.rectangle216:setYradius(2);
+    obj.rectangle216:setName("rectangle216");
 
-    obj.label237 = gui.fromHandle(_obj_newObject("label"));
-    obj.label237:setParent(obj.layout97);
-    obj.label237:setLeft(439);
-    obj.label237:setTop(6);
-    obj.label237:setWidth(100);
-    obj.label237:setHeight(20);
-    obj.label237:setFontSize(18.0);
-    lfm_setPropAsString(obj.label237, "fontStyle",  "bold");
-    obj.label237:setFontColor("white");
-    obj.label237:setText("Aparência");
-    obj.label237:setName("label237");
+    obj.label236 = gui.fromHandle(_obj_newObject("label"));
+    obj.label236:setParent(obj.layout105);
+    obj.label236:setLeft(439);
+    obj.label236:setTop(6);
+    obj.label236:setWidth(100);
+    obj.label236:setHeight(20);
+    obj.label236:setFontSize(18.0);
+    lfm_setPropAsString(obj.label236, "fontStyle",  "bold");
+    obj.label236:setFontColor("white");
+    obj.label236:setText("Aparência");
+    obj.label236:setName("label236");
 
     obj.textEditor10 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor10:setParent(obj.layout97);
+    obj.textEditor10:setParent(obj.layout105);
     obj.textEditor10:setLeft(334);
     obj.textEditor10:setTop(30);
     obj.textEditor10:setWidth(300);
@@ -11052,31 +11490,31 @@ function newTormentafrm()
     obj.textEditor10:setField("aparencia");
     obj.textEditor10:setName("textEditor10");
 
-    obj.rectangle220 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle220:setParent(obj.layout97);
-    obj.rectangle220:setLeft(770);
-    obj.rectangle220:setTop(3);
-    obj.rectangle220:setColor("Black");
-    obj.rectangle220:setWidth(97);
-    obj.rectangle220:setHeight(28);
-    obj.rectangle220:setXradius(2);
-    obj.rectangle220:setYradius(2);
-    obj.rectangle220:setName("rectangle220");
+    obj.rectangle217 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle217:setParent(obj.layout105);
+    obj.rectangle217:setLeft(770);
+    obj.rectangle217:setTop(3);
+    obj.rectangle217:setColor("Black");
+    obj.rectangle217:setWidth(97);
+    obj.rectangle217:setHeight(28);
+    obj.rectangle217:setXradius(2);
+    obj.rectangle217:setYradius(2);
+    obj.rectangle217:setName("rectangle217");
 
-    obj.label238 = gui.fromHandle(_obj_newObject("label"));
-    obj.label238:setParent(obj.layout97);
-    obj.label238:setLeft(774);
-    obj.label238:setTop(6);
-    obj.label238:setWidth(100);
-    obj.label238:setHeight(20);
-    obj.label238:setFontSize(18.0);
-    lfm_setPropAsString(obj.label238, "fontStyle",  "bold");
-    obj.label238:setFontColor("white");
-    obj.label238:setText("Anotações");
-    obj.label238:setName("label238");
+    obj.label237 = gui.fromHandle(_obj_newObject("label"));
+    obj.label237:setParent(obj.layout105);
+    obj.label237:setLeft(774);
+    obj.label237:setTop(6);
+    obj.label237:setWidth(100);
+    obj.label237:setHeight(20);
+    obj.label237:setFontSize(18.0);
+    lfm_setPropAsString(obj.label237, "fontStyle",  "bold");
+    obj.label237:setFontColor("white");
+    obj.label237:setText("Anotações");
+    obj.label237:setName("label237");
 
     obj.textEditor11 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor11:setParent(obj.layout97);
+    obj.textEditor11:setParent(obj.layout105);
     obj.textEditor11:setLeft(669);
     obj.textEditor11:setTop(30);
     obj.textEditor11:setWidth(300);
@@ -11101,98 +11539,98 @@ function newTormentafrm()
     obj.scrollBox6:setAlign("client");
     obj.scrollBox6:setName("scrollBox6");
 
-    obj.rectangle221 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle221:setParent(obj.scrollBox6);
-    obj.rectangle221:setWidth(1010);
-    obj.rectangle221:setHeight(700);
-    obj.rectangle221:setColor("LightGray");
-    obj.rectangle221:setXradius(10);
-    obj.rectangle221:setYradius(10);
-    obj.rectangle221:setName("rectangle221");
+    obj.rectangle218 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle218:setParent(obj.scrollBox6);
+    obj.rectangle218:setWidth(1010);
+    obj.rectangle218:setHeight(700);
+    obj.rectangle218:setColor("LightGray");
+    obj.rectangle218:setXradius(10);
+    obj.rectangle218:setYradius(10);
+    obj.rectangle218:setName("rectangle218");
 
-    obj.layout98 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout98:setParent(obj.scrollBox6);
-    obj.layout98:setAlign("top");
-    obj.layout98:setHeight(30);
-    obj.layout98:setMargins({left=8,right=8,top=8,bottom=4});
-    obj.layout98:setName("layout98");
-
-    obj.button72 = gui.fromHandle(_obj_newObject("button"));
-    obj.button72:setParent(obj.layout98);
-    obj.button72:setText("Adicionar (Ataque)");
-    obj.button72:setWidth(170);
-    obj.button72:setAlign("left");
-    obj.button72:setName("button72");
-
-    obj.button73 = gui.fromHandle(_obj_newObject("button"));
-    obj.button73:setParent(obj.layout98);
-    obj.button73:setText("Adicionar (Danos)");
-    obj.button73:setWidth(170);
-    obj.button73:setAlign("left");
-    obj.button73:setMargins({left=6});
-    obj.button73:setName("button73");
+    obj.layout106 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout106:setParent(obj.scrollBox6);
+    obj.layout106:setAlign("top");
+    obj.layout106:setHeight(30);
+    obj.layout106:setMargins({left=8,right=8,top=8,bottom=4});
+    obj.layout106:setName("layout106");
 
     obj.button74 = gui.fromHandle(_obj_newObject("button"));
-    obj.button74:setParent(obj.layout98);
-    obj.button74:setText("Adicionar (Magias)");
+    obj.button74:setParent(obj.layout106);
+    obj.button74:setText("Adicionar (Ataque)");
     obj.button74:setWidth(170);
     obj.button74:setAlign("left");
-    obj.button74:setMargins({left=6});
     obj.button74:setName("button74");
 
-    obj.layout99 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout99:setParent(obj.scrollBox6);
-    obj.layout99:setAlign("top");
-    obj.layout99:setHeight(650);
-    obj.layout99:setMargins({left=8, right=8, top=0, bottom=8});
-    obj.layout99:setName("layout99");
+    obj.button75 = gui.fromHandle(_obj_newObject("button"));
+    obj.button75:setParent(obj.layout106);
+    obj.button75:setText("Adicionar (Danos)");
+    obj.button75:setWidth(170);
+    obj.button75:setAlign("left");
+    obj.button75:setMargins({left=6});
+    obj.button75:setName("button75");
 
-    obj.layout100 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout100:setParent(obj.layout99);
-    obj.layout100:setAlign("left");
-    obj.layout100:setWidth(560);
-    obj.layout100:setName("layout100");
+    obj.button76 = gui.fromHandle(_obj_newObject("button"));
+    obj.button76:setParent(obj.layout106);
+    obj.button76:setText("Adicionar (Magias)");
+    obj.button76:setWidth(170);
+    obj.button76:setAlign("left");
+    obj.button76:setMargins({left=6});
+    obj.button76:setName("button76");
 
-    obj.layout101 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout101:setParent(obj.layout100);
-    obj.layout101:setAlign("top");
-    obj.layout101:setHeight(20);
-    obj.layout101:setName("layout101");
+    obj.layout107 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout107:setParent(obj.scrollBox6);
+    obj.layout107:setAlign("top");
+    obj.layout107:setHeight(650);
+    obj.layout107:setMargins({left=8, right=8, top=0, bottom=8});
+    obj.layout107:setName("layout107");
+
+    obj.layout108 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout108:setParent(obj.layout107);
+    obj.layout108:setAlign("left");
+    obj.layout108:setWidth(560);
+    obj.layout108:setName("layout108");
+
+    obj.layout109 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout109:setParent(obj.layout108);
+    obj.layout109:setAlign("top");
+    obj.layout109:setHeight(20);
+    obj.layout109:setName("layout109");
+
+    obj.label238 = gui.fromHandle(_obj_newObject("label"));
+    obj.label238:setParent(obj.layout109);
+    obj.label238:setAlign("left");
+    obj.label238:setWidth(185);
+    lfm_setPropAsString(obj.label238, "fontStyle",  "bold");
+    obj.label238:setHorzTextAlign("center");
+    obj.label238:setText("ATAQUE");
+    obj.label238:setName("label238");
 
     obj.label239 = gui.fromHandle(_obj_newObject("label"));
-    obj.label239:setParent(obj.layout101);
+    obj.label239:setParent(obj.layout109);
     obj.label239:setAlign("left");
     obj.label239:setWidth(185);
     lfm_setPropAsString(obj.label239, "fontStyle",  "bold");
     obj.label239:setHorzTextAlign("center");
-    obj.label239:setText("ATAQUE");
+    obj.label239:setText("DANOS");
     obj.label239:setName("label239");
 
     obj.label240 = gui.fromHandle(_obj_newObject("label"));
-    obj.label240:setParent(obj.layout101);
+    obj.label240:setParent(obj.layout109);
     obj.label240:setAlign("left");
     obj.label240:setWidth(185);
     lfm_setPropAsString(obj.label240, "fontStyle",  "bold");
     obj.label240:setHorzTextAlign("center");
-    obj.label240:setText("DANOS");
+    obj.label240:setText("MAGIAS");
     obj.label240:setName("label240");
 
-    obj.label241 = gui.fromHandle(_obj_newObject("label"));
-    obj.label241:setParent(obj.layout101);
-    obj.label241:setAlign("left");
-    obj.label241:setWidth(185);
-    lfm_setPropAsString(obj.label241, "fontStyle",  "bold");
-    obj.label241:setHorzTextAlign("center");
-    obj.label241:setText("MAGIAS");
-    obj.label241:setName("label241");
-
-    obj.layout102 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout102:setParent(obj.layout100);
-    obj.layout102:setAlign("client");
-    obj.layout102:setName("layout102");
+    obj.layout110 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout110:setParent(obj.layout108);
+    obj.layout110:setAlign("client");
+    obj.layout110:setName("layout110");
 
     obj.rclAtaque = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclAtaque:setParent(obj.layout102);
+    obj.rclAtaque:setParent(obj.layout110);
     obj.rclAtaque:setName("rclAtaque");
     obj.rclAtaque:setField("campoDosItensAtaque");
     obj.rclAtaque:setTemplateForm("frmMacroColuna");
@@ -11201,7 +11639,7 @@ function newTormentafrm()
     obj.rclAtaque:setSelectable(true);
 
     obj.rclDanos = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclDanos:setParent(obj.layout102);
+    obj.rclDanos:setParent(obj.layout110);
     obj.rclDanos:setName("rclDanos");
     obj.rclDanos:setField("campoDosItensDanos");
     obj.rclDanos:setTemplateForm("frmMacroColuna");
@@ -11210,7 +11648,7 @@ function newTormentafrm()
     obj.rclDanos:setSelectable(true);
 
     obj.rclMagias = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclMagias:setParent(obj.layout102);
+    obj.rclMagias:setParent(obj.layout110);
     obj.rclMagias:setName("rclMagias");
     obj.rclMagias:setField("campoDosItensMagias");
     obj.rclMagias:setTemplateForm("frmMacroColuna");
@@ -11218,91 +11656,91 @@ function newTormentafrm()
     obj.rclMagias:setWidth(185);
     obj.rclMagias:setSelectable(true);
 
-    obj.layout103 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout103:setParent(obj.layout99);
-    obj.layout103:setAlign("left");
-    obj.layout103:setWidth(420);
-    obj.layout103:setMargins({left=10});
-    obj.layout103:setName("layout103");
+    obj.layout111 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout111:setParent(obj.layout107);
+    obj.layout111:setAlign("left");
+    obj.layout111:setWidth(420);
+    obj.layout111:setMargins({left=10});
+    obj.layout111:setName("layout111");
 
-    obj.rectangle222 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle222:setParent(obj.layout103);
-    obj.rectangle222:setAlign("client");
-    obj.rectangle222:setColor("Gray");
-    obj.rectangle222:setXradius(8);
-    obj.rectangle222:setYradius(8);
-    obj.rectangle222:setName("rectangle222");
+    obj.rectangle219 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle219:setParent(obj.layout111);
+    obj.rectangle219:setAlign("client");
+    obj.rectangle219:setColor("Gray");
+    obj.rectangle219:setXradius(8);
+    obj.rectangle219:setYradius(8);
+    obj.rectangle219:setName("rectangle219");
 
-    obj.layout104 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout104:setParent(obj.layout103);
-    obj.layout104:setAlign("top");
-    obj.layout104:setHeight(28);
-    obj.layout104:setMargins({left=6,right=6,top=6,bottom=2});
-    obj.layout104:setName("layout104");
+    obj.layout112 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout112:setParent(obj.layout111);
+    obj.layout112:setAlign("top");
+    obj.layout112:setHeight(28);
+    obj.layout112:setMargins({left=6,right=6,top=6,bottom=2});
+    obj.layout112:setName("layout112");
 
-    obj.rectangle223 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle223:setParent(obj.layout104);
-    obj.rectangle223:setAlign("client");
-    obj.rectangle223:setColor("Black");
-    obj.rectangle223:setXradius(4);
-    obj.rectangle223:setYradius(4);
-    obj.rectangle223:setName("rectangle223");
+    obj.rectangle220 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle220:setParent(obj.layout112);
+    obj.rectangle220:setAlign("client");
+    obj.rectangle220:setColor("Black");
+    obj.rectangle220:setXradius(4);
+    obj.rectangle220:setYradius(4);
+    obj.rectangle220:setName("rectangle220");
 
-    obj.label242 = gui.fromHandle(_obj_newObject("label"));
-    obj.label242:setParent(obj.layout104);
-    obj.label242:setAlign("client");
-    obj.label242:setFontSize(14);
-    lfm_setPropAsString(obj.label242, "fontStyle",  "bold");
-    obj.label242:setFontColor("white");
-    obj.label242:setHorzTextAlign("center");
-    obj.label242:setText("Detalhes do Macro");
-    obj.label242:setName("label242");
+    obj.label241 = gui.fromHandle(_obj_newObject("label"));
+    obj.label241:setParent(obj.layout112);
+    obj.label241:setAlign("client");
+    obj.label241:setFontSize(14);
+    lfm_setPropAsString(obj.label241, "fontStyle",  "bold");
+    obj.label241:setFontColor("white");
+    obj.label241:setHorzTextAlign("center");
+    obj.label241:setText("Detalhes do Macro");
+    obj.label241:setName("label241");
 
     obj.boxDetalhesDoItem = gui.fromHandle(_obj_newObject("layout"));
-    obj.boxDetalhesDoItem:setParent(obj.layout103);
+    obj.boxDetalhesDoItem:setParent(obj.layout111);
     obj.boxDetalhesDoItem:setName("boxDetalhesDoItem");
     obj.boxDetalhesDoItem:setAlign("client");
     obj.boxDetalhesDoItem:setMargins({left=8,right=8,top=6,bottom=8});
     obj.boxDetalhesDoItem:setVisible(false);
+
+    obj.label242 = gui.fromHandle(_obj_newObject("label"));
+    obj.label242:setParent(obj.boxDetalhesDoItem);
+    obj.label242:setAlign("top");
+    obj.label242:setHeight(18);
+    lfm_setPropAsString(obj.label242, "fontStyle",  "bold");
+    obj.label242:setText("Nome");
+    obj.label242:setName("label242");
+
+    obj.edit68 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit68:setParent(obj.boxDetalhesDoItem);
+    obj.edit68:setAlign("top");
+    obj.edit68:setHeight(26);
+    obj.edit68:setField("campoTitulo");
+    lfm_setPropAsString(obj.edit68, "fontStyle",  "bold");
+    obj.edit68:setName("edit68");
 
     obj.label243 = gui.fromHandle(_obj_newObject("label"));
     obj.label243:setParent(obj.boxDetalhesDoItem);
     obj.label243:setAlign("top");
     obj.label243:setHeight(18);
     lfm_setPropAsString(obj.label243, "fontStyle",  "bold");
-    obj.label243:setText("Nome");
+    obj.label243:setText("Rolagem (Ataque/Dano/etc)");
     obj.label243:setName("label243");
 
-    obj.edit70 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.boxDetalhesDoItem);
-    obj.edit70:setAlign("top");
-    obj.edit70:setHeight(26);
-    obj.edit70:setField("campoTitulo");
-    lfm_setPropAsString(obj.edit70, "fontStyle",  "bold");
-    obj.edit70:setName("edit70");
+    obj.edit69 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit69:setParent(obj.boxDetalhesDoItem);
+    obj.edit69:setAlign("top");
+    obj.edit69:setHeight(26);
+    obj.edit69:setField("campoSubTitulo");
+    obj.edit69:setName("edit69");
 
     obj.label244 = gui.fromHandle(_obj_newObject("label"));
     obj.label244:setParent(obj.boxDetalhesDoItem);
     obj.label244:setAlign("top");
     obj.label244:setHeight(18);
     lfm_setPropAsString(obj.label244, "fontStyle",  "bold");
-    obj.label244:setText("Rolagem (Ataque/Dano/etc)");
+    obj.label244:setText("Descrição");
     obj.label244:setName("label244");
-
-    obj.edit71 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.boxDetalhesDoItem);
-    obj.edit71:setAlign("top");
-    obj.edit71:setHeight(26);
-    obj.edit71:setField("campoSubTitulo");
-    obj.edit71:setName("edit71");
-
-    obj.label245 = gui.fromHandle(_obj_newObject("label"));
-    obj.label245:setParent(obj.boxDetalhesDoItem);
-    obj.label245:setAlign("top");
-    obj.label245:setHeight(18);
-    lfm_setPropAsString(obj.label245, "fontStyle",  "bold");
-    obj.label245:setText("Descrição");
-    obj.label245:setName("label245");
 
     obj.textEditor12 = gui.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor12:setParent(obj.boxDetalhesDoItem);
@@ -11722,74 +12160,77 @@ function newTormentafrm()
             onDataLinkChange();
         end, obj);
 
-    obj._e_event72 = obj.button68:addEventListener("onClick",
+    obj._e_event72 = obj.Tormenta03:addEventListener("onNodeReady",
         function (self)
-            self.rclArmas:append();
+            TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
         end, obj);
 
-    obj._e_event73 = obj.button69:addEventListener("onClick",
+    obj._e_event73 = obj.button68:addEventListener("onClick",
         function (self)
-            local n = self.rclDefesas:append();
-            							if n ~= nil then n.categoria = "Armadura"; end;
+            TRPG_addArma(self, sheet or self.sheet);
         end, obj);
 
-    obj._e_event74 = obj.button70:addEventListener("onClick",
+    obj._e_event74 = obj.button69:addEventListener("onClick",
         function (self)
-            local n = self.rclDefesas:append();
-            							if n ~= nil then n.categoria = "Escudo"; end;
+            TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
         end, obj);
 
-    obj._e_event75 = obj.button71:addEventListener("onClick",
+    obj._e_event75 = obj.button70:addEventListener("onClick",
         function (self)
-            local n = self.rclEquip:append();
-            								if n ~= nil then
-            									-- cria limpo
-            									n.nome = "";
-            									n.descricao = "";
-            									n.valor = "";
-            									n.peso = 0;
-            
-            									-- seleciona e abre detalhes
-            									self.rclEquip.selectedNode = n;
-            									self.pnlEquipDetalhes.node = n;
-            									self.boxEquipDetalhes.node = n;
-            									self.pnlEquipDetalhes.visible = true;
-            								end;
+            TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
         end, obj);
 
-    obj._e_event76 = obj.rectangle199:addEventListener("onClick",
+    obj._e_event76 = obj.button71:addEventListener("onClick",
         function (self)
-            self.rclEquip.selectedNode = nil;
-            								self.pnlEquipDetalhes.visible = false;
-            								self.pnlEquipDetalhes.node = nil;
-            								self.boxEquipDetalhes.node = nil;
+            TRPG_addDefesa(self, sheet or self.sheet, "Outros");
         end, obj);
 
-    obj._e_event77 = obj.rclEquip:addEventListener("onSelect",
+    obj._e_event77 = obj.rcEquipCloseArea:addEventListener("onClick",
         function (self)
-            local node = self.rclEquip.selectedNode;
-            
-            									self.pnlEquipDetalhes.node = node;
-            									self.boxEquipDetalhes.node = node;
-            									self.pnlEquipDetalhes.visible = (node ~= nil);
+            TRPG_equipClose(self, sheet or self.sheet);
         end, obj);
 
     obj._e_event78 = obj.button72:addEventListener("onClick",
         function (self)
+            TRPG_equipAddItem(self, sheet or self.sheet);
+        end, obj);
+
+    obj._e_event79 = obj.rclEquip:addEventListener("onSelect",
+        function (self)
+            TRPG_equipOnSelect(self, sheet or self.sheet);
+        end, obj);
+
+    obj._e_event80 = obj.button73:addEventListener("onClick",
+        function (self)
+            TRPG_equipClose(self, sheet or self.sheet);
+        end, obj);
+
+    obj._e_event81 = obj.dataLink3:addEventListener("onChange",
+        function (self, field, oldValue, newValue)
+            TRPG_equipUpdateTitulo(self);
+        end, obj);
+
+    obj._e_event82 = obj.dataLink4:addEventListener("onChange",
+        function (self, field, oldValue, newValue)
+            TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
+        end, obj);
+
+    obj._e_event83 = obj.button74:addEventListener("onClick",
+        function (self)
             self.rclAtaque:append();
         end, obj);
 
-    obj._e_event79 = obj.button73:addEventListener("onClick",
+    obj._e_event84 = obj.button75:addEventListener("onClick",
         function (self)
             self.rclDanos:append();
         end, obj);
 
-    obj._e_event80 = obj.button74:addEventListener("onClick",
+    obj._e_event85 = obj.button76:addEventListener("onClick",
         function (self)
             self.rclMagias:append();
         end, obj);
 
-    obj._e_event81 = obj.rclAtaque:addEventListener("onSelect",
+    obj._e_event86 = obj.rclAtaque:addEventListener("onSelect",
         function (self)
             self.rclDanos.selectedNode = nil;
             							self.rclMagias.selectedNode = nil;
@@ -11798,7 +12239,7 @@ function newTormentafrm()
             							self.boxDetalhesDoItem.visible = (node ~= nil);
         end, obj);
 
-    obj._e_event82 = obj.rclDanos:addEventListener("onSelect",
+    obj._e_event87 = obj.rclDanos:addEventListener("onSelect",
         function (self)
             self.rclAtaque.selectedNode = nil;
             							self.rclMagias.selectedNode = nil;
@@ -11807,7 +12248,7 @@ function newTormentafrm()
             							self.boxDetalhesDoItem.visible = (node ~= nil);
         end, obj);
 
-    obj._e_event83 = obj.rclMagias:addEventListener("onSelect",
+    obj._e_event88 = obj.rclMagias:addEventListener("onSelect",
         function (self)
             self.rclAtaque.selectedNode = nil;
             							self.rclDanos.selectedNode = nil;
@@ -11817,6 +12258,11 @@ function newTormentafrm()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event88);
+        __o_rrpgObjs.removeEventListenerById(self._e_event87);
+        __o_rrpgObjs.removeEventListenerById(self._e_event86);
+        __o_rrpgObjs.removeEventListenerById(self._e_event85);
+        __o_rrpgObjs.removeEventListenerById(self._e_event84);
         __o_rrpgObjs.removeEventListenerById(self._e_event83);
         __o_rrpgObjs.removeEventListenerById(self._e_event82);
         __o_rrpgObjs.removeEventListenerById(self._e_event81);
@@ -11978,6 +12424,7 @@ function newTormentafrm()
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.label230 ~= nil then self.label230:destroy(); self.label230 = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
+        if self.layout106 ~= nil then self.layout106:destroy(); self.layout106 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.totalatuacao1 ~= nil then self.totalatuacao1:destroy(); self.totalatuacao1 = nil; end;
         if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
@@ -11988,6 +12435,7 @@ function newTormentafrm()
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
         if self.totalcura ~= nil then self.totalcura:destroy(); self.totalcura = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.rectangle211 ~= nil then self.rectangle211:destroy(); self.rectangle211 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
@@ -12026,8 +12474,8 @@ function newTormentafrm()
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
         if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
         if self.label115 ~= nil then self.label115:destroy(); self.label115 = nil; end;
-        if self.scrollBox5 ~= nil then self.scrollBox5:destroy(); self.scrollBox5 = nil; end;
         if self.button72 ~= nil then self.button72:destroy(); self.button72 = nil; end;
+        if self.scrollBox5 ~= nil then self.scrollBox5:destroy(); self.scrollBox5 = nil; end;
         if self.edit62 ~= nil then self.edit62:destroy(); self.edit62 = nil; end;
         if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
         if self.label185 ~= nil then self.label185:destroy(); self.label185 = nil; end;
@@ -12069,7 +12517,6 @@ function newTormentafrm()
         if self.label129 ~= nil then self.label129:destroy(); self.label129 = nil; end;
         if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
         if self.button13 ~= nil then self.button13:destroy(); self.button13 = nil; end;
-        if self.pnlEquipDetalhes ~= nil then self.pnlEquipDetalhes:destroy(); self.pnlEquipDetalhes = nil; end;
         if self.button74 ~= nil then self.button74:destroy(); self.button74 = nil; end;
         if self.rectangle209 ~= nil then self.rectangle209:destroy(); self.rectangle209 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
@@ -12089,7 +12536,6 @@ function newTormentafrm()
         if self.button24 ~= nil then self.button24:destroy(); self.button24 = nil; end;
         if self.rclArmas ~= nil then self.rclArmas:destroy(); self.rclArmas = nil; end;
         if self.totalvon ~= nil then self.totalvon:destroy(); self.totalvon = nil; end;
-        if self.rectangle223 ~= nil then self.rectangle223:destroy(); self.rectangle223 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.ref1 ~= nil then self.ref1:destroy(); self.ref1 = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
@@ -12140,6 +12586,7 @@ function newTormentafrm()
         if self.button71 ~= nil then self.button71:destroy(); self.button71 = nil; end;
         if self.edit32 ~= nil then self.edit32:destroy(); self.edit32 = nil; end;
         if self.modoficio2 ~= nil then self.modoficio2:destroy(); self.modoficio2 = nil; end;
+        if self.ca7 ~= nil then self.ca7:destroy(); self.ca7 = nil; end;
         if self.update ~= nil then self.update:destroy(); self.update = nil; end;
         if self.layout75 ~= nil then self.layout75:destroy(); self.layout75 = nil; end;
         if self.rectangle34 ~= nil then self.rectangle34:destroy(); self.rectangle34 = nil; end;
@@ -12151,13 +12598,13 @@ function newTormentafrm()
         if self.label151 ~= nil then self.label151:destroy(); self.label151 = nil; end;
         if self.rectangle124 ~= nil then self.rectangle124:destroy(); self.rectangle124 = nil; end;
         if self.label138 ~= nil then self.label138:destroy(); self.label138 = nil; end;
+        if self.layout110 ~= nil then self.layout110:destroy(); self.layout110 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
         if self.outrosimagia ~= nil then self.outrosimagia:destroy(); self.outrosimagia = nil; end;
         if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.label188 ~= nil then self.label188:destroy(); self.label188 = nil; end;
         if self.rectangle85 ~= nil then self.rectangle85:destroy(); self.rectangle85 = nil; end;
-        if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.button47 ~= nil then self.button47:destroy(); self.button47 = nil; end;
         if self.button56 ~= nil then self.button56:destroy(); self.button56 = nil; end;
@@ -12182,6 +12629,7 @@ function newTormentafrm()
         if self.layout68 ~= nil then self.layout68:destroy(); self.layout68 = nil; end;
         if self.rectangle219 ~= nil then self.rectangle219:destroy(); self.rectangle219 = nil; end;
         if self.XPNivel ~= nil then self.XPNivel:destroy(); self.XPNivel = nil; end;
+        if self.layout105 ~= nil then self.layout105:destroy(); self.layout105 = nil; end;
         if self.label140 ~= nil then self.label140:destroy(); self.label140 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
         if self.rectangle114 ~= nil then self.rectangle114:destroy(); self.rectangle114 = nil; end;
@@ -12213,6 +12661,7 @@ function newTormentafrm()
         if self.modatuacao2 ~= nil then self.modatuacao2:destroy(); self.modatuacao2 = nil; end;
         if self.button29 ~= nil then self.button29:destroy(); self.button29 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.btnHintCargaStatus ~= nil then self.btnHintCargaStatus:destroy(); self.btnHintCargaStatus = nil; end;
         if self.label222 ~= nil then self.label222:destroy(); self.label222 = nil; end;
         if self.label101 ~= nil then self.label101:destroy(); self.label101 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
@@ -12229,7 +12678,6 @@ function newTormentafrm()
         if self.rectangle81 ~= nil then self.rectangle81:destroy(); self.rectangle81 = nil; end;
         if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
         if self.rectangle159 ~= nil then self.rectangle159:destroy(); self.rectangle159 = nil; end;
-        if self.label245 ~= nil then self.label245:destroy(); self.label245 = nil; end;
         if self.rectangle164 ~= nil then self.rectangle164:destroy(); self.rectangle164 = nil; end;
         if self.outrosatuacao1 ~= nil then self.outrosatuacao1:destroy(); self.outrosatuacao1 = nil; end;
         if self.rectangle117 ~= nil then self.rectangle117:destroy(); self.rectangle117 = nil; end;
@@ -12274,6 +12722,7 @@ function newTormentafrm()
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
         if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
+        if self.button76 ~= nil then self.button76:destroy(); self.button76 = nil; end;
         if self.label112 ~= nil then self.label112:destroy(); self.label112 = nil; end;
         if self.edit57 ~= nil then self.edit57:destroy(); self.edit57 = nil; end;
         if self.rectangle154 ~= nil then self.rectangle154:destroy(); self.rectangle154 = nil; end;
@@ -12286,8 +12735,8 @@ function newTormentafrm()
         if self.label169 ~= nil then self.label169:destroy(); self.label169 = nil; end;
         if self.rectangle178 ~= nil then self.rectangle178:destroy(); self.rectangle178 = nil; end;
         if self.label213 ~= nil then self.label213:destroy(); self.label213 = nil; end;
-        if self.edit63 ~= nil then self.edit63:destroy(); self.edit63 = nil; end;
         if self.layout93 ~= nil then self.layout93:destroy(); self.layout93 = nil; end;
+        if self.edit63 ~= nil then self.edit63:destroy(); self.edit63 = nil; end;
         if self.layout95 ~= nil then self.layout95:destroy(); self.layout95 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.layout77 ~= nil then self.layout77:destroy(); self.layout77 = nil; end;
@@ -12301,6 +12750,7 @@ function newTormentafrm()
         if self.label231 ~= nil then self.label231:destroy(); self.label231 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.layout66 ~= nil then self.layout66:destroy(); self.layout66 = nil; end;
+        if self.colEsq ~= nil then self.colEsq:destroy(); self.colEsq = nil; end;
         if self.Tormenta01 ~= nil then self.Tormenta01:destroy(); self.Tormenta01 = nil; end;
         if self.label189 ~= nil then self.label189:destroy(); self.label189 = nil; end;
         if self.rectangle129 ~= nil then self.rectangle129:destroy(); self.rectangle129 = nil; end;
@@ -12356,12 +12806,14 @@ function newTormentafrm()
         if self.layout40 ~= nil then self.layout40:destroy(); self.layout40 = nil; end;
         if self.layout87 ~= nil then self.layout87:destroy(); self.layout87 = nil; end;
         if self.button61 ~= nil then self.button61:destroy(); self.button61 = nil; end;
-        if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
+        if self.ca6 ~= nil then self.ca6:destroy(); self.ca6 = nil; end;
+        if self.button75 ~= nil then self.button75:destroy(); self.button75 = nil; end;
         if self.rectangle72 ~= nil then self.rectangle72:destroy(); self.rectangle72 = nil; end;
         if self.rectangle39 ~= nil then self.rectangle39:destroy(); self.rectangle39 = nil; end;
         if self.rectangle41 ~= nil then self.rectangle41:destroy(); self.rectangle41 = nil; end;
         if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
         if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
+        if self.lblEquipTitulo ~= nil then self.lblEquipTitulo:destroy(); self.lblEquipTitulo = nil; end;
         if self.label134 ~= nil then self.label134:destroy(); self.label134 = nil; end;
         if self.rectangle24 ~= nil then self.rectangle24:destroy(); self.rectangle24 = nil; end;
         if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
@@ -12415,9 +12867,8 @@ function newTormentafrm()
         if self.button36 ~= nil then self.button36:destroy(); self.button36 = nil; end;
         if self.layout36 ~= nil then self.layout36:destroy(); self.layout36 = nil; end;
         if self.button37 ~= nil then self.button37:destroy(); self.button37 = nil; end;
-        if self.edit69 ~= nil then self.edit69:destroy(); self.edit69 = nil; end;
         if self.label227 ~= nil then self.label227:destroy(); self.label227 = nil; end;
-        if self.rectangle222 ~= nil then self.rectangle222:destroy(); self.rectangle222 = nil; end;
+        if self.edit69 ~= nil then self.edit69:destroy(); self.edit69 = nil; end;
         if self.layout52 ~= nil then self.layout52:destroy(); self.layout52 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
@@ -12429,6 +12880,7 @@ function newTormentafrm()
         if self.edit52 ~= nil then self.edit52:destroy(); self.edit52 = nil; end;
         if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
         if self.label242 ~= nil then self.label242:destroy(); self.label242 = nil; end;
+        if self.grid ~= nil then self.grid:destroy(); self.grid = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.label176 ~= nil then self.label176:destroy(); self.label176 = nil; end;
         if self.rectangle55 ~= nil then self.rectangle55:destroy(); self.rectangle55 = nil; end;
@@ -12469,6 +12921,7 @@ function newTormentafrm()
         if self.outrosladinagem ~= nil then self.outrosladinagem:destroy(); self.outrosladinagem = nil; end;
         if self.rectangle171 ~= nil then self.rectangle171:destroy(); self.rectangle171 = nil; end;
         if self.totaloinformacao ~= nil then self.totaloinformacao:destroy(); self.totaloinformacao = nil; end;
+        if self.layout108 ~= nil then self.layout108:destroy(); self.layout108 = nil; end;
         if self.rectangle94 ~= nil then self.rectangle94:destroy(); self.rectangle94 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
@@ -12484,7 +12937,6 @@ function newTormentafrm()
         if self.rectangle77 ~= nil then self.rectangle77:destroy(); self.rectangle77 = nil; end;
         if self.rectangle99 ~= nil then self.rectangle99:destroy(); self.rectangle99 = nil; end;
         if self.imageCheckBox15 ~= nil then self.imageCheckBox15:destroy(); self.imageCheckBox15 = nil; end;
-        if self.rectangle221 ~= nil then self.rectangle221:destroy(); self.rectangle221 = nil; end;
         if self.rectangle42 ~= nil then self.rectangle42:destroy(); self.rectangle42 = nil; end;
         if self.rectangle174 ~= nil then self.rectangle174:destroy(); self.rectangle174 = nil; end;
         if self.label159 ~= nil then self.label159:destroy(); self.label159 = nil; end;
@@ -12526,16 +12978,19 @@ function newTormentafrm()
         if self.totalatuacao2 ~= nil then self.totalatuacao2:destroy(); self.totalatuacao2 = nil; end;
         if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
+        if self.layout111 ~= nil then self.layout111:destroy(); self.layout111 = nil; end;
         if self.rectangle185 ~= nil then self.rectangle185:destroy(); self.rectangle185 = nil; end;
         if self.modfurtividade ~= nil then self.modfurtividade:destroy(); self.modfurtividade = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
         if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.rectangle119 ~= nil then self.rectangle119:destroy(); self.rectangle119 = nil; end;
+        if self.colDir ~= nil then self.colDir:destroy(); self.colDir = nil; end;
         if self.label216 ~= nil then self.label216:destroy(); self.label216 = nil; end;
         if self.rectangle192 ~= nil then self.rectangle192:destroy(); self.rectangle192 = nil; end;
         if self.rectangle184 ~= nil then self.rectangle184:destroy(); self.rectangle184 = nil; end;
         if self.textEditor11 ~= nil then self.textEditor11:destroy(); self.textEditor11 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.outrosdiplomacia ~= nil then self.outrosdiplomacia:destroy(); self.outrosdiplomacia = nil; end;
@@ -12587,6 +13042,7 @@ function newTormentafrm()
         if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
         if self.rectangle176 ~= nil then self.rectangle176:destroy(); self.rectangle176 = nil; end;
         if self.button65 ~= nil then self.button65:destroy(); self.button65 = nil; end;
+        if self.layout109 ~= nil then self.layout109:destroy(); self.layout109 = nil; end;
         if self.rectangle130 ~= nil then self.rectangle130:destroy(); self.rectangle130 = nil; end;
         if self.layout98 ~= nil then self.layout98:destroy(); self.layout98 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
@@ -12599,6 +13055,7 @@ function newTormentafrm()
         if self.label207 ~= nil then self.label207:destroy(); self.label207 = nil; end;
         if self.label209 ~= nil then self.label209:destroy(); self.label209 = nil; end;
         if self.rectangle169 ~= nil then self.rectangle169:destroy(); self.rectangle169 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.rectangle91 ~= nil then self.rectangle91:destroy(); self.rectangle91 = nil; end;
         if self.rectangle93 ~= nil then self.rectangle93:destroy(); self.rectangle93 = nil; end;
         if self.layout63 ~= nil then self.layout63:destroy(); self.layout63 = nil; end;
@@ -12647,7 +13104,6 @@ function newTormentafrm()
         if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.label211 ~= nil then self.label211:destroy(); self.label211 = nil; end;
-        if self.caTamanho ~= nil then self.caTamanho:destroy(); self.caTamanho = nil; end;
         if self.button59 ~= nil then self.button59:destroy(); self.button59 = nil; end;
         if self.rectangle65 ~= nil then self.rectangle65:destroy(); self.rectangle65 = nil; end;
         if self.label167 ~= nil then self.label167:destroy(); self.label167 = nil; end;
@@ -12665,6 +13121,7 @@ function newTormentafrm()
         if self.rectangle163 ~= nil then self.rectangle163:destroy(); self.rectangle163 = nil; end;
         if self.rclDanos ~= nil then self.rclDanos:destroy(); self.rclDanos = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
+        if self.layout112 ~= nil then self.layout112:destroy(); self.layout112 = nil; end;
         if self.label237 ~= nil then self.label237:destroy(); self.label237 = nil; end;
         if self.gradcavalgar ~= nil then self.gradcavalgar:destroy(); self.gradcavalgar = nil; end;
         if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
@@ -12705,11 +13162,12 @@ function newTormentafrm()
         if self.edit25 ~= nil then self.edit25:destroy(); self.edit25 = nil; end;
         if self.layout79 ~= nil then self.layout79:destroy(); self.layout79 = nil; end;
         if self.label171 ~= nil then self.label171:destroy(); self.label171 = nil; end;
-        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
+        if self.rcEquipCloseArea ~= nil then self.rcEquipCloseArea:destroy(); self.rcEquipCloseArea = nil; end;
         if self.rectangle86 ~= nil then self.rectangle86:destroy(); self.rectangle86 = nil; end;
         if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
         if self.label178 ~= nil then self.label178:destroy(); self.label178 = nil; end;
         if self.button62 ~= nil then self.button62:destroy(); self.button62 = nil; end;
+        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
         if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
         if self.gradadestrar ~= nil then self.gradadestrar:destroy(); self.gradadestrar = nil; end;
         if self.modoficio1 ~= nil then self.modoficio1:destroy(); self.modoficio1 = nil; end;
@@ -12739,6 +13197,7 @@ function newTormentafrm()
         if self.totaldiplomacia ~= nil then self.totaldiplomacia:destroy(); self.totaldiplomacia = nil; end;
         if self.outrosfurtividade ~= nil then self.outrosfurtividade:destroy(); self.outrosfurtividade = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
+        if self.edtCargaStatus ~= nil then self.edtCargaStatus:destroy(); self.edtCargaStatus = nil; end;
         if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;
         if self.button34 ~= nil then self.button34:destroy(); self.button34 = nil; end;
         if self.calculos ~= nil then self.calculos:destroy(); self.calculos = nil; end;
@@ -12821,7 +13280,6 @@ function newTormentafrm()
         if self.modconstituicao ~= nil then self.modconstituicao:destroy(); self.modconstituicao = nil; end;
         if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
         if self.rectangle188 ~= nil then self.rectangle188:destroy(); self.rectangle188 = nil; end;
-        if self.caExtra ~= nil then self.caExtra:destroy(); self.caExtra = nil; end;
         if self.layout86 ~= nil then self.layout86:destroy(); self.layout86 = nil; end;
         if self.totalintimidacao ~= nil then self.totalintimidacao:destroy(); self.totalintimidacao = nil; end;
         if self.outrosintuicao ~= nil then self.outrosintuicao:destroy(); self.outrosintuicao = nil; end;
