@@ -835,42 +835,53 @@
 			-- Ajuste os nomes de campo abaixo se no seu node forem diferentes:
 			-- bonusCA = n.bca
 			-- bmDex   = n.bmdex
+			-- categoria = n.categoria
+			-- equipado  = n.equipado (checkbox)
+
 			function TRPG_calcDefesasCA(sheet)
 				local armadura = 0
 				local escudo   = 0
 				local outros   = 0
-				local capDex   = nil -- menor bônus máximo de DES entre armaduras
+				local capDex   = nil -- menor bônus máximo de DES entre armaduras EQUIPADAS
 
 				for _, n in ipairs(getChildNodesSafe(sheet.listaDefesas)) do
-					local cat = trimLower(n.categoria)
+					-- ✅ só considera se estiver equipado
+					-- (se n.equipado for nil, tratamos como true pra não quebrar fichas antigas)
+					local equipado = (n.equipado == nil) or (n.equipado == true)
+					if equipado then
+						local cat = trimLower(n.categoria)
 
-					local bonusCA = N(n.bonusCA, 0)
-					local bmDex   = tonumber(n.bonusMaxDes)
+						local bonusCA = N(n.bonusCA, 0)
+						local bmDex   = tonumber(n.bonusMaxDes)
 
-					if cat == "armadura" then
-						armadura = armadura + bonusCA
+						if cat == "armadura" then
+							armadura = armadura + bonusCA
 
-						-- só aplica cap se for um valor "válido"
-						-- (se estiver vazio/0/negativo, trata como "sem limite" e ignora)
-						if bmDex ~= nil then
-							bmDex = math.floor(bmDex)
-							if bmDex > 0 then
-								if capDex == nil or bmDex < capDex then
-									capDex = bmDex
+							-- capDex só vale para armaduras equipadas
+							if bmDex ~= nil then
+								bmDex = math.floor(bmDex)
+
+								-- regra que você já usava:
+								-- se estiver vazio/0/negativo => ignora (sem limite)
+								if bmDex > 0 then
+									if capDex == nil or bmDex < capDex then
+										capDex = bmDex
+									end
 								end
 							end
+
+						elseif cat == "escudo" then
+							escudo = escudo + bonusCA
+
+						elseif cat == "outros" then
+							outros = outros + bonusCA
 						end
-
-					elseif cat == "escudo" then
-						escudo = escudo + bonusCA
-
-					elseif cat == "outros" then
-						outros = outros + bonusCA
 					end
 				end
 
 				return armadura, escudo, outros, capDex
 			end
+
 
 			function recalcAll()
 				if sheet == nil then return end

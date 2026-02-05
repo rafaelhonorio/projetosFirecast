@@ -41,13 +41,17 @@ function newfrmDefesaLinha()
     obj.edit1:setAlign("left");
     obj.edit1:setWidth(80);
     obj.edit1:setField("categoria");
+    obj.edit1:setReadOnly(true);
+    obj.edit1:setCanFocus(false);
+    obj.edit1:setHorzTextAlign("center");
+    obj.edit1:setCursor("arrow");
     obj.edit1:setName("edit1");
 
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout1);
     obj.edit2:setAlign("left");
-    obj.edit2:setWidth(140);
-    obj.edit2:setField("nome");
+    obj.edit2:setWidth(120);
+    obj.edit2:setField("defesa");
     lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setName("edit2");
 
@@ -95,6 +99,15 @@ function newfrmDefesaLinha()
     obj.edit6:setHorzTextAlign("center");
     obj.edit6:setName("edit6");
 
+    obj.checkBox1 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox1:setParent(obj.layout1);
+    obj.checkBox1:setAlign("left");
+    obj.checkBox1:setWidth(24);
+    obj.checkBox1:setField("equipado");
+    obj.checkBox1:setHint("Equipado");
+    obj.checkBox1:setHorzTextAlign("center");
+    obj.checkBox1:setName("checkBox1");
+
     obj.button1 = gui.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
@@ -120,29 +133,38 @@ function newfrmDefesaLinha()
 
     obj._e_event3 = obj.edit6:addEventListener("onChange",
         function (self)
-            -- se peso impacta carga, mantém __recalc03
-                    if sheet ~= nil then
+            if sheet ~= nil then
                       local root = ndb.getRoot(sheet);
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;
                     end;
             
-                    -- e também toca a CA (caso você use peso pra algo de defesa, ou só pra padronizar)
                     TRPG_touchCA(sheet);
         end, obj);
 
-    obj._e_event4 = obj.button1:addEventListener("onClick",
+    obj._e_event4 = obj.checkBox1:addEventListener("onChange",
+        function (self)
+            -- recalcula CA/penalidades e também carga/tela3 se você quiser refletir
+                    TRPG_touchCA(sheet);
+            
+                    if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
+        end, obj);
+
+    obj._e_event5 = obj.button1:addEventListener("onClick",
         function (self)
             if sheet ~= nil then
                       local root = ndb.getRoot(sheet);
             
-                      -- toca antes de deletar (depois o node some)
                       TRPG_touchCA(sheet);
             
                       ndb.deleteNode(sheet);
             
-                      -- mantém seu gatilho de tela 3/carga, se você usa
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;
@@ -150,6 +172,7 @@ function newfrmDefesaLinha()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
         __o_rrpgObjs.removeEventListenerById(self._e_event4);
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
@@ -169,11 +192,12 @@ function newfrmDefesaLinha()
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         self:_oldLFMDestroy();
     end;
 

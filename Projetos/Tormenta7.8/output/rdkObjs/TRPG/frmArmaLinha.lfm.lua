@@ -41,6 +41,7 @@ function newfrmArmaLinha()
     obj.edit1:setAlign("left");
     obj.edit1:setWidth(140);
     obj.edit1:setField("arma");
+    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
 
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
