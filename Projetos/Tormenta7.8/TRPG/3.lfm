@@ -156,13 +156,13 @@
 
 								<!-- Header -->
 								<layout align="top" height="20" margins="{bottom=2}" hitTest="false">
-									<label align="left" width="80"  fontStyle="bold" fontColor="black" text="Categoria" hitTest="false"/>
+									<label align="left" width="20" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Eq." hitTest="true" hint="Equipado"/>
+									<label align="left" width="80"  fontStyle="bold" fontColor="black" text=" Categoria" hitTest="false"/>
 									<label align="left" width="120" fontStyle="bold" fontColor="black" text="Nome" hitTest="false"/>
 									<label align="left" width="55"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. CA" hitTest="true" hint="Bônus na Classe de Armadura"/>
 									<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. M. Dex" hitTest="true" hint="Bônus Máximo de Destreza"/>
 									<label align="left" width="65"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Penal." hitTest="true" hint="Penalidade de Armadura"/>
 									<label align="left" width="40"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso em Kg"/>
-									<label align="left" width="24" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Eq." hitTest="true" hint="Equipado"/>
 									<label align="left" width="24" fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false"/>
 								</layout>
 

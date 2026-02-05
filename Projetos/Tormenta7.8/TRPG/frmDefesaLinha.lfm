@@ -2,9 +2,22 @@
 <form name="frmDefesaLinha" height="28" theme="light">
   <layout align="client" height="28">
 
+    <!-- ✅ NOVO: checkbox "equipado" -->
+    <checkBox align="left" width="20" field="equipado" hint="Equipado" horzTextAlign="center">
+      <event name="onChange">
+        -- recalcula CA/penalidades e também carga/tela3 se você quiser refletir
+        TRPG_touchCA(sheet);
+
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+    </checkBox>
     <edit align="left" width="80" field="categoria" readOnly="true" canFocus="false" horzTextAlign="center" cursor="arrow" />
     <edit align="left" width="120" field="defesa" fontStyle="bold"/>
-
     <edit align="left" width="55" field="bonusCA" type="number" min="-99" max="99" horzTextAlign="center">
       <event name="onChange">
         TRPG_touchCA(sheet);
@@ -35,22 +48,6 @@
         TRPG_touchCA(sheet);
       </event>
     </edit>
-
-    <!-- ✅ NOVO: checkbox "equipado" -->
-    <checkBox align="left" width="24" field="equipado" hint="Equipado" horzTextAlign="center">
-      <event name="onChange">
-        -- recalcula CA/penalidades e também carga/tela3 se você quiser refletir
-        TRPG_touchCA(sheet);
-
-        if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
-          if root ~= nil then
-            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
-          end;
-        end;
-      </event>
-    </checkBox>
-
     <button align="left" width="24" text="X" hint="Excluir">
       <event name="onClick">
         if sheet ~= nil then

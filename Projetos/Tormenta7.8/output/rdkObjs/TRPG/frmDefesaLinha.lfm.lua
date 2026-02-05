@@ -36,6 +36,15 @@ function newfrmDefesaLinha()
     obj.layout1:setHeight(28);
     obj.layout1:setName("layout1");
 
+    obj.checkBox1 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox1:setParent(obj.layout1);
+    obj.checkBox1:setAlign("left");
+    obj.checkBox1:setWidth(20);
+    obj.checkBox1:setField("equipado");
+    obj.checkBox1:setHint("Equipado");
+    obj.checkBox1:setHorzTextAlign("center");
+    obj.checkBox1:setName("checkBox1");
+
     obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setAlign("left");
@@ -99,15 +108,6 @@ function newfrmDefesaLinha()
     obj.edit6:setHorzTextAlign("center");
     obj.edit6:setName("edit6");
 
-    obj.checkBox1 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox1:setParent(obj.layout1);
-    obj.checkBox1:setAlign("left");
-    obj.checkBox1:setWidth(24);
-    obj.checkBox1:setField("equipado");
-    obj.checkBox1:setHint("Equipado");
-    obj.checkBox1:setHorzTextAlign("center");
-    obj.checkBox1:setName("checkBox1");
-
     obj.button1 = gui.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
@@ -116,34 +116,7 @@ function newfrmDefesaLinha()
     obj.button1:setHint("Excluir");
     obj.button1:setName("button1");
 
-    obj._e_event0 = obj.edit3:addEventListener("onChange",
-        function (self)
-            TRPG_touchCA(sheet);
-        end, obj);
-
-    obj._e_event1 = obj.edit4:addEventListener("onChange",
-        function (self)
-            TRPG_touchCA(sheet);
-        end, obj);
-
-    obj._e_event2 = obj.edit5:addEventListener("onChange",
-        function (self)
-            TRPG_touchCA(sheet);
-        end, obj);
-
-    obj._e_event3 = obj.edit6:addEventListener("onChange",
-        function (self)
-            if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
-                      if root ~= nil then
-                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
-                      end;
-                    end;
-            
-                    TRPG_touchCA(sheet);
-        end, obj);
-
-    obj._e_event4 = obj.checkBox1:addEventListener("onChange",
+    obj._e_event0 = obj.checkBox1:addEventListener("onChange",
         function (self)
             -- recalcula CA/penalidades e também carga/tela3 se você quiser refletir
                     TRPG_touchCA(sheet);
@@ -154,6 +127,33 @@ function newfrmDefesaLinha()
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;
                     end;
+        end, obj);
+
+    obj._e_event1 = obj.edit3:addEventListener("onChange",
+        function (self)
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event2 = obj.edit4:addEventListener("onChange",
+        function (self)
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event3 = obj.edit5:addEventListener("onChange",
+        function (self)
+            TRPG_touchCA(sheet);
+        end, obj);
+
+    obj._e_event4 = obj.edit6:addEventListener("onChange",
+        function (self)
+            if sheet ~= nil then
+                      local root = ndb.getRoot(sheet);
+                      if root ~= nil then
+                        root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+                      end;
+                    end;
+            
+                    TRPG_touchCA(sheet);
         end, obj);
 
     obj._e_event5 = obj.button1:addEventListener("onClick",
