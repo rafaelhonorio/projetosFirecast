@@ -138,14 +138,14 @@
 					</layout>
 
 					<dataScopeBox name="dsDetalhesDoItem" align="client" margins="{left=8,right=8,top=6,bottom=8}" visible="false">
-						<label align="top" height="18" fontStyle="bold" text="Nome"/>
-						<edit align="top" height="26" field="campoTitulo" fontStyle="bold"/>
+						<label align="top" height="18" fontStyle="bold" fontColor="Black" text="Nome"/>
+						<edit align="top" height="26" field="campoTitulo" fontColor="Black" fontStyle="bold"/>
 
-						<label align="top" height="18" fontStyle="bold" text="Rolagem (Ataque/Dano/etc)"/>
-						<edit align="top" height="26" field="campoSubTitulo"/>
+						<label align="top" height="18" fontStyle="bold" fontColor="Black" text="Rolagem (Ataque/Dano/etc)"/>
+						<edit align="top" height="26" fontColor="Black" field="campoSubTitulo"/>
 
-						<label align="top" height="18" fontStyle="bold" text="Descrição"/>
-						<textEditor align="client" field="campoDescrição"/>
+						<label align="top" height="18" fontStyle="bold" fontColor="Black" text="Descrição"/>
+						<textEditor align="client" fontColor="Black" field="campoDescrição"/>
 					</dataScopeBox>
 				</layout>
 
@@ -238,6 +238,54 @@
 			end
 
 			return false
+		end
+
+		if TRPG_rollMacro == nil then
+			function TRPG_rollMacro(nodeOrSheet, macroText, label)
+				if nodeOrSheet == nil then return end
+
+				local expr = tostring(macroText or "")
+				expr = expr:gsub("^%s+",""):gsub("%s+$","")
+				expr = expr:gsub(",", ".") -- compat: 1d20+1,5
+
+				if expr == "" then
+					showMessage("Preencha a rolagem antes de rolar.")
+					return
+				end
+
+				-- MUITO comum: usuário digitar "+8" ou "-2" (sem dado).
+				-- interpretarRolagem("+8") pode não se comportar como você espera.
+				if expr:sub(1,1) == "+" then
+					expr = "0" .. expr
+				elseif expr:sub(1,1) == "-" then
+					expr = "0" .. expr
+				end
+
+				local rolagem = rrpg.interpretarRolagem(expr)
+				if rolagem == nil then
+					showMessage("Rolagem inválida: " .. expr)
+					return
+				end
+
+				-- se não tiver dado, prefixa 1d20 (igual seu padrão)
+				if not rolagem.possuiAlgumDado then
+					rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+				end
+
+				local mesa = rrpg.getMesaDe(nodeOrSheet)
+				local titulo = tostring(label or "Rolagem")
+
+				if mesa ~= nil then
+					local chat = mesa.activeChat or mesa.chat
+					if chat ~= nil then
+						chat:rolarDados(rolagem, titulo)
+						return
+					end
+				end
+
+				rolagem:rolarLocalmente()
+				showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+			end
 		end
 
 	]]>

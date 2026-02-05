@@ -320,6 +320,7 @@ function newTormenta06()
     obj.label6:setAlign("top");
     obj.label6:setHeight(18);
     lfm_setPropAsString(obj.label6, "fontStyle",  "bold");
+    obj.label6:setFontColor("Black");
     obj.label6:setText("Nome");
     obj.label6:setName("label6");
 
@@ -328,6 +329,7 @@ function newTormenta06()
     obj.edit1:setAlign("top");
     obj.edit1:setHeight(26);
     obj.edit1:setField("campoTitulo");
+    obj.edit1:setFontColor("Black");
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
 
@@ -336,6 +338,7 @@ function newTormenta06()
     obj.label7:setAlign("top");
     obj.label7:setHeight(18);
     lfm_setPropAsString(obj.label7, "fontStyle",  "bold");
+    obj.label7:setFontColor("Black");
     obj.label7:setText("Rolagem (Ataque/Dano/etc)");
     obj.label7:setName("label7");
 
@@ -343,6 +346,7 @@ function newTormenta06()
     obj.edit2:setParent(obj.dsDetalhesDoItem);
     obj.edit2:setAlign("top");
     obj.edit2:setHeight(26);
+    obj.edit2:setFontColor("Black");
     obj.edit2:setField("campoSubTitulo");
     obj.edit2:setName("edit2");
 
@@ -351,12 +355,14 @@ function newTormenta06()
     obj.label8:setAlign("top");
     obj.label8:setHeight(18);
     lfm_setPropAsString(obj.label8, "fontStyle",  "bold");
+    obj.label8:setFontColor("Black");
     obj.label8:setText("Descrição");
     obj.label8:setName("label8");
 
     obj.textEditor1 = gui.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.dsDetalhesDoItem);
     obj.textEditor1:setAlign("client");
+    obj.textEditor1:setFontColor("Black");
     obj.textEditor1:setField("campoDescrição");
     obj.textEditor1:setName("textEditor1");
 
@@ -443,6 +449,54 @@ function newTormenta06()
 			end
 
 			return false
+		end
+
+		if TRPG_rollMacro == nil then
+			function TRPG_rollMacro(nodeOrSheet, macroText, label)
+				if nodeOrSheet == nil then return end
+
+				local expr = tostring(macroText or "")
+				expr = expr:gsub("^%s+",""):gsub("%s+$","")
+				expr = expr:gsub(",", ".") -- compat: 1d20+1,5
+
+				if expr == "" then
+					showMessage("Preencha a rolagem antes de rolar.")
+					return
+				end
+
+				-- MUITO comum: usuário digitar "+8" ou "-2" (sem dado).
+				-- interpretarRolagem("+8") pode não se comportar como você espera.
+				if expr:sub(1,1) == "+" then
+					expr = "0" .. expr
+				elseif expr:sub(1,1) == "-" then
+					expr = "0" .. expr
+				end
+
+				local rolagem = rrpg.interpretarRolagem(expr)
+				if rolagem == nil then
+					showMessage("Rolagem inválida: " .. expr)
+					return
+				end
+
+				-- se não tiver dado, prefixa 1d20 (igual seu padrão)
+				if not rolagem.possuiAlgumDado then
+					rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+				end
+
+				local mesa = rrpg.getMesaDe(nodeOrSheet)
+				local titulo = tostring(label or "Rolagem")
+
+				if mesa ~= nil then
+					local chat = mesa.activeChat or mesa.chat
+					if chat ~= nil then
+						chat:rolarDados(rolagem, titulo)
+						return
+					end
+				end
+
+				rolagem:rolarLocalmente()
+				showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+			end
 		end
 
 	
