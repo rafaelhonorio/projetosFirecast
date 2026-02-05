@@ -41,6 +41,7 @@ function newfrmDefesaLinha()
     obj.checkBox1:setAlign("left");
     obj.checkBox1:setWidth(20);
     obj.checkBox1:setField("equipado");
+    obj.checkBox1:setFontColor("black");
     obj.checkBox1:setHint("Equipado");
     obj.checkBox1:setHorzTextAlign("center");
     obj.checkBox1:setName("checkBox1");
@@ -50,6 +51,7 @@ function newfrmDefesaLinha()
     obj.edit1:setAlign("left");
     obj.edit1:setWidth(80);
     obj.edit1:setField("categoria");
+    obj.edit1:setFontColor("black");
     obj.edit1:setReadOnly(true);
     obj.edit1:setCanFocus(false);
     obj.edit1:setHorzTextAlign("center");
@@ -61,6 +63,7 @@ function newfrmDefesaLinha()
     obj.edit2:setAlign("left");
     obj.edit2:setWidth(120);
     obj.edit2:setField("defesa");
+    obj.edit2:setFontColor("black");
     lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setName("edit2");
 
@@ -69,6 +72,7 @@ function newfrmDefesaLinha()
     obj.edit3:setAlign("left");
     obj.edit3:setWidth(55);
     obj.edit3:setField("bonusCA");
+    obj.edit3:setFontColor("black");
     obj.edit3:setType("number");
     obj.edit3:setMin(-99);
     obj.edit3:setMax(99);
@@ -80,6 +84,7 @@ function newfrmDefesaLinha()
     obj.edit4:setAlign("left");
     obj.edit4:setWidth(70);
     obj.edit4:setField("bonusMaxDes");
+    obj.edit4:setFontColor("black");
     obj.edit4:setType("number");
     obj.edit4:setMin(-99);
     obj.edit4:setMax(99);
@@ -91,6 +96,7 @@ function newfrmDefesaLinha()
     obj.edit5:setAlign("left");
     obj.edit5:setWidth(65);
     obj.edit5:setField("penalidade");
+    obj.edit5:setFontColor("black");
     obj.edit5:setType("number");
     obj.edit5:setMin(-99);
     obj.edit5:setMax(99);
@@ -102,6 +108,7 @@ function newfrmDefesaLinha()
     obj.edit6:setAlign("left");
     obj.edit6:setWidth(40);
     obj.edit6:setField("peso");
+    obj.edit6:setFontColor("black");
     obj.edit6:setType("float");
     obj.edit6:setMin(0);
     obj.edit6:setMax(9999);
@@ -112,6 +119,7 @@ function newfrmDefesaLinha()
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
     obj.button1:setWidth(24);
+    obj.button1:setFontColor("black");
     obj.button1:setText("X");
     obj.button1:setHint("Excluir");
     obj.button1:setName("button1");

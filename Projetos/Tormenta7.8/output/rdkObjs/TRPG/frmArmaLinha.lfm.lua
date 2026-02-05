@@ -41,6 +41,7 @@ function newfrmArmaLinha()
     obj.edit1:setAlign("left");
     obj.edit1:setWidth(140);
     obj.edit1:setField("arma");
+    obj.edit1:setFontColor("black");
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
 
@@ -49,6 +50,7 @@ function newfrmArmaLinha()
     obj.edit2:setAlign("left");
     obj.edit2:setWidth(48);
     obj.edit2:setField("ataque");
+    obj.edit2:setFontColor("black");
     obj.edit2:setHorzTextAlign("center");
     obj.edit2:setName("edit2");
 
@@ -57,6 +59,7 @@ function newfrmArmaLinha()
     obj.edit3:setAlign("left");
     obj.edit3:setWidth(60);
     obj.edit3:setField("dano");
+    obj.edit3:setFontColor("black");
     obj.edit3:setHorzTextAlign("center");
     obj.edit3:setName("edit3");
 
@@ -65,6 +68,7 @@ function newfrmArmaLinha()
     obj.edit4:setAlign("left");
     obj.edit4:setWidth(52);
     obj.edit4:setField("critico");
+    obj.edit4:setFontColor("black");
     obj.edit4:setHorzTextAlign("center");
     obj.edit4:setName("edit4");
 
@@ -73,6 +77,7 @@ function newfrmArmaLinha()
     obj.edit5:setAlign("left");
     obj.edit5:setWidth(48);
     obj.edit5:setField("dist");
+    obj.edit5:setFontColor("black");
     obj.edit5:setHorzTextAlign("center");
     obj.edit5:setName("edit5");
 
@@ -81,6 +86,7 @@ function newfrmArmaLinha()
     obj.edit6:setAlign("left");
     obj.edit6:setWidth(62);
     obj.edit6:setField("tipo");
+    obj.edit6:setFontColor("black");
     obj.edit6:setHorzTextAlign("center");
     obj.edit6:setName("edit6");
 
@@ -89,6 +95,7 @@ function newfrmArmaLinha()
     obj.edit7:setAlign("left");
     obj.edit7:setWidth(40);
     obj.edit7:setField("peso");
+    obj.edit7:setFontColor("black");
     obj.edit7:setType("float");
     obj.edit7:setMin(0);
     obj.edit7:setMax(9999);
@@ -100,6 +107,7 @@ function newfrmArmaLinha()
     obj.button1:setAlign("left");
     obj.button1:setWidth(24);
     obj.button1:setText("X");
+    obj.button1:setFontColor("black");
     obj.button1:setHint("Excluir arma");
     obj.button1:setName("button1");
 

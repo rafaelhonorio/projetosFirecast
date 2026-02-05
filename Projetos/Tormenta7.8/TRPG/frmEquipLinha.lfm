@@ -14,7 +14,7 @@
     </event>
 
     <!-- Linha editável -->
-    <edit align="left" width="296" field="nome" fontStyle="bold">
+    <edit align="left" width="296" fontColor="black" field="nome" fontStyle="bold">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
@@ -24,7 +24,7 @@
       </event>
     </edit>
 
-    <edit align="left" width="70" field="valor" horzTextAlign="center">
+    <edit align="left" width="70" fontColor="black" field="valor" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
@@ -34,7 +34,7 @@
       </event>
     </edit>
 
-    <edit align="left" width="70" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
+    <edit align="left" width="70" fontColor="black" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
@@ -45,7 +45,7 @@
     </edit>
 
     <!-- Excluir -->
-    <button align="left" width="26" text="X" hint="Excluir item">
+    <button align="left" width="26" fontColor="black" text="X" hint="Excluir item">
       <event name="onClick">
         if sheet ~= nil then
           local root = ndb.getRoot(sheet);

@@ -41,6 +41,7 @@ function newfrmEquipLinha()
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setAlign("left");
     obj.edit1:setWidth(296);
+    obj.edit1:setFontColor("black");
     obj.edit1:setField("nome");
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
@@ -49,6 +50,7 @@ function newfrmEquipLinha()
     obj.edit2:setParent(obj.layout1);
     obj.edit2:setAlign("left");
     obj.edit2:setWidth(70);
+    obj.edit2:setFontColor("black");
     obj.edit2:setField("valor");
     obj.edit2:setHorzTextAlign("center");
     obj.edit2:setName("edit2");
@@ -57,6 +59,7 @@ function newfrmEquipLinha()
     obj.edit3:setParent(obj.layout1);
     obj.edit3:setAlign("left");
     obj.edit3:setWidth(70);
+    obj.edit3:setFontColor("black");
     obj.edit3:setField("peso");
     obj.edit3:setType("float");
     obj.edit3:setMin(0);
@@ -68,6 +71,7 @@ function newfrmEquipLinha()
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
     obj.button1:setWidth(26);
+    obj.button1:setFontColor("black");
     obj.button1:setText("X");
     obj.button1:setHint("Excluir item");
     obj.button1:setName("button1");

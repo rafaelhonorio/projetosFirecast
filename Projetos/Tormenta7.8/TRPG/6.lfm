@@ -1,107 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="Tormenta06" align="client" theme="light">
+
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10"/>
 
-		<layout align="top" height="30" margins="{left=8,right=8,top=8,bottom=4}">
-			<button text="Adicionar (Ataque)" width="170" align="left">
-				<event name="onClick">
-					self.rclAtaque:append();
-				</event>
-			</button>
-			<button text="Adicionar (Danos)" width="170" align="left" margins="{left=6}">
-				<event name="onClick">
-					self.rclDanos:append();
-				</event>
-			</button>
-			<button text="Adicionar (Magias)" width="170" align="left" margins="{left=6}">
-				<event name="onClick">
-					self.rclMagias:append();
-				</event>
-			</button>
-		</layout>
+		<layout left="0" top="0" width="1010" height="700">
 
-		<!-- Área principal -->
-		<layout align="top" height="650" margins="{left=8, right=8, top=0, bottom=8}">
+			<!-- Barra de ações -->
+			<layout align="top" height="34" margins="{left=10,right=10,top=10,bottom=6}">
+				<rectangle align="client" color="Gainsboro" xradius="8" yradius="8"/>
 
-			<!-- 3 colunas de listas (Ataque / Danos / Magias) -->
-			<layout align="left" width="560">
+				<layout align="client" margins="{left=8,right=8,top=6,bottom=6}">
+					<button text="Adicionar (Ataque)" width="170" align="left">
+						<event name="onClick">
+							local n = self.rclAtaque:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Ataque)";
+							end;
+							TRPG_touch06(self);
+						</event>
+					</button>
 
-				<layout align="top" height="20">
-					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="ATAQUE"/>
-					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="DANOS"/>
-					<label align="left" width="185" fontStyle="bold" horzTextAlign="center" text="MAGIAS"/>
+					<button text="Adicionar (Danos)" width="170" align="left" margins="{left=6}">
+						<event name="onClick">
+							local n = self.rclDanos:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Danos)";
+							end;
+							TRPG_touch06(self);
+						</event>
+					</button>
+
+					<button text="Adicionar (Magias)" width="170" align="left" margins="{left=6}">
+						<event name="onClick">
+							local n = self.rclMagias:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Magias)";
+							end;
+							TRPG_touch06(self);
+						</event>
+					</button>
 				</layout>
+			</layout>
 
+			<!-- Área principal -->
+			<layout align="client" margins="{left=10, right=10, top=0, bottom=10}">
+
+				<!-- ESQUERDA -->
 				<layout align="client">
-					<recordList name="rclAtaque"
-						field="campoDosItensAtaque"
-						templateForm="frmMacroColuna"
-						align="left"
-						width="185"
-						selectable="true">
-						<event name="onSelect">
-							self.rclDanos.selectedNode = nil;
-							self.rclMagias.selectedNode = nil;
-							local node = self.rclAtaque.selectedNode;
-							self.boxDetalhesDoItem.node = node;
-							self.boxDetalhesDoItem.visible = (node ~= nil);
-						</event>
-					</recordList>
 
-					<recordList name="rclDanos"
-						field="campoDosItensDanos"
-						templateForm="frmMacroColuna"
-						align="left"
-						width="185"
-						selectable="true">
-						<event name="onSelect">
-							self.rclAtaque.selectedNode = nil;
-							self.rclMagias.selectedNode = nil;
-							local node = self.rclDanos.selectedNode;
-							self.boxDetalhesDoItem.node = node;
-							self.boxDetalhesDoItem.visible = (node ~= nil);
-						</event>
-					</recordList>
+					<!-- Cabeçalho -->
+					<layout align="top" height="26">
+						<rectangle align="client" color="Black" xradius="6" yradius="6"/>
 
-					<recordList name="rclMagias"
-						field="campoDosItensMagias"
-						templateForm="frmMacroColuna"
-						align="left"
-						width="185"
-						selectable="true">
-						<event name="onSelect">
-							self.rclAtaque.selectedNode = nil;
-							self.rclDanos.selectedNode = nil;
-							local node = self.rclMagias.selectedNode;
-							self.boxDetalhesDoItem.node = node;
-							self.boxDetalhesDoItem.visible = (node ~= nil);
-						</event>
-					</recordList>
+						<layout align="client" margins="{left=6,right=6,top=4,bottom=4}">
+							<label align="left" width="180" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ATAQUE"/>
+							<label align="left" width="180" fontStyle="bold" fontColor="white" horzTextAlign="center" text="DANOS"/>
+							<label align="client" fontStyle="bold" fontColor="white" horzTextAlign="center" text="MAGIAS"/>
+						</layout>
+					</layout>
+
+					<!-- Corpo -->
+					<layout align="client" margins="{top=6}">
+						<rectangle align="client" color="Gainsboro" xradius="8" yradius="8"/>
+
+						<layout align="client" margins="{left=6,right=6,top=6,bottom=6}">
+
+							<!-- ATAQUE -->
+							<layout align="left" width="180" margins="{right=4}">
+								<rectangle align="client" color="White" xradius="6" yradius="6"/>
+
+								<recordList name="rclAtaque"
+									field="campoDosItensAtaque"
+									templateForm="frmMacroColuna"
+									align="client"
+									selectable="true">
+									<event name="onSelect">
+										self.rclDanos.selectedNode = nil;
+										self.rclMagias.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclAtaque.selectedNode);
+									</event>
+								</recordList>
+							</layout>
+
+							<!-- DANOS -->
+							<layout align="left" width="180" margins="{left=2,right=2}">
+								<rectangle align="client" color="White" xradius="6" yradius="6"/>
+
+								<recordList name="rclDanos"
+									field="campoDosItensDanos"
+									templateForm="frmMacroColuna"
+									align="client"
+									selectable="true">
+									<event name="onSelect">
+										self.rclAtaque.selectedNode = nil;
+										self.rclMagias.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclDanos.selectedNode);
+									</event>
+								</recordList>
+							</layout>
+
+							<!-- MAGIAS -->
+							<layout align="client" margins="{left=4}">
+								<rectangle align="client" color="White" xradius="6" yradius="6"/>
+
+								<recordList name="rclMagias"
+									field="campoDosItensMagias"
+									templateForm="frmMacroColuna"
+									align="client"
+									selectable="true">
+									<event name="onSelect">
+										self.rclAtaque.selectedNode = nil;
+										self.rclDanos.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclMagias.selectedNode);
+									</event>
+								</recordList>
+							</layout>
+
+						</layout>
+					</layout>
+
 				</layout>
+
+				<!-- DIREITA -->
+				<layout align="right" width="420" margins="{left=10}">
+					<rectangle align="client" color="Gray" xradius="8" yradius="8"/>
+
+					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
+						<rectangle align="client" color="Black" xradius="4" yradius="4"/>
+						<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="Detalhes do Macro"/>
+					</layout>
+
+					<layout name="boxNadaSelecionado" align="client" margins="{left=10,right=10,top=10,bottom=10}" visible="true">
+						<rectangle align="client" color="Gainsboro" xradius="6" yradius="6"/>
+						<label align="client" fontStyle="bold" fontColor="Black" horzTextAlign="center"
+							text="Selecione um item em Ataque, Danos ou Magias para editar."/>
+					</layout>
+
+					<dataScopeBox name="dsDetalhesDoItem" align="client" margins="{left=8,right=8,top=6,bottom=8}" visible="false">
+						<label align="top" height="18" fontStyle="bold" text="Nome"/>
+						<edit align="top" height="26" field="campoTitulo" fontStyle="bold"/>
+
+						<label align="top" height="18" fontStyle="bold" text="Rolagem (Ataque/Dano/etc)"/>
+						<edit align="top" height="26" field="campoSubTitulo"/>
+
+						<label align="top" height="18" fontStyle="bold" text="Descrição"/>
+						<textEditor align="client" field="campoDescrição"/>
+					</dataScopeBox>
+				</layout>
+
 			</layout>
-
-			<!-- Coluna da direita: detalhes -->
-			<layout align="left" width="420" margins="{left=10}">
-				<rectangle align="client" color="Gray" xradius="8" yradius="8"/>
-
-				<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
-					<rectangle align="client" color="Black" xradius="4" yradius="4"/>
-					<label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="Detalhes do Macro"/>
-				</layout>
-
-				<layout name="boxDetalhesDoItem" align="client" margins="{left=8,right=8,top=6,bottom=8}" visible="false">
-					<label align="top" height="18" fontStyle="bold" text="Nome"/>
-					<edit align="top" height="26" field="campoTitulo" fontStyle="bold"/>
-
-					<label align="top" height="18" fontStyle="bold" text="Rolagem (Ataque/Dano/etc)"/>
-					<edit align="top" height="26" field="campoSubTitulo"/>
-
-					<label align="top" height="18" fontStyle="bold" text="Descrição"/>
-					<textEditor align="client" field="campoDescrição"/>
-				</layout>
-			</layout>
-
 		</layout>
 	</scrollBox>
+
+	<!-- Motor / refresh (igual página 3) -->
+	<dataLink fields="{'__recalc06','campoDosItensAtaque','campoDosItensDanos','campoDosItensMagias'}">
+		<event name="onChange">
+		</event>
+	</dataLink>
+
+	<script>
+	<![CDATA[
+		local function getRootSheet(ctrl)
+			if ctrl == nil then return nil end
+			return ctrl.sheet -- aqui ctrl DEVE ser o form Tormenta06 (não o template do item)
+		end
+
+		function TRPG_touch06(ctrl)
+			local r = getRootSheet(ctrl)
+			if r == nil then return end
+			r.__recalc06 = (tonumber(r.__recalc06) or 0) + 1
+		end
+
+		function TRPG_selectMacro(ctrl, node)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+
+			if ds ~= nil then
+				ds.scopeNode = node
+				ds.visible = (node ~= nil)
+			end
+			if box ~= nil then
+				box.visible = (node == nil)
+			end
+		end
+
+		function TRPG_closeMacroDetails(ctrl)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+			if ds ~= nil then
+				ds.scopeNode = nil
+				ds.visible = false
+			end
+			if box ~= nil then
+				box.visible = true
+			end
+		end
+
+		local function removeFromList(list, item)
+			if type(list) ~= "table" then return false end
+			for i = #list, 1, -1 do
+				if list[i] == item then
+					table.remove(list, i)
+					return true
+				end
+			end
+			return false
+		end
+
+		-- item aqui é o "sheet" do frmMacroColuna (table)
+		function TRPG_deleteMacro(ctrl, item)
+			if ctrl == nil or item == nil then return false end
+
+			local root = getRootSheet(ctrl)
+			if root == nil then return false end
+
+			-- tenta remover de qualquer uma das 3 listas
+			local removed = false
+			removed = removeFromList(root.campoDosItensAtaque, item) or removed
+			removed = removeFromList(root.campoDosItensDanos,  item) or removed
+			removed = removeFromList(root.campoDosItensMagias, item) or removed
+
+			if removed then
+				-- limpa seleção das 3 listas (evita apontar pra item removido)
+				local a = ctrl:findControlByName("rclAtaque")
+				local d = ctrl:findControlByName("rclDanos")
+				local m = ctrl:findControlByName("rclMagias")
+				if a ~= nil then a.selectedNode = nil end
+				if d ~= nil then d.selectedNode = nil end
+				if m ~= nil then m.selectedNode = nil end
+
+				TRPG_closeMacroDetails(ctrl)
+				TRPG_touch06(ctrl)
+				return true
+			end
+
+			return false
+		end
+
+	]]>
+	</script>
+
 </form>

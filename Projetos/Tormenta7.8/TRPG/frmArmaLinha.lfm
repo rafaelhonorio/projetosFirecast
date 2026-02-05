@@ -2,15 +2,15 @@
 <form name="frmArmaLinha" height="28" theme="light">
   <layout align="client" height="28">
 
-    <edit align="left" width="140" field="arma" fontStyle="bold"/>
-    <edit align="left" width="48"  field="ataque"  horzTextAlign="center"/>
-    <edit align="left" width="60"  field="dano"    horzTextAlign="center"/>
-    <edit align="left" width="52"  field="critico" horzTextAlign="center"/>
-    <edit align="left" width="48"  field="dist"    horzTextAlign="center"/>
-    <edit align="left" width="62"  field="tipo"    horzTextAlign="center"/>
-    <edit align="left" width="40"  field="peso" type="float" min="0" max="9999" horzTextAlign="center"/>
+    <edit align="left" width="140" field="arma" fontColor="black" fontStyle="bold"/>
+    <edit align="left" width="48"  field="ataque" fontColor="black" horzTextAlign="center"/>
+    <edit align="left" width="60"  field="dano"   fontColor="black" horzTextAlign="center"/>
+    <edit align="left" width="52"  field="critico" fontColor="black" horzTextAlign="center"/>
+    <edit align="left" width="48"  field="dist"   fontColor="black" horzTextAlign="center"/>
+    <edit align="left" width="62"  field="tipo"   fontColor="black" horzTextAlign="center"/>
+    <edit align="left" width="40"  field="peso" fontColor="black" type="float" min="0" max="9999" horzTextAlign="center"/>
 
-    <button align="left" width="24" text="X" hint="Excluir arma">
+    <button align="left" width="24" text="X" fontColor="black" hint="Excluir arma">
       <event name="onClick">
         if sheet ~= nil then
           local root = ndb.getRoot(sheet);

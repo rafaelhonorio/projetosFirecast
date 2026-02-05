@@ -11871,20 +11871,42 @@ function newTormentafrm()
 
     obj.layout113 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout113:setParent(obj.scrollBox6);
-    obj.layout113:setAlign("top");
-    obj.layout113:setHeight(30);
-    obj.layout113:setMargins({left=8,right=8,top=8,bottom=4});
+    obj.layout113:setLeft(0);
+    obj.layout113:setTop(0);
+    obj.layout113:setWidth(1010);
+    obj.layout113:setHeight(700);
     obj.layout113:setName("layout113");
 
+    obj.layout114 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout114:setParent(obj.layout113);
+    obj.layout114:setAlign("top");
+    obj.layout114:setHeight(34);
+    obj.layout114:setMargins({left=10,right=10,top=10,bottom=6});
+    obj.layout114:setName("layout114");
+
+    obj.rectangle221 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle221:setParent(obj.layout114);
+    obj.rectangle221:setAlign("client");
+    obj.rectangle221:setColor("Gainsboro");
+    obj.rectangle221:setXradius(8);
+    obj.rectangle221:setYradius(8);
+    obj.rectangle221:setName("rectangle221");
+
+    obj.layout115 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout115:setParent(obj.layout114);
+    obj.layout115:setAlign("client");
+    obj.layout115:setMargins({left=8,right=8,top=6,bottom=6});
+    obj.layout115:setName("layout115");
+
     obj.button76 = gui.fromHandle(_obj_newObject("button"));
-    obj.button76:setParent(obj.layout113);
+    obj.button76:setParent(obj.layout115);
     obj.button76:setText("Adicionar (Ataque)");
     obj.button76:setWidth(170);
     obj.button76:setAlign("left");
     obj.button76:setName("button76");
 
     obj.button77 = gui.fromHandle(_obj_newObject("button"));
-    obj.button77:setParent(obj.layout113);
+    obj.button77:setParent(obj.layout115);
     obj.button77:setText("Adicionar (Danos)");
     obj.button77:setWidth(170);
     obj.button77:setAlign("left");
@@ -11892,123 +11914,193 @@ function newTormentafrm()
     obj.button77:setName("button77");
 
     obj.button78 = gui.fromHandle(_obj_newObject("button"));
-    obj.button78:setParent(obj.layout113);
+    obj.button78:setParent(obj.layout115);
     obj.button78:setText("Adicionar (Magias)");
     obj.button78:setWidth(170);
     obj.button78:setAlign("left");
     obj.button78:setMargins({left=6});
     obj.button78:setName("button78");
 
-    obj.layout114 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout114:setParent(obj.scrollBox6);
-    obj.layout114:setAlign("top");
-    obj.layout114:setHeight(650);
-    obj.layout114:setMargins({left=8, right=8, top=0, bottom=8});
-    obj.layout114:setName("layout114");
-
-    obj.layout115 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout115:setParent(obj.layout114);
-    obj.layout115:setAlign("left");
-    obj.layout115:setWidth(560);
-    obj.layout115:setName("layout115");
-
     obj.layout116 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout116:setParent(obj.layout115);
-    obj.layout116:setAlign("top");
-    obj.layout116:setHeight(20);
+    obj.layout116:setParent(obj.layout113);
+    obj.layout116:setAlign("client");
+    obj.layout116:setMargins({left=10, right=10, top=0, bottom=10});
     obj.layout116:setName("layout116");
 
+    obj.layout117 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout117:setParent(obj.layout116);
+    obj.layout117:setAlign("client");
+    obj.layout117:setName("layout117");
+
+    obj.layout118 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout118:setParent(obj.layout117);
+    obj.layout118:setAlign("top");
+    obj.layout118:setHeight(26);
+    obj.layout118:setName("layout118");
+
+    obj.rectangle222 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle222:setParent(obj.layout118);
+    obj.rectangle222:setAlign("client");
+    obj.rectangle222:setColor("Black");
+    obj.rectangle222:setXradius(6);
+    obj.rectangle222:setYradius(6);
+    obj.rectangle222:setName("rectangle222");
+
+    obj.layout119 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout119:setParent(obj.layout118);
+    obj.layout119:setAlign("client");
+    obj.layout119:setMargins({left=6,right=6,top=4,bottom=4});
+    obj.layout119:setName("layout119");
+
     obj.label238 = gui.fromHandle(_obj_newObject("label"));
-    obj.label238:setParent(obj.layout116);
+    obj.label238:setParent(obj.layout119);
     obj.label238:setAlign("left");
-    obj.label238:setWidth(185);
+    obj.label238:setWidth(180);
     lfm_setPropAsString(obj.label238, "fontStyle",  "bold");
+    obj.label238:setFontColor("white");
     obj.label238:setHorzTextAlign("center");
     obj.label238:setText("ATAQUE");
     obj.label238:setName("label238");
 
     obj.label239 = gui.fromHandle(_obj_newObject("label"));
-    obj.label239:setParent(obj.layout116);
+    obj.label239:setParent(obj.layout119);
     obj.label239:setAlign("left");
-    obj.label239:setWidth(185);
+    obj.label239:setWidth(180);
     lfm_setPropAsString(obj.label239, "fontStyle",  "bold");
+    obj.label239:setFontColor("white");
     obj.label239:setHorzTextAlign("center");
     obj.label239:setText("DANOS");
     obj.label239:setName("label239");
 
     obj.label240 = gui.fromHandle(_obj_newObject("label"));
-    obj.label240:setParent(obj.layout116);
-    obj.label240:setAlign("left");
-    obj.label240:setWidth(185);
+    obj.label240:setParent(obj.layout119);
+    obj.label240:setAlign("client");
     lfm_setPropAsString(obj.label240, "fontStyle",  "bold");
+    obj.label240:setFontColor("white");
     obj.label240:setHorzTextAlign("center");
     obj.label240:setText("MAGIAS");
     obj.label240:setName("label240");
 
-    obj.layout117 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout117:setParent(obj.layout115);
-    obj.layout117:setAlign("client");
-    obj.layout117:setName("layout117");
+    obj.layout120 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout120:setParent(obj.layout117);
+    obj.layout120:setAlign("client");
+    obj.layout120:setMargins({top=6});
+    obj.layout120:setName("layout120");
+
+    obj.rectangle223 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle223:setParent(obj.layout120);
+    obj.rectangle223:setAlign("client");
+    obj.rectangle223:setColor("Gainsboro");
+    obj.rectangle223:setXradius(8);
+    obj.rectangle223:setYradius(8);
+    obj.rectangle223:setName("rectangle223");
+
+    obj.layout121 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout121:setParent(obj.layout120);
+    obj.layout121:setAlign("client");
+    obj.layout121:setMargins({left=6,right=6,top=6,bottom=6});
+    obj.layout121:setName("layout121");
+
+    obj.layout122 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout122:setParent(obj.layout121);
+    obj.layout122:setAlign("left");
+    obj.layout122:setWidth(180);
+    obj.layout122:setMargins({right=4});
+    obj.layout122:setName("layout122");
+
+    obj.rectangle224 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle224:setParent(obj.layout122);
+    obj.rectangle224:setAlign("client");
+    obj.rectangle224:setColor("White");
+    obj.rectangle224:setXradius(6);
+    obj.rectangle224:setYradius(6);
+    obj.rectangle224:setName("rectangle224");
 
     obj.rclAtaque = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclAtaque:setParent(obj.layout117);
+    obj.rclAtaque:setParent(obj.layout122);
     obj.rclAtaque:setName("rclAtaque");
     obj.rclAtaque:setField("campoDosItensAtaque");
     obj.rclAtaque:setTemplateForm("frmMacroColuna");
-    obj.rclAtaque:setAlign("left");
-    obj.rclAtaque:setWidth(185);
+    obj.rclAtaque:setAlign("client");
     obj.rclAtaque:setSelectable(true);
 
+    obj.layout123 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout123:setParent(obj.layout121);
+    obj.layout123:setAlign("left");
+    obj.layout123:setWidth(180);
+    obj.layout123:setMargins({left=2,right=2});
+    obj.layout123:setName("layout123");
+
+    obj.rectangle225 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle225:setParent(obj.layout123);
+    obj.rectangle225:setAlign("client");
+    obj.rectangle225:setColor("White");
+    obj.rectangle225:setXradius(6);
+    obj.rectangle225:setYradius(6);
+    obj.rectangle225:setName("rectangle225");
+
     obj.rclDanos = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclDanos:setParent(obj.layout117);
+    obj.rclDanos:setParent(obj.layout123);
     obj.rclDanos:setName("rclDanos");
     obj.rclDanos:setField("campoDosItensDanos");
     obj.rclDanos:setTemplateForm("frmMacroColuna");
-    obj.rclDanos:setAlign("left");
-    obj.rclDanos:setWidth(185);
+    obj.rclDanos:setAlign("client");
     obj.rclDanos:setSelectable(true);
 
+    obj.layout124 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout124:setParent(obj.layout121);
+    obj.layout124:setAlign("client");
+    obj.layout124:setMargins({left=4});
+    obj.layout124:setName("layout124");
+
+    obj.rectangle226 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle226:setParent(obj.layout124);
+    obj.rectangle226:setAlign("client");
+    obj.rectangle226:setColor("White");
+    obj.rectangle226:setXradius(6);
+    obj.rectangle226:setYradius(6);
+    obj.rectangle226:setName("rectangle226");
+
     obj.rclMagias = gui.fromHandle(_obj_newObject("recordList"));
-    obj.rclMagias:setParent(obj.layout117);
+    obj.rclMagias:setParent(obj.layout124);
     obj.rclMagias:setName("rclMagias");
     obj.rclMagias:setField("campoDosItensMagias");
     obj.rclMagias:setTemplateForm("frmMacroColuna");
-    obj.rclMagias:setAlign("left");
-    obj.rclMagias:setWidth(185);
+    obj.rclMagias:setAlign("client");
     obj.rclMagias:setSelectable(true);
 
-    obj.layout118 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout118:setParent(obj.layout114);
-    obj.layout118:setAlign("left");
-    obj.layout118:setWidth(420);
-    obj.layout118:setMargins({left=10});
-    obj.layout118:setName("layout118");
+    obj.layout125 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout125:setParent(obj.layout116);
+    obj.layout125:setAlign("right");
+    obj.layout125:setWidth(420);
+    obj.layout125:setMargins({left=10});
+    obj.layout125:setName("layout125");
 
-    obj.rectangle221 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle221:setParent(obj.layout118);
-    obj.rectangle221:setAlign("client");
-    obj.rectangle221:setColor("Gray");
-    obj.rectangle221:setXradius(8);
-    obj.rectangle221:setYradius(8);
-    obj.rectangle221:setName("rectangle221");
+    obj.rectangle227 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle227:setParent(obj.layout125);
+    obj.rectangle227:setAlign("client");
+    obj.rectangle227:setColor("Gray");
+    obj.rectangle227:setXradius(8);
+    obj.rectangle227:setYradius(8);
+    obj.rectangle227:setName("rectangle227");
 
-    obj.layout119 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout119:setParent(obj.layout118);
-    obj.layout119:setAlign("top");
-    obj.layout119:setHeight(28);
-    obj.layout119:setMargins({left=6,right=6,top=6,bottom=2});
-    obj.layout119:setName("layout119");
+    obj.layout126 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout126:setParent(obj.layout125);
+    obj.layout126:setAlign("top");
+    obj.layout126:setHeight(28);
+    obj.layout126:setMargins({left=6,right=6,top=6,bottom=2});
+    obj.layout126:setName("layout126");
 
-    obj.rectangle222 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle222:setParent(obj.layout119);
-    obj.rectangle222:setAlign("client");
-    obj.rectangle222:setColor("Black");
-    obj.rectangle222:setXradius(4);
-    obj.rectangle222:setYradius(4);
-    obj.rectangle222:setName("rectangle222");
+    obj.rectangle228 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle228:setParent(obj.layout126);
+    obj.rectangle228:setAlign("client");
+    obj.rectangle228:setColor("Black");
+    obj.rectangle228:setXradius(4);
+    obj.rectangle228:setYradius(4);
+    obj.rectangle228:setName("rectangle228");
 
     obj.label241 = gui.fromHandle(_obj_newObject("label"));
-    obj.label241:setParent(obj.layout119);
+    obj.label241:setParent(obj.layout126);
     obj.label241:setAlign("client");
     obj.label241:setFontSize(14);
     lfm_setPropAsString(obj.label241, "fontStyle",  "bold");
@@ -12017,57 +12109,169 @@ function newTormentafrm()
     obj.label241:setText("Detalhes do Macro");
     obj.label241:setName("label241");
 
-    obj.boxDetalhesDoItem = gui.fromHandle(_obj_newObject("layout"));
-    obj.boxDetalhesDoItem:setParent(obj.layout118);
-    obj.boxDetalhesDoItem:setName("boxDetalhesDoItem");
-    obj.boxDetalhesDoItem:setAlign("client");
-    obj.boxDetalhesDoItem:setMargins({left=8,right=8,top=6,bottom=8});
-    obj.boxDetalhesDoItem:setVisible(false);
+    obj.boxNadaSelecionado = gui.fromHandle(_obj_newObject("layout"));
+    obj.boxNadaSelecionado:setParent(obj.layout125);
+    obj.boxNadaSelecionado:setName("boxNadaSelecionado");
+    obj.boxNadaSelecionado:setAlign("client");
+    obj.boxNadaSelecionado:setMargins({left=10,right=10,top=10,bottom=10});
+    obj.boxNadaSelecionado:setVisible(true);
+
+    obj.rectangle229 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle229:setParent(obj.boxNadaSelecionado);
+    obj.rectangle229:setAlign("client");
+    obj.rectangle229:setColor("Gainsboro");
+    obj.rectangle229:setXradius(6);
+    obj.rectangle229:setYradius(6);
+    obj.rectangle229:setName("rectangle229");
 
     obj.label242 = gui.fromHandle(_obj_newObject("label"));
-    obj.label242:setParent(obj.boxDetalhesDoItem);
-    obj.label242:setAlign("top");
-    obj.label242:setHeight(18);
+    obj.label242:setParent(obj.boxNadaSelecionado);
+    obj.label242:setAlign("client");
     lfm_setPropAsString(obj.label242, "fontStyle",  "bold");
-    obj.label242:setText("Nome");
+    obj.label242:setFontColor("Black");
+    obj.label242:setHorzTextAlign("center");
+    obj.label242:setText("Selecione um item em Ataque, Danos ou Magias para editar.");
     obj.label242:setName("label242");
 
+    obj.dsDetalhesDoItem = gui.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.dsDetalhesDoItem:setParent(obj.layout125);
+    obj.dsDetalhesDoItem:setName("dsDetalhesDoItem");
+    obj.dsDetalhesDoItem:setAlign("client");
+    obj.dsDetalhesDoItem:setMargins({left=8,right=8,top=6,bottom=8});
+    obj.dsDetalhesDoItem:setVisible(false);
+
+    obj.label243 = gui.fromHandle(_obj_newObject("label"));
+    obj.label243:setParent(obj.dsDetalhesDoItem);
+    obj.label243:setAlign("top");
+    obj.label243:setHeight(18);
+    lfm_setPropAsString(obj.label243, "fontStyle",  "bold");
+    obj.label243:setText("Nome");
+    obj.label243:setName("label243");
+
     obj.edit68 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.boxDetalhesDoItem);
+    obj.edit68:setParent(obj.dsDetalhesDoItem);
     obj.edit68:setAlign("top");
     obj.edit68:setHeight(26);
     obj.edit68:setField("campoTitulo");
     lfm_setPropAsString(obj.edit68, "fontStyle",  "bold");
     obj.edit68:setName("edit68");
 
-    obj.label243 = gui.fromHandle(_obj_newObject("label"));
-    obj.label243:setParent(obj.boxDetalhesDoItem);
-    obj.label243:setAlign("top");
-    obj.label243:setHeight(18);
-    lfm_setPropAsString(obj.label243, "fontStyle",  "bold");
-    obj.label243:setText("Rolagem (Ataque/Dano/etc)");
-    obj.label243:setName("label243");
+    obj.label244 = gui.fromHandle(_obj_newObject("label"));
+    obj.label244:setParent(obj.dsDetalhesDoItem);
+    obj.label244:setAlign("top");
+    obj.label244:setHeight(18);
+    lfm_setPropAsString(obj.label244, "fontStyle",  "bold");
+    obj.label244:setText("Rolagem (Ataque/Dano/etc)");
+    obj.label244:setName("label244");
 
     obj.edit69 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.boxDetalhesDoItem);
+    obj.edit69:setParent(obj.dsDetalhesDoItem);
     obj.edit69:setAlign("top");
     obj.edit69:setHeight(26);
     obj.edit69:setField("campoSubTitulo");
     obj.edit69:setName("edit69");
 
-    obj.label244 = gui.fromHandle(_obj_newObject("label"));
-    obj.label244:setParent(obj.boxDetalhesDoItem);
-    obj.label244:setAlign("top");
-    obj.label244:setHeight(18);
-    lfm_setPropAsString(obj.label244, "fontStyle",  "bold");
-    obj.label244:setText("Descrição");
-    obj.label244:setName("label244");
+    obj.label245 = gui.fromHandle(_obj_newObject("label"));
+    obj.label245:setParent(obj.dsDetalhesDoItem);
+    obj.label245:setAlign("top");
+    obj.label245:setHeight(18);
+    lfm_setPropAsString(obj.label245, "fontStyle",  "bold");
+    obj.label245:setText("Descrição");
+    obj.label245:setName("label245");
 
     obj.textEditor13 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor13:setParent(obj.boxDetalhesDoItem);
+    obj.textEditor13:setParent(obj.dsDetalhesDoItem);
     obj.textEditor13:setAlign("client");
     obj.textEditor13:setField("campoDescrição");
     obj.textEditor13:setName("textEditor13");
+
+    obj.dataLink7 = gui.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink7:setParent(obj.Tormenta06);
+    obj.dataLink7:setFields({'__recalc06','campoDosItensAtaque','campoDosItensDanos','campoDosItensMagias'});
+    obj.dataLink7:setName("dataLink7");
+
+
+		local function getRootSheet(ctrl)
+			if ctrl == nil then return nil end
+			return ctrl.sheet -- aqui ctrl DEVE ser o form Tormenta06 (não o template do item)
+		end
+
+		function TRPG_touch06(ctrl)
+			local r = getRootSheet(ctrl)
+			if r == nil then return end
+			r.__recalc06 = (tonumber(r.__recalc06) or 0) + 1
+		end
+
+		function TRPG_selectMacro(ctrl, node)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+
+			if ds ~= nil then
+				ds.scopeNode = node
+				ds.visible = (node ~= nil)
+			end
+			if box ~= nil then
+				box.visible = (node == nil)
+			end
+		end
+
+		function TRPG_closeMacroDetails(ctrl)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+			if ds ~= nil then
+				ds.scopeNode = nil
+				ds.visible = false
+			end
+			if box ~= nil then
+				box.visible = true
+			end
+		end
+
+		local function removeFromList(list, item)
+			if type(list) ~= "table" then return false end
+			for i = #list, 1, -1 do
+				if list[i] == item then
+					table.remove(list, i)
+					return true
+				end
+			end
+			return false
+		end
+
+		-- item aqui é o "sheet" do frmMacroColuna (table)
+		function TRPG_deleteMacro(ctrl, item)
+			if ctrl == nil or item == nil then return false end
+
+			local root = getRootSheet(ctrl)
+			if root == nil then return false end
+
+			-- tenta remover de qualquer uma das 3 listas
+			local removed = false
+			removed = removeFromList(root.campoDosItensAtaque, item) or removed
+			removed = removeFromList(root.campoDosItensDanos,  item) or removed
+			removed = removeFromList(root.campoDosItensMagias, item) or removed
+
+			if removed then
+				-- limpa seleção das 3 listas (evita apontar pra item removido)
+				local a = ctrl:findControlByName("rclAtaque")
+				local d = ctrl:findControlByName("rclDanos")
+				local m = ctrl:findControlByName("rclMagias")
+				if a ~= nil then a.selectedNode = nil end
+				if d ~= nil then d.selectedNode = nil end
+				if m ~= nil then m.selectedNode = nil end
+
+				TRPG_closeMacroDetails(ctrl)
+				TRPG_touch06(ctrl)
+				return true
+			end
+
+			return false
+		end
+
+	
+
 
     obj._e_event0 = obj.Tormenta01:addEventListener("onNodeReady",
         function (self)
@@ -12578,47 +12782,58 @@ function newTormentafrm()
 
     obj._e_event91 = obj.button76:addEventListener("onClick",
         function (self)
-            self.rclAtaque:append();
+            local n = self.rclAtaque:append();
+            							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+            								n.campoTitulo = "Novo Macro (Ataque)";
+            							end;
+            							TRPG_touch06(self);
         end, obj);
 
     obj._e_event92 = obj.button77:addEventListener("onClick",
         function (self)
-            self.rclDanos:append();
+            local n = self.rclDanos:append();
+            							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+            								n.campoTitulo = "Novo Macro (Danos)";
+            							end;
+            							TRPG_touch06(self);
         end, obj);
 
     obj._e_event93 = obj.button78:addEventListener("onClick",
         function (self)
-            self.rclMagias:append();
+            local n = self.rclMagias:append();
+            							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+            								n.campoTitulo = "Novo Macro (Magias)";
+            							end;
+            							TRPG_touch06(self);
         end, obj);
 
     obj._e_event94 = obj.rclAtaque:addEventListener("onSelect",
         function (self)
             self.rclDanos.selectedNode = nil;
-            							self.rclMagias.selectedNode = nil;
-            							local node = self.rclAtaque.selectedNode;
-            							self.boxDetalhesDoItem.node = node;
-            							self.boxDetalhesDoItem.visible = (node ~= nil);
+            										self.rclMagias.selectedNode = nil;
+            										TRPG_selectMacro(self, self.rclAtaque.selectedNode);
         end, obj);
 
     obj._e_event95 = obj.rclDanos:addEventListener("onSelect",
         function (self)
             self.rclAtaque.selectedNode = nil;
-            							self.rclMagias.selectedNode = nil;
-            							local node = self.rclDanos.selectedNode;
-            							self.boxDetalhesDoItem.node = node;
-            							self.boxDetalhesDoItem.visible = (node ~= nil);
+            										self.rclMagias.selectedNode = nil;
+            										TRPG_selectMacro(self, self.rclDanos.selectedNode);
         end, obj);
 
     obj._e_event96 = obj.rclMagias:addEventListener("onSelect",
         function (self)
             self.rclAtaque.selectedNode = nil;
-            							self.rclDanos.selectedNode = nil;
-            							local node = self.rclMagias.selectedNode;
-            							self.boxDetalhesDoItem.node = node;
-            							self.boxDetalhesDoItem.visible = (node ~= nil);
+            										self.rclDanos.selectedNode = nil;
+            										TRPG_selectMacro(self, self.rclMagias.selectedNode);
+        end, obj);
+
+    obj._e_event97 = obj.dataLink7:addEventListener("onChange",
+        function (self, field, oldValue, newValue)
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event97);
         __o_rrpgObjs.removeEventListenerById(self._e_event96);
         __o_rrpgObjs.removeEventListenerById(self._e_event95);
         __o_rrpgObjs.removeEventListenerById(self._e_event94);
@@ -12760,6 +12975,7 @@ function newTormentafrm()
         if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
         if self.label143 ~= nil then self.label143:destroy(); self.label143 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
+        if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
         if self.rectangle201 ~= nil then self.rectangle201:destroy(); self.rectangle201 = nil; end;
         if self.label192 ~= nil then self.label192:destroy(); self.label192 = nil; end;
         if self.label164 ~= nil then self.label164:destroy(); self.label164 = nil; end;
@@ -12792,6 +13008,7 @@ function newTormentafrm()
         if self.label236 ~= nil then self.label236:destroy(); self.label236 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.label230 ~= nil then self.label230:destroy(); self.label230 = nil; end;
+        if self.dsDetalhesDoItem ~= nil then self.dsDetalhesDoItem:destroy(); self.dsDetalhesDoItem = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.layout106 ~= nil then self.layout106:destroy(); self.layout106 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
@@ -12800,6 +13017,7 @@ function newTormentafrm()
         if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
         if self.button73 ~= nil then self.button73:destroy(); self.button73 = nil; end;
         if self.rectangle68 ~= nil then self.rectangle68:destroy(); self.rectangle68 = nil; end;
+        if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
@@ -12807,6 +13025,7 @@ function newTormentafrm()
         if self.totalcura ~= nil then self.totalcura:destroy(); self.totalcura = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.rectangle211 ~= nil then self.rectangle211:destroy(); self.rectangle211 = nil; end;
+        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
         if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
@@ -12907,6 +13126,7 @@ function newTormentafrm()
         if self.button24 ~= nil then self.button24:destroy(); self.button24 = nil; end;
         if self.rclArmas ~= nil then self.rclArmas:destroy(); self.rclArmas = nil; end;
         if self.totalvon ~= nil then self.totalvon:destroy(); self.totalvon = nil; end;
+        if self.rectangle223 ~= nil then self.rectangle223:destroy(); self.rectangle223 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.ref1 ~= nil then self.ref1:destroy(); self.ref1 = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
@@ -12943,6 +13163,7 @@ function newTormentafrm()
         if self.button54 ~= nil then self.button54:destroy(); self.button54 = nil; end;
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
         if self.rectangle182 ~= nil then self.rectangle182:destroy(); self.rectangle182 = nil; end;
+        if self.rectangle229 ~= nil then self.rectangle229:destroy(); self.rectangle229 = nil; end;
         if self.label240 ~= nil then self.label240:destroy(); self.label240 = nil; end;
         if self.page ~= nil then self.page:destroy(); self.page = nil; end;
         if self.rectangle36 ~= nil then self.rectangle36:destroy(); self.rectangle36 = nil; end;
@@ -13042,16 +13263,19 @@ function newTormentafrm()
         if self.label58 ~= nil then self.label58:destroy(); self.label58 = nil; end;
         if self.nivel ~= nil then self.nivel:destroy(); self.nivel = nil; end;
         if self.rectangle44 ~= nil then self.rectangle44:destroy(); self.rectangle44 = nil; end;
+        if self.rectangle224 ~= nil then self.rectangle224:destroy(); self.rectangle224 = nil; end;
         if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.label155 ~= nil then self.label155:destroy(); self.label155 = nil; end;
         if self.label221 ~= nil then self.label221:destroy(); self.label221 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
+        if self.rectangle226 ~= nil then self.rectangle226:destroy(); self.rectangle226 = nil; end;
         if self.imageCheckBox9 ~= nil then self.imageCheckBox9:destroy(); self.imageCheckBox9 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.rectangle81 ~= nil then self.rectangle81:destroy(); self.rectangle81 = nil; end;
         if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
         if self.rectangle159 ~= nil then self.rectangle159:destroy(); self.rectangle159 = nil; end;
+        if self.label245 ~= nil then self.label245:destroy(); self.label245 = nil; end;
         if self.rectangle164 ~= nil then self.rectangle164:destroy(); self.rectangle164 = nil; end;
         if self.outrosatuacao1 ~= nil then self.outrosatuacao1:destroy(); self.outrosatuacao1 = nil; end;
         if self.rectangle117 ~= nil then self.rectangle117:destroy(); self.rectangle117 = nil; end;
@@ -13088,6 +13312,7 @@ function newTormentafrm()
         if self.rectangle111 ~= nil then self.rectangle111:destroy(); self.rectangle111 = nil; end;
         if self.label233 ~= nil then self.label233:destroy(); self.label233 = nil; end;
         if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
+        if self.boxNadaSelecionado ~= nil then self.boxNadaSelecionado:destroy(); self.boxNadaSelecionado = nil; end;
         if self.label98 ~= nil then self.label98:destroy(); self.label98 = nil; end;
         if self.rectangle152 ~= nil then self.rectangle152:destroy(); self.rectangle152 = nil; end;
         if self.layout80 ~= nil then self.layout80:destroy(); self.layout80 = nil; end;
@@ -13113,6 +13338,7 @@ function newTormentafrm()
         if self.layout95 ~= nil then self.layout95:destroy(); self.layout95 = nil; end;
         if self.label213 ~= nil then self.label213:destroy(); self.label213 = nil; end;
         if self.edit63 ~= nil then self.edit63:destroy(); self.edit63 = nil; end;
+        if self.layout122 ~= nil then self.layout122:destroy(); self.layout122 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.layout77 ~= nil then self.layout77:destroy(); self.layout77 = nil; end;
         if self.modconhecimento2 ~= nil then self.modconhecimento2:destroy(); self.modconhecimento2 = nil; end;
@@ -13154,6 +13380,7 @@ function newTormentafrm()
         if self.layout104 ~= nil then self.layout104:destroy(); self.layout104 = nil; end;
         if self.tab4 ~= nil then self.tab4:destroy(); self.tab4 = nil; end;
         if self.label232 ~= nil then self.label232:destroy(); self.label232 = nil; end;
+        if self.layout124 ~= nil then self.layout124:destroy(); self.layout124 = nil; end;
         if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
         if self.label100 ~= nil then self.label100:destroy(); self.label100 = nil; end;
         if self.button23 ~= nil then self.button23:destroy(); self.button23 = nil; end;
@@ -13177,6 +13404,7 @@ function newTormentafrm()
         if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
         if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
         if self.rectangle31 ~= nil then self.rectangle31:destroy(); self.rectangle31 = nil; end;
+        if self.layout121 ~= nil then self.layout121:destroy(); self.layout121 = nil; end;
         if self.label153 ~= nil then self.label153:destroy(); self.label153 = nil; end;
         if self.layout40 ~= nil then self.layout40:destroy(); self.layout40 = nil; end;
         if self.layout87 ~= nil then self.layout87:destroy(); self.layout87 = nil; end;
@@ -13220,6 +13448,7 @@ function newTormentafrm()
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.layout62 ~= nil then self.layout62:destroy(); self.layout62 = nil; end;
         if self.layout89 ~= nil then self.layout89:destroy(); self.layout89 = nil; end;
+        if self.layout125 ~= nil then self.layout125:destroy(); self.layout125 = nil; end;
         if self.Tormenta06 ~= nil then self.Tormenta06:destroy(); self.Tormenta06 = nil; end;
         if self.label146 ~= nil then self.label146:destroy(); self.label146 = nil; end;
         if self.rectangle149 ~= nil then self.rectangle149:destroy(); self.rectangle149 = nil; end;
@@ -13244,8 +13473,8 @@ function newTormentafrm()
         if self.button37 ~= nil then self.button37:destroy(); self.button37 = nil; end;
         if self.label227 ~= nil then self.label227:destroy(); self.label227 = nil; end;
         if self.edit69 ~= nil then self.edit69:destroy(); self.edit69 = nil; end;
-        if self.layout119 ~= nil then self.layout119:destroy(); self.layout119 = nil; end;
         if self.rectangle222 ~= nil then self.rectangle222:destroy(); self.rectangle222 = nil; end;
+        if self.layout119 ~= nil then self.layout119:destroy(); self.layout119 = nil; end;
         if self.layout52 ~= nil then self.layout52:destroy(); self.layout52 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
@@ -13413,6 +13642,7 @@ function newTormentafrm()
         if self.label175 ~= nil then self.label175:destroy(); self.label175 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.rectangle30 ~= nil then self.rectangle30:destroy(); self.rectangle30 = nil; end;
+        if self.layout120 ~= nil then self.layout120:destroy(); self.layout120 = nil; end;
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
         if self.gradoficio2 ~= nil then self.gradoficio2:destroy(); self.gradoficio2 = nil; end;
         if self.ca2 ~= nil then self.ca2:destroy(); self.ca2 = nil; end;
@@ -13541,7 +13771,6 @@ function newTormentafrm()
         if self.modcarisma ~= nil then self.modcarisma:destroy(); self.modcarisma = nil; end;
         if self.edit49 ~= nil then self.edit49:destroy(); self.edit49 = nil; end;
         if self.label238 ~= nil then self.label238:destroy(); self.label238 = nil; end;
-        if self.boxDetalhesDoItem ~= nil then self.boxDetalhesDoItem:destroy(); self.boxDetalhesDoItem = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.layout102 ~= nil then self.layout102:destroy(); self.layout102 = nil; end;
         if self.rectangle204 ~= nil then self.rectangle204:destroy(); self.rectangle204 = nil; end;
@@ -13565,6 +13794,7 @@ function newTormentafrm()
         if self.label174 ~= nil then self.label174:destroy(); self.label174 = nil; end;
         if self.button49 ~= nil then self.button49:destroy(); self.button49 = nil; end;
         if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
+        if self.rectangle228 ~= nil then self.rectangle228:destroy(); self.rectangle228 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.layout57 ~= nil then self.layout57:destroy(); self.layout57 = nil; end;
         if self.rectangle79 ~= nil then self.rectangle79:destroy(); self.rectangle79 = nil; end;
@@ -13582,6 +13812,7 @@ function newTormentafrm()
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
         if self.layout45 ~= nil then self.layout45:destroy(); self.layout45 = nil; end;
+        if self.rectangle225 ~= nil then self.rectangle225:destroy(); self.rectangle225 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
         if self.totaldiplomacia ~= nil then self.totaldiplomacia:destroy(); self.totaldiplomacia = nil; end;
         if self.outrosfurtividade ~= nil then self.outrosfurtividade:destroy(); self.outrosfurtividade = nil; end;
@@ -13596,6 +13827,7 @@ function newTormentafrm()
         if self.rectangle54 ~= nil then self.rectangle54:destroy(); self.rectangle54 = nil; end;
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
+        if self.rectangle227 ~= nil then self.rectangle227:destroy(); self.rectangle227 = nil; end;
         if self.outrosadestrar ~= nil then self.outrosadestrar:destroy(); self.outrosadestrar = nil; end;
         if self.label149 ~= nil then self.label149:destroy(); self.label149 = nil; end;
         if self.button69 ~= nil then self.button69:destroy(); self.button69 = nil; end;
