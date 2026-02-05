@@ -19,7 +19,7 @@
             TRPG_touchCA(sheet);
         </event>
     </edit>
-    <edit align="left" width="40" field="peso" type="number" min="0" max="9999" horzTextAlign="center">
+    <edit align="left" width="40" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
       <event name="onChange">
         -- se peso impacta carga, mantém __recalc03
         if sheet ~= nil then

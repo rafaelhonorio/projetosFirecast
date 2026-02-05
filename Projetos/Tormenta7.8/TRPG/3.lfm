@@ -212,17 +212,17 @@
 
 								<layout align="top" height="24">
 									<label align="left" width="120" fontColor="black" text="Peso total:"/>
-									<edit align="client" field="pesototal" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+									<edit align="client" field="pesototal" fontColor="black" type="float" decimalPlaces="3" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
 								</layout>
 
 								<layout align="top" height="24">
 									<label align="left" width="120" fontColor="black" text="Sem penalidade:"/>
-									<edit align="client" field="cargaSemPenal" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+									<edit align="client" field="cargaSemPenal" fontColor="black" type="float" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
 								</layout>
 
 								<layout align="top" height="24">
 									<label align="left" width="120" fontColor="black" text="Máximo:"/>
-									<edit align="client" field="cargaMaxima" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
+									<edit align="client" field="cargaMaxima" fontColor="black" type="float" min="0" max="999999" horzTextAlign="center" canFocus="false"/>
 								</layout>
 
 								<layout align="top" height="24">
@@ -264,13 +264,6 @@
 							</layout>
 
 						</layout>
-
-						<!-- Linha de baixo: Anotações -->
-						<layout align="client" margins="{top=8}">
-							<label align="top" height="18" fontColor="black" fontStyle="bold" text="Anotações"/>
-							<textEditor align="client" fontColor="black" field="eqanotacoes"/>
-						</layout>
-
 					</layout>
 
 				</layout>
@@ -423,17 +416,31 @@
 
 			-- === carga (cálculo seguro e simples) ===
 			local function sumPeso(listNode)
-				local total = 0
+				local function N(v, d)
+					if type(v) == "string" then
+						v = v:gsub(",", ".")
+						v = v:gsub("^%s+", ""):gsub("%s+$", "")
+						if v == "" then return d or 0 end
+					end
+
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+
 				if listNode == nil then return 0 end
 
 				local ok, children = pcall(function()
 					return ndb.getChildNodes(listNode)
 				end)
+
 				if not ok or children == nil then return 0 end
 
-				for _, n in ipairs(children) do
-					total = total + N(n.peso, 0)
+				local total = 0
+				for _, item in ipairs(children) do
+					total = total + N(item.peso, 0)
 				end
+
 				return total
 			end
 
@@ -447,7 +454,7 @@
 					sumPeso(sheet.listaDefesas) +
 					sumPeso(sheet.listaEquipamentos)
 
-				total = math.floor(total * 100 + 0.5) / 100
+				total = math.floor(total * 1000 + 0.5) / 1000
 
 				if N(sheet.pesototal, -1) ~= total then
 					sheet.pesototal = total
@@ -482,7 +489,7 @@
 				end
 
 				if total > maximo then
-					status = "Excedida"
+					status = "Excedido"
 					penal = -2
 					deslocPenal = 3
 				end

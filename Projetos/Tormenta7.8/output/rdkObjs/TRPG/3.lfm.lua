@@ -654,7 +654,8 @@ function newTormenta03()
     obj.edit1:setAlign("client");
     obj.edit1:setField("pesototal");
     obj.edit1:setFontColor("black");
-    obj.edit1:setType("number");
+    obj.edit1:setType("float");
+    obj.edit1:setDecimalPlaces(3);
     obj.edit1:setMin(0);
     obj.edit1:setMax(999999);
     obj.edit1:setHorzTextAlign("center");
@@ -680,7 +681,7 @@ function newTormenta03()
     obj.edit2:setAlign("client");
     obj.edit2:setField("cargaSemPenal");
     obj.edit2:setFontColor("black");
-    obj.edit2:setType("number");
+    obj.edit2:setType("float");
     obj.edit2:setMin(0);
     obj.edit2:setMax(999999);
     obj.edit2:setHorzTextAlign("center");
@@ -706,7 +707,7 @@ function newTormenta03()
     obj.edit3:setAlign("client");
     obj.edit3:setField("cargaMaxima");
     obj.edit3:setFontColor("black");
-    obj.edit3:setType("number");
+    obj.edit3:setType("float");
     obj.edit3:setMin(0);
     obj.edit3:setMax(999999);
     obj.edit3:setHorzTextAlign("center");
@@ -865,28 +866,6 @@ function newTormenta03()
     obj.edit7:setHorzTextAlign("center");
     obj.edit7:setName("edit7");
 
-    obj.layout30 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout30:setParent(obj.layout17);
-    obj.layout30:setAlign("client");
-    obj.layout30:setMargins({top=8});
-    obj.layout30:setName("layout30");
-
-    obj.label35 = gui.fromHandle(_obj_newObject("label"));
-    obj.label35:setParent(obj.layout30);
-    obj.label35:setAlign("top");
-    obj.label35:setHeight(18);
-    obj.label35:setFontColor("black");
-    lfm_setPropAsString(obj.label35, "fontStyle",  "bold");
-    obj.label35:setText("Anotações");
-    obj.label35:setName("label35");
-
-    obj.textEditor2 = gui.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.layout30);
-    obj.textEditor2:setAlign("client");
-    obj.textEditor2:setFontColor("black");
-    obj.textEditor2:setField("eqanotacoes");
-    obj.textEditor2:setName("textEditor2");
-
     obj.dataLink2 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj);
     obj.dataLink2:setFields({'__recalc03','forca','danoforca','pesototal','cargaSemPenal','cargaMaxima','listaArmas','listaDefesas','listaEquipamentos'});
@@ -1025,17 +1004,31 @@ function newTormenta03()
 
 			-- === carga (cálculo seguro e simples) ===
 			local function sumPeso(listNode)
-				local total = 0
+				local function N(v, d)
+					if type(v) == "string" then
+						v = v:gsub(",", ".")
+						v = v:gsub("^%s+", ""):gsub("%s+$", "")
+						if v == "" then return d or 0 end
+					end
+
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+
 				if listNode == nil then return 0 end
 
 				local ok, children = pcall(function()
 					return ndb.getChildNodes(listNode)
 				end)
+
 				if not ok or children == nil then return 0 end
 
-				for _, n in ipairs(children) do
-					total = total + N(n.peso, 0)
+				local total = 0
+				for _, item in ipairs(children) do
+					total = total + N(item.peso, 0)
 				end
+
 				return total
 			end
 
@@ -1049,7 +1042,7 @@ function newTormenta03()
 					sumPeso(sheet.listaDefesas) +
 					sumPeso(sheet.listaEquipamentos)
 
-				total = math.floor(total * 100 + 0.5) / 100
+				total = math.floor(total * 1000 + 0.5) / 1000
 
 				if N(sheet.pesototal, -1) ~= total then
 					sheet.pesototal = total
@@ -1084,7 +1077,7 @@ function newTormenta03()
 				end
 
 				if total > maximo then
-					status = "Excedida"
+					status = "Excedido"
 					penal = -2
 					deslocPenal = 3
 				end
@@ -1258,7 +1251,6 @@ function newTormenta03()
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.rclDefesas ~= nil then self.rclDefesas:destroy(); self.rclDefesas = nil; end;
-        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
@@ -1272,7 +1264,6 @@ function newTormenta03()
         if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
-        if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
@@ -1292,7 +1283,6 @@ function newTormenta03()
         if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
-        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;

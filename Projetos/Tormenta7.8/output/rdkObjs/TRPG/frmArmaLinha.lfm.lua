@@ -88,7 +88,7 @@ function newfrmArmaLinha()
     obj.edit7:setAlign("left");
     obj.edit7:setWidth(40);
     obj.edit7:setField("peso");
-    obj.edit7:setType("number");
+    obj.edit7:setType("float");
     obj.edit7:setMin(0);
     obj.edit7:setMax(9999);
     obj.edit7:setHorzTextAlign("center");

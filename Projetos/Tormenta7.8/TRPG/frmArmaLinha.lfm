@@ -8,7 +8,7 @@
     <edit align="left" width="52"  field="critico" horzTextAlign="center"/>
     <edit align="left" width="48"  field="dist"    horzTextAlign="center"/>
     <edit align="left" width="62"  field="tipo"    horzTextAlign="center"/>
-    <edit align="left" width="40"  field="peso" type="number" min="0" max="9999" horzTextAlign="center"/>
+    <edit align="left" width="40"  field="peso" type="float" min="0" max="9999" horzTextAlign="center"/>
 
     <button align="left" width="24" text="X" hint="Excluir arma">
       <event name="onClick">

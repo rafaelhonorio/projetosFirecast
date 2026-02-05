@@ -34,7 +34,7 @@
       </event>
     </edit>
 
-    <edit align="left" width="70" field="peso" type="number" min="0" max="9999" horzTextAlign="center">
+    <edit align="left" width="70" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;

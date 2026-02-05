@@ -89,7 +89,7 @@ function newfrmDefesaLinha()
     obj.edit6:setAlign("left");
     obj.edit6:setWidth(40);
     obj.edit6:setField("peso");
-    obj.edit6:setType("number");
+    obj.edit6:setType("float");
     obj.edit6:setMin(0);
     obj.edit6:setMax(9999);
     obj.edit6:setHorzTextAlign("center");

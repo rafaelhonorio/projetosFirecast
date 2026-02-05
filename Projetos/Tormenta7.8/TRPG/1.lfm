@@ -6,9 +6,9 @@
 		<template name="Principal">
 			<rectangle left="5" top="0" color="Black" width="155" height="25" xradius="2" yradius="2"/>
 			<label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white"/>
-			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-        	<edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
-			<edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+        	<edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+			<edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</template>
 		<layout left="10" top="10" width="305" height="55">
 			<rectangle left="7" top="1" color="Black" width="170" height="23" xradius="2" yradius="2"/>
@@ -324,7 +324,7 @@
 					horzTextAlign="center" vertTextAlign="center"/>
 			</layout>
 			<edit left="576" top="15" width="60" height="25"
-				name="ca6" field="ca6" type="number" min="-99" max="99"
+				name="ca6" field="ca6" type="number" min="-999" max="999"
 				horzTextAlign="center"
 				fontSize="15.0" fontStyle="bold" fontColor="black"/>
 
@@ -377,22 +377,22 @@
 			<label left="27" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Fortitude"/>
 			<rectangle left="94" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
 			<label left="96" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
-			<edit left="78" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+			<edit left="78" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
 			<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
 			<rectangle left="200" top="3" color="Black" width="37" height="15" xradius="2" yradius="2"/>
 			<label left="202" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="1/2 Nv"/>
-			<edit left="188" top="15" width="60" height="25" name="fort1" field="fort1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="188" top="15" width="60" height="25" name="fort1" field="fort1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
 			<rectangle left="284" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
 			<label left="292" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
-			<edit left="278" top="15" width="60" height="25" name="fort2" field="fort2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="278" top="15" width="60" height="25" name="fort2" field="fort2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
 			<rectangle left="380" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
 			<label left="383" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-			<edit left="369" top="15" width="60" height="25" field="fort3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+			<edit left="369" top="15" width="60" height="25" field="fort3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="308" top="320" width="448" height="41">
 					<button left="0" top="18" width="20" height="20"
@@ -419,16 +419,16 @@
 				</event>
 			</button>
 			<label left="31" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Reflexo"/>
-			<edit left="78" top="15" width="60" height="25" name="totalref" field="totalref" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="78" top="15" width="60" height="25" name="totalref" field="totalref" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-			<edit left="189" top="15" width="60" height="25" name="ref1" field="ref1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="189" top="15" width="60" height="25" name="ref1" field="ref1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-			<edit left="278" top="15" width="60" height="25" name="ref2" field="ref2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="278" top="15" width="60" height="25" name="ref2" field="ref2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-			<edit left="369" top="15" width="60" height="25" field="ref3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+			<edit left="369" top="15" width="60" height="25" field="ref3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="308" top="370" width="448" height="41">
 					<button left="0" top="18" width="20" height="20"
@@ -455,16 +455,16 @@
 				</event>
 			</button>
 			<label left="29" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Vontade"/>
-			<edit left="78" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="78" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-			<edit left="188" top="15" width="60" height="25" name="von1" field="von1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="188" top="15" width="60" height="25" name="von1" field="von1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-			<edit left="278" top="15" width="60" height="25" name="von2" field="von2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="278" top="15" width="60" height="25" name="von2" field="von2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 			<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-			<edit left="369" top="15" width="60" height="25" field="von3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+			<edit left="369" top="15" width="60" height="25" field="von3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 		</layout>
 		<layout left="750" top="274" width="263" height="37">
 			<rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2"/>
@@ -515,27 +515,27 @@
 				</button>
 				<rectangle left="94" top="3" color="Black" width="28" height="15" xradius="2" yradius="2"/>
 				<label left="96" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total"/>
-				<edit left="78" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<edit left="78" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
 				<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
 				<rectangle left="206" top="3" color="Black" width="25" height="15" xradius="2" yradius="2"/>
 				<label left="208" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="BBA"/>
-				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
 				<rectangle left="284" top="3" color="Black" width="48" height="15" xradius="2" yradius="2"/>
 				<label left="292" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H"/>
-				<edit left="278" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
+				<edit left="278" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false"/>
 				<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
 				<rectangle left="380" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
 				<label left="383" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-				<edit left="369" top="15" width="60" height="25" field="cac3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="369" top="15" width="60" height="25" field="cac3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				<rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
 				<rectangle left="471" top="3" color="Black" width="38" height="15" xradius="2" yradius="2"/>
 				<label left="474" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros"/>
-				<edit left="460" top="15" width="60" height="25" field="cac4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="460" top="15" width="60" height="25" field="cac4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="6" top="461" width="688" height="41">
@@ -563,19 +563,19 @@
 						TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
 					</event>
 				</button>
-				<edit left="78" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<edit left="78" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 				<rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="="/>
-				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				<rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="278" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+				<edit left="278" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 				<rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="369" top="15" width="60" height="25" field="dis3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="369" top="15" width="60" height="25" field="dis3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 				<rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2"/>
 				<label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+"/>
-				<edit left="460" top="15" width="60" height="25" field="dis4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
+				<edit left="460" top="15" width="60" height="25" field="dis4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			</layout>
 		</layout>
 		<layout left="8" top="516" width="237" height="160">
@@ -585,15 +585,15 @@
 			<edit left="3" top="11" width="156" height="25" field="classe1" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold"/>
 			<rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2"/>
 			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível"/>
-			<edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="41" width="156" height="25" field="classe2" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="71" width="156" height="25" field="classe3" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="101" width="156" height="25" field="classe4" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="131" width="156" height="25" field="classe5" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="255" top="516" width="237" height="160">
 			<rectangle top="6" width="235" height="153" color="Black" xradius="2" yradius="2"/>
@@ -602,21 +602,21 @@
 			<edit left="3" top="11" width="156" height="25" field="classe6" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2"/>
 			<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível"/>
-			<edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="41" width="156" height="25" field="classe7" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="71" width="156" height="25" field="classe8" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="101" width="156" height="25" field="classe9" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 			<edit left="3" top="131" width="156" height="25" field="classe10" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-			<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+			<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		</layout>
 		<layout left="502" top="516" width="140" height="159">
 			<rectangle top="6" color="Black" width="125" height="33" xradius="2" yradius="2"/>
 			<rectangle left="35" top="1" color="Black" width="55" height="15" xradius="2" yradius="2"/>
 			<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível Total"/>
-			<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" min="-99" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
+			<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false"/>
 			<rectangle top="46" color="Black" width="125" height="33" xradius="2" yradius="2"/>
 			<rectangle left="23" top="41" color="Black" width="77" height="15" xradius="2" yradius="2"/>
 			<label left="25" top="42" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Pontos de Ação"/>
@@ -1051,7 +1051,6 @@
 					root.__recalcCA = (tonumber(root.__recalcCA) or 0) + 1
 				end
 			end
-
 		]]>
 	</script>
 </form>

@@ -58,7 +58,7 @@ function newfrmEquipLinha()
     obj.edit3:setAlign("left");
     obj.edit3:setWidth(70);
     obj.edit3:setField("peso");
-    obj.edit3:setType("number");
+    obj.edit3:setType("float");
     obj.edit3:setMin(0);
     obj.edit3:setMax(9999);
     obj.edit3:setHorzTextAlign("center");

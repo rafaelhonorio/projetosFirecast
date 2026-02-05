@@ -539,8 +539,8 @@ function newTormenta01()
     obj.edit9:setHeight(25);
     obj.edit9:setField("forca");
     obj.edit9:setType("number");
-    obj.edit9:setMin(-99);
-    obj.edit9:setMax(99);
+    obj.edit9:setMin(-999);
+    obj.edit9:setMax(999);
     obj.edit9:setHorzTextAlign("center");
     obj.edit9:setFontSize(15.0);
     lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
@@ -556,8 +556,8 @@ function newTormenta01()
     obj.modforca:setName("modforca");
     obj.modforca:setField("modforca");
     obj.modforca:setType("number");
-    obj.modforca:setMin(-99);
-    obj.modforca:setMax(99);
+    obj.modforca:setMin(-999);
+    obj.modforca:setMax(999);
     obj.modforca:setHorzTextAlign("center");
     obj.modforca:setFontSize(15.0);
     obj.modforca:setFontColor("black");
@@ -572,8 +572,8 @@ function newTormenta01()
     obj.edit10:setHeight(25);
     obj.edit10:setField("danoforca");
     obj.edit10:setType("number");
-    obj.edit10:setMin(-99);
-    obj.edit10:setMax(99);
+    obj.edit10:setMin(-999);
+    obj.edit10:setMax(999);
     obj.edit10:setHorzTextAlign("center");
     obj.edit10:setFontSize(15.0);
     obj.edit10:setFontColor("black");
@@ -632,8 +632,8 @@ function newTormenta01()
     obj.edit11:setHeight(25);
     obj.edit11:setField("destreza");
     obj.edit11:setType("number");
-    obj.edit11:setMin(-99);
-    obj.edit11:setMax(99);
+    obj.edit11:setMin(-999);
+    obj.edit11:setMax(999);
     obj.edit11:setHorzTextAlign("center");
     obj.edit11:setFontSize(15.0);
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
@@ -649,8 +649,8 @@ function newTormenta01()
     obj.moddestreza:setName("moddestreza");
     obj.moddestreza:setField("moddestreza");
     obj.moddestreza:setType("number");
-    obj.moddestreza:setMin(-99);
-    obj.moddestreza:setMax(99);
+    obj.moddestreza:setMin(-999);
+    obj.moddestreza:setMax(999);
     obj.moddestreza:setHorzTextAlign("center");
     obj.moddestreza:setFontSize(15.0);
     obj.moddestreza:setFontColor("black");
@@ -665,8 +665,8 @@ function newTormenta01()
     obj.edit12:setHeight(25);
     obj.edit12:setField("danodestreza");
     obj.edit12:setType("number");
-    obj.edit12:setMin(-99);
-    obj.edit12:setMax(99);
+    obj.edit12:setMin(-999);
+    obj.edit12:setMax(999);
     obj.edit12:setHorzTextAlign("center");
     obj.edit12:setFontSize(15.0);
     obj.edit12:setFontColor("black");
@@ -725,8 +725,8 @@ function newTormenta01()
     obj.edit13:setHeight(25);
     obj.edit13:setField("constituicao");
     obj.edit13:setType("number");
-    obj.edit13:setMin(-99);
-    obj.edit13:setMax(99);
+    obj.edit13:setMin(-999);
+    obj.edit13:setMax(999);
     obj.edit13:setHorzTextAlign("center");
     obj.edit13:setFontSize(15.0);
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
@@ -742,8 +742,8 @@ function newTormenta01()
     obj.modconstituicao:setName("modconstituicao");
     obj.modconstituicao:setField("modconstituicao");
     obj.modconstituicao:setType("number");
-    obj.modconstituicao:setMin(-99);
-    obj.modconstituicao:setMax(99);
+    obj.modconstituicao:setMin(-999);
+    obj.modconstituicao:setMax(999);
     obj.modconstituicao:setHorzTextAlign("center");
     obj.modconstituicao:setFontSize(15.0);
     obj.modconstituicao:setFontColor("black");
@@ -758,8 +758,8 @@ function newTormenta01()
     obj.edit14:setHeight(25);
     obj.edit14:setField("danoconstituicao");
     obj.edit14:setType("number");
-    obj.edit14:setMin(-99);
-    obj.edit14:setMax(99);
+    obj.edit14:setMin(-999);
+    obj.edit14:setMax(999);
     obj.edit14:setHorzTextAlign("center");
     obj.edit14:setFontSize(15.0);
     obj.edit14:setFontColor("black");
@@ -818,8 +818,8 @@ function newTormenta01()
     obj.edit15:setHeight(25);
     obj.edit15:setField("inteligencia");
     obj.edit15:setType("number");
-    obj.edit15:setMin(-99);
-    obj.edit15:setMax(99);
+    obj.edit15:setMin(-999);
+    obj.edit15:setMax(999);
     obj.edit15:setHorzTextAlign("center");
     obj.edit15:setFontSize(15.0);
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
@@ -835,8 +835,8 @@ function newTormenta01()
     obj.modinteligencia:setName("modinteligencia");
     obj.modinteligencia:setField("modinteligencia");
     obj.modinteligencia:setType("number");
-    obj.modinteligencia:setMin(-99);
-    obj.modinteligencia:setMax(99);
+    obj.modinteligencia:setMin(-999);
+    obj.modinteligencia:setMax(999);
     obj.modinteligencia:setHorzTextAlign("center");
     obj.modinteligencia:setFontSize(15.0);
     obj.modinteligencia:setFontColor("black");
@@ -851,8 +851,8 @@ function newTormenta01()
     obj.edit16:setHeight(25);
     obj.edit16:setField("danointeligencia");
     obj.edit16:setType("number");
-    obj.edit16:setMin(-99);
-    obj.edit16:setMax(99);
+    obj.edit16:setMin(-999);
+    obj.edit16:setMax(999);
     obj.edit16:setHorzTextAlign("center");
     obj.edit16:setFontSize(15.0);
     obj.edit16:setFontColor("black");
@@ -911,8 +911,8 @@ function newTormenta01()
     obj.edit17:setHeight(25);
     obj.edit17:setField("sabedoria");
     obj.edit17:setType("number");
-    obj.edit17:setMin(-99);
-    obj.edit17:setMax(99);
+    obj.edit17:setMin(-999);
+    obj.edit17:setMax(999);
     obj.edit17:setHorzTextAlign("center");
     obj.edit17:setFontSize(15.0);
     lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
@@ -928,8 +928,8 @@ function newTormenta01()
     obj.modsabedoria:setName("modsabedoria");
     obj.modsabedoria:setField("modsabedoria");
     obj.modsabedoria:setType("number");
-    obj.modsabedoria:setMin(-99);
-    obj.modsabedoria:setMax(99);
+    obj.modsabedoria:setMin(-999);
+    obj.modsabedoria:setMax(999);
     obj.modsabedoria:setHorzTextAlign("center");
     obj.modsabedoria:setFontSize(15.0);
     obj.modsabedoria:setFontColor("black");
@@ -944,8 +944,8 @@ function newTormenta01()
     obj.edit18:setHeight(25);
     obj.edit18:setField("danosabedoria");
     obj.edit18:setType("number");
-    obj.edit18:setMin(-99);
-    obj.edit18:setMax(99);
+    obj.edit18:setMin(-999);
+    obj.edit18:setMax(999);
     obj.edit18:setHorzTextAlign("center");
     obj.edit18:setFontSize(15.0);
     obj.edit18:setFontColor("black");
@@ -1004,8 +1004,8 @@ function newTormenta01()
     obj.edit19:setHeight(25);
     obj.edit19:setField("carisma");
     obj.edit19:setType("number");
-    obj.edit19:setMin(-99);
-    obj.edit19:setMax(99);
+    obj.edit19:setMin(-999);
+    obj.edit19:setMax(999);
     obj.edit19:setHorzTextAlign("center");
     obj.edit19:setFontSize(15.0);
     lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
@@ -1021,8 +1021,8 @@ function newTormenta01()
     obj.modcarisma:setName("modcarisma");
     obj.modcarisma:setField("modcarisma");
     obj.modcarisma:setType("number");
-    obj.modcarisma:setMin(-99);
-    obj.modcarisma:setMax(99);
+    obj.modcarisma:setMin(-999);
+    obj.modcarisma:setMax(999);
     obj.modcarisma:setHorzTextAlign("center");
     obj.modcarisma:setFontSize(15.0);
     obj.modcarisma:setFontColor("black");
@@ -1037,8 +1037,8 @@ function newTormenta01()
     obj.edit20:setHeight(25);
     obj.edit20:setField("danocarisma");
     obj.edit20:setType("number");
-    obj.edit20:setMin(-99);
-    obj.edit20:setMax(99);
+    obj.edit20:setMin(-999);
+    obj.edit20:setMax(999);
     obj.edit20:setHorzTextAlign("center");
     obj.edit20:setFontSize(15.0);
     obj.edit20:setFontColor("black");
@@ -1595,8 +1595,8 @@ function newTormenta01()
     obj.ca6:setName("ca6");
     obj.ca6:setField("ca6");
     obj.ca6:setType("number");
-    obj.ca6:setMin(-99);
-    obj.ca6:setMax(99);
+    obj.ca6:setMin(-999);
+    obj.ca6:setMax(999);
     obj.ca6:setHorzTextAlign("center");
     obj.ca6:setFontSize(15.0);
     lfm_setPropAsString(obj.ca6, "fontStyle",  "bold");
@@ -1770,8 +1770,8 @@ function newTormenta01()
     obj.totalfort:setName("totalfort");
     obj.totalfort:setField("totalfort");
     obj.totalfort:setType("number");
-    obj.totalfort:setMin(-99);
-    obj.totalfort:setMax(99);
+    obj.totalfort:setMin(-999);
+    obj.totalfort:setMax(999);
     obj.totalfort:setHorzTextAlign("center");
     obj.totalfort:setFontSize(15.0);
     obj.totalfort:setFontColor("black");
@@ -1833,8 +1833,8 @@ function newTormenta01()
     obj.fort1:setName("fort1");
     obj.fort1:setField("fort1");
     obj.fort1:setType("number");
-    obj.fort1:setMin(-99);
-    obj.fort1:setMax(99);
+    obj.fort1:setMin(-999);
+    obj.fort1:setMax(999);
     obj.fort1:setHorzTextAlign("center");
     obj.fort1:setFontSize(15.0);
     lfm_setPropAsString(obj.fort1, "fontStyle",  "bold");
@@ -1896,8 +1896,8 @@ function newTormenta01()
     obj.fort2:setName("fort2");
     obj.fort2:setField("fort2");
     obj.fort2:setType("number");
-    obj.fort2:setMin(-99);
-    obj.fort2:setMax(99);
+    obj.fort2:setMin(-999);
+    obj.fort2:setMax(999);
     obj.fort2:setHorzTextAlign("center");
     obj.fort2:setFontSize(15.0);
     lfm_setPropAsString(obj.fort2, "fontStyle",  "bold");
@@ -1958,8 +1958,8 @@ function newTormenta01()
     obj.edit21:setHeight(25);
     obj.edit21:setField("fort3");
     obj.edit21:setType("number");
-    obj.edit21:setMin(-99);
-    obj.edit21:setMax(99);
+    obj.edit21:setMin(-999);
+    obj.edit21:setMax(999);
     obj.edit21:setHorzTextAlign("center");
     obj.edit21:setFontSize(15.0);
     obj.edit21:setFontColor("black");
@@ -2044,8 +2044,8 @@ function newTormenta01()
     obj.totalref:setName("totalref");
     obj.totalref:setField("totalref");
     obj.totalref:setType("number");
-    obj.totalref:setMin(-99);
-    obj.totalref:setMax(99);
+    obj.totalref:setMin(-999);
+    obj.totalref:setMax(999);
     obj.totalref:setHorzTextAlign("center");
     obj.totalref:setFontSize(15.0);
     lfm_setPropAsString(obj.totalref, "fontStyle",  "bold");
@@ -2084,8 +2084,8 @@ function newTormenta01()
     obj.ref1:setName("ref1");
     obj.ref1:setField("ref1");
     obj.ref1:setType("number");
-    obj.ref1:setMin(-99);
-    obj.ref1:setMax(99);
+    obj.ref1:setMin(-999);
+    obj.ref1:setMax(999);
     obj.ref1:setHorzTextAlign("center");
     obj.ref1:setFontSize(15.0);
     lfm_setPropAsString(obj.ref1, "fontStyle",  "bold");
@@ -2124,8 +2124,8 @@ function newTormenta01()
     obj.ref2:setName("ref2");
     obj.ref2:setField("ref2");
     obj.ref2:setType("number");
-    obj.ref2:setMin(-99);
-    obj.ref2:setMax(99);
+    obj.ref2:setMin(-999);
+    obj.ref2:setMax(999);
     obj.ref2:setHorzTextAlign("center");
     obj.ref2:setFontSize(15.0);
     lfm_setPropAsString(obj.ref2, "fontStyle",  "bold");
@@ -2163,8 +2163,8 @@ function newTormenta01()
     obj.edit22:setHeight(25);
     obj.edit22:setField("ref3");
     obj.edit22:setType("number");
-    obj.edit22:setMin(-99);
-    obj.edit22:setMax(99);
+    obj.edit22:setMin(-999);
+    obj.edit22:setMax(999);
     obj.edit22:setHorzTextAlign("center");
     obj.edit22:setFontSize(15.0);
     obj.edit22:setFontColor("black");
@@ -2249,8 +2249,8 @@ function newTormenta01()
     obj.totalvon:setName("totalvon");
     obj.totalvon:setField("totalvon");
     obj.totalvon:setType("number");
-    obj.totalvon:setMin(-99);
-    obj.totalvon:setMax(99);
+    obj.totalvon:setMin(-999);
+    obj.totalvon:setMax(999);
     obj.totalvon:setHorzTextAlign("center");
     obj.totalvon:setFontSize(15.0);
     lfm_setPropAsString(obj.totalvon, "fontStyle",  "bold");
@@ -2289,8 +2289,8 @@ function newTormenta01()
     obj.von1:setName("von1");
     obj.von1:setField("von1");
     obj.von1:setType("number");
-    obj.von1:setMin(-99);
-    obj.von1:setMax(99);
+    obj.von1:setMin(-999);
+    obj.von1:setMax(999);
     obj.von1:setHorzTextAlign("center");
     obj.von1:setFontSize(15.0);
     lfm_setPropAsString(obj.von1, "fontStyle",  "bold");
@@ -2329,8 +2329,8 @@ function newTormenta01()
     obj.von2:setName("von2");
     obj.von2:setField("von2");
     obj.von2:setType("number");
-    obj.von2:setMin(-99);
-    obj.von2:setMax(99);
+    obj.von2:setMin(-999);
+    obj.von2:setMax(999);
     obj.von2:setHorzTextAlign("center");
     obj.von2:setFontSize(15.0);
     lfm_setPropAsString(obj.von2, "fontStyle",  "bold");
@@ -2368,8 +2368,8 @@ function newTormenta01()
     obj.edit23:setHeight(25);
     obj.edit23:setField("von3");
     obj.edit23:setType("number");
-    obj.edit23:setMin(-99);
-    obj.edit23:setMax(99);
+    obj.edit23:setMin(-999);
+    obj.edit23:setMax(999);
     obj.edit23:setHorzTextAlign("center");
     obj.edit23:setFontSize(15.0);
     obj.edit23:setFontColor("black");
@@ -2670,8 +2670,8 @@ function newTormenta01()
     obj.totalcac:setName("totalcac");
     obj.totalcac:setField("totalcac");
     obj.totalcac:setType("number");
-    obj.totalcac:setMin(-99);
-    obj.totalcac:setMax(99);
+    obj.totalcac:setMin(-999);
+    obj.totalcac:setMax(999);
     obj.totalcac:setHorzTextAlign("center");
     obj.totalcac:setFontSize(15.0);
     obj.totalcac:setFontColor("black");
@@ -2732,8 +2732,8 @@ function newTormenta01()
     obj.edit27:setHeight(25);
     obj.edit27:setField("bba");
     obj.edit27:setType("number");
-    obj.edit27:setMin(-99);
-    obj.edit27:setMax(99);
+    obj.edit27:setMin(-999);
+    obj.edit27:setMax(999);
     obj.edit27:setHorzTextAlign("center");
     obj.edit27:setFontSize(15.0);
     obj.edit27:setFontColor("black");
@@ -2795,8 +2795,8 @@ function newTormenta01()
     obj.cac2:setName("cac2");
     obj.cac2:setField("cac2");
     obj.cac2:setType("number");
-    obj.cac2:setMin(-99);
-    obj.cac2:setMax(99);
+    obj.cac2:setMin(-999);
+    obj.cac2:setMax(999);
     obj.cac2:setHorzTextAlign("center");
     obj.cac2:setFontSize(15.0);
     obj.cac2:setFontColor("black");
@@ -2857,8 +2857,8 @@ function newTormenta01()
     obj.edit28:setHeight(25);
     obj.edit28:setField("cac3");
     obj.edit28:setType("number");
-    obj.edit28:setMin(-99);
-    obj.edit28:setMax(99);
+    obj.edit28:setMin(-999);
+    obj.edit28:setMax(999);
     obj.edit28:setHorzTextAlign("center");
     obj.edit28:setFontSize(15.0);
     obj.edit28:setFontColor("black");
@@ -2919,8 +2919,8 @@ function newTormenta01()
     obj.edit29:setHeight(25);
     obj.edit29:setField("cac4");
     obj.edit29:setType("number");
-    obj.edit29:setMin(-99);
-    obj.edit29:setMax(99);
+    obj.edit29:setMin(-999);
+    obj.edit29:setMax(999);
     obj.edit29:setHorzTextAlign("center");
     obj.edit29:setFontSize(15.0);
     obj.edit29:setFontColor("black");
@@ -3003,8 +3003,8 @@ function newTormenta01()
     obj.totaldis:setName("totaldis");
     obj.totaldis:setField("totaldis");
     obj.totaldis:setType("number");
-    obj.totaldis:setMin(-99);
-    obj.totaldis:setMax(99);
+    obj.totaldis:setMin(-999);
+    obj.totaldis:setMax(999);
     obj.totaldis:setHorzTextAlign("center");
     obj.totaldis:setFontSize(15.0);
     lfm_setPropAsString(obj.totaldis, "fontStyle",  "bold");
@@ -3042,8 +3042,8 @@ function newTormenta01()
     obj.edit30:setHeight(25);
     obj.edit30:setField("bba");
     obj.edit30:setType("number");
-    obj.edit30:setMin(-99);
-    obj.edit30:setMax(99);
+    obj.edit30:setMin(-999);
+    obj.edit30:setMax(999);
     obj.edit30:setHorzTextAlign("center");
     obj.edit30:setFontSize(15.0);
     obj.edit30:setFontColor("black");
@@ -3082,8 +3082,8 @@ function newTormenta01()
     obj.dis2:setName("dis2");
     obj.dis2:setField("dis2");
     obj.dis2:setType("number");
-    obj.dis2:setMin(-99);
-    obj.dis2:setMax(99);
+    obj.dis2:setMin(-999);
+    obj.dis2:setMax(999);
     obj.dis2:setHorzTextAlign("center");
     obj.dis2:setFontSize(15.0);
     lfm_setPropAsString(obj.dis2, "fontStyle",  "bold");
@@ -3121,8 +3121,8 @@ function newTormenta01()
     obj.edit31:setHeight(25);
     obj.edit31:setField("dis3");
     obj.edit31:setType("number");
-    obj.edit31:setMin(-99);
-    obj.edit31:setMax(99);
+    obj.edit31:setMin(-999);
+    obj.edit31:setMax(999);
     obj.edit31:setHorzTextAlign("center");
     obj.edit31:setFontSize(15.0);
     obj.edit31:setFontColor("black");
@@ -3160,8 +3160,8 @@ function newTormenta01()
     obj.edit32:setHeight(25);
     obj.edit32:setField("dis4");
     obj.edit32:setType("number");
-    obj.edit32:setMin(-99);
-    obj.edit32:setMax(99);
+    obj.edit32:setMin(-999);
+    obj.edit32:setMax(999);
     obj.edit32:setHorzTextAlign("center");
     obj.edit32:setFontSize(15.0);
     obj.edit32:setFontColor("black");
@@ -3253,8 +3253,8 @@ function newTormenta01()
     obj.edit34:setHeight(25);
     obj.edit34:setField("nvclasse1");
     obj.edit34:setType("number");
-    obj.edit34:setMin(-99);
-    obj.edit34:setMax(99);
+    obj.edit34:setMin(-999);
+    obj.edit34:setMax(999);
     obj.edit34:setHorzTextAlign("center");
     obj.edit34:setFontSize(15.0);
     lfm_setPropAsString(obj.edit34, "fontStyle",  "bold");
@@ -3282,8 +3282,8 @@ function newTormenta01()
     obj.edit36:setHeight(25);
     obj.edit36:setField("nvclasse2");
     obj.edit36:setType("number");
-    obj.edit36:setMin(-99);
-    obj.edit36:setMax(99);
+    obj.edit36:setMin(-999);
+    obj.edit36:setMax(999);
     obj.edit36:setHorzTextAlign("center");
     obj.edit36:setFontSize(15.0);
     lfm_setPropAsString(obj.edit36, "fontStyle",  "bold");
@@ -3311,8 +3311,8 @@ function newTormenta01()
     obj.edit38:setHeight(25);
     obj.edit38:setField("nvclasse3");
     obj.edit38:setType("number");
-    obj.edit38:setMin(-99);
-    obj.edit38:setMax(99);
+    obj.edit38:setMin(-999);
+    obj.edit38:setMax(999);
     obj.edit38:setHorzTextAlign("center");
     obj.edit38:setFontSize(15.0);
     lfm_setPropAsString(obj.edit38, "fontStyle",  "bold");
@@ -3340,8 +3340,8 @@ function newTormenta01()
     obj.edit40:setHeight(25);
     obj.edit40:setField("nvclasse4");
     obj.edit40:setType("number");
-    obj.edit40:setMin(-99);
-    obj.edit40:setMax(99);
+    obj.edit40:setMin(-999);
+    obj.edit40:setMax(999);
     obj.edit40:setHorzTextAlign("center");
     obj.edit40:setFontSize(15.0);
     lfm_setPropAsString(obj.edit40, "fontStyle",  "bold");
@@ -3369,8 +3369,8 @@ function newTormenta01()
     obj.edit42:setHeight(25);
     obj.edit42:setField("nvclasse5");
     obj.edit42:setType("number");
-    obj.edit42:setMin(-99);
-    obj.edit42:setMax(99);
+    obj.edit42:setMin(-999);
+    obj.edit42:setMax(999);
     obj.edit42:setHorzTextAlign("center");
     obj.edit42:setFontSize(15.0);
     lfm_setPropAsString(obj.edit42, "fontStyle",  "bold");
@@ -3462,8 +3462,8 @@ function newTormenta01()
     obj.edit44:setHeight(25);
     obj.edit44:setField("nvclasse6");
     obj.edit44:setType("number");
-    obj.edit44:setMin(-99);
-    obj.edit44:setMax(99);
+    obj.edit44:setMin(-999);
+    obj.edit44:setMax(999);
     obj.edit44:setHorzTextAlign("center");
     obj.edit44:setFontSize(15.0);
     lfm_setPropAsString(obj.edit44, "fontStyle",  "bold");
@@ -3491,8 +3491,8 @@ function newTormenta01()
     obj.edit46:setHeight(25);
     obj.edit46:setField("nvclasse7");
     obj.edit46:setType("number");
-    obj.edit46:setMin(-99);
-    obj.edit46:setMax(99);
+    obj.edit46:setMin(-999);
+    obj.edit46:setMax(999);
     obj.edit46:setHorzTextAlign("center");
     obj.edit46:setFontSize(15.0);
     lfm_setPropAsString(obj.edit46, "fontStyle",  "bold");
@@ -3520,8 +3520,8 @@ function newTormenta01()
     obj.edit48:setHeight(25);
     obj.edit48:setField("nvclasse8");
     obj.edit48:setType("number");
-    obj.edit48:setMin(-99);
-    obj.edit48:setMax(99);
+    obj.edit48:setMin(-999);
+    obj.edit48:setMax(999);
     obj.edit48:setHorzTextAlign("center");
     obj.edit48:setFontSize(15.0);
     lfm_setPropAsString(obj.edit48, "fontStyle",  "bold");
@@ -3549,8 +3549,8 @@ function newTormenta01()
     obj.edit50:setHeight(25);
     obj.edit50:setField("nvclasse9");
     obj.edit50:setType("number");
-    obj.edit50:setMin(-99);
-    obj.edit50:setMax(99);
+    obj.edit50:setMin(-999);
+    obj.edit50:setMax(999);
     obj.edit50:setHorzTextAlign("center");
     obj.edit50:setFontSize(15.0);
     lfm_setPropAsString(obj.edit50, "fontStyle",  "bold");
@@ -3578,8 +3578,8 @@ function newTormenta01()
     obj.edit52:setHeight(25);
     obj.edit52:setField("nvclasse10");
     obj.edit52:setType("number");
-    obj.edit52:setMin(-99);
-    obj.edit52:setMax(99);
+    obj.edit52:setMin(-999);
+    obj.edit52:setMax(999);
     obj.edit52:setHorzTextAlign("center");
     obj.edit52:setFontSize(15.0);
     lfm_setPropAsString(obj.edit52, "fontStyle",  "bold");
@@ -3636,8 +3636,8 @@ function newTormenta01()
     obj.nivel:setName("nivel");
     obj.nivel:setField("nivel");
     obj.nivel:setType("number");
-    obj.nivel:setMin(-99);
-    obj.nivel:setMax(99);
+    obj.nivel:setMin(-999);
+    obj.nivel:setMax(999);
     obj.nivel:setHorzTextAlign("center");
     obj.nivel:setFontSize(15.0);
     lfm_setPropAsString(obj.nivel, "fontStyle",  "bold");
@@ -4237,7 +4237,6 @@ function newTormenta01()
 					root.__recalcCA = (tonumber(root.__recalcCA) or 0) + 1
 				end
 			end
-
 		
 
 
