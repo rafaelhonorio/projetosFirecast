@@ -54,8 +54,8 @@
 						<rectangle align="client" color="Black" xradius="6" yradius="6"/>
 
 						<layout align="client" margins="{left=6,right=6,top=4,bottom=4}">
-							<label align="left" width="180" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ATAQUE"/>
-							<label align="left" width="180" fontStyle="bold" fontColor="white" horzTextAlign="center" text="DANOS"/>
+							<label align="left" width="240" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ATAQUE"/>
+							<label align="left" width="240" fontStyle="bold" fontColor="white" horzTextAlign="center" text="DANOS"/>
 							<label align="client" fontStyle="bold" fontColor="white" horzTextAlign="center" text="MAGIAS"/>
 						</layout>
 					</layout>
@@ -67,7 +67,7 @@
 						<layout align="client" margins="{left=6,right=6,top=6,bottom=6}">
 
 							<!-- ATAQUE -->
-							<layout align="left" width="180" margins="{right=4}">
+							<layout align="left" width="240" margins="{right=4}">
 								<rectangle align="client" color="White" xradius="6" yradius="6"/>
 
 								<recordList name="rclAtaque"
@@ -84,7 +84,7 @@
 							</layout>
 
 							<!-- DANOS -->
-							<layout align="left" width="180" margins="{left=2,right=2}">
+							<layout align="left" width="240" margins="{left=2,right=2}">
 								<rectangle align="client" color="White" xradius="6" yradius="6"/>
 
 								<recordList name="rclDanos"
@@ -101,7 +101,7 @@
 							</layout>
 
 							<!-- MAGIAS -->
-							<layout align="client" margins="{left=4}">
+							<layout align="left" width="220" margins="{left=4}">
 								<rectangle align="client" color="White" xradius="6" yradius="6"/>
 
 								<recordList name="rclMagias"
@@ -123,7 +123,7 @@
 				</layout>
 
 				<!-- DIREITA -->
-				<layout align="right" width="420" margins="{left=10}">
+				<layout align="right" width="250" margins="{left=10}">
 					<rectangle align="client" color="Gray" xradius="8" yradius="8"/>
 
 					<layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">

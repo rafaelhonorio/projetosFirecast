@@ -263,10 +263,12 @@
 								<layout align="top" height="380" hitTest="true">
 									<!-- Header -->
 									<layout align="top" height="20" margins="{bottom=2}" hitTest="false">
-										<label align="left" width="296" fontStyle="bold" fontColor="black" text="Nome" hitTest="false"/>
-										<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Valor" hitTest="false"/>
-										<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="false"/>
-										<label align="left" width="26"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false"/>
+									<label align="left" width="80"  fontStyle="bold" fontColor="black" text="Categoria" hitTest="false"/>
+									<label align="left" width="176" fontStyle="bold" fontColor="black" text="Nome" hitTest="false"/>
+									<label align="left" width="40"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Qtd." hitTest="true" hint="Quantidade"/>
+									<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Valor" hitTest="false"/>
+									<label align="left" width="70"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso unitário em Kg"/>
+									<label align="left" width="26"  fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false"/>
 									</layout>
 
 									<recordList name="rclEquip" field="listaEquipamentos" templateForm="frmEquipLinha" align="client" selectable="true">
@@ -616,20 +618,24 @@
 				if rl == nil or box == nil then return end
 
 				local n = rl:append()
-				if n ~= nil then
-					n.nome = ""
-					n.valor = ""
-					n.peso = 0
-					n.descricao = ""
+					if n ~= nil then
+						if n.categoria == nil then n.categoria = "" end
+						if n.qtd == nil then n.qtd = 1 end
 
-					rl.selectedNode = n
-					box.node = n
-					box.visible = true
+						n.nome = n.nome or ""
+						n.valor = n.valor or ""
+						n.peso = tonumber(n.peso) or 0
+						n.descricao = n.descricao or ""
 
-					TRPG_equipUpdateTitulo(ctrl)
-					TRPG_touch03(sh)
-				end
+						rl.selectedNode = n
+						box.node = n
+						box.visible = true
+
+						TRPG_equipUpdateTitulo(ctrl)
+						TRPG_touch03(sh)
+					end
 			end
+
 
 			-- === carga (cálculo seguro e simples) ===
 			local function sumPeso(listNode)
@@ -653,7 +659,10 @@
 
 				local total = 0
 				for _, item in ipairs(children) do
-					total = total + Nlocal(item.peso, 0)
+					local pesoUnit = Nlocal(item.peso, 0)
+					local qtd = tonumber(item.qtd) or 1
+					if qtd < 1 then qtd = 1 end
+					total = total + (pesoUnit * qtd)
 				end
 				return total
 			end
@@ -730,15 +739,37 @@
 				if root == nil then return end
 
 				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				local edt = ctrl and ctrl:findControlByName("edtCargaStatus") or nil
 				if btn == nil then return end
 
 				local st = tostring(root.cargaStatus or "OK")
 
-				if st == "OK" then
+				-- normaliza (pra não quebrar se variar Excedido/Excedida)
+				local stUpper = st:upper()
+
+				-- ===== CORES + NEGRITO =====
+				if edt ~= nil then
+					if stUpper == "OK" then
+					edt.fontColor = "Green"
+					edt.fontStyle = ""        -- normal
+					elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					edt.fontColor = "Goldenrod" -- amarelo mais legível que "Yellow"
+					edt.fontStyle = "bold"
+					elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					edt.fontColor = "Red"
+					edt.fontStyle = "bold"
+					else
+					edt.fontColor = "Black"
+					edt.fontStyle = ""
+					end
+				end
+
+				-- ===== HINT =====
+				if stUpper == "OK" then
 					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
-				elseif st == "Pesada" then
+				elseif stUpper == "PESADA" or stUpper == "PESADO" then
 					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
-				elseif st == "Excedida" then
+				elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
 					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
 				else
 					btn.hint = "Status de carga: " .. st

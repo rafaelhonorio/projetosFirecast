@@ -130,7 +130,7 @@ function newTormenta06()
     obj.label1 = gui.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout7);
     obj.label1:setAlign("left");
-    obj.label1:setWidth(180);
+    obj.label1:setWidth(240);
     lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontColor("white");
     obj.label1:setHorzTextAlign("center");
@@ -140,7 +140,7 @@ function newTormenta06()
     obj.label2 = gui.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.layout7);
     obj.label2:setAlign("left");
-    obj.label2:setWidth(180);
+    obj.label2:setWidth(240);
     lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
     obj.label2:setFontColor("white");
     obj.label2:setHorzTextAlign("center");
@@ -179,7 +179,7 @@ function newTormenta06()
     obj.layout10 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout10:setParent(obj.layout9);
     obj.layout10:setAlign("left");
-    obj.layout10:setWidth(180);
+    obj.layout10:setWidth(240);
     obj.layout10:setMargins({right=4});
     obj.layout10:setName("layout10");
 
@@ -202,7 +202,7 @@ function newTormenta06()
     obj.layout11 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.layout9);
     obj.layout11:setAlign("left");
-    obj.layout11:setWidth(180);
+    obj.layout11:setWidth(240);
     obj.layout11:setMargins({left=2,right=2});
     obj.layout11:setName("layout11");
 
@@ -224,7 +224,8 @@ function newTormenta06()
 
     obj.layout12 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout12:setParent(obj.layout9);
-    obj.layout12:setAlign("client");
+    obj.layout12:setAlign("left");
+    obj.layout12:setWidth(220);
     obj.layout12:setMargins({left=4});
     obj.layout12:setName("layout12");
 
@@ -247,7 +248,7 @@ function newTormenta06()
     obj.layout13 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.layout4);
     obj.layout13:setAlign("right");
-    obj.layout13:setWidth(420);
+    obj.layout13:setWidth(250);
     obj.layout13:setMargins({left=10});
     obj.layout13:setName("layout13");
 

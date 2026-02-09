@@ -694,45 +694,68 @@ function newTormenta03()
     obj.label22 = gui.fromHandle(_obj_newObject("label"));
     obj.label22:setParent(obj.layout22);
     obj.label22:setAlign("left");
-    obj.label22:setWidth(296);
+    obj.label22:setWidth(80);
     lfm_setPropAsString(obj.label22, "fontStyle",  "bold");
     obj.label22:setFontColor("black");
-    obj.label22:setText("Nome");
+    obj.label22:setText("Categoria");
     obj.label22:setHitTest(false);
     obj.label22:setName("label22");
 
     obj.label23 = gui.fromHandle(_obj_newObject("label"));
     obj.label23:setParent(obj.layout22);
     obj.label23:setAlign("left");
-    obj.label23:setWidth(70);
+    obj.label23:setWidth(176);
     lfm_setPropAsString(obj.label23, "fontStyle",  "bold");
     obj.label23:setFontColor("black");
-    obj.label23:setHorzTextAlign("center");
-    obj.label23:setText("Valor");
+    obj.label23:setText("Nome");
     obj.label23:setHitTest(false);
     obj.label23:setName("label23");
 
     obj.label24 = gui.fromHandle(_obj_newObject("label"));
     obj.label24:setParent(obj.layout22);
     obj.label24:setAlign("left");
-    obj.label24:setWidth(70);
+    obj.label24:setWidth(40);
     lfm_setPropAsString(obj.label24, "fontStyle",  "bold");
     obj.label24:setFontColor("black");
     obj.label24:setHorzTextAlign("center");
-    obj.label24:setText("Peso");
-    obj.label24:setHitTest(false);
+    obj.label24:setText("Qtd");
+    obj.label24:setHitTest(true);
+    obj.label24:setHint("Quantidade");
     obj.label24:setName("label24");
 
     obj.label25 = gui.fromHandle(_obj_newObject("label"));
     obj.label25:setParent(obj.layout22);
     obj.label25:setAlign("left");
-    obj.label25:setWidth(26);
+    obj.label25:setWidth(70);
     lfm_setPropAsString(obj.label25, "fontStyle",  "bold");
     obj.label25:setFontColor("black");
     obj.label25:setHorzTextAlign("center");
-    obj.label25:setText("");
+    obj.label25:setText("Valor");
     obj.label25:setHitTest(false);
     obj.label25:setName("label25");
+
+    obj.label26 = gui.fromHandle(_obj_newObject("label"));
+    obj.label26:setParent(obj.layout22);
+    obj.label26:setAlign("left");
+    obj.label26:setWidth(70);
+    lfm_setPropAsString(obj.label26, "fontStyle",  "bold");
+    obj.label26:setFontColor("black");
+    obj.label26:setHorzTextAlign("center");
+    obj.label26:setText("Peso");
+    obj.label26:setHitTest(true);
+    obj.label26:setHint("Peso unitário em Kg");
+    obj.label26:setName("label26");
+
+    obj.label27 = gui.fromHandle(_obj_newObject("label"));
+    obj.label27:setParent(obj.layout22);
+    obj.label27:setAlign("left");
+    obj.label27:setWidth(26);
+    lfm_setPropAsString(obj.label27, "fontStyle",  "bold");
+    obj.label27:setFontColor("black");
+    obj.label27:setHorzTextAlign("center");
+    obj.label27:setText("");
+    obj.label27:setHitTest(false);
+    obj.label27:setName("label27");
 
     obj.rclEquip = gui.fromHandle(_obj_newObject("recordList"));
     obj.rclEquip:setParent(obj.layout21);
@@ -820,14 +843,14 @@ function newTormenta03()
     obj.layout27:setWidth(240);
     obj.layout27:setName("layout27");
 
-    obj.label26 = gui.fromHandle(_obj_newObject("label"));
-    obj.label26:setParent(obj.layout27);
-    obj.label26:setAlign("top");
-    obj.label26:setHeight(18);
-    lfm_setPropAsString(obj.label26, "fontStyle",  "bold");
-    obj.label26:setFontColor("black");
-    obj.label26:setText("Carga (regra automática)");
-    obj.label26:setName("label26");
+    obj.label28 = gui.fromHandle(_obj_newObject("label"));
+    obj.label28:setParent(obj.layout27);
+    obj.label28:setAlign("top");
+    obj.label28:setHeight(18);
+    lfm_setPropAsString(obj.label28, "fontStyle",  "bold");
+    obj.label28:setFontColor("black");
+    obj.label28:setText("Carga (regra automática)");
+    obj.label28:setName("label28");
 
     obj.layout28 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout28:setParent(obj.layout27);
@@ -835,13 +858,13 @@ function newTormenta03()
     obj.layout28:setHeight(24);
     obj.layout28:setName("layout28");
 
-    obj.label27 = gui.fromHandle(_obj_newObject("label"));
-    obj.label27:setParent(obj.layout28);
-    obj.label27:setAlign("left");
-    obj.label27:setWidth(120);
-    obj.label27:setFontColor("black");
-    obj.label27:setText("Peso total:");
-    obj.label27:setName("label27");
+    obj.label29 = gui.fromHandle(_obj_newObject("label"));
+    obj.label29:setParent(obj.layout28);
+    obj.label29:setAlign("left");
+    obj.label29:setWidth(120);
+    obj.label29:setFontColor("black");
+    obj.label29:setText("Peso total:");
+    obj.label29:setName("label29");
 
     obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout28);
@@ -862,13 +885,13 @@ function newTormenta03()
     obj.layout29:setHeight(24);
     obj.layout29:setName("layout29");
 
-    obj.label28 = gui.fromHandle(_obj_newObject("label"));
-    obj.label28:setParent(obj.layout29);
-    obj.label28:setAlign("left");
-    obj.label28:setWidth(120);
-    obj.label28:setFontColor("black");
-    obj.label28:setText("Sem penalidade:");
-    obj.label28:setName("label28");
+    obj.label30 = gui.fromHandle(_obj_newObject("label"));
+    obj.label30:setParent(obj.layout29);
+    obj.label30:setAlign("left");
+    obj.label30:setWidth(120);
+    obj.label30:setFontColor("black");
+    obj.label30:setText("Sem penalidade:");
+    obj.label30:setName("label30");
 
     obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout29);
@@ -888,13 +911,13 @@ function newTormenta03()
     obj.layout30:setHeight(24);
     obj.layout30:setName("layout30");
 
-    obj.label29 = gui.fromHandle(_obj_newObject("label"));
-    obj.label29:setParent(obj.layout30);
-    obj.label29:setAlign("left");
-    obj.label29:setWidth(120);
-    obj.label29:setFontColor("black");
-    obj.label29:setText("Máximo:");
-    obj.label29:setName("label29");
+    obj.label31 = gui.fromHandle(_obj_newObject("label"));
+    obj.label31:setParent(obj.layout30);
+    obj.label31:setAlign("left");
+    obj.label31:setWidth(120);
+    obj.label31:setFontColor("black");
+    obj.label31:setText("Máximo:");
+    obj.label31:setName("label31");
 
     obj.edit3 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.layout30);
@@ -914,13 +937,13 @@ function newTormenta03()
     obj.layout31:setHeight(24);
     obj.layout31:setName("layout31");
 
-    obj.label30 = gui.fromHandle(_obj_newObject("label"));
-    obj.label30:setParent(obj.layout31);
-    obj.label30:setAlign("left");
-    obj.label30:setWidth(120);
-    obj.label30:setFontColor("black");
-    obj.label30:setText("Status:");
-    obj.label30:setName("label30");
+    obj.label32 = gui.fromHandle(_obj_newObject("label"));
+    obj.label32:setParent(obj.layout31);
+    obj.label32:setAlign("left");
+    obj.label32:setWidth(120);
+    obj.label32:setFontColor("black");
+    obj.label32:setText("Status:");
+    obj.label32:setName("label32");
 
     obj.layout32 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout32:setParent(obj.layout31);
@@ -951,14 +974,14 @@ function newTormenta03()
     obj.layout33:setMargins({left=10});
     obj.layout33:setName("layout33");
 
-    obj.label31 = gui.fromHandle(_obj_newObject("label"));
-    obj.label31:setParent(obj.layout33);
-    obj.label31:setAlign("top");
-    obj.label31:setHeight(18);
-    obj.label31:setFontColor("black");
-    lfm_setPropAsString(obj.label31, "fontStyle",  "bold");
-    obj.label31:setText("Dinheiro");
-    obj.label31:setName("label31");
+    obj.label33 = gui.fromHandle(_obj_newObject("label"));
+    obj.label33:setParent(obj.layout33);
+    obj.label33:setAlign("top");
+    obj.label33:setHeight(18);
+    obj.label33:setFontColor("black");
+    lfm_setPropAsString(obj.label33, "fontStyle",  "bold");
+    obj.label33:setText("Dinheiro");
+    obj.label33:setName("label33");
 
     obj.layout34 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout34:setParent(obj.layout33);
@@ -966,13 +989,13 @@ function newTormenta03()
     obj.layout34:setHeight(24);
     obj.layout34:setName("layout34");
 
-    obj.label32 = gui.fromHandle(_obj_newObject("label"));
-    obj.label32:setParent(obj.layout34);
-    obj.label32:setAlign("left");
-    obj.label32:setWidth(90);
-    obj.label32:setFontColor("black");
-    obj.label32:setText("T$ (Cobre)");
-    obj.label32:setName("label32");
+    obj.label34 = gui.fromHandle(_obj_newObject("label"));
+    obj.label34:setParent(obj.layout34);
+    obj.label34:setAlign("left");
+    obj.label34:setWidth(90);
+    obj.label34:setFontColor("black");
+    obj.label34:setText("T$ (Cobre)");
+    obj.label34:setName("label34");
 
     obj.edit4 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit4:setParent(obj.layout34);
@@ -991,13 +1014,13 @@ function newTormenta03()
     obj.layout35:setHeight(24);
     obj.layout35:setName("layout35");
 
-    obj.label33 = gui.fromHandle(_obj_newObject("label"));
-    obj.label33:setParent(obj.layout35);
-    obj.label33:setAlign("left");
-    obj.label33:setWidth(90);
-    obj.label33:setFontColor("black");
-    obj.label33:setText("TP (Prata)");
-    obj.label33:setName("label33");
+    obj.label35 = gui.fromHandle(_obj_newObject("label"));
+    obj.label35:setParent(obj.layout35);
+    obj.label35:setAlign("left");
+    obj.label35:setWidth(90);
+    obj.label35:setFontColor("black");
+    obj.label35:setText("TP (Prata)");
+    obj.label35:setName("label35");
 
     obj.edit5 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit5:setParent(obj.layout35);
@@ -1016,13 +1039,13 @@ function newTormenta03()
     obj.layout36:setHeight(24);
     obj.layout36:setName("layout36");
 
-    obj.label34 = gui.fromHandle(_obj_newObject("label"));
-    obj.label34:setParent(obj.layout36);
-    obj.label34:setAlign("left");
-    obj.label34:setWidth(90);
-    obj.label34:setFontColor("black");
-    obj.label34:setText("TO (Ouro)");
-    obj.label34:setName("label34");
+    obj.label36 = gui.fromHandle(_obj_newObject("label"));
+    obj.label36:setParent(obj.layout36);
+    obj.label36:setAlign("left");
+    obj.label36:setWidth(90);
+    obj.label36:setFontColor("black");
+    obj.label36:setText("TO (Ouro)");
+    obj.label36:setName("label36");
 
     obj.edit6 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit6:setParent(obj.layout36);
@@ -1041,13 +1064,13 @@ function newTormenta03()
     obj.layout37:setHeight(24);
     obj.layout37:setName("layout37");
 
-    obj.label35 = gui.fromHandle(_obj_newObject("label"));
-    obj.label35:setParent(obj.layout37);
-    obj.label35:setAlign("left");
-    obj.label35:setWidth(90);
-    obj.label35:setFontColor("black");
-    obj.label35:setText("TL (Platina)");
-    obj.label35:setName("label35");
+    obj.label37 = gui.fromHandle(_obj_newObject("label"));
+    obj.label37:setParent(obj.layout37);
+    obj.label37:setAlign("left");
+    obj.label37:setWidth(90);
+    obj.label37:setFontColor("black");
+    obj.label37:setText("TL (Platina)");
+    obj.label37:setName("label37");
 
     obj.edit7 = gui.fromHandle(_obj_newObject("edit"));
     obj.edit7:setParent(obj.layout37);
@@ -1287,20 +1310,24 @@ function newTormenta03()
 				if rl == nil or box == nil then return end
 
 				local n = rl:append()
-				if n ~= nil then
-					n.nome = ""
-					n.valor = ""
-					n.peso = 0
-					n.descricao = ""
+					if n ~= nil then
+						if n.categoria == nil then n.categoria = "" end
+						if n.qtd == nil then n.qtd = 1 end
 
-					rl.selectedNode = n
-					box.node = n
-					box.visible = true
+						n.nome = n.nome or ""
+						n.valor = n.valor or ""
+						n.peso = tonumber(n.peso) or 0
+						n.descricao = n.descricao or ""
 
-					TRPG_equipUpdateTitulo(ctrl)
-					TRPG_touch03(sh)
-				end
+						rl.selectedNode = n
+						box.node = n
+						box.visible = true
+
+						TRPG_equipUpdateTitulo(ctrl)
+						TRPG_touch03(sh)
+					end
 			end
+
 
 			-- === carga (cálculo seguro e simples) ===
 			local function sumPeso(listNode)
@@ -1324,7 +1351,10 @@ function newTormenta03()
 
 				local total = 0
 				for _, item in ipairs(children) do
-					total = total + Nlocal(item.peso, 0)
+					local pesoUnit = Nlocal(item.peso, 0)
+					local qtd = tonumber(item.qtd) or 1
+					if qtd < 1 then qtd = 1 end
+					total = total + (pesoUnit * qtd)
 				end
 				return total
 			end
@@ -1401,15 +1431,37 @@ function newTormenta03()
 				if root == nil then return end
 
 				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				local edt = ctrl and ctrl:findControlByName("edtCargaStatus") or nil
 				if btn == nil then return end
 
 				local st = tostring(root.cargaStatus or "OK")
 
-				if st == "OK" then
+				-- normaliza (pra não quebrar se variar Excedido/Excedida)
+				local stUpper = st:upper()
+
+				-- ===== CORES + NEGRITO =====
+				if edt ~= nil then
+					if stUpper == "OK" then
+					edt.fontColor = "Green"
+					edt.fontStyle = ""        -- normal
+					elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					edt.fontColor = "Goldenrod" -- amarelo mais legível que "Yellow"
+					edt.fontStyle = "bold"
+					elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					edt.fontColor = "Red"
+					edt.fontStyle = "bold"
+					else
+					edt.fontColor = "Black"
+					edt.fontStyle = ""
+					end
+				end
+
+				-- ===== HINT =====
+				if stUpper == "OK" then
 					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
-				elseif st == "Pesada" then
+				elseif stUpper == "PESADA" or stUpper == "PESADO" then
 					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
-				elseif st == "Excedida" then
+				elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
 					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
 				else
 					btn.hint = "Status de carga: " .. st
@@ -1661,6 +1713,7 @@ function newTormenta03()
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
         if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
+        if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
         if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
@@ -1695,6 +1748,7 @@ function newTormenta03()
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
+        if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;

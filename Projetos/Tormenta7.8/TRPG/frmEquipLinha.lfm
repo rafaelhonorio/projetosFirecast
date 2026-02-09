@@ -13,8 +13,8 @@
       end;
     </event>
 
-    <!-- Linha editável -->
-    <edit align="left" width="296" fontColor="black" field="nome" fontStyle="bold">
+    <!-- Categoria -->
+    <edit align="left" width="80" fontColor="black" field="categoria" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
         if rl ~= nil then rl.selectedNode = sheet; end;
@@ -24,6 +24,29 @@
       </event>
     </edit>
 
+    <!-- Nome -->
+    <edit align="left" width="176" fontColor="black" field="nome" fontStyle="bold">
+      <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+    </edit>
+
+    <!-- Quantidade -->
+    <edit align="left" width="40" fontColor="black" field="qtd" type="number" min="1" max="999" horzTextAlign="center">
+      <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+    </edit>
+
+    <!-- Valor -->
     <edit align="left" width="70" fontColor="black" field="valor" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
@@ -34,6 +57,7 @@
       </event>
     </edit>
 
+    <!-- Peso unitário -->
     <edit align="left" width="70" fontColor="black" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
       <event name="onEnter">
         local rl = self:findControlByName("rclEquip");
@@ -55,8 +79,8 @@
       </event>
     </button>
 
-    <!-- Recalcula carga sempre que o peso mudar -->
-    <dataLink fields="{'peso'}">
+    <!-- Recalcula carga sempre que peso OU quantidade mudar -->
+    <dataLink fields="{'peso','qtd'}">
       <event name="onChange">
         if sheet ~= nil then
           local root = ndb.getRoot(sheet);
@@ -66,5 +90,6 @@
         end;
       </event>
     </dataLink>
+
   </layout>
 </form>
