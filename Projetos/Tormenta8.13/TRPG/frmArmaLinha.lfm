@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmArmaLinha" height="28" theme="light">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <layout align="client" height="28">
+        <edit align="left" width="140" field="arma" fontColor="black" fontStyle="bold" />
+        <edit align="left" width="48" field="ataque" fontColor="black" horzTextAlign="center" />
+        <edit align="left" width="60" field="dano" fontColor="black" horzTextAlign="center" />
+        <edit align="left" width="52" field="critico" fontColor="black" horzTextAlign="center" />
+        <edit align="left" width="48" field="dist" fontColor="black" horzTextAlign="center" />
+        <edit align="left" width="62" field="tipo" fontColor="black" horzTextAlign="center" />
+        <edit align="left" width="40" field="peso" fontColor="black" type="float" min="0" max="9999" horzTextAlign="center" />
+        <button align="left" width="24" text="X" fontColor="black" hint="Excluir arma">
+            <event name="onClick">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          ndb.deleteNode(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+        </button>
+        <dataLink fields="{'peso'}">
+            <event name="onChange">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+        </dataLink>
+    </layout>
+</form>

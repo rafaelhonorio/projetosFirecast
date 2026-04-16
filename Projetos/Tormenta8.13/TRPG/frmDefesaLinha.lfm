@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmDefesaLinha" height="28" theme="light">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <layout align="client" height="28">
+        <checkBox align="left" width="20" field="equipado" fontColor="black" hint="Equipado" horzTextAlign="center">
+            <event name="onChange">
+        -- recalcula CA/penalidades e também carga/tela3 se você quiser refletir
+        TRPG_touchCA(sheet);
+
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+        </checkBox>
+        <edit align="left" width="80" field="categoria" fontColor="black" readOnly="true" canFocus="false" horzTextAlign="center" cursor="arrow" />
+        <edit align="left" width="120" field="defesa" fontColor="black" fontStyle="bold" />
+        <edit align="left" width="55" field="bonusCA" fontColor="black" type="number" min="-99" max="99" horzTextAlign="center">
+            <event name="onChange">
+        TRPG_touchCA(sheet);
+      </event>
+        </edit>
+        <edit align="left" width="70" field="bonusMaxDes" fontColor="black" type="number" min="-99" max="99" horzTextAlign="center">
+            <event name="onChange">
+        TRPG_touchCA(sheet);
+      </event>
+        </edit>
+        <edit align="left" width="65" field="penalidade" fontColor="black" type="number" min="-99" max="99" horzTextAlign="center">
+            <event name="onChange">
+        TRPG_touchCA(sheet);
+      </event>
+        </edit>
+        <edit align="left" width="40" field="peso" fontColor="black" type="float" min="0" max="9999" horzTextAlign="center">
+            <event name="onChange">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+
+        TRPG_touchCA(sheet);
+      </event>
+        </edit>
+        <button align="left" width="24" fontColor="black" text="X" hint="Excluir">
+            <event name="onClick">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+
+          TRPG_touchCA(sheet);
+
+          ndb.deleteNode(sheet);
+
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+        </button>
+    </layout>
+</form>

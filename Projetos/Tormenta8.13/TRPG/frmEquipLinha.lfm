@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmEquipLinha" height="28" theme="light">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <layout align="client" height="28" hitTest="true">
+        <event name="onMouseDown">
+      local rl = self:findControlByName("rclEquip");
+      if rl ~= nil then rl.selectedNode = sheet; end;
+
+      local box = self:findControlByName("boxEquipDetalhes");
+      if box ~= nil then
+        box.node = sheet;
+        box.visible = true;
+      end;
+    </event>
+        <edit align="left" width="80" fontColor="black" field="categoria" horzTextAlign="center">
+            <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+        </edit>
+        <edit align="left" width="176" fontColor="black" field="nome" fontStyle="bold">
+            <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+        </edit>
+        <edit align="left" width="40" fontColor="black" field="qtd" type="number" min="1" max="999" horzTextAlign="center">
+            <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+        </edit>
+        <edit align="left" width="70" fontColor="black" field="valor" horzTextAlign="center">
+            <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+        </edit>
+        <edit align="left" width="70" fontColor="black" field="peso" type="float" min="0" max="9999" horzTextAlign="center">
+            <event name="onEnter">
+        local rl = self:findControlByName("rclEquip");
+        if rl ~= nil then rl.selectedNode = sheet; end;
+
+        local box = self:findControlByName("boxEquipDetalhes");
+        if box ~= nil then box.node = sheet; box.visible = true; end;
+      </event>
+        </edit>
+        <button align="left" width="26" fontColor="black" text="X" hint="Excluir item">
+            <event name="onClick">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          ndb.deleteNode(sheet);
+          TRPG_touch03(root);
+        end;
+      </event>
+        </button>
+        <dataLink fields="{'peso','qtd'}">
+            <event name="onChange">
+        if sheet ~= nil then
+          local root = ndb.getRoot(sheet);
+          if root ~= nil then
+            root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
+          end;
+        end;
+      </event>
+        </dataLink>
+    </layout>
+</form>

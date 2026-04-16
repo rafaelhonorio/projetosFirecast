@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmMacroColuna" height="28" theme="light">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <layout align="client" height="28" margins="{left=2,right=2,top=1,bottom=1}" hitTest="true" cursor="handPoint">
+        <rectangle align="client" color="Transparent" hitTest="false" />
+        <label align="client" field="campoTitulo" fontSize="11" fontStyle="bold" wordWrap="false" textTrimming="character" horzTextAlign="leading" vertTextAlign="center" fontColor="Black" hitTest="false" />
+        <button align="right" width="24" text="X" hint="Excluir macro" fontColor="black" canFocus="false">
+            <event name="onClick">
+				if event ~= nil then event.handled = true end;
+
+				local nodeToDelete = sheet;
+				if nodeToDelete == nil then return end;
+
+				Dialogs.confirmYesNo("Deseja realmente excluir este macro?",
+				function(confirmado)
+					if not confirmado then return end;
+
+					-- tenta deletar o nodo do item
+					pcall(function()
+					ndb.deleteNode(nodeToDelete);
+					end);
+
+					-- sobe até a tela 6 (onde existem dsDetalhesDoItem / boxNadaSelecionado)
+					local tela = self;
+					while tela ~= nil do
+					if (tela.findControlByName ~= nil) and (tela:findControlByName("dsDetalhesDoItem") ~= nil) then
+						break;
+					end;
+					tela = tela:getParent();
+					end;
+
+					-- fecha painel de detalhes e limpa seleções
+					if tela ~= nil then
+					local ds  = tela:findControlByName("dsDetalhesDoItem");
+					local box = tela:findControlByName("boxNadaSelecionado");
+					if ds ~= nil then
+						ds.scopeNode = nil;
+						ds.visible = false;
+					end;
+					if box ~= nil then
+						box.visible = true;
+					end;
+
+					local r1 = tela:findControlByName("rclAtaque");
+					local r2 = tela:findControlByName("rclDanos");
+					local r3 = tela:findControlByName("rclMagias");
+					if r1 ~= nil then r1.selectedNode = nil end;
+					if r2 ~= nil then r2.selectedNode = nil end;
+					if r3 ~= nil then r3.selectedNode = nil end;
+
+					-- força refresh igual seu padrão
+					if TRPG_touch06 ~= nil then
+						TRPG_touch06(tela);
+					else
+						local root = ndb.getRoot(nodeToDelete);
+						if root ~= nil then
+						root.__recalc06 = (tonumber(root.__recalc06) or 0) + 1;
+						end;
+					end;
+					end;
+				end);
+			</event>
+        </button>
+        <button align="right" width="32" text="🎲" hint="Rolar" canFocus="false">
+            <event name="onClick">
+				if event ~= nil then event.handled = true end;
+
+				local node = sheet;
+				if node ~= nil then
+				TRPG_rollMacro(node, node.campoSubTitulo, node.campoTitulo or "Macro");
+				end;
+			</event>
+        </button>
+        <event name="onClick">
+			-- se veio de um botão, não seleciona
+			if event ~= nil and event.handled == true then return end;
+
+			local node = sheet;
+
+			local rl = self;
+			while (rl ~= nil) and (rl.getClassName ~= nil) and (rl:getClassName() ~= "recordList") do
+				rl = rl:getParent();
+			end;
+
+			if rl ~= nil then
+				rl.selectedNode = node;
+			end;
+		</event>
+    </layout>
+</form>

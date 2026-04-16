@@ -1,0 +1,1915 @@
+require("firecast.lua");
+local __o_rrpgObjs = require("rrpgObjs.lua");
+require("rrpgGUI.lua");
+require("rrpgDialogs.lua");
+require("rrpgLFM.lua");
+require("ndb.lua");
+require("locale.lua");
+local __o_Utils = require("utils.lua");
+
+local function constructNew_Tormenta03()
+    local obj = GUI.fromHandle(_obj_newObject("form"));
+    local self = obj;
+    local sheet = nil;
+
+    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
+
+    function obj:setNodeObject(nodeObject)
+        sheet = nodeObject;
+        self.sheet = nodeObject;
+        self:_oldSetNodeObjectFunction(nodeObject);
+    end;
+
+    function obj:setNodeDatabase(nodeObject)
+        self:setNodeObject(nodeObject);
+    end;
+
+    _gui_assignInitialParentForForm(obj.handle);
+    obj:beginUpdate();
+    obj:setName("Tormenta03");
+    obj:setAlign("client");
+    obj:setTheme("light");
+    obj:setLockWhileNodeIsLoading(true);
+
+    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox1:setParent(obj);
+    obj.scrollBox1:setAlign("client");
+    obj.scrollBox1:setName("scrollBox1");
+
+    obj.lytCanvas03 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.lytCanvas03:setParent(obj.scrollBox1);
+    obj.lytCanvas03:setName("lytCanvas03");
+    obj.lytCanvas03:setAlign("none");
+    obj.lytCanvas03:setLeft(0);
+    obj.lytCanvas03:setTop(0);
+    obj.lytCanvas03:setWidth(1010);
+    obj.lytCanvas03:setHeight(700);
+    obj.lytCanvas03:setMargins({left=0,top=0,right=0,bottom=0});
+
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1:setParent(obj.lytCanvas03);
+    obj.rectangle1:setAlign("client");
+    obj.rectangle1:setColor("LightGray");
+    obj.rectangle1:setXradius(10);
+    obj.rectangle1:setYradius(10);
+    obj.rectangle1:setName("rectangle1");
+
+    obj.content = GUI.fromHandle(_obj_newObject("layout"));
+    obj.content:setParent(obj.lytCanvas03);
+    obj.content:setName("content");
+    obj.content:setAlign("client");
+    obj.content:setMargins({top=8,bottom=8,left=8,right=8});
+
+    obj.grid = GUI.fromHandle(_obj_newObject("layout"));
+    obj.grid:setParent(obj.content);
+    obj.grid:setName("grid");
+    obj.grid:setAlign("client");
+
+    obj.colEsq = GUI.fromHandle(_obj_newObject("layout"));
+    obj.colEsq:setParent(obj.grid);
+    obj.colEsq:setName("colEsq");
+    obj.colEsq:setAlign("left");
+    obj.colEsq:setWidth(500);
+
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout1:setParent(obj.colEsq);
+    obj.layout1:setAlign("top");
+    obj.layout1:setHeight(335);
+    obj.layout1:setMargins({bottom=6});
+    obj.layout1:setName("layout1");
+
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2:setParent(obj.layout1);
+    obj.rectangle2:setAlign("client");
+    obj.rectangle2:setColor("Gray");
+    obj.rectangle2:setXradius(6);
+    obj.rectangle2:setYradius(6);
+    obj.rectangle2:setHitTest(false);
+    obj.rectangle2:setName("rectangle2");
+
+    obj.rcArmaCloseArea = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rcArmaCloseArea:setParent(obj.layout1);
+    obj.rcArmaCloseArea:setName("rcArmaCloseArea");
+    obj.rcArmaCloseArea:setAlign("client");
+    obj.rcArmaCloseArea:setColor("Transparent");
+    obj.rcArmaCloseArea:setHitTest(true);
+
+    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout2:setParent(obj.layout1);
+    obj.layout2:setAlign("client");
+    obj.layout2:setMargins({left=6,right=6,top=6,bottom=6});
+    obj.layout2:setHitTest(true);
+    obj.layout2:setName("layout2");
+
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout3:setParent(obj.layout2);
+    obj.layout3:setAlign("top");
+    obj.layout3:setHeight(28);
+    obj.layout3:setMargins({bottom=2});
+    obj.layout3:setHitTest(false);
+    obj.layout3:setName("layout3");
+
+    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3:setParent(obj.layout3);
+    obj.rectangle3:setAlign("client");
+    obj.rectangle3:setColor("Black");
+    obj.rectangle3:setXradius(4);
+    obj.rectangle3:setYradius(4);
+    obj.rectangle3:setHitTest(false);
+    obj.rectangle3:setName("rectangle3");
+
+    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label1:setParent(obj.layout3);
+    obj.label1:setAlign("client");
+    obj.label1:setFontSize(14);
+    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
+    obj.label1:setFontColor("white");
+    obj.label1:setHorzTextAlign("center");
+    obj.label1:setText("ARMAS");
+    obj.label1:setHitTest(false);
+    obj.label1:setName("label1");
+    obj.label1:setTextTrimming("none");
+
+    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout4:setParent(obj.layout2);
+    obj.layout4:setAlign("top");
+    obj.layout4:setHeight(24);
+    obj.layout4:setMargins({bottom=2});
+    obj.layout4:setHitTest(true);
+    obj.layout4:setName("layout4");
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.layout4);
+    obj.button1:setAlign("left");
+    obj.button1:setWidth(160);
+    obj.button1:setFontColor("black");
+    obj.button1:setText("Adicionar Arma");
+    obj.button1:setName("button1");
+    obj.button1:setTextTrimming("none");
+
+    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label2:setParent(obj.layout4);
+    obj.label2:setAlign("left");
+    obj.label2:setWidth(200);
+    obj.label2:setHitTest(false);
+    obj.label2:setName("label2");
+    obj.label2:setTextTrimming("none");
+
+    obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout5:setParent(obj.layout2);
+    obj.layout5:setAlign("top");
+    obj.layout5:setHeight(20);
+    obj.layout5:setMargins({bottom=2});
+    obj.layout5:setHitTest(false);
+    obj.layout5:setName("layout5");
+
+    obj.label3 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label3:setParent(obj.layout5);
+    obj.label3:setAlign("left");
+    obj.label3:setWidth(140);
+    lfm_setPropAsString(obj.label3, "fontStyle", "bold");
+    obj.label3:setFontColor("black");
+    obj.label3:setText("Arma");
+    obj.label3:setHitTest(false);
+    obj.label3:setName("label3");
+    obj.label3:setTextTrimming("none");
+
+    obj.label4 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label4:setParent(obj.layout5);
+    obj.label4:setAlign("left");
+    obj.label4:setWidth(48);
+    lfm_setPropAsString(obj.label4, "fontStyle", "bold");
+    obj.label4:setFontColor("black");
+    obj.label4:setHorzTextAlign("center");
+    obj.label4:setText("Ataque");
+    obj.label4:setHitTest(false);
+    obj.label4:setName("label4");
+    obj.label4:setTextTrimming("none");
+
+    obj.label5 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label5:setParent(obj.layout5);
+    obj.label5:setAlign("left");
+    obj.label5:setWidth(60);
+    lfm_setPropAsString(obj.label5, "fontStyle", "bold");
+    obj.label5:setFontColor("black");
+    obj.label5:setHorzTextAlign("center");
+    obj.label5:setText("Dano");
+    obj.label5:setHitTest(false);
+    obj.label5:setName("label5");
+    obj.label5:setTextTrimming("none");
+
+    obj.label6 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label6:setParent(obj.layout5);
+    obj.label6:setAlign("left");
+    obj.label6:setWidth(52);
+    lfm_setPropAsString(obj.label6, "fontStyle", "bold");
+    obj.label6:setFontColor("black");
+    obj.label6:setHorzTextAlign("center");
+    obj.label6:setText("Crítico");
+    obj.label6:setHitTest(false);
+    obj.label6:setName("label6");
+    obj.label6:setTextTrimming("none");
+
+    obj.label7 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label7:setParent(obj.layout5);
+    obj.label7:setAlign("left");
+    obj.label7:setWidth(48);
+    lfm_setPropAsString(obj.label7, "fontStyle", "bold");
+    obj.label7:setFontColor("black");
+    obj.label7:setHorzTextAlign("center");
+    obj.label7:setText("Dist.");
+    obj.label7:setHitTest(true);
+    obj.label7:setHint("Distância");
+    obj.label7:setName("label7");
+    obj.label7:setTextTrimming("none");
+
+    obj.label8 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label8:setParent(obj.layout5);
+    obj.label8:setAlign("left");
+    obj.label8:setWidth(62);
+    lfm_setPropAsString(obj.label8, "fontStyle", "bold");
+    obj.label8:setFontColor("black");
+    obj.label8:setHorzTextAlign("center");
+    obj.label8:setText("Tipo");
+    obj.label8:setHitTest(false);
+    obj.label8:setName("label8");
+    obj.label8:setTextTrimming("none");
+
+    obj.label9 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label9:setParent(obj.layout5);
+    obj.label9:setAlign("left");
+    obj.label9:setWidth(40);
+    lfm_setPropAsString(obj.label9, "fontStyle", "bold");
+    obj.label9:setFontColor("black");
+    obj.label9:setHorzTextAlign("center");
+    obj.label9:setText("Peso");
+    obj.label9:setHitTest(true);
+    obj.label9:setHint("Peso em Kg");
+    obj.label9:setName("label9");
+    obj.label9:setTextTrimming("none");
+
+    obj.label10 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label10:setParent(obj.layout5);
+    obj.label10:setAlign("left");
+    obj.label10:setWidth(24);
+    lfm_setPropAsString(obj.label10, "fontStyle", "bold");
+    obj.label10:setFontColor("black");
+    obj.label10:setHorzTextAlign("center");
+    obj.label10:setText("");
+    obj.label10:setHitTest(false);
+    obj.label10:setName("label10");
+    obj.label10:setTextTrimming("none");
+
+    obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout6:setParent(obj.layout2);
+    obj.layout6:setAlign("top");
+    obj.layout6:setHeight(150);
+    obj.layout6:setMargins({bottom=6});
+    obj.layout6:setHitTest(true);
+    obj.layout6:setName("layout6");
+
+    obj.rclArmas = GUI.fromHandle(_obj_newObject("recordList"));
+    obj.rclArmas:setParent(obj.layout6);
+    obj.rclArmas:setName("rclArmas");
+    obj.rclArmas:setField("listaArmas");
+    obj.rclArmas:setTemplateForm("frmArmaLinha");
+    obj.rclArmas:setAlign("client");
+    obj.rclArmas:setSelectable(true);
+
+    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout7:setParent(obj.layout2);
+    obj.layout7:setAlign("client");
+    obj.layout7:setHitTest(true);
+    obj.layout7:setName("layout7");
+
+    obj.boxArmaDetalhes = GUI.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.boxArmaDetalhes:setParent(obj.layout7);
+    obj.boxArmaDetalhes:setName("boxArmaDetalhes");
+    obj.boxArmaDetalhes:setVisible(false);
+    obj.boxArmaDetalhes:setAlign("client");
+
+    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle4:setParent(obj.boxArmaDetalhes);
+    obj.rectangle4:setAlign("client");
+    obj.rectangle4:setColor("LightGray");
+    obj.rectangle4:setXradius(6);
+    obj.rectangle4:setYradius(6);
+    obj.rectangle4:setPadding({left=6,right=6,top=6,bottom=6});
+    obj.rectangle4:setName("rectangle4");
+
+    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout8:setParent(obj.rectangle4);
+    obj.layout8:setAlign("top");
+    obj.layout8:setHeight(26);
+    obj.layout8:setMargins({bottom=6});
+    obj.layout8:setHitTest(true);
+    obj.layout8:setName("layout8");
+
+    obj.lblArmaTitulo = GUI.fromHandle(_obj_newObject("label"));
+    obj.lblArmaTitulo:setParent(obj.layout8);
+    obj.lblArmaTitulo:setName("lblArmaTitulo");
+    obj.lblArmaTitulo:setAlign("client");
+    lfm_setPropAsString(obj.lblArmaTitulo, "fontStyle", "bold");
+    obj.lblArmaTitulo:setFontColor("black");
+    obj.lblArmaTitulo:setHorzTextAlign("center");
+    obj.lblArmaTitulo:setText("Detalhes da Arma");
+    obj.lblArmaTitulo:setHitTest(false);
+    obj.lblArmaTitulo:setTextTrimming("none");
+
+    obj.button2 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button2:setParent(obj.layout8);
+    obj.button2:setAlign("right");
+    obj.button2:setWidth(90);
+    obj.button2:setFontColor("black");
+    obj.button2:setText("Fechar");
+    obj.button2:setName("button2");
+    obj.button2:setTextTrimming("none");
+
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.rectangle4);
+    obj.textEditor1:setAlign("client");
+    obj.textEditor1:setFontColor("black");
+    obj.textEditor1:setField("descricao");
+    obj.textEditor1:setName("textEditor1");
+
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.rectangle4);
+    obj.dataLink1:setFields({'arma'});
+    obj.dataLink1:setName("dataLink1");
+
+    obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout9:setParent(obj.colEsq);
+    obj.layout9:setAlign("client");
+    obj.layout9:setName("layout9");
+
+    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle5:setParent(obj.layout9);
+    obj.rectangle5:setAlign("client");
+    obj.rectangle5:setColor("Gray");
+    obj.rectangle5:setXradius(6);
+    obj.rectangle5:setYradius(6);
+    obj.rectangle5:setHitTest(false);
+    obj.rectangle5:setName("rectangle5");
+
+    obj.rcDefCloseArea = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rcDefCloseArea:setParent(obj.layout9);
+    obj.rcDefCloseArea:setName("rcDefCloseArea");
+    obj.rcDefCloseArea:setAlign("client");
+    obj.rcDefCloseArea:setColor("Transparent");
+    obj.rcDefCloseArea:setHitTest(true);
+
+    obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout10:setParent(obj.layout9);
+    obj.layout10:setAlign("client");
+    obj.layout10:setMargins({left=6,right=6,top=6,bottom=6});
+    obj.layout10:setHitTest(true);
+    obj.layout10:setName("layout10");
+
+    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout11:setParent(obj.layout10);
+    obj.layout11:setAlign("top");
+    obj.layout11:setHeight(28);
+    obj.layout11:setMargins({bottom=2});
+    obj.layout11:setHitTest(false);
+    obj.layout11:setName("layout11");
+
+    obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle6:setParent(obj.layout11);
+    obj.rectangle6:setAlign("client");
+    obj.rectangle6:setColor("Black");
+    obj.rectangle6:setXradius(4);
+    obj.rectangle6:setYradius(4);
+    obj.rectangle6:setHitTest(false);
+    obj.rectangle6:setName("rectangle6");
+
+    obj.label11 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label11:setParent(obj.layout11);
+    obj.label11:setAlign("client");
+    obj.label11:setFontSize(14);
+    lfm_setPropAsString(obj.label11, "fontStyle", "bold");
+    obj.label11:setFontColor("white");
+    obj.label11:setHorzTextAlign("center");
+    obj.label11:setText("ARMADURAS / ESCUDOS / OUTROS");
+    obj.label11:setHitTest(false);
+    obj.label11:setName("label11");
+    obj.label11:setTextTrimming("none");
+
+    obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout12:setParent(obj.layout10);
+    obj.layout12:setAlign("top");
+    obj.layout12:setHeight(24);
+    obj.layout12:setMargins({bottom=2});
+    obj.layout12:setHitTest(true);
+    obj.layout12:setName("layout12");
+
+    obj.button3 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button3:setParent(obj.layout12);
+    obj.button3:setAlign("left");
+    obj.button3:setWidth(150);
+    obj.button3:setFontColor("black");
+    obj.button3:setText("Adicionar Armadura");
+    obj.button3:setName("button3");
+    obj.button3:setTextTrimming("none");
+
+    obj.button4 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button4:setParent(obj.layout12);
+    obj.button4:setAlign("left");
+    obj.button4:setWidth(150);
+    obj.button4:setMargins({left=8});
+    obj.button4:setFontColor("black");
+    obj.button4:setText("Adicionar Escudo");
+    obj.button4:setName("button4");
+    obj.button4:setTextTrimming("none");
+
+    obj.button5 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button5:setParent(obj.layout12);
+    obj.button5:setAlign("left");
+    obj.button5:setWidth(150);
+    obj.button5:setFontColor("black");
+    obj.button5:setMargins({left=8});
+    obj.button5:setText("Adicionar Outros");
+    obj.button5:setName("button5");
+    obj.button5:setTextTrimming("none");
+
+    obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout13:setParent(obj.layout10);
+    obj.layout13:setAlign("top");
+    obj.layout13:setHeight(20);
+    obj.layout13:setMargins({bottom=2});
+    obj.layout13:setHitTest(false);
+    obj.layout13:setName("layout13");
+
+    obj.label12 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label12:setParent(obj.layout13);
+    obj.label12:setAlign("left");
+    obj.label12:setWidth(20);
+    lfm_setPropAsString(obj.label12, "fontStyle", "bold");
+    obj.label12:setFontColor("black");
+    obj.label12:setHorzTextAlign("center");
+    obj.label12:setText("Eq.");
+    obj.label12:setHitTest(true);
+    obj.label12:setHint("Equipado");
+    obj.label12:setName("label12");
+    obj.label12:setTextTrimming("none");
+
+    obj.label13 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label13:setParent(obj.layout13);
+    obj.label13:setAlign("left");
+    obj.label13:setWidth(80);
+    lfm_setPropAsString(obj.label13, "fontStyle", "bold");
+    obj.label13:setFontColor("black");
+    obj.label13:setText(" Categoria");
+    obj.label13:setHitTest(false);
+    obj.label13:setName("label13");
+    obj.label13:setTextTrimming("none");
+
+    obj.label14 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label14:setParent(obj.layout13);
+    obj.label14:setAlign("left");
+    obj.label14:setWidth(120);
+    lfm_setPropAsString(obj.label14, "fontStyle", "bold");
+    obj.label14:setFontColor("black");
+    obj.label14:setText("Nome");
+    obj.label14:setHitTest(false);
+    obj.label14:setName("label14");
+    obj.label14:setTextTrimming("none");
+
+    obj.label15 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label15:setParent(obj.layout13);
+    obj.label15:setAlign("left");
+    obj.label15:setWidth(55);
+    lfm_setPropAsString(obj.label15, "fontStyle", "bold");
+    obj.label15:setFontColor("black");
+    obj.label15:setHorzTextAlign("center");
+    obj.label15:setText("B. CA");
+    obj.label15:setHitTest(true);
+    obj.label15:setHint("Bônus na Classe de Armadura");
+    obj.label15:setName("label15");
+    obj.label15:setTextTrimming("none");
+
+    obj.label16 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label16:setParent(obj.layout13);
+    obj.label16:setAlign("left");
+    obj.label16:setWidth(70);
+    lfm_setPropAsString(obj.label16, "fontStyle", "bold");
+    obj.label16:setFontColor("black");
+    obj.label16:setHorzTextAlign("center");
+    obj.label16:setText("B. M. Dex");
+    obj.label16:setHitTest(true);
+    obj.label16:setHint("Bônus Máximo de Destreza");
+    obj.label16:setName("label16");
+    obj.label16:setTextTrimming("none");
+
+    obj.label17 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label17:setParent(obj.layout13);
+    obj.label17:setAlign("left");
+    obj.label17:setWidth(65);
+    lfm_setPropAsString(obj.label17, "fontStyle", "bold");
+    obj.label17:setFontColor("black");
+    obj.label17:setHorzTextAlign("center");
+    obj.label17:setText("Penal.");
+    obj.label17:setHitTest(true);
+    obj.label17:setHint("Penalidade de Armadura");
+    obj.label17:setName("label17");
+    obj.label17:setTextTrimming("none");
+
+    obj.label18 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label18:setParent(obj.layout13);
+    obj.label18:setAlign("left");
+    obj.label18:setWidth(40);
+    lfm_setPropAsString(obj.label18, "fontStyle", "bold");
+    obj.label18:setFontColor("black");
+    obj.label18:setHorzTextAlign("center");
+    obj.label18:setText("Peso");
+    obj.label18:setHitTest(true);
+    obj.label18:setHint("Peso em Kg");
+    obj.label18:setName("label18");
+    obj.label18:setTextTrimming("none");
+
+    obj.label19 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label19:setParent(obj.layout13);
+    obj.label19:setAlign("left");
+    obj.label19:setWidth(24);
+    lfm_setPropAsString(obj.label19, "fontStyle", "bold");
+    obj.label19:setFontColor("black");
+    obj.label19:setHorzTextAlign("center");
+    obj.label19:setText("");
+    obj.label19:setHitTest(false);
+    obj.label19:setName("label19");
+    obj.label19:setTextTrimming("none");
+
+    obj.layout14 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout14:setParent(obj.layout10);
+    obj.layout14:setAlign("top");
+    obj.layout14:setHeight(150);
+    obj.layout14:setMargins({bottom=6});
+    obj.layout14:setHitTest(true);
+    obj.layout14:setName("layout14");
+
+    obj.rclDefesas = GUI.fromHandle(_obj_newObject("recordList"));
+    obj.rclDefesas:setParent(obj.layout14);
+    obj.rclDefesas:setName("rclDefesas");
+    obj.rclDefesas:setField("listaDefesas");
+    obj.rclDefesas:setTemplateForm("frmDefesaLinha");
+    obj.rclDefesas:setAlign("client");
+    obj.rclDefesas:setSelectable(true);
+
+    obj.layout15 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout15:setParent(obj.layout10);
+    obj.layout15:setAlign("client");
+    obj.layout15:setHitTest(true);
+    obj.layout15:setName("layout15");
+
+    obj.boxDefDetalhes = GUI.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.boxDefDetalhes:setParent(obj.layout15);
+    obj.boxDefDetalhes:setName("boxDefDetalhes");
+    obj.boxDefDetalhes:setVisible(false);
+    obj.boxDefDetalhes:setAlign("client");
+
+    obj.rectangle7 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle7:setParent(obj.boxDefDetalhes);
+    obj.rectangle7:setAlign("client");
+    obj.rectangle7:setColor("LightGray");
+    obj.rectangle7:setXradius(6);
+    obj.rectangle7:setYradius(6);
+    obj.rectangle7:setPadding({left=6,right=6,top=6,bottom=6});
+    obj.rectangle7:setName("rectangle7");
+
+    obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout16:setParent(obj.rectangle7);
+    obj.layout16:setAlign("top");
+    obj.layout16:setHeight(26);
+    obj.layout16:setMargins({bottom=6});
+    obj.layout16:setHitTest(true);
+    obj.layout16:setName("layout16");
+
+    obj.lblDefTitulo = GUI.fromHandle(_obj_newObject("label"));
+    obj.lblDefTitulo:setParent(obj.layout16);
+    obj.lblDefTitulo:setName("lblDefTitulo");
+    obj.lblDefTitulo:setAlign("client");
+    lfm_setPropAsString(obj.lblDefTitulo, "fontStyle", "bold");
+    obj.lblDefTitulo:setFontColor("black");
+    obj.lblDefTitulo:setHorzTextAlign("center");
+    obj.lblDefTitulo:setText("Detalhes da Defesa");
+    obj.lblDefTitulo:setHitTest(false);
+    obj.lblDefTitulo:setTextTrimming("none");
+
+    obj.button6 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button6:setParent(obj.layout16);
+    obj.button6:setAlign("right");
+    obj.button6:setWidth(90);
+    obj.button6:setFontColor("black");
+    obj.button6:setText("Fechar");
+    obj.button6:setName("button6");
+    obj.button6:setTextTrimming("none");
+
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2:setParent(obj.rectangle7);
+    obj.textEditor2:setAlign("client");
+    obj.textEditor2:setFontColor("black");
+    obj.textEditor2:setField("descricao");
+    obj.textEditor2:setName("textEditor2");
+
+    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink2:setParent(obj.rectangle7);
+    obj.dataLink2:setFields({'defesa'});
+    obj.dataLink2:setName("dataLink2");
+
+    obj.colDir = GUI.fromHandle(_obj_newObject("layout"));
+    obj.colDir:setParent(obj.grid);
+    obj.colDir:setName("colDir");
+    obj.colDir:setAlign("client");
+    obj.colDir:setMargins({left=6});
+
+    obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout17:setParent(obj.colDir);
+    obj.layout17:setAlign("top");
+    obj.layout17:setHeight(560);
+    obj.layout17:setMargins({top=0,bottom=4});
+    obj.layout17:setName("layout17");
+
+    obj.rectangle8 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle8:setParent(obj.layout17);
+    obj.rectangle8:setAlign("client");
+    obj.rectangle8:setColor("Gray");
+    obj.rectangle8:setXradius(6);
+    obj.rectangle8:setYradius(6);
+    obj.rectangle8:setHitTest(false);
+    obj.rectangle8:setName("rectangle8");
+
+    obj.rcEquipCloseArea = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rcEquipCloseArea:setParent(obj.layout17);
+    obj.rcEquipCloseArea:setName("rcEquipCloseArea");
+    obj.rcEquipCloseArea:setAlign("client");
+    obj.rcEquipCloseArea:setColor("Transparent");
+    obj.rcEquipCloseArea:setHitTest(true);
+
+    obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout18:setParent(obj.layout17);
+    obj.layout18:setAlign("client");
+    obj.layout18:setMargins({left=6,right=6,top=6,bottom=6});
+    obj.layout18:setHitTest(true);
+    obj.layout18:setName("layout18");
+
+    obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout19:setParent(obj.layout18);
+    obj.layout19:setAlign("top");
+    obj.layout19:setHeight(28);
+    obj.layout19:setMargins({bottom=2});
+    obj.layout19:setHitTest(false);
+    obj.layout19:setName("layout19");
+
+    obj.rectangle9 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle9:setParent(obj.layout19);
+    obj.rectangle9:setAlign("client");
+    obj.rectangle9:setColor("Black");
+    obj.rectangle9:setXradius(4);
+    obj.rectangle9:setYradius(4);
+    obj.rectangle9:setHitTest(false);
+    obj.rectangle9:setName("rectangle9");
+
+    obj.label20 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label20:setParent(obj.layout19);
+    obj.label20:setAlign("client");
+    obj.label20:setFontSize(14);
+    lfm_setPropAsString(obj.label20, "fontStyle", "bold");
+    obj.label20:setFontColor("white");
+    obj.label20:setHorzTextAlign("center");
+    obj.label20:setText("EQUIPAMENTO");
+    obj.label20:setHitTest(false);
+    obj.label20:setName("label20");
+    obj.label20:setTextTrimming("none");
+
+    obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout20:setParent(obj.layout18);
+    obj.layout20:setAlign("top");
+    obj.layout20:setHeight(24);
+    obj.layout20:setMargins({bottom=4});
+    obj.layout20:setHitTest(true);
+    obj.layout20:setName("layout20");
+
+    obj.button7 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button7:setParent(obj.layout20);
+    obj.button7:setAlign("left");
+    obj.button7:setWidth(190);
+    obj.button7:setFontColor("black");
+    obj.button7:setText("Adicionar Item");
+    obj.button7:setName("button7");
+    obj.button7:setTextTrimming("none");
+
+    obj.label21 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label21:setParent(obj.layout20);
+    obj.label21:setAlign("left");
+    obj.label21:setWidth(140);
+    obj.label21:setMargins({left=8});
+    obj.label21:setHitTest(false);
+    obj.label21:setName("label21");
+    obj.label21:setTextTrimming("none");
+
+    obj.layout21 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout21:setParent(obj.layout18);
+    obj.layout21:setAlign("top");
+    obj.layout21:setHeight(380);
+    obj.layout21:setHitTest(true);
+    obj.layout21:setName("layout21");
+
+    obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout22:setParent(obj.layout21);
+    obj.layout22:setAlign("top");
+    obj.layout22:setHeight(20);
+    obj.layout22:setMargins({bottom=2});
+    obj.layout22:setHitTest(false);
+    obj.layout22:setName("layout22");
+
+    obj.label22 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label22:setParent(obj.layout22);
+    obj.label22:setAlign("left");
+    obj.label22:setWidth(80);
+    lfm_setPropAsString(obj.label22, "fontStyle", "bold");
+    obj.label22:setFontColor("black");
+    obj.label22:setText("Categoria");
+    obj.label22:setHitTest(false);
+    obj.label22:setName("label22");
+    obj.label22:setTextTrimming("none");
+
+    obj.label23 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label23:setParent(obj.layout22);
+    obj.label23:setAlign("left");
+    obj.label23:setWidth(176);
+    lfm_setPropAsString(obj.label23, "fontStyle", "bold");
+    obj.label23:setFontColor("black");
+    obj.label23:setText("Nome");
+    obj.label23:setHitTest(false);
+    obj.label23:setName("label23");
+    obj.label23:setTextTrimming("none");
+
+    obj.label24 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label24:setParent(obj.layout22);
+    obj.label24:setAlign("left");
+    obj.label24:setWidth(40);
+    lfm_setPropAsString(obj.label24, "fontStyle", "bold");
+    obj.label24:setFontColor("black");
+    obj.label24:setHorzTextAlign("center");
+    obj.label24:setText("Qtd.");
+    obj.label24:setHitTest(true);
+    obj.label24:setHint("Quantidade");
+    obj.label24:setName("label24");
+    obj.label24:setTextTrimming("none");
+
+    obj.label25 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label25:setParent(obj.layout22);
+    obj.label25:setAlign("left");
+    obj.label25:setWidth(70);
+    lfm_setPropAsString(obj.label25, "fontStyle", "bold");
+    obj.label25:setFontColor("black");
+    obj.label25:setHorzTextAlign("center");
+    obj.label25:setText("Valor");
+    obj.label25:setHitTest(false);
+    obj.label25:setName("label25");
+    obj.label25:setTextTrimming("none");
+
+    obj.label26 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label26:setParent(obj.layout22);
+    obj.label26:setAlign("left");
+    obj.label26:setWidth(70);
+    lfm_setPropAsString(obj.label26, "fontStyle", "bold");
+    obj.label26:setFontColor("black");
+    obj.label26:setHorzTextAlign("center");
+    obj.label26:setText("Peso");
+    obj.label26:setHitTest(true);
+    obj.label26:setHint("Peso unitário em Kg");
+    obj.label26:setName("label26");
+    obj.label26:setTextTrimming("none");
+
+    obj.label27 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label27:setParent(obj.layout22);
+    obj.label27:setAlign("left");
+    obj.label27:setWidth(26);
+    lfm_setPropAsString(obj.label27, "fontStyle", "bold");
+    obj.label27:setFontColor("black");
+    obj.label27:setHorzTextAlign("center");
+    obj.label27:setText("");
+    obj.label27:setHitTest(false);
+    obj.label27:setName("label27");
+    obj.label27:setTextTrimming("none");
+
+    obj.rclEquip = GUI.fromHandle(_obj_newObject("recordList"));
+    obj.rclEquip:setParent(obj.layout21);
+    obj.rclEquip:setName("rclEquip");
+    obj.rclEquip:setField("listaEquipamentos");
+    obj.rclEquip:setTemplateForm("frmEquipLinha");
+    obj.rclEquip:setAlign("client");
+    obj.rclEquip:setSelectable(true);
+
+    obj.layout23 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout23:setParent(obj.layout18);
+    obj.layout23:setAlign("client");
+    obj.layout23:setMargins({top=6});
+    obj.layout23:setHitTest(true);
+    obj.layout23:setName("layout23");
+
+    obj.boxEquipDetalhes = GUI.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.boxEquipDetalhes:setParent(obj.layout23);
+    obj.boxEquipDetalhes:setName("boxEquipDetalhes");
+    obj.boxEquipDetalhes:setVisible(false);
+    obj.boxEquipDetalhes:setAlign("client");
+
+    obj.rectangle10 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle10:setParent(obj.boxEquipDetalhes);
+    obj.rectangle10:setAlign("client");
+    obj.rectangle10:setColor("LightGray");
+    obj.rectangle10:setXradius(6);
+    obj.rectangle10:setYradius(6);
+    obj.rectangle10:setPadding({left=6,right=6,top=6,bottom=6});
+    obj.rectangle10:setName("rectangle10");
+
+    obj.layout24 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout24:setParent(obj.rectangle10);
+    obj.layout24:setAlign("top");
+    obj.layout24:setHeight(26);
+    obj.layout24:setMargins({bottom=6});
+    obj.layout24:setHitTest(true);
+    obj.layout24:setName("layout24");
+
+    obj.lblEquipTitulo = GUI.fromHandle(_obj_newObject("label"));
+    obj.lblEquipTitulo:setParent(obj.layout24);
+    obj.lblEquipTitulo:setName("lblEquipTitulo");
+    obj.lblEquipTitulo:setAlign("client");
+    lfm_setPropAsString(obj.lblEquipTitulo, "fontStyle", "bold");
+    obj.lblEquipTitulo:setFontColor("black");
+    obj.lblEquipTitulo:setHorzTextAlign("center");
+    obj.lblEquipTitulo:setText("Detalhes do Item");
+    obj.lblEquipTitulo:setHitTest(false);
+    obj.lblEquipTitulo:setTextTrimming("none");
+
+    obj.button8 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button8:setParent(obj.layout24);
+    obj.button8:setAlign("right");
+    obj.button8:setWidth(90);
+    obj.button8:setFontColor("black");
+    obj.button8:setText("Fechar");
+    obj.button8:setName("button8");
+    obj.button8:setTextTrimming("none");
+
+    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor3:setParent(obj.rectangle10);
+    obj.textEditor3:setAlign("client");
+    obj.textEditor3:setFontColor("black");
+    obj.textEditor3:setField("descricao");
+    obj.textEditor3:setName("textEditor3");
+
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.rectangle10);
+    obj.dataLink3:setFields({'nome'});
+    obj.dataLink3:setName("dataLink3");
+
+    obj.layout25 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout25:setParent(obj.colDir);
+    obj.layout25:setAlign("client");
+    obj.layout25:setMargins({left=6,right=6,top=0,bottom=6});
+    obj.layout25:setName("layout25");
+
+    obj.layout26 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout26:setParent(obj.layout25);
+    obj.layout26:setAlign("top");
+    obj.layout26:setHeight(120);
+    obj.layout26:setName("layout26");
+
+    obj.layout27 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout27:setParent(obj.layout26);
+    obj.layout27:setAlign("left");
+    obj.layout27:setWidth(240);
+    obj.layout27:setName("layout27");
+
+    obj.label28 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label28:setParent(obj.layout27);
+    obj.label28:setAlign("top");
+    obj.label28:setHeight(18);
+    lfm_setPropAsString(obj.label28, "fontStyle", "bold");
+    obj.label28:setFontColor("black");
+    obj.label28:setText("Carga (regra automática)");
+    obj.label28:setName("label28");
+    obj.label28:setTextTrimming("none");
+
+    obj.layout28 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout28:setParent(obj.layout27);
+    obj.layout28:setAlign("top");
+    obj.layout28:setHeight(24);
+    obj.layout28:setName("layout28");
+
+    obj.label29 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label29:setParent(obj.layout28);
+    obj.label29:setAlign("left");
+    obj.label29:setWidth(120);
+    obj.label29:setFontColor("black");
+    obj.label29:setText("Peso total:");
+    obj.label29:setName("label29");
+    obj.label29:setTextTrimming("none");
+
+    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit1:setParent(obj.layout28);
+    obj.edit1:setAlign("client");
+    obj.edit1:setField("pesototal");
+    obj.edit1:setFontColor("black");
+    obj.edit1:setType("float");
+    obj.edit1:setDecimalPlaces(3);
+    obj.edit1:setMin(0);
+    obj.edit1:setMax(999999);
+    obj.edit1:setHorzTextAlign("center");
+    obj.edit1:setCanFocus(false);
+    obj.edit1:setName("edit1");
+
+    obj.layout29 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout29:setParent(obj.layout27);
+    obj.layout29:setAlign("top");
+    obj.layout29:setHeight(24);
+    obj.layout29:setName("layout29");
+
+    obj.label30 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label30:setParent(obj.layout29);
+    obj.label30:setAlign("left");
+    obj.label30:setWidth(120);
+    obj.label30:setFontColor("black");
+    obj.label30:setText("Sem penalidade:");
+    obj.label30:setName("label30");
+    obj.label30:setTextTrimming("none");
+
+    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit2:setParent(obj.layout29);
+    obj.edit2:setAlign("client");
+    obj.edit2:setField("cargaSemPenal");
+    obj.edit2:setFontColor("black");
+    obj.edit2:setType("float");
+    obj.edit2:setMin(0);
+    obj.edit2:setMax(999999);
+    obj.edit2:setHorzTextAlign("center");
+    obj.edit2:setCanFocus(false);
+    obj.edit2:setName("edit2");
+
+    obj.layout30 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout30:setParent(obj.layout27);
+    obj.layout30:setAlign("top");
+    obj.layout30:setHeight(24);
+    obj.layout30:setName("layout30");
+
+    obj.label31 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label31:setParent(obj.layout30);
+    obj.label31:setAlign("left");
+    obj.label31:setWidth(120);
+    obj.label31:setFontColor("black");
+    obj.label31:setText("Máximo:");
+    obj.label31:setName("label31");
+    obj.label31:setTextTrimming("none");
+
+    obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit3:setParent(obj.layout30);
+    obj.edit3:setAlign("client");
+    obj.edit3:setField("cargaMaxima");
+    obj.edit3:setFontColor("black");
+    obj.edit3:setType("float");
+    obj.edit3:setMin(0);
+    obj.edit3:setMax(999999);
+    obj.edit3:setHorzTextAlign("center");
+    obj.edit3:setCanFocus(false);
+    obj.edit3:setName("edit3");
+
+    obj.layout31 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout31:setParent(obj.layout27);
+    obj.layout31:setAlign("top");
+    obj.layout31:setHeight(24);
+    obj.layout31:setName("layout31");
+
+    obj.label32 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label32:setParent(obj.layout31);
+    obj.label32:setAlign("left");
+    obj.label32:setWidth(120);
+    obj.label32:setFontColor("black");
+    obj.label32:setText("Status:");
+    obj.label32:setName("label32");
+    obj.label32:setTextTrimming("none");
+
+    obj.layout32 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout32:setParent(obj.layout31);
+    obj.layout32:setAlign("client");
+    obj.layout32:setName("layout32");
+
+    obj.edtCargaStatus = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtCargaStatus:setParent(obj.layout32);
+    obj.edtCargaStatus:setName("edtCargaStatus");
+    obj.edtCargaStatus:setAlign("client");
+    obj.edtCargaStatus:setField("cargaStatus");
+    obj.edtCargaStatus:setFontColor("black");
+    obj.edtCargaStatus:setCanFocus(false);
+    obj.edtCargaStatus:setHorzTextAlign("center");
+
+    obj.btnHintCargaStatus = GUI.fromHandle(_obj_newObject("button"));
+    obj.btnHintCargaStatus:setParent(obj.layout32);
+    obj.btnHintCargaStatus:setName("btnHintCargaStatus");
+    obj.btnHintCargaStatus:setAlign("client");
+    obj.btnHintCargaStatus:setOpacity(0.0);
+    obj.btnHintCargaStatus:setCanFocus(false);
+    obj.btnHintCargaStatus:setCursor("help");
+    obj.btnHintCargaStatus:setHint("");
+    obj.btnHintCargaStatus:setTextTrimming("none");
+
+    obj.layout33 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout33:setParent(obj.layout26);
+    obj.layout33:setAlign("client");
+    obj.layout33:setMargins({left=10});
+    obj.layout33:setName("layout33");
+
+    obj.label33 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label33:setParent(obj.layout33);
+    obj.label33:setAlign("top");
+    obj.label33:setHeight(18);
+    obj.label33:setFontColor("black");
+    lfm_setPropAsString(obj.label33, "fontStyle", "bold");
+    obj.label33:setText("Dinheiro");
+    obj.label33:setName("label33");
+    obj.label33:setTextTrimming("none");
+
+    obj.layout34 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout34:setParent(obj.layout33);
+    obj.layout34:setAlign("top");
+    obj.layout34:setHeight(24);
+    obj.layout34:setName("layout34");
+
+    obj.label34 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label34:setParent(obj.layout34);
+    obj.label34:setAlign("left");
+    obj.label34:setWidth(90);
+    obj.label34:setFontColor("black");
+    obj.label34:setText("T$ (Cobre)");
+    obj.label34:setName("label34");
+    obj.label34:setTextTrimming("none");
+
+    obj.edit4 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit4:setParent(obj.layout34);
+    obj.edit4:setAlign("client");
+    obj.edit4:setField("totalCobre");
+    obj.edit4:setFontColor("black");
+    obj.edit4:setType("number");
+    obj.edit4:setMin(0);
+    obj.edit4:setMax(999999);
+    obj.edit4:setHorzTextAlign("center");
+    obj.edit4:setName("edit4");
+
+    obj.layout35 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout35:setParent(obj.layout33);
+    obj.layout35:setAlign("top");
+    obj.layout35:setHeight(24);
+    obj.layout35:setName("layout35");
+
+    obj.label35 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label35:setParent(obj.layout35);
+    obj.label35:setAlign("left");
+    obj.label35:setWidth(90);
+    obj.label35:setFontColor("black");
+    obj.label35:setText("TP (Prata)");
+    obj.label35:setName("label35");
+    obj.label35:setTextTrimming("none");
+
+    obj.edit5 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit5:setParent(obj.layout35);
+    obj.edit5:setAlign("client");
+    obj.edit5:setField("totalPrata");
+    obj.edit5:setFontColor("black");
+    obj.edit5:setType("number");
+    obj.edit5:setMin(0);
+    obj.edit5:setMax(999999);
+    obj.edit5:setHorzTextAlign("center");
+    obj.edit5:setName("edit5");
+
+    obj.layout36 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout36:setParent(obj.layout33);
+    obj.layout36:setAlign("top");
+    obj.layout36:setHeight(24);
+    obj.layout36:setName("layout36");
+
+    obj.label36 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label36:setParent(obj.layout36);
+    obj.label36:setAlign("left");
+    obj.label36:setWidth(90);
+    obj.label36:setFontColor("black");
+    obj.label36:setText("TO (Ouro)");
+    obj.label36:setName("label36");
+    obj.label36:setTextTrimming("none");
+
+    obj.edit6 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit6:setParent(obj.layout36);
+    obj.edit6:setAlign("client");
+    obj.edit6:setField("totalOuro");
+    obj.edit6:setFontColor("black");
+    obj.edit6:setType("number");
+    obj.edit6:setMin(0);
+    obj.edit6:setMax(999999);
+    obj.edit6:setHorzTextAlign("center");
+    obj.edit6:setName("edit6");
+
+    obj.layout37 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout37:setParent(obj.layout33);
+    obj.layout37:setAlign("top");
+    obj.layout37:setHeight(24);
+    obj.layout37:setName("layout37");
+
+    obj.label37 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label37:setParent(obj.layout37);
+    obj.label37:setAlign("left");
+    obj.label37:setWidth(90);
+    obj.label37:setFontColor("black");
+    obj.label37:setText("TL (Platina)");
+    obj.label37:setName("label37");
+    obj.label37:setTextTrimming("none");
+
+    obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit7:setParent(obj.layout37);
+    obj.edit7:setAlign("client");
+    obj.edit7:setField("totalPlatina");
+    obj.edit7:setFontColor("black");
+    obj.edit7:setType("number");
+    obj.edit7:setMin(0);
+    obj.edit7:setMax(999999);
+    obj.edit7:setHorzTextAlign("center");
+    obj.edit7:setName("edit7");
+
+    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink4:setParent(obj);
+    obj.dataLink4:setFields({'__recalc03','forca','danoforca','pesototal','cargaSemPenal','cargaMaxima','listaArmas','listaDefesas','listaEquipamentos'});
+    obj.dataLink4:setName("dataLink4");
+
+
+-- === Responsividade (Firecast 8.13 / SDK 3.7) ===
+        -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
+        if TRPG_updateScale == nil then
+            require("system.lua");
+            function TRPG_updateScale(form, canvas)
+                if form == nil then return end
+                canvas = canvas or form.lytCanvas or form.page
+                if canvas == nil then return end
+                local baseW = tonumber(canvas.width) or 1010
+                local availW = tonumber(form.width) or baseW
+                availW = availW - 20
+                if availW <= 0 then return end
+
+                local scale = availW / baseW
+                if scale > 1 then scale = 1 end
+                if scale < 0.60 then scale = 0.60 end  -- evita ficar ilegível demais
+
+                canvas.scale = scale
+
+                local visW = baseW * scale
+                local left = (availW + 20 - visW) / 2
+                if left < 0 then left = 0 end
+                canvas.left = left
+            end
+        end
+        
+
+		
+
+			-- === util ===
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			local function trim(s)
+				s = tostring(s or "")
+				s = s:gsub("^%s+",""):gsub("%s+$","")
+				return s
+			end
+
+			local function rootOf(nodeOrSheet)
+				if nodeOrSheet == nil then return nil end
+				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				if ok and r ~= nil then return r end
+				return nodeOrSheet
+			end
+
+			function TRPG_touchCA(itemNode)
+				TRPG_recalcPenDefesas(itemNode)
+				local r = rootOf(itemNode)
+				if r == nil then return end
+				r.__recalcCA = (tonumber(r.__recalcCA) or 0) + 1
+			end
+
+			function TRPG_touch03(nodeOrSheet)
+				local r = rootOf(nodeOrSheet)
+				if r == nil then return end
+				r.__recalc03 = (tonumber(r.__recalc03) or 0) + 1
+			end
+
+			-- === armas / defesas ===
+			function TRPG_addArma(ctrl, sh)
+				local rl = ctrl and ctrl:findControlByName("rclArmas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						if n.descricao == nil then n.descricao = "" end
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+						if n.descricao == nil then n.descricao = "" end
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- =========================
+			-- ARMAS - detalhes
+			-- =========================
+			function TRPG_armaUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblArmaTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.arma)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes da Arma"
+				else
+					lbl.text = "Detalhes da Arma: " .. nome
+				end
+			end
+
+			function TRPG_armaClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclArmas") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblArmaTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes da Arma"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_armaOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclArmas") or nil
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_armaUpdateTitulo(ctrl)
+			end
+
+			-- =========================
+			-- DEFESAS - detalhes
+			-- =========================
+			function TRPG_defUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblDefTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.defesa)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes da Defesa"
+				else
+					lbl.text = "Detalhes da Defesa: " .. nome
+				end
+			end
+
+			function TRPG_defClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblDefTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes da Defesa"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_defOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_defUpdateTitulo(ctrl)
+			end
+
+			-- === equipamento ===
+			function TRPG_equipUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.nome)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes do Item"
+				else
+					lbl.text = "Detalhes do Item: " .. nome
+				end
+			end
+
+			function TRPG_equipClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes do Item"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_equipOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_equipUpdateTitulo(ctrl)
+			end
+
+			function TRPG_equipAddItem(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local n = rl:append()
+					if n ~= nil then
+						if n.categoria == nil then n.categoria = "" end
+						if n.qtd == nil then n.qtd = 1 end
+
+						n.nome = n.nome or ""
+						n.valor = n.valor or ""
+						n.peso = tonumber(n.peso) or 0
+						n.descricao = n.descricao or ""
+
+						rl.selectedNode = n
+						box.node = n
+						box.visible = true
+
+						TRPG_equipUpdateTitulo(ctrl)
+						TRPG_touch03(sh)
+					end
+			end
+
+
+			-- === carga (cálculo seguro e simples) ===
+			local function sumPeso(listNode)
+				local function Nlocal(v, d)
+					if type(v) == "string" then
+						v = v:gsub(",", ".")
+						v = v:gsub("^%s+", ""):gsub("%s+$", "")
+						if v == "" then return d or 0 end
+					end
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+
+				if listNode == nil then return 0 end
+
+				local ok, children = pcall(function()
+					return ndb.getChildNodes(listNode)
+				end)
+				if not ok or children == nil then return 0 end
+
+				local total = 0
+				for _, item in ipairs(children) do
+					local pesoUnit = Nlocal(item.peso, 0)
+					local qtd = tonumber(item.qtd) or 1
+					if qtd < 1 then qtd = 1 end
+					total = total + (pesoUnit * qtd)
+				end
+				return total
+			end
+
+			function TRPG_calcCarga03(ctrl, sh)
+				local sheet = rootOf(sh)
+				if sheet == nil then return end
+
+				local total =
+					sumPeso(sheet.listaArmas) +
+					sumPeso(sheet.listaDefesas) +
+					sumPeso(sheet.listaEquipamentos)
+
+				total = math.floor(total * 1000 + 0.5) / 1000
+
+				if N(sheet.pesototal, -1) ~= total then
+					sheet.pesototal = total
+				end
+
+				local forBase = N(sheet.forca, 10)
+				local danoFor = N(sheet.danoforca, 0)
+				local forEff  = forBase - danoFor
+				if forEff < 0 then forEff = 0 end
+
+				local semPenal = forEff * 3
+				local maximo   = forEff * 10
+
+				if N(sheet.cargaSemPenal, -1) ~= semPenal then
+					sheet.cargaSemPenal = semPenal
+				end
+
+				if N(sheet.cargaMaxima, -1) ~= maximo then
+					sheet.cargaMaxima = maximo
+				end
+
+				local status = "OK"
+				local penal = 0
+				local deslocPenal = 0
+
+				if total > semPenal then
+					status = "Pesada"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if total > maximo then
+					status = "Excedida"  -- padronizado com o hint
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if tostring(sheet.cargaStatus or "") ~= status then
+					sheet.cargaStatus = status
+				end
+
+				TRPG_updateHintCarga03(ctrl, sheet)
+
+				if N(sheet.cargaPenalidade, 999) ~= penal then
+					sheet.cargaPenalidade = penal
+				end
+
+				sheet.cargaAfetada = (penal ~= 0)
+
+				local penCargaPos = 0
+				if penal < 0 then penCargaPos = -penal end
+
+				if (tonumber(sheet.pencarga) or 0) ~= penCargaPos then
+					sheet.pencarga = penCargaPos
+				end
+			end
+
+			function TRPG_updateHintCarga03(ctrl, sh)
+				local root = rootOf(sh)
+				if root == nil then return end
+
+				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				local edt = ctrl and ctrl:findControlByName("edtCargaStatus") or nil
+				if btn == nil then return end
+
+				local st = tostring(root.cargaStatus or "OK")
+
+				-- normaliza (pra não quebrar se variar Excedido/Excedida)
+				local stUpper = st:upper()
+
+				-- ===== CORES + NEGRITO =====
+				if edt ~= nil then
+					if stUpper == "OK" then
+					edt.fontColor = "Green"
+					edt.fontStyle = ""        -- normal
+					elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					edt.fontColor = "Goldenrod" -- amarelo mais legível que "Yellow"
+					edt.fontStyle = "bold"
+					elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					edt.fontColor = "Red"
+					edt.fontStyle = "bold"
+					else
+					edt.fontColor = "Black"
+					edt.fontStyle = ""
+					end
+				end
+
+				-- ===== HINT =====
+				if stUpper == "OK" then
+					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
+				elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
+				elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
+				else
+					btn.hint = "Status de carga: " .. st
+				end
+			end
+
+			-- ===== Penalidades automáticas vindas de listaDefesas =====
+			local function sumPenalidadeDefesas(root)
+				if root == nil then return 0,0,0, 0,0,0 end
+
+				local penArm, penEsc, penOut = 0, 0, 0
+				local bcaArm, bcaEsc, bcaOut = 0, 0, 0
+
+				local lista = root.listaDefesas
+				if lista == nil then return 0,0,0, 0,0,0 end
+
+				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				if not ok or children == nil then return 0,0,0, 0,0,0 end
+
+				for _, item in ipairs(children) do
+					local equipado = (item.equipado == nil) or (item.equipado == true) -- nil = compat/antigos => considera equipado
+					if equipado then
+						local cat = tostring(item.categoria or ""):lower()
+						local pen = tonumber(item.penalidade) or 0
+						local bca = tonumber(item.bonusCA) or 0
+
+						if cat == "armadura" then
+							penArm = penArm + pen
+							bcaArm = bcaArm + bca
+						elseif cat == "escudo" or cat == "escudos" then
+							penEsc = penEsc + pen
+							bcaEsc = bcaEsc + bca
+						elseif cat == "outros" or cat == "outro" then
+							penOut = penOut + pen
+							bcaOut = bcaOut + bca
+						end
+					end
+				end
+
+				return penArm, penEsc, penOut, bcaArm, bcaEsc, bcaOut
+			end
+
+			function TRPG_recalcPenDefesas(sheetAny)
+				local root = rootOf(sheetAny)
+				if root == nil then return end
+
+				local penArm, penEsc, penOut, bcaArm, bcaEsc, bcaOut = sumPenalidadeDefesas(root)
+
+				if (tonumber(root.penarmadura) or 0) ~= penArm then root.penarmadura = penArm end
+				if (tonumber(root.penescudo) or 0) ~= penEsc then root.penescudo = penEsc end
+				if (tonumber(root.penoutros) or 0) ~= penOut then root.penoutros = penOut end
+
+				if (tonumber(root.bcaArmadura) or 0) ~= bcaArm then root.bcaArmadura = bcaArm end
+				if (tonumber(root.bcaEscudo) or 0) ~= bcaEsc then root.bcaEscudo = bcaEsc end
+				if (tonumber(root.bcaOutros) or 0) ~= bcaOut then root.bcaOutros = bcaOut end
+			end
+
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+						n.equipado = true 
+					end
+					TRPG_touch03(sh)
+					TRPG_touchCA(sh)
+				end
+			end
+
+
+		
+	
+
+
+
+    obj._e_event0 = obj:addEventListener("onNodeReady",
+        function ()
+            TRPG_updateScale(self, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+        end);
+
+    obj._e_event1 = obj:addEventListener("onResize",
+        function ()
+            TRPG_updateScale(self, self.lytCanvas03);
+        end);
+
+    obj._e_event2 = obj.rcArmaCloseArea:addEventListener("onClick",
+        function (event)
+            TRPG_armaClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event3 = obj.button1:addEventListener("onClick",
+        function (event)
+            TRPG_addArma(self, sheet or self.sheet);
+        end);
+
+    obj._e_event4 = obj.rclArmas:addEventListener("onSelect",
+        function ()
+            TRPG_armaOnSelect(self, sheet or self.sheet);
+        end);
+
+    obj._e_event5 = obj.button2:addEventListener("onClick",
+        function (event)
+            TRPG_armaClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
+        function (field, oldValue, newValue)
+            TRPG_armaUpdateTitulo(self);
+        end);
+
+    obj._e_event7 = obj.rcDefCloseArea:addEventListener("onClick",
+        function (event)
+            TRPG_defClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event8 = obj.button3:addEventListener("onClick",
+        function (event)
+            TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
+        end);
+
+    obj._e_event9 = obj.button4:addEventListener("onClick",
+        function (event)
+            TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
+        end);
+
+    obj._e_event10 = obj.button5:addEventListener("onClick",
+        function (event)
+            TRPG_addDefesa(self, sheet or self.sheet, "Outros");
+        end);
+
+    obj._e_event11 = obj.rclDefesas:addEventListener("onSelect",
+        function ()
+            TRPG_defOnSelect(self, sheet or self.sheet);
+        end);
+
+    obj._e_event12 = obj.button6:addEventListener("onClick",
+        function (event)
+            TRPG_defClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event13 = obj.dataLink2:addEventListener("onChange",
+        function (field, oldValue, newValue)
+            TRPG_defUpdateTitulo(self);
+        end);
+
+    obj._e_event14 = obj.rcEquipCloseArea:addEventListener("onClick",
+        function (event)
+            TRPG_equipClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event15 = obj.button7:addEventListener("onClick",
+        function (event)
+            TRPG_equipAddItem(self, sheet or self.sheet);
+        end);
+
+    obj._e_event16 = obj.rclEquip:addEventListener("onSelect",
+        function ()
+            TRPG_equipOnSelect(self, sheet or self.sheet);
+        end);
+
+    obj._e_event17 = obj.button8:addEventListener("onClick",
+        function (event)
+            TRPG_equipClose(self, sheet or self.sheet);
+        end);
+
+    obj._e_event18 = obj.dataLink3:addEventListener("onChange",
+        function (field, oldValue, newValue)
+            TRPG_equipUpdateTitulo(self);
+        end);
+
+    obj._e_event19 = obj.dataLink4:addEventListener("onChange",
+        function (field, oldValue, newValue)
+            TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
+        end);
+
+    function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event19);
+        __o_rrpgObjs.removeEventListenerById(self._e_event18);
+        __o_rrpgObjs.removeEventListenerById(self._e_event17);
+        __o_rrpgObjs.removeEventListenerById(self._e_event16);
+        __o_rrpgObjs.removeEventListenerById(self._e_event15);
+        __o_rrpgObjs.removeEventListenerById(self._e_event14);
+        __o_rrpgObjs.removeEventListenerById(self._e_event13);
+        __o_rrpgObjs.removeEventListenerById(self._e_event12);
+        __o_rrpgObjs.removeEventListenerById(self._e_event11);
+        __o_rrpgObjs.removeEventListenerById(self._e_event10);
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
+        __o_rrpgObjs.removeEventListenerById(self._e_event7);
+        __o_rrpgObjs.removeEventListenerById(self._e_event6);
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
+        __o_rrpgObjs.removeEventListenerById(self._e_event4);
+        __o_rrpgObjs.removeEventListenerById(self._e_event3);
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
+        __o_rrpgObjs.removeEventListenerById(self._e_event1);
+        __o_rrpgObjs.removeEventListenerById(self._e_event0);
+    end;
+
+    obj._oldLFMDestroy = obj.destroy;
+
+    function obj:destroy() 
+        self:_releaseEvents();
+
+        if (self.handle ~= 0) and (self.setNodeDatabase ~= nil) then
+          self:setNodeDatabase(nil);
+        end;
+
+        if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
+        if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
+        if self.grid ~= nil then self.grid:destroy(); self.grid = nil; end;
+        if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
+        if self.layout31 ~= nil then self.layout31:destroy(); self.layout31 = nil; end;
+        if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
+        if self.lblDefTitulo ~= nil then self.lblDefTitulo:destroy(); self.lblDefTitulo = nil; end;
+        if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
+        if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
+        if self.rclArmas ~= nil then self.rclArmas:destroy(); self.rclArmas = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
+        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
+        if self.boxArmaDetalhes ~= nil then self.boxArmaDetalhes:destroy(); self.boxArmaDetalhes = nil; end;
+        if self.rcDefCloseArea ~= nil then self.rcDefCloseArea:destroy(); self.rcDefCloseArea = nil; end;
+        if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
+        if self.rclEquip ~= nil then self.rclEquip:destroy(); self.rclEquip = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
+        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
+        if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
+        if self.rclDefesas ~= nil then self.rclDefesas:destroy(); self.rclDefesas = nil; end;
+        if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
+        if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
+        if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
+        if self.button4 ~= nil then self.button4:destroy(); self.button4 = nil; end;
+        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
+        if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
+        if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
+        if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
+        if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
+        if self.button8 ~= nil then self.button8:destroy(); self.button8 = nil; end;
+        if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
+        if self.boxDefDetalhes ~= nil then self.boxDefDetalhes:destroy(); self.boxDefDetalhes = nil; end;
+        if self.rcArmaCloseArea ~= nil then self.rcArmaCloseArea:destroy(); self.rcArmaCloseArea = nil; end;
+        if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
+        if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
+        if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
+        if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
+        if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
+        if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
+        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
+        if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
+        if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
+        if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
+        if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
+        if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
+        if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
+        if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
+        if self.lytCanvas03 ~= nil then self.lytCanvas03:destroy(); self.lytCanvas03 = nil; end;
+        if self.colDir ~= nil then self.colDir:destroy(); self.colDir = nil; end;
+        if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
+        if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.lblEquipTitulo ~= nil then self.lblEquipTitulo:destroy(); self.lblEquipTitulo = nil; end;
+        if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
+        if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
+        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
+        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
+        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
+        if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
+        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
+        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
+        if self.btnHintCargaStatus ~= nil then self.btnHintCargaStatus:destroy(); self.btnHintCargaStatus = nil; end;
+        if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
+        if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
+        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
+        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
+        if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
+        if self.label28 ~= nil then self.label28:destroy(); self.label28 = nil; end;
+        if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
+        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.colEsq ~= nil then self.colEsq:destroy(); self.colEsq = nil; end;
+        if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
+        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
+        if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
+        if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
+        if self.edtCargaStatus ~= nil then self.edtCargaStatus:destroy(); self.edtCargaStatus = nil; end;
+        if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
+        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
+        if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
+        if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
+        if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
+        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
+        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
+        if self.boxEquipDetalhes ~= nil then self.boxEquipDetalhes:destroy(); self.boxEquipDetalhes = nil; end;
+        if self.layout36 ~= nil then self.layout36:destroy(); self.layout36 = nil; end;
+        if self.rcEquipCloseArea ~= nil then self.rcEquipCloseArea:destroy(); self.rcEquipCloseArea = nil; end;
+        if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
+        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
+        if self.content ~= nil then self.content:destroy(); self.content = nil; end;
+        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.layout21 ~= nil then self.layout21:destroy(); self.layout21 = nil; end;
+        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.lblArmaTitulo ~= nil then self.lblArmaTitulo:destroy(); self.lblArmaTitulo = nil; end;
+        if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
+        if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
+        if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.label32 ~= nil then self.label32:destroy(); self.label32 = nil; end;
+        if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
+        if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
+        if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
+        self:_oldLFMDestroy();
+    end;
+
+    obj:endUpdate();
+
+    return obj;
+end;
+
+function newTormenta03()
+    local retObj = nil;
+    __o_rrpgObjs.beginObjectsLoading();
+
+    __o_Utils.tryFinally(
+      function()
+        retObj = constructNew_Tormenta03();
+      end,
+      function()
+        __o_rrpgObjs.endObjectsLoading();
+      end);
+
+    assert(retObj ~= nil);
+    return retObj;
+end;
+
+local _Tormenta03 = {
+    newEditor = newTormenta03, 
+    new = newTormenta03, 
+    name = "Tormenta03", 
+    dataType = "", 
+    formType = "undefined", 
+    formComponentName = "form", 
+    cacheMode = "none", 
+    title = "", 
+    description=""};
+
+Tormenta03 = _Tormenta03;
+Firecast.registrarForm(_Tormenta03);
+
+return _Tormenta03;

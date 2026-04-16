@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta01" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="TRPG_updateScale(self, self.lytCanvas01); desCalculos(); recalcAll();" onResize="TRPG_updateScale(self, self.lytCanvas01);">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <scrollBox align="client">
+        <template name="Principal">
+            <rectangle left="5" top="0" color="Black" width="155" height="25" xradius="2" yradius="2" />
+            <label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
+            <edit left="175" top="0" width="30" height="25" field="$(field)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            <edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false" />
+            <edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+        </template>
+        <layout name="lytCanvas01" align="none" left="0" top="0" width="1010" height="700" margins="{left=0,top=0,right=0,bottom=0}">
+            <rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10" />
+            <image left="530" top="30" width="400" height="147" src="img/LogoTormenta.png" />
+            <layout left="10" top="10" width="305" height="55">
+                <rectangle left="7" top="1" color="Black" width="170" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Nome do Personagem" />
+                <edit field="nome" left="1" top="23" width="300" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="10" top="67" width="155" height="55">
+                <rectangle left="7" top="1" color="Black" width="46" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Raça" />
+                <edit field="raca" left="1" top="23" width="150" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="10" top="124" width="105" height="55">
+                <rectangle left="7" top="1" color="Black" width="51" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Idade" />
+                <edit field="idade" left="1" top="23" width="100" height="30" fontSize="15.0" fontStyle="bold" type="number" fontColor="black" />
+            </layout>
+            <layout left="165" top="67" width="150" height="55">
+                <rectangle left="7" top="1" color="Black" width="84" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Tendência" />
+                <edit field="tendencia" left="1" top="23" width="145" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="115" top="124" width="200" height="55">
+                <rectangle left="7" top="1" color="Black" width="45" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="45" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Sexo" />
+                <edit field="sexo" left="1" top="23" width="195" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="315" top="10" width="129" height="55">
+                <rectangle left="7" top="1" color="Black" width="76" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Tamanho" />
+                <edit field="tamanho" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="315" top="67" width="129" height="55">
+                <rectangle left="7" top="1" color="Black" width="112" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Deslocamento" />
+                <edit field="deslocamento" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="315" top="124" width="129" height="55">
+                <rectangle left="7" top="1" color="Black" width="84" height="23" xradius="2" yradius="2" />
+                <label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="white" text="Divindade" />
+                <edit field="divindade" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="1" top="220" width="290" height="200">
+                <rectangle left="57" top="3" color="Black" width="60" height="15" xradius="2" yradius="2" />
+                <label left="59" top="5" width="65" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Habilidades" />
+                <rectangle left="181" top="3" color="Black" width="28" height="15" xradius="2" yradius="2" />
+                <label left="183" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Valor" />
+                <rectangle left="216" top="3" color="Black" width="28" height="15" xradius="2" yradius="2" />
+                <label left="219" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod" />
+                <rectangle left="251" top="3" color="Black" width="28" height="15" xradius="2" yradius="2" />
+                <label left="253" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Dano" />
+                <layout left="5" top="15" width="290" height="25">
+                    <Principal field="forca" field2="modforca" field3="danoforca" texto="Força(FOR)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Força">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modforca, "Força (FOR)");
+					</event>
+                    </button>
+                </layout>
+                <layout left="5" top="45" width="290" height="25">
+                    <Principal field="destreza" field2="moddestreza" field3="danodestreza" texto="Destreza(DES)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Destreza">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).moddestreza, "Destreza (DES)");
+					</event>
+                    </button>
+                </layout>
+                <layout left="5" top="75" width="290" height="25">
+                    <Principal field="constituicao" field2="modconstituicao" field3="danoconstituicao" texto="Constituição(CON)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Constituição">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modconstituicao, "Constituição (CON)");
+					</event>
+                    </button>
+                </layout>
+                <layout left="5" top="105" width="290" height="25">
+                    <Principal field="inteligencia" field2="modinteligencia" field3="danointeligencia" texto="Inteligência(INT)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Inteligência">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modinteligencia, "Inteligência (INT)");
+					</event>
+                    </button>
+                </layout>
+                <layout left="5" top="135" width="290" height="25">
+                    <Principal field="sabedoria" field2="modsabedoria" field3="danosabedoria" texto="Sabedoria(SAB)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Sabedoria">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modsabedoria, "Sabedoria (SAB)");
+					</event>
+                    </button>
+                </layout>
+                <layout left="5" top="165" width="290" height="25">
+                    <Principal field="carisma" field2="modcarisma" field3="danocarisma" texto="Carisma(CAR)" />
+                    <button left="8" top="4" width="155" height="20" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Carisma">
+                        <event name="onClick">
+						TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modcarisma, "Carisma (CAR)");
+					</event>
+                    </button>
+                </layout>
+            </layout>
+            <layout left="283" top="220" width="760" height="41">
+                <button left="1" top="18" width="20" height="20" text="A" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Adicionar atributo extra na CA (soma junto do Mod H)">
+                    <event name="onClick">
+					TRPG_chooseCaExtra(sheet or self.sheet);
+				</event>
+                </button>
+                <layout left="22" top="15" width="50" height="25">
+                    <rectangle left="0" top="0" width="50" height="25" color="Black" xradius="2" yradius="2" hitTest="false" />
+                    <layout align="top" height="14">
+                        <label align="client" text="CA" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" hitTest="true" hint="Classe de Armadura" />
+                    </layout>
+                    <layout align="client">
+                        <label align="client" text="Armadura" fontSize="10" fontColor="white" horzTextAlign="center" vertTextAlign="center" hitTest="false" />
+                    </layout>
+                </layout>
+                <layout left="73" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Total" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="73" top="15" width="60" height="25" name="totalca" field="totalca" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="135" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="=" />
+                <layout left="156" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" field="caBaseLabel" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <button left="156" top="3" width="60" height="37" opacity="0.0" canFocus="false" cursor="handPoint" hint="Alternar base da CA: 10 + 1/2 nível  ↔  10 + nível completo">
+                    <event name="onClick">
+					TRPG_toggleCaBase(sheet or self.sheet);
+				</event>
+                </button>
+                <edit left="156" top="15" width="60" height="25" name="ca1" field="ca1" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="218" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="218" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="240" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Mod Habil" hitTest="true" hint="Modificador de Habilidade (DES)" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="240" top="15" width="60" height="25" name="ca2" field="ca2" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="302" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="302" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="324" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Mod Extra" hitTest="true" hint="Modificador de Habilidade Extra" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="324" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="386" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="386" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="408" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Armadura" hitTest="true" hint="Bônus de Armadura" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="408" top="15" width="60" height="25" name="ca4" field="ca4" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="470" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="470" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="492" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Escudo" hitTest="true" hint="Bônus de Escudo" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="492" top="15" width="60" height="25" name="ca5" field="ca5" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="554" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="554" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="576" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Tamanho" hitTest="true" hint="Modificador de Tamanho" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="576" top="15" width="60" height="25" name="ca6" field="ca6" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <rectangle left="638" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="638" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" text="+" />
+                <layout left="660" top="1" width="60" height="15">
+                    <rectangle align="client" color="Black" xradius="2" yradius="2" />
+                    <label align="client" text="Outros" fontSize="10" fontStyle="bold" fontColor="white" horzTextAlign="center" vertTextAlign="center" />
+                </layout>
+                <edit left="660" top="15" width="60" height="25" name="ca7" field="ca7" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+            </layout>
+            <layout left="308" top="270" width="448" height="41">
+                <button left="0" top="18" width="20" height="20" text="H" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Escolher habilidade base">
+                    <event name="onClick">
+					TRPG_chooseHab(sheet or self.sheet, "hab_fort", "CON");
+				</event>
+                </button>
+                <rectangle left="22" top="15" color="Black" width="50" height="25" xradius="2" yradius="2" />
+                <label left="29" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="FORT" />
+                <button left="22" top="15" width="50" height="25" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Fortitude">
+                    <event name="onClick">
+					TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfort, "Teste de Fortitude");
+				</event>
+                </button>
+                <label left="27" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Fortitude" />
+                <rectangle left="94" top="3" color="Black" width="28" height="15" xradius="2" yradius="2" />
+                <label left="96" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total" />
+                <edit left="78" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false" />
+                <rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="=" />
+                <rectangle left="200" top="3" color="Black" width="37" height="15" xradius="2" yradius="2" />
+                <label left="202" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="1/2 Nv" />
+                <edit left="188" top="15" width="60" height="25" name="fort1" field="fort1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <rectangle left="284" top="3" color="Black" width="48" height="15" xradius="2" yradius="2" />
+                <label left="292" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H" />
+                <edit left="278" top="15" width="60" height="25" name="fort2" field="fort2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <rectangle left="380" top="3" color="Black" width="38" height="15" xradius="2" yradius="2" />
+                <label left="383" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros" />
+                <edit left="369" top="15" width="60" height="25" field="fort3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <layout left="308" top="320" width="448" height="41">
+                <button left="0" top="18" width="20" height="20" text="H" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Escolher habilidade base">
+                    <event name="onClick">
+					TRPG_chooseHab(sheet or self.sheet, "hab_ref", "DES");
+				</event>
+                </button>
+                <rectangle left="22" top="15" color="Black" width="50" height="25" xradius="2" yradius="2" />
+                <label left="35" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="REF" />
+                <button left="22" top="15" width="50" height="25" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Reflexos">
+                    <event name="onClick">
+					TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalref, "Teste de Reflexos");
+				</event>
+                </button>
+                <label left="31" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Reflexo" />
+                <edit left="78" top="15" width="60" height="25" name="totalref" field="totalref" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="=" />
+                <edit left="189" top="15" width="60" height="25" name="ref1" field="ref1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <edit left="278" top="15" width="60" height="25" name="ref2" field="ref2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <edit left="369" top="15" width="60" height="25" field="ref3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <layout left="308" top="370" width="448" height="41">
+                <button left="0" top="18" width="20" height="20" text="H" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Escolher habilidade base">
+                    <event name="onClick">
+					TRPG_chooseHab(sheet or self.sheet, "hab_von", "SAB");
+				</event>
+                </button>
+                <rectangle left="22" top="15" color="Black" width="50" height="25" xradius="2" yradius="2" />
+                <label left="32" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="white" text="VON" />
+                <button left="22" top="15" width="50" height="25" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Vontade">
+                    <event name="onClick">
+					TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalvon, "Teste de Vontade");
+				</event>
+                </button>
+                <label left="29" top="20" width="50" height="25" fontSize="10" fontColor="white" text="Vontade" />
+                <edit left="78" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="=" />
+                <edit left="188" top="15" width="60" height="25" name="von1" field="von1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <edit left="278" top="15" width="60" height="25" name="von2" field="von2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                <label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                <edit left="369" top="15" width="60" height="25" field="von3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <layout left="750" top="274" width="263" height="37">
+                <rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2" />
+                <label left="11" top="13" width="155" height="20" text="Pontos de Vida" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white" />
+                <edit left="130" top="11" width="123" height="25" field="pv" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <layout left="750" top="324" width="263" height="37">
+                <rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2" />
+                <label left="3" top="13" width="155" height="20" text="Pontos de Energia" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white" />
+                <edit left="130" top="11" width="123" height="25" field="pe" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <layout left="750" top="374" width="263" height="37">
+                <rectangle left="0" top="11" color="Black" width="125" height="25" xradius="2" yradius="2" />
+                <label left="23" top="13" width="155" height="20" text="Usos Diários" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="white" />
+                <edit left="130" top="11" width="123" height="25" field="ud" type="number" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+            </layout>
+            <rectangle left="760" top="413" color="Black" width="150" height="15" xradius="2" yradius="2" />
+            <label left="774" top="414" width="150" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Ilustração do Personagem" />
+            <rectangle left="668" top="424" color="#333333" width="335" height="273" xradius="2" yradius="2" />
+            <rectangle left="673" top="429" color="#999999" width="325" height="263" xradius="2" yradius="2" />
+            <image left="673" top="429" field="imagempersona" editable="true" style="proportional" src="" width="325" height="263" />
+            <layout left="6" top="421" width="688" height="41">
+                <rectangle left="5" top="15" color="Black" width="155" height="25" xradius="2" yradius="2" />
+                <label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="white" text="Corpo-a-corpo" />
+                <button left="27" top="15" width="105" height="25" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + Corpo-a-corpo">
+                    <event name="onClick">
+					TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcac, "Ataque Corpo-a-corpo");
+				</event>
+                </button>
+                <layout left="118" top="0" width="688" height="41">
+                    <button left="53" top="18" width="20" height="20" text="H" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Escolher habilidade base (corpo a corpo)">
+                        <event name="onClick">
+						TRPG_chooseHab(sheet or self.sheet, "hab_cac", "FOR");
+					</event>
+                    </button>
+                    <rectangle left="94" top="3" color="Black" width="28" height="15" xradius="2" yradius="2" />
+                    <label left="96" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Total" />
+                    <edit left="78" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false" />
+                    <rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="=" />
+                    <rectangle left="206" top="3" color="Black" width="25" height="15" xradius="2" yradius="2" />
+                    <label left="208" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="BBA" />
+                    <edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                    <rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <rectangle left="284" top="3" color="Black" width="48" height="15" xradius="2" yradius="2" />
+                    <label left="292" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Mod H" />
+                    <edit left="278" top="15" width="60" height="25" name="cac2" field="cac2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" hitTest="false" />
+                    <rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <rectangle left="380" top="3" color="Black" width="38" height="15" xradius="2" yradius="2" />
+                    <label left="383" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros" />
+                    <edit left="369" top="15" width="60" height="25" field="cac3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                    <rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <rectangle left="471" top="3" color="Black" width="38" height="15" xradius="2" yradius="2" />
+                    <label left="474" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Outros" />
+                    <edit left="460" top="15" width="60" height="25" field="cac4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                </layout>
+            </layout>
+            <layout left="6" top="461" width="688" height="41">
+                <rectangle left="5" top="15" color="Black" width="155" height="25" xradius="2" yradius="2" />
+                <label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="white" text="À Distância" />
+                <button left="27" top="15" width="105" height="25" opacity="0.0" canFocus="false" cursor="handPoint" hint="Rolar 1d20 + À Distância">
+                    <event name="onClick">
+					TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldis, "Ataque À Distância");
+				</event>
+                </button>
+                <layout left="118" top="0" width="688" height="41">
+                    <button left="53" top="18" width="20" height="20" text="H" fontSize="12" fontColor="black" opacity="1.0" canFocus="false" cursor="handPoint" hint="Escolher habilidade base (à distância)">
+                        <event name="onClick">
+						TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
+					</event>
+                    </button>
+                    <edit left="78" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                    <rectangle left="153" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="156" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="=" />
+                    <edit left="188" top="15" width="60" height="25" field="bba" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                    <rectangle left="253" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="256" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <edit left="278" top="15" width="60" height="25" name="dis2" field="dis2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                    <rectangle left="343" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="346" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <edit left="369" top="15" width="60" height="25" field="dis3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                    <rectangle left="434" top="20" color="Black" width="20" height="15" xradius="2" yradius="2" />
+                    <label left="437" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="white" text="+" />
+                    <edit left="460" top="15" width="60" height="25" field="dis4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                </layout>
+            </layout>
+            <layout left="8" top="516" width="237" height="160">
+                <rectangle top="6" width="235" height="153" color="Black" xradius="2" yradius="2" />
+                <rectangle left="60" top="1" color="Black" width="38" height="15" xradius="2" yradius="2" />
+                <label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Classes" />
+                <edit left="3" top="11" width="156" height="25" field="classe1" horzTextAlign="center" fontSize="15.0" fontColor="black" fontStyle="bold" />
+                <rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2" />
+                <label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível" />
+                <edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="41" width="156" height="25" field="classe2" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="71" width="156" height="25" field="classe3" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="101" width="156" height="25" field="classe4" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="131" width="156" height="25" field="classe5" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="255" top="516" width="237" height="160">
+                <rectangle top="6" width="235" height="153" color="Black" xradius="2" yradius="2" />
+                <rectangle left="60" top="1" color="Black" width="38" height="15" xradius="2" yradius="2" />
+                <label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Classes" />
+                <edit left="3" top="11" width="156" height="25" field="classe6" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <rectangle left="186" top="1" color="Black" width="29" height="15" xradius="2" yradius="2" />
+                <label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível" />
+                <edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="41" width="156" height="25" field="classe7" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="71" width="156" height="25" field="classe8" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="101" width="156" height="25" field="classe9" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="3" top="131" width="156" height="25" field="classe10" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+            </layout>
+            <layout left="502" top="516" width="140" height="159">
+                <rectangle top="6" color="Black" width="125" height="33" xradius="2" yradius="2" />
+                <rectangle left="35" top="1" color="Black" width="55" height="15" xradius="2" yradius="2" />
+                <label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Nível Total" />
+                <edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" hitTest="false" />
+                <rectangle top="46" color="Black" width="125" height="33" xradius="2" yradius="2" />
+                <rectangle left="23" top="41" color="Black" width="77" height="15" xradius="2" yradius="2" />
+                <label left="25" top="42" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Pontos de Ação" />
+                <edit left="3" top="51" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <rectangle top="86" color="Black" width="125" height="33" xradius="2" yradius="2" />
+                <rectangle left="19" top="81" color="Black" width="87" height="15" xradius="2" yradius="2" />
+                <label left="21" top="82" width="85" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Redução de Dano" />
+                <edit left="3" top="91" width="119" height="25" field="rd" horzTextAlign="center" fontSize="15.0" fontStyle="bold" fontColor="black" />
+                <rectangle top="126" color="Black" width="125" height="33" xradius="2" yradius="2" />
+                <rectangle left="41" top="121" color="Black" width="42" height="15" xradius="2" yradius="2" />
+                <label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Funções" />
+                <rectangle left="3" top="131" color="#ffffff" width="119" height="25" />
+                <imageCheckBox name="calculos" field="calculos" left="44" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();" />
+                <image left="64" top="136" name="update" src="img/update.gif" width="15" height="15" />
+                <button left="64" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.5" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');" />
+                <label left="10" top="690" width="990" height="20" fontSize="10" fontColor="black" text="$(debugMsg)" />
+            </layout>
+        </layout>
+    </scrollBox>
+    <dataLink fields="{'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma',
+     'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5',
+     'nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'}">
+        <event name="onChange">
+			recalcAll();
+		</event>
+    </dataLink>
+    <script>
+-- === Responsividade (Firecast 8.13 / SDK 3.7) ===
+        -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
+        if TRPG_updateScale == nil then
+            require("system.lua");
+            function TRPG_updateScale(form, canvas)
+                if form == nil then return end
+                canvas = canvas or form.lytCanvas or form.page
+                if canvas == nil then return end
+                local baseW = tonumber(canvas.width) or 1010
+                local availW = tonumber(form.width) or baseW
+                availW = availW - 20
+                if availW &lt;= 0 then return end
+
+                local scale = availW / baseW
+                if scale &gt; 1 then scale = 1 end
+                if scale &lt; 0.60 then scale = 0.60 end  -- evita ficar ilegível demais
+
+                canvas.scale = scale
+
+                local visW = baseW * scale
+                local left = (availW + 20 - visW) / 2
+                if left &lt; 0 then left = 0 end
+                canvas.left = left
+            end
+        end
+        
+
+		
+
+			-- === Compatibilidade / correções ===
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("FirecastGUI")).
+			if GUI == nil then GUI = GUI end
+
+			-- 'desCalculos' era chamado no 1.lfm (onNodeReady / checkbox) mas não existia; mantemos compat.
+			if desCalculos == nil then
+				function desCalculos()
+					-- se existir a versão nova (desCalculos2), executa; se não, não quebra a ficha.
+					if desCalculos2 ~= nil then
+						pcall(desCalculos2)
+					end
+				end
+			end
+
+			-- garante que as funções existam sempre
+			if TRPG_getMod == nil then
+				function TRPG_getMod(sheet, habCode, defaultValue)
+					local c = tostring(habCode or ""):upper()
+					if c == "FOR" then return sheet.modforca or 0 end
+					if c == "DES" then return sheet.moddestreza or 0 end
+					if c == "CON" then return sheet.modconstituicao or 0 end
+					if c == "INT" then return sheet.modinteligencia or 0 end
+					if c == "SAB" then return sheet.modsabedoria or 0 end
+					if c == "CAR" then return sheet.modcarisma or 0 end
+					return defaultValue or 0
+				end
+			end
+
+			-- normaliza o retorno do Dialogs.choose (compatível com variações)
+			local function normalizeChooseResult(a, b)
+				-- casos comuns:
+				-- 1) callback(idx)
+				-- 2) callback(text, idx)
+				-- 3) callback(idx, text)
+				-- 4) callback({index=..., text=...})
+				if type(a) == "number" then return a end
+				if type(b) == "number" then return b end
+
+				if type(a) == "table" then
+					return tonumber(a.index or a.selectedIndex or a.idx or a[1])
+				end
+
+				-- se vier só string, não dá pra garantir índice
+				return nil
+			end
+
+			function TRPG_chooseHab(sheet, fieldName, defaultCode)
+				if sheet == nil then return end
+
+				local items  = {"FOR", "DES", "CON", "INT", "SAB", "CAR", "DEFAULT"}
+				local labels = {
+					"Força (FOR)",
+					"Destreza (DES)",
+					"Constituição (CON)",
+					"Inteligência (INT)",
+					"Sabedoria (SAB)",
+					"Carisma (CAR)",
+					"Padrão (" .. tostring(defaultCode) .. ")"
+				}
+
+				-- defaultIndex (1..n)
+				local current = tostring(sheet[fieldName] or ""):upper()
+				local defaultIndex = 1
+				for i = 1, #items do
+					if items[i] == current then
+						defaultIndex = i
+						break
+					end
+				end
+
+				Dialogs.choose("Habilidade", labels,
+					function(a, b)
+						local idx = normalizeChooseResult(a, b)
+
+						if idx == nil then
+							-- alguns firecasts retornam o texto apenas; tenta mapear pelo texto
+							if type(a) == "string" then
+								local u = a:upper()
+								if u:find("FOR") then idx = 1
+								elseif u:find("DES") then idx = 2
+								elseif u:find("CON") then idx = 3
+								elseif u:find("INT") then idx = 4
+								elseif u:find("SAB") then idx = 5
+								elseif u:find("CAR") then idx = 6
+								else idx = 7 end
+							else
+								-- cancelado / retorno inesperado
+								return
+							end
+						end
+
+						local chosenCode = items[idx] or "DEFAULT"
+
+						if chosenCode == "DEFAULT" then
+							sheet[fieldName] = defaultCode
+						else
+							sheet[fieldName] = chosenCode
+						end
+
+						-- força recalc mesmo com calculos marcado
+						sheet.__forceRecalc = true
+						recalcAll()
+						sheet.__forceRecalc = false
+
+						sheet.__recalc = (tonumber(sheet.__recalc) or 0) + 1
+					end,
+					defaultIndex
+				)
+
+				if sheet[fieldName] == nil or sheet[fieldName] == "" then
+					sheet[fieldName] = defaultCode
+				end
+			end
+
+			function TRPG_toggleCaBase(sheet)
+				if sheet == nil then return end
+
+				local current = tostring(sheet.ca_baseModo or "HALF"):upper()
+				if current == "FULL" then
+					sheet.ca_baseModo = "HALF"
+				else
+					sheet.ca_baseModo = "FULL"
+				end
+
+				sheet.__forceRecalc = true
+				recalcAll()
+				sheet.__forceRecalc = false
+
+				sheet.__recalc = (tonumber(sheet.__recalc) or 0) + 1
+			end
+
+			function TRPG_chooseCaExtra(sheet)
+				if sheet == nil then return end
+
+				local items  = {"", "FOR", "DES", "CON", "INT", "SAB", "CAR"}
+				local labels = {
+					"Sem extra",
+					"Força (FOR)",
+					"Destreza (DES)",
+					"Constituição (CON)",
+					"Inteligência (INT)",
+					"Sabedoria (SAB)",
+					"Carisma (CAR)"
+				}
+
+				local current = tostring(sheet.ca_extraHab or ""):upper()
+				local defaultIndex = 1
+				for i = 1, #items do
+					if items[i] == current then
+						defaultIndex = i
+						break
+					end
+				end
+
+				Dialogs.choose("CA - Atributo extra", labels,
+					function(a, b)
+						local idx = normalizeChooseResult(a, b)
+						if idx == nil then return end
+
+						sheet.ca_extraHab = items[idx] or ""
+
+						sheet.__forceRecalc = true
+						recalcAll()
+						sheet.__forceRecalc = false
+
+						sheet.__recalc = (tonumber(sheet.__recalc) or 0) + 1
+					end,
+					defaultIndex
+				)
+			end
+
+			local function getChildNodesSafe(listNode)
+				if listNode == nil then return {} end
+				local ok, children = pcall(function() return NDB.getChildNodes(listNode) end)
+				if ok and children ~= nil then return children end
+				return {}
+			end
+
+			local function trimLower(s)
+				s = tostring(s or ""):gsub("^%s+",""):gsub("%s+$","")
+				return s:lower()
+			end
+
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			-- Ajuste os nomes de campo abaixo se no seu node forem diferentes:
+			-- bonusCA = n.bca
+			-- bmDex   = n.bmdex
+			-- categoria = n.categoria
+			-- equipado  = n.equipado (checkbox)
+
+			function TRPG_calcDefesasCA(sheet)
+				local armadura = 0
+				local escudo   = 0
+				local outros   = 0
+				local capDex   = nil -- menor bônus máximo de DES entre armaduras EQUIPADAS
+
+				for _, n in ipairs(getChildNodesSafe(sheet.listaDefesas)) do
+					-- ✅ só considera se estiver equipado
+					-- (se n.equipado for nil, tratamos como true pra não quebrar fichas antigas)
+					local equipado = (n.equipado == nil) or (n.equipado == true)
+					if equipado then
+						local cat = trimLower(n.categoria)
+
+						local bonusCA = N(n.bonusCA, 0)
+						local bmDex   = tonumber(n.bonusMaxDes)
+
+						if cat == "armadura" then
+							armadura = armadura + bonusCA
+
+							-- capDex só vale para armaduras equipadas
+							if bmDex ~= nil then
+								bmDex = math.floor(bmDex)
+
+								-- regra que você já usava:
+								-- se estiver vazio/0/negativo =&gt; ignora (sem limite)
+								if bmDex &gt; 0 then
+									if capDex == nil or bmDex &lt; capDex then
+										capDex = bmDex
+									end
+								end
+							end
+
+						elseif cat == "escudo" then
+							escudo = escudo + bonusCA
+
+						elseif cat == "outros" then
+							outros = outros + bonusCA
+						end
+					end
+				end
+
+				return armadura, escudo, outros, capDex
+			end
+
+
+			function recalcAll()
+				if sheet == nil then return end
+
+				if sheet.calculos == true and sheet.__forceRecalc ~= true then
+					return
+				end
+
+				local function N(v, d)
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+
+				if sheet.hab_fort == nil or sheet.hab_fort == "" then sheet.hab_fort = "CON" end
+				if sheet.hab_ref  == nil or sheet.hab_ref  == "" then sheet.hab_ref  = "DES" end
+				if sheet.hab_von  == nil or sheet.hab_von  == "" then sheet.hab_von  = "SAB" end
+
+				local forEff = N(sheet.forca, 10) - N(sheet.danoforca, 0)
+				local desEff = N(sheet.destreza, 10) - N(sheet.danodestreza, 0)
+				local conEff = N(sheet.constituicao, 10) - N(sheet.danoconstituicao, 0)
+				local intEff = N(sheet.inteligencia, 10) - N(sheet.danointeligencia, 0)
+				local sabEff = N(sheet.sabedoria, 10) - N(sheet.danosabedoria, 0)
+				local carEff = N(sheet.carisma, 10) - N(sheet.danocarisma, 0)
+
+				sheet.modforca        = math.floor((forEff / 2) - 5)
+				sheet.moddestreza     = math.floor((desEff / 2) - 5)
+				sheet.modconstituicao = math.floor((conEff / 2) - 5)
+				sheet.modinteligencia = math.floor((intEff / 2) - 5)
+				sheet.modsabedoria    = math.floor((sabEff / 2) - 5)
+				sheet.modcarisma      = math.floor((carEff / 2) - 5)
+
+				sheet.nivel =
+					math.floor(N(sheet.nvclasse1)) + math.floor(N(sheet.nvclasse2)) + math.floor(N(sheet.nvclasse3)) +
+					math.floor(N(sheet.nvclasse4)) + math.floor(N(sheet.nvclasse5)) + math.floor(N(sheet.nvclasse6)) +
+					math.floor(N(sheet.nvclasse7)) + math.floor(N(sheet.nvclasse8)) + math.floor(N(sheet.nvclasse9)) +
+					math.floor(N(sheet.nvclasse10))
+
+				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+
+				-- ===== CA base: HALF (1/2 nível) ou FULL (nível completo) =====
+				if sheet.ca_baseModo == nil or sheet.ca_baseModo == "" then
+					sheet.ca_baseModo = "HALF"
+				end
+
+				if sheet.ca_baseModo == "FULL" then
+					sheet.caBaseLabel = "10+Nv"
+					sheet.ca1 = N(sheet.nivel) + 10
+				else
+					sheet.caBaseLabel = "10 + 1/2 Nv"
+					sheet.ca1 = N(sheet.metadenivel) + 10
+				end
+
+				-- Mod H padrão da CA (mantém Destreza)
+				sheet.ca2 = N(sheet.moddestreza)
+
+				local arm, esc, outrosEq, capDex = TRPG_calcDefesasCA(sheet)
+
+				local modDes = math.floor(N(sheet.moddestreza, 0))
+				if capDex ~= nil and modDes &gt; capDex then
+					sheet.ca2 = capDex
+				else
+					sheet.ca2 = modDes
+				end
+
+				-- ===== Extra (botão A) agora é ca3 =====
+				local extraCode = tostring(sheet.ca_extraHab or ""):upper()
+				if extraCode == "" then
+					sheet.ca3 = 0
+				else
+					sheet.ca3 = math.floor(TRPG_getMod(sheet, extraCode, 0))
+				end
+
+				-- ===== Armadura / Escudo vindos da Tela 3 =====
+				sheet.ca4 = math.floor(arm)
+				sheet.ca5 = math.floor(esc)
+				sheet.ca7 = math.floor(outrosEq)
+
+				-- ===== Tamanho agora é ca6 =====
+				if sheet.ca6 == nil then sheet.ca6 = 0 end  -- ou mantém default
+
+				-- ===== TOTAL na ordem nova =====
+				sheet.totalca =
+					math.floor(N(sheet.ca1)) + math.floor(N(sheet.ca2)) + math.floor(N(sheet.ca3)) + math.floor(N(sheet.ca4)) +
+					math.floor(N(sheet.ca5)) + math.floor(N(sheet.ca6)) + math.floor(N(sheet.ca7))
+
+				sheet.fort1 = N(sheet.metadenivel)
+				sheet.fort2 = TRPG_getMod(sheet, sheet.hab_fort, N(sheet.modconstituicao))
+				sheet.totalfort = math.floor(N(sheet.fort1)) + math.floor(N(sheet.fort2)) + math.floor(N(sheet.fort3))
+
+				sheet.ref1 = N(sheet.metadenivel)
+				sheet.ref2 = TRPG_getMod(sheet, sheet.hab_ref, N(sheet.moddestreza))
+				sheet.totalref = math.floor(N(sheet.ref1)) + math.floor(N(sheet.ref2)) + math.floor(N(sheet.ref3))
+
+				sheet.von1 = N(sheet.metadenivel)
+				sheet.von2 = TRPG_getMod(sheet, sheet.hab_von, N(sheet.modsabedoria))
+				sheet.totalvon = math.floor(N(sheet.von1)) + math.floor(N(sheet.von2)) + math.floor(N(sheet.von3))
+
+				if tostring(sheet.hab_cac or "") ~= "" then
+					sheet.cac2 = TRPG_getMod(sheet, sheet.hab_cac, cacPadrao);
+				else
+					sheet.cac2 = cacPadrao;
+				end
+
+				sheet.totalcac = math.floor(N(sheet.bba)) + math.floor(N(sheet.cac2)) + math.floor(N(sheet.cac3)) + math.floor(N(sheet.cac4))
+
+				if tostring(sheet.hab_dis or "") ~= "" then
+					sheet.dis2 = TRPG_getMod(sheet, sheet.hab_dis, disPadrao);
+				else
+					sheet.dis2 = disPadrao;
+				end
+
+				sheet.totaldis = math.floor(N(sheet.bba)) + math.floor(N(sheet.dis2)) + math.floor(N(sheet.dis3)) + math.floor(N(sheet.dis4))
+			end
+
+			if TRPG_rollValue == nil then
+				function TRPG_rollValue(nodeOrSheet, value, label)
+					if nodeOrSheet == nil then return end
+
+					local v = tonumber(value) or 0
+					local expr = tostring(v)  -- pode ser "12" ou "-3" etc.
+
+					local rolagem = Firecast.interpretarRolagem(expr)
+					if rolagem == nil then
+						showMessage("Rolagem inválida: " .. expr)
+						return
+					end
+
+					-- se não tiver dado, prefixa 1d20
+					if not rolagem.possuiAlgumDado then
+						rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
+					end
+
+					local mesa = Firecast.getMesaDe(nodeOrSheet)
+					local titulo = tostring(label or "Teste")
+
+					if mesa ~= nil then
+						local chat = mesa.activeChat or mesa.chat
+						if chat ~= nil then
+							chat:rolarDados(rolagem, titulo)
+							return
+						end
+					end
+
+					rolagem:rolarLocalmente()
+					showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+				end
+			end
+
+			-- garante rootOf (alguns projetos antigos tinham isso pronto)
+			if rootOf == nil then
+				function rootOf(node)
+					if node == nil then return nil end
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					if ok then return r end
+					return nil
+				end
+			end
+
+			-- versão segura do touch da CA
+			function TRPG_touchCA(node)
+				if node == nil then return end
+
+				local root = nil
+
+				-- tenta rootOf (se existir)
+				if rootOf ~= nil then
+					root = rootOf(node)
+				end
+
+				-- fallback direto pro NDB.getRoot
+				if root == nil then
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					if ok then root = r end
+				end
+
+				if root ~= nil then
+					root.__recalcCA = (tonumber(root.__recalcCA) or 0) + 1
+				end
+			end
+		
+	
+</script>
+</form>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta06" align="client" theme="light" onResize="TRPG_updateScale(self, self.lytCanvas06);" onNodeReady="TRPG_updateScale(self, self.lytCanvas06);">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <scrollBox align="client">
+        <layout name="lytCanvas06" align="none" left="0" top="0" width="1010" height="700" margins="{left=0,top=0,right=0,bottom=0}">
+            <rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10" />
+            <layout left="0" top="0" width="1010" height="700">
+                <layout align="top" height="34" margins="{left=10,right=10,top=10,bottom=6}">
+                    <rectangle align="client" color="Gainsboro" xradius="8" yradius="8" />
+                    <layout align="client" margins="{left=8,right=8,top=6,bottom=6}">
+                        <button text="Adicionar (Ataque)" width="170" align="left">
+                            <event name="onClick">
+							local n = self.rclAtaque:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Ataque)";
+							end;
+							TRPG_touch06(self);
+						</event>
+                        </button>
+                        <button text="Adicionar (Danos)" width="170" align="left" margins="{left=6}">
+                            <event name="onClick">
+							local n = self.rclDanos:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Danos)";
+							end;
+							TRPG_touch06(self);
+						</event>
+                        </button>
+                        <button text="Adicionar (Magias)" width="170" align="left" margins="{left=6}">
+                            <event name="onClick">
+							local n = self.rclMagias:append();
+							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
+								n.campoTitulo = "Novo Macro (Magias)";
+							end;
+							TRPG_touch06(self);
+						</event>
+                        </button>
+                    </layout>
+                </layout>
+                <layout align="client" margins="{left=10, right=10, top=0, bottom=10}">
+                    <layout align="client">
+                        <layout align="top" height="26">
+                            <rectangle align="client" color="Black" xradius="6" yradius="6" />
+                            <layout align="client" margins="{left=6,right=6,top=4,bottom=4}">
+                                <label align="left" width="240" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ATAQUE" />
+                                <label align="left" width="240" fontStyle="bold" fontColor="white" horzTextAlign="center" text="DANOS" />
+                                <label align="client" fontStyle="bold" fontColor="white" horzTextAlign="center" text="MAGIAS" />
+                            </layout>
+                        </layout>
+                        <layout align="client" margins="{top=6}">
+                            <rectangle align="client" color="Gainsboro" xradius="8" yradius="8" />
+                            <layout align="client" margins="{left=6,right=6,top=6,bottom=6}">
+                                <layout align="left" width="240" margins="{right=4}">
+                                    <rectangle align="client" color="White" xradius="6" yradius="6" />
+                                    <recordList name="rclAtaque" field="campoDosItensAtaque" templateForm="frmMacroColuna" align="client" selectable="true">
+                                        <event name="onSelect">
+										self.rclDanos.selectedNode = nil;
+										self.rclMagias.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclAtaque.selectedNode);
+									</event>
+                                    </recordList>
+                                </layout>
+                                <layout align="left" width="240" margins="{left=2,right=2}">
+                                    <rectangle align="client" color="White" xradius="6" yradius="6" />
+                                    <recordList name="rclDanos" field="campoDosItensDanos" templateForm="frmMacroColuna" align="client" selectable="true">
+                                        <event name="onSelect">
+										self.rclAtaque.selectedNode = nil;
+										self.rclMagias.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclDanos.selectedNode);
+									</event>
+                                    </recordList>
+                                </layout>
+                                <layout align="left" width="220" margins="{left=4}">
+                                    <rectangle align="client" color="White" xradius="6" yradius="6" />
+                                    <recordList name="rclMagias" field="campoDosItensMagias" templateForm="frmMacroColuna" align="client" selectable="true">
+                                        <event name="onSelect">
+										self.rclAtaque.selectedNode = nil;
+										self.rclDanos.selectedNode = nil;
+										TRPG_selectMacro(self, self.rclMagias.selectedNode);
+									</event>
+                                    </recordList>
+                                </layout>
+                            </layout>
+                        </layout>
+                    </layout>
+                    <layout align="right" width="250" margins="{left=10}">
+                        <rectangle align="client" color="Gray" xradius="8" yradius="8" />
+                        <layout align="top" height="28" margins="{left=6,right=6,top=6,bottom=2}">
+                            <rectangle align="client" color="Black" xradius="4" yradius="4" />
+                            <label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="Detalhes do Macro" />
+                        </layout>
+                        <layout name="boxNadaSelecionado" align="client" margins="{left=10,right=10,top=10,bottom=10}" visible="true">
+                            <rectangle align="client" color="Gainsboro" xradius="6" yradius="6" />
+                            <label align="client" fontStyle="bold" fontColor="Black" horzTextAlign="center" text="Selecione um item em Ataque, Danos ou Magias para editar." />
+                        </layout>
+                        <dataScopeBox name="dsDetalhesDoItem" align="client" margins="{left=8,right=8,top=6,bottom=8}" visible="false">
+                            <label align="top" height="18" fontStyle="bold" fontColor="Black" text="Nome" />
+                            <edit align="top" height="26" field="campoTitulo" fontColor="Black" fontStyle="bold" />
+                            <label align="top" height="18" fontStyle="bold" fontColor="Black" text="Rolagem (Ataque/Dano/etc)" />
+                            <edit align="top" height="26" fontColor="Black" field="campoSubTitulo" />
+                            <label align="top" height="18" fontStyle="bold" fontColor="Black" text="Descrição" />
+                            <textEditor align="client" fontColor="Black" field="campoDescrição" />
+                        </dataScopeBox>
+                    </layout>
+                </layout>
+            </layout>
+        </layout>
+    </scrollBox>
+    <dataLink fields="{'__recalc06','campoDosItensAtaque','campoDosItensDanos','campoDosItensMagias'}">
+        <event name="onChange">
+		</event>
+    </dataLink>
+    <script>
+-- === Responsividade (Firecast 8.13 / SDK 3.7) ===
+        -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
+        if TRPG_updateScale == nil then
+            require("system.lua");
+            function TRPG_updateScale(form, canvas)
+                if form == nil then return end
+                canvas = canvas or form.lytCanvas or form.page
+                if canvas == nil then return end
+                local baseW = tonumber(canvas.width) or 1010
+                local availW = tonumber(form.width) or baseW
+                availW = availW - 20
+                if availW &lt;= 0 then return end
+
+                local scale = availW / baseW
+                if scale &gt; 1 then scale = 1 end
+                if scale &lt; 0.60 then scale = 0.60 end  -- evita ficar ilegível demais
+
+                canvas.scale = scale
+
+                local visW = baseW * scale
+                local left = (availW + 20 - visW) / 2
+                if left &lt; 0 then left = 0 end
+                canvas.left = left
+            end
+        end
+        
+
+	
+		local function getRootSheet(ctrl)
+			if ctrl == nil then return nil end
+			return ctrl.sheet -- aqui ctrl DEVE ser o form Tormenta06 (não o template do item)
+		end
+
+		function TRPG_touch06(ctrl)
+			local r = getRootSheet(ctrl)
+			if r == nil then return end
+			r.__recalc06 = (tonumber(r.__recalc06) or 0) + 1
+		end
+
+		function TRPG_selectMacro(ctrl, node)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+
+			if ds ~= nil then
+				ds.scopeNode = node
+				ds.visible = (node ~= nil)
+			end
+			if box ~= nil then
+				box.visible = (node == nil)
+			end
+		end
+
+		function TRPG_closeMacroDetails(ctrl)
+			if ctrl == nil then return end
+			local ds  = ctrl:findControlByName("dsDetalhesDoItem")
+			local box = ctrl:findControlByName("boxNadaSelecionado")
+			if ds ~= nil then
+				ds.scopeNode = nil
+				ds.visible = false
+			end
+			if box ~= nil then
+				box.visible = true
+			end
+		end
+
+		local function removeFromList(list, item)
+			if type(list) ~= "table" then return false end
+			for i = #list, 1, -1 do
+				if list[i] == item then
+					table.remove(list, i)
+					return true
+				end
+			end
+			return false
+		end
+
+		-- item aqui é o "sheet" do frmMacroColuna (table)
+		function TRPG_deleteMacro(ctrl, item)
+			if ctrl == nil or item == nil then return false end
+
+			local root = getRootSheet(ctrl)
+			if root == nil then return false end
+
+			-- tenta remover de qualquer uma das 3 listas
+			local removed = false
+			removed = removeFromList(root.campoDosItensAtaque, item) or removed
+			removed = removeFromList(root.campoDosItensDanos,  item) or removed
+			removed = removeFromList(root.campoDosItensMagias, item) or removed
+
+			if removed then
+				-- limpa seleção das 3 listas (evita apontar pra item removido)
+				local a = ctrl:findControlByName("rclAtaque")
+				local d = ctrl:findControlByName("rclDanos")
+				local m = ctrl:findControlByName("rclMagias")
+				if a ~= nil then a.selectedNode = nil end
+				if d ~= nil then d.selectedNode = nil end
+				if m ~= nil then m.selectedNode = nil end
+
+				TRPG_closeMacroDetails(ctrl)
+				TRPG_touch06(ctrl)
+				return true
+			end
+
+			return false
+		end
+
+		if TRPG_rollMacro == nil then
+			function TRPG_rollMacro(nodeOrSheet, macroText, label)
+				if nodeOrSheet == nil then return end
+
+				local expr = tostring(macroText or "")
+				expr = expr:gsub("^%s+",""):gsub("%s+$","")
+				expr = expr:gsub(",", ".") -- compat: 1d20+1,5
+
+				if expr == "" then
+					showMessage("Preencha a rolagem antes de rolar.")
+					return
+				end
+
+				-- MUITO comum: usuário digitar "+8" ou "-2" (sem dado).
+				-- interpretarRolagem("+8") pode não se comportar como você espera.
+				if expr:sub(1,1) == "+" then
+					expr = "0" .. expr
+				elseif expr:sub(1,1) == "-" then
+					expr = "0" .. expr
+				end
+
+				local rolagem = rrpg.interpretarRolagem(expr)
+				if rolagem == nil then
+					showMessage("Rolagem inválida: " .. expr)
+					return
+				end
+
+				-- se não tiver dado, prefixa 1d20 (igual seu padrão)
+				if not rolagem.possuiAlgumDado then
+					rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+				end
+
+				local mesa = rrpg.getMesaDe(nodeOrSheet)
+				local titulo = tostring(label or "Rolagem")
+
+				if mesa ~= nil then
+					local chat = mesa.activeChat or mesa.chat
+					if chat ~= nil then
+						chat:rolarDados(rolagem, titulo)
+						return
+					end
+				end
+
+				rolagem:rolarLocalmente()
+				showMessage(titulo .. " = " .. tostring(rolagem.resultado) .. "\n(" .. tostring(rolagem.asString) .. ")")
+			end
+		end
+
+	
+	
+</script>
+</form>

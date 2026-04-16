@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta03" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="TRPG_updateScale(self, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);" onResize="TRPG_updateScale(self, self.lytCanvas03);">
+    <style>
+        label {
+            textTrimming: none;
+        }
+        button {
+            textTrimming: none;
+        }
+    </style>
+    <scrollBox align="client">
+        <layout name="lytCanvas03" align="none" left="0" top="0" width="1010" height="700" margins="{left=0,top=0,right=0,bottom=0}">
+            <rectangle align="client" color="LightGray" xradius="10" yradius="10" />
+            <layout name="content" align="client" margins="{top=8,bottom=8,left=8,right=8}">
+                <layout name="grid" align="client">
+                    <layout name="colEsq" align="left" width="500">
+                        <layout align="top" height="335" margins="{bottom=6}">
+                            <rectangle align="client" color="Gray" xradius="6" yradius="6" hitTest="false" />
+                            <rectangle name="rcArmaCloseArea" align="client" color="Transparent" hitTest="true">
+                                <event name="onClick">
+									TRPG_armaClose(self, sheet or self.sheet);
+								</event>
+                            </rectangle>
+                            <layout align="client" margins="{left=6,right=6,top=6,bottom=6}" hitTest="true">
+                                <layout align="top" height="28" margins="{bottom=2}" hitTest="false">
+                                    <rectangle align="client" color="Black" xradius="4" yradius="4" hitTest="false" />
+                                    <label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ARMAS" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="24" margins="{bottom=2}" hitTest="true">
+                                    <button align="left" width="160" fontColor="black" text="Adicionar Arma">
+                                        <event name="onClick">
+											TRPG_addArma(self, sheet or self.sheet);
+										</event>
+                                    </button>
+                                    <label align="left" width="200" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="20" margins="{bottom=2}" hitTest="false">
+                                    <label align="left" width="140" fontStyle="bold" fontColor="black" text="Arma" hitTest="false" />
+                                    <label align="left" width="48" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Ataque" hitTest="false" />
+                                    <label align="left" width="60" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Dano" hitTest="false" />
+                                    <label align="left" width="52" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Crítico" hitTest="false" />
+                                    <label align="left" width="48" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Dist." hitTest="true" hint="Distância" />
+                                    <label align="left" width="62" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Tipo" hitTest="false" />
+                                    <label align="left" width="40" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso em Kg" />
+                                    <label align="left" width="24" fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="150" margins="{bottom=6}" hitTest="true">
+                                    <recordList name="rclArmas" field="listaArmas" templateForm="frmArmaLinha" align="client" selectable="true">
+                                        <event name="onSelect">
+											TRPG_armaOnSelect(self, sheet or self.sheet);
+										</event>
+                                    </recordList>
+                                </layout>
+                                <layout align="client" hitTest="true">
+                                    <dataScopeBox name="boxArmaDetalhes" visible="false" align="client">
+                                        <rectangle align="client" color="LightGray" xradius="6" yradius="6" padding="{left=6,right=6,top=6,bottom=6}">
+                                            <layout align="top" height="26" margins="{bottom=6}" hitTest="true">
+                                                <label name="lblArmaTitulo" align="client" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Detalhes da Arma" hitTest="false" />
+                                                <button align="right" width="90" fontColor="black" text="Fechar">
+                                                    <event name="onClick">
+														TRPG_armaClose(self, sheet or self.sheet);
+													</event>
+                                                </button>
+                                            </layout>
+                                            <textEditor align="client" fontColor="black" field="descricao" />
+                                            <dataLink fields="{'arma'}">
+                                                <event name="onChange">
+													TRPG_armaUpdateTitulo(self);
+												</event>
+                                            </dataLink>
+                                        </rectangle>
+                                    </dataScopeBox>
+                                </layout>
+                            </layout>
+                        </layout>
+                        <layout align="client">
+                            <rectangle align="client" color="Gray" xradius="6" yradius="6" hitTest="false" />
+                            <rectangle name="rcDefCloseArea" align="client" color="Transparent" hitTest="true">
+                                <event name="onClick">
+									TRPG_defClose(self, sheet or self.sheet);
+								</event>
+                            </rectangle>
+                            <layout align="client" margins="{left=6,right=6,top=6,bottom=6}" hitTest="true">
+                                <layout align="top" height="28" margins="{bottom=2}" hitTest="false">
+                                    <rectangle align="client" color="Black" xradius="4" yradius="4" hitTest="false" />
+                                    <label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="ARMADURAS / ESCUDOS / OUTROS" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="24" margins="{bottom=2}" hitTest="true">
+                                    <button align="left" width="150" fontColor="black" text="Adicionar Armadura">
+                                        <event name="onClick">
+											TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
+										</event>
+                                    </button>
+                                    <button align="left" width="150" margins="{left=8}" fontColor="black" text="Adicionar Escudo">
+                                        <event name="onClick">
+											TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
+										</event>
+                                    </button>
+                                    <button align="left" width="150" fontColor="black" margins="{left=8}" text="Adicionar Outros">
+                                        <event name="onClick">
+											TRPG_addDefesa(self, sheet or self.sheet, "Outros");
+										</event>
+                                    </button>
+                                </layout>
+                                <layout align="top" height="20" margins="{bottom=2}" hitTest="false">
+                                    <label align="left" width="20" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Eq." hitTest="true" hint="Equipado" />
+                                    <label align="left" width="80" fontStyle="bold" fontColor="black" text=" Categoria" hitTest="false" />
+                                    <label align="left" width="120" fontStyle="bold" fontColor="black" text="Nome" hitTest="false" />
+                                    <label align="left" width="55" fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. CA" hitTest="true" hint="Bônus na Classe de Armadura" />
+                                    <label align="left" width="70" fontStyle="bold" fontColor="black" horzTextAlign="center" text="B. M. Dex" hitTest="true" hint="Bônus Máximo de Destreza" />
+                                    <label align="left" width="65" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Penal." hitTest="true" hint="Penalidade de Armadura" />
+                                    <label align="left" width="40" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso em Kg" />
+                                    <label align="left" width="24" fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="150" margins="{bottom=6}" hitTest="true">
+                                    <recordList name="rclDefesas" field="listaDefesas" templateForm="frmDefesaLinha" align="client" selectable="true">
+                                        <event name="onSelect">
+											TRPG_defOnSelect(self, sheet or self.sheet);
+										</event>
+                                    </recordList>
+                                </layout>
+                                <layout align="client" hitTest="true">
+                                    <dataScopeBox name="boxDefDetalhes" visible="false" align="client">
+                                        <rectangle align="client" color="LightGray" xradius="6" yradius="6" padding="{left=6,right=6,top=6,bottom=6}">
+                                            <layout align="top" height="26" margins="{bottom=6}" hitTest="true">
+                                                <label name="lblDefTitulo" align="client" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Detalhes da Defesa" hitTest="false" />
+                                                <button align="right" width="90" fontColor="black" text="Fechar">
+                                                    <event name="onClick">
+														TRPG_defClose(self, sheet or self.sheet);
+													</event>
+                                                </button>
+                                            </layout>
+                                            <textEditor align="client" fontColor="black" field="descricao" />
+                                            <dataLink fields="{'defesa'}">
+                                                <event name="onChange">
+													TRPG_defUpdateTitulo(self);
+												</event>
+                                            </dataLink>
+                                        </rectangle>
+                                    </dataScopeBox>
+                                </layout>
+                            </layout>
+                        </layout>
+                    </layout>
+                    <layout name="colDir" align="client" margins="{left=6}">
+                        <layout align="top" height="560" margins="{top=0,bottom=4}">
+                            <rectangle align="client" color="Gray" xradius="6" yradius="6" hitTest="false" />
+                            <rectangle name="rcEquipCloseArea" align="client" color="Transparent" hitTest="true">
+                                <event name="onClick">
+									TRPG_equipClose(self, sheet or self.sheet);
+								</event>
+                            </rectangle>
+                            <layout align="client" margins="{left=6,right=6,top=6,bottom=6}" hitTest="true">
+                                <layout align="top" height="28" margins="{bottom=2}" hitTest="false">
+                                    <rectangle align="client" color="Black" xradius="4" yradius="4" hitTest="false" />
+                                    <label align="client" fontSize="14" fontStyle="bold" fontColor="white" horzTextAlign="center" text="EQUIPAMENTO" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="24" margins="{bottom=4}" hitTest="true">
+                                    <button align="left" width="190" fontColor="black" text="Adicionar Item">
+                                        <event name="onClick">
+											TRPG_equipAddItem(self, sheet or self.sheet);
+										</event>
+                                    </button>
+                                    <label align="left" width="140" margins="{left=8}" hitTest="false" />
+                                </layout>
+                                <layout align="top" height="380" hitTest="true">
+                                    <layout align="top" height="20" margins="{bottom=2}" hitTest="false">
+                                        <label align="left" width="80" fontStyle="bold" fontColor="black" text="Categoria" hitTest="false" />
+                                        <label align="left" width="176" fontStyle="bold" fontColor="black" text="Nome" hitTest="false" />
+                                        <label align="left" width="40" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Qtd." hitTest="true" hint="Quantidade" />
+                                        <label align="left" width="70" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Valor" hitTest="false" />
+                                        <label align="left" width="70" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Peso" hitTest="true" hint="Peso unitário em Kg" />
+                                        <label align="left" width="26" fontStyle="bold" fontColor="black" horzTextAlign="center" text="" hitTest="false" />
+                                    </layout>
+                                    <recordList name="rclEquip" field="listaEquipamentos" templateForm="frmEquipLinha" align="client" selectable="true">
+                                        <event name="onSelect">
+											TRPG_equipOnSelect(self, sheet or self.sheet);
+										</event>
+                                    </recordList>
+                                </layout>
+                                <layout align="client" margins="{top=6}" hitTest="true">
+                                    <dataScopeBox name="boxEquipDetalhes" visible="false" align="client">
+                                        <rectangle align="client" color="LightGray" xradius="6" yradius="6" padding="{left=6,right=6,top=6,bottom=6}">
+                                            <layout align="top" height="26" margins="{bottom=6}" hitTest="true">
+                                                <label name="lblEquipTitulo" align="client" fontStyle="bold" fontColor="black" horzTextAlign="center" text="Detalhes do Item" hitTest="false" />
+                                                <button align="right" width="90" fontColor="black" text="Fechar">
+                                                    <event name="onClick">
+														TRPG_equipClose(self, sheet or self.sheet);
+													</event>
+                                                </button>
+                                            </layout>
+                                            <textEditor align="client" fontColor="black" field="descricao" />
+                                            <dataLink fields="{'nome'}">
+                                                <event name="onChange">
+													TRPG_equipUpdateTitulo(self);
+												</event>
+                                            </dataLink>
+                                        </rectangle>
+                                    </dataScopeBox>
+                                </layout>
+                            </layout>
+                        </layout>
+                        <layout align="client" margins="{left=6,right=6,top=0,bottom=6}">
+                            <layout align="top" height="120">
+                                <layout align="left" width="240">
+                                    <label align="top" height="18" fontStyle="bold" fontColor="black" text="Carga (regra automática)" />
+                                    <layout align="top" height="24">
+                                        <label align="left" width="120" fontColor="black" text="Peso total:" />
+                                        <edit align="client" field="pesototal" fontColor="black" type="float" decimalPlaces="3" min="0" max="999999" horzTextAlign="center" canFocus="false" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="120" fontColor="black" text="Sem penalidade:" />
+                                        <edit align="client" field="cargaSemPenal" fontColor="black" type="float" min="0" max="999999" horzTextAlign="center" canFocus="false" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="120" fontColor="black" text="Máximo:" />
+                                        <edit align="client" field="cargaMaxima" fontColor="black" type="float" min="0" max="999999" horzTextAlign="center" canFocus="false" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="120" fontColor="black" text="Status:" />
+                                        <layout align="client">
+                                            <edit name="edtCargaStatus" align="client" field="cargaStatus" fontColor="black" canFocus="false" horzTextAlign="center" />
+                                            <button name="btnHintCargaStatus" align="client" opacity="0.0" canFocus="false" cursor="help" hint="" />
+                                        </layout>
+                                    </layout>
+                                </layout>
+                                <layout align="client" margins="{left=10}">
+                                    <label align="top" height="18" fontColor="black" fontStyle="bold" text="Dinheiro" />
+                                    <layout align="top" height="24">
+                                        <label align="left" width="90" fontColor="black" text="T$ (Cobre)" />
+                                        <edit align="client" field="totalCobre" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="90" fontColor="black" text="TP (Prata)" />
+                                        <edit align="client" field="totalPrata" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="90" fontColor="black" text="TO (Ouro)" />
+                                        <edit align="client" field="totalOuro" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" />
+                                    </layout>
+                                    <layout align="top" height="24">
+                                        <label align="left" width="90" fontColor="black" text="TL (Platina)" />
+                                        <edit align="client" field="totalPlatina" fontColor="black" type="number" min="0" max="999999" horzTextAlign="center" />
+                                    </layout>
+                                </layout>
+                            </layout>
+                        </layout>
+                    </layout>
+                </layout>
+            </layout>
+        </layout>
+    </scrollBox>
+    <dataLink fields="{'__recalc03','forca','danoforca','pesototal','cargaSemPenal','cargaMaxima','listaArmas','listaDefesas','listaEquipamentos'}">
+        <event name="onChange">
+			TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
+		</event>
+    </dataLink>
+    <script>
+-- === Responsividade (Firecast 8.13 / SDK 3.7) ===
+        -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
+        if TRPG_updateScale == nil then
+            require("system.lua");
+            function TRPG_updateScale(form, canvas)
+                if form == nil then return end
+                canvas = canvas or form.lytCanvas or form.page
+                if canvas == nil then return end
+                local baseW = tonumber(canvas.width) or 1010
+                local availW = tonumber(form.width) or baseW
+                availW = availW - 20
+                if availW &lt;= 0 then return end
+
+                local scale = availW / baseW
+                if scale &gt; 1 then scale = 1 end
+                if scale &lt; 0.60 then scale = 0.60 end  -- evita ficar ilegível demais
+
+                canvas.scale = scale
+
+                local visW = baseW * scale
+                local left = (availW + 20 - visW) / 2
+                if left &lt; 0 then left = 0 end
+                canvas.left = left
+            end
+        end
+        
+
+		
+
+			-- === util ===
+			local function N(v, d)
+				local n = tonumber(v)
+				if n == nil then return d or 0 end
+				return n
+			end
+
+			local function trim(s)
+				s = tostring(s or "")
+				s = s:gsub("^%s+",""):gsub("%s+$","")
+				return s
+			end
+
+			local function rootOf(nodeOrSheet)
+				if nodeOrSheet == nil then return nil end
+				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				if ok and r ~= nil then return r end
+				return nodeOrSheet
+			end
+
+			function TRPG_touchCA(itemNode)
+				TRPG_recalcPenDefesas(itemNode)
+				local r = rootOf(itemNode)
+				if r == nil then return end
+				r.__recalcCA = (tonumber(r.__recalcCA) or 0) + 1
+			end
+
+			function TRPG_touch03(nodeOrSheet)
+				local r = rootOf(nodeOrSheet)
+				if r == nil then return end
+				r.__recalc03 = (tonumber(r.__recalc03) or 0) + 1
+			end
+
+			-- === armas / defesas ===
+			function TRPG_addArma(ctrl, sh)
+				local rl = ctrl and ctrl:findControlByName("rclArmas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						if n.descricao == nil then n.descricao = "" end
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+						if n.descricao == nil then n.descricao = "" end
+					end
+					TRPG_touch03(sh)
+				end
+			end
+
+			-- =========================
+			-- ARMAS - detalhes
+			-- =========================
+			function TRPG_armaUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblArmaTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.arma)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes da Arma"
+				else
+					lbl.text = "Detalhes da Arma: " .. nome
+				end
+			end
+
+			function TRPG_armaClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclArmas") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblArmaTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes da Arma"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_armaOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclArmas") or nil
+				local box = ctrl and ctrl:findControlByName("boxArmaDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_armaUpdateTitulo(ctrl)
+			end
+
+			-- =========================
+			-- DEFESAS - detalhes
+			-- =========================
+			function TRPG_defUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblDefTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.defesa)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes da Defesa"
+				else
+					lbl.text = "Detalhes da Defesa: " .. nome
+				end
+			end
+
+			function TRPG_defClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblDefTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes da Defesa"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_defOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				local box = ctrl and ctrl:findControlByName("boxDefDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_defUpdateTitulo(ctrl)
+			end
+
+			-- === equipamento ===
+			function TRPG_equipUpdateTitulo(ctrl)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+				if lbl == nil then return end
+
+				local nome = ""
+				if box ~= nil and box.node ~= nil then
+					nome = trim(box.node.nome)
+				end
+
+				if nome == "" then
+					lbl.text = "Detalhes do Item"
+				else
+					lbl.text = "Detalhes do Item: " .. nome
+				end
+			end
+
+			function TRPG_equipClose(ctrl, sh)
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local lbl = ctrl and ctrl:findControlByName("lblEquipTitulo") or nil
+
+				if box ~= nil then
+					box.visible = false
+					box.node = nil
+				end
+
+				if rl ~= nil then
+					rl.selectedNode = nil
+				end
+
+				if lbl ~= nil then
+					lbl.text = "Detalhes do Item"
+				end
+
+				TRPG_touch03(sh)
+			end
+
+			function TRPG_equipOnSelect(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local node = rl.selectedNode
+				box.node = node
+				box.visible = (node ~= nil)
+
+				TRPG_equipUpdateTitulo(ctrl)
+			end
+
+			function TRPG_equipAddItem(ctrl, sh)
+				local rl  = ctrl and ctrl:findControlByName("rclEquip") or nil
+				local box = ctrl and ctrl:findControlByName("boxEquipDetalhes") or nil
+				if rl == nil or box == nil then return end
+
+				local n = rl:append()
+					if n ~= nil then
+						if n.categoria == nil then n.categoria = "" end
+						if n.qtd == nil then n.qtd = 1 end
+
+						n.nome = n.nome or ""
+						n.valor = n.valor or ""
+						n.peso = tonumber(n.peso) or 0
+						n.descricao = n.descricao or ""
+
+						rl.selectedNode = n
+						box.node = n
+						box.visible = true
+
+						TRPG_equipUpdateTitulo(ctrl)
+						TRPG_touch03(sh)
+					end
+			end
+
+
+			-- === carga (cálculo seguro e simples) ===
+			local function sumPeso(listNode)
+				local function Nlocal(v, d)
+					if type(v) == "string" then
+						v = v:gsub(",", ".")
+						v = v:gsub("^%s+", ""):gsub("%s+$", "")
+						if v == "" then return d or 0 end
+					end
+					local n = tonumber(v)
+					if n == nil then return d or 0 end
+					return n
+				end
+
+				if listNode == nil then return 0 end
+
+				local ok, children = pcall(function()
+					return ndb.getChildNodes(listNode)
+				end)
+				if not ok or children == nil then return 0 end
+
+				local total = 0
+				for _, item in ipairs(children) do
+					local pesoUnit = Nlocal(item.peso, 0)
+					local qtd = tonumber(item.qtd) or 1
+					if qtd &lt; 1 then qtd = 1 end
+					total = total + (pesoUnit * qtd)
+				end
+				return total
+			end
+
+			function TRPG_calcCarga03(ctrl, sh)
+				local sheet = rootOf(sh)
+				if sheet == nil then return end
+
+				local total =
+					sumPeso(sheet.listaArmas) +
+					sumPeso(sheet.listaDefesas) +
+					sumPeso(sheet.listaEquipamentos)
+
+				total = math.floor(total * 1000 + 0.5) / 1000
+
+				if N(sheet.pesototal, -1) ~= total then
+					sheet.pesototal = total
+				end
+
+				local forBase = N(sheet.forca, 10)
+				local danoFor = N(sheet.danoforca, 0)
+				local forEff  = forBase - danoFor
+				if forEff &lt; 0 then forEff = 0 end
+
+				local semPenal = forEff * 3
+				local maximo   = forEff * 10
+
+				if N(sheet.cargaSemPenal, -1) ~= semPenal then
+					sheet.cargaSemPenal = semPenal
+				end
+
+				if N(sheet.cargaMaxima, -1) ~= maximo then
+					sheet.cargaMaxima = maximo
+				end
+
+				local status = "OK"
+				local penal = 0
+				local deslocPenal = 0
+
+				if total &gt; semPenal then
+					status = "Pesada"
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if total &gt; maximo then
+					status = "Excedida"  -- padronizado com o hint
+					penal = -2
+					deslocPenal = 3
+				end
+
+				if tostring(sheet.cargaStatus or "") ~= status then
+					sheet.cargaStatus = status
+				end
+
+				TRPG_updateHintCarga03(ctrl, sheet)
+
+				if N(sheet.cargaPenalidade, 999) ~= penal then
+					sheet.cargaPenalidade = penal
+				end
+
+				sheet.cargaAfetada = (penal ~= 0)
+
+				local penCargaPos = 0
+				if penal &lt; 0 then penCargaPos = -penal end
+
+				if (tonumber(sheet.pencarga) or 0) ~= penCargaPos then
+					sheet.pencarga = penCargaPos
+				end
+			end
+
+			function TRPG_updateHintCarga03(ctrl, sh)
+				local root = rootOf(sh)
+				if root == nil then return end
+
+				local btn = ctrl and ctrl:findControlByName("btnHintCargaStatus") or nil
+				local edt = ctrl and ctrl:findControlByName("edtCargaStatus") or nil
+				if btn == nil then return end
+
+				local st = tostring(root.cargaStatus or "OK")
+
+				-- normaliza (pra não quebrar se variar Excedido/Excedida)
+				local stUpper = st:upper()
+
+				-- ===== CORES + NEGRITO =====
+				if edt ~= nil then
+					if stUpper == "OK" then
+					edt.fontColor = "Green"
+					edt.fontStyle = ""        -- normal
+					elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					edt.fontColor = "Goldenrod" -- amarelo mais legível que "Yellow"
+					edt.fontStyle = "bold"
+					elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					edt.fontColor = "Red"
+					edt.fontStyle = "bold"
+					else
+					edt.fontColor = "Black"
+					edt.fontStyle = ""
+					end
+				end
+
+				-- ===== HINT =====
+				if stUpper == "OK" then
+					btn.hint = "OK: você está dentro da carga normal (sem penalidades)."
+				elseif stUpper == "PESADA" or stUpper == "PESADO" then
+					btn.hint = "Pesada: acima da carga normal. Pela regra, sofre -2 em Acrobacia/Atletismo/Furtividade/Ladinagem e deslocamento -3m."
+				elseif stUpper == "EXCEDIDA" or stUpper == "EXCEDIDO" then
+					btn.hint = "Excedida: acima da carga máxima. Pela regra, você não deveria conseguir carregar tudo (além das penalidades)."
+				else
+					btn.hint = "Status de carga: " .. st
+				end
+			end
+
+			-- ===== Penalidades automáticas vindas de listaDefesas =====
+			local function sumPenalidadeDefesas(root)
+				if root == nil then return 0,0,0, 0,0,0 end
+
+				local penArm, penEsc, penOut = 0, 0, 0
+				local bcaArm, bcaEsc, bcaOut = 0, 0, 0
+
+				local lista = root.listaDefesas
+				if lista == nil then return 0,0,0, 0,0,0 end
+
+				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				if not ok or children == nil then return 0,0,0, 0,0,0 end
+
+				for _, item in ipairs(children) do
+					local equipado = (item.equipado == nil) or (item.equipado == true) -- nil = compat/antigos =&gt; considera equipado
+					if equipado then
+						local cat = tostring(item.categoria or ""):lower()
+						local pen = tonumber(item.penalidade) or 0
+						local bca = tonumber(item.bonusCA) or 0
+
+						if cat == "armadura" then
+							penArm = penArm + pen
+							bcaArm = bcaArm + bca
+						elseif cat == "escudo" or cat == "escudos" then
+							penEsc = penEsc + pen
+							bcaEsc = bcaEsc + bca
+						elseif cat == "outros" or cat == "outro" then
+							penOut = penOut + pen
+							bcaOut = bcaOut + bca
+						end
+					end
+				end
+
+				return penArm, penEsc, penOut, bcaArm, bcaEsc, bcaOut
+			end
+
+			function TRPG_recalcPenDefesas(sheetAny)
+				local root = rootOf(sheetAny)
+				if root == nil then return end
+
+				local penArm, penEsc, penOut, bcaArm, bcaEsc, bcaOut = sumPenalidadeDefesas(root)
+
+				if (tonumber(root.penarmadura) or 0) ~= penArm then root.penarmadura = penArm end
+				if (tonumber(root.penescudo) or 0) ~= penEsc then root.penescudo = penEsc end
+				if (tonumber(root.penoutros) or 0) ~= penOut then root.penoutros = penOut end
+
+				if (tonumber(root.bcaArmadura) or 0) ~= bcaArm then root.bcaArmadura = bcaArm end
+				if (tonumber(root.bcaEscudo) or 0) ~= bcaEsc then root.bcaEscudo = bcaEsc end
+				if (tonumber(root.bcaOutros) or 0) ~= bcaOut then root.bcaOutros = bcaOut end
+			end
+
+
+			function TRPG_addDefesa(ctrl, sh, categoria)
+				local rl = ctrl and ctrl:findControlByName("rclDefesas") or nil
+				if rl ~= nil then
+					local n = rl:append()
+					if n ~= nil then
+						n.categoria = tostring(categoria or "")
+						n.equipado = true 
+					end
+					TRPG_touch03(sh)
+					TRPG_touchCA(sh)
+				end
+			end
+
+
+		
+	
+</script>
+</form>
