@@ -3917,7 +3917,7 @@ local function constructNew_Tormenta01()
     obj.button19:setOpacity(0.0);
     obj.button19:setCanFocus(false);
     obj.button19:setCursor("handPoint");
-    obj.button19:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button19:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0");
     obj.button19:setName("button19");
     obj.button19:setTextTrimming("none");
 
@@ -3935,7 +3935,11 @@ local function constructNew_Tormenta01()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca',
+    'danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab',
+     'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4',
+      'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10',
+       'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -3969,8 +3973,8 @@ local function constructNew_Tormenta01()
 		
 
 			-- === Compatibilidade / correções ===
-			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("rrpgGUI")).
-			if GUI == nil then GUI = gui end
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'GUI' (require("FirecastGUI")).
+			if GUI == nil then GUI = GUI end
 
 
 			if desCalculos2 == nil then
@@ -4145,7 +4149,7 @@ local function constructNew_Tormenta01()
 
 			local function getChildNodesSafe(listNode)
 				if listNode == nil then return {} end
-				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
+				local ok, children = pcall(function() return NDB.getChildNodes(listNode) end)
 				if ok and children ~= nil then return children end
 				return {}
 			end
@@ -4355,7 +4359,7 @@ local function constructNew_Tormenta01()
 					local v = tonumber(value) or 0
 					local expr = tostring(v)  -- pode ser "12" ou "-3" etc.
 
-					local rolagem = rrpg.interpretarRolagem(expr)
+					local rolagem = Firecast.interpretarRolagem(expr)
 					if rolagem == nil then
 						showMessage("Rolagem inválida: " .. expr)
 						return
@@ -4363,10 +4367,10 @@ local function constructNew_Tormenta01()
 
 					-- se não tiver dado, prefixa 1d20
 					if not rolagem.possuiAlgumDado then
-						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+						rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
 					end
 
-					local mesa = rrpg.getMesaDe(nodeOrSheet)
+					local mesa = Firecast.getMesaDe(nodeOrSheet)
 					local titulo = tostring(label or "Teste")
 
 					if mesa ~= nil then
@@ -4386,7 +4390,7 @@ local function constructNew_Tormenta01()
 			if rootOf == nil then
 				function rootOf(node)
 					if node == nil then return nil end
-					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
 					if ok then return r end
 					return nil
 				end
@@ -4403,9 +4407,9 @@ local function constructNew_Tormenta01()
 					root = rootOf(node)
 				end
 
-				-- fallback direto pro ndb.getRoot
+				-- fallback direto pro NDB.getRoot
 				if root == nil then
-					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
 					if ok then root = r end
 				end
 
@@ -4525,7 +4529,7 @@ local function constructNew_Tormenta01()
 
     obj._e_event21 = obj.button19:addEventListener("onClick",
         function (event)
-            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');
         end);
 
     obj._e_event22 = obj.dataLink1:addEventListener("onChange",

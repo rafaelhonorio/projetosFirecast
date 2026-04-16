@@ -131,7 +131,7 @@ local function constructNew_frmDefesaLinha()
                     TRPG_touchCA(sheet);
             
                     if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
+                      local root = NDB.getRoot(sheet);
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;
@@ -156,7 +156,7 @@ local function constructNew_frmDefesaLinha()
     obj._e_event4 = obj.edit6:addEventListener("onChange",
         function ()
             if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
+                      local root = NDB.getRoot(sheet);
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;
@@ -168,11 +168,11 @@ local function constructNew_frmDefesaLinha()
     obj._e_event5 = obj.button1:addEventListener("onClick",
         function (event)
             if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
+                      local root = NDB.getRoot(sheet);
             
                       TRPG_touchCA(sheet);
             
-                      ndb.deleteNode(sheet);
+                      NDB.deleteNode(sheet);
             
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;

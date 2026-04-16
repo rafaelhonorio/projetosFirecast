@@ -3936,7 +3936,7 @@ local function constructNew_Tormentafrm()
     obj.button19:setOpacity(0.0);
     obj.button19:setCanFocus(false);
     obj.button19:setCursor("handPoint");
-    obj.button19:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.5");
+    obj.button19:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0");
     obj.button19:setName("button19");
     obj.button19:setTextTrimming("none");
 
@@ -3954,7 +3954,11 @@ local function constructNew_Tormentafrm()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj.Tormenta01);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca',
+    'danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab',
+     'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4',
+      'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10',
+       'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -3988,8 +3992,8 @@ local function constructNew_Tormentafrm()
 		
 
 			-- === Compatibilidade / correções ===
-			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("rrpgGUI")).
-			if GUI == nil then GUI = gui end
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'GUI' (require("FirecastGUI")).
+			if GUI == nil then GUI = GUI end
 
 
 			if desCalculos2 == nil then
@@ -4164,7 +4168,7 @@ local function constructNew_Tormentafrm()
 
 			local function getChildNodesSafe(listNode)
 				if listNode == nil then return {} end
-				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
+				local ok, children = pcall(function() return NDB.getChildNodes(listNode) end)
 				if ok and children ~= nil then return children end
 				return {}
 			end
@@ -4374,7 +4378,7 @@ local function constructNew_Tormentafrm()
 					local v = tonumber(value) or 0
 					local expr = tostring(v)  -- pode ser "12" ou "-3" etc.
 
-					local rolagem = rrpg.interpretarRolagem(expr)
+					local rolagem = Firecast.interpretarRolagem(expr)
 					if rolagem == nil then
 						showMessage("Rolagem inválida: " .. expr)
 						return
@@ -4382,10 +4386,10 @@ local function constructNew_Tormentafrm()
 
 					-- se não tiver dado, prefixa 1d20
 					if not rolagem.possuiAlgumDado then
-						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+						rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
 					end
 
-					local mesa = rrpg.getMesaDe(nodeOrSheet)
+					local mesa = Firecast.getMesaDe(nodeOrSheet)
 					local titulo = tostring(label or "Teste")
 
 					if mesa ~= nil then
@@ -4405,7 +4409,7 @@ local function constructNew_Tormentafrm()
 			if rootOf == nil then
 				function rootOf(node)
 					if node == nil then return nil end
-					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
 					if ok then return r end
 					return nil
 				end
@@ -4422,9 +4426,9 @@ local function constructNew_Tormentafrm()
 					root = rootOf(node)
 				end
 
-				-- fallback direto pro ndb.getRoot
+				-- fallback direto pro NDB.getRoot
 				if root == nil then
-					local ok, r = pcall(function() return ndb.getRoot(node) end)
+					local ok, r = pcall(function() return NDB.getRoot(node) end)
 					if ok then root = r end
 				end
 
@@ -9799,7 +9803,14 @@ local function constructNew_Tormentafrm()
 
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj.Tormenta02);
-    obj.dataLink2:setFields({'penarmadura', 'penescudo', 'penoutros', 'pencarga',  'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'});
+    obj.dataLink2:setFields({'penarmadura', 'penescudo', 'penoutros', 'pencarga',  'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outrosjogatina', 'outroscavalgar', 
+    'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao',
+    'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1',
+    'cbxatuacao2', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao',
+    'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao',
+    'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel', 'intimidar', 'hab_acrobacia', 'hab_adestrar', 'hab_atletismo', 'hab_atuacao1', 
+    'hab_atuacao2', 'hab_jogatina', 'hab_cavalgar', 'hab_conhecimento1', 'hab_conhecimento2', 'hab_cura', 'hab_diplomacia', 'hab_enganacao', 'hab_furtividade', 'hab_imagia', 'hab_iniciativa', 
+    'hab_intimidacao', 'hab_intuicao', 'hab_ladinagem', 'hab_oinformacao', 'hab_oficio1', 'hab_oficio2', 'hab_meditacao', 'hab_percepcao', 'hab_sobrevivencia'});
     obj.dataLink2:setName("dataLink2");
 
 
@@ -11341,7 +11352,7 @@ local function constructNew_Tormentafrm()
 
 			local function rootOf(nodeOrSheet)
 				if nodeOrSheet == nil then return nil end
-				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				local ok, r = pcall(function() return NDB.getRoot(nodeOrSheet) end)
 				if ok and r ~= nil then return r end
 				return nodeOrSheet
 			end
@@ -11581,7 +11592,7 @@ local function constructNew_Tormentafrm()
 				if listNode == nil then return 0 end
 
 				local ok, children = pcall(function()
-					return ndb.getChildNodes(listNode)
+					return NDB.getChildNodes(listNode)
 				end)
 				if not ok or children == nil then return 0 end
 
@@ -11714,7 +11725,7 @@ local function constructNew_Tormentafrm()
 				local lista = root.listaDefesas
 				if lista == nil then return 0,0,0, 0,0,0 end
 
-				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				local ok, children = pcall(function() return NDB.getChildNodes(lista) end)
 				if not ok or children == nil then return 0,0,0, 0,0,0 end
 
 				for _, item in ipairs(children) do
@@ -12931,7 +12942,7 @@ local function constructNew_Tormentafrm()
 					expr = "0" .. expr
 				end
 
-				local rolagem = rrpg.interpretarRolagem(expr)
+				local rolagem = Firecast.interpretarRolagem(expr)
 				if rolagem == nil then
 					showMessage("Rolagem inválida: " .. expr)
 					return
@@ -12939,10 +12950,10 @@ local function constructNew_Tormentafrm()
 
 				-- se não tiver dado, prefixa 1d20 (igual seu padrão)
 				if not rolagem.possuiAlgumDado then
-					rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+					rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
 				end
 
-				local mesa = rrpg.getMesaDe(nodeOrSheet)
+				local mesa = Firecast.getMesaDe(nodeOrSheet)
 				local titulo = tostring(label or "Rolagem")
 
 				if mesa ~= nil then
@@ -13070,7 +13081,7 @@ local function constructNew_Tormentafrm()
 
     obj._e_event21 = obj.button19:addEventListener("onClick",
         function (event)
-            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/main/Projetos/Tormenta7.8/output/Tormenta7.8.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');
         end);
 
     obj._e_event22 = obj.dataLink1:addEventListener("onChange",

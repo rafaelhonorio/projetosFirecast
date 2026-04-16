@@ -163,8 +163,8 @@ local function constructNew_frmEquipLinha()
     obj._e_event6 = obj.button1:addEventListener("onClick",
         function (event)
             if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
-                      ndb.deleteNode(sheet);
+                      local root = NDB.getRoot(sheet);
+                      NDB.deleteNode(sheet);
                       TRPG_touch03(root);
                     end;
         end);
@@ -172,7 +172,7 @@ local function constructNew_frmEquipLinha()
     obj._e_event7 = obj.dataLink1:addEventListener("onChange",
         function (field, oldValue, newValue)
             if sheet ~= nil then
-                      local root = ndb.getRoot(sheet);
+                      local root = NDB.getRoot(sheet);
                       if root ~= nil then
                         root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
                       end;

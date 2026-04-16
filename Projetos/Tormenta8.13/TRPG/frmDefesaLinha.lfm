@@ -15,7 +15,7 @@
         TRPG_touchCA(sheet);
 
         if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
+          local root = NDB.getRoot(sheet);
           if root ~= nil then
             root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
           end;
@@ -42,7 +42,7 @@
         <edit align="left" width="40" field="peso" fontColor="black" type="float" min="0" max="9999" horzTextAlign="center">
             <event name="onChange">
         if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
+          local root = NDB.getRoot(sheet);
           if root ~= nil then
             root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
           end;
@@ -54,11 +54,11 @@
         <button align="left" width="24" fontColor="black" text="X" hint="Excluir">
             <event name="onClick">
         if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
+          local root = NDB.getRoot(sheet);
 
           TRPG_touchCA(sheet);
 
-          ndb.deleteNode(sheet);
+          NDB.deleteNode(sheet);
 
           if root ~= nil then
             root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;

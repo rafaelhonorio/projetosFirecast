@@ -522,7 +522,7 @@ local function constructNew_Tormenta06()
 					expr = "0" .. expr
 				end
 
-				local rolagem = rrpg.interpretarRolagem(expr)
+				local rolagem = Firecast.interpretarRolagem(expr)
 				if rolagem == nil then
 					showMessage("Rolagem inválida: " .. expr)
 					return
@@ -530,10 +530,10 @@ local function constructNew_Tormenta06()
 
 				-- se não tiver dado, prefixa 1d20 (igual seu padrão)
 				if not rolagem.possuiAlgumDado then
-					rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
+					rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
 				end
 
-				local mesa = rrpg.getMesaDe(nodeOrSheet)
+				local mesa = Firecast.getMesaDe(nodeOrSheet)
 				local titulo = tostring(label or "Rolagem")
 
 				if mesa ~= nil then

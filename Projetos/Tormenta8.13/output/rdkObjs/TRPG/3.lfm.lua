@@ -1182,7 +1182,7 @@ local function constructNew_Tormenta03()
 
 			local function rootOf(nodeOrSheet)
 				if nodeOrSheet == nil then return nil end
-				local ok, r = pcall(function() return ndb.getRoot(nodeOrSheet) end)
+				local ok, r = pcall(function() return NDB.getRoot(nodeOrSheet) end)
 				if ok and r ~= nil then return r end
 				return nodeOrSheet
 			end
@@ -1422,7 +1422,7 @@ local function constructNew_Tormenta03()
 				if listNode == nil then return 0 end
 
 				local ok, children = pcall(function()
-					return ndb.getChildNodes(listNode)
+					return NDB.getChildNodes(listNode)
 				end)
 				if not ok or children == nil then return 0 end
 
@@ -1555,7 +1555,7 @@ local function constructNew_Tormenta03()
 				local lista = root.listaDefesas
 				if lista == nil then return 0,0,0, 0,0,0 end
 
-				local ok, children = pcall(function() return ndb.getChildNodes(lista) end)
+				local ok, children = pcall(function() return NDB.getChildNodes(lista) end)
 				if not ok or children == nil then return 0,0,0, 0,0,0 end
 
 				for _, item in ipairs(children) do

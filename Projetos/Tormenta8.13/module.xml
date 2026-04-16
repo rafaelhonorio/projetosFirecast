@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module sdkVersion="3.7b">
-    <id>rrpg.com.tricket.tormentarpg8</id>
+    <id>rrpg.com.tricket.tormentarpgfirecast8</id>
     <version>1.0</version>
     <info lang="pt-BR">
-        <name>Ficha Tormenta RPG</name>
+        <name>Ficha Tormenta RPG para 8.13</name>
         <description>Ficha Tormenta RPG atualizada para Firecast 8.13 (SDK 3.7).</description>
         <author>Tricket</author>
         <site>https://github.com/rafaelhonorio/projetosFirecast/</site>

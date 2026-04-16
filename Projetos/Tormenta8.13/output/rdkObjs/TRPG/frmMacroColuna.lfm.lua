@@ -111,7 +111,7 @@ local function constructNew_frmMacroColuna()
             
             					-- tenta deletar o nodo do item
             					pcall(function()
-            					ndb.deleteNode(nodeToDelete);
+            					NDB.deleteNode(nodeToDelete);
             					end);
             
             					-- sobe até a tela 6 (onde existem dsDetalhesDoItem / boxNadaSelecionado)
@@ -146,7 +146,7 @@ local function constructNew_frmMacroColuna()
             					if TRPG_touch06 ~= nil then
             						TRPG_touch06(tela);
             					else
-            						local root = ndb.getRoot(nodeToDelete);
+            						local root = NDB.getRoot(nodeToDelete);
             						if root ~= nil then
             						root.__recalc06 = (tonumber(root.__recalc06) or 0) + 1;
             						end;

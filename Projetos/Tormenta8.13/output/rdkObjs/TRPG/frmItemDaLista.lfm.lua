@@ -79,18 +79,18 @@ local function constructNew_frmItemDaLista()
 
     obj._e_event0 = obj.button1:addEventListener("onDblClick",
         function (event)
-            ndb.deleteNode(sheet);
+            NDB.deleteNode(sheet);
         end);
 
     obj._e_event1 = obj.button2:addEventListener("onClick",
         function (event)
             if TRPG_roll == nil then
                                 function TRPG_roll(sheetAny, expr, label)
-                                    local mesa = rrpg.getMesaDe(sheetAny);
+                                    local mesa = Firecast.getMesaDe(sheetAny);
                                     if mesa ~= nil and mesa.activeChat ~= nil then
                                         mesa.activeChat:rolarDados(expr, label);
                                     else
-                                        local r = rrpg.interpretarRolagem(expr);
+                                        local r = Firecast.interpretarRolagem(expr);
                                         r:rolarLocalmente();
                                     end
                                 end

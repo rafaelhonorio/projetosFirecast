@@ -67,8 +67,8 @@
         <button align="left" width="26" fontColor="black" text="X" hint="Excluir item">
             <event name="onClick">
         if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
-          ndb.deleteNode(sheet);
+          local root = NDB.getRoot(sheet);
+          NDB.deleteNode(sheet);
           TRPG_touch03(root);
         end;
       </event>
@@ -76,7 +76,7 @@
         <dataLink fields="{'peso','qtd'}">
             <event name="onChange">
         if sheet ~= nil then
-          local root = ndb.getRoot(sheet);
+          local root = NDB.getRoot(sheet);
           if root ~= nil then
             root.__recalc03 = (tonumber(root.__recalc03) or 0) + 1;
           end;
