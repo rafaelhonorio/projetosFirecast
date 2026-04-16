@@ -366,30 +366,67 @@ local function constructNew_Tormenta05()
 
 
 -- === Responsividade (Firecast 8.13 / SDK 3.7) ===
-        -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
+        -- Mantém o layout legado (1010px) e aplica escala automática.
+        -- Objetivo:
+        --   * abrir no maior tamanho possível
+        --   * reduzir apenas quando a tela for menor
+        --   * recalcular depois que o layout estabiliza (evita ficar minúsculo ao abrir)
         if TRPG_updateScale == nil then
-            require("system.lua");
+            require("rrpgUtil.lua");
+
+            local function TRPG_getAvailableWidth(ctrl)
+                local w = 0
+                local p = ctrl
+                while p ~= nil and w <= 0 do
+                    w = tonumber(p.width) or 0
+                    p = p.parent
+                end
+                return w
+            end
+
             function TRPG_updateScale(container, canvas)
                 if container == nil then return end
-                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
+
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
-                availW = availW - 20
+                if baseW <= 0 then baseW = 1010 end
+
+                local availW = TRPG_getAvailableWidth(container)
+                availW = availW - 24
                 if availW <= 0 then return end
 
-                local scale = availW / baseW
-                if scale > 1 then scale = 1 end
-                if scale < 0.60 then scale = 0.60 end  -- evita ficar ilegível demais
+                local scaleW = availW / baseW
+
+                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                local scale = scaleW
+                if scaleW >= 0.85 and scaleW < 1.0 then
+                    scale = 1.0
+                end
+
+                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                local maxScale = 1.25
+                if scale > maxScale then scale = maxScale end
+                if scale < 0.20 then scale = 0.20 end
 
                 canvas.scale = scale
 
                 local visW = baseW * scale
-                local left = (availW + 20 - visW) / 2
+                local left = (availW + 24 - visW) / 2
                 if left < 0 then left = 0 end
                 canvas.left = left
             end
+
+            function TRPG_scheduleScale(container, canvas)
+                if container == nil or canvas == nil then return end
+                local function tick()
+                    pcall(TRPG_updateScale, container, canvas)
+                end
+                setTimeout(tick, 1)
+                setTimeout(tick, 60)
+                setTimeout(tick, 200)
+            end
         end
+
 
 
 
@@ -400,7 +437,7 @@ local function constructNew_Tormenta05()
 
     obj._e_event1 = obj:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self.sbMain05, self.lytCanvas05);
+            TRPG_updateScale(self.sbMain05, self.lytCanvas05); TRPG_scheduleScale(self.sbMain05, self.lytCanvas05);
         end);
 
     function obj:_releaseEvents()
