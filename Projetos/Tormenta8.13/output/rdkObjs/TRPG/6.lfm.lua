@@ -30,13 +30,13 @@ local function constructNew_Tormenta06()
     obj:setAlign("client");
     obj:setTheme("light");
 
-    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox1:setParent(obj);
-    obj.scrollBox1:setAlign("client");
-    obj.scrollBox1:setName("scrollBox1");
+    obj.sbMain06 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.sbMain06:setParent(obj);
+    obj.sbMain06:setAlign("client");
+    obj.sbMain06:setName("sbMain06");
 
     obj.lytCanvas06 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.lytCanvas06:setParent(obj.scrollBox1);
+    obj.lytCanvas06:setParent(obj.sbMain06);
     obj.lytCanvas06:setName("lytCanvas06");
     obj.lytCanvas06:setAlign("none");
     obj.lytCanvas06:setLeft(0);
@@ -398,12 +398,12 @@ local function constructNew_Tormenta06()
         -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
         if TRPG_updateScale == nil then
             require("system.lua");
-            function TRPG_updateScale(form, canvas)
-                if form == nil then return end
-                canvas = canvas or form.lytCanvas or form.page
+            function TRPG_updateScale(container, canvas)
+                if container == nil then return end
+                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(form.width) or baseW
+                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
                 availW = availW - 20
                 if availW <= 0 then return end
 
@@ -556,12 +556,12 @@ local function constructNew_Tormenta06()
 
     obj._e_event0 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self, self.lytCanvas06);
+            TRPG_updateScale(self.sbMain06, self.lytCanvas06);
         end);
 
     obj._e_event1 = obj:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self, self.lytCanvas06);
+            TRPG_updateScale(self.sbMain06, self.lytCanvas06);
         end);
 
     obj._e_event2 = obj.button1:addEventListener("onClick",
@@ -660,16 +660,16 @@ local function constructNew_Tormenta06()
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.rclDanos ~= nil then self.rclDanos:destroy(); self.rclDanos = nil; end;
-        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
+        if self.sbMain06 ~= nil then self.sbMain06:destroy(); self.sbMain06 = nil; end;
         if self.lytCanvas06 ~= nil then self.lytCanvas06:destroy(); self.lytCanvas06 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
+        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.boxNadaSelecionado ~= nil then self.boxNadaSelecionado:destroy(); self.boxNadaSelecionado = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;

@@ -31,13 +31,13 @@ local function constructNew_Tormenta03()
     obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
 
-    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox1:setParent(obj);
-    obj.scrollBox1:setAlign("client");
-    obj.scrollBox1:setName("scrollBox1");
+    obj.sbMain03 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.sbMain03:setParent(obj);
+    obj.sbMain03:setAlign("client");
+    obj.sbMain03:setName("sbMain03");
 
     obj.lytCanvas03 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.lytCanvas03:setParent(obj.scrollBox1);
+    obj.lytCanvas03:setParent(obj.sbMain03);
     obj.lytCanvas03:setName("lytCanvas03");
     obj.lytCanvas03:setAlign("none");
     obj.lytCanvas03:setLeft(0);
@@ -1142,12 +1142,12 @@ local function constructNew_Tormenta03()
         -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
         if TRPG_updateScale == nil then
             require("system.lua");
-            function TRPG_updateScale(form, canvas)
-                if form == nil then return end
-                canvas = canvas or form.lytCanvas or form.page
+            function TRPG_updateScale(container, canvas)
+                if container == nil then return end
+                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(form.width) or baseW
+                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
                 availW = availW - 20
                 if availW <= 0 then return end
 
@@ -1618,12 +1618,12 @@ local function constructNew_Tormenta03()
 
     obj._e_event0 = obj:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+            TRPG_updateScale(self.sbMain03, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
         end);
 
     obj._e_event1 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self, self.lytCanvas03);
+            TRPG_updateScale(self.sbMain03, self.lytCanvas03);
         end);
 
     obj._e_event2 = obj.rcArmaCloseArea:addEventListener("onClick",
@@ -1762,6 +1762,7 @@ local function constructNew_Tormenta03()
         if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
         if self.rclArmas ~= nil then self.rclArmas:destroy(); self.rclArmas = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.sbMain03 ~= nil then self.sbMain03:destroy(); self.sbMain03 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
@@ -1834,7 +1835,6 @@ local function constructNew_Tormenta03()
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;

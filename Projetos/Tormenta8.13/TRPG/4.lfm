@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta04" align="client" theme="light" lockWhileNodeIsLoading="true" onResize="TRPG_updateScale(self, self.lytCanvas04);" onNodeReady="TRPG_updateScale(self, self.lytCanvas04);">
+<form name="Tormenta04" align="client" theme="light" lockWhileNodeIsLoading="true" onResize="TRPG_updateScale(self.sbMain04, self.lytCanvas04);" onNodeReady="TRPG_updateScale(self.sbMain04, self.lytCanvas04);">
     <style>
         label {
             textTrimming: none;
@@ -8,7 +8,7 @@
             textTrimming: none;
         }
     </style>
-    <scrollBox align="client">
+    <scrollBox align="client" name="sbMain04">
         <layout name="lytCanvas04" align="none" left="0" top="0" width="1010" height="700" margins="{left=0,top=0,right=0,bottom=0}">
             <rectangle width="1010" height="700" color="LightGray" xradius="10" yradius="10" />
             <rectangle left="373" top="10" color="#333333" width="265" height="50" xradius="2" yradius="2" />
@@ -39,12 +39,12 @@
         -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
         if TRPG_updateScale == nil then
             require("system.lua");
-            function TRPG_updateScale(form, canvas)
-                if form == nil then return end
-                canvas = canvas or form.lytCanvas or form.page
+            function TRPG_updateScale(container, canvas)
+                if container == nil then return end
+                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(form.width) or baseW
+                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
                 availW = availW - 20
                 if availW &lt;= 0 then return end
 

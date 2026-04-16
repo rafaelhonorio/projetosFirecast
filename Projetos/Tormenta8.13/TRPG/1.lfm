@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta01" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="TRPG_updateScale(self, self.lytCanvas01); desCalculos(); recalcAll();" onResize="TRPG_updateScale(self, self.lytCanvas01);">
+<form name="Tormenta01" align="client" theme="light" lockWhileNodeIsLoading="true" onNodeReady="TRPG_updateScale(self.sbMain01, self.lytCanvas01); desCalculos(); recalcAll();" onResize="TRPG_updateScale(self.sbMain01, self.lytCanvas01);">
     <style>
         label {
             textTrimming: none;
@@ -8,7 +8,7 @@
             textTrimming: none;
         }
     </style>
-    <scrollBox align="client">
+    <scrollBox align="client" name="sbMain01">
         <template name="Principal">
             <rectangle left="5" top="0" color="Black" width="155" height="25" xradius="2" yradius="2" />
             <label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="white" />
@@ -421,9 +421,7 @@
             </layout>
         </layout>
     </scrollBox>
-    <dataLink fields="{'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma',
-     'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5',
-     'nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'}">
+    <dataLink fields="{'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'}">
         <event name="onChange">
 			recalcAll();
 		</event>
@@ -433,12 +431,12 @@
         -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
         if TRPG_updateScale == nil then
             require("system.lua");
-            function TRPG_updateScale(form, canvas)
-                if form == nil then return end
-                canvas = canvas or form.lytCanvas or form.page
+            function TRPG_updateScale(container, canvas)
+                if container == nil then return end
+                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(form.width) or baseW
+                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
                 availW = availW - 20
                 if availW &lt;= 0 then return end
 
@@ -459,9 +457,13 @@
 		
 
 			-- === Compatibilidade / correções ===
-			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("FirecastGUI")).
-			if GUI == nil then GUI = GUI end
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("rrpgGUI")).
+			if GUI == nil then GUI = gui end
 
+
+			if desCalculos2 == nil then
+				function desCalculos2() end
+			end
 			-- 'desCalculos' era chamado no 1.lfm (onNodeReady / checkbox) mas não existia; mantemos compat.
 			if desCalculos == nil then
 				function desCalculos()
@@ -631,7 +633,7 @@
 
 			local function getChildNodesSafe(listNode)
 				if listNode == nil then return {} end
-				local ok, children = pcall(function() return NDB.getChildNodes(listNode) end)
+				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
 				if ok and children ~= nil then return children end
 				return {}
 			end
@@ -701,14 +703,36 @@
 			function recalcAll()
 				if sheet == nil then return end
 
-				if sheet.calculos == true and sheet.__forceRecalc ~= true then
-					return
-				end
-
 				local function N(v, d)
 					local n = tonumber(v)
 					if n == nil then return d or 0 end
 					return n
+				end
+
+				-- ===== Inicialização segura (mesmo com cálculos desabilitados) =====
+				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+
+				local caModo = tostring(sheet.ca_baseModo or ""):upper()
+				if caModo == "" then caModo = "HALF" end
+
+				if caModo == "FULL" then
+					sheet.ca_baseModo = "FULL"
+					sheet.caBaseLabel = "10+Nv"
+					-- Só escreve ca1 se estiver calculando ou se ainda estiver vazio
+					if sheet.calculos ~= true or sheet.__forceRecalc == true or sheet.ca1 == nil or sheet.ca1 == "" then
+						sheet.ca1 = N(sheet.nivel) + 10
+					end
+				else
+					sheet.ca_baseModo = "HALF"
+					sheet.caBaseLabel = "10 + 1/2 Nv"
+					if sheet.calculos ~= true or sheet.__forceRecalc == true or sheet.ca1 == nil or sheet.ca1 == "" then
+						sheet.ca1 = N(sheet.metadenivel) + 10
+					end
+				end
+
+				-- Se o usuário marcou "Desabilita cálculos automáticos", não sobrescreve o restante
+				if sheet.calculos == true and sheet.__forceRecalc ~= true then
+					return
 				end
 
 				if sheet.hab_fort == nil or sheet.hab_fort == "" then sheet.hab_fort = "CON" end
@@ -819,7 +843,7 @@
 					local v = tonumber(value) or 0
 					local expr = tostring(v)  -- pode ser "12" ou "-3" etc.
 
-					local rolagem = Firecast.interpretarRolagem(expr)
+					local rolagem = rrpg.interpretarRolagem(expr)
 					if rolagem == nil then
 						showMessage("Rolagem inválida: " .. expr)
 						return
@@ -827,10 +851,10 @@
 
 					-- se não tiver dado, prefixa 1d20
 					if not rolagem.possuiAlgumDado then
-						rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
+						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
 					end
 
-					local mesa = Firecast.getMesaDe(nodeOrSheet)
+					local mesa = rrpg.getMesaDe(nodeOrSheet)
 					local titulo = tostring(label or "Teste")
 
 					if mesa ~= nil then
@@ -850,7 +874,7 @@
 			if rootOf == nil then
 				function rootOf(node)
 					if node == nil then return nil end
-					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
 					if ok then return r end
 					return nil
 				end
@@ -867,9 +891,9 @@
 					root = rootOf(node)
 				end
 
-				-- fallback direto pro NDB.getRoot
+				-- fallback direto pro ndb.getRoot
 				if root == nil then
-					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
 					if ok then root = r end
 				end
 

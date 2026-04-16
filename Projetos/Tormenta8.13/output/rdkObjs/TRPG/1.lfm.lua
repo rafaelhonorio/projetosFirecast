@@ -31,13 +31,13 @@ local function constructNew_Tormenta01()
     obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
 
-    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox1:setParent(obj);
-    obj.scrollBox1:setAlign("client");
-    obj.scrollBox1:setName("scrollBox1");
+    obj.sbMain01 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.sbMain01:setParent(obj);
+    obj.sbMain01:setAlign("client");
+    obj.sbMain01:setName("sbMain01");
 
     obj.lytCanvas01 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.lytCanvas01:setParent(obj.scrollBox1);
+    obj.lytCanvas01:setParent(obj.sbMain01);
     obj.lytCanvas01:setName("lytCanvas01");
     obj.lytCanvas01:setAlign("none");
     obj.lytCanvas01:setLeft(0);
@@ -3935,9 +3935,7 @@ local function constructNew_Tormenta01()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma',
-     'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5',
-     'nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
+    obj.dataLink1:setFields({'calculos','forca','destreza','constituicao','inteligencia','sabedoria','carisma', 'danoforca','danodestreza','danoconstituicao','danointeligencia','danosabedoria','danocarisma', 'ca_baseModo', 'ca_extraHab', 'caBaseLabel', 'ca3', 'ca4', 'ca5', 'ca6', 'ca7','fort3','ref3','von3','bba','dis3','dis4','cac3','cac4', 'nvclasse1','nvclasse2','nvclasse3','nvclasse4','nvclasse5','nvclasse6','nvclasse7','nvclasse8','nvclasse9','nvclasse10', 'hab_fort','hab_ref','hab_von','hab_cac','hab_dis','__recalc', 'listaDefesas', '__recalcCA', '__recalc03'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -3945,12 +3943,12 @@ local function constructNew_Tormenta01()
         -- Mantém o layout legado (1010px) e aplica escala automática em telas menores.
         if TRPG_updateScale == nil then
             require("system.lua");
-            function TRPG_updateScale(form, canvas)
-                if form == nil then return end
-                canvas = canvas or form.lytCanvas or form.page
+            function TRPG_updateScale(container, canvas)
+                if container == nil then return end
+                canvas = canvas or (container.parent and (container.parent.lytCanvas or container.parent.page)) or container.lytCanvas or container.page
                 if canvas == nil then return end
                 local baseW = tonumber(canvas.width) or 1010
-                local availW = tonumber(form.width) or baseW
+                local availW = tonumber(container.width) or (container.parent and tonumber(container.parent.width)) or baseW
                 availW = availW - 20
                 if availW <= 0 then return end
 
@@ -3971,9 +3969,13 @@ local function constructNew_Tormenta01()
 		
 
 			-- === Compatibilidade / correções ===
-			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("FirecastGUI")).
-			if GUI == nil then GUI = GUI end
+			-- Alguns pacotes/versões esperam 'GUI' global, mas o padrão atual é 'gui' (require("rrpgGUI")).
+			if GUI == nil then GUI = gui end
 
+
+			if desCalculos2 == nil then
+				function desCalculos2() end
+			end
 			-- 'desCalculos' era chamado no 1.lfm (onNodeReady / checkbox) mas não existia; mantemos compat.
 			if desCalculos == nil then
 				function desCalculos()
@@ -4143,7 +4145,7 @@ local function constructNew_Tormenta01()
 
 			local function getChildNodesSafe(listNode)
 				if listNode == nil then return {} end
-				local ok, children = pcall(function() return NDB.getChildNodes(listNode) end)
+				local ok, children = pcall(function() return ndb.getChildNodes(listNode) end)
 				if ok and children ~= nil then return children end
 				return {}
 			end
@@ -4213,14 +4215,36 @@ local function constructNew_Tormenta01()
 			function recalcAll()
 				if sheet == nil then return end
 
-				if sheet.calculos == true and sheet.__forceRecalc ~= true then
-					return
-				end
-
 				local function N(v, d)
 					local n = tonumber(v)
 					if n == nil then return d or 0 end
 					return n
+				end
+
+				-- ===== Inicialização segura (mesmo com cálculos desabilitados) =====
+				sheet.metadenivel = math.floor(N(sheet.nivel) / 2)
+
+				local caModo = tostring(sheet.ca_baseModo or ""):upper()
+				if caModo == "" then caModo = "HALF" end
+
+				if caModo == "FULL" then
+					sheet.ca_baseModo = "FULL"
+					sheet.caBaseLabel = "10+Nv"
+					-- Só escreve ca1 se estiver calculando ou se ainda estiver vazio
+					if sheet.calculos ~= true or sheet.__forceRecalc == true or sheet.ca1 == nil or sheet.ca1 == "" then
+						sheet.ca1 = N(sheet.nivel) + 10
+					end
+				else
+					sheet.ca_baseModo = "HALF"
+					sheet.caBaseLabel = "10 + 1/2 Nv"
+					if sheet.calculos ~= true or sheet.__forceRecalc == true or sheet.ca1 == nil or sheet.ca1 == "" then
+						sheet.ca1 = N(sheet.metadenivel) + 10
+					end
+				end
+
+				-- Se o usuário marcou "Desabilita cálculos automáticos", não sobrescreve o restante
+				if sheet.calculos == true and sheet.__forceRecalc ~= true then
+					return
 				end
 
 				if sheet.hab_fort == nil or sheet.hab_fort == "" then sheet.hab_fort = "CON" end
@@ -4331,7 +4355,7 @@ local function constructNew_Tormenta01()
 					local v = tonumber(value) or 0
 					local expr = tostring(v)  -- pode ser "12" ou "-3" etc.
 
-					local rolagem = Firecast.interpretarRolagem(expr)
+					local rolagem = rrpg.interpretarRolagem(expr)
 					if rolagem == nil then
 						showMessage("Rolagem inválida: " .. expr)
 						return
@@ -4339,10 +4363,10 @@ local function constructNew_Tormenta01()
 
 					-- se não tiver dado, prefixa 1d20
 					if not rolagem.possuiAlgumDado then
-						rolagem = Firecast.interpretarRolagem("1d20"):concatenar(rolagem)
+						rolagem = rrpg.interpretarRolagem("1d20"):concatenar(rolagem)
 					end
 
-					local mesa = Firecast.getMesaDe(nodeOrSheet)
+					local mesa = rrpg.getMesaDe(nodeOrSheet)
 					local titulo = tostring(label or "Teste")
 
 					if mesa ~= nil then
@@ -4362,7 +4386,7 @@ local function constructNew_Tormenta01()
 			if rootOf == nil then
 				function rootOf(node)
 					if node == nil then return nil end
-					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
 					if ok then return r end
 					return nil
 				end
@@ -4379,9 +4403,9 @@ local function constructNew_Tormenta01()
 					root = rootOf(node)
 				end
 
-				-- fallback direto pro NDB.getRoot
+				-- fallback direto pro ndb.getRoot
 				if root == nil then
-					local ok, r = pcall(function() return NDB.getRoot(node) end)
+					local ok, r = pcall(function() return ndb.getRoot(node) end)
 					if ok then root = r end
 				end
 
@@ -4396,12 +4420,12 @@ local function constructNew_Tormenta01()
 
     obj._e_event0 = obj:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self, self.lytCanvas01); desCalculos(); recalcAll();
+            TRPG_updateScale(self.sbMain01, self.lytCanvas01); desCalculos(); recalcAll();
         end);
 
     obj._e_event1 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self, self.lytCanvas01);
+            TRPG_updateScale(self.sbMain01, self.lytCanvas01);
         end);
 
     obj._e_event2 = obj.button1:addEventListener("onClick",
@@ -4650,7 +4674,6 @@ local function constructNew_Tormenta01()
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
-        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.modinteligencia ~= nil then self.modinteligencia:destroy(); self.modinteligencia = nil; end;
         if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
@@ -4690,6 +4713,7 @@ local function constructNew_Tormenta01()
         if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
         if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
         if self.rectangle44 ~= nil then self.rectangle44:destroy(); self.rectangle44 = nil; end;
+        if self.sbMain01 ~= nil then self.sbMain01:destroy(); self.sbMain01 = nil; end;
         if self.cac2 ~= nil then self.cac2:destroy(); self.cac2 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
