@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta04" align="client" theme="light" lockWhileNodeIsLoading="true" onResize="TRPG_updateScale(self.sbMain04, self.lytCanvas04);" onNodeReady="TRPG_updateScale(self.sbMain04, self.lytCanvas04); TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);">
+<form name="Tormenta04" width="1010" height="700" minWidth="700" maxWidth="1280" align="client" theme="light" lockWhileNodeIsLoading="true" onShow="TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);" onResize="TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);" onNodeReady="TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);">
     <style>
         label {
             textTrimming: none;
@@ -63,20 +63,25 @@
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW &lt;= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW &lt;= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW &gt;= 0.85 and scaleW &lt; 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale &gt; maxScale then scale = maxScale end
-                if scale &lt; 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale &lt; 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -92,8 +97,10 @@
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 

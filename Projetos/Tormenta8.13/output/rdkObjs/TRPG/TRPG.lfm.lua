@@ -30,8 +30,13 @@ local function constructNew_Tormentafrm()
     obj:setFormType("sheetTemplate");
     obj:setDataType("Tormenta.RPGFirecast");
     obj:setTitle("Ficha Tormenta RPG (Firecast 8.13)");
+    obj:setWidth(1010);
+    obj:setHeight(730);
+    obj:setMinWidth(700);
+    obj:setMaxWidth(1280);
     obj:setAlign("client");
     obj:setTheme("light");
+    obj.cacheMode = "time";
 
     obj.tabControl1 = GUI.fromHandle(_obj_newObject("tabControl"));
     obj.tabControl1:setParent(obj);
@@ -46,6 +51,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta01 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta01:setParent(obj.tab1);
     obj.Tormenta01:setName("Tormenta01");
+    obj.Tormenta01:setWidth(1010);
+    obj.Tormenta01:setHeight(700);
+    obj.Tormenta01:setMinWidth(700);
+    obj.Tormenta01:setMaxWidth(1280);
     obj.Tormenta01:setAlign("client");
     obj.Tormenta01:setTheme("light");
     obj.Tormenta01:setLockWhileNodeIsLoading(true);
@@ -3990,20 +3999,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -4019,8 +4033,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -4486,6 +4502,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta02 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta02:setParent(obj.tab2);
     obj.Tormenta02:setName("Tormenta02");
+    obj.Tormenta02:setWidth(1010);
+    obj.Tormenta02:setHeight(700);
+    obj.Tormenta02:setMinWidth(700);
+    obj.Tormenta02:setMaxWidth(1280);
     obj.Tormenta02:setAlign("client");
     obj.Tormenta02:setTheme("light");
     obj.Tormenta02:setLockWhileNodeIsLoading(true);
@@ -9879,20 +9899,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -9908,8 +9933,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -10271,6 +10298,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta03 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta03:setParent(obj.tab3);
     obj.Tormenta03:setName("Tormenta03");
+    obj.Tormenta03:setWidth(1010);
+    obj.Tormenta03:setHeight(700);
+    obj.Tormenta03:setMinWidth(700);
+    obj.Tormenta03:setMaxWidth(1280);
     obj.Tormenta03:setAlign("client");
     obj.Tormenta03:setTheme("light");
     obj.Tormenta03:setLockWhileNodeIsLoading(true);
@@ -11410,20 +11441,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -11439,8 +11475,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -11905,6 +11943,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta04 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta04:setParent(obj.tab4);
     obj.Tormenta04:setName("Tormenta04");
+    obj.Tormenta04:setWidth(1010);
+    obj.Tormenta04:setHeight(700);
+    obj.Tormenta04:setMinWidth(700);
+    obj.Tormenta04:setMaxWidth(1280);
     obj.Tormenta04:setAlign("client");
     obj.Tormenta04:setTheme("light");
     obj.Tormenta04:setLockWhileNodeIsLoading(true);
@@ -12176,20 +12218,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -12205,8 +12252,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -12221,6 +12270,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta05 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta05:setParent(obj.tab5);
     obj.Tormenta05:setName("Tormenta05");
+    obj.Tormenta05:setWidth(1010);
+    obj.Tormenta05:setHeight(700);
+    obj.Tormenta05:setMinWidth(700);
+    obj.Tormenta05:setMaxWidth(1280);
     obj.Tormenta05:setAlign("client");
     obj.Tormenta05:setTheme("light");
     obj.Tormenta05:setLockWhileNodeIsLoading(true);
@@ -12587,20 +12640,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -12616,8 +12674,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -12632,6 +12692,10 @@ local function constructNew_Tormentafrm()
     obj.Tormenta06 = GUI.fromHandle(_obj_newObject("form"));
     obj.Tormenta06:setParent(obj.tab6);
     obj.Tormenta06:setName("Tormenta06");
+    obj.Tormenta06:setWidth(1010);
+    obj.Tormenta06:setHeight(700);
+    obj.Tormenta06:setMinWidth(700);
+    obj.Tormenta06:setMaxWidth(1280);
     obj.Tormenta06:setAlign("client");
     obj.Tormenta06:setTheme("light");
 
@@ -13027,20 +13091,25 @@ local function constructNew_Tormentafrm()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -13056,8 +13125,10 @@ local function constructNew_Tormentafrm()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -13196,147 +13267,157 @@ local function constructNew_Tormentafrm()
 
 
 
-    obj._e_event0 = obj.Tormenta01:addEventListener("onNodeReady",
+    obj._e_event0 = obj.Tormenta01:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain01, self.lytCanvas01); TRPG_scheduleScale(self.sbMain01, self.lytCanvas01); desCalculos(); recalcAll();
+            TRPG_scheduleScale(self.sbMain01, self.lytCanvas01);
         end);
 
     obj._e_event1 = obj.Tormenta01:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain01, self.lytCanvas01);
+            TRPG_scheduleScale(self.sbMain01, self.lytCanvas01);
         end);
 
-    obj._e_event2 = obj.button1:addEventListener("onClick",
+    obj._e_event2 = obj.Tormenta01:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain01, self.lytCanvas01); desCalculos(); recalcAll();
+        end);
+
+    obj._e_event3 = obj.button1:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modforca, "Força (FOR)");
         end);
 
-    obj._e_event3 = obj.button2:addEventListener("onClick",
+    obj._e_event4 = obj.button2:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).moddestreza, "Destreza (DES)");
         end);
 
-    obj._e_event4 = obj.button3:addEventListener("onClick",
+    obj._e_event5 = obj.button3:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modconstituicao, "Constituição (CON)");
         end);
 
-    obj._e_event5 = obj.button4:addEventListener("onClick",
+    obj._e_event6 = obj.button4:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modinteligencia, "Inteligência (INT)");
         end);
 
-    obj._e_event6 = obj.button5:addEventListener("onClick",
+    obj._e_event7 = obj.button5:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modsabedoria, "Sabedoria (SAB)");
         end);
 
-    obj._e_event7 = obj.button6:addEventListener("onClick",
+    obj._e_event8 = obj.button6:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).modcarisma, "Carisma (CAR)");
         end);
 
-    obj._e_event8 = obj.button7:addEventListener("onClick",
+    obj._e_event9 = obj.button7:addEventListener("onClick",
         function (event)
             TRPG_chooseCaExtra(sheet or self.sheet);
         end);
 
-    obj._e_event9 = obj.button8:addEventListener("onClick",
+    obj._e_event10 = obj.button8:addEventListener("onClick",
         function (event)
             TRPG_toggleCaBase(sheet or self.sheet);
         end);
 
-    obj._e_event10 = obj.button9:addEventListener("onClick",
+    obj._e_event11 = obj.button9:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_fort", "CON");
         end);
 
-    obj._e_event11 = obj.button10:addEventListener("onClick",
+    obj._e_event12 = obj.button10:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfort, "Teste de Fortitude");
         end);
 
-    obj._e_event12 = obj.button11:addEventListener("onClick",
+    obj._e_event13 = obj.button11:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_ref", "DES");
         end);
 
-    obj._e_event13 = obj.button12:addEventListener("onClick",
+    obj._e_event14 = obj.button12:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalref, "Teste de Reflexos");
         end);
 
-    obj._e_event14 = obj.button13:addEventListener("onClick",
+    obj._e_event15 = obj.button13:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_von", "SAB");
         end);
 
-    obj._e_event15 = obj.button14:addEventListener("onClick",
+    obj._e_event16 = obj.button14:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalvon, "Teste de Vontade");
         end);
 
-    obj._e_event16 = obj.button15:addEventListener("onClick",
+    obj._e_event17 = obj.button15:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcac, "Ataque Corpo-a-corpo");
         end);
 
-    obj._e_event17 = obj.button16:addEventListener("onClick",
+    obj._e_event18 = obj.button16:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_cac", "FOR");
         end);
 
-    obj._e_event18 = obj.button17:addEventListener("onClick",
+    obj._e_event19 = obj.button17:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldis, "Ataque À Distância");
         end);
 
-    obj._e_event19 = obj.button18:addEventListener("onClick",
+    obj._e_event20 = obj.button18:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_dis", "DES");
         end);
 
-    obj._e_event20 = obj.calculos:addEventListener("onClick",
+    obj._e_event21 = obj.calculos:addEventListener("onClick",
         function (event)
             desCalculos(); desCalculos2();
         end);
 
-    obj._e_event21 = obj.button19:addEventListener("onClick",
+    obj._e_event22 = obj.button19:addEventListener("onClick",
         function (event)
             GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');
         end);
 
-    obj._e_event22 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event23 = obj.dataLink1:addEventListener("onChange",
         function (field, oldValue, newValue)
             recalcAll();
         end);
 
-    obj._e_event23 = obj.Tormenta02:addEventListener("onNodeReady",
+    obj._e_event24 = obj.Tormenta02:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain02, self.lytCanvas02); TRPG_scheduleScale(self.sbMain02, self.lytCanvas02); desCalculos2();
+            TRPG_scheduleScale(self.sbMain02, self.lytCanvas02);
         end);
 
-    obj._e_event24 = obj.Tormenta02:addEventListener("onResize",
+    obj._e_event25 = obj.Tormenta02:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain02, self.lytCanvas02);
+            TRPG_scheduleScale(self.sbMain02, self.lytCanvas02);
         end);
 
-    obj._e_event25 = obj.button20:addEventListener("onClick",
+    obj._e_event26 = obj.Tormenta02:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain02, self.lytCanvas02); desCalculos2();
+        end);
+
+    obj._e_event27 = obj.button20:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_acrobacia", "DES");
         end);
 
-    obj._e_event26 = obj.button21:addEventListener("onClick",
+    obj._e_event28 = obj.button21:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalacrobacia, "Acrobacia");
         end);
 
-    obj._e_event27 = obj.button22:addEventListener("onClick",
+    obj._e_event29 = obj.button22:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_adestrar", "CAR");
         end);
 
-    obj._e_event28 = obj.button23:addEventListener("onClick",
+    obj._e_event30 = obj.button23:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             						if not (sh.cbxadestrar == true) then
@@ -13346,22 +13427,22 @@ local function constructNew_Tormentafrm()
             						TRPG_rollValue(sh, sh.totaladestrar, "Adestrar Animais");
         end);
 
-    obj._e_event29 = obj.button24:addEventListener("onClick",
+    obj._e_event31 = obj.button24:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_atletismo", "FOR");
         end);
 
-    obj._e_event30 = obj.button25:addEventListener("onClick",
+    obj._e_event32 = obj.button25:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalatletismo, "Atletismo");
         end);
 
-    obj._e_event31 = obj.button26:addEventListener("onClick",
+    obj._e_event33 = obj.button26:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_atuacao1", "CAR");
         end);
 
-    obj._e_event32 = obj.button27:addEventListener("onClick",
+    obj._e_event34 = obj.button27:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Atuação";
@@ -13370,12 +13451,12 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totalatuacao1, nome);
         end);
 
-    obj._e_event33 = obj.button28:addEventListener("onClick",
+    obj._e_event35 = obj.button28:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_atuacao2", "CAR");
         end);
 
-    obj._e_event34 = obj.button29:addEventListener("onClick",
+    obj._e_event36 = obj.button29:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Atuação";
@@ -13384,22 +13465,22 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totalatuacao2, nome);
         end);
 
-    obj._e_event35 = obj.button30:addEventListener("onClick",
+    obj._e_event37 = obj.button30:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_cavalgar", "DES");
         end);
 
-    obj._e_event36 = obj.button31:addEventListener("onClick",
+    obj._e_event38 = obj.button31:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcavalgar, "Cavalgar");
         end);
 
-    obj._e_event37 = obj.button32:addEventListener("onClick",
+    obj._e_event39 = obj.button32:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento1", "INT");
         end);
 
-    obj._e_event38 = obj.button33:addEventListener("onClick",
+    obj._e_event40 = obj.button33:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Conhecimento";
@@ -13412,12 +13493,12 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totalconhecimento1, nome);
         end);
 
-    obj._e_event39 = obj.button34:addEventListener("onClick",
+    obj._e_event41 = obj.button34:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_conhecimento2", "INT");
         end);
 
-    obj._e_event40 = obj.button35:addEventListener("onClick",
+    obj._e_event42 = obj.button35:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Conhecimento";
@@ -13430,52 +13511,52 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totalconhecimento2, nome);
         end);
 
-    obj._e_event41 = obj.button36:addEventListener("onClick",
+    obj._e_event43 = obj.button36:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_cura", "SAB");
         end);
 
-    obj._e_event42 = obj.button37:addEventListener("onClick",
+    obj._e_event44 = obj.button37:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalcura, "Cura");
         end);
 
-    obj._e_event43 = obj.button38:addEventListener("onClick",
+    obj._e_event45 = obj.button38:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_diplomacia", "CAR");
         end);
 
-    obj._e_event44 = obj.button39:addEventListener("onClick",
+    obj._e_event46 = obj.button39:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaldiplomacia, "Diplomacia");
         end);
 
-    obj._e_event45 = obj.button40:addEventListener("onClick",
+    obj._e_event47 = obj.button40:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_enganacao", "CAR");
         end);
 
-    obj._e_event46 = obj.button41:addEventListener("onClick",
+    obj._e_event48 = obj.button41:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalenganacao, "Enganação");
         end);
 
-    obj._e_event47 = obj.button42:addEventListener("onClick",
+    obj._e_event49 = obj.button42:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_furtividade", "DES");
         end);
 
-    obj._e_event48 = obj.button43:addEventListener("onClick",
+    obj._e_event50 = obj.button43:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalfurtividade, "Furtividade");
         end);
 
-    obj._e_event49 = obj.button44:addEventListener("onClick",
+    obj._e_event51 = obj.button44:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_imagia", "INT");
         end);
 
-    obj._e_event50 = obj.button45:addEventListener("onClick",
+    obj._e_event52 = obj.button45:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							if not (sh.cbximagia == true) then
@@ -13485,52 +13566,52 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalimagia, "Identificar Magia");
         end);
 
-    obj._e_event51 = obj.button46:addEventListener("onClick",
+    obj._e_event53 = obj.button46:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_iniciativa", "DES");
         end);
 
-    obj._e_event52 = obj.button47:addEventListener("onClick",
+    obj._e_event54 = obj.button47:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaliniciativa, "Iniciativa");
         end);
 
-    obj._e_event53 = obj.button48:addEventListener("onClick",
+    obj._e_event55 = obj.button48:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_intimidacao", "CAR");
         end);
 
-    obj._e_event54 = obj.button49:addEventListener("onClick",
+    obj._e_event56 = obj.button49:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintimidacao, "Intimidação");
         end);
 
-    obj._e_event55 = obj.button50:addEventListener("onClick",
+    obj._e_event57 = obj.button50:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_intuicao", "SAB");
         end);
 
-    obj._e_event56 = obj.button51:addEventListener("onClick",
+    obj._e_event58 = obj.button51:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalintuicao, "Intuição");
         end);
 
-    obj._e_event57 = obj.button52:addEventListener("onClick",
+    obj._e_event59 = obj.button52:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_jogatina", "CAR");
         end);
 
-    obj._e_event58 = obj.button53:addEventListener("onClick",
+    obj._e_event60 = obj.button53:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaljogatina, "Jogatina");
         end);
 
-    obj._e_event59 = obj.button54:addEventListener("onClick",
+    obj._e_event61 = obj.button54:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_ladinagem", "DES");
         end);
 
-    obj._e_event60 = obj.button55:addEventListener("onClick",
+    obj._e_event62 = obj.button55:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							if not (sh.cbxladinagem == true) then
@@ -13540,22 +13621,22 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalladinagem, "Ladinagem");
         end);
 
-    obj._e_event61 = obj.button56:addEventListener("onClick",
+    obj._e_event63 = obj.button56:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_oinformacao", "CAR");
         end);
 
-    obj._e_event62 = obj.button57:addEventListener("onClick",
+    obj._e_event64 = obj.button57:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totaloinformacao, "Obter Informação");
         end);
 
-    obj._e_event63 = obj.button58:addEventListener("onClick",
+    obj._e_event65 = obj.button58:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_oficio1", "INT");
         end);
 
-    obj._e_event64 = obj.button59:addEventListener("onClick",
+    obj._e_event66 = obj.button59:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Ofício";
@@ -13564,12 +13645,12 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totaloficio1, nome);
         end);
 
-    obj._e_event65 = obj.button60:addEventListener("onClick",
+    obj._e_event67 = obj.button60:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_oficio2", "INT");
         end);
 
-    obj._e_event66 = obj.button61:addEventListener("onClick",
+    obj._e_event68 = obj.button61:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							local nome = "Ofício";
@@ -13578,12 +13659,12 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sh, sh.totaloficio2, nome);
         end);
 
-    obj._e_event67 = obj.button62:addEventListener("onClick",
+    obj._e_event69 = obj.button62:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_meditacao", "SAB");
         end);
 
-    obj._e_event68 = obj.button63:addEventListener("onClick",
+    obj._e_event70 = obj.button63:addEventListener("onClick",
         function (event)
             local sh = sheet or self.sheet;
             							if not (sh.cbxmeditacao == true) then
@@ -13593,162 +13674,182 @@ local function constructNew_Tormentafrm()
             							TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalmeditacao, "Meditação");
         end);
 
-    obj._e_event69 = obj.button64:addEventListener("onClick",
+    obj._e_event71 = obj.button64:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_percepcao", "SAB");
         end);
 
-    obj._e_event70 = obj.button65:addEventListener("onClick",
+    obj._e_event72 = obj.button65:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalpercepcao, "Percepção");
         end);
 
-    obj._e_event71 = obj.button66:addEventListener("onClick",
+    obj._e_event73 = obj.button66:addEventListener("onClick",
         function (event)
             TRPG_chooseHab(sheet or self.sheet, "hab_sobrevivencia", "SAB");
         end);
 
-    obj._e_event72 = obj.button67:addEventListener("onClick",
+    obj._e_event74 = obj.button67:addEventListener("onClick",
         function (event)
             TRPG_rollValue(sheet or self.sheet, (sheet or self.sheet).totalsobrevivencia, "Sobrevivência");
         end);
 
-    obj._e_event73 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event75 = obj.dataLink2:addEventListener("onChange",
         function (field, oldValue, newValue)
             onDataLinkChange();
         end);
 
-    obj._e_event74 = obj.Tormenta03:addEventListener("onNodeReady",
+    obj._e_event76 = obj.Tormenta03:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain03, self.lytCanvas03); TRPG_scheduleScale(self.sbMain03, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03);
         end);
 
-    obj._e_event75 = obj.Tormenta03:addEventListener("onResize",
+    obj._e_event77 = obj.Tormenta03:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain03, self.lytCanvas03);
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03);
         end);
 
-    obj._e_event76 = obj.rcArmaCloseArea:addEventListener("onClick",
+    obj._e_event78 = obj.Tormenta03:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+        end);
+
+    obj._e_event79 = obj.rcArmaCloseArea:addEventListener("onClick",
         function (event)
             TRPG_armaClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event77 = obj.button68:addEventListener("onClick",
+    obj._e_event80 = obj.button68:addEventListener("onClick",
         function (event)
             TRPG_addArma(self, sheet or self.sheet);
         end);
 
-    obj._e_event78 = obj.rclArmas:addEventListener("onSelect",
+    obj._e_event81 = obj.rclArmas:addEventListener("onSelect",
         function ()
             TRPG_armaOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event79 = obj.button69:addEventListener("onClick",
+    obj._e_event82 = obj.button69:addEventListener("onClick",
         function (event)
             TRPG_armaClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event80 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event83 = obj.dataLink3:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_armaUpdateTitulo(self);
         end);
 
-    obj._e_event81 = obj.rcDefCloseArea:addEventListener("onClick",
+    obj._e_event84 = obj.rcDefCloseArea:addEventListener("onClick",
         function (event)
             TRPG_defClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event82 = obj.button70:addEventListener("onClick",
+    obj._e_event85 = obj.button70:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
         end);
 
-    obj._e_event83 = obj.button71:addEventListener("onClick",
+    obj._e_event86 = obj.button71:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
         end);
 
-    obj._e_event84 = obj.button72:addEventListener("onClick",
+    obj._e_event87 = obj.button72:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Outros");
         end);
 
-    obj._e_event85 = obj.rclDefesas:addEventListener("onSelect",
+    obj._e_event88 = obj.rclDefesas:addEventListener("onSelect",
         function ()
             TRPG_defOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event86 = obj.button73:addEventListener("onClick",
+    obj._e_event89 = obj.button73:addEventListener("onClick",
         function (event)
             TRPG_defClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event87 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event90 = obj.dataLink4:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_defUpdateTitulo(self);
         end);
 
-    obj._e_event88 = obj.rcEquipCloseArea:addEventListener("onClick",
+    obj._e_event91 = obj.rcEquipCloseArea:addEventListener("onClick",
         function (event)
             TRPG_equipClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event89 = obj.button74:addEventListener("onClick",
+    obj._e_event92 = obj.button74:addEventListener("onClick",
         function (event)
             TRPG_equipAddItem(self, sheet or self.sheet);
         end);
 
-    obj._e_event90 = obj.rclEquip:addEventListener("onSelect",
+    obj._e_event93 = obj.rclEquip:addEventListener("onSelect",
         function ()
             TRPG_equipOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event91 = obj.button75:addEventListener("onClick",
+    obj._e_event94 = obj.button75:addEventListener("onClick",
         function (event)
             TRPG_equipClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event92 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event95 = obj.dataLink5:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_equipUpdateTitulo(self);
         end);
 
-    obj._e_event93 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event96 = obj.dataLink6:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
         end);
 
-    obj._e_event94 = obj.Tormenta04:addEventListener("onResize",
+    obj._e_event97 = obj.Tormenta04:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain04, self.lytCanvas04);
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
         end);
 
-    obj._e_event95 = obj.Tormenta04:addEventListener("onNodeReady",
+    obj._e_event98 = obj.Tormenta04:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain04, self.lytCanvas04); TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
         end);
 
-    obj._e_event96 = obj.Tormenta05:addEventListener("onResize",
+    obj._e_event99 = obj.Tormenta04:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self.sbMain05, self.lytCanvas05);
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
         end);
 
-    obj._e_event97 = obj.Tormenta05:addEventListener("onNodeReady",
+    obj._e_event100 = obj.Tormenta05:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain05, self.lytCanvas05); TRPG_scheduleScale(self.sbMain05, self.lytCanvas05);
+            TRPG_scheduleScale(self.sbMain05, self.lytCanvas05);
         end);
 
-    obj._e_event98 = obj.Tormenta06:addEventListener("onResize",
+    obj._e_event101 = obj.Tormenta05:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain06, self.lytCanvas06);
+            TRPG_scheduleScale(self.sbMain05, self.lytCanvas05);
         end);
 
-    obj._e_event99 = obj.Tormenta06:addEventListener("onNodeReady",
+    obj._e_event102 = obj.Tormenta05:addEventListener("onNodeReady",
         function ()
-            TRPG_updateScale(self.sbMain06, self.lytCanvas06); TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+            TRPG_scheduleScale(self.sbMain05, self.lytCanvas05);
         end);
 
-    obj._e_event100 = obj.button76:addEventListener("onClick",
+    obj._e_event103 = obj.Tormenta06:addEventListener("onShow",
+        function ()
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+        end);
+
+    obj._e_event104 = obj.Tormenta06:addEventListener("onResize",
+        function ()
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+        end);
+
+    obj._e_event105 = obj.Tormenta06:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+        end);
+
+    obj._e_event106 = obj.button76:addEventListener("onClick",
         function (event)
             local n = self.rclAtaque:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -13757,7 +13858,7 @@ local function constructNew_Tormentafrm()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event101 = obj.button77:addEventListener("onClick",
+    obj._e_event107 = obj.button77:addEventListener("onClick",
         function (event)
             local n = self.rclDanos:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -13766,7 +13867,7 @@ local function constructNew_Tormentafrm()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event102 = obj.button78:addEventListener("onClick",
+    obj._e_event108 = obj.button78:addEventListener("onClick",
         function (event)
             local n = self.rclMagias:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -13775,32 +13876,38 @@ local function constructNew_Tormentafrm()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event103 = obj.rclAtaque:addEventListener("onSelect",
+    obj._e_event109 = obj.rclAtaque:addEventListener("onSelect",
         function ()
             self.rclDanos.selectedNode = nil;
             										self.rclMagias.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclAtaque.selectedNode);
         end);
 
-    obj._e_event104 = obj.rclDanos:addEventListener("onSelect",
+    obj._e_event110 = obj.rclDanos:addEventListener("onSelect",
         function ()
             self.rclAtaque.selectedNode = nil;
             										self.rclMagias.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclDanos.selectedNode);
         end);
 
-    obj._e_event105 = obj.rclMagias:addEventListener("onSelect",
+    obj._e_event111 = obj.rclMagias:addEventListener("onSelect",
         function ()
             self.rclAtaque.selectedNode = nil;
             										self.rclDanos.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclMagias.selectedNode);
         end);
 
-    obj._e_event106 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event112 = obj.dataLink7:addEventListener("onChange",
         function (field, oldValue, newValue)
         end);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event112);
+        __o_rrpgObjs.removeEventListenerById(self._e_event111);
+        __o_rrpgObjs.removeEventListenerById(self._e_event110);
+        __o_rrpgObjs.removeEventListenerById(self._e_event109);
+        __o_rrpgObjs.removeEventListenerById(self._e_event108);
+        __o_rrpgObjs.removeEventListenerById(self._e_event107);
         __o_rrpgObjs.removeEventListenerById(self._e_event106);
         __o_rrpgObjs.removeEventListenerById(self._e_event105);
         __o_rrpgObjs.removeEventListenerById(self._e_event104);
@@ -14924,7 +15031,7 @@ local _Tormentafrm = {
     dataType = "Tormenta.RPGFirecast", 
     formType = "sheetTemplate", 
     formComponentName = "form", 
-    cacheMode = "none", 
+    cacheMode = "time", 
     title = "Ficha Tormenta RPG (Firecast 8.13)", 
     description=""};
 

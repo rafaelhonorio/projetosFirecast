@@ -27,6 +27,10 @@ local function constructNew_Tormenta04()
     _gui_assignInitialParentForForm(obj.handle);
     obj:beginUpdate();
     obj:setName("Tormenta04");
+    obj:setWidth(1010);
+    obj:setHeight(700);
+    obj:setMinWidth(700);
+    obj:setMaxWidth(1280);
     obj:setAlign("client");
     obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
@@ -298,20 +302,25 @@ local function constructNew_Tormenta04()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -327,25 +336,33 @@ local function constructNew_Tormenta04()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
 
 
 
-    obj._e_event0 = obj:addEventListener("onResize",
+    obj._e_event0 = obj:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain04, self.lytCanvas04);
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
         end);
 
-    obj._e_event1 = obj:addEventListener("onNodeReady",
+    obj._e_event1 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain04, self.lytCanvas04); TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
+        end);
+
+    obj._e_event2 = obj:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain04, self.lytCanvas04);
         end);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;

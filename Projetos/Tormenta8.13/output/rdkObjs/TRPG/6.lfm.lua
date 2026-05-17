@@ -27,6 +27,10 @@ local function constructNew_Tormenta06()
     _gui_assignInitialParentForForm(obj.handle);
     obj:beginUpdate();
     obj:setName("Tormenta06");
+    obj:setWidth(1010);
+    obj:setHeight(700);
+    obj:setMinWidth(700);
+    obj:setMaxWidth(1280);
     obj:setAlign("client");
     obj:setTheme("light");
 
@@ -422,20 +426,25 @@ local function constructNew_Tormenta06()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -451,8 +460,10 @@ local function constructNew_Tormenta06()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -591,17 +602,22 @@ local function constructNew_Tormenta06()
 
 
 
-    obj._e_event0 = obj:addEventListener("onResize",
+    obj._e_event0 = obj:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain06, self.lytCanvas06);
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
         end);
 
-    obj._e_event1 = obj:addEventListener("onNodeReady",
+    obj._e_event1 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain06, self.lytCanvas06); TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
         end);
 
-    obj._e_event2 = obj.button1:addEventListener("onClick",
+    obj._e_event2 = obj:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain06, self.lytCanvas06);
+        end);
+
+    obj._e_event3 = obj.button1:addEventListener("onClick",
         function (event)
             local n = self.rclAtaque:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -610,7 +626,7 @@ local function constructNew_Tormenta06()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event3 = obj.button2:addEventListener("onClick",
+    obj._e_event4 = obj.button2:addEventListener("onClick",
         function (event)
             local n = self.rclDanos:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -619,7 +635,7 @@ local function constructNew_Tormenta06()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event4 = obj.button3:addEventListener("onClick",
+    obj._e_event5 = obj.button3:addEventListener("onClick",
         function (event)
             local n = self.rclMagias:append();
             							if n ~= nil and (n.campoTitulo == nil or n.campoTitulo == "") then
@@ -628,32 +644,33 @@ local function constructNew_Tormenta06()
             							TRPG_touch06(self);
         end);
 
-    obj._e_event5 = obj.rclAtaque:addEventListener("onSelect",
+    obj._e_event6 = obj.rclAtaque:addEventListener("onSelect",
         function ()
             self.rclDanos.selectedNode = nil;
             										self.rclMagias.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclAtaque.selectedNode);
         end);
 
-    obj._e_event6 = obj.rclDanos:addEventListener("onSelect",
+    obj._e_event7 = obj.rclDanos:addEventListener("onSelect",
         function ()
             self.rclAtaque.selectedNode = nil;
             										self.rclMagias.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclDanos.selectedNode);
         end);
 
-    obj._e_event7 = obj.rclMagias:addEventListener("onSelect",
+    obj._e_event8 = obj.rclMagias:addEventListener("onSelect",
         function ()
             self.rclAtaque.selectedNode = nil;
             										self.rclDanos.selectedNode = nil;
             										TRPG_selectMacro(self, self.rclMagias.selectedNode);
         end);
 
-    obj._e_event8 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink1:addEventListener("onChange",
         function (field, oldValue, newValue)
         end);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
         __o_rrpgObjs.removeEventListenerById(self._e_event8);
         __o_rrpgObjs.removeEventListenerById(self._e_event7);
         __o_rrpgObjs.removeEventListenerById(self._e_event6);

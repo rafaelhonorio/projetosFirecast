@@ -27,6 +27,10 @@ local function constructNew_Tormenta03()
     _gui_assignInitialParentForForm(obj.handle);
     obj:beginUpdate();
     obj:setName("Tormenta03");
+    obj:setWidth(1010);
+    obj:setHeight(700);
+    obj:setMinWidth(700);
+    obj:setMaxWidth(1280);
     obj:setAlign("client");
     obj:setTheme("light");
     obj:setLockWhileNodeIsLoading(true);
@@ -1166,20 +1170,25 @@ local function constructNew_Tormenta03()
 
                 local availW = TRPG_getAvailableWidth(container)
                 availW = availW - 24
-                if availW <= 0 then return end
+
+                -- Proteção contra largura inicial falsa/minúscula durante a abertura da ficha.
+                -- Sem isso, o Firecast pode informar uma largura muito baixa e a ficha abre em escala mínima.
+                if availW <= 350 then return end
 
                 local scaleW = availW / baseW
 
-                -- se estiver "quase cabendo", não encolhe: mantém 100%
+                -- Se estiver quase cabendo, mantém 100% para evitar encolher a ficha desnecessariamente.
                 local scale = scaleW
                 if scaleW >= 0.85 and scaleW < 1.0 then
                     scale = 1.0
                 end
 
-                -- permite ampliar em telas grandes (tamanho máximo), mas com limite de segurança
+                -- Permite ampliar em telas grandes, mas com limite de segurança.
                 local maxScale = 1.25
                 if scale > maxScale then scale = maxScale end
-                if scale < 0.20 then scale = 0.20 end
+
+                -- Evita a aparência de ficha quebrada/minúscula.
+                if scale < 0.45 then scale = 0.45 end
 
                 canvas.scale = scale
 
@@ -1195,8 +1204,10 @@ local function constructNew_Tormenta03()
                     pcall(TRPG_updateScale, container, canvas)
                 end
                 setTimeout(tick, 1)
-                setTimeout(tick, 60)
-                setTimeout(tick, 200)
+                setTimeout(tick, 80)
+                setTimeout(tick, 250)
+                setTimeout(tick, 600)
+                setTimeout(tick, 1200)
             end
         end
 
@@ -1653,107 +1664,113 @@ local function constructNew_Tormenta03()
 
 
 
-    obj._e_event0 = obj:addEventListener("onNodeReady",
+    obj._e_event0 = obj:addEventListener("onShow",
         function ()
-            TRPG_updateScale(self.sbMain03, self.lytCanvas03); TRPG_scheduleScale(self.sbMain03, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03);
         end);
 
     obj._e_event1 = obj:addEventListener("onResize",
         function ()
-            TRPG_updateScale(self.sbMain03, self.lytCanvas03);
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03);
         end);
 
-    obj._e_event2 = obj.rcArmaCloseArea:addEventListener("onClick",
+    obj._e_event2 = obj:addEventListener("onNodeReady",
+        function ()
+            TRPG_scheduleScale(self.sbMain03, self.lytCanvas03); TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet); TRPG_updateHintCarga03(self, sheet or self.sheet);
+        end);
+
+    obj._e_event3 = obj.rcArmaCloseArea:addEventListener("onClick",
         function (event)
             TRPG_armaClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event3 = obj.button1:addEventListener("onClick",
+    obj._e_event4 = obj.button1:addEventListener("onClick",
         function (event)
             TRPG_addArma(self, sheet or self.sheet);
         end);
 
-    obj._e_event4 = obj.rclArmas:addEventListener("onSelect",
+    obj._e_event5 = obj.rclArmas:addEventListener("onSelect",
         function ()
             TRPG_armaOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event5 = obj.button2:addEventListener("onClick",
+    obj._e_event6 = obj.button2:addEventListener("onClick",
         function (event)
             TRPG_armaClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink1:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_armaUpdateTitulo(self);
         end);
 
-    obj._e_event7 = obj.rcDefCloseArea:addEventListener("onClick",
+    obj._e_event8 = obj.rcDefCloseArea:addEventListener("onClick",
         function (event)
             TRPG_defClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event8 = obj.button3:addEventListener("onClick",
+    obj._e_event9 = obj.button3:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Armadura");
         end);
 
-    obj._e_event9 = obj.button4:addEventListener("onClick",
+    obj._e_event10 = obj.button4:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Escudo");
         end);
 
-    obj._e_event10 = obj.button5:addEventListener("onClick",
+    obj._e_event11 = obj.button5:addEventListener("onClick",
         function (event)
             TRPG_addDefesa(self, sheet or self.sheet, "Outros");
         end);
 
-    obj._e_event11 = obj.rclDefesas:addEventListener("onSelect",
+    obj._e_event12 = obj.rclDefesas:addEventListener("onSelect",
         function ()
             TRPG_defOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event12 = obj.button6:addEventListener("onClick",
+    obj._e_event13 = obj.button6:addEventListener("onClick",
         function (event)
             TRPG_defClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event13 = obj.dataLink2:addEventListener("onChange",
+    obj._e_event14 = obj.dataLink2:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_defUpdateTitulo(self);
         end);
 
-    obj._e_event14 = obj.rcEquipCloseArea:addEventListener("onClick",
+    obj._e_event15 = obj.rcEquipCloseArea:addEventListener("onClick",
         function (event)
             TRPG_equipClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event15 = obj.button7:addEventListener("onClick",
+    obj._e_event16 = obj.button7:addEventListener("onClick",
         function (event)
             TRPG_equipAddItem(self, sheet or self.sheet);
         end);
 
-    obj._e_event16 = obj.rclEquip:addEventListener("onSelect",
+    obj._e_event17 = obj.rclEquip:addEventListener("onSelect",
         function ()
             TRPG_equipOnSelect(self, sheet or self.sheet);
         end);
 
-    obj._e_event17 = obj.button8:addEventListener("onClick",
+    obj._e_event18 = obj.button8:addEventListener("onClick",
         function (event)
             TRPG_equipClose(self, sheet or self.sheet);
         end);
 
-    obj._e_event18 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink3:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_equipUpdateTitulo(self);
         end);
 
-    obj._e_event19 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event20 = obj.dataLink4:addEventListener("onChange",
         function (field, oldValue, newValue)
             TRPG_recalcPenDefesas(sheet or self.sheet); TRPG_calcCarga03(self, sheet or self.sheet);
         end);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event20);
         __o_rrpgObjs.removeEventListenerById(self._e_event19);
         __o_rrpgObjs.removeEventListenerById(self._e_event18);
         __o_rrpgObjs.removeEventListenerById(self._e_event17);
