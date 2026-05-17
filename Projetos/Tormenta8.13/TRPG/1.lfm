@@ -415,8 +415,9 @@
                 <label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="white" text="Funções" />
                 <rectangle left="3" top="131" color="#ffffff" width="119" height="25" />
                 <imageCheckBox name="calculos" field="calculos" left="44" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();" />
-                <image left="64" top="136" name="update" src="img/update.gif" width="15" height="15" />
-                <button left="64" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0" onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');" />
+                <image left="64" top="136" animate="true" name="update" src="img/update.gif" width="15" height="15" />
+                <button left="64" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0" 
+                onClick="GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/refs/heads/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');" />
                 <label left="10" top="690" width="990" height="20" fontSize="10" fontColor="black" text="$(debugMsg)" />
             </layout>
         </layout>

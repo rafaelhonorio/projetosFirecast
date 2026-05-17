@@ -3931,6 +3931,7 @@ local function constructNew_Tormentafrm()
     obj.update:setParent(obj.layout40);
     obj.update:setLeft(64);
     obj.update:setTop(136);
+    obj.update.animate = true;
     obj.update:setName("update");
     obj.update:setSRC("/TRPG/img/update.gif");
     obj.update:setWidth(15);
@@ -13379,7 +13380,7 @@ local function constructNew_Tormentafrm()
 
     obj._e_event22 = obj.button19:addEventListener("onClick",
         function (event)
-            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/blob/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');
+            GUI.openInBrowser('https://github.com/rafaelhonorio/projetosFirecast/raw/refs/heads/main/Projetos/Tormenta8.13/output/Tormenta8.13.rpk');
         end);
 
     obj._e_event23 = obj.dataLink1:addEventListener("onChange",
